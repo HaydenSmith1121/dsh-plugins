@@ -1,0 +1,194 @@
+ui-onboarding:
+  welcomeNoticeVersion: 2026-08-13.1
+agent-default-model:
+  provider: trae
+  model: glm-5.2
+  reasoningEffort: xhigh
+trae:
+  regions:
+    cn:
+      lastCatalog:
+        - id: Doubao-Seed-Evolving
+          name: Seed-Evolving
+          contextWindow: 256000
+          maxContextWindow: 1000000
+          creditMultiplier: 0.8
+          input:
+            - text
+          reasoningSupported: true
+        - id: Doubao-Seed-2.1-Pro
+          name: Seed-2.1-Pro-0915
+          contextWindow: 256000
+          maxContextWindow: 1000000
+          creditMultiplier: 0.8
+          input:
+            - text
+          reasoningSupported: true
+          reasoning:
+            supported:
+              - low
+              - high
+            defaultEffort: high
+          reasoningEfforts:
+            low: light
+            high: high
+        - id: Doubao-Seed-2.1-Turbo
+          name: Seed-2.1-Turbo
+          contextWindow: 256000
+          creditMultiplier: 0.1
+          input:
+            - text
+          reasoningSupported: true
+          reasoning:
+            supported:
+              - low
+              - high
+            defaultEffort: high
+          reasoningEfforts:
+            low: light
+            high: high
+        - id: glm-5.3
+          name: GLM-5.3
+          contextWindow: 200000
+          maxContextWindow: 1000000
+          creditMultiplier: 0.39
+          input:
+            - text
+          reasoningSupported: true
+          reasoning:
+            supported:
+              - low
+              - high
+              - xhigh
+            defaultEffort: xhigh
+          reasoningEfforts:
+            low: light
+            high: high
+            xhigh: extra_high
+        - id: glm-5.2
+          name: GLM-5.2
+          contextWindow: 200000
+          maxContextWindow: 1000000
+          creditMultiplier: 0.39
+          input:
+            - text
+          reasoningSupported: true
+          reasoning:
+            supported:
+              - high
+              - xhigh
+            defaultEffort: high
+          reasoningEfforts:
+            high: high
+            xhigh: extra_high
+        - id: DeepSeek-V4-Flash-Official
+          name: DeepSeek-V4-Flash 正式版
+          contextWindow: 200000
+          maxContextWindow: 1000000
+          creditMultiplier: 0.08
+          input:
+            - text
+          reasoningSupported: true
+          reasoning:
+            supported:
+              - low
+              - high
+              - xhigh
+            defaultEffort: high
+          reasoningEfforts:
+            low: light
+            high: high
+            xhigh: extra_high
+        - id: DeepSeek-V4-Pro-Official
+          name: DeepSeek-V4-Pro 正式版
+          contextWindow: 200000
+          maxContextWindow: 1000000
+          creditMultiplier: 0.36
+          input:
+            - text
+          reasoningSupported: true
+          reasoning:
+            supported:
+              - low
+              - high
+              - xhigh
+            defaultEffort: high
+          reasoningEfforts:
+            low: light
+            high: high
+            xhigh: extra_high
+        - id: kimi-k3
+          name: Kimi-K3
+          contextWindow: 200000
+          maxContextWindow: 1000000
+          creditMultiplier: 1.83
+          input:
+            - text
+          reasoningSupported: true
+          reasoning:
+            supported:
+              - low
+              - high
+              - xhigh
+            defaultEffort: xhigh
+          reasoningEfforts:
+            low: light
+            high: high
+            xhigh: extra_high
+        - id: kimi-k2.7-code
+          name: Kimi-K2.7-Code
+          contextWindow: 200000
+          creditMultiplier: 0.83
+          input:
+            - text
+          reasoningSupported: true
+        - id: kimi-k2.6
+          name: Kimi-K2.6
+          contextWindow: 200000
+          creditMultiplier: 0.75
+          input:
+            - text
+          reasoningSupported: true
+        - id: minimax-m3
+          name: MiniMax-M3
+          contextWindow: 200000
+          maxContextWindow: 1000000
+          creditMultiplier: 0.26
+          input:
+            - text
+          reasoningSupported: true
+        - id: qwen3.8-max
+          name: Qwen3.8-Max
+          contextWindow: 200000
+          maxContextWindow: 1000000
+          creditMultiplier: 1.5
+          input:
+            - text
+          reasoningSupported: true
+          reasoning:
+            supported:
+              - low
+              - high
+              - xhigh
+            defaultEffort: high
+          reasoningEfforts:
+            low: light
+            high: high
+            xhigh: extra_high
+        - id: qwen-3.7-plus
+          name: Qwen3.7-Plus
+          contextWindow: 200000
+          maxContextWindow: 1000000
+          creditMultiplier: 0.25
+          input:
+            - text
+          reasoningSupported: true
+      enabledModelIds:
+        - glm-5.3
+        - glm-5.2
+        - kimi-k3
+      imageModelIds: []
+      contextBudgets:
+        kimi-k3: 1000000
+        glm-5.3: 1000000
+        glm-5.2: 1000000

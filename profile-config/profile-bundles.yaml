@@ -1,0 +1,37 @@
+# DeepSeek Harness — web profile plugin manifest (exported snapshot)
+# Source machine: C:\Users\Administrator\.dsh\profiles\web\package.json
+# Exported: see ../tarballs/*.tgz  (6 user-installed plugins as npm tarballs)
+#
+# This records the EXACT bundle layer order dsh boots. Do not reorder:
+# @deepseek-ai/dsh-base and @deepseek-ai/dsh-web-app are in-box bundles shipped
+# with the dsh CLI (not packaged here). The remaining 6 are the user plugins
+# to install from ./tarballs on the new machine.
+
+profile: web
+patchReload: live
+
+# In-box bundles (come with dsh CLI, do NOT install from tarballs):
+inBoxBundles:
+  - "@deepseek-ai/dsh-base"
+  - "@deepseek-ai/dsh-web-app"
+
+# User plugins — install order = top-to-bottom. The final dsh.profile.bundles
+# array must list all 8 (in-box + user) in this order:
+userBundles:
+  - "@dsh-market/plugin"          # tarball: dsh-market-plugin-0.4.8.tgz
+  - "dsh-workbuddy-connect"       # tarball: dsh-workbuddy-connect-0.5.3.tgz
+  - "dsh-opencode-go"             # tarball: dsh-opencode-go-0.1.2.tgz  (has 13 local src mods)
+  - "dsh-connect-trae"            # tarball: dsh-connect-trae-2.0.1.tgz
+  - "dsh-workbuddy-quota"         # tarball: dsh-workbuddy-quota-0.1.0.tgz  (private pkg)
+  - "dsh-receipt"                 # tarball: dsh-receipt-0.1.0.tgz
+
+# Final bundles array (in-box first, then user, in the order above):
+finalBundles:
+  - "@deepseek-ai/dsh-base"
+  - "@deepseek-ai/dsh-web-app"
+  - "@dsh-market/plugin"
+  - "dsh-workbuddy-connect"
+  - "dsh-opencode-go"
+  - "dsh-connect-trae"
+  - "dsh-workbuddy-quota"
+  - "dsh-receipt"
