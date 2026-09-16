@@ -12,22 +12,24 @@
 ## 一、包内容
 
 ```
-dsh-plugins-export/
-├─ tarballs/                         # 6 个插件 tarball（离线安装源）
-│  ├─ dsh-market-plugin-0.4.8.tgz
-│  ├─ dsh-workbuddy-connect-0.5.3.tgz
-│  ├─ dsh-opencode-go-0.1.2.tgz       # 含 13 处本地源码优化（已构建进 lib）
-│  ├─ dsh-connect-trae-2.0.1.tgz
-│  ├─ dsh-workbuddy-quota-0.1.0.tgz
-│  └─ dsh-receipt-0.1.0.tgz
+my-dsh-plugins/                      # = GitHub 私有仓库 HaydenSmith1121/my-dsh-plugins
+├─ README.md                          # 总览：插件清单 + 批量安装 + 新增插件指南
+├─ README-安装说明.md（本文件）
+├─ plugins/                          # 每个插件一个目录，便于增量添加
+│  ├─ dsh-market-plugin/dsh-market-plugin-0.4.8.tgz
+│  ├─ dsh-workbuddy-connect/dsh-workbuddy-connect-0.5.3.tgz
+│  ├─ dsh-opencode-go/dsh-opencode-go-0.1.2.tgz   # 含 13 处本地源码优化（已构建进 lib）
+│  ├─ dsh-connect-trae/dsh-connect-trae-2.0.1.tgz
+│  ├─ dsh-workbuddy-quota/dsh-workbuddy-quota-0.1.0.tgz
+│  └─ dsh-receipt/dsh-receipt-0.1.0.tgz
 ├─ profile-config/
 │  └─ profile-bundles.yaml           # web profile 的 bundles 顺序清单
-├─ settings/
-│  └─ settings.yaml                  # 默认模型 / trae 模型目录等（不含密钥）
-└─ README-安装说明.md（本文件）
+└─ settings/
+   └─ settings.yaml                  # 默认模型 / trae 模型目录等（不含密钥）
 ```
 
-> 还有一个打包好的单文件 zip：`dsh-plugins-export.zip`，整包拷走更方便。
+> 取用方式：`gh repo clone HaydenSmith1121/my-dsh-plugins`（私有，需 gh 登录），
+> 或在 GitHub 网页 `Code → Download ZIP`。
 
 ---
 
@@ -47,7 +49,7 @@ dsh-plugins-export/
 
 ## 三、安装步骤（PowerShell，逐条执行）
 
-以下命令假设你已经 `cd` 到导出包根目录（含 `tarballs\` 子目录）。
+以下命令假设你已经 `cd` 到仓库根目录（含 `plugins\` 子目录）。
 
 ### 1) 还原 settings.yaml（可选，推荐）
 
@@ -68,12 +70,12 @@ Copy-Item ".\settings\settings.yaml" "$env:USERPROFILE\.dsh\settings.yaml" -Forc
 **按下列顺序安装**（顺序即 bundle 层级顺序，照 profile-bundles.yaml）：
 
 ```powershell
-dsh plugin --profile web add .\tarballs\dsh-market-plugin-0.4.8.tgz
-dsh plugin --profile web add .\tarballs\dsh-workbuddy-connect-0.5.3.tgz
-dsh plugin --profile web add .\tarballs\dsh-opencode-go-0.1.2.tgz
-dsh plugin --profile web add .\tarballs\dsh-connect-trae-2.0.1.tgz
-dsh plugin --profile web add .\tarballs\dsh-workbuddy-quota-0.1.0.tgz
-dsh plugin --profile web add .\tarballs\dsh-receipt-0.1.0.tgz
+dsh plugin --profile web add .\plugins\dsh-market-plugin\dsh-market-plugin-0.4.8.tgz
+dsh plugin --profile web add .\plugins\dsh-workbuddy-connect\dsh-workbuddy-connect-0.5.3.tgz
+dsh plugin --profile web add .\plugins\dsh-opencode-go\dsh-opencode-go-0.1.2.tgz
+dsh plugin --profile web add .\plugins\dsh-connect-trae\dsh-connect-trae-2.0.1.tgz
+dsh plugin --profile web add .\plugins\dsh-workbuddy-quota\dsh-workbuddy-quota-0.1.0.tgz
+dsh plugin --profile web add .\plugins\dsh-receipt\dsh-receipt-0.1.0.tgz
 ```
 
 > 路径用反斜杠或正斜杠均可；相对路径会被 dsh 自动锚定到你当前目录。

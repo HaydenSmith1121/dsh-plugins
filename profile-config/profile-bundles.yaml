@@ -1,11 +1,11 @@
 # DeepSeek Harness — web profile plugin manifest (exported snapshot)
 # Source machine: C:\Users\Administrator\.dsh\profiles\web\package.json
-# Exported: see ../tarballs/*.tgz  (6 user-installed plugins as npm tarballs)
+# Exported: see ../plugins/<name>/*.tgz  (6 user-installed plugins as npm tarballs)
 #
 # This records the EXACT bundle layer order dsh boots. Do not reorder:
 # @deepseek-ai/dsh-base and @deepseek-ai/dsh-web-app are in-box bundles shipped
 # with the dsh CLI (not packaged here). The remaining 6 are the user plugins
-# to install from ./tarballs on the new machine.
+# to install from ../plugins/<name>/ on the new machine.
 
 profile: web
 patchReload: live
