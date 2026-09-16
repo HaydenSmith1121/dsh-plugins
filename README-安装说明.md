@@ -20,7 +20,7 @@ my-dsh-plugins/                      # = GitHub 私有仓库 HaydenSmith1121/my-
 │  ├─ dsh-workbuddy-connect/dsh-workbuddy-connect-0.5.3.tgz
 │  ├─ dsh-opencode-go/dsh-opencode-go-0.1.2.tgz   # 含 13 处本地源码优化（已构建进 lib）
 │  ├─ dsh-connect-trae/dsh-connect-trae-2.0.1.tgz
-│  ├─ dsh-workbuddy-quota/dsh-workbuddy-quota-0.1.0.tgz
+│  ├─ dsh-workbuddy-quota/dsh-workbuddy-quota-0.2.0.tgz
 │  └─ dsh-receipt/dsh-receipt-0.1.0.tgz
 ├─ profile-config/
 │  └─ profile-bundles.yaml           # web profile 的 bundles 顺序清单
@@ -74,7 +74,7 @@ dsh plugin --profile web add .\plugins\dsh-market-plugin\dsh-market-plugin-0.4.8
 dsh plugin --profile web add .\plugins\dsh-workbuddy-connect\dsh-workbuddy-connect-0.5.3.tgz
 dsh plugin --profile web add .\plugins\dsh-opencode-go\dsh-opencode-go-0.1.2.tgz
 dsh plugin --profile web add .\plugins\dsh-connect-trae\dsh-connect-trae-2.0.1.tgz
-dsh plugin --profile web add .\plugins\dsh-workbuddy-quota\dsh-workbuddy-quota-0.1.0.tgz
+dsh plugin --profile web add .\plugins\dsh-workbuddy-quota\dsh-workbuddy-quota-0.2.0.tgz
 dsh plugin --profile web add .\plugins\dsh-receipt\dsh-receipt-0.1.0.tgz
 ```
 
@@ -118,7 +118,7 @@ dsh web          # 或: dsh --profile web
 浏览器打开 GUI（默认 http://127.0.0.1:3080），逐项确认：
 - `dsh-connect-trae`：模型选择器里能看到 trae 模型（glm-5.2 等）。
 - `dsh-opencode-go`：设置页有 OpenCode Go 模型供应商项（含你的本地优化）。
-- `dsh-workbuddy-connect` / `dsh-workbuddy-quota`：WorkBuddy 连接与额度显示。
+- `dsh-workbuddy-connect` / `dsh-workbuddy-quota`：WorkBuddy 连接、额度显示，以及按时间范围的 token 用量统计。
 - `dsh-receipt` / `@dsh-market/plugin`：对应面板可见。
 
 ---
@@ -159,4 +159,4 @@ dsh plugin --profile web remove <包名>     # 例如: dsh plugin --profile web 
 | dsh-receipt | 0.1.0 | 16 | ✓ | ✓ |
 | dsh-workbuddy-connect | 0.5.3 | 11 | ✓ | ✓ |
 | dsh-opencode-go | 0.1.2 | 30 | ✓ | ✓ |
-| dsh-workbuddy-quota | 0.1.0 | 4 | ✓ | ✓ |
+| dsh-workbuddy-quota | 0.2.0 | 5 | ✓ | ✓ |

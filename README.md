@@ -24,7 +24,7 @@ my-dsh-plugins/
 │  ├─ dsh-connect-trae/
 │  │  └─ dsh-connect-trae-2.0.1.tgz
 │  ├─ dsh-workbuddy-quota/
-│  │  └─ dsh-workbuddy-quota-0.1.0.tgz
+│  │  └─ dsh-workbuddy-quota-0.2.0.tgz
 │  └─ dsh-receipt/
 │     └─ dsh-receipt-0.1.0.tgz
 ├─ profile-config/
@@ -43,7 +43,7 @@ my-dsh-plugins/
 | `plugins/dsh-workbuddy-connect/` | `dsh-workbuddy-connect` | 0.5.3 | dsh-workbuddy-connect-0.5.3.tgz | WorkBuddy 连接 |
 | `plugins/dsh-opencode-go/` | `dsh-opencode-go` | 0.1.2 | dsh-opencode-go-0.1.2.tgz | OpenCode Go 模型供应商（**含本地优化**） |
 | `plugins/dsh-connect-trae/` | `dsh-connect-trae` | 2.0.1 | dsh-connect-trae-2.0.1.tgz | Trae 模型接入 |
-| `plugins/dsh-workbuddy-quota/` | `dsh-workbuddy-quota` | 0.1.0 | dsh-workbuddy-quota-0.1.0.tgz | WorkBuddy 额度显示（private 包） |
+| `plugins/dsh-workbuddy-quota/` | `dsh-workbuddy-quota` | 0.2.0 | dsh-workbuddy-quota-0.2.0.tgz | WorkBuddy 额度显示 + token 用量统计（private 包） |
 | `plugins/dsh-receipt/` | `dsh-receipt` | 0.1.0 | dsh-receipt-0.1.0.tgz | 凭证/收据 |
 
 **安装顺序**（即 dsh bundle 层级顺序，见 `profile-config/profile-bundles.yaml`）：
@@ -72,7 +72,7 @@ dsh plugin --profile web add .\plugins\dsh-market-plugin\dsh-market-plugin-0.4.8
 dsh plugin --profile web add .\plugins\dsh-workbuddy-connect\dsh-workbuddy-connect-0.5.3.tgz
 dsh plugin --profile web add .\plugins\dsh-opencode-go\dsh-opencode-go-0.1.2.tgz
 dsh plugin --profile web add .\plugins\dsh-connect-trae\dsh-connect-trae-2.0.1.tgz
-dsh plugin --profile web add .\plugins\dsh-workbuddy-quota\dsh-workbuddy-quota-0.1.0.tgz
+dsh plugin --profile web add .\plugins\dsh-workbuddy-quota\dsh-workbuddy-quota-0.2.0.tgz
 dsh plugin --profile web add .\plugins\dsh-receipt\dsh-receipt-0.1.0.tgz
 
 # 3) 启动验证
@@ -143,5 +143,5 @@ git -C $repo push "https://HaydenSmith1121:$token@github.com/HaydenSmith1121/my-
 | dsh-workbuddy-connect | 0.5.3 | 11 | ✓ | ✓ |
 | dsh-opencode-go | 0.1.2 | 30 | ✓ | ✓ |
 | dsh-connect-trae | 2.0.1 | 12 | ✓ | ✓ |
-| dsh-workbuddy-quota | 0.1.0 | 4 | ✓ | ✓ |
+| dsh-workbuddy-quota | 0.2.0 | 5 | ✓ | ✓ |
 | dsh-receipt | 0.1.0 | 16 | ✓ | ✓ |
