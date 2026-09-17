@@ -33,9 +33,13 @@
 
 | 层 | 谁维护 | 入库方式 |
 |---|---|---|
-| **已验证** | 本仓库 | 按[第四节](#四新增一个插件)入库 + 登记 `compatibility.json`，市场自动读取（含 sha256） |
+| **已验证** | 本仓库 | 按[第四节](#四新增一个插件)入库 + 登记 `compatibility.json`，市场自动读取（含 sha256）**+ 按 [`collection/SPEC.md`](./collection/SPEC.md) 登记收录快照** |
 | **已审核** | 维护者人工审核 | 跑 `node scripts/market-review.mjs <owner/repo>` 产出草稿，真机验证后写进 `catalog/curated.json`（含审核证据） |
 | **未审核** | 公共索引自动同步 | 无需贡献；由市场在运行时拉取并强制提示风险 |
+
+> ★ **收录快照是强制的。** 任何进入「已验证」层的插件，都必须同时登记到
+> [`collection/`](./collection/README.md)——否则上游更新后，用户可能装不回当初验证过的那一版。
+> 规则见 **[`collection/SPEC.md`](./collection/SPEC.md)**（规范性文档，冲突时以它为准）。
 
 > 想让某个第三方插件从「未审核」升到「已审核」，见
 > [`catalog/curated.json`](./catalog/curated.json) 顶部的收录标准 ——
@@ -230,6 +234,31 @@ cp "$tgz" "plugins/$dir/$rt/"
 **④ `profile-config/profile-bundles.yaml`** —— 若要进 web 的 bundle 层，
 在 `userBundles` / `finalBundles` 里追加（**顺序即层级顺序**）
 
+### 第 3.5 步：登记收录快照（★ 强制）
+
+**跳过这一步，插件就不算入库完成。**
+
+收录快照固定的是「**当时验证过的那个字节**」，让上游更新后仍能装回同一份。
+规则见 **[`collection/SPEC.md`](./collection/SPEC.md)**，此处只列动作：
+
+```bash
+# ① 放进 collection/snapshots/<目录名>/<插件版本>/
+mkdir -p "collection/snapshots/$dir/$ver"
+cp "$tgz" "collection/snapshots/$dir/$ver/"
+
+# ② 在 collection/collection-notes.json 里补一条（版本核实结论 + 收录理由）
+#    去上游查一次最新版号；没查就留 null，禁止凭印象填 true
+
+# ③ 重新生成清单（会逐个核对 sha256）
+node scripts/build-collection.mjs
+```
+
+要点：
+
+- **版本层是插件版本**，与 `plugins/` 的 dsh 版本层**含义相反**，别写错
+- **作者 / 上游仓库 / 许可**三项必须按[第二节](#二来源标注义务-)登记，缺一不予收录
+- 快照**不可变**：上游发新版时**新增**目录，**不覆盖**旧的
+
 ### 第 4 步：校验并提交
 
 ```bash
@@ -247,6 +276,9 @@ console.log('missing:', bad);
 
 # 真实验证（四步全绿才算过）
 node scripts/verify.mjs
+
+# 收录快照校验（必须通过）
+node scripts/build-collection.mjs --check
 
 git add -A
 git commit -m "feat: add <包名> <版本> (dsh <版本>)"
@@ -325,6 +357,10 @@ git push origin main
 - [ ] `README.md` 第四节（插件清单）已更新
 - [ ] `profile-config/profile-bundles.yaml` 已更新（若进 bundle 层）
 - [ ] **第三方插件已标注原作者与上游仓库**；查不到就明确写「未注明」并说明核实过程
+- [ ] **已按 [`collection/SPEC.md`](./collection/SPEC.md) 登记收录快照**（版本 / 作者 / 上游 / 许可四项齐全）
+- [ ] **`collection-notes.json` 的 `isLatest` 等三项真的查过**；没查则留 `null`，禁止凭印象填 `true`
+- [ ] **未修改、未覆盖、未删除任何已收录的旧快照**
+- [ ] `node scripts/build-collection.mjs --check` 通过
 - [ ] `node scripts/verify.mjs` 四步全绿（含真实启动）
 - [ ] commit message 说明改了什么、为什么
 

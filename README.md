@@ -1,15 +1,51 @@
-# dsh-plugins
+<h1 align="center">dsh-plugins</h1>
 
-DeepSeek Harness（dsh）插件仓库。每个插件独立放在 `plugins/<插件名>/<dsh 版本>/` 下，
-便于增量添加、互不干扰，也能同时容纳适配不同 dsh 版本的插件包。
+<p align="center">
+  <strong>万物皆插件 —— 让 DeepSeek Harness 的能力像积木一样组合。</strong>
+</p>
 
-**内容构成**：部分是自研插件，部分是收集整理的他人开源插件。
-所有插件均为 **MIT** 许可；第三方插件的版权归原作者所有，来源与许可见
-[三、插件来源与许可](#三插件来源与许可)。
+<p align="center">
+  模型、工具、界面、工作流，都可以是一个插件；<br>
+  插件之间遵循同一套 contract，装在一起也能一起工作、互不干扰。
+</p>
+
+<p align="center">
+  <img src="assets/hero-everything-is-a-plugin.svg" alt="万物皆插件：可插拔的能力单元经同一套 contract 组合进同一个 DeepSeek Harness 运行时" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/deepseek-ai/deepseek-harness"><img src="https://img.shields.io/badge/upstream-DeepSeek%20Harness-4D6BFE?style=flat" alt="Upstream: DeepSeek Harness"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2EA44F?style=flat" alt="MIT License"></a>
+  <img src="https://img.shields.io/badge/dsh-0.1.6--alpha.1-4D6BFE?style=flat" alt="Runtime baseline: dsh 0.1.6-alpha.1">
+  <img src="https://img.shields.io/badge/plugins-11-08C?style=flat" alt="11 plugins">
+</p>
+
+---
+
+## 立意：为什么「万物皆插件」
+
+DeepSeek Harness 的核心是一个**可组合的 agent harness**——它不把能力焊死在一个固定应用里，
+而是让模型、工具、界面、工作流各自成为独立单元，按同一套 contract 组合进同一个运行时。
+这正是 [Cordis](https://github.com/cordiverse/cordis) 的插件思想，也是本仓库存在的理由。
+
+本仓库要做的是同一件事的**另一半**：让这些单元**装得上、装得对、装回来了还能用**。
+
+| | 上游负责 | 本仓库负责 |
+|---|---|---|
+| 关注点 | 能力如何被组合 | 组合件如何被可靠分发 |
+| 产出 | agent、模型、工具、会话、插件系统 | 离线 tarball、兼容矩阵、装前闸门、收录快照 |
+| 失败模式 | —— | 上游更新后，用户装不回当初验证过的那一版 |
+
+因此本仓库不只是「一堆插件包的集合」，而是**围绕兼容性设计的分发层**：
+按 dsh 版本分层、装前跑兼容性闸门、失败自动回滚、**并把验证过的字节固定成不可变快照**。
 
 > **运行时基线：dsh `0.1.6-alpha.1`** —— 这个版本不是随便选的，见
 > [五、运行时版本兼容矩阵](#五运行时版本兼容矩阵)。
-> 仓库内含离线 tarball，可在新机上完整复现。
+> 仓库内含离线 tarball 与[收录快照](./collection/README.md)，可在新机上完整复现。
+
+**内容构成**：部分是自研插件，部分是收集整理的他人开源插件。
+所有插件均为 **MIT** 许可；第三方插件的版权归原作者所有，来源、作者与上游仓库见
+[三、插件来源与许可](#三插件来源与许可)与[收录介绍](./collection/README.md)。
 
 ---
 
@@ -117,6 +153,12 @@ dsh-plugins/
 ├─ 启动-调试环境-3090.cmd            # ★ 双击即起隔离调试环境（3090），不影响日常的 3080
 ├─ CONTRIBUTING.md                  # ★ 插件入库规范（新插件请照此提交）
 ├─ compatibility.json               # ★ 机器可读的版本兼容矩阵，安装脚本据此判定
+├─ collection/                      # ★ 收录快照：固定「验证过的那个字节」，让上游更新后仍装得回来
+│  ├─ README.md                     #   收录介绍（版本 / 作者 / 上游仓库 / 非最新版声明）
+│  ├─ SPEC.md                       #   收录规范（规范性文档，新增收录必须遵守）
+│  ├─ manifest.json                 #   机器可读清单（含 sha256），由脚本生成，禁止手写
+│  ├─ collection-notes.json         #   版本核实结论与收录理由（唯一人工维护的文件）
+│  └─ snapshots/<目录名>/<插件版本>/ #   不可变快照，上游发新版时新增而非覆盖
 ├─ catalog/                         # ★ 插件市场的目录数据
 │  ├─ verified-meta.json            #   已验证层的**展示**元数据（标题 / 简介 / 标签）
 │  └─ curated.json                  #   已审核层：人工审核收录的第三方插件（含审核证据）
@@ -124,11 +166,13 @@ dsh-plugins/
 │  ├─ preflight.mjs                 # 环境预检（只读）：检测 + 判定 + 给出行动方案
 │  ├─ install.mjs                   # 安装执行器（两平台共用同一份逻辑）
 │  ├─ verify.mjs                    # 安装后四步校验（含真实启动）
+│  ├─ build-collection.mjs          # ★ 生成/校验收录快照与 sha256（--check 供 CI）
 │  ├─ dev-env.mjs                   # ★ 开发环境隔离（init/status/doctor/web/install…）
 │  ├─ market-review.mjs             # ★ 市场收录助手：探测候选包 → 产出审核草稿条目
 │  ├─ install.ps1 / install.cmd     # Windows 入口（薄壳）
 │  ├─ install.sh                    # macOS / Linux 入口（薄壳）
 │  └─ dev-env.ps1 / dev-env.cmd / dev-env.sh   # 隔离脚本的薄壳入口
+├─ assets/                          # 文档配图（主题图等，纯矢量）
 ├─ plugins-src/                     # ★ 带源码的插件（本仓库第一个）
 │  └─ dsh-plugins-market/           #   可视化插件市场：src/ + build.mjs + test/ + README
 ├─ plugins/                         # 每个插件一个目录，其下按 dsh 版本分层
@@ -160,8 +204,12 @@ dsh-plugins/
 ```
 
 > **`plugins/<包名>/<dsh 版本>/` 里的那一层是 dsh 运行时版本，不是插件版本。**
-> 含义是「这套 tarball 适配 dsh 的哪个版本」。装哪一套由你机器上的 dsh 版本决定，
+> 含义是「这套 tarball 适配 dsh 的哪个版本」。装哪套由你机器上的 dsh 版本决定，
 > 安装脚本会自动选。
+>
+> **`collection/snapshots/<目录名>/<插件版本>/` 的那一层则是插件版本** ——
+> 它答的是另一个问题：「当时收录的是哪一版」。两者含义相反，是刻意的，详见
+> [`collection/SPEC.md`](./collection/SPEC.md) §2.1。
 
 ---
 
@@ -169,6 +217,9 @@ dsh-plugins/
 
 以各插件 `package.json` 的 `author` / `repository` 字段为准；
 **这两个字段缺失时，以包内 README 声明的上游为准**（下表已逐项核实）。
+
+> **收录版本的权威记录在 [`collection/README.md`](./collection/README.md)**
+> （含逐条的 sha256）—— 下表是总览，那份是**收录当时**的登记。
 
 | 包名 | 版本 | 来源 | 原作者 | 上游仓库 | 许可 |
 |---|---|---|---|---|---|
@@ -358,18 +409,46 @@ node scripts/market-review.mjs <owner/repo | npm 包名>
 
 ---
 
-## 七、贡献
+## 七、收录快照（`collection/`）
+
+插件市场装的是「**收录当时那一版**」。上游发新版后可能撤回旧版、用同一版本号
+重新发布不同内容、或收紧 peer 约束 —— 这些都会让「当时明明能装」的组合突然装不上。
+
+`collection/` 就是为此存在的：**把验证过的那个字节固定下来**，让它能被原样装回去。
+
+| 你能找到什么 | 位置 |
+|---|---|
+| 收录介绍（版本 / 作者 / 上游仓库 / **非最新版声明**） | [`collection/README.md`](./collection/README.md) |
+| **收录规范**（新增收录必须遵守） | [`collection/SPEC.md`](./collection/SPEC.md) |
+| 机器可读清单（含 sha256） | [`collection/manifest.json`](./collection/manifest.json) |
+
+>>> ### ⚠️ 收录的不一定是最新版本
+>>>
+>>> 收录标准是「**在真机上验证过、装得上、跑得起来**」，**不是「追平上游」**。
+>>> 上游最新版可能改了 peer 约束或包结构，反而装不上。
+>>> 旧快照的价值恰恰在于：等上游发新版之后，**这一版还能原样装回去**。
+
+自查：
+
+```bash
+node scripts/build-collection.mjs --check   # 逐个核对 sha256，CI 用
+```
+
+---
+
+## 八、贡献
 
 欢迎参与维护，尤其是以下三类：
 
 1. **补齐新 dsh 版本的适配包** —— 让仓库跟上 dsh 的迭代
-2. **提交新插件** —— 按规范入库
+2. **提交新插件** —— 按规范入库（含**收录快照**，见 [`collection/SPEC.md`](./collection/SPEC.md)）
 3. **修正兼容性信息** —— 发现 `compatibility.json` 或本文档有错，直接提 PR
 
 **完整规范见 [`CONTRIBUTING.md`](./CONTRIBUTING.md)**，含：
 
 - 插件准入条件（必须声明 `dsh.bundle`、必须说明适配的 dsh 版本范围、必须通过真实启动验证）
 - **来源标注义务**（自研 / 第三方 + 原作者 + 上游仓库 + 许可，缺失时如何标注）
+- **收录快照登记**（强制，规则见 [`collection/SPEC.md`](./collection/SPEC.md)）
 - 多版本目录结构与命名规则
 - 打包、入库、提交流程
 - PR 检查清单

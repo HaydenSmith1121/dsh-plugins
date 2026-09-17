@@ -1,0 +1,96 @@
+{
+  "_comment": [
+    "收录说明 —— 这是 collection/ 里**唯一需要人工维护**的文件。",
+    "manifest.json 由 scripts/build-collection.mjs 从事实反推生成，不要手写；",
+    "本文件只放「无法从包内读出来」的信息：收录时的版本核实结论与收录理由。",
+    "",
+    "★ isLatest / latestKnown / latestCheckedAt 三个字段要求你**真的去查过**才填。",
+    "  没查就留 null —— 界面与文档会显示「未核实」。",
+    "  不要凭印象填 true，那会让「收录的不一定是最新版本」这条提示失去意义。",
+    "",
+    "查最新版的方式（选一个，以包内 README 声明的上游为准）：",
+    "  - npm view <包名> version",
+    "  - 打开 upstream 仓库的 releases / tags 页面",
+    "  - 打开 homepage 上的下载页",
+    "",
+    "核实日期填 ISO 日期（YYYY-MM-DD）。"
+  ],
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-17",
+  "reviewer": "HaydenSmith1121",
+  "policy": {
+    "whatIsCollected": "只收录**在本仓库实测过、能装能跑**的那一版，不追新。",
+    "whyNotLatest": "收录的目标是「换个 dsh 版本或等上游发新版之后，这一版还能装回去」，不是镜像上游。上游最新版可能改了 peer 约束、改了包结构，反而装不上。",
+    "upgradePath": "上游发新版且实测通过后，**新增**一套目录（不覆盖旧的），再把 market 的兼容矩阵指向新版本。旧快照永久保留。"
+  },
+  "plugins": {
+    "dsh-plugins-market": {
+      "isLatest": null,
+      "latestKnown": null,
+      "latestCheckedAt": null,
+      "note": "本仓库自研的引导插件。它的 tarball 就是构建产物，每次 build 都会重算 sha256。"
+    },
+    "@dsh-market/plugin": {
+      "isLatest": null,
+      "latestKnown": null,
+      "latestCheckedAt": null,
+      "authorSource": "包内 README 声明的上游（package.json 无 author）",
+      "note": "第三方。该包 package.json 没有 author / repository 字段；作者与上游依据包内 README.md 声明核实，为 2BingLing / 2BingLing/dsh-market。tarball 内未附 LICENSE 正文（package.json 声明 MIT）。"
+    },
+    "dsh-workbuddy-connect": {
+      "isLatest": null,
+      "latestKnown": null,
+      "latestCheckedAt": null,
+      "note": "第三方。peer 声明 ^0.1.5-rc.1，严格 semver 下不含 0.1.6-alpha.1，但 profile 设了 autoInstallPeers: false，实测加载正常。"
+    },
+    "dsh-opencode-go-plus": {
+      "isLatest": null,
+      "latestKnown": null,
+      "latestCheckedAt": null,
+      "note": "自研维护的派生分支，基线 dsh-opencode-go@0.1.2。取代旧的 dsh-opencode-go，两者不能同装。"
+    },
+    "dsh-connect-trae": {
+      "isLatest": null,
+      "latestKnown": null,
+      "latestCheckedAt": null,
+      "note": "第三方。登录态不随包迁移，新机器装完需重新登录。"
+    },
+    "dsh-workbuddy-quota": {
+      "isLatest": null,
+      "latestKnown": null,
+      "latestCheckedAt": null,
+      "note": "自研。包内未附 LICENSE 正文。"
+    },
+    "dsh-receipt": {
+      "isLatest": null,
+      "latestKnown": null,
+      "latestCheckedAt": null,
+      "authorSource": "未注明（已核实 package.json 与包内 README）",
+      "note": "第三方。该包 package.json 有 repository 但无 author 字段，包内 README 也未声明作者，故按 CONTRIBUTING.md 规范标注为「作者未注明」，不猜测。tarball 内附有 LICENSE。"
+    },
+    "dsh-session-cleanup": {
+      "isLatest": null,
+      "latestKnown": null,
+      "latestCheckedAt": null,
+      "note": "自研，带宿主半。"
+    },
+    "dsh-ark-plans": {
+      "isLatest": null,
+      "latestKnown": null,
+      "latestCheckedAt": null,
+      "note": "自研。对 dsh-llm-pi-ai / dsh-credentials 做精确 pin，因此只适配 0.1.6-alpha.1。"
+    },
+    "dsh-memory": {
+      "isLatest": null,
+      "latestKnown": null,
+      "latestCheckedAt": null,
+      "note": "自研，纯宿主半、零包导入。"
+    },
+    "dsh-excel-viewer": {
+      "isLatest": null,
+      "latestKnown": null,
+      "latestCheckedAt": null,
+      "note": "自研客户端渲染器；tarball 内联分发 SheetJS CE 0.20.3（Apache-2.0），归属见包内 THIRD_PARTY_NOTICES.md。"
+    }
+  }
+}

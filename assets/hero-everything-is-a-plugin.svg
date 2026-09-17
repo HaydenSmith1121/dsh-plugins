@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  dsh-plugins 主题图 —— 「万物皆插件」
+
+  立意：harness 是插槽，插件是可组合的单元。
+  中央的六边形是运行时核心，外圈每个模块都是一个可插拔的能力单元，
+  连线表示它们经同一套 contract 组合进同一个运行时。
+
+  纯矢量、无外部资源、跟随深浅色主题（prefers-color-scheme）。
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420"
+     role="img" aria-label="万物皆插件：可插拔的能力单元组合进同一个 DeepSeek Harness 运行时">
+
+  <title>万物皆插件</title>
+  <desc>DeepSeek Harness 插件生态示意图：中央是可组合的运行时核心，外围每一枚插件都是一个独立、可替换的能力单元。</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eef2ff"/>
+    </linearGradient>
+
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#4d6bfe"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#4d6bfe" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.18"/>
+    </linearGradient>
+
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#4d6bfe" flood-opacity="0.18"/>
+    </filter>
+
+    <filter id="coreGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="18" flood-color="#4d6bfe" flood-opacity="0.45"/>
+    </filter>
+
+    <style>
+      .t     { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                            "Hiragino Sans GB", "Microsoft YaHei", sans-serif; }
+      .title { font-size: 40px; font-weight: 800; letter-spacing: 1px; fill: #0f172a; }
+      .sub   { font-size: 17px; font-weight: 400; fill: #475569; }
+      .lbl   { font-size: 14px; font-weight: 600; fill: #1e293b; }
+      .tag   { font-size: 12.5px; font-weight: 600; fill: #4d6bfe; }
+      .code  { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+               font-size: 13px; fill: #64748b; }
+
+      .chip  { fill: #ffffff; stroke: #dbe3f5; stroke-width: 1.2; }
+      .wire  { stroke: url(#edge); stroke-width: 1.4; fill: none; }
+      .ring  { fill: none; stroke: #dbe3f5; stroke-width: 1.2; stroke-dasharray: 4 7; }
+
+      @media (prefers-color-scheme: dark) {
+        .title { fill: #f1f5f9; }
+        .sub   { fill: #94a3b8; }
+        .lbl   { fill: #e2e8f0; }
+        .tag   { fill: #8aa2ff; }
+        .code  { fill: #94a3b8; }
+        .chip  { fill: #111827; stroke: #2b3550; }
+        .ring  { stroke: #2b3550; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="420" fill="url(#bg)"/>
+  <rect width="1200" height="420" fill="none" stroke="#e2e8f5" stroke-width="1"/>
+
+  <!-- 标题 -->
+  <text class="t title" x="72" y="86">万物皆插件</text>
+  <text class="t sub"   x="72" y="120">Everything is a plugin — 能力像积木一样组合，而不是被一个固定应用绑死。</text>
+  <text class="t code"  x="72" y="148">DeepSeek Harness · Cordis plugin composition</text>
+
+  <!-- 拓扑：中心核心 + 外圈插件 -->
+  <g transform="translate(880 218)">
+    <circle class="ring" r="150"/>
+    <circle class="ring" r="104"/>
+
+    <!-- 连线 -->
+    <g class="wire">
+      <path d="M0 0 L -132 -96"/>
+      <path d="M0 0 L -150 34"/>
+      <path d="M0 0 L -74 128"/>
+      <path d="M0 0 L 58 138"/>
+      <path d="M0 0 L 146 60"/>
+      <path d="M0 0 L 128 -74"/>
+      <path d="M0 0 L 6 -150"/>
+    </g>
+
+    <!-- 中央核心 -->
+    <g filter="url(#coreGlow)">
+      <path d="M0 -58 L50 -29 L50 29 L0 58 L-50 29 L-50 -29 Z" fill="url(#core)"/>
+    </g>
+    <path d="M0 -34 L29 -17 L29 17 L0 34 L-29 17 L-29 -17 Z" fill="#ffffff" fill-opacity="0.16"/>
+    <text class="t" x="0" y="6" text-anchor="middle"
+          style="font-size:15px;font-weight:800;fill:#ffffff">dsh</text>
+    <text class="t" x="0" y="24" text-anchor="middle"
+          style="font-size:10px;font-weight:600;fill:#ffffff;fill-opacity:0.85">runtime</text>
+
+    <!-- 外圈插件：统一形态 = 同一个 contract -->
+    <g class="chip" filter="url(#soft)">
+      <rect x="-196" y="-118" width="128" height="44" rx="11"/>
+      <rect x="-214" y="12"   width="128" height="44" rx="11"/>
+      <rect x="-138" y="100"  width="128" height="44" rx="11"/>
+      <rect x="-6"   y="132"  width="128" height="44" rx="11"/>
+      <rect x="82"   y="38"   width="128" height="44" rx="11"/>
+      <rect x="64"   y="-96"  width="128" height="44" rx="11"/>
+      <rect x="-64"  y="-172" width="128" height="44" rx="11"/>
+    </g>
+
+    <!-- 插件标记 -->
+    <g class="tag" text-anchor="middle">
+      <text x="-132" y="-91">模型接入</text>
+      <text x="-150" y="39">工具能力</text>
+      <text x="-74"  y="127">界面视图</text>
+      <text x="58"   y="159">会话管理</text>
+      <text x="146"  y="65">用量统计</text>
+      <text x="128"  y="-69">工作流</text>
+      <text x="0"    y="-145">插件市场</text>
+    </g>
+  </g>
+
+  <!-- 左侧立意说明 -->
+  <g transform="translate(72 196)" class="t">
+    <rect x="0" y="-24" width="4" height="176" rx="2" fill="url(#core)"/>
+
+    <text class="lbl" x="24" y="0">同一套 contract</text>
+    <text class="sub" x="24" y="26" style="font-size:14.5px">每个插件都按同一套规则接入，装在一起也能</text>
+    <text class="sub" x="24" y="48" style="font-size:14.5px">一起工作、互不干扰 —— 像手机应用一样。</text>
+
+    <text class="lbl" x="24" y="86">可组合 · 可替换</text>
+    <text class="sub" x="24" y="112" style="font-size:14.5px">上游能力保持可替换，桌面能力保持可扩展，</text>
+    <text class="sub" x="24" y="134" style="font-size:14.5px">边界由公开接口定义，而不是靠猜内部对象。</text>
+  </g>
+
+</svg>
