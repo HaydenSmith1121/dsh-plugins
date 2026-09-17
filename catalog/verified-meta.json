@@ -56,6 +56,16 @@
       "title": "火山方舟 Agent Plan / Coding Plan",
       "summary": "把火山方舟（Volcengine Ark）的 Agent Plan 与 Coding Plan 两条套餐车道接进 harness。不写协议转换，用官方 llm-pi-ai 适配器补两条 provider profile。API Key 在「设置 → 模型」里填。",
       "tags": ["模型接入", "自研", "需配置 Key"]
+    },
+    "dsh-memory": {
+      "title": "跨会话长期记忆",
+      "summary": "turn 结束自动把会话蒸馏成 markdown 笔记，下次会话按工作区自动召回为提示段。纯宿主半、零包导入，不需要额外配置。",
+      "tags": ["记忆", "自研", "宿主半"]
+    },
+    "dsh-excel-viewer": {
+      "title": "Excel / CSV 表格预览",
+      "summary": "在 harness 内直接打开 xlsx / xlsm / xls / csv / tsv，无需导出到别的软件。纯客户端渲染器，宿主半为空；解析器（SheetJS CE）在构建期内联。",
+      "tags": ["文档预览", "自研", "UI 面板"]
     }
   }
 }
