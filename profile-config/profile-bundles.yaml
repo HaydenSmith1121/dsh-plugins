@@ -1,10 +1,10 @@
 # DeepSeek Harness — web profile plugin manifest (exported snapshot)
 # Source machine: C:\Users\Administrator\.dsh\profiles\web\package.json
-# Exported: see ../plugins/<name>/*.tgz  (7 user-installed plugins as npm tarballs)
+# Exported: see ../plugins/<name>/*.tgz  (8 user-installed plugins as npm tarballs)
 #
 # This records the EXACT bundle layer order dsh boots. Do not reorder:
 # @deepseek-ai/dsh-base and @deepseek-ai/dsh-web-app are in-box bundles shipped
-# with the dsh CLI (not packaged here). The remaining 7 are the user plugins
+# with the dsh CLI (not packaged here). The remaining 8 are the user plugins
 # to install from ../plugins/<name>/ on the new machine.
 
 profile: web
@@ -16,7 +16,7 @@ inBoxBundles:
   - "@deepseek-ai/dsh-web-app"
 
 # User plugins — install order = top-to-bottom. The final dsh.profile.bundles
-# array must list all 9 (in-box + user) in this order:
+# array must list all 10 (in-box + user) in this order:
 userBundles:
   - "@dsh-market/plugin"          # tarball: dsh-market-plugin-0.4.8.tgz
   - "dsh-workbuddy-connect"       # tarball: dsh-workbuddy-connect-0.5.3.tgz
@@ -25,6 +25,7 @@ userBundles:
   - "dsh-workbuddy-quota"         # tarball: dsh-workbuddy-quota-0.2.0.tgz  (self-developed, credits + token usage)
   - "dsh-receipt"                 # tarball: dsh-receipt-0.1.0.tgz
   - "dsh-session-cleanup"         # tarball: dsh-session-cleanup-0.1.0.tgz  (self-developed, real session-log deletion)
+  - "dsh-ark-plans"               # tarball: dsh-ark-plans-0.1.0.tgz  (self-developed, Volcengine Ark Agent Plan + Coding Plan provider routes)
 
 # Final bundles array (in-box first, then user, in the order above):
 finalBundles:
@@ -37,3 +38,4 @@ finalBundles:
   - "dsh-workbuddy-quota"
   - "dsh-receipt"
   - "dsh-session-cleanup"
+  - "dsh-ark-plans"

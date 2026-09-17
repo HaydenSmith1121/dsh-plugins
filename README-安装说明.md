@@ -1,6 +1,6 @@
 # DSH 插件包 — 安装说明
 
-本仓库把 7 个 DeepSeek Harness（dsh）插件打成离线 tarball，连同 web profile 的
+本仓库把 8 个 DeepSeek Harness（dsh）插件打成离线 tarball，连同 web profile 的
 bundle 顺序与 settings 快照，做到**新机可完整复现**。
 
 > 部分插件为自研，部分收集自他人开源项目，来源与许可见
@@ -116,7 +116,7 @@ dsh --version        # 必须显示 0.1.6-alpha.1
 
 ### 版本不对会怎样：整个插件树加载失败
 
-不是「某个插件不能用」，而是 **9 层 bundle 整体加载失败、`dsh web` 完全起不来**：
+不是「某个插件不能用」，而是 **10 层 bundle 整体加载失败、`dsh web` 完全起不来**：
 
 ```none
 Error: dsh: plugin tree failed to load: failed to apply loader entry include (cordis:include):
@@ -170,6 +170,7 @@ pnpm 不会安装 peer 依赖，插件的 `import "@deepseek-ai/dsh-llm"` 只能
 | `dsh-workbuddy-quota` | 仅 cordis / react | ✓ | ✓ |
 | `dsh-receipt` | `cordis@4.0.1`、`dsh-session@0.1.0-rc.6`、`dsh-tools@0.1.0-rc.6` | ✓ | ✓（仅有 peer 警告） |
 | `dsh-session-cleanup` | 仅 cordis / react | ✓ | ✓ |
+| `dsh-ark-plans` | `@deepseek-ai/dsh-llm-pi-ai` / `dsh-credentials` 精确 pin `0.1.6-alpha.1` | ✗ | ✓ |
 
 **→ 整批插件以 `0.1.6-alpha.1` 为运行时基线。**
 
@@ -262,7 +263,7 @@ allowBuilds:
 > ✅ 已实测：dsh **不会覆盖**这个文件，手写的 `allowBuilds` 能长期留存。
 > 也无需 `pnpm approve-builds`（那是交互式的，不适合脚本化）。
 
-### 4) 按顺序安装 7 个插件
+### 4) 按顺序安装 8 个插件
 
 **顺序即 bundle 层级顺序，别乱**（见 `profile-config/profile-bundles.yaml`）：
 
@@ -274,6 +275,7 @@ dsh plugin --profile web add .\plugins\dsh-connect-trae\0.1.6-alpha.1\dsh-connec
 dsh plugin --profile web add .\plugins\dsh-workbuddy-quota\0.1.6-alpha.1\dsh-workbuddy-quota-0.2.0.tgz
 dsh plugin --profile web add .\plugins\dsh-receipt\0.1.6-alpha.1\dsh-receipt-0.1.0.tgz
 dsh plugin --profile web add .\plugins\dsh-session-cleanup\0.1.6-alpha.1\dsh-session-cleanup-0.1.0.tgz
+dsh plugin --profile web add .\plugins\dsh-ark-plans\0.1.6-alpha.1\dsh-ark-plans-0.1.0.tgz
 ```
 
 ```bash
@@ -353,7 +355,7 @@ dsh --profile web --dump-config | grep -n '^# == '
 
 **不要用 `grep bundles`** —— 会返回空，很容易误判成「配置没生效」。
 
-期望看到 9 个 bundle 头，末尾 7 个是用户插件：
+期望看到 10 个 bundle 头，末尾 8 个是用户插件：
 
 ```none
 # == @deepseek-ai/dsh-base        （这个头会重复出现多次，属正常，不是重复装配）
@@ -365,6 +367,7 @@ dsh --profile web --dump-config | grep -n '^# == '
 # == dsh-workbuddy-quota         → - id: workbuddy-quota   name: dsh-workbuddy-quota
 # == dsh-receipt                 → - id: receipt           name: dsh-receipt
 # == dsh-session-cleanup         → - id: session-cleanup   name: dsh-session-cleanup
+# == dsh-ark-plans               → - id: ark-plans         name: dsh-ark-plans
 ```
 
 若某个 bundle 的 `name:` 不是包本名，说明模块 import 失败 →
@@ -532,6 +535,7 @@ dsh plugin --profile web add .\plugins\dsh-opencode-go-plus\0.1.6-alpha.1\dsh-op
 | `dsh-workbuddy-quota` | 0.2.0 | 5 | ✓ | ✓ | **✗** |
 | `dsh-receipt` | 0.1.0 | 16 | ✓ | ✓ | ✓ |
 | `dsh-session-cleanup` | 0.1.0 | 6 | ✓ | ✓ | ✓ |
+| `dsh-ark-plans` | 0.1.0 | 6 | ✓ | ✓ | ✓ |
 
 > `LICENSE` 列标注 **✗** 的两个包，其 `package.json` 里 `license` 字段均为 `MIT`，
 > 但 tarball 内未附许可文件正文。`@dsh-market/plugin` 的上游许可见
