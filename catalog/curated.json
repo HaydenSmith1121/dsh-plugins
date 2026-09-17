@@ -1,0 +1,32 @@
+{
+  "_comment": [
+    "【已审核层 / reviewed】—— 人工审核收录的第三方插件。",
+    "",
+    "这里**只放经过人工审核的条目**。审核流程见 scripts/market-review.mjs 与",
+    "CONTRIBUTING.md 的「插件市场收录」一节。",
+    "",
+    "与另两层的区别：",
+    "  verified  本仓库自带、按 dsh 版本实测过、随仓库分发离线 tarball（自动从 compatibility.json 生成）",
+    "  reviewed  第三方插件，维护者逐项核对后写进这个文件，条目自带审核证据",
+    "  community 公共索引里的全部插件，未经本仓库审核，界面上一律提示风险",
+    "",
+    "★ 收录一条 reviewed 的最低要求（缺一不可）：",
+    "  1. 在一台真机上，用它**声明适配的那个 dsh 版本**实际装进隔离环境（~/.dsh-dev）并启动成功；",
+    "  2. 记录 dsh / node / pnpm 版本、tarball 或 spec、sha256（能算就算）、以及启动输出里的关键行；",
+    "  3. 明确它的 peer 约束是否与本仓库基线兼容，结论写进 peerNote；",
+    "  4. 说清楚它有没有副作用（写全局配置、起后台进程、需要联网/登录/API Key）；",
+    "  5. review.reviewedAt / review.dshVersion / review.verdict 三个字段必须填。",
+    "",
+    "用 scripts/market-review.mjs 可以把上面的探测与核对过程跑成一份草稿条目，",
+    "你只需要复核结论并决定收不收 —— 不要凭印象手写。",
+    "",
+    "review.verdict 取值：",
+    "  ok        实测可用，与本仓库基线兼容",
+    "  ok-with-notes  实测可用，但有需要注意的地方（写进 review.notes）",
+    "  broken    实测不可用 —— 收录它是为了给用户一个明确的「别装」信号"
+  ],
+  "schemaVersion": 1,
+  "reviewedAt": null,
+  "reviewer": null,
+  "plugins": []
+}

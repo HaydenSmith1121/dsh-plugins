@@ -28,8 +28,13 @@
       config    隔离环境的装配树
       shell     打印隔离环境变量
 
-.PARAMETER Home
+.PARAMETER DevHome
     隔离 home 位置，默认 ~/.dsh-dev。
+
+    注意参数名是 DevHome 而不是 Home：PowerShell 的 $HOME 是**只读**自动变量，
+    把参数命名成 $Home 会让整个脚本在参数绑定阶段就抛
+    "Cannot overwrite variable Home because it is read-only or constant" 并以 1 退出。
+    对外暴露的命令行开关仍然是 --home（转交给 dev-env.mjs）。
 
 .PARAMETER Profile
     隔离 profile 名。必须为 web（`dsh web` 是它的硬编码别名），一般不用改。
@@ -61,7 +66,7 @@ param(
     [Parameter(Position = 0)]
     [string]$Command = 'status',
 
-    [string]$Home,
+    [string]$DevHome,
     [string]$Profile,
     [string]$Port,
 
@@ -94,7 +99,7 @@ if (-not (Test-Path -LiteralPath $devEnvJs)) {
 }
 
 $nodeArgs = @($devEnvJs, $Command)
-if ($Home)    { $nodeArgs += @('--home', $Home) }
+if ($DevHome) { $nodeArgs += @('--home', $DevHome) }
 if ($Profile) { $nodeArgs += @('--profile', $Profile) }
 if ($Port)    { $nodeArgs += @('--port', $Port) }
 if ($Rest)    { $nodeArgs += $Rest }

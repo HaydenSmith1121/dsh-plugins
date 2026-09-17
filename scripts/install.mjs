@@ -216,13 +216,30 @@ const allowBuildsSnapshot = ab.text;
 console.log('  ' + dim('[4/5] 安装插件…'));
 
 const runtime = compat.runtimes.find((r) => r.dshVersion === report.dsh.version);
-const plugins = runtime?.plugins ?? [];
-if (!plugins.length) {
+const allPlugins = runtime?.plugins ?? [];
+if (!allPlugins.length) {
   die(`没有找到适配 dsh ${report.dsh.version} 的插件集。请查看 CONTRIBUTING.md 了解如何补充适配。`, 3);
 }
 
-const expectedBundles = compat.inBoxBundles.concat(plugins.map((p) => p.package));
-console.log('  ' + dim(`  顺序即 bundle 层级顺序，共 ${plugins.length} 个：`));
+/**
+ * ★ 只安装「引导插件」= 插件市场本身。
+ *
+ * 本仓库自 2026-09 起，**其余插件一律通过市场面板在 GUI 里点装**，不再走批量安装。
+ * 原因有两个：
+ *   1) 批量装是全有或全无 —— 中间某一个装失败（pnpm 非 0），后面的就都不会进 bundles，
+ *      而失败点往往与用户真正想要的那个插件无关；
+ *   2) 市场在装每个插件前会跑一遍兼容性闸门并支持失败回滚，批量脚本没有这层保护。
+ *
+ * 市场自己必须先被装进来（鸡生蛋），所以这里保留这一条最小引导路径。
+ */
+const BOOTSTRAP_PACKAGE = 'dsh-plugins-market';
+const plugins = allPlugins.filter((p) => p.package === BOOTSTRAP_PACKAGE);
+if (!plugins.length) {
+  die(`兼容矩阵里找不到引导插件 ${BOOTSTRAP_PACKAGE}，无法引导。请检查 compatibility.json。`, 3);
+}
+
+const rest = allPlugins.filter((p) => p.package !== BOOTSTRAP_PACKAGE);
+console.log('  ' + dim(`  本次只安装引导插件 ${BOOTSTRAP_PACKAGE}（其余 ${rest.length} 个请装完后在 GUI 里点装）`));
 
 let failed = [];
 for (let i = 0; i < plugins.length; i++) {
@@ -269,11 +286,16 @@ for (let i = 0; i < plugins.length; i++) {
 
 console.log();
 if (failed.length) {
-  console.log('  ' + yellow('! ') + `${failed.length} 个插件没装成功：${failed.join(', ')}`);
+  console.log('  ' + yellow('! ') + `引导插件没装成功：${failed.join(', ')}`);
   console.log('    ' + dim('提示：只要 pnpm 退出码非 0，dsh 就不会把该包写进 bundles ——'));
   console.log('    ' + dim('即使 node_modules 里已经能看到文件，也当作「没装完」。') + '\n');
 } else {
-  console.log('  ' + green('✓ ') + `${plugins.length}/${plugins.length} 个插件全部安装成功\n`);
+  console.log('  ' + green('✓ ') + `引导插件 ${BOOTSTRAP_PACKAGE} 安装成功\n`);
+  console.log('  ' + bold('接下来：装其余插件请走市场面板，别再手动装。'));
+  console.log('    ' + dim('1. 重启 dsh web（新增的 bundle 是在启动时合成的）'));
+  console.log('    ' + dim('2. 左侧导航栏点「插件市场」'));
+  console.log('    ' + dim(`3. 在「已验证」页里点装需要的插件（共 ${rest.length} 个可选）`));
+  console.log('    ' + dim('市场会在每次安装前跑兼容性闸门，失败会自动回滚。') + '\n');
 }
 
 // ---------------------------------------------------------------- 5. 校验

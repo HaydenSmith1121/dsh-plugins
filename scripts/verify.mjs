@@ -76,11 +76,42 @@ const launcher = report.dsh.launcher;
 const dshHome = process.env.DSH_HOME || path.join(os.homedir(), '.dsh');
 const profileDir = path.join(dshHome, 'profiles', PROFILE);
 const runtime = compat.runtimes.find((r) => r.dshVersion === report.dsh.version) || null;
-const userPlugins = runtime?.plugins?.map((p) => p.package) ?? [];
-// The full expected assembly order: in-box bundles first, then user plugins in
-// the order compatibility.json lists them. Shared by steps ③ and ④ so neither
-// has to hardcode a layer count.
-const expectedBundles = compat.inBoxBundles.concat(userPlugins);
+
+/**
+ * 期望的 bundle 集合。
+ *
+ * 自 2026-09 起，安装方式收敛到市场面板：`install` 脚本只装引导插件（市场本身），
+ * 其余插件由用户在 GUI 里按需点装。所以「期望哪些 bundle」不能再等于
+ * 「兼容矩阵里的全部插件」—— 那样会把「你还没点装」误报成校验失败。
+ *
+ * 现在的定义：内置 bundle + 市场插件（必须存在）+ **profile 里实际装了的**运行时插件。
+ * 这样既能强制要求引导插件到位，又只校验用户真正装过的东西。
+ */
+const BOOTSTRAP_PACKAGE = 'dsh-plugins-market';
+const runtimePackages = new Set((runtime?.plugins ?? []).map((p) => p.package));
+
+let installedUserBundles = [];
+try {
+  const manifest = JSON.parse(fs.readFileSync(path.join(profileDir, 'package.json'), 'utf8'));
+  const deps = new Set(Object.keys(manifest.dependencies ?? {}));
+  installedUserBundles = (manifest.dsh?.profile?.bundles ?? []).filter(
+    (b) => !compat.inBoxBundles.includes(b) && (deps.has(b) || b === BOOTSTRAP_PACKAGE),
+  );
+} catch {
+  installedUserBundles = [];
+}
+
+// 引导插件是硬性要求：没有它，用户就没有任何按需安装的入口
+const userPlugins = [...new Set([
+  ...(runtimePackages.has(BOOTSTRAP_PACKAGE) && installedUserBundles.includes(BOOTSTRAP_PACKAGE) ? [BOOTSTRAP_PACKAGE] : []),
+  ...installedUserBundles,
+])];
+const bootstrapMissing = runtimePackages.has(BOOTSTRAP_PACKAGE) && !installedUserBundles.includes(BOOTSTRAP_PACKAGE);
+
+// The expected assembly order: in-box bundles first, then the user plugins in the
+// order the profile actually lists them. Shared by steps ③ and ④ so neither has
+// to hardcode a layer count.
+const expectedBundles = compat.inBoxBundles.concat(installedUserBundles);
 
 console.log();
 console.log(bold('  dsh-plugins 安装后校验'));
@@ -125,6 +156,14 @@ function record(no, title, pass, detail, hint) {
   const missing = userPlugins.filter((p) => !r.out.includes(p));
   if (r.status !== 0 && !r.out.trim()) {
     record(2, '依赖层', false, red('dsh plugin list 执行失败'), '多半是 pnpm 没找到，先跑 preflight 看看');
+  } else if (bootstrapMissing) {
+    record(
+      2,
+      '依赖层',
+      false,
+      `引导插件 ${red(BOOTSTRAP_PACKAGE)} 没有安装`,
+      '它是按需安装的唯一入口（其余插件都在它的市场面板里点装）。先跑 scripts/install.ps1|cmd|sh。'
+    );
   } else if (missing.length === 0) {
     record(2, '依赖层', true, `期望 ${userPlugins.length} 个，实际全部在列 ✓`);
   } else {

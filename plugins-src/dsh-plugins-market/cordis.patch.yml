@@ -1,0 +1,13 @@
+# dsh-plugins-market bundle patch —— 一行同时服务两个半：
+#   · Loader 按 name 解析出本包，import lib/index.js 作为服务器半；
+#   · ClientModuleRegistry 通过同一个包的 dsh.client + exports["./client"]
+#     找到 lib/client.js，注入 boot 图当作浏览器半。
+#
+# 三个 id 不要混：
+#   - id: 这里是 **loader 行 id**，只用于 patch 定位 / 禁用，可以随便起但必须唯一；
+#   - name: 必须是**真实包名**，它同时是 boot 图行 id 与 __ModuleLoader__.load 的注册键；
+#   - 面板 id "dsh-plugins-market" 在客户端半里，是 sidebar.panellist 的 id 与 main 的 key，
+#     两者必须同名，否则 layout.selectPanel 会抛错。
+- insert:
+    - id: dsh-plugins-market
+      name: 'dsh-plugins-market'

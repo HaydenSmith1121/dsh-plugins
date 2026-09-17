@@ -1,17 +1,24 @@
 @echo off
 REM ============================================================================
-REM  dsh-plugins 开发环境隔离入口（Windows / cmd）
+REM  dsh-plugins dev environment isolation entry point (Windows / cmd)
 REM
-REM  这是 dev-env.ps1 的绕行壳：当 PowerShell 执行策略禁止跑 .ps1 时用它。
-REM  它会以 Bypass 策略拉起 .ps1，其余照旧。
+REM  This is the bypass shell for dev-env.ps1: use it when the PowerShell
+REM  execution policy forbids running .ps1 files. It launches the .ps1 with
+REM  -ExecutionPolicy Bypass and forwards everything else unchanged.
 REM
-REM  用法：
-REM    scripts\dev-env.cmd init              创建隔离环境
-REM    scripts\dev-env.cmd status            两个环境的对比
-REM    scripts\dev-env.cmd doctor            自检隔离是否成立
-REM    scripts\dev-env.cmd web               启动隔离环境（默认 3090）
-REM    scripts\dev-env.cmd install <tgz>     往隔离环境装插件
-REM    scripts\dev-env.cmd --help            完整帮助
+REM  Usage:
+REM    scripts\dev-env.cmd init              create the isolated environment
+REM    scripts\dev-env.cmd status            compare both environments
+REM    scripts\dev-env.cmd doctor            self-check that isolation holds
+REM    scripts\dev-env.cmd web               start the isolated harness (3090)
+REM    scripts\dev-env.cmd install <tgz>     install a plugin into it
+REM    scripts\dev-env.cmd --help            full help
+REM
+REM  NOTE: this file is deliberately ASCII-only.
+REM  cmd.exe reads a .cmd file using the *active console code page* (936/GBK on
+REM  zh-CN Windows), so UTF-8 text in a REM line is decoded byte-wise as GBK and
+REM  can produce fragments that cmd tries to execute as commands. Keep all text
+REM  in this file ASCII. Chinese belongs in dev-env.ps1 (which is UTF-8 BOM).
 REM ============================================================================
 
 setlocal EnableExtensions

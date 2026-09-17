@@ -1,0 +1,57 @@
+{
+  "name": "dsh-plugins-market",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "dsh-plugins 仓库自带的可视化插件市场：本仓库已验证插件 + 人工审核插件 + 公共索引，带装前兼容性闸门与失败自动回滚",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "catalog",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [],
+      "external": []
+    },
+    "market": {
+      "profile": "web"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "market",
+    "cordis"
+  ],
+  "author": "HaydenSmith1121",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaydenSmith1121/dsh-plugins.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node build.mjs --check"
+  }
+}
