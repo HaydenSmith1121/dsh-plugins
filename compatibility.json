@@ -181,8 +181,8 @@
         {
           "dir": "dsh-session-cleanup",
           "package": "dsh-session-cleanup",
-          "version": "0.1.0",
-          "tarball": "plugins/dsh-session-cleanup/0.1.6-alpha.1/dsh-session-cleanup-0.1.0.tgz",
+          "version": "0.1.1",
+          "tarball": "plugins/dsh-session-cleanup/0.1.6-alpha.1/dsh-session-cleanup-0.1.1.tgz",
           "files": 6,
           "origin": "self",
           "author": "HaydenSmith1121",
@@ -192,7 +192,7 @@
           "peerRuntimePin": "@deepseek-ai/cordis ^4.0.2, react ^18.2.0",
           "peerVerdict": "ok",
           "peerNote": "只约束 cordis 与 react，不对 dsh 运行时版本通道设 pin。",
-          "notes": "为设置页的「已归档会话」补上真正删除会话日志的能力（上游只有 archive / unarchive，SessionPersistence 无 delete），因此带宿主半，必须在进程启动时挂载。它通过 cordis.patch.yml 关掉官方只读页 ui-settings-unarchive-sessions，不替换、不修改任何官方包。★ 本包此前已放进 plugins/ 且已装进 web profile，却漏了四处入库登记，本次补齐。"
+          "notes": "为设置页的「已归档会话」补上真正删除会话日志的能力（上游只有 archive / unarchive，SessionPersistence 无 delete），因此带宿主半，必须在进程启动时挂载。它通过 cordis.patch.yml 关掉官方只读页 ui-settings-unarchive-sessions，不替换、不修改任何官方包。★ 本包此前已放进 plugins/ 且已装进 web profile，却漏了四处入库登记，本次补齐。★ 0.1.1 修复：宿主半此前只注入 webServer，却把外层上下文交给 handler，读 ctx.workspaceRegistry 时 Cordis 抛 cannot get property \"workspaceRegistry\" without inject —— 日志删掉了、归档条目却永远清不掉（页面报「已删除 N 个，M 个失败」）。现改为从注入 webServer + workspaceRegistry 的作用域挂载路由，并让客户端在删除成功后重拉会话列表。测试已补断言并做反向验证（改回旧接线时三个测试同时红）。"
         },
         {
           "dir": "dsh-ark-plans",
