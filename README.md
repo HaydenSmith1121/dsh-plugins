@@ -123,6 +123,7 @@ dsh-plugins/
 | `dsh-workbuddy-quota` | 0.2.0 | **本仓库自研** | HaydenSmith1121 | 本仓库 | MIT |
 | `dsh-session-cleanup` | 0.1.2 | **本仓库自研** | HaydenSmith1121 | 本仓库 | MIT |
 | `dsh-ark-plans` | 0.1.0 | **本仓库自研** | HaydenSmith1121 | 本仓库 | MIT |
+| `dsh-memory` | 0.1.0 | **本仓库自研** | HaydenSmith1121 | 本仓库 | MIT |
 | `dsh-opencode-go-plus` | 0.2.1 | **本仓库自研**（派生） | HaydenSmith1121 | 本仓库，派生自 [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go) | MIT |
 | `@dsh-market/plugin` | 0.4.8 | 第三方收集 | **2BingLing** | [2BingLing/dsh-market](https://github.com/2BingLing/dsh-market) | MIT |
 | `dsh-workbuddy-connect` | 0.5.3 | 第三方收集 | corrinehu | [corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect) | MIT |
@@ -168,14 +169,17 @@ dsh-plugins/
 | `plugins/dsh-receipt/` | `dsh-receipt` | 0.1.0 | 0.1.6-alpha.1 | 凭证 / 收据 |
 | `plugins/dsh-session-cleanup/` | `dsh-session-cleanup` | 0.1.2 | 0.1.6-alpha.1 | 已归档会话的真实删除（**带宿主半**） |
 | `plugins/dsh-ark-plans/` | `dsh-ark-plans` | 0.1.0 | 0.1.6-alpha.1 | 火山方舟 **Agent Plan + Coding Plan** 模型接入（**纯组合配置 + 凭据诊断**，无 wire 代码） |
+| `plugins/dsh-memory/` | `dsh-memory` | 0.1.0 | 0.1.6-alpha.1 | **跨会话长期记忆**：turn 结束自动蒸馏成 markdown 笔记，下次会话自动作为提示段召回（**纯宿主半**，零包导入；**带源码**，见 `plugins-src/`） |
 
 **安装顺序**（即 dsh bundle 层级顺序，见 `profile-config/profile-bundles.yaml`）：
 
 ```none
 @dsh-market/plugin → dsh-workbuddy-connect → dsh-opencode-go-plus
 → dsh-connect-trae → dsh-workbuddy-quota → dsh-receipt → dsh-session-cleanup
-→ dsh-ark-plans
+→ dsh-ark-plans → dsh-memory
 ```
+
+> `dsh-memory` 排在最后：普通宿主半插件，不参与任何 patch 覆盖，没有理由插到前面去。
 
 ---
 
@@ -193,6 +197,7 @@ dsh-plugins/
 | `dsh-receipt` | `cordis@4.0.1`、`dsh-session@0.1.0-rc.6`、`dsh-tools@0.1.0-rc.6` | ✓ | ✓（仅 peer 警告） |
 | `dsh-session-cleanup` | 仅 cordis / react | ✓ | ✓ |
 | `dsh-ark-plans` | `@deepseek-ai/dsh-llm-pi-ai` / `dsh-credentials` 精确 pin `0.1.6-alpha.1` | ✗ | ✓ |
+| `dsh-memory` | 仅 cordis（宿主半零包导入） | ✓ | ✓ |
 
 **→ 整批插件以 `0.1.6-alpha.1` 为基线。**
 
@@ -286,6 +291,7 @@ dsh-plugins/
 | `dsh-receipt` | 0.1.0 | 16 | ✓ | ✓ | ✓ |
 | `dsh-session-cleanup` | 0.1.2 | 6 | ✓ | ✓ | ✓ |
 | `dsh-ark-plans` | 0.1.0 | 6 | ✓ | ✓ | ✓ |
+| `dsh-memory` | 0.1.0 | 6 | ✓ | ✓ | ✓ |
 
 自查命令：
 

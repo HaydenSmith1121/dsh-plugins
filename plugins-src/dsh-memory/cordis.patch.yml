@@ -1,0 +1,12 @@
+# Register the session-memory bundle.
+#
+# One row, host plane, no configuration: the plugin reads its knobs from `DSH_MEMORY_*`
+# environment variables instead of a config schema, which keeps its import surface at
+# `node:` builtins only — a harness release that moves a plugin API cannot make this
+# module fail to import and take the whole plugin tree down with it.
+#
+# The row id, the package name and the Cordis plugin name are deliberately the same
+# string, so a log line, a patch entry and a `dsh plugin list` row all name one thing.
+- insert:
+    - id: dsh-memory
+      name: dsh-memory
