@@ -1,91 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  dsh-plugins 主题图 —— 「万物皆插件」
+  dsh-plugins 主题图 —— 「万物皆插件」（深色科技感版）
 
   立意：harness 是插槽，插件是可组合的单元。
   中央的六边形是运行时核心，外圈每个模块都是一个可插拔的能力单元，
   连线表示它们经同一套 contract 组合进同一个运行时。
 
-  纯矢量、无外部资源、跟随深浅色主题（prefers-color-scheme）。
+  纯矢量、无外部资源、深色底，在 GitHub 浅色 / 深色主题下均保持一致观感。
 -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420"
-     role="img" aria-label="万物皆插件：可插拔的能力单元组合进同一个 DeepSeek Harness 运行时">
+     role="img" aria-label="万物皆插件：可插拔的能力单元经同一套 contract 组合进同一个 DeepSeek Harness 运行时">
 
-  <title>万物皆插件</title>
-  <desc>DeepSeek Harness 插件生态示意图：中央是可组合的运行时核心，外围每一枚插件都是一个独立、可替换的能力单元。</desc>
+  <title>dsh-plugins · 万物皆插件</title>
+  <desc>DeepSeek Harness 插件分发层示意图：中央是可组合的运行时核心，外围每一枚插件都是独立、可替换的能力单元，经同一套 contract 接入。</desc>
 
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%"   stop-color="#f8fafc"/>
-      <stop offset="100%" stop-color="#eef2ff"/>
+      <stop offset="0%"   stop-color="#070B16"/>
+      <stop offset="55%"  stop-color="#0B1226"/>
+      <stop offset="100%" stop-color="#101A38"/>
     </linearGradient>
+
+    <radialGradient id="glowBlue" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#4D6BFE" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#4D6BFE" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowViolet" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#8B5CF6" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
 
     <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%"   stop-color="#4d6bfe"/>
-      <stop offset="100%" stop-color="#7c3aed"/>
+      <stop offset="0%"   stop-color="#4D6BFE"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
     </linearGradient>
 
-    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#4d6bfe" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.18"/>
+    <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#4D6BFE" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.30"/>
     </linearGradient>
 
-    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#4d6bfe" flood-opacity="0.18"/>
+    <filter id="coreGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#4D6BFE" flood-opacity="0.55"/>
     </filter>
 
-    <filter id="coreGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feDropShadow dx="0" dy="0" stdDeviation="18" flood-color="#4d6bfe" flood-opacity="0.45"/>
+    <filter id="chipGlow" x="-30%" y="-40%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.45"/>
     </filter>
+
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#1B2748"/>
+    </pattern>
 
     <style>
       .t     { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
                             "Hiragino Sans GB", "Microsoft YaHei", sans-serif; }
-      .title { font-size: 40px; font-weight: 800; letter-spacing: 1px; fill: #0f172a; }
-      .sub   { font-size: 17px; font-weight: 400; fill: #475569; }
-      .lbl   { font-size: 14px; font-weight: 600; fill: #1e293b; }
-      .tag   { font-size: 12.5px; font-weight: 600; fill: #4d6bfe; }
-      .code  { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-               font-size: 13px; fill: #64748b; }
-
-      .chip  { fill: #ffffff; stroke: #dbe3f5; stroke-width: 1.2; }
-      .wire  { stroke: url(#edge); stroke-width: 1.4; fill: none; }
-      .ring  { fill: none; stroke: #dbe3f5; stroke-width: 1.2; stroke-dasharray: 4 7; }
-
-      @media (prefers-color-scheme: dark) {
-        .title { fill: #f1f5f9; }
-        .sub   { fill: #94a3b8; }
-        .lbl   { fill: #e2e8f0; }
-        .tag   { fill: #8aa2ff; }
-        .code  { fill: #94a3b8; }
-        .chip  { fill: #111827; stroke: #2b3550; }
-        .ring  { stroke: #2b3550; }
-      }
+      .mono  { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 3.5px; fill: #5B7CFF; }
+      .title { font-size: 54px; font-weight: 800; letter-spacing: 2px; fill: #F1F5F9; }
+      .en    { font-size: 19px; font-weight: 400; fill: #94A3B8; }
+      .zh    { font-size: 15px; font-weight: 400; fill: #64748B; }
+      .foot  { font-size: 12.5px; letter-spacing: 1px; fill: #475569; }
+      .chip  { fill: #0E1730; stroke: #26345C; stroke-width: 1.2; }
+      .chiptext { font-size: 13px; font-weight: 600; fill: #E2E8F0; }
+      .pill  { fill: #0E1730; stroke: #26345C; stroke-width: 1.1; }
+      .pilltext { font-size: 14px; font-weight: 600; fill: #CBD5E1; }
+      .wirel { stroke: url(#wire); stroke-width: 1.4; fill: none; }
+      .ring  { fill: none; stroke: #1E2A4A; stroke-width: 1.2; stroke-dasharray: 4 7; }
     </style>
   </defs>
 
+  <!-- 背景 -->
   <rect width="1200" height="420" fill="url(#bg)"/>
-  <rect width="1200" height="420" fill="none" stroke="#e2e8f5" stroke-width="1"/>
+  <rect width="1200" height="420" fill="url(#dots)" opacity="0.55"/>
+  <circle cx="150" cy="40"  r="280" fill="url(#glowBlue)"/>
+  <circle cx="1130" cy="400" r="320" fill="url(#glowViolet)"/>
+  <rect x="0.5" y="0.5" width="1199" height="419" fill="none" stroke="#16203C" stroke-width="1"/>
 
-  <!-- 标题 -->
-  <text class="t title" x="72" y="86">万物皆插件</text>
-  <text class="t sub"   x="72" y="120">Everything is a plugin — 能力像积木一样组合，而不是被一个固定应用绑死。</text>
-  <text class="t code"  x="72" y="148">DeepSeek Harness · Cordis plugin composition</text>
+  <!-- 左侧：标题区 -->
+  <g class="t">
+    <text class="eyebrow" x="72" y="88">DEEPSEEK HARNESS · PLUGIN REGISTRY</text>
+    <text class="title" x="72" y="150">万物皆插件</text>
+    <text class="en" x="72" y="188">Everything is a plugin — compose the harness like building blocks.</text>
+    <text class="zh" x="72" y="216">模型、工具、界面、工作流，经同一套 contract 组合进同一个运行时。</text>
 
-  <!-- 拓扑：中心核心 + 外圈插件 -->
-  <g transform="translate(880 218)">
+    <!-- 三枚特性 pill -->
+    <g>
+      <rect class="pill" x="72"  y="248" width="104" height="32" rx="16"/>
+      <circle cx="88"  cy="264" r="3" fill="#4D6BFE"/>
+      <text class="pilltext" x="98"  y="269">离线分发</text>
+
+      <rect class="pill" x="188" y="248" width="104" height="32" rx="16"/>
+      <circle cx="204" cy="264" r="3" fill="#8B5CF6"/>
+      <text class="pilltext" x="214" y="269">装前闸门</text>
+
+      <rect class="pill" x="304" y="248" width="104" height="32" rx="16"/>
+      <circle cx="320" cy="264" r="3" fill="#22D3EE"/>
+      <text class="pilltext" x="330" y="269">收录快照</text>
+    </g>
+
+    <text class="mono foot" x="72" y="336">same contract · composable · reproducible</text>
+  </g>
+
+  <!-- 右侧：拓扑（中心核心 + 外圈插件） -->
+  <g transform="translate(880 210)">
     <circle class="ring" r="150"/>
     <circle class="ring" r="104"/>
 
-    <!-- 连线 -->
-    <g class="wire">
+    <!-- 连线：同一套 contract -->
+    <g class="wirel">
       <path d="M0 0 L -132 -96"/>
       <path d="M0 0 L -150 34"/>
       <path d="M0 0 L -74 128"/>
       <path d="M0 0 L 58 138"/>
       <path d="M0 0 L 146 60"/>
       <path d="M0 0 L 128 -74"/>
-      <path d="M0 0 L 6 -150"/>
+      <path d="M0 0 L 0 -150"/>
     </g>
 
     <!-- 中央核心 -->
@@ -98,19 +129,30 @@
     <text class="t" x="0" y="24" text-anchor="middle"
           style="font-size:10px;font-weight:600;fill:#ffffff;fill-opacity:0.85">runtime</text>
 
-    <!-- 外圈插件：统一形态 = 同一个 contract -->
-    <g class="chip" filter="url(#soft)">
-      <rect x="-196" y="-118" width="128" height="44" rx="11"/>
-      <rect x="-214" y="12"   width="128" height="44" rx="11"/>
-      <rect x="-138" y="100"  width="128" height="44" rx="11"/>
-      <rect x="-6"   y="132"  width="128" height="44" rx="11"/>
-      <rect x="82"   y="38"   width="128" height="44" rx="11"/>
-      <rect x="64"   y="-96"  width="128" height="44" rx="11"/>
-      <rect x="-64"  y="-172" width="128" height="44" rx="11"/>
+    <!-- 外圈插件 chip：统一形态 = 同一个 contract -->
+    <g filter="url(#chipGlow)">
+      <rect class="chip" x="-196" y="-118" width="128" height="44" rx="11"/>
+      <rect class="chip" x="-214" y="12"   width="128" height="44" rx="11"/>
+      <rect class="chip" x="-138" y="100"  width="128" height="44" rx="11"/>
+      <rect class="chip" x="-6"   y="132"  width="128" height="44" rx="11"/>
+      <rect class="chip" x="82"   y="38"   width="128" height="44" rx="11"/>
+      <rect class="chip" x="64"   y="-96"  width="128" height="44" rx="11"/>
+      <rect class="chip" x="-64"  y="-172" width="128" height="44" rx="11"/>
+    </g>
+
+    <!-- chip 状态点 -->
+    <g>
+      <circle cx="-180" cy="-96"  r="3" fill="#4D6BFE"/>
+      <circle cx="-198" cy="34"   r="3" fill="#8B5CF6"/>
+      <circle cx="-122" cy="122"  r="3" fill="#22D3EE"/>
+      <circle cx="10"   cy="154"  r="3" fill="#4D6BFE"/>
+      <circle cx="98"   cy="60"   r="3" fill="#8B5CF6"/>
+      <circle cx="80"   cy="-74"  r="3" fill="#22D3EE"/>
+      <circle cx="-48"  cy="-150" r="3" fill="#34D399"/>
     </g>
 
     <!-- 插件标记 -->
-    <g class="tag" text-anchor="middle">
+    <g class="t chiptext" text-anchor="middle">
       <text x="-132" y="-91">模型接入</text>
       <text x="-150" y="39">工具能力</text>
       <text x="-74"  y="127">界面视图</text>
@@ -119,19 +161,9 @@
       <text x="128"  y="-69">工作流</text>
       <text x="0"    y="-145">插件市场</text>
     </g>
-  </g>
 
-  <!-- 左侧立意说明 -->
-  <g transform="translate(72 196)" class="t">
-    <rect x="0" y="-24" width="4" height="176" rx="2" fill="url(#core)"/>
-
-    <text class="lbl" x="24" y="0">同一套 contract</text>
-    <text class="sub" x="24" y="26" style="font-size:14.5px">每个插件都按同一套规则接入，装在一起也能</text>
-    <text class="sub" x="24" y="48" style="font-size:14.5px">一起工作、互不干扰 —— 像手机应用一样。</text>
-
-    <text class="lbl" x="24" y="86">可组合 · 可替换</text>
-    <text class="sub" x="24" y="112" style="font-size:14.5px">上游能力保持可替换，桌面能力保持可扩展，</text>
-    <text class="sub" x="24" y="134" style="font-size:14.5px">边界由公开接口定义，而不是靠猜内部对象。</text>
+    <text class="mono" x="0" y="182" text-anchor="middle"
+          style="font-size:11px;letter-spacing:1px;fill:#3E4C74">wired by one contract</text>
   </g>
 
 </svg>

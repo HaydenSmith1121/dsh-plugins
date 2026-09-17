@@ -1,36 +1,36 @@
-<h1 align="center">dsh-plugins</h1>
-
 <p align="center">
-  <strong>万物皆插件 —— 让 DeepSeek Harness 的能力像积木一样组合。</strong>
+  <img src="assets/hero-everything-is-a-plugin.svg" alt="万物皆插件 — Everything is a plugin：模型、工具、界面、工作流经同一套 contract 组合进同一个 DeepSeek Harness 运行时" width="100%">
 </p>
 
 <p align="center">
-  模型、工具、界面、工作流，都可以是一个插件；<br>
-  插件之间遵循同一套 contract，装在一起也能一起工作、互不干扰。
+  <a href="https://github.com/deepseek-ai/deepseek-harness"><img src="https://img.shields.io/badge/Upstream-DeepSeek_Harness-4D6BFE?style=flat-square" alt="Upstream: DeepSeek Harness"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-2EA44F?style=flat-square" alt="License: MIT"></a>
+  <img src="https://img.shields.io/badge/Baseline-dsh_0.1.6--alpha.1-8B5CF6?style=flat-square" alt="Runtime baseline: dsh 0.1.6-alpha.1">
+  <img src="https://img.shields.io/badge/Plugins-11-0EA5E9?style=flat-square" alt="11 plugins">
 </p>
 
 <p align="center">
-  <img src="assets/hero-everything-is-a-plugin.svg" alt="万物皆插件：可插拔的能力单元经同一套 contract 组合进同一个 DeepSeek Harness 运行时" width="100%">
+  <strong>万物皆插件</strong> —— 自研 + 精选的 DeepSeek Harness 插件分发层：离线 tarball · 装前兼容闸门 · 不可变收录快照<br>
+  <sub>A curated distribution layer for DeepSeek Harness — offline tarballs, pre-install compatibility gates, immutable snapshots.</sub>
 </p>
 
 <p align="center">
-  <a href="https://github.com/deepseek-ai/deepseek-harness"><img src="https://img.shields.io/badge/upstream-DeepSeek%20Harness-4D6BFE?style=flat" alt="Upstream: DeepSeek Harness"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2EA44F?style=flat" alt="MIT License"></a>
-  <img src="https://img.shields.io/badge/dsh-0.1.6--alpha.1-4D6BFE?style=flat" alt="Runtime baseline: dsh 0.1.6-alpha.1">
-  <img src="https://img.shields.io/badge/plugins-11-08C?style=flat" alt="11 plugins">
-</p>
-
-<p align="center">
-  <a href="#一30-秒开始">30 秒开始</a> ·
-  <a href="#二安装教程">安装教程</a> ·
-  <a href="#三文档地图">文档地图</a> ·
-  <a href="#四插件清单">插件清单</a> ·
-  <a href="#五贡献">贡献</a>
+  <a href="#quickstart">🚀 快速开始</a> ·
+  <a href="#install">📖 安装教程</a> ·
+  <a href="#docs">🗺️ 文档地图</a> ·
+  <a href="#plugins">🧩 插件清单</a> ·
+  <a href="#contributing">🤝 贡献</a> ·
+  <a href="#license">⚖️ 许可</a>
 </p>
 
 ---
 
-## 立意：为什么「万物皆插件」
+<a name="why"></a>
+
+## 💡 立意 · Why
+
+> **模型、工具、界面、工作流，都可以是一个插件。**
+> 插件之间遵循同一套 contract，装在一起也能一起工作、互不干扰。
 
 DeepSeek Harness 的核心是一个**可组合的 agent harness**——它不把能力焊死在一个固定应用里，
 而是让模型、工具、界面、工作流各自成为独立单元，按同一套 contract 组合进同一个运行时。
@@ -40,9 +40,9 @@ DeepSeek Harness 的核心是一个**可组合的 agent harness**——它不把
 
 | | 上游负责 | 本仓库负责 |
 |---|---|---|
-| 关注点 | 能力如何被组合 | 组合件如何被可靠分发 |
-| 产出 | agent、模型、工具、会话、插件系统 | 离线 tarball、兼容矩阵、装前闸门、收录快照 |
-| 失败模式 | —— | 上游更新后，用户装不回当初验证过的那一版 |
+| **关注点** | 能力如何被组合 | 组合件如何被可靠分发 |
+| **产出** | agent、模型、工具、会话、插件系统 | 离线 tarball、兼容矩阵、装前闸门、收录快照 |
+| **失败模式** | —— | 上游更新后，用户装不回当初验证过的那一版 |
 
 因此本仓库不只是「一堆插件包的集合」，而是**围绕兼容性设计的分发层**：
 按 dsh 版本分层、装前跑兼容性闸门、失败自动回滚、**并把验证过的字节固定成不可变快照**。
@@ -53,13 +53,16 @@ DeepSeek Harness 的核心是一个**可组合的 agent harness**——它不把
 
 **内容构成**：部分是自研插件，部分是收集整理的他人开源插件。
 所有插件均为 **MIT** 许可；第三方插件的版权归原作者所有，来源、作者与上游仓库见
-[插件清单](#四插件清单)与[收录介绍](./collection/README.md)。
+[插件清单](#plugins)与[收录介绍](./collection/README.md)。
 
 ---
 
-## 一、30 秒开始
+<a name="quickstart"></a>
+<a name="一30-秒开始"></a>
 
-**唯一安装路径：GUI 里的「插件市场」面板。**
+## 🚀 快速开始 · Quick Start
+
+**唯一安装路径：GUI 里的「插件市场」面板。** 前置只有一个：**Node ≥ 22.19**。
 
 > ### ⚠️ 只有一种安装方式
 >
@@ -67,14 +70,14 @@ DeepSeek Harness 的核心是一个**可组合的 agent harness**——它不把
 > 市场在每次安装前会跑兼容性闸门（环境 / profile / 候选包三层），致命项硬拦截，
 > 失败自动回滚 —— 这是批量安装脚本给不了的保护。
 
-前置只有一个：**Node ≥ 22.19**。
+**① Clone 仓库**
 
 ```bash
 git clone https://github.com/HaydenSmith1121/dsh-plugins
 cd dsh-plugins
 ```
 
-### 第 1 步：装引导插件（唯一需要命令行的安装）
+**② 装引导插件** —— 唯一需要命令行的安装：只装 `dsh-plugins-market` 这一个引导插件，并做四步校验。
 
 | 平台 | 命令 |
 |---|---|
@@ -82,14 +85,9 @@ cd dsh-plugins
 | Windows（PowerShell 里） | `.\scripts\install.ps1` |
 | macOS / Linux | `./scripts/install.sh` |
 
-只装 `dsh-plugins-market` 这一个引导插件，并做四步校验。
-不改动任何东西、只看体检结果：
+不改动任何东西、只看体检结果：`.\scripts\install.ps1 -PreflightOnly`
 
-```powershell
-.\scripts\install.ps1 -PreflightOnly
-```
-
-### 第 2 步：在面板里点装其余插件
+**③ 面板点装其余插件**
 
 ```bash
 dsh web
@@ -97,13 +95,13 @@ dsh web
 
 左侧导航栏 →「插件市场」→「已验证」页签 → 挑插件点「安装」→ **再重启一次**。
 
-装完想确认装对了，跑一次四步校验（含真实启动）：
+**④ 校验** —— 装完想确认装对了，跑一次四步校验（含真实启动）：
 
 ```bash
 node scripts/verify.mjs
 ```
 
-遇到报错先别慌 —— 常见故障按层次对号入座：
+**遇到报错先别慌** —— 常见故障按层次对号入座：
 
 | 症状 | 去看 |
 |---|---|
@@ -114,10 +112,15 @@ node scripts/verify.mjs
 
 ---
 
-## 二、安装教程
+<a name="install"></a>
+
+## 📖 安装教程 · Install Guide
 
 **全文：[`README-安装说明.md`](./README-安装说明.md)** —— 唯一的安装文档，自包含。
 每一步都把「容易出错的地方」写成了预防措施和自检项，照着走就不会遇到那些问题。
+
+<details>
+<summary><strong>📑 章节速查</strong>（11 章 + 附录，点开定位）</summary>
 
 | 章节 | 内容 | 什么时候看 |
 |---|---|---|
@@ -133,6 +136,8 @@ node scripts/verify.mjs
 | [十、`dsh-opencode-go-plus` 的来历](./README-安装说明.md#十关于-dsh-opencode-go-plus-的来历改造与共存禁忌) | 派生来源、共存禁忌 | 用到这个插件 |
 | [附录：tarball 校验信息](./README-安装说明.md#附录tarball-校验信息) | 每个 tarball 的内容自检 | 核对分发内容 |
 
+</details>
+
 > **要开发插件？先隔离环境。** 别直接在默认的 `~/.dsh` 上改 ——
 > `dsh web` 不能起两次，第二个进程会抢端口，插件树改坏则整个 harness 起不来。
 > 仓库自带隔离脚手架，完整说明见 [`README-开发环境隔离.md`](./README-开发环境隔离.md)：
@@ -144,29 +149,34 @@ node scripts/verify.mjs
 
 ---
 
-## 三、文档地图
+<a name="docs"></a>
+
+## 🗺️ 文档地图 · Docs
 
 首页只留「装什么、去哪看」。深度内容各自独立成篇，需要时再点进去。
 
-| 想看什么 | 去哪里 |
-|---|---|
-| **装插件** | [`README-安装说明.md`](./README-安装说明.md) |
-| **开发插件时隔离环境** | [`README-开发环境隔离.md`](./README-开发环境隔离.md) |
-| **仓库里都有什么文件、怎么分层** | [`docs/目录结构.md`](./docs/目录结构.md) |
-| **每个 dsh 版本支持到什么程度** | [`docs/版本兼容矩阵.md`](./docs/版本兼容矩阵.md) |
-| **兼容策略、注意事项、踩过的坑** | [`docs/注意事项.md`](./docs/注意事项.md) |
-| **收录说明：什么是收录快照、收录的是哪一版** | [`docs/收录说明.md`](./docs/收录说明.md) |
-| **收录规范**（新增收录必须遵守，规范性文档） | [`collection/SPEC.md`](./collection/SPEC.md) |
-| **收录快照目录本身** | [`collection/README.md`](./collection/README.md) |
-| **插件清单 / 来源 / 许可 / tarball 校验** | [`docs/插件清单与来源.md`](./docs/插件清单与来源.md) |
-| **插件市场的三层目录与安全模型** | [`plugins-src/dsh-plugins-market/README.md`](./plugins-src/dsh-plugins-market/README.md) |
-| **怎么贡献、入库规范** | [`CONTRIBUTING.md`](./CONTRIBUTING.md) |
+| 分类 | 想看什么 | 去哪里 |
+|---|---|---|
+| **安装** | 装插件（唯一的安装文档） | [`README-安装说明.md`](./README-安装说明.md) |
+| | 开发插件时隔离环境 | [`README-开发环境隔离.md`](./README-开发环境隔离.md) |
+| **兼容** | 每个 dsh 版本支持到什么程度 | [`docs/版本兼容矩阵.md`](./docs/版本兼容矩阵.md) |
+| | 兼容策略、注意事项、踩过的坑 | [`docs/注意事项.md`](./docs/注意事项.md) |
+| **仓库** | 仓库里都有什么文件、怎么分层 | [`docs/目录结构.md`](./docs/目录结构.md) |
+| | 插件清单 / 来源 / 许可 / tarball 校验 | [`docs/插件清单与来源.md`](./docs/插件清单与来源.md) |
+| **收录** | 什么是收录快照、收录的是哪一版 | [`docs/收录说明.md`](./docs/收录说明.md) |
+| | 收录规范（新增收录必须遵守，规范性文档） | [`collection/SPEC.md`](./collection/SPEC.md) |
+| | 收录快照目录本身 | [`collection/README.md`](./collection/README.md) |
+| **市场** | 插件市场的三层目录与安全模型 | [`plugins-src/dsh-plugins-market/README.md`](./plugins-src/dsh-plugins-market/README.md) |
+| **贡献** | 怎么贡献、入库规范 | [`CONTRIBUTING.md`](./CONTRIBUTING.md) |
 
 ---
 
-## 四、插件清单
+<a name="plugins"></a>
 
-**共 11 个插件**：自研 7 / 第三方 4，全部以 dsh `0.1.6-alpha.1` 为运行时基线。
+## 🧩 插件清单 · Plugins
+
+**共 11 个插件**：自研 7 / 第三方 4，全部以 dsh `0.1.6-alpha.1` 为运行时基线，
+**全部从「插件市场」面板里点装**。
 
 | 插件 | 作用 | 来源 |
 |---|---|---|
@@ -185,12 +195,14 @@ node scripts/verify.mjs
 **版本号、原作者、上游仓库、许可、bundle 顺序、tarball 校验信息** →
 [`docs/插件清单与来源.md`](./docs/插件清单与来源.md)。
 
-> 上表里的插件**都从「插件市场」面板里点装**，命令行脚本只负责装引导插件 `dsh-plugins-market`。
+> 命令行脚本只负责装引导插件 `dsh-plugins-market`。
 > 市场的三层目录里，「已验证」层用仓内离线 tarball，装前检查全绿才放行。
 
 ---
 
-## 五、贡献
+<a name="contributing"></a>
+
+## 🤝 贡献 · Contributing
 
 **欢迎一起参与。** 这个仓库是分发层，所以「贡献」比一般开源项目宽得多 ——
 **你不需要从零写一个插件也能帮上忙。**
@@ -214,10 +226,18 @@ node scripts/verify.mjs
 
 ---
 
-## 许可
+<a name="license"></a>
+
+## ⚖️ 许可 · License
 
 - 本仓库**自身的**代码与文档：MIT
 - **第三方插件版权归各自原作者所有**。本仓库仅做离线打包与索引，
   不修改其许可声明，也不在其之上再声明版权
 - 如你是某个插件的原作者，希望本仓库移除或调整收录方式，
   请开 Issue 或直接联系，我们会立即处理
+
+---
+
+<p align="center">
+  <sub>万物皆插件 · Everything is a plugin — 如果这个仓库帮到了你，欢迎 ⭐ Star；有问题开 Issue 交流。</sub>
+</p>
