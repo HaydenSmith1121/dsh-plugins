@@ -108,12 +108,19 @@ jobs:
       - name: 产物必须已提交，且内容一致
         run: |
           set -euo pipefail
-          # build.mjs 是确定性的：同样的输入必得同样的字节（归档里的 mtime 是固定值，
-          # 不是 Date.now()）。所以只要它跑完 git 里有 diff，
-          # 就说明「源码改了但没重新构建并提交」。
+          # build.mjs 是确定性的：同样的输入必得同样的字节（归档里的 mtime 是固定值、
+          # gzip 头由我们自己写死，见 build.mjs 的 gzipDeterministic）。
+          # 所以只要它跑完 git 里有 diff，就说明「源码改了但没重新构建并提交」。
           if ! git diff --quiet -- plugins/ ; then
             echo "::error::plugins/ 下的 tarball 与当前源码不一致 —— 请本地跑一次 node plugins-src/dsh-plugins-market/build.mjs 并提交产物。"
             git --no-pager diff --stat -- plugins/
+            # ★ 顺手把「该往哪儿看」也印出来。两种形态的成因完全不同：
+            #   · 前后字节数不同      → 包里的内容真的变了（十有八九是忘了重新构建）
+            #   · 前后字节数相同      → 同长不同内容，去看压缩器/平台相关的那部分，
+            #                            不要先翻源码（实测在这上面浪费过一轮 CI）
+            echo '--- 判定提示 ---'
+            echo '若上面显示 "Bin N -> N bytes"（同长），差异几乎一定不在源码内容里，'
+            echo '而在归档容器/压缩器的平台相关字节上（历史事故：zlib 的 gzip 头 OS 字段）。'
             exit 1
           fi
           echo "产物与源码一致。"

@@ -427,6 +427,42 @@ if (!CHECK_ONLY) {
 }
 
 // ─────────────────────────────────────────────────────────────
+// 确定性的 gzip 容器
+// ─────────────────────────────────────────────────────────────
+//
+// ★ gzip 头自己写，不用 `zlib.gzipSync`。
+//
+//   原因只有一条，但代价很大：zlib 往 gzip 头的第 9 字节写的是**编译期**确定的 OS 码
+//   —— Windows 上 0x0a、Linux 上 0x03，第 8 字节还会按档位写 XFL。于是同一份源码
+//   在 Windows 与 Linux 上构建出来的 tarball **长度一模一样、内容差两个字节**，
+//   sha256 自然不同。
+//
+//   实测代价（真发生过）：本地 Windows 构建并提交 → CI（ubuntu）跑
+//   「产物必须已提交，且内容一致」，报「源码改了没重新构建」，
+//   而源码一个字节都没改。CI 的 diff 长这样：`Bin 147047 -> 147047 bytes` ——
+//   同长不同内容，正是这两个字节。看的人会先去翻源码，翻到最后才发现是压缩器的头。
+//
+//   接管容器的收益不只是「少两个字节」：MTIME 也一起钉成 0，
+//   OS 写 255 = unknown（RFC 1952 就是为「与平台无关」留的这个取值）。
+//   压缩体仍旧交给 `zlib.deflateRawSync` —— 那才是真正干活的部分，
+//   各平台的 deflate 实现一致（实测：Node 22.19 与 24.14 逐字节相同）。
+function gzipDeterministic(buf) {
+  const raw = zlib.deflateRawSync(buf, { level: 9 });
+  const head = Buffer.from([
+    0x1f, 0x8b,             // magic
+    0x08,                   // CM = deflate
+    0x00,                   // FLG = 0（无额外字段、无文件名、无注释）
+    0x00, 0x00, 0x00, 0x00, // MTIME = 0（不把构建时刻写进产物，理由同 MTIME 那一节）
+    0x00,                   // XFL = 0（不声明档位：那是本实现的细节，写死反而更难对齐）
+    0xff,                   // OS = 255 = unknown —— 跨平台构建必须是这个值
+  ]);
+  const trailer = Buffer.alloc(8);
+  trailer.writeUInt32LE(zlib.crc32(buf), 0);      // CRC32（Node ≥ 22.2 自带）
+  trailer.writeUInt32LE(buf.length >>> 0, 4);     // ISIZE
+  return Buffer.concat([head, raw, trailer]);
+}
+
+// ─────────────────────────────────────────────────────────────
 // [4] 打包 tarball
 // ─────────────────────────────────────────────────────────────
 
@@ -458,7 +494,7 @@ if (!CHECK_ONLY) {
   members.sort((a, b) => (a.rel < b.rel ? -1 : 1));
 
   const tarBuf = makeTar(members.map((m) => ({ name: `package/${m.rel}`, data: fs.readFileSync(m.abs) })));
-  const gz = zlib.gzipSync(tarBuf, { level: 9 });
+  const gz = gzipDeterministic(tarBuf);
   fs.mkdirSync(outDir, { recursive: true });
   fs.writeFileSync(tgzPath, gz);
 

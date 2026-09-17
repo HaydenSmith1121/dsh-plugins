@@ -11,6 +11,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import zlib from 'node:zlib';
 import { createHash } from 'node:crypto';
 import { suite, test, assert, eq, BUILT, PKG_ROOT as PKG, REPO_ROOT, importBuilt } from './harness.mjs';
 
@@ -169,6 +170,32 @@ test('★ 自引用条目在包内既无 sha256 也无 bytes（同一个不动�
   );
   eq(repoCopy.install.sha256, null, '采集脚本不该把实测 hash 写进自引用条目');
   eq(repoCopy.install.bytes, null, '采集脚本不该把实测大小写进自引用条目 —— 那是上一个包的大小');
+});
+
+test('★ 构建出的 tarball 与平台无关（gzip 头逐字节固定）', () => {
+  // ★ 这一条拦的是一个「源码没改却报源码改了」的假警报，实测代价是一轮 CI。
+  //
+  //   zlib 往 gzip 头的第 9 字节写的是**编译期**确定的 OS 码：Windows 0x0a、Linux 0x03；
+  //   第 8 字节还会按压缩档位写 XFL。于是同一份源码在两边构建出来的包
+  //   **长度一模一样、内容差两个字节**，sha256 不同 ——
+  //   而 CI 里「产物必须已提交，且内容一致」那条断言会据此报
+  //   「源码改了没重新构建」。看的人先去翻源码，翻到最后才发现是压缩器的头。
+  //
+  //   修法是把 gzip 容器接管过来（build.mjs 的 gzipDeterministic）：
+  //   头固定为 `1f 8b 08 00 00000000 00 ff`，压缩体仍旧交给 zlib。
+  //   这里断言的就是那个头 —— 只要有一位是平台相关的，上面那件事就会重演。
+  const config = JSON.parse(
+    fs.readFileSync(path.join(REPO_ROOT, 'catalog', 'plugins', 'dsh-plugins-market.json'), 'utf8'),
+  );
+  const buf = fs.readFileSync(path.join(REPO_ROOT, config.install.tarball));
+  eq(
+    [...buf.subarray(0, 10)],
+    [0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xff],
+    'gzip 头必须逐字节固定（magic · CM · FLG · MTIME=0 · XFL=0 · OS=255）',
+  );
+  // 但「固定」不等于「自成一格」：自己写的容器必须仍然是标准 gzip ——
+  // 运行时装插件时要能解它。
+  assert(zlib.gunzipSync(buf).length > 4096, '自己写的 gzip 容器必须能被标准 gunzip 读回');
 });
 
 test('自引用 tarball 的实际 sha256 有边车文件可查', () => {
