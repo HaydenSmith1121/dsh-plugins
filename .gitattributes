@@ -1,0 +1,17 @@
+# 行尾一律 LF —— 这个仓库里的文本文件是**数据**，不是源码。
+#
+# catalog/plugins/*.json 会被采集脚本逐字节比对（`sync-catalog.mjs --check` 拿
+# 磁盘原文和重新生成的结果比），而 `--dump-config`、sha256 校验也都假设同一份内容
+# 在不同机器上是同一个字节。Git for Windows 默认的 autocrlf=true 会在**检出**时
+# 把 LF 换成 CRLF，于是同一份仓库在 Windows 上克隆下来就与 CI（Linux）不一致 ——
+# 表现是 --check 在本机恒红、在 CI 恒绿，非常难查。这里显式钉死。
+* text=auto eol=lf
+
+# 二进制：绝不能被当作文本处理
+*.tgz binary
+*.gz binary
+*.png binary
+*.jpg binary
+*.ico binary
+*.woff binary
+*.woff2 binary
