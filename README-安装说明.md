@@ -269,7 +269,7 @@ allowBuilds:
 ```powershell
 dsh plugin --profile web add .\plugins\dsh-market-plugin\0.1.6-alpha.1\dsh-market-plugin-0.4.8.tgz
 dsh plugin --profile web add .\plugins\dsh-workbuddy-connect\0.1.6-alpha.1\dsh-workbuddy-connect-0.5.3.tgz
-dsh plugin --profile web add .\plugins\dsh-opencode-go-plus\0.1.6-alpha.1\dsh-opencode-go-plus-0.2.0.tgz
+dsh plugin --profile web add .\plugins\dsh-opencode-go-plus\0.1.6-alpha.1\dsh-opencode-go-plus-0.2.1.tgz
 dsh plugin --profile web add .\plugins\dsh-connect-trae\0.1.6-alpha.1\dsh-connect-trae-2.0.1.tgz
 dsh plugin --profile web add .\plugins\dsh-workbuddy-quota\0.1.6-alpha.1\dsh-workbuddy-quota-0.2.0.tgz
 dsh plugin --profile web add .\plugins\dsh-receipt\0.1.6-alpha.1\dsh-receipt-0.1.0.tgz
@@ -296,7 +296,7 @@ dsh plugin --profile web add ./plugins/dsh-market-plugin/0.1.6-alpha.1/dsh-marke
 `dsh plugin add <tarball>` 生成的**不是**把包内容拷进去，而是 `file:` 形式的依赖：
 
 ```json
-"dsh-opencode-go-plus": "file:D:/deepseek/dsh-plugins/plugins/dsh-opencode-go-plus/0.1.6-alpha.1/dsh-opencode-go-plus-0.2.0.tgz"
+"dsh-opencode-go-plus": "file:D:/deepseek/dsh-plugins/plugins/dsh-opencode-go-plus/0.1.6-alpha.1/dsh-opencode-go-plus-0.2.1.tgz"
 ```
 
 **后果**：这个目录**不能删除、不能移动**，否则以后任何 `pnpm install` /
@@ -465,7 +465,7 @@ dsh plugin --profile web remove <包名>     # 例如: dsh plugin --profile web 
 
 ## 十、关于 `dsh-opencode-go-plus` 的来历、改造与共存禁忌
 
-本仓库的 `dsh-opencode-go-plus@0.2.0` 是**派生包**，基线为上游
+本仓库的 `dsh-opencode-go-plus@0.2.1` 是**派生包**，基线为上游
 [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go)`@0.1.2`（MIT）。
 它**取代**了此前收录的 `dsh-opencode-go@0.1.2`（那一版含 13 处本地源码改动）。
 
@@ -503,7 +503,7 @@ dsh plugin --profile web remove <包名>     # 例如: dsh plugin --profile web 
 
 ```bash
 dsh plugin --profile web remove dsh-opencode-go
-dsh plugin --profile web add .\plugins\dsh-opencode-go-plus\0.1.6-alpha.1\dsh-opencode-go-plus-0.2.0.tgz
+dsh plugin --profile web add .\plugins\dsh-opencode-go-plus\0.1.6-alpha.1\dsh-opencode-go-plus-0.2.1.tgz
 ```
 
 **怎么确认装对了：数模型数**。plus 是 **38** 条并含 `union-alpha`；基线是 37 条且没有它。
@@ -527,7 +527,7 @@ dsh plugin --profile web add .\plugins\dsh-opencode-go-plus\0.1.6-alpha.1\dsh-op
 |---|---|---|---|---|---|
 | `@dsh-market/plugin` | 0.4.8 | 7 | ✓ | ✓ | **✗** |
 | `dsh-workbuddy-connect` | 0.5.3 | 11 | ✓ | ✓ | ✓ |
-| `dsh-opencode-go-plus` | 0.2.0 | 31 | ✓ | ✓ | ✓ |
+| `dsh-opencode-go-plus` | 0.2.1 | 31 | ✓ | ✓ | ✓ |
 | `dsh-connect-trae` | 2.0.1 | 12 | ✓ | ✓ | ✓ |
 | `dsh-workbuddy-quota` | 0.2.0 | 5 | ✓ | ✓ | **✗** |
 | `dsh-receipt` | 0.1.0 | 16 | ✓ | ✓ | ✓ |

@@ -120,7 +120,7 @@ dsh-plugins/
 |---|---|---|---|---|---|
 | `dsh-workbuddy-quota` | 0.2.0 | **本仓库自研** | HaydenSmith1121 | 本仓库 | MIT |
 | `dsh-session-cleanup` | 0.1.0 | **本仓库自研** | HaydenSmith1121 | 本仓库 | MIT |
-| `dsh-opencode-go-plus` | 0.2.0 | **本仓库自研**（派生） | HaydenSmith1121 | 本仓库，派生自 [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go) | MIT |
+| `dsh-opencode-go-plus` | 0.2.1 | **本仓库自研**（派生） | HaydenSmith1121 | 本仓库，派生自 [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go) | MIT |
 | `@dsh-market/plugin` | 0.4.8 | 第三方收集 | **2BingLing** | [2BingLing/dsh-market](https://github.com/2BingLing/dsh-market) | MIT |
 | `dsh-workbuddy-connect` | 0.5.3 | 第三方收集 | corrinehu | [corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect) | MIT |
 | `dsh-connect-trae` | 2.0.1 | 第三方收集 | dingminhua | [dingminhua/dsh-connect-trae](https://github.com/dingminhua/dsh-connect-trae) | MIT |
@@ -159,7 +159,7 @@ dsh-plugins/
 |---|---|---|---|---|
 | `plugins/dsh-market-plugin/` | `@dsh-market/plugin` | 0.4.8 | 0.1.6-alpha.1 | dsh 插件市场 |
 | `plugins/dsh-workbuddy-connect/` | `dsh-workbuddy-connect` | 0.5.3 | 0.1.6-alpha.1 | WorkBuddy 连接 |
-| `plugins/dsh-opencode-go-plus/` | `dsh-opencode-go-plus` | 0.2.0 | 0.1.6-alpha.1 | OpenCode Go 模型供应商（**自研维护分支，取代 `dsh-opencode-go`**） |
+| `plugins/dsh-opencode-go-plus/` | `dsh-opencode-go-plus` | 0.2.1 | 0.1.6-alpha.1 | OpenCode Go 模型供应商（**自研维护分支，取代 `dsh-opencode-go`**） |
 | `plugins/dsh-connect-trae/` | `dsh-connect-trae` | 2.0.1 | 0.1.6-alpha.1 | Trae 模型接入 |
 | `plugins/dsh-workbuddy-quota/` | `dsh-workbuddy-quota` | 0.2.0 | 0.1.6-alpha.1 | WorkBuddy 额度显示 + token 用量统计 |
 | `plugins/dsh-receipt/` | `dsh-receipt` | 0.1.0 | 0.1.6-alpha.1 | 凭证 / 收据 |
@@ -274,7 +274,7 @@ dsh-plugins/
 |---|---|---|---|---|---|
 | `@dsh-market/plugin` | 0.4.8 | 7 | ✓ | ✓ | ✗ |
 | `dsh-workbuddy-connect` | 0.5.3 | 11 | ✓ | ✓ | ✓ |
-| `dsh-opencode-go-plus` | 0.2.0 | 31 | ✓ | ✓ | ✓ |
+| `dsh-opencode-go-plus` | 0.2.1 | 31 | ✓ | ✓ | ✓ |
 | `dsh-connect-trae` | 2.0.1 | 12 | ✓ | ✓ | ✓ |
 | `dsh-workbuddy-quota` | 0.2.0 | 5 | ✓ | ✓ | ✗ |
 | `dsh-receipt` | 0.1.0 | 16 | ✓ | ✓ | ✓ |

@@ -103,12 +103,18 @@
         {
           "dir": "dsh-opencode-go-plus",
           "package": "dsh-opencode-go-plus",
-          "version": "0.2.0",
-          "tarball": "plugins/dsh-opencode-go-plus/0.1.6-alpha.1/dsh-opencode-go-plus-0.2.0.tgz",
+          "version": "0.2.1",
+          "tarball": "plugins/dsh-opencode-go-plus/0.1.6-alpha.1/dsh-opencode-go-plus-0.2.1.tgz",
           "files": 31,
           "origin": "self",
           "author": "HaydenSmith1121",
           "upstream": "https://github.com/HaydenSmith1121/dsh-plugins",
+          "sha256": "2123562f683e94b7a8b63ed2b9ba092298fcedd18dac3b20a4bc2ced078fa78b",
+          "supersedes": {
+            "version": "0.2.0",
+            "sha256": "48617cf218f26db8a0a3ce66cf38209db707bb6e63b99d54911634606ab9c8d8",
+            "reason": "0.2.0 的 lib/client.js 是从上游 dsh-opencode-go 源码编译的，改名后脚本内硬编码的客户端注册 id 没跟着改（仍是 dsh-opencode-go），与 dsh 下发的启动图 entry id（dsh-opencode-go-plus）不匹配。dsh-client-modules 的 arrive() 会因 bundle loaded without registering \"<id>\" 失败并重放脚本，第二次执行撞上已注册的 @deepseek-ai/dsh-api-gateway，抛 duplicate factory registration —— 浏览器端白屏「Failed to load plugins」。服务端 lib/index.js 不受影响，插件树装配一直是正常的。"
+          },
           "derivedFrom": {
             "package": "dsh-opencode-go",
             "version": "0.1.2",
