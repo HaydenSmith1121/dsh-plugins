@@ -147,20 +147,31 @@ function invalidate(ctx) {
 }
 
 async function layers(ctx, { refreshCommunity = false } = {}) {
-  if (!ctx._verified) ctx._verified = loadVerified();
-  if (!ctx._reviewed) ctx._reviewed = await loadReviewed();
-  if (refreshCommunity || !ctx._community) {
-    ctx._community = await fetchCommunity({ force: refreshCommunity });
-  }
+  // 三层**并发**取。它们互不依赖，串行 await 只会把三份等待时间相加 ——
+  // 而「刷新目录」正是这三条路一起要走的时候。
+  //
+  // verified 层现在是**远程优先**的（与 reviewed 同构）：插件发新版只需刷新仓库根
+  // 那份 catalog/verified.json，市场这边不用换版本号就能看到。包内那份退居离线兜底。
+  const [verified, reviewed, communityMeta] = await Promise.all([
+    ctx._verified ?? loadVerified(),
+    ctx._reviewed ?? loadReviewed(),
+    refreshCommunity || !ctx._community
+      ? fetchCommunity({ force: refreshCommunity })
+      : ctx._community,
+  ]);
+  ctx._verified = verified;
+  ctx._reviewed = reviewed;
+  ctx._community = communityMeta;
+
   const community = (ctx._community?.plugins ?? []).map((p) => normalizeEntry(
     { ...p, install: { kind: 'probe', method: p.installMethod, commands: p.installCommands, needsConfig: p.needsConfig, usageNeedsConfig: p.usageNeedsConfig, risky: p.risky } },
     'community',
   ));
   ctx._layers = {
-    verified: ctx._verified,
-    reviewed: ctx._reviewed,
+    verified,
+    reviewed,
     community,
-    communityMeta: ctx._community,
+    communityMeta,
   };
   return ctx._layers;
 }
@@ -481,7 +492,17 @@ function createDispatcher(ctx) {
         ctx._verified = null;
         ctx._reviewed = null;
         const l = await layers(ctx, { refreshCommunity: true });
-        return { ok: true, community: l.communityMeta?.source ?? 'unavailable', count: l.community.length, error: l.communityMeta?.error ?? null };
+        // 三层各自的来源都要如实回报：verified 现在是远程优先的，
+        // 「刷新后到底用的是远程还是包内兜底」是用户判断目录新不新的唯一依据。
+        return {
+          ok: true,
+          verified: l.verified?.source ?? 'unavailable',
+          verifiedGeneratedAt: l.verified?.generatedAt ?? null,
+          reviewed: l.reviewed?.source ?? 'unavailable',
+          community: l.communityMeta?.source ?? 'unavailable',
+          count: l.community.length,
+          error: l.communityMeta?.error ?? l.verified?.error ?? l.reviewed?.error ?? null,
+        };
       }
 
       default:

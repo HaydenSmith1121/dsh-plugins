@@ -27,7 +27,9 @@ const DEV_HOME = process.env.DPM_TEST_HOME ?? path.join(os.homedir(), '.dsh-dev'
 process.env.DSH_HOME = DEV_HOME;
 
 const compat = readJsonSafe(path.join(REPO, 'compatibility.json'));
-const verified = loadVerified();
+// ★ preferRemote:false —— 闸门测试要的是「给定一份目录，判定是否正确」，
+// 不该依赖网络、也不该被上游目录此刻的内容左右。用包内那份，测试才是可复现的。
+const verified = await loadVerified({ preferRemote: false });
 
 /** 迷你 tar.gz 写入器：只为造一个可控的候选包 */
 function makeTgz(files) {

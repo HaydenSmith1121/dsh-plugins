@@ -6,6 +6,7 @@
  *   util          tar 只读访问 / YAML 局部合并 —— 都是自己实现的部分
  *   gate          ★ 核心安全属性：致命硬拦截 / 可覆盖 / 未审核必须确认
  *   state         ★ 已装状态判定（决定「安装」是否置灰）+ 点赞收藏 + 三层合并
+ *   catalog-refresh ★ 已验证层远程优先（解耦）+ 锚规则（不可改写已发布版本）+ 304 提速
  *   client-bundle ★ CLI 侧查不出来的那类错误（注册 id、slot 同名、经典脚本文法）
  *
  * 前置：先跑 `node build.mjs`（gate 与 client-bundle 都依赖构建产物）。
@@ -42,6 +43,7 @@ await import('./semver.test.mjs');
 await import('./util.test.mjs');
 await import('./gate.test.mjs');
 await import('./state.test.mjs');
+await import('./catalog-refresh.test.mjs');
 await import('./client-bundle.test.mjs');
 await import('./panel-render.test.mjs');
 await import('./layout.test.mjs');

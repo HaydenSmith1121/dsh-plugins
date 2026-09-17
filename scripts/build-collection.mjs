@@ -30,6 +30,7 @@ import path from 'node:path';
 import zlib from 'node:zlib';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { generateVerifiedCatalog, writeJsonAtomic, REPO_CATALOG_REL } from './lib/verified-catalog.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, '..');
@@ -238,6 +239,47 @@ if (CHECK_ONLY) {
 }
 
 // ─────────────────────────────────────────────────────────────
+// 「已验证」目录 —— 仓库根 catalog/verified.json
+// ─────────────────────────────────────────────────────────────
+//
+// ★ 这是市场**运行时联网拉取**的那一份；包内那份（打进市场 tarball 的）是离线兜底。
+//   两者由同一个实现生成（scripts/lib/verified-catalog.mjs），所以不可能漂移。
+//
+// 为什么挂在这个脚本上，而不是挂在市场包的构建上：
+//
+//   按 collection/SPEC.md，收录任何插件**本来就必须**跑 build-collection.mjs。
+//   把目录生成挂在这里，于是「插件发版」这条既有流程天然会刷新目录 ——
+//   而**市场版本号不动、市场 tarball 也不重打**。
+//
+//   挂在市场构建上的话就绕回去了：目录一变就得重打市场包，而因为
+//   `file:` 指向同一路径而内容变了时 pnpm 会跳过解包，已装的人只有等市场
+//   **换版本号**才收得到 —— 一个插件的数据变更又被迫搭上一次市场发版。
+//
+// 自引用条目（市场自己）的 sha256 恒为 null，由 lib 统一处理，见那里的说明。
+
+const selfPackage = (runtime.plugins ?? []).find((p) => p.bootstrap === true)?.package
+  ?? (runtime.plugins ?? []).find((p) => p.package === 'dsh-plugins-market')?.package
+  ?? 'dsh-plugins-market';
+
+const catalogGen = generateVerifiedCatalog({ repo: REPO, selfPackage });
+for (const w of catalogGen.warnings) console.warn(w);
+for (const p of catalogGen.problems) fail(p);
+
+const repoCatalogFile = path.join(REPO, REPO_CATALOG_REL);
+
+if (CHECK_ONLY) {
+  if (catalogGen.catalog === null) {
+    fail(`无法生成 ${REPO_CATALOG_REL}，跳过比对`);
+  } else if (!fs.existsSync(repoCatalogFile)) {
+    fail(`缺少 ${REPO_CATALOG_REL}，请运行 node scripts/build-collection.mjs`);
+  } else if (JSON.stringify(readJson(repoCatalogFile)) !== JSON.stringify(catalogGen.catalog)) {
+    fail(`${REPO_CATALOG_REL} 已过期，请运行 node scripts/build-collection.mjs`);
+  } else {
+    ok(`${REPO_CATALOG_REL} 与当前仓库事实一致`);
+  }
+}
+
+// ─────────────────────────────────────────────────────────────
 // 写盘
 // ─────────────────────────────────────────────────────────────
 
@@ -304,6 +346,13 @@ if (problems.length) {
 }
 
 fs.writeFileSync(manifestFile, JSON.stringify(manifest, null, 2) + '\n');
+
+// 目录写在这里（而不是上面），是因为它必须发生在**所有** problems 检查之后：
+// 半成品目录会被运行时拉到，而市场对损坏目录的处理是整体判定不可用。
+if (catalogGen.catalog !== null) {
+  writeJsonAtomic(repoCatalogFile, catalogGen.catalog);
+  ok(`已写出 ${REPO_CATALOG_REL}（${catalogGen.catalog.plugins.length} 个插件，市场运行时拉取这一份）`);
+}
 
 console.log(`收录快照已生成：${entries.length} 个包（自研 ${manifest.counts.self} / 第三方 ${manifest.counts.thirdParty}）`);
 console.log(`运行时基线：dsh ${runtime.dshVersion}`);

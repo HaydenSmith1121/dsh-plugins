@@ -79,6 +79,13 @@ export const COMMUNITY_INDEX_URL = 'https://2bingling.github.io/dsh-market/plugi
 /** 本仓库 raw 地址：用于取最新的 curated 目录 */
 export const REPO_RAW_BASE = 'https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main';
 export const REPO_CURATED_URL = `${REPO_RAW_BASE}/catalog/curated.json`;
+/**
+ * 仓库根那份「已验证」目录 —— 市场运行时拉取的就是它。
+ *
+ * 由 `scripts/lib/verified-catalog.mjs` 生成、挂在 `scripts/build-collection.mjs` 上写出，
+ * 因此**插件发新版只需刷新它，不必重打市场包、也不必给市场换版本号**。
+ */
+export const REPO_VERIFIED_URL = `${REPO_RAW_BASE}/catalog/verified.json`;
 export const REPO_HOMEPAGE = 'https://github.com/HaydenSmith1121/dsh-plugins';
 
 const COMMUNITY_TTL_MS = 6 * 60 * 60 * 1000; // 6 小时
@@ -101,23 +108,147 @@ async function fetchJson(url, { timeout = FETCH_TIMEOUT_MS } = {}) {
   return res.json();
 }
 
-// ─────────────────────────────────────────────────────────────
-// verified 层：包内自带，离线可用
-// ─────────────────────────────────────────────────────────────
+/**
+ * 带校验器的 GET：取回 ETag / Last-Modified，并支持条件请求。
+ *
+ * ★ 这是「刷新目录太慢」的主要解法，不是锦上添花。
+ *
+ * 公共索引解压前约 22MB、gzip 后仍有 4.8MB（gzip 已经在生效，没有可捡的便宜）。
+ * 实测这条线路到 GitHub Pages 约 178 KiB/s —— 每次全量拉一遍约 **28 秒**，
+ * 而旧代码在「刷新目录」时是无条件 `force: true` 全量重下，所以每点一次都要等这么久。
+ *
+ * 好消息是 GitHub Pages 对这份文件提供 `ETag` 与 `Last-Modified`，并且**支持 304**：
+ * 目录没变时服务端只回一个空响应。索引本身是低频更新的（构建时才生成），
+ * 因此绝大多数刷新都会命中 304，耗时从 ~28 秒降到一次往返。
+ *
+ * @param {string} url
+ * @param {{timeout?: number, etag?: string|null, lastModified?: string|null}} [options]
+ * @returns {Promise<{notModified: boolean, data?: unknown, etag: string|null, lastModified: string|null}>}
+ */
+async function fetchJsonConditional(url, { timeout = FETCH_TIMEOUT_MS, etag, lastModified } = {}) {
+  const headers = { accept: 'application/json', 'user-agent': 'dsh-plugins-market' };
+  if (etag) headers['if-none-match'] = etag;
+  if (lastModified) headers['if-modified-since'] = lastModified;
 
-export function loadVerified() {
-  const file = bundledCatalogFile('verified.json');
-  const data = readJsonSafe(file);
-  if (!data) {
-    return { available: false, error: `缺少包内目录文件：${file}`, generatedFrom: null, plugins: [] };
-  }
+  const res = await fetch(url, { headers, signal: AbortSignal.timeout(timeout) });
+
+  // 304：目录没变。**不读 body** —— 这正是省下 4.8MB 的地方。
+  if (res.status === 304) return { notModified: true, etag: etag ?? null, lastModified: lastModified ?? null };
+  if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
+
   return {
-    available: true,
-    error: null,
-    generatedFrom: data.generatedFrom ?? null,
-    generatedAt: data.generatedAt ?? null,
-    plugins: (data.plugins ?? []).map((p) => normalizeEntry(p, 'verified')),
+    notModified: false,
+    data: await res.json(),
+    etag: res.headers.get('etag') ?? null,
+    lastModified: res.headers.get('last-modified') ?? null,
   };
+}
+
+// ─────────────────────────────────────────────────────────────
+// verified 层：仓库 raw 优先，缓存 / 包内兜底
+// ─────────────────────────────────────────────────────────────
+//
+// ★ 这一层过去是「**只读包内**」的：包内那份目录在市场构建时就打死了，于是任何
+//   插件发新版都必须重打市场包、并且给市场**换版本号**（`file:` 指向同一路径而内容
+//   变了时 pnpm 会跳过解包，不换版本号已装的人根本收不到），用户才看得到。
+//   一个插件的数据变更被迫搭上一次市场发版 —— 现在改成与 reviewed 层同构：
+//   远程优先、缓存次之、包内兜底。包内那份仍然在，作用变成**离线兜底**，
+//   「没网也能用」这个性质没有丢。
+//
+//   已验证插件的 tarball 本来就从同一个 `${REPO_RAW_BASE}` 下载（见 gate.js 的
+//   resolveInstallSpec），所以目录也去同一个 origin 取，**没有引入任何新的信任依赖**。
+
+/**
+ * 找出「远程目录试图改写已发布版本」的情况。
+ *
+ * ★ 远程只能**追加**，不能改写历史。
+ *
+ * 包内那份目录是**冻结锚**：它记录的每个 `(包, 版本)` 的 sha256，是市场包发布那一刻
+ * 的事实。远程目录可以引入**新**版本 —— 这正是解耦要的效果；但凡命中已钉死的对，
+ * 校验和必须一致。不一致就意味着「某个已发布版本的字节被改写了」，
+ * 而那恰恰是这套 sha256 机制存在的唯一理由。
+ *
+ * 抹掉 sha256 同样算改写：否则只要把校验和删掉就能绕过整个校验。
+ *
+ * @returns {string|null} 违规说明；`null` 表示远程目录可接受。
+ */
+function findPinnedViolation(remote, bundled) {
+  const pinned = new Map();
+  for (const p of bundled.plugins ?? []) {
+    const key = `${p.package ?? p.id}@${p.version}`;
+    if (p.sha256) pinned.set(key, p.sha256);
+  }
+  for (const p of remote.plugins ?? []) {
+    const key = `${p.package ?? p.id}@${p.version}`;
+    const expected = pinned.get(key);
+    if (expected === undefined) continue;
+    if (!p.sha256) {
+      return `${key} 在远程目录里丢失了 sha256（包内记录的 ${expected.slice(0, 12)}… 被抹掉）`;
+    }
+    if (p.sha256 !== expected) {
+      return `${key} 的 sha256 被改写（包内 ${expected.slice(0, 12)}… / 远程 ${p.sha256.slice(0, 12)}…）`;
+    }
+  }
+  return null;
+}
+
+/**
+ * 加载「已验证」层。
+ *
+ * @param {object} [options]
+ * @param {boolean} [options.preferRemote] - `false` 时只用包内那份（离线自检用）。
+ * @returns {Promise<object>} 与 reviewed 层同构：带 `source` 与 `error`。
+ */
+export async function loadVerified({ preferRemote = true } = {}) {
+  const fallbackFile = bundledCatalogFile('verified.json');
+  const fallback = readJsonSafe(fallbackFile);
+  const cache = cacheFile('verified-cache.json');
+
+  const shape = (data, source, error) => ({
+    available: data !== null,
+    source,
+    error: error ?? null,
+    generatedFrom: data?.generatedFrom ?? null,
+    generatedAt: data?.generatedAt ?? null,
+    plugins: (data?.plugins ?? []).map((p) => normalizeEntry(p, 'verified')),
+  });
+
+  if (fallback === null && !preferRemote) {
+    return { available: false, error: `缺少包内目录文件：${fallbackFile}`, source: 'bundled', generatedFrom: null, plugins: [] };
+  }
+
+  if (!preferRemote) return shape(fallback, 'bundled');
+
+  let remote;
+  try {
+    remote = await fetchJson(REPO_VERIFIED_URL);
+  } catch (err) {
+    const cached = readJsonSafe(cache);
+    const chosen = cached ?? fallback;
+    return shape(
+      chosen,
+      cached ? 'cache' : 'bundled',
+      `拉取最新已验证目录失败（已用${cached ? '缓存' : '包内'}副本）：${err?.message ?? err}`,
+    );
+  }
+
+  // 锚规则不通过就整体拒绝远程目录：宁可用一份旧的，也不用一份可疑的。
+  const violation = findPinnedViolation(remote, fallback ?? { plugins: [] });
+  if (violation !== null) {
+    return shape(
+      fallback,
+      'bundled',
+      `远程已验证目录被拒绝（已回退到包内副本）：${violation}。`
+      + '已发布版本的字节不可改写；若确属误报，请检查 catalog/verified.json 是怎么生成的。',
+    );
+  }
+
+  try {
+    writeJsonAtomic(cache, remote);
+  } catch {
+    // 缓存写不进去不影响本次结果，下次重新拉取即可。
+  }
+  return shape(remote, 'remote');
 }
 
 // ─────────────────────────────────────────────────────────────
@@ -205,6 +336,9 @@ export function loadCommunityCache() {
     fetchedAt: data.fetchedAt ?? null,
     stale: Date.now() - (data.fetchedAt ?? 0) > COMMUNITY_TTL_MS,
     ageMs: Date.now() - (data.fetchedAt ?? 0),
+    // 校验器随缓存一起留着，下次刷新才能发条件请求（见 fetchJsonConditional）
+    etag: data.etag ?? null,
+    lastModified: data.lastModified ?? null,
     plugins: data.plugins ?? [],
   };
 }
@@ -214,13 +348,44 @@ export async function fetchCommunity({ force = false } = {}) {
   if (cached && !force && !cached.stale) return cached;
 
   try {
-    const raw = await fetchJson(COMMUNITY_INDEX_URL, { timeout: 120_000 });
+    // ★ 带着上次的校验器去问：`force` 现在只表示「必须去问服务端」，
+    //   而不是「必须重下 4.8MB」。服务端答 304 时，传输量几乎为零。
+    //   旧行为是无条件全量重下，那正是刷新要等 ~28 秒的原因。
+    const probe = await fetchJsonConditional(COMMUNITY_INDEX_URL, {
+      // 超时放宽到 5 分钟。这不是保守估计：实测本机到 GitHub Pages 只有
+      // 40–180 KiB/s，下完 4.8MB 需要 28 秒到 2 分钟以上，原本的 120 秒会让
+      // 慢线路上的**冷启动刷新必然失败**（已实测撞到两次）。
+      // 命中 304 时这条超时根本不会用到（往返约 3 秒）。
+      timeout: 300_000,
+      etag: cached?.etag ?? null,
+      lastModified: cached?.lastModified ?? null,
+    });
+
+    if (probe.notModified && cached) {
+      // 目录没变：沿用缓存里的插件数据，但把「确认时刻」推到现在 ——
+      // 内容确实是当前最新的，再判它 stale 就不对了。
+      const payload = {
+        schemaVersion: null,
+        generatedAt: cached.generatedAt,
+        fetchedAt: Date.now(),
+        count: cached.plugins.length,
+        etag: probe.etag,
+        lastModified: probe.lastModified,
+        plugins: cached.plugins,
+      };
+      writeJsonAtomic(cacheFile('community-slim.json'), payload);
+      return { ...cached, source: 'remote-304', fetchedAt: payload.fetchedAt, stale: false, ageMs: 0 };
+    }
+
+    const raw = probe.data;
     const plugins = (raw.plugins ?? []).map(slimCommunityPlugin);
     const payload = {
       schemaVersion: raw.schemaVersion ?? null,
       generatedAt: raw.generatedAt ?? null,
       fetchedAt: Date.now(),
       count: plugins.length,
+      etag: probe.etag,
+      lastModified: probe.lastModified,
       plugins,
     };
     writeJsonAtomic(cacheFile('community-slim.json'), payload);
@@ -230,6 +395,8 @@ export async function fetchCommunity({ force = false } = {}) {
       fetchedAt: payload.fetchedAt,
       stale: false,
       ageMs: 0,
+      etag: payload.etag,
+      lastModified: payload.lastModified,
       plugins,
     };
   } catch (err) {

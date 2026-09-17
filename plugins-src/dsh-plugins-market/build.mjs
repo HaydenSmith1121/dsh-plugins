@@ -31,6 +31,7 @@ import path from 'node:path';
 import zlib from 'node:zlib';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { generateVerifiedCatalog } from '../../scripts/lib/verified-catalog.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, '..', '..');
@@ -134,87 +135,28 @@ log('');
 
 log('  [1/4] 生成 catalog/verified.json');
 
-const verifiedPlugins = runtime.plugins.map((p) => {
-  const tgz = path.join(REPO, p.tarball);
-  const isSelf = p.package === PKG_NAME;
-  const present = fs.existsSync(tgz);
+/**
+ * ★ 生成逻辑住在 scripts/lib/verified-catalog.mjs，不在这个文件里。
+ *
+ * 因为这份目录有**两个消费者**：这里生成的是打进包内的**离线兜底**那一份；
+ * 仓库根的 catalog/verified.json（市场运行时联网拉取的那一份）由
+ * scripts/build-collection.mjs 用**同一个实现**生成。
+ *
+ * 过去只有包内这一份，于是「目录」被焊死在包里 —— 任何插件发新版都必须
+ * 重打市场包并给市场换版本号，用户才看得到。抽成共享实现之后，
+ * 仓库根那份可以独立于市场更新，两者也不会漂移。
+ */
+const catalogGen = generateVerifiedCatalog({ repo: REPO, selfPackage: PKG_NAME });
+for (const w of catalogGen.warnings) warn(w);
+for (const problem of catalogGen.problems) fail(problem);
 
-  /**
-   * ★ 自引用条目不能自包含 sha256，也**不能要求自己的产物先存在**。
-   *
-   * verified.json 在 [1] 生成、tarball 在 [4] 才写出来 —— 也就是说
-   * 自引用条目指向的那个文件，正是**本次构建的产物**。所以：
-   *   - hash 不能算（算完又要重写 tarball，改完 hash 又变了，无限递归）；
-   *   - 存在性也不能查（版本号 bump 后的第一次构建，那个文件本来就还不存在）。
-   * 早先这里对自引用条目也 fail，结果是**每次升版本号的第一次构建必然失败**，
-   * 必须先手工造一个空壳文件才能过 —— 纯属自找麻烦。
-   * 现在自己的条目跳过存在性与 hash 校验，实际 hash 落在同目录的
-   * `.tgz.sha256` 边车文件里（[4] 写），并写进 compatibility.json。
-   *
-   * 其余条目指向的是**稳定**的历史 tarball，存在性与 sha256 都必须对得上。
-   */
-  if (!present && !isSelf) fail(`tarball 缺失：${p.tarball}`);
-
-  const actualSha = present && !isSelf ? sha256(tgz) : null;
-  // 同理，自身 tarball 的大小在本次构建里也会变 —— 它和 hash 一样无法自包含
-  const actualBytes = present && !isSelf ? fs.statSync(tgz).size : null;
-
-  // 目录里原本就写了 sha256 的，必须对得上 —— 对不上说明有人在改包而没更新目录
-  if (present && !isSelf && p.sha256 && p.sha256 !== actualSha) {
-    fail(`${p.package} 的 sha256 与 compatibility.json 记录不一致（记录 ${p.sha256.slice(0, 12)}…，实际 ${actualSha.slice(0, 12)}…）`);
-  }
-
-  const m = meta.plugins?.[p.package] ?? {};
-  if (!m.title) warn(`  ! ${p.package} 在 verified-meta.json 里没有展示元数据，将退化为用包名当标题`);
-
-  return {
-    id: p.package,
-    package: p.package,
-    version: p.version,
-    title: m.title ?? p.package,
-    summary: m.summary ?? p.peerNote ?? '',
-    tags: m.tags ?? [],
-    author: p.author ?? null,
-    origin: p.origin ?? null,
-    upstream: p.upstream ?? null,
-    homepage: p.homepage ?? null,
-    license: p.license ?? 'MIT',
-    licenseFileInTarball: p.licenseFileInTarball ?? null,
-
-    // 事实（来自 compatibility.json，不要在展示层改）
-    peerRuntimePin: p.peerRuntimePin ?? null,
-    peerVerdict: p.peerVerdict ?? null,
-    peerNote: p.peerNote ?? null,
-    coexistenceWarning: p.coexistenceWarning ?? null,
-    notes: p.notes ?? null,
-    replaces: p.replaces ?? null,
-    supersedes: p.supersedes ?? null,
-    derivedFrom: p.derivedFrom ?? null,
-
-    // 安装用
-    install: {
-      kind: 'local-tarball',
-      tarball: p.tarball,
-      spec: null, // 运行时按仓库根/下载地址解析
-      files: p.files ?? null,
-      needsConfig: Boolean(m.needsConfig ?? /Key/.test(String(m.tags ?? ''))),
-      risky: false,
-    },
-    sha256: actualSha,
-    sha256Note: isSelf
-      ? '本条目指向的 tarball 就是本次构建的产物，sha256 与大小都无法自包含（算完又要重写 tarball）；实际 sha256 见同目录的 .tgz.sha256 边车文件与 compatibility.json。'
-      : null,
-    bytes: actualBytes,
-  };
-});
-
-const verifiedCatalog = {
+const verifiedCatalog = catalogGen.catalog ?? {
   schemaVersion: 1,
   generatedFrom: 'compatibility.json',
-  generatedAt: runtime.verifiedAt ?? null,
-  dshVersion: runtime.dshVersion,
-  note: '由 build.mjs 生成，请勿手工编辑。展示元数据改 catalog/verified-meta.json，事实改 compatibility.json。',
-  plugins: verifiedPlugins,
+  generatedAt: null,
+  dshVersion: runtime?.dshVersion ?? null,
+  note: '目录生成失败，见构建输出。',
+  plugins: [],
 };
 
 // ─────────────────────────────────────────────────────────────
@@ -409,7 +351,7 @@ fs.writeFileSync(
     stage: path.relative(HERE, STAGE).replace(/\\/g, '/'),
     tgz: path.relative(REPO, tgzPath).replace(/\\/g, '/'),
     files: filesToWrite.length,
-    verifiedCount: verifiedPlugins.length,
+    verifiedCount: verifiedCatalog.plugins.length,
     checkOnly: CHECK_ONLY,
   }, null, 2)}\n`,
   'utf8',

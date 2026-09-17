@@ -240,8 +240,8 @@
         {
           "dir": "dsh-plugins-market",
           "package": "dsh-plugins-market",
-          "version": "0.1.1",
-          "tarball": "plugins/dsh-plugins-market/0.1.6-alpha.1/dsh-plugins-market-0.1.1.tgz",
+          "version": "0.2.0",
+          "tarball": "plugins/dsh-plugins-market/0.1.6-alpha.1/dsh-plugins-market-0.2.0.tgz",
           "files": 17,
           "origin": "self",
           "author": "HaydenSmith1121",
@@ -253,6 +253,10 @@
           "peerNote": "没有任何 dependencies / peerDependencies —— 服务器半只用 Node 内置模块（semver 判定、tar 只读访问、YAML 局部合并都是自己实现并有单测），客户端半只用 shell 基线模块表里的 react（不需要 dsh.client.external）。这是刻意的取舍：每多一个依赖就多一分 pnpm 解析失败 / ERR_PNPM_IGNORED_BUILDS / 离线不可用的风险，而这个插件存在的意义正是「别把 harness 装坏」。",
           "bootstrap": true,
           "supersedes": [
+            {
+              "version": "0.1.1",
+              "reason": "0.2.0 把「已验证」层从「只读包内目录」改成与「已审核」层同构的远程优先（远程 → 缓存 → 包内兜底），于是**插件发新版不再需要重打市场包、也不再需要给市场换版本号**；同时加一条安全边界：远程目录只能追加、不能改写已发布版本的 sha256，否则整体拒绝并退回包内。另修「刷新目录」过慢：公共索引带 ETag，目录未变时服务端答 304，传输量从 4.8MB 降到 0 字节（实测往返 2.88s）；三层目录改为并发拉取；公共索引超时从 120s 放宽到 300s —— 实测本机到 GitHub Pages 只有 40–180 KiB/s，120s 会让慢线路上的冷刷新必然失败。界面上去掉了「体检」页签（装前兼容性闸门照旧自动执行），其「回滚到快照」与「修复 profile」搬到「已装」页。"
+            },
             {
               "version": "0.1.0",
               "reason": "0.1.0 是首个版本：三层目录分页签 + 装前闸门 + 事务化安装。0.1.1 把三层目录**合并成一个列表**（安全差异改由每条插件上的审核标签承载），并补上三件事：已装版本与仓库版本的比对（提示升级）、已是最新时禁用安装按钮、本地点赞与收藏。0.1.0 的功能没有缺失，升级是可选项。"

@@ -45,7 +45,9 @@ test('源码树里不再混入构建产物', () => {
 
 test('loadVerified() 的条数与兼容矩阵一致，且含本插件自己', async () => {
   const { loadVerified } = await importBuilt('lib/catalog.js');
-  const v = loadVerified();
+  // ★ preferRemote:false —— 这里测的是**包内兜底那份**的内容形态（离线可用性），
+  // 不该让单元测试依赖网络。远程优先那条路有专门的 catalog-refresh.test.mjs 覆盖。
+  const v = await loadVerified({ preferRemote: false });
   assert(v.available, `verified 目录不可用：${v.error}`);
 
   // 刻意不写死数字：仓库会继续加插件（并行的另一条会话刚加了 dsh-memory）。

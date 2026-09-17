@@ -1116,8 +1116,10 @@ window.__ModuleLoader__.load({
 
 			// 非目录页的按需加载
 			useEffect(function () {
-				if (tab === "installed") loadStatus();
-				if (tab === "health") {
+				if (tab === "installed") {
+					loadStatus();
+					// 快照列表随「已装」页一起取 —— 原先它在「体检」页，
+					// 那个页签已按用户要求去掉，而「回滚到快照」搬到了这里。
 					api("backups").then(function (r) { if (aliveRef.current) setBackups(r); }).catch(fail);
 				}
 				if (tab === "log") {
@@ -1289,11 +1291,36 @@ window.__ModuleLoader__.load({
 
 			var doRefresh = useCallback(async function () {
 				setBusy(true);
-				setToast("正在刷新目录（公共索引较大，首次拉取可能需要十几秒）…");
+				setToast("正在刷新目录…");
 				try {
 					var r = await api("refresh");
 					if (r && r.ok === false) fail(new Error(r.error || "刷新失败"));
-					else if (aliveRef.current) setToast(null);
+					else if (aliveRef.current) {
+						/*
+						 * ★ 如实报出三层各自的来源。
+						 *
+						 *   刷新不再必然是一次大下载：公共索引带 ETag，目录没变时服务端答 304，
+						 *   传输量几乎为零（原先无条件重下 4.8MB，在这条线路上要 ~28 秒）。
+						 *   所以提示语要说「目录未变」而不是让用户以为白点了一下。
+						 *
+						 *   verified 现在是远程优先的，它到底是「远程」还是「离线包内兜底」
+						 *   直接决定用户看到的版本新不新 —— 这个必须显式说出来，不能藏。
+						 */
+						var srcText = {
+							'remote': "远程最新",
+							'remote-304': "目录未变（304）",
+							'cache': "本地缓存",
+							'cache-error': "网络失败，用本地缓存",
+							'bundled': "离线包内快照",
+							'unavailable': "不可用",
+						};
+						setToast(
+							"目录已刷新 · 已验证：" + (srcText[r.verified] || r.verified || "?")
+							+ " · 已审核：" + (srcText[r.reviewed] || r.reviewed || "?")
+							+ " · 公共索引：" + (srcText[r.community] || r.community || "?")
+							+ (r.verified === 'bundled' || r.verified === 'cache' ? "（已验证层没能取到远程目录，显示的版本可能不是最新）" : ""),
+						);
+					}
 					await loadStatus();
 					await loadList(q, page, review, only);
 				} catch (err) {
@@ -1418,7 +1445,7 @@ window.__ModuleLoader__.load({
 							: only === "liked" ? "还没有点赞任何插件。点插件卡片上的「点赞」即可。"
 								: only === "upgradable" ? "没有可更新的插件 —— 装了的都是目录里的最新版本。"
 									: only === "installed" ? "还没有安装任何目录里的插件。"
-										: "没有匹配的插件。首次使用需要联网拉取公共索引，可以在「体检」页点「刷新目录」。")
+										: "没有匹配的插件。首次使用需要联网拉取公共索引，点右上方「刷新目录」。")
 						: h("div", { className: "dpm-cards" },
 							items.map(function (e) {
 								return h(EntryCard, {
@@ -1448,6 +1475,27 @@ window.__ModuleLoader__.load({
 					h("div", { className: "dpm-toolbar" },
 						h(Btn, { onClick: loadStatus }, "刷新"),
 						h(Btn, { onClick: function () { doVerify(null); } }, "校验三层"),
+						// ★ 「体检」页签已按用户要求去掉，但「修复」这个能力不能跟着消失：
+						//   它是「装了但没挂载」那类静默残局的唯一出路。搬成一个按钮。
+						h(Btn, {
+							disabled: busy,
+							title: "检查 profile 并修复可自动修复的问题（allowBuilds 占位符、依赖未挂载等）。修复前会自动拍快照。",
+							onClick: async function () {
+								setToast(null);
+								try {
+									var r = await api("profileCheck");
+									if (aliveRef.current) setHealth(r);
+									var repairables = ((r && r.checks) || []).filter(function (c) { return c.repairable; });
+									if (repairables.length === 0) { setToast("profile 检查通过，没有需要修复的项目。"); return; }
+									if (typeof window !== "undefined" && window.confirm
+										&& !window.confirm("发现 " + repairables.length + " 项可自动修复，现在修复？（会先自动拍快照）")) return;
+									for (var i = 0; i < repairables.length; i++) await doRepair(repairables[i]);
+									setToast("已修复 " + repairables.length + " 项。");
+									await loadStatus();
+									api("backups").then(function (x) { if (aliveRef.current) setBackups(x); }).catch(fail);
+								} catch (err) { fail(err); }
+							},
+						}, "修复 profile"),
 						h("span", { className: "dpm-spacer" }),
 						h("span", { className: "dpm-pager-info" }, installed.length + " 个依赖 · " + (profile.bundles || []).length + " 个 bundle 层"),
 					),
@@ -1489,76 +1537,15 @@ window.__ModuleLoader__.load({
 							}),
 							installed.some(function (i) { return i.installed && !i.inBundles; })
 								? h("div", { style: { marginTop: 14 } },
-									h(Flag, { kind: "bad", icon: "!" }, "有依赖「装了但没挂载」—— 这是 pnpm 以非 0 退出时 dsh 不会把包写进 bundles 造成的静默残局，GUI 里看不到它。到「体检」页点「修复」可以让 dsh 重新对齐。"))
+									h(Flag, { kind: "bad", icon: "!" }, "有依赖「装了但没挂载」—— 这是 pnpm 以非 0 退出时 dsh 不会把包写进 bundles 造成的静默残局，GUI 里看不到它。点上方「修复 profile」可以让 dsh 重新对齐。"))
 								: null,
 						),
-				);
-			}
 
-			if (tab === "health") {
-				var hc = (health && health.checks) || [];
-				var hFatal = hc.filter(function (c) { return classifyCheck(c) === "fatal"; });
-				var hOther = hc.filter(function (c) { return classifyCheck(c) !== "fatal" && classifyCheck(c) !== "pass"; });
-				var hPass = hc.filter(function (c) { return classifyCheck(c) === "pass"; });
-				var repairables = hc.filter(function (c) { return c.repairable; });
-
-				body = h(
-					"div",
-					null,
-					h("div", { className: "dpm-toolbar" },
-						h(Btn, { variant: "primary", onClick: doProfileCheck }, "检查 profile"),
-						h(Btn, { onClick: function () { doVerify(null); } }, "校验三层"),
-						h(Btn, { disabled: busy, onClick: doBootVerify }, "真实启动校验"),
-						h(Btn, { onClick: function () { api("backups").then(function (r) { setBackups(r); }).catch(fail); } }, "刷新快照列表"),
-						busy ? h(Spinner, null) : null,
-					),
-
-					h(Flag, { kind: "info", icon: "i" },
-						"「校验三层」= 依赖层 / 注册表层 / 装配层，全部只读、秒级完成。"
-						+ "「真实启动校验」会真的起一次 dsh（自动选空闲端口），是唯一能验证「模块能不能 import」的办法，约需 30–40 秒。"),
-
-					repairables.length > 0
-						? h("div", { style: { marginTop: 12 } },
-							h(Flag, { kind: "risk", icon: "!" }, "有 " + repairables.length + " 项可以自动修复。"),
-							h("div", { className: "dpm-card-act" },
-								repairables.map(function (c, i) {
-									return h(Btn, { key: "r" + i, variant: "primary", disabled: busy, onClick: function () { doRepair(c); } }, "修复：" + txt(c.title, c.id));
-								})))
-						: null,
-
-					health
-						? h("div", { style: { marginTop: 14 } },
-							h("div", { className: "dpm-kv" },
-								h("span", { className: "dpm-kv-k" }, "检查项"),
-								h("span", { className: "dpm-kv-v" }, hc.length + " 项（致命 " + hFatal.length + " / 提醒 " + hOther.length + " / 通过 " + hPass.length + "）"),
-							),
-							hFatal.length > 0 ? h(Fold, { title: "致命", count: hFatal.length }, hFatal.map(function (c, i) { return h(CheckItem, { key: "hf" + i, check: c }); })) : null,
-							hOther.length > 0 ? h(Fold, { title: "提醒", count: hOther.length }, hOther.map(function (c, i) { return h(CheckItem, { key: "ho" + i, check: c }); })) : null,
-							hPass.length > 0 ? h(Fold, { title: "通过", count: hPass.length, defaultOpen: false }, hPass.map(function (c, i) { return h(CheckItem, { key: "hp" + i, check: c }); })) : null,
-						)
-						: h(Empty, null, "点「检查 profile」跑一次体检。"),
-
-					bootResult
-						? h("div", { style: { marginTop: 18 } },
-							h("h3", { className: "dpm-group-h" }, "真实启动校验结果"),
-							h("div", { className: "dpm-kv" },
-								h("span", { className: "dpm-kv-k" }, "结论"),
-								h("span", { className: "dpm-kv-v" }, bootResult.ok ? "通过（打印了访问地址，且无致命错误）" : "未通过"),
-								h("span", { className: "dpm-kv-k" }, "看到地址"),
-								h("span", { className: "dpm-kv-v" }, bootResult.sawUrl ? "是" : "否"),
-								h("span", { className: "dpm-kv-k" }, "退出码"),
-								h("span", { className: "dpm-kv-v" }, txt(bootResult.exitCode)),
-							),
-							(bootResult.fatalHits || []).length > 0
-								? h(Flag, { kind: "bad", icon: "✗" }, "命中致命特征：" + bootResult.fatalHits.join("、"))
-								: null,
-							(bootResult.warnings || []).length > 0
-								? h("pre", { className: "dpm-pre" }, bootResult.warnings.join("\n"))
-								: null,
-							bootResult.output ? h("pre", { className: "dpm-pre" }, bootResult.output) : null,
-						)
-						: null,
-
+					/*
+					 * ★ 「回滚到快照」原在「体检」页。用户要求去掉那个页签，但它承载的
+					 *   恢复能力不能跟着消失 —— 装坏了的人本来就会来「已装」页看，
+					 *   所以搬到这里。
+					 */
 					h("div", { style: { marginTop: 18 } },
 						h("h3", { className: "dpm-group-h" }, "回滚到快照"),
 						(backups && backups.items && backups.items.length > 0)
@@ -1590,6 +1577,18 @@ window.__ModuleLoader__.load({
 				);
 			}
 
+			/*
+			 * ★ 「体检」页签已按用户要求移除（连它的分支一起）。
+			 *
+			 *   要去掉的是**页面**，不是兼容性检查：装前闸门（三层判定 + 致命项硬拦截）
+			 *   照旧在每次安装前自动执行，结果就在安装抽屉里。
+			 *
+			 *   原页面承载的能力没有被丢掉，只是换了入口：
+			 *     · 回滚到快照   → 「已装」页
+			 *     · 修复 profile → 「已装」页工具条上的按钮
+			 *     · 校验三层     → 本来「已装」页就有一份
+			 *   真实启动校验属于开发期诊断，随页面一起去掉（后端 API 仍在）。
+			 */
 			if (tab === "log") {
 				var items = (logs && logs.items) || [];
 				body = h(
@@ -1714,11 +1713,7 @@ window.__ModuleLoader__.load({
 						"data-on": tab === "installed" ? "1" : undefined,
 						onClick: function () { setTab("installed"); },
 					}, "已装" + (upgradable.length > 0 ? " ↑" + upgradable.length : "")),
-					h("button", {
-						key: "health", type: "button", className: "dpm-tab",
-						"data-on": tab === "health" ? "1" : undefined,
-						onClick: function () { setTab("health"); },
-					}, "体检"),
+					// 「体检」页签已移除（其能力搬到「已装」页，见那里的说明）。
 					h("button", {
 						key: "log", type: "button", className: "dpm-tab",
 						"data-on": tab === "log" ? "1" : undefined,

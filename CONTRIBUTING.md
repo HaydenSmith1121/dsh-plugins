@@ -273,6 +273,38 @@ node scripts/build-collection.mjs
 - **作者 / 上游仓库 / 许可**三项必须按[第二节](#二来源标注义务-)登记，缺一不予收录
 - 快照**不可变**：上游发新版时**新增**目录，**不覆盖**旧的
 
+> ### ★ 第 ③ 步同时刷新「已验证目录」—— 插件发版不再需要动市场
+>
+> `node scripts/build-collection.mjs` 除了写 `collection/manifest.json`，还会写出仓库根的
+> **`catalog/verified.json`**。那份是**市场运行时联网拉取**的目录；市场包内那份只是**离线兜底**。
+>
+> 因此**插件发新版的完整流程是**：
+>
+> ```bash
+> # 1. 改 compatibility.json 里的版本与 tarball 路径
+> # 2. 把新 tarball 放进 plugins/<目录名>/<dsh 版本>/
+> # 3. node scripts/build-collection.mjs     ← 同时刷新 manifest 与 catalog/verified.json
+> # 4. git commit && git push
+> ```
+>
+> **不需要重打 `dsh-plugins-market`，也不需要给市场换版本号。**
+>
+> 为什么值得单独写一段：在这之前「已验证」层是**只读包内目录**的，于是任何插件发新版
+> 都必须重打市场包；而因为 `file:` 指向同一路径、内容变了时 pnpm 会跳过解包
+> （加 `--force` 也没用），已装市场的人只有等市场**换版本号**才收得到 ——
+> 一个插件的数据变更被迫搭上一次市场发版。现在这一层与「已审核」层同构
+> （远程优先 → 缓存 → 包内兜底），这段耦合就断开了。
+>
+> **别手工编辑 `catalog/verified.json`**：它由 `scripts/lib/verified-catalog.mjs` 生成。
+> 事实改 `compatibility.json`、展示元数据改 `catalog/verified-meta.json`，
+> 跑一遍脚本就会汇进目录。手写的会被下次生成覆盖，且
+> `build-collection.mjs --check` 会直接报过期。
+>
+> **安全边界**：目录改成联网拉取后，规则是「**远程只能追加，不能改写历史**」——
+> 包内那份是冻结锚，凡它已记录的 `(包, 版本)` 的 sha256，远程必须一致；不一致
+> （包括把校验和抹掉）就整体拒绝远程目录、退回包内那份。所以已发布版本的字节仍然
+> 不可改写，而新版本能立刻可见。
+
 ### 第 4 步：校验并提交
 
 ```bash

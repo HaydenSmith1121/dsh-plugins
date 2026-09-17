@@ -344,8 +344,10 @@ test('★ 三层视图已合并：只剩一个「插件市场」页签，没有 
   for (const gone of ['已验证', '已审核', '未审核']) {
     assert(!labels.some((l) => l.startsWith(gone)), `不应再有独立的「${gone}」页签，实际：${labels.join(' | ')}`);
   }
-  // 页签应当只剩 插件市场 / 已装 / 体检 / 日志
-  eq(labels.length, 4, `页签数量应当收敛到 4 个，实际：${labels.join(' | ')}`);
+  // 页签应当只剩 插件市场 / 已装 / 日志 —— 「体检」已按用户要求移除。
+  // ★ 去掉的是**页面**：装前兼容性闸门照旧每次安装自动执行，这条断言不影响它。
+  eq(labels.length, 3, `页签数量应当收敛到 3 个（体检页已移除），实际：${labels.join(' | ')}`);
+  assert(!labels.some((l) => l.startsWith('体检')), `「体检」页签应当已移除，实际：${labels.join(' | ')}`);
 });
 
 test('★ 已是最新的插件：安装按钮 disabled，文案是「已安装」（问题 2）', async () => {
