@@ -274,7 +274,7 @@ dsh plugin --profile web add .\plugins\dsh-opencode-go-plus\0.1.6-alpha.1\dsh-op
 dsh plugin --profile web add .\plugins\dsh-connect-trae\0.1.6-alpha.1\dsh-connect-trae-2.0.1.tgz
 dsh plugin --profile web add .\plugins\dsh-workbuddy-quota\0.1.6-alpha.1\dsh-workbuddy-quota-0.2.0.tgz
 dsh plugin --profile web add .\plugins\dsh-receipt\0.1.6-alpha.1\dsh-receipt-0.1.0.tgz
-dsh plugin --profile web add .\plugins\dsh-session-cleanup\0.1.6-alpha.1\dsh-session-cleanup-0.1.1.tgz
+dsh plugin --profile web add .\plugins\dsh-session-cleanup\0.1.6-alpha.1\dsh-session-cleanup-0.1.2.tgz
 dsh plugin --profile web add .\plugins\dsh-ark-plans\0.1.6-alpha.1\dsh-ark-plans-0.1.0.tgz
 ```
 
@@ -534,7 +534,7 @@ dsh plugin --profile web add .\plugins\dsh-opencode-go-plus\0.1.6-alpha.1\dsh-op
 | `dsh-connect-trae` | 2.0.1 | 12 | ✓ | ✓ | ✓ |
 | `dsh-workbuddy-quota` | 0.2.0 | 5 | ✓ | ✓ | **✗** |
 | `dsh-receipt` | 0.1.0 | 16 | ✓ | ✓ | ✓ |
-| `dsh-session-cleanup` | 0.1.1 | 6 | ✓ | ✓ | ✓ |
+| `dsh-session-cleanup` | 0.1.2 | 6 | ✓ | ✓ | ✓ |
 | `dsh-ark-plans` | 0.1.0 | 6 | ✓ | ✓ | ✓ |
 
 > `LICENSE` 列标注 **✗** 的两个包，其 `package.json` 里 `license` 字段均为 `MIT`，

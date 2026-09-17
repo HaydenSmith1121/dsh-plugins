@@ -121,7 +121,7 @@ dsh-plugins/
 | 包名 | 版本 | 来源 | 原作者 | 上游仓库 | 许可 |
 |---|---|---|---|---|---|
 | `dsh-workbuddy-quota` | 0.2.0 | **本仓库自研** | HaydenSmith1121 | 本仓库 | MIT |
-| `dsh-session-cleanup` | 0.1.1 | **本仓库自研** | HaydenSmith1121 | 本仓库 | MIT |
+| `dsh-session-cleanup` | 0.1.2 | **本仓库自研** | HaydenSmith1121 | 本仓库 | MIT |
 | `dsh-ark-plans` | 0.1.0 | **本仓库自研** | HaydenSmith1121 | 本仓库 | MIT |
 | `dsh-opencode-go-plus` | 0.2.1 | **本仓库自研**（派生） | HaydenSmith1121 | 本仓库，派生自 [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go) | MIT |
 | `@dsh-market/plugin` | 0.4.8 | 第三方收集 | **2BingLing** | [2BingLing/dsh-market](https://github.com/2BingLing/dsh-market) | MIT |
@@ -166,7 +166,7 @@ dsh-plugins/
 | `plugins/dsh-connect-trae/` | `dsh-connect-trae` | 2.0.1 | 0.1.6-alpha.1 | Trae 模型接入 |
 | `plugins/dsh-workbuddy-quota/` | `dsh-workbuddy-quota` | 0.2.0 | 0.1.6-alpha.1 | WorkBuddy 额度显示 + token 用量统计 |
 | `plugins/dsh-receipt/` | `dsh-receipt` | 0.1.0 | 0.1.6-alpha.1 | 凭证 / 收据 |
-| `plugins/dsh-session-cleanup/` | `dsh-session-cleanup` | 0.1.1 | 0.1.6-alpha.1 | 已归档会话的真实删除（**带宿主半**） |
+| `plugins/dsh-session-cleanup/` | `dsh-session-cleanup` | 0.1.2 | 0.1.6-alpha.1 | 已归档会话的真实删除（**带宿主半**） |
 | `plugins/dsh-ark-plans/` | `dsh-ark-plans` | 0.1.0 | 0.1.6-alpha.1 | 火山方舟 **Agent Plan + Coding Plan** 模型接入（**纯组合配置 + 凭据诊断**，无 wire 代码） |
 
 **安装顺序**（即 dsh bundle 层级顺序，见 `profile-config/profile-bundles.yaml`）：
@@ -284,7 +284,7 @@ dsh-plugins/
 | `dsh-connect-trae` | 2.0.1 | 12 | ✓ | ✓ | ✓ |
 | `dsh-workbuddy-quota` | 0.2.0 | 5 | ✓ | ✓ | ✗ |
 | `dsh-receipt` | 0.1.0 | 16 | ✓ | ✓ | ✓ |
-| `dsh-session-cleanup` | 0.1.1 | 6 | ✓ | ✓ | ✓ |
+| `dsh-session-cleanup` | 0.1.2 | 6 | ✓ | ✓ | ✓ |
 | `dsh-ark-plans` | 0.1.0 | 6 | ✓ | ✓ | ✓ |
 
 自查命令：
