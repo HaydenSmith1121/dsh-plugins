@@ -387,6 +387,18 @@ function cmdInit() {
     steps.push(['从出厂模板初始化 profile', `${templateName} → ${devProfile}`]);
   }
 
+  // ★ 隔离 home 本身必须先存在。
+  //   profile 名是出厂名（web）时，上面那一步只 push 了一条日志、**什么都没建**
+  //   —— 这是对的，dsh 首次启动会自己建 profiles/web。但 home 这个父目录没人建，
+  //   于是下面的 copyFileSync 会以 ENOENT 失败。而那个报错会把源路径和目标路径
+  //   一起打出来，读起来像「生产的凭据文件不存在」，实际缺的是目标目录。
+  //   凡是「生产有凭据 + 目标 home 不存在」都会中招，也就是换设备后跑 init 的场景；
+  //   本机一直没暴露，只是因为 ~/.dsh-dev 早就存在了。
+  //   注意这里建的是 home，不是 profile 目录：上面那条「绝不能预先 mkdir」的约束
+  //   针对的是 `<home>/profiles/<name>`（dsh 的 initializeProfileFromDefault 见到
+  //   已存在就抛错），建它的父目录不影响 dsh 自己初始化 profile。
+  fs.mkdirSync(devHome, { recursive: true });
+
   // 2) 凭据 / 设置：复制成独立副本（★ 不是软链，避免开发改坏生产）
   for (const f of ['.credentials.yaml', 'settings.yaml']) {
     const src = path.join(prod, f);
