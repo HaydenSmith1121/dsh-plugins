@@ -418,6 +418,20 @@ function recordFromSelf(o, { dshVersion }) {
     risky: o.risky === true,
     riskyReasons: [],
   };
+  /**
+   * ★ `bytes` 与 `sha256` 是同一类东西：它描述的正是**装着这份记录的包**。
+   *
+   *   sha256 的不动点问题上面已经解释过；`bytes` 一模一样，但更隐蔽 ——
+   *   它不报错，只是让构建与采集互相追着跑：
+   *     采集读到 tarball 是 147015 字节 → 记录写 147015 → 构建（记录进包）→
+   *     包变成 147028 字节 → 下次采集读到 147028 → 记录又变 → 再构建 → …
+   *   于是每天产生一次「只有一个数字变了」的提交，而且那个数字永远是**上一版**包的大小；
+   *   同时 CI 里「产物必须已提交」那条断言会稳定变红 —— 因为它比的是
+   *   「用当前源码构建出来的字节」与「上一次提交的字节」，而这个字段让两者永远差一步。
+   *
+   *   所以自引用条目同样留空。真实大小看构建输出，或直接看 tarball 自己。
+   */
+  rec.install.bytes = null;
   rec.install.sha256 = null; // 见上面的长注释：自引用条目不能带校验和
 
   /**
@@ -432,7 +446,8 @@ function recordFromSelf(o, { dshVersion }) {
   rec.sha256Note = tarballRel
     ? '自引用条目：本记录指向的 tarball 就是本仓库构建出来的那个包，而本包**内含**这份目录 —— '
       + '写进它的 sha256 会因为「tarball 内容取决于记录、记录又取决于 tarball」而永远解不出来（不动点）。'
-      + '实际校验和见同目录的 .tgz.sha256 边车文件（构建时写出），请不要把它抄进这段文字里。'
+      + '本条的 install.sha256 与 install.bytes 都因此留空（大小是同一个方程）。'
+      + '实际校验和见同目录的 .tgz.sha256 边车文件（构建时写出），请不要把它、也不要把它的大小抄进这段文字里。'
     : '本条目指向的 tarball 目前不在仓库里（plugins/dsh-plugins-market/<dsh版本>/ 下没有对应文件）。'
       + '先跑一次 node plugins-src/dsh-plugins-market/build.mjs 打好包。';
   rec.source = { kind: 'self', url: `${REPO_RAW_BASE}/catalog/overrides/self.json`, firstSeenAt: null, lastSyncedAt: null };

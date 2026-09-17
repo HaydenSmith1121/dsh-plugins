@@ -102,6 +102,75 @@ test('包内兜底目录含本插件自己，且逐条配置齐备', async () =>
   }
 });
 
+test('★ 包内兜底目录是目录的稳定投影，不是副本', () => {
+  // ★ 这条测的是**一个真实发生过的不动点**，不是洁癖。
+  //
+  //   兜底目录原本原样复制仓库里的记录，于是任何一次目录刷新都会改到包：
+  //     · versionCheckedAt / metricsCheckedAt / source.lastSyncedAt 每次采集都前移；
+  //     · stars / pushedAt 随上游仓库变化；
+  //     · 索引顶层的 generatedAt「只要 7496 条里有一条变了它就变」。
+  //   后果一：一个社区插件多了一颗 star 就要重打市场 tarball —— 而 tarball 路径按版本号定，
+  //   字节变了路径没变，pnpm 会跳过解包，等于既没发出更新又在 git 里写了个二进制。
+  //   后果二：CI 的「产物必须已提交」断言会自己把自己打红 —— 每日同步改了目录，
+  //   包里嵌的是旧时间戳，于是构建出来的字节与已提交的不同，被报成「源码改了没重新构建」。
+  //
+  //   修法：进包前把这些**登记性**字段清空（清空而非删除，字段与仓库那份保持同形）。
+  //   这里反过来断言「一个都不许漏」—— 漏掉任何一个，上面两条后果就会回来。
+  const dir = BUILT;
+  const idx = JSON.parse(fs.readFileSync(path.join(dir, 'catalog', 'index.json'), 'utf8'));
+
+  eq(idx.generatedAt, null, '索引顶层的 generatedAt 描述「什么时候查的」，不该进包');
+  if (idx.sourceIndex) {
+    eq(idx.sourceIndex.generatedAt, null, '上游索引的生成时间会变，不该进包');
+    eq(idx.sourceIndex.fetchedAt, null, '上游索引的抓取时间每次采集都变，不该进包');
+    eq(idx.sourceIndex.count, null, '上游索引条数随上游增长而变，不该进包');
+  }
+
+  const volatile = ['versionCheckedAt', 'metricsCheckedAt', 'stars', 'forks', 'pushedAt'];
+  const leaked = [];
+  for (const p of idx.plugins) {
+    for (const k of volatile) {
+      if (p[k] !== undefined && p[k] !== null) leaked.push(`index.plugins[${p.slug}].${k}=${p[k]}`);
+    }
+  }
+
+  // 逐条配置文件里也必须干净（它比索引多带 source 块）
+  const cfgDir = path.join(dir, 'catalog', 'plugins');
+  for (const f of fs.readdirSync(cfgDir)) {
+    const cfg = JSON.parse(fs.readFileSync(path.join(cfgDir, f), 'utf8'));
+    for (const k of volatile) {
+      if (cfg[k] !== undefined && cfg[k] !== null) leaked.push(`${f}.${k}=${cfg[k]}`);
+    }
+    for (const k of ['firstSeenAt', 'lastSyncedAt']) {
+      if (cfg.source?.[k] !== undefined && cfg.source?.[k] !== null) leaked.push(`${f}.source.${k}=${cfg.source[k]}`);
+    }
+  }
+  eq(leaked, [], '包内兜底目录里不许留下登记性字段（每留下一个，目录的日常刷洗就会改到包）');
+});
+
+test('★ 自引用条目在包内既无 sha256 也无 bytes（同一个不动点）', () => {
+  // sha256 那半边早就处理了；bytes 那半边是后来才发现的，而且更隐蔽：
+  // 它不报错，只是让「采集 → 构建 → 采集」永远差一步 ——
+  // 采集读到 tarball 是 147015 字节就写 147015，构建把记录打进包，包变成 147028 字节，
+  // 下次采集再读 147028……每天产生一次「只有一个数字变了、而且永远是上一版」的提交。
+  const cfg = JSON.parse(
+    fs.readFileSync(path.join(BUILT, 'catalog', 'plugins', 'dsh-plugins-market.json'), 'utf8'),
+  );
+  eq(cfg.install.sha256, null, '自引用条目不能自包含校验和');
+  eq(cfg.install.bytes, null, '自引用条目不能自包含字节数 —— 与 sha256 是同一个方程');
+  assert(cfg.sha256Note, '剥掉之后必须留下说明，否则下一个读配置的人会以为是漏填');
+  assert(!/\b\d{4,}\b/.test(cfg.sha256Note), '说明文字里不能出现具体数字：那会重新引入不动点');
+
+  // 仓库里那份（采集脚本的产物）也必须留空 —— 光靠构建剥是不够的：
+  // 采集填一个「上一版包的大小」，构建每次剥掉，两份文件就会长期不一致，
+  // 而「不一致」本身又会以每日一次的单数字提交表现出来。两边都不填才是真的收敛。
+  const repoCopy = JSON.parse(
+    fs.readFileSync(path.join(REPO_ROOT, 'catalog', 'plugins', 'dsh-plugins-market.json'), 'utf8'),
+  );
+  eq(repoCopy.install.sha256, null, '采集脚本不该把实测 hash 写进自引用条目');
+  eq(repoCopy.install.bytes, null, '采集脚本不该把实测大小写进自引用条目 —— 那是上一个包的大小');
+});
+
 test('自引用 tarball 的实际 sha256 有边车文件可查', () => {
   // ★ 版本号与路径必须从源头读，不能写死 —— 写死的话每次 bump 版本都要回来改测试，
   //   改漏了会以「边车文件找不到」的形式失败，看起来像构建坏了，其实是测试过期了。

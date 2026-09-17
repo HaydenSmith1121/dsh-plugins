@@ -152,7 +152,52 @@ log('');
 //   判据用 tier 而不是「有没有 tarball」：tier 是配置文件的权威字段，
 //   拿它筛才不会出现「包里漏了一条已验证插件」这种静默缺项。
 
+// ─────────────────────────────────────────────────────────────
+// [0] 兜底目录必须是目录的**稳定投影**，不能是目录的副本
+// ─────────────────────────────────────────────────────────────
+//
+// ★ 这是本文件第二个不动点问题（第一个是自引用条目的 sha256 / bytes）。
+//
+//   包内兜底目录如果原样复制仓库里的记录，那么**任何**一次目录刷新都会改到包：
+//   `versionCheckedAt`、`metricsCheckedAt`、`source.firstSeenAt / lastSyncedAt`
+//   这些登记性时间戳每次采集都会前移，`stars` / `pushedAt` 会随上游仓库变化，
+//   索引顶层的 `generatedAt` 更是「只要 7496 条里有一条变了它就变」。
+//
+//   后果有两个，都很隐蔽：
+//     ① 一个社区插件的 star 数变化，就要重打一份市场 tarball —— 而 tarball 路径
+//        是按版本号定的，字节变了路径没变，pnpm 会跳过解包（见文件头注释），
+//        于是「重新构建」既没让任何人收到更新，又在 git 里天天写进一个二进制；
+//     ② CI 的「产物必须已提交」断言会**自己把自己打红**：每日同步改了目录 →
+//        包里嵌的是旧时间戳 → 构建出来的字节与已提交的不同 → 报「源码改了没重新构建」，
+//        可源码明明没改。
+//
+//   所以进包之前把这些**只对「什么时候查的」有意义、对「离线能装什么」毫无意义**的
+//   字段清空。留下的才是兜底目录真正要回答的问题：这是哪个包、什么版本、从哪儿下、
+//   校验和是多少。清空后，只有在**实质内容**（版本号 / 安装方式 / 仓库地址 / 说明）
+//   真的变了的时候，包才会变 —— 那时也确实该重打。
+//
+//   注意这是**清空**不是**删除**：字段名和顺序保持与仓库里那份完全一致，
+//   值退化为 `null`（运行时对这些字段本来就是 `?? null` 的写法，见 catalog.js）。
+
+/** 登记性时间戳：回答「目录是什么时候查的」，对离线安装无用 */
+const VOLATILE_RECORD_FIELDS = ['versionCheckedAt', 'metricsCheckedAt', 'stars', 'forks', 'pushedAt'];
+/** 来源登记时间同理 */
+const VOLATILE_SOURCE_FIELDS = ['firstSeenAt', 'lastSyncedAt'];
+
+/** 清空一条记录里所有「登记性」字段，返回新对象（不改原对象） */
+function stabilizeRecord(rec) {
+  const out = { ...rec };
+  for (const k of VOLATILE_RECORD_FIELDS) if (k in out) out[k] = null;
+  if (out.source && typeof out.source === 'object') {
+    out.source = { ...out.source };
+    for (const k of VOLATILE_SOURCE_FIELDS) if (k in out.source) out.source[k] = null;
+  }
+  return out;
+}
+
 log('  [1/4] 生成包内离线兜底目录（catalog/index.json + catalog/plugins/）');
+
+
 
 const repoIndexFile = path.join(REPO, 'catalog', 'index.json');
 const repoIndex = fs.existsSync(repoIndexFile) ? readJson(repoIndexFile) : null;
@@ -160,23 +205,38 @@ if (!repoIndex) {
   fail('仓库根没有 catalog/index.json —— 请先运行 node scripts/sync-catalog.mjs');
 }
 
-const bundledEntries = (repoIndex?.plugins ?? []).filter((p) => p.tier === 'verified');
+const bundledEntries = (repoIndex?.plugins ?? [])
+  .filter((p) => p.tier === 'verified')
+  .map(stabilizeRecord);
 if (bundledEntries.length === 0) {
   fail('catalog/index.json 里没有任何 tier=verified 的条目 —— 包内兜底目录会是空的，没网时市场将列不出任何插件。');
 }
 
+/**
+ * 索引顶层的 `generatedAt`、以及上游索引的抓取元信息，和上面那些字段是同一类：
+ * 它们描述的是「这次采集发生在什么时候」。只要 7496 条里有**任何一条**变了，
+ * `generatedAt` 就会前移 —— 拿它进包等于「目录一有风吹草动就重打市场包」。
+ * 兜底目录要回答的是「离线时有哪些插件可装」，不是「目录是什么时候查的」，所以清空。
+ * `url` 保留：它是稳定信息，也是排查「这份兜底是哪来的」时唯一的线索。
+ */
+const bundledSourceIndex = repoIndex?.sourceIndex
+  ? { ...repoIndex.sourceIndex, generatedAt: null, fetchedAt: null, count: null }
+  : null;
+
 /** 包内 index.json：字段与仓库根那份一致，只是只留 verified 层 */
 const bundledIndex = {
   schemaVersion: repoIndex?.schemaVersion ?? 1,
-  generatedAt: repoIndex?.generatedAt ?? null,
-  sourceIndex: repoIndex?.sourceIndex ?? null,
+  generatedAt: null,
+  sourceIndex: bundledSourceIndex,
   counts: {
     total: bundledEntries.length,
     verified: bundledEntries.length,
     reviewed: 0,
     community: 0,
   },
-  note: '包内离线兜底目录：只含 tier=verified 的条目（市场运行时会去仓库 raw 拉完整目录）。',
+  note: '包内离线兜底目录：只含 tier=verified 的条目（市场运行时会去仓库 raw 拉完整目录）。'
+    + '登记性字段（时间戳 / star 数 / 上游抓取元信息）一律为 null —— 它们是目录的「查询记录」而不是「内容」，'
+    + '进了包就会让每次目录刷新都改到包，详见 build.mjs 的 [0] 一节。',
   plugins: bundledEntries,
 };
 
@@ -191,25 +251,36 @@ for (const e of bundledEntries) {
   let text = readText(file);
 
   /**
-   * ★ 自引用条目的校验和必须**在包内留空**。
+   * ★ 进包前做两件事，都是「让包只取决于内容、不取决于时刻」：
    *
-   *   本包内含它自己的目录条目；若那条记录里带着自己的 sha256，就构成不动点：
-   *   tarball 的字节取决于记录里的 hash，而 hash 又取决于 tarball 的字节。
-   *   一旦有人（或某次采集）把它填上，打出来的包就会带着一个**必然过期**的校验和，
-   *   闸门随后会对自己报「sha256 不一致，tarball 可能被替换」并硬拦升级。
+   *   ① 清空登记性字段（见 [0] 一节）：`versionCheckedAt` / `stars` / `source.lastSyncedAt` …
+   *      这些每次采集都会变，但它们不改变「离线能装什么」。
+   *
+   *   ② 自引用条目的 sha256 与 bytes 必须**在包内留空**。
+   *
+   *   本包内含它自己的目录条目；若那条记录里带着自己的 sha256 或字节数，就构成不动点：
+   *   tarball 的字节取决于记录里的值，而那个值又取决于 tarball 的字节。
+   *   一旦有人（或某次采集）把它填上，打出来的包就会带着一个**必然过期**的数值 ——
+   *   校验和那半边会让闸门对自己报「sha256 不一致，tarball 可能被替换」并硬拦升级；
+   *   大小那半边更安静，只是让「构建 → 采集 → 构建」永远差一步，CI 的产物一致性检查天天变红。
    *
    *   所以这里显式剥掉，而不是指望采集脚本永远不填 —— 让不变量由构建来保证。
+   *   采集脚本那边也留了空（scripts/sync-catalog.mjs），两边各管一道。
    */
-  if (e.package === PKG_NAME) {
-    const cfg = JSON.parse(text);
-    if (cfg.install?.sha256) {
-      cfg.install.sha256 = null;
-      cfg.sha256Note = '（包内副本）自引用条目无法自包含校验和：本包内含这份目录，'
-        + '写进自己的 sha256 会形成不动点。权威值见仓库里那份配置与同目录的 .tgz.sha256 边车文件。';
-      text = `${JSON.stringify(cfg, null, 2)}\n`;
-      log('      包内副本：已剥掉自引用条目的 sha256（否则会在升级时稳定地产生假警报）');
+  const cfg = stabilizeRecord(JSON.parse(text));
+  if (cfg.package === PKG_NAME) {
+    const stripped = [];
+    if (cfg.install?.sha256) stripped.push('sha256');
+    if (cfg.install?.bytes) stripped.push('bytes');
+    if (cfg.install?.sha256) cfg.install.sha256 = null;
+    if (cfg.install?.bytes) cfg.install.bytes = null;
+    if (stripped.length) {
+      cfg.sha256Note = '（包内副本）自引用条目无法自包含校验和与大小：本包内含这份目录，'
+        + '写进自己的 sha256 / bytes 会形成不动点。权威值见仓库里那份配置与同目录的 .tgz.sha256 边车文件。';
+      log(`      包内副本：已剥掉自引用条目的 ${stripped.join(' / ')}（否则会在升级时稳定地产生假警报）`);
     }
   }
+  text = `${JSON.stringify(cfg, null, 2)}\n`;
 
   bundledConfigs.push([`catalog/plugins/${e.slug}.json`, text]);
 }

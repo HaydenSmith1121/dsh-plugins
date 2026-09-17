@@ -22,6 +22,13 @@ name: 同步插件目录
 #   采集脚本只在**内容真的变了**的时候才推进 lastSyncedAt / generatedAt 这些
 #   时间戳（见 scripts/sync-catalog.mjs 里 contentEquals 那一节）。没有实质变化时
 #   生成的文件逐字节相同，git 自然没有东西可提交。
+#
+# ★ 提交范围为什么包含 plugins/
+#   市场包内嵌了一份 tier=verified 的离线兜底目录，它是 catalog/ 的派生物。
+#   派生物必须与输入**同一次**提交 —— 否则 main 上会出现「目录更新了、包里的兜底还是旧的」，
+#   而下一次人类 push 时 verify.yml 的产物一致性断言会因此变红（红的是别人的提交）。
+#   兜底目录进包前已清掉登记性字段，所以目录的日常刷洗**不会**动到包，
+#   只有版本号 / 安装方式这类实质变化才会产生新字节。
 # ════════════════════════════════════════════════════════════════════════
 
 on:
@@ -77,11 +84,26 @@ jobs:
           set -euo pipefail
           node scripts/sync-catalog.mjs --check
 
+      # ★ 为什么同步目录还要重打市场包
+      #   市场包里嵌着一份**离线兜底目录**（tier=verified 的那几条，没网时靠它列插件）。
+      #   它是目录的派生物，而目录是本工作流的产物 —— 派生物必须和它的输入由**同一次**
+      #   自动化一起提交，否则 main 上会短暂存在「目录是新的、包里的兜底是旧的」。
+      #   verify.yml 里那条「用当前源码构建出来的字节必须等于已提交的字节」会在下一次
+      #   人类 push 时把这个错位报出来：报得没错，但那时已经晚了，红的是别人的提交。
+      #
+      #   注意这里**不会**每天白打一次包：兜底目录进包前已经清掉了登记性字段
+      #   （时间戳 / star 数 / 上游元信息，见 build.mjs 的 [0] 一节），
+      #   所以只有实质内容（版本号 / 安装方式 / 仓库地址 / 说明）变了才会产生新字节。
+      #   构建是确定性的，同输入必得同字节 —— 内容没变时这一步在 git 里不留痕迹。
+      - name: 重打市场包（包内兜底目录来自刚刷新的目录）
+        run: node plugins-src/dsh-plugins-market/build.mjs
+
       - name: 统计变更
         id: diff
         run: |
           set -euo pipefail
-          changed=$(git status --porcelain -- catalog | wc -l)
+          # catalog/ 是采集结果，plugins/ 是从它派生出来的市场包 —— 一起统计、一起提交
+          changed=$(git status --porcelain -- catalog plugins | wc -l)
           echo "changed=$changed" >> "$GITHUB_OUTPUT"
           echo "本次变化的文件数：$changed"
           if [ "$changed" -gt 0 ]; then
@@ -89,7 +111,7 @@ jobs:
             # ★ 必须用 sed，不能用 `| head -50`：`set -o pipefail` 下 head 读满 50 行
             #   就退出，git 随之收到 SIGPIPE（退出码 141），整条管道被判失败 ——
             #   一次正常的变化统计会把整个工作流打红。sed 会把输入读完，不产生 SIGPIPE。
-            git status --porcelain -- catalog | sed -n '1,50p'
+            git status --porcelain -- catalog plugins | sed -n '1,50p'
           fi
 
       - name: 提交并推送
@@ -98,11 +120,12 @@ jobs:
           set -euo pipefail
           git config user.name  'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add catalog
+          git add catalog plugins
           # 提交信息里带上条数，方便日后翻历史时一眼看出哪天的变化大
           total=$(node -e "const i=require('./catalog/index.json');console.log(i.counts.total)")
           git commit -m "chore(catalog): 定期刷新插件目录（共 ${total} 条）" \
-                     -m "由 .github/workflows/sync-catalog.yml 自动生成。内容：版本号 / 收藏量 / 仓库地址 / 安装方法。"
+                     -m "由 .github/workflows/sync-catalog.yml 自动生成。内容：版本号 / 收藏量 / 仓库地址 / 安装方法。" \
+                     -m "plugins/ 下的市场包是同一次派生物（包内离线兜底目录引用了 catalog/），一并重打。"
           git push
 
       - name: 汇总
