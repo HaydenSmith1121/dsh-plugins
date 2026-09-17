@@ -1,13 +1,21 @@
 name: 校验
 
-# 每次 push / PR 都跑的只读校验。全部**不联网**，所以很快，也不依赖任何密钥。
+# 每次 push / PR 都跑的校验。
 #
 # 它拦的是三类「界面上完全看不出来」的问题：
 #   ① 目录与生成器脱节 —— catalog/index.json 与 catalog/plugins/*.json 不一致，
 #      或者某个文件的字段顺序/时间戳被手工改过（那会让每日同步产生噪音 diff）
 #   ② 改了源码却忘了重打市场包 —— 同一个 tarball 路径内容变了时 pnpm 会跳过解包，
 #      已经装过的人永远收不到新版本。这里用 git diff 把它逼出来
-#   ③ 插件集合仓库那边的 manifest.json 与本仓库的期望格式对不上（在那边跑）
+#   ③ 改变目录的日常刷洗会**改到市场包**（包内嵌了一份离线兜底目录）——
+#      兜底目录因此必须是目录的「稳定投影」，登记性字段一律不进包
+#
+# 两个 job 的联网情况不一样，别一刀切：
+#   · 目录一致性 —— 完全不联网。它比的是仓库里已有的文件，快且确定。
+#   · 市场插件可构建 —— **要联网一次**：闸门那组测试必须对着真实的
+#     @deepseek-ai/dsh 安装判定（详见那一步的注释），所以会装一遍 harness。
+#     这是刻意的取舍：一个恒红的测试等于没有测试，而「只在 CI 红」的测试
+#     很快就会被人忽略。
 
 on:
   push:
@@ -71,6 +79,27 @@ jobs:
       #   所以必须先构建再测试。原先反着写，CI 每次都在测试那一步报「缺少构建产物」。
       - name: 构建（会重打 tarball）
         run: node plugins-src/dsh-plugins-market/build.mjs
+
+      # ★ 这一步要联网，而且不小 —— 为什么还是必须有它
+      #
+      #   闸门那组测试断言的是「**给定一个环境**，这个插件放不放行」。而「环境」的第一件事
+      #   就是找到真实的 @deepseek-ai/dsh 安装目录（findDshInstall），再从中解析
+      #   @deepseek-ai/dsh-llm 的版本 —— peer 判定拿它当基准，「本机缺接口」这类硬拦截
+      #   全靠它才判得出来。
+      #
+      #   干净的 runner 上这两样都没有，于是环境层直接 FATAL 返回、「每一个插件都被硬拦截」，
+      #   五条测试全红。红得很有道理，只是指向了错误的地方：看起来像闸门坏了，其实是
+      #   被测环境是空的。实测代价是一次 CI 运行 —— 所以这里照闸门自己给用户的提示装一遍。
+      #
+      #   顺带还验了一件事：compatibility.json 兼容矩阵里那个版本**真的能从 npm 装上**。
+      #   版本号显式取自矩阵，不写死 —— 矩阵改了这里跟着改，不会悄悄装成别的版本。
+      - name: 装真 harness（闸门测试要对着真实安装判定，不能对着空容器）
+        run: |
+          set -euo pipefail
+          ver=$(node -e "const c=require('./compatibility.json');const r=c.runtimes.find(x=>x.status==='supported')??c.runtimes[0];process.stdout.write(r.dshVersion)")
+          echo "按 compatibility.json 装 dsh@${ver} + pnpm@10（后者要在同一前缀下，否则闸门只告警）"
+          npm i -g --no-audit --no-fund "@deepseek-ai/dsh@${ver}" pnpm@10
+          npm ls -g --depth=0
 
       - name: 单元测试（针对打包产物）
         working-directory: plugins-src/dsh-plugins-market

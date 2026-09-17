@@ -92,6 +92,30 @@ test('隔离环境存在且是健康的（测试前置）', () => {
   assert(state.bundles.length >= 2, '应当至少有内置的两个 bundle');
 });
 
+test('★ 本机装了真实的 dsh（测试前置：闸门的版本基准只能来自真安装）', () => {
+  // ★ 这一条单独写出来，是因为少了它，下面的失败会**指向错误的地方**。
+  //
+  //   环境层的第一件事是「找到 @deepseek-ai/dsh 的安装目录」（findDshInstall），
+  //   找不到就直接 FATAL 返回 —— 于是**每一个**插件都被硬拦截，
+  //   测试红成一片，看起来像闸门逻辑坏了。实测过一次：CI（ubuntu-latest）上
+  //   没有任何全局安装，五条闸门测试全红，报的是「dsh-ark-plans 被硬拦截」。
+  //
+  //   闸门没错，错的是「拿一个空容器当被测环境」。所以这里把它变成一条明确的前置：
+  //   缺了就只有一条消息，而且这条消息直接给出修复命令。
+  const env0 = detectEnvironment(process.env);
+  assert(env0.dsh.installed,
+    '测试前置：本机找不到 @deepseek-ai/dsh 的安装目录。\n'
+    + '    闸门要拿真实安装里的版本当基准（含 @deepseek-ai/dsh-llm 的版本），没有它整组测试无意义。\n'
+    + `    修复：npm i -g @deepseek-ai/dsh@${compat?.runtimes?.find((r) => r.status === 'supported')?.dshVersion ?? '0.1.6-alpha.1'} pnpm@10`);
+  assert(env0.pnpm.installed,
+    '测试前置：PATH 上找不到 pnpm —— 闸门的环境层会因此硬拦截一切安装。\n'
+    + '    修复：npm i -g pnpm@10（装在与 dsh 同一个 Node 前缀下）');
+  assert(
+    resolveRuntimePackageVersion('@deepseek-ai/dsh-llm', { dshDir: env0.dsh.dir, env: process.env }).version,
+    '测试前置：解析不出 @deepseek-ai/dsh-llm 的版本 —— peer 判定会退化成「无法判定」，本该拦下的 pin 不匹配会溜过去。',
+  );
+});
+
 test('包内兜底目录（tier=verified）已生成且条目自洽', () => {
   assert(verified.available, `包内目录不可用：${verified.error}`);
   assert(verified.entries.length > 0, '包内兜底目录不能是空的');
