@@ -209,3 +209,36 @@ test('mergeEntries() 保留层级更高的那条，并补上被合并条目的 s
   eq(merged[0].tier, 'verified', '保留层级更高的那条');
   eq(merged[0].stars, 123, '被合并条目的 star 数是上游事实，应当补过来');
 });
+
+test('★ 只有**真包名**才算「同一个插件」—— 仓库名相同不能合并', () => {
+  // 公开索引按**仓库**一条记录，`name` 是仓库名，跟 npm 包名毫无关系：
+  // 几十个互不相干的仓库都叫 dsh-plugins / dsh-plugin。
+  // 早先 normalizeEntry 写的是 `package: p.package ?? p.name`，于是这些不同的插件
+  // 在合并去重时被算成了同一个 —— 目录 7496 条只剩 6542 条，954 条在界面上永远不出现，
+  // 而列表看起来完全正常，只是数量对不上。
+  const a = catalog.normalizeEntry({ slug: 'alice__dsh-plugins', id: 'alice/dsh-plugins', name: 'dsh-plugins', tier: 'community', title: 'A', summary: 's', tags: [] }, 'community');
+  const b = catalog.normalizeEntry({ slug: 'bob__dsh-plugins', id: 'bob/dsh-plugins', name: 'dsh-plugins', tier: 'community', title: 'B', summary: 's', tags: [] }, 'community');
+
+  eq(a.package, null, '没有真包名时 package 必须是 null，而不是拿仓库名顶上');
+  eq(b.package, null);
+  eq(a.name, 'dsh-plugins', '仓库名仍要留着（展示与检索用）');
+  eq(a.title, 'A');
+
+  const { merged } = catalog.mergeEntries({ verified: [], reviewed: [], community: [a, b] });
+  eq(merged.length, 2, '两个不同的仓库必须各占一条 —— 数量对不上是这类缺陷唯一的外在表现');
+});
+
+test('★ 目录条数不能因为去重而缩水（回归：7496 → 6542）', async () => {
+  const idx = await catalog.loadCatalogIndex({ preferRemote: false });
+  const { merged } = catalog.mergeEntries({
+    verified: idx.entries.filter((e) => e.tier === 'verified'),
+    reviewed: idx.entries.filter((e) => e.tier === 'reviewed'),
+    community: idx.entries.filter((e) => e.tier === 'community'),
+  });
+  eq(
+    merged.length,
+    idx.entries.length,
+    `包内兜底目录 ${idx.entries.length} 条，去重后只剩 ${merged.length} 条 —— `
+    + '说明有插件因为「看起来同名」被合并掉了。只有真包名才允许合并，仓库名不行。',
+  );
+});

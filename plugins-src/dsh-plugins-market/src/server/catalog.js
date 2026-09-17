@@ -301,7 +301,20 @@ export function normalizeEntry(p, tier) {
     tierLabel: TIER_META[tier]?.label ?? tier,
     reviewStatus: reviewStatusOf(tier),
     id: p.id ?? p.package ?? p.name,
-    package: p.package ?? p.name ?? null,
+    /**
+     * ★ `package` 只认**真的包名**，绝不退回 `name`。
+     *
+     *   索引里的 `name` 是**仓库名**（公开索引按仓库一条记录），它跟 npm 包名毫无关系：
+     *   几十个互不相干的仓库都叫 `dsh-plugins` / `dsh-plugin` / `dsh-memory`。早先这里写的是
+     *   `p.package ?? p.name`，于是这些**不同的插件**在合并去重时被算成了同一个 ——
+     *   7496 条目录只剩 6542 条，954 条被吃掉。而列表看起来完全正常，只是数量对不上，
+     *   被吃掉的那些在界面上永远不会出现（`mergeEntries` 把后到的当成了重复项）。
+     *
+     *   `name` 仍然参与展示（标题兜底）与检索，只是不再参与「这是不是同一个插件」的判定 ——
+     *   那条判据必须硬：只有真的包名才能代表「同一个包」。
+     */
+    package: p.package ?? null,
+    name: p.name ?? p.package ?? null,
     version: p.version ?? null,
     versionSource: p.versionSource ?? null,
     title: p.title ?? p.package ?? p.name ?? p.id,
