@@ -563,12 +563,18 @@ function cmdDoctor() {
         !sameRealPath(devSnap.profileDir, prodSnap.profileDir)),
     '独立'
   ]);
+  // 三态：'ok' | 'warn' | 'fail'
+  // warn 用于「新设备上属预期」的情况（如凭据尚未登过），不拉低退出码。
   checks.push([
     '凭据是独立副本（非硬链）',
-    devSnap.hasCredentials && prodSnap.hasCredentials
-      ? !sameInode(path.join(devHome, '.credentials.yaml'), path.join(prod, '.credentials.yaml'))
-      : devSnap.hasCredentials,
-    devSnap.hasCredentials ? '副本' : '缺失（可在 GUI 手填）'
+    !devSnap.hasCredentials
+      ? 'warn'
+      : prodSnap.hasCredentials
+        ? !sameInode(path.join(devHome, '.credentials.yaml'), path.join(prod, '.credentials.yaml'))
+        : true,
+    devSnap.hasCredentials
+      ? '副本'
+      : '尚未登录（新设备属正常，首次启动隔离环境时在 GUI 里登一次即可）'
   ]);
   checks.push([
     `隔离端口 ${devPort} 与生产 ${DEFAULT_PROD_PORT} 不同`,
@@ -589,21 +595,38 @@ function cmdDoctor() {
   ]);
 
   if (asJson) {
-    console.log(JSON.stringify({ checks: checks.map(([n, ok, d]) => ({ name: n, ok, detail: d })) }, null, 2));
-    return checks.every(([, ok]) => ok) ? 0 : 1;
+    console.log(
+      JSON.stringify(
+        {
+          checks: checks.map(([n, st, d]) => ({
+            name: n,
+            ok: st === true || st === 'ok',
+            status: st === true || st === 'ok' ? 'ok' : st === 'warn' ? 'warn' : 'fail',
+            detail: d
+          }))
+        },
+        null,
+        2
+      )
+    );
+    return checks.some(([, st]) => st !== true && st !== 'ok' && st !== 'warn') ? 1 : 0;
   }
 
   console.log('');
   console.log(`  ${bold('隔离自检')}`);
   console.log(`  ${'-'.repeat(72)}`);
-  for (const [name, ok, detail] of checks) {
-    console.log(`  ${ok ? symOk() : symBad()} ${name}`);
+  for (const [name, st, detail] of checks) {
+    const mark = st === true || st === 'ok' ? symOk() : st === 'warn' ? yellow('!') : symBad();
+    console.log(`  ${mark} ${name}`);
     console.log(`      ${dim(detail)}`);
   }
-  const failed = checks.filter(([, ok]) => !ok).length;
+  const failed = checks.filter(([, st]) => st !== true && st !== 'ok' && st !== 'warn').length;
+  const warned = checks.filter(([, st]) => st === 'warn').length;
   console.log('');
-  if (failed === 0) {
+  if (failed === 0 && warned === 0) {
     console.log(`  ${green('隔离成立。')} ${dim('两套环境互不影响。')}`);
+  } else if (failed === 0) {
+    console.log(`  ${green('隔离成立。')} ${dim(`另有 ${warned} 项提示，不影响隔离。`)}`);
   } else {
     console.log(`  ${yellow(`${failed} 项未通过`)} — 见上面逐条说明。`);
   }
@@ -658,6 +681,7 @@ function usage() {
     --json              机器可读输出
 
   ${bold('典型流程')}
+    cd <你 clone 的 dsh-plugins 仓库根目录>   # 命令都要在仓库根跑
     node scripts/dev-env.mjs init           # 建隔离环境
     cd ${homeDisplay}/profiles/${devProfile}
     pnpm install                            # 装依赖（只需一次）

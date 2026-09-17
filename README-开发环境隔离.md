@@ -105,6 +105,25 @@ node scripts/dev-env.mjs web
 
 浏览器打开 `http://127.0.0.1:3090`。你的生产环境（3080）**完全不受影响**。
 
+### 5) 验证它真的隔离了
+
+```bash
+node scripts/dev-env.mjs doctor
+```
+
+期望结果：`隔离成立。`（新设备上可能带 1 条「凭据尚未登录」的提示，属正常）
+
+不想污染真实主目录？可以把 `HOME` 指到一个临时目录，**模拟一台全新设备**：
+
+```bash
+export HOME=/tmp/fake-home          # Windows: $env:USERPROFILE="D:\tmp\fake-home"
+node scripts/dev-env.mjs init       # 会在 /tmp/fake-home/.dsh-dev 建环境
+node scripts/dev-env.mjs doctor
+```
+
+实测：干净设备上 `init` 依然 **exit 0** —— dsh 自带出厂模板，**不需要先有生产环境**；
+`doctor` 报「凭据尚未登录」提示、`exit 0`。跑完把那个临时目录删掉即可。
+
 ---
 
 ## 四、日常怎么用
@@ -164,17 +183,26 @@ dsh --profile dev web --port 3090
 node scripts/dev-env.mjs doctor
 ```
 
-逐条检查（全部通过才算隔离成立）：
+逐条检查。结果分三态：
+
+- `✓` **通过**
+- `!` **提示** —— 属正常情况，不影响隔离，也**不拉低退出码**
+- `✗` **未通过** —— 需要处理
 
 | 检查项 | 含义 |
 |---|---|
 | 隔离 home ≠ 生产 home | 两个目录不同 |
 | 隔离 profile 已初始化 | `profiles/dev/package.json` 存在 |
 | 插件树独立 | 不是生产的软链 |
-| 凭据是独立副本 | 比对 inode，确认不是硬链 |
+| 凭据是独立副本 | 比对 inode，确认不是硬链；**新设备上还没登录过 → 提示，不算失败** |
 | 端口不同 | 默认 3090 vs 3080 |
 | `~` 解析正确 | 路径展开无误 |
 | **生产 profile 无开发类产物** | 见下节 |
+
+退出码：全部通过或仅有提示 → `0`；存在 `✗` → `1`。适合直接串进 CI 或 git hook。
+
+> 刚在**新设备**上跑 `doctor`，看到「凭据 · 尚未登录」是正常的 ——
+> 首次启动隔离环境时在 GUI 里登一次，之后就是独立副本了。
 
 ---
 
