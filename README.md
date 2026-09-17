@@ -149,8 +149,10 @@ dsh-plugins/
 │  │  └─ 0.1.6-alpha.1/
 │  ├─ dsh-session-cleanup/
 │  │  └─ 0.1.6-alpha.1/             # 自研
-│  └─ dsh-ark-plans/
-│     └─ 0.1.6-alpha.1/             # 自研（火山方舟 Agent Plan + Coding Plan 模型接入）
+│  ├─ dsh-ark-plans/
+│  │  └─ 0.1.6-alpha.1/             # 自研（火山方舟 Agent Plan + Coding Plan 模型接入）
+│  └─ dsh-excel-viewer/
+│     └─ 0.1.6-alpha.1/             # 自研（表格预览：xlsx / xlsm / xls / csv / tsv）
 ├─ profile-config/
 │  └─ profile-bundles.yaml          # web profile 的 bundles 顺序清单
 └─ settings/
@@ -179,6 +181,7 @@ dsh-plugins/
 | `dsh-workbuddy-connect` | 0.5.3 | 第三方收集 | corrinehu | [corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect) | MIT |
 | `dsh-connect-trae` | 2.0.1 | 第三方收集 | dingminhua | [dingminhua/dsh-connect-trae](https://github.com/dingminhua/dsh-connect-trae) | MIT |
 | `dsh-receipt` | 0.1.0 | 第三方收集 | — | [deronendless/dsh-receipt](https://github.com/deronendless/dsh-receipt) | MIT |
+| `dsh-excel-viewer` | 0.1.0 | **本仓库自研**（内联第三方） | HaydenSmith1121 | 本仓库 | MIT |
 
 > **关于 `@dsh-market/plugin`**：该包的 `package.json` **没有** `author` 与
 > `repository` 字段，来源是依据包内 `README.md` 声明的上游核实的 ——
@@ -186,6 +189,15 @@ dsh-plugins/
 > 插件数据源 `https://2bingling.github.io/dsh-market/plugins.json`。
 > 该包自称要求 DSH ≥ 0.1.5、Node ≥ 20。
 > ⚠️ 其 tarball 内**未附带 LICENSE 文件正文**（`package.json` 中 `license` 为 MIT）。
+
+> **关于 `dsh-excel-viewer`**：这是本仓库自研的**客户端渲染器**，但它的 tarball 里
+> **内联分发**了 SheetJS Community Edition 0.20.3（Apache-2.0，取自 SheetJS 官方 CDN）——
+> 不是运行时依赖：dsh 的浏览器模块表只提供 `react` 与 `@deepseek-ai/*`，插件 bundle 里出现别的
+> `require(...)` 会在用户打开文件时抛错，所以解析器必须在构建期内联进 `lib/client.js`。
+> 选官方 CDN 的 0.20.3 而不是 npm 上的 0.18.5，是因为后者已停更且带已在后续版本修复的安全问题
+> （原型污染 CVE-2023-30533、ReDoS CVE-2024-22363），而本插件解析的正是用户文件。
+> 版权头在构建时以 `legalComments: inline` 保留，完整归属、内联方式与合规动作见包内
+> `THIRD_PARTY_NOTICES.md`。
 
 > **关于 `dsh-opencode-go-plus`**：这是本仓库维护的**派生包**，标在「自研」一栏是因为
 > 它的打包、修复与分发都由本仓库负责 —— 但它的代码**不是**从零写的，归属必须讲清楚：
@@ -227,19 +239,23 @@ dsh-plugins/
 | `plugins/dsh-session-cleanup/` | `dsh-session-cleanup` | 0.1.2 | 0.1.6-alpha.1 | 已归档会话的真实删除（**带宿主半**） |
 | `plugins/dsh-ark-plans/` | `dsh-ark-plans` | 0.1.0 | 0.1.6-alpha.1 | 火山方舟 **Agent Plan + Coding Plan** 模型接入（**纯组合配置 + 凭据诊断**，无 wire 代码） |
 | `plugins/dsh-memory/` | `dsh-memory` | 0.1.0 | 0.1.6-alpha.1 | **跨会话长期记忆**：turn 结束自动蒸馏成 markdown 笔记，下次会话自动作为提示段召回（**纯宿主半**，零包导入；**带源码**，见 `plugins-src/`） |
+| `plugins/dsh-excel-viewer/` | `dsh-excel-viewer` | 0.1.0 | 0.1.6-alpha.1 | Excel / CSV 表格预览（**纯客户端渲染器，宿主半为空**；内联 SheetJS，见包内 `THIRD_PARTY_NOTICES.md`） |
 
 **安装顺序**（即 dsh bundle 层级顺序，见 `profile-config/profile-bundles.yaml`）：
 
 ```none
 @dsh-market/plugin → dsh-workbuddy-connect → dsh-opencode-go-plus
 → dsh-connect-trae → dsh-workbuddy-quota → dsh-receipt → dsh-session-cleanup
-→ dsh-ark-plans → dsh-memory → dsh-plugins-market
+→ dsh-ark-plans → dsh-memory → dsh-plugins-market → dsh-excel-viewer
 ```
 
 > `dsh-plugins-market` 排在最后：插件市场的面板本身不依赖别的插件，
 > 但放在最后可以让它的 patch 层在装配时最后生效，装/卸其它插件时不会互相干扰。
 > `dsh-memory` 同理排在 `dsh-ark-plans` 之后、市场之前 —— 它是普通的宿主半插件，
 > 不参与任何 patch 覆盖，没有理由插到别的前面去。
+
+> `dsh-excel-viewer` 追加在这条链的末尾：它只在客户端注册一个文档渲染器，不覆盖任何 patch 行，
+> 也不依赖别的插件。追加在末尾是约定而不是依赖关系 —— 列表顺序才是唯一事实来源。
 
 ### 四之一、可视化插件市场（`dsh-plugins-market`）
 
@@ -284,6 +300,7 @@ node scripts/market-review.mjs <owner/repo | npm 包名>
 | `dsh-session-cleanup` | 仅 cordis / react | ✓ | ✓ |
 | `dsh-ark-plans` | `@deepseek-ai/dsh-llm-pi-ai` / `dsh-credentials` 精确 pin `0.1.6-alpha.1` | ✗ | ✓ |
 | `dsh-memory` | 仅 cordis（宿主半零包导入） | ✓ | ✓ |
+| `dsh-excel-viewer` | 仅 cordis / react（SheetJS 内联，非运行时依赖） | ✓ | ✓ |
 
 **→ 整批插件以 `0.1.6-alpha.1` 为基线。**
 
@@ -329,7 +346,7 @@ node scripts/market-review.mjs <owner/repo | npm 包名>
 
 | dsh 版本 | 通道 | 状态 | 说明 |
 |---|---|---|---|
-| `0.1.6-alpha.1` | alpha | ✅ **支持**（已实测 8/8 加载成功） | 当前基线 |
+| `0.1.6-alpha.1` | alpha | ✅ **支持**（已实测 11/11 加载成功） | 当前基线 |
 | `0.1.5-rc.1` | latest | ❌ 不支持 | 内置 `dsh-llm` 缺 0.1.6 的导出，启动即失败 |
 | `0.1.5-rc.2` | next | ❌ 不支持 | 同上 |
 
@@ -378,6 +395,7 @@ node scripts/market-review.mjs <owner/repo | npm 包名>
 | `dsh-session-cleanup` | 0.1.2 | 6 | ✓ | ✓ | ✓ |
 | `dsh-ark-plans` | 0.1.0 | 6 | ✓ | ✓ | ✓ |
 | `dsh-memory` | 0.1.0 | 6 | ✓ | ✓ | ✓ |
+| `dsh-excel-viewer` | 0.1.0 | 7 | ✓ | ✓ | ✓ |
 
 自查命令：
 

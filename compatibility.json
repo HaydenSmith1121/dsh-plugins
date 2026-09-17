@@ -2,7 +2,6 @@
   "schemaVersion": 1,
   "updated": "2026-09-17",
   "profile": "web",
-
   "requirements": {
     "node": {
       "min": "22.19.0",
@@ -15,23 +14,26 @@
       "note": "pnpm 10+ 默认开启依赖构建脚本拦截（strictDepBuilds），这是 allowBuilds 那一步的由来。pnpm 必须装在「dsh 所在的那个 Node」上，多 Node 环境极易装错位置。"
     },
     "os": {
-      "verified": ["Windows"],
-      "expected": ["Windows", "macOS", "Linux"]
+      "verified": [
+        "Windows"
+      ],
+      "expected": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ]
     }
   },
-
   "distTags": {
     "latest": "0.1.5-rc.1",
     "next": "0.1.5-rc.2",
     "alpha": "0.1.6-alpha.1",
     "note": "npm i -g @deepseek-ai/dsh（不带版本）装的是 latest，即 0.1.5-rc.1 —— 对本仓库来说不够用。"
   },
-
   "inBoxBundles": [
     "@deepseek-ai/dsh-base",
     "@deepseek-ai/dsh-web-app"
   ],
-
   "allowBuilds": {
     "packages": {
       "@google/genai": false,
@@ -42,7 +44,6 @@
     "note": "这两个包都不需要真的执行构建脚本：protobufjs 的 postinstall 只打印一句提示；@google/genai 的 prepare 对 tarball 安装本就不执行。填 false 的含义是「已知并同意忽略」，不是「跳过构建」。不要改成 strictDepBuilds: false —— 那会把将来真正需要编译的原生模块也一起静默跳过。",
     "symptom": "ERR_PNPM_IGNORED_BUILDS。极具欺骗性：包已进 node_modules、dependencies 也写了，唯独 dsh.profile.bundles 没追加，表现为「装上了但 GUI 里没有」。只要 pnpm 退出码非 0，就当作这条插件没装完。"
   },
-
   "runtimes": [
     {
       "dshVersion": "0.1.6-alpha.1",
@@ -69,26 +70,10 @@
         "dsh-session-cleanup",
         "dsh-ark-plans",
         "dsh-memory",
-        "dsh-plugins-market"
+        "dsh-plugins-market",
+        "dsh-excel-viewer"
       ],
       "plugins": [
-        {
-          "dir": "dsh-plugins-market",
-          "package": "dsh-plugins-market",
-          "version": "0.1.0",
-          "tarball": "plugins/dsh-plugins-market/0.1.6-alpha.1/dsh-plugins-market-0.1.0.tgz",
-          "files": 16,
-          "origin": "self",
-          "author": "HaydenSmith1121",
-          "upstream": "https://github.com/HaydenSmith1121/dsh-plugins",
-          "license": "MIT",
-          "licenseFileInTarball": true,
-          "peerRuntimePin": null,
-          "peerVerdict": "ok",
-          "peerNote": "没有任何 dependencies / peerDependencies —— 服务器半只用 Node 内置模块（semver 判定、tar 只读访问、YAML 局部合并都是自己实现并有单测），客户端半只用 shell 基线模块表里的 react（不需要 dsh.client.external）。这是刻意的取舍：每多一个依赖就多一分 pnpm 解析失败 / ERR_PNPM_IGNORED_BUILDS / 离线不可用的风险，而这个插件存在的意义正是「别把 harness 装坏」。",
-          "bootstrap": true,
-          "notes": "★ 引导插件：本仓库自 2026-09 起，**插件一律通过它的市场面板安装**，scripts/install.* 只装这一个。三层目录（已验证 / 已审核 / 未审核）+ 装前兼容性闸门（环境 / profile / 候选包三层，致命项分「已知有害，硬拦截不可覆盖」与「无法确认，可覆盖需显式确认」两档）+ 事务化安装（先备份 profile 的 5 个状态文件，成功判据是 pnpm 退出码而非 node_modules 有没有文件，失败自动回滚）。公共索引 7487 条首次拉取后投影成瘦身版落盘，之后检索与分页都在服务端（命中缓存列表 0.15s / 检索 0.06s）。开发中实测到并已写进插件 README 的三件事：① profile 里指向**已删除** tarball 的 file: 依赖会让之后任何 pnpm 操作失败，闸门作为不可覆盖致命项拦下；② file: 指向同一路径但 tarball 内容变化时 pnpm 会跳过解包（加 --force 也只重链接），必须 remove 再 add；③ 公共索引里 star 最高的条目（ruvnet/ruflo，7.2 万 star）根本没声明 dsh.bundle.patch，装进去永远不会加载，远程静态探测拦住了它。★ 维护提醒：本条目曾因并行会话重写 compatibility.json 而丢失过一次，build.mjs 现在会校验它在不在，缺了就直接报错。"
-        },
         {
           "dir": "dsh-market-plugin",
           "package": "@dsh-market/plugin",
@@ -251,6 +236,39 @@
           "peerVerdict": "ok",
           "peerNote": "只约束 cordis，不对 dsh 运行时版本通道设 pin。宿主半 lib/index.js 不 import 任何包（只有 node: 内置模块），因此不存在 0.1.5 → 0.1.6 那类「缺具名导出 → 整棵树加载失败」的失败面 —— 这与 dsh-ark-plans 是同一个姿态，但理由更强：本包连 ctx.get('credentials') 这类服务读取都用可选形式。真正的版本敏感性只在它用到的 ctx 服务与事件上（systemPrompt.section / agent.ctx.inject / session/event / agent/turn-stopping / llm.stream），这些都是 0.1.6-alpha.1 的实测面。",
           "notes": "跨会话长期记忆。turn 结束时把该轮的新对话蒸馏成 markdown 笔记写进 $DSH_HOME/memory/，每次模型请求前把「全局笔记 + 当前工作区笔记」作为作用域提示段注入。纯宿主半：无客户端半、无工具、无斜杠命令、无向量检索。★ 触发点选 agent/turn-stopping 而不是空闲防抖 —— 它是 serial（会被 await）事件，turn 不关闭就不返回，这是 headless 一次跑完就退出时唯一可靠的落盘时机；开销用「新文本量下限 + 同会话最小间隔」两道闸门压住，普通短轮次零开销（实测：默认参数下短任务不产生任何记忆文件）。★ 召回段必须按 agent 注册（agent.ctx.inject(['systemPrompt'], …)），不能全局注册：AssembleContext 只带 scope/signal，全局段拿不到工作区；按 agent 注册还顺带随 agent 卸载，不会漏到下一个会话。插入位置取 getSectionOrder('FILE_REFERENCE') - 50 = 850。★ 只取 source.kind === 'user' 的 user/message，合成消息（召回段自身、文件变更通知、skill 正文、goal 续跑）一律不取，否则记忆会把自己的输出当新事实再总结一遍。★ 全部旋钮走 DSH_MEMORY_* 环境变量而非 config schema，代价是没有配置校验，收益是保持零包导入。★ 端到端实测含一条反向验证：同一个 prompt 在工作区 A 答出种进去的独有暗号、在全新目录答 UNKNOWN，证明召回确实来自提示段而非模型顺着问句编。实测细节见包内 docs/verification.md。"
+        },
+        {
+          "dir": "dsh-plugins-market",
+          "package": "dsh-plugins-market",
+          "version": "0.1.0",
+          "tarball": "plugins/dsh-plugins-market/0.1.6-alpha.1/dsh-plugins-market-0.1.0.tgz",
+          "files": 16,
+          "origin": "self",
+          "author": "HaydenSmith1121",
+          "upstream": "https://github.com/HaydenSmith1121/dsh-plugins",
+          "license": "MIT",
+          "licenseFileInTarball": true,
+          "peerRuntimePin": null,
+          "peerVerdict": "ok",
+          "peerNote": "没有任何 dependencies / peerDependencies —— 服务器半只用 Node 内置模块（semver 判定、tar 只读访问、YAML 局部合并都是自己实现并有单测），客户端半只用 shell 基线模块表里的 react（不需要 dsh.client.external）。这是刻意的取舍：每多一个依赖就多一分 pnpm 解析失败 / ERR_PNPM_IGNORED_BUILDS / 离线不可用的风险，而这个插件存在的意义正是「别把 harness 装坏」。",
+          "bootstrap": true,
+          "notes": "★ 引导插件：本仓库自 2026-09 起，**插件一律通过它的市场面板安装**，scripts/install.* 只装这一个。三层目录（已验证 / 已审核 / 未审核）+ 装前兼容性闸门（环境 / profile / 候选包三层，致命项分「已知有害，硬拦截不可覆盖」与「无法确认，可覆盖需显式确认」两档）+ 事务化安装（先备份 profile 的 5 个状态文件，成功判据是 pnpm 退出码而非 node_modules 有没有文件，失败自动回滚）。公共索引 7487 条首次拉取后投影成瘦身版落盘，之后检索与分页都在服务端（命中缓存列表 0.15s / 检索 0.06s）。开发中实测到并已写进插件 README 的三件事：① profile 里指向**已删除** tarball 的 file: 依赖会让之后任何 pnpm 操作失败，闸门作为不可覆盖致命项拦下；② file: 指向同一路径但 tarball 内容变化时 pnpm 会跳过解包（加 --force 也只重链接），必须 remove 再 add；③ 公共索引里 star 最高的条目（ruvnet/ruflo，7.2 万 star）根本没声明 dsh.bundle.patch，装进去永远不会加载，远程静态探测拦住了它。★ 维护提醒：本条目曾因并行会话重写 compatibility.json 而丢失过一次，build.mjs 现在会校验它在不在，缺了就直接报错。"
+        },
+        {
+          "dir": "dsh-excel-viewer",
+          "package": "dsh-excel-viewer",
+          "version": "0.1.0",
+          "tarball": "plugins/dsh-excel-viewer/0.1.6-alpha.1/dsh-excel-viewer-0.1.0.tgz",
+          "files": 7,
+          "origin": "self",
+          "author": "HaydenSmith1121",
+          "upstream": "https://github.com/HaydenSmith1121/dsh-plugins",
+          "license": "MIT",
+          "licenseFileInTarball": true,
+          "peerRuntimePin": "@deepseek-ai/cordis ^4.0.2, react ^18.2.0",
+          "peerVerdict": "ok",
+          "peerNote": "只约束 cordis 与 react，不对 dsh 运行时版本通道设 pin。SheetJS 是被内联进 lib/client.js 的（devDependency，不是运行时依赖），所以浏览器侧不存在「缺具名导出 → 整棵树加载失败」的失败面；真正的版本敏感性只在它用到的三个客户端服务上（slots / locale / documentPreviews），这些是 0.1.6-alpha.1 的实测面。",
+          "notes": "让 Excel/CSV 在 harness 里直接打开：点 .xlsx/.xlsm/.xls/.csv/.tsv 即在右侧预览面板渲染成只读表格（多工作表标签、行列号、工作簿自带格式的数值与日期、合并单元格、双向滚动、大表分块挂载）。形态是 ctx.documentPreviews 里的一个渲染器实现 + sidebar.right.tab.document 的同 id 键控 body：tab、读取、失败行、查看器选择仍全部归上游 @deepseek-ai/dsh-client-ui-sidebar-documentpreview 所有，host 半是空模块（字节经上游自己的 workspaceFiles Remote 读取），因此不存在第二条权限判断路径。★ 两处实测出来的关键取舍：① SheetJS 对认不出的内容会退回文本解析 —— 一个改了后缀的 txt 会被画成「单列假表格」，所以二进制后缀先验 ZIP / OLE2 / BIFF8 文件头，不匹配就直接报「这不是一个有效的工作簿文件」；② 中文 CSV 是 GBK，严格 UTF-8 解码失败后走平台 TextDecoder('gb18030')，不再是 ÇøÓò 这种乱码，且 .csv/.tsv 保留纯文本兜底（.xlsx/.xlsm/.xls 声明为二进制，不给必然乱码的纯文本选项）。渲染上限两道且都写在页脚：模型层每张表 2000 行 × 200 列，视图层首屏 300 行、每次 +500 行（一个 td 一个 DOM 节点，2000 行宽表是 20 万节点）。验证：解析层 84 条断言、客户端 bundle 57 条（按浏览器方式加载 + 桩 ctx + react-dom/server 实渲染 9 个样本）、真浏览器 31 条（隔离 3092 harness 里点文件；含对照基线：同目录未被认领的 .docx 显示的正是被本插件替换掉的上游空态）。"
         }
       ]
     },
