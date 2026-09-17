@@ -370,6 +370,23 @@ export async function installPlugin({ entry, ctx, gate, options = {} }) {
   }
 
   // [4] 调 dsh 安装
+  //
+  // ★ 「更新」场景（profile 里已经有一条指向**旧版本 tarball** 的 file: 依赖）
+  //   必须先 `remove` 再 `add`。只 add 的话 pnpm 会认为这个依赖已经满足，
+  //   dependencies 里那条指向旧 `.tgz` 的规格原封不动 —— 用户点了「更新到 0.3.0」，
+  //   结果装的还是 0.2.1，而且**界面会显示成功**。这是最难查的一类「假成功」。
+  const previous = (ctx.installed ?? []).find((i) => i.name === pkgName) ?? null;
+  const needsRemoveFirst = Boolean(previous?.installed || previous?.spec);
+  if (needsRemoveFirst) {
+    const rm = dshRun(['plugin', '--profile', profile, 'remove', pkgName], ctx, { timeout: 900_000 });
+    const rmOut = `${rm.stdout}\n${rm.stderr}`;
+    log('install-replace', '移除旧版本', rm.failed ? 'warn' : 'ok',
+      rm.failed
+        ? `移除 ${pkgName}（旧规格 ${previous?.spec ?? '?'}）时退出码 ${rm.status} —— 继续尝试安装新版本，装完以三层校验为准。`
+        : `已移除旧版本（原规格 ${previous?.spec ?? '?'}）`,
+      rm.failed ? { output: tail(rmOut, 2000) } : {});
+  }
+
   let attempt = await dshRun(['plugin', '--profile', profile, 'add', mat.spec], ctx, { timeout: 900_000 });
   let combined = `${attempt.stdout}\n${attempt.stderr}`;
   let retried = false;

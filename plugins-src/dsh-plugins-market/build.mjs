@@ -136,19 +136,25 @@ log('  [1/4] 生成 catalog/verified.json');
 
 const verifiedPlugins = runtime.plugins.map((p) => {
   const tgz = path.join(REPO, p.tarball);
+  const isSelf = p.package === PKG_NAME;
   const present = fs.existsSync(tgz);
-  if (!present) fail(`tarball 缺失：${p.tarball}`);
 
   /**
-   * ★ 自引用条目不能自包含 sha256。
+   * ★ 自引用条目不能自包含 sha256，也**不能要求自己的产物先存在**。
    *
-   * verified.json 在 [1] 生成、tarball 在 [4] 重写 —— 本次构建产物的 hash
-   * 写不进本次构建产物里（算完 hash 又要重写 tarball，改完 hash 又变了，无限递归）。
-   * 所以自己的条目不带 hash，实际 hash 落在同目录的 `.tgz.sha256` 边车文件里，
-   * 同时由仓库维护流程写进 compatibility.json。
-   * 其余条目指向的是**稳定**的历史 tarball，hash 正常计算并嵌入。
+   * verified.json 在 [1] 生成、tarball 在 [4] 才写出来 —— 也就是说
+   * 自引用条目指向的那个文件，正是**本次构建的产物**。所以：
+   *   - hash 不能算（算完又要重写 tarball，改完 hash 又变了，无限递归）；
+   *   - 存在性也不能查（版本号 bump 后的第一次构建，那个文件本来就还不存在）。
+   * 早先这里对自引用条目也 fail，结果是**每次升版本号的第一次构建必然失败**，
+   * 必须先手工造一个空壳文件才能过 —— 纯属自找麻烦。
+   * 现在自己的条目跳过存在性与 hash 校验，实际 hash 落在同目录的
+   * `.tgz.sha256` 边车文件里（[4] 写），并写进 compatibility.json。
+   *
+   * 其余条目指向的是**稳定**的历史 tarball，存在性与 sha256 都必须对得上。
    */
-  const isSelf = p.package === PKG_NAME;
+  if (!present && !isSelf) fail(`tarball 缺失：${p.tarball}`);
+
   const actualSha = present && !isSelf ? sha256(tgz) : null;
   // 同理，自身 tarball 的大小在本次构建里也会变 —— 它和 hash 一样无法自包含
   const actualBytes = present && !isSelf ? fs.statSync(tgz).size : null;

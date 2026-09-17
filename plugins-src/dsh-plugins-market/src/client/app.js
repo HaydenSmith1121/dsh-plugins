@@ -118,6 +118,43 @@ window.__ModuleLoader__.load({
 .dpm-check[data-sev="warn"]{border-left:3px solid #d97706}
 .dpm-check[data-sev="info"]{border-left:3px solid #16a34a}
 .dpm-check[data-sev="skip"]{border-left:3px solid #9ca3af}
+/*
+ * ── 点赞 / 收藏 ──────────────────────────────────────────────
+ * 两个按钮。★ 刻意做成「描边 + 数字」而不是大色块：收藏是个人偏好，
+ * 不该比「审核状态」这个安全信号更抢眼。
+ * data-on 只看布尔值，颜色一律走 CSS —— 组件里不拼颜色字符串，
+ * 暗色模式下才不用再判一次。
+ */
+.dpm-mark{appearance:none;display:inline-flex;align-items:center;gap:4px;font-family:inherit;font-size:11.5px;line-height:1;padding:5px 9px;border-radius:999px;cursor:pointer;border:1px solid var(--dsw-alias-border-l1,#d4d7dc);background:var(--dsw-alias-bg-base,#fff);color:var(--dsw-alias-label-secondary,#5f6670)}
+.dpm-mark:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover,#f0f1f3)}
+.dpm-mark:disabled{opacity:.45;cursor:not-allowed}
+.dpm-mark[data-on]{font-weight:600}
+.dpm-mark-like[data-on]{background:#fdeaea;border-color:#f5c6c6;color:#c2410c}
+.dpm-mark-fav[data-on]{background:#fef7e7;border-color:#f0dfae;color:#a16207}
+.dpm-mark-ico{font-size:12px;line-height:1}
+/*
+ * ── 状态徽标 ────────────────────────────────────────────────
+ * 已安装 / 已是最新 / 可升级 三种。可升级用蓝色而不是绿色 ——
+ * 绿色在本插件里一律表示「无需动作」，可升级是「有个动作值得做」。
+ */
+.dpm-badge-update{background:#eaf2fb;color:#2e4bd8;border:1px solid #c9d4f5}
+.dpm-badge-current{background:#e8f6ee;color:#15803d;border:1px solid #bfe3cd}
+/* 已经装过、但没有新版时，「安装」按钮置灰 —— 灰底灰字，明确不可点 */
+.dpm-btn-installed:disabled{background:var(--dsw-alias-bg-layer-1,#f3f4f6);border-color:var(--dsw-alias-border-l1,#e5e7eb);color:var(--dsw-alias-label-secondary,#8a919f);opacity:1}
+.dpm-btn-update{background:var(--dpm-brand,#4d6bfe);border-color:var(--dpm-brand,#4d6bfe);color:#fff;font-weight:600}
+.dpm-btn-update:hover:not(:disabled){background:var(--dpm-brand-strong,#2e4bd8);border-color:var(--dpm-brand-strong,#2e4bd8)}
+/*
+ * ── 筛选行 ──────────────────────────────────────────────────
+ * 部门筛选（已审核 / 未审核 / 已收藏 / 可升级…）做成 chips：
+ * 它们是可以叠加的「视图开关」，不是页签 —— 页签一次只能选一个，
+ * 而这些筛选天然要能组合（比如「已收藏 + 可升级」）。
+ */
+.dpm-filters{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.dpm-filter{appearance:none;font-family:inherit;font-size:11.5px;line-height:1;padding:6px 10px;border-radius:999px;cursor:pointer;border:1px solid var(--dsw-alias-border-l1,#d4d7dc);background:var(--dsw-alias-bg-base,#fff);color:var(--dsw-alias-label-secondary,#5f6670);white-space:nowrap}
+.dpm-filter:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover,#f0f1f3)}
+.dpm-filter[data-on]{background:var(--dpm-brand,#4d6bfe);border-color:var(--dpm-brand,#4d6bfe);color:#fff;font-weight:600}
+.dpm-filter:disabled{opacity:.45;cursor:not-allowed}
+.dpm-filter-n{opacity:.75;margin-left:3px}
 .dpm-check-top{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
 .dpm-check-t{font-size:12.5px;font-weight:600}
 .dpm-check-d{margin:4px 0 0;font-size:12px;color:var(--dsw-alias-label-secondary,#5f6670);white-space:pre-wrap;word-break:break-word}
@@ -161,6 +198,14 @@ window.__ModuleLoader__.load({
   .dpm-pre{background:#1a1b1d;border-color:#34363a}
   .dpm-drawer{background:#1c1d1f}
   .dpm-flag-info{background:#2b2d31;border-color:#3a3d42}
+  .dpm-mark{background:#2b2d31;border-color:#3a3d42;color:#b6bac2}
+  .dpm-mark-like[data-on]{background:#3a2320;border-color:#6b3a2e;color:#f0a58a}
+  .dpm-mark-fav[data-on]{background:#3a3320;border-color:#6b5f2e;color:#e8c46a}
+  .dpm-filter{background:#2b2d31;border-color:#3a3d42;color:#b6bac2}
+  .dpm-filter[data-on]{background:var(--dpm-brand,#4d6bfe);border-color:var(--dpm-brand,#4d6bfe);color:#fff}
+  .dpm-badge-update{background:#20293d;color:#8fb0f5;border-color:#33415e}
+  .dpm-badge-current{background:#1e2f24;color:#7fd39b;border-color:#2f4a38}
+  .dpm-btn-installed:disabled{background:#2b2d31;border-color:#3a3d42;color:#7d828c}
 }
 `;
 		var CSS_TAG_ID = "dsh-plugins-market/panel.css";
@@ -273,10 +318,31 @@ window.__ModuleLoader__.load({
 		//#endregion
 
 		//#region ── 基础组件 ──────────────────────────────────────────────
+		/*
+		 * ★ variant 到样式类的映射必须**表驱动**，不能写成 if/else 链。
+		 *
+		 *   原来这里是：
+		 *     if (variant === "primary") … else if (variant === "danger") …
+		 *   于是新增一个 variant（"update"）时，它不匹配任何分支、也不报错 ——
+		 *   按钮照样渲染、能点、文案也对，只是**完全没有样式**，看着像个裸按钮。
+		 *   这种「静默丢失」在界面上极难发现（谁会盯着按钮说「它怎么不蓝」）：
+		 *   本插件加「更新」按钮时就真的踩了一次，被渲染测试抓出来。
+		 *   改成一张表：加 variant 时顺手加一行，漏了也一眼看得出来。
+		 */
+		var BTN_VARIANTS = {
+			primary: "dpm-btn-primary",
+			danger: "dpm-btn-danger",
+			update: "dpm-btn-update",
+		};
+
 		var Btn = function (props) {
 			var cls = "dpm-btn";
-			if (props.variant === "primary") cls += " dpm-btn-primary";
-			else if (props.variant === "danger") cls += " dpm-btn-danger";
+			var variantCls = BTN_VARIANTS[props.variant];
+			if (variantCls) cls += " " + variantCls;
+			else if (props.variant) {
+				// 认不出的 variant 要吵一声，而不是安静地退化成默认样式
+				try { console.warn("[dsh-plugins-market] 未知的按钮 variant：" + props.variant); } catch (e) { /* 忽略 */ }
+			}
 			if (props.small) cls += " dpm-btn-sm";
 			if (props.className) cls += " " + props.className;
 			return h(
@@ -303,8 +369,97 @@ window.__ModuleLoader__.load({
 			return "neutral";
 		}
 
+		/*
+		 * ── 安装状态 ─────────────────────────────────────────────
+		 *
+		 * 服务端把每个条目的状态算好了传过来（installState），客户端**只做展示**。
+		 * 不在浏览器里比版本号的原因很实际：semver 的预发布规则一错，
+		 * 「已是最新」就会说反，而这种错在界面上完全看不出来。
+		 * 服务端那份判定有单测覆盖（test/state.test.mjs）。
+		 */
+		var STATE_TEXT = {
+			"not-installed": "未安装",
+			"current": "已是最新",
+			"upgradable": "可升级",
+			"older": "已装（更新）",
+			"unknown": "已安装",
+		};
+
+		function stateOf(entry) {
+			return (entry && entry.installState) || { status: "not-installed", installed: false, canInstall: true, action: "install" };
+		}
+
+		/** 主按钮文案：没装 → 安装；有新版 → 更新到 x.y.z；已最新 → 已安装 */
+		function primaryLabel(entry) {
+			var st = stateOf(entry);
+			if (st.status === "upgradable") return "更新到 " + txt(st.target, "新版本");
+			if (st.status === "current") return "已安装";
+			if (st.installed) return "重新安装";
+			return "安装";
+		}
+
+		/** 主按钮是否禁用 —— 问题 2 的核心：已经装了最新版就不该还能点 */
+		function primaryDisabled(entry) {
+			var st = stateOf(entry);
+			if (st.status === "current") return true;
+			// 「装了但没挂载」是坏状态，这时候必须允许重装，不能置灰
+			if (st.installed && !st.inBundles) return false;
+			return false;
+		}
+
+		function primaryTitle(entry) {
+			var st = stateOf(entry);
+			if (st.status === "current") {
+				return "已经装的是 " + txt(st.installedVersion) + "，与目录里的版本一致 —— 无需安装。目录里出现新版本时这里会变成「更新」。";
+			}
+			if (st.status === "upgradable") {
+				return "已装 " + txt(st.installedVersion) + "，目录里是 " + txt(st.target) + "。更新会先移除旧版本再装新版本（会自动备份，失败自动回滚）。";
+			}
+			if (st.status === "unknown" && st.installed) return st.reason || "已安装，但无法判断目录里的版本是否更新。";
+			return null;
+		}
+
+		/** 「安装状态」徽标（未安装时不显示 —— 没有信息量，只会占地方） */
+		function installBadge(entry) {
+			var st = stateOf(entry);
+			if (!st.installed) return null;
+			if (st.status === "upgradable") return h(Badge, { kind: "update" }, "可升级 " + txt(st.target));
+			if (st.status === "current") return h(Badge, { kind: "current" }, "已是最新 " + txt(st.installedVersion));
+			if (!st.inBundles) return h(Badge, { kind: "bad" }, "装了未挂载");
+			return h(Badge, { kind: "ok" }, "已安装 " + txt(st.installedVersion));
+		}
+
 		var Chip = function (props) {
 			return h("span", { className: "dpm-chip" }, props.children);
+		};
+
+		/*
+		 * ── 点赞 / 收藏 ─────────────────────────────────────────────
+		 *
+		 * 两个都是**本地标记**，不上传、不做排行榜。
+		 * 点赞数只统计你自己点过的，收藏同理 —— 因为本插件没有后端，
+		 * 假装有全局热度是骗人；界面上也如实写成「本机」。
+		 *
+		 * 交互上刻意做成「乐观更新」：点下去立刻变色，请求失败再回滚。
+		 * 这两个动作只是写一个本地 JSON，失败概率极低，等往返反而显得卡。
+		 */
+		var MarkButton = function (props) {
+			var on = Boolean(props.on);
+			var cls = "dpm-mark dpm-mark-" + (props.kind === "like" ? "like" : "fav");
+			return h(
+				"button",
+				{
+					type: "button",
+					className: cls,
+					"data-on": on ? "1" : undefined,
+					disabled: props.disabled ? true : undefined,
+					title: props.title || undefined,
+					onClick: props.disabled ? undefined : props.onClick,
+					"aria-pressed": on ? "true" : "false",
+				},
+				h("span", { className: "dpm-mark-ico" }, props.kind === "like" ? (on ? "♥" : "♡") : (on ? "★" : "☆")),
+				h("span", null, props.label),
+			);
 		};
 
 		function Flag(props) {
@@ -456,9 +611,10 @@ window.__ModuleLoader__.load({
 		//#region ── 条目卡片 ──────────────────────────────────────────────
 		var EntryCard = function (props) {
 			var e = props.entry || {};
-			var inst = props.installed || null;
 			var tier = e.tier || "community";
 			var peerVerdict = e.peerVerdict;
+			var st = stateOf(e);
+			var badge = installBadge(e);
 
 			return h(
 				"div",
@@ -467,9 +623,11 @@ window.__ModuleLoader__.load({
 					"div",
 					{ className: "dpm-card-top" },
 					h("span", { className: "dpm-card-name" }, txt(e.title, e.id)),
+					// ★ 审核状态标签：三层视图合一之后，这里就是「已审核 / 未审核」的唯一出处
 					h(Badge, { kind: tierBadgeKind(tier) }, txt(e.tierLabel, tier)),
 					e.version ? h("span", { className: "dpm-card-id" }, (e.package || e.id) + "@" + e.version) : h("span", { className: "dpm-card-id" }, txt(e.package, e.id)),
-					inst ? h(Badge, { kind: inst.inBundles ? "ok" : "bad" }, inst.inBundles ? "已安装" : "装了未挂载") : null,
+					badge,
+					e.favorited ? h(Badge, { kind: "neutral" }, "★ 已收藏") : null,
 				),
 
 				// 层级提示 —— 这是用户最需要一眼看到的东西
@@ -484,6 +642,15 @@ window.__ModuleLoader__.load({
 				tier === "community"
 					? h(Flag, { kind: "risk", icon: "!" }, "未审核 · 来自公共索引，本仓库未做适配验证，可能存在不兼容或其它风险。装前检查只能做尽力而为的静态探测。")
 					: null,
+
+				// ★ 升级提示（问题 1）：装过、仓库里有新版
+				st.status === "upgradable"
+					? h(Flag, { kind: "info", icon: "↑" }, "有新版本：" + txt(st.installedVersion) + " → " + txt(st.target) + "。点「更新到 " + txt(st.target) + "」即可升级；会自动备份 profile，失败自动回滚。")
+					: null,
+				st.installed && !st.inBundles
+					? h(Flag, { kind: "bad", icon: "!" }, "已经装在 node_modules 里，却不在 dsh.profile.bundles 中 —— 这种状态下 GUI 里看不到它。重新安装可以让 dsh 重新对齐。")
+					: null,
+
 				peerVerdict === "critical"
 					? h(Flag, { kind: "bad", icon: "✗" }, "该包精确 pin 了 dsh 运行时版本，换版本会导致整棵插件树加载失败。")
 					: null,
@@ -509,11 +676,34 @@ window.__ModuleLoader__.load({
 					"div",
 					{ className: "dpm-card-act" },
 					h(Btn, { small: true, onClick: function () { props.onGate(e, false); } }, "装前检查"),
-					h(Btn, {
-						small: true,
-						variant: tier === "community" ? undefined : "primary",
-						onClick: function () { props.onGate(e, true); },
-					}, "安装"),
+					/*
+					 * ★ 问题 1 + 2 的落点。
+					 *   - 已是最新 → 按钮置灰，文案「已安装」，title 里说明原因
+					 *   - 有新版   → 蓝色「更新到 x.y.z」，点了走同一条闸门 → 安装流程
+					 *   - 没装     → 原来的「安装」
+					 */
+					st.status === "current"
+						? h(Btn, { small: true, className: "dpm-btn-installed", disabled: true, title: primaryTitle(e) }, primaryLabel(e))
+						: h(Btn, {
+							small: true,
+							variant: st.status === "upgradable" ? "update" : (tier === "community" ? undefined : "primary"),
+							title: primaryTitle(e) || undefined,
+							onClick: function () { props.onGate(e, true); },
+						}, primaryLabel(e)),
+					h(MarkButton, {
+						kind: "like",
+						on: e.liked,
+						label: "点赞",
+						title: "点赞（只记在本机，不上传）",
+						onClick: function () { props.onMark(e, "like"); },
+					}),
+					h(MarkButton, {
+						kind: "fav",
+						on: e.favorited,
+						label: e.favorited ? "已收藏" : "收藏",
+						title: "收藏（只记在本机，可用「已收藏」筛选）",
+						onClick: function () { props.onMark(e, "favorite"); },
+					}),
 					e.upstream ? h(Btn, { small: true, onClick: function () { try { window.open(e.upstream, "_blank", "noopener"); } catch (err) { /* 忽略 */ } } }, "仓库") : null,
 				),
 			);
@@ -550,12 +740,31 @@ window.__ModuleLoader__.load({
 				h(
 					"div",
 					{ className: "dpm-drawer-body" },
-					h(
-						"div",
-						{ className: "dpm-verdict dpm-verdict-" + vi.cls },
-						h("span", null, vi.ico),
-						h("span", null, vi.title, h("span", { className: "dpm-verdict-sub" }, vi.sub)),
-					),
+					/*
+					 * 「已是最新」是个**结论**，不是一条检查项 —— 用和判定同级的
+					 * 大色块说清楚，别让人在检查列表里找。
+					 */
+					g.upToDate
+						? h("div", { className: "dpm-verdict dpm-verdict-pass" },
+							h("span", null, "✓"),
+							h("span", null, "已是最新版本，无需安装",
+								h("span", { className: "dpm-verdict-sub" },
+									"已经装的是 " + txt(g.installState && g.installState.installedVersion)
+									+ "，与目录里的版本一致。目录里出现更新的版本时，按钮会变成「更新到 x.y.z」。")))
+						: h(
+							"div",
+							{ className: "dpm-verdict dpm-verdict-" + vi.cls },
+							h("span", null, vi.ico),
+							h("span", null, vi.title, h("span", { className: "dpm-verdict-sub" }, vi.sub)),
+						),
+
+					// 更新场景：把「从哪一版到哪一版」摆在最上面，别让人以为是在重装
+					g.upgrade
+						? h(Flag, { kind: "info", icon: "↑" },
+							"这是一次**更新**：" + txt(g.installState && g.installState.installedVersion)
+							+ " → " + txt(g.installState && g.installState.target)
+							+ "。会先移除旧版本再装新版本；安装前自动备份 profile，任何一步失败都会自动回滚。")
+						: null,
 
 					h(
 						"div",
@@ -566,6 +775,18 @@ window.__ModuleLoader__.load({
 						h("span", { className: "dpm-kv-v" }, txt(g.tierLabel, g.tier)),
 						h("span", { className: "dpm-kv-k" }, "目标 profile"),
 						h("span", { className: "dpm-kv-v" }, txt(g.targetProfile)),
+						g.installState && g.installState.installed
+							? h("span", { className: "dpm-kv-k" }, "当前已装")
+							: null,
+						g.installState && g.installState.installed
+							? h("span", { className: "dpm-kv-v" }, txt(g.installState.installedVersion))
+							: null,
+						g.installState && g.installState.target
+							? h("span", { className: "dpm-kv-k" }, "目录里的版本")
+							: null,
+						g.installState && g.installState.target
+							? h("span", { className: "dpm-kv-v" }, txt(g.installState.target))
+							: null,
 						h("span", { className: "dpm-kv-k" }, "安装规格"),
 						h("span", { className: "dpm-kv-v" },
 							g.installSpec
@@ -650,17 +871,28 @@ window.__ModuleLoader__.load({
 				h(
 					"div",
 					{ className: "dpm-drawer-foot" },
-					h(Btn, {
-						variant: "primary",
-						disabled: !g.canInstall || (g.requiresRiskAck && !ack) || props.busy,
-						onClick: function () { props.onInstall(g, ack); },
-					}, props.busy ? "安装中…" : "开始安装"),
+					/*
+					 * 主按钮。
+					 * ★ 「已是最新」时**不渲染**安装按钮，只留「关闭」——
+					 *   渲染一个禁用的按钮会让人反复怀疑「是不是哪里没满足」，
+					 *   而这里根本没有可做的事。
+					 */
+					g.upToDate
+						? h(Btn, { variant: "primary", onClick: props.onClose }, "好，知道了")
+						: h(Btn, {
+							variant: g.upgrade ? "update" : "primary",
+							disabled: !g.canInstall || (g.requiresRiskAck && !ack) || props.busy,
+							onClick: function () { props.onInstall(g, ack); },
+						}, props.busy
+							? (g.upgrade ? "更新中…" : "安装中…")
+							: (g.upgrade ? "开始更新" : "开始安装")),
 					h(Btn, { onClick: props.onClose, disabled: props.busy }, "取消"),
 					h("span", { className: "dpm-spacer" }),
 					h("span", { className: "dpm-muted" },
-						g.canInstall
-							? (g.requiresRiskAck ? "需要先勾选确认" : "可以安装")
-							: (g.installable ? "已被拦截，不能安装" : "没有可用的安装方式")),
+						g.upToDate ? "已经是最新版本，无需操作"
+							: g.canInstall
+								? (g.requiresRiskAck ? "需要先勾选确认" : (g.upgrade ? "可以更新" : "可以安装"))
+								: (g.installable ? "已被拦截，不能安装" : "没有可用的安装方式")),
 				),
 			);
 		};
@@ -686,12 +918,17 @@ window.__ModuleLoader__.load({
 					r.ok
 						? h("div", { className: "dpm-verdict dpm-verdict-pass" },
 							h("span", null, "✓"),
-							h("span", null, "安装成功", h("span", { className: "dpm-verdict-sub" }, r.restartHint || "重启 dsh web 后生效。")))
+							h("span", null, r.upgrade ? "更新成功" : "安装成功",
+								h("span", { className: "dpm-verdict-sub" },
+									(r.upgrade && r.fromVersion && r.toVersion ? r.fromVersion + " → " + r.toVersion + "。" : "")
+									+ (r.restartHint || "重启 dsh web 后生效。"))))
 						: h("div", { className: "dpm-verdict dpm-verdict-block" },
 							h("span", null, "✗"),
-							h("span", null, "安装未完成",
+							h("span", null, r.upToDate ? "无需安装" : (r.upgrade ? "更新未完成" : "安装未完成"),
 								h("span", { className: "dpm-verdict-sub" },
-									FAILURE_TEXT[r.failure] || ("失败于阶段：" + txt(r.failure)) + "。"),
+									r.upToDate
+										? (r.message || "已经装的是最新版本。")
+										: (FAILURE_TEXT[r.failure] || ("失败于阶段：" + txt(r.failure)) + "。")),
 							)),
 
 					!r.ok
@@ -777,20 +1014,44 @@ window.__ModuleLoader__.load({
 		//#endregion
 
 		//#region ── 主面板 ────────────────────────────────────────────────
-		var CATALOG_TABS = [
-			{ key: "verified", label: "已验证" },
+		/*
+		 * ★ 原来是三个平级页签（已验证 / 已审核 / 未审核）。
+		 *
+		 * 那个切分对用户没有意义：他要回答的是「这个插件装得安不安全」，
+		 * 而 verified 与 reviewed 在这一点上给出的答案**是同一个**（都过了
+		 * 本仓库的适配验证），却被拆成两个页签让人来回切。
+		 *
+		 * 现在并成一个「插件市场」列表，安全差异交给每条插件自己的**审核标签**
+		 * 承载（已验证 / 已审核 / 未审核），顶部再加一组可叠加的筛选器。
+		 */
+		var CATALOG_TAB = "market";
+
+		/** 目录页的三组筛选：审核状态（单选）、我的标记（多选）、安装状态（多选） */
+		var REVIEW_FILTERS = [
+			{ key: null, label: "全部" },
 			{ key: "reviewed", label: "已审核" },
-			{ key: "community", label: "未审核" },
+			{ key: "unreviewed", label: "未审核" },
+		];
+
+		var ONLY_FILTERS = [
+			{ key: "installed", label: "已安装", title: "只看已经装上的插件" },
+			{ key: "upgradable", label: "可升级", title: "只看装了、且仓库里有新版本的插件" },
+			{ key: "liked", label: "我点赞的", title: "只看你点过赞的插件（记在本机）" },
+			{ key: "favorited", label: "我收藏的", title: "只看你收藏的插件（记在本机）" },
 		];
 
 		var Panel = function (props) {
 			var [toast, setToast] = useState(null);
 			var [status, setStatus] = useState(null);
-			var [tab, setTab] = useState("verified");
+			var [tab, setTab] = useState("market");
 			var [q, setQ] = useState("");
 			var [page, setPage] = useState(0);
 			var [list, setList] = useState(null);
 			var [listBusy, setListBusy] = useState(false);
+
+			// 筛选状态
+			var [review, setReview] = useState(null);   // null | 'reviewed' | 'unreviewed'
+			var [only, setOnly] = useState(null);       // null | 'installed' | 'upgradable' | 'liked' | 'favorited'
 
 			var [drawer, setDrawer] = useState(null); // { kind, id, entry }
 			var [gate, setGate] = useState(null);
@@ -826,11 +1087,13 @@ window.__ModuleLoader__.load({
 				}
 			}, [fail]);
 
-			var loadList = useCallback(async function (tier, query, pageIdx) {
-				if (CATALOG_TABS.map(function (t) { return t.key; }).indexOf(tier) < 0) return;
+			var loadList = useCallback(async function (query, pageIdx, rev, onl) {
 				setListBusy(true);
 				try {
-					var r = await api("catalog", { tier: tier, query: query, limit: PAGE_SIZE, offset: pageIdx * PAGE_SIZE });
+					var args = { query: query, limit: PAGE_SIZE, offset: pageIdx * PAGE_SIZE };
+					if (rev) args.review = rev;
+					if (onl) args.only = onl;
+					var r = await api("catalog", args);
 					if (aliveRef.current) setList(r);
 				} catch (err) {
 					fail(err);
@@ -842,14 +1105,14 @@ window.__ModuleLoader__.load({
 			// 首次加载
 			useEffect(function () {
 				loadStatus();
-				loadList("verified", "", 0);
+				loadList("", 0, null, null);
 			}, [loadStatus, loadList]);
 
-			// 切 tab / 翻页
+			// 筛选 / 翻页变化时重新拉列表
 			useEffect(function () {
-				if (CATALOG_TABS.map(function (t) { return t.key; }).indexOf(tab) < 0) return;
-				loadList(tab, q, page);
-			}, [tab, page, loadList]); // q 由搜索按钮显式提交，不放进依赖
+				if (tab !== CATALOG_TAB) return;
+				loadList(q, page, review, only);
+			}, [tab, page, review, only, loadList]); // q 由搜索按钮显式提交，不放进依赖
 
 			// 非目录页的按需加载
 			useEffect(function () {
@@ -864,8 +1127,55 @@ window.__ModuleLoader__.load({
 
 			var submitSearch = useCallback(function () {
 				setPage(0);
-				loadList(tab, q, 0);
-			}, [tab, q, loadList]);
+				loadList(q, 0, review, only);
+			}, [q, review, only, loadList]);
+
+			/**
+			 * 点赞 / 收藏。
+			 *
+			 * 乐观更新：先改本地那一份（列表 + 状态里的个人统计），请求回来再以
+			 * 服务端返回为准；失败就整体回滚并把错误抛给 toast。
+			 * 这两个动作只写一个本地 JSON，正常情况下一帧就回来了。
+			 */
+			var doMark = useCallback(async function (entry, action) {
+				var field = action === "like" ? "liked" : "favorited";
+				var next = !entry[field];
+				var prevList = list;
+				var prevStatus = status;
+
+				setList(function (cur) {
+					if (!cur) return cur;
+					return {
+						...cur,
+						items: cur.items.map(function (it) {
+							return it.id === entry.id ? { ...it, [field]: next } : it;
+						}),
+						marks: cur.marks ? {
+							...cur.marks,
+							[action === "like" ? "liked" : "favorited"]:
+								Math.max(0, (cur.marks[action === "like" ? "liked" : "favorited"] || 0) + (next ? 1 : -1)),
+						} : cur.marks,
+					};
+				});
+
+				try {
+					var r = await api("mark", { action: action, id: entry.id, value: next });
+					if (!aliveRef.current) return;
+					// 服务端是真值来源：它可能因为「两个标记都归零」而把整条删掉
+					setList(function (cur) {
+						if (!cur) return cur;
+						return {
+							...cur,
+							items: cur.items.map(function (it) {
+								return it.id === entry.id ? { ...it, liked: r.liked, favorited: r.favorited } : it;
+							}),
+						};
+					});
+				} catch (err) {
+					if (aliveRef.current) { setList(prevList); setStatus(prevStatus); }
+					fail(err);
+				}
+			}, [list, status, fail]);
 
 			var openGate = useCallback(async function (entry, forInstall) {
 				setToast(null);
@@ -894,16 +1204,16 @@ window.__ModuleLoader__.load({
 						// 安装过程中把已完成步骤先渲染出来
 						if (aliveRef.current) setToast(null);
 					}
-					// 安装后顺手刷新状态
+					// 安装后顺手刷新状态（两处都要刷：状态条里的「可更新」计数就在 status 里）
 					await loadStatus();
-					loadList("verified", "", 0);
+					await loadList(q, page, review, only);
 				} catch (err) {
 					fail(err);
 					if (aliveRef.current) setInstallResult({ ok: false, failure: "rpc", steps: [] });
 				} finally {
 					if (aliveRef.current) setBusy(false);
 				}
-			}, [drawer, fail, loadStatus, loadList]);
+			}, [drawer, fail, loadStatus, loadList, q, page, review, only]);
 
 			var doUninstall = useCallback(async function (item) {
 				setToast(null);
@@ -985,13 +1295,13 @@ window.__ModuleLoader__.load({
 					if (r && r.ok === false) fail(new Error(r.error || "刷新失败"));
 					else if (aliveRef.current) setToast(null);
 					await loadStatus();
-					await loadList(tab, q, page);
+					await loadList(q, page, review, only);
 				} catch (err) {
 					fail(err);
 				} finally {
 					if (aliveRef.current) setBusy(false);
 				}
-			}, [fail, loadStatus, loadList, tab, q, page]);
+			}, [fail, loadStatus, loadList, q, page, review, only]);
 
 			var closeDrawer = useCallback(function () {
 				setDrawer(null);
@@ -1005,8 +1315,10 @@ window.__ModuleLoader__.load({
 			var profile = (status && status.profile) || {};
 			var compat = (status && status.compat) || {};
 			var catalog = (status && status.catalog) || {};
-			var tiers = catalog.tiers || [];
+			var merged = catalog.merged || { total: 0, reviewed: 0, unreviewed: 0 };
 			var installed = (status && status.installed) || [];
+			var upgradable = (status && status.upgradable) || [];
+			var userData = (status && status.userData) || { liked: 0, favorited: 0 };
 
 			var subParts = [];
 			if (env.dsh) subParts.push("dsh " + txt(env.dsh.version));
@@ -1015,16 +1327,15 @@ window.__ModuleLoader__.load({
 			if (env.pnpm) subParts.push("pnpm " + txt(env.pnpm.version));
 			if (compat.dshVersion) subParts.push("矩阵：" + (compat.supported || []).join(" / ") || "—");
 
-			var tierCount = {};
-			tiers.forEach(function (t) { tierCount[t.id] = t.count; });
-
 			// ── 渲染 ──
 			var body = null;
 
-			if (CATALOG_TABS.map(function (t) { return t.key; }).indexOf(tab) >= 0) {
+			if (tab === CATALOG_TAB) {
 				var items = (list && list.items) || [];
 				var total = list ? list.total : 0;
 				var maxPage = Math.max(0, Math.ceil(total / PAGE_SIZE) - 1);
+				var counts = (list && list.marks) || { liked: 0, favorited: 0 };
+
 				body = h(
 					"div",
 					null,
@@ -1034,36 +1345,87 @@ window.__ModuleLoader__.load({
 						h("input", {
 							className: "dpm-input",
 							type: "search",
-							placeholder: tab === "community" ? "在 7000+ 个公共插件里搜（服务端检索）…" : "搜索…",
+							placeholder: "搜索插件（名称 / 包名 / 作者 / 标签，服务端检索）…",
 							value: q,
 							onChange: function (ev) { setQ(ev.target.value); },
 							onKeyDown: function (ev) { if (ev.key === "Enter") submitSearch(); },
 						}),
 						h(Btn, { onClick: submitSearch, variant: "primary" }, "搜索"),
-						h(Btn, { onClick: function () { setQ(""); setPage(0); loadList(tab, "", 0); } }, "重置"),
+						h(Btn, {
+							onClick: function () { setQ(""); setPage(0); setReview(null); setOnly(null); loadList("", 0, null, null); },
+						}, "重置"),
 						listBusy ? h(Spinner, null) : null,
 						h("span", { className: "dpm-spacer" }),
 						h("span", { className: "dpm-pager-info" }, "共 " + total + " 条"),
+
+						/*
+						 * ★ 问题 4 的落点：三层视图合一，用这里的筛选 + 卡片上的审核标签区分。
+						 *   审核状态是**单选**（全部 / 已审核 / 未审核），
+						 *   其余三组是**可叠加**的开关。
+						 */
+						h(
+							"div",
+							{ className: "dpm-filters", style: { flexBasis: "100%", marginTop: 2 } },
+							REVIEW_FILTERS.map(function (f) {
+								return h("button", {
+									key: "rf" + String(f.key),
+									type: "button",
+									className: "dpm-filter",
+									"data-on": review === f.key ? "1" : undefined,
+									onClick: function () { setReview(f.key); setPage(0); },
+								}, f.label,
+									f.key === "reviewed" ? h("span", { className: "dpm-filter-n" }, merged.reviewed) : null,
+									f.key === "unreviewed" ? h("span", { className: "dpm-filter-n" }, merged.unreviewed) : null);
+							}),
+							h("span", { style: { width: 10 } }),
+							ONLY_FILTERS.map(function (f) {
+								return h("button", {
+									key: "of" + f.key,
+									type: "button",
+									className: "dpm-filter",
+									title: f.title,
+									"data-on": only === f.key ? "1" : undefined,
+									onClick: function () { setOnly(only === f.key ? null : f.key); setPage(0); },
+								}, f.label,
+									f.key === "upgradable" && upgradable.length > 0
+										? h("span", { className: "dpm-filter-n" }, upgradable.length)
+										: null,
+									f.key === "liked" && counts.liked > 0 ? h("span", { className: "dpm-filter-n" }, counts.liked) : null,
+									f.key === "favorited" && counts.favorited > 0 ? h("span", { className: "dpm-filter-n" }, counts.favorited) : null);
+							}),
+							h("span", { className: "dpm-spacer" }),
+							h("span", { className: "dpm-pager-info" }, "点赞 " + txt(counts.liked, "0") + " · 收藏 " + txt(counts.favorited, "0") + "（记在本机）"),
+						),
 					),
 
-					tab === "community" && list && list.communityMeta && list.communityMeta.error
+					list && list.communityMeta && list.communityMeta.error
 						? h(Flag, { kind: "risk", icon: "!" }, "公共索引拉取有问题：" + list.communityMeta.error + "（下面的结果可能来自磁盘缓存）")
 						: null,
-					tab === "verified" && list && list.verifiedAvailable === false
+					list && list.verifiedAvailable === false
 						? h(Flag, { kind: "bad", icon: "✗" }, "包内目录缺失：" + txt(list.verifiedError))
 						: null,
 
+					// ★ 问题 1 的全局提示：装了但仓库里有新版
+					upgradable.length > 0
+						? h(Flag, { kind: "info", icon: "↑" },
+							"有 " + upgradable.length + " 个插件可以更新："
+							+ upgradable.map(function (u) { return u.name + " " + txt(u.from) + " → " + txt(u.to); }).join("；")
+							+ "。点插件上的「更新」按钮即可（会自动备份 profile，失败自动回滚）。")
+						: null,
+
 					items.length === 0 && !listBusy
-						? h(Empty, null, tab === "community"
-							? "没有匹配的插件。公共索引第一次需要联网拉取，可以在「体检」页点「刷新目录」。"
-							: "没有匹配的条目。")
+						? h(Empty, null, only === "favorited" ? "还没有收藏任何插件。点插件卡片上的「收藏」即可。"
+							: only === "liked" ? "还没有点赞任何插件。点插件卡片上的「点赞」即可。"
+								: only === "upgradable" ? "没有可更新的插件 —— 装了的都是目录里的最新版本。"
+									: only === "installed" ? "还没有安装任何目录里的插件。"
+										: "没有匹配的插件。首次使用需要联网拉取公共索引，可以在「体检」页点「刷新目录」。")
 						: h("div", { className: "dpm-cards" },
 							items.map(function (e) {
 								return h(EntryCard, {
 									key: e.id,
 									entry: e,
-									installed: installed.filter(function (i) { return i.name === (e.package || e.id); })[0] || null,
 									onGate: openGate,
+									onMark: doMark,
 								});
 							})),
 
@@ -1104,7 +1466,23 @@ window.__ModuleLoader__.load({
 									notMounted ? h(Badge, { kind: "bad" }, "装了但没挂载") : null,
 									i.mismatch ? h(Badge, { kind: "bad" }, "版本漂移") : null,
 									!i.installed ? h(Badge, { kind: "bad" }, "未安装") : null,
+									// ★ 问题 1：这一行能升级时直接在这里标出来，并在右边给升级入口
+									i.upgrade ? h(Badge, { kind: "update" }, "可升级 " + txt(i.targetVersion)) : null,
+									i.inCatalog === false && i.installed ? h(Badge, { kind: "neutral" }, "不在目录里") : null,
 									h("span", { className: "dpm-spacer" }),
+									i.upgrade
+										? h(Btn, {
+											small: true, variant: "update", disabled: busy,
+											title: "更新到 " + txt(i.targetVersion) + "（会先移除旧版本再装，自动备份、失败自动回滚）",
+											onClick: function () {
+												openGate({
+													id: i.name, package: i.name, title: i.name,
+													tier: i.state === "current" ? "verified" : (i.tier || "verified"),
+													installState: { status: "upgradable", installed: true, installedVersion: i.installedVersion, target: i.targetVersion, inBundles: i.inBundles, canInstall: true, canUpgrade: true, action: "update", isLatest: false },
+												}, true);
+											},
+										}, "更新到 " + txt(i.targetVersion))
+										: null,
 									h(Btn, { small: true, onClick: function () { doVerify(i.name); } }, "校验"),
 									h(Btn, { small: true, variant: "danger", disabled: busy, onClick: function () { doUninstall(i); } }, "卸载"),
 								);
@@ -1284,12 +1662,25 @@ window.__ModuleLoader__.load({
 					),
 				),
 
+				/*
+				 * 状态条。
+				 *
+				 * ★ 这里原来打的是三层目录的原始条数（已验证 N / 已审核 N / 未审核 N），
+				 *   但三层去重合并之后，那三个数字加起来**对不上列表条数** —— 同一个包
+				 *   会同时出现在「已验证」和公共索引里，被数两次。用户看到「共 10 条」
+				 *   而三个标签加起来是 13，只会以为界面坏了。
+				 *   所以改用合并后的口径：已审核 / 未审核 / 可更新。
+				 */
 				h(
 					"div",
 					{ className: "dpm-strip" },
-					tiers.map(function (t) {
-						return h(Badge, { key: t.id, kind: tierBadgeKind(t.id) }, t.label + " " + (t.count === undefined ? "—" : t.count));
-					}),
+					h(Badge, { kind: "verified" }, "已验证 " + txt(merged.verified, "0")),
+					h(Badge, { kind: "reviewed" }, "已审核 " + txt(merged.reviewedTier, "0")),
+					h(Badge, { kind: "community" }, "未审核 " + txt(merged.unreviewed, "0")),
+					h("span", { className: "dpm-muted" }, "去重后共 " + txt(merged.total, "0") + " 条"),
+					upgradable.length > 0
+						? h(Badge, { kind: "update" }, "可更新 " + upgradable.length)
+						: null,
 					catalog.verified && catalog.verified.available === false
 						? h(Badge, { kind: "bad" }, "包内目录缺失")
 						: null,
@@ -1305,21 +1696,24 @@ window.__ModuleLoader__.load({
 						: h(Badge, { kind: "neutral" }, "未识别本地仓库（tarball 将联网下载）"),
 				),
 
+				/*
+				 * ★ 页签：三个目录页签（已验证 / 已审核 / 未审核）已被**合并成一个
+				 *   「插件市场」**，安全差异由卡片上的审核标签 + 顶部筛选器承载。
+				 *   这也是用户明确要求的第 4 点。
+				 */
 				h(
 					"div",
 					{ className: "dpm-tabs" },
-					CATALOG_TABS.map(function (t) {
-						return h("button", {
-							key: t.key, type: "button", className: "dpm-tab",
-							"data-on": tab === t.key ? "1" : undefined,
-							onClick: function () { setTab(t.key); setPage(0); setQ(""); },
-						}, t.label + (tierCount[t.key] === undefined ? "" : " " + tierCount[t.key]));
-					}),
+					h("button", {
+						key: "market", type: "button", className: "dpm-tab",
+						"data-on": tab === CATALOG_TAB ? "1" : undefined,
+						onClick: function () { setTab(CATALOG_TAB); setPage(0); setQ(""); },
+					}, "插件市场 " + (merged.total === undefined ? "" : merged.total)),
 					h("button", {
 						key: "installed", type: "button", className: "dpm-tab",
 						"data-on": tab === "installed" ? "1" : undefined,
 						onClick: function () { setTab("installed"); },
-					}, "已装"),
+					}, "已装" + (upgradable.length > 0 ? " ↑" + upgradable.length : "")),
 					h("button", {
 						key: "health", type: "button", className: "dpm-tab",
 						"data-on": tab === "health" ? "1" : undefined,

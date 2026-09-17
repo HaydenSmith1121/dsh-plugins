@@ -47,6 +47,33 @@ export const TIER_META = {
   },
 };
 
+/**
+ * 条目上的**审核状态标签**。
+ *
+ * 三层目录（verified / reviewed / community）本来被做成了三个平级的页签，
+ * 但那个切分方式对用户没有意义：他要回答的是「这个插件装得安不安全」，
+ * 而 verified 与 reviewed 在这件事上给出的答案是**同一个** —— 都经过本仓库
+ * 的适配验证，都可以直接装。把它们拆成两个页签只会让人来回切。
+ *
+ * 所以界面收敛成一个列表，用这里的标签区分：
+ *
+ *   verified   已验证   ← 仓库自带 + 按当前 dsh 实测
+ *   reviewed   已审核   ← 维护者人工审核后收录
+ *   community  未审核   ← 公共索引，没做过任何验证
+ *
+ * ★ label 里的「已」/「未」是有意义的：用户原话就是「通过插件上面的标签
+ *   （已经审核、未审核）来区分」，这里如实照做。
+ */
+export const REVIEW_STATUS = {
+  verified: { id: 'verified', label: '已验证', badge: 'verified', reviewed: true, summary: TIER_META.verified.summary },
+  reviewed: { id: 'reviewed', label: '已审核', badge: 'reviewed', reviewed: true, summary: TIER_META.reviewed.summary },
+  community: { id: 'community', label: '未审核', badge: 'community', reviewed: false, summary: TIER_META.community.summary },
+};
+
+export function reviewStatusOf(tier) {
+  return REVIEW_STATUS[tier] ?? REVIEW_STATUS.community;
+}
+
 /** 公共索引地址（与 @dsh-market 同源，公开静态资源） */
 export const COMMUNITY_INDEX_URL = 'https://2bingling.github.io/dsh-market/plugins.json';
 /** 本仓库 raw 地址：用于取最新的 curated 目录 */
@@ -238,6 +265,7 @@ export function normalizeEntry(p, tier) {
   return {
     tier,
     tierLabel: TIER_META[tier]?.label ?? tier,
+    reviewStatus: reviewStatusOf(tier),
     id: p.id ?? p.package ?? p.name,
     package: p.package ?? p.name ?? null,
     version: p.version ?? null,
@@ -313,6 +341,127 @@ function scoreEntry(entry, terms) {
   return score + tierBonus + Math.min(20, Math.log10(1 + (entry.stars ?? 0)) * 8);
 }
 
+/**
+ * 把三层目录**合并成一池**。
+ *
+ * 为什么必须去重：同一个包经常同时出现在多层 —— 仓库自带的 dsh-memory 既是
+ * 「已验证」，又会原样出现在公共索引里；@dsh-market/plugin 也一样。不去重的话
+ * 用户会在一个列表里看到两条一模一样的插件，而且价格（能不能装）还不一样。
+ *
+ * 保留哪一条：层级更高的那条，因为它是**我们验证过**的说法；
+ * 但把被合并条目的 star 数等展示信息补过来 —— 那些是上游事实，不该因为
+ * 我们收编了它就消失。
+ *
+ * @returns {{merged:object[], shadowed:Map<string,object[]>}} shadowed 供详情页用
+ */
+export function mergeEntries(layers) {
+  const byKey = new Map();
+  const shadowed = new Map();
+  const rank = { verified: 0, reviewed: 1, community: 2 };
+
+  /**
+   * ★ 层可能是 `{ plugins: [...] }`（loadVerified / loadReviewed 的产物），
+   *   也可能已经是裸数组（社区层就是裸数组）。两种都要认。
+   *
+   *   这里曾经只写 `layers.verified?.plugins ?? []` —— 传裸数组时它静默返回
+   *   空，于是**整整一层凭空消失**：已验证的插件全都不见，而列表看起来完全
+   *   正常（还有社区层撑着），只是数量对不上、层级标签全变成「未审核」。
+   *   静默丢数据比抛错难查得多，所以显式两种都收，并且下面还兜一次底。
+   */
+  const tierOf = (tier) => {
+    const raw = layers?.[tier];
+    if (Array.isArray(raw)) return raw;
+    if (Array.isArray(raw?.plugins)) return raw.plugins;
+    return [];
+  };
+
+  // 按层级从高到低喂进来，第一条赢
+  const ordered = [
+    ...tierOf('verified'),
+    ...tierOf('reviewed'),
+    ...tierOf('community'),
+  ].sort((a, b) => (rank[a.tier] ?? 3) - (rank[b.tier] ?? 3));
+
+  for (const entry of ordered) {
+    const key = dedupeKey(entry);
+    const prev = byKey.get(key);
+    if (!prev) {
+      byKey.set(key, { ...entry });
+      continue;
+    }
+    // 合并展示信息：只补空的，不覆盖已验证层给出的事实
+    const merged = { ...prev };
+    if (merged.stars == null && entry.stars != null) merged.stars = entry.stars;
+    if (merged.pushedAt == null && entry.pushedAt != null) merged.pushedAt = entry.pushedAt;
+    if (merged.license == null && entry.license != null) merged.license = entry.license;
+    if (merged.homepage == null && entry.homepage != null) merged.homepage = entry.homepage;
+    if (merged.upstream == null && entry.upstream != null) merged.upstream = entry.upstream;
+    if (merged.summary === '' && entry.summary) merged.summary = entry.summary;
+    if (!merged.author && entry.author) merged.author = entry.author;
+    byKey.set(key, merged);
+
+    const list = shadowed.get(key) ?? [];
+    list.push(entry);
+    shadowed.set(key, list);
+  }
+
+  return { merged: [...byKey.values()], shadowed };
+}
+
+/**
+ * 去重键。
+ *
+ * 用包名优先 —— 同一个 npm 包名就是同一个插件，这条判据最硬。
+ * 没有包名时才退到 id；再没有就退到 upstream 仓库地址
+ * （公共索引里大量条目 id 五花八门，但指向同一个仓库）。
+ */
+function dedupeKey(entry) {
+  if (entry.package) return `pkg:${String(entry.package).toLowerCase()}`;
+  if (entry.id) return `id:${String(entry.id).toLowerCase()}`;
+  if (entry.upstream) return `up:${String(entry.upstream).toLowerCase()}`;
+  return `title:${String(entry.title ?? '').toLowerCase()}`;
+}
+
+/**
+ * 统一检索。
+ *
+ * 除了关键词，还支持两个**筛选器**：来源审核状态、以及用户自己的标记。
+ * 筛选放在服务端做 —— 公共索引 7000+ 条，全丢给浏览器筛是不可行的。
+ *
+ * @param {object[]} entries 合并后的池
+ * @param {object} opts { query, limit, offset, review, only, marks, installedOnly }
+ *        review   'reviewed' | 'unreviewed' | null
+ *        only     'liked' | 'favorited' | 'installed' | 'upgradable' | null
+ */
+export function searchCatalog(entries, opts = {}) {
+  const {
+    query = '', limit = 50, offset = 0,
+    review = null, only = null, marks = {}, installed = null,
+  } = opts;
+
+  const filtered = entries.filter((entry) => {
+    if (review === 'reviewed' && !reviewStatusOf(entry.tier).reviewed) return false;
+    if (review === 'unreviewed' && reviewStatusOf(entry.tier).reviewed) return false;
+
+    if (only === 'liked' && !marks[entry.id]?.liked) return false;
+    if (only === 'favorited' && !marks[entry.id]?.favorited) return false;
+    if (only === 'installed' || only === 'upgradable') {
+      const st = installed?.get(entry.id) ?? null;
+      if (!st?.installed) return false;
+      if (only === 'upgradable' && st.status !== 'upgradable') return false;
+    }
+    return true;
+  });
+
+  const result = searchEntries(filtered, query, { limit, offset });
+  return { ...result, filteredTotal: filtered.length };
+}
+
+/** 由条目导出「主键」：优先包名，与 dedupeKey 保持一致 */
+export function entryKey(entry) {
+  return entry.package ?? entry.id;
+}
+
 export function searchEntries(entries, query, { limit = 50, offset = 0 } = {}) {
   const q = String(query ?? '').trim();
   if (q === '') {
@@ -339,12 +488,26 @@ export function searchEntries(entries, query, { limit = 50, offset = 0 } = {}) {
 
 /** 汇总目录状态（界面顶部状态条用） */
 export function catalogStatus({ verified, reviewed, community, env }) {
+  // 同 mergeEntries：层既可能是 { plugins: [...] } 也可能是裸数组
+  const countOf = (tier) => {
+    const raw = { verified, reviewed, community }[tier];
+    if (Array.isArray(raw)) return raw.length;
+    if (Array.isArray(raw?.plugins)) return raw.plugins.length;
+    return 0;
+  };
+  const tiers = [
+    { ...TIER_META.verified, count: countOf('verified') },
+    { ...TIER_META.reviewed, count: countOf('reviewed') },
+    { ...TIER_META.community, count: countOf('community'), source: community?.source ?? null },
+  ];
   return {
-    tiers: [
-      { ...TIER_META.verified, count: verified?.plugins?.length ?? 0 },
-      { ...TIER_META.reviewed, count: reviewed?.plugins?.length ?? 0 },
-      { ...TIER_META.community, count: community?.plugins?.length ?? 0, source: community?.source ?? null },
-    ],
+    tiers,
+    /**
+     * 合并视图的口径：三层去重后有多少条，其中「已审核」多少、「未审核」多少。
+     * 界面顶部的 已审核 / 未审核 两个数字来自这里，而不是上面三个原始层级 ——
+     * 否则一个包同时出现在两层里会被数两次，和用户看到的列表条数对不上。
+     */
+    merged: mergedCounts({ verified, reviewed, community }),
     verified: { available: verified?.available ?? false, error: verified?.error ?? null, generatedAt: verified?.generatedAt ?? null },
     reviewed: { source: reviewed?.source ?? null, error: reviewed?.error ?? null, reviewedAt: reviewed?.reviewedAt ?? null },
     community: {
@@ -356,6 +519,26 @@ export function catalogStatus({ verified, reviewed, community, env }) {
     },
     env,
     repoHomepage: REPO_HOMEPAGE,
+  };
+}
+
+export function mergedCounts(layers) {
+  const { merged } = mergeEntries(layers);
+  let reviewedCount = 0;
+  let unreviewedCount = 0;
+  const byTier = { verified: 0, reviewed: 0, community: 0 };
+  for (const e of merged) {
+    byTier[e.tier] = (byTier[e.tier] ?? 0) + 1;
+    if (reviewStatusOf(e.tier).reviewed) reviewedCount++;
+    else unreviewedCount++;
+  }
+  return {
+    total: merged.length,
+    reviewed: reviewedCount,
+    unreviewed: unreviewedCount,
+    verified: byTier.verified,
+    reviewedTier: byTier.reviewed,
+    community: byTier.community,
   };
 }
 

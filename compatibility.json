@@ -240,9 +240,9 @@
         {
           "dir": "dsh-plugins-market",
           "package": "dsh-plugins-market",
-          "version": "0.1.0",
-          "tarball": "plugins/dsh-plugins-market/0.1.6-alpha.1/dsh-plugins-market-0.1.0.tgz",
-          "files": 16,
+          "version": "0.1.1",
+          "tarball": "plugins/dsh-plugins-market/0.1.6-alpha.1/dsh-plugins-market-0.1.1.tgz",
+          "files": 17,
           "origin": "self",
           "author": "HaydenSmith1121",
           "upstream": "https://github.com/HaydenSmith1121/dsh-plugins",
@@ -252,7 +252,13 @@
           "peerVerdict": "ok",
           "peerNote": "没有任何 dependencies / peerDependencies —— 服务器半只用 Node 内置模块（semver 判定、tar 只读访问、YAML 局部合并都是自己实现并有单测），客户端半只用 shell 基线模块表里的 react（不需要 dsh.client.external）。这是刻意的取舍：每多一个依赖就多一分 pnpm 解析失败 / ERR_PNPM_IGNORED_BUILDS / 离线不可用的风险，而这个插件存在的意义正是「别把 harness 装坏」。",
           "bootstrap": true,
-          "notes": "★ 引导插件：本仓库自 2026-09 起，**插件一律通过它的市场面板安装**，scripts/install.* 只装这一个。三层目录（已验证 / 已审核 / 未审核）+ 装前兼容性闸门（环境 / profile / 候选包三层，致命项分「已知有害，硬拦截不可覆盖」与「无法确认，可覆盖需显式确认」两档）+ 事务化安装（先备份 profile 的 5 个状态文件，成功判据是 pnpm 退出码而非 node_modules 有没有文件，失败自动回滚）。公共索引 7487 条首次拉取后投影成瘦身版落盘，之后检索与分页都在服务端（命中缓存列表 0.15s / 检索 0.06s）。开发中实测到并已写进插件 README 的三件事：① profile 里指向**已删除** tarball 的 file: 依赖会让之后任何 pnpm 操作失败，闸门作为不可覆盖致命项拦下；② file: 指向同一路径但 tarball 内容变化时 pnpm 会跳过解包（加 --force 也只重链接），必须 remove 再 add；③ 公共索引里 star 最高的条目（ruvnet/ruflo，7.2 万 star）根本没声明 dsh.bundle.patch，装进去永远不会加载，远程静态探测拦住了它。★ 维护提醒：本条目曾因并行会话重写 compatibility.json 而丢失过一次，build.mjs 现在会校验它在不在，缺了就直接报错。"
+          "supersedes": [
+            {
+              "version": "0.1.0",
+              "reason": "0.1.0 是首个版本：三层目录分页签 + 装前闸门 + 事务化安装。0.1.1 把三层目录**合并成一个列表**（安全差异改由每条插件上的审核标签承载），并补上三件事：已装版本与仓库版本的比对（提示升级）、已是最新时禁用安装按钮、本地点赞与收藏。0.1.0 的功能没有缺失，升级是可选项。"
+            }
+          ],
+          "notes": "★ 引导插件：本仓库自 2026-09 起，**插件一律通过它的市场面板安装**，scripts/install.* 只装这一个。装前兼容性闸门（环境 / profile / 候选包三层，致命项分「已知有害，硬拦截不可覆盖」与「无法确认，可覆盖需显式确认」两档）+ 事务化安装（先备份 profile 的 5 个状态文件，成功判据是 pnpm 退出码而非 node_modules 有没有文件，失败自动回滚）。三层目录（已验证 / 已审核 / 未审核）**去重合并**后呈现为一个列表：同一插件在多层出现时只保留层级最高的那条，并把 star 数等展示信息补过来，安全差异由卡片上的审核标签承载。★ 已装状态判定（0.1.1 新增）的要点：拿「仓库里现在是什么版本」与「node_modules 里真实装的版本」比较，得出 未安装 / 已是最新 / 可升级 / 已装更新 / 无法判定 五种状态；**已是最新时闸门直接短路并禁用安装按钮**（否则用户对着一个已是最新的插件点开检查、勾风险确认、再装出一个一模一样的版本，是纯粹的误导）；**无法判定时绝不置灰**（不能把「算不出来」当成「已是最新」）。判定全部在服务端做并有单测覆盖 —— 放在浏览器里比版本号的话，semver 预发布规则一错，「已是最新」就会说反，而这种错在界面上完全看不出来。★ 升级路径必须先 `remove` 再 `add`：profile 里那条 `file:` 依赖指向的是**旧版本的 tarball 路径**，只做 add 的话 pnpm 会认为依赖已满足、dependencies 原封不动，用户点了「更新到 0.3.0」而实际装的还是 0.2.1，且界面显示成功 —— 这是最难查的一类「假成功」。已用真实升级（隔离环境 dsh-opencode-go-plus 0.2.1 → 0.3.0）验证过。★ 点赞 / 收藏是**纯本地**标记，落在 $DSH_HOME/storages/dsh-plugins-market/user-data.json，不上传、不做排行榜（本插件没有后端，假装有全局热度是骗人）。★ 开发中实测到并已写进插件 README 的三件事：① profile 里指向**已删除** tarball 的 file: 依赖会让之后任何 pnpm 操作失败，闸门作为不可覆盖致命项拦下；② file: 指向同一路径但 tarball 内容变化时 pnpm 会跳过解包（加 --force 也只重链接），必须 remove 再 add；③ 公共索引里 star 最高的条目（ruvnet/ruflo，7.2 万 star）根本没声明 dsh.bundle.patch，装进去永远不会加载，远程静态探测拦住了它。★ 维护提醒：本条目曾因并行会话重写 compatibility.json 而丢失过一次，build.mjs 现在会校验它在不在，缺了就直接报错。"
         },
         {
           "dir": "dsh-excel-viewer",

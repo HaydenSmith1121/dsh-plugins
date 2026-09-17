@@ -91,13 +91,25 @@ export function scanInstalled(profile, env = process.env) {
   return out;
 }
 
-/** 从 `file:.../foo-1.2.3.tgz` / `1.2.3` / `^1.2.3` 里尽力取出版本号 */
+/**
+ * 从 `file:.../foo-1.2.3.tgz` / `1.2.3` / `^1.2.3` / `dsh-memory@0.1.0` 里取出版本号。
+ *
+ * ★ 最后那种带包名前缀的写法（`<pkg>@<version>`）必须单独认。
+ *   它是**更新判定**的关键输入：目录里给的是 `npm` 规格时，版本号只存在于
+ *   这个后缀里；漏了它，「装了 0.1.0、目录里是 0.2.0」会被判成「无法比较」，
+ *   于是永远不显示「可升级」，用户也就永远升不上去。
+ *   注意不能简单地取最后一个 `@` —— scoped 包名是 `@scope/name@1.2.3`，
+ *   末尾的 `@` 后面才是版本，用 /@([^@/]+)$/ 正好只吃掉最后一段。
+ */
 export function extractVersionFromSpec(spec) {
   if (typeof spec !== 'string') return null;
-  const tgz = /-(\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?)\.tgz$/.exec(spec);
+  const s = spec.trim();
+  const tgz = /-(\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?)\.tgz$/.exec(s);
   if (tgz) return tgz[1];
-  if (/^file:|^link:|^\.{1,2}[\\/]|^[A-Za-z]:[\\/]/.test(spec)) return null;
-  const bare = /^[~^>=<\s]*(\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?)$/.exec(spec.trim());
+  if (/^file:|^link:|^\.{1,2}[\\/]|^[A-Za-z]:[\\/]/.test(s)) return null;
+  const scoped = /@(\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?)$/.exec(s);
+  if (scoped) return scoped[1];
+  const bare = /^[~^>=<\s]*(\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?)$/.exec(s);
   if (bare) return bare[1];
   return null;
 }

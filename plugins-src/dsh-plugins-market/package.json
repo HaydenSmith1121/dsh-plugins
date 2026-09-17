@@ -1,9 +1,9 @@
 {
   "name": "dsh-plugins-market",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
-  "description": "dsh-plugins 仓库自带的可视化插件市场：本仓库已验证插件 + 人工审核插件 + 公共索引，带装前兼容性闸门与失败自动回滚",
+  "description": "dsh-plugins 仓库自带的可视化插件市场：已审核插件与公共索引合并浏览，带新版本提示、点赞收藏、装前兼容性闸门与失败自动回滚",
   "main": "lib/index.js",
   "exports": {
     ".": {

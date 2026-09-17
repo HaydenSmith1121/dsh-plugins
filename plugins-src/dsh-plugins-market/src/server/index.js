@@ -23,10 +23,15 @@ import {
 } from './util.js';
 import { readProfileState, scanInstalled, composedTree, listProfileBackups } from './profile.js';
 import {
-  loadVerified, loadReviewed, fetchCommunity, loadCommunityCache,
-  normalizeEntry, searchEntries, catalogStatus, findEntry, TIER_META,
+  loadVerified, loadReviewed, fetchCommunity,
+  normalizeEntry, searchCatalog, mergeEntries,
+  catalogStatus, findEntry, TIER_META, REVIEW_STATUS,
   REPO_RAW_BASE, REPO_HOMEPAGE, ensureDataDir, readCacheMeta,
 } from './catalog.js';
+import {
+  installStateIndex, installedOverview,
+  toggleUserMark, userMarks, userDataStats,
+} from './state.js';
 import { runGate } from './gate.js';
 import { probeEntry, clearProbeCache } from './probe.js';
 import {
@@ -62,6 +67,8 @@ function createContext() {
     _community: null,
     _reviewed: null,
     _verified: null,
+    _pool: null,
+    _poolAt: 0,
   };
   ctx.repoRoot = detectRepoRoot(ctx);
   return ctx;
@@ -136,6 +143,7 @@ function tree(ctx, { force = false } = {}) {
 function invalidate(ctx) {
   ctx._tree = null;
   ctx._treeAt = 0;
+  invalidatePool(ctx);
 }
 
 async function layers(ctx, { refreshCommunity = false } = {}) {
@@ -148,16 +156,39 @@ async function layers(ctx, { refreshCommunity = false } = {}) {
     { ...p, install: { kind: 'probe', method: p.installMethod, commands: p.installCommands, needsConfig: p.needsConfig, usageNeedsConfig: p.usageNeedsConfig, risky: p.risky } },
     'community',
   ));
-  return {
+  ctx._layers = {
     verified: ctx._verified,
     reviewed: ctx._reviewed,
     community,
     communityMeta: ctx._community,
   };
+  return ctx._layers;
 }
 
-function allEntries(l) {
-  return [...(l.verified.plugins ?? []), ...(l.reviewed.plugins ?? []), ...(l.community ?? [])];
+/**
+ * 合并后的条目池 + 每个条目的安装状态。
+ *
+ * 这是界面唯一的数据来源：三层目录去重成一份列表，每条都带上
+ * 「第几层（已审核 / 未审核）」「装没装」「装了是不是最新」。
+ *
+ * 缓存 10 秒：一次页面加载会连着打好几个请求（列表 + 状态 + 收藏筛选），
+ * 每次重算合并 + 全量 scanInstalled 太浪费；但也不能缓存太久，
+ * 否则装完插件界面还显示「未安装」。
+ */
+function pool(ctx, { recalc = false } = {}) {
+  if (!recalc && ctx._pool && Date.now() - ctx._poolAt < 10_000) return ctx._pool;
+  const l = ctx._layers;
+  const { merged, shadowed } = mergeEntries(l);
+  const { index } = installStateIndex(ctx.profileName, process.env, merged);
+  const built = { entries: merged, shadowed, state: index, layers: l, at: Date.now() };
+  ctx._pool = built;
+  ctx._poolAt = Date.now();
+  return built;
+}
+
+function invalidatePool(ctx) {
+  ctx._pool = null;
+  ctx._poolAt = 0;
 }
 
 // ─────────────────────────────────────────────────────────────
@@ -170,8 +201,10 @@ function createDispatcher(ctx) {
       // ── 状态 ────────────────────────────────────────────
       case 'status': {
         const l = await layers(ctx);
+        const p = pool(ctx);
         const state = profileState(ctx);
-        const installed = scanInstalled(ctx.profileName, process.env);
+        const installed = installedOverview(ctx.profileName, process.env, p.entries);
+        const marks = userMarks(process.env);
         return {
           market: {
             version: readJsonSafe(path.join(pluginDir(), 'package.json'))?.version ?? '?',
@@ -199,51 +232,105 @@ function createDispatcher(ctx) {
           },
           repo: { root: ctx.repoRoot, detected: Boolean(ctx.repoRoot), rawBase: REPO_RAW_BASE },
           catalog: catalogStatus(l),
-          installed: installed.map(publicInstalled),
+          reviewStatuses: [REVIEW_STATUS.verified, REVIEW_STATUS.reviewed, REVIEW_STATUS.community],
+          installed,
+          // 顶部「N 个可更新」提示要用；不单独开接口，省一次往返
+          upgradable: installed.filter((i) => i.upgrade).map((i) => ({ name: i.name, from: i.installedVersion, to: i.targetVersion })),
+          userData: { ...userDataStats(process.env), marks },
           backups: listProfileBackups(process.env).slice(0, 10),
           cache: readCacheMeta(),
         };
       }
 
-      // ── 目录 ────────────────────────────────────────────
+      // ── 目录（合并视图：一处列出全部，用标签区分）────────
       case 'catalog': {
-        const l = await layers(ctx, { refreshCommunity: Boolean(args.refresh) });
+        await layers(ctx, { refreshCommunity: Boolean(args.refresh) });
+        const p = pool(ctx, { recalc: Boolean(args.refresh) });
+        const marks = userMarks(process.env);
+        const stateIndex = p.state;
+
+        // ★ tier 参数仍兼容（旧书签 / 深链），但界面不再用它分页签
         const tier = args.tier && TIER_META[args.tier] ? args.tier : null;
-        const pool = tier ? (l[tier]?.plugins ?? l[tier] ?? []) : allEntries(l);
-        const result = searchEntries(pool, args.query ?? '', {
+        const source = tier ? p.entries.filter((e) => e.tier === tier) : p.entries;
+
+        const result = searchCatalog(source, {
+          query: args.query ?? '',
           limit: clamp(args.limit ?? 30, 1, 200),
           offset: clamp(args.offset ?? 0, 0, 1e6),
+          review: args.review === 'reviewed' || args.review === 'unreviewed' ? args.review : null,
+          only: ['liked', 'favorited', 'installed', 'upgradable'].includes(args.only) ? args.only : null,
+          marks,
+          installed: stateIndex,
         });
+
         return {
           total: result.total,
           offset: args.offset ?? 0,
           limit: args.limit ?? 30,
-          items: result.items.map(publicEntry),
-          tiers: catalogStatus(l).tiers,
+          items: result.items.map((e) => publicEntry(e, stateIndex.get(e.id), marks[e.id])),
+          tiers: catalogStatus(p.layers).tiers,
+          merged: catalogStatus(p.layers).merged,
+          reviewStatuses: [REVIEW_STATUS.verified, REVIEW_STATUS.reviewed, REVIEW_STATUS.community],
           communityMeta: {
-            source: l.communityMeta?.source ?? null,
-            error: l.communityMeta?.error ?? null,
-            count: l.community.length,
-            generatedAt: l.communityMeta?.generatedAt ?? null,
+            source: p.layers.communityMeta?.source ?? null,
+            error: p.layers.communityMeta?.error ?? null,
+            count: p.layers.community.length,
+            generatedAt: p.layers.communityMeta?.generatedAt ?? null,
           },
-          verifiedAvailable: l.verified.available,
-          verifiedError: l.verified.error,
+          verifiedAvailable: p.layers.verified.available,
+          verifiedError: p.layers.verified.error,
+          marks: {
+            liked: Object.values(marks).filter((m) => m.liked).length,
+            favorited: Object.values(marks).filter((m) => m.favorited).length,
+          },
         };
       }
 
       case 'entry': {
-        const l = await layers(ctx);
-        const found = findEntry({ verified: l.verified.plugins, reviewed: l.reviewed.plugins, community: l.community }, String(args.id ?? ''));
+        await layers(ctx);
+        const p = pool(ctx);
+        const id = String(args.id ?? '');
+        const found = p.entries.find((e) => e.id === id || e.package === id)
+          ?? findEntry({ verified: p.layers.verified.plugins, reviewed: p.layers.reviewed.plugins, community: p.layers.community }, id);
         if (!found) throw new Error(`目录里没有这个插件：${args.id}`);
-        const installed = scanInstalled(ctx.profileName, process.env).find((i) => i.name === (found.package ?? found.id)) ?? null;
-        return { entry: found, installed: installed ? publicInstalled(installed) : null };
+        const marks = userMarks(process.env);
+        return {
+          entry: publicEntry(found, p.state.get(found.id), marks[found.id], { full: true }),
+          installed: p.state.get(found.id) ?? null,
+          // 同一插件在其它层里的副本（去重时被合并掉的），详情页可以如实展示
+          duplicates: (p.shadowed.get(`pkg:${String(found.package ?? '').toLowerCase()}`) ?? [])
+            .map((e) => ({ id: e.id, tier: e.tier, tierLabel: e.tierLabel })),
+        };
+      }
+
+      // ── 点赞 / 收藏 ─────────────────────────────────────
+      case 'mark': {
+        const action = args.action === 'favorite' ? 'favorite' : args.action === 'like' ? 'like' : null;
+        if (!action) throw new Error(`未知的标记动作：${args.action}`);
+        const r = toggleUserMark(action, args.id, args.value === undefined ? undefined : Boolean(args.value));
+        appendOp({ op: `mark-${action}`, pluginId: r.id, ok: true, detail: action === 'like' ? `liked=${r.liked}` : `favorited=${r.favorited}` });
+        return r;
+      }
+
+      case 'marks': {
+        return { items: userMarks(process.env), stats: userDataStats(process.env) };
       }
 
       // ── 装前检查 ────────────────────────────────────────
       case 'gate': {
-        const l = await layers(ctx);
-        const found = findEntry({ verified: l.verified.plugins, reviewed: l.reviewed.plugins, community: l.community }, String(args.id ?? ''));
+        const p = await ensurePool(ctx);
+        const found = lookupEntry(p, args.id);
         if (!found) throw new Error(`目录里没有这个插件：${args.id}`);
+
+        const state = p.state.get(found.id) ?? null;
+        // ★ 已经是最新版本时闸门直接短路。
+        //   这不是省事，而是**必须**：让用户对着一个「已是最新」的插件点开
+        //   装前检查、勾风险确认、然后装出一个完全一样的版本，是纯粹的误导。
+        if (state?.status === 'current') {
+          const report = alreadyLatestReport(found, ctx, state);
+          appendOp({ op: 'gate', pluginId: found.id, tier: found.tier, verdict: report.verdict, canInstall: false, reason: 'up-to-date' });
+          return report;
+        }
 
         // 本地没有 tarball 的条目（公共索引 / 已审核但未随包分发）先做一次远程静态探测
         let probe = null;
@@ -262,14 +349,21 @@ function createDispatcher(ctx) {
           canInstall: report.canInstall, blockedBy: report.blockedBy,
           counts: report.counts,
         });
-        return report;
+        return { ...report, installState: state, upgrade: state?.status === 'upgradable' };
       }
 
       // ── 安装 / 卸载 / 修复 ──────────────────────────────
       case 'install': {
-        const l = await layers(ctx);
-        const found = findEntry({ verified: l.verified.plugins, reviewed: l.reviewed.plugins, community: l.community }, String(args.id ?? ''));
+        const p = await ensurePool(ctx);
+        const found = lookupEntry(p, args.id);
         if (!found) throw new Error(`目录里没有这个插件：${args.id}`);
+
+        const state = p.state.get(found.id) ?? null;
+        if (state?.status === 'current') {
+          const report = alreadyLatestReport(found, ctx, state);
+          appendOp({ op: 'install-refused', pluginId: found.id, verdict: report.verdict, reason: 'up-to-date' });
+          return { ok: false, refused: true, upToDate: true, gate: report, steps: [], message: report.message };
+        }
 
         const probe = found.tier === 'verified' ? null : await probeEntry(found);
         const gate = runGate(found, gctx(ctx), {
@@ -286,10 +380,12 @@ function createDispatcher(ctx) {
         const result = await installPlugin({ entry: found, ctx: gctx(ctx), gate, options: {} });
         invalidate(ctx);
         appendOp({
-          op: 'install', pluginId: found.id, ok: result.ok, failure: result.failure ?? null,
+          op: state?.status === 'upgradable' ? 'upgrade' : 'install',
+          pluginId: found.id, ok: result.ok, failure: result.failure ?? null,
+          from: state?.installedVersion ?? null, to: state?.target ?? null,
           backupDir: result.backupDir ?? null, retried: (result.steps ?? []).some((s) => s.id === 'allowbuilds-retry'),
         });
-        return { ...result, gate };
+        return { ...result, gate, upgrade: state?.status === 'upgradable', fromVersion: state?.installedVersion ?? null, toVersion: state?.target ?? null };
       }
 
       case 'uninstall': {
@@ -320,7 +416,10 @@ function createDispatcher(ctx) {
         invalidate(ctx);
         const t = tree(ctx, { force: true });
         const state = profileState(ctx);
-        const installed = scanInstalled(ctx.profileName, process.env);
+        const raw = scanInstalled(ctx.profileName, process.env);
+        const p = pool(ctx, { recalc: true });
+        const byName = new Map(installedOverview(ctx.profileName, process.env, p.entries).map((i) => [i.name, i]));
+        const installed = raw.map((i) => byName.get(i.name) ?? i);
         const depNames = new Set(Object.keys(state.dependencies));
         const inBox = new Set(ctx.compat.inBoxBundles ?? []);
         return {
@@ -333,6 +432,7 @@ function createDispatcher(ctx) {
           bundles: state.bundles,
           orphans: state.bundles.filter((b) => !depNames.has(b) && !inBox.has(b)),
           drift: installed.filter((i) => i.mismatch).map(publicInstalled),
+          upgradable: installed.filter((i) => i.upgrade).map(publicInstalled),
         };
       }
 
@@ -402,20 +502,87 @@ function gctx(ctx) {
   };
 }
 
+/** 确保目录层与合并池都已就绪，返回合并池 */
+async function ensurePool(ctx) {
+  await layers(ctx);
+  return pool(ctx);
+}
+
+/** 在合并池里按 id / 包名查一条；查不到再退回原始三层（兼容旧 id） */
+function lookupEntry(p, id) {
+  const key = String(id ?? '');
+  const direct = p.entries.find((e) => e.id === key || e.package === key);
+  if (direct) return direct;
+  return findEntry({
+    verified: p.layers.verified.plugins,
+    reviewed: p.layers.reviewed.plugins,
+    community: p.layers.community,
+  }, key);
+}
+
+/**
+ * 「已经是最新版本」时的闸门结果。
+ *
+ * 形状与 runGate() 的返回值保持一致（界面里是同一套渲染），但：
+ *   - canInstall 恒为 false —— 这是本函数存在的意义
+ *   - 只给一条 pass 检查项，不跑环境 / profile / 候选包那三组
+ *     （跑了也没意义：反正不会装）
+ */
+function alreadyLatestReport(entry, ctx, state) {
+  const target = state?.target ?? entry.version ?? null;
+  return {
+    pluginId: entry.id,
+    tier: entry.tier,
+    tierLabel: entry.tierLabel,
+    reviewStatus: entry.reviewStatus,
+    targetProfile: ctx.profileName,
+    verdict: 'pass',
+    upToDate: true,
+    canInstall: false,
+    installable: false,
+    requiresRiskAck: false,
+    acknowledged: false,
+    blockedBy: [],
+    overridableBy: [],
+    counts: { pass: 1, warn: 0, fatalBlocking: 0, fatalOverridable: 0, skipped: 0 },
+    checks: [{
+      id: 'cand.up-to-date',
+      title: '已是最新版本',
+      severity: 'info',
+      status: 'pass',
+      detail: `${entry.package ?? entry.id} 已经装的是 ${state?.installedVersion ?? target}`
+        + `，与目录里的版本一致，没有需要更新的内容。`,
+      hint: '目录里出现更新的版本时，这里的按钮会变成「更新到 x.y.z」。',
+    }],
+    installSpec: null,
+    manifest: null,
+    probe: null,
+    alreadyInstalled: state ?? null,
+    installState: state,
+    upgrade: false,
+    message: `${entry.package ?? entry.id} 已是最新版本（${state?.installedVersion ?? target}），无需安装。`,
+    durationMs: 0,
+    ranAt: new Date().toISOString(),
+  };
+}
+
 // ─────────────────────────────────────────────────────────────
 // 出参瘦身（列表页不需要把 notes 全文传过去）
 // ─────────────────────────────────────────────────────────────
 
-function publicEntry(e) {
+function publicEntry(e, state = null, mark = null, { full = false } = {}) {
+  const st = state ?? null;
   return {
     id: e.id,
     tier: e.tier,
     tierLabel: e.tierLabel,
+    // 审核状态标签：界面顶部就是用它区分「已审核 / 未审核」的
+    reviewStatus: e.reviewStatus ?? null,
     package: e.package,
     version: e.version,
     title: e.title,
-    summary: short(e.summary, 220),
-    tags: (e.tags ?? []).slice(0, 8),
+    summary: short(e.summary, full ? 4000 : 220),
+    tags: (e.tags ?? []).slice(0, full ? 24 : 8),
     author: e.author,
     upstream: e.upstream,
     homepage: e.homepage,
@@ -424,10 +591,36 @@ function publicEntry(e) {
     pushedAt: e.pushedAt,
     origin: e.origin,
     peerVerdict: e.peerVerdict,
+    peerNote: full ? e.peerNote ?? null : null,
+    coexistenceWarning: full ? e.coexistenceWarning ?? null : null,
+    notes: full ? e.notes ?? null : null,
     needsConfig: e.install?.needsConfig ?? false,
     risky: e.install?.risky ?? false,
     installKind: e.install?.kind ?? null,
     hasReview: Boolean(e.review),
+    review: full ? e.review ?? null : null,
+
+    // ── 安装状态（问题 1 / 2 的载体）──
+    installState: st ? {
+      status: st.status,
+      installed: st.installed,
+      installedVersion: st.installedVersion,
+      target: st.target,
+      reason: st.reason,
+      inBundles: st.inBundles,
+      canInstall: st.canInstall,
+      canUpgrade: st.canUpgrade,
+      action: st.action,
+      isLatest: st.isLatest,
+    } : {
+      status: 'not-installed', installed: false, installedVersion: null,
+      target: null, reason: null, inBundles: false,
+      canInstall: true, canUpgrade: false, action: 'install', isLatest: false,
+    },
+
+    // ── 用户标记（问题 3 的载体）──
+    liked: Boolean(mark?.liked),
+    favorited: Boolean(mark?.favorited),
   };
 }
 
@@ -442,6 +635,12 @@ function publicInstalled(i) {
     inBundles: i.inBundles,
     mismatch: Boolean(i.mismatch),
     hasClient: i.hasClient,
+    // 新增：能不能升级、升级到哪一版
+    inCatalog: Boolean(i.inCatalog),
+    targetVersion: i.targetVersion ?? null,
+    upgrade: Boolean(i.upgrade),
+    state: i.state ?? 'unknown',
+    stateReason: i.stateReason ?? null,
   };
 }
 

@@ -69,14 +69,25 @@ test('loadVerified() 的条数与兼容矩阵一致，且含本插件自己', as
 });
 
 test('自引用 tarball 的实际 sha256 有边车文件可查', () => {
-  const sidecar = path.join(REPO_ROOT, 'plugins', 'dsh-plugins-market', '0.1.6-alpha.1', 'dsh-plugins-market-0.1.0.tgz.sha256');
+  // ★ 版本号必须从源头读，不能写死。
+  //   写死的话每次 bump 版本都要回来改测试，改漏了会以「边车文件找不到」的形式失败 ——
+  //   看起来像构建坏了，其实是测试过期了。
+  //   tarball 路径的唯一来源是 compatibility.json 里那条自引用条目。
+  const compat = JSON.parse(fs.readFileSync(path.join(REPO_ROOT, 'compatibility.json'), 'utf8'));
+  const runtime = compat.runtimes.find((r) => r.status === 'supported' && r.recommended);
+  const self = runtime.plugins.find((p) => p.package === 'dsh-plugins-market');
+  assert(self, '兼容矩阵里应当有 dsh-plugins-market 这一条');
+
+  const tgz = path.join(REPO_ROOT, self.tarball);
+  const sidecar = `${tgz}.sha256`;
+  assert(fs.existsSync(tgz), `自引用条目指向的 tarball 应当已构建出来：${tgz}`);
   assert(fs.existsSync(sidecar), `自引用条目的 hash 应当落在边车文件里：${sidecar}`);
   const text = fs.readFileSync(sidecar, 'utf8').trim();
   assert(/^[0-9a-f]{64}\s+/.test(text), '边车文件应当是 "sha256  <文件名>" 格式');
+  assert(text.includes(`${self.package}-${self.version}.tgz`), `边车文件应当对应 ${self.package}-${self.version}.tgz`);
+
   // 并且要与磁盘上的 tarball 真的一致
-  const actual = createHash('sha256')
-    .update(fs.readFileSync(path.join(REPO_ROOT, 'plugins', 'dsh-plugins-market', '0.1.6-alpha.1', 'dsh-plugins-market-0.1.0.tgz')))
-    .digest('hex');
+  const actual = createHash('sha256').update(fs.readFileSync(tgz)).digest('hex');
   eq(text.split(/\s+/)[0], actual, '边车文件里的 hash 必须与 tarball 实际 hash 一致');
 });
 
