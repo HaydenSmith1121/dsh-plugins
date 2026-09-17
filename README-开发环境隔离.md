@@ -158,10 +158,42 @@ node scripts/dev-env.mjs doctor
 ### 装/更新正在开发的插件
 
 ```bash
-node scripts/dev-env.mjs install /path/to/my-plugin.tgz
+# 从仓库根目录跑（相对路径 OK，脚本会自动转绝对路径）
+node scripts/dev-env.mjs install plugins/my-plugin/0.1.6-alpha.1/my-plugin-1.0.0.tgz
+
+# 也可以是绝对路径
+node scripts/dev-env.mjs install D:/builds/my-plugin-1.0.0.tgz
 ```
 
 只影响隔离环境。
+
+> ★ **路径按你敲命令时的 cwd 解析**。脚本内部会 `path.resolve()` 成绝对路径再交给
+> `dsh plugin add` —— 这一步不能省。dsh 是在**隔离 profile 目录**里执行 pnpm 的，
+> 相对路径会被锚到 `~/.dsh-dev/profiles/web/` 下，报
+> `ERR_PNPM_LINKED_PKG_DIR_NOT_FOUND`（看着像"文件不存在"，其实是解析基准错了）。
+> 路径不存在时脚本会直接报 `✗ 找不到 tarball` 并告诉你它解析成了什么。
+
+#### ★ 首次安装会撞 `ERR_PNPM_IGNORED_BUILDS`（必踩，不是故障）
+
+首次往**全新的**隔离环境装插件时，pnpm 10+ 会拦下 `dsh-opencode-go-plus` 引入的两个
+依赖构建脚本，pnpm 以非 0 退出，**`dsh.profile.bundles` 不会追加** ——
+表现为"装完了但 GUI 里没有"。这两个脚本都不需要真的执行：
+
+| 依赖 | 脚本 | 为什么可以关 |
+|---|---|---|
+| `protobufjs` | `postinstall` | 只打印一行 CLI 提示，纯装饰 |
+| `@google/genai` | `prepare` | 对 registry / tarball 安装本来就不跑 |
+
+pnpm 失败时会在 `~/.dsh-dev/profiles/web/pnpm-workspace.yaml` 里留下占位符：
+
+```yaml
+allowBuilds:
+  '@google/genai': set this to true or false
+  protobufjs: set this to true or false
+```
+
+把两处都改成 `false`，**重跑同一条 install 命令**即通（第二次会走 lockfile，秒过）。
+`dsh-opencode-go-plus` 首次解包时若已经有 tarball 缓存，也可能第一次就成功 —— 别困惑。
 
 > ⚠️ **`file:` 依赖会锚定 tarball 的绝对路径**。所以那个 tarball 不能删、不能挪，
 > 否则以后 `pnpm install` 会挂。建议把开发产物放在仓库外的固定目录

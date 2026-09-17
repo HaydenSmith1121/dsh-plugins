@@ -560,7 +560,22 @@ function cmdInstall() {
     console.error(`    用法： node scripts/dev-env.mjs install <path/to/plugin.tgz>`);
     return 1;
   }
-  return cmdPlugin(['add', ...positionalArgs]);
+  // ★ 必须转成绝对路径再交给 dsh。dsh 是在「隔离 profile 目录」里执行 pnpm 的，
+  //   相对路径会被锚到 `~/.dsh-dev/profiles/web/` 下 → ERR_PNPM_LINKED_PKG_DIR_NOT_FOUND。
+  //   实测：`install plugins/xxx.tgz` 从仓库根跑也会失败，因为生效的 cwd 不是仓库根。
+  const abs = positionalArgs.map((p) => {
+    if (/^(https?:|git\+|file:)/.test(p)) return p; // 远端/协议地址保持原样
+    const resolved = path.resolve(p);
+    if (!fs.existsSync(resolved)) {
+      console.error(`${symBad()} 找不到 tarball： ${resolved}`);
+      console.error(`${dim('    提示：路径按「你敲命令时的 cwd」解析。从仓库根跑时用 plugins/... 即可，')}`);
+      console.error(`${dim('          其它位置请给绝对路径。')}`);
+      return null;
+    }
+    return resolved;
+  });
+  if (abs.some((p) => p === null)) return 1;
+  return cmdPlugin(['add', ...abs]);
 }
 
 function cmdConfig() {
