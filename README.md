@@ -186,7 +186,7 @@ curl -fsSL https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/sc
 
 | 插件 | 作用 | 来源 |
 |---|---|---|
-| `dsh-plugins-market` | **可视化插件市场（本仓库的安装入口）**：三层目录 + 装前兼容性闸门 + 失败自动回滚 | 自研 |
+| `dsh-plugins-market` | **可视化插件市场（本仓库的安装入口）**：已审核与未审核插件合并浏览 + 装前兼容性闸门 + 失败自动回滚；**安装全程可见进度与预计时间，可随时中止，并始终给出手动安装命令** | 自研 |
 | `dsh-memory` | 跨会话长期记忆：turn 结束自动蒸馏成笔记，下次会话自动召回 | 自研 |
 | `dsh-ark-plans` | 火山方舟 Agent Plan + Coding Plan 模型接入 | 自研 |
 | `dsh-opencode-go-plus` | OpenCode Go 模型供应商（自研维护分支，取代 `dsh-opencode-go`） | 自研（派生） |

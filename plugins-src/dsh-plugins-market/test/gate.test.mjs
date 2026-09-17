@@ -65,7 +65,10 @@ function buildCtx() {
     compat,
     profileState: state,
     installed: scanInstalled(profile, process.env),
-    tree: composedTree(profile, process.env, { launcher: env.dsh.launcher }),
+    // 不传 launcher：让 composedTree 自己解析「怎么调 dsh」（优先 lib/bin.js）。
+    // 传 env.dsh.launcher（dsh.cmd）会走 shell 跑薄壳 —— 那既触发 DEP0190，
+    // 又依赖 PATH 继承，正是插件本身已经刻意避开的东西。
+    tree: composedTree(profile, process.env),
     repoRoot: REPO,
     repoRawBase: 'https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main',
   };

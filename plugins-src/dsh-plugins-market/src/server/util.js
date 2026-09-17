@@ -12,7 +12,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
 import zlib from 'node:zlib';
-import { execFileSync, spawnSync } from 'node:child_process';
+import { execFileSync, spawn, spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 // ─────────────────────────────────────────────────────────────
@@ -261,6 +261,31 @@ function shimPrefix(installDir) {
   return parts.slice(0, idx).join(path.sep) || path.sep;
 }
 
+/**
+ * 「怎么调 dsh」的唯一答案。
+ *
+ * ★ 优先直接跑 `node <dshDir>/lib/bin.js`，而不是 PATH 上的 dsh 薄壳。
+ *
+ *   两个理由，都是踩过的坑：
+ *   1. Windows 上跑 `.cmd` / `.ps1` 薄壳必须开 shell，而开了 shell 之后
+ *      含空格或特殊字符的路径就得自己加引号 —— 一旦漏了，命令会**静默跑成
+ *      另一个东西**，报错还很难看懂。
+ *   2. 薄壳依赖 PATH 被正确继承。harness 从 GUI / 快捷方式启动时，PATH 常常
+ *      和终端里不一样（少一个 npm 全局目录就找不到 dsh）。直接用 harness
+ *      自己正在用的那个 node 执行 bin.js，这一整类问题都不存在。
+ *
+ * 找不到安装目录时才退回启动器（此时只能开 shell）。
+ */
+export function dshCommand(env = process.env) {
+  const install = findDshInstall(env);
+  const binJs = install.dir ? path.join(install.dir, 'lib', 'bin.js') : null;
+  if (binJs && fs.existsSync(binJs)) {
+    return { command: process.execPath, prefixArgs: [binJs], shell: false, resolved: 'bin.js', dir: install.dir, launcher: install.launcher };
+  }
+  const launcher = install.launcher ?? 'dsh';
+  return { command: launcher, prefixArgs: [], shell: process.platform === 'win32', resolved: 'launcher', dir: install.dir, launcher };
+}
+
 export function findInPath(names, env = process.env) {
   const list = Array.isArray(names) ? names : [names];
   const pathValue = env.PATH ?? env.Path ?? '';
@@ -312,10 +337,11 @@ function detectPnpm(dshPrefix, env) {
   let version = null;
   if (chosen) {
     try {
+      // ★ 不开 shell（Windows 上开 shell 会触发 DEP0190，且参数会被拼进命令行，
+      //   路径里有空格就有风险）。execFileSync 在 Windows 上本来就能直接跑 .cmd。
       const out = execFileSync(chosen, ['--version'], {
         encoding: 'utf8',
         timeout: 20000,
-        shell: process.platform === 'win32',
         windowsHide: true,
       });
       version = /(\d+\.\d+\.\d+[^\s]*)/.exec(out)?.[1] ?? null;
@@ -684,6 +710,287 @@ export function spawnCapture(command, args, options = {}) {
     error: res.error ? String(res.error.message ?? res.error) : null,
     get failed() { return res.status !== 0 || Boolean(res.error); },
   };
+}
+
+// ─────────────────────────────────────────────────────────────
+// 异步进程（安装任务专用）
+// ─────────────────────────────────────────────────────────────
+//
+// ★ 为什么安装**不能**用上面的 spawnCapture（spawnSync）
+//
+//   spawnSync 会阻塞 Node 的事件循环 —— 也就是说，在 pnpm 跑完之前，
+//   这个进程既不能处理下一个 HTTP 请求，也**不能把自己的进度报出去**。
+//   用户看到的就是「点了安装，整个页面卡住，没有进度、没有耗时、连中止按钮
+//   都按不动」，因为处理中止请求的那条路径同样被堵死了。
+//
+//   所以安装路径一律走下面这套 spawn 实现：事件循环保持可响应，
+//   输出以流的方式回到任务对象里，中止才真正有意义（能去 kill 子进程）。
+//
+//   上半部分（目录、闸门、profile 只读探测）继续用 spawnSync 是可以接受的：
+//   那里要么很快（ms 级），要么本来就该在返回结果前跑完。
+
+function toResult(res, { stdout = '', stderr = '', error = null, timedOut = false, canceled = false } = {}) {
+  return {
+    status: res?.code ?? null,
+    signal: res?.signal ?? null,
+    stdout,
+    stderr,
+    error,
+    timedOut,
+    canceled,
+    get failed() { return timedOut || canceled || res?.code !== 0 || Boolean(error); },
+  };
+}
+
+/** 只在需要「旧式结果对象」时用（同步路径的兼容层） */
+export function asResult(proc) {
+  return toResult({ code: proc.status, signal: proc.signal }, {
+    stdout: proc.stdout, stderr: proc.stderr, error: proc.error, timedOut: proc.timedOut, canceled: proc.canceled,
+  });
+}
+
+/**
+ * 跑一个子进程，**不阻塞事件循环**。
+ *
+ * 返回值是「thenable 的进程句柄」：既能 `await` 拿结果（把整件事等完），
+ * 也能在等待过程中 `proc.kill()` / `proc.settled()` / 读 `proc.stdout`。
+ * 进度上报与「中止安装」依赖的就是后一半能力。
+ *
+ * ★ 输出为什么走**临时文件**而不是 pipe
+ *
+ *   直觉上应该用 `stdio: ['ignore','pipe','pipe']`，但那条路在受限环境
+ *   （文件沙箱 / 受限令牌 / 部分 CI 容器）里会直接失败：子进程的 pipe 需要
+ *   命名管道权限，拿不到就 `spawn EPERM`；更糟的是**父进程只看到子进程挂着不动**
+ *   （close 事件永远不来）—— 表现正好就是「点了安装，一直没反应」。
+ *
+ *   重定向到文件没有这个限制（`stdio: ['ignore', fd, fd]` 只是打开一个文件），
+ *   而且顺手满足另一个需求：**边跑边读**。安装进度里的「pnpm 实时输出」
+ *   就是靠周期性读这个文件里新增的字节实现的。
+ *
+ * ★ 为什么 resolve 的是 `proc.result` 而不是 `proc`
+ *
+ *   `proc` 自己是 thenable（带 then 方法），如果 `resolve(proc)`，Promise 规范
+ *   会去「解开」这个 thenable —— 也就是调用它自己的 `.then()`，而那个 `.then()`
+ *   等的又是同一个 promise：**自己等自己，永远不落定**。
+ *   症状极具迷惑性：子进程明明跑完、输出也拿到了，await 却永远不返回。
+ *   所以对外暴露一个**不带 then** 的纯结果对象。
+ *
+ * @param {object} o
+ * @param {number} [o.timeout]      到点强制结束（连同子进程树一起杀）
+ * @param {AbortSignal} [o.signal]  外部中止信号
+ * @param {(chunk:string, stream:'out'|'err')=>void} [o.onOutput]  有新输出时回调
+ * @param {boolean} [o.shell]       默认 Windows 上 true（要跑 .cmd 薄壳时必需）
+ * @param {boolean} [o.capture]     是否捕获输出（默认 true）
+ * @param {number} [o.maxBuffer]    单次保留的上限（防止输出把内存吃光）
+ */
+export function spawnCaptureAsync(command, args, options = {}) {
+  const {
+    timeout = 0,
+    signal: abortSignal = null,
+    onOutput = null,
+    shell = process.platform === 'win32',
+    cwd,
+    env,
+    capture = true,
+    maxBuffer = 8 * 1024 * 1024,
+    windowsHide = true,
+  } = options;
+
+  let resolveDone;
+  const done = new Promise((resolve) => { resolveDone = resolve; });
+
+  let outFile = null;
+  let outFd = null;
+  let readOffset = 0;
+  let reader = null;
+
+  if (capture) {
+    try {
+      outFile = path.join(
+        os.tmpdir(),
+        `dsh-market-out-${process.pid}-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}.log`,
+      );
+      outFd = fs.openSync(outFile, 'w+');
+    } catch {
+      outFile = null;
+      outFd = null;
+    }
+  }
+
+  const proc = {
+    command,
+    args,
+    child: null,
+    pid: null,
+    stdout: '',
+    stderr: '',
+    outputFile: outFile,
+    status: null,
+    signal: null,
+    error: null,
+    timedOut: false,
+    canceled: false,
+    settled: () => proc._settled,
+    _settled: false,
+    kill: (reason = 'kill') => killProcessTree(proc.child, reason),
+    get failed() { return proc.timedOut || proc.canceled || proc.status !== 0 || Boolean(proc.error); },
+    then: (onOk, onErr) => done.then(onOk, onErr),
+    catch: (onErr) => done.catch(onErr),
+    finally: (fn) => done.finally(fn),
+  };
+
+  /** 把文件里新增的部分读出来（「边跑边看输出」的关键） */
+  const drain = () => {
+    if (!outFile || !onOutput) return;
+    let stat;
+    try {
+      stat = fs.statSync(outFile);
+    } catch {
+      return;
+    }
+    if (stat.size <= readOffset) return;
+    let text = '';
+    try {
+      const fd = fs.openSync(outFile, 'r');
+      const len = Math.min(stat.size - readOffset, maxBuffer);
+      const buf = Buffer.alloc(len);
+      fs.readSync(fd, buf, 0, len, readOffset);
+      fs.closeSync(fd);
+      readOffset += len;
+      text = buf.toString('utf8');
+    } catch {
+      return;
+    }
+    if (text) {
+      try { onOutput(text, 'out'); } catch { /* 回调出错不能影响子进程 */ }
+    }
+  };
+
+  const cleanup = () => {
+    if (reader) { clearInterval(reader); reader = null; }
+    // 最后一次读盘：把收尾阶段写的输出也带上（否则会丢掉最后几行错误信息）
+    drain();
+    try {
+      if (outFd !== null) fs.closeSync(outFd);
+    } catch { /* 忽略 */ }
+  };
+
+  const finish = (code, sig) => {
+    if (proc._settled) return;
+    proc._settled = true;
+    proc.status = code;
+    proc.signal = sig;
+    if (timer) clearTimeout(timer);
+    if (abortSignal && abortHandler) abortSignal.removeEventListener('abort', abortHandler);
+    cleanup();
+    // 完整输出：文件内容就是 stdout+stderr 的合并（按子进程实际写出的顺序）
+    try {
+      if (outFile) proc.stdout = fs.readFileSync(outFile, 'utf8').slice(-maxBuffer);
+    } catch { /* 忽略 */ }
+    try {
+      if (outFile) fs.rmSync(outFile, { force: true });
+    } catch { /* 忽略 */ }
+
+    // ★ 对外只暴露这个纯数据对象（不带 then），绝不 resolve 上面那个 thenable 句柄
+    proc.result = {
+      command,
+      args,
+      pid: proc.pid,
+      status: proc.status,
+      signal: proc.signal,
+      stdout: proc.stdout,
+      stderr: proc.stderr,
+      error: proc.error,
+      timedOut: proc.timedOut,
+      canceled: proc.canceled,
+      exitCode: proc.status,
+      get failed() { return proc.timedOut || proc.canceled || proc.status !== 0 || Boolean(proc.error); },
+    };
+    resolveDone(proc.result);
+  };
+
+  let timer = null;
+  if (timeout > 0) {
+    timer = setTimeout(() => {
+      proc.timedOut = true;
+      // ★ Windows 上必须杀**整棵树**：pnpm 自己会再拉起 node 子进程，
+      //   只 kill 直接子进程会留下孤儿继续占着 profile 目录。
+      proc.kill('timeout');
+    }, timeout);
+    if (typeof timer.unref === 'function') timer.unref();
+  }
+
+  let abortHandler = null;
+  if (abortSignal) {
+    if (abortSignal.aborted) {
+      proc.canceled = true;
+      // 还没启动就算已结束 —— 让调用方拿到的语义一致
+      queueMicrotask(() => finish(null, null));
+      return proc;
+    }
+    abortHandler = () => {
+      proc.canceled = true;
+      proc.kill('abort');
+    };
+    abortSignal.addEventListener('abort', abortHandler, { once: true });
+  }
+
+  const stdio = outFd !== null ? ['ignore', outFd, outFd] : 'ignore';
+
+  try {
+    proc.child = spawn(command, args, {
+      cwd,
+      env,
+      shell,
+      windowsHide,
+      stdio,
+    });
+    proc.pid = proc.child.pid ?? null;
+  } catch (err) {
+    proc.error = String(err?.message ?? err);
+    queueMicrotask(() => finish(null, null));
+    return proc;
+  }
+
+  proc.child.on('error', (err) => {
+    proc.error = String(err?.message ?? err);
+  });
+  proc.child.on('close', (code, sig) => finish(code, sig));
+
+  // 250ms 一次：比进度轮询（600ms）密，保证界面上的「实时输出」看起来是实时的
+  if (outFile && onOutput) {
+    reader = setInterval(drain, 250);
+    if (typeof reader.unref === 'function') reader.unref();
+  }
+
+  return proc;
+}
+
+/**
+ * 杀掉一个子进程及其全部后代。
+ *
+ * Windows 上没有进程组信号可用，唯一可靠的是 `taskkill /T /F`。
+ * 这里刻意**不**等待 taskkill 完成：调用方真正在意的是「子进程开始死」，
+ * 而 close 事件才是收尾的信号。
+ */
+export function killProcessTree(child, reason = 'kill') {
+  if (!child || child.killed) return { ok: false, reason: 'no-child' };
+  const pid = child.pid;
+  if (!pid) return { ok: false, reason: 'no-pid' };
+  try {
+    if (process.platform === 'win32') {
+      spawn('taskkill', ['/pid', String(pid), '/T', '/F'], { windowsHide: true, stdio: 'ignore' });
+    } else {
+      child.kill('SIGTERM');
+      // 给 1.5 秒优雅退出，仍不死就上 SIGKILL
+      setTimeout(() => {
+        try { if (!child.killed) child.kill('SIGKILL'); } catch { /* 忽略 */ }
+      }, 1500).unref?.();
+    }
+    return { ok: true, reason, pid };
+  } catch (err) {
+    return { ok: false, reason: String(err?.message ?? err) };
+  }
 }
 
 export function sleep(ms) {

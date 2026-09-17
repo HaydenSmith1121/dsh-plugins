@@ -25,10 +25,10 @@
   },
   "plugins": {
     "dsh-plugins-market": {
-      "isLatest": null,
-      "latestKnown": null,
-      "latestCheckedAt": null,
-      "note": "本仓库自研的引导插件。它的 tarball 就是构建产物，每次 build 都会重算 sha256。"
+      "isLatest": true,
+      "latestKnown": "0.2.0",
+      "latestCheckedAt": "2026-09-17",
+      "note": "本仓库自研的引导插件。它的 tarball 就是构建产物，每次 build 都会重算 sha256。收录 0.2.0（安装全程可见进度与预计时间、可随时中止、手动安装命令始终可见）；0.1.1 及更早的快照保留不动。"
     },
     "@dsh-market/plugin": {
       "isLatest": null,
