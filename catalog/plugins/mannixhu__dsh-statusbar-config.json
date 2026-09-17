@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "MannixHu/dsh-statusbar-config",
+  "slug": "mannixhu__dsh-statusbar-config",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-statusbar-config",
+  "title": "dsh-statusbar-config",
+  "summary": "用模板字符串自由定制状态栏统计行，想显示什么变量就写什么，改完立即生效。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-web",
+    "stats",
+    "status-bar",
+    "statusbar",
+    "template",
+    "ui",
+    "状态监控",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-03T04:53:38Z",
+    "url": "https://github.com/MannixHu/dsh-statusbar-config/releases/tag/v0.2.1"
+  },
+  "author": "MannixHu",
+  "repo": "https://github.com/MannixHu/dsh-statusbar-config",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T04:53:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MannixHu/dsh-statusbar-config",
+    "commands": [
+      "dsh plugin --profile web add github:MannixHu/dsh-statusbar-config"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

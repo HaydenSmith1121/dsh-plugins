@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "21hbguo/dsh-thinking-counter",
+  "slug": "21hbguo__dsh-thinking-counter",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-thinking-counter",
+  "title": "dsh-thinking-counter",
+  "summary": "统计所有会话 thinking 里的短语命中情况，看看大胖鲸到底有多聪明。",
+  "tags": [
+    "cordis",
+    "counter",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "reasoning",
+    "thinking",
+    "web-ui",
+    "状态监控",
+    "数据分析",
+    "会话管理",
+    "模型轨迹",
+    "可视化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-17T18:29:09Z",
+    "url": "https://github.com/21hbguo/dsh-thinking-counter/releases/tag/v0.1.1"
+  },
+  "author": "21hbguo",
+  "repo": "https://github.com/21hbguo/dsh-thinking-counter",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-15T17:05:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@21hbguo/dsh-thinking-counter",
+    "commands": [
+      "dsh plugin --profile web add @21hbguo/dsh-thinking-counter",
+      "dsh plugin --profile web add https://github.com/21hbguo/dsh-thinking-counter/releases/latest/download/dsh-external-dsh-thinking-counter-0.1.1.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

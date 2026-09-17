@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "zerosloney/dsh-state-graph",
+  "slug": "zerosloney__dsh-state-graph",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-state-graph",
+  "title": "dsh-state-graph",
+  "summary": "把 DeepSeek Harness 的线性流程升级成有向状态图，支持条件路由、循环重试和迭代熔断，让复杂任务编排更灵活。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态图编排",
+    "条件路由",
+    "循环重试",
+    "迭代熔断",
+    "流程控制"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zerosloney",
+  "repo": "https://github.com/zerosloney/dsh-state-graph",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-29T00:30:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zerosloney/dsh-state-graph",
+    "commands": [
+      "dsh plugin add --profile web ./dsh-state-graph"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

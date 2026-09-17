@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Toukaiteio/dsh-plugin-installer",
+  "slug": "toukaiteio__dsh-plugin-installer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-installer",
+  "title": "dsh-plugin-installer",
+  "summary": "一键将 DeepSeek Harness 接入 GitHub 插件生态，快速安装与管理 DSH 插件。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "命令行工具"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-16T08:20:17Z",
+    "url": "https://github.com/Toukaiteio/dsh-plugin-installer/releases/tag/v0.2.0"
+  },
+  "author": "Toukaiteio",
+  "repo": "https://github.com/Toukaiteio/dsh-plugin-installer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-16T08:19:46Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Toukaiteio/dsh-plugin-installer",
+    "commands": [
+      "dsh plugin --profile web add github:Toukaiteio/dsh-plugin-installer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

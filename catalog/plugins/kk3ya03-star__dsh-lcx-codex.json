@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "kk3ya03-star/dsh-lcx-codex",
+  "slug": "kk3ya03-star__dsh-lcx-codex",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-lcx-codex",
+  "title": "dsh-lcx-codex",
+  "summary": "为 DeepSeek Harness 的 GPT 会话提供远程原生压缩、联网搜索和图片支持，兼容 Sub2API 与 NewAPI 路由。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "newapi",
+    "openai-responses",
+    "sub2api",
+    "web-search",
+    "自动化",
+    "视觉理解",
+    "会话管理",
+    "AI 助手"
+  ],
+  "version": "0.4.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.3",
+    "publishedAt": "2026-09-10T14:46:34Z",
+    "url": "https://github.com/kk3ya03-star/dsh-lcx-codex/releases/tag/v0.4.3"
+  },
+  "author": "kk3ya03-star",
+  "repo": "https://github.com/kk3ya03-star/dsh-lcx-codex",
+  "homepage": "https://www.npmjs.com/package/dsh-lcx-codex",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T14:46:22Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-lcx-codex@0.4.3",
+    "commands": [
+      "dsh plugin --profile web add dsh-lcx-codex@0.4.3",
+      "dsh plugin --profile web add dsh-lcx-codex@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

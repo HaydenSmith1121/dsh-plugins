@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "JochenYang/dsh-plugins",
+  "slug": "jochenyang__dsh-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugins",
+  "title": "dsh-plugins",
+  "summary": "JochenYang 的 DeepSeek Harness 插件合集，提供 Git 提交规范校验等开发辅助工具，即插即用提升效率。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "工作流增强",
+    "效率提升",
+    "零配置",
+    "插件管理"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "JochenYang",
+  "repo": "https://github.com/JochenYang/dsh-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T15:37:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JochenYang/dsh-plugins",
+    "commands": [
+      "dsh plugin --profile web add github:JochenYang/dsh-plugins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

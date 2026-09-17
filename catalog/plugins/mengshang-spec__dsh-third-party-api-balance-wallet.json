@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Mengshang-spec/dsh-third-party-api-balance-wallet",
+  "slug": "mengshang-spec__dsh-third-party-api-balance-wallet",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-third-party-api-balance-wallet",
+  "title": "dsh-third-party-api-balance-wallet",
+  "summary": "在 DSH 输入框底部实时显示第三方 API 账户余额和今日用量，方便随时掌握花费。",
+  "tags": [
+    "balance",
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "成本控制",
+    "工具集成"
+  ],
+  "version": "0.3.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Mengshang-spec",
+  "repo": "https://github.com/Mengshang-spec/dsh-third-party-api-balance-wallet",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T10:29:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Mengshang-spec/dsh-third-party-api-balance-wallet",
+    "commands": [
+      "dsh plugin --profile web add github:Mengshang-spec/dsh-third-party-api-balance-wallet"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

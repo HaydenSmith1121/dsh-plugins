@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "a1303845406/dsh-comfy-video-studio",
+  "slug": "a1303845406__dsh-comfy-video-studio",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-comfy-video-studio",
+  "title": "dsh-comfy-video-studio",
+  "summary": "把任意 ComfyUI API JSON 导入成独立工作页面，轻松管理和运行视频生成工作流。",
+  "tags": [
+    "comfyui",
+    "deepseek-harness",
+    "dsh-plugin",
+    "minimax-h3",
+    "video-generation",
+    "工作流增强",
+    "可视化",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.6.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.1",
+    "publishedAt": "2026-08-27T08:31:25Z",
+    "url": "https://github.com/a1303845406/dsh-comfy-video-studio/releases/tag/v0.6.1"
+  },
+  "author": "a1303845406",
+  "repo": "https://github.com/a1303845406/dsh-comfy-video-studio",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T03:04:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:a1303845406/dsh-comfy-video-studio",
+    "commands": [
+      "dsh plugin --profile web add github:a1303845406/dsh-comfy-video-studio"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

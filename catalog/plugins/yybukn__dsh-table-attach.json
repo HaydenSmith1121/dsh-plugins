@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "yybukn/dsh-table-attach",
+  "slug": "yybukn__dsh-table-attach",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-table-attach",
+  "title": "dsh-table-attach",
+  "summary": "在 DSH 网页输入框里直接拖入或粘贴表格文件，自动保存到工作区并插入引用，省去手动上传的麻烦。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "工作区管理",
+    "桌宠",
+    "模型配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yybukn",
+  "repo": "https://github.com/yybukn/dsh-table-attach",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-31T08:51:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yybukn/dsh-table-attach",
+    "commands": [
+      "dsh plugin add github:yybukn/dsh-table-attach",
+      "dsh plugin --profile web add /path/to/dsh-table-attach"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

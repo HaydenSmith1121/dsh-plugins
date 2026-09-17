@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "d3vmeh/dsh-fetch-timeouts",
+  "slug": "d3vmeh__dsh-fetch-timeouts",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-fetch-timeouts",
+  "title": "dsh-fetch-timeouts",
+  "summary": "全局调高 Node 的 HTTP 超时时间，避免慢速本地模型（如 Ollama、LM Studio）因静默超 5 分钟被中断。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "ollama",
+    "模型适配",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "d3vmeh",
+  "repo": "https://github.com/d3vmeh/dsh-fetch-timeouts",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-30T16:30:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-fetch-timeouts",
+    "commands": [
+      "dsh plugin --profile web add dsh-fetch-timeouts"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

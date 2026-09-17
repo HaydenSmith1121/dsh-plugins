@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "Arborsm/dsh-remember",
+  "slug": "arborsm__dsh-remember",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-remember",
+  "title": "dsh-remember",
+  "summary": "给 DeepSeek Harness 加上跨会话长期记忆，聊过的事下次还能记得。",
+  "tags": [
+    "agent-memory",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "long-term-memory",
+    "typescript",
+    "会话管理",
+    "AI 助手",
+    "插件管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-11T15:43:21Z",
+    "url": "https://github.com/Arborsm/dsh-remember/releases/tag/v0.2.0"
+  },
+  "author": "Arborsm",
+  "repo": "https://github.com/Arborsm/dsh-remember",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T15:47:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Arborsm/dsh-remember",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-remember",
+      "git clone https://github.com/Arborsm/dsh-remember.git",
+      "dsh plugin --profile <name> add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

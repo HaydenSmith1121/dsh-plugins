@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "songofhawk/doco-dsh",
+  "slug": "songofhawk__doco-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "doco-dsh",
+  "title": "doco-dsh",
+  "summary": "把 Doco 知识库直接接进 DeepSeek Harness，支持块级定位、按预算精读、写草稿和引用来源，查资料写东西更顺手。",
+  "tags": [
+    "dsh-plugin",
+    "文件管理",
+    "工作区管理",
+    "效率提升",
+    "工具集成"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "songofhawk",
+  "repo": "https://github.com/songofhawk/doco-dsh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T13:44:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:songofhawk/doco-dsh",
+    "commands": [
+      "dsh plugin --profile <name> add doco-dsh",
+      "pnpm add doco-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

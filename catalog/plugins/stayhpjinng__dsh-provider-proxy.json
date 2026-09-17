@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "stayhpjinng/dsh-provider-proxy",
+  "slug": "stayhpjinng__dsh-provider-proxy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-provider-proxy",
+  "title": "dsh-provider-proxy",
+  "summary": "按需将指定模型提供商的请求走代理，其他流量直连，灵活又省心。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "proxy",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "stayhpjinng",
+  "repo": "https://github.com/stayhpjinng/dsh-provider-proxy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-29T07:39:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:stayhpjinng/dsh-provider-proxy",
+    "commands": [
+      "dsh plugin --profile web add /absolute/path/to/dsh-provider-proxy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "isolat-3k/dsh-kanban",
+  "slug": "isolat-3k__dsh-kanban",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-kanban",
+  "title": "dsh-kanban",
+  "summary": "Hermes风格看板插件，支持9列任务流转、拖拽评论、时间线、多看板，定时自动流转并能将就绪任务派发给DSH子代理真实执行，实时监控进度。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "自动化",
+    "多Agent协作",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "isolat-3k",
+  "repo": "https://github.com/isolat-3k/dsh-kanban",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 1,
+  "pushedAt": "2026-08-16T04:38:18Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:isolat-3k/dsh-kanban",
+    "commands": [
+      "dsh plugin --profile web add github:isolat-3k/dsh-kanban"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

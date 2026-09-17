@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "mouseteamlucky/dsh-opencode-go-usage",
+  "slug": "mouseteamlucky__dsh-opencode-go-usage",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-opencode-go-usage",
+  "title": "dsh-opencode-go-usage",
+  "summary": "在网页右侧显示悬浮窗，实时查看 OpenCode Go 订阅的用量和配额，方便监控每个 API 密钥的使用情况。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "opencode",
+    "opencode-go",
+    "quota",
+    "usage",
+    "状态监控",
+    "资源优化",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-05T09:47:40Z",
+    "url": "https://github.com/mouseteamlucky/dsh-opencode-go-usage/releases/tag/v1.0.0"
+  },
+  "author": "mouseteamlucky",
+  "repo": "https://github.com/mouseteamlucky/dsh-opencode-go-usage",
+  "homepage": "https://github.com/mouseteamlucky",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T09:47:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mouseteamlucky/dsh-opencode-go-usage",
+    "commands": [
+      "dsh plugin --profile web add github:mouseteamlucky/dsh-opencode-go-usage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

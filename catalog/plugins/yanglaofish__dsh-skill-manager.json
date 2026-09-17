@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "yanglaofish/dsh-skill-manager",
+  "slug": "yanglaofish__dsh-skill-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skill-manager",
+  "title": "dsh-skill-manager",
+  "summary": "统一管理 DSH 代理技能，按技能库、工作区、会话三层控制启用范围，随项目生效。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "工作区管理",
+    "设置面板",
+    "集中仓库",
+    "会话管理"
+  ],
+  "version": "4.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yanglaofish",
+  "repo": "https://github.com/yanglaofish/dsh-skill-manager",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T11:29:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yanglaofish/dsh-skill-manager",
+    "commands": [
+      "dsh plugin --profile web add github:yanglaofish/dsh-skill-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

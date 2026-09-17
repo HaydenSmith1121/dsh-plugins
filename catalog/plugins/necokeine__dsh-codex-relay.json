@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "necokeine/dsh-codex-relay",
+  "slug": "necokeine__dsh-codex-relay",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codex-relay",
+  "title": "dsh-codex-relay",
+  "summary": "将 Codex 作为可选模型提供方接入 DSH，通过本地服务调用 Codex 智能体完成对话与任务。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "模型配置",
+    "AI 助手",
+    "工作流增强"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "necokeine",
+  "repo": "https://github.com/necokeine/dsh-codex-relay",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-28T15:51:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@necokeine/dsh-codex-relay",
+    "commands": [
+      "dsh plugin --profile default add @necokeine/dsh-codex-relay",
+      "git clone https://github.com/necokeine/dsh-codex-relay.git",
+      "dsh plugin --profile default add \"$PWD\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

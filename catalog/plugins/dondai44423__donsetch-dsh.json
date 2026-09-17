@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "dondai44423/donsetch-dsh",
+  "slug": "dondai44423__donsetch-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "donsetch-dsh",
+  "title": "donsetch-dsh",
+  "summary": "让 DeepSeek Harness 直接获得 DonSeTch 的抓取、搜索和爬取能力，一条命令装好即用。",
+  "tags": [
+    "donsetch",
+    "dsh-plugin",
+    "AI 助手",
+    "自动化",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dondai44423",
+  "repo": "https://github.com/dondai44423/donsetch-dsh",
+  "homepage": null,
+  "license": "AGPL-3.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T04:36:01Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dondai44423/donsetch-dsh",
+    "commands": [
+      "dsh plugin --profile web add github:dondai44423/donsetch-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

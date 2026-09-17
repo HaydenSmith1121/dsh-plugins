@@ -5,14 +5,16 @@
  *
  * 它做四件事，全部是确定性的（同输入必得同输出）：
  *
- *   [1] 生成 catalog/verified.json
- *       把 compatibility.json 里当前**已实测支持**的那个 runtime 的 8 个插件，
- *       与 catalog/verified-meta.json 的展示元数据合并，并**逐个算 sha256**。
- *       ★ 算 sha256 是为了补上仓库的一个缺口：原先 8 个 tarball 里只有 1 个有校验和，
- *         其余的在装前无法判断有没有被替换/损坏。
+ *   [1] 生成**包内离线兜底目录**
+ *       从仓库根的 catalog/index.json 里筛出 tier=verified 的条目（也就是本仓库或
+ *       插件集合仓库托管 tarball、按 dsh 版本实测过的那几条），连同每条对应的
+ *       catalog/plugins/<slug>.json 一起打进包内。
+ *       ★ 完整目录（7000+ 条）**不进包**：打进包意味着每次目录变化都要重打市场包
+ *         并换版本号，而那正是 0.4.0 要拆掉的东西。包内这份的作用只有一个 ——
+ *         没网时市场至少还能把已验证插件列出来并装上。
  *
  *   [2] 生成 catalog/compat-snapshot.json
- *       兼容矩阵的包内快照。开发机上插件会优先读仓库里那份活的 compatibility.json，
+ *       运行时矩阵的包内快照。开发机上插件会优先读仓库里那份活的 compatibility.json，
  *       但装到别的机器上时包里必须有兜底。
  *
  *   [3] 组装 lib/ + 拷入 catalog/，生成最终 package.json
@@ -23,7 +25,14 @@
  *   [4] 产出 tarball 到 plugins/dsh-plugins-market/<dsh 版本>/
  *       目录结构与仓库既有约定一致（那一层是 dsh 运行时版本，不是插件版本）。
  *
- * --check 只做校验不写文件：用于 CI 与提交前自检（catalog 是否过期、产物是否一致）。
+ * ★ 改了源码之后有**两步**，缺一不可：
+ *     node plugins-src/dsh-plugins-market/build.mjs   # 重打 tarball（版本号也要 bump）
+ *     node scripts/sync-catalog.mjs                   # 刷新 catalog/plugins/dsh-plugins-market.json
+ *   不重打 → tarball 还是旧的（CI 会用 git diff 拦下来）；
+ *   不换版本号 → pnpm 会因 `file:` 路径没变而跳过解包，已装的人收不到更新；
+ *   不跑 sync → 目录里还是旧版本号，本文件 [1] 的自注册校验会直接报错。
+ *
+ * --check 只做校验不写文件：用于 CI 与提交前自检（产物是否与源码一致）。
  */
 
 import fs from 'node:fs';
@@ -31,7 +40,6 @@ import path from 'node:path';
 import zlib from 'node:zlib';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { generateVerifiedCatalog } from '../../scripts/lib/verified-catalog.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, '..', '..');
@@ -47,6 +55,30 @@ const CHECK_ONLY = process.argv.includes('--check');
  */
 const STAGE_ROOT = path.join(HERE, '.build');
 const STAGE = path.join(STAGE_ROOT, 'package');
+
+/**
+ * 归档里每个成员固定的 mtime。
+ *
+ * ★ 必须是**常量**，不能是 `Date.now()`。
+ *
+ *   tar 头部里存着每个文件的修改时间；用当前时间的话，同一个源码在同一台机器上
+ *   连打两次也会得到不同的字节 —— 于是：
+ *     · `.tgz.sha256` 每次都不一样，那个「权威校验和」变成一句空话；
+ *     · 采集脚本写进目录的实测 hash 每次都变，目录天天产生无意义的 diff；
+ *     · CI 里「build 之后 git diff 必须干净」这条检查永远失败。
+ *   本文件头注释写着「确定性的（同输入必得同输出）」，这里就是兑现它的地方。
+ *
+ *   取值是一个固定的历史时刻（2024-01-01T00:00:00Z）。想让归档时间反映真实发版时间，
+ *   请用 SOURCE_DATE_EPOCH 环境变量显式传入 —— 那也是可复现构建的通行做法。
+ *
+ * ★ 必须声明在**文件顶部**：底部的函数声明会提升，`const` 不会 ——
+ *   放在文件末尾会以 "Cannot access 'MTIME' before initialization" 直接崩掉，
+ *   而那时 tarball 还没写出来（症状是「构建好像成功了，产物却没变」）。
+ */
+const MTIME = (() => {
+  const raw = Number(process.env.SOURCE_DATE_EPOCH);
+  return Number.isFinite(raw) && raw > 0 ? Math.floor(raw) : 1704067200;
+})();
 
 const readJson = (p) => JSON.parse(fs.readFileSync(p, 'utf8'));
 const readText = (p) => fs.readFileSync(p, 'utf8');
@@ -68,9 +100,7 @@ if (!fs.existsSync(compatPath)) {
   process.exit(3);
 }
 const compat = readJson(compatPath);
-const metaPath = path.join(REPO, 'catalog', 'verified-meta.json');
-const meta = fs.existsSync(metaPath) ? readJson(metaPath) : { plugins: {} };
-// 尽早读进来：下面的自注册校验要用到版本号（它在文件后半段才第一次被用到）
+// 尽早读进来：自注册校验要用到版本号（它在文件后半段才第一次被用到）
 const srcPkg = readJson(path.join(HERE, 'package.json'));
 
 const runtime = (compat.runtimes ?? []).find((r) => r.status === 'supported' && r.recommended)
@@ -82,37 +112,13 @@ if (!runtime) {
 }
 
 /**
- * ★ 自注册校验。
+ * ★ 自注册校验（bundles 那一半）。
  *
- * 本插件的目录是**从 compatibility.json 反推**出来的 —— 它自己那一行不在
- * 那个 runtime 的 plugins 里，市场就不会把自己列进「已验证」层，
- * 用户也就看不到引导插件。而 compatibility.json 是多个贡献者/会话都会改的
- * 共享文件（本仓库真实发生过一次：并行会话重写它时把这一行冲掉了）。
- *
- * 所以这里显式校验，缺了就**直接报错并给出要粘的片段**，而不是安静地少生成一条。
+ * 市场插件的目录条目现在由 `catalog/overrides/self.json` 声明、由
+ * `scripts/sync-catalog.mjs` 生成（见 [1] 那一节的自注册校验）。
+ * 这里只剩**另一半**：compatibility.json 的 bundles 数组里必须有它 ——
+ * 少了这一条，装进 profile 也不会被当成一个 bundle 层装配，市场根本不出现。
  */
-const selfEntry = (runtime.plugins ?? []).find((p) => p.package === PKG_NAME);
-if (!selfEntry) {
-  console.error('');
-  console.error(`  ✗ compatibility.json 的 runtime ${runtime.dshVersion} 里没有 ${PKG_NAME} 这一条。`);
-  console.error('    没有它，插件市场不会把自己列进「已验证」层，用户看不到引导插件。');
-  console.error(`    请在 compatibility.json → runtimes[${runtime.dshVersion}] → plugins 里补上：`);
-  console.error('');
-  console.error(JSON.stringify({
-    dir: PKG_NAME,
-    package: PKG_NAME,
-    version: srcPkg.version,
-    tarball: `plugins/${PKG_NAME}/${runtime.dshVersion}/${PKG_NAME}-${srcPkg.version}.tgz`,
-    origin: 'self',
-    author: 'HaydenSmith1121',
-    license: 'MIT',
-    bootstrap: true,
-  }, null, 2).split('\n').map((l) => `      ${l}`).join('\n'));
-  console.error('');
-  console.error(`    并把 "${PKG_NAME}" 追加进同一 runtime 的 bundles 数组末尾。`);
-  console.error('');
-  process.exit(3);
-}
 if (!(runtime.bundles ?? []).includes(PKG_NAME)) {
   console.error('');
   console.error(`  ✗ compatibility.json 的 runtime ${runtime.dshVersion} 的 bundles 数组里没有 "${PKG_NAME}"。`);
@@ -126,38 +132,100 @@ log(`  dsh-plugins-market 构建${CHECK_ONLY ? '（仅校验）' : ''}`);
 log(`  ${'-'.repeat(72)}`);
 log(`  仓库            ${REPO}`);
 log(`  dsh 运行时基线   ${runtime.dshVersion}（${runtime.distTag ?? '—'}）`);
-log(`  插件            ${runtime.plugins.length} 个`);
+log(`  市场版本         ${srcPkg.version}`);
 log('');
 
 // ─────────────────────────────────────────────────────────────
-// [1] verified.json
+// [1] 打进包内的**离线兜底目录**
 // ─────────────────────────────────────────────────────────────
+//
+// ★ 自 0.4.0 起，目录是「一个插件一个配置文件」：仓库根的
+//   catalog/plugins/<slug>.json（全部 7000+ 条）+ catalog/index.json（派生索引）。
+//   这些东西**不进包** —— 打进包意味着每次目录变化都要重打市场包并换版本号，
+//   而那正是这一版要拆掉的东西（同一个 tarball 路径内容变了时 pnpm 会跳过解包，
+//   不换版本号已装的人根本收不到）。
+//
+//   包里只放一份**很小的离线兜底**：tier=verified 的那几条（由本仓库或
+//   插件集合仓库托管 tarball、按 dsh 版本实测过），加上市场插件自己。
+//   作用是「没网时市场至少还能把收录的插件列出来并装上」，而不是「离线目录全集」。
+//
+//   判据用 tier 而不是「有没有 tarball」：tier 是配置文件的权威字段，
+//   拿它筛才不会出现「包里漏了一条已验证插件」这种静默缺项。
 
-log('  [1/4] 生成 catalog/verified.json');
+log('  [1/4] 生成包内离线兜底目录（catalog/index.json + catalog/plugins/）');
 
-/**
- * ★ 生成逻辑住在 scripts/lib/verified-catalog.mjs，不在这个文件里。
- *
- * 因为这份目录有**两个消费者**：这里生成的是打进包内的**离线兜底**那一份；
- * 仓库根的 catalog/verified.json（市场运行时联网拉取的那一份）由
- * scripts/build-collection.mjs 用**同一个实现**生成。
- *
- * 过去只有包内这一份，于是「目录」被焊死在包里 —— 任何插件发新版都必须
- * 重打市场包并给市场换版本号，用户才看得到。抽成共享实现之后，
- * 仓库根那份可以独立于市场更新，两者也不会漂移。
- */
-const catalogGen = generateVerifiedCatalog({ repo: REPO, selfPackage: PKG_NAME });
-for (const w of catalogGen.warnings) warn(w);
-for (const problem of catalogGen.problems) fail(problem);
+const repoIndexFile = path.join(REPO, 'catalog', 'index.json');
+const repoIndex = fs.existsSync(repoIndexFile) ? readJson(repoIndexFile) : null;
+if (!repoIndex) {
+  fail('仓库根没有 catalog/index.json —— 请先运行 node scripts/sync-catalog.mjs');
+}
 
-const verifiedCatalog = catalogGen.catalog ?? {
-  schemaVersion: 1,
-  generatedFrom: 'compatibility.json',
-  generatedAt: null,
-  dshVersion: runtime?.dshVersion ?? null,
-  note: '目录生成失败，见构建输出。',
-  plugins: [],
+const bundledEntries = (repoIndex?.plugins ?? []).filter((p) => p.tier === 'verified');
+if (bundledEntries.length === 0) {
+  fail('catalog/index.json 里没有任何 tier=verified 的条目 —— 包内兜底目录会是空的，没网时市场将列不出任何插件。');
+}
+
+/** 包内 index.json：字段与仓库根那份一致，只是只留 verified 层 */
+const bundledIndex = {
+  schemaVersion: repoIndex?.schemaVersion ?? 1,
+  generatedAt: repoIndex?.generatedAt ?? null,
+  sourceIndex: repoIndex?.sourceIndex ?? null,
+  counts: {
+    total: bundledEntries.length,
+    verified: bundledEntries.length,
+    reviewed: 0,
+    community: 0,
+  },
+  note: '包内离线兜底目录：只含 tier=verified 的条目（市场运行时会去仓库 raw 拉完整目录）。',
+  plugins: bundledEntries,
 };
+
+/** 每条 verified 插件的配置文件原文（运行时读不到远程时用它兜底） */
+const bundledConfigs = [];
+for (const e of bundledEntries) {
+  const file = path.join(REPO, 'catalog', 'plugins', `${e.slug}.json`);
+  if (!fs.existsSync(file)) {
+    fail(`包内兜底目录需要 catalog/plugins/${e.slug}.json，但仓库里没有`);
+    continue;
+  }
+  let text = readText(file);
+
+  /**
+   * ★ 自引用条目的校验和必须**在包内留空**。
+   *
+   *   本包内含它自己的目录条目；若那条记录里带着自己的 sha256，就构成不动点：
+   *   tarball 的字节取决于记录里的 hash，而 hash 又取决于 tarball 的字节。
+   *   一旦有人（或某次采集）把它填上，打出来的包就会带着一个**必然过期**的校验和，
+   *   闸门随后会对自己报「sha256 不一致，tarball 可能被替换」并硬拦升级。
+   *
+   *   所以这里显式剥掉，而不是指望采集脚本永远不填 —— 让不变量由构建来保证。
+   */
+  if (e.package === PKG_NAME) {
+    const cfg = JSON.parse(text);
+    if (cfg.install?.sha256) {
+      cfg.install.sha256 = null;
+      cfg.sha256Note = '（包内副本）自引用条目无法自包含校验和：本包内含这份目录，'
+        + '写进自己的 sha256 会形成不动点。权威值见仓库里那份配置与同目录的 .tgz.sha256 边车文件。';
+      text = `${JSON.stringify(cfg, null, 2)}\n`;
+      log('      包内副本：已剥掉自引用条目的 sha256（否则会在升级时稳定地产生假警报）');
+    }
+  }
+
+  bundledConfigs.push([`catalog/plugins/${e.slug}.json`, text]);
+}
+
+// 自注册校验：市场自己必须在兜底目录里，否则用户看不到引导插件、也没法从面板里升级它
+const selfInBundle = bundledEntries.find((p) => p.package === PKG_NAME);
+if (!selfInBundle) {
+  fail(`catalog/index.json 里没有 ${PKG_NAME} 这一条（tier 必须是 verified）。`
+    + '没有它，市场不会把自己列出来，用户也就无法从面板里升级引导插件。'
+    + '它由 catalog/overrides/self.json 声明 —— 检查那个文件，然后重跑 scripts/sync-catalog.mjs。');
+} else if (selfInBundle.version !== srcPkg.version) {
+  fail(`catalog/index.json 里 ${PKG_NAME} 的版本是 ${selfInBundle.version}，`
+    + `而源码 package.json 是 ${srcPkg.version} —— 目录过期了，请重跑 scripts/sync-catalog.mjs。`);
+} else {
+  log(`      包内兜底：${bundledEntries.length} 条（${bundledEntries.map((p) => p.package ?? p.id).join('、')}）`);
+}
 
 // ─────────────────────────────────────────────────────────────
 // [2] compat-snapshot.json
@@ -260,9 +328,9 @@ filesToWrite.push(['cordis.patch.yml', readText(path.join(HERE, 'cordis.patch.ym
 filesToWrite.push(['README.md', fs.existsSync(readmeSrc) ? readText(readmeSrc) : `# ${PKG_NAME}\n`]);
 filesToWrite.push(['LICENSE', fs.existsSync(path.join(HERE, 'LICENSE')) ? readText(path.join(HERE, 'LICENSE')) : 'MIT\n']);
 filesToWrite.push(['lib/client.js', builtClient]);
-filesToWrite.push(['catalog/verified.json', `${JSON.stringify(verifiedCatalog, null, 2)}\n`]);
+filesToWrite.push(['catalog/index.json', `${JSON.stringify(bundledIndex, null, 2)}\n`]);
 filesToWrite.push(['catalog/compat-snapshot.json', `${JSON.stringify(compatSnapshot, null, 2)}\n`]);
-filesToWrite.push(['catalog/curated.json', readText(path.join(REPO, 'catalog', 'curated.json'))]);
+for (const [rel, content] of bundledConfigs) filesToWrite.push([rel, content]);
 for (const f of serverFiles) {
   filesToWrite.push([`lib/${f}`, readText(path.join(HERE, 'src', 'server', f))]);
 }
@@ -275,7 +343,7 @@ if (!CHECK_ONLY) {
     fs.mkdirSync(path.dirname(dst), { recursive: true });
     fs.writeFileSync(dst, content, 'utf8');
   }
-  log(`      暂存目录 ${path.relative(HERE, STAGE)}：lib/ ${serverFiles.length + 1} 个文件，catalog/ 3 个文件`);
+  log(`      暂存目录 ${path.relative(HERE, STAGE)}：lib/ ${serverFiles.length + 1} 个文件，catalog/ ${bundledConfigs.length + 2} 个文件`);
 } else {
   // 校验模式：比对暂存目录里的产物是否与将要生成的一致
   for (const [rel, content] of filesToWrite) {
@@ -351,7 +419,7 @@ fs.writeFileSync(
     stage: path.relative(HERE, STAGE).replace(/\\/g, '/'),
     tgz: path.relative(REPO, tgzPath).replace(/\\/g, '/'),
     files: filesToWrite.length,
-    verifiedCount: verifiedCatalog.plugins.length,
+    bundledCatalogCount: bundledEntries.length,
     checkOnly: CHECK_ONLY,
   }, null, 2)}\n`,
   'utf8',
@@ -360,6 +428,8 @@ fs.writeFileSync(
 // ─────────────────────────────────────────────────────────────
 // 极简 tar 写入（ustar），避免依赖 tar 命令
 // ─────────────────────────────────────────────────────────────
+//
+// 归档成员的 mtime 用文件顶部那个固定的 MTIME 常量 —— 理由见那里的说明。
 
 function makeTar(entries) {
   const blocks = [];
@@ -380,7 +450,7 @@ function makeTar(entries) {
     header.write('0000000\0', 108, 8);        // uid
     header.write('0000000\0', 116, 8);        // gid
     header.write(`${e.data.length.toString(8).padStart(11, '0')}\0`, 124, 12); // size
-    header.write(`${Math.floor(Date.now() / 1000).toString(8).padStart(11, '0')}\0`, 136, 12); // mtime
+    header.write(`${MTIME.toString(8).padStart(11, '0')}\0`, 136, 12); // mtime（固定值，见上）
     header.write('        ', 148, 8);         // checksum placeholder
     header.write('0', 156, 1);                // typeflag = regular file
     header.write('ustar\0', 257, 6);          // magic

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Thomas-key/dsh-skill-manager",
+  "slug": "thomas-key__dsh-skill-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skill-manager",
+  "title": "dsh-skill-manager",
+  "summary": "快速查看和切换 DeepSeek Harness 的文件系统技能，支持在对话中或设置界面直接操作，省去手动改配置的麻烦。",
+  "tags": [
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "插件管理",
+    "文件系统",
+    "快捷切换",
+    "设置面板"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Thomas-key",
+  "repo": "https://github.com/Thomas-key/dsh-skill-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-14T10:17:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Thomas-key/dsh-skill-manager",
+    "commands": [
+      "dsh plugin --profile web add Thomas-key/dsh-skill-manager",
+      "dsh plugin --profile web add ./dsh-skill-manager",
+      "dsh plugin --profile web add -w Thomas-key/dsh-skill-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

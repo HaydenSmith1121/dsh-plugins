@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "Jensen-Yao/dsh-model-palette",
+  "slug": "jensen-yao__dsh-model-palette",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-palette",
+  "title": "dsh-model-palette",
+  "summary": "全局模型命令面板，支持多提供商切换，并可选集成 OpenRouter 媒体工具，提升模型选择效率。",
+  "tags": [
+    "command-palette",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "model-config",
+    "model-selector",
+    "openrouter",
+    "provider-management",
+    "skin-center-v2",
+    "模型适配",
+    "快捷操作",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.10.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.10.3",
+    "publishedAt": "2026-09-01T09:44:15Z",
+    "url": "https://github.com/Jensen-Yao/dsh-model-palette/releases/tag/v0.10.3"
+  },
+  "author": "Jensen-Yao",
+  "repo": "https://github.com/Jensen-Yao/dsh-model-palette",
+  "homepage": "https://jensen-yao.github.io/dsh-model-palette/",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-09-01T09:44:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Jensen-Yao/dsh-model-palette",
+    "commands": [
+      "dsh plugin --profile web add github:Jensen-Yao/dsh-model-palette"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "LiuMengxuan04/oh-my-dsh",
+  "slug": "liumengxuan04__oh-my-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "oh-my-dsh",
+  "title": "oh-my-dsh",
+  "summary": "为 DeepSeek Harness 提供持久化自动开发控制层，让长时运行任务更稳定、更省心。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "自动开发",
+    "持久化控制",
+    "长时任务",
+    "稳定性增强"
+  ],
+  "version": "0.1.0-alpha.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "LiuMengxuan04",
+  "repo": "https://github.com/LiuMengxuan04/oh-my-dsh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 12,
+  "forks": 6,
+  "pushedAt": "2026-08-15T05:03:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-autopilot@next",
+    "commands": [
+      "dsh plugin --profile web add dsh-autopilot@next",
+      "dsh plugin --profile web exec dsh-autopilot doctor --profile web"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

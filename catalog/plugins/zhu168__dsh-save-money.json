@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "zhu168/dsh-save-money",
+  "slug": "zhu168__dsh-save-money",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-save-money",
+  "title": "dsh-save-money",
+  "summary": "为 DSH 定义暂停/恢复时间窗口，到点自动暂停长任务，窗口结束后恢复，节省推理费用。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "资源优化",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhu168",
+  "repo": "https://github.com/zhu168/dsh-save-money",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 35,
+  "forks": 1,
+  "pushedAt": "2026-08-22T21:38:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhu168/dsh-save-money",
+    "commands": [
+      "git clone https://github.com/zhu168/dsh-save-money.git",
+      "npm install",
+      "git clone https://github.com/deepseek-ai/deepseek-harness.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

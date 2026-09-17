@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "MrWeiCodes/dsh-permgate",
+  "slug": "mrweicodes__dsh-permgate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-permgate",
+  "title": "dsh-permgate",
+  "summary": "为 DeepSeek Harness 提供细粒度权限控制，灵活管理插件与工具调用，确保操作安全合规。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "permissions",
+    "安全审计",
+    "插件管理"
+  ],
+  "version": "1.5.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "MrWeiCodes",
+  "repo": "https://github.com/MrWeiCodes/dsh-permgate",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-09-14T10:56:06Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MrWeiCodes/dsh-permgate",
+    "commands": [
+      "dsh plugin --profile web remove dsh-permgate",
+      "dsh plugin --profile web add -w github:MrWeiCodes/dsh-permgate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

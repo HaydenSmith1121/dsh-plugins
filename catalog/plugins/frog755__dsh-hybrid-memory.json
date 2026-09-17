@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Frog755/dsh-hybrid-memory",
+  "slug": "frog755__dsh-hybrid-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hybrid-memory",
+  "title": "dsh-hybrid-memory",
+  "summary": "为 DeepSeek Harness 提供三级混合记忆：快照长期记忆、可搜索知识库，并支持多工具导入，让对话更连贯。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "knowledge-base",
+    "memory",
+    "plugin",
+    "会话管理",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-10T03:06:07Z",
+    "url": "https://github.com/Frog755/dsh-hybrid-memory/releases/tag/v0.2.0"
+  },
+  "author": "Frog755",
+  "repo": "https://github.com/Frog755/dsh-hybrid-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T03:09:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@frog755/dsh-hybrid-memory@latest",
+    "commands": [
+      "dsh plugin --profile web add @frog755/dsh-hybrid-memory@latest",
+      "dsh plugin --profile web add link:D:\\Develop\\DeepSeek Harness\\projects\\dsh-hybrid-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

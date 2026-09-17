@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "Olympianz/dsh-desktop-packager",
+  "slug": "olympianz__dsh-desktop-packager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-desktop-packager",
+  "title": "dsh-desktop-packager",
+  "summary": "把 DeepSeek Harness 打包成 macOS 桌面应用（.app/.dmg），内置 Node 运行时和 Electron 外壳，还能在 Web 设置里自定义 logo 和视觉风格。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "electron",
+    "macos",
+    "packager",
+    "plugin",
+    "工作流增强",
+    "可视化",
+    "自动化",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.4.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.1",
+    "publishedAt": "2026-09-05T00:01:46Z",
+    "url": "https://github.com/Olympianz/dsh-desktop-packager/releases/tag/v0.4.1"
+  },
+  "author": "Olympianz",
+  "repo": "https://github.com/Olympianz/dsh-desktop-packager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T23:58:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Olympianz/dsh-desktop-packager",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-desktop-packager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

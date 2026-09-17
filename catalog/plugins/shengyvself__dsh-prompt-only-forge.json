@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "shengyvself/dsh-prompt-only-forge",
+  "slug": "shengyvself__dsh-prompt-only-forge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-only-forge",
+  "title": "dsh-prompt-only-forge",
+  "summary": "点输入框右座的 ✨，就把打磨好的提示词填进输入栏，不发送不联网，随手改完再发。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-better-sidebar",
+    "dsh-plugin",
+    "prompt-forge",
+    "prompt-injection",
+    "快捷操作",
+    "前端增强",
+    "内容创作",
+    "效率提升"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-14T04:35:04Z",
+    "url": "https://github.com/shengyvself/dsh-prompt-only-forge/releases/tag/v0.3.0"
+  },
+  "author": "shengyvself",
+  "repo": "https://github.com/shengyvself/dsh-prompt-only-forge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T04:34:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shengyvself/dsh-prompt-only-forge",
+    "commands": [
+      "dsh plugin --profile web add github:shengyvself/dsh-prompt-only-forge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

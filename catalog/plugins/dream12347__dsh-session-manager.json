@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "dream12347/dsh-session-manager",
+  "slug": "dream12347__dsh-session-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-manager",
+  "title": "dsh-session-manager",
+  "summary": "在 DSH 里一站式管理会话：删除恢复、统计、暂停继续、分组排序，还能调压缩阈值。",
+  "tags": [
+    "ai-worker",
+    "deeepseek-harness-plugins",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "工作区管理",
+    "效率提升",
+    "设置面板",
+    "状态监控"
+  ],
+  "version": "0.2.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.2",
+    "publishedAt": "2026-08-20T09:51:11Z",
+    "url": "https://github.com/dream12347/dsh-session-manager/releases/tag/v0.2.2"
+  },
+  "author": "dream12347",
+  "repo": "https://github.com/dream12347/dsh-session-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 66,
+  "forks": 8,
+  "pushedAt": "2026-08-27T16:20:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dream12347/dsh-session-manager",
+    "commands": [
+      "dsh plugin --profile web add 'github:dream12347/dsh-session-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

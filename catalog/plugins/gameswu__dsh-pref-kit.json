@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "gameswu/dsh-pref-kit",
+  "slug": "gameswu__dsh-pref-kit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pref-kit",
+  "title": "dsh-pref-kit",
+  "summary": "在数据流层面合并流式输出，减少 DSH 会话事件量，缓解性能瓶颈。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "资源优化",
+    "流式合并",
+    "事件削减",
+    "插件管理"
+  ],
+  "version": "0.5.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "gameswu",
+  "repo": "https://github.com/gameswu/dsh-pref-kit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-16T14:02:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:gameswu/dsh-pref-kit",
+    "commands": [
+      "dsh plugin --profile web add \"file:$(pwd)\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

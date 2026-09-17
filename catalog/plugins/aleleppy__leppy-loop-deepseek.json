@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "aleleppy/leppy-loop-deepseek",
+  "slug": "aleleppy__leppy-loop-deepseek",
+  "tier": "community",
+  "package": null,
+  "name": "leppy-loop-deepseek",
+  "title": "leppy-loop-deepseek",
+  "summary": "执行带进度追踪的Markdown任务清单，为每项任务启动独立的DeepSeek会话，自动完成开发流程。",
+  "tags": [
+    "coding-agent",
+    "deepseek-harness",
+    "dsh-plugin",
+    "leppy-loop",
+    "typescript",
+    "自动化",
+    "工作流增强",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.3.54",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.54",
+    "publishedAt": "2026-09-10T11:59:20Z",
+    "url": "https://github.com/aleleppy/leppy-loop-deepseek/releases/tag/v0.3.54"
+  },
+  "author": "aleleppy",
+  "repo": "https://github.com/aleleppy/leppy-loop-deepseek",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T11:59:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aleleppy/leppy-loop-deepseek",
+    "commands": [
+      "dsh plugin --profile web add github:aleleppy/leppy-loop-deepseek"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "PerryLink/dsh-draw",
+  "slug": "perrylink__dsh-draw",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-draw",
+  "title": "dsh-draw",
+  "summary": "一个工具统一调用多家绘图模型，配置好引擎就能按需生成图片，不用来回切换接口。",
+  "tags": [
+    "cogview",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "image-generation",
+    "openai-images",
+    "text-to-image",
+    "zhipu",
+    "模型配置",
+    "工具集成",
+    "报告生成",
+    "视觉理解",
+    "模型适配"
+  ],
+  "version": "0.2.14",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.14",
+    "publishedAt": "2026-09-12T02:41:43Z",
+    "url": "https://github.com/PerryLink/dsh-draw/releases/tag/v0.2.14"
+  },
+  "author": "PerryLink",
+  "repo": "https://github.com/PerryLink/dsh-draw",
+  "homepage": "https://www.npmjs.com/package/dsh-draw",
+  "license": "Apache-2.0",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-09-16T02:26:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:PerryLink/dsh-draw",
+    "commands": [
+      "dsh plugin --profile web add github:PerryLink/dsh-draw"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

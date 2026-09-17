@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "seewhydee/dsh-emacs-bridge",
+  "slug": "seewhydee__dsh-emacs-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-emacs-bridge",
+  "title": "dsh-emacs-bridge",
+  "summary": "在 Emacs 和 Deepseek Harness 会话之间双向传输文本，让你在编辑器里无缝对接 AI 工作流。",
+  "tags": [
+    "dsh-plugin",
+    "emacs",
+    "工作流增强",
+    "效率提升",
+    "消息通知"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "seewhydee",
+  "repo": "https://github.com/seewhydee/dsh-emacs-bridge",
+  "homepage": null,
+  "license": "GPL-3.0",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T13:56:26Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:seewhydee/dsh-emacs-bridge",
+    "commands": [
+      "dsh plugin --profile web add github:seewhydee/dsh-emacs-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

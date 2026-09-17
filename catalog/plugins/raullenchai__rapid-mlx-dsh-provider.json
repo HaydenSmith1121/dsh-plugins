@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "raullenchai/rapid-mlx-dsh-provider",
+  "slug": "raullenchai__rapid-mlx-dsh-provider",
+  "tier": "community",
+  "package": null,
+  "name": "rapid-mlx-dsh-provider",
+  "title": "rapid-mlx-dsh-provider",
+  "summary": "让 DeepSeek Harness 直接从 Rapid-MLX 服务器读取模型信息，无需手动配置，开箱即用。",
+  "tags": [
+    "apple-silicon",
+    "coding-agent",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm",
+    "local-llm",
+    "mlx",
+    "openai-api",
+    "rapid-mlx",
+    "本地AI",
+    "苹果芯片",
+    "配置简化",
+    "命令行工具"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-19T16:45:21Z",
+    "url": "https://github.com/raullenchai/rapid-mlx-dsh-provider/releases/tag/v0.2.0"
+  },
+  "author": "raullenchai",
+  "repo": "https://github.com/raullenchai/rapid-mlx-dsh-provider",
+  "homepage": "https://github.com/raullenchai/Rapid-MLX",
+  "license": "Apache-2.0",
+  "stars": 70,
+  "forks": 19,
+  "pushedAt": "2026-08-19T19:34:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:raullenchai/rapid-mlx-dsh-provider",
+    "commands": [
+      "dsh plugin --profile web add github:raullenchai/rapid-mlx-dsh-provider"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

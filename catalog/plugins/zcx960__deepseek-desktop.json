@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "zcx960/deepseek-desktop",
+  "slug": "zcx960__deepseek-desktop",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-desktop",
+  "title": "deepseek-desktop",
+  "summary": "DeepSeek 官方桌面客户端，集成网页版聊天与 Harness 智能体模式，可一键切换使用。",
+  "tags": [
+    "ai-agent",
+    "deepseek",
+    "deepseek-ai",
+    "deepseek-chat",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "desktop",
+    "desktop-app",
+    "harness",
+    "harness-ai",
+    "桌面自动化",
+    "AI聊天",
+    "AI工具"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-17T10:41:22Z",
+    "url": "https://github.com/zcx960/deepseek-desktop/releases/tag/v0.2.0"
+  },
+  "author": "zcx960",
+  "repo": "https://github.com/zcx960/deepseek-desktop",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-08-27T17:09:27Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zcx960/deepseek-desktop",
+    "commands": [
+      "dsh plugin --profile web add github:zcx960/deepseek-desktop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

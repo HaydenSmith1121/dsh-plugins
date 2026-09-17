@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ZBber-lab/cau-portal-open",
+  "slug": "zbber-lab__cau-portal-open",
+  "tier": "community",
+  "package": null,
+  "name": "cau-portal-open",
+  "title": "cau-portal-open",
+  "summary": "为中国农大学生自动抓取学校通知，AI生成摘要和截止日期，侧边栏浏览，对话中直接查询。",
+  "tags": [
+    "cau",
+    "deepseek",
+    "dsh-plugin",
+    "mcp-server",
+    "news-notification",
+    "open-source",
+    "消息通知",
+    "自动化",
+    "效率提升",
+    "AI 助手",
+    "前端增强"
+  ],
+  "version": "0.2.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.4",
+    "publishedAt": "2026-09-14T05:24:37Z",
+    "url": "https://github.com/ZBber-lab/cau-portal-open/releases/tag/v0.2.4"
+  },
+  "author": "ZBber-lab",
+  "repo": "https://github.com/ZBber-lab/cau-portal-open",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T05:24:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ZBber-lab/cau-portal-open",
+    "commands": [
+      "dsh plugin --profile web add \"github:ZBber-lab/cau-portal-open\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

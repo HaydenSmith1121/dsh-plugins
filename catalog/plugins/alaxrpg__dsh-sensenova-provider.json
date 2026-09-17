@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "alaxrpg/dsh-sensenova-provider",
+  "slug": "alaxrpg__dsh-sensenova-provider",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sensenova-provider",
+  "title": "dsh-sensenova-provider",
+  "summary": "为 DeepSeek Harness 接入 SenseNova 大模型，让推理任务无缝使用商汤 API。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "0.1.0-alpha.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0-alpha.6",
+    "publishedAt": "2026-09-04T07:25:19Z",
+    "url": "https://github.com/alaxrpg/dsh-sensenova-provider/releases/tag/v0.1.0-alpha.6"
+  },
+  "author": "alaxrpg",
+  "repo": "https://github.com/alaxrpg/dsh-sensenova-provider",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T03:38:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:alaxrpg/dsh-sensenova-provider",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-sensenova-provider",
+      "dsh plugin --profile <name> add ./dsh-sensenova-provider"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "hanzhangzzz/dsh-computer-use",
+  "slug": "hanzhangzzz__dsh-computer-use",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-computer-use",
+  "title": "dsh-computer-use",
+  "summary": "让 DeepSeek Harness 能像人一样操作浏览器，自动完成点击、输入、导航等任务，基于 Playwright 实现。",
+  "tags": [
+    "browser-automation",
+    "computer-use",
+    "deepseek",
+    "dsh-plugin",
+    "playwright",
+    "wechat-devtools",
+    "自动化",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "0.3.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.2",
+    "publishedAt": "2026-08-26T00:43:15Z",
+    "url": "https://github.com/hanzhangzzz/dsh-computer-use/releases/tag/v0.3.2"
+  },
+  "author": "hanzhangzzz",
+  "repo": "https://github.com/hanzhangzzz/dsh-computer-use",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T14:24:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hanzhangzzz/dsh-computer-use",
+    "commands": [
+      "dsh plugin --profile web add github:hanzhangzzz/dsh-computer-use"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

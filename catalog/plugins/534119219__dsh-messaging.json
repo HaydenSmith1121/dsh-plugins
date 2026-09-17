@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "534119219/dsh-messaging",
+  "slug": "534119219__dsh-messaging",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-messaging",
+  "title": "dsh-messaging",
+  "summary": "统一接入27个消息渠道，一个插件搞定消息收发、路由和权限管理，省心省力。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "messaging",
+    "插件管理",
+    "自动化",
+    "效率提升"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "534119219",
+  "repo": "https://github.com/534119219/dsh-messaging",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 2,
+  "pushedAt": "2026-08-16T19:08:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:534119219/dsh-messaging",
+    "commands": [
+      "dsh plugin --profile web add github:534119219/dsh-messaging"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

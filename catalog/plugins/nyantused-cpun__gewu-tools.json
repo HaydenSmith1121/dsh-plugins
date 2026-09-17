@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "nyantused-cpun/gewu-tools",
+  "slug": "nyantused-cpun__gewu-tools",
+  "tier": "community",
+  "package": null,
+  "name": "gewu-tools",
+  "title": "gewu-tools",
+  "summary": "让纯文本模型也能看图：逐页截图 HTML 并生成视觉子智能体简报，再回源码核对验证。",
+  "tags": [
+    "automation",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "review",
+    "subagent",
+    "vision",
+    "视觉理解",
+    "多Agent协作",
+    "变更审查",
+    "自动化",
+    "可视化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-16T16:05:01Z",
+    "url": "https://github.com/nyantused-cpun/gewu-tools/releases/tag/v1.0.0"
+  },
+  "author": "nyantused-cpun",
+  "repo": "https://github.com/nyantused-cpun/gewu-tools",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-18T08:13:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:nyantused-cpun/gewu-tools",
+    "commands": [
+      "dsh plugin --profile web add github:nyantused-cpun/gewu-tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

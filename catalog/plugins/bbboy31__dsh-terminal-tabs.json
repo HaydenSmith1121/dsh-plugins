@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "bbboy31/dsh-terminal-tabs",
+  "slug": "bbboy31__dsh-terminal-tabs",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-terminal-tabs",
+  "title": "dsh-terminal-tabs",
+  "summary": "在 DeepSeek Harness 网页界面中实时查看模型运行的后台任务，支持输出流监控和一键终止，让命令执行清晰可控。",
+  "tags": [
+    "deepseek-harness",
+    "developer-tools",
+    "dsh-plugin",
+    "terminal",
+    "状态监控",
+    "命令行工具",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bbboy31",
+  "repo": "https://github.com/bbboy31/dsh-terminal-tabs",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T18:01:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bbboy31/dsh-terminal-tabs",
+    "commands": [
+      "dsh plugin --profile web add github:bbboy31/dsh-terminal-tabs"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

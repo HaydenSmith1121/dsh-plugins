@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ZhijiangTang/dsh-dead-links",
+  "slug": "zhijiangtang__dsh-dead-links",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-dead-links",
+  "title": "dsh-dead-links",
+  "summary": "扫描 Markdown 文档中的死链，自动检查链接是否有效，帮你快速找出失效引用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "死链检测",
+    "Markdown工具",
+    "链接检查"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ZhijiangTang",
+  "repo": "https://github.com/ZhijiangTang/dsh-dead-links",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-16T13:08:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ZhijiangTang/dsh-dead-links",
+    "commands": [
+      "dsh plugin --profile <name> add file:./plugins/dsh-dead-links",
+      "dsh plugin --profile <name> add dsh-dead-links"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

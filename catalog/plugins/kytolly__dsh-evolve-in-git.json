@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Kytolly/dsh-evolve-in-git",
+  "slug": "kytolly__dsh-evolve-in-git",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-evolve-in-git",
+  "title": "dsh-evolve-in-git",
+  "summary": "让智能体在自定义 Git 仓库中持续进化，自动迭代代码与配置，提升开发效率。",
+  "tags": [
+    "dsh-plugin",
+    "开发流程",
+    "自动化",
+    "效率提升",
+    "AI工具",
+    "版本控制"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Kytolly",
+  "repo": "https://github.com/Kytolly/dsh-evolve-in-git",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 40,
+  "forks": 0,
+  "pushedAt": "2026-09-01T22:08:09Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Kytolly/dsh-evolve-in-git",
+    "commands": [
+      "dsh plugin --profile web add github:Kytolly/dsh-evolve-in-git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

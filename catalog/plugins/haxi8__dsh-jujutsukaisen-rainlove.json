@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "haxi8/dsh-JujutsuKaisen-rainlove",
+  "slug": "haxi8__dsh-jujutsukaisen-rainlove",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-JujutsuKaisen-rainlove",
+  "title": "dsh-JujutsuKaisen-rainlove",
+  "summary": "给 DeepSeek Harness 界面加上循环视频背景，GPU 友好不卡顿，让操作界面更带感。",
+  "tags": [
+    "background",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "视频背景",
+    "界面美化",
+    "GPU优化",
+    "循环播放"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "haxi8",
+  "repo": "https://github.com/haxi8/dsh-JujutsuKaisen-rainlove",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-16T14:49:25Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:haxi8/dsh-JujutsuKaisen-rainlove",
+    "commands": [
+      "dsh plugin --profile web add github:haxi8/dsh-JujutsuKaisen-rainlove"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

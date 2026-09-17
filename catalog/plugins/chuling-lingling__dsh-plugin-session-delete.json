@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "chuling-lingling/dsh-plugin-session-delete",
+  "slug": "chuling-lingling__dsh-plugin-session-delete",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-session-delete",
+  "title": "dsh-plugin-session-delete",
+  "summary": "给 dsh 会话页面加个垃圾桶按钮，一键删掉当前会话，补上官方缺失的删除功能。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "快捷操作",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chuling-lingling",
+  "repo": "https://github.com/chuling-lingling/dsh-plugin-session-delete",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T02:37:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chuling-lingling/dsh-plugin-session-delete",
+    "commands": [
+      "dsh plugin --profile web add github:chuling-lingling/dsh-plugin-session-delete",
+      "dsh plugin --profile web remove dsh-plugin-session-delete"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

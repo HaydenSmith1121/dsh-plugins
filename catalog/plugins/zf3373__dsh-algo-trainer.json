@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ZF3373/dsh-algo-trainer",
+  "slug": "zf3373__dsh-algo-trainer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-algo-trainer",
+  "title": "dsh-algo-trainer",
+  "summary": "把 ICPC 刷题、弱项分析、训练计划、间隔复习和模板库打包成 AI 工具，让 agent 直接帮你安排和跟进算法训练全流程。",
+  "tags": [
+    "competitive-programming",
+    "deepseek-harness",
+    "dsh-plugin",
+    "icpc",
+    "效率提升",
+    "工作流增强",
+    "模型配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ZF3373",
+  "repo": "https://github.com/ZF3373/dsh-algo-trainer",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T05:39:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-algo-trainer",
+    "commands": [
+      "dsh plugin --profile web add dsh-algo-trainer",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

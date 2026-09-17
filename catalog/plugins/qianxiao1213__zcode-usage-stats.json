@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "qianxiao1213/zcode-usage-stats",
+  "slug": "qianxiao1213__zcode-usage-stats",
+  "tier": "community",
+  "package": null,
+  "name": "zcode-usage-stats",
+  "title": "zcode-usage-stats",
+  "summary": "仿zcode的DSH Token用量统计插件，用趋势图、仪表盘和活跃热力图展示各时段/模型的消耗，帮你轻松掌握用量。",
+  "tags": [
+    "dsh-plugin",
+    "资源优化",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "qianxiao1213",
+  "repo": "https://github.com/qianxiao1213/zcode-usage-stats",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-29T17:06:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "zcode-usage-stats",
+    "commands": [
+      "dsh plugin --profile web add zcode-usage-stats",
+      "dsh plugin --profile web add github:<你的用户名>/zcode-usage-stats"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "a554878526/dsh-debug-mode",
+  "slug": "a554878526__dsh-debug-mode",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-debug-mode",
+  "title": "dsh-debug-mode",
+  "summary": "专为 DeepSeek Harness 打造的运行时调试插件，实时追踪执行状态与日志，帮你快速定位问题，排查报错更轻松。",
+  "tags": [
+    "debugging",
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "工作流增强"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-03T14:48:22Z",
+    "url": "https://github.com/a554878526/dsh-debug-mode/releases/tag/v0.1.2"
+  },
+  "author": "a554878526",
+  "repo": "https://github.com/a554878526/dsh-debug-mode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-03T14:48:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:a554878526/dsh-debug-mode",
+    "commands": [
+      "dsh plugin --profile web add \"github:a554878526/dsh-debug-mode",
+      "dsh plugin --profile web remove dsh-debug-mode"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

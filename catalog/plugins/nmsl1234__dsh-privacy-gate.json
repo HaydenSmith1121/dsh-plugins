@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "nmsl1234/dsh-privacy-gate",
+  "slug": "nmsl1234__dsh-privacy-gate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-privacy-gate",
+  "title": "dsh-privacy-gate",
+  "summary": "在云端对话前自动拦截敏感内容，替换为占位符，保护隐私不上云，可自选本地判断模型。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "插件管理",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "nmsl1234",
+  "repo": "https://github.com/nmsl1234/dsh-privacy-gate",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T07:27:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:nmsl1234/dsh-privacy-gate",
+    "commands": [
+      "dsh plugin --profile <你的profile> add <本仓库URL>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

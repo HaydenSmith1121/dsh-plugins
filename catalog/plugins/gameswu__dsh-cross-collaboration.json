@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "gameswu/dsh-cross-collaboration",
+  "slug": "gameswu__dsh-cross-collaboration",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cross-collaboration",
+  "title": "dsh-cross-collaboration",
+  "summary": "让多台设备上的 DSH 互相发现并发送消息唤醒对方主 Agent，实现跨设备协作。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "跨设备协作",
+    "自动发现",
+    "消息唤醒",
+    "局域网组网"
+  ],
+  "version": "0.5.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "gameswu",
+  "repo": "https://github.com/gameswu/dsh-cross-collaboration",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-09-10T13:24:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:gameswu/dsh-cross-collaboration",
+    "commands": [
+      "dsh plugin --profile web add \"file:$(pwd)\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "shaomingbo/dsh-subscription-search",
+  "slug": "shaomingbo__dsh-subscription-search",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subscription-search",
+  "title": "dsh-subscription-search",
+  "summary": "为 DeepSeek Harness 提供订阅账号 OAuth 登录、模型路由及多引擎搜索回退，简化搜索流程。",
+  "tags": [
+    "chatgpt",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "grok",
+    "oauth",
+    "subscription",
+    "web-search",
+    "xai",
+    "模型适配",
+    "语义检索",
+    "自动化"
+  ],
+  "version": "1.3.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.3.3",
+    "publishedAt": "2026-09-11T23:28:12Z",
+    "url": "https://github.com/shaomingbo/dsh-subscription-search/releases/tag/v1.3.3"
+  },
+  "author": "shaomingbo",
+  "repo": "https://github.com/shaomingbo/dsh-subscription-search",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T23:28:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shaomingbo/dsh-subscription-search",
+    "commands": [
+      "dsh plugin --profile web add github:shaomingbo/dsh-subscription-search"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

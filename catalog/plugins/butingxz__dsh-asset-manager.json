@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "butingxz/dsh-asset-manager",
+  "slug": "butingxz__dsh-asset-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-asset-manager",
+  "title": "dsh-asset-manager",
+  "summary": "把 DSH 所有组件装进一个指挥室，统一管理插件、技能、预设和规范，一目了然。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "状态监控",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-25T11:00:57Z",
+    "url": "https://github.com/butingxz/dsh-asset-manager/releases/tag/v0.1.0"
+  },
+  "author": "butingxz",
+  "repo": "https://github.com/butingxz/dsh-asset-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-25T11:01:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:butingxz/dsh-asset-manager",
+    "commands": [
+      "dsh plugin --profile web add github:butingxz/dsh-asset-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

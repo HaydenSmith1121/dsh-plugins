@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-epub-template-server",
+  "slug": "xby-skill__xby-epub-template-server",
+  "tier": "community",
+  "package": null,
+  "name": "xby-epub-template-server",
+  "title": "xby-epub-template-server",
+  "summary": "为 AI 应用提供 epub360 模板搜索服务，支持设置 API 密钥并快速检索模板。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "插件管理",
+    "零配置",
+    "会话管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-epub-template-server",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:40:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-epub-template-server",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-epub-template-server",
+      "dsh plugin --profile web add /absolute/path/to/xby-epub-template-server"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

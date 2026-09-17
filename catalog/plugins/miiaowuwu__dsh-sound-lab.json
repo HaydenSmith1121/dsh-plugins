@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "miiaowuwu/dsh-sound-lab",
+  "slug": "miiaowuwu__dsh-sound-lab",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sound-lab",
+  "title": "dsh-sound-lab",
+  "summary": "给 DSH 界面配上安洁莉娜语音，四个触发点都能自定义音效，让操作更有趣。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "娱乐互动",
+    "主题",
+    "零配置",
+    "会话管理"
+  ],
+  "version": "1.3.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.3.2",
+    "publishedAt": "2026-08-22T22:14:33Z",
+    "url": "https://github.com/miiaowuwu/dsh-sound-lab/releases/tag/v1.3.2"
+  },
+  "author": "miiaowuwu",
+  "repo": "https://github.com/miiaowuwu/dsh-sound-lab",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-22T22:11:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:miiaowuwu/dsh-sound-lab",
+    "commands": [
+      "dsh plugin --profile web add github:miiaowuwu/dsh-sound-lab"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

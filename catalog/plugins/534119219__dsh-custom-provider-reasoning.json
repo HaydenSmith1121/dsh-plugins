@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "534119219/dsh-custom-provider-reasoning",
+  "slug": "534119219__dsh-custom-provider-reasoning",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-custom-provider-reasoning",
+  "title": "dsh-custom-provider-reasoning",
+  "summary": "让自定义提供方的所有模型都能选思考强度，选择真实生效并发送到线上。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "推理等级",
+    "自定义提供方",
+    "模型选择器"
+  ],
+  "version": "0.3.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "534119219",
+  "repo": "https://github.com/534119219/dsh-custom-provider-reasoning",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-31T16:06:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:534119219/dsh-custom-provider-reasoning",
+    "commands": [
+      "dsh plugin --profile web add github:534119219/dsh-custom-provider-reasoning"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

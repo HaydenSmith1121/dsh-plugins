@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "zqh260619/dsh-dupguard",
+  "slug": "zqh260619__dsh-dupguard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-dupguard",
+  "title": "dsh-dupguard",
+  "summary": "实时监测大模型输出，一旦发现同一字符串重复出现10次以上，立即停止生成，防止复读。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "repetition-detection",
+    "状态监控",
+    "安全审计",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "1.2.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zqh260619",
+  "repo": "https://github.com/zqh260619/dsh-dupguard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-09T04:04:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-dupguard",
+    "commands": [
+      "dsh plugin --profile web add dsh-dupguard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

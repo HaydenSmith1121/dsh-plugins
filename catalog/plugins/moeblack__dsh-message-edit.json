@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Moeblack/dsh-message-edit",
+  "slug": "moeblack__dsh-message-edit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-message-edit",
+  "title": "dsh-message-edit",
+  "summary": "像分支一样编辑聊天消息，随时重试、重写并回看历史版本。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "操作回滚",
+    "状态持久化",
+    "效率提升"
+  ],
+  "version": "0.2.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Moeblack",
+  "repo": "https://github.com/Moeblack/dsh-message-edit",
+  "homepage": null,
+  "license": null,
+  "stars": 49,
+  "forks": 20,
+  "pushedAt": "2026-08-16T11:33:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-message-edit",
+    "commands": [
+      "dsh plugin --profile web add dsh-message-edit",
+      "dsh plugin --profile web add -w link:/path/to/dsh-message-edit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

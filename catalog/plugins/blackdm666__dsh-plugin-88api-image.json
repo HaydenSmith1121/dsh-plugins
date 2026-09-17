@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "blackdm666/dsh-plugin-88api-image",
+  "slug": "blackdm666__dsh-plugin-88api-image",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-88api-image",
+  "title": "dsh-plugin-88api-image",
+  "summary": "一个插件统一接入四款图像模型，支持文生图、多参考图编辑和2K/4K高清输出，还能批量顺序处理任务，省心又高效。",
+  "tags": [
+    "88api",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "image-generation",
+    "multimodal",
+    "nano-banana",
+    "模型配置",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-08-22T15:51:31Z",
+    "url": "https://github.com/blackdm666/dsh-plugin-88api-image/releases/tag/v0.1.2"
+  },
+  "author": "blackdm666",
+  "repo": "https://github.com/blackdm666/dsh-plugin-88api-image",
+  "homepage": "https://88api.ai/",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-09T17:09:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:blackdm666/dsh-plugin-88api-image",
+    "commands": [
+      "dsh plugin --profile web add github:blackdm666/dsh-plugin-88api-image"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

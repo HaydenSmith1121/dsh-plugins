@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "abc12524/dsh-openviking",
+  "slug": "abc12524__dsh-openviking",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-openviking",
+  "title": "dsh-openviking",
+  "summary": "给 DeepSeek Harness 接入 OpenViking 长期记忆，自动检索相关历史对话作为上下文，让 AI 更懂你。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "零配置",
+    "自动化"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "abc12524",
+  "repo": "https://github.com/abc12524/dsh-openviking",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T12:03:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:abc12524/dsh-openviking",
+    "commands": [
+      "dsh plugin --profile web add github:abc12524/dsh-openviking"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

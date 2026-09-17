@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "zhangzhenwen1/dsh-task-effort",
+  "slug": "zhangzhenwen1__dsh-task-effort",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-task-effort",
+  "title": "dsh-task-effort",
+  "summary": "每次调用前按任务自动调整模型推理强度，高峰期自动封顶，省钱又省心。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "资源优化",
+    "模型配置",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhangzhenwen1",
+  "repo": "https://github.com/zhangzhenwen1/dsh-task-effort",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T03:52:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-task-effort",
+    "commands": [
+      "dsh plugin --profile web add dsh-task-effort"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

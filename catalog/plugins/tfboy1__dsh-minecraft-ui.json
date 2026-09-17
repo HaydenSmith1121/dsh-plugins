@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "TFboy1/dsh-minecraft-ui",
+  "slug": "tfboy1__dsh-minecraft-ui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-minecraft-ui",
+  "title": "dsh-minecraft-ui",
+  "summary": "为 DeepSeek Harness 换上 Minecraft 方块主题，保留全部原生功能，让跑 Agent 和写代码更有趣。",
+  "tags": [
+    "dsh-plugin",
+    "主题",
+    "娱乐互动"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "TFboy1",
+  "repo": "https://github.com/TFboy1/dsh-minecraft-ui",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 17,
+  "forks": 0,
+  "pushedAt": "2026-08-21T06:59:42Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TFboy1/dsh-minecraft-ui",
+    "commands": [
+      "dsh plugin --profile <canary> add dsh-minecraft-ui",
+      "dsh plugin --profile <canary> add ./dsh-minecraft-ui-0.3.0.tgz",
+      "dsh plugin --profile <canary> add github:TFboy1/dsh-minecraft-ui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

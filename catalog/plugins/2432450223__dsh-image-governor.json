@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "2432450223/dsh-image-governor",
+  "slug": "2432450223__dsh-image-governor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-image-governor",
+  "title": "dsh-image-governor",
+  "summary": "帮你查清会话里还带着哪些图片，挑出要留的，其余移出模型上下文，省 token。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "资源优化",
+    "多模态",
+    "效率提升"
+  ],
+  "version": "0.6.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "2432450223",
+  "repo": "https://github.com/2432450223/dsh-image-governor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T22:35:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:2432450223/dsh-image-governor",
+    "commands": [
+      "dsh plugin --profile web add github:2432450223/dsh-image-governor",
+      "dsh plugin --profile web add /path/to/dsh-image-governor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

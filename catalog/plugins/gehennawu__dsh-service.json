@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "gehennawu/dsh-service",
+  "slug": "gehennawu__dsh-service",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-service",
+  "title": "dsh-service",
+  "summary": "自托管 DSH Web 的一站式运维面板，安全重启升级、健康诊断、用量查询、会话管理、备份权限、任务通知和模型路由全搞定。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "operations",
+    "状态监控",
+    "自动化",
+    "会话管理",
+    "模型配置",
+    "效率提升"
+  ],
+  "version": "1.7.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.7.0",
+    "publishedAt": "2026-09-17T07:49:55Z",
+    "url": "https://github.com/gehennawu/dsh-service/releases/tag/v1.7.0"
+  },
+  "author": "gehennawu",
+  "repo": "https://github.com/gehennawu/dsh-service",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 1,
+  "pushedAt": "2026-09-16T06:59:49Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:gehennawu/dsh-service",
+    "commands": [
+      "dsh plugin --profile web add github:gehennawu/dsh-service"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

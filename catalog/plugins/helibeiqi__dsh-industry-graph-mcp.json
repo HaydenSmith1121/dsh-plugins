@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "helibeiqi/dsh-industry-graph-mcp",
+  "slug": "helibeiqi__dsh-industry-graph-mcp",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-industry-graph-mcp",
+  "title": "dsh-industry-graph-mcp",
+  "summary": "本地优先的A股产业链、申万行业和概念板块知识图谱，无需联网即可在对话中查询行业关系与板块数据。",
+  "tags": [
+    "a-share",
+    "deepseek-harness",
+    "dsh-plugin",
+    "knowledge-graph",
+    "quant",
+    "可视化",
+    "零配置",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "helibeiqi",
+  "repo": "https://github.com/helibeiqi/dsh-industry-graph-mcp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T15:16:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:helibeiqi/dsh-industry-graph-mcp",
+    "commands": [
+      "dsh plugin --profile web add github:helibeiqi/dsh-industry-graph-mcp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

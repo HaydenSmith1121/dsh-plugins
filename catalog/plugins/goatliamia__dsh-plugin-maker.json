@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "goatliamia/dsh-plugin-maker",
+  "slug": "goatliamia__dsh-plugin-maker",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-maker",
+  "title": "dsh-plugin-maker",
+  "summary": "把想法快速变成 DSH 插件，自动判断值不值得做，让插件开发门槛更低。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "插件管理",
+    "自动化",
+    "效率提升",
+    "命令行工具"
+  ],
+  "version": "0.6.24",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.24",
+    "publishedAt": "2026-09-09T14:21:36Z",
+    "url": "https://github.com/goatliamia/dsh-plugin-maker/releases/tag/v0.6.24"
+  },
+  "author": "goatliamia",
+  "repo": "https://github.com/goatliamia/dsh-plugin-maker",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T07:43:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:goatliamia/dsh-plugin-maker",
+    "commands": [
+      "dsh plugin --profile web add github:goatliamia/dsh-plugin-maker"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

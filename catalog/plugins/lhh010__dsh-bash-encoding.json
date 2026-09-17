@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "lhh010/dsh-bash-encoding",
+  "slug": "lhh010__dsh-bash-encoding",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-bash-encoding",
+  "title": "dsh-bash-encoding",
+  "summary": "自动识别并解码 Bash 输出的 UTF-16LE、UTF-8、GBK 等编码，解决 Windows/WSL 下中文乱码问题。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "命令行工具",
+    "工具集成",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lhh010",
+  "repo": "https://github.com/lhh010/dsh-bash-encoding",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 8,
+  "forks": 1,
+  "pushedAt": "2026-08-22T02:42:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lhh010/dsh-bash-encoding",
+    "commands": [
+      "pnpm add -w link:/path/to/dsh-bash-encoding"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

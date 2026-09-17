@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "CJYLZS/dsh-opencode-go-autosync",
+  "slug": "cjylzs__dsh-opencode-go-autosync",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-opencode-go-autosync",
+  "title": "dsh-opencode-go-autosync",
+  "summary": "一键自动同步 opencode-go 模型列表至 DSH，有则刷新无则新建，随时获取最新可用模型。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "opencode-go",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "CJYLZS",
+  "repo": "https://github.com/CJYLZS/dsh-opencode-go-autosync",
+  "homepage": null,
+  "license": null,
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-04T00:50:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CJYLZS/dsh-opencode-go-autosync",
+    "commands": [
+      "git clone https://github.com/CJYLZS/dsh-opencode-go-autosync.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

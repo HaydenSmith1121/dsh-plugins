@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "americanjeff/filestab",
+  "slug": "americanjeff__filestab",
+  "tier": "community",
+  "package": null,
+  "name": "filestab",
+  "title": "filestab",
+  "summary": "为 DeepSeek Harness 添加文件与版本控制浏览器，支持代码差异对比和 Markdown 预览，方便你直接查看和管理项目文件。",
+  "tags": [
+    "dsh-plugin",
+    "jj",
+    "jujutsu",
+    "工作区管理",
+    "工作流增强",
+    "可视化",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.1.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "americanjeff",
+  "repo": "https://github.com/americanjeff/filestab",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T03:15:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "filestab",
+    "commands": [
+      "dsh plugin --profile web add filestab"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Kevin-McIsaac/dsh-workspace-git-badge",
+  "slug": "kevin-mcisaac__dsh-workspace-git-badge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workspace-git-badge",
+  "title": "dsh-workspace-git-badge",
+  "summary": "在 DeepSeek Harness 工作区里直接显示 Git 状态徽章，改动、分支一眼看清。",
+  "tags": [
+    "dsh-plugin",
+    "工作区管理",
+    "状态监控",
+    "可视化",
+    "工具集成"
+  ],
+  "version": "0.17.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Kevin-McIsaac",
+  "repo": "https://github.com/Kevin-McIsaac/dsh-workspace-git-badge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 1,
+  "pushedAt": "2026-09-16T09:18:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-git-badge",
+    "commands": [
+      "dsh plugin --profile web add dsh-git-badge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

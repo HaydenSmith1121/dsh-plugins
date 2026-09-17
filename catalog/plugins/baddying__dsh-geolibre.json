@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "baddying/dsh-geolibre",
+  "slug": "baddying__dsh-geolibre",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-geolibre",
+  "title": "dsh-geolibre",
+  "summary": "把 GeoJSON 数据渲染成交互式地图，让 Agent 能直接操作图层、样式和视图，还能跑地理算法。",
+  "tags": [
+    "agent",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "geojson",
+    "geolibre",
+    "gis",
+    "harness",
+    "map",
+    "whitebox",
+    "可视化",
+    "工具集成",
+    "插件管理",
+    "GIS"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-09T10:00:29Z",
+    "url": "https://github.com/baddying/dsh-geolibre/releases/tag/v0.1.0"
+  },
+  "author": "baddying",
+  "repo": "https://github.com/baddying/dsh-geolibre",
+  "homepage": "https://github.com/baddying/dsh-geolibre#readme",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T10:04:22Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:baddying/dsh-geolibre",
+    "commands": [
+      "dsh plugin --profile web add github:baddying/dsh-geolibre"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

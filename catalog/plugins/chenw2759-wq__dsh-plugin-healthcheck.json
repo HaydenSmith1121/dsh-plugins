@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "chenw2759-wq/dsh-plugin-healthcheck",
+  "slug": "chenw2759-wq__dsh-plugin-healthcheck",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-healthcheck",
+  "title": "dsh-plugin-healthcheck",
+  "summary": "装完新插件先别急着用，它能静态检查、隔离试跑加木马扫描，不重启后端就知道插件会不会崩。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "dsharpplus",
+    "插件管理",
+    "安全审计",
+    "状态监控",
+    "操作回滚",
+    "设置面板"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chenw2759-wq",
+  "repo": "https://github.com/chenw2759-wq/dsh-plugin-healthcheck",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 15,
+  "forks": 1,
+  "pushedAt": "2026-08-15T12:15:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chenw2759-wq/dsh-plugin-healthcheck",
+    "commands": [
+      "git clone https://github.com/chenw2759-wq/dsh-plugin-healthcheck.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

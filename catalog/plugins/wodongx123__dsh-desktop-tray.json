@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "wodongx123/dsh-desktop-tray",
+  "slug": "wodongx123__dsh-desktop-tray",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-desktop-tray",
+  "title": "dsh-desktop-tray",
+  "summary": "给 DSH Desktop 加系统托盘，最小化或关闭时隐藏到托盘，更新后还能自动恢复。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "系统托盘",
+    "窗口隐藏",
+    "自愈恢复",
+    "桌面增强"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-24T04:31:27Z",
+    "url": "https://github.com/wodongx123/dsh-desktop-tray/releases/tag/v0.2.0"
+  },
+  "author": "wodongx123",
+  "repo": "https://github.com/wodongx123/dsh-desktop-tray",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-26T07:15:03Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wodongx123/dsh-desktop-tray",
+    "commands": [
+      "dsh plugin --profile web add github:wodongx123/dsh-desktop-tray"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

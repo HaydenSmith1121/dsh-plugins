@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "MarvekG/deepseek-harness-model-config",
+  "slug": "marvekg__deepseek-harness-model-config",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-model-config",
+  "title": "deepseek-harness-model-config",
+  "summary": "为 DeepSeek Harness 网页界面添加模型高级配置页面，轻松创建自定义端点并调整每个模型的能力参数。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugin-verify",
+    "dsh-plugins",
+    "模型适配",
+    "自定义端点",
+    "参数调整",
+    "Web UI 扩展"
+  ],
+  "version": "2.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "2.3.0",
+    "publishedAt": "2026-09-04T01:23:23Z",
+    "url": "https://github.com/MarvekG/deepseek-harness-model-config/releases/tag/2.3.0"
+  },
+  "author": "MarvekG",
+  "repo": "https://github.com/MarvekG/deepseek-harness-model-config",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 40,
+  "forks": 3,
+  "pushedAt": "2026-09-04T01:23:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MarvekG/deepseek-harness-model-config",
+    "commands": [
+      "dsh plugin --profile web add github:MarvekG/deepseek-harness-model-config"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

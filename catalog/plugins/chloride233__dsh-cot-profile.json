@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "Chloride233/dsh-cot-profile",
+  "slug": "chloride233__dsh-cot-profile",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cot-profile",
+  "title": "dsh-cot-profile",
+  "summary": "实时监控 DeepSeek Harness 的思维链轨迹，统计关键词特征并判断推理模式，按会话记录分析数据。",
+  "tags": [
+    "ai-agents",
+    "chain-of-thought",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm",
+    "llm-agent",
+    "reasoning",
+    "思维链分析",
+    "状态监控",
+    "推理模式识别",
+    "会话记录"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-16T06:21:47Z",
+    "url": "https://github.com/Chloride233/dsh-cot-profile/releases/tag/v0.2.0"
+  },
+  "author": "Chloride233",
+  "repo": "https://github.com/Chloride233/dsh-cot-profile",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-16T13:22:07Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Chloride233/dsh-cot-profile",
+    "commands": [
+      "dsh plugin --profile web add github:Chloride233/dsh-cot-profile"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "GearVoid/dsh-taskify",
+  "slug": "gearvoid__dsh-taskify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-taskify",
+  "title": "dsh-taskify",
+  "summary": "让 Coding Agent 守住边界，固定任务范围并保留不可更改的约束，避免越界操作。",
+  "tags": [
+    "ai-agent",
+    "coding-agent",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "intent-anchors",
+    "persistent-constraints",
+    "prompt-engineering",
+    "task-compiler",
+    "提示词优化",
+    "会话管理",
+    "工作流增强",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.4.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.1",
+    "publishedAt": "2026-09-04T02:10:11Z",
+    "url": "https://github.com/GearVoid/dsh-taskify/releases/tag/v0.4.1"
+  },
+  "author": "GearVoid",
+  "repo": "https://github.com/GearVoid/dsh-taskify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T02:09:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GearVoid/dsh-taskify",
+    "commands": [
+      "dsh plugin --profile web add github:GearVoid/dsh-taskify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

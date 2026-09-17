@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "wqty123/dsh-browser",
+  "slug": "wqty123__dsh-browser",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-builtin-browser",
+  "title": "dsh-builtin-browser",
+  "summary": "为 DeepSeek Harness 提供共享真实浏览器，用户可见可接管，agent 通过 CDP 驱动操作网页。",
+  "tags": [
+    "browser",
+    "deepseek-harness",
+    "dsh-plugin",
+    "桌面自动化",
+    "CDP控制",
+    "共享浏览器",
+    "AI工具"
+  ],
+  "version": "0.1.22",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wqty123",
+  "repo": "https://github.com/wqty123/dsh-browser",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 63,
+  "forks": 4,
+  "pushedAt": "2026-09-16T07:46:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-builtin-browser",
+    "commands": [
+      "dsh plugin --profile web add dsh-builtin-browser",
+      "dsh plugin --profile web add <本仓库路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

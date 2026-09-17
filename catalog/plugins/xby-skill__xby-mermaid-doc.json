@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-mermaid-doc",
+  "slug": "xby-skill__xby-mermaid-doc",
+  "tier": "community",
+  "package": null,
+  "name": "xby-mermaid-doc",
+  "title": "xby-mermaid-doc",
+  "summary": "在聊天里直接生成和查看 Mermaid 图表文档，设置密钥后即插即用，方便画流程图和架构图。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "零配置",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-mermaid-doc",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:46:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-mermaid-doc",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-mermaid-doc",
+      "dsh plugin --profile web add /absolute/path/to/xby-mermaid-doc"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

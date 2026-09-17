@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "havingautism/dsh-notebooks",
+  "slug": "havingautism__dsh-notebooks",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notebooks",
+  "title": "dsh-notebooks",
+  "summary": "把 Codemini 风格的随手记带到 DSH，提供笔记存储、模型工具和完整的 Web 工作区，方便你随时记录和管理想法。",
+  "tags": [
+    "dsh-plugin",
+    "笔记管理",
+    "文件管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "havingautism",
+  "repo": "https://github.com/havingautism/dsh-notebooks",
+  "homepage": null,
+  "license": null,
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-26T16:31:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:havingautism/dsh-notebooks",
+    "commands": [
+      "dsh plugin --profile web add github:havingautism/dsh-notebooks"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "IYIcode/dsh-ctx-probe",
+  "slug": "iyicode__dsh-ctx-probe",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ctx-probe",
+  "title": "dsh-ctx-probe",
+  "summary": "自动探测本地 llama.cpp/Ollama 的真实上下文窗口，并同步到 dsh 设置，防止溢出或浪费，零配置。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "资源优化",
+    "零配置",
+    "自动化",
+    "命令行工具"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "IYIcode",
+  "repo": "https://github.com/IYIcode/dsh-ctx-probe",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T05:33:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:IYIcode/dsh-ctx-probe",
+    "commands": [
+      "dsh plugin --profile web add github:IYIcode/dsh-ctx-probe"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "sxy-kumako/dsh-better-model-select",
+  "slug": "sxy-kumako__dsh-better-model-select",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-better-model-select",
+  "title": "dsh-better-model-select",
+  "summary": "让模型列表跟着各 provider 的 API 实时更新，并在会话统计行下显示各家的用量余额，一目了然。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "状态监控",
+    "会话管理"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.0.1",
+    "publishedAt": "2026-09-04T01:55:57Z",
+    "url": "https://github.com/sxy-kumako/dsh-better-model-select/releases/tag/v0.0.1"
+  },
+  "author": "sxy-kumako",
+  "repo": "https://github.com/sxy-kumako/dsh-better-model-select",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T01:55:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sxy-kumako/dsh-better-model-select",
+    "commands": [
+      "dsh plugin --profile web add github:sxy-kumako/dsh-better-model-select"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

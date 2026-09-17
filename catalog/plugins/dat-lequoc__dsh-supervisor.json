@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "dat-lequoc/dsh-supervisor",
+  "slug": "dat-lequoc__dsh-supervisor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-supervisor",
+  "title": "dsh-supervisor",
+  "summary": "始终在线的监督智能体，锁定目标后自动循环调度子任务，无人值守也能持续推进。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "AI 助手",
+    "工作流增强",
+    "效率提升",
+    "多Agent协作"
+  ],
+  "version": "0.9.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dat-lequoc",
+  "repo": "https://github.com/dat-lequoc/dsh-supervisor",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-24T13:26:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dat-lequoc/dsh-supervisor",
+    "commands": [
+      "git clone https://github.com/dat-lequoc/dsh-supervisor.git \"$HOME/src/dsh-supervisor\"",
+      "dsh plugin --profile web add \"file:$PWD\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

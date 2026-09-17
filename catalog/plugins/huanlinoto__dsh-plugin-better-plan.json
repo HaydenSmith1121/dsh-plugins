@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "HuanLinOTO/dsh-plugin-better-plan",
+  "slug": "huanlinoto__dsh-plugin-better-plan",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-better-plan",
+  "title": "dsh-plugin-better-plan",
+  "summary": "在 DeepSeek Harness 侧边栏里管理计划和待办事项，边聊边记，效率翻倍。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "工作流增强",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.5.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "HuanLinOTO",
+  "repo": "https://github.com/HuanLinOTO/dsh-plugin-better-plan",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T12:56:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:huanlinoto/dsh-plugin-better-plan",
+    "commands": [
+      "dsh plugin --profile web add \"link:D:/Projects/deepseek-harness/dsh-plugin-better-plan\"",
+      "dsh plugin --profile web add \"github:huanlinoto/dsh-plugin-better-plan\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

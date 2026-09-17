@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "a903067276-rgb/dsh-file-mentions",
+  "slug": "a903067276-rgb__dsh-file-mentions",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-file-mentions",
+  "title": "dsh-file-mentions",
+  "summary": "让 DSH 回复中的文件路径可点击，支持内联打开、在文件管理器中显示，并在回复末尾汇总提及的文件列表。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "file-mentions",
+    "web-ui",
+    "文件路径",
+    "点击打开",
+    "文件管理器",
+    "文件列表"
+  ],
+  "version": "1.0.14",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.14",
+    "publishedAt": "2026-09-10T05:13:45Z",
+    "url": "https://github.com/a903067276-rgb/dsh-file-mentions/releases/tag/v1.0.14"
+  },
+  "author": "a903067276-rgb",
+  "repo": "https://github.com/a903067276-rgb/dsh-file-mentions",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 11,
+  "forks": 6,
+  "pushedAt": "2026-09-15T00:04:38Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:a903067276-rgb/dsh-file-mentions",
+    "commands": [
+      "dsh plugin --profile web add \"github:a903067276-rgb/dsh-file-mentions"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

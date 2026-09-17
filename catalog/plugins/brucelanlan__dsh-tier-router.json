@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "BruceLanLan/dsh-tier-router",
+  "slug": "brucelanlan__dsh-tier-router",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tier-router",
+  "title": "dsh-tier-router",
+  "summary": "给 DeepSeek Harness 按模型能力分层路由请求，自动调度最优模型，省钱又提效。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "资源优化",
+    "效率提升",
+    "任务编排",
+    "零配置"
+  ],
+  "version": "0.4.5",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "BruceLanLan",
+  "repo": "https://github.com/BruceLanLan/dsh-tier-router",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 4,
+  "pushedAt": "2026-09-03T08:08:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:BruceLanLan/dsh-tier-router",
+    "commands": [
+      "dsh plugin --profile web add github:BruceLanLan/dsh-tier-router"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

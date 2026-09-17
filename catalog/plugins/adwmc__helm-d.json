@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ADWMC/helm-d",
+  "slug": "adwmc__helm-d",
+  "tier": "community",
+  "package": null,
+  "name": "helm-d",
+  "title": "helm-d",
+  "summary": "聚合 Android、Web、Native 等六大安全领域的破甲分析插件，开箱即用，覆盖恶意软件与 AI 安全。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "frida",
+    "reverse-engineering",
+    "security",
+    "安全审计",
+    "插件管理",
+    "零配置",
+    "自动化"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-09-14T17:36:11Z",
+    "url": "https://github.com/ADWMC/helm-d/releases/tag/v0.3.1"
+  },
+  "author": "ADWMC",
+  "repo": "https://github.com/ADWMC/helm-d",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 49,
+  "forks": 5,
+  "pushedAt": "2026-09-15T05:21:41Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ADWMC/helm-d",
+    "commands": [
+      "dsh plugin --profile web add github:ADWMC/helm-d"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

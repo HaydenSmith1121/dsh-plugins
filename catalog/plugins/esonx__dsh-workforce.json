@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "esonx/dsh-workforce",
+  "slug": "esonx__dsh-workforce",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workforce",
+  "title": "dsh-workforce",
+  "summary": "为 DeepSeek Harness 打造的项目级智能体团队，支持长期存活的 AI 成员、项目归属和协作对话，让多智能体分工干活更高效。",
+  "tags": [
+    "agent-management",
+    "ai-workforce",
+    "deepseek-harness",
+    "dsh-plugin",
+    "multi-agent",
+    "多Agent协作",
+    "AI 助手",
+    "会话管理",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-26T16:42:22Z",
+    "url": "https://github.com/esonx/dsh-workforce/releases/tag/v0.1.1"
+  },
+  "author": "esonx",
+  "repo": "https://github.com/esonx/dsh-workforce",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-26T16:41:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:esonx/dsh-workforce",
+    "commands": [
+      "dsh plugin --profile web add github:esonx/dsh-workforce",
+      "dsh plugin --profile web add ./dsh-workforce-0.1.1.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

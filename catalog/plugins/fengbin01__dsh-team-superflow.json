@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "fengbin01/dsh-team-superflow",
+  "slug": "fengbin01__dsh-team-superflow",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-team-superflow",
+  "title": "dsh-team-superflow",
+  "summary": "每次启动AgentTeams都能拉起同一支固定五人开发团队，用规格状态机驱动流程，并在网页界面实时看进度。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "自动化",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.1.0-rc.6",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fengbin01",
+  "repo": "https://github.com/fengbin01/dsh-team-superflow",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T03:40:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fengbin01/dsh-team-superflow",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/fengbin01/dsh-team-superflow.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

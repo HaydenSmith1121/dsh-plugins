@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "new-Beginner/dsh-thought-fold",
+  "slug": "new-beginner__dsh-thought-fold",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-thought-fold",
+  "title": "dsh-thought-fold",
+  "summary": "把 DeepSeek Harness 的思考与工具过程折叠起来，长任务更好读，插话和中断也不乱。",
+  "tags": [
+    "codex",
+    "deepseek-harness",
+    "deepseek-harness-plugins",
+    "dsh",
+    "dsh-plugin",
+    "folding",
+    "thinking",
+    "ui",
+    "前端增强",
+    "效率提升",
+    "可视化",
+    "会话管理"
+  ],
+  "version": "2.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.2.0",
+    "publishedAt": "2026-09-14T06:13:54Z",
+    "url": "https://github.com/new-Beginner/dsh-thought-fold/releases/tag/v2.2.0"
+  },
+  "author": "new-Beginner",
+  "repo": "https://github.com/new-Beginner/dsh-thought-fold",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T13:15:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:new-Beginner/dsh-thought-fold",
+    "commands": [
+      "dsh plugin --profile web add github:new-Beginner/dsh-thought-fold"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

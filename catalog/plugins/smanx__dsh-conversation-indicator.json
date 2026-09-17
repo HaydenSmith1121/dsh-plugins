@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "smanx/dsh-conversation-indicator",
+  "slug": "smanx__dsh-conversation-indicator",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-conversation-indicator",
+  "title": "dsh-conversation-indicator",
+  "summary": "在长对话中快速定位和跳转到每条用户消息，不用再费力滚动查找。",
+  "tags": [
+    "cordis",
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "界面美化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "smanx",
+  "repo": "https://github.com/smanx/dsh-conversation-indicator",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-16T09:45:58Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:smanx/dsh-conversation-indicator",
+    "commands": [
+      "dsh plugin --profile web add github:smanx/dsh-conversation-indicator",
+      "dsh plugin --profile web add file:C:/mydata/codes/dsh-conversation-indicator"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

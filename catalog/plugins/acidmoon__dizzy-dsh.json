@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Acidmoon/DIzzy-DSH",
+  "slug": "acidmoon__dizzy-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "DIzzy-DSH",
+  "title": "DIzzy-DSH",
+  "summary": "一条命令装完的 DSH 插件合集，重启即用，管余额用量、注入 Agent 规则、还能控浏览器。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "集中仓库",
+    "零配置",
+    "状态监控",
+    "自动化"
+  ],
+  "version": "0.4.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Acidmoon",
+  "repo": "https://github.com/Acidmoon/DIzzy-DSH",
+  "homepage": null,
+  "license": null,
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:13:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Acidmoon/DIzzy-DSH",
+    "commands": [
+      "git clone https://github.com/Acidmoon/DIzzy-DSH.git",
+      "dsh plugin --profile web add file:<仓库绝对路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

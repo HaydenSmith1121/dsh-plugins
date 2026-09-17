@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "iiwish/dsh-testkit",
+  "slug": "iiwish__dsh-testkit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-testkit",
+  "title": "dsh-testkit",
+  "summary": "为 DeepSeek Harness 插件提供生命周期一致性测试，确保插件在真实环境中稳定可靠。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "integration-testing",
+    "plugin-testing",
+    "自动化",
+    "工作流增强",
+    "零配置",
+    "安全审计"
+  ],
+  "version": "0.4.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.4",
+    "publishedAt": "2026-09-10T11:41:48Z",
+    "url": "https://github.com/iiwish/dsh-testkit/releases/tag/v0.4.4"
+  },
+  "author": "iiwish",
+  "repo": "https://github.com/iiwish/dsh-testkit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-12T05:03:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:iiwish/dsh-testkit",
+    "commands": [
+      "pnpm add -D dsh-testkit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

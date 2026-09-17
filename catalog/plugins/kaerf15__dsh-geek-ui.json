@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "kaerf15/dsh-geek-ui",
+  "slug": "kaerf15__dsh-geek-ui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-geek-ui",
+  "title": "dsh-geek-ui",
+  "summary": "给 dsh web 工作台加装极客增强三件套：重排页头、侧栏导航和归档管理，让界面更顺手、操作更高效。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "插件管理",
+    "可视化",
+    "工作流增强"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "kaerf15",
+  "repo": "https://github.com/kaerf15/dsh-geek-ui",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T16:15:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-geek-sidebar",
+    "commands": [
+      "dsh plugin --profile web add dsh-geek-sidebar",
+      "dsh plugin --profile web add dsh-geek-header",
+      "dsh plugin --profile web add dsh-geek-archive"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

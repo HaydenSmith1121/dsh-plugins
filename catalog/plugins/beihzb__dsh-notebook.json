@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "beihzb/dsh-notebook",
+  "slug": "beihzb__dsh-notebook",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notebook",
+  "title": "dsh-notebook",
+  "summary": "在 DeepSeek Harness 里直接跑 Jupyter 笔记本，支持实时内核、进度条和图表展示，还能让 AI 帮你改代码。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "ipykernel",
+    "ipynb",
+    "jupyter",
+    "notebook",
+    "python",
+    "vscode",
+    "可视化",
+    "工作区管理",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.2.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.4",
+    "publishedAt": "2026-08-26T01:56:44Z",
+    "url": "https://github.com/beihzb/dsh-notebook/releases/tag/v0.2.4"
+  },
+  "author": "beihzb",
+  "repo": "https://github.com/beihzb/dsh-notebook",
+  "homepage": "https://github.com/beihzb/dsh-notebook",
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-26T01:56:40Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@beihaizb/dsh-notebook@0.2.4",
+    "commands": [
+      "dsh plugin --profile web add @beihaizb/dsh-notebook@0.2.4",
+      "dsh plugin --profile web add @beihaizb/dsh-envsel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

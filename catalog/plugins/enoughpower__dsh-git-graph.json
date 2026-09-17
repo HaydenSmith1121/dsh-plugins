@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "enoughpower/dsh-git-graph",
+  "slug": "enoughpower__dsh-git-graph",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-git-graph",
+  "title": "dsh-git-graph",
+  "summary": "把 Git 状态、分支、提交图、差异和推送拉取都集成到会话里，不用切终端就能看仓库全貌。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "状态监控",
+    "可视化",
+    "效率提升",
+    "命令行工具"
+  ],
+  "version": "0.1.4",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "enoughpower",
+  "repo": "https://github.com/enoughpower/dsh-git-graph",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-12T12:59:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-git-graph",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-git-graph",
+      "dsh plugin --profile web add dsh-git-graph"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

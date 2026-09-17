@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "marcemira/dsh-theme-nier-automata",
+  "slug": "marcemira__dsh-theme-nier-automata",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-theme-nier-automata",
+  "title": "dsh-theme-nier-automata",
+  "summary": "给 DeepSeek Harness 网页换上《尼尔：自动人形》YoRHa 风格主题，复古 CRT 视觉，沉浸感拉满。",
+  "tags": [
+    "dsh-plugin",
+    "界面美化",
+    "可视化",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "marcemira",
+  "repo": "https://github.com/marcemira/dsh-theme-nier-automata",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T18:15:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:marcemira/dsh-theme-nier-automata",
+    "commands": [
+      "dsh plugin --profile web add github:marcemira/dsh-theme-nier-automata"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

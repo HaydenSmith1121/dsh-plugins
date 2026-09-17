@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "myk5010/dsh-kimi",
+  "slug": "myk5010__dsh-kimi",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-kimi",
+  "title": "dsh-kimi",
+  "summary": "把 Kimi Code 账号接入 DeepSeek Harness，自动登录刷新令牌，让 Kimi 模型即插即用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "kimi",
+    "kimi-code",
+    "moonshot",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-02T03:29:27Z",
+    "url": "https://github.com/myk5010/dsh-kimi/releases/tag/v1.0.0"
+  },
+  "author": "myk5010",
+  "repo": "https://github.com/myk5010/dsh-kimi",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T03:30:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:myk5010/dsh-kimi",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-kimi-provider-<version>.tgz",
+      "dsh plugin --profile headless add ./dsh-kimi-provider-<version>.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "wallpap/dsh-compact-activity",
+  "slug": "wallpap__dsh-compact-activity",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-compact-activity",
+  "title": "dsh-compact-activity",
+  "summary": "在 DeepSeek Harness Web 中，将推理过程和工具调用折叠为紧凑分组，让对话更清爽。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "主题",
+    "推理折叠",
+    "工具分组",
+    "对话精简"
+  ],
+  "version": "1.2.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.5",
+    "publishedAt": "2026-08-29T09:34:08Z",
+    "url": "https://github.com/wallpap/dsh-compact-activity/releases/tag/v1.2.5"
+  },
+  "author": "wallpap",
+  "repo": "https://github.com/wallpap/dsh-compact-activity",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-09-11T15:08:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wallpap/dsh-compact-activity",
+    "commands": [
+      "dsh plugin --profile web add github:wallpap/dsh-compact-activity"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

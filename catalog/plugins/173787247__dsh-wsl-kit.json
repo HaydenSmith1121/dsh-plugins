@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "173787247/dsh-wsl-kit",
+  "slug": "173787247__dsh-wsl-kit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wsl-kit",
+  "title": "dsh-wsl-kit",
+  "summary": "在 WSL 里跑 DeepSeek Harness 智能体、用 Windows 浏览器聊天，帮你打通跨系统的路径、代理和剪贴板。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "wsl",
+    "桥接插件",
+    "工具集成",
+    "命令行工具",
+    "零配置",
+    "跨设备"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "173787247",
+  "repo": "https://github.com/173787247/dsh-wsl-kit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:47:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:173787247/dsh-wsl-kit",
+    "commands": [
+      "dsh plugin --profile web add github:173787247/dsh-wsl-kit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

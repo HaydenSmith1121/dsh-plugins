@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "HuanLinOTO/dsh-plugin-better-locale",
+  "slug": "huanlinoto__dsh-plugin-better-locale",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-better-locale",
+  "title": "dsh-plugin-better-locale",
+  "summary": "给 DSH 界面注入日韩等第三语言覆盖，切换语言不用改系统设置，即装即用。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "模型配置",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.4.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "HuanLinOTO",
+  "repo": "https://github.com/HuanLinOTO/dsh-plugin-better-locale",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T10:26:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@huanlin/dsh-plugin-better-locale",
+    "commands": [
+      "dsh plugin --profile web add \"@huanlin/dsh-plugin-better-locale\"",
+      "dsh plugin --profile web add \"github:huanlinoto/dsh-plugin-better-locale\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

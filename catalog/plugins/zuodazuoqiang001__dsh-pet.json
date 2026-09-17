@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zuodazuoqiang001/dsh-pet",
+  "slug": "zuodazuoqiang001__dsh-pet",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pet",
+  "title": "dsh-pet",
+  "summary": "在 Windows 桌面上养一只透明置顶的 Codex 小宠物，会话运行、等待或完成时它会冒泡提醒你，不打扰网页操作。",
+  "tags": [
+    "deepseek-harness",
+    "desktop-pet",
+    "dsh",
+    "dsh-plugin",
+    "windows",
+    "娱乐互动",
+    "会话管理",
+    "状态监控",
+    "零配置"
+  ],
+  "version": "0.2.6",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zuodazuoqiang001",
+  "repo": "https://github.com/zuodazuoqiang001/dsh-pet",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-31T08:29:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zuodazuoqiang001/dsh-pet",
+    "commands": [
+      "dsh plugin --profile web add github:zuodazuoqiang001/dsh-pet"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "a903067276-rgb/dsh-hud",
+  "slug": "a903067276-rgb__dsh-hud",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hud",
+  "title": "dsh-hud",
+  "summary": "在侧边栏实时显示 Git 状态、MCP 服务器、技能、模型和 Token 用量，让你随时掌握开发环境全貌。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "资源统计",
+    "Git集成"
+  ],
+  "version": "1.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.4.0",
+    "publishedAt": "2026-09-10T05:13:41Z",
+    "url": "https://github.com/a903067276-rgb/dsh-hud/releases/tag/v1.4.0"
+  },
+  "author": "a903067276-rgb",
+  "repo": "https://github.com/a903067276-rgb/dsh-hud",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 1,
+  "pushedAt": "2026-09-10T05:17:56Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:a903067276-rgb/dsh-hud",
+    "commands": [
+      "dsh plugin --profile web add \"github:a903067276-rgb/dsh-hud"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

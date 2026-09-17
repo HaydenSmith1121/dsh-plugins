@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "yangbobo2021/relay-dsh-plugin-workbench",
+  "slug": "yangbobo2021__relay-dsh-plugin-workbench",
+  "tier": "community",
+  "package": null,
+  "name": "relay-dsh-plugin-workbench",
+  "title": "relay-dsh-plugin-workbench",
+  "summary": "为 DeepSeek Harness 提供可扩展的工作台外壳，支持自定义侧边栏和底部视图，即插即用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "react",
+    "typescript",
+    "workbench",
+    "可视化",
+    "零配置",
+    "文件管理",
+    "界面美化",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-24T05:05:54Z",
+    "url": "https://github.com/yangbobo2021/relay-dsh-plugin-workbench/releases/tag/v0.1.0"
+  },
+  "author": "yangbobo2021",
+  "repo": "https://github.com/yangbobo2021/relay-dsh-plugin-workbench",
+  "homepage": "https://www.npmjs.com/package/relay-dsh-plugin-workbench",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T11:43:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yangbobo2021/relay-dsh-plugin-workbench",
+    "commands": [
+      "dsh plugin --profile web why relay-dsh-plugin-workbench",
+      "dsh plugin --profile web update relay-dsh-plugin-workbench",
+      "dsh plugin --profile web remove relay-dsh-plugin-workbench"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

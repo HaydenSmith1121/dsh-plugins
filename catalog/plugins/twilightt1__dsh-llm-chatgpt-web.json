@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "twilightt1/dsh-llm-chatgpt-web",
+  "slug": "twilightt1__dsh-llm-chatgpt-web",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-chatgpt-web",
+  "title": "dsh-llm-chatgpt-web",
+  "summary": "把 ChatGPT 网页版变成 DeepSeek Harness 的模型提供方，免 API 密钥，自动驱动临时对话。",
+  "tags": [
+    "chatgpt-web",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm-adapter",
+    "provider-plugin",
+    "AI 助手",
+    "模型适配",
+    "自动化",
+    "零配置",
+    "会话管理"
+  ],
+  "version": "0.6.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.0",
+    "publishedAt": "2026-09-10T06:30:58Z",
+    "url": "https://github.com/twilightt1/dsh-llm-chatgpt-web/releases/tag/v0.6.0"
+  },
+  "author": "twilightt1",
+  "repo": "https://github.com/twilightt1/dsh-llm-chatgpt-web",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T06:47:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:twilightt1/dsh-llm-chatgpt-web",
+    "commands": [
+      "dsh plugin --profile web add /absolute/path/to/dsh-llm-chatgpt-web",
+      "dsh plugin --profile web add ./dsh-llm-chatgpt-web-0.7.0.tgz",
+      "dsh plugin --profile web add github:twilightt1/dsh-llm-chatgpt-web"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

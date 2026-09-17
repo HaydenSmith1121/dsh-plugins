@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "Ychris12138/dsh-usage-stats",
+  "slug": "ychris12138__dsh-usage-stats",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage-stats",
+  "title": "dsh-usage-stats",
+  "summary": "在 dsh web 里一眼看清各家模型余额、订阅额度和 token 用量，花钱心里有数。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugin-dev",
+    "deepseek-harness-plugins",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "状态监控",
+    "数据分析",
+    "可视化",
+    "模型适配",
+    "资源优化"
+  ],
+  "version": "0.3.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.3",
+    "publishedAt": "2026-09-12T08:28:04Z",
+    "url": "https://github.com/Ychris12138/dsh-usage-stats/releases/tag/v0.3.3"
+  },
+  "author": "Ychris12138",
+  "repo": "https://github.com/Ychris12138/dsh-usage-stats",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 159,
+  "forks": 19,
+  "pushedAt": "2026-09-12T08:27:56Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@ychris12138/dsh-usage-stats@0.3.2",
+    "commands": [
+      "dsh plugin --profile web add \"@ychris12138/dsh-usage-stats@0.3.2\"",
+      "dsh plugin --profile web update \"@ychris12138/dsh-usage-stats\"",
+      "dsh plugin --profile web remove \"@ychris12138/dsh-usage-stats\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

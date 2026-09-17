@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "tuanmaoOVO/dsh-memory-manager",
+  "slug": "tuanmaoovo__dsh-memory-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memory-manager",
+  "title": "dsh-memory-manager",
+  "summary": "跨会话记忆库，自动注入规约和上下文，让DSH对话更连贯、更懂你。",
+  "tags": [
+    "dsh-plugin",
+    "memory-management",
+    "会话管理",
+    "可视化",
+    "多Agent协作",
+    "效率提升"
+  ],
+  "version": "0.4.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "tuanmaoOVO",
+  "repo": "https://github.com/tuanmaoOVO/dsh-memory-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-04T15:24:51Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tuanmaoOVO/dsh-memory-manager",
+    "commands": [
+      "dsh plugin --profile web add github:tuanmaoOVO/dsh-memory-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

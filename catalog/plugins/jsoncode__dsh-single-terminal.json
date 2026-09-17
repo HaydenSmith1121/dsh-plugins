@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "jsoncode/dsh-single-terminal",
+  "slug": "jsoncode__dsh-single-terminal",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-single-terminal",
+  "title": "dsh-single-terminal",
+  "summary": "在 DSH 里直接呼出一个真实终端，方便你随时敲命令、跑脚本，不用切窗口。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-single-terminal",
+    "命令行工具",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.4",
+    "publishedAt": "2026-09-03T13:54:30Z",
+    "url": "https://github.com/jsoncode/dsh-single-terminal/releases/tag/v0.1.4"
+  },
+  "author": "jsoncode",
+  "repo": "https://github.com/jsoncode/dsh-single-terminal",
+  "homepage": "https://github.com/jsoncode/dsh-single-terminal",
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T13:53:59Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jsoncode/dsh-single-terminal",
+    "commands": [
+      "dsh plugin --profile web add github:jsoncode/dsh-single-terminal"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

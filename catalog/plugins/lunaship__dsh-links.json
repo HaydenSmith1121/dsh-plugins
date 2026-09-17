@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "lunaship/dsh-links",
+  "slug": "lunaship__dsh-links",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-links",
+  "title": "dsh-links",
+  "summary": "把 DeepSeek Harness 装进口袋，通过可信局域网配对，在手机上安全地管理远程会话、审批请求，还能体验实验性隧道功能。",
+  "tags": [
+    "android",
+    "beta",
+    "deepseek",
+    "dsh-plugin",
+    "jetpack-compose",
+    "kotlin",
+    "安全审计",
+    "会话管理",
+    "移动端"
+  ],
+  "version": "0.1.0-beta.15",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0-beta.15",
+    "publishedAt": "2026-09-12T15:29:36Z",
+    "url": "https://github.com/lunaship/dsh-links/releases/tag/v0.1.0-beta.15"
+  },
+  "author": "lunaship",
+  "repo": "https://github.com/lunaship/dsh-links",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-14T14:43:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lunaship/dsh-links",
+    "commands": [
+      "dsh plugin --profile web add dsh-links@<published-version>",
+      "dsh plugin --profile web add /path/to/dsh-links"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

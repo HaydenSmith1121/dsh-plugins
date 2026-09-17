@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "socai-io/dsh-socai",
+  "slug": "socai-io__dsh-socai",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-socai",
+  "title": "dsh-socai",
+  "summary": "让智能体直接调用小红书研究工具，自动抓取和分析内容，提升调研效率。",
+  "tags": [
+    "browser-automation",
+    "deepseek-harness",
+    "dsh-plugin",
+    "socai",
+    "xiaohongshu",
+    "自动化",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-02T07:23:52Z",
+    "url": "https://github.com/socai-io/dsh-socai/releases/tag/v0.1.1"
+  },
+  "author": "socai-io",
+  "repo": "https://github.com/socai-io/dsh-socai",
+  "homepage": "https://socai.io",
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:23:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:socai-io/dsh-socai",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/socai-io/dsh-socai.git",
+      "dsh plugin --profile web add https://github.com/socai-io/dsh-socai/releases/download/v0.1.1/dsh-socai.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

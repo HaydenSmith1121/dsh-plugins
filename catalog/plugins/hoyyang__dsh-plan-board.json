@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "hoyyang/dsh-plan-board",
+  "slug": "hoyyang__dsh-plan-board",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plan-board",
+  "title": "dsh-plan-board",
+  "summary": "把项目画成会动的任务思维导图，让 Agent 照着走，跑偏当场拦下。",
+  "tags": [
+    "agent",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mindmap",
+    "plan-board",
+    "可视化",
+    "工作流增强",
+    "多智能体协作",
+    "状态监控"
+  ],
+  "version": "0.2.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.2",
+    "publishedAt": "2026-09-16T11:04:25Z",
+    "url": "https://github.com/hoyyang/dsh-plan-board/releases/tag/v0.2.2"
+  },
+  "author": "hoyyang",
+  "repo": "https://github.com/hoyyang/dsh-plan-board",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T11:33:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hoyyang/dsh-plan-board",
+    "commands": [
+      "dsh plugin --profile web add github:hoyyang/dsh-plan-board",
+      "dsh plugin --profile web remove @dsh-external/dsh-plan-board",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

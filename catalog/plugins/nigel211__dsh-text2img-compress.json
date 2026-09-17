@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "Nigel211/dsh-text2img-compress",
+  "slug": "nigel211__dsh-text2img-compress",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-text2img-compress",
+  "title": "dsh-text2img-compress",
+  "summary": "把长文本渲染成图片发送，利用每图384 token上限压缩输入，大幅降低LLM调用成本，内容一字不差。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "token-compression",
+    "token-optimization",
+    "资源优化",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "0.1.3",
+    "publishedAt": "2026-08-22T08:24:46Z",
+    "url": "https://github.com/Nigel211/dsh-text2img-compress/releases/tag/0.1.3"
+  },
+  "author": "Nigel211",
+  "repo": "https://github.com/Nigel211/dsh-text2img-compress",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-22T08:24:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Nigel211/dsh-text2img-compress",
+    "commands": [
+      "dsh plugin --profile web add github:Nigel211/dsh-text2img-compress"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

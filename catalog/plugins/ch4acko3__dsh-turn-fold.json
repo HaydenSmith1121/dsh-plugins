@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "CH4ACKO3/dsh-turn-fold",
+  "slug": "ch4acko3__dsh-turn-fold",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-turn-fold",
+  "title": "dsh-turn-fold",
+  "summary": "给 DeepSeek Harness 的对话界面加上 Codex 风格的自动折叠，让长对话更清爽好读。",
+  "tags": [
+    "chat-ui",
+    "conversation",
+    "deepseek-harness",
+    "dsh",
+    "dsh-harmony",
+    "dsh-plugin",
+    "folding",
+    "会话管理",
+    "主题",
+    "零配置",
+    "Web界面"
+  ],
+  "version": "0.6.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.0",
+    "publishedAt": "2026-09-02T17:12:26Z",
+    "url": "https://github.com/CH4ACKO3/dsh-turn-fold/releases/tag/v0.6.0"
+  },
+  "author": "CH4ACKO3",
+  "repo": "https://github.com/CH4ACKO3/dsh-turn-fold",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 13,
+  "forks": 2,
+  "pushedAt": "2026-09-02T17:12:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CH4ACKO3/dsh-turn-fold",
+    "commands": [
+      "dsh plugin --profile web add github:CH4ACKO3/dsh-turn-fold"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "chiro2001/dsh-oc",
+  "slug": "chiro2001__dsh-oc",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-oc",
+  "title": "dsh-oc",
+  "summary": "把 dsh 的智能体、会话和工具接进官方 OpenCode 终端，让你在熟悉的 TUI 里直接用上 DeepSeek Harness。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "opencode",
+    "工具集成",
+    "命令行工具",
+    "会话管理",
+    "多Agent协作",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-17T18:42:12Z",
+    "url": "https://github.com/chiro2001/dsh-oc/releases/tag/v0.1.0"
+  },
+  "author": "chiro2001",
+  "repo": "https://github.com/chiro2001/dsh-oc",
+  "homepage": null,
+  "license": null,
+  "stars": 7,
+  "forks": 1,
+  "pushedAt": "2026-09-11T10:25:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chiro2001/dsh-oc",
+    "commands": [
+      "dsh plugin --profile oc add chiro2001/dsh-oc",
+      "dsh plugin --profile oc add 'github:chiro2001/dsh-oc"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-iconify-icon",
+  "slug": "xby-skill__xby-iconify-icon",
+  "tier": "community",
+  "package": null,
+  "name": "xby-iconify-icon",
+  "title": "xby-iconify-icon",
+  "summary": "在聊天中直接浏览、搜索Iconify超20万开源矢量图标，并获取多框架使用示例，方便开发选图。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "模型配置",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-iconify-icon",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:13:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-iconify-icon",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-iconify-icon",
+      "dsh plugin --profile web add /absolute/path/to/xby-iconify-icon"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

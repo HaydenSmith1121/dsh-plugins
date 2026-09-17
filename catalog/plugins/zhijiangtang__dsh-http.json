@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "ZhijiangTang/dsh-http",
+  "slug": "zhijiangtang__dsh-http",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-http",
+  "title": "dsh-http",
+  "summary": "结构化 HTTP 请求工具，自动整理状态码、耗时和响应数据，支持鉴权和 JSON 解析，方便模型直接调用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "HTTP请求",
+    "接口调试",
+    "数据解析",
+    "鉴权辅助"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ZhijiangTang",
+  "repo": "https://github.com/ZhijiangTang/dsh-http",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-16T13:08:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ZhijiangTang/dsh-http",
+    "commands": [
+      "dsh plugin --profile <name> add file:./plugins/dsh-http",
+      "dsh plugin --profile <name> add dsh-http"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

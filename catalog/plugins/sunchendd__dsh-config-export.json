@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "sunchendd/dsh-config-export",
+  "slug": "sunchendd__dsh-config-export",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-config-export",
+  "title": "dsh-config-export",
+  "summary": "侧边栏一键备份/恢复DSH配置，支持敏感字段脱敏，恢复前自动快照，安全省心。",
+  "tags": [
+    "backup",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "安全审计",
+    "前端增强",
+    "效率提升",
+    "备份"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sunchendd",
+  "repo": "https://github.com/sunchendd/dsh-config-export",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-21T04:53:18Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sunchendd/dsh-config-export",
+    "commands": [
+      "dsh plugin --profile web add github:sunchendd/dsh-config-export"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

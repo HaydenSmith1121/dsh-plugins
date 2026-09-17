@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "lzxcs/file-diff-pro",
+  "slug": "lzxcs__file-diff-pro",
+  "tier": "community",
+  "package": null,
+  "name": "file-diff-pro",
+  "title": "file-diff-pro",
+  "summary": "点击产物文件弹窗查看本轮代码 diff，非代码文件照常桌面打开，提升审查效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "前端增强",
+    "可视化",
+    "工作区管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lzxcs",
+  "repo": "https://github.com/lzxcs/file-diff-pro",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-26T08:34:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lzxcs/file-diff-pro",
+    "commands": [
+      "dsh plugin --profile web add github:lzxcs/file-diff-pro"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

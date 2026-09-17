@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "ZIye1208/dsh-github-mcp",
+  "slug": "ziye1208__dsh-github-mcp",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-github-mcp",
+  "title": "dsh-github-mcp",
+  "summary": "把 GitHub 官方 MCP 服务封装成 DSH 插件，令牌存凭据中心，让模型直接调用 GitHub 工具。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-ui",
+    "模型配置",
+    "安全审计",
+    "设置面板",
+    "插件管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-04T15:05:19Z",
+    "url": "https://github.com/ZIye1208/dsh-github-mcp/releases/tag/v0.2.0"
+  },
+  "author": "ZIye1208",
+  "repo": "https://github.com/ZIye1208/dsh-github-mcp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T18:35:28Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ZIye1208/dsh-github-mcp",
+    "commands": [
+      "dsh plugin --profile <profile> add dsh-github-mcp",
+      "dsh plugin --profile <profile> add github:ZIye1208/dsh-github-mcp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

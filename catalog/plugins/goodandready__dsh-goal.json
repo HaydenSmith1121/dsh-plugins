@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-goal",
+  "slug": "goodandready__dsh-goal",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-goal",
+  "title": "dsh-goal",
+  "summary": "让 DeepSeek Harness 进入目标模式，自动拆解并执行多轮任务，顶部横幅实时显示进度，省心省力。",
+  "tags": [
+    "autonomous-agent",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "goal-mode",
+    "i18n",
+    "效率提升",
+    "自动化",
+    "会话管理",
+    "状态监控",
+    "工作流增强"
+  ],
+  "version": "0.2.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.3",
+    "publishedAt": "2026-09-17T16:07:10Z",
+    "url": "https://github.com/GooDAnDReaDY/dsh-goal/releases/tag/v0.2.3"
+  },
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-goal",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T11:01:54Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooDAnDReaDY/dsh-goal",
+    "commands": [
+      "dsh plugin --profile web add github:GooDAnDReaDY/dsh-goal"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

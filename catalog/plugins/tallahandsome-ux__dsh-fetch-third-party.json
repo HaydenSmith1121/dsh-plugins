@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "tallahandsome-ux/dsh-fetch-third-party",
+  "slug": "tallahandsome-ux__dsh-fetch-third-party",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-fetch-third-party",
+  "title": "dsh-fetch-third-party",
+  "summary": "搜索摘要不够时，让AI通过第三方服务安全抓取网页全文来回答问题，无需直连URL，防SSRF还带预算控制。",
+  "tags": [
+    "crawl4ai",
+    "deepseek-harness",
+    "dsh-plugin",
+    "web-scraping",
+    "安全审计",
+    "AI 助手",
+    "资源优化",
+    "插件管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "tallahandsome-ux",
+  "repo": "https://github.com/tallahandsome-ux/dsh-fetch-third-party",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-22T09:27:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tallahandsome-ux/dsh-fetch-third-party",
+    "commands": [
+      "dsh plugin --profile web add github:tallahandsome-ux/dsh-fetch-third-party"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

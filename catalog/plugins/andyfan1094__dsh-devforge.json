@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "andyfan1094/dsh-devforge",
+  "slug": "andyfan1094__dsh-devforge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-devforge",
+  "title": "dsh-devforge",
+  "summary": "把服务开发、运维和智能体工作台整合在一起，帮你从规范到上线一条龙搞定。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "自动化",
+    "状态监控",
+    "多Agent协作",
+    "插件管理"
+  ],
+  "version": "0.13.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.13.3",
+    "publishedAt": "2026-09-02T03:41:58Z",
+    "url": "https://github.com/andyfan1094/dsh-devforge/releases/tag/v0.13.3"
+  },
+  "author": "andyfan1094",
+  "repo": "https://github.com/andyfan1094/dsh-devforge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T06:53:36Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:andyfan1094/dsh-devforge",
+    "commands": [
+      "dsh plugin --profile web add https://modagentai.com/downloads/dsh-devforge-latest.tgz",
+      "dsh plugin --profile web add github:andyfan1094/dsh-devforge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

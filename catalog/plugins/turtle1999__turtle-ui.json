@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "turtle1999/turtle-ui",
+  "slug": "turtle1999__turtle-ui",
+  "tier": "community",
+  "package": null,
+  "name": "turtle-ui",
+  "title": "turtle-ui",
+  "summary": "Turtle UI 是 DSH 官方的终端界面插件，提供简洁美观的交互界面，方便你更直观地操作和管理插件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "主题",
+    "命令行工具"
+  ],
+  "version": "0.0.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "turtle1999",
+  "repo": "https://github.com/turtle1999/turtle-ui",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 9,
+  "forks": 3,
+  "pushedAt": "2026-08-13T09:37:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:turtle1999/turtle-ui",
+    "commands": [
+      "dsh plugin --profile web add github:turtle1999/turtle-ui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

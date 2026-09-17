@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "oil-oil/dsh-oil-sticky-prompt",
+  "slug": "oil-oil__dsh-oil-sticky-prompt",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-oil-sticky-prompt",
+  "title": "dsh-oil-sticky-prompt",
+  "summary": "把最近的用户提问固定到对话顶部，方便随时回看，不用再往上翻聊天记录了。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "对话置顶",
+    "快捷定位",
+    "聊天记录"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "oil-oil",
+  "repo": "https://github.com/oil-oil/dsh-oil-sticky-prompt",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 52,
+  "forks": 1,
+  "pushedAt": "2026-08-16T11:53:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:oil-oil/dsh-oil-sticky-prompt",
+    "commands": [
+      "dsh plugin --profile web add github:oil-oil/dsh-oil-sticky-prompt"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

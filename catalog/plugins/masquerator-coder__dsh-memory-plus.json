@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "masquerator-coder/dsh-memory-plus",
+  "slug": "masquerator-coder__dsh-memory-plus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memory-plus",
+  "title": "dsh-memory-plus",
+  "summary": "给 DSH 加上跨会话的长期记忆，能记住、召回和整理对话中的关键事实，越用越懂你。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "语义检索",
+    "设置面板",
+    "AI 助手"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "masquerator-coder",
+  "repo": "https://github.com/masquerator-coder/dsh-memory-plus",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T16:16:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:masquerator-coder/dsh-memory-plus",
+    "commands": [
+      "dsh plugin --profile web add github:masquerator-coder/dsh-memory-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

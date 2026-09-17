@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "advance-lion/dsh-lan-link",
+  "slug": "advance-lion__dsh-lan-link",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-lan-link",
+  "title": "dsh-lan-link",
+  "summary": "让 DeepSeek Harness Web 一键开放局域网访问，手机平板也能连，带令牌保护更安全。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "跨设备",
+    "安全审计",
+    "快捷操作",
+    "工具集成"
+  ],
+  "version": "0.2.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.5",
+    "publishedAt": "2026-09-17T04:05:52Z",
+    "url": "https://github.com/advance-lion/dsh-lan-link/releases/tag/v0.2.5"
+  },
+  "author": "advance-lion",
+  "repo": "https://github.com/advance-lion/dsh-lan-link",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T09:08:10Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:advance-lion/dsh-lan-link",
+    "commands": [
+      "dsh plugin --profile web add github:advance-lion/dsh-lan-link"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

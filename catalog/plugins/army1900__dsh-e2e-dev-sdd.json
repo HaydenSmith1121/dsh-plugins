@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Army1900/dsh-e2e-dev-sdd",
+  "slug": "army1900__dsh-e2e-dev-sdd",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-e2e-dev-sdd",
+  "title": "dsh-e2e-dev-sdd",
+  "summary": "把需求、原型、设计、开发测试串成五个独立入口，按需驱动定制化端到端开发，边聊边迭代交付。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "sdd",
+    "工作流增强",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Army1900",
+  "repo": "https://github.com/Army1900/dsh-e2e-dev-sdd",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T01:24:42Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-e2e-dev-sdd@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-e2e-dev-sdd@latest",
+      "dsh plugin --profile web add link:$(pwd)"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

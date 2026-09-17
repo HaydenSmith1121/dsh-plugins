@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "leamonac0823/dsh-cornell-classic-theme",
+  "slug": "leamonac0823__dsh-cornell-classic-theme",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cornell-classic-theme",
+  "title": "dsh-cornell-classic-theme",
+  "summary": "给 DSH 套上康奈尔笔记皮肤，复刻纸质书写质感，侧边还能记笔记、做简报，让对话变成你的赛博手账。",
+  "tags": [
+    "cornell-notes",
+    "deepseek-harness",
+    "deepseek-harness-plugins",
+    "dsh",
+    "dsh-plugin",
+    "productivity",
+    "界面美化",
+    "效率提升",
+    "备注编辑",
+    "复习备考"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-21T08:28:53Z",
+    "url": "https://github.com/leamonac0823/dsh-cornell-classic-theme/releases/tag/v0.2.0"
+  },
+  "author": "leamonac0823",
+  "repo": "https://github.com/leamonac0823/dsh-cornell-classic-theme",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-21T09:57:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-cornell-classic-theme",
+    "commands": [
+      "dsh plugin --profile web add dsh-cornell-classic-theme",
+      "dsh plugin --profile web add github:OWNER/dsh-cornell-classic-theme",
+      "dsh plugin --profile web add \"C:\\path\\to\\dsh-cornell-classic-theme\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

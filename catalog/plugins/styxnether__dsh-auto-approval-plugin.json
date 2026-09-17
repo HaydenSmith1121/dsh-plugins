@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "StyxNether/dsh-auto-approval-plugin",
+  "slug": "styxnether__dsh-auto-approval-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auto-approval-plugin",
+  "title": "dsh-auto-approval-plugin",
+  "summary": "为DeepSeek Harness提供介于工作区写入和完全访问之间的中间权限层，自动放行无害命令和可信区域操作，兼顾安全与效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "安全审计",
+    "插件管理",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "2.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "StyxNether",
+  "repo": "https://github.com/StyxNether/dsh-auto-approval-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-09-06T12:32:08Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:StyxNether/dsh-auto-approval-plugin",
+    "commands": [
+      "dsh plugin --profile <profile> add dsh-auto-approval-plugin",
+      "dsh plugin --profile <profile> add github:StyxNether/dsh-auto-approval-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

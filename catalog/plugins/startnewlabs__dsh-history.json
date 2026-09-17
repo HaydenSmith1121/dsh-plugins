@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "startnewlabs/dsh-history",
+  "slug": "startnewlabs__dsh-history",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-history",
+  "title": "dsh-history",
+  "summary": "在超长会话里快速查看、搜索并跳转到你发过的每条消息，点一下就能自动加载并定位。",
+  "tags": [
+    "ai-agents",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-marketplace",
+    "会话管理",
+    "快捷操作",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.1.25",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.25",
+    "publishedAt": "2026-09-11T07:43:42Z",
+    "url": "https://github.com/startnewlabs/dsh-history/releases/tag/v0.1.25"
+  },
+  "author": "startnewlabs",
+  "repo": "https://github.com/startnewlabs/dsh-history",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 15,
+  "forks": 2,
+  "pushedAt": "2026-09-11T07:52:04Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-history@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-history@latest",
+      "dsh plugin --profile web update dsh-history",
+      "dsh plugin --profile web add github:chenproton/dsh-history"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

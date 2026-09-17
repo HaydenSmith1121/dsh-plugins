@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "13071301808/dsh-composer-expand",
+  "slug": "13071301808__dsh-composer-expand",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-composer-expand",
+  "title": "dsh-composer-expand",
+  "summary": "给 DeepSeek Harness 的输入框加个展开/收起按钮，一键切换高视图，长草稿写起来更舒服。",
+  "tags": [
+    "composer",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "输入框增强",
+    "编辑体验",
+    "界面美化",
+    "写作辅助"
+  ],
+  "version": "0.1.4",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "13071301808",
+  "repo": "https://github.com/13071301808/dsh-composer-expand",
+  "homepage": "https://github.com/13071301808/dsh-composer-expand",
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-05T07:29:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-composer-expand",
+    "commands": [
+      "dsh plugin --profile web add dsh-composer-expand",
+      "npm install -g @deepseek-ai/dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "penguin-oo/dsh-quota-hub",
+  "slug": "penguin-oo__dsh-quota-hub",
+  "tier": "community",
+  "package": null,
+  "name": "penguin-oo/dsh-quota-hub",
+  "title": "penguin-oo/dsh-quota-hub",
+  "summary": "一个可折叠的玻璃面板，实时汇总显示所有主流模型服务的余额和配额，让你一眼看清所有账户状态。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "Token监控",
+    "状态监控",
+    "可视化",
+    "资源优化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "penguin-oo",
+  "repo": "https://github.com/penguin-oo/dsh-quota-hub",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T09:46:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-quota-hub",
+    "commands": [
+      "dsh plugin --profile web add dsh-quota-hub"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

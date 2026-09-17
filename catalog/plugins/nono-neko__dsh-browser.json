@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "Nono-neko/dsh-browser",
+  "slug": "nono-neko__dsh-browser",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-browser",
+  "title": "dsh-browser",
+  "summary": "为 DSH 网页界面内置多标签浏览器，支持网页浏览、工作区文件预览，并提供智能体浏览器操作工具。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "自动化",
+    "AI 助手",
+    "工作区管理",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-10T11:10:14Z",
+    "url": "https://github.com/Nono-neko/dsh-browser/releases/tag/v0.3.0"
+  },
+  "author": "Nono-neko",
+  "repo": "https://github.com/Nono-neko/dsh-browser",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 11,
+  "forks": 0,
+  "pushedAt": "2026-09-10T11:02:56Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Nono-neko/dsh-browser",
+    "commands": [
+      "dsh plugin --profile <name> add link:<repo>",
+      "dsh plugin --profile <name> add @nono-neko/dsh-browser",
+      "dsh plugin --profile <name> remove @nono-neko/dsh-browser"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "shimingming520/dsh-conversation-process-collapse",
+  "slug": "shimingming520__dsh-conversation-process-collapse",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-conversation-process-collapse",
+  "title": "dsh-conversation-process-collapse",
+  "summary": "对话回合结束后自动折叠中间过程，让聊天界面更清爽，专注最终结果。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "会话管理",
+    "前端增强",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.3.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "shimingming520",
+  "repo": "https://github.com/shimingming520/dsh-conversation-process-collapse",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T12:17:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-conversation-process-collapse",
+    "commands": [
+      "dsh plugin --profile web add dsh-conversation-process-collapse",
+      "dsh plugin --profile web update 'dsh-conversation-process-collapse@latest'"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

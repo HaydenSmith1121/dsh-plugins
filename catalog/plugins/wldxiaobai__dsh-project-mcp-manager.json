@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "wldxiaobai/dsh-project-mcp-manager",
+  "slug": "wldxiaobai__dsh-project-mcp-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-project-mcp-manager",
+  "title": "dsh-project-mcp-manager",
+  "summary": "在项目里写个 mcp.yml 或 mcp.json，MCP 服务就自动挂载，项目和用户层都能统一管理。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "mcp-manager",
+    "工具集成",
+    "零配置",
+    "插件管理",
+    "工作区管理"
+  ],
+  "version": "0.6.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.0",
+    "publishedAt": "2026-09-12T18:20:41Z",
+    "url": "https://github.com/wldxiaobai/dsh-project-mcp-manager/releases/tag/v0.6.0"
+  },
+  "author": "wldxiaobai",
+  "repo": "https://github.com/wldxiaobai/dsh-project-mcp-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-12T18:25:22Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wldxiaobai/dsh-project-mcp-manager",
+    "commands": [
+      "dsh plugin --profile web add github:wldxiaobai/dsh-project-mcp-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

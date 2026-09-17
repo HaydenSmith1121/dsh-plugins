@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "enchangcui340-cloud/dsh-whale-balance",
+  "slug": "enchangcui340-cloud__dsh-whale-balance",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-whale-balance",
+  "title": "dsh-whale-balance",
+  "summary": "在 DSH 页面右下角养一只小鲸鱼，实时显示 DeepSeek 账户余额，重启后自动加载，不用手动操作。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "Token监控",
+    "主题",
+    "自动加载",
+    "原生插件"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-08-17T04:32:12Z",
+    "url": "https://github.com/enchangcui340-cloud/dsh-whale-balance/releases/tag/v0.2.1"
+  },
+  "author": "enchangcui340-cloud",
+  "repo": "https://github.com/enchangcui340-cloud/dsh-whale-balance",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 25,
+  "forks": 0,
+  "pushedAt": "2026-08-17T14:26:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:enchangcui340-cloud/dsh-whale-balance",
+    "commands": [
+      "dsh plugin --profile web add github:enchangcui340-cloud/dsh-whale-balance"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

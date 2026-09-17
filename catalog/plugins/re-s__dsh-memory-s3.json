@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "Re-s/dsh-memory-s3",
+  "slug": "re-s__dsh-memory-s3",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memory-s3",
+  "title": "dsh-memory-s3",
+  "summary": "把 DeepSeek Harness 的记忆存到 S3 云端，跨设备跨会话共享，支持语义搜索和附件，随时续写不丢档。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "文件管理",
+    "模型配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Re-s",
+  "repo": "https://github.com/Re-s/dsh-memory-s3",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-05T03:19:26Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Re-s/dsh-memory-s3",
+    "commands": [
+      "git clone https://github.com/Re-s/dsh-memory-s3.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

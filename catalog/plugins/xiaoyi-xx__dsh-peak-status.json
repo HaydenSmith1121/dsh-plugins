@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaoyi-xx/dsh-peak-status",
+  "slug": "xiaoyi-xx__dsh-peak-status",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-peak-status",
+  "title": "dsh-peak-status",
+  "summary": "在 DeepSeek Harness 网页界面显示高峰时段小胶囊，实时提醒当前是否拥堵，附秒级时钟和倒计时。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "1.0.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xiaoyi-xx",
+  "repo": "https://github.com/xiaoyi-xx/dsh-peak-status",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-01T08:20:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-peak-status",
+    "commands": [
+      "dsh plugin --profile web add dsh-peak-status",
+      "dsh plugin --profile web add github:xiaoyi-xx/dsh-peak-status"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

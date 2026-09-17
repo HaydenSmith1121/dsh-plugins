@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "supanexus/dsh-plugin-file-explorer",
+  "slug": "supanexus__dsh-plugin-file-explorer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-file-explorer",
+  "title": "dsh-plugin-file-explorer",
+  "summary": "在 DeepSeek Harness 聊天界面里直接浏览、编辑和预览工作区文件，支持多标签页操作，不用切换窗口。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "file-explorer",
+    "monaco",
+    "supanexus",
+    "文件管理",
+    "工作区管理",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "supanexus",
+  "repo": "https://github.com/supanexus/dsh-plugin-file-explorer",
+  "homepage": "https://github.com/supanexus/dsh-plugin-file-explorer",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T09:09:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:supanexus/dsh-plugin-file-explorer",
+    "commands": [
+      "dsh plugin --profile web add github:supanexus/dsh-plugin-file-explorer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

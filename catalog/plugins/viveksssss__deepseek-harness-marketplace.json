@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Viveksssss/DeepSeek-harness-marketplace",
+  "slug": "viveksssss__deepseek-harness-marketplace",
+  "tier": "community",
+  "package": null,
+  "name": "DeepSeek-harness-marketplace",
+  "title": "DeepSeek-harness-marketplace",
+  "summary": "在 DeepSeek Harness 里直接浏览、预览并一键安装 GitHub 上的插件，启用状态自动保存，重启不丢失。",
+  "tags": [
+    "dsh-bundle",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "dsh-skill",
+    "插件管理",
+    "零配置",
+    "开发流程"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Viveksssss",
+  "repo": "https://github.com/Viveksssss/DeepSeek-harness-marketplace",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-16T02:04:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Viveksssss/DeepSeek-harness-marketplace",
+    "commands": [
+      "dsh plugin（官方 CLI）→ 转发给 pnpm → reconcilePlugins → 写入 profile 的 bundles 层栈",
+      "dsh plugin --profile web add github:Viveksssss/DeepSeek-harness-marketplace"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

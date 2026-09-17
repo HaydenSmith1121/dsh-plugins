@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "zhuyan1085/mcp-deliverable",
+  "slug": "zhuyan1085__mcp-deliverable",
+  "tier": "community",
+  "package": null,
+  "name": "mcp-deliverable",
+  "title": "mcp-deliverable",
+  "summary": "为 DeepSeek Harness 增加 MCP 服务器管理页面，方便你直接配置和连接外部工具。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "模型配置",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "0.1.0-rc0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhuyan1085",
+  "repo": "https://github.com/zhuyan1085/mcp-deliverable",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-23T14:04:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhuyan1085/mcp-deliverable",
+    "commands": [
+      "dsh plugin --profile web add github:zhuyan1085/mcp-deliverable"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "bingaha/dsh-live-mcp",
+  "slug": "bingaha__dsh-live-mcp",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-live-mcp",
+  "title": "dsh-live-mcp",
+  "summary": "在DSH对话中按会话灵活启停MCP工具，下一轮请求立即生效，保持对话连续不断线。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "会话管理",
+    "零配置",
+    "模型配置",
+    "效率提升"
+  ],
+  "version": "0.1.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bingaha",
+  "repo": "https://github.com/bingaha/dsh-live-mcp",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-31T08:46:34Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bingaha/dsh-live-mcp",
+    "commands": [
+      "git clone https://github.com/bingaha/dsh-live-mcp.git",
+      "dsh plugin --profile web add link:$(pwd)"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

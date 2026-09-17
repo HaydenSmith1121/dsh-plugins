@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-cellosaurus",
+  "slug": "xby-skill__xby-cellosaurus",
+  "tier": "community",
+  "package": null,
+  "name": "xby-cellosaurus",
+  "title": "xby-cellosaurus",
+  "summary": "在聊天中直接搜索和查看细胞系详细信息，方便科研和生物医药相关查询。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "语义检索",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-cellosaurus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:38:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-cellosaurus",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-cellosaurus",
+      "dsh plugin --profile web add /absolute/path/to/xby-cellosaurus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

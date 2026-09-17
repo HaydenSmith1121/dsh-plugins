@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "haoliangwu/dsh-advisor",
+  "slug": "haoliangwu__dsh-advisor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-advisor",
+  "title": "dsh-advisor",
+  "summary": "自动用大模型分析对话内容，出错时弹出蓝色建议卡片，帮你及时纠错并优化交互体验。",
+  "tags": [
+    "advisor",
+    "deepseek-harness",
+    "dsh",
+    "dsh-bundle",
+    "turn",
+    "ui",
+    "模型配置",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "haoliangwu",
+  "repo": "https://github.com/haoliangwu/dsh-advisor",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-25T01:20:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:haoliangwu/dsh-advisor",
+    "commands": [
+      "dsh plugin --profile web add github:haoliangwu/dsh-advisor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

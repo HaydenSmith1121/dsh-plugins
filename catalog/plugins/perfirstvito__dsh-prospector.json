@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Perfirstvito/dsh-prospector",
+  "slug": "perfirstvito__dsh-prospector",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prospector",
+  "title": "dsh-prospector",
+  "summary": "给 DeepSeek Harness 装上 GitHub 勘探助手，能搜仓库、读代码和文档，快速摸清项目底细。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "AI 助手",
+    "语义检索",
+    "工作区管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Perfirstvito",
+  "repo": "https://github.com/Perfirstvito/dsh-prospector",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-03T15:46:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Perfirstvito/dsh-prospector",
+    "commands": [
+      "dsh plugin --profile web add github:Perfirstvito/dsh-prospector"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

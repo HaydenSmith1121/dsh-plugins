@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "chongyangdu2008-cyrus/dsh-subagent-inspector",
+  "slug": "chongyangdu2008-cyrus__dsh-subagent-inspector",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subagent-inspector",
+  "title": "dsh-subagent-inspector",
+  "summary": "在 DeepSeek Harness Web 会话中实时查看子 agent 树、任务步骤、推理、工具调用和 token 消耗，方便调试和观察。",
+  "tags": [
+    "agent-observability",
+    "deepseek-harness",
+    "dsh-plugin",
+    "subagent",
+    "typescript",
+    "状态监控",
+    "可视化",
+    "AI 助手",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-28T02:47:11Z",
+    "url": "https://github.com/chongyangdu2008-cyrus/dsh-subagent-inspector/releases/tag/v0.1.0"
+  },
+  "author": "chongyangdu2008-cyrus",
+  "repo": "https://github.com/chongyangdu2008-cyrus/dsh-subagent-inspector",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-28T02:45:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chongyangdu2008-cyrus/dsh-subagent-inspector",
+    "commands": [
+      "dsh plugin --profile web add github:chongyangdu2008-cyrus/dsh-subagent-inspector",
+      "dsh plugin --profile web remove dsh-subagent-inspector"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

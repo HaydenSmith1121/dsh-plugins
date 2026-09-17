@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "mengruoa/dsh-vision-toolkit",
+  "slug": "mengruoa__dsh-vision-toolkit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-vision-toolkit",
+  "title": "dsh-vision-toolkit",
+  "summary": "让纯文本的 DeepSeek Harness 智能体看懂图片，完成视觉任务。",
+  "tags": [
+    "dsh-plugin",
+    "vision-tools",
+    "AI 助手",
+    "模型配置",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.1.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "mengruoa",
+  "repo": "https://github.com/mengruoa/dsh-vision-toolkit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T14:34:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@mengruo/dsh-vision-toolkit",
+    "commands": [
+      "dsh plugin --profile web add @mengruo/dsh-vision-toolkit",
+      "dsh plugin --profile headless add @mengruo/dsh-vision-toolkit",
+      "dsh plugin --profile desktop add @mengruo/dsh-vision-toolkit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-agent-toolface",
+  "slug": "jonah791__dsh-agent-toolface",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-toolface",
+  "title": "dsh-agent-toolface",
+  "summary": "按证据化 deny 集收窄 agent 可见工具，lean/full 一键切换并留审计痕迹，省上下文、少干扰。",
+  "tags": [
+    "agent",
+    "dsh",
+    "dsh-plugin",
+    "资源优化",
+    "成本控制",
+    "工具集成",
+    "模型配置",
+    "证据链"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-agent-toolface",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T06:06:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-agent-toolface",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-agent-toolface"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

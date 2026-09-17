@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "liaoyuqing/dsh-llm-error-retry",
+  "slug": "liaoyuqing__dsh-llm-error-retry",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-error-retry",
+  "title": "dsh-llm-error-retry",
+  "summary": "在 DeepSeek Harness 中，当大模型请求报错时自动重试，支持按 HTTP 状态码和字段值精准触发，提升任务稳定性。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "模型配置",
+    "状态监控",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.7.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.0",
+    "publishedAt": "2026-09-05T10:26:02Z",
+    "url": "https://github.com/liaoyuqing/dsh-llm-error-retry/releases/tag/v0.7.0"
+  },
+  "author": "liaoyuqing",
+  "repo": "https://github.com/liaoyuqing/dsh-llm-error-retry",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T10:26:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:liaoyuqing/dsh-llm-error-retry",
+    "commands": [
+      "dsh plugin --profile web add github:liaoyuqing/dsh-llm-error-retry",
+      "dsh plugin --profile web update",
+      "dsh plugin --profile web remove dsh-llm-error-retry"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

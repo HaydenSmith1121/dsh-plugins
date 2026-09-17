@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "jolaaa999/dsh-autoupdate",
+  "slug": "jolaaa999__dsh-autoupdate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-autoupdate",
+  "title": "dsh-autoupdate",
+  "summary": "给本地 deepseek-harness 代码库提供安全自动更新状态面板，并支持手动触发更新。",
+  "tags": [
+    "dedeepseek-harness",
+    "dsh",
+    "plugin",
+    "plugin-marketplace",
+    "plugins",
+    "状态监控",
+    "插件管理",
+    "命令行工具",
+    "自动化"
+  ],
+  "version": "2.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jolaaa999",
+  "repo": "https://github.com/jolaaa999/dsh-autoupdate",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T02:01:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-autoupdate",
+    "commands": [
+      "dsh plugin add dsh-autoupdate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

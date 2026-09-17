@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "royenheart/dsh-plugin-structured-output",
+  "slug": "royenheart__dsh-plugin-structured-output",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-structured-output",
+  "title": "dsh-plugin-structured-output",
+  "summary": "让 DSH 智能体按 JSON Schema 输出结构化结果，无需改源码，按预设模式灵活控制可见性。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "AI 助手",
+    "模型配置",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "royenheart",
+  "repo": "https://github.com/royenheart/dsh-plugin-structured-output",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T05:15:52Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:royenheart/dsh-plugin-structured-output",
+    "commands": [
+      "dsh plugin --profile web add link:/path/to/dsh-plugin-structured-output"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

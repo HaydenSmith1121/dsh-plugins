@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "0xsline/dsh-spotlight",
+  "slug": "0xsline__dsh-spotlight",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-spotlight",
+  "title": "dsh-spotlight",
+  "summary": "为 DeepSeek Harness Web 提供键盘优先的命令面板，快速查找命令、会话、界面操作和插件设置。",
+  "tags": [
+    "dsh-plugin",
+    "键盘操作",
+    "快捷操作",
+    "主题"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "0xsline",
+  "repo": "https://github.com/0xsline/dsh-spotlight",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 21,
+  "forks": 4,
+  "pushedAt": "2026-08-24T09:03:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@0xsline/dsh-spotlight",
+    "commands": [
+      "dsh plugin --profile web add \"@0xsline/dsh-spotlight\"",
+      "dsh plugin --profile web add \"github:0xsline/dsh-spotlight"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

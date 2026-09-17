@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "BrianHIO-x/dsh-think-expand",
+  "slug": "brianhio-x__dsh-think-expand",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-think-expand",
+  "title": "dsh-think-expand",
+  "summary": "自动展开对话中的 Think 行，省去手动点击，切换会话后依然保持展开状态。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "插件管理"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "BrianHIO-x",
+  "repo": "https://github.com/BrianHIO-x/dsh-think-expand",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T19:45:22Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:BrianHIO-x/dsh-think-expand",
+    "commands": [
+      "dsh plugin --profile web add github:BrianHIO-x/dsh-think-expand",
+      "dsh plugin --profile web add /path/to/dsh-think-expand",
+      "dsh plugin --profile web remove dsh-think-expand"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

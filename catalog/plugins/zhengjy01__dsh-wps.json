@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zhengjy01/dsh-wps",
+  "slug": "zhengjy01__dsh-wps",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wps",
+  "title": "dsh-wps",
+  "summary": "在 DSH 对话中直接管理 WPS 云文档，支持列表、搜索、读取、创建和上传下载，轻松读写云端文件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "wps",
+    "文件管理",
+    "效率提升",
+    "AI 助手",
+    "模型配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhengjy01",
+  "repo": "https://github.com/zhengjy01/dsh-wps",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T13:06:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-wps",
+    "commands": [
+      "dsh plugin --profile web add dsh-wps",
+      "dsh plugin --profile web add github.com/zhengjy01/dsh-wps"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

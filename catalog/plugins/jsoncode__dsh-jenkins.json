@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "jsoncode/dsh-jenkins",
+  "slug": "jsoncode__dsh-jenkins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-jenkins",
+  "title": "dsh-jenkins",
+  "summary": "在 DeepSeek Harness 中集中管理多台 Jenkins 服务器与 Token，支持配置页设置和模型工具触发构建，还能在工作区直接执行 Jenkins Job。",
+  "tags": [
+    "dsh-jenkins",
+    "dsh-plugin",
+    "dsh-plugins",
+    "文件管理",
+    "工作流增强",
+    "安全审查",
+    "效率提升",
+    "模型配置"
+  ],
+  "version": "0.1.55",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.55",
+    "publishedAt": "2026-09-16T03:55:51Z",
+    "url": "https://github.com/jsoncode/dsh-jenkins/releases/tag/v0.1.55"
+  },
+  "author": "jsoncode",
+  "repo": "https://github.com/jsoncode/dsh-jenkins",
+  "homepage": "https://github.com/jsoncode/dsh-jenkins",
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T03:55:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jsoncode/dsh-jenkins",
+    "commands": [
+      "dsh plugin --profile web add github:jsoncode/dsh-jenkins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

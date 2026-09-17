@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "131CDA1/dsh-scrape-webpage",
+  "slug": "131cda1__dsh-scrape-webpage",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-scrape-webpage",
+  "title": "dsh-scrape-webpage",
+  "summary": "抓取网页正文并自动分析标题结构、关键词和阅读时长，还能下载图片供视觉分析。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "数据分析",
+    "工具集成",
+    "视觉理解",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "1.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "dsh-scrape-webpage-v1.0.1",
+    "publishedAt": "2026-08-19T02:50:00Z",
+    "url": "https://github.com/131CDA1/dsh-scrape-webpage/releases/tag/dsh-scrape-webpage-v1.0.1"
+  },
+  "author": "131CDA1",
+  "repo": "https://github.com/131CDA1/dsh-scrape-webpage",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-08-20T06:26:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:131CDA1/dsh-scrape-webpage",
+    "commands": [
+      "dsh plugin --profile web add github:131CDA1/dsh-scrape-webpage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

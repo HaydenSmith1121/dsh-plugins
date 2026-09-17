@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "shaomingbo/dsh-file-picker",
+  "slug": "shaomingbo__dsh-file-picker",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-file-picker",
+  "title": "dsh-file-picker",
+  "summary": "在本地电脑上快速搜索并选择文件或文件夹，方便直接喂给 DeepSeek Harness 使用。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "可视化",
+    "工作区管理",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.2.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.3",
+    "publishedAt": "2026-09-11T15:18:50Z",
+    "url": "https://github.com/shaomingbo/dsh-file-picker/releases/tag/v0.2.3"
+  },
+  "author": "shaomingbo",
+  "repo": "https://github.com/shaomingbo/dsh-file-picker",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T15:18:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shaomingbo/dsh-file-picker",
+    "commands": [
+      "dsh plugin --profile web add github:shaomingbo/dsh-file-picker"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

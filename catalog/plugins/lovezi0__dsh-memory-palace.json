@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "lovezi0/dsh-memory-palace",
+  "slug": "lovezi0__dsh-memory-palace",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memory-palace",
+  "title": "dsh-memory-palace",
+  "summary": "把 WorkBuddy 的文件式记忆搬进 Harness，用可编辑的 Markdown 实现跨会话持久记忆，让 AI 记住你的偏好和上下文。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "memory",
+    "会话管理",
+    "文件管理",
+    "持久化记忆",
+    "插件管理"
+  ],
+  "version": "0.5.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lovezi0",
+  "repo": "https://github.com/lovezi0/dsh-memory-palace",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-15T12:47:55Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lovezi0/dsh-memory-palace",
+    "commands": [
+      "dsh plugin --profile web add github:lovezi0/dsh-memory-palace",
+      "git clone https://github.com/lovezi0/dsh-memory-palace.git",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

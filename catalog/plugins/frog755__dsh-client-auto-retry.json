@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "Frog755/dsh-client-auto-retry",
+  "slug": "frog755__dsh-client-auto-retry",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-client-auto-retry",
+  "title": "dsh-client-auto-retry",
+  "summary": "对话中断、报错或过长时自动发送“继续”，免去手动操作，让交流更顺畅。",
+  "tags": [
+    "auto-retry",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-10T03:06:06Z",
+    "url": "https://github.com/Frog755/dsh-client-auto-retry/releases/tag/v0.4.0"
+  },
+  "author": "Frog755",
+  "repo": "https://github.com/Frog755/dsh-client-auto-retry",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-10T03:01:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Frog755/dsh-client-auto-retry",
+    "commands": [
+      "dsh plugin --profile web add github:Frog755/dsh-client-auto-retry"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

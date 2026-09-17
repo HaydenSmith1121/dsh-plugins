@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "mishibeikejie/zat-dsh-engine",
+  "slug": "mishibeikejie__zat-dsh-engine",
+  "tier": "community",
+  "package": null,
+  "name": "zat-dsh-engine",
+  "title": "zat-dsh-engine",
+  "summary": "为 DeepSeek Harness 打造的图形化插件商店，像 Wallpaper Engine 一样轻松浏览、搜索、安装和管理社区插件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "图形界面",
+    "零配置"
+  ],
+  "version": "0.7.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.5",
+    "publishedAt": "2026-09-08T12:58:31Z",
+    "url": "https://github.com/mishibeikejie/zat-dsh-engine/releases/tag/v0.7.5"
+  },
+  "author": "mishibeikejie",
+  "repo": "https://github.com/mishibeikejie/zat-dsh-engine",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 80,
+  "forks": 3,
+  "pushedAt": "2026-09-08T12:56:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mishibeikejie/zat-dsh-engine",
+    "commands": [
+      "dsh plugin --profile web add github:mishibeikejie/zat-dsh-engine",
+      "dsh plugin --profile web add https://gh-proxy.com/https://github.com/mishibeikejie/zat-dsh-engine.git",
+      "git clone https://github.com/mishibeikejie/zat-dsh-engine.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "zoahdev/dsh-subscribe",
+  "slug": "zoahdev__dsh-subscribe",
+  "tier": "community",
+  "package": null,
+  "name": "zoahdev/dsh-subscribe",
+  "title": "zoahdev/dsh-subscribe",
+  "summary": "像逛商店一样订阅插件，一条命令同步到本地，轻松管理500+社区插件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "market",
+    "marketplace",
+    "registry",
+    "subscribe",
+    "插件管理",
+    "命令行工具",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-08-15T09:50:53Z",
+    "url": "https://github.com/zoahdev/dsh-subscribe/releases/tag/v0.3.1"
+  },
+  "author": "zoahdev",
+  "repo": "https://github.com/zoahdev/dsh-subscribe",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-18T22:53:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zoahdev/dsh-subscribe",
+    "commands": [
+      "git clone https://github.com/zoahdev/dsh-subscribe",
+      "dsh plugin --profile web add github:zoahdev/dsh-subscribe"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

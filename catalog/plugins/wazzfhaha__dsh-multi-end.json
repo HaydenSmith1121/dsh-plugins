@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "Wazzfhaha/dsh-multi-end",
+  "slug": "wazzfhaha__dsh-multi-end",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-multi-end",
+  "title": "dsh-multi-end",
+  "summary": "通过 SSH 远程连接多台机器，在同一个侧栏里管理工作区和会话，任务在各自机器上跑。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "跨设备",
+    "工作区管理",
+    "会话管理",
+    "工具集成"
+  ],
+  "version": "0.0.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.0.7",
+    "publishedAt": "2026-09-16T00:37:22Z",
+    "url": "https://github.com/Wazzfhaha/dsh-multi-end/releases/tag/v0.0.7"
+  },
+  "author": "Wazzfhaha",
+  "repo": "https://github.com/Wazzfhaha/dsh-multi-end",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T00:37:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Wazzfhaha/dsh-multi-end",
+    "commands": [
+      "dsh plugin --profile web add -w https://github.com/Wazzfhaha/dsh-multi-end/releases/download/v0.0.7/dsh-ssh-workspaces-0.0.7.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

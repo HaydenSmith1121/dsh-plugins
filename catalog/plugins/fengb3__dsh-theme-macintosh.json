@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "fengb3/dsh-theme-macintosh",
+  "slug": "fengb3__dsh-theme-macintosh",
+  "tier": "community",
+  "package": null,
+  "name": "fengb3/dsh-theme-macintosh",
+  "title": "fengb3/dsh-theme-macintosh",
+  "summary": "把界面换成经典 Macintosh System 7 像素风，带桌面图案、Finder 侧栏和黑白按钮，支持深浅色。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-theme",
+    "界面美化",
+    "主题",
+    "可视化",
+    "零配置"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-06T12:24:03Z",
+    "url": "https://github.com/fengb3/dsh-theme-macintosh/releases/tag/v0.1.2"
+  },
+  "author": "fengb3",
+  "repo": "https://github.com/fengb3/dsh-theme-macintosh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T06:50:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fengb3/dsh-theme-macintosh",
+    "commands": [
+      "dsh plugin --profile web add github:fengb3/dsh-theme-macintosh",
+      "dsh plugin --profile web remove dsh-theme-macintosh",
+      "pnpm add dsh-theme-macintosh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

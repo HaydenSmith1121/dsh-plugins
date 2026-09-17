@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "po-et/dsh-http-probe",
+  "slug": "po-et__dsh-http-probe",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-http-probe",
+  "title": "dsh-http-probe",
+  "summary": "给 DeepSeek Harness 加一个 http_probe 工具，随时探测任意 HTTP 接口的状态码、延迟和响应头。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "命令行工具",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "po-et",
+  "repo": "https://github.com/po-et/dsh-http-probe",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T08:51:50Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:po-et/dsh-http-probe",
+    "commands": [
+      "dsh plugin --profile web add github:po-et/dsh-http-probe"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

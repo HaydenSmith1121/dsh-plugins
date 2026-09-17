@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "syncended/deepseek-harness-retry",
+  "slug": "syncended__deepseek-harness-retry",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-retry",
+  "title": "deepseek-harness-retry",
+  "summary": "自动重试失败的模型请求，并在会话中断后无缝恢复，提升任务完成的稳定性。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "会话管理",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.2.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "syncended",
+  "repo": "https://github.com/syncended/deepseek-harness-retry",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T19:45:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@syncended/dsh-retry",
+    "commands": [
+      "dsh plugin --profile web add @syncended/dsh-retry",
+      "dsh plugin --profile web add -w @syncended/dsh-retry",
+      "dsh plugin --profile web add github:syncended/deepseek-harness-retry"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

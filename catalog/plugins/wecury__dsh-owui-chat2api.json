@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "Wecury/dsh-owui-chat2api",
+  "slug": "wecury__dsh-owui-chat2api",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-owui-chat2api",
+  "title": "dsh-owui-chat2api",
+  "summary": "把 Open WebUI 里的模型变成 OpenAI 兼容接口给 DeepSeek Harness 用，还带控制面板和用量看板。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "open-webui",
+    "模型适配",
+    "可视化",
+    "状态监控",
+    "插件管理"
+  ],
+  "version": "0.9.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.9.0",
+    "publishedAt": "2026-09-15T16:16:01Z",
+    "url": "https://github.com/Wecury/dsh-owui-chat2api/releases/tag/v0.9.0"
+  },
+  "author": "Wecury",
+  "repo": "https://github.com/Wecury/dsh-owui-chat2api",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T13:00:23Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Wecury/dsh-owui-chat2api",
+    "commands": [
+      "dsh plugin --profile web add github:Wecury/dsh-owui-chat2api"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

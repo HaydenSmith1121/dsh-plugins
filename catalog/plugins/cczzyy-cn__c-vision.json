@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "cczzyy-cn/c-vision",
+  "slug": "cczzyy-cn__c-vision",
+  "tier": "community",
+  "package": null,
+  "name": "c-vision",
+  "title": "c-vision",
+  "summary": "给智能体装上眼睛和手，能看屏幕、识别文字、操作鼠标键盘，像人一样用电脑干活。",
+  "tags": [
+    "computer-use",
+    "deepseek-harness",
+    "dsh-plugin",
+    "vision",
+    "AI 助手",
+    "多模态",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.2.23",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.23",
+    "publishedAt": "2026-09-17T14:10:53Z",
+    "url": "https://github.com/cczzyy-cn/c-vision/releases/tag/v0.2.23"
+  },
+  "author": "cczzyy-cn",
+  "repo": "https://github.com/cczzyy-cn/c-vision",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T12:48:30Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cczzyy-cn/c-vision",
+    "commands": [
+      "dsh plugin --profile web add github:cczzyy-cn/c-vision"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

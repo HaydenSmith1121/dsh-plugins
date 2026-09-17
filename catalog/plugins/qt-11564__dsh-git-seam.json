@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "qt-11564/dsh-git-seam",
+  "slug": "qt-11564__dsh-git-seam",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-git-seam",
+  "title": "dsh-git-seam",
+  "summary": "给 DeepSeek Harness 智能体用的结构化 Git 工具，提交前强制检查 diff，避免盲目提交，还能稳定解析中文路径。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "git",
+    "工作流增强",
+    "插件管理",
+    "自动化",
+    "命令行工具"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "qt-11564",
+  "repo": "https://github.com/qt-11564/dsh-git-seam",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-29T01:39:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qt-11564/dsh-git-seam",
+    "commands": [
+      "dsh plugin --profile web add github:qt-11564/dsh-git-seam",
+      "dsh plugin --profile web add dsh-git-seam"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

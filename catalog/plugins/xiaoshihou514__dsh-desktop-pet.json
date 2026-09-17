@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaoshihou514/dsh-desktop-pet",
+  "slug": "xiaoshihou514__dsh-desktop-pet",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-desktop-pet",
+  "title": "dsh-desktop-pet",
+  "summary": "把鲸鱼娘养在桌面上，随时陪你聊天卖萌，给开发日常添点乐子。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "主题",
+    "AI 助手",
+    "自动化",
+    "界面美化"
+  ],
+  "version": "0.1.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "0.1.9",
+    "publishedAt": "2026-08-21T08:18:59Z",
+    "url": "https://github.com/xiaoshihou514/dsh-desktop-pet/releases/tag/0.1.9"
+  },
+  "author": "xiaoshihou514",
+  "repo": "https://github.com/xiaoshihou514/dsh-desktop-pet",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 36,
+  "forks": 1,
+  "pushedAt": "2026-08-21T08:33:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:vlln/whale-girl",
+    "commands": [
+      "npm i -g @deepseek-ai/dsh",
+      "dsh plugin --profile web add \"github:vlln/whale-girl"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

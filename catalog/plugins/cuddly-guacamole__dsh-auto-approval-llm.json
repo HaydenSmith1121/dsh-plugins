@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "cuddly-guacamole/dsh-auto-approval-llm",
+  "slug": "cuddly-guacamole__dsh-auto-approval-llm",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auto-approval-llm",
+  "title": "dsh-auto-approval-llm",
+  "summary": "给 DSH 的 Auto 权限档加上 LLM 自动审批，常规操作直接放行，危险操作走评审加倒计时兜底。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "安全审查",
+    "AI 助手",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "0.0.33",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "cuddly-guacamole",
+  "repo": "https://github.com/cuddly-guacamole/dsh-auto-approval-llm",
+  "homepage": "https://cuddly-guacamole.github.io/dsh-auto-approval-llm/",
+  "license": "BSD-3-Clause",
+  "stars": 7,
+  "forks": 2,
+  "pushedAt": "2026-09-16T19:36:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@quill507/dsh-auto-approval-llm",
+    "commands": [
+      "dsh plugin --profile web add @quill507/dsh-auto-approval-llm"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

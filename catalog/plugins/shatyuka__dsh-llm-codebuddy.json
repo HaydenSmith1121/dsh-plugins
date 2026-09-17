@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "shatyuka/dsh-llm-codebuddy",
+  "slug": "shatyuka__dsh-llm-codebuddy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-codebuddy",
+  "title": "dsh-llm-codebuddy",
+  "summary": "通过浏览器登录腾讯云 CodeBuddy，无需 API 密钥即可在 DeepSeek Harness 中调用其大模型能力。",
+  "tags": [
+    "codebuddy",
+    "dsh-plugin",
+    "AI 助手",
+    "零配置",
+    "自动化",
+    "模型适配"
+  ],
+  "version": "0.5.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "shatyuka",
+  "repo": "https://github.com/shatyuka/dsh-llm-codebuddy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 5,
+  "pushedAt": "2026-09-14T12:53:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@shatyuka/dsh-llm-codebuddy",
+    "commands": [
+      "dsh plugin --profile web add @shatyuka/dsh-llm-codebuddy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

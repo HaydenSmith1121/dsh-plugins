@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "vidgewong/dsh-omniloop",
+  "slug": "vidgewong__dsh-omniloop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-omniloop",
+  "title": "dsh-omniloop",
+  "summary": "将 Claude Code、Codex、Pi 与 dsh 内置循环并排运行，方便对比不同 AI 助手的表现。",
+  "tags": [
+    "dsh-plugin",
+    "多Agent协作",
+    "AI 助手",
+    "模型配置",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.0-rc1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "vidgewong",
+  "repo": "https://github.com/vidgewong/dsh-omniloop",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-08T05:34:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@vidge/dsh-omniloop",
+    "commands": [
+      "dsh plugin --profile web add @vidge/dsh-omniloop",
+      "dsh plugin --profile web remove @vidge/dsh-agent-hub"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

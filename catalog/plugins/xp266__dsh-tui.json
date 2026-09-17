@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "xp266/dsh-tui",
+  "slug": "xp266__dsh-tui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tui",
+  "title": "dsh-tui",
+  "summary": "给 DeepSeek Harness 套上一个终端界面，在命令行里就能跑 AI 助手。",
+  "tags": [
+    "ai-agent",
+    "ai-coding",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-plugins",
+    "ink",
+    "tui",
+    "命令行工具",
+    "主题",
+    "工具集成",
+    "AI 助手"
+  ],
+  "version": "0.1.12",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xp266",
+  "repo": "https://github.com/xp266/dsh-tui",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T13:41:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xp266/dsh-tui",
+    "commands": [
+      "npm install -g @xp266/dshtui@latest",
+      "dsh plugin --profile <name> add @xp266/dshtui@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

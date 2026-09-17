@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "zzh-newlearner/dsh-postmortem",
+  "slug": "zzh-newlearner__dsh-postmortem",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-postmortem",
+  "title": "dsh-postmortem",
+  "summary": "把失败的 DeepSeek Harness 运行快速转成脱敏恢复计划，本地只读，无需模型也能用。",
+  "tags": [
+    "agent-debugging",
+    "agent-observability",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "incident-response",
+    "llm-agents",
+    "postmortem",
+    "typescript",
+    "工作流增强",
+    "AI 助手",
+    "状态监控",
+    "效率提升",
+    "命令行工具"
+  ],
+  "version": "0.6.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.1",
+    "publishedAt": "2026-08-27T12:48:10Z",
+    "url": "https://github.com/zzh-newlearner/dsh-postmortem/releases/tag/v0.6.1"
+  },
+  "author": "zzh-newlearner",
+  "repo": "https://github.com/zzh-newlearner/dsh-postmortem",
+  "homepage": "https://www.npmjs.com/package/@huichangzz/dsh-postmortem",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-06T06:10:02Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zzh-newlearner/dsh-postmortem",
+    "commands": [
+      "dsh plugin --profile <profile-name> add @huichangzz/dsh-postmortem"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

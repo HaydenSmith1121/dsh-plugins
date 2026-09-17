@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "lhwu1/dsh-seelog",
+  "slug": "lhwu1__dsh-seelog",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-seelog",
+  "title": "dsh-seelog",
+  "summary": "把杂乱的会话日志变成3D执行图，主线和子智能体分叉汇合一目了然，还能逐条追溯原始日志。",
+  "tags": [
+    "dsh-bundle",
+    "dsh-plugin",
+    "dsh-plugins",
+    "可视化",
+    "多Agent协作",
+    "会话管理",
+    "状态监控",
+    "模型轨迹"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lhwu1",
+  "repo": "https://github.com/lhwu1/dsh-seelog",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-21T05:31:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lhwu1/dsh-seelog",
+    "commands": [
+      "dsh plugin --profile web add github:lhwu1/dsh-seelog"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Jolly-J/dsh-deepseek-billing",
+  "slug": "jolly-j__dsh-deepseek-billing",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-deepseek-billing",
+  "title": "dsh-deepseek-billing",
+  "summary": "在 DSH 网页版左侧边栏实时显示 DeepSeek 余额，并估算每次会话的花费，帮你控制成本。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "余额显示",
+    "状态监控",
+    "成本控制",
+    "会话统计"
+  ],
+  "version": "0.1.0-rc.10",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Jolly-J",
+  "repo": "https://github.com/Jolly-J/dsh-deepseek-billing",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-10T12:48:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Jolly-J/dsh-deepseek-billing",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/Jolly-J/dsh-deepseek-billing.git",
+      "dsh plugin --profile web update dsh-deepseek-billing"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

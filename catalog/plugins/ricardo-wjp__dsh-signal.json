@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "Ricardo-WJP/dsh-signal",
+  "slug": "ricardo-wjp__dsh-signal",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-signal",
+  "title": "dsh-signal",
+  "summary": "为 DeepSeek Harness 添加水面折射品牌动效、真实余额与剩余额度展示，以及本地 Token 用量统计的视觉与只读插件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "ui",
+    "usage",
+    "可视化",
+    "状态监控",
+    "前端增强",
+    "界面美化"
+  ],
+  "version": "0.6.12",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.12",
+    "publishedAt": "2026-09-08T10:27:24Z",
+    "url": "https://github.com/Ricardo-WJP/dsh-signal/releases/tag/v0.6.12"
+  },
+  "author": "Ricardo-WJP",
+  "repo": "https://github.com/Ricardo-WJP/dsh-signal",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T10:50:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Ricardo-WJP/dsh-signal",
+    "commands": [
+      "dsh plugin --profile web add github:Ricardo-WJP/dsh-signal"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

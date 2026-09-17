@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "zmh2000829/dsh-web-search-multi",
+  "slug": "zmh2000829__dsh-web-search-multi",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-search-multi",
+  "title": "dsh-web-search-multi",
+  "summary": "为 DeepSeek Harness 提供可配置的多源网页搜索插件，稳定调用搜索工具，灵活切换不同搜索后端。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "零配置",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-24T09:24:30Z",
+    "url": "https://github.com/zmh2000829/dsh-web-search-multi/releases/tag/v0.2.0"
+  },
+  "author": "zmh2000829",
+  "repo": "https://github.com/zmh2000829/dsh-web-search-multi",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-08-24T09:24:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-web-search-multi@0.2.0",
+    "commands": [
+      "dsh plugin --profile web add dsh-web-search-multi@0.2.0",
+      "npm install",
+      "dsh plugin --profile web add link:$PWD"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

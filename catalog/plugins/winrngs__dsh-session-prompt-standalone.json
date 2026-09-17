@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "WinRNGS/dsh-session-prompt-standalone",
+  "slug": "winrngs__dsh-session-prompt-standalone",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-prompt-standalone",
+  "title": "dsh-session-prompt-standalone",
+  "summary": "给每个会话固定注入一段自定义 system prompt，长对话压缩也不会丢，让 AI 始终记住你的设定。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "模型适配",
+    "AI 助手",
+    "提示词注入"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "WinRNGS",
+  "repo": "https://github.com/WinRNGS/dsh-session-prompt-standalone",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T09:37:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:WinRNGS/dsh-session-prompt-standalone",
+    "commands": [
+      "git clone https://github.com/WinRNGS/dsh-session-prompt-standalone.git dsh-session-prompt",
+      "dsh plugin --profile web add \"$(pwd)/dsh-session-prompt\"",
+      "git clone -b v0.2 https://github.com/WinRNGS/dsh-session-prompt-standalone.git dsh-session-prompt"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

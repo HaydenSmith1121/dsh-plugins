@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "sujubaima/wuxia-rpg-dsh",
+  "slug": "sujubaima__wuxia-rpg-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "wuxia-rpg-dsh",
+  "title": "wuxia-rpg-dsh",
+  "summary": "让 LLM 当游戏主持人，随时开一局有完整数值和存档的武侠文字 RPG。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "llm-rpg",
+    "AI 助手",
+    "多Agent协作",
+    "工具集成",
+    "可视化",
+    "工作流增强"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "sujubaima",
+  "repo": "https://github.com/sujubaima/wuxia-rpg-dsh",
+  "homepage": null,
+  "license": "AGPL-3.0",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T15:55:08Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sujubaima/wuxia-rpg-dsh",
+    "commands": [
+      "dsh plugin --profile web add github:sujubaima/wuxia-rpg-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

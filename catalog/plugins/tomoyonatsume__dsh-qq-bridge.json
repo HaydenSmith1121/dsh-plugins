@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "TomoyoNatsume/dsh-qq-bridge",
+  "slug": "tomoyonatsume__dsh-qq-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-qq-bridge",
+  "title": "dsh-qq-bridge",
+  "summary": "把 QQ 变成 DSH 的遥控器，在聊天窗口里就能远程指挥 AI 干活。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "桥接插件",
+    "工具集成",
+    "快捷操作",
+    "跨设备",
+    "AI 助手"
+  ],
+  "version": "1.0.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "1.0.6",
+    "publishedAt": "2026-09-07T11:51:10Z",
+    "url": "https://github.com/TomoyoNatsume/dsh-qq-bridge/releases/tag/1.0.6"
+  },
+  "author": "TomoyoNatsume",
+  "repo": "https://github.com/TomoyoNatsume/dsh-qq-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 13,
+  "forks": 1,
+  "pushedAt": "2026-09-07T11:51:09Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TomoyoNatsume/dsh-qq-bridge",
+    "commands": [
+      "dsh plugin --profile web add github:TomoyoNatsume/dsh-qq-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

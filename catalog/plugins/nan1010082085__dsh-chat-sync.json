@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "nan1010082085/dsh-chat-sync",
+  "slug": "nan1010082085__dsh-chat-sync",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-chat-sync",
+  "title": "dsh-chat-sync",
+  "summary": "在 dsh 网页界面里直接浏览并实时同步 Claude Code、Codex CLI 和 Cursor Agent 的本地对话记录，方便统一查看和管理。",
+  "tags": [
+    "claude-code",
+    "codex",
+    "conversation-sync",
+    "cursor",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "会话管理",
+    "语义检索",
+    "可视化",
+    "工作区管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-17T08:58:35Z",
+    "url": "https://github.com/nan1010082085/dsh-chat-sync/releases/tag/v0.1.0"
+  },
+  "author": "nan1010082085",
+  "repo": "https://github.com/nan1010082085/dsh-chat-sync",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-27T16:34:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:nan1010082085/dsh-plugin-ima-sync",
+    "commands": [
+      "dsh plugin --profile web add github:nan1010082085/dsh-plugin-ima-sync",
+      "dsh plugin --profile web add github:nan1010082085/dsh-chat-sync",
+      "dsh plugin --profile web add github:nan1010082085/dsh-mcp-sync"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

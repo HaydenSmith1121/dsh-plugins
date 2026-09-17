@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "yushenghai1106/dsh-memory-plugin",
+  "slug": "yushenghai1106__dsh-memory-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memory-plugin",
+  "title": "dsh-memory-plugin",
+  "summary": "给 DeepSeek Harness 装上持久记忆，自动记住项目事实和用户偏好，跨对话召回历史，让智能体越用越懂你。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yushenghai1106",
+  "repo": "https://github.com/yushenghai1106/dsh-memory-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T08:12:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@yushenghai/dsh-memory-plugin",
+    "commands": [
+      "dsh plugin --profile default add @yushenghai/dsh-memory-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -371,7 +371,20 @@ function checkCandidate(entry, ctx, options) {
 
   if (installSpec?.kind === 'local-tarball') {
     const tgz = installSpec.resolvedPath;
-    if (!tgz || !fs.existsSync(tgz)) {
+    if (installSpec.needsDownload && (!tgz || !fs.existsSync(tgz))) {
+      // ★ 需要联网下载的 tarball（插件集合仓库托管的那批）**不能**当成失败。
+      //   本机没有那份字节，所以装前读不到包内的 package.json —— 这是能力边界，
+      //   不是风险。真正的完整性由下载后的 sha256 强校验负责（见 installer.js）。
+      out.push(mk('cand.tarball', '安装包来源', SEV.INFO, 'pass',
+        `需联网下载：${installSpec.downloadUrl}`
+        + (installSpec.sha256 ? `（下载后校验 sha256 ${String(installSpec.sha256).slice(0, 12)}…）` : '')));
+      if (!installSpec.sha256) {
+        out.push(mk('cand.sha256-missing', '安装包校验和', SEV.WARN, 'warn',
+          '配置文件里没有 sha256，下载下来的字节无法校验是否被替换或损坏。', {
+            hint: '这是配置文件的问题：请让维护者补上 sha256（插件集合仓库跑 build-manifest.mjs 会自动算出来）。',
+          }));
+      }
+    } else if (!tgz || !fs.existsSync(tgz)) {
       out.push(mk('cand.tarball', 'tarball 存在性', SEV.FATAL, 'fail',
         `找不到 tarball：${tgz ?? installSpec.spec}`, {
           overridable: true,
@@ -560,6 +573,27 @@ function isSelfRow(row, entry) {
  */
 function checkPeerRuntime(manifest, entry, ctx) {
   const out = [];
+
+  // ★ 没有包内清单时（tarball 需要联网下载、远程探测失败、npm/github 规格），
+  //   退回到**本仓库实测记录下来的结论** —— 那是配置文件里的事实，比「无法判定」有用得多。
+  //   注意措辞：这是「收录时测出来的」，不是「此刻现场测的」，所以要标出来源。
+  if (!manifest) {
+    if (entry.peerRuntimePin || entry.peerVerdict || entry.peerNote) {
+      const level = entry.peerVerdict === 'critical' ? SEV.WARN
+        : entry.peerVerdict === 'warn' ? SEV.WARN
+          : SEV.INFO;
+      out.push(mk('cand.peer-runtime', '运行时 peer 约束（收录结论）', level,
+        level === SEV.WARN ? 'warn' : 'pass',
+        `本仓库收录时的实测结论：${entry.peerVerdict ?? '未标注'}。`
+        + (entry.peerRuntimePin ? `记录的 peer：${entry.peerRuntimePin}。` : '')
+        + (entry.peerNote ? `\n${entry.peerNote}` : ''), {
+          hint: level === SEV.WARN ? '可以继续；若启动后日志出现「does not provide an export named」再回退。' : null,
+          fromConfig: true,
+        }));
+    }
+    return out;
+  }
+
   const peers = manifest?.peerDependencies ?? {};
   const keys = Object.keys(peers).filter((k) => k.startsWith('@deepseek-ai/'));
   if (keys.length === 0) {
@@ -655,59 +689,118 @@ function checkPeerRuntime(manifest, entry, ctx) {
 // ─────────────────────────────────────────────────────────────
 
 /**
- * 解析「怎么装」。绝不复用公共索引里的原始命令 —— 那里面混着
- * `curl … | sh`、`pip install`、`brew install`、`npm install -g` 这类根本不是
- * dsh 插件安装的命令（实测 7487 条里 1972 条连命令都没有）。
+ * 解析「怎么装」。
  *
- * 优先级：本仓库离线 tarball → 已审核层给的本地 tarball → 索引里干净的 npm/github 规格
- *        → 从 upstream 推导 github:owner/repo
- *        → **只有在探测已确认该 npm 包真实存在时**才退到裸包名。
+ * ★ 自 0.4.0 起，这个函数的输入不再是「公共索引里的命令」，而是**那个插件自己的
+ *   配置文件**（catalog/plugins/<slug>.json）里写的 `install`。也就是说：
+ *   装什么、怎么装，由配置文件说了算 —— 市场只负责执行。
  *
- * ★ 最后一条为什么要卡这么死：条目的显示名跟 npm 包名没有任何保证关系。
- *   公共索引里有大量 `foo/bar` 形态的 id 和随手起的 name；直接拿 name 当 npm 规格去装，
- *   极可能装进来一个**同名但完全无关**的包 —— 那是最难排查的一类事故。
- *   探测（probe）能确认包是否存在以及它是否声明了 dsh.bundle，所以把决定权交给它。
+ * 配置里可能出现的 method（枚举见仓库根的 scripts/lib/catalog-format.mjs）：
+ *
+ *   tarball  仓库托管的离线 .tgz，带 url + sha256。唯一的「直装」路径。
+ *   npm      npm 包名，直接交给 pnpm。
+ *   github   github:owner/repo，由 pnpm 直接解析仓库，目标明确、不会张冠李戴。
+ *   skills   上游走的是 skills 机制，不是 dsh 插件 —— 市场没有可执行的安装路径。
+ *   manual   没有可靠的安装方式，只有说明。
+ *
+ * 仍然保留的两条兜底：
+ *   ① 配置文件给了 tarball 相对路径且本机有仓库副本 → 用本地字节（离线、快）
+ *   ② 配置里没有规格，但条目的 upstream 是干净的 GitHub 仓库地址 → 推导 github:
+ *      （这一条是安全的：pnpm 直接解析那个仓库，不会装进来一个同名无关的包）
+ *
+ * 刻意**不做**的事：拿条目的显示名去当 npm 包名。公共索引里的 name 与真实 npm
+ * 包名没有任何保证关系，直接拿来装，极可能装进来一个同名但完全无关的包 ——
+ * 那是最难排查的一类事故。
  */
 export function resolveInstallSpec(entry, ctx, probe) {
   const inst = entry.install ?? {};
+  const method = inst.method ?? (inst.kind === 'local-tarball' ? 'tarball' : inst.kind) ?? 'manual';
+  const pkg = entry.package ?? entry.id;
 
-  // 本仓库自带：离线 tarball 优先，找不到就联网从 GitHub 下
-  if (entry.tier === 'verified' && inst.tarball) {
-    const local = ctx.repoRoot ? path.join(ctx.repoRoot, inst.tarball) : null;
-    if (local && fs.existsSync(local)) {
-      return { kind: 'local-tarball', spec: local, resolvedPath: local, source: 'repo', package: entry.package ?? entry.id };
+  // ── ① tarball：配置文件给了下载地址 + 校验和 ──────────────
+  if (method === 'tarball' || inst.kind === 'local-tarball') {
+    // ①a 规格本身就是本机一个真实存在的 .tgz 绝对路径。
+    //     这一条不能少：它既是「用户手动指定了一个本地包」的路径，
+    //     也是闸门测试唯一能造出一个可控候选包的方式（不需要联网、不需要仓库副本）。
+    if (inst.spec && fs.existsSync(inst.spec)) {
+      return { kind: 'local-tarball', spec: inst.spec, resolvedPath: inst.spec, package: pkg, source: 'local' };
     }
-    const url = `${ctx.repoRawBase}/${inst.tarball}`;
-    return { kind: 'local-tarball', spec: url, resolvedPath: null, needsDownload: true, downloadUrl: url, package: entry.package ?? entry.id, source: 'remote' };
+    // ①b 本机有市场仓库副本时优先用仓库里的字节（离线、快、且与开发机一致）
+    if (inst.tarball && ctx.repoRoot) {
+      const local = path.join(ctx.repoRoot, inst.tarball);
+      if (fs.existsSync(local)) {
+        return { kind: 'local-tarball', spec: local, resolvedPath: local, source: 'repo', package: pkg };
+      }
+    }
+    // ①c 集合仓库托管的 tarball 不在市场仓库里，只能联网下 —— sha256 在下载后校验
+    if (inst.url) {
+      return {
+        kind: 'local-tarball',
+        spec: inst.url,
+        resolvedPath: null,
+        needsDownload: true,
+        downloadUrl: inst.url,
+        sha256: inst.sha256 ?? entry.sha256 ?? null,
+        dshVersion: inst.dshVersion ?? null,
+        package: pkg,
+        source: 'remote',
+      };
+    }
+    // ①d 只有相对路径、没有 url：退回市场仓库的 raw 地址
+    if (inst.tarball && ctx.repoRawBase) {
+      const url = `${ctx.repoRawBase}/${slash(inst.tarball)}`;
+      return {
+        kind: 'local-tarball',
+        spec: url,
+        resolvedPath: null,
+        needsDownload: true,
+        downloadUrl: url,
+        sha256: inst.sha256 ?? entry.sha256 ?? null,
+        package: pkg,
+        source: 'remote',
+      };
+    }
+    return null;
   }
 
-  if (inst.kind === 'local-tarball' && inst.spec) {
-    const local = fs.existsSync(inst.spec) ? inst.spec : null;
-    return { kind: 'local-tarball', spec: local ?? inst.spec, resolvedPath: local, package: entry.package ?? entry.id, source: local ? 'local' : 'missing' };
+  // ── ② 配置文件直接给了规格 ────────────────────────────────
+  if (method === 'github' && /^github:[^\s]+$/.test(String(inst.spec ?? ''))) {
+    return { kind: 'github', spec: inst.spec, resolvedPath: null, package: pkg, source: 'config' };
+  }
+  if (method === 'npm' && looksLikeNpmSpec(inst.spec)) {
+    return { kind: 'npm', spec: inst.spec, resolvedPath: null, package: pkg, source: 'config' };
   }
 
-  // 从索引命令里**只**提取干净的 npm / github 规格；其余一律不认
+  // ── ③ 索引命令里干净的规格（兼容上一版的采集结果）──────────
   const extracted = extractCleanSpec(inst.commands ?? []);
   if (extracted) {
-    return { kind: extracted.kind, spec: extracted.spec, resolvedPath: null, package: entry.package ?? entry.id, source: 'index-command' };
+    return { kind: extracted.kind, spec: extracted.spec, resolvedPath: null, package: pkg, source: 'config-command' };
   }
 
-  // 从 owner/repo 推导（github: 规格由 pnpm 直接解析仓库，目标明确，不会张冠李戴）
-  if (entry.upstream && /^https:\/\/github\.com\/[^/]+\/[^/]+$/.test(entry.upstream)) {
+  // ── ④ 从 owner/repo 推导（pnpm 直接解析仓库，不会张冠李戴）──
+  if (entry.upstream && /^https:\/\/github\.com\/[^/\s]+\/[^/\s]+$/.test(entry.upstream)) {
     const slug = entry.upstream.replace('https://github.com/', '');
     if (!slug.includes(' ')) {
-      return { kind: 'github', spec: `github:${slug}`, resolvedPath: null, package: entry.package ?? entry.id, source: 'derived-github' };
+      return { kind: 'github', spec: `github:${slug}`, resolvedPath: null, package: pkg, source: 'derived-github' };
     }
   }
 
-  // 退到裸 npm 包名：必须有探测证据（包在 npm 上真实存在）
+  // ── ⑤ 退到裸 npm 包名：必须有探测证据（包在 npm 上真实存在）──
   const probed = probe?.available && /npm registry/.test(String(probe.source ?? ''));
   const name = probed ? (probe.manifest?.name ?? entry.package ?? entry.name) : null;
-  if (name && /^(@[a-z0-9-~][a-z0-9-._~]*\/)?[a-z0-9-~][a-z0-9-._~]*$/i.test(name)) {
+  if (name && looksLikeNpmSpec(name)) {
     return { kind: 'npm', spec: name, resolvedPath: null, package: name, source: 'probed-npm' };
   }
 
+  // skills / manual：没有可执行的 dsh 安装路径，如实返回 null，由闸门告诉用户为什么
   return null;
+}
+
+const slash = (p) => String(p).split(path.sep).join('/');
+
+/** npm 包名（可带 @scope）与 `name@version` 都算 */
+function looksLikeNpmSpec(s) {
+  return /^(@[a-z0-9-~][a-z0-9-._~]*\/)?[a-z0-9-~][a-z0-9-._~]*(@[^\s]+)?$/i.test(String(s ?? '').trim());
 }
 
 /** 只接受 `dsh plugin … add <干净的 npm/github 规格>`；其它形式（curl|sh、pip、brew、npm -g）一律拒绝 */
@@ -722,9 +815,7 @@ export function extractCleanSpec(commands) {
     const spec = m[1].replace(/^['"]|['"]$/g, '').trim();
     if (/^github:[^\s]+$/.test(spec)) return { kind: 'github', spec };
     if (/^npm:[^\s]+$/.test(spec)) return { kind: 'npm', spec: spec.slice(4) };
-    if (/^(@[a-z0-9-._~]+\/)?[a-z0-9-._~]+(@[^\s]+)?$/i.test(spec)) {
-      return { kind: 'npm', spec };
-    }
+    if (looksLikeNpmSpec(spec)) return { kind: 'npm', spec };
   }
   return null;
 }

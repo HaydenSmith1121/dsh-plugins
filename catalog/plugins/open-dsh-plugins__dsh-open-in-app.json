@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "open-dsh-plugins/dsh-open-in-app",
+  "slug": "open-dsh-plugins__dsh-open-in-app",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-open-in-app",
+  "title": "dsh-open-in-app",
+  "summary": "在聊天窗口一键用已装应用（如终端、VS Code）打开当前工作区文件夹，提升开发效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "工作区管理",
+    "效率提升",
+    "工作流增强",
+    "可视化"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-08-24T01:53:09Z",
+    "url": "https://github.com/open-dsh-plugins/dsh-open-in-app/releases/tag/v0.1.2"
+  },
+  "author": "open-dsh-plugins",
+  "repo": "https://github.com/open-dsh-plugins/dsh-open-in-app",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-28T02:44:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-open-in-app",
+    "commands": [
+      "dsh plugin --profile web add dsh-open-in-app",
+      "git clone https://github.com/open-dsh-plugins/dsh-open-in-app.git",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

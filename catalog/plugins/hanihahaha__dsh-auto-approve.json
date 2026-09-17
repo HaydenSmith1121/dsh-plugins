@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Hanihahaha/dsh-auto-approve",
+  "slug": "hanihahaha__dsh-auto-approve",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auto-approve",
+  "title": "dsh-auto-approve",
+  "summary": "为 DeepSeek Harness 增加自动批准模式，可自动放行符合沙箱规则或全部审批请求，提升效率。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "权限模式",
+    "沙箱规则",
+    "效率提升"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Hanihahaha",
+  "repo": "https://github.com/Hanihahaha/dsh-auto-approve",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T09:32:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Hanihahaha/dsh-auto-approve",
+    "commands": [
+      "dsh plugin --profile web add github:Hanihahaha/dsh-auto-approve"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

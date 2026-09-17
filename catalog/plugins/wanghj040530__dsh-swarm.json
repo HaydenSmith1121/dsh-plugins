@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "wanghj040530/dsh-swarm",
+  "slug": "wanghj040530__dsh-swarm",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-swarm",
+  "title": "dsh-swarm",
+  "summary": "让多个AI智能体组成团队自动协作，领队拆任务、成员分工干，省Token还能保证交付。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "multi-agent",
+    "swarm",
+    "多Agent协作",
+    "工作流增强",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "0.4.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wanghj040530",
+  "repo": "https://github.com/wanghj040530/dsh-swarm",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T09:26:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wanghj040530/dsh-swarm",
+    "commands": [
+      "dsh plugin --profile web add github:wanghj040530/dsh-swarm"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

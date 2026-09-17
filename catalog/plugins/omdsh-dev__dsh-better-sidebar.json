@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "omdsh-dev/DSH-better-sidebar",
+  "slug": "omdsh-dev__dsh-better-sidebar",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-better-sidebar",
+  "title": "DSH-better-sidebar",
+  "summary": "把文件预览、终端、Git、子代理和自定义 API 都塞进 DSH 原生右侧栏，随用随开。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-better-sidebar",
+    "dsh-plugin",
+    "sidebar",
+    "文件管理",
+    "工具集成",
+    "多智能体协作",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.19.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.19.1",
+    "publishedAt": "2026-09-11T08:47:36Z",
+    "url": "https://github.com/omdsh-dev/DSH-better-sidebar/releases/tag/v0.19.1"
+  },
+  "author": "omdsh-dev",
+  "repo": "https://github.com/omdsh-dev/DSH-better-sidebar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3628,
+  "forks": 346,
+  "pushedAt": "2026-09-16T09:44:35Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-better-sidebar@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-better-sidebar@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

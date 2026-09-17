@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "iasiv5/skins",
+  "slug": "iasiv5__skins",
+  "tier": "community",
+  "package": null,
+  "name": "skins",
+  "title": "skins",
+  "summary": "一键切换明暗皮肤，支持中英双语和自动更新，让 DeepSeek Harness 界面随你心意换装。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "skin",
+    "theme",
+    "可视化",
+    "界面美化",
+    "模型配置",
+    "零配置",
+    "设置面板"
+  ],
+  "version": "1.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.1",
+    "publishedAt": "2026-09-02T12:48:39Z",
+    "url": "https://github.com/iasiv5/skins/releases/tag/v1.0.1"
+  },
+  "author": "iasiv5",
+  "repo": "https://github.com/iasiv5/skins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-06T13:56:59Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:iasiv5/skins",
+    "commands": [
+      "dsh plugin --profile web add github:iasiv5/skins",
+      "dsh plugin --profile web update dsh-skins",
+      "dsh plugin --profile web remove dsh-skins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

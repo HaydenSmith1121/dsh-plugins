@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "wyq183/dsh-artifact-library",
+  "slug": "wyq183__dsh-artifact-library",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-artifact-library",
+  "title": "dsh-artifact-library",
+  "summary": "自动收集 AI 产出并整理成带摘要标签的本地资料库，支持全文搜索和项目总览。",
+  "tags": [
+    "文件管理",
+    "语义检索",
+    "工作区管理",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "0.3.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.4",
+    "publishedAt": "2026-09-06T11:30:14Z",
+    "url": "https://github.com/wyq183/dsh-artifact-library/releases/tag/v0.3.4"
+  },
+  "author": "wyq183",
+  "repo": "https://github.com/wyq183/dsh-artifact-library",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-06T11:30:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wyq183/dsh-artifact-library",
+    "commands": [
+      "dsh plugin --profile web add github:wyq183/dsh-artifact-library",
+      "dsh plugin --profile web add <本仓库路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

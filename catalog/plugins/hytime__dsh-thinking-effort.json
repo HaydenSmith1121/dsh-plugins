@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "hytime/dsh-thinking-effort",
+  "slug": "hytime__dsh-thinking-effort",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-thinking-effort",
+  "title": "dsh-thinking-effort",
+  "summary": "给 llm-pi-ai 模型设置默认推理强度和网关兼容选项，让模型按需思考。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "gateway-compatibility",
+    "llm-pi-ai",
+    "model-settings",
+    "reasoning-effort",
+    "模型适配",
+    "模型配置",
+    "设置面板",
+    "工具集成"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-16T07:58:41Z",
+    "url": "https://github.com/hytime/dsh-thinking-effort/releases/tag/v0.3.0"
+  },
+  "author": "hytime",
+  "repo": "https://github.com/hytime/dsh-thinking-effort",
+  "homepage": "https://www.npmjs.com/package/@hytime/dsh-thinking-effort",
+  "license": "MIT",
+  "stars": 31,
+  "forks": 0,
+  "pushedAt": "2026-09-16T07:33:15Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hytime/dsh-thinking-effort",
+    "commands": [
+      "dsh plugin --profile <profile> add @hytime/dsh-thinking-effort",
+      "dsh plugin --profile <profile> add @hytime/dsh-thinking-effort@0.2.4",
+      "dsh plugin --profile <profile> update @hytime/dsh-thinking-effort"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

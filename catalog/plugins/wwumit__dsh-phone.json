@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "wwumit/dsh-phone",
+  "slug": "wwumit__dsh-phone",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-phone",
+  "title": "dsh-phone",
+  "summary": "把手机变成 Agent 的远程电话终端，随时接听、拨打电话，让智能体帮你处理通话事务。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "娱乐互动",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "2.5.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wwumit",
+  "repo": "https://github.com/wwumit/dsh-phone",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-02T10:41:17Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@wwumit/dsh-phone",
+    "commands": [
+      "dsh plugin --profile web add @wwumit/dsh-phone"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

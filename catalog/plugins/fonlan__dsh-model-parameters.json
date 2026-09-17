@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "fonlan/dsh-model-parameters",
+  "slug": "fonlan__dsh-model-parameters",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-parameters",
+  "title": "dsh-model-parameters",
+  "summary": "同步模型设置时自动补全缺失的模型信息，如显示名称、上下文窗口等，省去手动维护的麻烦。",
+  "tags": [
+    "dsh-plugin",
+    "设置面板",
+    "资源优化",
+    "效率提升",
+    "模型配置"
+  ],
+  "version": "0.1.4",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fonlan",
+  "repo": "https://github.com/fonlan/dsh-model-parameters",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T15:05:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@fonlan/dsh-model-parameters",
+    "commands": [
+      "dsh plugin --profile web add @fonlan/dsh-model-parameters",
+      "dsh plugin --profile web add github:fonlan/dsh-model-parameters",
+      "dsh plugin --profile web remove @fonlan/dsh-model-parameters"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

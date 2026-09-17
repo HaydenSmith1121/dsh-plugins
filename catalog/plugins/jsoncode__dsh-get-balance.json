@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "jsoncode/dsh-get-balance",
+  "slug": "jsoncode__dsh-get-balance",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-get-balance",
+  "title": "dsh-get-balance",
+  "summary": "一键查询 DeepSeek 多账号余额与费用，实时统计 token 用量，界面直观，开箱即用。",
+  "tags": [
+    "dsh-get-balance",
+    "dsh-plugin",
+    "状态监控",
+    "效率提升",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "0.1.36",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.36",
+    "publishedAt": "2026-09-11T03:35:39Z",
+    "url": "https://github.com/jsoncode/dsh-get-balance/releases/tag/v0.1.36"
+  },
+  "author": "jsoncode",
+  "repo": "https://github.com/jsoncode/dsh-get-balance",
+  "homepage": "https://github.com/jsoncode/dsh-get-balance",
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T05:56:32Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jsoncode/dsh-get-balance",
+    "commands": [
+      "dsh plugin --profile web add github:jsoncode/dsh-get-balance"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

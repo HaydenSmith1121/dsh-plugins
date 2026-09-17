@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "watersxya/dsh-novel-forge",
+  "slug": "watersxya__dsh-novel-forge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-novel-forge",
+  "title": "dsh-novel-forge",
+  "summary": "把小说大纲变成完整书稿的AI写作台，支持章节生成、审稿质检和全本导出。",
+  "tags": [
+    "ai-novel",
+    "ai-writing",
+    "deepseek-harness",
+    "dsh-plugin",
+    "novel-writing",
+    "xiaoshuo",
+    "自动化",
+    "效率提升",
+    "工作流增强",
+    "AI 助手"
+  ],
+  "version": "1.2.0-alpha",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.0-alpha",
+    "publishedAt": "2026-09-13T00:33:18Z",
+    "url": "https://github.com/watersxya/dsh-novel-forge/releases/tag/v1.2.0-alpha"
+  },
+  "author": "watersxya",
+  "repo": "https://github.com/watersxya/dsh-novel-forge",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-13T02:39:27Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:watersxya/dsh-novel-forge",
+    "commands": [
+      "dsh plugin --profile web add link:\"<此目录绝对路径>\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "huangdaxianer/dsh-dual-model-eval",
+  "slug": "huangdaxianer__dsh-dual-model-eval",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-dual-model-eval",
+  "title": "dsh-dual-model-eval",
+  "summary": "让多个编程智能体并行跑同一任务，并排对比结果，帮你选出最优代码方案。",
+  "tags": [
+    "agent-evaluation",
+    "coding-agent",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "git-worktree",
+    "llm-evaluation",
+    "model-evaluation",
+    "multi-agent",
+    "multi-model",
+    "side-by-side",
+    "多Agent协作",
+    "模型评估",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-19T08:34:04Z",
+    "url": "https://github.com/huangdaxianer/dsh-dual-model-eval/releases/tag/v0.1.1"
+  },
+  "author": "huangdaxianer",
+  "repo": "https://github.com/huangdaxianer/dsh-dual-model-eval",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-19T08:34:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:huangdaxianer/dsh-dual-model-eval",
+    "commands": [
+      "dsh plugin --profile web add github:huangdaxianer/dsh-dual-model-eval"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

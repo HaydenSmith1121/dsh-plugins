@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "AI-Galaxy-GPU/dsh-sound",
+  "slug": "ai-galaxy-gpu__dsh-sound",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sound",
+  "title": "dsh-sound",
+  "summary": "任务完成、需要审批或出错时自动播放提示音，音量音效都能自己调，不怕错过关键消息。",
+  "tags": [
+    "dsh-plugin",
+    "消息通知",
+    "设置面板",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "0.4.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "AI-Galaxy-GPU",
+  "repo": "https://github.com/AI-Galaxy-GPU/dsh-sound",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 1,
+  "pushedAt": "2026-09-15T16:35:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@ai-galaxy/dsh-sound",
+    "commands": [
+      "dsh plugin --profile web add @ai-galaxy/dsh-sound",
+      "dsh plugin --profile web add github:AI-Galaxy-GPU/dsh-sound"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

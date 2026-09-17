@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Nafiygond/dsh-file-drop",
+  "slug": "nafiygond__dsh-file-drop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-file-drop",
+  "title": "dsh-file-drop",
+  "summary": "拖拽文件就能直接加进对话，还能粘贴路径，省去手动输入的麻烦。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "deepseek-v4",
+    "文件管理",
+    "快捷操作",
+    "效率提升",
+    "工具集成"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Nafiygond",
+  "repo": "https://github.com/Nafiygond/dsh-file-drop",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-19T22:42:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Nafiygond/dsh-file-drop",
+    "commands": [
+      "dsh plugin --profile web add github:Nafiygond/dsh-file-drop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

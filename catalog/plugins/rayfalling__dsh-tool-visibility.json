@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "rayfalling/dsh-tool-visibility",
+  "slug": "rayfalling__dsh-tool-visibility",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tool-visibility",
+  "title": "dsh-tool-visibility",
+  "summary": "在设置页里手动控制哪些工具定义注入模型上下文，隐藏的会存下来，重启也生效，省上下文。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "模型配置",
+    "资源优化",
+    "插件管理",
+    "状态监控"
+  ],
+  "version": "0.3.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "rayfalling",
+  "repo": "https://github.com/rayfalling/dsh-tool-visibility",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T12:21:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:rayfalling/dsh-tool-visibility",
+    "commands": [
+      "dsh plugin --profile web add github:rayfalling/dsh-tool-visibility"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

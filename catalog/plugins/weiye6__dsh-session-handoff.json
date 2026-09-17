@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "WeiYe6/dsh-session-handoff",
+  "slug": "weiye6__dsh-session-handoff",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-handoff",
+  "title": "dsh-session-handoff",
+  "summary": "长对话太乱？一键把当前会话总结成文档，开个新会话接着聊，上下文不丢。",
+  "tags": [
+    "dsh-plugin",
+    "会话交接",
+    "长对话清理",
+    "上下文保留",
+    "自动总结"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-08-28T05:32:13Z",
+    "url": "https://github.com/WeiYe6/dsh-session-handoff/releases/tag/v0.2.1"
+  },
+  "author": "WeiYe6",
+  "repo": "https://github.com/WeiYe6/dsh-session-handoff",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-28T05:31:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:WeiYe6/dsh-session-handoff",
+    "commands": [
+      "npm install && npm run build && npm pack",
+      "dsh plugin --profile web add ./dsh-session-handoff-0.2.1.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

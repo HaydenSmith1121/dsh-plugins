@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Minglink/dsh-stream-market",
+  "slug": "minglink__dsh-stream-market",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-stream-market",
+  "title": "dsh-stream-market",
+  "summary": "内置可视化插件市场，秒开浏览、一键安装，支持dsh://协议联动和深度本地管理，卸载干净彻底。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-plugin",
+    "dsh-extension",
+    "dsh-plugin",
+    "marketplace",
+    "插件管理",
+    "可视化",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-04T15:05:34Z",
+    "url": "https://github.com/Minglink/dsh-stream-market/releases/tag/v1.0.0"
+  },
+  "author": "Minglink",
+  "repo": "https://github.com/Minglink/dsh-stream-market",
+  "homepage": "https://minglink.github.io/dsh-stream-market/",
+  "license": "MIT",
+  "stars": 12,
+  "forks": 0,
+  "pushedAt": "2026-09-04T16:27:47Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Minglink/dsh-stream-market",
+    "commands": [
+      "dsh plugin --profile web add github:Minglink/dsh-stream-market"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

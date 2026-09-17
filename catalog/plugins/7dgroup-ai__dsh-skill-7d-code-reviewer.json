@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "7dgroup-ai/dsh-skill-7d-code-reviewer",
+  "slug": "7dgroup-ai__dsh-skill-7d-code-reviewer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skill-7d-code-reviewer",
+  "title": "dsh-skill-7d-code-reviewer",
+  "summary": "模板驱动的代码审查技能，五步流程、三级问题分级、四维评分，自动生成HTML报告。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "安全审计",
+    "状态监控",
+    "报告生成",
+    "自动化"
+  ],
+  "version": "0.1.0-rc.5",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "7dgroup-ai",
+  "repo": "https://github.com/7dgroup-ai/dsh-skill-7d-code-reviewer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 12,
+  "forks": 2,
+  "pushedAt": "2026-08-17T16:45:04Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:7dgroup-ai/dsh-skill-7d-code-reviewer",
+    "commands": [
+      "dsh plugin --profile <name> add github:7dgroup-ai/dsh-skill-7d-code-reviewer",
+      "dsh plugin --profile <name> add git+https://github.com/7dgroup-ai/dsh-skill-7d-code-reviewer.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "xia-sc/dsh-git",
+  "slug": "xia-sc__dsh-git",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-git",
+  "title": "dsh-git",
+  "summary": "在网页界面里直接管 Git，切换分支、拉取、提交、推送，悬浮面板跟着会话走，不用切终端。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "工作区管理",
+    "工作流增强",
+    "可视化",
+    "效率提升",
+    "命令行工具"
+  ],
+  "version": "0.5.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.0",
+    "publishedAt": "2026-09-15T09:47:56Z",
+    "url": "https://github.com/xia-sc/dsh-git/releases/tag/v0.5.0"
+  },
+  "author": "xia-sc",
+  "repo": "https://github.com/xia-sc/dsh-git",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-09-15T09:47:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xia-sc/dsh-git",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/xia-sc/dsh-git",
+      "dsh plugin --profile web remove @dsh-plugins/dsh-git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

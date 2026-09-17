@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "aa2246740/dsh-skillhub",
+  "slug": "aa2246740__dsh-skillhub",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skillhub",
+  "title": "dsh-skillhub",
+  "summary": "把磁盘上已有的 Skills 都列出来，还能按全局、项目、会话分别设置默认和覆盖。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "设置面板",
+    "文件管理",
+    "工作区管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "aa2246740",
+  "repo": "https://github.com/aa2246740/dsh-skillhub",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T13:04:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aa2246740/dsh-skillhub",
+    "commands": [
+      "dsh plugin --profile web add github:aa2246740/dsh-skillhub",
+      "git clone https://github.com/aa2246740/dsh-skillhub.git",
+      "dsh plugin --profile web add ./dsh-skillhub"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

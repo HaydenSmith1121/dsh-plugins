@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Volta-ln/dsh-quick-ask",
+  "slug": "volta-ln__dsh-quick-ask",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-quick-ask",
+  "title": "dsh-quick-ask",
+  "summary": "在 Web 界面侧边开个小窗，随手问点小问题，由独立轻量会话快速作答，不打断当前话题。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "快捷操作",
+    "AI 助手",
+    "前端增强",
+    "会话管理"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Volta-ln",
+  "repo": "https://github.com/Volta-ln/dsh-quick-ask",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T06:39:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Volta-ln/dsh-quick-ask",
+    "commands": [
+      "dsh plugin --profile <profile> add dsh-quick-ask"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

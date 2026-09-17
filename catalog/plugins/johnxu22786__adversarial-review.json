@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "JohnXu22786/adversarial-review",
+  "slug": "johnxu22786__adversarial-review",
+  "tier": "community",
+  "package": null,
+  "name": "JohnXu22786/adversarial-review",
+  "title": "JohnXu22786/adversarial-review",
+  "summary": "用多视角对抗式审查代码，自动合并去重并分级严重性，支持规则过滤和历史追溯，提升代码审查深度与效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "安全审查",
+    "效率提升",
+    "工作流增强",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "JohnXu22786",
+  "repo": "https://github.com/JohnXu22786/adversarial-review",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-17T01:36:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JohnXu22786/adversarial-review",
+    "commands": [
+      "dsh plugin --profile demo add github:JohnXu22786/adversarial-review"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

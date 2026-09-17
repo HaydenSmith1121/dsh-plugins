@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "naodeng/dsh-qa",
+  "slug": "naodeng__dsh-qa",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-qa",
+  "title": "dsh-qa",
+  "summary": "本地软件测试工作台，零依赖管理测试项目与迭代，AI 辅助需求、用例、缺陷和里程碑。",
+  "tags": [
+    "ai-qa",
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-plugins",
+    "qa",
+    "qa-kanban",
+    "零配置",
+    "工作流增强",
+    "AI 助手",
+    "可视化",
+    "内容创作"
+  ],
+  "version": "0.4.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.1",
+    "publishedAt": "2026-09-15T10:06:00Z",
+    "url": "https://github.com/naodeng/dsh-qa/releases/tag/v0.4.1"
+  },
+  "author": "naodeng",
+  "repo": "https://github.com/naodeng/dsh-qa",
+  "homepage": "https://inaodeng.com/dsh-qa/",
+  "license": "NOASSERTION",
+  "stars": 18,
+  "forks": 3,
+  "pushedAt": "2026-09-15T10:05:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:naodeng/dsh-qa",
+    "commands": [
+      "npm install -g dsh-qa",
+      "git clone https://github.com/naodeng/dsh-qa.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

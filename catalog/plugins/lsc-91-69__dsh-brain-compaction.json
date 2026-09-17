@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "Lsc-91-69/dsh-brain-compaction",
+  "slug": "lsc-91-69__dsh-brain-compaction",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-brain-compaction",
+  "title": "dsh-brain-compaction",
+  "summary": "像人脑一样智能压缩上下文，长任务不爆内存，token 消耗大幅降低。",
+  "tags": [
+    "context-compression",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "llm-optimization",
+    "memory-vault",
+    "selective-forgetting",
+    "token-saving",
+    "效率提升",
+    "会话管理",
+    "工作流增强",
+    "模型配置"
+  ],
+  "version": "0.1.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.5",
+    "publishedAt": "2026-09-11T15:23:40Z",
+    "url": "https://github.com/Lsc-91-69/dsh-brain-compaction/releases/tag/v0.1.5"
+  },
+  "author": "Lsc-91-69",
+  "repo": "https://github.com/Lsc-91-69/dsh-brain-compaction",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-11T15:19:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Lsc-91-69/dsh-brain-compaction",
+    "commands": [
+      "dsh plugin --profile web add \"github:Lsc-91-69/dsh-brain-compaction\"",
+      "git clone https://github.com/Lsc-91-69/dsh-brain-compaction",
+      "dsh plugin --profile web add \"file:<path-to-the-clone>\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

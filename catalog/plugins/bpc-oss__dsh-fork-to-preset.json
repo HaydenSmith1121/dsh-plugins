@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "bpc-oss/dsh-fork-to-preset",
+  "slug": "bpc-oss__dsh-fork-to-preset",
+  "tier": "community",
+  "package": null,
+  "name": "bpc-oss/dsh-fork-to-preset",
+  "title": "bpc-oss/dsh-fork-to-preset",
+  "summary": "从对话头部快捷切换不同智能体预设，将当前会话派生为新预设的子会话并保留已有对话，方便对比或继续不同配置的对话。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "多Agent协作",
+    "模型适配",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-21T16:26:36Z",
+    "url": "https://github.com/bpc-oss/dsh-fork-to-preset/releases/tag/v0.1.1"
+  },
+  "author": "bpc-oss",
+  "repo": "https://github.com/bpc-oss/dsh-fork-to-preset",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-22T01:45:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bpc-oss/dsh-fork-to-preset",
+    "commands": [
+      "dsh plugin --profile web add github:bpc-oss/dsh-fork-to-preset"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

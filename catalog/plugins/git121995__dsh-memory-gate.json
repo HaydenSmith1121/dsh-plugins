@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "GIT121995/dsh-memory-gate",
+  "slug": "git121995__dsh-memory-gate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memory-gate",
+  "title": "dsh-memory-gate",
+  "summary": "为 DeepSeek Harness 提供带权限管控的本地长期记忆，只注入真正需要的记忆，避免上下文污染。",
+  "tags": [
+    "agent-memory",
+    "cbdc",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "long-term-memory",
+    "memory",
+    "sqlite",
+    "typescript",
+    "会话管理",
+    "权限管控",
+    "SQLite存储"
+  ],
+  "version": "0.12.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "GIT121995",
+  "repo": "https://github.com/GIT121995/dsh-memory-gate",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-10T07:00:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-memory-gate",
+    "commands": [
+      "npm install -g pnpm",
+      "dsh plugin --profile web add dsh-memory-gate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

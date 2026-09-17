@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "shaomingbo/dsh-attention",
+  "slug": "shaomingbo__dsh-attention",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-attention",
+  "title": "dsh-attention",
+  "summary": "当 DeepSeek Harness 网页会话结束时，通过标签页标题、图标、声音和系统通知提醒你，不错过任何结果。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "效率提升",
+    "自动化",
+    "AI 助手"
+  ],
+  "version": "0.1.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.4",
+    "publishedAt": "2026-09-11T15:18:43Z",
+    "url": "https://github.com/shaomingbo/dsh-attention/releases/tag/v0.1.4"
+  },
+  "author": "shaomingbo",
+  "repo": "https://github.com/shaomingbo/dsh-attention",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T15:18:41Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shaomingbo/dsh-attention",
+    "commands": [
+      "dsh plugin --profile web add github:shaomingbo/dsh-attention"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "fang2hou/dsh-locale-ja",
+  "slug": "fang2hou__dsh-locale-ja",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-locale-ja",
+  "title": "dsh-locale-ja",
+  "summary": "给 DeepSeek Harness 的网页界面加上日语，让日文用户也能顺手使用。",
+  "tags": [
+    "dsh-plugin",
+    "主题",
+    "设置面板",
+    "零配置"
+  ],
+  "version": "0.5.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fang2hou",
+  "repo": "https://github.com/fang2hou/dsh-locale-ja",
+  "homepage": "https://www.npmjs.com/package/@fang2hou/dsh-locale-ja",
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-15T14:16:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@fang2hou/dsh-locale-ja",
+    "commands": [
+      "dsh plugin --profile web add @fang2hou/dsh-locale-ja",
+      "dsh plugin --profile web remove @fang2hou/dsh-locale-ja"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

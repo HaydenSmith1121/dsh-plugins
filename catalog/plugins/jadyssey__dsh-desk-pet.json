@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "jadyssey/dsh-desk-pet",
+  "slug": "jadyssey__dsh-desk-pet",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-desk-pet",
+  "title": "dsh-desk-pet",
+  "summary": "在桌面上养一只透明置顶的鲸鱼，实时显示 DeepSeek Harness 的 Agent 状态，可爱又实用。",
+  "tags": [
+    "desktop-pet",
+    "dsh",
+    "tauri",
+    "whale",
+    "状态监控",
+    "可视化",
+    "娱乐互动",
+    "自动化",
+    "插件管理"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-09-08T14:51:18Z",
+    "url": "https://github.com/jadyssey/dsh-desk-pet/releases/tag/v0.1.3"
+  },
+  "author": "jadyssey",
+  "repo": "https://github.com/jadyssey/dsh-desk-pet",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T14:43:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jadyssey/dsh-desk-pet",
+    "commands": [
+      "dsh plugin --profile <profile> add dsh-desk-pet",
+      "git clone https://github.com/jadyssey/dsh-desk-pet",
+      "dsh plugin --profile <profile> add file:$PWD/packages/plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

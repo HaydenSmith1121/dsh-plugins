@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "paulalesius/dsh-hindsight-advanced",
+  "slug": "paulalesius__dsh-hindsight-advanced",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hindsight-advanced",
+  "title": "dsh-hindsight-advanced",
+  "summary": "给 DeepSeek Harness 智能体装上长期记忆，每轮自动回忆，还能手动保留、召回和反思，让对话不中断。",
+  "tags": [
+    "agent-memory",
+    "deepseek-harness",
+    "dsh-plugin",
+    "hindsight",
+    "hindsight-memory",
+    "会话管理",
+    "AI 助手",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "paulalesius",
+  "repo": "https://github.com/paulalesius/dsh-hindsight-advanced",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-09T11:01:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:paulalesius/dsh-hindsight-advanced",
+    "commands": [
+      "dsh plugin --profile web add /path/to/hindsight-advanced"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

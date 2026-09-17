@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "niuniuaba/dsh-subagent-vision",
+  "slug": "niuniuaba__dsh-subagent-vision",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subagent-vision",
+  "title": "dsh-subagent-vision",
+  "summary": "让纯文本的DeepSeek主代理在同一会话里直接读取图片，轻松补上视觉能力。",
+  "tags": [
+    "dsh-plugin",
+    "多模态",
+    "多智能体协作",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.1.7",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "niuniuaba",
+  "repo": "https://github.com/niuniuaba/dsh-subagent-vision",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T08:37:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-subagent-vision",
+    "commands": [
+      "dsh plugin --profile web add dsh-subagent-vision",
+      "dsh plugin --profile web add github:niuniuaba/dsh-subagent-vision",
+      "dsh plugin --profile web add git+https://github.com/niuniuaba/dsh-subagent-vision.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

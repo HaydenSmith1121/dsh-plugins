@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "tomcatzh/dsh-ui-plugins",
+  "slug": "tomcatzh__dsh-ui-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ui-plugins",
+  "title": "dsh-ui-plugins",
+  "summary": "为 DeepSeek Harness 提供独立可组合的 UI 插件，即装即用，灵活增强界面功能。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "react",
+    "typescript",
+    "零配置",
+    "插件管理",
+    "前端增强",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "tomcatzh",
+  "repo": "https://github.com/tomcatzh/dsh-ui-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T03:02:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tomcatzh/dsh-ui-plugins",
+    "commands": [
+      "dsh plugin --profile default add 'github:tomcatzh/dsh-ui-plugins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

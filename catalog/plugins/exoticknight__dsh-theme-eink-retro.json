@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "exoticknight/dsh-theme-eink-retro",
+  "slug": "exoticknight__dsh-theme-eink-retro",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-theme-eink-retro",
+  "title": "dsh-theme-eink-retro",
+  "summary": "给 DeepSeek Harness 换上纸墨质感复古主题，支持均衡和沉浸两种模式，护眼又怀旧。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "e-ink",
+    "macintosh",
+    "monochrome",
+    "theme",
+    "界面美化",
+    "前端增强",
+    "可视化"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-09-13T15:03:10Z",
+    "url": "https://github.com/exoticknight/dsh-theme-eink-retro/releases/tag/v0.3.1"
+  },
+  "author": "exoticknight",
+  "repo": "https://github.com/exoticknight/dsh-theme-eink-retro",
+  "homepage": "https://github.com/exoticknight/dsh-theme-eink-retro#readme",
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T05:37:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:exoticknight/dsh-theme-eink-retro",
+    "commands": [
+      "dsh plugin --profile web add github:exoticknight/dsh-theme-eink-retro",
+      "dsh plugin --profile web remove dsh-theme-eink-retro"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

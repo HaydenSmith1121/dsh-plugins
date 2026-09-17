@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "staff-os/dsh-ragflow",
+  "slug": "staff-os__dsh-ragflow",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ragflow",
+  "title": "dsh-ragflow",
+  "summary": "让智能体直接检索你的 RAGFlow 知识库，返回带相似度评分和来源的文档片段，快速接入企业知识问答。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "ragflow",
+    "多工具支持",
+    "会话管理",
+    "效率提升",
+    "工具集成"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "staff-os",
+  "repo": "https://github.com/staff-os/dsh-ragflow",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-08-18T13:59:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:staff-os/dsh-ragflow",
+    "commands": [
+      "dsh plugin --profile web add \"github:staff-os/dsh-ragflow",
+      "dsh plugin --profile web add link:/path/to/dsh-ragflow"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

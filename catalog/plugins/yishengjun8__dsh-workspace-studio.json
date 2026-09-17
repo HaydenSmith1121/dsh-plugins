@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "yishengjun8/dsh-workspace-studio",
+  "slug": "yishengjun8__dsh-workspace-studio",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workspace-studio",
+  "title": "dsh-workspace-studio",
+  "summary": "把工作区变成左中右三栏，文件树、预览编辑和聊天同屏，像 VSCode 一样顺手。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "工作区管理",
+    "文件管理",
+    "前端增强",
+    "主题",
+    "效率提升"
+  ],
+  "version": "0.8.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yishengjun8",
+  "repo": "https://github.com/yishengjun8/dsh-workspace-studio",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T11:32:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yishengjun8/dsh-workspace-studio",
+    "commands": [
+      "dsh plugin --profile web add github:yishengjun8/dsh-workspace-studio"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

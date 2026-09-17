@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "virggle/dsh-shutdown-after-task",
+  "slug": "virggle__dsh-shutdown-after-task",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-shutdown-after-task",
+  "title": "dsh-shutdown-after-task",
+  "summary": "任务跑完自动关机，按钮开启可取消，过夜跑长任务省心又安全。",
+  "tags": [
+    "auto-shutdown",
+    "deepseek-harness",
+    "dsh-plugin",
+    "shutdown",
+    "自动化",
+    "工作流增强",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "virggle",
+  "repo": "https://github.com/virggle/dsh-shutdown-after-task",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-28T17:59:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-shutdown-after-task",
+    "commands": [
+      "dsh plugin --profile web add dsh-shutdown-after-task",
+      "dsh plugin --profile web add github:virggle/dsh-shutdown-after-task"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

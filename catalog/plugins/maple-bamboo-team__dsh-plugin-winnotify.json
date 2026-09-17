@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Maple-Bamboo-Team/dsh-plugin-winnotify",
+  "slug": "maple-bamboo-team__dsh-plugin-winnotify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-winnotify",
+  "title": "dsh-plugin-winnotify",
+  "summary": "给 DeepSeek Harness 加上 Windows 原生 Toast 通知，任务完成或出错时实时弹窗提醒，不用一直盯着终端。",
+  "tags": [
+    "dsh-plugin",
+    "消息通知",
+    "状态监控",
+    "效率提升",
+    "命令行工具"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Maple-Bamboo-Team",
+  "repo": "https://github.com/Maple-Bamboo-Team/dsh-plugin-winnotify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T06:33:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Maple-Bamboo-Team/dsh-plugin-winnotify",
+    "commands": [
+      "dsh plugin --profile web add github:Maple-Bamboo-Team/dsh-plugin-winnotify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "CARVIN94/dsh-router",
+  "slug": "carvin94__dsh-router",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-router",
+  "title": "dsh-router",
+  "summary": "给 DeepSeek Harness 加一个 OpenAI 兼容接口，让各种工具和客户端都能直接连上模型。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "工具集成",
+    "桥接插件",
+    "模型适配"
+  ],
+  "version": "0.3.18",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "CARVIN94",
+  "repo": "https://github.com/CARVIN94/dsh-router",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-09-16T13:47:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-router-core",
+    "commands": [
+      "dsh plugin --profile web add dsh-router-core"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "ErrorLst/dsh-global-font",
+  "slug": "errorlst__dsh-global-font",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-global-font",
+  "title": "dsh-global-font",
+  "summary": "在设置页一键换全局字体，代码块和插件界面也跟着变，还能预览和保存。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "font",
+    "theme",
+    "ui",
+    "设置面板",
+    "主题",
+    "界面美化",
+    "状态持久化"
+  ],
+  "version": "0.1.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ErrorLst",
+  "repo": "https://github.com/ErrorLst/dsh-global-font",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T09:13:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ErrorLst/dsh-global-font",
+    "commands": [
+      "dsh plugin --profile web add github:ErrorLst/dsh-global-font"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

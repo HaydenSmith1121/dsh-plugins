@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Casually/dsh-plug-skills",
+  "slug": "casually__dsh-plug-skills",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plug-skills",
+  "title": "dsh-plug-skills",
+  "summary": "在设置里浏览 GitHub 上的技能包，看详情后一键装好或卸掉，不用手动折腾。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh-plugin",
+    "dsh-plugins",
+    "插件管理",
+    "工具集成",
+    "快捷操作",
+    "设置面板"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Casually",
+  "repo": "https://github.com/Casually/dsh-plug-skills",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 1,
+  "pushedAt": "2026-08-22T06:54:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Casually/dsh-plug-skills",
+    "commands": [
+      "dsh plugin --profile web add github:Casually/dsh-plug-skills"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

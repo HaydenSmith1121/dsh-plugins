@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Seetraum/harness-session-delete",
+  "slug": "seetraum__harness-session-delete",
+  "tier": "community",
+  "package": null,
+  "name": "harness-session-delete",
+  "title": "harness-session-delete",
+  "summary": "把会话丢进回收站，随时恢复或彻底删除，还能批量操作，防止误删当前会话。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "0.4.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Seetraum",
+  "repo": "https://github.com/Seetraum/harness-session-delete",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 3,
+  "pushedAt": "2026-09-16T10:21:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-session-recycle-bin",
+    "commands": [
+      "dsh plugin --profile web add dsh-session-recycle-bin",
+      "dsh plugin --profile web add link:/absolute/path/to/harness-session-delete",
+      "dsh plugin --profile web remove dsh-session-recycle-bin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

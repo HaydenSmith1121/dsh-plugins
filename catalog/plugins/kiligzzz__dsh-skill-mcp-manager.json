@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "kiligzzz/dsh-skill-mcp-manager",
+  "slug": "kiligzzz__dsh-skill-mcp-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skill-mcp-manager",
+  "title": "dsh-skill-mcp-manager",
+  "summary": "在设置页里统一管理 MCP 服务器和技能，不用改配置文件，开箱即用。",
+  "tags": [
+    "capability",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mcp",
+    "plugin",
+    "skill",
+    "设置面板",
+    "插件管理",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-30T09:31:51Z",
+    "url": "https://github.com/kiligzzz/dsh-skill-mcp-manager/releases/tag/v0.2.0"
+  },
+  "author": "kiligzzz",
+  "repo": "https://github.com/kiligzzz/dsh-skill-mcp-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-07T08:58:02Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kiligzzz/dsh-skill-mcp-manager",
+    "commands": [
+      "dsh plugin --profile web add github:kiligzzz/dsh-skill-mcp-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

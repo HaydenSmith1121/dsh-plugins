@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "534119219/chicheng-cron",
+  "slug": "534119219__chicheng-cron",
+  "tier": "community",
+  "package": null,
+  "name": "chicheng-cron",
+  "title": "chicheng-cron",
+  "summary": "在侧栏添加定时任务入口，用 cron 表达式定时执行脚本、Skill 或 Agent 任务，支持推送通知和移动端适配。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "效率提升",
+    "前端增强",
+    "工具集成",
+    "会话管理"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "534119219",
+  "repo": "https://github.com/534119219/chicheng-cron",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-08-26T12:47:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:534119219/chicheng-cron",
+    "commands": [
+      "dsh plugin --profile web add github:534119219/chicheng-cron"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

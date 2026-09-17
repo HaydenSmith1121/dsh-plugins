@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "wycto/dsh-balance-panel",
+  "slug": "wycto__dsh-balance-panel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-balance-panel",
+  "title": "dsh-balance-panel",
+  "summary": "在侧边栏底部直观展示所有模型 Provider 的余额，方便随时查看和管理。",
+  "tags": [
+    "ai-agent",
+    "ai-agents",
+    "cordis",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "前端增强",
+    "效率提升",
+    "资源优化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wycto",
+  "repo": "https://github.com/wycto/dsh-balance-panel",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-17T13:54:21Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@wycto/dsh-balance-panel",
+    "commands": [
+      "dsh plugin --profile web add @wycto/dsh-balance-panel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

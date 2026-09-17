@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "czm15053/dsh-peer-link",
+  "slug": "czm15053__dsh-peer-link",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-peer-link",
+  "title": "dsh-peer-link",
+  "summary": "让 DeepSeek Harness 与 Claude Code 等本机 agent 通过 Unix socket 互发消息，实现跨会话点对点通信。",
+  "tags": [
+    "dsh-plugin",
+    "点对点通信",
+    "多Agent协作",
+    "消息通知"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "czm15053",
+  "repo": "https://github.com/czm15053/dsh-peer-link",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-08-14T04:59:17Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:czm15053/dsh-peer-link",
+    "commands": [
+      "dsh plugin --profile web add \"github:czm15053/dsh-peer-link\"",
+      "dsh plugin --profile web add link:<repo路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

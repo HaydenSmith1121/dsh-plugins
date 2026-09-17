@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "jaibhasin/dsh-browser-agent",
+  "slug": "jaibhasin__dsh-browser-agent",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-browser-agent",
+  "title": "dsh-browser-agent",
+  "summary": "在 Chrome 侧边栏里和 AI 助手聊天，随时解释网页、填表单、帮你搞定网站操作。",
+  "tags": [
+    "browser-automation",
+    "chrome-extension",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-plugins",
+    "typescript",
+    "AI 助手",
+    "自动化",
+    "效率提升",
+    "前端增强",
+    "桌面自动化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-09T09:36:53Z",
+    "url": "https://github.com/jaibhasin/dsh-browser-agent/releases/tag/v0.1.1"
+  },
+  "author": "jaibhasin",
+  "repo": "https://github.com/jaibhasin/dsh-browser-agent",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 1,
+  "pushedAt": "2026-09-16T14:43:18Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jaibhasin/dsh-browser-agent",
+    "commands": [
+      "curl -fsSL https://raw.githubusercontent.com/jaibhasin/dsh-browser-agent/main/scripts/install.sh | bash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

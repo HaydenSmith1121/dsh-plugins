@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "lirui1024k/dsh-browser-ops",
+  "slug": "lirui1024k__dsh-browser-ops",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-browser-ops",
+  "title": "dsh-browser-ops",
+  "summary": "让智能体直接操控真实浏览器，还能录制手动操作流程并按参数自动重放，轻松批量造测试数据。",
+  "tags": [
+    "browser-automation",
+    "chrome",
+    "deepseek-harness",
+    "dsh-plugin",
+    "playwright",
+    "recorder",
+    "自动化",
+    "测试数据生成",
+    "录制重放",
+    "AI 助手"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-06T14:56:42Z",
+    "url": "https://github.com/lirui1024k/dsh-browser-ops/releases/tag/v0.2.0"
+  },
+  "author": "lirui1024k",
+  "repo": "https://github.com/lirui1024k/dsh-browser-ops",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T14:56:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-browser-ops",
+    "commands": [
+      "dsh plugin --profile dsh-desktop add dsh-browser-ops",
+      "dsh plugin --profile dsh-desktop add git+https://github.com/<you>/dsh-browser-ops.git",
+      "dsh plugin --profile dsh-desktop add link:/path/to/dsh-browser-ops"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "chenqiuyushuang/dsh-nexus",
+  "slug": "chenqiuyushuang__dsh-nexus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-nexus",
+  "title": "dsh-nexus",
+  "summary": "给 DeepSeek Harness 装上记忆层，零配置自动记住对话上下文，开箱即用。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "零配置",
+    "会话管理",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.8.8",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chenqiuyushuang",
+  "repo": "https://github.com/chenqiuyushuang/dsh-nexus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T11:31:08Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chenqiuyushuang/dsh-nexus",
+    "commands": [
+      "dsh plugin --profile web add github:chenqiuyushuang/dsh-nexus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

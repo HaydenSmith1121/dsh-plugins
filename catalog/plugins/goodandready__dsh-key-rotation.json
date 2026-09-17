@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-key-rotation",
+  "slug": "goodandready__dsh-key-rotation",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-key-rotation",
+  "title": "dsh-key-rotation",
+  "summary": "为 DeepSeek Harness 自动轮换 API 密钥，应对限流自动切换，并带冷却探测和设置界面。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "资源优化",
+    "设置面板",
+    "自动化",
+    "状态监控"
+  ],
+  "version": "0.8.13",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.13",
+    "publishedAt": "2026-09-17T13:30:28Z",
+    "url": "https://github.com/GooDAnDReaDY/dsh-key-rotation/releases/tag/v0.8.13"
+  },
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-key-rotation",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-09-16T14:59:46Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooDAnDReaDY/dsh-key-rotation",
+    "commands": [
+      "dsh plugin --profile web add github:GooDAnDReaDY/dsh-key-rotation"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

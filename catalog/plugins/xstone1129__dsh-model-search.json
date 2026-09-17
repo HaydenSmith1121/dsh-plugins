@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Xstone1129/dsh-model-search",
+  "slug": "xstone1129__dsh-model-search",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-search",
+  "title": "dsh-model-search",
+  "summary": "把 DSH 模型选择改成先选线路再选模型，上百个模型按厂商分组，秒速定位。",
+  "tags": [
+    "depepseek-harness",
+    "dsh-plugin",
+    "dsh-plugins",
+    "模型配置",
+    "导航",
+    "效率提升",
+    "界面美化"
+  ],
+  "version": "1.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Xstone1129",
+  "repo": "https://github.com/Xstone1129/dsh-model-search",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T05:10:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Xstone1129/dsh-model-search",
+    "commands": [
+      "dsh plugin --profile web add github:Xstone1129/dsh-model-search",
+      "dsh plugin --profile web add dsh-model-cascade",
+      "pnpm add file:/path/to/this-checkout"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

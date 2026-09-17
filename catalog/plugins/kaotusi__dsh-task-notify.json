@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "kaotusi/dsh-task-notify",
+  "slug": "kaotusi__dsh-task-notify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-task-notify",
+  "title": "dsh-task-notify",
+  "summary": "任务状态实时推送系统通知，审批、回复、完成一目了然，带提示音和铃铛面板，不错过任何关键节点。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "notifications",
+    "task-notifications",
+    "web",
+    "效率提升",
+    "多Agent协作",
+    "可视化",
+    "语义检索",
+    "会话管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-15T17:06:07Z",
+    "url": "https://github.com/kaotusi/dsh-task-notify/releases/tag/v0.2.0"
+  },
+  "author": "kaotusi",
+  "repo": "https://github.com/kaotusi/dsh-task-notify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-15T17:05:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kaotusi/dsh-task-notify",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/kaotusi/dsh-task-notify.git",
+      "git clone https://github.com/kaotusi/dsh-task-notify.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

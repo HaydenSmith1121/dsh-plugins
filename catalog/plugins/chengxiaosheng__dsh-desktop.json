@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "chengxiaosheng/dsh-desktop",
+  "slug": "chengxiaosheng__dsh-desktop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-desktop",
+  "title": "dsh-desktop",
+  "summary": "无需服务器和端口，直接本地运行 DeepSeek Harness 完整桌面界面，即开即用。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-desktop",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "零配置",
+    "开发流程",
+    "效率提升",
+    "模型适配"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-08-18T15:07:05Z",
+    "url": "https://github.com/chengxiaosheng/dsh-desktop/releases/tag/v0.1.3"
+  },
+  "author": "chengxiaosheng",
+  "repo": "https://github.com/chengxiaosheng/dsh-desktop",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-08-18T15:07:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chengxiaosheng/dsh-desktop",
+    "commands": [
+      "dsh plugin --profile web add github:chengxiaosheng/dsh-desktop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

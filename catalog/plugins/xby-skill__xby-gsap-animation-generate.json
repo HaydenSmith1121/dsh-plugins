@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-gsap-animation-generate",
+  "slug": "xby-skill__xby-gsap-animation-generate",
+  "tier": "community",
+  "package": null,
+  "name": "xby-gsap-animation-generate",
+  "title": "xby-gsap-animation-generate",
+  "summary": "根据需求自动生成GSAP动画代码，覆盖完整API，提供生产级动画模式，让开发者快速搞定高性能动效。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "效率提升",
+    "自动化",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-gsap-animation-generate",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:10:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-gsap-animation-generate",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-gsap-animation-generate",
+      "dsh plugin --profile web add /absolute/path/to/xby-gsap-animation-generate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

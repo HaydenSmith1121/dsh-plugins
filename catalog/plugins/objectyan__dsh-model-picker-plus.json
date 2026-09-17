@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "objectyan/dsh-model-picker-plus",
+  "slug": "objectyan__dsh-model-picker-plus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-picker-plus",
+  "title": "dsh-model-picker-plus",
+  "summary": "把聊天输入框的模型选择器换成可分组、可搜索的模型库，多 Provider 切换更顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dshmarket",
+    "model-picker",
+    "模型适配",
+    "快捷操作",
+    "主题",
+    "效率提升"
+  ],
+  "version": "0.2.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.5",
+    "publishedAt": "2026-09-15T02:26:45Z",
+    "url": "https://github.com/objectyan/dsh-model-picker-plus/releases/tag/v0.2.5"
+  },
+  "author": "objectyan",
+  "repo": "https://github.com/objectyan/dsh-model-picker-plus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T02:46:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:objectyan/dsh-model-picker-plus",
+    "commands": [
+      "dsh plugin --profile web add github:objectyan/dsh-model-picker-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

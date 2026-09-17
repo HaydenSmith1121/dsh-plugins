@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Starxer/chatterbox4dsh",
+  "slug": "starxer__chatterbox4dsh",
+  "tier": "community",
+  "package": null,
+  "name": "chatterbox4dsh",
+  "title": "chatterbox4dsh",
+  "summary": "把 DeepSeek Harness 接进飞书/Lark，边聊边看 agent 每一步推理和工具调用，像唠叨一样实时同步给你。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "feishu",
+    "lark",
+    "plugin",
+    "AI 助手",
+    "安全审计",
+    "状态监控",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "0.2.0",
+    "publishedAt": "2026-09-08T16:40:54Z",
+    "url": "https://github.com/Starxer/chatterbox4dsh/releases/tag/0.2.0"
+  },
+  "author": "Starxer",
+  "repo": "https://github.com/Starxer/chatterbox4dsh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T05:55:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Starxer/chatterbox4dsh",
+    "commands": [
+      "dsh plugin --profile web add github:Starxer/chatterbox4dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

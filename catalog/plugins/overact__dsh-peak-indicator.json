@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "overact/dsh-peak-indicator",
+  "slug": "overact__dsh-peak-indicator",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-peak-indicator",
+  "title": "dsh-peak-indicator",
+  "summary": "在 DSH 网页界面实时显示 DeepSeek 高峰/低谷时段状态，自动识别时区并倒计时，帮你省钱规划调用。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "off-peak",
+    "peak",
+    "pricing",
+    "状态监控",
+    "时段提醒",
+    "时区适配",
+    "省钱助手"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-17T12:43:33Z",
+    "url": "https://github.com/overact/dsh-peak-indicator/releases/tag/v0.1.1"
+  },
+  "author": "overact",
+  "repo": "https://github.com/overact/dsh-peak-indicator",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T00:17:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:overact/dsh-peak-indicator",
+    "commands": [
+      "dsh plugin --profile web add github:overact/dsh-peak-indicator"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

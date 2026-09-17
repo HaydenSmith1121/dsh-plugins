@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Vmarcelo49/dsh-local-models",
+  "slug": "vmarcelo49__dsh-local-models",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-local-models",
+  "title": "dsh-local-models",
+  "summary": "在 dsh 网页界面里直接挑选本地 GGUF 模型，调整参数并加载运行，还能实时查看显存占用。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "资源优化",
+    "可视化",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Vmarcelo49",
+  "repo": "https://github.com/Vmarcelo49/dsh-local-models",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T06:51:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Vmarcelo49/dsh-local-models",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-local-models"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

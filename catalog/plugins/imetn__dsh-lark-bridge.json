@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "imetn/dsh-lark-bridge",
+  "slug": "imetn__dsh-lark-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-lark-bridge",
+  "title": "dsh-lark-bridge",
+  "summary": "让飞书/ Lark 与 DeepSeek Harness 双向联动，在聊天中直接控制 AI 助手并接收回复。",
+  "tags": [
+    "agent",
+    "chatbot",
+    "deepseek-harness",
+    "dsh-plugin",
+    "feishu",
+    "lark",
+    "消息通知",
+    "桌宠"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "imetn",
+  "repo": "https://github.com/imetn/dsh-lark-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 1,
+  "pushedAt": "2026-08-14T06:53:32Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:imetn/dsh-lark-bridge",
+    "commands": [
+      "dsh plugin --profile web add github:imetn/dsh-lark-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

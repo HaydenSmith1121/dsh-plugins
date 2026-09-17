@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "tianxia--/Dsh-ImageProview",
+  "slug": "tianxia-__dsh-imageproview",
+  "tier": "community",
+  "package": null,
+  "name": "Dsh-ImageProview",
+  "title": "Dsh-ImageProview",
+  "summary": "在 DeepSeek Harness 里直接预览图片，支持 HEIC 格式，点击还能放大看，省去来回切换的麻烦。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "heic",
+    "image-preview",
+    "lightbox",
+    "前端增强",
+    "文件管理",
+    "可视化",
+    "视觉理解"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-08T09:38:13Z",
+    "url": "https://github.com/tianxia--/Dsh-ImageProview/releases/tag/v0.2.0"
+  },
+  "author": "tianxia--",
+  "repo": "https://github.com/tianxia--/Dsh-ImageProview",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T09:30:18Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tianxia--/Dsh-ImageProview",
+    "commands": [
+      "dsh plugin --profile web add github:tianxia--/Dsh-ImageProview"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

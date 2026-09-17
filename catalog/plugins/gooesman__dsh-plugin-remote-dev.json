@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "gooesman/dsh-plugin-remote-dev",
+  "slug": "gooesman__dsh-plugin-remote-dev",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-remote-dev",
+  "title": "dsh-plugin-remote-dev",
+  "summary": "通过 SSH 连接远程服务器，让你在 DeepSeek Harness 里直接写代码、跑命令，像在本地一样开发。",
+  "tags": [
+    "cordis",
+    "dsh",
+    "npm",
+    "plugin",
+    "remote-development",
+    "ssh",
+    "工作流增强",
+    "命令行工具",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-08T02:23:31Z",
+    "url": "https://github.com/gooesman/dsh-plugin-remote-dev/releases/tag/v1.0.0"
+  },
+  "author": "gooesman",
+  "repo": "https://github.com/gooesman/dsh-plugin-remote-dev",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T02:51:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:gooesman/dsh-plugin-remote-dev",
+    "commands": [
+      "dsh plugin --profile web add github:gooesman/dsh-plugin-remote-dev"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

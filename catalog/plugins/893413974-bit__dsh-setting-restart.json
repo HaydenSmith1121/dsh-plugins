@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "893413974-bit/dsh-setting-restart",
+  "slug": "893413974-bit__dsh-setting-restart",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-setting-restart",
+  "title": "dsh-setting-restart",
+  "summary": "在设置→通用设置中一键重启 DSH 服务，重启按钮固定在页面底部，方便快捷。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "restart",
+    "效率提升",
+    "零配置",
+    "可视化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "893413974-bit",
+  "repo": "https://github.com/893413974-bit/dsh-setting-restart",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 15,
+  "forks": 2,
+  "pushedAt": "2026-08-18T08:49:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-setting-restart",
+    "commands": [
+      "dsh plugin --profile web add dsh-setting-restart"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

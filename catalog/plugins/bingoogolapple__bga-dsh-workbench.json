@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "bingoogolapple/bga-dsh-workbench",
+  "slug": "bingoogolapple__bga-dsh-workbench",
+  "tier": "community",
+  "package": null,
+  "name": "bga-dsh-workbench",
+  "title": "bga-dsh-workbench",
+  "summary": "把 DeepSeek Harness 变成你的个人工作台，集中管理多个工作区，提升日常 AI 任务效率。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-workbench",
+    "工作区管理",
+    "模型配置",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bingoogolapple",
+  "repo": "https://github.com/bingoogolapple/bga-dsh-workbench",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-02T12:22:05Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bingoogolapple/bga-dsh-workbench",
+    "commands": [
+      "dsh plugin --profile <你的 profile 名> add bga-dsh-workbench",
+      "dsh plugin --profile <你的 profile 名> add github:bingoogolapple/bga-dsh-workbench",
+      "dsh plugin --profile <你的 profile 名> add /path/to/bga-dsh-workbench"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

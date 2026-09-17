@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "namesColin/DSH-Plugin-Account-HUD",
+  "slug": "namescolin__dsh-plugin-account-hud",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-Plugin-Account-HUD",
+  "title": "DSH-Plugin-Account-HUD",
+  "summary": "在悬浮窗里实时看 DeepSeek API 余额和服务状态，余额敏感开发者不用再手动查了。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "namesColin",
+  "repo": "https://github.com/namesColin/DSH-Plugin-Account-HUD",
+  "homepage": null,
+  "license": "AGPL-3.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T10:27:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-account-hud",
+    "commands": [
+      "dsh plugin --profile web add dsh-account-hud",
+      "dsh plugin --profile web remove dsh-account-hud",
+      "git clone git@github.com:namesColin/DSH-Plugin-Account-HUD.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

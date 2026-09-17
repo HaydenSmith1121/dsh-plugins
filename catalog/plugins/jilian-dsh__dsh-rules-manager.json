@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "jilian-dsh/dsh-rules-manager",
+  "slug": "jilian-dsh__dsh-rules-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-rules-manager",
+  "title": "dsh-rules-manager",
+  "summary": "管理 DeepSeek Harness 的规则与命令，通过 /rules 或设置面板快速自定义你的专属指令。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "1.6.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jilian-dsh",
+  "repo": "https://github.com/jilian-dsh/dsh-rules-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-13T18:02:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-rules-manager",
+    "commands": [
+      "dsh plugin --profile web add dsh-rules-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

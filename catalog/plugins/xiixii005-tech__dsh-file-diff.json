@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "xiixii005-tech/dsh-file-diff",
+  "slug": "xiixii005-tech__dsh-file-diff",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-file-diff",
+  "title": "dsh-file-diff",
+  "summary": "在会话中直观展示文件修改总览，点击即可查看每个文件的详细改动，方便快速审查代码变更。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "文件管理",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xiixii005-tech",
+  "repo": "https://github.com/xiixii005-tech/dsh-file-diff",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T10:33:54Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiixii005-tech/dsh-file-diff",
+    "commands": [
+      "dsh plugin --profile web add github:xiixii005-tech/dsh-file-diff"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

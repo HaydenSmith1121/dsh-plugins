@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Khellendros97/dsh-subscription-auth",
+  "slug": "khellendros97__dsh-subscription-auth",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subscription-auth",
+  "title": "dsh-subscription-auth",
+  "summary": "让 dsh 直接用 ChatGPT、Claude、Grok、Kimi 的订阅账号登录，不用再配 API key，还能自动发现可用模型。",
+  "tags": [
+    "dsh-plugin",
+    "模型适配",
+    "模型配置",
+    "工具集成",
+    "零配置"
+  ],
+  "version": "0.2.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Khellendros97",
+  "repo": "https://github.com/Khellendros97/dsh-subscription-auth",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-08-15T04:02:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-subscription-auth",
+    "commands": [
+      "dsh plugin --profile web add dsh-subscription-auth"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "dusbin/dsh-memory-view",
+  "slug": "dusbin__dsh-memory-view",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memory-view",
+  "title": "dsh-memory-view",
+  "summary": "把 DSH 的运行状态投影成四层记忆的只读查看器，帮你直观了解会话和工具调用过程。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "memory",
+    "状态监控",
+    "会话管理",
+    "可视化",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dusbin",
+  "repo": "https://github.com/dusbin/dsh-memory-view",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T16:25:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dusbin/dsh-memory-view",
+    "commands": [
+      "dsh plugin --profile web add github:dusbin/dsh-memory-view"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

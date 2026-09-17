@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-agent-evolve",
+  "slug": "jonah791__dsh-agent-evolve",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-evolve",
+  "title": "dsh-agent-evolve",
+  "summary": "让宿主 agent 能跨代自我评估和进化，通过版本化配置仓库和子智能体评测，持续优化自身能力。",
+  "tags": [
+    "dsh-plugin",
+    "多Agent协作",
+    "自动化",
+    "模型适配",
+    "状态监控",
+    "工作流增强"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-07T08:54:50Z",
+    "url": "https://github.com/jonah791/dsh-agent-evolve/releases/tag/v0.1.1"
+  },
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-agent-evolve",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T07:24:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-agent-evolve",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-agent-evolve"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

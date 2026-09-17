@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "vlln/dsh-loop",
+  "slug": "vlln__dsh-loop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-loop",
+  "title": "dsh-loop",
+  "summary": "通过 /loop 命令或 loop 工具定时循环执行任务，并在状态栏显示运行状态，让重复操作自动化。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "ui",
+    "工作流增强",
+    "任务编排",
+    "Web界面",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.4.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "vlln",
+  "repo": "https://github.com/vlln/dsh-loop",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 2,
+  "pushedAt": "2026-09-09T12:57:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:vlln/dsh-loop",
+    "commands": [
+      "dsh plugin --profile web add \"github:vlln/dsh-loop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

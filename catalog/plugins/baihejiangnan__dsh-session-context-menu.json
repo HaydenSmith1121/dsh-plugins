@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "baihejiangnan/dsh-session-context-menu",
+  "slug": "baihejiangnan__dsh-session-context-menu",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-context-menu",
+  "title": "dsh-session-context-menu",
+  "summary": "给 DeepSeek Harness 桌面封装端换上原生风格右键菜单，操作更顺手、体验更统一。",
+  "tags": [
+    "context-menu",
+    "deepseek-harness",
+    "dsh-plugin",
+    "tauri",
+    "webview",
+    "右键菜单",
+    "桌面端增强",
+    "主题",
+    "交互体验"
+  ],
+  "version": "0.2.13",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.13",
+    "publishedAt": "2026-08-16T14:27:23Z",
+    "url": "https://github.com/baihejiangnan/dsh-session-context-menu/releases/tag/v0.2.13"
+  },
+  "author": "baihejiangnan",
+  "repo": "https://github.com/baihejiangnan/dsh-session-context-menu",
+  "homepage": "https://github.com/topics/dsh-plugin",
+  "license": "MIT",
+  "stars": 20,
+  "forks": 1,
+  "pushedAt": "2026-08-25T16:27:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:baihejiangnan/dsh-session-context-menu",
+    "commands": [
+      "dsh plugin --profile web add github:baihejiangnan/dsh-session-context-menu",
+      "git clone https://github.com/baihejiangnan/dsh-session-context-menu.git",
+      "dsh plugin --profile web add ./dsh-session-context-menu"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

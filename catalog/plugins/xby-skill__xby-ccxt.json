@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-ccxt",
+  "slug": "xby-skill__xby-ccxt",
+  "tier": "community",
+  "package": null,
+  "name": "xby-ccxt",
+  "title": "xby-ccxt",
+  "summary": "用自然语言记录每餐饮食，自动追踪卡路里摄入，生成每日总结和每周报告，帮你轻松管理饮食健康。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "可视化",
+    "工作流增强",
+    "AI 助手"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-ccxt",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:38:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-ccxt",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-ccxt",
+      "dsh plugin --profile web add /absolute/path/to/xby-ccxt"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

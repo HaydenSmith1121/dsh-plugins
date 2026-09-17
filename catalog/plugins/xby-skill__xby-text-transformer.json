@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-text-transformer",
+  "slug": "xby-skill__xby-text-transformer",
+  "tier": "community",
+  "package": null,
+  "name": "xby-text-transformer",
+  "title": "xby-text-transformer",
+  "summary": "在聊天里直接转换文本大小写、反转字符串、检测回文，还能设置API密钥，简单实用。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-text-transformer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:37:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-text-transformer",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-text-transformer",
+      "dsh plugin --profile web add /absolute/path/to/xby-text-transformer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

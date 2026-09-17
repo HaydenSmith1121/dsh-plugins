@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "Likenttt/garmin-connect-plugin-for-dsh",
+  "slug": "likenttt__garmin-connect-plugin-for-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "garmin-connect-plugin-for-dsh",
+  "title": "garmin-connect-plugin-for-dsh",
+  "summary": "把 Garmin 手表里的运动和健康数据接入 AI 助手，让智能体帮你分析体能、管理训练计划。",
+  "tags": [
+    "claude",
+    "claude-code",
+    "claude-code-plugin",
+    "claude-skills",
+    "codex",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "workbuddy",
+    "zcode-plugin",
+    "效率提升",
+    "多智能体协作",
+    "工具集成",
+    "会话管理"
+  ],
+  "version": "0.1.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.7",
+    "publishedAt": "2026-09-09T11:46:49Z",
+    "url": "https://github.com/Likenttt/garmin-connect-plugin-for-dsh/releases/tag/v0.1.7"
+  },
+  "author": "Likenttt",
+  "repo": "https://github.com/Likenttt/garmin-connect-plugin-for-dsh",
+  "homepage": "https://gc.li2niu.com",
+  "license": "MIT",
+  "stars": 18,
+  "forks": 4,
+  "pushedAt": "2026-09-09T11:46:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Likenttt/garmin-connect-plugin-for-dsh",
+    "commands": [
+      "npm install -g pnpm"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

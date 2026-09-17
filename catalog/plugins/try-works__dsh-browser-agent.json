@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "try-works/dsh-browser-agent",
+  "slug": "try-works__dsh-browser-agent",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-browser-agent",
+  "title": "dsh-browser-agent",
+  "summary": "给智能体装上真实Chrome浏览器，能跳转网页、执行脚本、截图，还能在DSH界面实时看到浏览器操作。",
+  "tags": [
+    "browser",
+    "dsh",
+    "dsh-browser-agent",
+    "dsh-plugin",
+    "自动化",
+    "AI 助手",
+    "状态监控"
+  ],
+  "version": "0.7.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "try-works",
+  "repo": "https://github.com/try-works/dsh-browser-agent",
+  "homepage": null,
+  "license": "ISC",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-01T02:40:10Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:try-works/dsh-browser-agent",
+    "commands": [
+      "dsh plugin --profile web add github:try-works/dsh-browser-agent"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "better-er/dsh-write-rule-guard",
+  "slug": "better-er__dsh-write-rule-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-write-rule-guard",
+  "title": "dsh-write-rule-guard",
+  "summary": "写入前用正则拦下不合规内容，比如全角括号，还能防止绕道 pwsh 偷偷写入。",
+  "tags": [
+    "content-guard",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "regex",
+    "write-guard",
+    "安全审计",
+    "插件管理",
+    "文件管理",
+    "自动化"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-14T16:01:31Z",
+    "url": "https://github.com/better-er/dsh-write-rule-guard/releases/tag/v0.3.0"
+  },
+  "author": "better-er",
+  "repo": "https://github.com/better-er/dsh-write-rule-guard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-14T16:00:20Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:better-er/dsh-write-rule-guard",
+    "commands": [
+      "dsh plugin --profile web add github:better-er/dsh-write-rule-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

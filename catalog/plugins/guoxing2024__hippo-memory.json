@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "guoxing2024/hippo-memory",
+  "slug": "guoxing2024__hippo-memory",
+  "tier": "community",
+  "package": null,
+  "name": "hippo-memory",
+  "title": "hippo-memory",
+  "summary": "给AI智能体装上类海马体的长期记忆，长对话不再忘事，本地SQLite存储，零外部依赖。",
+  "tags": [
+    "ai-agent",
+    "anti-hallucination",
+    "deepseek-runtime",
+    "dsh",
+    "embedding",
+    "hippocampus",
+    "llm",
+    "long-term-memory",
+    "memory",
+    "plugin",
+    "rag",
+    "sqlite",
+    "会话管理",
+    "语义检索",
+    "AI 助手"
+  ],
+  "version": "0.1.8",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.8",
+    "publishedAt": "2026-09-12T04:07:14Z",
+    "url": "https://github.com/guoxing2024/hippo-memory/releases/tag/v0.1.8"
+  },
+  "author": "guoxing2024",
+  "repo": "https://github.com/guoxing2024/hippo-memory",
+  "homepage": "https://github.com/guoxing2024/hippo-memory#readme",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T04:02:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:guoxing2024/hippo-memory",
+    "commands": [
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

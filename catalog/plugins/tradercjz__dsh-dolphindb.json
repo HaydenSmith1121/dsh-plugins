@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "tradercjz/dsh-dolphindb",
+  "slug": "tradercjz__dsh-dolphindb",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-dolphindb",
+  "title": "dsh-dolphindb",
+  "summary": "为 DeepSeek Harness 提供 DolphinDB 数据库接入，支持 WebSocket 执行查询与写入，让智能体直接操作时序数据。",
+  "tags": [
+    "agent",
+    "dolphindb",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "数据库连接",
+    "时序数据",
+    "数据查询",
+    "数据写入"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "tradercjz",
+  "repo": "https://github.com/tradercjz/dsh-dolphindb",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T13:55:48Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tradercjz/dsh-dolphindb",
+    "commands": [
+      "dsh plugin --profile <name> add github:tradercjz/dsh-dolphindb"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

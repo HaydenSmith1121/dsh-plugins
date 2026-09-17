@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "EasyTZ/dsh-reveal-explorer",
+  "slug": "easytz__dsh-reveal-explorer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-reveal-explorer",
+  "title": "dsh-reveal-explorer",
+  "summary": "在会话头部加个按钮，一键用系统文件管理器打开当前工作区目录，方便直接查看文件。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "file-explorer",
+    "file-manager",
+    "工作区管理",
+    "效率提升",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "0.2.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.3",
+    "publishedAt": "2026-09-04T01:58:28Z",
+    "url": "https://github.com/EasyTZ/dsh-reveal-explorer/releases/tag/v0.2.3"
+  },
+  "author": "EasyTZ",
+  "repo": "https://github.com/EasyTZ/dsh-reveal-explorer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T08:21:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:EasyTZ/dsh-reveal-explorer",
+    "commands": [
+      "dsh plugin --profile <name> add @easytz/dsh-reveal-explorer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

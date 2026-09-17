@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "bobowsh/dsh-llm-opencode",
+  "slug": "bobowsh__dsh-llm-opencode",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-opencode",
+  "title": "dsh-llm-opencode",
+  "summary": "帮你把 OpenCode Zen 的免费大模型接入 DeepSeek Harness，零成本就能用各种强力模型写代码。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "工作流增强",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bobowsh",
+  "repo": "https://github.com/bobowsh/dsh-llm-opencode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-09-04T17:24:06Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-llm-opencode",
+    "commands": [
+      "dsh plugin --profile web add dsh-llm-opencode",
+      "dsh plugin --profile web add \"github:bobowsh/dsh-llm-opencode"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "NOirBRight/dsh-llm-cursor",
+  "slug": "noirbright__dsh-llm-cursor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-cursor",
+  "title": "dsh-llm-cursor",
+  "summary": "让 DeepSeek Harness 直接使用 Cursor 订阅登录和聊天，省去额外配置，即插即用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "模型配置",
+    "工具集成",
+    "零配置",
+    "会话管理"
+  ],
+  "version": "0.2.23",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.23",
+    "publishedAt": "2026-09-14T16:42:43Z",
+    "url": "https://github.com/NOirBRight/dsh-llm-cursor/releases/tag/v0.2.23"
+  },
+  "author": "NOirBRight",
+  "repo": "https://github.com/NOirBRight/dsh-llm-cursor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T16:42:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:NOirBRight/dsh-llm-cursor",
+    "commands": [
+      "dsh plugin --profile web add github:NOirBRight/dsh-llm-cursor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

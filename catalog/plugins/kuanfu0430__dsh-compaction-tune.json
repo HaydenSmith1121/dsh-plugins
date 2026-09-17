@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "kuanfu0430/dsh-compaction-tune",
+  "slug": "kuanfu0430__dsh-compaction-tune",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-compaction-tune",
+  "title": "dsh-compaction-tune",
+  "summary": "在 DeepSeek Harness 中通过界面直接调整自动压缩阈值，支持按百分比或绝对 token 数设置，方便控制上下文长度。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "模型配置",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "0.2.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kuanfu0430",
+  "repo": "https://github.com/kuanfu0430/dsh-compaction-tune",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T07:21:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kuanfu0430/dsh-compaction-tune",
+    "commands": [
+      "dsh plugin --profile web add github:kuanfu0430/dsh-compaction-tune"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

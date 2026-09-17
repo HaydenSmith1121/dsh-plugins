@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "orxz/deepseek-harness-themes",
+  "slug": "orxz__deepseek-harness-themes",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-themes",
+  "title": "deepseek-harness-themes",
+  "summary": "为 deepseek-harness 提供多套 UI 主题，让你随心切换界面风格，用着更顺眼。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "开发流程",
+    "零配置",
+    "主题"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "orxz",
+  "repo": "https://github.com/orxz/deepseek-harness-themes",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-09-11T09:38:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@dshthemes/ui",
+    "commands": [
+      "dsh plugin --profile web add @dshthemes/ui",
+      "dsh plugin --profile web remove @dshthemes/ui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "tianhanly/dsh-official-port-nav",
+  "slug": "tianhanly__dsh-official-port-nav",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-official-port-nav",
+  "title": "dsh-official-port-nav",
+  "summary": "在 Harness 中完美复刻 DeepSeek 官网右侧聊天导航，让界面更熟悉顺手。",
+  "tags": [
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "harness-plugin",
+    "navigation",
+    "port",
+    "前端增强",
+    "界面美化",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-30T00:35:25Z",
+    "url": "https://github.com/tianhanly/dsh-official-port-nav/releases/tag/v1.0.0"
+  },
+  "author": "tianhanly",
+  "repo": "https://github.com/tianhanly/dsh-official-port-nav",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T00:57:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-official-port-nav",
+    "commands": [
+      "dsh plugin --profile web add dsh-official-port-nav",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

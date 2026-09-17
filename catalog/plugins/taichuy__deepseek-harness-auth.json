@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "taichuy/deepseek-harness-auth",
+  "slug": "taichuy__deepseek-harness-auth",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-auth",
+  "title": "deepseek-harness-auth",
+  "summary": "给 DeepSeek Harness 加上登录鉴权，让反向代理后的智能体服务安全可控。",
+  "tags": [
+    "ai-agents",
+    "authentication",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "reverse-proxy",
+    "安全审计",
+    "工具集成",
+    "桥接插件",
+    "设置面板"
+  ],
+  "version": "0.4.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.1",
+    "publishedAt": "2026-08-16T10:30:31Z",
+    "url": "https://github.com/taichuy/deepseek-harness-auth/releases/tag/v0.4.1"
+  },
+  "author": "taichuy",
+  "repo": "https://github.com/taichuy/deepseek-harness-auth",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 26,
+  "forks": 6,
+  "pushedAt": "2026-08-16T10:30:28Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "deepseek-harness-auth@latest",
+    "commands": [
+      "dsh plugin --profile web add deepseek-harness-auth@latest",
+      "dsh plugin --profile web add deepseek-harness-auth@0.4.0",
+      "dsh plugin --profile web exec dsh-auth init"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

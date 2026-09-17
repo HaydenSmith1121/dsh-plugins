@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "YrracOwl/dsh-mcp-pill",
+  "slug": "yrracowl__dsh-mcp-pill",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mcp-pill",
+  "title": "dsh-mcp-pill",
+  "summary": "在 DSH Web 界面显示 MCP 连接状态的小胶囊，实时提醒连接是否正常，兼容旧版主机，安全可靠。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugins",
+    "dsh-web",
+    "mcp",
+    "status-pill",
+    "状态监控",
+    "前端增强",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.2.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.5",
+    "publishedAt": "2026-09-10T15:03:12Z",
+    "url": "https://github.com/YrracOwl/dsh-mcp-pill/releases/tag/v0.2.5"
+  },
+  "author": "YrracOwl",
+  "repo": "https://github.com/YrracOwl/dsh-mcp-pill",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T15:43:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:YrracOwl/dsh-mcp-pill",
+    "commands": [
+      "dsh plugin --profile web add github:YrracOwl/dsh-mcp-pill"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

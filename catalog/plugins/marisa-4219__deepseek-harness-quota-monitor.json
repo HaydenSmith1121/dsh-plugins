@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "marisa-4219/deepseek-harness-quota-monitor",
+  "slug": "marisa-4219__deepseek-harness-quota-monitor",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-quota-monitor",
+  "title": "deepseek-harness-quota-monitor",
+  "summary": "在侧边栏实时盯着各家 AI 供应商的额度余额和用量，快用完一眼就知道。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "模型配置",
+    "设置面板",
+    "可视化",
+    "资源优化"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "marisa-4219",
+  "repo": "https://github.com/marisa-4219/deepseek-harness-quota-monitor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 1,
+  "pushedAt": "2026-09-11T12:03:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "deepseek-harness-quota-monitor",
+    "commands": [
+      "dsh plugin --profile web add deepseek-harness-quota-monitor",
+      "dsh plugin --profile web add <本仓库路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

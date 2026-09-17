@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "joshryandavis/dsh-llm-aws-kiro",
+  "slug": "joshryandavis__dsh-llm-aws-kiro",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-aws-kiro",
+  "title": "dsh-llm-aws-kiro",
+  "summary": "为 DeepSeek Harness 接入 Kiro 模型服务，即插即用，轻松切换 LLM 提供商。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "模型配置",
+    "零配置",
+    "设置面板"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "0.1.1",
+    "publishedAt": "2026-08-21T11:27:29Z",
+    "url": "https://github.com/joshryandavis/dsh-llm-aws-kiro/releases/tag/0.1.1"
+  },
+  "author": "joshryandavis",
+  "repo": "https://github.com/joshryandavis/dsh-llm-aws-kiro",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-30T01:08:32Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:joshryandavis/dsh-llm-aws-kiro",
+    "commands": [
+      "dsh plugin --profile <profile> add @joshryandavis/dsh-llm-kiro"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

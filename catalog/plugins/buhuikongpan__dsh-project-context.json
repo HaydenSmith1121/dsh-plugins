@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "buhuikongpan/dsh-project-context",
+  "slug": "buhuikongpan__dsh-project-context",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-project-context",
+  "title": "dsh-project-context",
+  "summary": "给 DSH 加上临时会话：随手问一句、试段代码不污染项目，侧边栏一键开新会话。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "project-context",
+    "会话管理",
+    "工作区管理",
+    "快捷操作",
+    "效率提升"
+  ],
+  "version": "0.9.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.9.2",
+    "publishedAt": "2026-09-11T07:11:27Z",
+    "url": "https://github.com/buhuikongpan/dsh-project-context/releases/tag/v0.9.2"
+  },
+  "author": "buhuikongpan",
+  "repo": "https://github.com/buhuikongpan/dsh-project-context",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-10T14:28:35Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:buhuikongpan/dsh-project-context",
+    "commands": [
+      "dsh plugin --profile web add \"github:buhuikongpan/dsh-project-context\"",
+      "dsh plugin --profile web update dsh-project-context"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

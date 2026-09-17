@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "SuCriss/dsh-leekbox",
+  "slug": "sucriss__dsh-leekbox",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-leekbox",
+  "title": "dsh-leekbox",
+  "summary": "在 DSH 网页左侧边栏一键打开 A 股行情面板，实时盯盘、快速看盘，炒股摸鱼两不误。",
+  "tags": [
+    "a-share",
+    "dsh",
+    "dsh-plugin",
+    "finance",
+    "stock",
+    "状态监控",
+    "前端增强",
+    "可视化",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.8.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.4",
+    "publishedAt": "2026-09-11T13:43:53Z",
+    "url": "https://github.com/SuCriss/dsh-leekbox/releases/tag/v0.8.4"
+  },
+  "author": "SuCriss",
+  "repo": "https://github.com/SuCriss/dsh-leekbox",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-11T13:42:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:SuCriss/dsh-leekbox",
+    "commands": [
+      "dsh plugin --profile web add github:SuCriss/dsh-leekbox"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "lsq-dsh-plugins/dsh-workbench-layout",
+  "slug": "lsq-dsh-plugins__dsh-workbench-layout",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workbench-layout",
+  "title": "dsh-workbench-layout",
+  "summary": "将 DeepSeek Harness 页面改造成工作台布局，保留官方界面，左侧导航、右侧内容，提升多任务操作效率。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "前端增强",
+    "零配置",
+    "工作流增强"
+  ],
+  "version": "0.1.9",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lsq-dsh-plugins",
+  "repo": "https://github.com/lsq-dsh-plugins/dsh-workbench-layout",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-10T15:25:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@lsq64737/dsh-workbench-layout",
+    "commands": [
+      "dsh plugin --profile web add @lsq64737/dsh-workbench-layout",
+      "dsh plugin --profile web remove @lsq64737/dsh-workbench-layout"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "lyuwen/dsh-steer-button",
+  "slug": "lyuwen__dsh-steer-button",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-steer-button",
+  "title": "dsh-steer-button",
+  "summary": "在智能体运行时，用队列、转向和积压三种模式灵活控制对话，让交互更自由。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "桌宠",
+    "工作流增强",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lyuwen",
+  "repo": "https://github.com/lyuwen/dsh-steer-button",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T14:05:29Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lyuwen/dsh-steer-button",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/lyuwen/dsh-steer-button",
+      "dsh plugin --profile web add /home/lfu/git-projects/dsh-steer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

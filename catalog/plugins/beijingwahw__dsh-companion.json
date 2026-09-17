@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "beijingwahw/dsh-companion",
+  "slug": "beijingwahw__dsh-companion",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-companion",
+  "title": "dsh-companion",
+  "summary": "DeepSeek Harness 官方伴侣插件，提供对话导出、交接摘要、成本优化和全局检索，让工作流更高效。",
+  "tags": [
+    "ai-agents",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "对话导出",
+    "交接摘要",
+    "资源优化",
+    "全局检索"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-14T23:57:19Z",
+    "url": "https://github.com/beijingwahw/dsh-companion/releases/tag/v0.1.0"
+  },
+  "author": "beijingwahw",
+  "repo": "https://github.com/beijingwahw/dsh-companion",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-31T23:32:37Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:beijingwahw/dsh-companion",
+    "commands": [
+      "dsh plugin add beijingwahw/dsh-companion --profile web"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

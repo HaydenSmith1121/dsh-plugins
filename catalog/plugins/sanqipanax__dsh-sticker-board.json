@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "sanqiPanax/dsh-sticker-board",
+  "slug": "sanqipanax__dsh-sticker-board",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sticker-board",
+  "title": "dsh-sticker-board",
+  "summary": "在输入框上方加一排冰箱贴式快捷按钮，点击即可发送预置 prompt，分长期短期任务，提升操作效率。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "工具集成",
+    "工作流增强",
+    "前端增强",
+    "插件管理"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sanqiPanax",
+  "repo": "https://github.com/sanqiPanax/dsh-sticker-board",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-09T11:16:36Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sanqiPanax/dsh-sticker-board",
+    "commands": [
+      "dsh plugin --profile web add github:sanqiPanax/dsh-sticker-board",
+      "dsh plugin --profile web add ./dsh-sticker-board-0.1.1.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

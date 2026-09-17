@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "liyixuan201211/dsh-deadend",
+  "slug": "liyixuan201211__dsh-deadend",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-deadend",
+  "title": "dsh-deadend",
+  "summary": "记住编码代理试过但没用的方案，代码一变就自动失效，省得重复踩坑。",
+  "tags": [
+    "agent-memory",
+    "agent-skills",
+    "ai-agents",
+    "cli",
+    "developer-tools",
+    "dsh-plugin",
+    "invalidation",
+    "negative-knowledge",
+    "refutation",
+    "AI 助手",
+    "多智能体协作",
+    "命令行工具",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.1.0",
+    "publishedAt": "2026-09-13T14:56:11Z",
+    "url": "https://github.com/liyixuan201211/dsh-deadend/releases/tag/v1.1.0"
+  },
+  "author": "liyixuan201211",
+  "repo": "https://github.com/liyixuan201211/dsh-deadend",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T01:36:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:liyixuan201211/dsh-deadend",
+    "commands": [
+      "dsh plugin --profile web add github:liyixuan201211/dsh-deadend"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

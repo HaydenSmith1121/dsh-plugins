@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "BolunHan/cc-monitor",
+  "slug": "bolunhan__cc-monitor",
+  "tier": "community",
+  "package": null,
+  "name": "cc-monitor",
+  "title": "cc-monitor",
+  "summary": "给 Claude Code 和 DSH 装个赛博红绿灯，实时监控状态，一眼看出运行是否正常。",
+  "tags": [
+    "android",
+    "claude-api",
+    "claude-code",
+    "dsh",
+    "dsh-plugin",
+    "flutter",
+    "monitoring-tool",
+    "web",
+    "状态监控",
+    "插件管理",
+    "实时检测"
+  ],
+  "version": "0.7.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.4",
+    "publishedAt": "2026-08-17T14:10:06Z",
+    "url": "https://github.com/BolunHan/cc-monitor/releases/tag/v0.7.4"
+  },
+  "author": "BolunHan",
+  "repo": "https://github.com/BolunHan/cc-monitor",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-12T01:37:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:BolunHan/cc-monitor",
+    "commands": [
+      "git clone https://github.com/BolunHan/cc-monitor.git",
+      "pip install .",
+      "curl -skSL https://<server-ip>:9876/static/install-hooks.sh | SERVER_URL=https://<server-ip>:9876 bash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

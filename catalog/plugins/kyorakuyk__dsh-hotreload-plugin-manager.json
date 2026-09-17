@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "kyorakuyk/dsh-hotreload-plugin-manager",
+  "slug": "kyorakuyk__dsh-hotreload-plugin-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hotreload-plugin-manager",
+  "title": "dsh-hotreload-plugin-manager",
+  "summary": "在运行中的 DeepSeek Harness 网页上直接热装、热卸、更新、启停插件，无需重启，自带管理界面。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "热插拔",
+    "插件管理",
+    "免重启",
+    "可视化",
+    "命令行工具"
+  ],
+  "version": "0.1.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.5",
+    "publishedAt": "2026-08-15T11:22:24Z",
+    "url": "https://github.com/kyorakuyk/dsh-hotreload-plugin-manager/releases/tag/v0.1.5"
+  },
+  "author": "kyorakuyk",
+  "repo": "https://github.com/kyorakuyk/dsh-hotreload-plugin-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-15T11:21:52Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kyorakuyk/dsh-hotreload-plugin-manager",
+    "commands": [
+      "dsh plugin --profile web add \"github:kyorakuyk/dsh-hotreload-plugin-manager\"",
+      "dsh plugin --profile web add \"https://github.com/kyorakuyk/dsh-hotreload-plugin-manager.git\"",
+      "git clone https://github.com/kyorakuyk/dsh-hotreload-plugin-manager.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

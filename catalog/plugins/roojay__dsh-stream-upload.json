@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "roojay/dsh-stream-upload",
+  "slug": "roojay__dsh-stream-upload",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-stream-upload",
+  "title": "dsh-stream-upload",
+  "summary": "在网页端直接上传图片和超大文件，自动压缩内存占用，不卡浏览器。",
+  "tags": [
+    "dsh-plugin",
+    "视觉理解",
+    "文件管理",
+    "资源优化",
+    "工作区管理",
+    "效率提升"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-07T14:32:35Z",
+    "url": "https://github.com/roojay/dsh-stream-upload/releases/tag/v0.4.0"
+  },
+  "author": "roojay",
+  "repo": "https://github.com/roojay/dsh-stream-upload",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T14:33:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:roojay/dsh-stream-upload",
+    "commands": [
+      "dsh plugin --profile web add github:roojay/dsh-stream-upload",
+      "dsh plugin --profile web add dsh-stream-upload@0.4.0",
+      "dsh plugin --profile web add https://github.com/roojay/dsh-stream-upload/releases/download/v0.4.0/dsh-stream-upload-0.4.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

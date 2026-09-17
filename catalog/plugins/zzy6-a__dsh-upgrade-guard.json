@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "zzy6-a/dsh-upgrade-guard",
+  "slug": "zzy6-a__dsh-upgrade-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-upgrade-guard",
+  "title": "dsh-upgrade-guard",
+  "summary": "宿主升级后自动检查插件兼容性，能修就修、不能修就禁用，启动失败还能自动救援或回滚。",
+  "tags": [
+    "compatibility",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "guard",
+    "supervisor",
+    "插件管理",
+    "安全审计",
+    "状态监控",
+    "自动化",
+    "工具集成"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-10T10:08:56Z",
+    "url": "https://github.com/zzy6-a/dsh-upgrade-guard/releases/tag/v0.2.0"
+  },
+  "author": "zzy6-a",
+  "repo": "https://github.com/zzy6-a/dsh-upgrade-guard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T10:08:29Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-upgrade-guard",
+    "commands": [
+      "dsh plugin --profile web add \\",
+      "dsh plugin --profile web add /path/to/dsh-upgrade-guard-0.2.0.tgz",
+      "dsh plugin --profile web add dsh-upgrade-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

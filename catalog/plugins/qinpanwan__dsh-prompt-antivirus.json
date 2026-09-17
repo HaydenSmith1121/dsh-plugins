@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "QinpanWan/dsh-prompt-antivirus",
+  "slug": "qinpanwan__dsh-prompt-antivirus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-antivirus",
+  "title": "dsh-prompt-antivirus",
+  "summary": "全局防提示注入与上下文病毒攻击，扫描进出站消息，支持隔离、拦截、监控三种模式，保护所有预设和子代理。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "harmonyos",
+    "prompt-injection",
+    "security",
+    "安全审计",
+    "状态监控",
+    "插件管理",
+    "会话管理"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "QinpanWan",
+  "repo": "https://github.com/QinpanWan/dsh-prompt-antivirus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-08T16:42:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:QinpanWan/dsh-prompt-antivirus",
+    "commands": [
+      "dsh plugin --profile web add github:QinpanWan/dsh-prompt-antivirus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

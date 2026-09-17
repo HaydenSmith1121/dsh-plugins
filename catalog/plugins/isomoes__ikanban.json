@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "isomoes/ikanban",
+  "slug": "isomoes__ikanban",
+  "tier": "community",
+  "package": null,
+  "name": "ikanban",
+  "title": "ikanban",
+  "summary": "用键盘就能同时指挥多个 AI 智能体写代码，还能顺手审查改动、切换项目。",
+  "tags": [
+    "ai-agents",
+    "dsh",
+    "dsh-plugin",
+    "ikanban",
+    "multi-agent",
+    "多Agent协作",
+    "会话管理",
+    "变更审查",
+    "工作区管理",
+    "快捷操作"
+  ],
+  "version": "0.5.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.3",
+    "publishedAt": "2026-08-25T10:38:15Z",
+    "url": "https://github.com/isomoes/ikanban/releases/tag/v0.5.3"
+  },
+  "author": "isomoes",
+  "repo": "https://github.com/isomoes/ikanban",
+  "homepage": "https://www.npmjs.com/package/@isomoes/dsh-ikanban",
+  "license": "MIT",
+  "stars": 12,
+  "forks": 2,
+  "pushedAt": "2026-08-27T09:04:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:isomoes/ikanban",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh --registry=https://registry.npmjs.org",
+      "dsh plugin --profile ikanban add @isomoes/dsh-ikanban @isomoes/dsh-web-ui --registry=https://registry.npmjs.org",
+      "dsh plugin --profile ikanban update @isomoes/dsh-ikanban @isomoes/dsh-web-ui --latest --config.minimumReleaseAge=0 --registry=https://registry.npmjs.org"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

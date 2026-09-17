@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "wkscc310/dsh-client-ui-cpa-quota",
+  "slug": "wkscc310__dsh-client-ui-cpa-quota",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-client-ui-cpa-quota",
+  "title": "dsh-client-ui-cpa-quota",
+  "summary": "在 DeepSeek Harness 里直接查看 CLiProxyAPI 的额度余量，随时掌握用量情况。",
+  "tags": [
+    "cliproxyapi",
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "0.8.6",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wkscc310",
+  "repo": "https://github.com/wkscc310/dsh-client-ui-cpa-quota",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-09-16T16:12:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-client-ui-cpa-quota",
+    "commands": [
+      "dsh plugin --profile web add dsh-client-ui-cpa-quota"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

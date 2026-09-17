@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "chenzheshushi-commits/dsh-evolve",
+  "slug": "chenzheshushi-commits__dsh-evolve",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-evolve",
+  "title": "dsh-evolve",
+  "summary": "让 DeepSeek Harness 拥有跨会话的持久记忆，自动进化技能，告别每次对话都失忆的烦恼。",
+  "tags": [
+    "ai-agent",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "long-term-memory",
+    "memory",
+    "self-evolving",
+    "skills",
+    "AI工具",
+    "会话管理",
+    "自动化",
+    "效率提升",
+    "长期记忆"
+  ],
+  "version": "0.6.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.5",
+    "publishedAt": "2026-09-17T13:13:07Z",
+    "url": "https://github.com/chenzheshushi-commits/dsh-evolve/releases/tag/v0.6.5"
+  },
+  "author": "chenzheshushi-commits",
+  "repo": "https://github.com/chenzheshushi-commits/dsh-evolve",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-09-16T03:37:43Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chenzheshushi-commits/dsh-evolve",
+    "commands": [
+      "dsh plugin --profile web add github:chenzheshushi-commits/dsh-evolve",
+      "dsh plugin --profile web add \"https://github.com/chenzheshushi-commits/dsh-evolve/releases/download/v0.5.2/dsh-evolve-0.5.2.tgz\"",
+      "git clone https://github.com/chenzheshushi-commits/dsh-evolve.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

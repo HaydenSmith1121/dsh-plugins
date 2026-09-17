@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "chuxumilk/dsh-404-panic-lock",
+  "slug": "chuxumilk__dsh-404-panic-lock",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-404-panic-lock",
+  "title": "dsh-404-panic-lock",
+  "summary": "按 Ctrl+Shift+L 一键把页面伪装成静态 404 截图，锁死鼠标键盘，防止别人乱动电脑，再按一次恢复。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "javascript",
+    "效率提升",
+    "娱乐互动",
+    "零配置"
+  ],
+  "version": "0.1.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chuxumilk",
+  "repo": "https://github.com/chuxumilk/dsh-404-panic-lock",
+  "homepage": null,
+  "license": "CC0-1.0",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-23T15:20:33Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chuxumilk/dsh-404-panic-lock",
+    "commands": [
+      "dsh plugin --profile web add github:chuxumilk/dsh-404-panic-lock"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

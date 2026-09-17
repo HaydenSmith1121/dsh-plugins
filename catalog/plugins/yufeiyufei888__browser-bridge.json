@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "yufeiyufei888/browser-bridge",
+  "slug": "yufeiyufei888__browser-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "browser-bridge",
+  "title": "browser-bridge",
+  "summary": "让 AI Agent 直接接管你带登录态的真实浏览器，一条命令搞定联网和网页操作。",
+  "tags": [
+    "ai-agent",
+    "browser-automation",
+    "cdp",
+    "claude-code",
+    "codex",
+    "dsh",
+    "llm-agent",
+    "skill",
+    "工具集成",
+    "自动化",
+    "多Agent协作",
+    "模型适配",
+    "效率提升"
+  ],
+  "version": "1.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.1",
+    "publishedAt": "2026-09-11T15:53:04Z",
+    "url": "https://github.com/yufeiyufei888/browser-bridge/releases/tag/v1.0.1"
+  },
+  "author": "yufeiyufei888",
+  "repo": "https://github.com/yufeiyufei888/browser-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T15:52:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yufeiyufei888/browser-bridge",
+    "commands": [
+      "dsh plugin --profile web add github:yufeiyufei888/browser-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

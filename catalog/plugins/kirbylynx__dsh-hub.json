@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "kirbylynx/dsh-hub",
+  "slug": "kirbylynx__dsh-hub",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hub",
+  "title": "dsh-hub",
+  "summary": "为多台机器上的 DSH 实例提供多租户远程访问与控制中心，方便统一管理和操作。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "安全审计",
+    "模型配置",
+    "工作区管理",
+    "状态监控",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-28T00:52:18Z",
+    "url": "https://github.com/kirbylynx/dsh-hub/releases/tag/v0.1.0"
+  },
+  "author": "kirbylynx",
+  "repo": "https://github.com/kirbylynx/dsh-hub",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-06T04:16:28Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kirbylynx/dsh-hub",
+    "commands": [
+      "dsh plugin --profile web add github:kirbylynx/dsh-hub"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

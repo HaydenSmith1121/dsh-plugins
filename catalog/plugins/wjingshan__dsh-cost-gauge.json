@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "wjingshan/dsh-cost-gauge",
+  "slug": "wjingshan__dsh-cost-gauge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cost-gauge",
+  "title": "dsh-cost-gauge",
+  "summary": "在 dsh 界面挂个浮动小窗，实时看 DeepSeek 花了多少钱、还剩多少，余额不足自动闪红灯。",
+  "tags": [
+    "balance-monitor",
+    "billing",
+    "cost-dashboard",
+    "cost-tracking",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "peak-off-peak",
+    "pricing",
+    "token-usage",
+    "usage-monitor",
+    "状态监控",
+    "可视化",
+    "资源优化",
+    "效率提升"
+  ],
+  "version": "1.6.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.6.0",
+    "publishedAt": "2026-09-15T12:11:25Z",
+    "url": "https://github.com/wjingshan/dsh-cost-gauge/releases/tag/v1.6.0"
+  },
+  "author": "wjingshan",
+  "repo": "https://github.com/wjingshan/dsh-cost-gauge",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T12:11:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wjingshan/dsh-cost-gauge",
+    "commands": [
+      "dsh plugin --profile web add github:wjingshan/dsh-cost-gauge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

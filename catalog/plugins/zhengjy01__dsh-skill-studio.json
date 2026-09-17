@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "zhengjy01/dsh-skill-studio",
+  "slug": "zhengjy01__dsh-skill-studio",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skill-studio",
+  "title": "dsh-skill-studio",
+  "summary": "在网页设置面板里可视化查看、编辑和启停智能体技能，还能用命令行工具管理，让技能管理更直观高效。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "AI 助手",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-11T13:57:25Z",
+    "url": "https://github.com/zhengjy01/dsh-skill-studio/releases/tag/v0.2.1"
+  },
+  "author": "zhengjy01",
+  "repo": "https://github.com/zhengjy01/dsh-skill-studio",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-11T13:56:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhengjy01/dsh-skill-studio",
+    "commands": [
+      "dsh plugin --profile web add link:/path/to/dsh-skill-studio",
+      "dsh plugin --profile web add github:zhengjy01/dsh-skill-studio"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

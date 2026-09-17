@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "homily707/dsh-fork-edit",
+  "slug": "homily707__dsh-fork-edit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-fork-edit",
+  "title": "dsh-fork-edit",
+  "summary": "在历史消息上悬停即可编辑或重试，从该回合分叉出新会话自动执行。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "快捷操作",
+    "工作流增强"
+  ],
+  "version": "0.8.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "homily707",
+  "repo": "https://github.com/homily707/dsh-fork-edit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T17:22:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:homily707/dsh-fork-edit",
+    "commands": [
+      "dsh plugin --profile web add github:homily707/dsh-fork-edit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

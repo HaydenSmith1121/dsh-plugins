@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "oh-my-engine/dsh-plugin-oh-my-engine",
+  "slug": "oh-my-engine__dsh-plugin-oh-my-engine",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-oh-my-engine",
+  "title": "dsh-plugin-oh-my-engine",
+  "summary": "为 DeepSeek Harness 增加审批管控的 OME 工程交付智能体预设，让开发流程更安全可控。",
+  "tags": [
+    "agent-preset",
+    "deepseek-harness",
+    "dsh-plugin",
+    "engineering-workflow",
+    "ome",
+    "AI 助手",
+    "工作流增强",
+    "安全审计",
+    "零配置"
+  ],
+  "version": "0.1.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.6",
+    "publishedAt": "2026-09-03T03:54:48Z",
+    "url": "https://github.com/oh-my-engine/dsh-plugin-oh-my-engine/releases/tag/v0.1.6"
+  },
+  "author": "oh-my-engine",
+  "repo": "https://github.com/oh-my-engine/dsh-plugin-oh-my-engine",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-03T09:07:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:oh-my-engine/dsh-plugin-oh-my-engine",
+    "commands": [
+      "dsh plugin --profile web add github:oh-my-engine/dsh-plugin-oh-my-engine"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

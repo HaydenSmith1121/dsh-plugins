@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "william-jin-cmu/dsh-evolve",
+  "slug": "william-jin-cmu__dsh-evolve",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-evolve",
+  "title": "dsh-evolve",
+  "summary": "让 agent 在对话中自己写插件、热挂载、可逆卸载，随时长出或剪掉新能力，重启后依然保留。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "自动化",
+    "效率提升",
+    "状态持久化",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "william-jin-cmu",
+  "repo": "https://github.com/william-jin-cmu/dsh-evolve",
+  "homepage": null,
+  "license": null,
+  "stars": 11,
+  "forks": 0,
+  "pushedAt": "2026-08-13T02:26:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

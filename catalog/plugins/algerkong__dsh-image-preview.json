@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "algerkong/dsh-image-preview",
+  "slug": "algerkong__dsh-image-preview",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-image-preview",
+  "title": "dsh-image-preview",
+  "summary": "在 DSH 网页会话中，将 read_image 结果渲染为缩略图，点击即可在灯箱中查看原图，告别原始 JSON。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugin-dev",
+    "deepseek-harness-plugins",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "内联可视化",
+    "交互宠物",
+    "前端增强",
+    "会话管理"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-08-27T03:27:21Z",
+    "url": "https://github.com/algerkong/dsh-image-preview/releases/tag/v0.3.1"
+  },
+  "author": "algerkong",
+  "repo": "https://github.com/algerkong/dsh-image-preview",
+  "homepage": null,
+  "license": null,
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-27T03:26:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:algerkong/dsh-image-preview",
+    "commands": [
+      "dsh plugin --profile web add 'github:algerkong/dsh-image-preview'"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

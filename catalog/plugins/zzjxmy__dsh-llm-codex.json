@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "zzjxmy/dsh-llm-codex",
+  "slug": "zzjxmy__dsh-llm-codex",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-codex",
+  "title": "dsh-llm-codex",
+  "summary": "给 DeepSeek Harness 接入 ChatGPT Plus/Pro 的 Codex 模型，支持 OAuth 登录和令牌自动刷新，直接调用 Codex 接口。",
+  "tags": [
+    "chatgpt",
+    "codex",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "llm",
+    "oauth",
+    "openai",
+    "plugin",
+    "模型配置",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-08-21T10:51:28Z",
+    "url": "https://github.com/zzjxmy/dsh-llm-codex/releases/tag/v0.1.2"
+  },
+  "author": "zzjxmy",
+  "repo": "https://github.com/zzjxmy/dsh-llm-codex",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-21T10:51:03Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zzjxmy/dsh-llm-codex",
+    "commands": [
+      "dsh plugin --profile web add github:zzjxmy/dsh-llm-codex",
+      "dsh plugin --profile web add file:/path/to/dsh-llm-codex"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "BeiZi6/dsh-opencodego-usage",
+  "slug": "beizi6__dsh-opencodego-usage",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-opencodego-usage",
+  "title": "dsh-opencodego-usage",
+  "summary": "在 DSH 网页界面实时显示 OpenCodeGo 剩余配额，用呼吸灯和进度条直观呈现用量，方便你随时掌握额度。",
+  "tags": [
+    "dsh-plugin",
+    "配额监控",
+    "进度条",
+    "呼吸灯",
+    "可视化",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "BeiZi6",
+  "repo": "https://github.com/BeiZi6/dsh-opencodego-usage",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 2,
+  "pushedAt": "2026-08-14T16:33:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:BeiZi6/dsh-opencodego-usage",
+    "commands": [
+      "dsh plugin --profile web add github:BeiZi6/dsh-opencodego-usage",
+      "dsh plugin --profile web remove dsh-opencodego-usage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

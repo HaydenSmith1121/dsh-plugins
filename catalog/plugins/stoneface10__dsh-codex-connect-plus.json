@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "stoneface10/dsh-codex-connect-plus",
+  "slug": "stoneface10__dsh-codex-connect-plus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codex-connect-plus",
+  "title": "dsh-codex-connect-plus",
+  "summary": "用 ChatGPT 订阅在 DeepSeek Harness 里调用 Codex 模型，还能用 gpt-image-2 生成和编辑图片，无需 OpenAI 平台 API 密钥。",
+  "tags": [
+    "codex",
+    "deepseek-harness",
+    "dsh-plugin",
+    "零配置",
+    "模型配置",
+    "视觉理解",
+    "效率提升"
+  ],
+  "version": "0.1.0-alpha.4.5",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "stoneface10",
+  "repo": "https://github.com/stoneface10/dsh-codex-connect-plus",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-08-29T12:29:15Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-codex-connect-plus@beta",
+    "commands": [
+      "dsh plugin --profile web add dsh-codex-connect-plus@beta",
+      "dsh plugin --profile web add 'github:stoneface10/dsh-codex-connect-plus",
+      "dsh plugin --profile web add link:/absolute/path/to/dsh-codex-connect-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

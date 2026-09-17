@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "jisi71/dsh-memories",
+  "slug": "jisi71__dsh-memories",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memories",
+  "title": "dsh-memories",
+  "summary": "自动记录长期事实和项目进度，每次新会话自动召回，让跨会话记忆不断档。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "memory",
+    "会话管理",
+    "AI 助手",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.2.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jisi71",
+  "repo": "https://github.com/jisi71/dsh-memories",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-22T14:04:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-memories",
+    "commands": [
+      "dsh plugin --profile web add dsh-memories",
+      "npm install <git-url-or-tarball>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

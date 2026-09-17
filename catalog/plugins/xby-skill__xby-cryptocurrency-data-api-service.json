@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-cryptocurrency-data-api-service",
+  "slug": "xby-skill__xby-cryptocurrency-data-api-service",
+  "tier": "community",
+  "package": null,
+  "name": "xby-cryptocurrency-data-api-service",
+  "title": "xby-cryptocurrency-data-api-service",
+  "summary": "无需配置即可获取实时加密货币和DEX数据，支持代币、流动池查询，方便AI助手快速接入市场信息。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "零配置",
+    "AI 助手",
+    "可视化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-cryptocurrency-data-api-service",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:39:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-cryptocurrency-data-api-service",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-cryptocurrency-data-api-service",
+      "dsh plugin --profile web add /absolute/path/to/xby-cryptocurrency-data-api-service"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

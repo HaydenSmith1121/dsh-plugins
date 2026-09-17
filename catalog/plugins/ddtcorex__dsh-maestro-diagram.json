@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ddtcorex/dsh-maestro-diagram",
+  "slug": "ddtcorex__dsh-maestro-diagram",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-maestro-diagram",
+  "title": "dsh-maestro-diagram",
+  "summary": "把 Mermaid 图表变成带 HTML+SVG 的正式文档，还能自动检查图表漂移，适合做架构图。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "diagram",
+    "dsh-plugin",
+    "maestro",
+    "mermaid",
+    "可视化",
+    "工作流增强",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-02T17:50:01Z",
+    "url": "https://github.com/ddtcorex/dsh-maestro-diagram/releases/tag/v0.1.2"
+  },
+  "author": "ddtcorex",
+  "repo": "https://github.com/ddtcorex/dsh-maestro-diagram",
+  "homepage": "https://github.com/ddtcorex/dsh-maestro-diagram",
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-13T09:38:00Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@ddtcorex/dsh-maestro-diagram",
+    "commands": [
+      "dsh plugin add @ddtcorex/dsh-maestro-diagram",
+      "dsh plugin add @ddtcorex/dsh-maestro-meta"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

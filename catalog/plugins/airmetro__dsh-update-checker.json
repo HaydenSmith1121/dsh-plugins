@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "Airmetro/dsh-update-checker",
+  "slug": "airmetro__dsh-update-checker",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-update-checker",
+  "title": "dsh-update-checker",
+  "summary": "自动检测 DeepSeek Harness 是否有新版本，在界面顶部提示，支持一键更新重启，省心省力。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "update-checker",
+    "插件管理",
+    "版本检测",
+    "一键升级",
+    "界面提示"
+  ],
+  "version": "1.5.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.5.0",
+    "publishedAt": "2026-09-17T10:34:50Z",
+    "url": "https://github.com/Airmetro/dsh-update-checker/releases/tag/v1.5.0"
+  },
+  "author": "Airmetro",
+  "repo": "https://github.com/Airmetro/dsh-update-checker",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 18,
+  "forks": 5,
+  "pushedAt": "2026-09-16T02:07:46Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Airmetro/dsh-update-checker",
+    "commands": [
+      "npm i dsh-update-checker --prefix <temp-dir> --no-save"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

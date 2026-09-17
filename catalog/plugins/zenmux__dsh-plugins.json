@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "ZenMux/dsh-plugins",
+  "slug": "zenmux__dsh-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugins",
+  "title": "dsh-plugins",
+  "summary": "在 DeepSeek Harness 中直接调用 ZenMux 模型，轻松切换多后端，提升开发效率。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "llm",
+    "llm-agents",
+    "llm-tools",
+    "zenmux",
+    "模型配置",
+    "工具集成",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.16",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.16",
+    "publishedAt": "2026-09-08T08:41:44Z",
+    "url": "https://github.com/ZenMux/dsh-plugins/releases/tag/v0.1.16"
+  },
+  "author": "ZenMux",
+  "repo": "https://github.com/ZenMux/dsh-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-08T08:41:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ZenMux/dsh-plugins",
+    "commands": [
+      "dsh plugin --profile web update @zenmux/dsh-plugins --latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

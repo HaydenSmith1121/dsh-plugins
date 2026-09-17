@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "omdsh-dev/dsh_workflow",
+  "slug": "omdsh-dev__dsh_workflow",
+  "tier": "community",
+  "package": null,
+  "name": "dsh_workflow",
+  "title": "dsh_workflow",
+  "summary": "把 DSH 的一次性多 Agent 调度变成可保存、可观察、可恢复的工作流，跑起来更省心。",
+  "tags": [
+    "agent-orchestration",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dshtopic",
+    "multi-agent",
+    "workflow",
+    "多Agent协作",
+    "工作流增强",
+    "状态持久化",
+    "状态监控"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-08-13T23:54:14Z",
+    "url": "https://github.com/omdsh-dev/dsh_workflow/releases/tag/v0.1.3"
+  },
+  "author": "omdsh-dev",
+  "repo": "https://github.com/omdsh-dev/dsh_workflow",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 126,
+  "forks": 6,
+  "pushedAt": "2026-09-05T04:10:09Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:omdsh-dev/dsh_workflow",
+    "commands": [
+      "dsh plugin --profile web add github:omdsh-dev/dsh_workflow"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

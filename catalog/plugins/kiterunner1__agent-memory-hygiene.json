@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "kiterunner1/agent-memory-hygiene",
+  "slug": "kiterunner1__agent-memory-hygiene",
+  "tier": "community",
+  "package": null,
+  "name": "agent-memory-hygiene",
+  "title": "agent-memory-hygiene",
+  "summary": "让 AI 先摸清你的环境，再现场搭一套长期记忆层，并定期体检，防止记忆越用越乱。",
+  "tags": [
+    "agent-skill",
+    "agent-skills",
+    "ai-agent",
+    "claude-code",
+    "codex",
+    "context-engineering",
+    "deepseek-harness",
+    "dsh",
+    "knowledge-management",
+    "memory",
+    "状态持久化",
+    "工作流增强",
+    "AI 助手",
+    "自动化",
+    "数据可审计"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "kiterunner1",
+  "repo": "https://github.com/kiterunner1/agent-memory-hygiene",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T10:50:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kiterunner1/agent-memory-hygiene",
+    "commands": [
+      "npx skills add kiterunner1/agent-memory-hygiene -g -a cline -y",
+      "git clone https://github.com/kiterunner1/agent-memory-hygiene.git ~/.agents/skills/agent-memory-hygiene"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

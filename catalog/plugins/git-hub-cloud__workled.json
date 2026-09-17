@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "git-hub-cloud/workled",
+  "slug": "git-hub-cloud__workled",
+  "tier": "community",
+  "package": null,
+  "name": "workled",
+  "title": "workled",
+  "summary": "把 AI 助手的工作状态同步到 workled 灯效设备，还能配置灯光效果和触摸宏，让状态一目了然。",
+  "tags": [
+    "agent-skill",
+    "dsh",
+    "dsh-plugin",
+    "openclaw",
+    "opencode",
+    "状态监控",
+    "可视化",
+    "多Agent协作",
+    "效率提升"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "git-hub-cloud",
+  "repo": "https://github.com/git-hub-cloud/workled",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T07:37:16Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:git-hub-cloud/workled",
+    "commands": [
+      "dsh plugin --profile web add github:git-hub-cloud/workled"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

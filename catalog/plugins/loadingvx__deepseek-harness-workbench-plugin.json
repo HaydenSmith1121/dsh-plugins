@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "loadingvx/deepseek-harness-workbench-plugin",
+  "slug": "loadingvx__deepseek-harness-workbench-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-workbench-plugin",
+  "title": "deepseek-harness-workbench-plugin",
+  "summary": "为 DeepSeek Harness 网页界面提供工作台插件，在对话时左侧保留聊天，右侧新增协作工具区域。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-bundle",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "dsh-plugins-terminal",
+    "工作台",
+    "会话管理",
+    "界面扩展",
+    "协作工具"
+  ],
+  "version": "0.1.37",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.37",
+    "publishedAt": "2026-09-17T01:03:06Z",
+    "url": "https://github.com/loadingvx/deepseek-harness-workbench-plugin/releases/tag/v0.1.37"
+  },
+  "author": "loadingvx",
+  "repo": "https://github.com/loadingvx/deepseek-harness-workbench-plugin",
+  "homepage": "https://www.npmjs.com/package/dsh-workbench-plugin",
+  "license": "MIT",
+  "stars": 33,
+  "forks": 8,
+  "pushedAt": "2026-09-16T02:33:10Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-workbench-plugin@0.1.35",
+    "commands": [
+      "dsh plugin --profile web add dsh-workbench-plugin@0.1.35"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

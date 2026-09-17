@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "kiiiiile/dsh-approval-ai-review",
+  "slug": "kiiiiile__dsh-approval-ai-review",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-approval-ai-review",
+  "title": "dsh-approval-ai-review",
+  "summary": "让 AI 先审一遍工具调用，安全的自动放行，有风险的连审查意见一起上报，省去手动确认。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "安全审计",
+    "自动化",
+    "效率提升",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-14T02:25:57Z",
+    "url": "https://github.com/kiiiiile/dsh-approval-ai-review/releases/tag/v0.1.0"
+  },
+  "author": "kiiiiile",
+  "repo": "https://github.com/kiiiiile/dsh-approval-ai-review",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T02:43:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-approval-ai-review",
+    "commands": [
+      "dsh plugin --profile web add dsh-approval-ai-review"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "xlight/deepseek-visionary",
+  "slug": "xlight__deepseek-visionary",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-visionary",
+  "title": "deepseek-visionary",
+  "summary": "用DeepSeek官方多模态视觉模型，让AI助手能看懂图片，不再眼瞎。",
+  "tags": [
+    "agent",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "harness",
+    "mcp",
+    "mcp-server",
+    "skills",
+    "AI工具",
+    "工具集成",
+    "模型适配",
+    "效率提升"
+  ],
+  "version": "0.7.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.2",
+    "publishedAt": "2026-08-30T07:51:51Z",
+    "url": "https://github.com/xlight/deepseek-visionary/releases/tag/v0.7.2"
+  },
+  "author": "xlight",
+  "repo": "https://github.com/xlight/deepseek-visionary",
+  "homepage": null,
+  "license": null,
+  "stars": 17,
+  "forks": 1,
+  "pushedAt": "2026-09-14T03:57:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xlight/deepseek-visionary",
+    "commands": [
+      "dsh plugin --profile web add github:xlight/deepseek-visionary"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

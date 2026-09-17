@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-random-number",
+  "slug": "xby-skill__xby-random-number",
+  "tier": "community",
+  "package": null,
+  "name": "xby-random-number",
+  "title": "xby-random-number",
+  "summary": "在聊天里直接生成随机数、安全令牌，还能做加权选择和列表洗牌，方便又实用。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "插件管理",
+    "零配置",
+    "会话管理",
+    "工作流增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-random-number",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:48:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-random-number",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-random-number",
+      "dsh plugin --profile web add /absolute/path/to/xby-random-number"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

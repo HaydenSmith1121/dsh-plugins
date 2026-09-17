@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "MoFeng2223/dsh-claude-provider",
+  "slug": "mofeng2223__dsh-claude-provider",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-claude-provider",
+  "title": "dsh-claude-provider",
+  "summary": "让 DeepSeek Harness 无缝接入 Claude 模型，解决推理参数不兼容导致的报错问题。",
+  "tags": [
+    "anthropic",
+    "claude",
+    "deepseek-harness",
+    "dsh-plugin",
+    "工具集成",
+    "设置面板",
+    "零配置"
+  ],
+  "version": "0.4.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.5",
+    "publishedAt": "2026-09-15T11:32:02Z",
+    "url": "https://github.com/MoFeng2223/dsh-claude-provider/releases/tag/v0.4.5"
+  },
+  "author": "MoFeng2223",
+  "repo": "https://github.com/MoFeng2223/dsh-claude-provider",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 31,
+  "forks": 0,
+  "pushedAt": "2026-09-15T11:50:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MoFeng2223/dsh-claude-provider",
+    "commands": [
+      "git clone https://github.com/MoFeng2223/dsh-claude-provider.git",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

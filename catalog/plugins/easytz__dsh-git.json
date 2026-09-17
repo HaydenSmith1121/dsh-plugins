@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "EasyTZ/dsh-git",
+  "slug": "easytz__dsh-git",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-git",
+  "title": "dsh-git",
+  "summary": "在 DeepSeek Harness 侧边栏里直接查看改动、暂存文件、提交推送和切换分支，不用离开当前会话。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "git-gui",
+    "sidebar-panel",
+    "工作流增强",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.5.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.4",
+    "publishedAt": "2026-09-04T01:58:25Z",
+    "url": "https://github.com/EasyTZ/dsh-git/releases/tag/v0.5.4"
+  },
+  "author": "EasyTZ",
+  "repo": "https://github.com/EasyTZ/dsh-git",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T08:21:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:EasyTZ/dsh-git",
+    "commands": [
+      "dsh plugin --profile <name> add @easytz/dsh-git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

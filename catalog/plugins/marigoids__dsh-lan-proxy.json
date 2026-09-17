@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "mariGoIds/dsh-lan-proxy",
+  "slug": "marigoids__dsh-lan-proxy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-lan-proxy",
+  "title": "dsh-lan-proxy",
+  "summary": "让手机或公网随时打开 dsh 界面，支持密码登录、IP 白名单和 HTTPS，安全又方便。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "安全审计"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "mariGoIds",
+  "repo": "https://github.com/mariGoIds/dsh-lan-proxy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T17:19:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mariGoIds/dsh-lan-proxy",
+    "commands": [
+      "dsh plugin --profile web add file:/path/to/dsh-lan-proxy",
+      "dsh plugin --profile web add github:mariGoIds/dsh-lan-proxy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

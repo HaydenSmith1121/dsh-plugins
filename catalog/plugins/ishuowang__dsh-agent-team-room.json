@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "ishuowang/dsh-agent-team-room",
+  "slug": "ishuowang__dsh-agent-team-room",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-team-room",
+  "title": "dsh-agent-team-room",
+  "summary": "把多个独立会话和AI成员拉进同一个房间，自由协作，不预设角色和场景。",
+  "tags": [
+    "agent-orchestration",
+    "agent-room",
+    "agent-team",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "multi-agent",
+    "multi-agent-systems",
+    "native-ui",
+    "rolehub",
+    "session-room",
+    "多Agent协作",
+    "会话房间",
+    "工作流增强",
+    "可视化"
+  ],
+  "version": "0.6.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.0",
+    "publishedAt": "2026-08-15T12:44:36Z",
+    "url": "https://github.com/ishuowang/dsh-agent-team-room/releases/tag/v0.6.0"
+  },
+  "author": "ishuowang",
+  "repo": "https://github.com/ishuowang/dsh-agent-team-room",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 2,
+  "pushedAt": "2026-09-04T02:08:23Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ishuowang/dsh-agent-team-room",
+    "commands": [
+      "dsh plugin --profile web add github:ishuowang/dsh-agent-team-room"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

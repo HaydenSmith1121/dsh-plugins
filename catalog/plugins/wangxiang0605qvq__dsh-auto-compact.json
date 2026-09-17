@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "wangxiang0605qvq/dsh-auto-compact",
+  "slug": "wangxiang0605qvq__dsh-auto-compact",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auto-compact",
+  "title": "dsh-auto-compact",
+  "summary": "会话超75%时自动压缩上下文，任务结束后提醒确认，模型也可主动触发压缩，省心省力。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "会话管理",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "1.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wangxiang0605qvq",
+  "repo": "https://github.com/wangxiang0605qvq/dsh-auto-compact",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-31T08:29:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wangxiang0605qvq/dsh-auto-compact",
+    "commands": [
+      "dsh plugin --profile web add github:wangxiang0605qvq/dsh-auto-compact"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

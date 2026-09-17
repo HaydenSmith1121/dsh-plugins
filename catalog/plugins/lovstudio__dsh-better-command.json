@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "lovstudio/dsh-better-command",
+  "slug": "lovstudio__dsh-better-command",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-better-command",
+  "title": "dsh-better-command",
+  "summary": "为 DeepSeek Harness 网页界面优化斜杠命令匹配，忽略分隔符差异，让命令输入更智能顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "前端增强",
+    "命令行工具",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lovstudio",
+  "repo": "https://github.com/lovstudio/dsh-better-command",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T17:18:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lovstudio/dsh-better-command",
+    "commands": [
+      "git clone --depth 1 --branch dsh-v0.1.2-rc.1 https://github.com/deepseek-ai/deepseek-harness.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

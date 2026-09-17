@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "stultuss/dsh-clear-tool-results",
+  "slug": "stultuss__dsh-clear-tool-results",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-clear-tool-results",
+  "title": "dsh-clear-tool-results",
+  "summary": "每轮对话后自动归档工具结果并清理上下文，省 Token，模型可随时按需读取历史记录。",
+  "tags": [
+    "clear-tool-result",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "语义检索",
+    "插件管理"
+  ],
+  "version": "0.7.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "stultuss",
+  "repo": "https://github.com/stultuss/dsh-clear-tool-results",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T08:48:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-clear-tool-results",
+    "commands": [
+      "dsh plugin --profile web add dsh-clear-tool-results"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

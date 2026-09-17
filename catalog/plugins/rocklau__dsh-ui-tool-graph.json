@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "rocklau/dsh-ui-tool-graph",
+  "slug": "rocklau__dsh-ui-tool-graph",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ui-tool-graph",
+  "title": "dsh-ui-tool-graph",
+  "summary": "在 dsh 网页界面中可视化工具调用成本、耗时与错误权重，一键生成下一轮优化提示。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "web-ui",
+    "资源优化",
+    "状态监控",
+    "效率提升",
+    "AI 助手",
+    "会话管理"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-08-24T01:36:58Z",
+    "url": "https://github.com/rocklau/dsh-ui-tool-graph/releases/tag/v0.1.3"
+  },
+  "author": "rocklau",
+  "repo": "https://github.com/rocklau/dsh-ui-tool-graph",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-25T03:18:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:rocklau/dsh-ui-tool-graph",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/rocklau/dsh-ui-tool-graph/releases/download/v0.1.2/dsh-ui-tool-graph-0.1.2.tgz",
+      "dsh plugin --profile web add github:rocklau/dsh-ui-tool-graph"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

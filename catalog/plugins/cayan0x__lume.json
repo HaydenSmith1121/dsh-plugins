@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "cayan0x/Lume",
+  "slug": "cayan0x__lume",
+  "tier": "community",
+  "package": null,
+  "name": "Lume",
+  "title": "Lume",
+  "summary": "给 DSH Desktop 加上任务执行纪律和人设系统，让 AI 干活更靠谱、聊天更像真人。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "会话管理",
+    "模型适配",
+    "AI 助手"
+  ],
+  "version": "0.6.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "cayan0x",
+  "repo": "https://github.com/cayan0x/Lume",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T14:49:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "lume-dsh-plugin",
+    "commands": [
+      "dsh plugin add lume-dsh-plugin",
+      "dsh plugin add github:cayan0x/Lume"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

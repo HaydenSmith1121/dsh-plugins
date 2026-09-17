@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "LittleBlackTong/dsh-plugin-cron",
+  "slug": "littleblacktong__dsh-plugin-cron",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-cron",
+  "title": "dsh-plugin-cron",
+  "summary": "让 DeepSeek Harness 按 cron 表达式定时执行任务，支持自然语言或界面配置，自动调度 Agent 工作。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "工作流增强",
+    "设置面板",
+    "插件管理"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "LittleBlackTong",
+  "repo": "https://github.com/LittleBlackTong/dsh-plugin-cron",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T02:43:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LittleBlackTong/dsh-plugin-cron",
+    "commands": [
+      "dsh plugin --profile <profile> add dsh-plugin-cron-scheduler"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

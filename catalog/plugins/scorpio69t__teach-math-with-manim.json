@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Scorpio69t/teach-math-with-manim",
+  "slug": "scorpio69t__teach-math-with-manim",
+  "tier": "community",
+  "package": null,
+  "name": "teach-math-with-manim",
+  "title": "teach-math-with-manim",
+  "summary": "用 Manim 做数学教学动画的官方配套仓库，含 60+ 案例源码和 AI 技能，拿来就能用。",
+  "tags": [
+    "dsh-plugin",
+    "skills",
+    "报告生成",
+    "可视化",
+    "AI 助手",
+    "集中仓库"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Scorpio69t",
+  "repo": "https://github.com/Scorpio69t/teach-math-with-manim",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-09-15T23:48:16Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Scorpio69t/teach-math-with-manim",
+    "commands": [
+      "pip install manim",
+      "git clone https://github.com/Scorpio69t/teach-math-with-manim.git",
+      "dsh plugin --profile web add github:Scorpio69t/teach-math-with-manim"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

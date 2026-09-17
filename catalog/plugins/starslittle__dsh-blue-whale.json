@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "starslittle/dsh-blue-whale",
+  "slug": "starslittle__dsh-blue-whale",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-blue-whale",
+  "title": "dsh-blue-whale",
+  "summary": "给 DeepSeek Harness 换上官方聊天网站的蓝色鲸鱼皮肤，界面更清爽。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "theme",
+    "主题",
+    "官方风格"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "starslittle",
+  "repo": "https://github.com/starslittle/dsh-blue-whale",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-17T19:58:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-blue-whale",
+    "commands": [
+      "dsh plugin --profile web add dsh-blue-whale",
+      "dsh plugin --profile web add github:starslittle/dsh-blue-whale"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

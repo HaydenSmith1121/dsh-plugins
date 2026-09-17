@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "373158808qq-cmd/dsh-memory-palace",
+  "slug": "373158808qq-cmd__dsh-memory-palace",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memory-palace",
+  "title": "dsh-memory-palace",
+  "summary": "让 DeepSeek Harness 跨会话记住你的画像、项目和踩过的坑，每轮自动注入，还能本地语义检索历史。",
+  "tags": [
+    "agent-memory",
+    "deepseek-harness",
+    "dsh",
+    "long-term-memory",
+    "memory",
+    "obsidian",
+    "ollama",
+    "plugin",
+    "rag",
+    "semantic-search",
+    "会话管理",
+    "语义检索",
+    "状态持久化",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.11.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.11.3",
+    "publishedAt": "2026-09-17T11:01:12Z",
+    "url": "https://github.com/373158808qq-cmd/dsh-memory-palace/releases/tag/v0.11.3"
+  },
+  "author": "373158808qq-cmd",
+  "repo": "https://github.com/373158808qq-cmd/dsh-memory-palace",
+  "homepage": "https://github.com/373158808qq-cmd/dsh-memory-palace#readme",
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T21:39:35Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:373158808qq-cmd/dsh-memory-palace",
+    "commands": [
+      "dsh plugin --profile web add /绝对路径/dsh-memory-palace-0.10.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

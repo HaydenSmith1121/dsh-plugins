@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "liceses/dsh-showme-html",
+  "slug": "liceses__dsh-showme-html",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-showme-html",
+  "title": "dsh-showme-html",
+  "summary": "把工作区里的 HTML 页面直接展示在对话中，用户点选表态后逐行回传给 agent。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "可视化",
+    "工具集成",
+    "快捷操作",
+    "工作区管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "liceses",
+  "repo": "https://github.com/liceses/dsh-showme-html",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T14:33:42Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:liceses/dsh-showme-html",
+    "commands": [
+      "dsh plugin --profile web add github:liceses/dsh-showme-html"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

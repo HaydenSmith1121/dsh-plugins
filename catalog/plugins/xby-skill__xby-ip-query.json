@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-ip-query",
+  "slug": "xby-skill__xby-ip-query",
+  "tier": "community",
+  "package": null,
+  "name": "xby-ip-query",
+  "title": "xby-ip-query",
+  "summary": "输入IP地址，快速获取威胁情报、地理位置和恶意行为画像，帮你判断IP是否可信。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "插件管理",
+    "零配置",
+    "会话管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-ip-query",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:14:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-ip-query",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-ip-query",
+      "dsh plugin --profile web add /absolute/path/to/xby-ip-query"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

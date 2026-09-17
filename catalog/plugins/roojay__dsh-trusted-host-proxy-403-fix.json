@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "roojay/dsh-trusted-host-proxy-403-fix",
+  "slug": "roojay__dsh-trusted-host-proxy-403-fix",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-trusted-host-proxy-403-fix",
+  "title": "dsh-trusted-host-proxy-403-fix",
+  "summary": "修复可信主机代理在403错误下的访问问题，让远程连接更稳定可靠。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "状态监控"
+  ],
+  "version": "0.7.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.0",
+    "publishedAt": "2026-09-12T11:57:26Z",
+    "url": "https://github.com/roojay/dsh-trusted-host-proxy-403-fix/releases/tag/v0.7.0"
+  },
+  "author": "roojay",
+  "repo": "https://github.com/roojay/dsh-trusted-host-proxy-403-fix",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T11:57:06Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:roojay/dsh-trusted-host-proxy-403-fix",
+    "commands": [
+      "dsh plugin --profile web add github:roojay/dsh-trusted-host-proxy-403-fix",
+      "dsh plugin --profile web add dsh-trusted-host-proxy-403-fix@0.3.0",
+      "dsh plugin --profile web add https://github.com/roojay/dsh-trusted-host-proxy-403-fix/releases/download/v0.3.0/dsh-trusted-host-proxy-403-fix-0.3.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

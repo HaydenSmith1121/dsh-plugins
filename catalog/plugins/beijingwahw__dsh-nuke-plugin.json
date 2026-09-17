@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "beijingwahw/dsh-nuke-plugin",
+  "slug": "beijingwahw__dsh-nuke-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "beijingwahw/dsh-nuke-plugin",
+  "title": "beijingwahw/dsh-nuke-plugin",
+  "summary": "给 DSH 插件做彻底卸载：先预览再执行，出错能回滚，崩溃也能恢复，还带审计记录。",
+  "tags": [
+    "cleanup",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "nuke",
+    "typescript",
+    "操作回滚",
+    "状态持久化",
+    "数据可审计",
+    "插件管理",
+    "自动化"
+  ],
+  "version": "3.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v3.0.0",
+    "publishedAt": "2026-08-17T12:53:34Z",
+    "url": "https://github.com/beijingwahw/dsh-nuke-plugin/releases/tag/v3.0.0"
+  },
+  "author": "beijingwahw",
+  "repo": "https://github.com/beijingwahw/dsh-nuke-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-30T09:18:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:beijingwahw/dsh-nuke-plugin",
+    "commands": [
+      "dsh plugin add beijingwahw/dsh-nuke-plugin --profile web"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

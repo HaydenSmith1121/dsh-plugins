@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "joao-paulo-santos/dsh-md-view",
+  "slug": "joao-paulo-santos__dsh-md-view",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-md-view",
+  "title": "dsh-md-view",
+  "summary": "为 DSH 客户端插件提供安全的 Markdown 渲染组件，展示 README、日志等文本时防止 HTML 注入，样式统一。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "可视化",
+    "零配置",
+    "插件管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "joao-paulo-santos",
+  "repo": "https://github.com/joao-paulo-santos/dsh-md-view",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T18:51:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:joao-paulo-santos/dsh-md-view",
+    "commands": [
+      "dsh plugin --profile web add github:joao-paulo-santos/dsh-md-view"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

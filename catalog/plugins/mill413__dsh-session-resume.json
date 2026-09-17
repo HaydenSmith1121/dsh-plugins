@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "mill413/dsh-session-resume",
+  "slug": "mill413__dsh-session-resume",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-resume",
+  "title": "dsh-session-resume",
+  "summary": "任务中断不用慌，一键继续上次的 DeepSeek Harness 会话，省时省力。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "会话管理",
+    "效率提升",
+    "插件管理",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "mill413",
+  "repo": "https://github.com/mill413/dsh-session-resume",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T05:13:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@mill413/dsh-session-resume@0.2.0",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-session-resume/packages/session-resume",
+      "dsh plugin --profile web add @mill413/dsh-session-resume@0.2.0"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

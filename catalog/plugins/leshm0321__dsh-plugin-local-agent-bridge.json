@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Leshm0321/dsh-plugin-local-agent-bridge",
+  "slug": "leshm0321__dsh-plugin-local-agent-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-local-agent-bridge",
+  "title": "dsh-plugin-local-agent-bridge",
+  "summary": "在 DeepSeek Harness 浏览器界面里直接驱动你电脑上已装好的 Claude Code 和 Codex，不用来回切换窗口。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "工具集成",
+    "效率提升",
+    "前端增强",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Leshm0321",
+  "repo": "https://github.com/Leshm0321/dsh-plugin-local-agent-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T06:09:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "git clone https://github.com/Leshm0321/dsh-plugin-local-agent-bridge.git",
+      "dsh plugin --profile web add .",
+      "dsh plugin --profile web add github:Leshm0321/dsh-plugin-local-agent-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

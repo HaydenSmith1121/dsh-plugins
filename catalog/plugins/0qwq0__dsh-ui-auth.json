@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "0QwQ0/dsh-ui-auth",
+  "slug": "0qwq0__dsh-ui-auth",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ui-auth",
+  "title": "dsh-ui-auth",
+  "summary": "给 DSH Web UI 加一道登录门禁，管用户、隔离数据，模型和 Key 只有管理员能配。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "设置面板",
+    "模型适配",
+    "会话管理",
+    "工作区管理"
+  ],
+  "version": "0.6.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "0QwQ0",
+  "repo": "https://github.com/0QwQ0/dsh-ui-auth",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-09-16T10:48:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-ui-auth",
+    "commands": [
+      "dsh plugin --profile web add dsh-ui-auth",
+      "dsh plugin --profile web add github:0QwQ0/dsh-ui-auth",
+      "dsh plugin --profile web add <本插件目录的绝对路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

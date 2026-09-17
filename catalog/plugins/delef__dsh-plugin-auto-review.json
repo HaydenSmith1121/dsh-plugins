@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "delef/dsh-plugin-auto-review",
+  "slug": "delef__dsh-plugin-auto-review",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-auto-review",
+  "title": "dsh-plugin-auto-review",
+  "summary": "在 DeepSeek Harness 中复现服务商（如 Codex Guardian）的自动审批与审查策略，让审核流程更贴近真实环境。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "安全审计",
+    "插件管理",
+    "工作流增强",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "delef",
+  "repo": "https://github.com/delef/dsh-plugin-auto-review",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T12:14:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-auto-review",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-auto-review",
+      "dsh plugin --profile headless add dsh-plugin-auto-review",
+      "dsh plugin --profile web update --latest dsh-plugin-auto-review"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

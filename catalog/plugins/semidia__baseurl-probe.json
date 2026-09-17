@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "Semidia/baseurl-probe",
+  "slug": "semidia__baseurl-probe",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-baseurl-probe",
+  "title": "dsh-baseurl-probe",
+  "summary": "自动探测并补全供应商 baseURL 的 /v1 路径，免去手动改配置的麻烦，让 AI 接口无缝连通。",
+  "tags": [
+    "模型配置",
+    "模型接入",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Semidia",
+  "repo": "https://github.com/Semidia/baseurl-probe",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-18T17:20:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Semidia/baseurl-probe",
+    "commands": [
+      "dsh plugin --profile web add github:Semidia/baseurl-probe"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

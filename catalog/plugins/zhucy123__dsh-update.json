@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Zhucy123/dsh-update",
+  "slug": "zhucy123__dsh-update",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-update",
+  "title": "dsh-update",
+  "summary": "在侧边栏一键更新本地 DSH：对比版本、确认后拉取重建并重启，省去手动操作。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "效率提升",
+    "工作流增强",
+    "命令行工具",
+    "状态监控"
+  ],
+  "version": "1.7.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Zhucy123",
+  "repo": "https://github.com/Zhucy123/dsh-update",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T06:43:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@zhucy123/dsh-update",
+    "commands": [
+      "dsh plugin --profile web add @zhucy123/dsh-update",
+      "dsh plugin --profile web add git+https://github.com/Zhucy123/dsh-update.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

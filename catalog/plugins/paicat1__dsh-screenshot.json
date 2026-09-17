@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "paicat1/dsh-screenshot",
+  "slug": "paicat1__dsh-screenshot",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-screenshot",
+  "title": "dsh-screenshot",
+  "summary": "纯 PowerShell 实现的轻量截图插件，支持全屏、框选、悬停吸附截取被遮挡窗口，Agent 可自助截屏并配合 modlens 识图。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "screenshot",
+    "vision",
+    "效率提升",
+    "自动化",
+    "桌宠",
+    "可视化"
+  ],
+  "version": "1.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "paicat1",
+  "repo": "https://github.com/paicat1/dsh-screenshot",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-08T14:09:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@paicat1/dsh-screenshot",
+    "commands": [
+      "dsh plugin --profile web add @paicat1/dsh-screenshot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

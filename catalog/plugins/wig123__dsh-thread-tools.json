@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "wig123/dsh-thread-tools",
+  "slug": "wig123__dsh-thread-tools",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-thread-tools",
+  "title": "dsh-thread-tools",
+  "summary": "让 DeepSeek Harness 里的会话互相看得见，能列出其他会话并给活跃的那个发消息。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "会话管理",
+    "消息通知",
+    "多智能体协作"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-11T07:53:34Z",
+    "url": "https://github.com/wig123/dsh-thread-tools/releases/tag/v0.1.0"
+  },
+  "author": "wig123",
+  "repo": "https://github.com/wig123/dsh-thread-tools",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T03:04:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@wig123/dsh-thread-tools",
+    "commands": [
+      "dsh plugin --profile web add @wig123/dsh-thread-tools",
+      "dsh plugin --profile web add github:wig123/dsh-thread-tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

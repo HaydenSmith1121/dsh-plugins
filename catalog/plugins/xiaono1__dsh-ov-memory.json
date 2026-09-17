@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaono1/dsh-ov-memory",
+  "slug": "xiaono1__dsh-ov-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ov-memory",
+  "title": "dsh-ov-memory",
+  "summary": "把 OpenViking 持久记忆接入 DSH，自动召回历史会话、离线补发消息，还带 MCP 工具桥和 URI 安全守卫。",
+  "tags": [
+    "dsh-plugin",
+    "memory",
+    "openviking",
+    "会话管理",
+    "AI 助手",
+    "安全审计"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xiaono1",
+  "repo": "https://github.com/xiaono1/dsh-ov-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-09T17:53:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiaono1/dsh-ov-memory",
+    "commands": [
+      "dsh plugin --profile <profile> add github:xiaono1/dsh-ov-memory",
+      "dsh plugin --profile <profile> add /path/to/dsh-ov-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

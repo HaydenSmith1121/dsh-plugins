@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "mqhe2007/dsh-pm",
+  "slug": "mqhe2007__dsh-pm",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pm",
+  "title": "dsh-pm",
+  "summary": "由 ChunSun 驱动的 AI 原生项目管理插件，自动跟踪需求、运行、步骤和验收场景，让交付流程更高效。",
+  "tags": [
+    "agentic-autonomy",
+    "deepseek-harness",
+    "dsh-plugin",
+    "project-management",
+    "requirements",
+    "工作流增强",
+    "需求管理",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-24T03:24:07Z",
+    "url": "https://github.com/mqhe2007/dsh-pm/releases/tag/v0.1.0"
+  },
+  "author": "mqhe2007",
+  "repo": "https://github.com/mqhe2007/dsh-pm",
+  "homepage": "https://github.com/mqhe2007/chunsun",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-24T03:26:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mqhe2007/dsh-pm",
+    "commands": [
+      "npm install",
+      "dsh plugin --profile web add ./dsh-pm",
+      "dsh plugin --profile web add github:mqhe2007/dsh-pm"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

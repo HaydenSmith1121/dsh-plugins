@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "AntaresCorn/dsh-auto-reviewer",
+  "slug": "antarescorn__dsh-auto-reviewer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auto-reviewer",
+  "title": "dsh-auto-reviewer",
+  "summary": "给 DeepSeek Harness 加上类似 Codex 的自动审批权限模式，让 AI 能自己批准操作，减少手动确认。",
+  "tags": [
+    "dsh-plugin",
+    "安全审查",
+    "自动化",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-16T06:56:55Z",
+    "url": "https://github.com/AntaresCorn/dsh-auto-reviewer/releases/tag/v0.1.0"
+  },
+  "author": "AntaresCorn",
+  "repo": "https://github.com/AntaresCorn/dsh-auto-reviewer",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T06:42:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AntaresCorn/dsh-auto-reviewer",
+    "commands": [
+      "dsh plugin --profile web add github:AntaresCorn/dsh-auto-reviewer",
+      "git clone https://github.com/AntaresCorn/dsh-auto-reviewer.git",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

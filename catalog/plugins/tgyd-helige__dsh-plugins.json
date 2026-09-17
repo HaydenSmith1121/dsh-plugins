@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "TGYD-helige/dsh-plugins",
+  "slug": "tgyd-helige__dsh-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugins",
+  "title": "dsh-plugins",
+  "summary": "为 DeepSeek Harness 提供通用插件，支持 A2A 协议互联、会话存储镜像和 Langfuse 可观测性，无需改动核心。",
+  "tags": [
+    "agent2agent",
+    "ai-agents",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "langfuse",
+    "observability",
+    "typescript",
+    "AI 助手",
+    "会话管理",
+    "状态监控",
+    "安全审计",
+    "效率提升"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-09-15T03:27:32Z",
+    "url": "https://github.com/TGYD-helige/dsh-plugins/releases/tag/v0.1.3"
+  },
+  "author": "TGYD-helige",
+  "repo": "https://github.com/TGYD-helige/dsh-plugins",
+  "homepage": "https://deepseek.com/harness",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T03:27:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TGYD-helige/dsh-plugins",
+    "commands": [
+      "dsh plugin --profile my-agent add @amaster.ai/dsh-a2a @amaster.ai/dsh-storage @amaster.ai/dsh-langfuse"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

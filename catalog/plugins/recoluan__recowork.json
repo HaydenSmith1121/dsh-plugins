@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "recoluan/recowork",
+  "slug": "recoluan__recowork",
+  "tier": "community",
+  "package": null,
+  "name": "recowork",
+  "title": "recowork",
+  "summary": "给AI配上可复用工作流，让它能持续完成任务，不再半途而废。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "3.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "recoluan",
+  "repo": "https://github.com/recoluan/recowork",
+  "homepage": "https://recowork.recoluan.com/",
+  "license": null,
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-08T02:06:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:recoluan/recowork",
+    "commands": [
+      "dsh plugin --profile web add github:recoluan/recowork"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

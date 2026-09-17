@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "zhang-bin-98/sci-fork",
+  "slug": "zhang-bin-98__sci-fork",
+  "tier": "community",
+  "package": null,
+  "name": "sci-fork",
+  "title": "sci-fork",
+  "summary": "把生物医学文献变成可追溯的知识图谱，边查边扩展，研究过程一目了然。",
+  "tags": [
+    "biomedical-research",
+    "deepseek-harness",
+    "dsh-plugin",
+    "evidence-graph",
+    "knowledge-graph",
+    "research-graph",
+    "语义检索",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.0.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.0.3",
+    "publishedAt": "2026-09-07T11:41:48Z",
+    "url": "https://github.com/zhang-bin-98/sci-fork/releases/tag/v0.0.3"
+  },
+  "author": "zhang-bin-98",
+  "repo": "https://github.com/zhang-bin-98/sci-fork",
+  "homepage": "https://github.com/zhang-bin-98/sci-fork/releases",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-07T11:40:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhang-bin-98/sci-fork",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/zhang-bin-98/sci-fork.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

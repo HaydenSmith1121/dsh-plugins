@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "weibaohui/hermes-loop",
+  "slug": "weibaohui__hermes-loop",
+  "tier": "community",
+  "package": null,
+  "name": "weibaohui/hermes-loop",
+  "title": "weibaohui/hermes-loop",
+  "summary": "对话结束后自动复盘，把有用的经验提炼成可复用技能存进技能库，还支持审批和归档管理。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "工作流增强",
+    "会话管理",
+    "AI 助手",
+    "状态持久化"
+  ],
+  "version": "0.1.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.9",
+    "publishedAt": "2026-09-15T04:14:17Z",
+    "url": "https://github.com/weibaohui/hermes-loop/releases/tag/v0.1.9"
+  },
+  "author": "weibaohui",
+  "repo": "https://github.com/weibaohui/hermes-loop",
+  "homepage": null,
+  "license": null,
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-15T04:14:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:weibaohui/hermes-loop",
+    "commands": [
+      "dsh plugin --profile web add @weibaohui/hermes-loop -w"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

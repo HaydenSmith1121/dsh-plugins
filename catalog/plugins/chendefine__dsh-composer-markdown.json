@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "chendefine/dsh-composer-markdown",
+  "slug": "chendefine__dsh-composer-markdown",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-composer-markdown",
+  "title": "dsh-composer-markdown",
+  "summary": "在 Composer 中一键将 Markdown 内容转换为结构化文档，方便整理和分享。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "文件管理",
+    "AI 助手",
+    "自动化"
+  ],
+  "version": "0.1.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chendefine",
+  "repo": "https://github.com/chendefine/dsh-composer-markdown",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T11:42:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-composer-markdown",
+    "commands": [
+      "dsh plugin --profile web add link:/absolute/path/to/dsh-composer-markdown",
+      "dsh plugin --profile web add dsh-composer-markdown",
+      "dsh plugin --profile web add github:chendefine/dsh-composer-markdown"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

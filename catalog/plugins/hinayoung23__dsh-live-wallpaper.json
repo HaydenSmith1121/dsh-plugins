@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "hinayoung23/dsh-live-wallpaper",
+  "slug": "hinayoung23__dsh-live-wallpaper",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-live-wallpaper",
+  "title": "dsh-live-wallpaper",
+  "summary": "给 DeepSeek Harness 网页界面换上动态壁纸和主题，无需额外依赖，开箱即用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "live-wallpaper",
+    "shadertoy",
+    "界面美化",
+    "可视化",
+    "零配置"
+  ],
+  "version": "0.3.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.2",
+    "publishedAt": "2026-09-05T11:32:25Z",
+    "url": "https://github.com/hinayoung23/dsh-live-wallpaper/releases/tag/v0.3.2"
+  },
+  "author": "hinayoung23",
+  "repo": "https://github.com/hinayoung23/dsh-live-wallpaper",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-05T11:31:12Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hinayoung23/dsh-live-wallpaper",
+    "commands": [
+      "dsh plugin --profile web add github:hinayoung23/dsh-live-wallpaper"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

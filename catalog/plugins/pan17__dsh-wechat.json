@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "pan17/dsh-wechat",
+  "slug": "pan17__dsh-wechat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wechat",
+  "title": "dsh-wechat",
+  "summary": "把微信私聊接到 DSH，文本图片文件音视频双向互传，在微信里也能用上 DSH 的原生体验。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "wechat",
+    "weixin",
+    "桥接插件",
+    "工具集成",
+    "视觉理解",
+    "跨设备",
+    "AI 助手"
+  ],
+  "version": "0.9.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.9.6",
+    "publishedAt": "2026-09-10T13:52:49Z",
+    "url": "https://github.com/pan17/dsh-wechat/releases/tag/v0.9.6"
+  },
+  "author": "pan17",
+  "repo": "https://github.com/pan17/dsh-wechat",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 2,
+  "pushedAt": "2026-09-10T13:51:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:pan17/dsh-wechat",
+    "commands": [
+      "dsh plugin --profile web add github:pan17/dsh-wechat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "Crosery/dsh-viewer",
+  "slug": "crosery__dsh-viewer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-viewer",
+  "title": "dsh-viewer",
+  "summary": "在 DeepSeek Harness 网页界面里直接预览图片、视频、音频、PDF、Office 文档和本地网页，一个工具搞定所有文件显示。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "office",
+    "pdf",
+    "viewer",
+    "可视化",
+    "工具集成",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-11T11:38:23Z",
+    "url": "https://github.com/Crosery/dsh-viewer/releases/tag/v0.1.1"
+  },
+  "author": "Crosery",
+  "repo": "https://github.com/Crosery/dsh-viewer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-09-11T11:47:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:crosery/dsh-viewer",
+    "commands": [
+      "dsh plugin --profile web add github:crosery/dsh-viewer",
+      "dsh plugin --profile web add https://github.com/Crosery/dsh-viewer/releases/latest/download/dsh-viewer.tgz",
+      "brew install --cask libreoffice"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

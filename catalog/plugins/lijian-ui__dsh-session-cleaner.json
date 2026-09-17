@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "lijian-ui/dsh-session-cleaner",
+  "slug": "lijian-ui__dsh-session-cleaner",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-cleaner",
+  "title": "dsh-session-cleaner",
+  "summary": "管理 DeepSeek Harness 会话，支持列表预览、二次确认删除、归档分组与恢复，让会话整理更高效。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "会话管理",
+    "工作区管理",
+    "效率提升"
+  ],
+  "version": "0.1.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lijian-ui",
+  "repo": "https://github.com/lijian-ui/dsh-session-cleaner",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-08-26T10:10:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@lijian-ui/dsh-session-cleaner",
+    "commands": [
+      "dsh plugin --profile web add ./extensions/session-cleaner",
+      "dsh plugin --profile web add @lijian-ui/dsh-session-cleaner"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

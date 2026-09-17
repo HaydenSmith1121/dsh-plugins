@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "linhut/ppt-studio",
+  "slug": "linhut__ppt-studio",
+  "tier": "community",
+  "package": null,
+  "name": "ppt-studio",
+  "title": "ppt-studio",
+  "summary": "一键生成原生PPTX演示文稿，内置双引擎、20套配色和18种组件，让PPT制作又快又好看。",
+  "tags": [
+    "deck",
+    "dsh",
+    "ppt",
+    "pptd",
+    "pptx",
+    "presentation",
+    "python",
+    "skill",
+    "效率提升",
+    "可视化",
+    "AI 助手"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-12T03:17:14Z",
+    "url": "https://github.com/linhut/ppt-studio/releases/tag/v1.0.0"
+  },
+  "author": "linhut",
+  "repo": "https://github.com/linhut/ppt-studio",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-12T03:14:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:linhut/ppt-studio",
+    "commands": [
+      "dsh plugin --profile web add github:linhut/ppt-studio"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

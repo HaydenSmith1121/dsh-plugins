@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "H2O-MERO/dsh-git-sidebar",
+  "slug": "h2o-mero__dsh-git-sidebar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-git-sidebar",
+  "title": "dsh-git-sidebar",
+  "summary": "在对话页右侧实时显示代码差异与未提交改动，不用切换窗口就能随时对照查看。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "代码审查",
+    "工作区管理",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "H2O-MERO",
+  "repo": "https://github.com/H2O-MERO/dsh-git-sidebar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-26T09:06:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:H2O-MERO/dsh-git-sidebar",
+    "commands": [
+      "dsh plugin --profile web add github:H2O-MERO/dsh-git-sidebar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "LaplaceYoung/dsh-directorx",
+  "slug": "laplaceyoung__dsh-directorx",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-directorx",
+  "title": "dsh-directorx",
+  "summary": "让 DeepSeek Harness 变身全能视频导演，一站式搞定 AI 视频、图像、音频创作与编辑。",
+  "tags": [
+    "ai-director",
+    "ai-image",
+    "ai-video",
+    "deepseek-harness",
+    "directorx",
+    "dsh-plugin",
+    "storyboard",
+    "text-to-video",
+    "video-editing",
+    "任务编排",
+    "工具集成",
+    "工作流增强",
+    "视觉理解",
+    "AI工具"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-18T12:10:18Z",
+    "url": "https://github.com/LaplaceYoung/dsh-directorx/releases/tag/v0.2.0"
+  },
+  "author": "LaplaceYoung",
+  "repo": "https://github.com/LaplaceYoung/dsh-directorx",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 30,
+  "forks": 7,
+  "pushedAt": "2026-09-03T16:21:27Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LaplaceYoung/dsh-directorx",
+    "commands": [
+      "dsh plugin --profile web add github:LaplaceYoung/dsh-directorx"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

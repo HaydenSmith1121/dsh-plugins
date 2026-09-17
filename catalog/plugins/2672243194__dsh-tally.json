@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "2672243194/dsh-tally",
+  "slug": "2672243194__dsh-tally",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tally",
+  "title": "dsh-tally",
+  "summary": "本地记账小工具，随手记支出收入，自动汇总月度年度账单，还能管预算、导出 CSV。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-plugins",
+    "零配置",
+    "数据分析",
+    "效率提升",
+    "内容创作",
+    "数据可审计"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-08-15T14:14:16Z",
+    "url": "https://github.com/2672243194/dsh-tally/releases/tag/v0.4.0"
+  },
+  "author": "2672243194",
+  "repo": "https://github.com/2672243194/dsh-tally",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-16T08:51:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:2672243194/dsh-tally",
+    "commands": [
+      "dsh plugin --profile headless add ./dsh-tally"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

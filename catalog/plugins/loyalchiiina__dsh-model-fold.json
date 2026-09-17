@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "loyalchiiina/dsh-model-fold",
+  "slug": "loyalchiiina__dsh-model-fold",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-fold",
+  "title": "dsh-model-fold",
+  "summary": "把模型选择菜单按来源分组，先列服务商，再滑出侧栏或折叠展开各自的模型，找模型更快。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "model-selection",
+    "ui",
+    "模型适配",
+    "快捷操作",
+    "主题",
+    "效率提升"
+  ],
+  "version": "0.4.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "loyalchiiina",
+  "repo": "https://github.com/loyalchiiina/dsh-model-fold",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T02:16:12Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:loyalchiiina/dsh-model-fold",
+    "commands": [
+      "dsh plugin --profile desktop add ./dsh-model-fold-<version>.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

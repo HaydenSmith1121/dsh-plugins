@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "jypjypjypjyp/dsh-super-injector",
+  "slug": "jypjypjypjyp__dsh-super-injector",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-super-injector",
+  "title": "dsh-super-injector",
+  "summary": "把模型输出按源码契约重排，工具只排程不自杀，重启走正规流程，让注入更稳更透明。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jypjypjypjyp",
+  "repo": "https://github.com/jypjypjypjyp/dsh-super-injector",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T06:41:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jypjypjypjyp/dsh-super-injector",
+    "commands": [
+      "dsh plugin --profile web add <解压目录>",
+      "dsh plugin --profile web add github:jypjypjypjyp/dsh-super-injector"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

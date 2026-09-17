@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "dsh-ark-plans",
+  "slug": "dsh-ark-plans",
+  "tier": "verified",
+  "package": "dsh-ark-plans",
+  "name": "dsh-ark-plans",
+  "title": "火山方舟 Agent Plan / Coding Plan",
+  "summary": "把火山方舟（Volcengine Ark）的 Agent Plan 与 Coding Plan 两条套餐车道接进 harness。不写协议转换，用官方 llm-pi-ai 适配器补两条 provider profile。API Key 在「设置 → 模型」里填。",
+  "tags": [
+    "模型接入",
+    "自研",
+    "需配置 Key"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:25:08.895Z",
+  "latestRelease": null,
+  "author": "HaydenSmith1121",
+  "repo": "https://github.com/HaydenSmith1121/dsh-plugin-collection",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": null,
+  "pushedAt": null,
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": "@deepseek-ai/cordis 4.0.2, @deepseek-ai/dsh-client-ui-conversation 0.1.6-alpha.1, @deepseek-ai/dsh-credentials 0.1.6-alpha.1, @deepseek-ai/dsh-llm-pi-ai 0.1.6-alpha.1, react ^18.2.0",
+  "peerVerdict": "warn",
+  "peerNote": "peer 精确 pin 在 0.1.6-alpha.1 线上，换 dsh 版本 pnpm 会打 peer 警告。不升级为 critical 的理由：宿主半 lib/index.js 不 import 任何 dsh 包（只 import node: 内置模块，连 credentials 都只用 ctx.get('credentials') 取服务），客户端半是 factory-form CJS bundle、react 走平台 seed 表，因此不存在 0.1.5 → 0.1.6 那类「缺具名导出 → 整棵树加载失败」的失败面。真正的版本敏感性有两处：① 注入的 provider profile（api / baseURL / apiKeyEnv / models）只在 0.1.6-alpha.1 的 dsh-llm-pi-ai 上实测过；② 0.2.0 新增的客户端半依赖 conversation 插件的 conversation.session.header.utilities Slot，该 Slot 由 @deepseek-ai/dsh-client-ui-conversation 声明（本机 0.1.6-alpha.1 实测存在）。",
+  "coexistenceWarning": null,
+  "notes": "把火山方舟（Volcengine Ark）的 Agent Plan 与 Coding Plan 两条套餐车道接进 harness。不写协议转换 —— 两条车道都实现 OpenAI 兼容协议，所以本包用 cordis.patch.yml 给官方 dormant 挂载的 llm-pi-ai 补两条 provider profile（api: openai-completions + 各自的套餐端点 + 内置模型清单），流式、工具调用、重试、replay 全部沿用官方适配器。★ patch 语义是「整段替换 config」：官方 dsh-base 挂 llm-pi-ai 时不带 config，且本仓库其余插件的 patch 都没有打这一行，因此不冲突；但将来若有别的 bundle 也打这行，后加载者会覆盖本包声明的 providers。Key 不在包内、也不进 settings.yaml：由「设置 → 模型」页写入 $DSH_HOME/.credentials.yaml 的 refs.ARK_AGENT_PLAN_API_KEY / refs.ARK_CODING_PLAN_API_KEY，按请求解析，填完无需重启。模型清单是逐 id 真实探测出来的（62 个候选 → 13 个 200，其余 404 UnsupportedModel 全部剔除）：Agent Plan 车道**不支持模型发现**（GET /api/plan/v3/models 返回 404），所以清单只能内置、只能实测。Coding Plan 车道只放官方路由模型 ark-code-latest —— 本机没有该订阅，无法探测，宁缺勿猜。宿主半做两件事：凭据状态诊断（组合配置无法报告「路由合法但 apiKeyEnv 解析不到」这一失败模式），以及额度查询，所有分支自带兜底。实测细节见包内 docs/verification.md。★★ 0.2.0 新增额度显示 ★★ —— 会话标题栏右侧一个 pill，每条车道显示进度条 + 已用百分比，点开是每个周期（5 小时 / 本周 / 本月）的「已用 / 总额（百分比）」与「刷新：<绝对时间>」+ 相对时间提示，颜色按用量分级（≥70% 警告、≥90% 错误），每 5 分钟自动刷新、面板可手动强制刷新。★ 关键实现结论（都实测过）：额度**不在数据面** —— /api/plan/v3 下的 /usage、/quota、/subscription 等 20 条组合全部 404；额度由**控制面 OpenTOP** 提供，Agent Plan 走 GetAFPUsage（Result.AFPFiveHour/AFPWeekly/AFPMonthly，带 Used/Total/Percent/ResetTime），Coding Plan 走 GetCodingPlanUsage（Result.QuotaUsage[]，**只给 Percent**，故 used/total 保持 null 而不臆造）。这两个 Action 要**控制面 SSO/STS 或 AK-SK 签名**，**套餐 API Key 调不动**（API Key 是数据面凭证），所以 host 半自己签 V4、复用 arkcli 已在本机建立的身份（~/.arkcli 的 profile + identities/<key>/sts.json）。★ 无额度时不编造数字：按 expired / no-identity / not-subscribed / error 四态把「原因 + 处置建议」直接渲染在面板里（例如提示 arkcli auth login volc-sso），模型调用完全不受影响。★ 两半之间的通信是一条同源 HTTP 路由 GET /plugins/dsh-ark-plans/quota[?force=1]，用 ctx.webServer.register({kind:'exact'}) 注册：exact 而非 prefix（不吃子路径），且 exact 表先于 prefix 表匹配，因此不会被 /plugins 的客户端模块分发器抢走；处理器只收 GET/HEAD（其余 405）并限定 loopback 来源（否则 403）。★ 0.2.0 同时补进 plugins-src/dsh-ark-plans/（本包源码首次入库，此前只有 tarball）。",
+  "sha256Note": null,
+  "install": {
+    "method": "tarball",
+    "spec": null,
+    "commands": [
+      "# 下载 plugins/dsh-ark-plans/0.1.6-alpha.1/dsh-ark-plans-0.2.0.tgz",
+      "dsh plugin --profile web add <下载后的 .tgz 绝对路径>"
+    ],
+    "url": "https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugin-collection/main/plugins/dsh-ark-plans/0.1.6-alpha.1/dsh-ark-plans-0.2.0.tgz",
+    "sha256": "04df5a7fec08df8419b4c208c08f3d8cd6a264be87febef9bbcac0cc4806fd40",
+    "bytes": 26247,
+    "tarball": "plugins/dsh-ark-plans/0.1.6-alpha.1/dsh-ark-plans-0.2.0.tgz",
+    "dshVersion": "0.1.6-alpha.1",
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "collection",
+    "url": "https://github.com/HaydenSmith1121/dsh-plugin-collection",
+    "firstSeenAt": "2026-09-17T16:23:45.415Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

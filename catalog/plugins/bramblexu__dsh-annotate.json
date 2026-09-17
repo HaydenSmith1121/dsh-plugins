@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "BrambleXu/dsh-annotate",
+  "slug": "bramblexu__dsh-annotate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-annotate",
+  "title": "dsh-annotate",
+  "summary": "在浏览器里点选页面元素，自动抓取DOM、样式和截图，方便给AI反馈或做前端调试。",
+  "tags": [
+    "deepseek-harness",
+    "dom-inspection",
+    "dsh",
+    "dsh-plugin",
+    "frontend-tools",
+    "typescript",
+    "visual-feedback",
+    "桌面自动化",
+    "可验证执行",
+    "主题"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-14T06:55:28Z",
+    "url": "https://github.com/BrambleXu/dsh-annotate/releases/tag/v0.1.0"
+  },
+  "author": "BrambleXu",
+  "repo": "https://github.com/BrambleXu/dsh-annotate",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 12,
+  "forks": 0,
+  "pushedAt": "2026-08-14T06:55:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:BrambleXu/dsh-annotate",
+    "commands": [
+      "dsh plugin --profile demo add ./dsh-annotate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

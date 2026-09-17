@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "LAYZR114/dsh-project-memory",
+  "slug": "layzr114__dsh-project-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-project-memory",
+  "title": "dsh-project-memory",
+  "summary": "给 DSH 项目加个长期记忆，关键信息分级注入、按语义随时召回，还能硬性守住重要设定，各项目互不干扰。",
+  "tags": [
+    "dsh-plugin",
+    "skills",
+    "语义检索",
+    "工作区管理",
+    "会话管理",
+    "AI 助手"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-09-12T13:46:02Z",
+    "url": "https://github.com/LAYZR114/dsh-project-memory/releases/tag/v0.1.3"
+  },
+  "author": "LAYZR114",
+  "repo": "https://github.com/LAYZR114/dsh-project-memory",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T13:42:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LAYZR114/dsh-project-memory",
+    "commands": [
+      "dsh plugin --profile web add github:LAYZR114/dsh-project-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

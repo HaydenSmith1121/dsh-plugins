@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "yknBugs/dsh-balance-status",
+  "slug": "yknbugs__dsh-balance-status",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-balance-status",
+  "title": "dsh-balance-status",
+  "summary": "在 DSH 底部状态栏实时显示 DeepSeek 账户余额，点一下就能刷新并查看用量详情。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "成本控制",
+    "快捷操作",
+    "前端增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yknBugs",
+  "repo": "https://github.com/yknBugs/dsh-balance-status",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T15:45:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yknBugs/dsh-balance-status",
+    "commands": [
+      "dsh plugin --profile web add github:yknBugs/dsh-balance-status"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "3361805598-gif/dsh-md-annotator",
+  "slug": "3361805598-gif__dsh-md-annotator",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-md-annotator",
+  "title": "dsh-md-annotator",
+  "summary": "在侧边栏里预览、编辑 Markdown，还能按块或选区加批注，方便整理修改意见。",
+  "tags": [
+    "better-sidebar",
+    "dsh-plugin",
+    "文件管理",
+    "前端增强",
+    "效率提升",
+    "内容创作"
+  ],
+  "version": "0.9.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.9.0",
+    "publishedAt": "2026-09-13T14:05:59Z",
+    "url": "https://github.com/3361805598-gif/dsh-md-annotator/releases/tag/v0.9.0"
+  },
+  "author": "3361805598-gif",
+  "repo": "https://github.com/3361805598-gif/dsh-md-annotator",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-13T14:05:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:3361805598-gif/dsh-md-annotator",
+    "commands": [
+      "dsh plugin --profile web add file:vendor/dsh-md-annotator-<version>.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

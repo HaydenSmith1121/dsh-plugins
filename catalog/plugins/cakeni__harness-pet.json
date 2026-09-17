@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "cakeni/harness-pet",
+  "slug": "cakeni__harness-pet",
+  "tier": "community",
+  "package": null,
+  "name": "harness-pet",
+  "title": "harness-pet",
+  "summary": "在 DeepSeek Harness 里养一只小鲸鱼桌面宠物，陪你写代码、摸鱼解闷。",
+  "tags": [
+    "deepseek-harness",
+    "desktop-pet",
+    "dsh",
+    "dsh-plugin",
+    "typescript",
+    "桌宠",
+    "娱乐互动",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "cakeni",
+  "repo": "https://github.com/cakeni/harness-pet",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-08-14T05:22:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "harness-pet",
+    "commands": [
+      "dsh plugin --profile web add harness-pet",
+      "dsh plugin --profile web add github:cakeni/harness-pet"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

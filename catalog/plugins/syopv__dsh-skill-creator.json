@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "syOPV/dsh-skill-creator",
+  "slug": "syopv__dsh-skill-creator",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skill-creator",
+  "title": "dsh-skill-creator",
+  "summary": "用带/不带 skill 的对比测试，数据驱动判断 skill 有没有用，帮你优化和验证 skill 效果。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-skill",
+    "skill测试",
+    "效果对比",
+    "数据驱动",
+    "优化验证"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "syOPV",
+  "repo": "https://github.com/syOPV/dsh-skill-creator",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-15T03:53:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:syOPV/dsh-skill-creator",
+    "commands": [
+      "git clone https://github.com/syOPV/dsh-skill-creator.git ~/.dsh/skills/skill-creator"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

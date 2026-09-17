@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "yangdongzhen590/dsh-knj-extension-center",
+  "slug": "yangdongzhen590__dsh-knj-extension-center",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-knj-extension-center",
+  "title": "dsh-knj-extension-center",
+  "summary": "DSH技能中心，按区域浏览技能、从zip安装、启停管理、卸载回收站恢复，还支持搜索，一站式搞定。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "工作区管理",
+    "效率提升"
+  ],
+  "version": "2026.9.13",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yangdongzhen590",
+  "repo": "https://github.com/yangdongzhen590/dsh-knj-extension-center",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T16:32:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yangdongzhen590/dsh-knj-extension-center",
+    "commands": [
+      "dsh plugin --profile web add dsh-knj-extension-center dsh-knj-menu",
+      "dsh plugin --profile web remove dsh-knj-extension-center"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

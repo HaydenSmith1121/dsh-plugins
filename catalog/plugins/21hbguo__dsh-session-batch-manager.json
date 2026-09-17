@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "21hbguo/dsh-session-batch-manager",
+  "slug": "21hbguo__dsh-session-batch-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-batch-manager",
+  "title": "dsh-session-batch-manager",
+  "summary": "在侧边栏和设置页批量勾选会话，一键归档、恢复或删除，清理会话列表更省事。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "session",
+    "session-management",
+    "会话管理",
+    "快捷操作",
+    "效率提升",
+    "设置面板"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-16T04:25:04Z",
+    "url": "https://github.com/21hbguo/dsh-session-batch-manager/releases/tag/v0.1.0"
+  },
+  "author": "21hbguo",
+  "repo": "https://github.com/21hbguo/dsh-session-batch-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T16:46:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:21hbguo/dsh-session-batch-manager",
+    "commands": [
+      "dsh plugin --profile web add github:21hbguo/dsh-session-batch-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

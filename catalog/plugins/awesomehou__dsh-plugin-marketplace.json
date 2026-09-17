@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "AwesomeHou/dsh-plugin-marketplace",
+  "slug": "awesomehou__dsh-plugin-marketplace",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-marketplace",
+  "title": "dsh-plugin-marketplace",
+  "summary": "把 GitHub 上 1800 多个 DSH 插件同步进设置面板，搜索、分页、一键安装全都有。",
+  "tags": [
+    "ai-agent",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "plugin-marketplace",
+    "插件管理",
+    "集中仓库",
+    "设置面板",
+    "快捷操作",
+    "工具集成"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-08-17T02:59:03Z",
+    "url": "https://github.com/AwesomeHou/dsh-plugin-marketplace/releases/tag/v0.3.0"
+  },
+  "author": "AwesomeHou",
+  "repo": "https://github.com/AwesomeHou/dsh-plugin-marketplace",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 29,
+  "forks": 4,
+  "pushedAt": "2026-09-12T03:02:58Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AwesomeHou/dsh-plugin-marketplace",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/AwesomeHou/dsh-plugin-marketplace"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

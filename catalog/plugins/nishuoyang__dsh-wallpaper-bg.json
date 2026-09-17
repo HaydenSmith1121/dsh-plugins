@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "nishuoyang/dsh-wallpaper-bg",
+  "slug": "nishuoyang__dsh-wallpaper-bg",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wallpaper-bg",
+  "title": "dsh-wallpaper-bg",
+  "summary": "给 DeepSeek Harness 网页界面加一层独立动态壁纸，支持内置、自传和 Wallpaper Engine 库，图片视频都能用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "dsh-web",
+    "可视化",
+    "界面美化",
+    "零配置",
+    "娱乐互动"
+  ],
+  "version": "0.3.12",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.12",
+    "publishedAt": "2026-09-12T16:10:21Z",
+    "url": "https://github.com/nishuoyang/dsh-wallpaper-bg/releases/tag/v0.3.12"
+  },
+  "author": "nishuoyang",
+  "repo": "https://github.com/nishuoyang/dsh-wallpaper-bg",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-12T16:09:12Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-wallpaper-bg",
+    "commands": [
+      "dsh plugin --profile web add dsh-wallpaper-bg"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

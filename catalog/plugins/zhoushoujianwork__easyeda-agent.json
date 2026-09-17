@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "zhoushoujianwork/easyeda-agent",
+  "slug": "zhoushoujianwork__easyeda-agent",
+  "tier": "community",
+  "package": null,
+  "name": "easyeda-agent",
+  "title": "easyeda-agent",
+  "summary": "让 AI 直接操作嘉立创EDA专业版，自动画原理图、布PCB、跑DRC检查。",
+  "tags": [
+    "agent-skill",
+    "ai-agent",
+    "claude-code",
+    "dsh-plugin",
+    "easyeda",
+    "eda",
+    "electronics",
+    "golang",
+    "hardware-design",
+    "jlceda",
+    "lceda",
+    "mcp",
+    "mcp-server",
+    "pcb",
+    "pcb-design",
+    "schematic",
+    "工具集成",
+    "自动化",
+    "AI工具",
+    "工作流增强"
+  ],
+  "version": "1.5.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.5.1",
+    "publishedAt": "2026-09-17T16:02:36Z",
+    "url": "https://github.com/zhoushoujianwork/easyeda-agent/releases/tag/v1.5.1"
+  },
+  "author": "zhoushoujianwork",
+  "repo": "https://github.com/zhoushoujianwork/easyeda-agent",
+  "homepage": "https://jlc-ext.com/item/zhoushoujian/easyeda-agent-connector",
+  "license": "NOASSERTION",
+  "stars": 451,
+  "forks": 60,
+  "pushedAt": "2026-09-12T15:33:38Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhoushoujianwork/easyeda-agent",
+    "commands": [
+      "curl -fsSL https://raw.githubusercontent.com/zhoushoujianwork/easyeda-agent/main/install.sh | bash",
+      "curl -fsSL .../install.sh | EASYEDA_INSTALL_SKILLS=codex,agents,claude bash",
+      "curl -fsSL .../install.sh | EASYEDA_INSTALL_SKILLS=none bash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-voice",
+  "slug": "goodandready__dsh-voice",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-voice",
+  "title": "dsh-voice",
+  "summary": "为 DeepSeek Harness 提供语音输入，支持按停顿分段听写和语音消息，多服务商自动切换，实现零延迟语音交互。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "stt",
+    "voice",
+    "桌宠",
+    "效率提升",
+    "模型适配",
+    "零配置"
+  ],
+  "version": "0.8.30",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.30",
+    "publishedAt": "2026-09-17T08:40:25Z",
+    "url": "https://github.com/GooDAnDReaDY/dsh-voice/releases/tag/v0.8.30"
+  },
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-voice",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 3,
+  "pushedAt": "2026-09-16T19:58:27Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooDAnDReaDY/dsh-voice",
+    "commands": [
+      "dsh plugin --profile web add github:GooDAnDReaDY/dsh-voice"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

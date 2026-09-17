@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-insect-recognition",
+  "slug": "xby-skill__xby-insect-recognition",
+  "tier": "community",
+  "package": null,
+  "name": "xby-insect-recognition",
+  "title": "xby-insect-recognition",
+  "summary": "上传昆虫或节肢动物图片，快速识别名称及所属目、科、属、种，方便生物观察与学习。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "自动化",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-insect-recognition",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:13:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-insect-recognition",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-insect-recognition",
+      "dsh plugin --profile web add /absolute/path/to/xby-insect-recognition"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

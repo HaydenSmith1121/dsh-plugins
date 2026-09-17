@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "PerryLink/dsh-output-styles",
+  "slug": "perrylink__dsh-output-styles",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-output-styles",
+  "title": "dsh-output-styles",
+  "summary": "为 DeepSeek Harness 提供可切换的输出样式，支持 /style 命令、会话级持久化及 Web 选择器，并扩展了渲染器注册协议。",
+  "tags": [
+    "claude-code",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "output-style",
+    "output-styles",
+    "会话管理",
+    "命令行工具",
+    "可视化",
+    "模型适配",
+    "零配置"
+  ],
+  "version": "0.6.16",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.16",
+    "publishedAt": "2026-09-12T02:41:53Z",
+    "url": "https://github.com/PerryLink/dsh-output-styles/releases/tag/v0.6.16"
+  },
+  "author": "PerryLink",
+  "repo": "https://github.com/PerryLink/dsh-output-styles",
+  "homepage": "https://www.npmjs.com/package/dsh-output-styles",
+  "license": "Apache-2.0",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-09-12T09:33:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:PerryLink/dsh-output-styles",
+    "commands": [
+      "dsh plugin --profile web add \"github:PerryLink/dsh-output-styles",
+      "dsh plugin --profile web add dsh-output-styles"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

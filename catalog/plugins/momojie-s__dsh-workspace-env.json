@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Momojie-S/dsh-workspace-env",
+  "slug": "momojie-s__dsh-workspace-env",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workspace-env",
+  "title": "dsh-workspace-env",
+  "summary": "每次调用工具时自动注入当前工作区的 .env 环境变量，切项目自动切换配置，无需手动干预。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "文件管理",
+    "工作流增强",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Momojie-S",
+  "repo": "https://github.com/Momojie-S/dsh-workspace-env",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-12T03:23:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Momojie-S/dsh-workspace-env",
+    "commands": [
+      "dsh plugin --profile web add github:Momojie-S/dsh-workspace-env",
+      "dsh plugin --profile web add momojie-s-dsh-workspace-env-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

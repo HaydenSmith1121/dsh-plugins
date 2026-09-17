@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "SailingLoong/loongport-dsh",
+  "slug": "sailingloong__loongport-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "loongport-dsh",
+  "title": "loongport-dsh",
+  "summary": "为 DeepSeek Harness 提供 LoongPort 兼容的 OpenAI 接口配置工具，支持自定义端点，方便快速接入。",
+  "tags": [
+    "cli",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "loongport",
+    "npm",
+    "openai-compatible",
+    "typescript",
+    "模型接入",
+    "CLI工具",
+    "端点配置",
+    "插件管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-15T03:12:06Z",
+    "url": "https://github.com/SailingLoong/loongport-dsh/releases/tag/v0.2.0"
+  },
+  "author": "SailingLoong",
+  "repo": "https://github.com/SailingLoong/loongport-dsh",
+  "homepage": "https://loongport.dev/en/dsh",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-17T02:38:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:SailingLoong/loongport-dsh",
+    "commands": [
+      "dsh plugin --profile <profile> add loongport"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

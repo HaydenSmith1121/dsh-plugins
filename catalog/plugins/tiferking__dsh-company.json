@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "TiferKing/dsh-company",
+  "slug": "tiferking__dsh-company",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-company",
+  "title": "dsh-company",
+  "summary": "不想当牛马了？来当老板！开插件公司，雇AI牛马，过赛博人生！",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "工作流增强",
+    "多Agent协作",
+    "可视化",
+    "状态监控"
+  ],
+  "version": "0.15.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.15.0",
+    "publishedAt": "2026-09-04T13:10:06Z",
+    "url": "https://github.com/TiferKing/dsh-company/releases/tag/v0.15.0"
+  },
+  "author": "TiferKing",
+  "repo": "https://github.com/TiferKing/dsh-company",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-05T00:33:52Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TiferKing/dsh-company",
+    "commands": [
+      "git clone https://github.com/<you>/dsh-company.git",
+      "dsh plugin --profile/web add /absolute/path/to/dsh-company-<version>.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

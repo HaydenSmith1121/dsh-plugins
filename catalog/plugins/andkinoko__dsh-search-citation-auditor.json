@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "AndKinoko/DSH-Search-Citation-Auditor",
+  "slug": "andkinoko__dsh-search-citation-auditor",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-Search-Citation-Auditor",
+  "title": "DSH-Search-Citation-Auditor",
+  "summary": "自动审查AI回复中的引用链接，按威胁度打分排序并生成报告，还能真正拦截黑名单域名。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "安全审计",
+    "证据链",
+    "状态监控",
+    "自动化"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-11T03:23:30Z",
+    "url": "https://github.com/AndKinoko/DSH-Search-Citation-Auditor/releases/tag/v0.3.0"
+  },
+  "author": "AndKinoko",
+  "repo": "https://github.com/AndKinoko/DSH-Search-Citation-Auditor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-11T03:23:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AndKinoko/DSH-Search-Citation-Auditor",
+    "commands": [
+      "dsh plugin --profile web add github:AndKinoko/DSH-Search-Citation-Auditor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

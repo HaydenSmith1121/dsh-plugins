@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "quan-v/dsh-mcp-ui",
+  "slug": "quan-v__dsh-mcp-ui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mcp-ui",
+  "title": "dsh-mcp-ui",
+  "summary": "在 DSH 网页设置里可视化配置 MCP 服务器，不用手改文件，点几下就能搞定。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "mcp",
+    "plugin",
+    "MCP配置",
+    "Web界面",
+    "网页设置",
+    "命令行工具"
+  ],
+  "version": "1.0.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "quan-v",
+  "repo": "https://github.com/quan-v/dsh-mcp-ui",
+  "homepage": "https://github.com/quan-v/dsh-mcp-ui",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-22T06:30:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:quan-v/dsh-mcp-ui",
+    "commands": [
+      "dsh plugin --profile web add github:quan-v/dsh-mcp-ui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

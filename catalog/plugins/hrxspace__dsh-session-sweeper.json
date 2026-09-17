@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "HrxSpace/dsh-session-sweeper",
+  "slug": "hrxspace__dsh-session-sweeper",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-sweeper",
+  "title": "dsh-session-sweeper",
+  "summary": "一键扫描并管理电脑上所有AI终端（Claude Code、Codex等）的本地会话记录，安全查看和清理，保护隐私不占空间。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "安全审计",
+    "文件管理",
+    "命令行工具",
+    "效率提升"
+  ],
+  "version": "1.0.10",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.10",
+    "publishedAt": "2026-09-04T10:39:51Z",
+    "url": "https://github.com/HrxSpace/dsh-session-sweeper/releases/tag/v1.0.10"
+  },
+  "author": "HrxSpace",
+  "repo": "https://github.com/HrxSpace/dsh-session-sweeper",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T10:50:34Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:HrxSpace/dsh-session-sweeper",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-session-sweeper-1.0.0.tgz",
+      "dsh plugin --profile web add github:HrxSpace/dsh-session-sweeper"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

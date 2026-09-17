@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "yustillrain/dsh-plugin-tool-repository",
+  "slug": "yustillrain__dsh-plugin-tool-repository",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-tool-repository",
+  "title": "dsh-plugin-tool-repository",
+  "summary": "在设置里可视化管理已安装的插件和技能，支持分类、介绍、启停和卸载，还能自定义调用别名。",
+  "tags": [
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "可视化",
+    "设置面板",
+    "效率提升"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yustillrain",
+  "repo": "https://github.com/yustillrain/dsh-plugin-tool-repository",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-26T07:01:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yustillrain/dsh-plugin-tool-repository",
+    "commands": [
+      "dsh plugin --profile web add <your-repo-or-package>",
+      "dsh plugin --profile web add link:/path/to/dsh-skill-browser"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "lnyuqian/dsh-skill-sidebar",
+  "slug": "lnyuqian__dsh-skill-sidebar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skill-sidebar",
+  "title": "dsh-skill-sidebar",
+  "summary": "在 DSH 右侧边栏加一个技能面板，自动扫描本机技能目录，一键复制调用、置顶常用技能。",
+  "tags": [
+    "deepseek-harness",
+    "developer-tools",
+    "dsh",
+    "dsh-better-sidebar",
+    "dsh-plugin",
+    "sidebar",
+    "skills",
+    "快捷操作",
+    "工具集成",
+    "前端增强",
+    "零配置"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-12T07:39:17Z",
+    "url": "https://github.com/lnyuqian/dsh-skill-sidebar/releases/tag/v0.2.1"
+  },
+  "author": "lnyuqian",
+  "repo": "https://github.com/lnyuqian/dsh-skill-sidebar",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-12T07:39:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lnyuqian/dsh-skill-sidebar",
+    "commands": [
+      "dsh plugin --profile web add link:<本包绝对路径>",
+      "dsh plugin --profile web remove dsh-skill-sidebar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

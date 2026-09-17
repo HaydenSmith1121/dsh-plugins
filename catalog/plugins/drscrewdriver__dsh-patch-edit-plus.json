@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "drscrewdriver/dsh-patch-edit-plus",
+  "slug": "drscrewdriver__dsh-patch-edit-plus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-patch-edit-plus",
+  "title": "dsh-patch-edit-plus",
+  "summary": "给 DSH 加一个 apply_patch 工具，用 diff 补丁改文件，要么全成要么全不动，改代码更稳。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "typescript",
+    "工具集成",
+    "文件管理",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "drscrewdriver",
+  "repo": "https://github.com/drscrewdriver/dsh-patch-edit-plus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:52:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:drscrewdriver/dsh-patch-edit-plus",
+    "commands": [
+      "dsh plugin --profile web add <path-to-dsh-patch-edit-plus>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

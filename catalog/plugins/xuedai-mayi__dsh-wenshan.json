@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "xuedai-mayi/dsh-wenshan",
+  "slug": "xuedai-mayi__dsh-wenshan",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wenshan",
+  "title": "dsh-wenshan",
+  "summary": "把地理野外实习的知识点整理成知识图谱，方便查资料、看关联、做分析。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "fieldwork",
+    "gis",
+    "knowledge-graph",
+    "可视化",
+    "数据分析",
+    "语义检索",
+    "工具集成"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "xuedai-mayi",
+  "repo": "https://github.com/xuedai-mayi/dsh-wenshan",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 99,
+  "forks": 0,
+  "pushedAt": "2026-08-26T18:51:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xuedai-mayi/dsh-wenshan",
+    "commands": [
+      "dsh plugin --profile web add github:xuedai-mayi/dsh-wenshan"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

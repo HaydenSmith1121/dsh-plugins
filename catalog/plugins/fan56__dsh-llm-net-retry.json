@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "fan56/dsh-llm-net-retry",
+  "slug": "fan56__dsh-llm-net-retry",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-net-retry",
+  "title": "dsh-llm-net-retry",
+  "summary": "自动重试因网关网络错误而失败的模型请求，避免对话硬失败，提升稳定性。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "retry",
+    "效率提升",
+    "状态监控",
+    "工具集成"
+  ],
+  "version": "0.5.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.0",
+    "publishedAt": "2026-09-13T13:19:09Z",
+    "url": "https://github.com/fan56/dsh-llm-net-retry/releases/tag/v0.5.0"
+  },
+  "author": "fan56",
+  "repo": "https://github.com/fan56/dsh-llm-net-retry",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T13:17:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fan56/dsh-llm-net-retry",
+    "commands": [
+      "dsh plugin --profile <profile> add @aiwayds/dsh-llm-net-retry"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

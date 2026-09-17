@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "chensl139-ok/dsh-archived-panel",
+  "slug": "chensl139-ok__dsh-archived-panel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-archived-panel",
+  "title": "dsh-archived-panel",
+  "summary": "在侧边栏快速查看、打开或取消归档历史会话，方便找回和管理旧对话。",
+  "tags": [
+    "agent-tools",
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin",
+    "会话管理",
+    "工作区管理",
+    "效率提升",
+    "导航"
+  ],
+  "version": "0.4.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.1",
+    "publishedAt": "2026-09-04T17:29:19Z",
+    "url": "https://github.com/chensl139-ok/dsh-archived-panel/releases/tag/v0.4.1"
+  },
+  "author": "chensl139-ok",
+  "repo": "https://github.com/chensl139-ok/dsh-archived-panel",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-04T17:29:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chensl139-ok/dsh-archived-panel",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-archived-panel-0.4.1.tgz",
+      "dsh plugin --profile web add github:chensl139-ok/dsh-archived-panel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

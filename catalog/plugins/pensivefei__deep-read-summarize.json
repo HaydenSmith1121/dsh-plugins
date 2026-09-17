@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "PensiveFei/deep-read-summarize",
+  "slug": "pensivefei__deep-read-summarize",
+  "tier": "community",
+  "package": null,
+  "name": "deep-read-summarize",
+  "title": "deep-read-summarize",
+  "summary": "把书、论文、视频、网页丢进来，自动深度精读并生成结构化摘要，还能直接存进 Obsidian。",
+  "tags": [
+    "ai-agent",
+    "content-summarization",
+    "deepseek",
+    "dsh-plugin",
+    "pipeline",
+    "workflow",
+    "工作流增强",
+    "报告生成",
+    "内容创作",
+    "视觉理解",
+    "工具集成"
+  ],
+  "version": "0.3.8",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.8",
+    "publishedAt": "2026-09-16T13:49:35Z",
+    "url": "https://github.com/PensiveFei/deep-read-summarize/releases/tag/v0.3.8"
+  },
+  "author": "PensiveFei",
+  "repo": "https://github.com/PensiveFei/deep-read-summarize",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 29,
+  "forks": 3,
+  "pushedAt": "2026-09-16T13:23:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:PensiveFei/deep-read-summarize",
+    "commands": [
+      "npm install deep-read-summarize",
+      "pnpm add ./deep-read-summarize-0.3.6.tgz",
+      "git clone https://github.com/<your-org>/deep-read-summarize.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "joao-paulo-santos/dsh-approval-diff",
+  "slug": "joao-paulo-santos__dsh-approval-diff",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-approval-diff",
+  "title": "dsh-approval-diff",
+  "summary": "把模型请求改文件的审批提示换成真正的 diff 审查，逐行看改动、高亮词级差异，还能看磁盘上下文，每个文件一张卡片。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "效率提升",
+    "可视化",
+    "桌宠"
+  ],
+  "version": "0.24.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "joao-paulo-santos",
+  "repo": "https://github.com/joao-paulo-santos/dsh-approval-diff",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T18:51:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:joao-paulo-santos/dsh-approval-diff",
+    "commands": [
+      "git clone https://github.com/joao-paulo-santos/dsh-approval-diff.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

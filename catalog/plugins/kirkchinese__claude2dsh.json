@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "kirkchinese/claude2dsh",
+  "slug": "kirkchinese__claude2dsh",
+  "tier": "community",
+  "package": null,
+  "name": "claude2dsh",
+  "title": "claude2dsh",
+  "summary": "把 Claude Code 的对话、技能、记忆和插件资源一键迁移到 DeepSeek Harness，无缝衔接你的工作流。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "数据迁移",
+    "技能导入",
+    "记忆同步"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-17T11:00:41Z",
+    "url": "https://github.com/kirkchinese/claude2dsh/releases/tag/v0.3.0"
+  },
+  "author": "kirkchinese",
+  "repo": "https://github.com/kirkchinese/claude2dsh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-26T13:18:17Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kirkchinese/claude2dsh",
+    "commands": [
+      "dsh plugin --profile web add github:kirkchinese/claude2dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

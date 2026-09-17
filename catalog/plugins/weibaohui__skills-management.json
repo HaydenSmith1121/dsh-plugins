@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "weibaohui/skills-management",
+  "slug": "weibaohui__skills-management",
+  "tier": "community",
+  "package": null,
+  "name": "weibaohui/skills-management",
+  "title": "weibaohui/skills-management",
+  "summary": "把本地各种编程助手的技能集中到一个页面管理，还能一键导入 DSH 技能库，内置 6600+ 技能市场。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "集中仓库",
+    "工具集成",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.6.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.1",
+    "publishedAt": "2026-09-03T07:06:58Z",
+    "url": "https://github.com/weibaohui/skills-management/releases/tag/v0.6.1"
+  },
+  "author": "weibaohui",
+  "repo": "https://github.com/weibaohui/skills-management",
+  "homepage": null,
+  "license": null,
+  "stars": 8,
+  "forks": 2,
+  "pushedAt": "2026-09-15T05:13:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:weibaohui/skills-management",
+    "commands": [
+      "dsh plugin --profile web add @weibaohui/skills-management -w"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

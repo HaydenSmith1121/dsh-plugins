@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "kaiqiangh/dsh-workshpace-plugin",
+  "slug": "kaiqiangh__dsh-workshpace-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workshpace-plugin",
+  "title": "dsh-workshpace-plugin",
+  "summary": "在对话中直接查看智能体操作过的文件、会话产物和 Git 变更，还能管理本地工作区记忆，不用离开聊天界面。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "工作区管理",
+    "会话管理",
+    "代码检查",
+    "可视化"
+  ],
+  "version": "0.8.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kaiqiangh",
+  "repo": "https://github.com/kaiqiangh/dsh-workshpace-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-23T18:52:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kaiqiangh/dsh-workshpace-plugin",
+    "commands": [
+      "npm install",
+      "dsh plugin --profile web add ../dsh-workshpace-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

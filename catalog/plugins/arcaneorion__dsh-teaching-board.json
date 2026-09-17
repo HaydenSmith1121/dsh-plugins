@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "ArcaneOrion/dsh-teaching-board",
+  "slug": "arcaneorion__dsh-teaching-board",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-teaching-board",
+  "title": "dsh-teaching-board",
+  "summary": "把 AI 生成的 HTML 变成会话里的教学板书，能圈画、能截图发回对话，讲解更直观。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "内容创作",
+    "前端增强",
+    "AI 助手",
+    "快捷操作"
+  ],
+  "version": "0.5.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ArcaneOrion",
+  "repo": "https://github.com/ArcaneOrion/dsh-teaching-board",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T15:11:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@arcaneorion/dsh-teaching-board",
+    "commands": [
+      "dsh plugin --profile web add @arcaneorion/dsh-teaching-board",
+      "dsh plugin --profile web install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

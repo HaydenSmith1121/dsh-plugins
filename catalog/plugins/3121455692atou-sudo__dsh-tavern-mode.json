@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "3121455692atou-sudo/dsh-tavern-mode",
+  "slug": "3121455692atou-sudo__dsh-tavern-mode",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tavern-mode",
+  "title": "dsh-tavern-mode",
+  "summary": "给 DSH 加上酒馆式角色扮演：角色卡、预设、独立记忆和共享头像一应俱全",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "roleplay",
+    "sillytavern",
+    "娱乐互动",
+    "报告生成",
+    "会话管理",
+    "设置面板"
+  ],
+  "version": "0.4.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.1",
+    "publishedAt": "2026-09-12T14:47:32Z",
+    "url": "https://github.com/3121455692atou-sudo/dsh-tavern-mode/releases/tag/v0.4.1"
+  },
+  "author": "3121455692atou-sudo",
+  "repo": "https://github.com/3121455692atou-sudo/dsh-tavern-mode",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T04:40:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:3121455692atou-sudo/dsh-tavern-mode",
+    "commands": [
+      "npm install -g pnpm@11.21.0",
+      "dsh plugin --profile web add --allow-build=esbuild \"https://github.com/3121455692atou-sudo/dsh-tavern-mode/releases/download/v0.4.0/dsh-tavern-mode-0.4.0.tgz\"",
+      "dsh plugin --profile web remove dsh-tavern-mode"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

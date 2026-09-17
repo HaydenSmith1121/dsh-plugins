@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "AI-Scarlett/DSH-Store",
+  "slug": "ai-scarlett__dsh-store",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-Store",
+  "title": "DSH-Store",
+  "summary": "给 DeepSeek Harness 装插件的第三方市场，还能安全地安装、更新和卸载。",
+  "tags": [
+    "ai-agents",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin-manager",
+    "plugin-marketplace",
+    "插件管理",
+    "集中仓库",
+    "工具集成",
+    "状态监控",
+    "操作回滚"
+  ],
+  "version": "0.9.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.9.0",
+    "publishedAt": "2026-09-15T04:39:09Z",
+    "url": "https://github.com/AI-Scarlett/DSH-Store/releases/tag/v0.9.0"
+  },
+  "author": "AI-Scarlett",
+  "repo": "https://github.com/AI-Scarlett/DSH-Store",
+  "homepage": "https://dsh.store/",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 3,
+  "pushedAt": "2026-09-15T09:54:02Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AI-Scarlett/DSH-Store",
+    "commands": [
+      "dsh plugin --profile web add 'git+https://github.com/AI-Scarlett/DSH-Store.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

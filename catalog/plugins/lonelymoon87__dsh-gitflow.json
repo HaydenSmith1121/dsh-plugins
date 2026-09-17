@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "lonelymoon87/dsh-gitflow",
+  "slug": "lonelymoon87__dsh-gitflow",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-gitflow",
+  "title": "dsh-gitflow",
+  "summary": "在 DeepSeek Harness 里直接查看 Git 状态、差异、提交记录，还能快速提交和切换分支，顺带记录变更台账。",
+  "tags": [
+    "deepseek-harness",
+    "developer-tools",
+    "dsh",
+    "dsh-plugin",
+    "git-tools",
+    "工作区管理",
+    "工作流增强",
+    "效率提升",
+    "AI 助手",
+    "自动化"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-08-21T08:44:38Z",
+    "url": "https://github.com/lonelymoon87/dsh-gitflow/releases/tag/v0.1.3"
+  },
+  "author": "lonelymoon87",
+  "repo": "https://github.com/lonelymoon87/dsh-gitflow",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-21T08:44:37Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lonelymoon87/dsh-gitflow",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/lonelymoon87/dsh-gitflow/releases/download/v0.1.3/dsh-gitflow-0.1.3.tgz",
+      "dsh plugin --profile web add github:lonelymoon87/dsh-gitflow",
+      "dsh plugin --profile web remove dsh-gitflow"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

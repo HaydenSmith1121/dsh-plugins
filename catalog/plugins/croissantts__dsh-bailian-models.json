@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "CroissanTTs/dsh-bailian-models",
+  "slug": "croissantts__dsh-bailian-models",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-bailian-models",
+  "title": "dsh-bailian-models",
+  "summary": "给 DSH 预置阿里百炼 36 个模型，自动适配推理强度和上下文长度，开箱即用。",
+  "tags": [
+    "bailian",
+    "dashscope",
+    "deepseek-harness",
+    "dsh-plugin",
+    "模型适配",
+    "模型配置",
+    "零配置",
+    "工具集成"
+  ],
+  "version": "1.4.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "CroissanTTs",
+  "repo": "https://github.com/CroissanTTs/dsh-bailian-models",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T05:22:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-bailian-models",
+    "commands": [
+      "dsh plugin --profile web add dsh-bailian-models"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

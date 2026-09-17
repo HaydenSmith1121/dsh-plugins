@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "chengxianglibra/dsh-data-analysis",
+  "slug": "chengxianglibra__dsh-data-analysis",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-data-analysis",
+  "title": "dsh-data-analysis",
+  "summary": "用大白话就能做数据分析，还能把结果变成图表、报告和看板，离线也能看。",
+  "tags": [
+    "agent",
+    "data-analysis",
+    "data-analytics",
+    "dsh-plugin",
+    "dsh-plugins",
+    "可视化",
+    "报告生成",
+    "工具集成",
+    "自动化"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-12T04:49:54Z",
+    "url": "https://github.com/chengxianglibra/dsh-data-analysis/releases/tag/v0.2.1"
+  },
+  "author": "chengxianglibra",
+  "repo": "https://github.com/chengxianglibra/dsh-data-analysis",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T03:43:17Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chengxianglibra/dsh-data-analysis",
+    "commands": [
+      "dsh plugin --profile web add github:chengxianglibra/dsh-data-analysis"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

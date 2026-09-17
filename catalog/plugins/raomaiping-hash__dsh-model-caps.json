@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "raomaiping-hash/dsh-model-caps",
+  "slug": "raomaiping-hash__dsh-model-caps",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-caps",
+  "title": "dsh-model-caps",
+  "summary": "为 DeepSeek Harness 自定义模型供应商补上思考强度和多模态配置，官方页面没给但底层支持。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "model-config",
+    "reasoning-effort",
+    "tool",
+    "ui",
+    "模型配置",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.2.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "raomaiping-hash",
+  "repo": "https://github.com/raomaiping-hash/dsh-model-caps",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T16:04:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:raomaiping-hash/dsh-model-caps",
+    "commands": [
+      "dsh plugin --profile web add github:raomaiping-hash/dsh-model-caps"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

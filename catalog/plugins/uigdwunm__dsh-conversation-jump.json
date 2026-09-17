@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "uigdwunm/dsh-conversation-jump",
+  "slug": "uigdwunm__dsh-conversation-jump",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-conversation-jump",
+  "title": "dsh-conversation-jump",
+  "summary": "在 DSH 网页对话区加一组圆形导航按钮，一键回到顶部、上下条消息或底部，还会自动加载更早的历史记录。",
+  "tags": [
+    "dsh-plugin",
+    "快捷操作",
+    "会话管理",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.1.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.5",
+    "publishedAt": "2026-09-11T11:49:34Z",
+    "url": "https://github.com/uigdwunm/dsh-conversation-jump/releases/tag/v0.1.5"
+  },
+  "author": "uigdwunm",
+  "repo": "https://github.com/uigdwunm/dsh-conversation-jump",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T11:58:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-conversation-jump",
+    "commands": [
+      "dsh plugin --profile web add dsh-conversation-jump",
+      "dsh plugin --profile web add github:uigdwunm/dsh-conversation-jump",
+      "dsh plugin --profile web add https://github.com/uigdwunm/dsh-conversation-jump/releases/download/v0.1.5/dsh-conversation-jump-0.1.5.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

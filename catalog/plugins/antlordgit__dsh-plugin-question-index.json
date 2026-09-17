@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "antlordGit/dsh-plugin-question-index",
+  "slug": "antlordgit__dsh-plugin-question-index",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-question-index",
+  "title": "dsh-plugin-question-index",
+  "summary": "在聊天界面加一个可收起的悬浮面板，点击问题就能快速跳转到对应位置，翻看长对话更方便。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "语义检索",
+    "前端增强",
+    "零配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-31T02:50:02Z",
+    "url": "https://github.com/antlordGit/dsh-plugin-question-index/releases/tag/v0.1.1"
+  },
+  "author": "antlordGit",
+  "repo": "https://github.com/antlordGit/dsh-plugin-question-index",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T10:17:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:antlordGit/dsh-plugin-question-index",
+    "commands": [
+      "dsh plugin --profile web add github:antlordGit/dsh-plugin-question-index",
+      "npm install",
+      "dsh plugin --profile web add \"$(pwd)\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

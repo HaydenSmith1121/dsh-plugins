@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "syroezhkin/dsh-routerai",
+  "slug": "syroezhkin__dsh-routerai",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-routerai",
+  "title": "dsh-routerai",
+  "summary": "把 DSH 接上 RouterAI，能联网搜索，还能实时看会话花了多少钱。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "routerai",
+    "工具集成",
+    "成本控制",
+    "状态监控"
+  ],
+  "version": "0.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "syroezhkin",
+  "repo": "https://github.com/syroezhkin/dsh-routerai",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T21:59:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:syroezhkin/dsh-routerai",
+    "commands": [
+      "dsh plugin --profile web add dsh-web-search-routerai dsh-session-cost-routerai",
+      "dsh plugin --profile web add \"github:syroezhkin/dsh-routerai"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

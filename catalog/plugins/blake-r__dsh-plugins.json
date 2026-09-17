@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "blake-r/dsh-plugins",
+  "slug": "blake-r__dsh-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugins",
+  "title": "dsh-plugins",
+  "summary": "一个插件合集仓库，可按需选择安装各类功能插件，灵活扩展 DeepSeek Harness 的能力。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "零配置",
+    "模型配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "@blake-r/dsh-assembly-rewrite@v0.1.0",
+    "publishedAt": "2026-08-31T12:14:56Z",
+    "url": "https://github.com/blake-r/dsh-plugins/releases/tag/%40blake-r/dsh-assembly-rewrite%40v0.1.0"
+  },
+  "author": "blake-r",
+  "repo": "https://github.com/blake-r/dsh-plugins",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T15:03:23Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:blake-r/dsh-plugins",
+    "commands": [
+      "dsh plugin --profile web add github:blake-r/dsh-plugins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

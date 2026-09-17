@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Kazusa1085/dsh-awesome-model-setting",
+  "slug": "kazusa1085__dsh-awesome-model-setting",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-awesome-model-setting",
+  "title": "dsh-awesome-model-setting",
+  "summary": "在设置面板中直接配置模型能力，如输入模态、上下文窗口和图像配额，无需手动改配置文件。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "设置面板",
+    "视觉理解",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Kazusa1085",
+  "repo": "https://github.com/Kazusa1085/dsh-awesome-model-setting",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T13:31:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Kazusa1085/dsh-awesome-model-setting",
+    "commands": [
+      "dsh plugin --profile web add github:Kazusa1085/dsh-awesome-model-setting",
+      "dsh plugin --profile web add ./dsh-awesome-model-setting"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -434,13 +434,27 @@ export async function materializeSpec(installSpec, entry) {
   if (!installSpec.downloadUrl) {
     return { ok: false, error: `tarball 不存在且没有可下载地址：${installSpec.spec}` };
   }
+
+  // ★ 校验和以**安装规格**为准（它直接来自那个插件的配置文件），
+  //   条目的 sha256 只作兜底。两处不一致时宁可什么都不装 ——
+  //   这种不一致本身就是「有人在改配置文件而没重新生成」的信号。
+  const expected = installSpec.sha256 ?? entry?.sha256 ?? null;
+  if (installSpec.sha256 && entry?.sha256 && installSpec.sha256 !== entry.sha256) {
+    return {
+      ok: false,
+      error: `配置文件里的 sha256（${String(installSpec.sha256).slice(0, 12)}…）与目录索引里的`
+        + `（${String(entry.sha256).slice(0, 12)}…）不一致 —— 拒绝安装。`
+        + '这通常意味着目录没重新生成，请刷新目录后重试。',
+    };
+  }
+
   const base = path.basename(new URL(installSpec.downloadUrl).pathname);
   const dest = path.join(tarballCacheDir(), base);
-  if (fs.existsSync(dest) && entry.sha256 && sha256File(dest) === entry.sha256) {
+  if (fs.existsSync(dest) && expected && sha256File(dest) === expected) {
     return { ok: true, spec: dest, file: dest, kind: 'local-tarball', source: 'cache' };
   }
   try {
-    const r = await downloadTarball(installSpec.downloadUrl, dest, { expectedSha256: entry.sha256 ?? undefined });
+    const r = await downloadTarball(installSpec.downloadUrl, dest, { expectedSha256: expected ?? undefined });
     return { ok: true, spec: r.file, file: r.file, kind: 'local-tarball', source: 'download', sha256: r.sha256, bytes: r.bytes };
   } catch (err) {
     return { ok: false, error: String(err?.message ?? err) };

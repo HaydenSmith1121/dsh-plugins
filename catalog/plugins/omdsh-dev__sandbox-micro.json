@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "omdsh-dev/sandbox-micro",
+  "slug": "omdsh-dev__sandbox-micro",
+  "tier": "community",
+  "package": null,
+  "name": "sandbox-micro",
+  "title": "sandbox-micro",
+  "summary": "为 DSH 提供 fail-closed 微沙箱能力，在隔离的微型虚拟机中安全运行代码，防止逃逸和恶意操作。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "sandbox",
+    "安全审计",
+    "状态监控"
+  ],
+  "version": "0.0.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "omdsh-dev",
+  "repo": "https://github.com/omdsh-dev/sandbox-micro",
+  "homepage": null,
+  "license": null,
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-09T11:00:00Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:omdsh-dev/sandbox-micro",
+    "commands": [
+      "dsh plugin --profile web add github:omdsh-dev/sandbox-micro"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

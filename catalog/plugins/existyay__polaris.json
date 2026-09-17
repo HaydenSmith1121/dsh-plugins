@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "existyay/Polaris",
+  "slug": "existyay__polaris",
+  "tier": "community",
+  "package": null,
+  "name": "Polaris",
+  "title": "Polaris",
+  "summary": "把各种插件、MCP 和工具统一收拢，你只管提需求，它自动挑出当前最优的实现来干活。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "工具集成",
+    "模型配置",
+    "自动化",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "existyay",
+  "repo": "https://github.com/existyay/Polaris",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 1,
+  "pushedAt": "2026-09-10T16:37:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:existyay/Polaris",
+    "commands": [
+      "dsh plugin --profile web add github:existyay/Polaris"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

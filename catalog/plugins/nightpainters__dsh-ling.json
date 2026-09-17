@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "NightPainters/DSH-Ling",
+  "slug": "nightpainters__dsh-ling",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-Ling",
+  "title": "DSH-Ling",
+  "summary": "在你自己的 DSH 里养一个会成长的助手，记住你们的过往，越用越懂你。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "AI 助手",
+    "状态持久化",
+    "操作回滚",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "1.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.0",
+    "publishedAt": "2026-09-16T13:29:55Z",
+    "url": "https://github.com/NightPainters/DSH-Ling/releases/tag/v1.2.0"
+  },
+  "author": "NightPainters",
+  "repo": "https://github.com/NightPainters/DSH-Ling",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T17:33:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:NightPainters/DSH-Ling",
+    "commands": [
+      "git clone https://github.com/NightPainters/DSH-Ling",
+      "pnpm add file:<路径>/dsh-ling"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

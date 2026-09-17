@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "nguyenduclong-ict/dsh-plugin-live-terminal",
+  "slug": "nguyenduclong-ict__dsh-plugin-live-terminal",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-live-terminal",
+  "title": "dsh-plugin-live-terminal",
+  "summary": "实时查看终端输出，告别等待缓冲，让命令执行过程一目了然。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "terminal",
+    "状态监控",
+    "命令行工具",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "nguyenduclong-ict",
+  "repo": "https://github.com/nguyenduclong-ict/dsh-plugin-live-terminal",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T05:09:22Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:nguyenduclong-ict/dsh-plugin-live-terminal",
+    "commands": [
+      "dsh plugin --profile web add github:nguyenduclong-ict/dsh-plugin-live-terminal"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

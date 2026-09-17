@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "monk233/dsh-plugin-manager",
+  "slug": "monk233__dsh-plugin-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-manager",
+  "title": "dsh-plugin-manager",
+  "summary": "在 DeepSeek Harness 网页界面里直接启用、禁用或删除插件，改完立即生效，不用手动改配置文件。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "热重载",
+    "可视化",
+    "配置优化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "monk233",
+  "repo": "https://github.com/monk233/dsh-plugin-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-14T23:55:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "git clone https://github.com/monk233/dsh-plugin-manager.git",
+      "npm install -g @deepseek-ai/dsh pnpm",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

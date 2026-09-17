@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "jyh20030112/dsh-visual-plugin",
+  "slug": "jyh20030112__dsh-visual-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-visual-plugin",
+  "title": "dsh-visual-plugin",
+  "summary": "给纯文本模型装上眼睛，把用户图片转发给任意兼容OpenAI的视觉模型，并在Web UI右侧面板直接查看结果。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "image-description",
+    "llm",
+    "multimodal",
+    "openai-compatible",
+    "typescript",
+    "vision",
+    "视觉模型",
+    "多模态",
+    "模型接入"
+  ],
+  "version": "0.3.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.2",
+    "publishedAt": "2026-09-02T09:25:16Z",
+    "url": "https://github.com/jyh20030112/dsh-visual-plugin/releases/tag/v0.3.2"
+  },
+  "author": "jyh20030112",
+  "repo": "https://github.com/jyh20030112/dsh-visual-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 16,
+  "forks": 2,
+  "pushedAt": "2026-09-02T09:21:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-visual-plugin",
+    "commands": [
+      "dsh plugin --profile web add dsh-visual-plugin",
+      "dsh plugin --profile web add link:/absolute/path/to/dsh-visual-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

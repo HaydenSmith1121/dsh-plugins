@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Zenjibad/dsh-plugin-toggle",
+  "slug": "zenjibad__dsh-plugin-toggle",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-toggle",
+  "title": "dsh-plugin-toggle",
+  "summary": "在设置→插件中直接开关DSH插件，无需重启，状态自动保存，管理更省心。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "零配置",
+    "效率提升",
+    "Web界面",
+    "设置面板"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Zenjibad",
+  "repo": "https://github.com/Zenjibad/dsh-plugin-toggle",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-08-28T17:45:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Zenjibad/dsh-plugin-toggle",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-plugin-toggle",
+      "dsh plugin --profile web add github:Zenjibad/dsh-plugin-toggle",
+      "dsh plugin --profile web add git+https://github.com/Zenjibad/dsh-plugin-toggle.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "loveXbanshee/dsh-fleet",
+  "slug": "lovexbanshee__dsh-fleet",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-fleet",
+  "title": "dsh-fleet",
+  "summary": "一个页面集中管理本地和远程多台 dsh 实例，跨设备查看对话历史，告别多标签页切换。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "fleet",
+    "harness",
+    "plugin",
+    "会话管理",
+    "状态监控",
+    "模型配置",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.13.11",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.13.11",
+    "publishedAt": "2026-09-06T15:17:02Z",
+    "url": "https://github.com/loveXbanshee/dsh-fleet/releases/tag/v0.13.11"
+  },
+  "author": "loveXbanshee",
+  "repo": "https://github.com/loveXbanshee/dsh-fleet",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T15:28:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:loveXbanshee/dsh-fleet",
+    "commands": [
+      "dsh plugin --profile web add github:loveXbanshee/dsh-fleet"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

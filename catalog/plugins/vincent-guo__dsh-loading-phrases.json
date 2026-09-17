@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "vincent-guo/dsh-loading-phrases",
+  "slug": "vincent-guo__dsh-loading-phrases",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-loading-phrases",
+  "title": "dsh-loading-phrases",
+  "summary": "将Web界面中的“Deep diving...”加载状态替换为诙谐短语和实用提示，保留原位置和闪烁效果，让等待更有趣。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "loading-phrases",
+    "plugin",
+    "profile-bundle",
+    "web-gui",
+    "界面美化",
+    "娱乐互动",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.7.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.1",
+    "publishedAt": "2026-08-26T16:36:10Z",
+    "url": "https://github.com/vincent-guo/dsh-loading-phrases/releases/tag/v0.7.1"
+  },
+  "author": "vincent-guo",
+  "repo": "https://github.com/vincent-guo/dsh-loading-phrases",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-27T01:45:06Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:vincent-guo/dsh-loading-phrases",
+    "commands": [
+      "dsh plugin --profile <profile> add @vincent-guo/dsh-loading-phrases"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

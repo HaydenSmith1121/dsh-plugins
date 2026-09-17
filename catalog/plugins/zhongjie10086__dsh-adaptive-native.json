@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "zhongjie10086/dsh-adaptive-native",
+  "slug": "zhongjie10086__dsh-adaptive-native",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-adaptive-native",
+  "title": "dsh-adaptive-native",
+  "summary": "为 Windows 原生 DSH 提供两套预设，一键切换标准或极简上下文，适配不同开发场景。",
+  "tags": [
+    "agent-preset",
+    "coding-agent",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "git-bash",
+    "powershell",
+    "windows",
+    "AI 助手",
+    "模型配置",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-09-03T14:38:26Z",
+    "url": "https://github.com/zhongjie10086/dsh-adaptive-native/releases/tag/v0.3.1"
+  },
+  "author": "zhongjie10086",
+  "repo": "https://github.com/zhongjie10086/dsh-adaptive-native",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-03T14:38:26Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhongjie10086/dsh-adaptive-native",
+    "commands": [
+      "dsh plugin --profile web add github:zhongjie10086/dsh-adaptive-native"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

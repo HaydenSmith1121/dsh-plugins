@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "p2coder/dsh-task-control",
+  "slug": "p2coder__dsh-task-control",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-task-control",
+  "title": "dsh-task-control",
+  "summary": "在输入区一键暂停、恢复或取消正在运行的对话任务，支持强制中断和安全暂停，灵活掌控任务执行节奏。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "桌宠",
+    "工作流增强",
+    "设置面板"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "p2coder",
+  "repo": "https://github.com/p2coder/dsh-task-control",
+  "homepage": "https://github.com/p2coder/dsh-task-control",
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-30T07:39:01Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:p2coder/dsh-task-control",
+    "commands": [
+      "dsh plugin --profile web add github:p2coder/dsh-task-control"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

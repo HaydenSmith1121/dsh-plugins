@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "LeemanCheung/dsh-skin-studio",
+  "slug": "leemancheung__dsh-skin-studio",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skin-studio",
+  "title": "dsh-skin-studio",
+  "summary": "本地优先的 DSH 主题生成器，支持创建、编辑、预览、导入导出明暗主题，全程无需联网，安全放心。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "theme",
+    "主题生成",
+    "主题编辑",
+    "明暗切换",
+    "导入导出",
+    "工具集成"
+  ],
+  "version": "1.0.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "LeemanCheung",
+  "repo": "https://github.com/LeemanCheung/dsh-skin-studio",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-05T05:14:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LeemanCheung/dsh-skin-studio",
+    "commands": [
+      "dsh plugin --profile web add github:LeemanCheung/dsh-skin-studio"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

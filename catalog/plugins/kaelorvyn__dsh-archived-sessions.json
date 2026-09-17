@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "kaelorvyn/dsh-archived-sessions",
+  "slug": "kaelorvyn__dsh-archived-sessions",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-archived-sessions",
+  "title": "dsh-archived-sessions",
+  "summary": "在设置面板里集中查看所有已归档会话，点一下就能恢复，不用再翻来翻去。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "设置面板",
+    "快捷操作",
+    "效率提升"
+  ],
+  "version": "1.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.0",
+    "publishedAt": "2026-09-16T12:26:26Z",
+    "url": "https://github.com/kaelorvyn/dsh-archived-sessions/releases/tag/v1.2.0"
+  },
+  "author": "kaelorvyn",
+  "repo": "https://github.com/kaelorvyn/dsh-archived-sessions",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T12:51:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kaelorvyn/dsh-archived-sessions",
+    "commands": [
+      "dsh plugin --profile <profile> add github:kaelorvyn/dsh-archived-sessions",
+      "dsh plugin --profile <profile> add file:<path-to-this-repo>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

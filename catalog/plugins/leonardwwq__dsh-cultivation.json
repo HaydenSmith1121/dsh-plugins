@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "leonardwwq/dsh-cultivation",
+  "slug": "leonardwwq__dsh-cultivation",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cultivation",
+  "title": "dsh-cultivation",
+  "summary": "让AI角色记住你，通过长期互动逐渐形成对你的了解，关系越处越深。",
+  "tags": [
+    "agent",
+    "ai",
+    "character-ai-hack",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "memory",
+    "relationships",
+    "user-modeling",
+    "会话管理",
+    "用户建模",
+    "角色养成"
+  ],
+  "version": "0.3.0-beta.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0-beta.1",
+    "publishedAt": "2026-08-26T01:56:51Z",
+    "url": "https://github.com/leonardwwq/dsh-cultivation/releases/tag/v0.3.0-beta.1"
+  },
+  "author": "leonardwwq",
+  "repo": "https://github.com/leonardwwq/dsh-cultivation",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-27T01:36:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:leonardwwq/dsh-cultivation",
+    "commands": [
+      "dsh plugin --profile web add github:leonardwwq/dsh-cultivation"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

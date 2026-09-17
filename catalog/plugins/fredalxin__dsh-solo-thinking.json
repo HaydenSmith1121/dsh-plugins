@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "fredalxin/dsh-solo-thinking",
+  "slug": "fredalxin__dsh-solo-thinking",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-solo-thinking",
+  "title": "dsh-solo-thinking",
+  "summary": "把头脑风暴拆成独立会话的思考树，分支间只靠 Handoff 交换结论，思路不串味。",
+  "tags": [
+    "brainstorming",
+    "deepseek-harness",
+    "dsh-plugin",
+    "handoff",
+    "typescript",
+    "多Agent协作",
+    "会话管理",
+    "工作流增强",
+    "AI 助手"
+  ],
+  "version": "0.1.19",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.19",
+    "publishedAt": "2026-08-21T07:08:12Z",
+    "url": "https://github.com/fredalxin/dsh-solo-thinking/releases/tag/v0.1.19"
+  },
+  "author": "fredalxin",
+  "repo": "https://github.com/fredalxin/dsh-solo-thinking",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 23,
+  "forks": 0,
+  "pushedAt": "2026-08-21T07:05:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fredalxin/dsh-solo-thinking",
+    "commands": [
+      "dsh plugin --profile web add dsh-better-sidebar dsh-plugin-solo-thinking",
+      "curl -fsSL https://raw.githubusercontent.com/fredalxin/dsh-solo-thinking/main/scripts/install.sh | bash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

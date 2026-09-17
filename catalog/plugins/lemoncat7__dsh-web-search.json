@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "lemoncat7/dsh-web-search",
+  "slug": "lemoncat7__dsh-web-search",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-search",
+  "title": "dsh-web-search",
+  "summary": "为 DeepSeek Harness 提供可配置、安全的多供应商网页搜索，管理员可灵活切换搜索源。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "websearch",
+    "AI 助手",
+    "插件管理",
+    "工作流增强"
+  ],
+  "version": "0.2.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lemoncat7",
+  "repo": "https://github.com/lemoncat7/dsh-web-search",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T06:10:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@lemoncat7/dsh-web-search",
+    "commands": [
+      "dsh plugin --profile web add @lemoncat7/dsh-web-search"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

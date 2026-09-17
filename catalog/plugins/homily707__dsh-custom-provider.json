@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "homily707/dsh-custom-provider",
+  "slug": "homily707__dsh-custom-provider",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-custom-provider",
+  "title": "dsh-custom-provider",
+  "summary": "给 DSH 设置页加个自定义模型分区，能配子代理模型白名单，补上官方页面缺的编辑能力。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "模型适配",
+    "设置面板",
+    "多Agent协作",
+    "前端增强"
+  ],
+  "version": "0.6.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "homily707",
+  "repo": "https://github.com/homily707/dsh-custom-provider",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T08:13:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:homily707/dsh-custom-provider",
+    "commands": [
+      "dsh plugin --profile web add \"github:homily707/dsh-custom-provider\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "BertramWang12399/dsh-projects-mode",
+  "slug": "bertramwang12399__dsh-projects-mode",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-projects-mode",
+  "title": "dsh-projects-mode",
+  "summary": "给 DSH 网页版加个「项目模式」，把会话归到项目里，共享指令和记忆实时生效。",
+  "tags": [
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "project-management",
+    "工作区管理",
+    "会话管理",
+    "状态持久化",
+    "效率提升"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-03T03:54:20Z",
+    "url": "https://github.com/BertramWang12399/dsh-projects-mode/releases/tag/v0.4.0"
+  },
+  "author": "BertramWang12399",
+  "repo": "https://github.com/BertramWang12399/dsh-projects-mode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-09-03T03:53:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:BertramWang12399/dsh-projects-mode",
+    "commands": [
+      "git clone https://github.com/<you>/dsh-projects-mode.git ~/.dsh/plugins/dsh-projects-mode",
+      "dsh plugin --profile web add link:$HOME/.dsh/plugins/dsh-projects-mode"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

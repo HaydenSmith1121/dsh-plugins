@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "ilovedyou6666-hub/dshtools-sensevoice-input",
+  "slug": "ilovedyou6666-hub__dshtools-sensevoice-input",
+  "tier": "community",
+  "package": null,
+  "name": "dshtools-sensevoice-input",
+  "title": "dshtools-sensevoice-input",
+  "summary": "在 DSH Desktop 里用本地模型说话转文字，支持多语言，不用联网也能快速输入。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "视觉理解",
+    "快捷操作",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "1.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.1.1",
+    "publishedAt": "2026-09-03T20:18:50Z",
+    "url": "https://github.com/ilovedyou6666-hub/dshtools-sensevoice-input/releases/tag/v1.1.1"
+  },
+  "author": "ilovedyou6666-hub",
+  "repo": "https://github.com/ilovedyou6666-hub/dshtools-sensevoice-input",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-03T20:49:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ilovedyou6666-hub/dshtools-sensevoice-input",
+    "commands": [
+      "dsh plugin --profile web add github:ilovedyou6666-hub/dshtools-sensevoice-input"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

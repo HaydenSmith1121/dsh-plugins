@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "loeanxi/dsh-cursor-acp",
+  "slug": "loeanxi__dsh-cursor-acp",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cursor-acp",
+  "title": "dsh-cursor-acp",
+  "summary": "在对话中把独立任务直接交给本机已登录的 Cursor CLI 处理，实现 AI 协作分工。",
+  "tags": [
+    "acp",
+    "cursor",
+    "deepseek-harness",
+    "dsh-plugin",
+    "多Agent协作",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "loeanxi",
+  "repo": "https://github.com/loeanxi/dsh-cursor-acp",
+  "homepage": "https://github.com/loeanxi/dsh-cursor-acp#readme",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-22T12:00:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-cursor-acp",
+    "commands": [
+      "dsh plugin --profile desktop add dsh-cursor-acp",
+      "dsh plugin --profile web add dsh-cursor-acp",
+      "dsh plugin --profile desktop add github:loeanxi/dsh-cursor-acp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

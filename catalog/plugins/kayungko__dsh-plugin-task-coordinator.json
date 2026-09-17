@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Kayungko/dsh-plugin-task-coordinator",
+  "slug": "kayungko__dsh-plugin-task-coordinator",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-task-coordinator",
+  "title": "dsh-plugin-task-coordinator",
+  "summary": "让超级管理员像指挥家一样，跨任务查看、创建、发消息并调度多个顶层会话，实现Codex风格的多任务协同。",
+  "tags": [
+    "dsh-plugin",
+    "多Agent协作",
+    "会话管理",
+    "工作流增强",
+    "命令行工具"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Kayungko",
+  "repo": "https://github.com/Kayungko/dsh-plugin-task-coordinator",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-12T12:47:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Kayungko/dsh-plugin-task-coordinator",
+    "commands": [
+      "dsh plugin --profile web add github:Kayungko/dsh-plugin-task-coordinator"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

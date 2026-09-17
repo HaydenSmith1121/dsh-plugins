@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "vilicvane/dsh-plugin-web-notify",
+  "slug": "vilicvane__dsh-plugin-web-notify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-web-notify",
+  "title": "dsh-plugin-web-notify",
+  "summary": "DeepSeek Harness 网页界面浏览器通知插件，任务完成时及时提醒你，不错过任何进展。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "vilicvane",
+  "repo": "https://github.com/vilicvane/dsh-plugin-web-notify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T18:39:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:vilicvane/dsh-plugin-web-notify",
+    "commands": [
+      "dsh plugin --profile web add github:vilicvane/dsh-plugin-web-notify",
+      "dsh plugin --profile web add dsh-plugin-web-notify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

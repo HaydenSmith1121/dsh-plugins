@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Mombrane/dsh-subagent-monitor",
+  "slug": "mombrane__dsh-subagent-monitor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subagent-monitor",
+  "title": "dsh-subagent-monitor",
+  "summary": "在网页里实时盯着子代理跑任务，进度状态一眼看清，多智能体协作更放心。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "多Agent协作",
+    "可视化",
+    "前端增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Mombrane",
+  "repo": "https://github.com/Mombrane/dsh-subagent-monitor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 25,
+  "forks": 4,
+  "pushedAt": "2026-09-14T13:41:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Mombrane/dsh-subagent-monitor",
+    "commands": [
+      "dsh plugin --profile <your-profile> add @leetoners/dsh-ui-subagent-monitor",
+      "dsh plugin --profile <your-profile> add github:Mombrane/dsh-subagent-monitor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

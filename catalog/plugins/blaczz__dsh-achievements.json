@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Blaczz/dsh-achievements",
+  "slug": "blaczz__dsh-achievements",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-achievements",
+  "title": "dsh-achievements",
+  "summary": "为 DeepSeek Harness 添加成就与游戏化机制，跨会话记录轮次、工具调用和连续使用天数，解锁徽章并弹出提示。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "成就系统",
+    "娱乐互动",
+    "徽章",
+    "数据分析"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Blaczz",
+  "repo": "https://github.com/Blaczz/dsh-achievements",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-09-09T16:25:11Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Blaczz/dsh-achievements",
+    "commands": [
+      "dsh plugin --profile web add \"github:Blaczz/dsh-achievements",
+      "dsh plugin --profile web add \"<absolute path to>\\dsh-achievements-0.2.0.tgz\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

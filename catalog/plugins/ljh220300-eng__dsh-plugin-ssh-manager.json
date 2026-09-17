@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "ljh220300-eng/dsh-plugin-ssh-manager",
+  "slug": "ljh220300-eng__dsh-plugin-ssh-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-ssh-manager",
+  "title": "dsh-plugin-ssh-manager",
+  "summary": "在一台终端上通过 SSH 隧道集中管理多台机器上的 DSH 实例，免去来回切换的麻烦。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "ssh",
+    "ssh-tunnel",
+    "安全审计",
+    "命令行工具",
+    "效率提升"
+  ],
+  "version": "0.1.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ljh220300-eng",
+  "repo": "https://github.com/ljh220300-eng/dsh-plugin-ssh-manager",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T16:40:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ljh220300-eng/dsh-plugin-ssh-manager",
+    "commands": [
+      "dsh plugin --profile web add github:ljh220300-eng/dsh-plugin-ssh-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

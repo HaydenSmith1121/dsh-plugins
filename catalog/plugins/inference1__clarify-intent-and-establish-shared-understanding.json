@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "Inference1/clarify-intent-and-establish-shared-understanding",
+  "slug": "inference1__clarify-intent-and-establish-shared-understanding",
+  "tier": "community",
+  "package": null,
+  "name": "clarify-intent-and-establish-shared-understanding",
+  "title": "clarify-intent-and-establish-shared-understanding",
+  "summary": "帮你理清需求、消除分歧，对齐目标和风险，确保团队方向一致再行动。",
+  "tags": [
+    "agent-skill",
+    "deepseek-harness",
+    "dsh-plugin",
+    "需求澄清",
+    "目标对齐",
+    "风险识别",
+    "决策辅助"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "Inference1",
+  "repo": "https://github.com/Inference1/clarify-intent-and-establish-shared-understanding",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 204,
+  "forks": 3,
+  "pushedAt": "2026-08-25T06:12:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Inference1/clarify-intent-and-establish-shared-understanding",
+    "commands": [
+      "npx skills add Inference1/clarify-intent-and-establish-shared-understanding",
+      "npx skills add Inference1/clarify-intent-and-establish-shared-understanding -a claude-code",
+      "npx skills add Inference1/clarify-intent-and-establish-shared-understanding -a claude-code -g"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

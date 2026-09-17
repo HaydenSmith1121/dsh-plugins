@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "menotbobbybrown/dsh-plugin-memory",
+  "slug": "menotbobbybrown__dsh-plugin-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-memory",
+  "title": "dsh-plugin-memory",
+  "summary": "为 DeepSeek Harness 提供持久化知识图谱和长期记忆，让 AI 跨会话记住关键信息，越用越懂你。",
+  "tags": [
+    "ai-agents",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "knowledge-graph",
+    "memory",
+    "AI 助手",
+    "会话管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-26T18:19:18Z",
+    "url": "https://github.com/menotbobbybrown/dsh-plugin-memory/releases/tag/v1.0.0"
+  },
+  "author": "menotbobbybrown",
+  "repo": "https://github.com/menotbobbybrown/dsh-plugin-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-08T19:20:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:menotbobbybrown/dsh-plugin-memory",
+    "commands": [
+      "dsh plugin --profile web add \"github:menotbobbybrown/dsh-plugin-memory\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

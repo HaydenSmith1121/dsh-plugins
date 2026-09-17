@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Elave-66/dsh-blue-sea-player",
+  "slug": "elave-66__dsh-blue-sea-player",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-blue-sea-player",
+  "title": "dsh-blue-sea-player",
+  "summary": "DSH 页面常驻的鲸鱼娘音乐播放器，可拖动、换皮肤，支持 CD 封面旋转和收纳小球模式，边聊边听歌。",
+  "tags": [
+    "anime",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "player",
+    "whale",
+    "娱乐互动",
+    "界面美化",
+    "零配置",
+    "前端增强"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-07T14:41:12Z",
+    "url": "https://github.com/Elave-66/dsh-blue-sea-player/releases/tag/v0.2.1"
+  },
+  "author": "Elave-66",
+  "repo": "https://github.com/Elave-66/dsh-blue-sea-player",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-07T14:41:12Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Elave-66/dsh-blue-sea-player",
+    "commands": [
+      "dsh plugin --profile web add github:Elave-66/dsh-blue-sea-player"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

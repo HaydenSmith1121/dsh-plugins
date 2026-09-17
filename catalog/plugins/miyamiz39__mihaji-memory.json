@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Miyamiz39/mihaji-memory",
+  "slug": "miyamiz39__mihaji-memory",
+  "tier": "community",
+  "package": null,
+  "name": "mihaji-memory",
+  "title": "mihaji-memory",
+  "summary": "给 Hermes Agent 装上米哈唧记忆，让 AI 记住对话上下文，聊天更连贯自然。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "多Agent协作",
+    "模型配置"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "Miyamiz39",
+  "repo": "https://github.com/Miyamiz39/mihaji-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-06T17:11:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Miyamiz39/mihaji-memory",
+    "commands": [
+      "dsh plugin --profile web add github:Miyamiz39/mihaji-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

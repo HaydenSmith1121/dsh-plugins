@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ParticleLight/dsh-all-usage",
+  "slug": "particlelight__dsh-all-usage",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-all-usage",
+  "title": "dsh-all-usage",
+  "summary": "一眼看清 DeepSeek 各模型、供应商和工作区的 Token 与缓存用量，还能查余额、导 CSV。",
+  "tags": [
+    "analytics",
+    "cache",
+    "csv-export",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "token-usage",
+    "usage-dashboard",
+    "数据分析",
+    "状态监控",
+    "内容创作",
+    "资源优化",
+    "可视化"
+  ],
+  "version": "1.1.10",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.1.10",
+    "publishedAt": "2026-09-14T12:57:25Z",
+    "url": "https://github.com/ParticleLight/dsh-all-usage/releases/tag/v1.1.10"
+  },
+  "author": "ParticleLight",
+  "repo": "https://github.com/ParticleLight/dsh-all-usage",
+  "homepage": "https://github.com/ParticleLight/dsh-all-usage#readme",
+  "license": "MIT",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-09-14T12:56:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ParticleLight/dsh-all-usage",
+    "commands": [
+      "dsh plugin --profile web add github:ParticleLight/dsh-all-usage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

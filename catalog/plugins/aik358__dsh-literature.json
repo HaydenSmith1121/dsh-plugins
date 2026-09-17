@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Aik358/dsh-literature",
+  "slug": "aik358__dsh-literature",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-literature",
+  "title": "dsh-literature",
+  "summary": "在 DeepSeek Harness 侧边栏识别 DOI/arXiv/标题，一键抓取文献元数据与全文，本地归档并内置 PDF 阅读器。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "工作区管理",
+    "可视化",
+    "模型适配",
+    "零配置"
+  ],
+  "version": "0.3.6",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Aik358",
+  "repo": "https://github.com/Aik358/dsh-literature",
+  "homepage": "https://www.npmjs.com/package/@a9i5k4/dsh-literature",
+  "license": "MIT",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-09-16T17:27:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@a9i5k4/dsh-literature",
+    "commands": [
+      "dsh plugin --profile web add @a9i5k4/dsh-literature",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

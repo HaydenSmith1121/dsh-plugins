@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "patrick1099/dsh-claude-plugin-loader",
+  "slug": "patrick1099__dsh-claude-plugin-loader",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-claude-plugin-loader",
+  "title": "dsh-claude-plugin-loader",
+  "summary": "让 dsh 直接发现并加载 Claude 插件，扫缓存目录即插即用，省去手动配置。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "插件管理",
+    "零配置",
+    "模型配置",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "patrick1099",
+  "repo": "https://github.com/patrick1099/dsh-claude-plugin-loader",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-31T07:33:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-claude-plugin-loader",
+    "commands": [
+      "dsh plugin --profile web add dsh-claude-plugin-loader",
+      "dsh plugin --profile cc-tui add dsh-claude-plugin-loader",
+      "dsh plugin --profile headless add dsh-claude-plugin-loader"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

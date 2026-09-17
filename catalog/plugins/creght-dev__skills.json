@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "creght-dev/skills",
+  "slug": "creght-dev__skills",
+  "tier": "community",
+  "package": null,
+  "name": "skills",
+  "title": "skills",
+  "summary": "为 Cregh 智能体提供 Codex 和技能扩展，让 AI 网站构建更灵活强大。",
+  "tags": [
+    "agent-website",
+    "ai-website-builder",
+    "creght",
+    "dsh-plugin",
+    "AI 助手",
+    "AI建站",
+    "插件管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-14T08:22:45Z",
+    "url": "https://github.com/creght-dev/skills/releases/tag/v1.0.0"
+  },
+  "author": "creght-dev",
+  "repo": "https://github.com/creght-dev/skills",
+  "homepage": "https://www.creght.cn/features/cli",
+  "license": "MIT",
+  "stars": 10,
+  "forks": 0,
+  "pushedAt": "2026-09-15T11:39:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:creght-dev/skills",
+    "commands": [
+      "dsh plugin --profile web add github:creght-dev/skills"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

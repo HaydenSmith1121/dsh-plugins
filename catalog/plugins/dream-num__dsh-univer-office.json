@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "dream-num/dsh-univer-office",
+  "slug": "dream-num__dsh-univer-office",
+  "tier": "community",
+  "package": null,
+  "name": "dream-num/dsh-univer-office",
+  "title": "dream-num/dsh-univer-office",
+  "summary": "在 DeepSeek Harness 里直接创建、编辑和预览表格、文档、演示文稿，还能实时查看改动，办公效率拉满。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "office",
+    "office-harness",
+    "效率提升",
+    "交互宠物",
+    "前端增强",
+    "代码检查",
+    "开发流程"
+  ],
+  "version": "0.3.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.2",
+    "publishedAt": "2026-09-17T03:20:41Z",
+    "url": "https://github.com/dream-num/dsh-univer-office/releases/tag/v0.3.2"
+  },
+  "author": "dream-num",
+  "repo": "https://github.com/dream-num/dsh-univer-office",
+  "homepage": "https://office.univer.ai",
+  "license": "Apache-2.0",
+  "stars": 349,
+  "forks": 33,
+  "pushedAt": "2026-09-16T10:07:16Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dream-num/dsh-univer-office",
+    "commands": [
+      "dsh plugin --profile web add github:dream-num/dsh-univer-office"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "lsh2002/dsh-custom-fonts",
+  "slug": "lsh2002__dsh-custom-fonts",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-custom-fonts",
+  "title": "dsh-custom-fonts",
+  "summary": "在设置页里直接改 DeepSeek Harness 界面的中英文字体、代码字体和全局字号，还能实时预览效果。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "前端增强",
+    "模型配置",
+    "效率提升"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.1.0",
+    "publishedAt": "2026-08-24T12:44:54Z",
+    "url": "https://github.com/lsh2002/dsh-custom-fonts/releases/tag/v1.1.0"
+  },
+  "author": "lsh2002",
+  "repo": "https://github.com/lsh2002/dsh-custom-fonts",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-24T12:48:38Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-custom-fonts",
+    "commands": [
+      "dsh plugin --profile web add dsh-custom-fonts",
+      "dsh plugin --profile web add github:lsh2002/dsh-custom-fonts"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

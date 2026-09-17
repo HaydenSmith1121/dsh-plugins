@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "supanexus/dsh-plugin-supanexus-core",
+  "slug": "supanexus__dsh-plugin-supanexus-core",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-supanexus-core",
+  "title": "dsh-plugin-supanexus-core",
+  "summary": "SupaNexus 平台核心，帮你快速搞定品牌样式、OAuth 登录、双线路模型接入和应用插件市场。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "oauth",
+    "plugin-market",
+    "supanexus",
+    "模型配置",
+    "安全审计",
+    "插件管理",
+    "界面美化"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "supanexus",
+  "repo": "https://github.com/supanexus/dsh-plugin-supanexus-core",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T07:47:10Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:supanexus/dsh-plugin-supanexus-core",
+    "commands": [
+      "dsh plugin --profile web add github:supanexus/dsh-plugin-supanexus-core"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

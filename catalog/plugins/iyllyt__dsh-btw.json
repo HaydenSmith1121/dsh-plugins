@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "iyllyt/dsh-btw",
+  "slug": "iyllyt__dsh-btw",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-btw",
+  "title": "dsh-btw",
+  "summary": "不打断主任务，随时用当前上下文快速旁路提问，答案由独立模型给出，不污染主会话历史。",
+  "tags": [
+    "btw",
+    "claude-code",
+    "deepseek-harness",
+    "dsh-plugin",
+    "typescript",
+    "旁路提问",
+    "会话管理"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "iyllyt",
+  "repo": "https://github.com/iyllyt/dsh-btw",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 10,
+  "forks": 0,
+  "pushedAt": "2026-09-12T03:26:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:iyllyt/dsh-btw",
+    "commands": [
+      "dsh plugin --profile web add github:iyllyt/dsh-btw --ignore-scripts",
+      "dsh plugin --profile web add github:iyllyt/dsh-btw"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "Dayi-Z/gitcompass",
+  "slug": "dayi-z__gitcompass",
+  "tier": "community",
+  "package": null,
+  "name": "gitcompass",
+  "title": "gitcompass",
+  "summary": "在 DeepSeek Harness 里直接管理 GitHub 分支、查看提交图、处理 PR 和 Issue，让代码审查和协作更顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "git",
+    "git-panel",
+    "github",
+    "安全审计",
+    "工作流增强",
+    "可视化",
+    "文件管理",
+    "模型配置"
+  ],
+  "version": "2.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.0.0",
+    "publishedAt": "2026-09-17T10:37:53Z",
+    "url": "https://github.com/Dayi-Z/dsh-git-manager/releases/tag/v2.0.0"
+  },
+  "author": "Dayi-Z",
+  "repo": "https://github.com/Dayi-Z/gitcompass",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T15:59:49Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-git-panel",
+    "commands": [
+      "dsh plugin --profile web add dsh-git-panel",
+      "dsh plugin --profile web add link:/path/to/gitcompass"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

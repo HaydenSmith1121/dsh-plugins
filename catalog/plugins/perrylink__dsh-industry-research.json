@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "PerryLink/dsh-industry-research",
+  "slug": "perrylink__dsh-industry-research",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-industry-research",
+  "title": "dsh-industry-research",
+  "summary": "帮你摸清行业和公司底细：画产业链图、追政策新闻、扫公司资料、一键出研报。",
+  "tags": [
+    "company-research",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "industry-research",
+    "report",
+    "research",
+    "内容创作",
+    "数据分析",
+    "语义检索",
+    "工具集成",
+    "自动化"
+  ],
+  "version": "0.3.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.9",
+    "publishedAt": "2026-09-12T02:30:05Z",
+    "url": "https://github.com/PerryLink/dsh-industry-research/releases/tag/v0.3.9"
+  },
+  "author": "PerryLink",
+  "repo": "https://github.com/PerryLink/dsh-industry-research",
+  "homepage": "https://www.npmjs.com/package/dsh-industry-research",
+  "license": "Apache-2.0",
+  "stars": 119,
+  "forks": 0,
+  "pushedAt": "2026-09-12T09:33:58Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:PerryLink/dsh-industry-research",
+    "commands": [
+      "dsh plugin --profile demo add \"github:PerryLink/dsh-industry-research",
+      "dsh plugin --profile demo add dsh-industry-research",
+      "dsh plugin --profile demo remove dsh-industry-research"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

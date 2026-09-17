@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "taptap/instant-games-open-mcp",
+  "slug": "taptap__instant-games-open-mcp",
+  "tier": "community",
+  "package": null,
+  "name": "instant-games-open-mcp",
+  "title": "instant-games-open-mcp",
+  "summary": "让 TapTap 小游戏和 H5 游戏快速接入排行榜、分享、联机、云存档等开放能力，OAuth 零配置即可用。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "工具集成",
+    "自动化",
+    "数据分析",
+    "状态持久化"
+  ],
+  "version": "1.24.14",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.24.14",
+    "publishedAt": "2026-09-09T10:02:02Z",
+    "url": "https://github.com/taptap/instant-games-open-mcp/releases/tag/v1.24.14"
+  },
+  "author": "taptap",
+  "repo": "https://github.com/taptap/instant-games-open-mcp",
+  "homepage": null,
+  "license": null,
+  "stars": 34,
+  "forks": 5,
+  "pushedAt": "2026-09-16T15:50:48Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:taptap/instant-games-open-mcp",
+    "commands": [
+      "dsh plugin --profile web add github:taptap/instant-games-open-mcp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

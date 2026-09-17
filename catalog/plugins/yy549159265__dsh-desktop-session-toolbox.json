@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "yy549159265/dsh-desktop-Session-Toolbox",
+  "slug": "yy549159265__dsh-desktop-session-toolbox",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-desktop-Session-Toolbox",
+  "title": "dsh-desktop-Session-Toolbox",
+  "summary": "给 DSH 加上会话问题跳转和删除会话功能，找问题、清会话都更省事。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-desktop",
+    "deepseek-harness-plugin",
+    "会话管理",
+    "快捷操作",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yy549159265",
+  "repo": "https://github.com/yy549159265/dsh-desktop-Session-Toolbox",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-20T08:20:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yy549159265/dsh-desktop-Session-Toolbox",
+    "commands": [
+      "dsh plugin --profile web add github:yy549159265/dsh-desktop-Session-Toolbox"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

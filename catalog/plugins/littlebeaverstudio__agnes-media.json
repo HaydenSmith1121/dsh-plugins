@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "LittleBeaverStudio/agnes-media",
+  "slug": "littlebeaverstudio__agnes-media",
+  "tier": "community",
+  "package": null,
+  "name": "agnes-media",
+  "title": "agnes-media",
+  "summary": "让 AI 助手在对话中直接生成图片和视频，轻松丰富交互体验。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "image-generation",
+    "video-generation",
+    "视觉理解",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "1.8.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "LittleBeaverStudio",
+  "repo": "https://github.com/LittleBeaverStudio/agnes-media",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-09T03:40:51Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LittleBeaverStudio/agnes-media",
+    "commands": [
+      "dsh plugin --profile web add github:LittleBeaverStudio/agnes-media"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

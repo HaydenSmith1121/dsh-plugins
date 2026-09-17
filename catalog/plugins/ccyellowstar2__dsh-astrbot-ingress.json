@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "CCYellowStar2/dsh-astrbot-ingress",
+  "slug": "ccyellowstar2__dsh-astrbot-ingress",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-astrbot-ingress",
+  "title": "dsh-astrbot-ingress",
+  "summary": "把 AstrBot 接上本地 DeepSeek Harness，让 QQ 等聊天消息直接驱动你的编程智能体干活。",
+  "tags": [
+    "astrbot",
+    "dsh",
+    "dsh-plugin",
+    "qq",
+    "桥接插件",
+    "工具集成",
+    "群聊助手",
+    "自动化",
+    "AI 助手"
+  ],
+  "version": "0.3.11",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.11",
+    "publishedAt": "2026-09-17T10:47:06Z",
+    "url": "https://github.com/CCYellowStar2/dsh-astrbot-ingress/releases/tag/v0.3.11"
+  },
+  "author": "CCYellowStar2",
+  "repo": "https://github.com/CCYellowStar2/dsh-astrbot-ingress",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T07:37:49Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CCYellowStar2/dsh-astrbot-ingress",
+    "commands": [
+      "dsh plugin --profile web add github:CCYellowStar2/dsh-astrbot-ingress"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

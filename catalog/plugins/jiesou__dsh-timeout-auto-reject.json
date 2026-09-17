@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "jiesou/dsh-timeout-auto-reject",
+  "slug": "jiesou__dsh-timeout-auto-reject",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-timeout-auto-reject",
+  "title": "dsh-timeout-auto-reject",
+  "summary": "自动拒绝长时间未响应的权限请求，并给模型显示超时提示，避免流程卡死。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "permission",
+    "AI 助手",
+    "效率提升",
+    "会话管理",
+    "安全审计"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jiesou",
+  "repo": "https://github.com/jiesou/dsh-timeout-auto-reject",
+  "homepage": "https://www.npmjs.com/package/@jiesou/dsh-timeout-auto-reject",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-21T01:45:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@jiesou/dsh-timeout-auto-reject",
+    "commands": [
+      "dsh plugin --profile web add @jiesou/dsh-timeout-auto-reject",
+      "dsh plugin --profile web add github:jiesou/dsh-timeout-auto-reject"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

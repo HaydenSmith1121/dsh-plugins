@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "sanqiPanax/jieyaTool",
+  "slug": "sanqipanax__jieyatool",
+  "tier": "community",
+  "package": null,
+  "name": "jieyaTool",
+  "title": "jieyaTool",
+  "summary": "对 Agent 说一句话，自动批量递归解压各种压缩包，支持分卷、SFX、多层嵌套和不同密码，彻底告别手动改后缀。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "效率提升",
+    "文件管理",
+    "命令行工具",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sanqiPanax",
+  "repo": "https://github.com/sanqiPanax/jieyaTool",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T11:57:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sanqiPanax/jieyaTool",
+    "commands": [
+      "dsh plugin --profile web add github:sanqiPanax/jieyaTool"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

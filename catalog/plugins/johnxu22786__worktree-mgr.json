@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "JohnXu22786/worktree-mgr",
+  "slug": "johnxu22786__worktree-mgr",
+  "tier": "community",
+  "package": null,
+  "name": "JohnXu22786/worktree-mgr",
+  "title": "JohnXu22786/worktree-mgr",
+  "summary": "为每个任务自动创建、同步和清理独立的 git 工作区，让多任务互不干扰，提升开发效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "多工具支持",
+    "工作区管理",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "JohnXu22786",
+  "repo": "https://github.com/JohnXu22786/worktree-mgr",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 2,
+  "pushedAt": "2026-09-14T15:18:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JohnXu22786/worktree-mgr",
+    "commands": [
+      "dsh plugin --profile demo add github:JohnXu22786/worktree-mgr",
+      "dsh plugin --profile demo remove worktree-mgr",
+      "dsh plugin --profile demo add ./worktree-mgr"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

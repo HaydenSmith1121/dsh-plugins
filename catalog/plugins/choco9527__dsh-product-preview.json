@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "choco9527/dsh-product-preview",
+  "slug": "choco9527__dsh-product-preview",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-product-preview",
+  "title": "dsh-product-preview",
+  "summary": "在对话里用访达分栏视图浏览生成的图片视频等产物，边看边聊不用来回切换。",
+  "tags": [
+    "dsh-plugin",
+    "文件管理",
+    "可视化",
+    "视觉理解",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-05T05:27:18Z",
+    "url": "https://github.com/choco9527/dsh-product-preview/releases/tag/v0.1.0"
+  },
+  "author": "choco9527",
+  "repo": "https://github.com/choco9527/dsh-product-preview",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T09:05:08Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:choco9527/dsh-product-preview",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/choco9527/dsh-product-preview/releases/latest/download/dsh-product-preview.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

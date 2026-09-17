@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "henrytian1998/dsh-doctor",
+  "slug": "henrytian1998__dsh-doctor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-doctor",
+  "title": "dsh-doctor",
+  "summary": "一键收集 home、残留进程、端口、超大 session 和版本问题，生成可直接粘贴的诊断报告。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "报告生成",
+    "命令行工具",
+    "资源优化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-12T06:09:10Z",
+    "url": "https://github.com/henrytian1998/dsh-doctor/releases/tag/v0.1.0"
+  },
+  "author": "henrytian1998",
+  "repo": "https://github.com/henrytian1998/dsh-doctor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T03:03:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:henrytian1998/dsh-doctor",
+    "commands": [
+      "dsh plugin --profile web add github:henrytian1998/dsh-doctor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

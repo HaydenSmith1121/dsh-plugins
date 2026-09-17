@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "firestige/crystra-execution",
+  "slug": "firestige__crystra-execution",
+  "tier": "community",
+  "package": null,
+  "name": "crystra-execution",
+  "title": "crystra-execution",
+  "summary": "把工作流包绑定到具体交付任务，统一调度执行过程并输出可控的运行观测数据。",
+  "tags": [
+    "agent",
+    "crystra",
+    "deepseek-harness",
+    "dsh",
+    "langgraph",
+    "workflow",
+    "workflow-engine",
+    "工作流增强",
+    "多智能体协作",
+    "状态监控",
+    "自动化",
+    "桥接插件"
+  ],
+  "version": "0.2.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "0.2.7",
+    "publishedAt": "2026-09-05T13:09:51Z",
+    "url": "https://github.com/firestige/crystra-execution/releases/tag/0.2.7"
+  },
+  "author": "firestige",
+  "repo": "https://github.com/firestige/crystra-execution",
+  "homepage": "https://github.com/firestige/crystra-execution",
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T01:34:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:firestige/crystra-execution",
+    "commands": [
+      "dsh plugin --profile web add github:firestige/crystra-execution"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

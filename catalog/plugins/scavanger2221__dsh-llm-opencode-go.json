@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "scavanger2221/dsh-llm-opencode-go",
+  "slug": "scavanger2221__dsh-llm-opencode-go",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-opencode-go",
+  "title": "dsh-llm-opencode-go",
+  "summary": "把 OpenCode Go 的模型接入 DeepSeek Harness，带会话粘性和实时模型列表，还能在设置面板里直接配。",
+  "tags": [
+    "cordis-plugin",
+    "deepseek-harness",
+    "dsh-plugin",
+    "llm-provider",
+    "opencode-go",
+    "模型配置",
+    "设置面板",
+    "会话管理",
+    "工具集成"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-10T12:42:47Z",
+    "url": "https://github.com/scavanger2221/dsh-llm-opencode-go/releases/tag/v0.1.2"
+  },
+  "author": "scavanger2221",
+  "repo": "https://github.com/scavanger2221/dsh-llm-opencode-go",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T12:43:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:scavanger2221/dsh-llm-opencode-go",
+    "commands": [
+      "dsh plugin --profile web add github:scavanger2221/dsh-llm-opencode-go"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

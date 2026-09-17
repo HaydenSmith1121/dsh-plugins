@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "fan56/dsh-model-sync",
+  "slug": "fan56__dsh-model-sync",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-sync",
+  "title": "dsh-model-sync",
+  "summary": "自动同步 pi.dev 网关的模型目录到 llm-pi-ai 路由，让模型配置保持最新，无需改动 dsh 内部。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "设置面板",
+    "零配置",
+    "自动化"
+  ],
+  "version": "0.5.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fan56",
+  "repo": "https://github.com/fan56/dsh-model-sync",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T01:28:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@aiwayds/dsh-model-sync",
+    "commands": [
+      "npm i @aiwayds/dsh-model-sync",
+      "dsh plugin add @aiwayds/dsh-model-sync"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

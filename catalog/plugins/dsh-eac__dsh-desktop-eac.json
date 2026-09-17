@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "DSH-EAC/DSH-Desktop-EAC",
+  "slug": "dsh-eac__dsh-desktop-eac",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-Desktop-EAC",
+  "title": "DSH-Desktop-EAC",
+  "summary": "把 DeepSeek Harness 装进桌面，自带 Node.js 运行环境，点一下就能用，还送 10 套主题。",
+  "tags": [
+    "ai-agent",
+    "deepseek",
+    "deepseek-harness",
+    "desktop",
+    "desktop-app",
+    "dsh",
+    "dsh-plugins",
+    "dshdesktop",
+    "electron",
+    "tauri",
+    "windows",
+    "零配置",
+    "命令行工具",
+    "界面美化",
+    "工具集成"
+  ],
+  "version": "5.3.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v5.3.6",
+    "publishedAt": "2026-09-03T10:54:14Z",
+    "url": "https://github.com/DSH-EAC/DSH-Desktop-EAC/releases/tag/v5.3.6"
+  },
+  "author": "DSH-EAC",
+  "repo": "https://github.com/DSH-EAC/DSH-Desktop-EAC",
+  "homepage": "https://github.com/zouyuxuan122/Deepseek-Harness-EAC/releases",
+  "license": "MIT",
+  "stars": 1692,
+  "forks": 60,
+  "pushedAt": "2026-09-16T14:58:09Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:DSH-EAC/DSH-Desktop-EAC",
+    "commands": [
+      "dsh plugin --profile web add github:DSH-EAC/DSH-Desktop-EAC"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

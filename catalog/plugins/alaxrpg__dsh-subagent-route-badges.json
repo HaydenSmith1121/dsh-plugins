@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "alaxrpg/dsh-subagent-route-badges",
+  "slug": "alaxrpg__dsh-subagent-route-badges",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subagent-route-badges",
+  "title": "dsh-subagent-route-badges",
+  "summary": "在子代理会话头部显示路由徽章，一眼看清 provider、模型和思考强度，方便调试和确认当前配置。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "subagent",
+    "会话管理",
+    "模型配置",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.2.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "alaxrpg",
+  "repo": "https://github.com/alaxrpg/dsh-subagent-route-badges",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T01:46:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:alaxrpg/dsh-subagent-route-badges",
+    "commands": [
+      "dsh plugin --profile web add github:alaxrpg/dsh-subagent-route-badges"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

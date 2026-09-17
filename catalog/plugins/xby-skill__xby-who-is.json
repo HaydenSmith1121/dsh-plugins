@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-who-is",
+  "slug": "xby-skill__xby-who-is",
+  "tier": "community",
+  "package": null,
+  "name": "xby-who-is",
+  "title": "xby-who-is",
+  "summary": "在聊天里直接查 WHOIS，输入域名就能拿到注册信息，支持 877+ 顶级域名，API 密钥自动保存。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "命令行工具",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-who-is",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:40:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-who-is",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-who-is",
+      "dsh plugin --profile web add /absolute/path/to/xby-who-is"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

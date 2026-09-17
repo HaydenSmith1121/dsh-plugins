@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Sxuan-Coder/dsh-user-prompt",
+  "slug": "sxuan-coder__dsh-user-prompt",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-user-prompt",
+  "title": "dsh-user-prompt",
+  "summary": "给 DSH 加上自定义提示词功能，还能从 ClaudeCode 和 Codex 一键导入，省去手动搬运。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "快捷操作",
+    "工具集成",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Sxuan-Coder",
+  "repo": "https://github.com/Sxuan-Coder/dsh-user-prompt",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T13:49:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-user-prompt",
+    "commands": [
+      "dsh plugin --profile desktop add dsh-user-prompt",
+      "dsh plugin --profile desktop add github:Sxuan-Coder/dsh-user-prompt",
+      "git clone https://github.com/Sxuan-Coder/dsh-user-prompt"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

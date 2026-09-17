@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ping1999/dsh-minimap",
+  "slug": "ping1999__dsh-minimap",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-minimap",
+  "title": "dsh-minimap",
+  "summary": "给 dsh 网页版侧边文件查看器加上 VS Code 风格的缩略图滚动条，长文件里快速拖拽定位，翻文件更省事。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "可视化",
+    "桌宠",
+    "工作区管理"
+  ],
+  "version": "0.3.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ping1999",
+  "repo": "https://github.com/ping1999/dsh-minimap",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-29T12:06:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-minimap",
+    "commands": [
+      "dsh plugin --profile web add dsh-minimap",
+      "dsh plugin --profile web add github:ping1999/dsh-minimap"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

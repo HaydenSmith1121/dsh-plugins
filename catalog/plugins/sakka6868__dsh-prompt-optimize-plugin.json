@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "sakka6868/dsh-prompt-optimize-plugin",
+  "slug": "sakka6868__dsh-prompt-optimize-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-optimize-plugin",
+  "title": "dsh-prompt-optimize-plugin",
+  "summary": "在 DeepSeek Harness 输入栏一键优化提示词，把模糊想法改写成清晰、具体、可执行的指令，像 IDE 智能提示一样顺手。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "零配置",
+    "工作流增强"
+  ],
+  "version": "0.0.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sakka6868",
+  "repo": "https://github.com/sakka6868/dsh-prompt-optimize-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T13:42:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sakka6868/dsh-prompt-optimize-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:sakka6868/dsh-prompt-optimize-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

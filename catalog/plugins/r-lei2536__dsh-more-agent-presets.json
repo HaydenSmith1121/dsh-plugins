@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "R-LEI2536/dsh-more-agent-presets",
+  "slug": "r-lei2536__dsh-more-agent-presets",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-more-agent-presets",
+  "title": "dsh-more-agent-presets",
+  "summary": "给 DSH 加上更多可选的 Agent 预设，把 qwen code、iflow 等编码助手的配置搬过来直接用。",
+  "tags": [
+    "agent-preset",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "模型配置",
+    "工具集成",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "1.4.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "R-LEI2536",
+  "repo": "https://github.com/R-LEI2536/dsh-more-agent-presets",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T06:58:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:R-LEI2536/dsh-more-agent-presets",
+    "commands": [
+      "dsh plugin --profile web add github:R-LEI2536/dsh-more-agent-presets"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "1010n111/dsh-about",
+  "slug": "1010n111__dsh-about",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-about",
+  "title": "dsh-about",
+  "summary": "在 DSH 设置面板中新增“关于”页，一眼看清当前版本、插件版本和项目主页。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "设置面板",
+    "插件管理",
+    "状态监控",
+    "前端增强"
+  ],
+  "version": "0.0.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "1010n111",
+  "repo": "https://github.com/1010n111/dsh-about",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T06:24:32Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-about",
+    "commands": [
+      "dsh plugin --profile web add dsh-about",
+      "dsh plugin --profile web add 'github:1010n111/dsh-about'",
+      "dsh plugin --profile web remove dsh-about"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

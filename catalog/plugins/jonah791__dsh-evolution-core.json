@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-evolution-core",
+  "slug": "jonah791__dsh-evolution-core",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-evolution-core",
+  "title": "dsh-evolution-core",
+  "summary": "把各个进化器官的状态汇总起来，实时诊断五环完整性，找出断点并给出行动建议。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "能力缺口分析",
+    "插件管理",
+    "多Agent协作",
+    "内容创作"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-07T08:55:16Z",
+    "url": "https://github.com/jonah791/dsh-evolution-core/releases/tag/v0.1.0"
+  },
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-evolution-core",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T09:48:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-evolution-core",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-evolution-core"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

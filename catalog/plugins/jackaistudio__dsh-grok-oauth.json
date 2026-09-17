@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "JackAIStudio/dsh-grok-oauth",
+  "slug": "jackaistudio__dsh-grok-oauth",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-grok-oauth",
+  "title": "dsh-grok-oauth",
+  "summary": "用 xAI 账号直接登录 Grok，免 API 密钥，聊天、用量一目了然，还能选配图片生成。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "grok",
+    "oauth",
+    "xai",
+    "零配置",
+    "会话管理",
+    "模型适配",
+    "多模态"
+  ],
+  "version": "0.1.2-final",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "JackAIStudio",
+  "repo": "https://github.com/JackAIStudio/dsh-grok-oauth",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T01:29:18Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JackAIStudio/dsh-grok-oauth",
+    "commands": [
+      "dsh plugin --profile web add github:JackAIStudio/dsh-grok-oauth"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "wrw-dev/dsh-spring-widget",
+  "slug": "wrw-dev__dsh-spring-widget",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-spring-widget",
+  "title": "dsh-spring-widget",
+  "summary": "在顶栏直接启动、停止 Spring Boot 服务，支持源码直启和 Jar 打包，内置日志控制台，开发调试更顺手。",
+  "tags": [
+    "devtools",
+    "dsh",
+    "dsh-plugin",
+    "spring-boot",
+    "工作流增强",
+    "状态监控",
+    "命令行工具",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-27T15:33:54Z",
+    "url": "https://github.com/wrw-dev/dsh-spring-widget/releases/tag/v1.0.0"
+  },
+  "author": "wrw-dev",
+  "repo": "https://github.com/wrw-dev/dsh-spring-widget",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T11:12:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wrw-dev/dsh-spring-widget",
+    "commands": [
+      "dsh plugin add dsh-spring-widget --source github:wrw-dev/dsh-spring-widget"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

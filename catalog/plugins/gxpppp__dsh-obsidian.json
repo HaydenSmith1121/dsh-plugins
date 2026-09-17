@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "gxpppp/dsh-obsidian",
+  "slug": "gxpppp__dsh-obsidian",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-obsidian",
+  "title": "dsh-obsidian",
+  "summary": "把 Obsidian 变成 DSH 的本地控制台，直接在笔记里管理和运行 DeepSeek Harness 任务。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "obsidian",
+    "工作区管理",
+    "零配置",
+    "可视化",
+    "模型配置",
+    "工作流增强"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "dsh-obsidian-v0.4.0",
+    "publishedAt": "2026-08-31T11:54:38Z",
+    "url": "https://github.com/gxpppp/dsh-obsidian/releases/tag/dsh-obsidian-v0.4.0"
+  },
+  "author": "gxpppp",
+  "repo": "https://github.com/gxpppp/dsh-obsidian",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-31T11:53:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:gxpppp/dsh-obsidian",
+    "commands": [
+      "npm install --global @deepseek-ai/dsh@0.1.2-alpha.2 pnpm@11.7.0"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

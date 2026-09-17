@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "Ycet/dsh-session-plus",
+  "slug": "ycet__dsh-session-plus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-plus",
+  "title": "dsh-session-plus",
+  "summary": "一键打开工作区、把模型提供商菜单放到头部，还能把选中的文本直接加入对话，让会话操作更顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "效率提升",
+    "前端增强",
+    "娱乐互动",
+    "模型配置"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-11T02:16:17Z",
+    "url": "https://github.com/Ycet/dsh-session-plus/releases/tag/v0.4.0"
+  },
+  "author": "Ycet",
+  "repo": "https://github.com/Ycet/dsh-session-plus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T02:15:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Ycet/dsh-session-plus",
+    "commands": [
+      "dsh plugin --profile web add github:Ycet/dsh-session-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

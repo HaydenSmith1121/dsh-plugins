@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "ph4310822/dsh-x402-wallet",
+  "slug": "ph4310822__dsh-x402-wallet",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-x402-wallet",
+  "title": "dsh-x402-wallet",
+  "summary": "为 DeepSeek Harness 提供可视化 x402 支付钱包，方便在会话中直接完成支付操作。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "桌宠",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.17",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ph4310822",
+  "repo": "https://github.com/ph4310822/dsh-x402-wallet",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-08-27T19:57:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@danielng23/dsh-x402-wallet",
+    "commands": [
+      "dsh plugin --profile web add @danielng23/dsh-x402-wallet"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

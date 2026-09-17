@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "jwilson411/dsh-modelprint",
+  "slug": "jwilson411__dsh-modelprint",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-modelprint",
+  "title": "dsh-modelprint",
+  "summary": "给每次请求生成模型指纹卡片，记录模型ID、采样参数和工具结构，方便追踪和排查配置漂移。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "模型配置",
+    "状态监控",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jwilson411",
+  "repo": "https://github.com/jwilson411/dsh-modelprint",
+  "homepage": "https://github.com/jwilson411/dsh-modelprint",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T16:31:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jwilson411/dsh-modelprint",
+    "commands": [
+      "dsh plugin --profile web add github:jwilson411/dsh-modelprint"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

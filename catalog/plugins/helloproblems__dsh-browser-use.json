@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "helloproblems/dsh-browser-use",
+  "slug": "helloproblems__dsh-browser-use",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-browser-use",
+  "title": "dsh-browser-use",
+  "summary": "给 DSH 加上浏览器自动化能力，让插件能自己开网页、点按钮、填表单。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "工具集成",
+    "插件开发",
+    "桌面自动化"
+  ],
+  "version": "0.7.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "0.7.0",
+    "publishedAt": "2026-09-16T06:30:23Z",
+    "url": "https://github.com/helloproblems/dsh-browser-use/releases/tag/0.7.0"
+  },
+  "author": "helloproblems",
+  "repo": "https://github.com/helloproblems/dsh-browser-use",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T06:30:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:helloproblems/dsh-browser-use",
+    "commands": [
+      "dsh plugin --profile web add github:helloproblems/dsh-browser-use"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

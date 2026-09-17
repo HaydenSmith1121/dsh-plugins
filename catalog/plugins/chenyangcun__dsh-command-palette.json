@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "chenyangcun/dsh-command-palette",
+  "slug": "chenyangcun__dsh-command-palette",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-command-palette",
+  "title": "dsh-command-palette",
+  "summary": "为 DeepSeek Harness 提供键盘优先的命令面板，快速执行操作，提升操作效率。",
+  "tags": [
+    "command-palette",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "productivity",
+    "效率提升",
+    "命令行工具",
+    "桌宠",
+    "前端增强"
+  ],
+  "version": "0.1.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chenyangcun",
+  "repo": "https://github.com/chenyangcun/dsh-command-palette",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T13:44:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-command-palette",
+    "commands": [
+      "dsh plugin --profile web add dsh-command-palette"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

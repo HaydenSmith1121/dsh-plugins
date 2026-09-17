@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "Pasumao/dsh-plugin-image-tools",
+  "slug": "pasumao__dsh-plugin-image-tools",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-image-tools",
+  "title": "dsh-plugin-image-tools",
+  "summary": "给 DSH 加上图片能力：选图卡片、回复里直接嵌图，还能让盲模型看图。",
+  "tags": [
+    "choice",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "image",
+    "image-picker",
+    "lightbox",
+    "web-gui",
+    "视觉理解",
+    "文件管理",
+    "多模态",
+    "前端增强",
+    "工具集成"
+  ],
+  "version": "0.6.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.6",
+    "publishedAt": "2026-09-04T15:11:15Z",
+    "url": "https://github.com/Pasumao/dsh-plugin-image-tools/releases/tag/v0.6.6"
+  },
+  "author": "Pasumao",
+  "repo": "https://github.com/Pasumao/dsh-plugin-image-tools",
+  "homepage": "https://github.com/Pasumao/dsh-plugin-image-tools#readme",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T12:32:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Pasumao/dsh-plugin-image-tools",
+    "commands": [
+      "dsh plugin --profile web add github:Pasumao/dsh-plugin-image-tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

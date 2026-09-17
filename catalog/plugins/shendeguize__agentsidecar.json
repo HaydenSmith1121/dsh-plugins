@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "shendeguize/AgentSideCar",
+  "slug": "shendeguize__agentsidecar",
+  "tier": "community",
+  "package": null,
+  "name": "AgentSideCar",
+  "title": "AgentSideCar",
+  "summary": "本地优先的 CLI 工具，帮你实时观察和分析 AI 智能体的会话过程。",
+  "tags": [
+    "agent",
+    "cli",
+    "dsh-plugin",
+    "macos",
+    "observability",
+    "python",
+    "状态监控",
+    "命令行工具",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.11.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.11.4",
+    "publishedAt": "2026-09-04T10:25:40Z",
+    "url": "https://github.com/shendeguize/AgentSideCar/releases/tag/v0.11.4"
+  },
+  "author": "shendeguize",
+  "repo": "https://github.com/shendeguize/AgentSideCar",
+  "homepage": "https://shendeguize.github.io/AgentSideCar/",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T12:37:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shendeguize/AgentSideCar",
+    "commands": [
+      "curl --fail --location --proto '=https' --tlsv1.2 --output \"$installer\" \\"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "zhaoscsc/dsh-wikilink",
+  "slug": "zhaoscsc__dsh-wikilink",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wikilink",
+  "title": "dsh-wikilink",
+  "summary": "在 DeepSeek Harness 网页界面里输入 [[ 就能模糊搜索笔记标题，一键把笔记内容附加到提示词中，像 Obsidian 一样方便。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "文件管理",
+    "界面美化"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhaoscsc",
+  "repo": "https://github.com/zhaoscsc/dsh-wikilink",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-03T09:45:25Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhaoscsc/dsh-wikilink",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/zhaoscsc/dsh-wikilink/archive/refs/heads/main.tar.gz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

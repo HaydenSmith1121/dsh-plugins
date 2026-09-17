@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "cyunlab/dsh-desktop",
+  "slug": "cyunlab__dsh-desktop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-desktop",
+  "title": "dsh-desktop",
+  "summary": "把 DeepSeek Harness 搬到桌面，让 AI 插件管理更顺手，桌面能力也能随心定制。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "自动化",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "2.1.12",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.1.12",
+    "publishedAt": "2026-09-03T13:41:57Z",
+    "url": "https://github.com/cyunlab/dsh-desktop/releases/tag/v2.1.12"
+  },
+  "author": "cyunlab",
+  "repo": "https://github.com/cyunlab/dsh-desktop",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-03T15:33:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cyunlab/dsh-desktop",
+    "commands": [
+      "git clone --recurse-submodules https://github.com/XLCYun/dsh-desktop.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

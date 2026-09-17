@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Shmilyol/dsh-hiyori-web-ui",
+  "slug": "shmilyol__dsh-hiyori-web-ui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hiyori-web-ui",
+  "title": "dsh-hiyori-web-ui",
+  "summary": "给 DSH Web 换上暖色温柔界面，还配了会回应你的桃濑日和动态伴侣。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-desktop",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugin-dev",
+    "deepseek-harness-plugins",
+    "dsh-plugin",
+    "主题",
+    "界面美化",
+    "AI 助手",
+    "前端增强"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "Shmilyol",
+  "repo": "https://github.com/Shmilyol/dsh-hiyori-web-ui",
+  "homepage": "https://juejin.cn/post/7674101873055105064",
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-20T03:09:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Shmilyol/dsh-hiyori-web-ui",
+    "commands": [
+      "npm install -g pnpm",
+      "git clone https://github.com/Shmilyol/dsh-hiyori-web-ui.git",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

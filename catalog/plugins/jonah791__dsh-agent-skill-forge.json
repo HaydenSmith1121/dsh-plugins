@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-agent-skill-forge",
+  "slug": "jonah791__dsh-agent-skill-forge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-skill-forge",
+  "title": "dsh-agent-skill-forge",
+  "summary": "后台自动采集会话轨迹，零成本提炼技能信号，帮你把操作经验沉淀成可复用的技能包。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "自动化",
+    "效率提升",
+    "资源优化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-07T08:55:05Z",
+    "url": "https://github.com/jonah791/dsh-agent-skill-forge/releases/tag/v0.1.0"
+  },
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-agent-skill-forge",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T06:06:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-agent-skill-forge",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-agent-skill-forge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

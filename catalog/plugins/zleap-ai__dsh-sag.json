@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Zleap-AI/dsh-sag",
+  "slug": "zleap-ai__dsh-sag",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sag",
+  "title": "dsh-sag",
+  "summary": "让 DeepSeek Harness 直接连上本地 SAG 知识库，随时检索资料、读原文、传文件、记笔记，管理文档更顺手。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "会话管理",
+    "文件管理",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Zleap-AI",
+  "repo": "https://github.com/Zleap-AI/dsh-sag",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-11T10:18:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@zleap-ai/dsh-sag",
+    "commands": [
+      "dsh plugin --profile web add @zleap-ai/dsh-sag",
+      "dsh plugin --profile web exec dsh-sag doctor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

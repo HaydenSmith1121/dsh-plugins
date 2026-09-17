@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "GHJIVHIDD/dsh-plugin-session-terminal",
+  "slug": "ghjivhidd__dsh-plugin-session-terminal",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-session-terminal",
+  "title": "dsh-plugin-session-terminal",
+  "summary": "在会话视图里加一个「终端」页签，实时查看 bash 命令、输出和耗时，纯观察不操作。",
+  "tags": [
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dsh-plugin-market",
+    "dsh-plugin-verify",
+    "dsh-plugins",
+    "dsh-skill",
+    "dsharpplus",
+    "dshot",
+    "会话终端",
+    "实时观察",
+    "命令监控",
+    "只读展示"
+  ],
+  "version": "0.0.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.0.2",
+    "publishedAt": "2026-08-15T03:54:49Z",
+    "url": "https://github.com/GHJIVHIDD/dsh-plugin-session-terminal/releases/tag/v0.0.2"
+  },
+  "author": "GHJIVHIDD",
+  "repo": "https://github.com/GHJIVHIDD/dsh-plugin-session-terminal",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-20T08:33:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GHJIVHIDD/dsh-plugin-session-terminal",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-plugin-session-terminal-0.0.2.tgz",
+      "dsh plugin --profile web add github:GHJIVHIDD/dsh-plugin-session-terminal"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

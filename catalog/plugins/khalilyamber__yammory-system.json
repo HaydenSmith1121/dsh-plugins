@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "KhalilYamber/yammory-system",
+  "slug": "khalilyamber__yammory-system",
+  "tier": "community",
+  "package": null,
+  "name": "yammory-system",
+  "title": "yammory-system",
+  "summary": "跨会话记住你的知识水平和交流偏好，让 AI 助手开口就懂你，本地存储可审计。",
+  "tags": [
+    "agent-memory",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "状态持久化",
+    "AI 助手",
+    "数据可审计",
+    "模型配置"
+  ],
+  "version": "0.6.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.0",
+    "publishedAt": "2026-09-15T10:42:10Z",
+    "url": "https://github.com/KhalilYamber/yammory-system/releases/tag/v0.6.0"
+  },
+  "author": "KhalilYamber",
+  "repo": "https://github.com/KhalilYamber/yammory-system",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T19:23:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:KhalilYamber/yammory-system",
+    "commands": [
+      "dsh plugin --profile web add \"github:KhalilYamber/yammory-system"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "0w0miki/dsh-question-rail",
+  "slug": "0w0miki__dsh-question-rail",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-question-rail",
+  "title": "dsh-question-rail",
+  "summary": "在聊天滚动条旁显示提问标记，点击即可快速跳转到任意一次提问，方便回顾长对话。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "前端增强",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "0w0miki",
+  "repo": "https://github.com/0w0miki/dsh-question-rail",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T11:27:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:0w0miki/dsh-question-rail",
+    "commands": [
+      "dsh plugin --profile web add \"file:/path/to/dsh-question-rail\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

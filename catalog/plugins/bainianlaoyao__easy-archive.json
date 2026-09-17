@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "bainianlaoyao/easy-archive",
+  "slug": "bainianlaoyao__easy-archive",
+  "tier": "community",
+  "package": null,
+  "name": "easy-archive",
+  "title": "easy-archive",
+  "summary": "把会话归档按钮直接放到工作区侧边栏行内，点两下就能归档，不用再翻 ⋮ 菜单。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "快捷操作",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.1.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bainianlaoyao",
+  "repo": "https://github.com/bainianlaoyao/easy-archive",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T14:10:21Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bainianlaoyao/easy-archive",
+    "commands": [
+      "dsh plugin --profile web add github:bainianlaoyao/easy-archive",
+      "dsh plugin --profile web add dsh-easy-archive"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

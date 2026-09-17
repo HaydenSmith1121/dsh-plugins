@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "aliensweety/dsh-usage-dock",
+  "slug": "aliensweety__dsh-usage-dock",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage-dock",
+  "title": "dsh-usage-dock",
+  "summary": "在输入框统计栏加一颗人民币花费药丸，实时看每次会话花了多少钱，点开还有费用明细。",
+  "tags": [
+    "cost",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "成本控制",
+    "状态监控",
+    "前端增强"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "aliensweety",
+  "repo": "https://github.com/aliensweety/dsh-usage-dock",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T02:17:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aliensweety/dsh-usage-dock",
+    "commands": [
+      "dsh plugin --profile web add github:aliensweety/dsh-usage-dock"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

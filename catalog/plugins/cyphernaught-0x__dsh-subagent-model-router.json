@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "CypherNaught-0x/DSH-Subagent-Model-Router",
+  "slug": "cyphernaught-0x__dsh-subagent-model-router",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-Subagent-Model-Router",
+  "title": "DSH-Subagent-Model-Router",
+  "summary": "按任务类型自动给子任务分配最合适的模型，省心又省钱。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "模型配置",
+    "工作流增强",
+    "资源优化",
+    "效率提升"
+  ],
+  "version": "0.8.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "CypherNaught-0x",
+  "repo": "https://github.com/CypherNaught-0x/DSH-Subagent-Model-Router",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 0,
+  "pushedAt": "2026-09-10T18:34:01Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-subagent-model-router",
+    "commands": [
+      "dsh plugin --profile web add dsh-subagent-model-router",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

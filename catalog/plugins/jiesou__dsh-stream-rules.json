@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "jiesou/dsh-stream-rules",
+  "slug": "jiesou__dsh-stream-rules",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-stream-rules",
+  "title": "dsh-stream-rules",
+  "summary": "按需自动注入规则，不占上下文，轻量实现流式规则匹配。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "guardrail",
+    "stream-rules",
+    "流式处理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jiesou",
+  "repo": "https://github.com/jiesou/dsh-stream-rules",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-10T14:35:01Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jiesou/dsh-stream-rules",
+    "commands": [
+      "dsh plugin --profile <name> add @jiesou/dsh-stream-rules",
+      "dsh plugin --profile <name> add github:jiesou/dsh-stream-rules"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

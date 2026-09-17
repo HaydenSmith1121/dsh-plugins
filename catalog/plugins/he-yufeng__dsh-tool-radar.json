@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "he-yufeng/dsh-tool-radar",
+  "slug": "he-yufeng__dsh-tool-radar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tool-radar",
+  "title": "dsh-tool-radar",
+  "summary": "在动手改陌生 GitHub 仓库前，先用真实数据给它的贡献友好度打个分，省得白费功夫。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "证据链",
+    "内容创作",
+    "生态洞察",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "he-yufeng",
+  "repo": "https://github.com/he-yufeng/dsh-tool-radar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T16:22:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:he-yufeng/dsh-tool-radar",
+    "commands": [
+      "dsh plugin --profile <name> add github:he-yufeng/dsh-tool-radar",
+      "dsh plugin --profile <name> add dsh-tool-radar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

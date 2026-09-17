@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "JasonCHTT/dsh-plugin-deepseek-balance",
+  "slug": "jasonchtt__dsh-plugin-deepseek-balance",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-deepseek-balance",
+  "title": "dsh-plugin-deepseek-balance",
+  "summary": "快速查看 DeepSeek API 账户余额，方便随时掌握用量和剩余额度。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "资源优化",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "JasonCHTT",
+  "repo": "https://github.com/JasonCHTT/dsh-plugin-deepseek-balance",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-15T15:23:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JasonCHTT/dsh-plugin-deepseek-balance",
+    "commands": [
+      "dsh plugin --profile web add link:/path/to/dsh-plugin-deepseek-balance"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

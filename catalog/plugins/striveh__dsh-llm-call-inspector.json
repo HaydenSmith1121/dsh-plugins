@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "striveh/dsh-llm-call-inspector",
+  "slug": "striveh__dsh-llm-call-inspector",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-call-inspector",
+  "title": "dsh-llm-call-inspector",
+  "summary": "本地查看 DeepSeek Harness 每次 LLM 调用的请求与响应，方便调试和排查问题，数据不出本机。",
+  "tags": [
+    "debugging",
+    "deepseek-harness",
+    "developer-tools",
+    "dsh",
+    "dsh-plugin",
+    "llm-observability",
+    "local-first",
+    "privacy",
+    "typescript",
+    "状态监控",
+    "工作流增强",
+    "零配置",
+    "安全审计"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-08-31T07:44:53Z",
+    "url": "https://github.com/striveh/dsh-llm-call-inspector/releases/tag/v0.2.1"
+  },
+  "author": "striveh",
+  "repo": "https://github.com/striveh/dsh-llm-call-inspector",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-31T08:00:06Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:striveh/dsh-llm-call-inspector",
+    "commands": [
+      "dsh plugin --profile web add github:striveh/dsh-llm-call-inspector"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "haoliangwu/dsh-pwa",
+  "slug": "haoliangwu__dsh-pwa",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pwa",
+  "title": "dsh-pwa",
+  "summary": "把 dsh web 变成可安装的 PWA，支持反向代理部署，离线也能用。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "可视化",
+    "零配置",
+    "资源优化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "haoliangwu",
+  "repo": "https://github.com/haoliangwu/dsh-pwa",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-25T01:21:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:haoliangwu/dsh-pwa",
+    "commands": [
+      "dsh plugin --profile web add github:haoliangwu/dsh-pwa"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

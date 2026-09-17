@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "jiayan-xu/dsh-memoria",
+  "slug": "jiayan-xu__dsh-memoria",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memoria",
+  "title": "dsh-memoria",
+  "summary": "为 dsh 接入 memoria 记忆后端，让会话能记住并回忆信息，支持向量+图检索和命名空间隔离。",
+  "tags": [
+    "会话管理",
+    "向量检索",
+    "图数据库",
+    "会话上下文"
+  ],
+  "version": "0.2.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jiayan-xu",
+  "repo": "https://github.com/jiayan-xu/dsh-memoria",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-14T14:26:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jiayan-xu/dsh-memoria",
+    "commands": [
+      "dsh plugin --profile web add github:jiayan-xu/dsh-memoria",
+      "dsh plugin --profile web add @jhp830901/dsh-memoria"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

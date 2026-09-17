@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "zoahdev/dsh-github-intelligence",
+  "slug": "zoahdev__dsh-github-intelligence",
+  "tier": "community",
+  "package": null,
+  "name": "zoahdev/dsh-github-intelligence",
+  "title": "zoahdev/dsh-github-intelligence",
+  "summary": "只读查询 16 个开发者生态的仓库、包和社区数据，帮你快速摸清项目底细。",
+  "tags": [
+    "agent",
+    "deepseek-harness",
+    "developer-tools",
+    "dsh-plugin",
+    "github",
+    "gitlab",
+    "intelligence",
+    "npm",
+    "pypi",
+    "releases",
+    "工具集成",
+    "数据分析",
+    "语义检索",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "2.8.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.8.0",
+    "publishedAt": "2026-08-15T06:57:17Z",
+    "url": "https://github.com/zoahdev/dsh-github-intelligence/releases/tag/v2.8.0"
+  },
+  "author": "zoahdev",
+  "repo": "https://github.com/zoahdev/dsh-github-intelligence",
+  "homepage": "https://zoahdev.github.io/dsh-github-intelligence/",
+  "license": "MIT",
+  "stars": 13,
+  "forks": 1,
+  "pushedAt": "2026-08-22T14:27:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-github-intelligence",
+    "commands": [
+      "dsh plugin --profile web add dsh-github-intelligence",
+      "npm install -g dsh-github-intelligence"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

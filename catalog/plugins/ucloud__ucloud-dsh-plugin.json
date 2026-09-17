@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "ucloud/ucloud-dsh-plugin",
+  "slug": "ucloud__ucloud-dsh-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "ucloud-dsh-plugin",
+  "title": "ucloud-dsh-plugin",
+  "summary": "将 UCloud CLI 技能迁移到 DeepSeek Harness，让你直接调用 UCloud 云服务命令，无需重复实现 API。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "dsh-skill",
+    "云服务",
+    "CLI集成",
+    "技能迁移"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ucloud",
+  "repo": "https://github.com/ucloud/ucloud-dsh-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-15T12:49:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ucloud/ucloud-dsh-plugin",
+    "commands": [
+      "dsh plugin --profile <profile-name> add @ucloud-ai/ucloud-dsh-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

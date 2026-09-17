@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "Quimos-M/dsh-turn-cost",
+  "slug": "quimos-m__dsh-turn-cost",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-turn-cost",
+  "title": "dsh-turn-cost",
+  "summary": "按 DeepSeek 官方价格算清每轮和整个会话花了多少钱，还能看子代理开销和分页明细。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "资源优化",
+    "可视化",
+    "模型适配"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-11T18:15:46Z",
+    "url": "https://github.com/Quimos-M/dsh-turn-cost/releases/tag/v0.1.0"
+  },
+  "author": "Quimos-M",
+  "repo": "https://github.com/Quimos-M/dsh-turn-cost",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T18:22:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Quimos-M/dsh-turn-cost",
+    "commands": [
+      "git clone https://github.com/Quimos-M/dsh-turn-cost.git ~/dsh-plugins/dsh-turn-cost",
+      "dsh plugin --profile web add link:~/dsh-plugins/dsh-turn-cost",
+      "dsh plugin --profile web add ./dsh-turn-cost-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

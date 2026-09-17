@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-model-sync",
+  "slug": "goodandready__dsh-model-sync",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-sync",
+  "title": "dsh-model-sync",
+  "summary": "自动同步各家模型服务商的最新模型列表，并实时监控账户余额，避免因额度不足导致服务中断。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "状态监控",
+    "自动化"
+  ],
+  "version": "0.3.14",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.14",
+    "publishedAt": "2026-09-13T20:25:59Z",
+    "url": "https://github.com/GooDAnDReaDY/dsh-model-sync/releases/tag/v0.3.14"
+  },
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-model-sync",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T20:25:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooDAnDReaDY/dsh-model-sync",
+    "commands": [
+      "dsh plugin --profile web add github:GooDAnDReaDY/dsh-model-sync"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

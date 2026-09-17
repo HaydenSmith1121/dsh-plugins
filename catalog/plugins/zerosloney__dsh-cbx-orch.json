@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "zerosloney/dsh-cbx-orch",
+  "slug": "zerosloney__dsh-cbx-orch",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cbx-orch",
+  "title": "dsh-cbx-orch",
+  "summary": "在 DeepSeek Harness 里直接编排多个编码 AI 助手，任务持久化、崩溃可恢复，还能自动审查和回滚。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "工作流增强",
+    "持久化队列",
+    "状态监控",
+    "多Agent协作"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zerosloney",
+  "repo": "https://github.com/zerosloney/dsh-cbx-orch",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-29T02:26:07Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zerosloney/dsh-cbx-orch",
+    "commands": [
+      "dsh plugin add --profile web dsh-cbx-orch",
+      "dsh plugin add --profile dev dsh-cbx-orch",
+      "npm install-scripts approve better-sqlite3"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

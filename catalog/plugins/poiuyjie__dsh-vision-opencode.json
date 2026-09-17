@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "poiuyjie/dsh-vision-opencode",
+  "slug": "poiuyjie__dsh-vision-opencode",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-vision-opencode",
+  "title": "dsh-vision-opencode",
+  "summary": "让 DeepSeek 看懂图片，在 OpenCode 中直接读取并理解图像内容。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "多模态",
+    "多模态支持",
+    "OpenCode 集成"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "poiuyjie",
+  "repo": "https://github.com/poiuyjie/dsh-vision-opencode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 13,
+  "forks": 1,
+  "pushedAt": "2026-09-09T15:53:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:poiuyjie/dsh-vision-opencode",
+    "commands": [
+      "dsh plugin --profile web add -w github:poiuyjie/dsh-vision-opencode",
+      "curl -fsSL https://raw.githubusercontent.com/poiuyjie/dsh-vision-opencode/main/scripts/install.sh | bash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

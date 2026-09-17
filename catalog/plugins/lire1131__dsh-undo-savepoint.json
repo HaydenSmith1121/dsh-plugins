@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "lire1131/dsh-undo-savepoint",
+  "slug": "lire1131__dsh-undo-savepoint",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-undo-savepoint",
+  "title": "dsh-undo-savepoint",
+  "summary": "DSH 崩溃救急插件：一键撤销配置和插件改动、快照备份，还能在 DSH 起不来时用离线工具救回。",
+  "tags": [
+    "backup",
+    "crash-recovery",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "powershell",
+    "rollback",
+    "snapshot",
+    "undo",
+    "windows",
+    "操作回滚",
+    "状态持久化",
+    "命令行工具",
+    "快捷操作",
+    "安全审计"
+  ],
+  "version": "0.4.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.9",
+    "publishedAt": "2026-09-16T13:13:00Z",
+    "url": "https://github.com/lire1131/dsh-undo-savepoint/releases/tag/v0.4.9"
+  },
+  "author": "lire1131",
+  "repo": "https://github.com/lire1131/dsh-undo-savepoint",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 158,
+  "forks": 7,
+  "pushedAt": "2026-09-16T13:12:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lire1131/dsh-undo-savepoint",
+    "commands": [
+      "dsh plugin --profile web add github:lire1131/dsh-undo-savepoint"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

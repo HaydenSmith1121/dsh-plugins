@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "610la/dsh-notification-center",
+  "slug": "610la__dsh-notification-center",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notification-center",
+  "title": "dsh-notification-center",
+  "summary": "切到别的窗口也不怕错过，对话/任务完成、报错或等待批准时，自动弹浏览器通知并播放提示音效。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "消息通知",
+    "音效提示",
+    "任务状态"
+  ],
+  "version": "0.1.35",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "610la",
+  "repo": "https://github.com/610la/dsh-notification-center",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 10,
+  "forks": 1,
+  "pushedAt": "2026-09-02T04:56:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@lyhalal/dsh-notification-center",
+    "commands": [
+      "dsh plugin --profile web add @lyhalal/dsh-notification-center"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "shaneconner/dsh-provider-login",
+  "slug": "shaneconner__dsh-provider-login",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-provider-login",
+  "title": "dsh-provider-login",
+  "summary": "用已有的 Claude Pro/Max 或 ChatGPT Plus/Pro 订阅登录 DeepSeek Harness 模型提供商，无需额外 API 密钥。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "shaneconner",
+  "repo": "https://github.com/shaneconner/dsh-provider-login",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T18:58:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-provider-login",
+    "commands": [
+      "dsh plugin --profile web add dsh-provider-login"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

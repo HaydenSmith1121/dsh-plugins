@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "rogerdigital/dsh-searxng",
+  "slug": "rogerdigital__dsh-searxng",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-searxng",
+  "title": "dsh-searxng",
+  "summary": "给 DeepSeek Harness 接入免费自托管的 SearXNG 搜索，无需 API 密钥，替代付费搜索服务。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "search-provider",
+    "searxng",
+    "语义检索",
+    "资源优化",
+    "零配置",
+    "插件管理"
+  ],
+  "version": "0.4.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "rogerdigital",
+  "repo": "https://github.com/rogerdigital/dsh-searxng",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-09-14T21:45:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-searxng",
+    "commands": [
+      "dsh plugin add dsh-searxng"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "zhaoxuejie/dsh-plugin-log-forwarder",
+  "slug": "zhaoxuejie__dsh-plugin-log-forwarder",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-log-forwarder",
+  "title": "dsh-plugin-log-forwarder",
+  "summary": "将 DeepSeek Harness 的 Agent 运行日志实时转发到 WebSocket、Loki 或本地文件，方便监控和排查。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "forwarder",
+    "jsonl",
+    "log",
+    "loki",
+    "plugin",
+    "websocket",
+    "状态监控",
+    "消息通知",
+    "工具集成",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "1.0.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.4",
+    "publishedAt": "2026-09-09T10:19:18Z",
+    "url": "https://github.com/zhaoxuejie/dsh-plugin-log-forwarder/releases/tag/v1.0.4"
+  },
+  "author": "zhaoxuejie",
+  "repo": "https://github.com/zhaoxuejie/dsh-plugin-log-forwarder",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T10:26:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhaoxuejie/dsh-plugin-log-forwarder",
+    "commands": [
+      "git clone https://github.com/zhaoxuejie/dsh-plugin-log-forwarder.git",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

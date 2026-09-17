@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "xsoc1/math-research-dsh",
+  "slug": "xsoc1__math-research-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "math-research-dsh",
+  "title": "math-research-dsh",
+  "summary": "把长期数学研究流程拆成四个独立技能，帮你读文献、攒工具、续任务，还能用 Lean 验证证明。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "2.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xsoc1",
+  "repo": "https://github.com/xsoc1/math-research-dsh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-09T10:21:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xsoc1/math-research-dsh",
+    "commands": [
+      "dsh plugin --profile web add github:xsoc1/math-research-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

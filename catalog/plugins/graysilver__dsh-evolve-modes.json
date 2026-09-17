@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "GraySilver/dsh-evolve-modes",
+  "slug": "graysilver__dsh-evolve-modes",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-evolve-modes",
+  "title": "dsh-evolve-modes",
+  "summary": "让 Agent 的工作方式可组合、可审查、可持续改进，实现自我进化。",
+  "tags": [
+    "acceptance-review",
+    "agent-review",
+    "ai-agents",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plan-mode",
+    "prompt-engineering",
+    "AI工具",
+    "自动化",
+    "效率提升",
+    "安全审计"
+  ],
+  "version": "0.4.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.1",
+    "publishedAt": "2026-09-14T16:25:22Z",
+    "url": "https://github.com/GraySilver/dsh-evolve-modes/releases/tag/v0.4.1"
+  },
+  "author": "GraySilver",
+  "repo": "https://github.com/GraySilver/dsh-evolve-modes",
+  "homepage": "https://www.npmjs.com/package/@graysilver/dsh-evolve-modes",
+  "license": "MIT",
+  "stars": 198,
+  "forks": 10,
+  "pushedAt": "2026-09-14T16:24:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@graysilver/dsh-evolve-modes@0.4.0",
+    "commands": [
+      "dsh plugin --profile web add @graysilver/dsh-evolve-modes@0.4.0",
+      "dsh plugin --profile web add github:GraySilver/dsh-evolve-modes"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

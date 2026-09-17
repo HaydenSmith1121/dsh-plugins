@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Zhucy123/source-code-mgmt",
+  "slug": "zhucy123__source-code-mgmt",
+  "tier": "community",
+  "package": null,
+  "name": "source-code-mgmt",
+  "title": "source-code-mgmt",
+  "summary": "把代码上传、推送和SSH配置整合进管理面板，支持GitHub/Gitee，一键搞定代码仓库管理。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "工作流增强",
+    "模型配置",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "1.21.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Zhucy123",
+  "repo": "https://github.com/Zhucy123/source-code-mgmt",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T06:04:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "source-code-mgmt",
+    "commands": [
+      "dsh plugin --profile web add source-code-mgmt"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

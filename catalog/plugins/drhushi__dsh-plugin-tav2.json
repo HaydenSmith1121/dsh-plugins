@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "Drhushi/dsh-plugin-tav2",
+  "slug": "drhushi__dsh-plugin-tav2",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-tav2",
+  "title": "dsh-plugin-tav2",
+  "summary": "跟 AI 助手聊着天就能把游戏翻译做完，从侦察、术语到打包验证一站搞定，首发支持 Ren'Py。",
+  "tags": [
+    "deepseek",
+    "dsh-plugin",
+    "game-localization",
+    "localization",
+    "renpy",
+    "translation",
+    "visual-novel",
+    "AI 助手",
+    "自动化",
+    "报告生成",
+    "工作流增强",
+    "工具集成"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-16T14:43:29Z",
+    "url": "https://github.com/Drhushi/dsh-plugin-tav2/releases/tag/v0.2.0"
+  },
+  "author": "Drhushi",
+  "repo": "https://github.com/Drhushi/dsh-plugin-tav2",
+  "homepage": "https://github.com/deepseek-ai/deepseek-harness",
+  "license": "MIT",
+  "stars": 21,
+  "forks": 1,
+  "pushedAt": "2026-09-14T12:36:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Drhushi/dsh-plugin-tav2",
+    "commands": [
+      "dsh plugin --profile web add github:Drhushi/dsh-plugin-tav2"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

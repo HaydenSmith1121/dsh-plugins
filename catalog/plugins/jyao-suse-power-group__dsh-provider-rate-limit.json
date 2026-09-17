@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "jyao-SUSE-power-group/dsh-provider-rate-limit",
+  "slug": "jyao-suse-power-group__dsh-provider-rate-limit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-provider-rate-limit",
+  "title": "dsh-provider-rate-limit",
+  "summary": "为 DeepSeek Harness 的 LLM 流量提供按供应商和模型限流，并支持网关身份规则防客户端伪造。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "安全审计",
+    "资源优化",
+    "插件管理"
+  ],
+  "version": "0.3.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jyao-SUSE-power-group",
+  "repo": "https://github.com/jyao-SUSE-power-group/dsh-provider-rate-limit",
+  "homepage": "https://awesome-dsh-plugin.com/?q=dsh-provider-rate-limit",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-06T12:18:47Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jyao-SUSE-power-group/dsh-provider-rate-limit",
+    "commands": [
+      "dsh plugin --profile web add github:jyao-SUSE-power-group/dsh-provider-rate-limit",
+      "git clone https://github.com/jyao-SUSE-power-group/dsh-provider-rate-limit.git ~/.dsh/plugins/dsh-provider-rate-limit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

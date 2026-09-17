@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "ivvan3016/dsh-ui-task-notify",
+  "slug": "ivvan3016__dsh-ui-task-notify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ui-task-notify",
+  "title": "dsh-ui-task-notify",
+  "summary": "任务跑完后自动提醒你，不用一直盯着终端看，省心又高效。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "状态监控",
+    "自动化",
+    "命令行工具",
+    "零配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ivvan3016",
+  "repo": "https://github.com/ivvan3016/dsh-ui-task-notify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T11:25:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-ui-task-notify",
+    "commands": [
+      "dsh plugin --profile web add dsh-ui-task-notify",
+      "dsh plugin --profile web add github:ivvan3016/dsh-ui-task-notify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

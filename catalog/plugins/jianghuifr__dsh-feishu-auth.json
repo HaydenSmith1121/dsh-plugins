@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "jianghuifr/dsh-feishu-auth",
+  "slug": "jianghuifr__dsh-feishu-auth",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-feishu-auth",
+  "title": "dsh-feishu-auth",
+  "summary": "给 DSH 网页界面加一道飞书登录门，没登录的人连首页和 API 都碰不到。",
+  "tags": [
+    "dsh-plugin",
+    "安全审查",
+    "工具集成",
+    "桌面自动化",
+    "插件管理"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-14T08:34:09Z",
+    "url": "https://github.com/jianghuifr/dsh-feishu-auth/releases/tag/v0.2.1"
+  },
+  "author": "jianghuifr",
+  "repo": "https://github.com/jianghuifr/dsh-feishu-auth",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T15:15:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jianghuifr/dsh-feishu-auth",
+    "commands": [
+      "dsh plugin --profile web add github:jianghuifr/dsh-feishu-auth"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

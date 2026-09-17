@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Lundly/dsh-shutdown",
+  "slug": "lundly__dsh-shutdown",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-shutdown",
+  "title": "dsh-shutdown",
+  "summary": "在 dsh 网页右上角加个关闭按钮，一键安全退出整个 dsh 进程，省得手动关标签页。",
+  "tags": [
+    "dsh-plugin",
+    "快捷操作",
+    "效率提升",
+    "前端增强",
+    "设置面板"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Lundly",
+  "repo": "https://github.com/Lundly/dsh-shutdown",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T12:57:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Lundly/dsh-shutdown",
+    "commands": [
+      "dsh plugin --profile web add github:Lundly/dsh-shutdown",
+      "dsh plugin --profile web add ./dsh-shutdown",
+      "dsh plugin --profile web list"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

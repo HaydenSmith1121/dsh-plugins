@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "feiyang-dev/dsh-mobile-remote",
+  "slug": "feiyang-dev__dsh-mobile-remote",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mobile-remote",
+  "title": "dsh-mobile-remote",
+  "summary": "手机扫码即可远程操控电脑端 DeepSeek Harness，支持一键开启控制和在线设备统计，局域网内随时随地方便操作。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "安全审计",
+    "零配置",
+    "可视化",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "1.7.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "feiyang-dev",
+  "repo": "https://github.com/feiyang-dev/dsh-mobile-remote",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-29T05:42:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@feiyang666/dsh-mobile-remote",
+    "commands": [
+      "dsh plugin --profile web add @feiyang666/dsh-mobile-remote"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

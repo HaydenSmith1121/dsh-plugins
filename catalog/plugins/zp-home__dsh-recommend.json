@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zp-home/dsh-recommend",
+  "slug": "zp-home__dsh-recommend",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-recommend",
+  "title": "dsh-recommend",
+  "summary": "透明展示 DSH 插件生态的排行与推荐，自动抓取数据、公开评分，帮你快速发现优质插件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin",
+    "rankings",
+    "recommendations",
+    "数据分析",
+    "推荐系统"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zp-home",
+  "repo": "https://github.com/zp-home/dsh-recommend",
+  "homepage": "https://github.com/zp-home/dsh-recommend",
+  "license": "MIT",
+  "stars": 20,
+  "forks": 1,
+  "pushedAt": "2026-09-16T20:16:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-recommend",
+    "commands": [
+      "dsh plugin --profile web add dsh-recommend",
+      "dsh plugin --profile web add github:zp-home/dsh-recommend",
+      "dsh plugin --profile web add D:\\路径\\dsh-recommend"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

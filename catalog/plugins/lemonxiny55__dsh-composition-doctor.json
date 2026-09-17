@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "lemonxiny55/dsh-composition-doctor",
+  "slug": "lemonxiny55__dsh-composition-doctor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-composition-doctor",
+  "title": "dsh-composition-doctor",
+  "summary": "检查 DSH 插件组合配置，提前发现依赖冲突和装配问题，让开发少踩坑。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "状态监控",
+    "工作流增强",
+    "工具集成"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-17T13:05:58Z",
+    "url": "https://github.com/lemonxiny55/dsh-composition-doctor/releases/tag/v0.2.0"
+  },
+  "author": "lemonxiny55",
+  "repo": "https://github.com/lemonxiny55/dsh-composition-doctor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T13:22:54Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lemonxiny55/dsh-composition-doctor",
+    "commands": [
+      "dsh plugin --profile web add github:lemonxiny55/dsh-composition-doctor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

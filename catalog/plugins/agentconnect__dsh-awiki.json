@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "AgentConnect/dsh-awiki",
+  "slug": "agentconnect__dsh-awiki",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-awiki",
+  "title": "dsh-awiki",
+  "summary": "为 DeepSeek Harness 提供 AWiki 身份认证与消息收发能力，集成 Rust SDK 和模型工具，方便快速接入。",
+  "tags": [
+    "dsh-plugin",
+    "安全连接",
+    "消息收发",
+    "模型工具"
+  ],
+  "version": "0.3.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.5",
+    "publishedAt": "2026-08-25T15:30:46Z",
+    "url": "https://github.com/AgentConnect/dsh-awiki/releases/tag/v0.3.5"
+  },
+  "author": "AgentConnect",
+  "repo": "https://github.com/AgentConnect/dsh-awiki",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 17,
+  "forks": 1,
+  "pushedAt": "2026-09-16T12:04:01Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@awiki/dsh-plugin@latest",
+    "commands": [
+      "dsh plugin --profile web add @awiki/dsh-plugin@latest",
+      "dsh plugin --profile web add @awiki/dsh-model-proxy@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

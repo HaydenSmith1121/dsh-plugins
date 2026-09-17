@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "whitelonng/dsh-opencode-go-pool",
+  "slug": "whitelonng__dsh-opencode-go-pool",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-opencode-go-pool",
+  "title": "dsh-opencode-go-pool",
+  "summary": "OpenCode Go 套餐多 Key 池，额度用完自动切换下一个 Key，还能在设置页看余额和重置时间。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-plugins",
+    "模型适配",
+    "资源优化",
+    "状态监控",
+    "设置面板",
+    "自动化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "whitelonng",
+  "repo": "https://github.com/whitelonng/dsh-opencode-go-pool",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-08-28T16:52:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:whitelonng/dsh-opencode-go-pool",
+    "commands": [
+      "dsh plugin --profile web add github:whitelonng/dsh-opencode-go-pool"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

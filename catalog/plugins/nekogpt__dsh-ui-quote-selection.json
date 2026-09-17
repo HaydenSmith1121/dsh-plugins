@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "nekogpt/dsh-ui-quote-selection",
+  "slug": "nekogpt__dsh-ui-quote-selection",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ui-quote-selection",
+  "title": "dsh-ui-quote-selection",
+  "summary": "在聊天中选中文字一键引用到输入框，针对特定内容继续提问，省去复制粘贴的麻烦。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "quote-selection",
+    "划词引用",
+    "会话管理",
+    "导航",
+    "上下文引用"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "nekogpt",
+  "repo": "https://github.com/nekogpt/dsh-ui-quote-selection",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-09-13T12:57:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-ui-quote-selection",
+    "commands": [
+      "dsh plugin --profile web add dsh-ui-quote-selection"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

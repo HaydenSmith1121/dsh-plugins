@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Winter-And-You-Gone/dsh-turn-fold",
+  "slug": "winter-and-you-gone__dsh-turn-fold",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-turn-fold",
+  "title": "dsh-turn-fold",
+  "summary": "把工具调用和思考过程自动折叠成步骤栏，让对话历史清爽不刷屏。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin",
+    "会话管理",
+    "效率提升",
+    "可视化",
+    "零配置"
+  ],
+  "version": "0.5.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Winter-And-You-Gone",
+  "repo": "https://github.com/Winter-And-You-Gone/dsh-turn-fold",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 12,
+  "forks": 0,
+  "pushedAt": "2026-09-08T18:29:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@winteries/dsh-turn-fold",
+    "commands": [
+      "dsh plugin --profile web add @winteries/dsh-turn-fold",
+      "dsh plugin --profile web add github:Winter-And-You-Gone/dsh-turn-fold"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

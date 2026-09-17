@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "TYEclipse/dsh-chem",
+  "slug": "tyeclipse__dsh-chem",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-chem",
+  "title": "dsh-chem",
+  "summary": "化学计算工具箱：解析化学式、算摩尔质量、质量/摩尔/粒子换算，还能算溶液浓度和pH值，零依赖开箱即用。",
+  "tags": [
+    "chemistry",
+    "deepseek-harness",
+    "dsh-plugin",
+    "molar-mass",
+    "stoichiometry",
+    "AI 助手",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-05T22:07:33Z",
+    "url": "https://github.com/TYEclipse/dsh-chem/releases/tag/v0.1.0"
+  },
+  "author": "TYEclipse",
+  "repo": "https://github.com/TYEclipse/dsh-chem",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T16:41:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TYEclipse/dsh-chem",
+    "commands": [
+      "dsh plugin --profile <profile> add github:TYEclipse/dsh-chem"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

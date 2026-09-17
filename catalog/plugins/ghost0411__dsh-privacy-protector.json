@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "ghost0411/dsh-privacy-protector",
+  "slug": "ghost0411__dsh-privacy-protector",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-privacy-protector",
+  "title": "dsh-privacy-protector",
+  "summary": "发送前自动给敏感信息打码，还能盯住敏感话题，防止聊天内容泄露隐私。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "安全审计",
+    "AI 助手",
+    "零配置",
+    "状态监控"
+  ],
+  "version": "0.3.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ghost0411",
+  "repo": "https://github.com/ghost0411/dsh-privacy-protector",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T00:45:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ghost0411/dsh-privacy-protector",
+    "commands": [
+      "dsh plugin --profile web add \"github:ghost0411/dsh-privacy-protector"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

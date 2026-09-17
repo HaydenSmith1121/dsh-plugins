@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaoxiaosrm/dsh-mattpocock-skills",
+  "slug": "xiaoxiaosrm__dsh-mattpocock-skills",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mattpocock-skills",
+  "title": "dsh-mattpocock-skills",
+  "summary": "将 Matt Pocock 的 25 个工程与效率技能打包成 DSH 插件，提升编码与工作流效率。",
+  "tags": [
+    "claude-code",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "engineering",
+    "matt-pocock",
+    "productivity",
+    "skills",
+    "工程技能",
+    "效率提升",
+    "编码辅助",
+    "工作流优化"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-05T14:22:55Z",
+    "url": "https://github.com/xiaoxiaosrm/dsh-mattpocock-skills/releases/tag/v0.4.0"
+  },
+  "author": "xiaoxiaosrm",
+  "repo": "https://github.com/xiaoxiaosrm/dsh-mattpocock-skills",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-09-05T14:22:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiaoxiaosrm/dsh-mattpocock-skills",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/xiaoxiaosrm/dsh-mattpocock-skills/releases/download/v0.4.0/mattpocock-community-dsh-engineering-skills-0.4.0.tgz",
+      "dsh plugin --profile web add file:./mattpocock-dsh-engineering"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

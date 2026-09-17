@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "zhengjy01/dsh-vercel-mcp",
+  "slug": "zhengjy01__dsh-vercel-mcp",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-vercel-mcp",
+  "title": "dsh-vercel-mcp",
+  "summary": "为 DSH 接入 Vercel 官方 MCP，通过 OAuth 2.0 安全连接，直接在对话中调用 Vercel API 管理部署和项目。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "安全审计",
+    "AI 助手",
+    "设置面板",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhengjy01",
+  "repo": "https://github.com/zhengjy01/dsh-vercel-mcp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T13:06:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhengjy01/dsh-vercel-mcp",
+    "commands": [
+      "dsh plugin --profile web add link:/path/to/dsh-vercel-mcp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Unintendedz/dsh-session-workspace",
+  "slug": "unintendedz__dsh-session-workspace",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-workspace",
+  "title": "dsh-session-workspace",
+  "summary": "将已有的 DeepSeek Harness 会话迁移到其他工作区，保留会话 ID 和聊天记录，方便整理和切换环境。",
+  "tags": [
+    "dsh-plugin",
+    "session-management",
+    "workspace",
+    "会话管理",
+    "效率提升",
+    "工作区管理",
+    "命令行工具"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Unintendedz",
+  "repo": "https://github.com/Unintendedz/dsh-session-workspace",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T15:39:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Unintendedz/dsh-session-workspace",
+    "commands": [
+      "dsh plugin --profile web add github:Unintendedz/dsh-session-workspace"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

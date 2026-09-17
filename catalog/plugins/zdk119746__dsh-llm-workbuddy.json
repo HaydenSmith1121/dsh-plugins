@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zdk119746/dsh-llm-workbuddy",
+  "slug": "zdk119746__dsh-llm-workbuddy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-workbuddy",
+  "title": "dsh-llm-workbuddy",
+  "summary": "在 DSH 里直接调用 WorkBuddy 的模型，让工作流更顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "模型适配",
+    "零配置",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.1.17",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zdk119746",
+  "repo": "https://github.com/zdk119746/dsh-llm-workbuddy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-11T10:59:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-llm-workbuddy",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-llm-workbuddy",
+      "dsh plugin add dsh-llm-workbuddy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

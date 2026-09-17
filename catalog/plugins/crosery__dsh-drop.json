@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "Crosery/dsh-drop",
+  "slug": "crosery__dsh-drop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-drop",
+  "title": "dsh-drop",
+  "summary": "把文件拖进或粘贴到 DeepSeek Harness 网页里，图片和文件统一预览，发送时才自动带上引用，省心又顺手。",
+  "tags": [
+    "deepseek-harness",
+    "drag-and-drop",
+    "dsh-plugin",
+    "typescript",
+    "效率提升",
+    "可视化",
+    "工作流增强",
+    "视觉理解"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-09-11T17:17:20Z",
+    "url": "https://github.com/Crosery/dsh-drop/releases/tag/v0.1.3"
+  },
+  "author": "Crosery",
+  "repo": "https://github.com/Crosery/dsh-drop",
+  "homepage": "https://github.com/Crosery/dsh-drop#readme",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T17:16:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Crosery/dsh-drop",
+    "commands": [
+      "dsh plugin --profile web add github:Crosery/dsh-drop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

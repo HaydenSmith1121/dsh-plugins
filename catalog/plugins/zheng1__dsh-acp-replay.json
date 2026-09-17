@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "zheng1/dsh-acp-replay",
+  "slug": "zheng1__dsh-acp-replay",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-acp-replay",
+  "title": "dsh-acp-replay",
+  "summary": "让客户端重启后也能重新加载会话记录，把之前的对话内容完整恢复出来。",
+  "tags": [
+    "acp",
+    "agent-client-protocol",
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "模型配置",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zheng1",
+  "repo": "https://github.com/zheng1/dsh-acp-replay",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T16:12:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-acp-replay",
+    "commands": [
+      "dsh plugin --profile acp-replay add dsh-acp-replay"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "HuanLinOTO/dsh-plugin-sleep",
+  "slug": "huanlinoto__dsh-plugin-sleep",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-sleep",
+  "title": "dsh-plugin-sleep",
+  "summary": "给模型加一个 sleep 工具，按指定毫秒暂停执行，支持取消和上限限制，适合等待服务重启、debounce 或重试退避等场景。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控"
+  ],
+  "version": "0.1.5",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "HuanLinOTO",
+  "repo": "https://github.com/HuanLinOTO/dsh-plugin-sleep",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 10,
+  "forks": 0,
+  "pushedAt": "2026-09-11T11:49:38Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@huanlin/dsh-plugin-sleep",
+    "commands": [
+      "dsh plugin --profile web add @huanlin/dsh-plugin-sleep",
+      "dsh plugin --profile web add link:D:\\Projects\\deepseek-harness\\dsh-sleep"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

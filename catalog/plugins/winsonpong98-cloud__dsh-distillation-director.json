@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "winsonpong98-cloud/dsh-distillation-director",
+  "slug": "winsonpong98-cloud__dsh-distillation-director",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-distillation-director",
+  "title": "dsh-distillation-director",
+  "summary": "把一本书蒸馏成一组可执行的 Agent 技能，三道闸门把关，只判态不打分，零红灯才放行。",
+  "tags": [
+    "agent-skills",
+    "deepseek-harness",
+    "distillation",
+    "dsh-plugin",
+    "knowledge-distillation",
+    "内容创作",
+    "自动化",
+    "工作流增强",
+    "多Agent协作",
+    "报告生成"
+  ],
+  "version": "4.6.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v4.6.6",
+    "publishedAt": "2026-09-15T05:26:54Z",
+    "url": "https://github.com/winsonpong98-cloud/dsh-distillation-director/releases/tag/v4.6.6"
+  },
+  "author": "winsonpong98-cloud",
+  "repo": "https://github.com/winsonpong98-cloud/dsh-distillation-director",
+  "homepage": null,
+  "license": "AGPL-3.0",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T18:53:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:winsonpong98-cloud/dsh-distillation-director",
+    "commands": [
+      "dsh plugin add <你下载到的 dsh-distillation-director-v4.6.5.tgz 路径>",
+      "dsh plugin --profile web add github:winsonpong98-cloud/dsh-distillation-director",
+      "dsh plugin add dsh-distillation-director"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

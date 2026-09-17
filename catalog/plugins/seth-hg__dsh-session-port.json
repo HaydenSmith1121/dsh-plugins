@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "seth-hg/dsh-session-port",
+  "slug": "seth-hg__dsh-session-port",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-port",
+  "title": "dsh-session-port",
+  "summary": "把整个会话连同日志、子代理和文件打包成一个 ZIP，随时迁移到其他 DeepSeek Harness 环境恢复使用。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "工作区管理",
+    "零配置"
+  ],
+  "version": "0.1.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "seth-hg",
+  "repo": "https://github.com/seth-hg/dsh-session-port",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T15:44:46Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:seth-hg/dsh-session-port",
+    "commands": [
+      "dsh plugin --profile web add \"github:seth-hg/dsh-session-port\"",
+      "dsh plugin --profile web add \"github:seth-hg/dsh-session-port",
+      "dsh plugin --profile web add /path/to/dsh-session-port"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

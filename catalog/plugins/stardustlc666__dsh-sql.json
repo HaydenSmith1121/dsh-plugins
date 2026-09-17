@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "STARDUSTLC666/dsh-sql",
+  "slug": "stardustlc666__dsh-sql",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sql",
+  "title": "dsh-sql",
+  "summary": "让 DeepSeek Harness 智能体直接查库：支持 SQLite/MySQL/PostgreSQL，只读查询、写操作审批、表结构探查，安全又省心。",
+  "tags": [
+    "database",
+    "deepseek-harness",
+    "dsh-plugin",
+    "sql",
+    "sqlite",
+    "模型适配",
+    "安全审计",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.4.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "STARDUSTLC666",
+  "repo": "https://github.com/STARDUSTLC666/dsh-sql",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 2,
+  "pushedAt": "2026-09-12T10:15:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-sql",
+    "commands": [
+      "dsh plugin --profile web add dsh-sql"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

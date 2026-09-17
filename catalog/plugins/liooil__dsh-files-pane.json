@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "liooil/dsh-files-pane",
+  "slug": "liooil__dsh-files-pane",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-files-pane",
+  "title": "dsh-files-pane",
+  "summary": "在 DSH 网页界面里直接浏览宿主机文件，两栏目录导航加就地阅读，不用切窗口。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "file-browser",
+    "文件管理",
+    "前端增强",
+    "工具集成",
+    "可视化"
+  ],
+  "version": "1.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.1",
+    "publishedAt": "2026-09-10T07:27:03Z",
+    "url": "https://github.com/liooil/dsh-files-pane/releases/tag/v1.0.1"
+  },
+  "author": "liooil",
+  "repo": "https://github.com/liooil/dsh-files-pane",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T07:26:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:liooil/dsh-files-pane",
+    "commands": [
+      "git clone https://github.com/liooil/dsh-files-pane ~/.dsh/plugins/dsh-files-pane"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

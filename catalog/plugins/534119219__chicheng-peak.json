@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "534119219/chicheng-peak",
+  "slug": "534119219__chicheng-peak",
+  "tier": "community",
+  "package": null,
+  "name": "chicheng-peak",
+  "title": "chicheng-peak",
+  "summary": "实时感知 DeepSeek 官方峰谷时段，高峰橙色、低峰蓝色呼吸边框提醒，支持服务端推送自定义消息，让你不错过低价时段。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "峰谷提醒",
+    "呼吸边框",
+    "消息通知",
+    "时段感知"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "534119219",
+  "repo": "https://github.com/534119219/chicheng-peak",
+  "homepage": "https://github.com/534119219/chicheng-peak-valley#readme",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-26T14:46:39Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:534119219/chicheng-peak",
+    "commands": [
+      "dsh plugin --profile web add D:\\Harness\\chicheng-peak"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

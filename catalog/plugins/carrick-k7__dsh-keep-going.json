@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "Carrick-K7/dsh-keep-going",
+  "slug": "carrick-k7__dsh-keep-going",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-keep-going",
+  "title": "dsh-keep-going",
+  "summary": "重启 DSH 也不怕对话中断，正在进行的回答会先写完，重启后自动唤醒被打断的会话继续干。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "自动化",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "0.2.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "0.2.5",
+    "publishedAt": "2026-09-13T00:34:37Z",
+    "url": "https://github.com/Carrick-K7/dsh-keep-going/releases/tag/0.2.5"
+  },
+  "author": "Carrick-K7",
+  "repo": "https://github.com/Carrick-K7/dsh-keep-going",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T00:34:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Carrick-K7/dsh-keep-going",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/Carrick-K7/dsh-keep-going.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

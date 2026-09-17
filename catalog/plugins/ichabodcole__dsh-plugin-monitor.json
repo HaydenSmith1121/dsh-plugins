@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "ichabodcole/dsh-plugin-monitor",
+  "slug": "ichabodcole__dsh-plugin-monitor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-monitor",
+  "title": "dsh-plugin-monitor",
+  "summary": "给 DeepSeek Harness 装上后台监控，实时把命令输出或 WebSocket 消息推给你，随时掌握运行状态。",
+  "tags": [
+    "agent-tools",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "自动化",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-26T05:43:10Z",
+    "url": "https://github.com/ichabodcole/dsh-plugin-monitor/releases/tag/v0.1.1"
+  },
+  "author": "ichabodcole",
+  "repo": "https://github.com/ichabodcole/dsh-plugin-monitor",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-26T18:23:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ichabodcole/dsh-plugin-monitor",
+    "commands": [
+      "dsh plugin --profile dev add /path/to/dsh-plugin-monitor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

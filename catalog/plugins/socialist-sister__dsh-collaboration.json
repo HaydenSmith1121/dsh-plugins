@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "Socialist-Sister/dsh-collaboration",
+  "slug": "socialist-sister__dsh-collaboration",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-collaboration",
+  "title": "dsh-collaboration",
+  "summary": "多智能体协作套件，可配置专家团队，随时召唤成员协作、对比模型，提升任务处理效率。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "multi-agent",
+    "多Agent协作",
+    "任务编排",
+    "会话管理",
+    "状态监控",
+    "零配置"
+  ],
+  "version": "0.5.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.2",
+    "publishedAt": "2026-08-16T11:50:23Z",
+    "url": "https://github.com/Socialist-Sister/dsh-collaboration/releases/tag/v0.5.2"
+  },
+  "author": "Socialist-Sister",
+  "repo": "https://github.com/Socialist-Sister/dsh-collaboration",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-19T10:55:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Socialist-Sister/dsh-collaboration",
+    "commands": [
+      "dsh plugin --profile web add github:Socialist-Sister/dsh-collaboration"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

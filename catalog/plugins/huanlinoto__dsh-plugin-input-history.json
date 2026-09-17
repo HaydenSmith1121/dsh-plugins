@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "HuanLinOTO/dsh-plugin-input-history",
+  "slug": "huanlinoto__dsh-plugin-input-history",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-input-history",
+  "title": "dsh-plugin-input-history",
+  "summary": "在输入框按上下键即可快速翻阅并复用历史提示词，告别重复输入，跨会话自动保存记忆。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.3.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "HuanLinOTO",
+  "repo": "https://github.com/HuanLinOTO/dsh-plugin-input-history",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T11:49:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@huanlin/dsh-plugin-input-history",
+    "commands": [
+      "dsh plugin --profile web add @huanlin/dsh-plugin-input-history",
+      "dsh plugin --profile web add github:huanlinoto/dsh-plugin-input-history",
+      "dsh plugin --profile web add link:D:/Projects/deepseek-harness/dsh-plugin-input-history"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "THU-MAIC/dsh-openmaic",
+  "slug": "thu-maic__dsh-openmaic",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-openmaic",
+  "title": "dsh-openmaic",
+  "summary": "把 OpenMAIC 带进 DeepSeek Harness，提供课堂、幻灯片、交互组件和苏格拉底式教学工具，让 AI 辅助教学更生动。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "openmaic",
+    "教育辅助",
+    "报告生成",
+    "交互组件",
+    "教学工具"
+  ],
+  "version": "0.4.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "THU-MAIC",
+  "repo": "https://github.com/THU-MAIC/dsh-openmaic",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 75,
+  "forks": 13,
+  "pushedAt": "2026-08-13T13:27:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:THU-MAIC/dsh-openmaic",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/THU-MAIC/dsh-openmaic.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-gitea",
+  "slug": "goodandready__dsh-gitea",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-gitea",
+  "title": "dsh-gitea",
+  "summary": "在 DeepSeek Harness 中直接管理 Gitea/Forgejo 的议题、PR、CI、发布和运维操作，让开发流程更顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "工作流增强",
+    "安全审计",
+    "自动化",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.7.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.7",
+    "publishedAt": "2026-09-17T15:41:22Z",
+    "url": "https://github.com/GooDAnDReaDY/dsh-gitea/releases/tag/v0.7.7"
+  },
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-gitea",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 1,
+  "pushedAt": "2026-09-15T19:21:56Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooDAnDReaDY/dsh-gitea",
+    "commands": [
+      "dsh plugin --profile web add github:GooDAnDReaDY/dsh-gitea"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

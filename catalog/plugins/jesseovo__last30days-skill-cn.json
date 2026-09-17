@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "Jesseovo/last30days-skill-cn",
+  "slug": "jesseovo__last30days-skill-cn",
+  "tier": "community",
+  "package": null,
+  "name": "last30days-skill-cn",
+  "title": "last30days-skill-cn",
+  "summary": "自动搜遍国内 8 大平台近 30 天内容，帮你整理成有据可查的研究报告。",
+  "tags": [
+    "claude-code",
+    "dsh-plugin",
+    "openclaw",
+    "openclaw-skills",
+    "rednotebook",
+    "research",
+    "tiktok",
+    "web-search",
+    "内容创作",
+    "数据分析",
+    "AI 助手",
+    "自动化",
+    "工具集成"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Jesseovo",
+  "repo": "https://github.com/Jesseovo/last30days-skill-cn",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 1793,
+  "forks": 189,
+  "pushedAt": "2026-07-20T08:55:57Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Jesseovo/last30days-skill-cn",
+    "commands": [
+      "npx skills add Jesseovo/last30days-skill-cn -g",
+      "git clone https://github.com/Jesseovo/last30days-skill-cn.git",
+      "git clone https://github.com/Jesseovo/last30days-skill-cn.git ~/.claude/skills/last30days-cn"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

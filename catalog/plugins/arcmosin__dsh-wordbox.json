@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "arcmosin/dsh-wordbox",
+  "slug": "arcmosin__dsh-wordbox",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wordbox",
+  "title": "dsh-wordbox",
+  "summary": "在对话输入框旁常驻常用词/短语面板，支持全局与当前项目分组，一键插入，提升输入效率。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "输入效率",
+    "常用短语",
+    "快捷插入",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "arcmosin",
+  "repo": "https://github.com/arcmosin/dsh-wordbox",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-14T07:20:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-wordbox",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh",
+      "dsh plugin --profile web add dsh-wordbox",
+      "dsh plugin --profile web add github:arcmosin/dsh-wordbox"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

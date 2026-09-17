@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "f0909172434/dsh-plugin-verified-search",
+  "slug": "f0909172434__dsh-plugin-verified-search",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-verified-search",
+  "title": "dsh-plugin-verified-search",
+  "summary": "为 DeepSeek Harness 提供带时效性验证的联网搜索，确保结果来自当前可靠来源。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "freshness",
+    "web-search",
+    "状态监控",
+    "语义检索",
+    "模型配置",
+    "工作流增强"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-13T22:23:18Z",
+    "url": "https://github.com/f0909172434/dsh-plugin-verified-search/releases/tag/v0.1.1"
+  },
+  "author": "f0909172434",
+  "repo": "https://github.com/f0909172434/dsh-plugin-verified-search",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-05T05:00:30Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:f0909172434/dsh-plugin-verified-search",
+    "commands": [
+      "dsh plugin --profile web add github:f0909172434/dsh-plugin-verified-search"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "dat-lequoc/dsh-kiro",
+  "slug": "dat-lequoc__dsh-kiro",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-kiro",
+  "title": "dsh-kiro",
+  "summary": "为 DeepSeek Harness 接入 Kiro 模型，支持 Builder ID 登录、实时发现模型并调节推理强度。",
+  "tags": [
+    "aws",
+    "claude",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "kiro",
+    "kiro-cli",
+    "kiro2api",
+    "oauth",
+    "opus",
+    "reasoning",
+    "模型配置",
+    "安全审计",
+    "命令行工具",
+    "零配置"
+  ],
+  "version": "0.1.19",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.19",
+    "publishedAt": "2026-08-25T20:13:23Z",
+    "url": "https://github.com/dat-lequoc/dsh-kiro/releases/tag/v0.1.19"
+  },
+  "author": "dat-lequoc",
+  "repo": "https://github.com/dat-lequoc/dsh-kiro",
+  "homepage": "https://github.com/dat-lequoc/dsh-kiro#readme",
+  "license": "MIT",
+  "stars": 5,
+  "forks": 5,
+  "pushedAt": "2026-09-10T09:44:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dat-lequoc/dsh-kiro",
+    "commands": [
+      "dsh plugin --profile web add github:dat-lequoc/dsh-kiro"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

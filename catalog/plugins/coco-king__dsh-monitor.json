@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Coco-king/dsh-monitor",
+  "slug": "coco-king__dsh-monitor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-monitor",
+  "title": "dsh-monitor",
+  "summary": "会话费用实时角标，按模型厂商查用量余额，官方价格一键同步，双币种账单一目了然。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "状态监控",
+    "资源优化",
+    "模型配置",
+    "可视化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Coco-king",
+  "repo": "https://github.com/Coco-king/dsh-monitor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T16:51:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Coco-king/dsh-monitor",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/Coco-king/dsh-monitor.git",
+      "dsh plugin --profile web add https://gitee.com/kkcoco/dsh-monitor.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

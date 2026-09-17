@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zoumutou/dsh-attachment-downscale",
+  "slug": "zoumutou__dsh-attachment-downscale",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-attachment-downscale",
+  "title": "dsh-attachment-downscale",
+  "summary": "图片附件超限时自动压缩降级，解决上传手机原图被拒的问题，省心省力。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "image",
+    "资源优化",
+    "自动化",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zoumutou",
+  "repo": "https://github.com/zoumutou/dsh-attachment-downscale",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-22T14:34:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-attachment-downscale",
+    "commands": [
+      "dsh plugin --profile web add dsh-attachment-downscale",
+      "dsh plugin --profile web add github:zoumutou/dsh-attachment-downscale"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

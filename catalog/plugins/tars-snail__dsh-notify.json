@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "TARS-snail/dsh-notify",
+  "slug": "tars-snail__dsh-notify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notify",
+  "title": "dsh-notify",
+  "summary": "会话在后台跑长任务时，完成或需要你回应时发桌面通知并响铃，不错过关键节点。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "状态监控",
+    "消息通知",
+    "自动化"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "TARS-snail",
+  "repo": "https://github.com/TARS-snail/dsh-notify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T01:51:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:you/dsh-notify",
+    "commands": [
+      "npm install",
+      "dsh plugin --profile web add /path/to/DSH_remind",
+      "dsh plugin --profile web add github:you/dsh-notify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

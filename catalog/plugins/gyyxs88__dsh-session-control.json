@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "gyyxs88/dsh-session-control",
+  "slug": "gyyxs88__dsh-session-control",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-control",
+  "title": "dsh-session-control",
+  "summary": "为 DeepSeek Harness 提供受权、持久的跨会话控制，支持会话管理、权限审批与定时任务，确保操作可审计可恢复。",
+  "tags": [
+    "cordis",
+    "cross-session",
+    "deepseek-harness",
+    "dsh",
+    "session-control",
+    "会话管理",
+    "安全审计",
+    "自动化",
+    "插件管理",
+    "文件管理"
+  ],
+  "version": "0.8.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.2",
+    "publishedAt": "2026-09-12T06:37:26Z",
+    "url": "https://github.com/gyyxs88/dsh-session-control/releases/tag/v0.8.2"
+  },
+  "author": "gyyxs88",
+  "repo": "https://github.com/gyyxs88/dsh-session-control",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T06:37:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:gyyxs88/dsh-session-control",
+    "commands": [
+      "dsh plugin --profile web add github:gyyxs88/dsh-session-control"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

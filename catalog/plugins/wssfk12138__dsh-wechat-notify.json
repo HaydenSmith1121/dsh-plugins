@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "wssfk12138/dsh-wechat-notify",
+  "slug": "wssfk12138__dsh-wechat-notify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wechat-notify",
+  "title": "dsh-wechat-notify",
+  "summary": "让 AI 通过微信主动给你发通知，任务完成或需要决策时及时提醒，掉线还会自己提示。",
+  "tags": [
+    "clawbot",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "notification",
+    "wechat",
+    "wechat-notify",
+    "工具集成",
+    "状态监控",
+    "AI 助手",
+    "效率提升",
+    "跨设备"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-25T01:09:52Z",
+    "url": "https://github.com/wssfk12138/dsh-wechat-notify/releases/tag/v0.2.0"
+  },
+  "author": "wssfk12138",
+  "repo": "https://github.com/wssfk12138/dsh-wechat-notify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 0,
+  "pushedAt": "2026-08-25T01:09:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wssfk12138/dsh-wechat-notify",
+    "commands": [
+      "dsh plugin --profile web add github:wssfk12138/dsh-wechat-notify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

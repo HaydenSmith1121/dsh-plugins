@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "invalidnaaaame/dsh-side-workspace",
+  "slug": "invalidnaaaame__dsh-side-workspace",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-side-workspace",
+  "title": "dsh-side-workspace",
+  "summary": "在 DSH 里开侧边对话、记置顶笔记，还能把子任务和目标面板整合到右侧工作区，像 Codex 一样顺手。",
+  "tags": [
+    "chatgpt",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "侧边对话",
+    "置顶笔记",
+    "工作区整合",
+    "子任务管理",
+    "目标面板"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-14T21:10:19Z",
+    "url": "https://github.com/invalidnaaaame/dsh-side-workspace/releases/tag/v0.2.0"
+  },
+  "author": "invalidnaaaame",
+  "repo": "https://github.com/invalidnaaaame/dsh-side-workspace",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-23T14:39:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:invalidnaaaame/dsh-side-workspace",
+    "commands": [
+      "dsh plugin --profile web add github:invalidnaaaame/dsh-side-workspace"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "nefevcore/dsh-adt",
+  "slug": "nefevcore__dsh-adt",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-adt",
+  "title": "dsh-adt",
+  "summary": "把 ABAP 开发工具接入 DeepSeek Harness，让你在 SAP 开发中直接用上 AI 辅助，提升编码效率。",
+  "tags": [
+    "adt",
+    "dsh-plugin",
+    "sap",
+    "效率提升",
+    "工作流增强",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "0.10.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "nefevcore",
+  "repo": "https://github.com/nefevcore/dsh-adt",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T12:38:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@nefevcore/abap-adt-dsh-plugin",
+    "commands": [
+      "dsh plugin --profile web add @nefevcore/abap-adt-dsh-plugin",
+      "dsh plugin --profile web exec abap-adt-preset",
+      "dsh plugin --profile web update @nefevcore/abap-adt-dsh-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

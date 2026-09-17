@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "FeatherHunter/dsh-prompt",
+  "slug": "featherhunter__dsh-prompt",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt",
+  "title": "dsh-prompt",
+  "summary": "Prompt 工具箱：24 条深度模板一键插入对话，支持 /prompt 和智能推荐，装好即用可自定义。",
+  "tags": [
+    "ai",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm",
+    "productivity",
+    "prompt",
+    "prompt-engineering",
+    "templates",
+    "效率提升",
+    "AI 助手",
+    "零配置",
+    "工作流增强",
+    "命令行工具"
+  ],
+  "version": "0.1.12",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.12",
+    "publishedAt": "2026-09-16T15:13:16Z",
+    "url": "https://github.com/FeatherHunter/dsh-prompt/releases/tag/v0.1.12"
+  },
+  "author": "FeatherHunter",
+  "repo": "https://github.com/FeatherHunter/dsh-prompt",
+  "homepage": "https://www.npmjs.com/package/dsh-prompt",
+  "license": "MIT",
+  "stars": 12,
+  "forks": 0,
+  "pushedAt": "2026-09-16T15:13:00Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-prompt",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh",
+      "dsh plugin --profile web add dsh-prompt",
+      "dsh plugin --profile desktop add dsh-prompt"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

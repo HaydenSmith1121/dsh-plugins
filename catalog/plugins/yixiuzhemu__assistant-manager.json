@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "yixiuzhemu/Assistant-Manager",
+  "slug": "yixiuzhemu__assistant-manager",
+  "tier": "community",
+  "package": null,
+  "name": "Assistant-Manager",
+  "title": "Assistant-Manager",
+  "summary": "在设置面板里统一管理你的 AI 助手档案，随时切换、编辑，还能直接接入聊天使用。",
+  "tags": [
+    "assisstant",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "AI 助手",
+    "设置面板",
+    "插件管理",
+    "会话管理",
+    "工作区管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yixiuzhemu",
+  "repo": "https://github.com/yixiuzhemu/Assistant-Manager",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T07:24:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@assistant-manager/assistant-manager",
+    "commands": [
+      "dsh plugin --profile web add @assistant-manager/assistant-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "WaveSpeedAI/wavespeed-dsh-skill",
+  "slug": "wavespeedai__wavespeed-dsh-skill",
+  "tier": "community",
+  "package": null,
+  "name": "wavespeed-dsh-skill",
+  "title": "wavespeed-dsh-skill",
+  "summary": "在DeepSeek Harness中直接调用命令行，快速生成和编辑AI图片、视频、音频及3D内容。",
+  "tags": [
+    "ai-image-generation",
+    "ai-video-generation",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-skill",
+    "命令行工具",
+    "多模态",
+    "任务编排"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "WaveSpeedAI",
+  "repo": "https://github.com/WaveSpeedAI/wavespeed-dsh-skill",
+  "homepage": "https://wavespeed.ai",
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-05T14:36:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:WaveSpeedAI/wavespeed-dsh-skill",
+    "commands": [
+      "dsh plugin --profile web add github:WaveSpeedAI/wavespeed-dsh-skill",
+      "git clone --depth 1 https://github.com/WaveSpeedAI/wavespeed-dsh-skill /tmp/wss \\"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "ai-yukin/dsh-0-tools",
+  "slug": "ai-yukin__dsh-0-tools",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-0-tools",
+  "title": "dsh-0-tools",
+  "summary": "小白零门槛套件，一键装好 DSH 并免费接入大模型，不用花钱不用折腾。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "零配置",
+    "模型配置",
+    "效率提升",
+    "命令行工具"
+  ],
+  "version": "1.8.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.8.5",
+    "publishedAt": "2026-09-03T13:43:25Z",
+    "url": "https://github.com/ai-yukin/dsh-0-tools/releases/tag/v1.8.5"
+  },
+  "author": "ai-yukin",
+  "repo": "https://github.com/ai-yukin/dsh-0-tools",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-03T13:34:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ai-yukin/dsh-0-tools",
+    "commands": [
+      "dsh plugin --profile web add github:ai-yukin/dsh-0-tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

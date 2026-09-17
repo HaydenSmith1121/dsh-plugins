@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "wxyzh/dsh-auth-proxy",
+  "slug": "wxyzh__dsh-auth-proxy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auth-proxy",
+  "title": "dsh-auth-proxy",
+  "summary": "给 DSH Web 界面加一道静态令牌登录墙，保护内网服务不被随意访问，无需改动源码。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "鉴权认证",
+    "安全审计",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wxyzh",
+  "repo": "https://github.com/wxyzh/dsh-auth-proxy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T13:10:59Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@wxyzh/dsh-auth-proxy",
+    "commands": [
+      "dsh plugin --profile web add @wxyzh/dsh-auth-proxy",
+      "dsh plugin --profile web add github:wxyzh/dsh-auth-proxy",
+      "dsh plugin --profile web add link:<abs 路径>/dsh-auth-proxy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

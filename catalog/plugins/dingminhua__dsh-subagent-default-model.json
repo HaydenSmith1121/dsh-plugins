@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "dingminhua/dsh-subagent-default-model",
+  "slug": "dingminhua__dsh-subagent-default-model",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subagent-default-model",
+  "title": "dsh-subagent-default-model",
+  "summary": "给子代理统一指定默认模型，还能按轮询或随机策略在多模型间切换。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "模型适配",
+    "多Agent协作",
+    "设置面板",
+    "模型配置",
+    "效率提升"
+  ],
+  "version": "1.2.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dingminhua",
+  "repo": "https://github.com/dingminhua/dsh-subagent-default-model",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T22:58:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-subagent-default-model",
+    "commands": [
+      "dsh plugin --profile desktop add dsh-subagent-default-model",
+      "npm install dsh-subagent-default-model"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

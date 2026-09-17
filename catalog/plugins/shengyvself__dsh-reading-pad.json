@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "shengyvself/dsh-reading-pad",
+  "slug": "shengyvself__dsh-reading-pad",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-reading-pad",
+  "title": "dsh-reading-pad",
+  "summary": "把模型排好版的 Markdown 变成沉浸式只读阅读面板，护眼主题、进度条、章节浏览一应俱全。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-better-sidebar",
+    "dsh-plugin",
+    "reading",
+    "reading-pad",
+    "报告生成",
+    "主题",
+    "界面美化",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-13T08:37:33Z",
+    "url": "https://github.com/shengyvself/dsh-reading-pad/releases/tag/v0.1.0"
+  },
+  "author": "shengyvself",
+  "repo": "https://github.com/shengyvself/dsh-reading-pad",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-13T08:36:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shengyvself/dsh-reading-pad",
+    "commands": [
+      "dsh plugin --profile web add github:shengyvself/dsh-reading-pad"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

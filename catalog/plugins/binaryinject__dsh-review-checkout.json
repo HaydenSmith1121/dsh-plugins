@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Binaryinject/dsh-review-checkout",
+  "slug": "binaryinject__dsh-review-checkout",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-review-checkout",
+  "title": "dsh-review-checkout",
+  "summary": "审查并确认会话中的修改，防止误操作，适合需要严格把控变更的场景。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "会话管理",
+    "安全审计",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.7.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Binaryinject",
+  "repo": "https://github.com/Binaryinject/dsh-review-checkout",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 2,
+  "pushedAt": "2026-09-14T15:11:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-review-checkout",
+    "commands": [
+      "dsh plugin add dsh-review-checkout"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

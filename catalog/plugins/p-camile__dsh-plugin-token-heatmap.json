@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "P-CAmilE/dsh-plugin-token-heatmap",
+  "slug": "p-camile__dsh-plugin-token-heatmap",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-token-heatmap",
+  "title": "dsh-plugin-token-heatmap",
+  "summary": "在 DeepSeek Harness 网页界面里，用热力图直观展示每日 Token 消耗量，点击右下角图标即可查看全局或当前会话的用量趋势。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "heatmap",
+    "token-usage",
+    "可视化",
+    "状态监控",
+    "前端增强",
+    "资源优化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "P-CAmilE",
+  "repo": "https://github.com/P-CAmilE/dsh-plugin-token-heatmap",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T04:33:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-token-heatmap",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-token-heatmap"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "luern0313/DSH-Cache-Hit-Precision",
+  "slug": "luern0313__dsh-cache-hit-precision",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-Cache-Hit-Precision",
+  "title": "DSH-Cache-Hit-Precision",
+  "summary": "让 DSH 状态栏的缓存命中率显示两位小数，数据更精确，一眼看清缓存效果。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "主题",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "luern0313",
+  "repo": "https://github.com/luern0313/DSH-Cache-Hit-Precision",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-09-13T09:41:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:luern0313/DSH-Cache-Hit-Precision",
+    "commands": [
+      "dsh plugin --profile web add github:luern0313/DSH-Cache-Hit-Precision",
+      "git clone https://github.com/luern0313/DSH-Cache-Hit-Precision.git",
+      "dsh plugin --profile web add ./DSH-Cache-Hit-Precision"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "wave-av/wave-runtime-registry",
+  "slug": "wave-av__wave-runtime-registry",
+  "tier": "community",
+  "package": null,
+  "name": "wave-runtime-registry",
+  "title": "wave-runtime-registry",
+  "summary": "WAVE 官方维护的插件精选索引，按星级和评测结果帮你快速找到靠谱的 dsh 插件。",
+  "tags": [
+    "agent-runtime",
+    "dsh-plugin",
+    "wave",
+    "插件管理",
+    "状态监控"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "wave-av",
+  "repo": "https://github.com/wave-av/wave-runtime-registry",
+  "homepage": "https://wave.online",
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T18:34:41Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wave-av/wave-runtime-registry",
+    "commands": [
+      "dsh plugin --profile web add github:wave-av/wave-runtime-registry"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

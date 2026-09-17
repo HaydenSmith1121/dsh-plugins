@@ -1,47 +1,49 @@
-# DeepSeek Harness — web profile plugin manifest (exported snapshot)
-# Source machine: C:\Users\Administrator\.dsh\profiles\web\package.json
-# Exported: see ../plugins/<name>/*.tgz  (11 user-installed plugins as npm tarballs)
+# web profile 的 bundle 层级顺序 —— 参考快照，不是安装清单
 #
-# This records the EXACT bundle layer order dsh boots. Do not reorder:
-# @deepseek-ai/dsh-base and @deepseek-ai/dsh-web-app are in-box bundles shipped
-# with the dsh CLI (not packaged here). The remaining 11 are the user plugins
-# to install from ../plugins/<name>/ on the new machine.
+# ★ 自 0.4.0（市场与插件分离）起，这个文件**不再是「要装哪些插件」的清单**。
+#
+#   插件本体在另一个仓库：https://github.com/HaydenSmith1121/dsh-plugin-collection
+#   装哪些、装什么版本，由 dsh 插件市场面板按 catalog/plugins/<slug>.json 决定；
+#   引导脚本 scripts/install.* 只装一个插件（dsh-plugins-market 自己）。
+#
+#   这里保留的是**一件事**：profile 的 dsh.profile.bundles 里，层级顺序长什么样。
+#   顺序即层级 —— 后加载的 bundle 可以 patch 先加载的，反过来不行。所以
+#   市场必须排在最后（它要能看到前面所有 bundle 装配出来的东西）。
+#
+#   机器可读的事实来源是仓库根的 compatibility.json → runtimes[].bundles，
+#   scripts/verify.mjs 就是拿它来核对顺序的。这个文件是给人看的快照。
 
 profile: web
 patchReload: live
 
-# In-box bundles (come with dsh CLI, do NOT install from tarballs):
+# 内置 bundle：随 dsh CLI 一起来，**不是**从插件仓库装的
 inBoxBundles:
   - "@deepseek-ai/dsh-base"
   - "@deepseek-ai/dsh-web-app"
 
-# User plugins — install order = top-to-bottom. The final dsh.profile.bundles
-# array must list all 13 (in-box + user) in this order:
-userBundles:
-  - "@dsh-market/plugin"          # tarball: dsh-market-plugin-0.4.8.tgz
-  - "dsh-workbuddy-connect"       # tarball: dsh-workbuddy-connect-0.5.3.tgz
-  - "dsh-opencode-go-plus"        # tarball: dsh-opencode-go-plus-0.3.0.tgz  (repo-maintained fork; replaces dsh-opencode-go)
-  - "dsh-connect-trae"            # tarball: dsh-connect-trae-2.0.1.tgz
-  - "dsh-workbuddy-quota"         # tarball: dsh-workbuddy-quota-0.2.0.tgz  (self-developed, credits + token usage)
-  - "dsh-receipt"                 # tarball: dsh-receipt-0.1.0.tgz
-  - "dsh-session-cleanup"         # tarball: dsh-session-cleanup-0.1.2.tgz  (self-developed, real session-log deletion)
-  - "dsh-ark-plans"               # tarball: dsh-ark-plans-0.2.0.tgz  (self-developed, Volcengine Ark Agent Plan + Coding Plan provider routes + session-header quota pill)
-  - "dsh-memory"                  # tarball: dsh-memory-0.1.0.tgz  (self-developed, cross-session memory: auto-distil + per-agent recall section)
-  - "dsh-plugins-market"          # tarball: dsh-plugins-market-0.1.0.tgz  (self-developed, the visual plugin market + pre-install compatibility gate)
-  - "dsh-excel-viewer"            # tarball: dsh-excel-viewer-0.1.0.tgz  (self-developed, spreadsheet preview for xlsx/xlsm/xls/csv/tsv; host half is empty)
+# 用户插件：装哪些由市场面板决定，这里只说明各自的层级关系与硬约束。
+#
+# 已验证层（tarball 由 dsh-plugin-collection 托管，配置文件里带 url + sha256）：
+#   dsh-ark-plans            火山方舟 Agent Plan / Coding Plan 两条 provider 车道 + 会话标题栏额度 pill
+#   dsh-excel-viewer         xlsx / xlsm / xls / csv / tsv 的只读表格预览（宿主半为空）
+#   dsh-memory               turn 结束蒸馏成笔记、下次会话按工作区召回
+#   dsh-opencode-go-plus     OpenCode Go provider（本仓库维护的派生分支，取代 dsh-opencode-go）
+#   dsh-session-cleanup      已归档会话的真实删除（带宿主半，必须随进程启动挂载）
+#   dsh-workbuddy-quota      WorkBuddy 额度 pill + token 用量统计
+#
+# 第三方：本仓库不分发任何字节，安装走各自的 npm / github: 规格。
+#
+# 顺序上的两条硬约束（实测得出，别改）：
+#   1. 市场（dsh-plugins-market）永远最后 —— 它要读整棵装配树做装前检查。
+#   2. dsh-opencode-go-plus 与上游 dsh-opencode-go **不能同装**。两者共用设置命名空间
+#      llm-opencode-go 与 provider 路由 opencode-go。四种组合都实测过：共存且本包在前时，
+#      基线会抛未捕获的 DUPLICATE_DISCOVERY，整棵插件树加载失败、dsh web 退出码 1。
+#      升级请先 remove 基线。详见 dsh-opencode-go-plus 包内 docs/derivation.md。
 
-# Final bundles array (in-box first, then user, in the order above):
-finalBundles:
+# 最终 dsh.profile.bundles 的形态：内置在前，市场在最后。
+# 中间那一段取决于你实际装了哪些 —— 用 `dsh plugin --profile web list` 看。
+finalBundlesShape:
   - "@deepseek-ai/dsh-base"
   - "@deepseek-ai/dsh-web-app"
-  - "@dsh-market/plugin"
-  - "dsh-workbuddy-connect"
-  - "dsh-opencode-go-plus"
-  - "dsh-connect-trae"
-  - "dsh-workbuddy-quota"
-  - "dsh-receipt"
-  - "dsh-session-cleanup"
-  - "dsh-ark-plans"
-  - "dsh-memory"
-  - "dsh-plugins-market"
-  - "dsh-excel-viewer"
+  - "<你装的那些插件，顺序 = 你安装的先后>"
+  - "dsh-plugins-market"          # 永远最后

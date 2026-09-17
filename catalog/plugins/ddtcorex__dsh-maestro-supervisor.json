@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "ddtcorex/dsh-maestro-supervisor",
+  "slug": "ddtcorex__dsh-maestro-supervisor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-maestro-supervisor",
+  "title": "dsh-maestro-supervisor",
+  "summary": "DSH Web 的守护进程，自动检测崩溃并回滚到最近可用版本，保障服务稳定运行。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "maestro",
+    "resilience",
+    "supervisor",
+    "状态监控",
+    "自动化",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.8.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.4",
+    "publishedAt": "2026-09-13T23:15:56Z",
+    "url": "https://github.com/ddtcorex/dsh-maestro-supervisor/releases/tag/v0.8.4"
+  },
+  "author": "ddtcorex",
+  "repo": "https://github.com/ddtcorex/dsh-maestro-supervisor",
+  "homepage": "https://github.com/ddtcorex/dsh-maestro-supervisor",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T17:06:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@ddtcorex/dsh-maestro-supervisor",
+    "commands": [
+      "dsh plugin --profile web add @ddtcorex/dsh-maestro-supervisor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

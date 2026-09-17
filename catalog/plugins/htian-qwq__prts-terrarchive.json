@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "HTian-qwq/prts-terrarchive",
+  "slug": "htian-qwq__prts-terrarchive",
+  "tier": "community",
+  "package": null,
+  "name": "prts-terrarchive",
+  "title": "prts-terrarchive",
+  "summary": "把明日方舟剧情、角色资料和泰拉年表装进本地，带行号检索引用，还能接云端混合检索。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "效率提升",
+    "模型适配",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "HTian-qwq",
+  "repo": "https://github.com/HTian-qwq/prts-terrarchive",
+  "homepage": "https://prts.chat",
+  "license": "MIT",
+  "stars": 25,
+  "forks": 3,
+  "pushedAt": "2026-09-10T12:44:56Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "prts-terrarchive@0.1.0",
+    "commands": [
+      "npm install --global @deepseek-ai/dsh@0.1.5-alpha.1",
+      "git clone https://github.com/HTian-qwq/prts-terrarchive.git",
+      "dsh plugin --profile web add prts-terrarchive@0.1.0"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

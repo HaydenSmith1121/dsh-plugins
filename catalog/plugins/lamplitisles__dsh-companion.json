@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "LamplitIsles/dsh-companion",
+  "slug": "lamplitisles__dsh-companion",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-companion",
+  "title": "dsh-companion",
+  "summary": "为 DeepSeek Harness 提供一个轻量、专注的 Svelte 聊天界面，让你在 /companion/ 路径下更舒服地和 AI 对话。",
+  "tags": [
+    "companion-ai",
+    "dsh-plugin",
+    "前端增强",
+    "会话管理",
+    "娱乐互动",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "LamplitIsles",
+  "repo": "https://github.com/LamplitIsles/dsh-companion",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-05T04:00:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LamplitIsles/dsh-companion",
+    "commands": [
+      "dsh plugin --profile web add ./lamplitisles-dsh-companion-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

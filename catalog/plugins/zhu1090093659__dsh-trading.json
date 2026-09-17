@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "zhu1090093659/dsh-trading",
+  "slug": "zhu1090093659__dsh-trading",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-trading",
+  "title": "dsh-trading",
+  "summary": "在 DSH 里一站式交易加密货币和美港股，19+ 交易所随插随用，实盘下单前先模拟并人工确认。",
+  "tags": [
+    "agent-native",
+    "ai-agent",
+    "cryptocurrency",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "lightweight-charts",
+    "trading-terminal",
+    "工具集成",
+    "自动化",
+    "可视化",
+    "安全审计",
+    "AI 助手"
+  ],
+  "version": "0.4.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.1",
+    "publishedAt": "2026-09-17T13:16:15Z",
+    "url": "https://github.com/zhu1090093659/dsh-trading/releases/tag/v0.4.1"
+  },
+  "author": "zhu1090093659",
+  "repo": "https://github.com/zhu1090093659/dsh-trading",
+  "homepage": "https://dsh-trading.win",
+  "license": "NOASSERTION",
+  "stars": 177,
+  "forks": 17,
+  "pushedAt": "2026-09-14T12:44:20Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhu1090093659/dsh-trading",
+    "commands": [
+      "dsh plugin --profile trading-web add @dshtrading/base @dshtrading/crypto @dshtrading/us",
+      "dsh plugin --profile trading-web add @dshtrading/base @dshtrading/crypto @dshtrading/us @dshtrading/cn @dshtrading/hk"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

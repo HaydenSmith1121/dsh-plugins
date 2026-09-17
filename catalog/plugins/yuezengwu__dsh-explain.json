@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "yuezengwu/dsh-explain",
+  "slug": "yuezengwu__dsh-explain",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-explain",
+  "title": "dsh-explain",
+  "summary": "学习模式，逐步解释 AI 代理的每个操作，帮你理解它的决策过程。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "learning",
+    "local-first",
+    "spaced-repetition",
+    "sqlite",
+    "学习辅助"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-15T09:58:59Z",
+    "url": "https://github.com/yuezengwu/dsh-explain/releases/tag/v0.3.0"
+  },
+  "author": "yuezengwu",
+  "repo": "https://github.com/yuezengwu/dsh-explain",
+  "homepage": "https://dsh-hub.org/plugins/yuezengwu-dsh-explain",
+  "license": "MIT",
+  "stars": 11,
+  "forks": 0,
+  "pushedAt": "2026-09-15T09:58:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yuezengwu/dsh-explain",
+    "commands": [
+      "dsh plugin --profile web add /absolute/path/to/dsh-explain"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

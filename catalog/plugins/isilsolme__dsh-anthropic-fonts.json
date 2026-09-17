@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Isilsolme/dsh-anthropic-fonts",
+  "slug": "isilsolme__dsh-anthropic-fonts",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-anthropic-fonts",
+  "title": "dsh-anthropic-fonts",
+  "summary": "给 DeepSeek Harness 网页界面换上 Anthropic 字体，让界面看起来更舒服好看。",
+  "tags": [
+    "dsh-plugin",
+    "界面美化",
+    "前端增强",
+    "主题"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Isilsolme",
+  "repo": "https://github.com/Isilsolme/dsh-anthropic-fonts",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-09-14T14:28:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-anthropic-fonts",
+    "commands": [
+      "dsh plugin --profile web add dsh-anthropic-fonts",
+      "dsh plugin --profile web add \"github:Isilsolme/dsh-anthropic-fonts\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

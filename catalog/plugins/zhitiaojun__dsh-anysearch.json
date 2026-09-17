@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "zhitiaojun/dsh-anysearch",
+  "slug": "zhitiaojun__dsh-anysearch",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-anysearch",
+  "title": "dsh-anysearch",
+  "summary": "给 DeepSeek Harness 加上 AnySearch 实时搜索，支持网页与垂直搜索、批量并行和网页正文提取，还能在设置面板里填 API key。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "语义检索",
+    "设置面板",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhitiaojun",
+  "repo": "https://github.com/zhitiaojun/dsh-anysearch",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T14:15:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhitiaojun/dsh-anysearch",
+    "commands": [
+      "pnpm add github:zhitiaojun/dsh-anysearch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

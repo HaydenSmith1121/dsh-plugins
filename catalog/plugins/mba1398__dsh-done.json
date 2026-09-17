@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "mba1398/dsh-done",
+  "slug": "mba1398__dsh-done",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-done",
+  "title": "dsh-done",
+  "summary": "任务完成时弹出庆祝动画和音效，让智能体跑完任务更有仪式感。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "自动化",
+    "效率提升",
+    "零配置",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "mba1398",
+  "repo": "https://github.com/mba1398/dsh-done",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-23T13:33:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-done",
+    "commands": [
+      "dsh plugin --profile web add dsh-done",
+      "dsh plugin --profile web add /path/to/dsh-done"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "Miyazawai/dsh-client-pricing",
+  "slug": "miyazawai__dsh-client-pricing",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-client-pricing",
+  "title": "dsh-client-pricing",
+  "summary": "在会话顶栏实时显示 DeepSeek API 当前价格，自动区分峰谷时段和 flash/pro 模型，避免高峰时段多花钱。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "pricing",
+    "数据分析",
+    "资源优化",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-14T10:31:32Z",
+    "url": "https://github.com/Miyazawai/dsh-client-pricing/releases/tag/v0.1.0"
+  },
+  "author": "Miyazawai",
+  "repo": "https://github.com/Miyazawai/dsh-client-pricing",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 16,
+  "forks": 1,
+  "pushedAt": "2026-08-14T11:01:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Miyazawai/dsh-client-pricing",
+    "commands": [
+      "dsh plugin --profile web add github:Miyazawai/dsh-client-pricing"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "lhwu1/dsh-withskillhub",
+  "slug": "lhwu1__dsh-withskillhub",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-withskillhub",
+  "title": "dsh-withskillhub",
+  "summary": "在 DSH 网页端直接逛 SkillHub 技能市场，浏览、下载、启用和更新技能，不用来回切换。",
+  "tags": [
+    "dedeepseek-harness",
+    "dsh-bundle",
+    "dsh-plugin",
+    "dsh-skill",
+    "技能市场",
+    "插件管理",
+    "零配置",
+    "网页端集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lhwu1",
+  "repo": "https://github.com/lhwu1/dsh-withskillhub",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 1,
+  "pushedAt": "2026-08-17T09:10:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lhwu1/dsh-withskillhub",
+    "commands": [
+      "dsh plugin --profile web add github:lhwu1/dsh-withskillhub"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Quan-Chan/Weave-for-DSH",
+  "slug": "quan-chan__weave-for-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "Weave-for-DSH",
+  "title": "Weave-for-DSH",
+  "summary": "在 DeepSeek Harness 里离线画节点图，拖拽连线做思维导图、流程图和逻辑树，纯网页即开即用。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "自动化",
+    "零配置",
+    "工作流增强"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Quan-Chan",
+  "repo": "https://github.com/Quan-Chan/Weave-for-DSH",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T03:28:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Quan-Chan/Weave-for-DSH",
+    "commands": [
+      "dsh plugin --profile web add github:Quan-Chan/Weave-for-DSH",
+      "dsh plugin --profile web add weave-for-dsh",
+      "dsh plugin --profile web add ./weave-for-dsh-0.1.2.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

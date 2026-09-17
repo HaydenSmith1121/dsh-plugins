@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "clearkurt/dsh-win-terminal-inspector",
+  "slug": "clearkurt__dsh-win-terminal-inspector",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-win-terminal-inspector",
+  "title": "dsh-win-terminal-inspector",
+  "summary": "为 Windows 上的持久化终端补上进程监视能力，让你在 win32 下也能看清 PTY 里跑了啥。",
+  "tags": [
+    "dsh-plugin",
+    "命令行工具",
+    "状态监控",
+    "PTY支持"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "clearkurt",
+  "repo": "https://github.com/clearkurt/dsh-win-terminal-inspector",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 0,
+  "pushedAt": "2026-08-14T06:02:34Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:clearkurt/dsh-win-terminal-inspector",
+    "commands": [
+      "dsh plugin --profile web add github:clearkurt/dsh-win-terminal-inspector"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

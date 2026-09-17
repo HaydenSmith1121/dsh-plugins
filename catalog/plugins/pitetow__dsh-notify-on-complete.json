@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "pitetow/dsh-notify-on-complete",
+  "slug": "pitetow__dsh-notify-on-complete",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notify-on-complete",
+  "title": "dsh-notify-on-complete",
+  "summary": "dsh 运行结束、提问或需要审批时，在桌面弹出通知提醒你，零依赖即插即用。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "状态监控",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "pitetow",
+  "repo": "https://github.com/pitetow/dsh-notify-on-complete",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-03T14:00:11Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:pitetow/dsh-notify-on-complete",
+    "commands": [
+      "curl -fsSL https://raw.githubusercontent.com/pitetow/dsh-notify-on-complete/main/scripts/install.sh | bash",
+      "curl -fsSL https://raw.githubusercontent.com/pitetow/dsh-notify-on-complete/main/scripts/install.sh | bash -s -- --profile headless",
+      "curl -fsSL https://raw.githubusercontent.com/pitetow/dsh-notify-on-complete/main/scripts/install.sh | bash -s -- --force"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "zampie/request-frame-preview",
+  "slug": "zampie__request-frame-preview",
+  "tier": "community",
+  "package": null,
+  "name": "request-frame-preview",
+  "title": "request-frame-preview",
+  "summary": "查看并下载 DeepSeek Harness 发给模型的完整请求帧，包括系统提示词、工具列表和消息数据，方便调试和审计。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "可视化",
+    "工作流增强",
+    "命令行工具",
+    "状态监控"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zampie",
+  "repo": "https://github.com/zampie/request-frame-preview",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T18:49:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "request-frame-preview",
+    "commands": [
+      "dsh plugin --profile web add request-frame-preview",
+      "dsh plugin --profile web add /path/to/request-frame-preview"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

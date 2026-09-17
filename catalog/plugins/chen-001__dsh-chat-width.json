@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "chen-001/dsh-chat-width",
+  "slug": "chen-001__dsh-chat-width",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-chat-width",
+  "title": "dsh-chat-width",
+  "summary": "拖动滑块就能自由调整 AI 回复消息的显示宽度，告别宽屏下的左右留白，阅读更舒适。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "主题"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chen-001",
+  "repo": "https://github.com/chen-001/dsh-chat-width",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 6,
+  "forks": 1,
+  "pushedAt": "2026-08-13T11:43:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chen-001/dsh-chat-width",
+    "commands": [
+      "git clone https://github.com/chen-001/dsh-chat-width.git",
+      "dsh plugin install .",
+      "dsh plugin enable chen-001/dsh-chat-width"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

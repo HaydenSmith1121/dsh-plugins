@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "xswt442-cmd/dsh-instance-manager",
+  "slug": "xswt442-cmd__dsh-instance-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-instance-manager",
+  "title": "dsh-instance-manager",
+  "summary": "在侧边栏统一查看和管理本机所有 dsh 实例，随时掌握运行状态。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "状态监控",
+    "工作区管理",
+    "快捷操作",
+    "设置面板"
+  ],
+  "version": "0.9.12",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.9.12",
+    "publishedAt": "2026-09-17T14:41:32Z",
+    "url": "https://github.com/xswt442-cmd/dsh-instance-manager/releases/tag/v0.9.12"
+  },
+  "author": "xswt442-cmd",
+  "repo": "https://github.com/xswt442-cmd/dsh-instance-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T17:35:06Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xswt442-cmd/dsh-instance-manager",
+    "commands": [
+      "dsh plugin --profile web add github:xswt442-cmd/dsh-instance-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

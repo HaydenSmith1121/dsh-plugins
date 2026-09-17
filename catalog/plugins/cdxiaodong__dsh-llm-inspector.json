@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "cdxiaodong/dsh-llm-inspector",
+  "slug": "cdxiaodong__dsh-llm-inspector",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-inspector",
+  "title": "dsh-llm-inspector",
+  "summary": "统一检查 LLM 请求与响应，支持推理控制、思考导出、流量分析和会话审计，调试更省心。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "请求检查",
+    "模型适配",
+    "流量分析",
+    "会话审计"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-15T19:24:42Z",
+    "url": "https://github.com/cdxiaodong/dsh-llm-inspector/releases/tag/v0.1.1"
+  },
+  "author": "cdxiaodong",
+  "repo": "https://github.com/cdxiaodong/dsh-llm-inspector",
+  "homepage": null,
+  "license": null,
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-08-15T19:24:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cdxiaodong/dsh-llm-inspector",
+    "commands": [
+      "dsh plugin --profile <你的profile> add github:cdxiaodong/dsh-llm-inspector"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

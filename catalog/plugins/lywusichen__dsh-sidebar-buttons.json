@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "lywusichen/dsh-sidebar-buttons",
+  "slug": "lywusichen__dsh-sidebar-buttons",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sidebar-buttons",
+  "title": "dsh-sidebar-buttons",
+  "summary": "管理 DeepSeek Harness 左下侧栏按钮，支持拖拽排序、隐藏不用的按钮并收进“更多”菜单，还能统一按钮高度，让侧边栏更整洁。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "plugin",
+    "plugins",
+    "sidebar",
+    "sidebar-menu",
+    "前端增强",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "0.1.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.5",
+    "publishedAt": "2026-09-11T15:19:04Z",
+    "url": "https://github.com/lywusichen/dsh-sidebar-buttons/releases/tag/v0.1.5"
+  },
+  "author": "lywusichen",
+  "repo": "https://github.com/lywusichen/dsh-sidebar-buttons",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-11T15:16:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lywusichen/dsh-sidebar-buttons",
+    "commands": [
+      "dsh plugin --profile web add github:lywusichen/dsh-sidebar-buttons"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

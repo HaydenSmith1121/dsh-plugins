@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "173787247/dsh-wsl-github",
+  "slug": "173787247__dsh-wsl-github",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wsl-github",
+  "title": "dsh-wsl-github",
+  "summary": "让 WSL 里的智能体随时掌握 GitHub 动态，自动查看未合并的 PR 和最新构建状态。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "github-app",
+    "wsl",
+    "状态监控",
+    "工作流增强",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "173787247",
+  "repo": "https://github.com/173787247/dsh-wsl-github",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:21:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:173787247/dsh-wsl-github",
+    "commands": [
+      "dsh plugin --profile web add github:173787247/dsh-wsl-github"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

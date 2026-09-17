@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "y2zyyr/dsh-restart-control",
+  "slug": "y2zyyr__dsh-restart-control",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-restart-control",
+  "title": "dsh-restart-control",
+  "summary": "在 DSH 桌面版设置里加一个一键重启按钮，省去手动退出再打开的麻烦。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "插件管理",
+    "零配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-19T03:29:10Z",
+    "url": "https://github.com/y2zyyr/dsh-restart-control/releases/tag/v0.1.1"
+  },
+  "author": "y2zyyr",
+  "repo": "https://github.com/y2zyyr/dsh-restart-control",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-22T15:58:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:y2zyyr/dsh-restart-control",
+    "commands": [
+      "dsh plugin --profile web add github:y2zyyr/dsh-restart-control"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

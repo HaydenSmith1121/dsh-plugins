@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-agent-runtime",
+  "slug": "jonah791__dsh-agent-runtime",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-runtime",
+  "title": "dsh-agent-runtime",
+  "summary": "统一管理运行时环境和 webman 进程，一处发现 bin、端口、配置，避免重复守护逻辑。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "自动化",
+    "插件开发",
+    "资源优化",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-07T11:06:47Z",
+    "url": "https://github.com/jonah791/dsh-agent-runtime/releases/tag/v0.1.0"
+  },
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-agent-runtime",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T06:01:43Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-agent-runtime",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-agent-runtime"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

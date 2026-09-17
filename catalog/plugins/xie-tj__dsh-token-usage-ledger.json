@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "xie-tj/dsh-token-usage-ledger",
+  "slug": "xie-tj__dsh-token-usage-ledger",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-token-usage-ledger",
+  "title": "dsh-token-usage-ledger",
+  "summary": "给 DeepSeek Harness 记一笔模型用量账，每次请求的 token 消耗都能在仪表盘上看得清清楚楚。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "usage-dashboard",
+    "成本控制",
+    "状态监控",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xie-tj",
+  "repo": "https://github.com/xie-tj/dsh-token-usage-ledger",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-15T10:28:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xie-tj/dsh-token-usage-ledger",
+    "commands": [
+      "dsh plugin --profile web add github:xie-tj/dsh-token-usage-ledger"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

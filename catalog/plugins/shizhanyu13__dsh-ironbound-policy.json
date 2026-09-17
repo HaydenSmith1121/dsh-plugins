@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "shizhanyu13/dsh-ironbound-policy",
+  "slug": "shizhanyu13__dsh-ironbound-policy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ironbound-policy",
+  "title": "dsh-ironbound-policy",
+  "summary": "给 DeepSeek Harness 加一道硬门禁，在危险 shell 命令执行前直接拦截，并对反复尝试的智能体自动降级。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "状态监控",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-28T08:34:39Z",
+    "url": "https://github.com/shizhanyu13/dsh-ironbound-policy/releases/tag/v0.1.0"
+  },
+  "author": "shizhanyu13",
+  "repo": "https://github.com/shizhanyu13/dsh-ironbound-policy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T14:26:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shizhanyu13/dsh-ironbound-policy",
+    "commands": [
+      "npm install @shizhanyu13/dsh-ironbound-policy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

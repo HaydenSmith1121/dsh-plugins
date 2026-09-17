@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "alingalingling/ui-status-label",
+  "slug": "alingalingling__ui-status-label",
+  "tier": "community",
+  "package": null,
+  "name": "ui-status-label",
+  "title": "ui-status-label",
+  "summary": "把鲸鱼娘思考时的 deep diving 提示改成你喜欢的任意文字，界面更有个性。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "主题",
+    "界面美化",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "alingalingling",
+  "repo": "https://github.com/alingalingling/ui-status-label",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 45,
+  "forks": 4,
+  "pushedAt": "2026-08-15T08:57:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:alingalingling/ui-status-label",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-ui-status-label-0.1.0.tgz",
+      "dsh plugin --profile web add github:alingalingling/ui-status-label",
+      "dsh plugin --profile web add dsh-ui-status-label"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

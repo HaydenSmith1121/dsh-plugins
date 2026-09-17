@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "Jonah-Wu23/dsh-bg-carousel",
+  "slug": "jonah-wu23__dsh-bg-carousel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-bg-carousel",
+  "title": "dsh-bg-carousel",
+  "summary": "把工作区里的图片和视频设为背景，自动轮播，让 DeepSeek Harness 界面更好看。",
+  "tags": [
+    "dsh-plugin",
+    "界面美化",
+    "前端增强",
+    "可视化",
+    "文件管理"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-03T15:17:19Z",
+    "url": "https://github.com/Jonah-Wu23/dsh-bg-carousel/releases/tag/v0.3.0"
+  },
+  "author": "Jonah-Wu23",
+  "repo": "https://github.com/Jonah-Wu23/dsh-bg-carousel",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-03T15:17:08Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Jonah-Wu23/dsh-bg-carousel",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/Jonah-Wu23/dsh-bg-carousel/releases/download/v0.3.0/jonahwu-dsh-bg-carousel-0.3.0.tgz",
+      "dsh plugin --profile web add github:Jonah-Wu23/dsh-bg-carousel",
+      "dsh plugin --profile web add <本地 tgz 或目录路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

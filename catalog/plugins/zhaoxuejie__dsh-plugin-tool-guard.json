@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "zhaoxuejie/dsh-plugin-tool-guard",
+  "slug": "zhaoxuejie__dsh-plugin-tool-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-tool-guard",
+  "title": "dsh-plugin-tool-guard",
+  "summary": "给 DeepSeek Harness 加一道安全防火墙，拦截危险命令、管控文件访问，关键操作还能人工审批留审计。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "firewall",
+    "plugin",
+    "security",
+    "安全审计",
+    "工具集成",
+    "文件管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-08T12:24:40Z",
+    "url": "https://github.com/zhaoxuejie/dsh-plugin-tool-guard/releases/tag/v1.0.0"
+  },
+  "author": "zhaoxuejie",
+  "repo": "https://github.com/zhaoxuejie/dsh-plugin-tool-guard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T12:34:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhaoxuejie/dsh-plugin-tool-guard",
+    "commands": [
+      "git clone https://github.com/zhaoxuejie/dsh-plugin-tool-guard.git",
+      "npm install",
+      "dsh plugin --profile web add file:./dsh-plugin-tool-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

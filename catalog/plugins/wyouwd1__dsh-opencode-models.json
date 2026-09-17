@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "wyouwd1/dsh-opencode-models",
+  "slug": "wyouwd1__dsh-opencode-models",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-opencode-models",
+  "title": "dsh-opencode-models",
+  "summary": "在 DeepSeek Harness 中管理 OpenCode Zen 免费版和 Go 版模型，实时获取模型列表，支持路由漂移和智能体工具。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "opencode",
+    "zen",
+    "AI 助手",
+    "模型配置",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-24T02:43:44Z",
+    "url": "https://github.com/wyouwd1/dsh-opencode-models/releases/tag/v0.1.0"
+  },
+  "author": "wyouwd1",
+  "repo": "https://github.com/wyouwd1/dsh-opencode-models",
+  "homepage": "https://opencode.ai/docs/zen/",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-24T10:01:50Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wyouwd1/dsh-opencode-models",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-opencode-models",
+      "dsh plugin --profile web add github:wyouwd1/dsh-opencode-models"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

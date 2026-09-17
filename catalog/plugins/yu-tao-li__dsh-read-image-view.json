@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Yu-tao-Li/dsh-read-image-view",
+  "slug": "yu-tao-li__dsh-read-image-view",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-read-image-view",
+  "title": "dsh-read-image-view",
+  "summary": "在 DSH 网页对话界面中直接展示读取的图片，支持缩略图预览和点击放大查看细节。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "会话管理",
+    "零配置",
+    "界面美化"
+  ],
+  "version": "0.3.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.2",
+    "publishedAt": "2026-09-11T17:26:11Z",
+    "url": "https://github.com/Yu-tao-Li/dsh-read-image-view/releases/tag/v0.3.2"
+  },
+  "author": "Yu-tao-Li",
+  "repo": "https://github.com/Yu-tao-Li/dsh-read-image-view",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 1,
+  "pushedAt": "2026-09-11T17:26:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Yu-tao-Li/dsh-read-image-view",
+    "commands": [
+      "dsh plugin --profile web add github:Yu-tao-Li/dsh-read-image-view"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

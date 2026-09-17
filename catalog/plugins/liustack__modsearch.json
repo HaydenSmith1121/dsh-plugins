@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "liustack/modsearch",
+  "slug": "liustack__modsearch",
+  "tier": "community",
+  "package": null,
+  "name": "modsearch",
+  "title": "modsearch",
+  "summary": "给没有联网能力的模型补上搜索，问网页或 X 直接拿结构化 JSON 证据。",
+  "tags": [
+    "agent-skills",
+    "agentic-workflow",
+    "claude-code",
+    "claude-skills",
+    "codex",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "glm",
+    "harness",
+    "harness-engineering",
+    "hermes-agent",
+    "openclaw",
+    "opencode",
+    "pi-agent",
+    "web-fetch",
+    "web-search",
+    "语义检索",
+    "结构化数据",
+    "模型增强"
+  ],
+  "version": "5.10.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v5.10.3",
+    "publishedAt": "2026-09-15T11:05:32Z",
+    "url": "https://github.com/liustack/modsearch/releases/tag/v5.10.3"
+  },
+  "author": "liustack",
+  "repo": "https://github.com/liustack/modsearch",
+  "homepage": "https://liustack.dev/tools/modsearch",
+  "license": "MIT",
+  "stars": 492,
+  "forks": 20,
+  "pushedAt": "2026-09-15T11:04:57Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:liustack/modsearch",
+    "commands": [
+      "npx skills add liustack/modsearch",
+      "curl -fsSL https://antigravity.google/cli/install.sh | bash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

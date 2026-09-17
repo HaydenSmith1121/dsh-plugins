@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "modestoma/dsh-webfile",
+  "slug": "modestoma__dsh-webfile",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-webfile",
+  "title": "dsh-webfile",
+  "summary": "为 DeepSeek Harness 提供 S3 和 FTP 文件管理工具，支持列目录、上传下载等 8 种操作，带审批和进度控制。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "ftp",
+    "s3",
+    "工作区管理",
+    "传输任务",
+    "权限审批"
+  ],
+  "version": "1.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.1",
+    "publishedAt": "2026-08-17T05:16:10Z",
+    "url": "https://github.com/modestoma/dsh-webfile/releases/tag/v1.0.1"
+  },
+  "author": "modestoma",
+  "repo": "https://github.com/modestoma/dsh-webfile",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-17T05:15:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:modestoma/dsh-webfile",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-webfile",
+      "dsh plugin --profile <name> update"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

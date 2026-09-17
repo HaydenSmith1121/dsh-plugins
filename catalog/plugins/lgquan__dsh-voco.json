@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "lgquan/dsh-voco",
+  "slug": "lgquan__dsh-voco",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-voco",
+  "title": "dsh-voco",
+  "summary": "在 DSH 网页里直接说话，云端识别转文字，用 Edge TTS 播报结果，复杂任务自动交给后台 Agent 处理。",
+  "tags": [
+    "agent",
+    "deepseek-harness",
+    "dsh-plugin",
+    "speech-recognition",
+    "text-to-speech",
+    "voice-assistant",
+    "AI 助手",
+    "语音识别",
+    "文本转语音",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.3.13",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.13",
+    "publishedAt": "2026-09-01T16:24:18Z",
+    "url": "https://github.com/lgquan/dsh-voco/releases/tag/v0.3.13"
+  },
+  "author": "lgquan",
+  "repo": "https://github.com/lgquan/dsh-voco",
+  "homepage": "https://www.npmjs.com/package/@flowingspring/dsh-voco",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-01T16:52:25Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lgquan/dsh-voco",
+    "commands": [
+      "dsh plugin --profile web add github:lgquan/dsh-voco"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

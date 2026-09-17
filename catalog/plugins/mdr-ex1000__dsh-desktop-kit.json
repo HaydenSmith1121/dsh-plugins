@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "MDR-EX1000/dsh-desktop-kit",
+  "slug": "mdr-ex1000__dsh-desktop-kit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-desktop-kit",
+  "title": "dsh-desktop-kit",
+  "summary": "把 Harness 网页版直接打包成桌面软件，不用开浏览器也能流畅使用。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "效率提升",
+    "资源优化"
+  ],
+  "version": "0.2.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.6",
+    "publishedAt": "2026-09-07T07:58:55Z",
+    "url": "https://github.com/MDR-EX1000/dsh-desktop-kit/releases/tag/v0.2.6"
+  },
+  "author": "MDR-EX1000",
+  "repo": "https://github.com/MDR-EX1000/dsh-desktop-kit",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-07T09:02:14Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MDR-EX1000/dsh-desktop-kit",
+    "commands": [
+      "dsh plugin --profile web add github:MDR-EX1000/dsh-desktop-kit",
+      "dsh plugin --profile web add https://github.com/MDR-EX1000/dsh-desktop-kit/releases/latest/download/dsh-desktop-kit.tgz",
+      "dsh plugin --profile web add /path/to/dsh-desktop-kit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

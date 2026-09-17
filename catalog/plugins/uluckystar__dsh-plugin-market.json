@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "uluckystar/dsh-plugin-market",
+  "slug": "uluckystar__dsh-plugin-market",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-market",
+  "title": "dsh-plugin-market",
+  "summary": "在 DSH 设置页直接逛插件市场，分类或 AI 搜索、一键装好启用，还能安全评估和自动重启生效。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "mydsh",
+    "plugin-market",
+    "插件管理",
+    "集中仓库",
+    "设置面板",
+    "快捷操作",
+    "安全审计"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-17T05:15:40Z",
+    "url": "https://github.com/uluckystar/dsh-plugin-market/releases/tag/v0.1.0"
+  },
+  "author": "uluckystar",
+  "repo": "https://github.com/uluckystar/dsh-plugin-market",
+  "homepage": "https://mydsh.dev/plugins",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-20T20:42:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:uluckystar/dsh-plugin-market",
+    "commands": [
+      "dsh plugin --profile web add github:uluckystar/dsh-plugin-market",
+      "dsh plugin --profile web add /path/to/dsh-plugin-market"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

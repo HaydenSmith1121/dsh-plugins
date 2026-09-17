@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "looeton/dsh-plugin-proxy-env",
+  "slug": "looeton__dsh-plugin-proxy-env",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-proxy-env",
+  "title": "dsh-plugin-proxy-env",
+  "summary": "启动时自动注入代理环境变量，并自检整条代理链路是否通畅，省去手动配置的麻烦。",
+  "tags": [
+    "clash",
+    "deepseek-harness",
+    "developer-tools",
+    "dsh",
+    "dsh-plugin",
+    "https-proxy",
+    "nodejs",
+    "proxy",
+    "self-check",
+    "windows",
+    "自动化",
+    "工具集成",
+    "状态监控",
+    "零配置",
+    "命令行工具"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-10T00:41:12Z",
+    "url": "https://github.com/looeton/dsh-plugin-proxy-env/releases/tag/v0.1.1"
+  },
+  "author": "looeton",
+  "repo": "https://github.com/looeton/dsh-plugin-proxy-env",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T00:41:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:looeton/dsh-plugin-proxy-env",
+    "commands": [
+      "dsh plugin --profile web add github:looeton/dsh-plugin-proxy-env"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

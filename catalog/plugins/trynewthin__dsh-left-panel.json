@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "trynewthin/dsh-left-panel",
+  "slug": "trynewthin__dsh-left-panel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-left-panel",
+  "title": "dsh-left-panel",
+  "summary": "把侧边栏工作区按 git 仓库分组、自动跟随 worktree 增删，多工作树开发一目了然。",
+  "tags": [
+    "cordis-plugin",
+    "deepseek-harness",
+    "dsh-plugin",
+    "git-worktree",
+    "工作区管理",
+    "工具集成",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "trynewthin",
+  "repo": "https://github.com/trynewthin/dsh-left-panel",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T02:48:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:trynewthin/dsh-left-panel",
+    "commands": [
+      "dsh plugin --profile web add /abs/path/to/left-panel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "Semidia/dsh-global-rules",
+  "slug": "semidia__dsh-global-rules",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-global-rules",
+  "title": "dsh-global-rules",
+  "summary": "在设置里直接用网页编辑器改全局规则，不用敲命令行就能轻松配置 AI 行为。",
+  "tags": [
+    "提示词优化",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Semidia",
+  "repo": "https://github.com/Semidia/dsh-global-rules",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-19T18:35:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Semidia/dsh-global-rules",
+    "commands": [
+      "dsh plugin --profile web add \"github:Semidia/dsh-global-rules\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

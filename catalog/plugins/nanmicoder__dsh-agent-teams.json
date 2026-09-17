@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "NanmiCoder/dsh-agent-teams",
+  "slug": "nanmicoder__dsh-agent-teams",
+  "tier": "community",
+  "package": null,
+  "name": "NanmiCoder/dsh-agent-teams",
+  "title": "NanmiCoder/dsh-agent-teams",
+  "summary": "一句话拉起多智能体团队协作，实时查看团队活动面板，让复杂任务自动分工完成。",
+  "tags": [
+    "agentteams",
+    "deepseekharness",
+    "dsh",
+    "dsh-agent-teams",
+    "dsh-plugin",
+    "多Agent协作"
+  ],
+  "version": "0.1.20",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.20",
+    "publishedAt": "2026-09-17T06:05:59Z",
+    "url": "https://github.com/NanmiCoder/dsh-agent-teams/releases/tag/v0.1.20"
+  },
+  "author": "NanmiCoder",
+  "repo": "https://github.com/NanmiCoder/dsh-agent-teams",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1690,
+  "forks": 144,
+  "pushedAt": "2026-09-16T16:17:23Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:NanmiCoder/dsh-agent-teams",
+    "commands": [
+      "npm install --global @deepseek-ai/dsh@0.1.5-rc.1",
+      "dsh plugin --profile web add --save-exact @nanmicoder/dsh-agent-teams@0.1.17"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

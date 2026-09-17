@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Nwflower/dsh-weneed",
+  "slug": "nwflower__dsh-weneed",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-weneed",
+  "title": "dsh-weneed",
+  "summary": "让 DeepSeek Harness 稳定触发 We Need 思维链，提升模型推理能力和回答质量。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "模型配置",
+    "效率提升",
+    "零配置",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Nwflower",
+  "repo": "https://github.com/Nwflower/dsh-weneed",
+  "homepage": "https://github.com/Nwflower/dsh-weneed",
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-16T03:11:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Nwflower/dsh-weneed",
+    "commands": [
+      "dsh plugin --profile web add -w link:<本仓库路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

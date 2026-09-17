@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "qzhqzh/dsh-quickstart",
+  "slug": "qzhqzh__dsh-quickstart",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-quickstart",
+  "title": "dsh-quickstart",
+  "summary": "双击桌面快捷方式即可启动 DeepSeek Harness Web，无控制台弹窗，自动打开浏览器，省心又高效。",
+  "tags": [
+    "cli",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "launcher",
+    "windows",
+    "效率提升",
+    "自动化",
+    "零配置",
+    "AI 助手"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "qzhqzh",
+  "repo": "https://github.com/qzhqzh/dsh-quickstart",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-18T03:36:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qzhqzh/dsh-quickstart",
+    "commands": [
+      "npm i -g dsh-quickstart",
+      "npm i -g @deepseek-ai/dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

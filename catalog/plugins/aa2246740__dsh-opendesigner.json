@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "aa2246740/dsh-opendesigner",
+  "slug": "aa2246740__dsh-opendesigner",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-opendesigner",
+  "title": "dsh-opendesigner",
+  "summary": "在 web 配置里一键装好设计稿转代码插件，让 AI 直接看懂设计图并生成前端页面。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "前端增强",
+    "视觉理解",
+    "工具集成"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "aa2246740",
+  "repo": "https://github.com/aa2246740/dsh-opendesigner",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T13:04:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aa2246740/dsh-opendesigner",
+    "commands": [
+      "dsh plugin --profile web add github:aa2246740/dsh-opendesigner",
+      "dsh plugin --profile web remove dsh-opendesigner",
+      "dsh plugin --profile web add ./dsh-opendesigner"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

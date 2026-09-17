@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "vlln/dsh-task-status",
+  "slug": "vlln__dsh-task-status",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-task-status",
+  "title": "dsh-task-status",
+  "summary": "在对话页面上方显示后台任务进度条，实时查看运行状态和输出日志。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "ui",
+    "效率提升",
+    "会话管理",
+    "Web界面",
+    "工作流增强"
+  ],
+  "version": "0.3.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "vlln",
+  "repo": "https://github.com/vlln/dsh-task-status",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 1,
+  "pushedAt": "2026-08-27T08:37:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:vlln/dsh-task-status",
+    "commands": [
+      "dsh plugin --profile web add \"github:vlln/dsh-task-status"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

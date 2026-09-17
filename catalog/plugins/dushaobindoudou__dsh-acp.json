@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "dushaobindoudou/dsh-acp",
+  "slug": "dushaobindoudou__dsh-acp",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-acp",
+  "title": "dsh-acp",
+  "summary": "让 Zed 等 ACP 客户端直接驱动 dsh 智能体，支持会话、任务与技能管理。",
+  "tags": [
+    "acp",
+    "agent",
+    "agent-client-protocol",
+    "coding-agent",
+    "cordis-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "zed",
+    "工具集成",
+    "会话管理",
+    "多Agent协作",
+    "桥接插件",
+    "命令行工具"
+  ],
+  "version": "0.10.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.10.0",
+    "publishedAt": "2026-08-18T05:35:51Z",
+    "url": "https://github.com/dushaobindoudou/dsh-acp/releases/tag/v0.10.0"
+  },
+  "author": "dushaobindoudou",
+  "repo": "https://github.com/dushaobindoudou/dsh-acp",
+  "homepage": "https://www.npmjs.com/package/dsh-acp-server",
+  "license": "MIT",
+  "stars": 9,
+  "forks": 4,
+  "pushedAt": "2026-09-09T07:23:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dushaobindoudou/dsh-acp",
+    "commands": [
+      "dsh plugin --profile web add github:dushaobindoudou/dsh-acp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

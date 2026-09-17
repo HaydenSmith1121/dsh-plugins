@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "Clarklevis1995/dsh-plugin-mobile-gateway",
+  "slug": "clarklevis1995__dsh-plugin-mobile-gateway",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-mobile-gateway",
+  "title": "dsh-plugin-mobile-gateway",
+  "summary": "基于WebSocket网关让手机随时连入DeepSeek Harness，轻松打造你的专属移动端AI应用。",
+  "tags": [
+    "dsh-plugin",
+    "模型适配",
+    "零配置",
+    "移动端接入"
+  ],
+  "version": "0.7.6",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Clarklevis1995",
+  "repo": "https://github.com/Clarklevis1995/dsh-plugin-mobile-gateway",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 28,
+  "forks": 6,
+  "pushedAt": "2026-09-16T11:55:04Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-mobile-gateway@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-mobile-gateway@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "timeance/dsh-approve-for-me",
+  "slug": "timeance__dsh-approve-for-me",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-approve-for-me",
+  "title": "dsh-approve-for-me",
+  "summary": "为 DeepSeek Harness 沙箱提供规则化自动审批，支持 LLM 复核、一次性授权和人工兜底，兼顾安全与效率。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "审批流程",
+    "沙箱安全",
+    "人工兜底",
+    "规则引擎"
+  ],
+  "version": "0.3.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "timeance",
+  "repo": "https://github.com/timeance/dsh-approve-for-me",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 17,
+  "forks": 1,
+  "pushedAt": "2026-09-12T05:23:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:timeance/dsh-approve-for-me",
+    "commands": [
+      "dsh plugin --profile web add github:timeance/dsh-approve-for-me"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

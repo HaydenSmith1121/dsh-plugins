@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "archyciao/dsh-about-updater",
+  "slug": "archyciao__dsh-about-updater",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-about-updater",
+  "title": "dsh-about-updater",
+  "summary": "在设置页添加「关于」面板，显示版本、检查更新，还能一键更新并重启。",
+  "tags": [
+    "dsh-plugin",
+    "设置面板",
+    "插件管理",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "archyciao",
+  "repo": "https://github.com/archyciao/dsh-about-updater",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-09T08:35:58Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:archyciao/dsh-about-updater",
+    "commands": [
+      "dsh plugin --profile web add github:archyciao/dsh-about-updater"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

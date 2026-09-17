@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "940842546/dsh-usage-billing",
+  "slug": "940842546__dsh-usage-billing",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage-billing",
+  "title": "dsh-usage-billing",
+  "summary": "实时统计 DeepSeek 用量与消费，帮你清晰掌握 API 花费和调用情况。",
+  "tags": [
+    "billing",
+    "deepseek-harness",
+    "dsh-plugin",
+    "usage-stats",
+    "状态监控",
+    "成本控制"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "940842546",
+  "repo": "https://github.com/940842546/dsh-usage-billing",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 1,
+  "pushedAt": "2026-09-14T09:53:47Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:940842546/dsh-usage-billing",
+    "commands": [
+      "dsh plugin --profile web add github:940842546/dsh-usage-billing"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

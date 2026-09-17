@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "MingoZhou/dsh-replay",
+  "slug": "mingozhou__dsh-replay",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-replay",
+  "title": "dsh-replay",
+  "summary": "把 Agent 会话日志变成可回放的时间线，随时查看 token 花费、安全审计、fork 血缘和双会话对比。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "会话管理",
+    "数据可审计",
+    "可视化",
+    "模型轨迹",
+    "状态监控"
+  ],
+  "version": "0.4.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.1",
+    "publishedAt": "2026-08-20T05:06:12Z",
+    "url": "https://github.com/MingoZhou/dsh-replay/releases/tag/v0.4.1"
+  },
+  "author": "MingoZhou",
+  "repo": "https://github.com/MingoZhou/dsh-replay",
+  "homepage": "https://mingozhou.github.io/dsh-replay/",
+  "license": "MIT",
+  "stars": 11,
+  "forks": 0,
+  "pushedAt": "2026-08-20T05:03:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MingoZhou/dsh-replay",
+    "commands": [
+      "dsh plugin --profile <your-profile> add @mingozhou/dsh-replay",
+      "git clone https://github.com/MingoZhou/dsh-replay.git",
+      "npm install && npm run build"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

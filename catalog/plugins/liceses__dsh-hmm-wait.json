@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "liceses/dsh-hmm-wait",
+  "slug": "liceses__dsh-hmm-wait",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hmm-wait",
+  "title": "dsh-hmm-wait",
+  "summary": "把模型思考时的“犹豫词”变成弹幕动画，让推理过程更有趣，还能自定义样式和开关。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "娱乐互动",
+    "可视化",
+    "前端增强",
+    "模型配置",
+    "设置面板"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-22T09:47:00Z",
+    "url": "https://github.com/liceses/dsh-hmm-wait/releases/tag/v0.1.0"
+  },
+  "author": "liceses",
+  "repo": "https://github.com/liceses/dsh-hmm-wait",
+  "homepage": "https://github.com/liceses/dsh-hmm-wait",
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-26T11:05:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:liceses/dsh-hmm-wait",
+    "commands": [
+      "git clone https://github.com/liceses/dsh-hmm-wait.git",
+      "npm install",
+      "dsh plugin --profile web add link:$(pwd)"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

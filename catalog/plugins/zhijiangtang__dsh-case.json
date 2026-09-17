@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ZhijiangTang/dsh-case",
+  "slug": "zhijiangtang__dsh-case",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-case",
+  "title": "dsh-case",
+  "summary": "一键转换代码命名风格，支持驼峰、下划线、短横线等常见格式，提升编码效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "命名转换",
+    "代码风格",
+    "命令行工具"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ZhijiangTang",
+  "repo": "https://github.com/ZhijiangTang/dsh-case",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-16T13:08:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ZhijiangTang/dsh-case",
+    "commands": [
+      "dsh plugin --profile <name> add file:./plugins/dsh-case",
+      "dsh plugin --profile <name> add dsh-case"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "baisama-cloud/dsh-omni-bridge",
+  "slug": "baisama-cloud__dsh-omni-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-omni-bridge",
+  "title": "dsh-omni-bridge",
+  "summary": "把微信、QQ、飞书的消息接给 DSH 代理，代理回复再自动发回聊天窗口。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "harness",
+    "桥接插件",
+    "工具集成",
+    "AI 助手",
+    "自动化",
+    "视觉理解"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-17T12:42:58Z",
+    "url": "https://github.com/baisama-cloud/dsh-omni-bridge/releases/tag/v0.2.0"
+  },
+  "author": "baisama-cloud",
+  "repo": "https://github.com/baisama-cloud/dsh-omni-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-04T08:09:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:baisama-cloud/dsh-omni-bridge",
+    "commands": [
+      "pnpm add dsh-omni-bridge",
+      "dsh plugin --profile <p> add https://github.com/baisama-cloud/dsh-omni-bridge",
+      "pnpm add @larksuiteoapi/node-sdk"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

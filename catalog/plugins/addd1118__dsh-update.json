@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ADDD1118/dsh-update",
+  "slug": "addd1118__dsh-update",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-update",
+  "title": "dsh-update",
+  "summary": "为 DeepSeek Harness 网页界面增加右上角检查更新按钮，关闭后自动升级插件，省心省力。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "update",
+    "插件管理",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.1.5",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ADDD1118",
+  "repo": "https://github.com/ADDD1118/dsh-update",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T16:00:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ADDD1118/dsh-update",
+    "commands": [
+      "dsh plugin --profile web add ADDD1118/dsh-update"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

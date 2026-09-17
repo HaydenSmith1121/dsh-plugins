@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "34262315716/dsh-memory",
+  "slug": "34262315716__dsh-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memory",
+  "title": "dsh-memory",
+  "summary": "给 DeepSeek Harness 装上分层记忆，自动记住对话、知识图谱和世界线，让 AI 越用越懂你。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "knowledge-graph",
+    "memory",
+    "plugin",
+    "rag",
+    "sqlite",
+    "会话管理",
+    "模型配置",
+    "AI 助手"
+  ],
+  "version": "0.9.17",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.9.17",
+    "publishedAt": "2026-08-20T14:39:47Z",
+    "url": "https://github.com/34262315716/dsh-memory/releases/tag/v0.9.17"
+  },
+  "author": "34262315716",
+  "repo": "https://github.com/34262315716/dsh-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T11:08:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-advanced-memory",
+    "commands": [
+      "dsh plugin --profile web add dsh-advanced-memory",
+      "dsh plugin --profile web add ./dsh-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

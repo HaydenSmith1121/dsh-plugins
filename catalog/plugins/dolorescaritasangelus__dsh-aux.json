@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "DoloresCaritasAngelus/DSH-AUX",
+  "slug": "dolorescaritasangelus__dsh-aux",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-AUX",
+  "title": "DSH-AUX",
+  "summary": "给主模型配个副手，独立处理视觉分析、网页提取和长文本压缩，主模型专注对话，装完即用。",
+  "tags": [
+    "auxiliary-model",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm",
+    "vision",
+    "辅助模型",
+    "视觉分析",
+    "网页提取",
+    "文本压缩",
+    "零配置"
+  ],
+  "version": "0.4.6-fix.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.6-fix.1",
+    "publishedAt": "2026-09-11T07:29:32Z",
+    "url": "https://github.com/DoloresCaritasAngelus/DSH-AUX/releases/tag/v0.4.6-fix.1"
+  },
+  "author": "DoloresCaritasAngelus",
+  "repo": "https://github.com/DoloresCaritasAngelus/DSH-AUX",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-09-13T10:23:38Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:DoloresCaritasAngelus/DSH-AUX",
+    "commands": [
+      "git clone https://github.com/DoloresCaritasAngelus/DSH-AUX.git",
+      "dsh plugin --profile web add \"file:$(pwd)\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

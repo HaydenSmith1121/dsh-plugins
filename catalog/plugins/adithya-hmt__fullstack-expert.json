@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "adithya-hmt/fullstack-expert",
+  "slug": "adithya-hmt__fullstack-expert",
+  "tier": "community",
+  "package": null,
+  "name": "fullstack-expert",
+  "title": "fullstack-expert",
+  "summary": "为 DeepSeek Harness 智能体提供 Cordis 原生、以验证驱动的全栈工程规范，让编码更可靠。",
+  "tags": [
+    "coding-agent",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "verification",
+    "全栈开发",
+    "代码验证",
+    "工程规范",
+    "AI 助手"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-16T15:45:47Z",
+    "url": "https://github.com/adithya-hmt/fullstack-expert/releases/tag/v0.1.1"
+  },
+  "author": "adithya-hmt",
+  "repo": "https://github.com/adithya-hmt/fullstack-expert",
+  "homepage": "https://github.com/adithya-hmt/fullstack-expert#readme",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-16T15:45:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:adithya-hmt/fullstack-expert",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/adithya-hmt/fullstack-expert.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "Iambatman1928/dsh-xingye",
+  "slug": "iambatman1928__dsh-xingye",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-xingye",
+  "title": "dsh-xingye",
+  "summary": "给 DSH 会话加个能聊天的角色智能体，支持人设、多存档线和可回滚的本地记录。",
+  "tags": [
+    "chat-agent",
+    "cordis-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "local-first",
+    "persona",
+    "AI 助手",
+    "会话管理",
+    "操作回滚",
+    "状态持久化",
+    "报告生成"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-16T15:17:09Z",
+    "url": "https://github.com/Iambatman1928/dsh-xingye/releases/tag/v1.0.0"
+  },
+  "author": "Iambatman1928",
+  "repo": "https://github.com/Iambatman1928/dsh-xingye",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T15:17:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Iambatman1928/dsh-xingye",
+    "commands": [
+      "dsh plugin --profile web add 'github:Iambatman1928/dsh-xingye'",
+      "dsh plugin --profile web add 'https://github.com/Iambatman1928/dsh-xingye/releases/latest/download/dsh-xingye.tgz'"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

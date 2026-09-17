@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "yoza10635/dsh-argp",
+  "slug": "yoza10635__dsh-argp",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-argp",
+  "title": "dsh-argp",
+  "summary": "给 DeepSeek Harness 做上下文压缩：模型提方案，确定性守卫把关，按原子精简并剪掉无用引用，省 token 不丢关键信息。",
+  "tags": [
+    "agent",
+    "compaction",
+    "context-compression",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm",
+    "资源优化",
+    "会话管理",
+    "模型配置",
+    "自动化"
+  ],
+  "version": "1.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.0",
+    "publishedAt": "2026-09-17T01:52:32Z",
+    "url": "https://github.com/yoza10635/dsh-argp/releases/tag/v1.2.0"
+  },
+  "author": "yoza10635",
+  "repo": "https://github.com/yoza10635/dsh-argp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-09-10T19:37:20Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yoza10635/dsh-argp",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-argp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

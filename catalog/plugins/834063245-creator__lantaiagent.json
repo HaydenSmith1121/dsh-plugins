@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "834063245-creator/LantaiAgent",
+  "slug": "834063245-creator__lantaiagent",
+  "tier": "community",
+  "package": null,
+  "name": "LantaiAgent",
+  "title": "LantaiAgent",
+  "summary": "把代码库变成能对话的 3D 依赖星图，还自带多 Agent 编码工作台，看代码、改代码一站搞定。",
+  "tags": [
+    "code-analysis-true",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugin-verify",
+    "dsh-plugins",
+    "可视化",
+    "多Agent协作",
+    "语义检索",
+    "数据分析",
+    "AI 助手"
+  ],
+  "version": "10.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v10.4.0",
+    "publishedAt": "2026-08-20T01:55:14Z",
+    "url": "https://github.com/834063245-creator/LantaiAgent/releases/tag/v10.4.0"
+  },
+  "author": "834063245-creator",
+  "repo": "https://github.com/834063245-creator/LantaiAgent",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 25,
+  "forks": 2,
+  "pushedAt": "2026-09-09T11:05:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:834063245-creator/LantaiAgent",
+    "commands": [
+      "dsh plugin --profile web add github:834063245-creator/LantaiAgent"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

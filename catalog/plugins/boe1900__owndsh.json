@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "boe1900/owndsh",
+  "slug": "boe1900__owndsh",
+  "tier": "community",
+  "package": null,
+  "name": "owndsh",
+  "title": "owndsh",
+  "summary": "把 DeepSeek-Harness 部署到自己的服务器上，管理员一键初始化，员工装个插件就能连上。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "插件管理",
+    "工作区管理",
+    "跨设备",
+    "集中仓库"
+  ],
+  "version": "0.1.0-beta.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "boe1900",
+  "repo": "https://github.com/boe1900/owndsh",
+  "homepage": "https://owndsh.1024300.xyz",
+  "license": null,
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-16T07:01:51Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:boe1900/owndsh",
+    "commands": [
+      "git clone https://github.com/boe1900/owndsh.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

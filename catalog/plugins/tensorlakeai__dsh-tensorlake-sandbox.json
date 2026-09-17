@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "tensorlakeai/dsh-tensorlake-sandbox",
+  "slug": "tensorlakeai__dsh-tensorlake-sandbox",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tensorlake-sandbox",
+  "title": "dsh-tensorlake-sandbox",
+  "summary": "将 DeepSeek Harness 的文件、命令、终端和 LSP 操作放进临时 Tensorlake 微虚拟机，安全隔离、用完即弃。",
+  "tags": [
+    "ai-agents",
+    "ai-infrastructure",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "harness",
+    "sandbox",
+    "sandbox-environment",
+    "tensorlake",
+    "安全防护",
+    "微虚拟机",
+    "安全执行",
+    "命令行工具"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "tensorlakeai",
+  "repo": "https://github.com/tensorlakeai/dsh-tensorlake-sandbox",
+  "homepage": "https://tensorlake.ai",
+  "license": "MIT",
+  "stars": 6,
+  "forks": 2,
+  "pushedAt": "2026-08-14T19:20:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@tensorlakeai/dsh-sandbox",
+    "commands": [
+      "npm install --global @deepseek-ai/dsh",
+      "dsh plugin --profile headless add @tensorlakeai/dsh-sandbox",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

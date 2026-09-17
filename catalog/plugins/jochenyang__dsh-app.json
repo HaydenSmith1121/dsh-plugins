@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "JochenYang/dsh-app",
+  "slug": "jochenyang__dsh-app",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-app",
+  "title": "dsh-app",
+  "summary": "为 DeepSeek Harness 打造的跨平台品牌桌面客户端，让命令行工具拥有更友好的图形界面，开箱即用。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "0.12.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.12.0",
+    "publishedAt": "2026-09-17T07:40:12Z",
+    "url": "https://github.com/JochenYang/dsh-app/releases/tag/v0.12.0"
+  },
+  "author": "JochenYang",
+  "repo": "https://github.com/JochenYang/dsh-app",
+  "homepage": null,
+  "license": null,
+  "stars": 4,
+  "forks": 2,
+  "pushedAt": "2026-09-14T15:06:03Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JochenYang/dsh-app",
+    "commands": [
+      "dsh plugin --profile web add github:JochenYang/dsh-app"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

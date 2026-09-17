@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "zhangxingong/dsh-polish",
+  "slug": "zhangxingong__dsh-polish",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-polish",
+  "title": "dsh-polish",
+  "summary": "在输入框旁一键调用 DeepSeek 优化细化当前文本，润色逻辑后整体覆盖草稿，光标自动定位末尾。",
+  "tags": [
+    "dsh-plugin",
+    "提示词优化",
+    "效率提升",
+    "会话管理",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhangxingong",
+  "repo": "https://github.com/zhangxingong/dsh-polish",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T02:18:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhangxingong/dsh-polish",
+    "commands": [
+      "dsh plugin --profile <name> add \"link:<本目录绝对路径>\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "ddtcorex/dsh-maestro-notifier",
+  "slug": "ddtcorex__dsh-maestro-notifier",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-maestro-notifier",
+  "title": "dsh-maestro-notifier",
+  "summary": "为 DeepSeek Harness 提供可插拔的通知服务，目前支持 Telegram 推送，方便你实时掌握任务动态。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "maestro",
+    "notifications",
+    "telegram",
+    "零配置",
+    "状态监控",
+    "自动化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-01T01:32:13Z",
+    "url": "https://github.com/ddtcorex/dsh-maestro-notifier/releases/tag/v0.1.1"
+  },
+  "author": "ddtcorex",
+  "repo": "https://github.com/ddtcorex/dsh-maestro-notifier",
+  "homepage": "https://github.com/ddtcorex/dsh-maestro-notifier",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T17:07:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ddtcorex/dsh-maestro-notifier",
+    "commands": [
+      "dsh plugin --profile web add github:ddtcorex/dsh-maestro-notifier"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "doublehappy123/dsh-v4flash-tiler",
+  "slug": "doublehappy123__dsh-v4flash-tiler",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-v4flash-tiler",
+  "title": "dsh-v4flash-tiler",
+  "summary": "聊天里发超大图片时自动切成带坐标的高清图块，让模型看清细节，不再被压缩模糊。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "效率提升",
+    "自动化",
+    "可视化"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "doublehappy123",
+  "repo": "https://github.com/doublehappy123/dsh-v4flash-tiler",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T08:40:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:doublehappy123/dsh-v4flash-tiler",
+    "commands": [
+      "pip install -e ./engine",
+      "dsh plugin --profile web add github:doublehappy123/dsh-v4flash-tiler"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Nyasers/DSHana",
+  "slug": "nyasers__dshana",
+  "tier": "community",
+  "package": null,
+  "name": "DSHana",
+  "title": "DSHana",
+  "summary": "把 DeepSeek Harness 接进 HanaAgent，作为受管子代理执行器，让任务自动跑起来。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "hana-app",
+    "oh-apps",
+    "oh-plugin",
+    "openhanako-plugin",
+    "多Agent协作",
+    "工具集成",
+    "自动化",
+    "桥接插件"
+  ],
+  "version": "0.1.5-rc.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0-rc.3+dsh-0.1.5-rc.2",
+    "publishedAt": "2026-09-16T19:51:20Z",
+    "url": "https://github.com/Nyasers/DSHana/releases/tag/v1.0.0-rc.3%2Bdsh-0.1.5-rc.2"
+  },
+  "author": "Nyasers",
+  "repo": "https://github.com/Nyasers/DSHana",
+  "homepage": "https://github.com/liliMozi/openhanako",
+  "license": "MPL-2.0",
+  "stars": 49,
+  "forks": 3,
+  "pushedAt": "2026-09-16T20:03:08Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Nyasers/DSHana",
+    "commands": [
+      "dsh plugin --profile web add github:Nyasers/DSHana"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

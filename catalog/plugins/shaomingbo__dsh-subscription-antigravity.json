@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "shaomingbo/dsh-subscription-antigravity",
+  "slug": "shaomingbo__dsh-subscription-antigravity",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subscription-antigravity",
+  "title": "dsh-subscription-antigravity",
+  "summary": "复用 Google Antigravity 订阅，在 DeepSeek Harness 中免费用上 Gemini/Claude 等模型，浏览器登录即用。",
+  "tags": [
+    "antigravity",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "gemini",
+    "google-ai",
+    "llm",
+    "oauth",
+    "模型配置",
+    "零配置",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-09-05T11:26:04Z",
+    "url": "https://github.com/shaomingbo/dsh-subscription-antigravity/releases/tag/v0.3.1"
+  },
+  "author": "shaomingbo",
+  "repo": "https://github.com/shaomingbo/dsh-subscription-antigravity",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T11:26:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shaomingbo/dsh-subscription-antigravity",
+    "commands": [
+      "dsh plugin --profile web add github:shaomingbo/dsh-subscription-antigravity"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

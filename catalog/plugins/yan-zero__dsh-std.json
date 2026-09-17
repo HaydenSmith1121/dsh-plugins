@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Yan-Zero/dsh-std",
+  "slug": "yan-zero__dsh-std",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-std",
+  "title": "dsh-std",
+  "summary": "让 DSH 插件、后台和界面之间无缝协作，统一交互协议，提升开发与使用效率。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "插件管理",
+    "自动化",
+    "任务编排",
+    "工作流增强"
+  ],
+  "version": "0.1.0-rc1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Yan-Zero",
+  "repo": "https://github.com/Yan-Zero/dsh-std",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 133,
+  "forks": 5,
+  "pushedAt": "2026-09-13T12:50:18Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Yan-Zero/dsh-std",
+    "commands": [
+      "dsh plugin --profile web add github:Yan-Zero/dsh-std"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

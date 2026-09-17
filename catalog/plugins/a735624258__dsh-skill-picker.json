@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "a735624258/dsh-skill-picker",
+  "slug": "a735624258__dsh-skill-picker",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skill-picker",
+  "title": "dsh-skill-picker",
+  "summary": "在输入框里像 WorkBuddy 一样挑选技能，自动插入 /skill 指令，随消息一起加载。",
+  "tags": [
+    "dsh-plugin",
+    "AI工具",
+    "效率提升",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "0.5.10",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.10",
+    "publishedAt": "2026-09-13T11:25:26Z",
+    "url": "https://github.com/a735624258/dsh-skill-picker/releases/tag/v0.5.10"
+  },
+  "author": "a735624258",
+  "repo": "https://github.com/a735624258/dsh-skill-picker",
+  "homepage": "https://github.com/a735624258/dsh-skill-picker",
+  "license": "MIT",
+  "stars": 28,
+  "forks": 1,
+  "pushedAt": "2026-09-13T11:25:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-skill-picker@0.5.5",
+    "commands": [
+      "dsh plugin --profile web add \"git+ssh://git@github.com:a735624258/dsh-skill-picker.git\"",
+      "dsh plugin --profile web add dsh-skill-picker@0.5.5",
+      "git clone https://github.com/a735624258/dsh-skill-picker.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ashuai/dsh-s2s",
+  "slug": "ashuai__dsh-s2s",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-s2s",
+  "title": "dsh-s2s",
+  "summary": "让同一台机器上的多个 AI 会话直接互相对话，还能唤醒已结束的会话，协作更灵活。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "多Agent协作",
+    "会话管理",
+    "工作流增强",
+    "状态监控"
+  ],
+  "version": "0.4.0-s2s.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0-s2s.3",
+    "publishedAt": "2026-09-10T09:49:31Z",
+    "url": "https://github.com/ashuai/dsh-s2s/releases/tag/v0.4.0-s2s.3"
+  },
+  "author": "ashuai",
+  "repo": "https://github.com/ashuai/dsh-s2s",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T09:49:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ashuai/dsh-s2s",
+    "commands": [
+      "dsh plugin --profile web add github:ashuai/dsh-s2s"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

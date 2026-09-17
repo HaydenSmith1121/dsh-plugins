@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "MoRanYue/dsh-openrouter-providers",
+  "slug": "moranyue__dsh-openrouter-providers",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-openrouter-providers",
+  "title": "dsh-openrouter-providers",
+  "summary": "在插件配置里填好 OpenRouter 提供商列表和量化限制，自动注入路由参数，让模型请求更精准。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "模型配置",
+    "工具集成",
+    "零配置",
+    "资源优化"
+  ],
+  "version": "1.0.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.9",
+    "publishedAt": "2026-09-10T10:42:07Z",
+    "url": "https://github.com/MoRanYue/dsh-openrouter-providers/releases/tag/v1.0.9"
+  },
+  "author": "MoRanYue",
+  "repo": "https://github.com/MoRanYue/dsh-openrouter-providers",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-10T10:44:58Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MoRanYue/dsh-openrouter-providers",
+    "commands": [
+      "pnpm add dsh-openrouter-providers@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

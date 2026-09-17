@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "kriskwok/dsh-feishu-gateway",
+  "slug": "kriskwok__dsh-feishu-gateway",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-feishu-gateway",
+  "title": "dsh-feishu-gateway",
+  "summary": "在飞书里直接和你的 DSH 智能体聊天，支持持久会话、Markdown 回复和主动消息推送。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "feishu",
+    "lark",
+    "会话管理",
+    "模型配置",
+    "效率提升"
+  ],
+  "version": "0.2.15",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kriskwok",
+  "repo": "https://github.com/kriskwok/dsh-feishu-gateway",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-26T15:54:52Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kriskwok/dsh-feishu-gateway",
+    "commands": [
+      "dsh plugin --profile web add github:kriskwok/dsh-feishu-gateway"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

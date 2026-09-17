@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "shenhuanageshei/dsh-death-forensics",
+  "slug": "shenhuanageshei__dsh-death-forensics",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-death-forensics",
+  "title": "dsh-death-forensics",
+  "summary": "给 DeepSeek Harness 主机装上死亡黑匣子，记录崩溃前的心跳、堆栈和死因，方便事后排查。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "shenhuanageshei",
+  "repo": "https://github.com/shenhuanageshei/dsh-death-forensics",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T12:35:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shenhuanageshei/dsh-death-forensics",
+    "commands": [
+      "dsh plugin --profile web add github:shenhuanageshei/dsh-death-forensics"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

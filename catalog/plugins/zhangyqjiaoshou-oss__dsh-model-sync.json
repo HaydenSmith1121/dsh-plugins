@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zhangyqjiaoshou-oss/dsh-model-sync",
+  "slug": "zhangyqjiaoshou-oss__dsh-model-sync",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-sync",
+  "title": "dsh-model-sync",
+  "summary": "一键或自动同步 DeepSeek Harness 各提供商的模型列表，省去手动更新配置的麻烦。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "model-sync",
+    "模型配置",
+    "自动化",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhangyqjiaoshou-oss",
+  "repo": "https://github.com/zhangyqjiaoshou-oss/dsh-model-sync",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-29T16:30:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@dsh-external/dsh-model-sync",
+    "commands": [
+      "dsh plugin --profile web add @dsh-external/dsh-model-sync"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

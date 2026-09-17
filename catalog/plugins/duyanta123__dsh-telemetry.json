@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "duyanta123/dsh-telemetry",
+  "slug": "duyanta123__dsh-telemetry",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-telemetry",
+  "title": "dsh-telemetry",
+  "summary": "实时采集并可视化 DeepSeek Harness 运行时的遥测数据，帮你监控 Token 消耗与性能指标。",
+  "tags": [
+    "deepseek",
+    "dsh-plugin",
+    "状态监控",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "duyanta123",
+  "repo": "https://github.com/duyanta123/dsh-telemetry",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T17:47:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:duyanta123/dsh-telemetry",
+    "commands": [
+      "dsh plugin --profile web add \"github:duyanta123/dsh-telemetry"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

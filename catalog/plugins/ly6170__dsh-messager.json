@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ly6170/dsh-messager",
+  "slug": "ly6170__dsh-messager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-messager",
+  "title": "dsh-messager",
+  "summary": "给 DeepSeek Harness 加个消息提醒，任务跑完或出错时通过飞书推给你，不用一直盯着看。",
+  "tags": [
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh-plugin",
+    "dsh-plugins",
+    "notification",
+    "notifications",
+    "plugin",
+    "plugins",
+    "消息通知",
+    "飞书通知",
+    "插件管理"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-09-04T09:07:26Z",
+    "url": "https://github.com/ly6170/dsh-messager/releases/tag/v0.3.1"
+  },
+  "author": "ly6170",
+  "repo": "https://github.com/ly6170/dsh-messager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-09-04T09:04:18Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ly6170/dsh-messager",
+    "commands": [
+      "dsh plugin --profile web add <插件路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

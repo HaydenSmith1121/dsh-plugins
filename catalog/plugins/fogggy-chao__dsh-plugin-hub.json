@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Fogggy-Chao/dsh-plugin-hub",
+  "slug": "fogggy-chao__dsh-plugin-hub",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-hub",
+  "title": "dsh-plugin-hub",
+  "summary": "为 DeepSeek Harness 提供一个极简的插件中心与装备侧边栏，方便你集中管理和快速切换各类插件。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "前端增强",
+    "工作区管理",
+    "效率提升"
+  ],
+  "version": "0.6.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Fogggy-Chao",
+  "repo": "https://github.com/Fogggy-Chao/dsh-plugin-hub",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T17:10:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Fogggy-Chao/dsh-plugin-hub",
+    "commands": [
+      "dsh plugin --profile web add \"$HOME/.dsh/bundles/dsh-plugin-hub-0.6.4.tgz\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

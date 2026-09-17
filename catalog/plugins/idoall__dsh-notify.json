@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "idoall/dsh-notify",
+  "slug": "idoall__dsh-notify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notify",
+  "title": "dsh-notify",
+  "summary": "任务完成时在页面内弹提示、响铃、闪烁标签页标题，不用系统通知也能第一时间知道。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "notifications",
+    "plugin",
+    "消息通知",
+    "前端增强",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-15T07:06:42Z",
+    "url": "https://github.com/idoall/dsh-notify/releases/tag/v0.1.1"
+  },
+  "author": "idoall",
+  "repo": "https://github.com/idoall/dsh-notify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T07:14:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:idoall/dsh-notify",
+    "commands": [
+      "dsh plugin --profile web add \"github:idoall/dsh-notify\"",
+      "git clone https://github.com/idoall/dsh-notify.git",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Guojin0826/dsh-plugin-guard",
+  "slug": "guojin0826__dsh-plugin-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-guard",
+  "title": "dsh-plugin-guard",
+  "summary": "给已安装的第三方插件做安全体检，静态代码加依赖审查，还能AI在线审计，结果用绿黄红三色报告展示。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "插件管理",
+    "内容创作"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-05T13:05:16Z",
+    "url": "https://github.com/Guojin0826/dsh-plugin-guard/releases/tag/v0.2.0"
+  },
+  "author": "Guojin0826",
+  "repo": "https://github.com/Guojin0826/dsh-plugin-guard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T08:55:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Guojin0826/dsh-plugin-guard",
+    "commands": [
+      "dsh plugin --profile <name> add @guojin-ai/dsh-plugin-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

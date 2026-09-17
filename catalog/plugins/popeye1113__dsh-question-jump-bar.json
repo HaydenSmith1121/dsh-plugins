@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "popeye1113/dsh-question-jump-bar",
+  "slug": "popeye1113__dsh-question-jump-bar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-question-jump-bar",
+  "title": "dsh-question-jump-bar",
+  "summary": "在会话右侧显示问题索引标尺，悬停预览提问内容，点击或键盘即可快速跳转到对应问答。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "前端增强",
+    "可视化"
+  ],
+  "version": "1.3.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "popeye1113",
+  "repo": "https://github.com/popeye1113/dsh-question-jump-bar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T14:54:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:popeye1113/dsh-question-jump-bar",
+    "commands": [
+      "dsh plugin --profile web add dsh-question-jump-bar -w",
+      "dsh plugin --profile web add github:popeye1113/dsh-question-jump-bar -w"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

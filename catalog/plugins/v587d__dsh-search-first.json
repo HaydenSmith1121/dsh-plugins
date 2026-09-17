@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "v587d/dsh-search-first",
+  "slug": "v587d__dsh-search-first",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-search-first",
+  "title": "dsh-search-first",
+  "summary": "让 AI 先搜索再回答，强制验证事实，避免胡编乱造，提升回复可靠性。",
+  "tags": [
+    "anysearch",
+    "dsh-plugin",
+    "dsh-web",
+    "tavily",
+    "tinyfish",
+    "状态监控",
+    "可视化",
+    "效率提升",
+    "模型配置"
+  ],
+  "version": "0.2.24",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "v587d",
+  "repo": "https://github.com/v587d/dsh-search-first",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-03T08:15:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:v587d/dsh-search-first",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/v587d/dsh-search-first.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

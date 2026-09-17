@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "InkWord01/DeepSeekHarness----Desktop",
+  "slug": "inkword01__deepseekharness-desktop",
+  "tier": "community",
+  "package": null,
+  "name": "DeepSeekHarness----Desktop",
+  "title": "DeepSeekHarness----Desktop",
+  "summary": "DSH 桌面客户端，双击即用，内置后端，常驻托盘，同步官方更新，让智能体工具更顺手。",
+  "tags": [
+    "ai-agent",
+    "deepseek",
+    "deepseek-harness",
+    "desktop-app",
+    "dsh",
+    "dsh-plugin",
+    "electron",
+    "windows",
+    "AI 助手",
+    "零配置",
+    "模型适配",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-08-16T03:04:50Z",
+    "url": "https://github.com/InkWord01/DeepSeekHarness----Desktop/releases/tag/v0.1.3"
+  },
+  "author": "InkWord01",
+  "repo": "https://github.com/InkWord01/DeepSeekHarness----Desktop",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-16T03:32:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:InkWord01/DeepSeekHarness----Desktop",
+    "commands": [
+      "dsh plugin --profile web add github:InkWord01/DeepSeekHarness----Desktop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

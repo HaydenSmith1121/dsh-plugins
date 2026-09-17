@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Army1900/dsh-cordis-emotion-engine",
+  "slug": "army1900__dsh-cordis-emotion-engine",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cordis-emotion-engine",
+  "title": "dsh-cordis-emotion-engine",
+  "summary": "识别用户情绪，动态调整界面配色和AI回应语气，让对话更贴心。",
+  "tags": [
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "emotion-engine",
+    "主题",
+    "趣味交互",
+    "会话管理",
+    "情绪感知"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Army1900",
+  "repo": "https://github.com/Army1900/dsh-cordis-emotion-engine",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-18T06:55:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Army1900/dsh-cordis-emotion-engine",
+    "commands": [
+      "dsh plugin --profile web add github:Army1900/dsh-cordis-emotion-engine"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

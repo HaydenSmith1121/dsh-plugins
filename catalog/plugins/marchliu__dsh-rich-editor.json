@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "MarchLiu/dsh-rich-editor",
+  "slug": "marchliu__dsh-rich-editor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-rich-editor",
+  "title": "dsh-rich-editor",
+  "summary": "在对话区内置富文本Markdown笔记本，支持工具栏切换与智能列表编辑，写长文或记笔记更直观高效。",
+  "tags": [
+    "codemirror",
+    "deepseek-harness",
+    "dsh-plugin",
+    "markdown-editor",
+    "rich-text-editor",
+    "文件管理",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "MarchLiu",
+  "repo": "https://github.com/MarchLiu/dsh-rich-editor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-09-15T10:19:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@mars.liu/dsh-rich-editor",
+    "commands": [
+      "dsh plugin --profile web add @mars.liu/dsh-rich-editor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

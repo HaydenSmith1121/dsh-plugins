@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "XuXcode/dsh-loghud",
+  "slug": "xuxcode__dsh-loghud",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-loghud",
+  "title": "dsh-loghud",
+  "summary": "实时监控 Spring Boot 报错并弹窗提示，可选开启 AI 智能诊断帮你快速定位问题。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "log-monitoring",
+    "typescript",
+    "状态监控",
+    "AI 助手",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-08-27T03:25:57Z",
+    "url": "https://github.com/XuXcode/dsh-loghud/releases/tag/v0.3.0"
+  },
+  "author": "XuXcode",
+  "repo": "https://github.com/XuXcode/dsh-loghud",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-08T09:38:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:XuXcode/dsh-loghud",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/XuXcode/dsh-loghud/releases/download/v0.4.0/dsh-loghud-0.4.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

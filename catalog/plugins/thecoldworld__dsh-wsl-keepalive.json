@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "TheColdWorld/dsh-wsl-keepalive",
+  "slug": "thecoldworld__dsh-wsl-keepalive",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wsl-keepalive",
+  "title": "dsh-wsl-keepalive",
+  "summary": "一键开关 WSL 保活，防止 Linux 子系统休眠，让任务持续运行不中断。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "状态监控",
+    "资源优化",
+    "自动化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "TheColdWorld",
+  "repo": "https://github.com/TheColdWorld/dsh-wsl-keepalive",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T16:27:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TheColdWorld/dsh-wsl-keepalive",
+    "commands": [
+      "dsh plugin --profile web add \"git+https://github.com/TheColdWorld/dsh-wsl-keepalive.git\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

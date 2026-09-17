@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "haiziyao/dsh-vision-mix",
+  "slug": "haiziyao__dsh-vision-mix",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-vision-mix",
+  "title": "dsh-vision-mix",
+  "summary": "通过固定 Mix 模型，为 DeepSeek Harness 提供视觉路由与图像生成能力，让多模态任务更简单。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "gpt-image-2",
+    "image-generation",
+    "multimodal",
+    "vision",
+    "视觉理解",
+    "模型配置",
+    "工具集成"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-15T18:03:12Z",
+    "url": "https://github.com/haiziyao/dsh-vision-mix/releases/tag/v0.2.0"
+  },
+  "author": "haiziyao",
+  "repo": "https://github.com/haiziyao/dsh-vision-mix",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-09-08T14:23:53Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:haiziyao/dsh-vision-mix",
+    "commands": [
+      "dsh plugin --profile web add github:haiziyao/dsh-vision-mix"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

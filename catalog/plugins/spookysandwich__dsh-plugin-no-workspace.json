@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "SpookySandwich/dsh-plugin-no-workspace",
+  "slug": "spookysandwich__dsh-plugin-no-workspace",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-no-workspace",
+  "title": "dsh-plugin-no-workspace",
+  "summary": "免选工作区直接开聊，独立会话平铺在侧边栏，原生界面不受影响。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "no-workspace",
+    "workspace-free",
+    "会话管理",
+    "前端增强",
+    "工作区管理",
+    "效率提升"
+  ],
+  "version": "1.0.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "SpookySandwich",
+  "repo": "https://github.com/SpookySandwich/dsh-plugin-no-workspace",
+  "homepage": "https://github.com/deepseek-ai/deepseek-harness",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-07T15:42:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-no-workspace",
+    "commands": [
+      "dsh plugin --profile desktop add dsh-plugin-no-workspace"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

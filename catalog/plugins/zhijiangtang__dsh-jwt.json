@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ZhijiangTang/dsh-jwt",
+  "slug": "zhijiangtang__dsh-jwt",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-jwt",
+  "title": "dsh-jwt",
+  "summary": "调试用 JWT 解码工具，快速拆解 token 三段内容并解读时间声明，不验签。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "JWT解码",
+    "开发流程",
+    "Token解析",
+    "时间解读"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ZhijiangTang",
+  "repo": "https://github.com/ZhijiangTang/dsh-jwt",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-16T13:08:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ZhijiangTang/dsh-jwt",
+    "commands": [
+      "dsh plugin --profile <你的 profile> add file:./plugins/dsh-jwt"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "wicm84266964/dsh-minimal-mode-compaction",
+  "slug": "wicm84266964__dsh-minimal-mode-compaction",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-minimal-mode-compaction",
+  "title": "dsh-minimal-mode-compaction",
+  "summary": "为极简模式增加自动上下文压缩和手动/模型主动压缩，让长任务不再因上下文溢出而中断。",
+  "tags": [
+    "auto-compaction",
+    "context-compaction",
+    "context-window",
+    "deepseek-harness",
+    "deepseek-v4",
+    "dsh-plugin",
+    "long-context",
+    "minimal-mode",
+    "会话管理",
+    "效率提升",
+    "自动化",
+    "工作流增强"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-08-26T23:50:15Z",
+    "url": "https://github.com/wicm84266964/dsh-minimal-mode-compaction/releases/tag/v0.2.1"
+  },
+  "author": "wicm84266964",
+  "repo": "https://github.com/wicm84266964/dsh-minimal-mode-compaction",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-26T23:50:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wicm84266964/dsh-minimal-mode-compaction",
+    "commands": [
+      "dsh plugin --profile web add github:wicm84266964/dsh-minimal-mode-compaction"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

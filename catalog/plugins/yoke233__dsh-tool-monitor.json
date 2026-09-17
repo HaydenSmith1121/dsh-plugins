@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "yoke233/dsh-tool-monitor",
+  "slug": "yoke233__dsh-tool-monitor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tool-monitor",
+  "title": "dsh-tool-monitor",
+  "summary": "监听现有 DeepSeek Harness 后台任务，出错时立即通知，无需重复运行命令。",
+  "tags": [
+    "background-jobs",
+    "bash",
+    "deepseek-harness",
+    "dsh-plugin",
+    "powershell",
+    "状态监控",
+    "后台任务",
+    "效率提升",
+    "命令行工具"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yoke233",
+  "repo": "https://github.com/yoke233/dsh-tool-monitor",
+  "homepage": "https://github.com/yoke233/dsh-tool-monitor#readme",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T04:46:17Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yoke233/dsh-tool-monitor",
+    "commands": [
+      "dsh plugin --profile web add github:yoke233/dsh-tool-monitor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

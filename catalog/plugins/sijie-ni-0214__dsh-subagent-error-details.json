@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "sijie-ni-0214/dsh-subagent-error-details",
+  "slug": "sijie-ni-0214__dsh-subagent-error-details",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subagent-error-details",
+  "title": "dsh-subagent-error-details",
+  "summary": "后台子代理失败时，把真实原因（如限流429）直接告诉父代理，方便排查和重试。",
+  "tags": [
+    "dsh-plugin",
+    "多Agent协作",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sijie-ni-0214",
+  "repo": "https://github.com/sijie-ni-0214/dsh-subagent-error-details",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T03:17:34Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-subagent-error-details",
+    "commands": [
+      "dsh plugin --profile web add dsh-subagent-error-details",
+      "dsh plugin --profile web add --config.minimumReleaseAge=0 dsh-subagent-error-details"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

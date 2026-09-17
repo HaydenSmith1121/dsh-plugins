@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "id": "jigjoy-ai/baro",
+  "slug": "jigjoy-ai__baro",
+  "tier": "community",
+  "package": null,
+  "name": "baro",
+  "title": "baro",
+  "summary": "在代码仓库里输入目标，自动生成并验证拉取请求，还能在 Mozaik 运行时上测试并发 AI 编程智能体。",
+  "tags": [
+    "agentic-coding",
+    "ai-coding-agent",
+    "ai-developer-tools",
+    "claude-code",
+    "cli",
+    "coding-agent",
+    "concurrent-agents",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mozaik",
+    "mozaik-native",
+    "multi-agent-system",
+    "pull-request-automation",
+    "reactive-agents",
+    "多智能体协作",
+    "自动化",
+    "命令行工具",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.113.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.113.0",
+    "publishedAt": "2026-09-16T08:49:57Z",
+    "url": "https://github.com/jigjoy-ai/baro/releases/tag/v0.113.0"
+  },
+  "author": "jigjoy-ai",
+  "repo": "https://github.com/jigjoy-ai/baro",
+  "homepage": "https://baro.rs",
+  "license": "MIT",
+  "stars": 121,
+  "forks": 10,
+  "pushedAt": "2026-09-16T18:52:05Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jigjoy-ai/baro",
+    "commands": [
+      "npm install -g baro-ai"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

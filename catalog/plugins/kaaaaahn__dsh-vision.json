@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "kaaaaahn/dsh-vision",
+  "slug": "kaaaaahn__dsh-vision",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-vision",
+  "title": "dsh-vision",
+  "summary": "对话框里直接贴截图，AI 就能看懂并分析，OCR 带坐标、语义理解画面，图片不出本机。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "local-ai",
+    "ocr",
+    "ollama",
+    "vision",
+    "AI 助手",
+    "模型配置",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-08-21T13:27:41Z",
+    "url": "https://github.com/kaaaaahn/dsh-vision/releases/tag/v0.3.1"
+  },
+  "author": "kaaaaahn",
+  "repo": "https://github.com/kaaaaahn/dsh-vision",
+  "homepage": "https://github.com/kaaaaahn/dsh-vision",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-24T17:21:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kaaaaahn/dsh-vision",
+    "commands": [
+      "dsh plugin --profile web add \"github:kaaaaahn/dsh-vision"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

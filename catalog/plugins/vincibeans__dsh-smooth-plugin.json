@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "VinciBeans/dsh-smooth-plugin",
+  "slug": "vincibeans__dsh-smooth-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-smooth-plugin",
+  "title": "dsh-smooth-plugin",
+  "summary": "让 DSH 会话滚底从瞬时跳变变成平滑跟随，流式内容增长时消息列匀速滑动，体验更顺滑。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "桌宠",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.1.3-alpha.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3-alpha.2",
+    "publishedAt": "2026-09-08T13:35:03Z",
+    "url": "https://github.com/VinciBeans/dsh-smooth-plugin/releases/tag/v0.1.3-alpha.2"
+  },
+  "author": "VinciBeans",
+  "repo": "https://github.com/VinciBeans/dsh-smooth-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T13:34:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-smooth-scroll",
+    "commands": [
+      "dsh plugin --profile web add dsh-smooth-scroll",
+      "dsh plugin --profile web add dsh-smooth-scroll@alpha"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

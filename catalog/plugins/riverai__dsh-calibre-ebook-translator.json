@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "riverai/dsh-calibre-ebook-translator",
+  "slug": "riverai__dsh-calibre-ebook-translator",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-calibre-ebook-translator",
+  "title": "dsh-calibre-ebook-translator",
+  "summary": "把 Calibre 电子书翻译插件接进 agents 工作流，让书籍翻译自动跑起来。",
+  "tags": [
+    "agent-preset",
+    "calibre",
+    "deepseek-harness",
+    "dsh",
+    "translation",
+    "工具集成",
+    "自动化",
+    "工作流增强",
+    "报告生成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "riverai",
+  "repo": "https://github.com/riverai/dsh-calibre-ebook-translator",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T03:18:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:riverai/dsh-calibre-ebook-translator",
+    "commands": [
+      "dsh plugin --profile web add github:riverai/dsh-calibre-ebook-translator"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

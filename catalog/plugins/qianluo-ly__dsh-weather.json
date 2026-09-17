@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "QianLuo-Ly/dsh-weather",
+  "slug": "qianluo-ly__dsh-weather",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-weather",
+  "title": "dsh-weather",
+  "summary": "在 DeepSeek Harness 网页顶部常驻显示天气，自动定位并展示当前天气及未来12小时/7天预报，出门前瞄一眼就行。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "weather",
+    "状态监控",
+    "可视化",
+    "零配置"
+  ],
+  "version": "0.5.9",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "QianLuo-Ly",
+  "repo": "https://github.com/QianLuo-Ly/dsh-weather",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 1,
+  "pushedAt": "2026-09-16T05:42:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dshmarket",
+    "commands": [
+      "dsh plugin --profile web add dshmarket",
+      "dsh plugin --profile web add https://github.com/QianLuo-Ly/dsh-weather"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

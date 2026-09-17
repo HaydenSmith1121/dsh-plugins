@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "yushuosun/dsh-cost-governor",
+  "slug": "yushuosun__dsh-cost-governor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cost-governor",
+  "title": "dsh-cost-governor",
+  "summary": "为 DeepSeek Harness 提供成本治理与预算管控，支持按模型统计费用、多供应商定价、预算告警和使用看板。",
+  "tags": [
+    "budget",
+    "cost",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "token",
+    "资源优化",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yushuosun",
+  "repo": "https://github.com/yushuosun/dsh-cost-governor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-22T01:53:53Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yushuosun/dsh-cost-governor",
+    "commands": [
+      "npm i -g dsh-cost-governor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

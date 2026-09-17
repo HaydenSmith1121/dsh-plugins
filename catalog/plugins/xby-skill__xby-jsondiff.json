@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-jsondiff",
+  "slug": "xby-skill__xby-jsondiff",
+  "tier": "community",
+  "package": null,
+  "name": "xby-jsondiff",
+  "title": "xby-jsondiff",
+  "summary": "在聊天里直接对比JSON数据，快速找出差异，结果清晰直观，适合调试和开发场景。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "工作流增强",
+    "插件管理",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-jsondiff",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:14:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-jsondiff",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-jsondiff",
+      "dsh plugin --profile web add /absolute/path/to/xby-jsondiff"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

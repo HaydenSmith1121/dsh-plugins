@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "cheesehaqi/dsh-qq-onebot-bridge",
+  "slug": "cheesehaqi__dsh-qq-onebot-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-qq-onebot-bridge",
+  "title": "dsh-qq-onebot-bridge",
+  "summary": "把QQ消息直接接到DSH智能体上，让机器人自动回复，还能随时调试每条消息。",
+  "tags": [
+    "dsh-onebot",
+    "dsh-plugin",
+    "dsh-qq-bot",
+    "桥接插件",
+    "AI 助手",
+    "群聊助手",
+    "消息通知",
+    "状态监控"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "cheesehaqi",
+  "repo": "https://github.com/cheesehaqi/dsh-qq-onebot-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-14T04:25:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cheesehaqi/dsh-qq-onebot-bridge",
+    "commands": [
+      "dsh plugin --profile web add <本目录>",
+      "dsh plugin --profile web remove dsh-qq-onebot-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

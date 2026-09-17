@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "1e0zj/dsh-plugin-mall",
+  "slug": "1e0zj__dsh-plugin-mall",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-mall",
+  "title": "dsh-plugin-mall",
+  "summary": "在 GitHub 上搜罗 dsh 插件，一键装进本地，设置页和会话里都能用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin-marketplace",
+    "插件管理",
+    "零配置",
+    "GitHub搜索",
+    "工具集成"
+  ],
+  "version": "0.3.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.3",
+    "publishedAt": "2026-08-19T06:23:03Z",
+    "url": "https://github.com/1e0zj/dsh-plugin-mall/releases/tag/v0.3.3"
+  },
+  "author": "1e0zj",
+  "repo": "https://github.com/1e0zj/dsh-plugin-mall",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-08-27T15:53:03Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:1e0zj/dsh-plugin-mall",
+    "commands": [
+      "dsh plugin --profile web remove @1e0zj/dsh-plugin-mall",
+      "dsh plugin --profile web add file:C:\\code\\dsh-plugin-mall\\1e0zj-dsh-plugin-mall-0.1.13.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

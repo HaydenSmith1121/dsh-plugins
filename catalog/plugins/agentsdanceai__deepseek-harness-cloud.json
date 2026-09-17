@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "AgentsDanceAI/deepseek-harness-cloud",
+  "slug": "agentsdanceai__deepseek-harness-cloud",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-cloud",
+  "title": "dsh-plugin-cloud",
+  "summary": "为 DeepSeek Harness 提供托管云与自托管平台，管理账户、余额、模型网关和团队，支持云端 Agent 工作区。",
+  "tags": [
+    "ai-agent",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "docker-compose",
+    "dsh",
+    "dsh-plugin",
+    "fastapi",
+    "llm",
+    "open-core",
+    "self-hosted",
+    "AI工具",
+    "多Agent协作",
+    "资源优化",
+    "状态监控"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-14T10:40:52Z",
+    "url": "https://github.com/AgentsDanceAI/deepseek-harness-cloud/releases/tag/v0.4.0"
+  },
+  "author": "AgentsDanceAI",
+  "repo": "https://github.com/AgentsDanceAI/deepseek-harness-cloud",
+  "homepage": "https://aistore.best",
+  "license": "NOASSERTION",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-09-16T14:05:02Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AgentsDanceAI/deepseek-harness-cloud",
+    "commands": [
+      "npm install --global @agentsdanceai/dsh-cloud@0.4.0",
+      "uv tool install dsh-cloud==0.4.0",
+      "git clone https://github.com/AgentsDanceAI/deepseek-harness-cloud.git && cd deepseek-harness-cloud"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

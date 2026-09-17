@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "hongbaiqi/dsh-model-account-login",
+  "slug": "hongbaiqi__dsh-model-account-login",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-account-login",
+  "title": "dsh-model-account-login",
+  "summary": "为 DSH 提供持久化的模型账号登录界面，一次登录即可在 ChatGPT、Claude 等 AI 服务中保持授权状态。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "安全审计",
+    "模型配置",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hongbaiqi",
+  "repo": "https://github.com/hongbaiqi/dsh-model-account-login",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T23:27:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hongbaiqi/dsh-model-account-login",
+    "commands": [
+      "dsh plugin --profile web add github:hongbaiqi/dsh-model-account-login"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

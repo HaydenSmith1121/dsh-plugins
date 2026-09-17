@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "mafeis/dsh-image-guard",
+  "slug": "mafeis__dsh-image-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-image-guard",
+  "title": "dsh-image-guard",
+  "summary": "发图前自动裁剪历史图片，超出上限就降级重试，省下视觉 token 还能避免报错。",
+  "tags": [
+    "cordis",
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "vision",
+    "vllm",
+    "多模态",
+    "资源优化",
+    "模型适配",
+    "请求接管"
+  ],
+  "version": "0.8.16",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.16",
+    "publishedAt": "2026-09-12T11:13:25Z",
+    "url": "https://github.com/mafeis/dsh-image-guard/releases/tag/v0.8.16"
+  },
+  "author": "mafeis",
+  "repo": "https://github.com/mafeis/dsh-image-guard",
+  "homepage": "https://github.com/mafeis/dsh-image-guard#readme",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T03:49:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mafeis/dsh-image-guard",
+    "commands": [
+      "dsh plugin --profile web add github:mafeis/dsh-image-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "chenw2759-wq/dsh-IDE",
+  "slug": "chenw2759-wq__dsh-ide",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-IDE",
+  "title": "dsh-IDE",
+  "summary": "把 DSH 网页版变成一站式 IDE，带文件树、代码编辑、内置终端和 SSH 远程开发，让 AI 直接操控远程服务器。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "开发流程",
+    "工作区管理",
+    "效率提升",
+    "命令行工具"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chenw2759-wq",
+  "repo": "https://github.com/chenw2759-wq/dsh-IDE",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 36,
+  "forks": 3,
+  "pushedAt": "2026-09-04T08:12:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chenw2759-wq/dsh-IDE",
+    "commands": [
+      "git clone https://github.com/chenw2759-wq/dsh-IDE.git",
+      "dsh plugin --profile web add file:C:/你的路径/dsh-IDE/packages/dsh-aionui-panel",
+      "dsh plugin --profile web add file:C:/你的路径/dsh-IDE/packages/dsh-ssh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

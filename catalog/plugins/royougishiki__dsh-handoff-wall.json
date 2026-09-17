@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "RoyougiShiki/dsh-handoff-wall",
+  "slug": "royougishiki__dsh-handoff-wall",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-handoff-wall",
+  "title": "dsh-handoff-wall",
+  "summary": "把会话上下文打包成交接条，串成时间线，换班或切换任务时人和AI都能快速翻看，不丢上下文。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "多Agent协作",
+    "可视化",
+    "工作流增强"
+  ],
+  "version": "0.0.8",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.0.8",
+    "publishedAt": "2026-09-06T03:05:02Z",
+    "url": "https://github.com/RoyougiShiki/dsh-handoff-wall/releases/tag/v0.0.8"
+  },
+  "author": "RoyougiShiki",
+  "repo": "https://github.com/RoyougiShiki/dsh-handoff-wall",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-06T03:05:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:RoyougiShiki/dsh-handoff-wall",
+    "commands": [
+      "dsh plugin --profile web add github:RoyougiShiki/dsh-handoff-wall"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

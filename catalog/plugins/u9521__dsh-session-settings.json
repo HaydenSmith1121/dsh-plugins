@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "u9521/dsh-session-settings",
+  "slug": "u9521__dsh-session-settings",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-settings",
+  "title": "dsh-session-settings",
+  "summary": "在 DSH 网页界面里直接管理会话设置、MCP 服务器和技能，按需配置全局或单个会话。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "模型配置",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "u9521",
+  "repo": "https://github.com/u9521/dsh-session-settings",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-12T06:48:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:u9521/dsh-session-settings",
+    "commands": [
+      "dsh plugin --profile web add github:u9521/dsh-session-settings",
+      "git clone https://github.com/u9521/dsh-session-settings.git",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

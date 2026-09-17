@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "PerryLink/dsh-mask",
+  "slug": "perrylink__dsh-mask",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mask",
+  "title": "dsh-mask",
+  "summary": "在调用模型前自动打码姓名、电话、邮箱等敏感信息，显示时再还原，全程不泄露明文。",
+  "tags": [
+    "anonymization",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mask",
+    "pii",
+    "privacy",
+    "security",
+    "安全防护",
+    "零配置",
+    "会话管理"
+  ],
+  "version": "0.2.10",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.10",
+    "publishedAt": "2026-09-12T08:54:41Z",
+    "url": "https://github.com/PerryLink/dsh-mask/releases/tag/v0.2.10"
+  },
+  "author": "PerryLink",
+  "repo": "https://github.com/PerryLink/dsh-mask",
+  "homepage": "https://www.npmjs.com/package/dsh-mask",
+  "license": "Apache-2.0",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-09-12T09:33:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:PerryLink/dsh-mask",
+    "commands": [
+      "dsh plugin --profile web add github:PerryLink/dsh-mask"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

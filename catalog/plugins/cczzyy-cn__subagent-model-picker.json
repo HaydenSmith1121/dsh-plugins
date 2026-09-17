@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "cczzyy-cn/subagent-model-picker",
+  "slug": "cczzyy-cn__subagent-model-picker",
+  "tier": "community",
+  "package": null,
+  "name": "subagent-model-picker",
+  "title": "subagent-model-picker",
+  "summary": "让主会话自动挑选最合适的子代理模型，并支持为每个模型配置能力说明，提升任务分配效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "模型配置",
+    "工作流增强",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-04T14:53:46Z",
+    "url": "https://github.com/cczzyy-cn/subagent-model-picker/releases/tag/v0.4.0"
+  },
+  "author": "cczzyy-cn",
+  "repo": "https://github.com/cczzyy-cn/subagent-model-picker",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T15:11:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cczzyy-cn/subagent-model-picker",
+    "commands": [
+      "dsh plugin --profile web add github:cczzyy-cn/subagent-model-picker"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

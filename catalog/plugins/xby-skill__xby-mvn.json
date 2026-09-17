@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-mvn",
+  "slug": "xby-skill__xby-mvn",
+  "tier": "community",
+  "package": null,
+  "name": "xby-mvn",
+  "title": "xby-mvn",
+  "summary": "用自然语言帮你查 Maven 依赖版本、做安全扫描和依赖分析，还能记住 API 密钥，省心省力。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "自动化",
+    "状态监控",
+    "设置面板",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-mvn",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:19:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-mvn",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-mvn",
+      "dsh plugin --profile web add /absolute/path/to/xby-mvn"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

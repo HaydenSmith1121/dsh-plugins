@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zhengjy01/dsh-npm",
+  "slug": "zhengjy01__dsh-npm",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-npm",
+  "title": "dsh-npm",
+  "summary": "在 DSH 里直接查包、看版本、搜仓库、发包和标记废弃，NPM 管理一步到位。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "工具集成",
+    "自动化",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.1.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhengjy01",
+  "repo": "https://github.com/zhengjy01/dsh-npm",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T23:18:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-npm",
+    "commands": [
+      "dsh plugin --profile web add dsh-npm",
+      "dsh plugin --profile web add link:/path/to/dsh-npm",
+      "dsh plugin --profile web add github:zhengjy01/dsh-npm"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

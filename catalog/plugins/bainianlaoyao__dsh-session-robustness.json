@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "bainianlaoyao/dsh-session-robustness",
+  "slug": "bainianlaoyao__dsh-session-robustness",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-robustness",
+  "title": "dsh-session-robustness",
+  "summary": "模型请求失败后自动持续重试，直到成功或你手动取消，避免会话因临时故障中断。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "retry",
+    "自动化",
+    "会话管理",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "0.1.6",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bainianlaoyao",
+  "repo": "https://github.com/bainianlaoyao/dsh-session-robustness",
+  "homepage": "https://github.com/bainianlaoyao/dsh-session-robustness",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T14:10:18Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-session-robustness",
+    "commands": [
+      "dsh plugin --profile web add dsh-session-robustness",
+      "dsh plugin --profile web add github:bainianlaoyao/dsh-session-robustness",
+      "dsh plugin --profile web add D:/Data/DEV/dsh/dsh-session-robustness"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

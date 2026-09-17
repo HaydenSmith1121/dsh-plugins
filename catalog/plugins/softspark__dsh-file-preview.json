@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "softspark/dsh-file-preview",
+  "slug": "softspark__dsh-file-preview",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-file-preview",
+  "title": "dsh-file-preview",
+  "summary": "在对话中直接预览文件内容，无需下载或切换窗口，支持 Markdown 和 PDF，安全又方便。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "file-preview",
+    "markdown",
+    "pdf",
+    "react",
+    "typescript",
+    "文件管理",
+    "前端增强",
+    "效率提升",
+    "安全审计"
+  ],
+  "version": "2.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.0.0",
+    "publishedAt": "2026-09-06T19:30:03Z",
+    "url": "https://github.com/softspark/dsh-file-preview/releases/tag/v2.0.0"
+  },
+  "author": "softspark",
+  "repo": "https://github.com/softspark/dsh-file-preview",
+  "homepage": "https://github.com/softspark/dsh-file-preview#readme",
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T19:56:23Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:softspark/dsh-file-preview",
+    "commands": [
+      "dsh plugin --profile web add @softspark/dsh-file-preview --save-exact"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

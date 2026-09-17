@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "pan17/dsh-tool-manager",
+  "slug": "pan17__dsh-tool-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tool-manager",
+  "title": "dsh-tool-manager",
+  "summary": "按 Agent Preset 开关和分组工具，让低频工具像 Skill 一样按需加载，省下模型上下文。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "tool-search",
+    "tool-search-tool",
+    "工具集成",
+    "资源优化",
+    "模型适配",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "1.2.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.3",
+    "publishedAt": "2026-09-17T13:59:35Z",
+    "url": "https://github.com/pan17/dsh-tool-manager/releases/tag/v1.2.3"
+  },
+  "author": "pan17",
+  "repo": "https://github.com/pan17/dsh-tool-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T14:32:12Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:pan17/dsh-tool-manager",
+    "commands": [
+      "dsh plugin --profile web add github:pan17/dsh-tool-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

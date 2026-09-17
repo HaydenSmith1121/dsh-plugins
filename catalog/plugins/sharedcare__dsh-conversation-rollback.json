@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "sharedcare/dsh-conversation-rollback",
+  "slug": "sharedcare__dsh-conversation-rollback",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-conversation-rollback",
+  "title": "dsh-conversation-rollback",
+  "summary": "在 DSH 网页界面中像 Codex 一样回滚对话、修改输入后重新生成，并带右侧会话大纲栏，方便回溯和调整。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "web-ui",
+    "会话管理",
+    "效率提升",
+    "可视化",
+    "工作流增强"
+  ],
+  "version": "1.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.3.0",
+    "publishedAt": "2026-08-18T14:35:47Z",
+    "url": "https://github.com/sharedcare/dsh-conversation-rollback/releases/tag/v1.3.0"
+  },
+  "author": "sharedcare",
+  "repo": "https://github.com/sharedcare/dsh-conversation-rollback",
+  "homepage": "https://github.com/deepseek-ai/deepseek-harness",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T02:57:42Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sharedcare/dsh-conversation-rollback",
+    "commands": [
+      "dsh plugin --profile web add github:sharedcare/dsh-conversation-rollback"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

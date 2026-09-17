@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "lemoncat7/dsh-remote-settings-compat",
+  "slug": "lemoncat7__dsh-remote-settings-compat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-remote-settings-compat",
+  "title": "dsh-remote-settings-compat",
+  "summary": "统一远程访问与密码网关，让可信浏览器安全使用 DSH 的模型和设置，透明代理到本地服务。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "remote-access",
+    "安全审计",
+    "工作流增强",
+    "插件管理",
+    "娱乐互动"
+  ],
+  "version": "0.5.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.0",
+    "publishedAt": "2026-09-04T06:42:07Z",
+    "url": "https://github.com/lemoncat7/dsh-remote-settings-compat/releases/tag/v0.5.0"
+  },
+  "author": "lemoncat7",
+  "repo": "https://github.com/lemoncat7/dsh-remote-settings-compat",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T14:28:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lemoncat7/dsh-remote-settings-compat",
+    "commands": [
+      "dsh plugin --profile web add github:lemoncat7/dsh-remote-settings-compat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "baaai123/dsh-memory-protocol",
+  "slug": "baaai123__dsh-memory-protocol",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memory-protocol",
+  "title": "dsh-memory-protocol",
+  "summary": "给 DeepSeek Harness 加一道记忆硬门槛，强制接入 opencode-memory MCP 服务，确保每次对话都带着上下文，不丢记忆。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "mcp",
+    "memory",
+    "会话管理",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "0.3.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "baaai123",
+  "repo": "https://github.com/baaai123/dsh-memory-protocol",
+  "homepage": null,
+  "license": null,
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-05T15:37:48Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-memory-protocol",
+    "commands": [
+      "pip install \"memory-skill[onnx]\" optimum[onnxruntime] huggingface_hub",
+      "dsh plugin --profile web add dsh-memory-protocol"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

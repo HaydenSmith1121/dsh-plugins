@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "qwert702/dsh-token-viewer",
+  "slug": "qwert702__dsh-token-viewer",
+  "tier": "community",
+  "package": null,
+  "name": "qwert702/dsh-token-viewer",
+  "title": "qwert702/dsh-token-viewer",
+  "summary": "实时查看当前会话及所有会话的 token 消耗和费用，帮你监控资源使用，不发起任何模型调用。",
+  "tags": [
+    "cost",
+    "deepseek",
+    "deepseek-harness",
+    "developer",
+    "dsh",
+    "dsh-plugin",
+    "monitoring",
+    "token-meter",
+    "资源优化",
+    "效率提升",
+    "监控",
+    "开发者工具"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-19T07:00:16Z",
+    "url": "https://github.com/qwert702/dsh-token-viewer/releases/tag/v0.2.0"
+  },
+  "author": "qwert702",
+  "repo": "https://github.com/qwert702/dsh-token-viewer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-09-05T05:40:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qwert702/dsh-token-viewer",
+    "commands": [
+      "dsh plugin add qwert702/dsh-token-viewer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

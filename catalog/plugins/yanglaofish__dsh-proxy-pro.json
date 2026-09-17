@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "yanglaofish/dsh-proxy-pro",
+  "slug": "yanglaofish__dsh-proxy-pro",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-proxy-pro",
+  "title": "dsh-proxy-pro",
+  "summary": "把 DSH 的模型请求、联网搜索和工具调用统一走系统代理或自定义地址，随时切换还能诊断。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "模型适配",
+    "状态监控",
+    "快捷操作",
+    "工作流增强"
+  ],
+  "version": "1.0.8",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yanglaofish",
+  "repo": "https://github.com/yanglaofish/dsh-proxy-pro",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T13:35:18Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@yanglaofish/dsh-proxy-pro",
+    "commands": [
+      "dsh plugin --profile web add @yanglaofish/dsh-proxy-pro",
+      "dsh plugin --profile test add @yanglaofish/dsh-proxy-pro",
+      "dsh plugin --profile web add github:yanglaofish/dsh-proxy-pro"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

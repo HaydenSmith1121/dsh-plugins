@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-plugin-forge",
+  "slug": "jonah791__dsh-plugin-forge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-forge",
+  "title": "dsh-plugin-forge",
+  "summary": "写个声明式配置就能生成完整可构建的 DSH 插件项目，省去手写脚手架和踩坑。",
+  "tags": [
+    "dsh-plugin",
+    "插件开发",
+    "插件管理",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-07T11:07:32Z",
+    "url": "https://github.com/jonah791/dsh-plugin-forge/releases/tag/v0.1.0"
+  },
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-plugin-forge",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T06:01:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-plugin-forge",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-plugin-forge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "ycp424c/dsh-auto-fold-turn",
+  "slug": "ycp424c__dsh-auto-fold-turn",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auto-fold-turn",
+  "title": "dsh-auto-fold-turn",
+  "summary": "对话结束后自动把中间的工具调用和过程节点折叠成一行，让聊天记录更清爽，想看细节随时展开。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ycp424c",
+  "repo": "https://github.com/ycp424c/dsh-auto-fold-turn",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-04T08:02:09Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ycp424c/dsh-auto-fold-turn",
+    "commands": [
+      "dsh plugin --profile web add github:ycp424c/dsh-auto-fold-turn"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

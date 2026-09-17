@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "omdsh-dev/plugin-template",
+  "slug": "omdsh-dev__plugin-template",
+  "tier": "community",
+  "package": null,
+  "name": "plugin-template",
+  "title": "plugin-template",
+  "summary": "为开发者准备的 DSH 插件模板仓库，基于官方 UI 结构，方便快速创建和发布新插件。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "模板仓库"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.0.1",
+    "publishedAt": "2026-08-16T09:15:48Z",
+    "url": "https://github.com/omdsh-dev/plugin-template/releases/tag/v0.0.1"
+  },
+  "author": "omdsh-dev",
+  "repo": "https://github.com/omdsh-dev/plugin-template",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 13,
+  "forks": 1,
+  "pushedAt": "2026-09-16T13:04:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:omdsh-dev/plugin-template",
+    "commands": [
+      "dsh plugin --profile web add github:omdsh-dev/plugin-template"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

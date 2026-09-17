@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "1byteone/dsh-plugin-nlbi",
+  "slug": "1byteone__dsh-plugin-nlbi",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-nlbi",
+  "title": "dsh-plugin-nlbi",
+  "summary": "把自然语言问题自动转成SQL查询，直接对接MySQL数据库，让不懂技术的人也能轻松查数据。",
+  "tags": [
+    "bi",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mysql",
+    "nl2sql",
+    "text2sql",
+    "效率提升",
+    "零配置",
+    "自动化",
+    "模型配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-23T10:03:57Z",
+    "url": "https://github.com/1byteone/dsh-plugin-nlbi/releases/tag/v0.1.0"
+  },
+  "author": "1byteone",
+  "repo": "https://github.com/1byteone/dsh-plugin-nlbi",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-25T12:23:45Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-nlbi@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-nlbi@latest",
+      "dsh plugin --profile web add dsh-plugin-nlbi@0.2.1",
+      "dsh plugin --profile web add ./dsh-plugin-nlbi-0.2.1.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

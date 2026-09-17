@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "grloper/dsh-claude-oauth",
+  "slug": "grloper__dsh-claude-oauth",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-claude-oauth",
+  "title": "dsh-claude-oauth",
+  "summary": "用 Claude 账号登录 DSH，自动刷新令牌、发现模型并实时查看额度，省心又方便。",
+  "tags": [
+    "ai-agents",
+    "anthropic",
+    "claude",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "oauth",
+    "模型配置",
+    "安全审计",
+    "状态监控",
+    "自动化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-06T11:30:37Z",
+    "url": "https://github.com/grloper/dsh-claude-oauth/releases/tag/v1.0.0"
+  },
+  "author": "grloper",
+  "repo": "https://github.com/grloper/dsh-claude-oauth",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-06T11:34:07Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:grloper/dsh-claude-oauth",
+    "commands": [
+      "dsh plugin --profile web add github:grloper/dsh-claude-oauth",
+      "dsh plugin --profile web add ./dsh-claude-oauth"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

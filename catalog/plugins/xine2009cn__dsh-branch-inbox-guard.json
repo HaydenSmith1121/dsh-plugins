@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "xine2009cn/dsh-branch-inbox-guard",
+  "slug": "xine2009cn__dsh-branch-inbox-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-branch-inbox-guard",
+  "title": "dsh-branch-inbox-guard",
+  "summary": "新建分支时自动清掉从父会话继承的排队提示，让你输入的内容立刻生效。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "多Agent协作",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-11T06:17:55Z",
+    "url": "https://github.com/xine2009cn/dsh-branch-inbox-guard/releases/tag/v0.1.0"
+  },
+  "author": "xine2009cn",
+  "repo": "https://github.com/xine2009cn/dsh-branch-inbox-guard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-13T10:48:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xine2009cn/dsh-branch-inbox-guard",
+    "commands": [
+      "dsh plugin --profile web add github:xine2009cn/dsh-branch-inbox-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

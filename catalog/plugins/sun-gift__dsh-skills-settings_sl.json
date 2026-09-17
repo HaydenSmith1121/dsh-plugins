@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "sun-gift/dsh-skills-settings_sl",
+  "slug": "sun-gift__dsh-skills-settings_sl",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skills-settings_sl",
+  "title": "dsh-skills-settings_sl",
+  "summary": "把AI技能集中到设置页统一管理，支持搜索分类、创建编辑和开关控制，找功能配权限一步到位。",
+  "tags": [
+    "dsh",
+    "plugin",
+    "插件管理",
+    "效率提升",
+    "会话管理",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-20T04:26:57Z",
+    "url": "https://github.com/sun-gift/dsh-skills-settings_sl/releases/tag/v0.1.0"
+  },
+  "author": "sun-gift",
+  "repo": "https://github.com/sun-gift/dsh-skills-settings_sl",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T04:38:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-skills-settings_sl",
+    "commands": [
+      "dsh plugin --profile web add dsh-skills-settings_sl"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

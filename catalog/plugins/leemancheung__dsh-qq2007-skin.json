@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "LeemanCheung/dsh-qq2007-skin",
+  "slug": "leemancheung__dsh-qq2007-skin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-qq2007-skin",
+  "title": "dsh-qq2007-skin",
+  "summary": "把 DSH 网页界面一键变成 QQ 2007 复古蓝色聊天窗口，怀旧又好看，所有功能照常用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "qq2007",
+    "retro-ui",
+    "skin",
+    "theme",
+    "web-ui",
+    "界面美化",
+    "可视化",
+    "娱乐互动"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-08-15T12:23:56Z",
+    "url": "https://github.com/LeemanCheung/dsh-qq2007-skin/releases/tag/v0.3.0"
+  },
+  "author": "LeemanCheung",
+  "repo": "https://github.com/LeemanCheung/dsh-qq2007-skin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-05T05:12:51Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LeemanCheung/dsh-qq2007-skin",
+    "commands": [
+      "dsh plugin --profile web add github:LeemanCheung/dsh-qq2007-skin",
+      "git clone https://github.com/LeemanCheung/dsh-qq2007-skin.git",
+      "dsh plugin --profile web add ./"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

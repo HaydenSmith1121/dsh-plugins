@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "qwe225380/dsh-omni-router",
+  "slug": "qwe225380__dsh-omni-router",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-omni-router",
+  "title": "dsh-omni-router",
+  "summary": "给 DeepSeek Harness 加一层任务级可靠性，自动判断何时介入、验证证据并处理失败，让结果更靠谱。",
+  "tags": [
+    "agent-preset",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "omni-router",
+    "工作流增强",
+    "状态监控",
+    "自动化"
+  ],
+  "version": "3.0.0-rc.29",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "qwe225380",
+  "repo": "https://github.com/qwe225380/dsh-omni-router",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 2,
+  "pushedAt": "2026-08-31T01:57:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-omni-router",
+    "commands": [
+      "dsh plugin --profile web add dsh-omni-router"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

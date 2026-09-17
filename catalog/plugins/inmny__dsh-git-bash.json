@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "inmny/dsh-git-bash",
+  "slug": "inmny__dsh-git-bash",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-git-bash",
+  "title": "dsh-git-bash",
+  "summary": "让DeepSeek Harness在Windows上使用Git Bash，同时保留read-only等权限控制，安全又顺手。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "安全审查",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "inmny",
+  "repo": "https://github.com/inmny/dsh-git-bash",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 14,
+  "forks": 2,
+  "pushedAt": "2026-09-16T16:16:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-git-bash@0.3.2",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-git-bash@0.3.2",
+      "dsh plugin --profile web add dsh-plugin-git-bash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

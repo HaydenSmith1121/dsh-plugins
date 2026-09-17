@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Yelloooooow/dsh-shutdown-button",
+  "slug": "yelloooooow__dsh-shutdown-button",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-shutdown-button",
+  "title": "dsh-shutdown-button",
+  "summary": "在 DeepSeek Harness 网页界面左下角一键安全关机，弹窗确认后结束进程，防止误操作。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "power",
+    "shutdown",
+    "安全审计",
+    "前端增强",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-08T11:29:43Z",
+    "url": "https://github.com/Yelloooooow/dsh-shutdown-button/releases/tag/v1.0.0"
+  },
+  "author": "Yelloooooow",
+  "repo": "https://github.com/Yelloooooow/dsh-shutdown-button",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-08T11:29:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Yelloooooow/dsh-shutdown-button",
+    "commands": [
+      "dsh plugin --profile web add github:Yelloooooow/dsh-shutdown-button",
+      "dsh plugin --profile web add file:/path/to/dsh-shutdown-button/plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

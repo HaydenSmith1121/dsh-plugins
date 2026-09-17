@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "fandc520/dsh-comfyui",
+  "slug": "fandc520__dsh-comfyui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-comfyui",
+  "title": "dsh-comfyui",
+  "summary": "让 DeepSeek Harness 的 Agent 直接驱动本地或远程 ComfyUI 跑图，自动完成工作流。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "自动化",
+    "工作流增强",
+    "AI 助手"
+  ],
+  "version": "0.5.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fandc520",
+  "repo": "https://github.com/fandc520/dsh-comfyui",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 70,
+  "forks": 8,
+  "pushedAt": "2026-09-14T01:09:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-comfyui",
+    "commands": [
+      "dsh plugin --profile web add dsh-comfyui",
+      "dsh plugin --profile desktop add dsh-comfyui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

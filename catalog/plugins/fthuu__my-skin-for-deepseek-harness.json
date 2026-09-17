@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "fthuu/my-skin-for-DeepSeek-Harness",
+  "slug": "fthuu__my-skin-for-deepseek-harness",
+  "tier": "community",
+  "package": null,
+  "name": "my-skin-for-DeepSeek-Harness",
+  "title": "my-skin-for-DeepSeek-Harness",
+  "summary": "给 DeepSeek Harness 换肤的插件，内置多套预设主题，还能从壁纸自动取色，自定义主色和饱和度，实时预览效果。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-skin",
+    "主题",
+    "壁纸取色",
+    "自定义配色",
+    "沉浸式预览"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fthuu",
+  "repo": "https://github.com/fthuu/my-skin-for-DeepSeek-Harness",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-20T02:29:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fthuu/my-skin-for-DeepSeek-Harness",
+    "commands": [
+      "dsh plugin --profile web add github:fthuu/my-skin-for-DeepSeek-Harness"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

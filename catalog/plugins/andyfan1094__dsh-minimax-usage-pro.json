@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "andyfan1094/dsh-minimax-usage-pro",
+  "slug": "andyfan1094__dsh-minimax-usage-pro",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-minimax-usage-pro",
+  "title": "dsh-minimax-usage-pro",
+  "summary": "在设置页展示 MiniMax 套餐用量，方便你实时掌握额度消耗情况。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "资源优化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-22T11:42:17Z",
+    "url": "https://github.com/andyfan1094/dsh-minimax-usage-pro/releases/tag/v0.1.1"
+  },
+  "author": "andyfan1094",
+  "repo": "https://github.com/andyfan1094/dsh-minimax-usage-pro",
+  "homepage": "https://github.com/andyfan1094/dsh-minimax-usage-pro",
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-26T17:12:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:andyfan1094/dsh-minimax-usage-pro",
+    "commands": [
+      "dsh plugin --profile web add github:andyfan1094/dsh-minimax-usage-pro"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

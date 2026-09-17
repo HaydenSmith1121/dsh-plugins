@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "ckk-09/dsh-refix",
+  "slug": "ckk-09__dsh-refix",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-refix",
+  "title": "dsh-refix",
+  "summary": "让 DSH 插件自己查错、自己修、自己升级，省心又省事。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "状态监控",
+    "插件管理",
+    "效率提升",
+    "操作回滚"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "ckk-09",
+  "repo": "https://github.com/ckk-09/dsh-refix",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:35:39Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ckk-09/dsh-refix",
+    "commands": [
+      "dsh plugin --profile web add github:ckk-09/dsh-refix"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

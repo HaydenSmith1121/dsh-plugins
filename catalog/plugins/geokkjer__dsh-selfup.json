@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "geokkjer/dsh-selfup",
+  "slug": "geokkjer__dsh-selfup",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-selfup",
+  "title": "dsh-selfup",
+  "summary": "专为 DeepSeek Harness 打造的自动更新与部署工具，一键维护环境配置，随时保持最新版本不操心。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "geokkjer",
+  "repo": "https://github.com/geokkjer/dsh-selfup",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T11:15:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-selfup",
+    "commands": [
+      "dsh plugin --profile web add dsh-selfup",
+      "dsh plugin --profile web add github:geokkjer/dsh-selfup",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

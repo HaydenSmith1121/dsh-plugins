@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "loommii/dsh-thin-search",
+  "slug": "loommii__dsh-thin-search",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-thin-search",
+  "title": "dsh-thin-search",
+  "summary": "轻量搜索插件，不依赖官方LLM搜索，可自由切换后端，零token成本，帮你快速接入搜索能力。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "AI 助手",
+    "模型配置",
+    "零配置",
+    "资源优化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "loommii",
+  "repo": "https://github.com/loommii/dsh-thin-search",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T15:12:27Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-thin-search",
+    "commands": [
+      "dsh plugin --profile web add dsh-thin-search",
+      "dsh plugin --profile web add github:loommii/dsh-thin-search",
+      "git clone git@github.com:loommii/dsh-thin-search.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

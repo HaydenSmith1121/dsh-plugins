@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "swxs/archive-restore",
+  "slug": "swxs__archive-restore",
+  "tier": "community",
+  "package": null,
+  "name": "archive-restore",
+  "title": "archive-restore",
+  "summary": "在 Web 侧边栏一键查看已归档会话，支持原位恢复和跨区迁移，让归档管理更顺手。",
+  "tags": [
+    "archive-restore",
+    "dsh",
+    "dsh-plugin",
+    "session-management",
+    "会话管理",
+    "可视化",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "swxs",
+  "repo": "https://github.com/swxs/archive-restore",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T08:42:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:swxs/archive-restore",
+    "commands": [
+      "dsh plugin --profile web add <url>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "Entaum/dsh-free-games",
+  "slug": "entaum__dsh-free-games",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-free-games",
+  "title": "dsh-free-games",
+  "summary": "在 DeepSeek Harness 里直接玩免费网页游戏，写代码累了随时放松一下。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-plugins",
+    "free-game",
+    "web-games",
+    "可视化",
+    "零配置",
+    "效率提升",
+    "交互宠物"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-30T21:18:06Z",
+    "url": "https://github.com/Entaum/dsh-free-games/releases/tag/v0.1.0"
+  },
+  "author": "Entaum",
+  "repo": "https://github.com/Entaum/dsh-free-games",
+  "homepage": "https://www.spawnd.gg",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-31T20:49:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Entaum/dsh-free-games",
+    "commands": [
+      "dsh plugin --profile web add github:Entaum/dsh-free-games",
+      "dsh plugin --profile web add ./"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

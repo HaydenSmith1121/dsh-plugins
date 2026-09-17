@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "kevin-zx/dsh-park-notes",
+  "slug": "kevin-zx__dsh-park-notes",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-park-notes",
+  "title": "dsh-park-notes",
+  "summary": "在 AI 工作时随手记下想法，稍后再聊，不打断当前对话。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "AI 助手",
+    "工作流增强"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kevin-zx",
+  "repo": "https://github.com/kevin-zx/dsh-park-notes",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T09:24:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kevin-zx/dsh-park-notes",
+    "commands": [
+      "dsh plugin --profile web add github:kevin-zx/dsh-park-notes",
+      "dsh plugin --profile web add dsh-park-notes"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

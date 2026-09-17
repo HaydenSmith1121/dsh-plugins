@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "030611/dsh-telemetry-redactor",
+  "slug": "030611__dsh-telemetry-redactor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-telemetry-redactor",
+  "title": "dsh-telemetry-redactor",
+  "summary": "在遥测数据发送给后端前自动脱敏，防止敏感信息泄露，保障隐私安全。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "privacy",
+    "redaction",
+    "security",
+    "telemetry",
+    "安全审查",
+    "安全防护",
+    "数据分析"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "030611",
+  "repo": "https://github.com/030611/dsh-telemetry-redactor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-14T13:06:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-telemetry-redactor",
+    "commands": [
+      "dsh plugin --profile web add dsh-telemetry-redactor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

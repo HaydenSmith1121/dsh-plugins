@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "emeryxu1-blip/dsh-process-guardian",
+  "slug": "emeryxu1-blip__dsh-process-guardian",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-process-guardian",
+  "title": "dsh-process-guardian",
+  "summary": "给 DeepSeek Harness 加一道安全护栏，防止 AI 模型误操作把自己所在的宿主进程给关掉。",
+  "tags": [
+    "ai-agents",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "process-safety",
+    "自动化",
+    "插件管理",
+    "状态监控",
+    "工作流增强"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-27T03:19:00Z",
+    "url": "https://github.com/emeryxu1-blip/dsh-process-guardian/releases/tag/v0.1.1"
+  },
+  "author": "emeryxu1-blip",
+  "repo": "https://github.com/emeryxu1-blip/dsh-process-guardian",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-27T03:18:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:emeryxu1-blip/dsh-process-guardian",
+    "commands": [
+      "dsh plugin --profile web add -w github:emeryxu1-blip/dsh-process-guardian",
+      "dsh plugin --profile web remove dsh-process-guardian"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

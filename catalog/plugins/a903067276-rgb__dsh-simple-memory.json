@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "a903067276-rgb/dsh-simple-memory",
+  "slug": "a903067276-rgb__dsh-simple-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-simple-memory",
+  "title": "dsh-simple-memory",
+  "summary": "用 Markdown 文件帮你轻松管理 AI 记忆，支持一键注入上下文、按会话自动整理和跨项目快速查找。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "memory",
+    "文件管理",
+    "会话管理",
+    "工作区管理",
+    "效率提升"
+  ],
+  "version": "0.3.8",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.8",
+    "publishedAt": "2026-09-13T00:56:41Z",
+    "url": "https://github.com/a903067276-rgb/dsh-simple-memory/releases/tag/v0.3.8"
+  },
+  "author": "a903067276-rgb",
+  "repo": "https://github.com/a903067276-rgb/dsh-simple-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T00:04:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:a903067276-rgb/dsh-simple-memory",
+    "commands": [
+      "dsh plugin --profile web add \"github:a903067276-rgb/dsh-simple-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

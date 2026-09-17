@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "anweat/dsh-browser",
+  "slug": "anweat__dsh-browser",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-browser-runtime",
+  "title": "dsh-browser-runtime",
+  "summary": "自带 Chromium 内核的浏览器运行时插件，提供浏览器服务和交互式工具，让 AI 能直接操作网页。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "桌面自动化",
+    "浏览器自动化",
+    "运行时环境"
+  ],
+  "version": "0.1.12",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "anweat",
+  "repo": "https://github.com/anweat/dsh-browser",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 21,
+  "forks": 8,
+  "pushedAt": "2026-09-13T06:59:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@anweat/dsh-browser",
+    "commands": [
+      "dsh plugin --profile web add @anweat/dsh-browser",
+      "dsh plugin --profile web add ./dsh-browser",
+      "dsh plugin --profile web add @anweat/dsh-browser@next dsh-web-search-pro@next"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

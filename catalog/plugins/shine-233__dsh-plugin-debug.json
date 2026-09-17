@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "shine-233/dsh-plugin-debug",
+  "slug": "shine-233__dsh-plugin-debug",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-debug",
+  "title": "dsh-plugin-debug",
+  "summary": "DSH 调试插件，提供崩溃隔离、事故取证、Trace 分析和任务守护，帮你快速定位和恢复问题。",
+  "tags": [
+    "debugging",
+    "deepseek",
+    "diagnostics",
+    "dsh",
+    "nodejs",
+    "plugin",
+    "powershell",
+    "状态监控",
+    "安全审计",
+    "工作流增强",
+    "命令行工具",
+    "零配置"
+  ],
+  "version": "0.8.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.4",
+    "publishedAt": "2026-08-17T11:48:45Z",
+    "url": "https://github.com/shine-233/dsh-plugin-debug/releases/tag/v0.8.4"
+  },
+  "author": "shine-233",
+  "repo": "https://github.com/shine-233/dsh-plugin-debug",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T16:16:05Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shine-233/dsh-plugin-debug",
+    "commands": [
+      "dsh plugin --profile web add github:shine-233/dsh-plugin-debug"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

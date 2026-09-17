@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "troytse/dsh-plugin-subagent-roles",
+  "slug": "troytse__dsh-plugin-subagent-roles",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-subagent-roles",
+  "title": "dsh-plugin-subagent-roles",
+  "summary": "给 DeepSeek Harness 的子代理分配不同角色，让多个 AI 各司其职、分工协作。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "多智能体协作",
+    "工作流增强",
+    "AI 助手",
+    "插件管理"
+  ],
+  "version": "0.3.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "troytse",
+  "repo": "https://github.com/troytse/dsh-plugin-subagent-roles",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T05:11:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-subagent-roles",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-subagent-roles",
+      "dsh plugin --profile web add link:/path/to/dsh-plugin-subagent-roles"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

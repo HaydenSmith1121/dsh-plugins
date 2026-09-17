@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ZSeven-W/dsh-android",
+  "slug": "zseven-w__dsh-android",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-android",
+  "title": "dsh-android",
+  "summary": "在对话中直接操控安卓模拟器或USB真机，通过adb实时查看屏幕、执行操作，让AI帮你调试和测试应用。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "开发流程",
+    "命令行工具",
+    "状态监控"
+  ],
+  "version": "0.1.0-rc.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ZSeven-W",
+  "repo": "https://github.com/ZSeven-W/dsh-android",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 149,
+  "forks": 13,
+  "pushedAt": "2026-09-14T07:43:09Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@zseven-w/dsh-android@latest",
+    "commands": [
+      "dsh plugin --profile web add @zseven-w/dsh-android@latest",
+      "pnpm add @zseven-w/dsh-android"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

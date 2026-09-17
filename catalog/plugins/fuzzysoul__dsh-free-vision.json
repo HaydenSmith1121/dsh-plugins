@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "FuzzySoul/dsh-free-vision",
+  "slug": "fuzzysoul__dsh-free-vision",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-free-vision",
+  "title": "dsh-free-vision",
+  "summary": "给 DeepSeek Harness 加视觉能力，让纯文本模型也能看图，默认免费调用 Qwen3-VL-Flash。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "free",
+    "image-understanding",
+    "vision",
+    "视觉理解",
+    "模型配置",
+    "插件管理"
+  ],
+  "version": "1.0.8",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "FuzzySoul",
+  "repo": "https://github.com/FuzzySoul/dsh-free-vision",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 1,
+  "pushedAt": "2026-08-19T14:55:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-free-vision",
+    "commands": [
+      "dsh plugin --profile web add dsh-free-vision"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

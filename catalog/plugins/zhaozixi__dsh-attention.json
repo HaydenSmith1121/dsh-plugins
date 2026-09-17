@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "zhaozixi/dsh-attention",
+  "slug": "zhaozixi__dsh-attention",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-attention",
+  "title": "dsh-attention",
+  "summary": "任务运行时自动弹出碎片时间活动建议，把干等变成30秒到3分钟的微活动，提升效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "工作流增强",
+    "自动化",
+    "状态监控"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhaozixi",
+  "repo": "https://github.com/zhaozixi/dsh-attention",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-29T04:43:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@zhaozixi/dsh-attention@latest",
+    "commands": [
+      "dsh plugin --profile web add @zhaozixi/dsh-attention@latest",
+      "dsh plugin --profile web add link:../packages/dsh-attention"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

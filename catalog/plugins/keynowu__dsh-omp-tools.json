@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "KeynoWu/dsh-omp-tools",
+  "slug": "keynowu__dsh-omp-tools",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-omp-tools",
+  "title": "dsh-omp-tools",
+  "summary": "为 DeepSeek Harness 提供 LSP 语义导航与实时代码诊断，让写代码更顺手、少踩坑。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "开发流程",
+    "效率提升",
+    "代码审查"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-15T01:54:36Z",
+    "url": "https://github.com/KeynoWu/dsh-omp-tools/releases/tag/v0.4.0"
+  },
+  "author": "KeynoWu",
+  "repo": "https://github.com/KeynoWu/dsh-omp-tools",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 1,
+  "pushedAt": "2026-09-15T01:54:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:KeynoWu/dsh-omp-tools",
+    "commands": [
+      "npm i -g typescript-language-server pyright",
+      "npm i -g @ast-grep/cli"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

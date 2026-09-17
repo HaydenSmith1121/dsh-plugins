@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "SakalioLabs/dsh-code-ide",
+  "slug": "sakaliolabs__dsh-code-ide",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-code-ide",
+  "title": "dsh-code-ide",
+  "summary": "在 DSH 会话里直接打开浏览器 IDE，轻量顺手地审阅和修改代码，几乎不打扰原有流程。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "变更审查",
+    "文件差异",
+    "工具集成",
+    "效率提升",
+    "工作区管理"
+  ],
+  "version": "0.1.0-alpha.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "SakalioLabs",
+  "repo": "https://github.com/SakalioLabs/dsh-code-ide",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 10,
+  "forks": 0,
+  "pushedAt": "2026-08-29T13:35:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:SakalioLabs/dsh-code-ide",
+    "commands": [
+      "dsh plugin --profile web add github:SakalioLabs/dsh-code-ide"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

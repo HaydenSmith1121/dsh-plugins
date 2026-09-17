@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "xiagaogaozi/dsh-subagent-pool",
+  "slug": "xiagaogaozi__dsh-subagent-pool",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subagent-pool",
+  "title": "dsh-subagent-pool",
+  "summary": "配置一批可复用的命名子代理，主代理按描述自动选人，按名字调用干活，省心高效。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "子代理管理",
+    "模型预设",
+    "工作流增强",
+    "配置复用"
+  ],
+  "version": "0.3.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xiagaogaozi",
+  "repo": "https://github.com/xiagaogaozi/dsh-subagent-pool",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:55:57Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiagaogaozi/dsh-subagent-pool",
+    "commands": [
+      "dsh plugin --profile web add \"file:local-plugins/<path>/<tarball>.tgz\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

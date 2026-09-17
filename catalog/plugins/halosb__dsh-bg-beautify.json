@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "halosb/dsh-bg-beautify",
+  "slug": "halosb__dsh-bg-beautify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-bg-beautify",
+  "title": "dsh-bg-beautify",
+  "summary": "给 DeepSeek Harness 界面换上背景图、面板变半透明，设置页实时调节，不改源码。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "theme",
+    "界面美化",
+    "背景图",
+    "半透明面板",
+    "可视化",
+    "主题插件"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-08-17T05:22:49Z",
+    "url": "https://github.com/halosb/dsh-bg-beautify/releases/tag/v0.3.1"
+  },
+  "author": "halosb",
+  "repo": "https://github.com/halosb/dsh-bg-beautify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-17T05:37:24Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:halosb/dsh-bg-beautify",
+    "commands": [
+      "dsh plugin --profile web add github:halosb/dsh-bg-beautify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

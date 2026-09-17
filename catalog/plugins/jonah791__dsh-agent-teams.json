@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-agent-teams",
+  "slug": "jonah791__dsh-agent-teams",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-teams",
+  "title": "dsh-agent-teams",
+  "summary": "把单个 DeepSeek Harness 会话变成多个智能体协作的团队，自动分工完成任务。",
+  "tags": [
+    "dsh-plugin",
+    "多Agent协作",
+    "自动化",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "0.1.18",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-agent-teams",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T06:33:20Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@nanmicoder/dsh-agent-teams@latest",
+    "commands": [
+      "dsh plugin --profile web add @nanmicoder/dsh-agent-teams@latest",
+      "git clone https://github.com/NanmiCoder/dsh-agent-teams.git",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

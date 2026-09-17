@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "mario03690/dsh-adversarial-review",
+  "slug": "mario03690__dsh-adversarial-review",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-adversarial-review",
+  "title": "dsh-adversarial-review",
+  "summary": "对代码、MCP配置和系统提示进行对抗性审查，每条发现都附带复现路径和置信度，无法复现的标记为疑似而非确认。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mcp",
+    "工作流增强",
+    "安全审计",
+    "自动化",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "mario03690",
+  "repo": "https://github.com/mario03690/dsh-adversarial-review",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-22T03:53:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mario03690/dsh-adversarial-review",
+    "commands": [
+      "dsh plugin --profile <your-profile> add github:mario03690/dsh-adversarial-review"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

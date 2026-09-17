@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Xingkong42/dsh-open-workspace",
+  "slug": "xingkong42__dsh-open-workspace",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-open-workspace",
+  "title": "dsh-open-workspace",
+  "summary": "在会话侧边栏和标题栏一键打开当前工作区文件夹，方便用系统文件管理器直接访问会话相关文件。",
+  "tags": [
+    "dsh-plugin",
+    "工作区管理",
+    "文件管理",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-08T05:30:41Z",
+    "url": "https://github.com/Xingkong42/dsh-open-workspace/releases/tag/v1.0.0"
+  },
+  "author": "Xingkong42",
+  "repo": "https://github.com/Xingkong42/dsh-open-workspace",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T05:29:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Xingkong42/dsh-open-workspace",
+    "commands": [
+      "dsh plugin --profile web add github:Xingkong42/dsh-open-workspace"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "anyuer678/dsh-logtimeline",
+  "slug": "anyuer678__dsh-logtimeline",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-logtimeline",
+  "title": "dsh-logtimeline",
+  "summary": "用中文自然语言描述时间，快速查询本地日志文件，让日志分析更直观高效。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "log-analysis",
+    "日志查询",
+    "中文时间解析",
+    "本地文件分析",
+    "自然语言处理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "anyuer678",
+  "repo": "https://github.com/anyuer678/dsh-logtimeline",
+  "homepage": null,
+  "license": "GPL-3.0",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-10T05:41:25Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:anyuer678/dsh-logtimeline",
+    "commands": [
+      "git clone https://github.com/anyuer678/dsh-logtimeline.git",
+      "dsh plugin --profile web add file:/path/to/dsh-logtimeline"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ANOKO1122/dsh-session-cost-plus",
+  "slug": "anoko1122__dsh-session-cost-plus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-cost-plus",
+  "title": "dsh-session-cost-plus",
+  "summary": "在会话底部实时估算本次费用，并优化缓存命中显示，让统计更清晰准确。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "资源优化",
+    "可视化",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.2.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ANOKO1122",
+  "repo": "https://github.com/ANOKO1122/dsh-session-cost-plus",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-09T12:24:58Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "dsh plugin --profile web add .",
+      "dsh plugin --profile web add link:D:\\\\dsh花费查询",
+      "dsh plugin --profile web add ./dsh-session-cost-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

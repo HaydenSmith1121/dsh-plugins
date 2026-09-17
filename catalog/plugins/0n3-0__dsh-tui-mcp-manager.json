@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "0N3-0/dsh-tui-mcp-manager",
+  "slug": "0n3-0__dsh-tui-mcp-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tui-mcp-manager",
+  "title": "dsh-tui-mcp-manager",
+  "summary": "在 dsh-TUI 里通过浮窗管理 MCP Server，支持增删改查、启停、配置热重载，还能一键调试和查看工具定义。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-tui",
+    "mcp",
+    "设置面板",
+    "插件管理",
+    "命令行工具",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "0.1.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "0N3-0",
+  "repo": "https://github.com/0N3-0/dsh-tui-mcp-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T09:46:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-tui-mcp-manager",
+    "commands": [
+      "dsh plugin --profile dsh-tui add dsh-tui-mcp-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

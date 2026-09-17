@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "fxxg023/dsh-stock-assistant",
+  "slug": "fxxg023__dsh-stock-assistant",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-stock-assistant",
+  "title": "dsh-stock-assistant",
+  "summary": "AI股票助手，提供A股行情分析、条件选股和策略回测，帮你快速把握市场动态。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "stock",
+    "行情面板",
+    "工具集成",
+    "自动化",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fxxg023",
+  "repo": "https://github.com/fxxg023/dsh-stock-assistant",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T12:32:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fxxg023/dsh-stock-assistant",
+    "commands": [
+      "dsh plugin --profile web add github:fxxg023/dsh-stock-assistant"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

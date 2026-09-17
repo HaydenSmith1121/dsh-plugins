@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Rainflowers686/deepseek-harness-minimal-omni",
+  "slug": "rainflowers686__deepseek-harness-minimal-omni",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-minimal-omni",
+  "title": "deepseek-harness-minimal-omni",
+  "summary": "让 DeepSeek Harness 保持极简，按需加载浏览器、文档等能力，用完即释放，兼顾灵活与安全。",
+  "tags": [
+    "deepseek-harness",
+    "developer-preview",
+    "dsh-plugin",
+    "资源优化",
+    "工具集成",
+    "安全审计",
+    "工作流增强",
+    "插件管理"
+  ],
+  "version": "0.1.0-preview.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Rainflowers686",
+  "repo": "https://github.com/Rainflowers686/deepseek-harness-minimal-omni",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T09:35:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Rainflowers686/deepseek-harness-minimal-omni",
+    "commands": [
+      "dsh plugin --profile web add github:Rainflowers686/deepseek-harness-minimal-omni"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

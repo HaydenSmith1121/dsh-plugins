@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "Coprexist/AIsChat",
+  "slug": "coprexist__aischat",
+  "tier": "community",
+  "package": null,
+  "name": "AIsChat",
+  "title": "AIsChat",
+  "summary": "让 AI 在群聊里拥有状态、记忆和节奏，还能给每个群绑定一个活的网页世界，陪你聊天。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "多Agent协作",
+    "会话管理",
+    "状态持久化",
+    "工作区管理",
+    "AI 助手"
+  ],
+  "version": "0.3.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.5",
+    "publishedAt": "2026-08-13T15:13:02Z",
+    "url": "https://github.com/Coprexist/AIsChat/releases/tag/v0.3.5"
+  },
+  "author": "Coprexist",
+  "repo": "https://github.com/Coprexist/AIsChat",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-09-16T14:19:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Coprexist/AIsChat",
+    "commands": [
+      "git clone https://github.com/Coprexist/AIsChat.git && cd AIsChat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

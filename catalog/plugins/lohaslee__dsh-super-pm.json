@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Lohaslee/dsh-super-pm",
+  "slug": "lohaslee__dsh-super-pm",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-super-pm",
+  "title": "dsh-super-pm",
+  "summary": "把 Super PM 产品思考方法论打包成 DSH 插件，帮你用七套视角分析产品、双语参考，即装即用。",
+  "tags": [
+    "agent-skill",
+    "deepseek-harness",
+    "dsh-plugin",
+    "product-management",
+    "AI 助手",
+    "零配置",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Lohaslee",
+  "repo": "https://github.com/Lohaslee/dsh-super-pm",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T14:33:32Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Lohaslee/dsh-super-pm",
+    "commands": [
+      "dsh plugin --profile web add github:Lohaslee/dsh-super-pm"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

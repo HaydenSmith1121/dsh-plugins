@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "Lbunc/dsh-composer-glass",
+  "slug": "lbunc__dsh-composer-glass",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-composer-glass",
+  "title": "dsh-composer-glass",
+  "summary": "把 DSH 输入框变成一整块均匀半透明的毛玻璃面板，界面更清爽好看。",
+  "tags": [
+    "cordis",
+    "dsh",
+    "dsh-plugin",
+    "ui",
+    "前端增强",
+    "界面美化",
+    "设置面板"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-12T19:48:26Z",
+    "url": "https://github.com/Lbunc/dsh-composer-glass/releases/tag/v0.2.0"
+  },
+  "author": "Lbunc",
+  "repo": "https://github.com/Lbunc/dsh-composer-glass",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T19:35:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Lbunc/dsh-composer-glass",
+    "commands": [
+      "dsh plugin --profile web add github:Lbunc/dsh-composer-glass"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

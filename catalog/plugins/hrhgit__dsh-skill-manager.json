@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "hrhgit/dsh-skill-manager",
+  "slug": "hrhgit__dsh-skill-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skill-manager",
+  "title": "dsh-skill-manager",
+  "summary": "在 DeepSeek Harness 里直接编辑、创建和导入本地技能，不用另搞一套发现机制，即改即用。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "工作区管理",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hrhgit",
+  "repo": "https://github.com/hrhgit/dsh-skill-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T05:58:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hrhgit/dsh-skill-manager",
+    "commands": [
+      "dsh plugin --profile web add github:hrhgit/dsh-skill-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

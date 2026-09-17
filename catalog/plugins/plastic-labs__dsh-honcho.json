@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "plastic-labs/dsh-honcho",
+  "slug": "plastic-labs__dsh-honcho",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-honcho",
+  "title": "dsh-honcho",
+  "summary": "给 DeepSeek Harness 装上持久记忆，会话结束后也能记住上下文，让对话更连贯。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "plastic-labs",
+  "repo": "https://github.com/plastic-labs/dsh-honcho",
+  "homepage": "https://honcho.dev",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-02T18:02:12Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:plastic-labs/dsh-honcho",
+    "commands": [
+      "dsh plugin --profile <name> add @honcho-ai/dsh-honcho"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

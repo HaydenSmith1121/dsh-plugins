@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "Alan2Z/dsh-speak",
+  "slug": "alan2z__dsh-speak",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-speak",
+  "title": "dsh-speak",
+  "summary": "让你的 AI 编程助手开口说话，用语音播报进度和提醒，干活时不用一直盯着屏幕。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-speak",
+    "会话管理",
+    "效率提升",
+    "娱乐互动",
+    "零配置"
+  ],
+  "version": "1.8.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.8.1",
+    "publishedAt": "2026-09-10T15:42:09Z",
+    "url": "https://github.com/Alan2Z/dsh-speak/releases/tag/v1.8.1"
+  },
+  "author": "Alan2Z",
+  "repo": "https://github.com/Alan2Z/dsh-speak",
+  "homepage": "https://www.npmjs.com/package/dsh-speak",
+  "license": "MIT",
+  "stars": 10,
+  "forks": 1,
+  "pushedAt": "2026-09-10T15:42:06Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Alan2Z/dsh-speak",
+    "commands": [
+      "npm install --prefix \"$env:USERPROFILE\\.dsh\\profiles\\web\" dsh-speak",
+      "npm install --prefix \"$HOME/.dsh/profiles/web\" dsh-speak"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

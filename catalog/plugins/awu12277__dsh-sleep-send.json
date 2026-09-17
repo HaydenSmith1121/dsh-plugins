@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Awu12277/dsh-sleep-send",
+  "slug": "awu12277__dsh-sleep-send",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sleep-send",
+  "title": "dsh-sleep-send",
+  "summary": "在输入框旁边加个定时发送按钮，可以设定时间自动发出消息，任务刷新页面也不会丢。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "快捷操作",
+    "自动化",
+    "状态持久化",
+    "效率提升"
+  ],
+  "version": "1.2.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Awu12277",
+  "repo": "https://github.com/Awu12277/dsh-sleep-send",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 2,
+  "pushedAt": "2026-08-19T03:32:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-sleep-send",
+    "commands": [
+      "dsh plugin --profile web add dsh-sleep-send",
+      "npm install dsh-sleep-send"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

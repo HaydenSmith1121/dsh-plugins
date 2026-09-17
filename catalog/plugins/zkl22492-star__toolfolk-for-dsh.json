@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "zkl22492-star/Toolfolk-for-DSH",
+  "slug": "zkl22492-star__toolfolk-for-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "Toolfolk-for-DSH",
+  "title": "Toolfolk-for-DSH",
+  "summary": "把 DSH 的插件和模型调用变成 3D 办公室，谁在干活、干了啥一眼看清。",
+  "tags": [
+    "3d",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "threejs",
+    "visualization",
+    "可视化",
+    "状态监控",
+    "插件管理",
+    "多Agent协作",
+    "主题"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-12T17:00:03Z",
+    "url": "https://github.com/zkl22492-star/Toolfolk-for-DSH/releases/tag/v0.1.1"
+  },
+  "author": "zkl22492-star",
+  "repo": "https://github.com/zkl22492-star/Toolfolk-for-DSH",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T16:23:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zkl22492-star/Toolfolk-for-DSH",
+    "commands": [
+      "dsh plugin --profile web add github:zkl22492-star/Toolfolk-for-DSH"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

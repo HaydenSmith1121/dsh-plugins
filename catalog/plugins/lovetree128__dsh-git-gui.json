@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "lovetree128/dsh-git-gui",
+  "slug": "lovetree128__dsh-git-gui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-git-gui",
+  "title": "dsh-git-gui",
+  "summary": "在 DeepSeek Harness 网页界面里直接操作 Git，可视化查看提交、分支和变更，不用敲命令。",
+  "tags": [
+    "agentic-ai",
+    "ai",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "git",
+    "git-gui",
+    "gui",
+    "javascript",
+    "plugin",
+    "Git 可视化",
+    "前端增强",
+    "插件管理",
+    "命令行工具"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-08-18T16:17:48Z",
+    "url": "https://github.com/lovetree128/dsh-git-gui/releases/tag/v0.1.3"
+  },
+  "author": "lovetree128",
+  "repo": "https://github.com/lovetree128/dsh-git-gui",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-08-18T16:11:30Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lovetree128/dsh-git-gui",
+    "commands": [
+      "dsh plugin --profile web add github:lovetree128/dsh-git-gui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

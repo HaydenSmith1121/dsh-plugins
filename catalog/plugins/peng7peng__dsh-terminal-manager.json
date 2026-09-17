@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "peng7peng/dsh-terminal-manager",
+  "slug": "peng7peng__dsh-terminal-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-terminal-manager",
+  "title": "dsh-terminal-manager",
+  "summary": "在 DSH 里统一管理终端会话，随时开关、切换和查看运行状态，让多任务操作更顺手。",
+  "tags": [
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "会话管理",
+    "状态监控",
+    "快捷操作",
+    "工具集成"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "peng7peng",
+  "repo": "https://github.com/peng7peng/dsh-terminal-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T15:54:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:peng7peng/dsh-terminal-manager",
+    "commands": [
+      "dsh plugin --profile web add github:peng7peng/dsh-terminal-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

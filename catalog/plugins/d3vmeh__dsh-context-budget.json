@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "d3vmeh/dsh-context-budget",
+  "slug": "d3vmeh__dsh-context-budget",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-context-budget",
+  "title": "dsh-context-budget",
+  "summary": "自动控制本地模型上下文长度，防止GPU过载，提升推理速度与稳定性。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "资源优化",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "d3vmeh",
+  "repo": "https://github.com/d3vmeh/dsh-context-budget",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T21:48:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-context-budget",
+    "commands": [
+      "dsh plugin --profile web add dsh-context-budget"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

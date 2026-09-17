@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "ttmouse/dsh-model-picker",
+  "slug": "ttmouse__dsh-model-picker",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-picker",
+  "title": "dsh-model-picker",
+  "summary": "给 dsh 网页界面换个更好用的模型选择器，收藏常用模型，切换更顺手。",
+  "tags": [
+    "dsh-plugin",
+    "模型适配",
+    "前端增强",
+    "快捷操作",
+    "主题"
+  ],
+  "version": "1.18.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ttmouse",
+  "repo": "https://github.com/ttmouse/dsh-model-picker",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T15:02:59Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ttmouse/dsh-model-picker",
+    "commands": [
+      "dsh plugin --profile web add github:ttmouse/dsh-model-picker"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

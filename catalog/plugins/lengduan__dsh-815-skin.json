@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "lengduan/dsh-815-skin",
+  "slug": "lengduan__dsh-815-skin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-815-skin",
+  "title": "dsh-815-skin",
+  "summary": "给 DeepSeek Harness 网页界面换上 1945 年南京受降名画底图，让对话区更有历史氛围。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "主题",
+    "界面美化",
+    "前端增强"
+  ],
+  "version": "0.1.23",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lengduan",
+  "repo": "https://github.com/lengduan/dsh-815-skin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T13:29:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@lengduan/dsh-client-ui-skin-815",
+    "commands": [
+      "dsh plugin --profile web add @lengduan/dsh-client-ui-skin-815",
+      "dsh plugin --profile web update @lengduan/dsh-client-ui-skin-815",
+      "dsh plugin --profile web remove @lengduan/dsh-client-ui-skin-815"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "CZ-ZL/duo",
+  "slug": "cz-zl__duo",
+  "tier": "community",
+  "package": null,
+  "name": "duo",
+  "title": "duo",
+  "summary": "在 DSH 里跑候选改动做对比测试，记录结果、依据和花费，用不用你说了算。",
+  "tags": [
+    "agent-evaluation",
+    "agent-optimization",
+    "agent-tools",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "evaluation",
+    "optimization",
+    "prompt-optimization",
+    "变更审查",
+    "数据可审计",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.6.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.0",
+    "publishedAt": "2026-09-14T18:39:56Z",
+    "url": "https://github.com/CZ-ZL/duo/releases/tag/v0.6.0"
+  },
+  "author": "CZ-ZL",
+  "repo": "https://github.com/CZ-ZL/duo",
+  "homepage": "https://github.com/CZ-ZL/duo#start-here",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T10:02:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CZ-ZL/duo",
+    "commands": [
+      "dsh plugin --profile web add github:CZ-ZL/duo"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

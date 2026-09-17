@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "yangdongzhen590/dsh-knj-workflow",
+  "slug": "yangdongzhen590__dsh-knj-workflow",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-knj-workflow",
+  "title": "dsh-knj-workflow",
+  "summary": "配置驱动的工作流编排插件，帮你管理开发任务、拆分阶段并可视化进度，让复杂开发流程一目了然。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "自动化",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "2026.9.110",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yangdongzhen590",
+  "repo": "https://github.com/yangdongzhen590/dsh-knj-workflow",
+  "homepage": null,
+  "license": null,
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-09T16:30:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-knj-workflow",
+    "commands": [
+      "dsh plugin --profile web add dsh-knj-workflow"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

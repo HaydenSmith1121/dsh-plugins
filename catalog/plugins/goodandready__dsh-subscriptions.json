@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-subscriptions",
+  "slug": "goodandready__dsh-subscriptions",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subscriptions",
+  "title": "dsh-subscriptions",
+  "summary": "零费用OAuth订阅接入Codex、Claude等大模型，支持多账号池轮换，为DeepSeek Harness省成本提效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "资源优化",
+    "工具集成",
+    "设置面板",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.6.11",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.11",
+    "publishedAt": "2026-09-17T08:01:45Z",
+    "url": "https://github.com/GooDAnDReaDY/dsh-subscriptions/releases/tag/v0.6.11"
+  },
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-subscriptions",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 2,
+  "pushedAt": "2026-09-16T19:22:14Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooDAnDReaDY/dsh-subscriptions",
+    "commands": [
+      "dsh plugin --profile web add github:GooDAnDReaDY/dsh-subscriptions"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

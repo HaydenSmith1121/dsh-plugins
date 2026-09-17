@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "andykwokatgithub/dsh-desktop",
+  "slug": "andykwokatgithub__dsh-desktop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-desktop",
+  "title": "dsh-desktop",
+  "summary": "把 dsh web 的网页界面装进原生 Windows 窗口，桌面端也能顺手用 DeepSeek Harness。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-desktop",
+    "dsh-plugin",
+    "界面美化",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.3.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.2",
+    "publishedAt": "2026-09-15T01:42:44Z",
+    "url": "https://github.com/andykwokatgithub/dsh-desktop/releases/tag/v0.3.2"
+  },
+  "author": "andykwokatgithub",
+  "repo": "https://github.com/andykwokatgithub/dsh-desktop",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T09:13:53Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:andykwokatgithub/dsh-desktop",
+    "commands": [
+      "dsh plugin --profile web add github:andykwokatgithub/dsh-desktop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

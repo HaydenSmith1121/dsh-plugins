@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "salathleizhang/dsh-volcengine",
+  "slug": "salathleizhang__dsh-volcengine",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-volcengine",
+  "title": "dsh-volcengine",
+  "summary": "把火山方舟的模型接进 DSH 模型选择器，直接驱动 agent 干活。",
+  "tags": [
+    "dsh-plugin",
+    "模型适配",
+    "工具集成"
+  ],
+  "version": "0.2.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "salathleizhang",
+  "repo": "https://github.com/salathleizhang/dsh-volcengine",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T10:30:32Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "npm install && npm run build",
+      "dsh plugin --profile web add .",
+      "dsh plugin --profile web add github:you/dsh-volcengine"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

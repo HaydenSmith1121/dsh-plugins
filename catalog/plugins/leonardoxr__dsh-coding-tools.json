@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "leonardoxr/dsh-coding-tools",
+  "slug": "leonardoxr__dsh-coding-tools",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-coding-tools",
+  "title": "dsh-coding-tools",
+  "summary": "为 DeepSeek Harness 提供安全受限的编码工具，无需修改主程序即可扩展开发功能。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-web",
+    "工作流增强",
+    "工作区管理",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.1.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.6",
+    "publishedAt": "2026-08-24T01:16:28Z",
+    "url": "https://github.com/leonardoxr/dsh-coding-tools/releases/tag/v0.1.6"
+  },
+  "author": "leonardoxr",
+  "repo": "https://github.com/leonardoxr/dsh-coding-tools",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T19:02:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:leonardoxr/dsh-coding-tools",
+    "commands": [
+      "dsh plugin --profile web add github:leonardoxr/dsh-coding-tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

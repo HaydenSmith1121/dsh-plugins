@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-glama-registry",
+  "slug": "xby-skill__xby-glama-registry",
+  "tier": "community",
+  "package": null,
+  "name": "xby-glama-registry",
+  "title": "xby-glama-registry",
+  "summary": "在聊天中直接搜索 Glama 注册中心的 MCP 服务器，帮你快速找到想要的工具。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "模型配置",
+    "零配置",
+    "设置面板"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-glama-registry",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:44:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-glama-registry",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-glama-registry",
+      "dsh plugin --profile web add /absolute/path/to/xby-glama-registry"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

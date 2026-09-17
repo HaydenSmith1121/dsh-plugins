@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "aaronlei/dsh-web-search-diy",
+  "slug": "aaronlei__dsh-web-search-diy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-search-diy",
+  "title": "dsh-web-search-diy",
+  "summary": "把DSH内置的网页搜索接到OpenAI兼容的Responses API上，直接用原生搜索能力，无需额外配置。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-web-search",
+    "dsh-web-search-diy",
+    "模型配置",
+    "工具集成",
+    "插件管理",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "aaronlei",
+  "repo": "https://github.com/aaronlei/dsh-web-search-diy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-07T16:13:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-web-search-diy",
+    "commands": [
+      "dsh plugin --profile web add dsh-web-search-diy",
+      "dsh plugin --profile web add link:./dsh-web-search-diy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

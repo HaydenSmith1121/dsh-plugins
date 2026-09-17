@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "nataliwhite20534-droid/dsh-moe-plugin",
+  "slug": "nataliwhite20534-droid__dsh-moe-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-moe-plugin",
+  "title": "dsh-moe-plugin",
+  "summary": "为 DSH 对话预设 10 个萌属性角色卡，可自由组合、编辑和保存，快速生成个性化角色扮演提示词。",
+  "tags": [
+    "anime",
+    "character",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "javascript",
+    "moe",
+    "persona",
+    "roleplay",
+    "娱乐互动",
+    "零配置",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-03T02:47:46Z",
+    "url": "https://github.com/nataliwhite20534-droid/dsh-moe-plugin/releases/tag/v0.1.0"
+  },
+  "author": "nataliwhite20534-droid",
+  "repo": "https://github.com/nataliwhite20534-droid/dsh-moe-plugin",
+  "homepage": "https://github.com/deepseek-ai/deepseek-harness",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T03:50:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:nataliwhite20534-droid/dsh-moe-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:nataliwhite20534-droid/dsh-moe-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

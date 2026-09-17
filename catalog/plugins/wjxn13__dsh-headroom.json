@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "wjxn13/dsh-headroom",
+  "slug": "wjxn13__dsh-headroom",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-headroom",
+  "title": "dsh-headroom",
+  "summary": "一键接入 Headroom 上下文压缩代理，自动配置 DeepSeek 压缩路由，轻松切换，省 token 又省心。",
+  "tags": [
+    "context-compression",
+    "dsh-plugin",
+    "headroom",
+    "会话管理",
+    "资源优化",
+    "零配置",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wjxn13",
+  "repo": "https://github.com/wjxn13/dsh-headroom",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-13T11:44:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wjxn13/dsh-headroom-suite",
+    "commands": [
+      "dsh plugin --profile web add github:wjxn13/dsh-headroom-suite",
+      "dsh plugin --profile web add \"github:wjxn13/dsh-caveman",
+      "git clone https://github.com/wjxn13/dsh-headroom.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

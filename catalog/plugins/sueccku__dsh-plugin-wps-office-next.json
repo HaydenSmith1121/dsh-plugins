@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "sueccku/dsh-plugin-wps-office-next",
+  "slug": "sueccku__dsh-plugin-wps-office-next",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-wps-office-next",
+  "title": "dsh-plugin-wps-office-next",
+  "summary": "在 DSH 里用中文对话操作 WPS 表格、文字和演示，读写数据、排版、做公式图表，还能批量转 PDF。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "wps-office",
+    "零配置",
+    "自动化",
+    "效率提升",
+    "工具集成"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-16T12:07:27Z",
+    "url": "https://github.com/sueccku/dsh-plugin-wps-office-next/releases/tag/v0.3.0"
+  },
+  "author": "sueccku",
+  "repo": "https://github.com/sueccku/dsh-plugin-wps-office-next",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T12:53:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sueccku/dsh-plugin-wps-office-next",
+    "commands": [
+      "dsh plugin --profile web add github:sueccku/dsh-plugin-wps-office-next"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

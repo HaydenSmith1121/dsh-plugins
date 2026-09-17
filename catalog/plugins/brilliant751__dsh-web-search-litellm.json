@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "brilliant751/dsh-web-search-litellm",
+  "slug": "brilliant751__dsh-web-search-litellm",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-search-litellm",
+  "title": "dsh-web-search-litellm",
+  "summary": "给 DeepSeek Harness 接入 LiteLLM 的联网搜索能力，让模型能实时查资料、搜网页。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "litellm",
+    "模型配置",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "brilliant751",
+  "repo": "https://github.com/brilliant751/dsh-web-search-litellm",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T10:51:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@brilliant751/dsh-web-search-litellm",
+    "commands": [
+      "dsh plugin --profile web add @brilliant751/dsh-web-search-litellm"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

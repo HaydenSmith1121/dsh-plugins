@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "xswt442-cmd/dsh-treekeeper",
+  "slug": "xswt442-cmd__dsh-treekeeper",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-treekeeper",
+  "title": "dsh-treekeeper",
+  "summary": "把 DSH 任务账本和系统进程树对上号，找出跑漏的进程并安全清理。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "状态监控",
+    "资源优化",
+    "数据可审计",
+    "安全审计",
+    "工作区管理"
+  ],
+  "version": "0.2.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.6",
+    "publishedAt": "2026-09-17T14:41:52Z",
+    "url": "https://github.com/xswt442-cmd/dsh-treekeeper/releases/tag/v0.2.6"
+  },
+  "author": "xswt442-cmd",
+  "repo": "https://github.com/xswt442-cmd/dsh-treekeeper",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T18:27:05Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xswt442-cmd/dsh-treekeeper",
+    "commands": [
+      "dsh plugin --profile web add github:xswt442-cmd/dsh-treekeeper"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "jing-hy/dsh-unified-market",
+  "slug": "jing-hy__dsh-unified-market",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-unified-market",
+  "title": "dsh-unified-market",
+  "summary": "聚合官方精选、GitHub 和 npm 三处插件源，统一安装更新，还支持 .dshpack 功能包，让 DSH 桌面端插件管理更省心。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "marketplace",
+    "插件管理",
+    "模型配置",
+    "效率提升"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-08-27T13:44:29Z",
+    "url": "https://github.com/jing-hy/dsh-unified-market/releases/tag/v0.3.0"
+  },
+  "author": "jing-hy",
+  "repo": "https://github.com/jing-hy/dsh-unified-market",
+  "homepage": "https://github.com/jing-hy/dsh-unified-market#readme",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-11T12:05:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jing-hy/dsh-unified-market",
+    "commands": [
+      "dsh plugin --profile web add github:jing-hy/dsh-unified-market"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

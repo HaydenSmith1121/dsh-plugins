@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xchannel1987/dsh-reverse-proxy-xc",
+  "slug": "xchannel1987__dsh-reverse-proxy-xc",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-reverse-proxy-xc",
+  "title": "dsh-reverse-proxy-xc",
+  "summary": "把 DSH 的 Web 界面通过局域网反向代理出去，手机也能直接打开使用。",
+  "tags": [
+    "dsh-plugin",
+    "跨设备",
+    "桥接插件",
+    "零配置",
+    "工具集成"
+  ],
+  "version": "0.1.6",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xchannel1987",
+  "repo": "https://github.com/xchannel1987/dsh-reverse-proxy-xc",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T10:34:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-reverse-proxy-xc",
+    "commands": [
+      "dsh plugin --profile web add dsh-reverse-proxy-xc",
+      "npm install dsh-reverse-proxy-xc"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

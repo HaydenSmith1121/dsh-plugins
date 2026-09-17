@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "LiangYin233/dsh-provider-model-configurator",
+  "slug": "liangyin233__dsh-provider-model-configurator",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-provider-model-configurator",
+  "title": "dsh-provider-model-configurator",
+  "summary": "在独立设置页集中管理各提供商的模型条目，还能把预设模型参数一键套用到目标提供商。",
+  "tags": [
+    "dsh-plugin",
+    "模型适配",
+    "设置面板",
+    "模型配置",
+    "效率提升"
+  ],
+  "version": "0.3.2",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "LiangYin233",
+  "repo": "https://github.com/LiangYin233/dsh-provider-model-configurator",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 18,
+  "forks": 1,
+  "pushedAt": "2026-08-14T14:31:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LiangYin233/dsh-provider-model-configurator",
+    "commands": [
+      "dsh plugin --profile web add github:LiangYin233/dsh-provider-model-configurator",
+      "dsh plugin --profile web add https://github.com/LiangYin233/dsh-provider-model-configurator/archive/refs/tags/v0.3.9.tar.gz",
+      "dsh plugin --profile web add ./dsh-provider-model-configurator-0.3.9.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

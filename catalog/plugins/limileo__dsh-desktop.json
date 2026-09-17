@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "limileo/DSH-Desktop",
+  "slug": "limileo__dsh-desktop",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-Desktop",
+  "title": "DSH-Desktop",
+  "summary": "免安装、免命令行的 DeepSeek Harness 桌面版，开箱即用，支持 macOS 和 Windows。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-desktop",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-desktop",
+    "dsh-plugins",
+    "桌面自动化",
+    "免安装",
+    "零配置",
+    "多后端"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-15T10:20:23Z",
+    "url": "https://github.com/limileo/DSH-Desktop/releases/tag/v0.1.0"
+  },
+  "author": "limileo",
+  "repo": "https://github.com/limileo/DSH-Desktop",
+  "homepage": "https://dsh.limi.art",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-18T04:33:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:limileo/DSH-Desktop",
+    "commands": [
+      "dsh plugin --profile web add github:limileo/DSH-Desktop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

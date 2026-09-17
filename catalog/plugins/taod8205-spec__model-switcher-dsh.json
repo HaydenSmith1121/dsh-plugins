@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "taod8205-spec/model-switcher-dsh",
+  "slug": "taod8205-spec__model-switcher-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "model-switcher-dsh",
+  "title": "model-switcher-dsh",
+  "summary": "在 DeepSeek Harness 网页端一键切换模型与推理强度，滑杆拖到最高档自动进入紫色极高态，操作直观又带感。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "model-switcher",
+    "reasoning-effort",
+    "模型配置",
+    "前端增强",
+    "桌宠",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "taod8205-spec",
+  "repo": "https://github.com/taod8205-spec/model-switcher-dsh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T16:14:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:taod8205-spec/model-switcher-dsh",
+    "commands": [
+      "dsh plugin --profile web add github:taod8205-spec/model-switcher-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

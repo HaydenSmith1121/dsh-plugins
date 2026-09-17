@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "ppjun2026/dsh-client-ui-lingxi",
+  "slug": "ppjun2026__dsh-client-ui-lingxi",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-client-ui-lingxi",
+  "title": "dsh-client-ui-lingxi",
+  "summary": "灵犀灵感工作台，帮你把想法记下来、孵化成项目，还能AI评分和画关联图谱，数据存本地JSON，开箱即用。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "idea-workbench",
+    "ideation",
+    "plugin",
+    "productivity",
+    "workflow",
+    "效率提升",
+    "工作区管理",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-23T03:52:27Z",
+    "url": "https://github.com/ppjun2026/dsh-client-ui-lingxi/releases/tag/v0.2.0"
+  },
+  "author": "ppjun2026",
+  "repo": "https://github.com/ppjun2026/dsh-client-ui-lingxi",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-23T03:52:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@linxin666/dsh-client-ui-lingxi",
+    "commands": [
+      "dsh plugin --profile web add \"link:<本仓库路径>\"",
+      "dsh plugin --profile web add @linxin666/dsh-client-ui-lingxi"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "papachong/deepseek-harness-tui",
+  "slug": "papachong__deepseek-harness-tui",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-tui",
+  "title": "deepseek-harness-tui",
+  "summary": "为 DeepSeek Harness 打造的终端界面，插件化设计，同步官方更新，让你在命令行里轻松跑智能体。",
+  "tags": [
+    "ai-agent",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "AI 助手",
+    "状态监控",
+    "插件管理",
+    "自动化"
+  ],
+  "version": "0.1.0-rc.7",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "papachong",
+  "repo": "https://github.com/papachong/deepseek-harness-tui",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-26T03:36:07Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:papachong/deepseek-harness-tui",
+    "commands": [
+      "dsh plugin --profile web add github:papachong/deepseek-harness-tui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

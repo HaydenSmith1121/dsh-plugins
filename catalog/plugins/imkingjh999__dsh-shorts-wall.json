@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "imkingjh999/dsh-shorts-wall",
+  "slug": "imkingjh999__dsh-shorts-wall",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-shorts-wall",
+  "title": "dsh-shorts-wall",
+  "summary": "在 DeepSeek Harness 里看竖屏短视频，支持 YouTube Shorts 和 B站，可拖拽浮窗、贴边吸附，还能用关键词包刷内容。",
+  "tags": [
+    "bilibili",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "shorts",
+    "youtube-shorts",
+    "竖屏短视频",
+    "浮窗播放",
+    "B站",
+    "关键词包"
+  ],
+  "version": "1.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.3.1",
+    "publishedAt": "2026-08-19T14:09:03Z",
+    "url": "https://github.com/imkingjh999/dsh-shorts-wall/releases/tag/v1.3.1"
+  },
+  "author": "imkingjh999",
+  "repo": "https://github.com/imkingjh999/dsh-shorts-wall",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-23T17:40:03Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:imkingjh999/dsh-shorts-wall",
+    "commands": [
+      "dsh plugin --profile web add github:imkingjh999/dsh-shorts-wall",
+      "pnpm add link:~/projects/dsh-plugins/dsh-shorts-wall"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

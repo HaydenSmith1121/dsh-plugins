@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "2031814001yuyue-tech/dsh-side-chat",
+  "slug": "2031814001yuyue-tech__dsh-side-chat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-side-chat",
+  "title": "dsh-side-chat",
+  "summary": "在主对话外开一条并行 agent 会话，独立上下文共享工作区，结束后把结论摘要带回，不污染主对话。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "并行对话",
+    "上下文隔离",
+    "摘要回传",
+    "工作区共享"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "2031814001yuyue-tech",
+  "repo": "https://github.com/2031814001yuyue-tech/dsh-side-chat",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-15T04:46:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:2031814001yuyue-tech/dsh-side-chat",
+    "commands": [
+      "npm install dsh-side-chat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "aa2246740/dsh-gateway",
+  "slug": "aa2246740__dsh-gateway",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-gateway",
+  "title": "dsh-gateway",
+  "summary": "把 Slack 和飞书接到你的 DSH 上，一个网关统一收发消息，用自己的应用就能跑。",
+  "tags": [
+    "dsh-plugin",
+    "桥接插件",
+    "工具集成",
+    "消息通知",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "aa2246740",
+  "repo": "https://github.com/aa2246740/dsh-gateway",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-13T13:04:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aa2246740/dsh-gateway",
+    "commands": [
+      "dsh plugin --profile web add github:aa2246740/dsh-gateway",
+      "git clone https://github.com/aa2246740/dsh-gateway.git",
+      "dsh plugin --profile web add file:./dsh-gateway"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

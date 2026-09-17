@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "left0ver/dsh-file-review",
+  "slug": "left0ver__dsh-file-review",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-file-review",
+  "title": "dsh-file-review",
+  "summary": "在 DeepSeek Harness 网页里直接查看智能体刚改过的文件差异，不用切工具就能快速审查代码改动。",
+  "tags": [
+    "diff",
+    "dsh-better-sidebar",
+    "dsh-plugin",
+    "文件审查",
+    "差异对比",
+    "代码审阅",
+    "AI工具"
+  ],
+  "version": "0.8.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.1",
+    "publishedAt": "2026-09-12T18:20:14Z",
+    "url": "https://github.com/left0ver/dsh-file-review/releases/tag/v0.8.1"
+  },
+  "author": "left0ver",
+  "repo": "https://github.com/left0ver/dsh-file-review",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 41,
+  "forks": 3,
+  "pushedAt": "2026-09-12T19:17:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:left0ver/dsh-file-review",
+    "commands": [
+      "dsh plugin --profile web add github:left0ver/dsh-file-review"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

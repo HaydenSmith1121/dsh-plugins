@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "warment/deepseek-harness-locale-ru",
+  "slug": "warment__deepseek-harness-locale-ru",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-locale-ru",
+  "title": "deepseek-harness-locale-ru",
+  "summary": "为 DeepSeek Harness 网页界面一键安装俄语语言包，覆盖全部界面文本，让俄语用户使用更顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "i18n",
+    "localization",
+    "russian",
+    "可视化",
+    "模型配置",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-08-30T04:09:13Z",
+    "url": "https://github.com/warment/deepseek-harness-locale-ru/releases/tag/v0.1.2"
+  },
+  "author": "warment",
+  "repo": "https://github.com/warment/deepseek-harness-locale-ru",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-30T04:08:26Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:warment/deepseek-harness-locale-ru",
+    "commands": [
+      "dsh plugin --profile web add github:warment/deepseek-harness-locale-ru",
+      "dsh plugin --profile web add /путь/к/deepseek-harness-locale-ru",
+      "dsh plugin --profile web remove deepseek-harness-locale-ru"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

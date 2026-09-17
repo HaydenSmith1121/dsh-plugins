@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "klarkxy/dsh-plugin-autoevo",
+  "slug": "klarkxy__dsh-plugin-autoevo",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-autoevo",
+  "title": "dsh-plugin-autoevo",
+  "summary": "让 Agent 复用已有能力并安全演进，需要新技能时先查本地再搜全网，进化不停歇。",
+  "tags": [
+    "auto-evolution",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "能力复用",
+    "安全演进",
+    "技能发现",
+    "插件管理"
+  ],
+  "version": "1.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.3.1",
+    "publishedAt": "2026-09-04T00:05:09Z",
+    "url": "https://github.com/klarkxy/dsh-plugin-autoevo/releases/tag/v1.3.1"
+  },
+  "author": "klarkxy",
+  "repo": "https://github.com/klarkxy/dsh-plugin-autoevo",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-04T00:05:07Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:klarkxy/dsh-plugin-autoevo",
+    "commands": [
+      "dsh plugin --profile web add github:klarkxy/dsh-plugin-autoevo"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

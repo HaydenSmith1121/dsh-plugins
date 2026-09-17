@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "yeruizhi/dsh-ask-user-timeout",
+  "slug": "yeruizhi__dsh-ask-user-timeout",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ask-user-timeout",
+  "title": "dsh-ask-user-timeout",
+  "summary": "给 ask_user_question 加上超时限制，没人打开页面回答时不再无限卡住。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "状态监控",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yeruizhi",
+  "repo": "https://github.com/yeruizhi/dsh-ask-user-timeout",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T14:45:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yeruizhi/dsh-ask-user-timeout",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/yeruizhi/dsh-ask-user-timeout.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "Khorsheed/dsh-ankh-guard",
+  "slug": "khorsheed__dsh-ankh-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ankh-guard",
+  "title": "dsh-ankh-guard",
+  "summary": "让 agent 改完代码先跑构建测试再重启，起不来自动回滚，自托管运维更省心。",
+  "tags": [
+    "ai-agent",
+    "dsh",
+    "dsh-plugin",
+    "self-modification",
+    "watchdog",
+    "自动化",
+    "状态监控",
+    "操作回滚",
+    "工作流增强",
+    "工具集成"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-23T07:47:15Z",
+    "url": "https://github.com/Khorsheed/dsh-ankh-guard/releases/tag/v0.1.1"
+  },
+  "author": "Khorsheed",
+  "repo": "https://github.com/Khorsheed/dsh-ankh-guard",
+  "homepage": null,
+  "license": null,
+  "stars": 6,
+  "forks": 1,
+  "pushedAt": "2026-09-11T06:10:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@khorsheed/dsh-ankh-guard",
+    "commands": [
+      "npm install @deepseek-ai/dsh",
+      "dsh plugin --profile web add @khorsheed/dsh-ankh-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

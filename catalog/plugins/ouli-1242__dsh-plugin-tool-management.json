@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ouli-1242/dsh-plugin-tool-management",
+  "slug": "ouli-1242__dsh-plugin-tool-management",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-tool-management",
+  "title": "dsh-plugin-tool-management",
+  "summary": "一站式管理 DSH 的 MCP 服务和技能，能逐个开关工具、给密钥打码，还能回收站找回删掉的技能。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "工具集成",
+    "设置面板",
+    "安全审计",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ouli-1242",
+  "repo": "https://github.com/ouli-1242/dsh-plugin-tool-management",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-16T13:30:08Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-tool-management@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-tool-management@latest",
+      "dsh plugin --profile web remove dsh-plugin-tool-management"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

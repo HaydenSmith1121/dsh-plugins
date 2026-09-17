@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "flowingboy/dsh-local-perf",
+  "slug": "flowingboy__dsh-local-perf",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-local-perf",
+  "title": "dsh-local-perf",
+  "summary": "将本地模型性能调优打包成可重装插件层，压缩上下文、修剪工具结果、管理时间与路由，更新后不丢失。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "资源优化",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "flowingboy",
+  "repo": "https://github.com/flowingboy/dsh-local-perf",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T04:53:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:flowingboy/dsh-local-perf",
+    "commands": [
+      "git clone https://github.com/flowingboy/dsh-local-perf.git /tmp/dsh-local-perf",
+      "dsh plugin --profile web add file:/tmp/dsh-local-perf",
+      "dsh plugin --profile web add file:$(pwd)"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

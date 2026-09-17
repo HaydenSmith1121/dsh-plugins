@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "BHX-WL/dsh-approval-reminder",
+  "slug": "bhx-wl__dsh-approval-reminder",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-approval-reminder",
+  "title": "dsh-approval-reminder",
+  "summary": "在 DeepSeek Harness 网页界面中持续提醒待处理的审批或提问，避免遗漏重要操作。",
+  "tags": [
+    "dsh-plugin",
+    "消息通知",
+    "会话管理",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "BHX-WL",
+  "repo": "https://github.com/BHX-WL/dsh-approval-reminder",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T07:31:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:BHX-WL/dsh-approval-reminder",
+    "commands": [
+      "dsh plugin --profile web add github:BHX-WL/dsh-approval-reminder"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "NattoCB/dsh-web-search-session-follow",
+  "slug": "nattocb__dsh-web-search-session-follow",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-search-session-follow",
+  "title": "dsh-web-search-session-follow",
+  "summary": "让网页搜索跟随当前对话的模型配置，自动匹配对应服务商，无需手动切换，开箱即用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "web-search",
+    "模型配置",
+    "AI 助手",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "NattoCB",
+  "repo": "https://github.com/NattoCB/dsh-web-search-session-follow",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-05T16:52:46Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:NattoCB/dsh-web-search-session-follow",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-web-search-session-follow"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

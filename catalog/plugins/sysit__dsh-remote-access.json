@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "sysit/dsh-remote-access",
+  "slug": "sysit__dsh-remote-access",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-remote-access",
+  "title": "dsh-remote-access",
+  "summary": "让 dsh 的 Web 界面监听所有网络接口，方便你从局域网内其他设备远程访问和控制。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "可视化",
+    "设置面板"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sysit",
+  "repo": "https://github.com/sysit/dsh-remote-access",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T08:09:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sysit/dsh-remote-access",
+    "commands": [
+      "dsh plugin --profile web install github:sysit/dsh-remote-access",
+      "dsh plugin --profile web install file:/Path/dsh-remote-access"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

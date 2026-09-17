@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Lhy723/dsh-neu-theme",
+  "slug": "lhy723__dsh-neu-theme",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-neu-theme",
+  "title": "dsh-neu-theme",
+  "summary": "为 DeepSeek Harness 换上柔和新拟态风格，界面更圆润有质感，看着舒服用着顺手。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-theme",
+    "主题",
+    "新拟态",
+    "主题插件",
+    "视觉风格"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Lhy723",
+  "repo": "https://github.com/Lhy723/dsh-neu-theme",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-09-14T03:11:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-neu-theme",
+    "commands": [
+      "dsh plugin --profile web add dsh-neu-theme",
+      "pnpm add dsh-neu-theme"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "liqiGeGe/dsh-plugin-execution-graph",
+  "slug": "liqigege__dsh-plugin-execution-graph",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-execution-graph",
+  "title": "dsh-plugin-execution-graph",
+  "summary": "在对话界面新增“执行图谱”标签页，将单轮会话活动以垂直时间线形式可视化展示，方便追踪执行流程。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "会话管理",
+    "状态监控",
+    "前端增强",
+    "插件管理"
+  ],
+  "version": "0.1.4",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "liqiGeGe",
+  "repo": "https://github.com/liqiGeGe/dsh-plugin-execution-graph",
+  "homepage": "https://www.npmjs.com/package/dsh-plugin-execution-graph",
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-06T04:01:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:liqiGeGe/dsh-plugin-execution-graph",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-plugin-execution-graph"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

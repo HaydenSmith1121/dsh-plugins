@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "cryptocurpays/dsh-remote-tools",
+  "slug": "cryptocurpays__dsh-remote-tools",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-remote-tools",
+  "title": "dsh-remote-tools",
+  "summary": "远程主机管理工具包，支持主机发现、SSH终端连接，并为模型提供远程操作能力。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "命令行工具",
+    "状态监控",
+    "AI 助手"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "cryptocurpays",
+  "repo": "https://github.com/cryptocurpays/dsh-remote-tools",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T03:42:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@cryptocurpays/dsh-remote-tools",
+    "commands": [
+      "dsh plugin --profile web-remote add @cryptocurpays/dsh-remote-tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

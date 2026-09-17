@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "wuxiangru915/dsh-review-loop",
+  "slug": "wuxiangru915__dsh-review-loop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-review-loop",
+  "title": "dsh-review-loop",
+  "summary": "把 AI 智能体的代码改动变成增量审查队列，支持网页面板和 /review 命令，还能把反馈直接喂回给智能体。",
+  "tags": [
+    "ai-agent",
+    "deepseek-harness",
+    "developer-tools",
+    "dsh",
+    "dsh-plugin",
+    "代码检查"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-13T16:32:17Z",
+    "url": "https://github.com/wuxiangru915/dsh-review-loop/releases/tag/v0.1.0"
+  },
+  "author": "wuxiangru915",
+  "repo": "https://github.com/wuxiangru915/dsh-review-loop",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-21T11:16:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wuxiangru915/dsh-review-loop",
+    "commands": [
+      "dsh plugin --profile web add github:wuxiangru915/dsh-review-loop",
+      "dsh plugin --profile web add /path/to/dsh-review-loop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

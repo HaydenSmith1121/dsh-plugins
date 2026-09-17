@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "DamonBao/dsh-codex-suite",
+  "slug": "damonbao__dsh-codex-suite",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codex-suite",
+  "title": "dsh-codex-suite",
+  "summary": "为 DeepSeek Harness 接入 OpenAI Codex 模型，支持 ChatGPT 账号登录、原生设置与用量查看，开箱即用。",
+  "tags": [
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "模型适配",
+    "零配置"
+  ],
+  "version": "0.1.3-alpha.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "DamonBao",
+  "repo": "https://github.com/DamonBao/dsh-codex-suite",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-09-14T13:14:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@jcy2387/dsh-suite",
+    "commands": [
+      "dsh plugin --profile web add @jcy2387/dsh-suite",
+      "dsh plugin --profile web add @jcy2387/dsh-codex-provider",
+      "dsh plugin --profile web add @jcy2387/dsh-conversation-ui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

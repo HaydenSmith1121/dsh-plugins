@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "kikulmj/dsh-jupyter",
+  "slug": "kikulmj__dsh-jupyter",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-jupyter",
+  "title": "dsh-jupyter",
+  "summary": "在 DeepSeek Harness 网页界面里直接开 Jupyter 笔记本和本地终端，边写边跑代码，实时看输出。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "笔记本编辑",
+    "代码执行",
+    "网页终端",
+    "交互式开发"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kikulmj",
+  "repo": "https://github.com/kikulmj/dsh-jupyter",
+  "homepage": null,
+  "license": null,
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-18T07:38:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kikulmj/dsh-jupyter",
+    "commands": [
+      "dsh plugin --profile web add github:kikulmj/dsh-jupyter",
+      "dsh plugin --profile web add git+https://github.com/kikulmj/dsh-jupyter.git",
+      "dsh plugin --profile web add link:/path/to/dsh-jupyter"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

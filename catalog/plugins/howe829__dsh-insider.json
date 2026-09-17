@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Howe829/dsh-insider",
+  "slug": "howe829__dsh-insider",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-insider",
+  "title": "dsh-insider",
+  "summary": "只读查看 DeepSeek Harness 运行时状态，用关系图谱和请求追踪帮你看清插件与 Session 到底在干什么。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "插件管理",
+    "会话管理",
+    "工具集成"
+  ],
+  "version": "0.1.8",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Howe829",
+  "repo": "https://github.com/Howe829/dsh-insider",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-10T12:14:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@howardchan/dsh-insider",
+    "commands": [
+      "dsh plugin --profile web add @howardchan/dsh-insider",
+      "dsh plugin --profile web remove @howardchan/dsh-runtime"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

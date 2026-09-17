@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "csiroqa/dsh-archive-viewer",
+  "slug": "csiroqa__dsh-archive-viewer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-archive-viewer",
+  "title": "dsh-archive-viewer",
+  "summary": "自动归档空闲会话，整理成文件夹，用LLM提炼经验库，还能收藏、记便签，随时查看恢复。",
+  "tags": [
+    "archive",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "knowledge-library",
+    "会话管理",
+    "工作区管理",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-13T23:26:29Z",
+    "url": "https://github.com/csiroqa/dsh-archive-viewer/releases/tag/v0.1.0"
+  },
+  "author": "csiroqa",
+  "repo": "https://github.com/csiroqa/dsh-archive-viewer",
+  "homepage": "https://github.com/csiroqa/dsh-archive-viewer",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-23T16:49:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:csiroqa/dsh-archive-viewer",
+    "commands": [
+      "git clone https://github.com/csiroqa/dsh-archive-viewer.git",
+      "dsh plugin --profile web add link:$(pwd)",
+      "dsh plugin --profile web add link:E:\\path\\to\\dsh-archive-viewer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

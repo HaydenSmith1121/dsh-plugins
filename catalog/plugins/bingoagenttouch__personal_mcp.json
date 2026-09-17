@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "BingoAgentTouch/Personal_MCP",
+  "slug": "bingoagenttouch__personal_mcp",
+  "tier": "community",
+  "package": null,
+  "name": "memory-mcp-server",
+  "title": "memory-mcp-server",
+  "summary": "给 LLM Agent 用的分层长期记忆服务器，把对话沉淀成可语义检索的三层记忆，随时带出完整上下文。",
+  "tags": [
+    "dsh-plugin",
+    "mcp",
+    "memory",
+    "会话管理",
+    "AI工具",
+    "零配置",
+    "AI 助手"
+  ],
+  "version": "0.9.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "BingoAgentTouch",
+  "repo": "https://github.com/BingoAgentTouch/Personal_MCP",
+  "homepage": null,
+  "license": "AGPL-3.0",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-23T16:27:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:BingoAgentTouch/Personal_MCP",
+    "commands": [
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

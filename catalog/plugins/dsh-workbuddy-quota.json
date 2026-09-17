@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "dsh-workbuddy-quota",
+  "slug": "dsh-workbuddy-quota",
+  "tier": "verified",
+  "package": "dsh-workbuddy-quota",
+  "name": "dsh-workbuddy-quota",
+  "title": "WorkBuddy 额度与用量",
+  "summary": "在界面上显示 WorkBuddy 的剩余额度，并统计 token 用量。",
+  "tags": [
+    "用量统计",
+    "自研",
+    "UI 面板"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:25:08.895Z",
+  "latestRelease": null,
+  "author": "HaydenSmith1121",
+  "repo": "https://github.com/HaydenSmith1121/dsh-plugin-collection",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": null,
+  "pushedAt": null,
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": "@deepseek-ai/cordis ^4.0.2, react ^18.2.0",
+  "peerVerdict": "ok",
+  "peerNote": "只约束 cordis 与 react，不对 dsh 运行时版本通道设 pin。",
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "tarball",
+    "spec": null,
+    "commands": [
+      "# 下载 plugins/dsh-workbuddy-quota/0.1.6-alpha.1/dsh-workbuddy-quota-0.2.0.tgz",
+      "dsh plugin --profile web add <下载后的 .tgz 绝对路径>"
+    ],
+    "url": "https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugin-collection/main/plugins/dsh-workbuddy-quota/0.1.6-alpha.1/dsh-workbuddy-quota-0.2.0.tgz",
+    "sha256": "744a39879202782bdbca4d8235094949b73accf7c2f0153841872aed2d2388f8",
+    "bytes": 14507,
+    "tarball": "plugins/dsh-workbuddy-quota/0.1.6-alpha.1/dsh-workbuddy-quota-0.2.0.tgz",
+    "dshVersion": "0.1.6-alpha.1",
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "collection",
+    "url": "https://github.com/HaydenSmith1121/dsh-plugin-collection",
+    "firstSeenAt": "2026-09-17T16:23:45.415Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

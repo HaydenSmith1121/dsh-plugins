@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "yangbobo2021/relay-dsh-plugin-monitor-author",
+  "slug": "yangbobo2021__relay-dsh-plugin-monitor-author",
+  "tier": "community",
+  "package": null,
+  "name": "relay-dsh-plugin-monitor-author",
+  "title": "relay-dsh-plugin-monitor-author",
+  "summary": "帮你发现并安全编写 Relay Monitor 监控包，写插件不用怕出错。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "monitor-bundles",
+    "monitoring",
+    "状态监控",
+    "插件管理",
+    "工作流增强",
+    "安全审计",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-02T23:20:18Z",
+    "url": "https://github.com/yangbobo2021/relay-dsh-plugin-monitor-author/releases/tag/v0.1.0"
+  },
+  "author": "yangbobo2021",
+  "repo": "https://github.com/yangbobo2021/relay-dsh-plugin-monitor-author",
+  "homepage": "https://www.npmjs.com/package/relay-dsh-plugin-monitor-author",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T03:53:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yangbobo2021/relay-dsh-plugin-monitor-author",
+    "commands": [
+      "dsh plugin --profile web add github:yangbobo2021/relay-dsh-plugin-monitor-author"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

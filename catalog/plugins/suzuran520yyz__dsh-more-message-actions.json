@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "suzuran520yyz/dsh-more-message-actions",
+  "slug": "suzuran520yyz__dsh-more-message-actions",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-more-message-actions",
+  "title": "dsh-more-message-actions",
+  "summary": "在 DSH 网页界面里直接编辑、重试、高级重试或删除会话消息，改错重来更省事。",
+  "tags": [
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "message-actions",
+    "会话管理",
+    "快捷操作",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "suzuran520yyz",
+  "repo": "https://github.com/suzuran520yyz/dsh-more-message-actions",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T14:51:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:suzuran520yyz/dsh-more-message-actions",
+    "commands": [
+      "dsh plugin --profile web add github:suzuran520yyz/dsh-more-message-actions",
+      "git clone https://github.com/suzuran520yyz/dsh-more-message-actions.git",
+      "dsh plugin --profile web add link:."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

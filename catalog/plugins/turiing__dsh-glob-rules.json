@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "TURIING/dsh-glob-rules",
+  "slug": "turiing__dsh-glob-rules",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-glob-rules",
+  "title": "dsh-glob-rules",
+  "summary": "用 glob 规则快速匹配文件，帮你批量筛选、操作项目里的文件，省时省力。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "命令行工具",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "TURIING",
+  "repo": "https://github.com/TURIING/dsh-glob-rules",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T13:47:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TURIING/dsh-glob-rules",
+    "commands": [
+      "dsh plugin --profile web add github:TURIING/dsh-glob-rules"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

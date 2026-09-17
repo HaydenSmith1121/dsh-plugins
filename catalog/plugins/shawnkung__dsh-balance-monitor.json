@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ShawnKung/dsh-balance-monitor",
+  "slug": "shawnkung__dsh-balance-monitor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-balance-monitor",
+  "title": "dsh-balance-monitor",
+  "summary": "在 DSH 网页侧边栏实时查看 DeepSeek 官方与 TeamoRouter 多渠道余额和用量，方便随时掌握消耗情况。",
+  "tags": [
+    "balance-monitor",
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "teamorouter",
+    "usage-monitor",
+    "状态监控",
+    "可视化",
+    "工具集成",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.1.16",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.16",
+    "publishedAt": "2026-09-14T03:31:13Z",
+    "url": "https://github.com/ShawnKung/dsh-balance-monitor/releases/tag/v0.1.16"
+  },
+  "author": "ShawnKung",
+  "repo": "https://github.com/ShawnKung/dsh-balance-monitor",
+  "homepage": "https://www.npmjs.com/package/@shawnkung/dsh-balance-monitor",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T09:15:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@shawnkung/dsh-balance-monitor@latest",
+    "commands": [
+      "dsh plugin --profile web add @shawnkung/dsh-balance-monitor@latest",
+      "dsh plugin --profile web list",
+      "git clone https://github.com/ShawnKung/dsh-balance-monitor.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

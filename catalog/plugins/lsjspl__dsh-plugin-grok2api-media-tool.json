@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "lsjspl/dsh-plugin-grok2api-media-tool",
+  "slug": "lsjspl__dsh-plugin-grok2api-media-tool",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-grok2api-media-tool",
+  "title": "dsh-plugin-grok2api-media-tool",
+  "summary": "让 dsh 智能体通过 grok2api 直接生成图片和视频，扩展多模态创作能力。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "视觉理解",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "0.8.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lsjspl",
+  "repo": "https://github.com/lsjspl/dsh-plugin-grok2api-media-tool",
+  "homepage": null,
+  "license": null,
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-08-24T11:23:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-grok2api-media-tool",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-grok2api-media-tool",
+      "dsh plugin --profile web add github:lsjspl/dsh-plugin-grok2api-media-tool"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "anweat/dsh-context-console",
+  "slug": "anweat__dsh-context-console",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-context-console",
+  "title": "dsh-context-console",
+  "summary": "为 DeepSeek Harness 提供完整的上下文工作台，涵盖轨迹、库存、缓存历史、消息伪造与会话日志恢复，让上下文管理更高效。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "typescript",
+    "会话管理",
+    "效率提升",
+    "插件管理",
+    "工作流增强",
+    "命令行工具"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-22T05:29:15Z",
+    "url": "https://github.com/anweat/dsh-context-console/releases/tag/v0.1.0"
+  },
+  "author": "anweat",
+  "repo": "https://github.com/anweat/dsh-context-console",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-09-09T05:33:02Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:anweat/dsh-context-console",
+    "commands": [
+      "dsh plugin --profile web add github:anweat/dsh-context-console"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "panduka56/dsh-model-picker-plus",
+  "slug": "panduka56__dsh-model-picker-plus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-picker-plus",
+  "title": "dsh-model-picker-plus",
+  "summary": "为 DeepSeek Harness 提供可搜索、支持键盘操作且能固定常用模型的模型选择器，提升切换效率。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "model-picker",
+    "plugin",
+    "模型配置",
+    "效率提升",
+    "语义检索",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-03T21:15:22Z",
+    "url": "https://github.com/panduka56/dsh-model-picker-plus/releases/tag/v0.1.0"
+  },
+  "author": "panduka56",
+  "repo": "https://github.com/panduka56/dsh-model-picker-plus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T21:15:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:panduka56/dsh-model-picker-plus",
+    "commands": [
+      "dsh plugin --profile web add github:panduka56/dsh-model-picker-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

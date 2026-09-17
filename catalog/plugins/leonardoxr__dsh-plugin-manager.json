@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "leonardoxr/dsh-plugin-manager",
+  "slug": "leonardoxr__dsh-plugin-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-manager",
+  "title": "dsh-plugin-manager",
+  "summary": "在 DeepSeek Harness 网页端管理插件，可启用、禁用或移除已安装的插件，操作安全便捷。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-web",
+    "dsh-web-ui",
+    "可视化",
+    "零配置",
+    "效率提升",
+    "工作区管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-24T00:11:01Z",
+    "url": "https://github.com/leonardoxr/dsh-plugin-manager/releases/tag/v0.2.0"
+  },
+  "author": "leonardoxr",
+  "repo": "https://github.com/leonardoxr/dsh-plugin-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-24T19:03:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:leonardoxr/dsh-plugin-manager",
+    "commands": [
+      "dsh plugin --profile web add github:leonardoxr/dsh-plugin-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

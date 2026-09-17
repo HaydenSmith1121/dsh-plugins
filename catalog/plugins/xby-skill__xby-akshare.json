@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-akshare",
+  "slug": "xby-skill__xby-akshare",
+  "tier": "community",
+  "package": null,
+  "name": "xby-akshare",
+  "title": "xby-akshare",
+  "summary": "通过 AKShare 获取中国股市实时行情、历史数据和基本面信息，方便做投资分析和决策。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "AI 助手"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-akshare",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:34:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-akshare",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-akshare",
+      "dsh plugin --profile web add /absolute/path/to/xby-akshare"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

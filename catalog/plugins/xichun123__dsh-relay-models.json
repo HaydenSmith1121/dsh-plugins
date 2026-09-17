@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Xichun123/dsh-relay-models",
+  "slug": "xichun123__dsh-relay-models",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-relay-models",
+  "title": "dsh-relay-models",
+  "summary": "为 DeepSeek Harness 补全模型列表、自定义请求头和 User-Agent，并支持拖拽排序供应商，让模型配置更灵活。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "设置面板",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.1.7",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Xichun123",
+  "repo": "https://github.com/Xichun123/dsh-relay-models",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-09T07:57:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Xichun123/dsh-relay-models",
+    "commands": [
+      "dsh plugin --profile web add github:Xichun123/dsh-relay-models"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

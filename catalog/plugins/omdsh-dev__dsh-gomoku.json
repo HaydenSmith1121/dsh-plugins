@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "omdsh-dev/dsh-gomoku",
+  "slug": "omdsh-dev__dsh-gomoku",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-gomoku",
+  "title": "dsh-gomoku",
+  "summary": "在 DSH 里和 AI 下五子棋，写代码累了就来杀一盘，即装即玩。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "AI 助手",
+    "零配置",
+    "快捷操作",
+    "工具集成"
+  ],
+  "version": "0.0.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "omdsh-dev",
+  "repo": "https://github.com/omdsh-dev/dsh-gomoku",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 23,
+  "forks": 0,
+  "pushedAt": "2026-08-15T05:42:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@yejiming/dsh-gomoku",
+    "commands": [
+      "dsh plugin --profile demo add @yejiming/dsh-gomoku",
+      "dsh plugin --profile demo add github:omdsh-dev/dsh-gomoku",
+      "dsh plugin --profile demo add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

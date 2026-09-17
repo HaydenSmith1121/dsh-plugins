@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "cogine-ai/dsh-claude-tui",
+  "slug": "cogine-ai__dsh-claude-tui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-claude-tui",
+  "title": "dsh-claude-tui",
+  "summary": "在终端里用 Claude Code 风格界面操作 DeepSeek Harness，让命令行工作流更顺手。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "命令行工具",
+    "工作流增强"
+  ],
+  "version": "0.1.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.6",
+    "publishedAt": "2026-09-07T15:39:41Z",
+    "url": "https://github.com/cogine-ai/dsh-claude-tui/releases/tag/v0.1.6"
+  },
+  "author": "cogine-ai",
+  "repo": "https://github.com/cogine-ai/dsh-claude-tui",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-09-07T15:39:41Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cogine-ai/dsh-claude-tui",
+    "commands": [
+      "npm install --global --legacy-peer-deps dsh-claude-tui@0.1.6"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

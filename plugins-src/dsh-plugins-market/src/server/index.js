@@ -30,7 +30,7 @@ import {
 } from './util.js';
 import { readProfileState, scanInstalled, composedTree, listProfileBackups } from './profile.js';
 import {
-  loadVerified, loadReviewed, fetchCommunity,
+  loadCatalogIndex, loadPluginConfig, entryFromConfig,
   normalizeEntry, searchCatalog, mergeEntries,
   catalogStatus, findEntry, TIER_META, REVIEW_STATUS,
   REPO_RAW_BASE, REPO_HOMEPAGE, ensureDataDir, readCacheMeta,
@@ -76,9 +76,8 @@ function createContext() {
     repoSource: null,
     _tree: null,
     _treeAt: 0,
-    _community: null,
-    _reviewed: null,
-    _verified: null,
+    _catalog: null,
+    _catalogAt: 0,
     _pool: null,
     _poolAt: 0,
   };
@@ -103,16 +102,23 @@ function loadCompat(env) {
  *
  * 思路：本插件自己就是从仓库里的 tarball 装进 profile 的，
  * profile 的 package.json 里记着 `file:<repo>/plugins/dsh-plugins-market/<ver>/....tgz`。
- * 从这个路径反推仓库根，就能用**本地**的 tarball（离线、快、且与开发机一致）。
+ * 从这个路径反推仓库根，就能用**本地**的目录与 tarball（离线、快、且与开发机一致）。
  * 也支持用环境变量 DSH_PLUGINS_REPO 显式指定。
+ *
+ * ★ 判定标记从 `compatibility.json` 换成了 `catalog/index.json`：
+ *   自 0.4.0 起，本仓库的插件**目录**是 catalog/ 下的「一个插件一个配置文件」，
+ *   而 compatibility.json 已经瘦身成只描述运行时矩阵（插件清单搬去了
+ *   dsh-plugin-collection）。用目录做标记才代表「这里真的是市场仓库」。
  */
 function detectRepoRoot(ctx) {
   return detectRepoRootRaw(ctx.env);
 }
 
+const REPO_MARKER = path.join('catalog', 'index.json');
+
 function detectRepoRootRaw(env) {
   const explicit = process.env.DSH_PLUGINS_REPO;
-  if (explicit && fs.existsSync(path.join(explicit, 'compatibility.json'))) return path.resolve(explicit);
+  if (explicit && fs.existsSync(path.join(explicit, REPO_MARKER))) return path.resolve(explicit);
 
   const profilesDir = path.join(resolveDshHome(process.env), 'profiles');
   if (!fs.existsSync(profilesDir)) return null;
@@ -134,7 +140,7 @@ function detectRepoRootRaw(env) {
 
     const root = specPath.slice(0, idx);
     const native = path.normalize(root);
-    if (fs.existsSync(path.join(native, 'compatibility.json'))) return native;
+    if (fs.existsSync(path.join(native, REPO_MARKER))) return native;
   }
   return null;
 }
@@ -176,40 +182,82 @@ function invalidate(ctx) {
   invalidatePool(ctx);
 }
 
-async function layers(ctx, { refreshCommunity = false } = {}) {
-  // 三层**并发**取。它们互不依赖，串行 await 只会把三份等待时间相加 ——
-  // 而「刷新目录」正是这三条路一起要走的时候。
-  //
-  // verified 层现在是**远程优先**的（与 reviewed 同构）：插件发新版只需刷新仓库根
-  // 那份 catalog/verified.json，市场这边不用换版本号就能看到。包内那份退居离线兜底。
-  const [verified, reviewed, communityMeta] = await Promise.all([
-    ctx._verified ?? loadVerified(),
-    ctx._reviewed ?? loadReviewed(),
-    refreshCommunity || !ctx._community
-      ? fetchCommunity({ force: refreshCommunity })
-      : ctx._community,
-  ]);
-  ctx._verified = verified;
-  ctx._reviewed = reviewed;
-  ctx._community = communityMeta;
+/**
+ * 取整个目录。
+ *
+ * ★ 自 0.4.0 起，目录只有一个来源：市场仓库里的 **catalog/index.json**，
+ *   而它是由「一个插件一个配置文件」（catalog/plugins/<slug>.json）派生的。
+ *   上一版要分别拉三份（verified / curated / 4.8MB 的公共索引）并把它们合并，
+ *   现在索引里已经带着每条插件的 tier —— 层级只是配置文件上的一个字段。
+ *
+ *   界面仍然按三层展示（兼容既有标签与筛选），但那是**对同一份索引分组**，
+ *   不再意味着三个不同的网络来源。
+ *
+ * @param {object}  ctx
+ * @param {boolean} [opts.refresh] 忽略 TTL，去服务端确认一次（走条件请求，通常是 304）
+ */
+async function layers(ctx, { refresh = false } = {}) {
+  if (!refresh && ctx._catalog && Date.now() - ctx._catalogAt < 10_000) return ctx._catalog;
 
-  const community = (ctx._community?.plugins ?? []).map((p) => normalizeEntry(
-    { ...p, install: { kind: 'probe', method: p.installMethod, commands: p.installCommands, needsConfig: p.needsConfig, usageNeedsConfig: p.usageNeedsConfig, risky: p.risky } },
-    'community',
-  ));
-  ctx._layers = {
-    verified,
-    reviewed,
-    community,
-    communityMeta,
+  const index = await loadCatalogIndex({ force: refresh });
+  const byTier = { verified: [], reviewed: [], community: [] };
+  for (const e of index.entries) (byTier[e.tier] ?? byTier.community).push(e);
+
+  const sourceMeta = {
+    source: index.source,
+    error: index.error,
+    generatedAt: index.generatedAt,
+    ageMs: index.ageMs ?? null,
   };
-  return ctx._layers;
+
+  ctx._catalog = {
+    index,
+    verified: { ...sourceMeta, available: index.available, plugins: byTier.verified },
+    reviewed: { ...sourceMeta, plugins: byTier.reviewed },
+    community: { ...sourceMeta, plugins: byTier.community, stale: false },
+    communityMeta: {
+      source: index.source,
+      error: index.error,
+      count: byTier.community.length,
+      generatedAt: index.generatedAt,
+    },
+    meta: { ...sourceMeta, counts: index.counts, sourceIndex: index.sourceIndex },
+  };
+  ctx._catalogAt = Date.now();
+  return ctx._catalog;
+}
+
+/**
+ * 读某个插件的**配置文件**，并换成闸门 / 安装器认的条目。
+ *
+ * ★ 这是「市场与插件分离」在运行时的落点：索引只负责让用户看到有哪些插件，
+ *   **真正要装的时候必须去读那一个插件自己的配置文件**，再按它写的
+ *   install.method 去装。读不到就如实报错 —— 不拿索引里的字段凑一个安装方法，
+ *   因为那正是「配置说该这么装、实际却那么装」这类事故的来源。
+ */
+async function resolveEntryConfig(ctx, entry) {
+  if (!entry) return { entry: null, config: null, source: null, error: null };
+  const { config, source, error } = await loadPluginConfig(entry);
+  if (!config) {
+    return {
+      entry,
+      config: null,
+      source: null,
+      error: error ?? `读不到 catalog/plugins/${entry.slug}.json`,
+    };
+  }
+  const merged = entryFromConfig(config, entry);
+  // 索引带出来的 slug 是定位符，配置文件里也写了，但以索引为准更稳
+  merged.slug = entry.slug ?? merged.slug;
+  merged.__config = config;
+  merged.__configSource = source;
+  return { entry: merged, config, source, error: null };
 }
 
 /**
  * 合并后的条目池 + 每个条目的安装状态。
  *
- * 这是界面唯一的数据来源：三层目录去重成一份列表，每条都带上
+ * 这是界面唯一的数据来源：目录去重成一份列表，每条都带上
  * 「第几层（已审核 / 未审核）」「装没装」「装了是不是最新」。
  *
  * 缓存 10 秒：一次页面加载会连着打好几个请求（列表 + 状态 + 收藏筛选），
@@ -218,7 +266,7 @@ async function layers(ctx, { refreshCommunity = false } = {}) {
  */
 function pool(ctx, { recalc = false } = {}) {
   if (!recalc && ctx._pool && Date.now() - ctx._poolAt < 10_000) return ctx._pool;
-  const l = ctx._layers;
+  const l = ctx._catalog;
   const { merged, shadowed } = mergeEntries(l);
   const { index } = installStateIndex(ctx.profileName, process.env, merged);
   const built = { entries: merged, shadowed, state: index, layers: l, at: Date.now() };
@@ -272,7 +320,7 @@ function createDispatcher(ctx) {
             pnpmMin: ctx.compat.requirements?.pnpm?.min ?? null,
           },
           repo: { root: ctx.repoRoot, detected: Boolean(ctx.repoRoot), rawBase: REPO_RAW_BASE },
-          catalog: catalogStatus(l),
+          catalog: catalogStatus({ ...l, meta: l.meta }),
           reviewStatuses: [REVIEW_STATUS.verified, REVIEW_STATUS.reviewed, REVIEW_STATUS.community],
           installed,
           // 顶部「N 个可更新」提示要用；不单独开接口，省一次往返
@@ -296,7 +344,7 @@ function createDispatcher(ctx) {
 
       // ── 目录（合并视图：一处列出全部，用标签区分）────────
       case 'catalog': {
-        await layers(ctx, { refreshCommunity: Boolean(args.refresh) });
+        const l = await layers(ctx, { refresh: Boolean(args.refresh) });
         const p = pool(ctx, { recalc: Boolean(args.refresh) });
         const marks = userMarks(process.env);
         const stateIndex = p.state;
@@ -315,22 +363,25 @@ function createDispatcher(ctx) {
           installed: stateIndex,
         });
 
+        const status = catalogStatus({ ...l, meta: l.meta });
         return {
           total: result.total,
           offset: args.offset ?? 0,
           limit: args.limit ?? 30,
           items: result.items.map((e) => publicEntry(e, stateIndex.get(e.id), marks[e.id])),
-          tiers: catalogStatus(p.layers).tiers,
-          merged: catalogStatus(p.layers).merged,
+          tiers: status.tiers,
+          merged: status.merged,
           reviewStatuses: [REVIEW_STATUS.verified, REVIEW_STATUS.reviewed, REVIEW_STATUS.community],
           communityMeta: {
-            source: p.layers.communityMeta?.source ?? null,
-            error: p.layers.communityMeta?.error ?? null,
-            count: p.layers.community.length,
-            generatedAt: p.layers.communityMeta?.generatedAt ?? null,
+            source: l.communityMeta?.source ?? null,
+            error: l.communityMeta?.error ?? null,
+            count: l.communityMeta?.count ?? 0,
+            generatedAt: l.communityMeta?.generatedAt ?? null,
           },
-          verifiedAvailable: p.layers.verified.available,
-          verifiedError: p.layers.verified.error,
+          verifiedAvailable: l.verified.available,
+          verifiedError: l.verified.error,
+          // 目录本身是从哪来的（远程 / 304 / 缓存 / 离线包内）—— 界面据此提示「目录可能不是最新」
+          indexMeta: l.meta,
           marks: {
             liked: Object.values(marks).filter((m) => m.liked).length,
             favorited: Object.values(marks).filter((m) => m.favorited).length,
@@ -339,16 +390,26 @@ function createDispatcher(ctx) {
       }
 
       case 'entry': {
-        await layers(ctx);
+        const l = await layers(ctx);
         const p = pool(ctx);
         const id = String(args.id ?? '');
-        const found = p.entries.find((e) => e.id === id || e.package === id)
-          ?? findEntry({ verified: p.layers.verified.plugins, reviewed: p.layers.reviewed.plugins, community: p.layers.community }, id);
-        if (!found) throw new Error(`目录里没有这个插件：${args.id}`);
+        const foundIndex = p.entries.find((e) => e.id === id || e.package === id || e.slug === id)
+          ?? findEntry(l, id);
+        if (!foundIndex) throw new Error(`目录里没有这个插件：${args.id}`);
+        // 详情页给的是**配置文件里的**权威内容，不是索引里的展示摘要
+        const { entry: found, config, source: configSource, error: configError } = await resolveEntryConfig(ctx, foundIndex);
         const marks = userMarks(process.env);
         return {
           entry: publicEntry(found, p.state.get(found.id), marks[found.id], { full: true }),
           installed: p.state.get(found.id) ?? null,
+          // 配置文件本身的取用情况：读不到时要如实说，而不是假装读到了一份
+          config: {
+            slug: foundIndex.slug,
+            source: configSource,
+            error: configError,
+            installMethod: config?.install?.method ?? null,
+            raw: config ?? null,
+          },
           // 同一插件在其它层里的副本（去重时被合并掉的），详情页可以如实展示
           duplicates: (p.shadowed.get(`pkg:${String(found.package ?? '').toLowerCase()}`) ?? [])
             .map((e) => ({ id: e.id, tier: e.tier, tierLabel: e.tierLabel })),
@@ -371,7 +432,7 @@ function createDispatcher(ctx) {
       // ── 装前检查 ────────────────────────────────────────
       case 'gate': {
         const p = await ensurePool(ctx);
-        const found = lookupEntry(p, args.id);
+        const { entry: found, source: configSource, error: configError } = await resolveEntryConfig(ctx, lookupEntry(p, args.id));
         if (!found) throw new Error(`目录里没有这个插件：${args.id}`);
 
         const state = p.state.get(found.id) ?? null;
@@ -381,13 +442,12 @@ function createDispatcher(ctx) {
         if (state?.status === 'current') {
           const report = alreadyLatestReport(found, ctx, state);
           appendOp({ op: 'gate', pluginId: found.id, tier: found.tier, verdict: report.verdict, canInstall: false, reason: 'up-to-date' });
-          return report;
+          return { ...report, configSource, configError };
         }
 
-        // 本地没有 tarball 的条目（公共索引 / 已审核但未随包分发）先做一次远程静态探测
+        // 本地没有 tarball 的条目（公开索引 / 已审核但未随包分发）先做一次远程静态探测
         let probe = null;
-        const needsProbe = found.tier !== 'verified';
-        if (needsProbe) {
+        if (found.tier !== 'verified') {
           probe = await probeEntry(found, { force: Boolean(args.refreshProbe) });
         }
 
@@ -404,14 +464,25 @@ function createDispatcher(ctx) {
         // ★ 手动安装方案：装前就给。用户明确要求「自动安装不行时，要能停下来自己装」——
         //   而「能不能自己装、要敲什么命令」这个问题的答案不该等到失败后才出现。
         const manual = manualInstallPlan(found, await gctx(ctx), report.installSpec);
-        return { ...report, installState: state, upgrade: state?.status === 'upgradable', manual };
+        return { ...report, installState: state, upgrade: state?.status === 'upgradable', manual, configSource, configError };
       }
 
       // ── 安装 / 卸载 / 修复 ──────────────────────────────
       case 'install': {
         const p = await ensurePool(ctx);
-        const found = lookupEntry(p, args.id);
+        const { entry: found, source: configSource, error: configError } = await resolveEntryConfig(ctx, lookupEntry(p, args.id));
         if (!found) throw new Error(`目录里没有这个插件：${args.id}`);
+
+        // ★ 配置文件读不到就不装。索引里的字段只够「展示」，不足以决定怎么装 ——
+        //   按索引猜一个安装方法，等于把「配置说了算」这条约定作废。
+        if (found.__config == null) {
+          appendOp({ op: 'install-refused', pluginId: found.id, reason: 'config-unavailable', detail: configError });
+          return {
+            ok: false, refused: true, configUnavailable: true, steps: [],
+            message: `读不到这个插件的配置文件（catalog/plugins/${found.slug}.json）：${configError ?? '未知原因'}。`
+              + '安装必须按配置文件里写的方法走，所以这次没有开始。可以点「刷新目录」重试，或按详情页里的手动命令自己装。',
+          };
+        }
 
         // 已经有一个任务在跑（或排队）时不允许再开一个：
         // 两个 pnpm 同时改同一个 profile 必然互相破坏
@@ -535,7 +606,7 @@ function createDispatcher(ctx) {
       /** 手动安装指引：任何时候都能拿（不依赖是否有任务在跑） */
       case 'manualCommands': {
         const p = await ensurePool(ctx);
-        const found = lookupEntry(p, args.id);
+        const { entry: found } = await resolveEntryConfig(ctx, lookupEntry(p, args.id));
         if (!found) throw new Error(`目录里没有这个插件：${args.id}`);
         const g = await gctx(ctx);
         const probe = found.tier === 'verified' ? null : await probeEntry(found);
@@ -658,19 +729,28 @@ function createDispatcher(ctx) {
       case 'refresh': {
         clearProbeCache();
         invalidate(ctx);
-        ctx._verified = null;
-        ctx._reviewed = null;
-        const l = await layers(ctx, { refreshCommunity: true });
-        // 三层各自的来源都要如实回报：verified 现在是远程优先的，
-        // 「刷新后到底用的是远程还是包内兜底」是用户判断目录新不新的唯一依据。
+        ctx._catalog = null;
+        ctx._catalogAt = 0;
+        const l = await layers(ctx, { refresh: true });
+        const status = catalogStatus({ ...l, meta: l.meta });
+        // ★ 目录的来源要如实回报：一个插件发新版之后，用户唯一能判断
+        //   「我看到的是不是最新的」依据就是这个 source（远程 / 304 / 缓存 / 离线包内）。
         return {
           ok: true,
-          verified: l.verified?.source ?? 'unavailable',
-          verifiedGeneratedAt: l.verified?.generatedAt ?? null,
-          reviewed: l.reviewed?.source ?? 'unavailable',
-          community: l.communityMeta?.source ?? 'unavailable',
-          count: l.community.length,
-          error: l.communityMeta?.error ?? l.verified?.error ?? l.reviewed?.error ?? null,
+          source: l.meta.source,
+          generatedAt: l.meta.generatedAt,
+          ageMs: l.meta.ageMs ?? null,
+          counts: l.meta.counts ?? null,
+          upstreamGeneratedAt: l.meta.sourceIndex?.generatedAt ?? null,
+          // 兼容上一版的字段名：界面与既有脚本还在读这两个
+          verified: l.verified.source ?? 'unavailable',
+          verifiedGeneratedAt: l.verified.generatedAt ?? null,
+          reviewed: l.reviewed.source ?? 'unavailable',
+          community: l.community.source ?? 'unavailable',
+          count: l.communityMeta?.count ?? 0,
+          tiers: status.tiers,
+          merged: status.merged,
+          error: l.meta.error ?? null,
         };
       }
 
@@ -705,16 +785,12 @@ async function ensurePool(ctx) {
   return pool(ctx);
 }
 
-/** 在合并池里按 id / 包名查一条；查不到再退回原始三层（兼容旧 id） */
+/** 在合并池里按 id / 包名 / slug 查一条；查不到再退回原始三层（兼容旧 id） */
 function lookupEntry(p, id) {
   const key = String(id ?? '');
-  const direct = p.entries.find((e) => e.id === key || e.package === key);
+  const direct = p.entries.find((e) => e.id === key || e.package === key || e.slug === key);
   if (direct) return direct;
-  return findEntry({
-    verified: p.layers.verified.plugins,
-    reviewed: p.layers.reviewed.plugins,
-    community: p.layers.community,
-  }, key);
+  return findEntry(p.layers, key);
 }
 
 /**
@@ -771,12 +847,16 @@ function publicEntry(e, state = null, mark = null, { full = false } = {}) {
   const st = state ?? null;
   return {
     id: e.id,
+    slug: e.slug ?? null,
     tier: e.tier,
     tierLabel: e.tierLabel,
     // 审核状态标签：界面顶部就是用它区分「已审核 / 未审核」的
     reviewStatus: e.reviewStatus ?? null,
     package: e.package,
     version: e.version,
+    // 版本号是从哪儿取来的（npm / GitHub release / tag / package.json / 取不到）——
+    // 目录里的版本号是采集来的，如实标注来源，用户才知道该信到什么程度
+    versionSource: e.versionSource ?? null,
     title: e.title,
     summary: short(e.summary, full ? 4000 : 220),
     tags: (e.tags ?? []).slice(0, full ? 24 : 8),
@@ -793,7 +873,11 @@ function publicEntry(e, state = null, mark = null, { full = false } = {}) {
     notes: full ? e.notes ?? null : null,
     needsConfig: e.install?.needsConfig ?? false,
     risky: e.install?.risky ?? false,
+    // 安装方法（配置文件里写的那个）——界面据此决定按钮文案与命令示例
+    installMethod: e.install?.method ?? null,
     installKind: e.install?.kind ?? null,
+    installSpec: e.install?.spec ?? null,
+    installUrl: e.install?.url ?? null,
     hasReview: Boolean(e.review),
     review: full ? e.review ?? null : null,
 

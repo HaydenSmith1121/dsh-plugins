@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "MrWeiCodes/dsh-fs-encoding",
+  "slug": "mrweicodes__dsh-fs-encoding",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-fs-encoding",
+  "title": "dsh-fs-encoding",
+  "summary": "让 AI 读写 GBK 等非 UTF-8 和带 BOM 的文件时不再弄坏编码，省心又安全",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "encoding",
+    "文件管理",
+    "零配置",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "1.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "MrWeiCodes",
+  "repo": "https://github.com/MrWeiCodes/dsh-fs-encoding",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:56:48Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MrWeiCodes/dsh-fs-encoding",
+    "commands": [
+      "dsh plugin --profile web add github:MrWeiCodes/dsh-fs-encoding"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

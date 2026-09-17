@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "zoahdev/dsh-firstrun",
+  "slug": "zoahdev__dsh-firstrun",
+  "tier": "community",
+  "package": null,
+  "name": "zoahdev/dsh-firstrun",
+  "title": "zoahdev/dsh-firstrun",
+  "summary": "首次使用自动体检：检查 Node/pnpm/dsh 环境、配置和 API Key，并给出下一步操作建议。",
+  "tags": [
+    "deepseek-harness",
+    "diagnostics",
+    "dsh-plugin",
+    "onboarding",
+    "quickstart",
+    "setup",
+    "零配置",
+    "状态监控",
+    "命令行工具",
+    "工具集成",
+    "脚手架"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-18T14:38:49Z",
+    "url": "https://github.com/zoahdev/dsh-firstrun/releases/tag/v0.1.0"
+  },
+  "author": "zoahdev",
+  "repo": "https://github.com/zoahdev/dsh-firstrun",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-18T22:31:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-firstrun",
+    "commands": [
+      "dsh plugin add dsh-firstrun"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

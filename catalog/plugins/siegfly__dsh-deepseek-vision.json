@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "siegfly/dsh-deepseek-vision",
+  "slug": "siegfly__dsh-deepseek-vision",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-deepseek-vision",
+  "title": "dsh-deepseek-vision",
+  "summary": "粘贴图片就能让 DeepSeek 看懂内容，给纯文本模型补上视觉能力。",
+  "tags": [
+    "coding-agent",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm-gateway",
+    "multimodal",
+    "plugin",
+    "qwen-vl",
+    "vision-language",
+    "视觉理解",
+    "模型配置",
+    "工具集成",
+    "零配置"
+  ],
+  "version": "0.1.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.9",
+    "publishedAt": "2026-09-01T13:47:32Z",
+    "url": "https://github.com/siegfly/dsh-deepseek-vision/releases/tag/v0.1.9"
+  },
+  "author": "siegfly",
+  "repo": "https://github.com/siegfly/dsh-deepseek-vision",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-09-11T12:31:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:siegfly/dsh-deepseek-vision",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh",
+      "dsh plugin --profile web add github:siegfly/dsh-deepseek-vision",
+      "dsh plugin --profile web remove dsh-deepseek-vision"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

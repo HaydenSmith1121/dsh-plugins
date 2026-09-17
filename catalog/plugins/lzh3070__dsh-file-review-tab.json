@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Lzh3070/dsh-file-review-tab",
+  "slug": "lzh3070__dsh-file-review-tab",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-file-review-tab",
+  "title": "dsh-file-review-tab",
+  "summary": "在侧边栏标签页里审查 AI 改过的文件，行级红绿 diff 一目了然，还能一键撤销。",
+  "tags": [
+    "dsh-better-sidebar",
+    "dsh-plugin",
+    "dsh-plugins",
+    "变更审查",
+    "文件差异",
+    "操作回滚",
+    "工具集成"
+  ],
+  "version": "0.5.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Lzh3070",
+  "repo": "https://github.com/Lzh3070/dsh-file-review-tab",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 19,
+  "forks": 3,
+  "pushedAt": "2026-09-13T14:30:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-file-review-tab",
+    "commands": [
+      "dsh plugin --profile web add dsh-file-review-tab",
+      "dsh plugin --profile web add github:Lzh3070/dsh-file-review-tab"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

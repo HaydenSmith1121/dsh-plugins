@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "marshfolx/dsh-subagent-setting",
+  "slug": "marshfolx__dsh-subagent-setting",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subagent-setting",
+  "title": "dsh-subagent-setting",
+  "summary": "在Web设置页配置子智能体的默认模型、供应商和推理强度，新建子智能体立即生效。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "模型配置",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "marshfolx",
+  "repo": "https://github.com/marshfolx/dsh-subagent-setting",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-22T13:09:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:marshfolx/dsh-subagent-setting",
+    "commands": [
+      "dsh plugin --profile web add github:marshfolx/dsh-subagent-setting"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

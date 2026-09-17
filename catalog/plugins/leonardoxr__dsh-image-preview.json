@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "leonardoxr/dsh-image-preview",
+  "slug": "leonardoxr__dsh-image-preview",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-image-preview",
+  "title": "dsh-image-preview",
+  "summary": "在 DeepSeek Harness 中直接内联预览 read_image 工具读取的图片，无需切换窗口，提升多模态交互体验。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-web",
+    "dsh-web-ui",
+    "视觉理解",
+    "会话管理",
+    "可视化",
+    "零配置"
+  ],
+  "version": "0.3.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.4",
+    "publishedAt": "2026-08-31T09:59:46Z",
+    "url": "https://github.com/leonardoxr/dsh-image-preview/releases/tag/v0.3.4"
+  },
+  "author": "leonardoxr",
+  "repo": "https://github.com/leonardoxr/dsh-image-preview",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T09:59:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:leonardoxr/dsh-image-preview",
+    "commands": [
+      "dsh plugin --profile web add \"$HOME/.dsh/packages/dsh-image-preview-0.3.4.tgz\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

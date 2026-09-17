@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "fan56/dsh-tui-pi",
+  "slug": "fan56__dsh-tui-pi",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tui-pi",
+  "title": "dsh-tui-pi",
+  "summary": "把 dsh 变成 pi 风格的终端界面，能回看历史、切换预设、实时指挥子智能体，还能换模型和主题。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "命令行工具",
+    "会话管理",
+    "多Agent协作",
+    "模型适配",
+    "界面美化"
+  ],
+  "version": "2.20.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fan56",
+  "repo": "https://github.com/fan56/dsh-tui-pi",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 0,
+  "pushedAt": "2026-09-16T14:31:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@aiwayds/dsh-tui-pi",
+    "commands": [
+      "dsh plugin --profile tui add @aiwayds/dsh-tui-pi"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

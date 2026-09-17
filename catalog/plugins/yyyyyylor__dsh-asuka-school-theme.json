@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "Yyyyyylor/dsh-asuka-school-theme",
+  "slug": "yyyyyylor__dsh-asuka-school-theme",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-asuka-school-theme",
+  "title": "dsh-asuka-school-theme",
+  "summary": "为 DeepSeek Harness 网页界面换上明日香主题皮肤，支持随时间切换壁纸和自适应配色，带点 EVA 风格的小细节。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugin-theme",
+    "theme",
+    "界面美化",
+    "前端增强",
+    "插件管理",
+    "零配置"
+  ],
+  "version": "3.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v3.0.0",
+    "publishedAt": "2026-09-12T10:43:59Z",
+    "url": "https://github.com/Yyyyyylor/dsh-asuka-school-theme/releases/tag/v3.0.0"
+  },
+  "author": "Yyyyyylor",
+  "repo": "https://github.com/Yyyyyylor/dsh-asuka-school-theme",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T12:56:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Yyyyyylor/dsh-asuka-school-theme",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/Yyyyyylor/dsh-asuka-school-theme/releases/download/v3.0.0/dsh-asuka-school-theme-3.0.0.tgz",
+      "dsh plugin --profile web add github:Yyyyyylor/dsh-asuka-school-theme",
+      "dsh plugin --profile web add ./dsh-asuka-school-theme-3.0.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

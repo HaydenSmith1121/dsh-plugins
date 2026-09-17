@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "marshfolx/dsh-rescue-tui",
+  "slug": "marshfolx__dsh-rescue-tui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-rescue-tui",
+  "title": "dsh-rescue-tui",
+  "summary": "WebUI 挂掉时的极简终端救急入口，支持会话续聊、权限审批和模型切换，装上即用。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "命令行工具",
+    "会话管理",
+    "安全审计",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "marshfolx",
+  "repo": "https://github.com/marshfolx/dsh-rescue-tui",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T17:59:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:marshfolx/dsh-rescue-tui",
+    "commands": [
+      "dsh plugin --profile web add github:marshfolx/dsh-rescue-tui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

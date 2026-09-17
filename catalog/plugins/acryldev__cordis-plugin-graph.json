@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "acryldev/cordis-plugin-graph",
+  "slug": "acryldev__cordis-plugin-graph",
+  "tier": "community",
+  "package": null,
+  "name": "cordis-plugin-graph",
+  "title": "cordis-plugin-graph",
+  "summary": "在设置里加一个可缩放的插件关系图，一眼看清插件依赖、提供者和加载层级。",
+  "tags": [
+    "acryl",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugins",
+    "插件管理",
+    "可视化",
+    "状态监控",
+    "设置面板"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "acryldev",
+  "repo": "https://github.com/acryldev/cordis-plugin-graph",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T12:37:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "cordis-plugin-graph",
+    "commands": [
+      "dsh plugin add cordis-plugin-graph"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

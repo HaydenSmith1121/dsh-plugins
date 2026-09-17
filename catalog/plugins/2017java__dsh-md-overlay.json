@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "2017java/dsh-md-overlay",
+  "slug": "2017java__dsh-md-overlay",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-md-overlay",
+  "title": "dsh-md-overlay",
+  "summary": "在 DeepSeek Harness 侧边栏中直接渲染 Markdown 文档，提升阅读与协作体验。",
+  "tags": [
+    "dsh-better-sidebar",
+    "dsh-plugin",
+    "会话管理",
+    "前端增强",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-08-26T01:52:53Z",
+    "url": "https://github.com/2017java/dsh-md-overlay/releases/tag/v0.3.0"
+  },
+  "author": "2017java",
+  "repo": "https://github.com/2017java/dsh-md-overlay",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-26T01:52:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-md-overlay@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-md-overlay@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

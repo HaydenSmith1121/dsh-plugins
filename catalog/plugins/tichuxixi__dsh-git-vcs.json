@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "TiChuXiXi/dsh-git-vcs",
+  "slug": "tichuxixi__dsh-git-vcs",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-git-vcs",
+  "title": "dsh-git-vcs",
+  "summary": "在 DSH 右侧栏加个版本管理页，像 IDEA 那样看变更、提交、历史和分支，Git 操作一站搞定。",
+  "tags": [
+    "dsh-plugin",
+    "变更审查",
+    "文件差异",
+    "操作回滚",
+    "命令行工具",
+    "工作区管理"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-16T03:44:48Z",
+    "url": "https://github.com/TiChuXiXi/dsh-git-vcs/releases/tag/v0.1.1"
+  },
+  "author": "TiChuXiXi",
+  "repo": "https://github.com/TiChuXiXi/dsh-git-vcs",
+  "homepage": "https://github.com/TiChuXiXi/dsh-git-vcs",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T04:03:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TiChuXiXi/dsh-git-vcs",
+    "commands": [
+      "dsh plugin --profile web add github:TiChuXiXi/dsh-git-vcs"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "bailinghub/bailinghub-dsh-plugin",
+  "slug": "bailinghub__bailinghub-dsh-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "bailinghub-dsh-plugin",
+  "title": "bailinghub-dsh-plugin",
+  "summary": "通过 DeepSeek Harness 提交并跟踪受管控的业务任务，统一走管理员配置的 BailingHub 路由。",
+  "tags": [
+    "agent-governance",
+    "ai-agent",
+    "bailinghub",
+    "business-automation",
+    "deepseek-harness",
+    "dsh-plugin",
+    "human-in-the-loop",
+    "mcp",
+    "self-hosted",
+    "工作流增强",
+    "插件管理",
+    "多智能体协作",
+    "自动化"
+  ],
+  "version": "0.6.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.0",
+    "publishedAt": "2026-09-16T09:58:00Z",
+    "url": "https://github.com/bailinghub/bailinghub-dsh-plugin/releases/tag/v0.6.0"
+  },
+  "author": "bailinghub",
+  "repo": "https://github.com/bailinghub/bailinghub-dsh-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T09:54:18Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-bailinghub@0.6.0",
+    "commands": [
+      "npm install --global pnpm @deepseek-ai/dsh@0.1.1-rc.2",
+      "dsh plugin --profile web add dsh-bailinghub@0.6.0"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

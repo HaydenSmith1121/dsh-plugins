@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "7A7K/DSH-Timeline-Navigator",
+  "slug": "7a7k__dsh-timeline-navigator",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-Timeline-Navigator",
+  "title": "DSH-Timeline-Navigator",
+  "summary": "把冗长的 DSH 对话整理成时间线，按回合浏览、搜索、星标收藏，一键跳回历史消息。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "productivity",
+    "timeline",
+    "会话管理",
+    "快捷操作",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.3.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.5",
+    "publishedAt": "2026-08-17T15:05:27Z",
+    "url": "https://github.com/7A7K/DSH-Timeline-Navigator/releases/tag/v0.3.5"
+  },
+  "author": "7A7K",
+  "repo": "https://github.com/7A7K/DSH-Timeline-Navigator",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-29T05:59:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:7A7K/DSH-Timeline-Navigator",
+    "commands": [
+      "dsh plugin --profile web add github:7A7K/DSH-Timeline-Navigator"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

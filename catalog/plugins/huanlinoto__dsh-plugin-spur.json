@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "HuanLinOTO/dsh-plugin-spur",
+  "slug": "huanlinoto__dsh-plugin-spur",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-spur",
+  "title": "dsh-spur",
+  "summary": "给任务加把劲，把零散工作串成可追踪的流程，自动推进执行。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "工作流增强",
+    "效率提升",
+    "任务引擎"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "HuanLinOTO",
+  "repo": "https://github.com/HuanLinOTO/dsh-plugin-spur",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-04T11:34:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:HuanLinOTO/dsh-plugin-spur",
+    "commands": [
+      "dsh plugin --profile web add github:HuanLinOTO/dsh-plugin-spur"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

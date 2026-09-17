@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "wuwuzhige-sudo/dsh-skill-gsd",
+  "slug": "wuwuzhige-sudo__dsh-skill-gsd",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skill-gsd",
+  "title": "dsh-skill-gsd",
+  "summary": "轻量级技能插件，帮你精简上下文占用，让对话更高效不卡顿。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "dsh-skill",
+    "会话管理",
+    "资源优化",
+    "效率提升",
+    "零配置"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "wuwuzhige-sudo",
+  "repo": "https://github.com/wuwuzhige-sudo/dsh-skill-gsd",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T02:53:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wuwuzhige-sudo/dsh-skill-gsd",
+    "commands": [
+      "dsh plugin --profile web add github:wuwuzhige-sudo/dsh-skill-gsd"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

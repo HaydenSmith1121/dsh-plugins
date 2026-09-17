@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "tr1v3r/dsh-proxy",
+  "slug": "tr1v3r__dsh-proxy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-proxy",
+  "title": "dsh-proxy",
+  "summary": "运行时热切换 HTTP(S)/SOCKS5 出站代理，无需重启即可灵活调整网络路由。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "工具集成",
+    "网络配置",
+    "命令行工具",
+    "插件管理"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-07T16:22:47Z",
+    "url": "https://github.com/tr1v3r/dsh-proxy/releases/tag/v0.1.2"
+  },
+  "author": "tr1v3r",
+  "repo": "https://github.com/tr1v3r/dsh-proxy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-09T03:42:14Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tr1v3r/dsh-proxy",
+    "commands": [
+      "dsh plugin --profile web add github:tr1v3r/dsh-proxy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

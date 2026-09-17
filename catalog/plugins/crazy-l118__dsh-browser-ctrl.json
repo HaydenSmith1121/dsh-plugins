@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "crazy-L118/dsh-browser-ctrl",
+  "slug": "crazy-l118__dsh-browser-ctrl",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-browser-ctrl",
+  "title": "dsh-browser-ctrl",
+  "summary": "让AI直接操控本地浏览器上网，自动导航、点击、输入，截图实时回传对话，全程无需人工干预。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "导航",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "crazy-L118",
+  "repo": "https://github.com/crazy-L118/dsh-browser-ctrl",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T13:52:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-browser-ctrl",
+    "commands": [
+      "dsh plugin --profile web add npm:dsh-browser-ctrl"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

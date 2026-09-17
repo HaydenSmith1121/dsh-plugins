@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zhanxin-xu/dsh-sandbox-escalation-prompt",
+  "slug": "zhanxin-xu__dsh-sandbox-escalation-prompt",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sandbox-escalation-prompt",
+  "title": "dsh-sandbox-escalation-prompt",
+  "summary": "给 DSH 系统提示词加上沙箱提权规则，让 bash、fs 等工具不再乱申请权限或漏填理由。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "prompt-engineering",
+    "模型适配",
+    "安全审计",
+    "命令行工具",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhanxin-xu",
+  "repo": "https://github.com/zhanxin-xu/dsh-sandbox-escalation-prompt",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T06:58:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhanxin-xu/dsh-sandbox-escalation-prompt",
+    "commands": [
+      "dsh plugin --profile web add github:zhanxin-xu/dsh-sandbox-escalation-prompt"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

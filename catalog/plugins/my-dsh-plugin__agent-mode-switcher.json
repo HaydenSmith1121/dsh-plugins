@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "my-dsh-plugin/agent-mode-switcher",
+  "slug": "my-dsh-plugin__agent-mode-switcher",
+  "tier": "community",
+  "package": null,
+  "name": "agent-mode-switcher",
+  "title": "agent-mode-switcher",
+  "summary": "模型回答后自动切换当前会话的智能体模式，无需开新对话，继续聊下去。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "设置面板",
+    "会话管理",
+    "AI 助手",
+    "连续对话"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "my-dsh-plugin",
+  "repo": "https://github.com/my-dsh-plugin/agent-mode-switcher",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T06:25:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:my-dsh-plugin/agent-mode-switcher",
+    "commands": [
+      "git clone https://github.com/my-dsh-plugin/agent-mode-switcher.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "tree-func/dsh-request-manager",
+  "slug": "tree-func__dsh-request-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-request-manager",
+  "title": "dsh-request-manager",
+  "summary": "管理 DeepSeek Harness 的 API 请求策略，灵活调整发送行为，提升效率与稳定性。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "资源优化",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.4.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "tree-func",
+  "repo": "https://github.com/tree-func/dsh-request-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-21T17:05:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tree-func/dsh-request-manager",
+    "commands": [
+      "dsh plugin --profile web add github:tree-func/dsh-request-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

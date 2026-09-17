@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "miaomiao636/dsh-message-navigator",
+  "slug": "miaomiao636__dsh-message-navigator",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-message-navigator",
+  "title": "dsh-message-navigator",
+  "summary": "长对话的目录导航，快速定位用户消息，支持搜索和导出大纲，让超长会话不再难翻。",
+  "tags": [
+    "codex",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "message-navigator",
+    "plugin",
+    "会话管理",
+    "效率提升",
+    "语义检索",
+    "前端增强"
+  ],
+  "version": "0.1.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.4",
+    "publishedAt": "2026-09-01T16:20:35Z",
+    "url": "https://github.com/miaomiao636/dsh-message-navigator/releases/tag/v0.1.4"
+  },
+  "author": "miaomiao636",
+  "repo": "https://github.com/miaomiao636/dsh-message-navigator",
+  "homepage": "https://github.com/miaomiao636/dsh-message-navigator",
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-01T16:20:10Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-codex-message-navigator",
+    "commands": [
+      "dsh plugin --profile web add dsh-codex-message-navigator",
+      "dsh plugin --profile web add ./dsh-codex-message-navigator-0.1.4.tgz",
+      "dsh plugin --profile web remove dsh-codex-message-navigator"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

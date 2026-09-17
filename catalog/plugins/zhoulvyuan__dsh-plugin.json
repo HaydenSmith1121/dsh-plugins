@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zhoulvyuan/dsh-plugin",
+  "slug": "zhoulvyuan__dsh-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin",
+  "title": "dsh-plugin",
+  "summary": "集中维护 DSH 的独立插件集合，方便你按需安装扩展功能，即插即用提升开发效率。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "零配置",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.0.1",
+    "publishedAt": "2026-09-16T08:48:29Z",
+    "url": "https://github.com/zhoulvyuan/dsh-plugin/releases/tag/v0.0.1"
+  },
+  "author": "zhoulvyuan",
+  "repo": "https://github.com/zhoulvyuan/dsh-plugin",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T14:01:33Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhoulvyuan/dsh-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:zhoulvyuan/dsh-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

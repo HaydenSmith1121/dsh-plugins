@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ljlj7149-cloud/dsh-cognitio",
+  "slug": "ljlj7149-cloud__dsh-cognitio",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cognitio",
+  "title": "dsh-cognitio",
+  "summary": "让AI记住你的规矩和教训，关键时刻自动提醒，所有沉淀需你批准才生效，换模型也管用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "自动化",
+    "状态监控",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ljlj7149-cloud",
+  "repo": "https://github.com/ljlj7149-cloud/dsh-cognitio",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-26T20:15:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ljlj7149-cloud/dsh-cognitio",
+    "commands": [
+      "dsh plugin --profile web add github:ljlj7149-cloud/dsh-cognitio",
+      "dsh plugin --profile web add dsh-cognitio-core",
+      "dsh plugin --profile web add file:/path/to/dsh-cognitio"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

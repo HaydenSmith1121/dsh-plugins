@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "yangzhe1991/dsh-proxy-router",
+  "slug": "yangzhe1991__dsh-proxy-router",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-proxy-router",
+  "title": "dsh-proxy-router",
+  "summary": "本地路由代理，只让被墙的域名走上游代理，其他直连，设置页改参数即时生效。",
+  "tags": [
+    "dsh-plugin",
+    "gfw",
+    "设置面板",
+    "工具集成",
+    "效率提升",
+    "资源优化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yangzhe1991",
+  "repo": "https://github.com/yangzhe1991/dsh-proxy-router",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T13:05:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@yangzhe1991/dsh-proxy-router",
+    "commands": [
+      "dsh plugin --profile web add @yangzhe1991/dsh-proxy-router"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

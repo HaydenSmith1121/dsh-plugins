@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Semidia/dsh-smart-route",
+  "slug": "semidia__dsh-smart-route",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-smart-route",
+  "title": "dsh-smart-route",
+  "summary": "智能供应商路由插件，任何渠道报错自动切换下一家，一键停用启用，模型选择器直接显示链路名称。",
+  "tags": [
+    "dsh-plugin",
+    "智能路由",
+    "自动降级",
+    "一键开关",
+    "供应商管理"
+  ],
+  "version": "1.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Semidia",
+  "repo": "https://github.com/Semidia/dsh-smart-route",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-19T17:17:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Semidia/dsh-smart-route",
+    "commands": [
+      "dsh plugin --profile web add github:Semidia/dsh-smart-route"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

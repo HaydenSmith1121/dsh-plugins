@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "chaserchan/dsh-plugin-global-prompt",
+  "slug": "chaserchan__dsh-plugin-global-prompt",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-global-prompt",
+  "title": "dsh-plugin-global-prompt",
+  "summary": "在设置中配置一段全局提示词，自动注入每次对话的系统提示词，保存即生效，留空即停用。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "零配置",
+    "插件管理"
+  ],
+  "version": "0.1.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chaserchan",
+  "repo": "https://github.com/chaserchan/dsh-plugin-global-prompt",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-21T12:21:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-global-prompt",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-global-prompt"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

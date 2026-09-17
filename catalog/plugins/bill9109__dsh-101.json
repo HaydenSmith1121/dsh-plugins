@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "bill9109/dsh-101",
+  "slug": "bill9109__dsh-101",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-101",
+  "title": "dsh-101",
+  "summary": "把 DSH 切换成文档优先的阅读模式，让文档浏览更清爽专注。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "主题",
+    "快捷操作",
+    "界面美化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bill9109",
+  "repo": "https://github.com/bill9109/dsh-101",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-14T11:55:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bill9109/dsh-101",
+    "commands": [
+      "dsh plugin --profile dsh-101 add github:bill9109/dsh-101"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

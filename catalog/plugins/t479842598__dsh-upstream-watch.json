@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "t479842598/dsh-upstream-watch",
+  "slug": "t479842598__dsh-upstream-watch",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-upstream-watch",
+  "title": "dsh-upstream-watch",
+  "summary": "盯着 GitHub 上游仓库默认分支的新提交，设置面板实时显示并记日志，方便随时掌握更新动态。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-bundle",
+    "monitoring",
+    "ui",
+    "状态监控",
+    "设置面板",
+    "工具集成",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "t479842598",
+  "repo": "https://github.com/t479842598/dsh-upstream-watch",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-14T09:34:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:t479842598/dsh-upstream-watch",
+    "commands": [
+      "dsh plugin --profile web add github:t479842598/dsh-upstream-watch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

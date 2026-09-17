@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "eons2long/dsh-codex-oauth",
+  "slug": "eons2long__dsh-codex-oauth",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codex-oauth",
+  "title": "dsh-codex-oauth",
+  "summary": "用 ChatGPT Plus/Pro 的 Codex 模型跑任务，通过 OpenAI OAuth 登录，即插即用。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "0.2.8",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "eons2long",
+  "repo": "https://github.com/eons2long/dsh-codex-oauth",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-03T06:19:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-codex-oauth",
+    "commands": [
+      "dsh plugin --profile web add dsh-codex-oauth"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

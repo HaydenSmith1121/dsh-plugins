@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "f-infinite-z/dsh-plugin-ops",
+  "slug": "f-infinite-z__dsh-plugin-ops",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-ops",
+  "title": "dsh-plugin-ops",
+  "summary": "给 dsh 插件生态当启动守卫：开机前体检、故障归因、依赖治理，还有可视化面板。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin-manager",
+    "插件管理",
+    "状态监控",
+    "可视化",
+    "自动化",
+    "安全审查"
+  ],
+  "version": "0.6.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.4",
+    "publishedAt": "2026-09-16T12:13:43Z",
+    "url": "https://github.com/f-infinite-z/dsh-plugin-ops/releases/tag/v0.6.4"
+  },
+  "author": "f-infinite-z",
+  "repo": "https://github.com/f-infinite-z/dsh-plugin-ops",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T12:13:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:f-infinite-z/dsh-plugin-ops",
+    "commands": [
+      "npm i -g dsh-plugin-ops"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "sujingkpo/dsh-auto-pass",
+  "slug": "sujingkpo__dsh-auto-pass",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auto-pass",
+  "title": "dsh-auto-pass",
+  "summary": "自动批准通过审核的请求，省去手动确认的麻烦，让开发流程更顺畅。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "自动化",
+    "效率提升",
+    "工作流增强",
+    "安全审计"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-16T11:20:29Z",
+    "url": "https://github.com/sujingkpo/dsh-auto-pass/releases/tag/v0.1.2"
+  },
+  "author": "sujingkpo",
+  "repo": "https://github.com/sujingkpo/dsh-auto-pass",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T11:18:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sujingkpo/dsh-auto-pass",
+    "commands": [
+      "dsh plugin --profile web add github:sujingkpo/dsh-auto-pass",
+      "dsh plugin --profile web add link:/path/to/dsh-auto-pass"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

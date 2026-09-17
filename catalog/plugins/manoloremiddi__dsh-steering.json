@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "ManoloRemiddi/dsh-steering",
+  "slug": "manoloremiddi__dsh-steering",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-steering",
+  "title": "dsh-steering",
+  "summary": "让 Steer 在模型还没输出完时就能插话调整方向，排队指令和运行中的工具都不受影响。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "manolo-dsh-plugins",
+    "效率提升",
+    "工作流增强",
+    "AI 助手",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-14T13:50:53Z",
+    "url": "https://github.com/ManoloRemiddi/dsh-steering/releases/tag/v0.1.0"
+  },
+  "author": "ManoloRemiddi",
+  "repo": "https://github.com/ManoloRemiddi/dsh-steering",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T13:50:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ManoloRemiddi/dsh-steering",
+    "commands": [
+      "dsh plugin --profile web add /absolute/path/to/dsh-steering-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "AnacondaKC/dsh-stock-market",
+  "slug": "anacondakc__dsh-stock-market",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-stock-market",
+  "title": "dsh-stock-market",
+  "summary": "在侧栏实时看沪深A股指数和全球行情，还能对比两市成交额、刷财经资讯。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "数据分析",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "AnacondaKC",
+  "repo": "https://github.com/AnacondaKC/dsh-stock-market",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 19,
+  "forks": 5,
+  "pushedAt": "2026-08-13T06:26:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AnacondaKC/dsh-stock-market",
+    "commands": [
+      "dsh plugin --profile web add link:/absolute/path/to/dsh-stock-market"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

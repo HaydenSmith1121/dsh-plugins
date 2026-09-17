@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Mooling0602/dsh-web-file-uploader",
+  "slug": "mooling0602__dsh-web-file-uploader",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-file-uploader",
+  "title": "dsh-web-file-uploader",
+  "summary": "给 DeepSeek Harness 网页界面加上回形针附件按钮，方便直接上传文件。",
+  "tags": [
+    "dsh-plugin",
+    "文件管理",
+    "附件按钮",
+    "可视化"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "0.4.0",
+    "publishedAt": "2026-09-10T15:13:59Z",
+    "url": "https://github.com/Mooling0602/dsh-web-file-uploader/releases/tag/0.4.0"
+  },
+  "author": "Mooling0602",
+  "repo": "https://github.com/Mooling0602/dsh-web-file-uploader",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 11,
+  "forks": 1,
+  "pushedAt": "2026-09-10T15:11:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Mooling0602/dsh-web-file-uploader",
+    "commands": [
+      "dsh plugin --profile web add github:Mooling0602/dsh-web-file-uploader"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

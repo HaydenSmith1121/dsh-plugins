@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "springbrand-lab/dsh-plugin-market",
+  "slug": "springbrand-lab__dsh-plugin-market",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-market",
+  "title": "dsh-plugin-market",
+  "summary": "在 DeepSeek Harness 网页设置中管理插件，支持跨本地配置安装、更新和卸载。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin-marketplace",
+    "模型配置",
+    "文件管理",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "1.0.8",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "springbrand-lab",
+  "repo": "https://github.com/springbrand-lab/dsh-plugin-market",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 0,
+  "pushedAt": "2026-08-18T12:08:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@springbrand/dsh-plugin-marketplace",
+    "commands": [
+      "npm install --global pnpm @deepseek-ai/dsh",
+      "dsh plugin --profile web add @springbrand/dsh-plugin-marketplace"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

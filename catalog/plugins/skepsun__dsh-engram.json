@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "skepsun/dsh-engram",
+  "slug": "skepsun__dsh-engram",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-engram",
+  "title": "dsh-engram",
+  "summary": "给DSH配上省Token的长期记忆库，不跑大模型也能自动抓取和整理重点，找回忆更省心。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "long-term-memory",
+    "memory",
+    "pi-esr",
+    "会话管理",
+    "资源优化",
+    "效率提升"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-14T09:04:49Z",
+    "url": "https://github.com/skepsun/dsh-engram/releases/tag/v0.4.0"
+  },
+  "author": "skepsun",
+  "repo": "https://github.com/skepsun/dsh-engram",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 1,
+  "pushedAt": "2026-09-14T09:04:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:skepsun/dsh-engram",
+    "commands": [
+      "dsh plugin --profile web add github:skepsun/dsh-engram"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

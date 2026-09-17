@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "maoyuching/dsh-voice-chat",
+  "slug": "maoyuching__dsh-voice-chat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-voice-chat",
+  "title": "dsh-voice-chat",
+  "summary": "在 DeepSeek Harness 网页界面里点一下麦克风就能说话，AI 会用语音回复你，解放双手的语音对话插件。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "视觉理解",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.3.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "maoyuching",
+  "repo": "https://github.com/maoyuching/dsh-voice-chat",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-06T04:12:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-voice-chat",
+    "commands": [
+      "dsh plugin --profile web add dsh-voice-chat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "royenheart/dsh-plugin-mcp-support",
+  "slug": "royenheart__dsh-plugin-mcp-support",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-mcp-support",
+  "title": "dsh-plugin-mcp-support",
+  "summary": "为 DSH 原生 MCP 桥接提供轻量封装，让你能灵活配置和管理 MCP 服务器，扩展 AI 工具能力。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "AI 助手",
+    "模型配置",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "royenheart",
+  "repo": "https://github.com/royenheart/dsh-plugin-mcp-support",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-01T14:03:11Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:royenheart/dsh-plugin-mcp-support",
+    "commands": [
+      "dsh plugin --profile <profile-name> add link:/home/royenheart/projects/dsh-plugins/dsh-plugin-mcp-support"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

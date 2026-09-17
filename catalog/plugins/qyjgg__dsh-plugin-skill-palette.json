@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "qyjgg/dsh-plugin-skill-palette",
+  "slug": "qyjgg__dsh-plugin-skill-palette",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-skill-palette",
+  "title": "dsh-plugin-skill-palette",
+  "summary": "给 DSH 的斜杠命令加上分级模糊搜索，还能一次挑多个技能，找命令快多了。",
+  "tags": [
+    "dsh-plugin",
+    "快捷操作",
+    "效率提升",
+    "插件管理",
+    "前端增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "qyjgg",
+  "repo": "https://github.com/qyjgg/dsh-plugin-skill-palette",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T08:22:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qyjgg/dsh-plugin-skill-palette",
+    "commands": [
+      "dsh plugin --profile web add github:qyjgg/dsh-plugin-skill-palette",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

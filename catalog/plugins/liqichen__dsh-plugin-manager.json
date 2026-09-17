@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "liqichen/dsh-plugin-manager",
+  "slug": "liqichen__dsh-plugin-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-manager",
+  "title": "dsh-plugin-manager",
+  "summary": "在 dsh 设置面板里像用 App 一样管理 MCP 服务、Skills 和插件包，开关删除即时生效，不用重启。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "设置面板",
+    "工具集成",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "liqichen",
+  "repo": "https://github.com/liqichen/dsh-plugin-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 17,
+  "forks": 3,
+  "pushedAt": "2026-08-14T17:30:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:liqichen/dsh-plugin-manager",
+    "commands": [
+      "git clone https://github.com/liqichen/dsh-plugin-manager.git",
+      "dsh plugin --profile web add ~/.dsh/plugins/dsh-plugin-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

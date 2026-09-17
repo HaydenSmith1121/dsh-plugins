@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "btspoony/mstar-harness",
+  "slug": "btspoony__mstar-harness",
+  "tier": "community",
+  "package": null,
+  "name": "mstar-harness",
+  "title": "mstar-harness",
+  "summary": "面向结构化 Harness 循环工程的技能驱动工作流插件，帮你编排开发流程、提升智能体协作效率。",
+  "tags": [
+    "cursor-plugin",
+    "dsh-plugin",
+    "harness-engineering",
+    "knowledge-management",
+    "omp-plugin",
+    "opencode-plugin",
+    "sdd",
+    "spec-driven",
+    "subagents",
+    "工作流增强",
+    "AI工具",
+    "自动化",
+    "工具集成"
+  ],
+  "version": "3.10.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v3.10.3",
+    "publishedAt": "2026-09-17T10:40:17Z",
+    "url": "https://github.com/btspoony/mstar-harness/releases/tag/v3.10.3"
+  },
+  "author": "btspoony",
+  "repo": "https://github.com/btspoony/mstar-harness",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 60,
+  "forks": 4,
+  "pushedAt": "2026-09-16T18:30:43Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:btspoony/mstar-harness",
+    "commands": [
+      "npm i -g @mstar-harness/cli"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

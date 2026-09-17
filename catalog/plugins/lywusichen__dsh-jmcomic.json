@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "lywusichen/dsh-jmcomic",
+  "slug": "lywusichen__dsh-jmcomic",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-jmcomic",
+  "title": "dsh-jmcomic",
+  "summary": "在侧边栏一键搜索下载JMComic漫画，本地管理漫画库，窗口内直接阅读，离线也能用。",
+  "tags": [
+    "comics",
+    "deepseek",
+    "deepseek-v4",
+    "dsh",
+    "dsh-plugin",
+    "javascript",
+    "jmcomic",
+    "plugin",
+    "web",
+    "前端增强",
+    "效率提升",
+    "自动化",
+    "零配置"
+  ],
+  "version": "1.0.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.4",
+    "publishedAt": "2026-09-10T15:09:05Z",
+    "url": "https://github.com/lywusichen/dsh-jmcomic/releases/tag/v1.0.4"
+  },
+  "author": "lywusichen",
+  "repo": "https://github.com/lywusichen/dsh-jmcomic",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-10T15:03:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lywusichen/dsh-jmcomic",
+    "commands": [
+      "dsh plugin --profile web add github:lywusichen/dsh-jmcomic"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

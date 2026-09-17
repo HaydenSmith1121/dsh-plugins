@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "133563825as-ai/dsh-api-dashboard",
+  "slug": "133563825as-ai__dsh-api-dashboard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-api-dashboard",
+  "title": "dsh-api-dashboard",
+  "summary": "在 DeepSeek Harness 网页界面里一眼看清各家 API 还剩多少余额，不用来回切后台。",
+  "tags": [
+    "api-dashboard",
+    "balance",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "npm-package",
+    "状态监控",
+    "可视化",
+    "模型适配",
+    "效率提升"
+  ],
+  "version": "1.4.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.4.4",
+    "publishedAt": "2026-09-11T17:59:51Z",
+    "url": "https://github.com/133563825as-ai/dsh-api-dashboard/releases/tag/v1.4.4"
+  },
+  "author": "133563825as-ai",
+  "repo": "https://github.com/133563825as-ai/dsh-api-dashboard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 1,
+  "pushedAt": "2026-09-12T05:52:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:133563825as-ai/dsh-api-dashboard",
+    "commands": [
+      "dsh plugin --profile web add link:/root/dsha-api-dashboard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

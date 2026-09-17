@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "Wayne036/dsh-plugin-login-gate",
+  "slug": "wayne036__dsh-plugin-login-gate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-login-gate",
+  "title": "dsh-plugin-login-gate",
+  "summary": "给 dsh Web UI 加一道密码登录闸门，并支持 HTTPS 反向代理，保护内网设备安全访问。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "状态监控",
+    "AI 助手"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Wayne036",
+  "repo": "https://github.com/Wayne036/dsh-plugin-login-gate",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-05T05:20:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Wayne036/dsh-plugin-login-gate",
+    "commands": [
+      "git clone https://github.com/<你的用户名>/dsh-plugin-login-gate.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

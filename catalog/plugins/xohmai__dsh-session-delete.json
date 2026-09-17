@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "xohmai/dsh-session-delete",
+  "slug": "xohmai__dsh-session-delete",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-delete",
+  "title": "dsh-session-delete",
+  "summary": "把官方归档只隐藏不删的会话日志真正删掉，先进回收站可还原，还能批量清理。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-delete",
+    "dsh-plugin",
+    "dsh-session-delete",
+    "会话管理",
+    "操作回滚",
+    "资源优化",
+    "批量清理",
+    "设置面板"
+  ],
+  "version": "0.4.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.1",
+    "publishedAt": "2026-09-10T07:27:16Z",
+    "url": "https://github.com/xohmai/dsh-session-delete/releases/tag/v0.4.1"
+  },
+  "author": "xohmai",
+  "repo": "https://github.com/xohmai/dsh-session-delete",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 10,
+  "forks": 3,
+  "pushedAt": "2026-09-14T02:34:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xohmai/dsh-session-delete",
+    "commands": [
+      "dsh plugin --profile web add github:xohmai/dsh-session-delete",
+      "dsh plugin --profile web add ./dsh-session-delete-0.5.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

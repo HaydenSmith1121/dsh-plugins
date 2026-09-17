@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "yoshino-xiao7/dsh-codex",
+  "slug": "yoshino-xiao7__dsh-codex",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codex",
+  "title": "dsh-codex",
+  "summary": "让 DSH 支持 ChatGPT 账号登录，用 Codex 模型聊天、发图片，断线还能自动恢复对话。",
+  "tags": [
+    "chatgpt",
+    "codex",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm",
+    "oauth",
+    "模型配置",
+    "会话管理",
+    "零配置",
+    "状态监控"
+  ],
+  "version": "1.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.1",
+    "publishedAt": "2026-09-04T14:07:08Z",
+    "url": "https://github.com/yoshino-xiao7/dsh-codex/releases/tag/v1.2.1"
+  },
+  "author": "yoshino-xiao7",
+  "repo": "https://github.com/yoshino-xiao7/dsh-codex",
+  "homepage": "https://www.npmjs.com/package/dsh-codex-community",
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T14:07:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-codex-community@1.2.1",
+    "commands": [
+      "dsh plugin --profile web add dsh-codex-community@1.2.1"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

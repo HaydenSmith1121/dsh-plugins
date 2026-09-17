@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "zhengjy01/dsh-goofish-mcp",
+  "slug": "zhengjy01__dsh-goofish-mcp",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-goofish-mcp",
+  "title": "dsh-goofish-mcp",
+  "summary": "把闲鱼只读数据监控接进 DeepSeek Harness，随时盯商品、看行情，不打扰卖家。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "工具集成",
+    "状态监控",
+    "自动化",
+    "模型适配"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhengjy01",
+  "repo": "https://github.com/zhengjy01/dsh-goofish-mcp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T13:06:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-goofish-mcp",
+    "commands": [
+      "dsh plugin --profile web add dsh-goofish-mcp",
+      "dsh plugin --profile web add link:/path/to/dsh-xianyu"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

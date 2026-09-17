@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "virgoC0der/dsh-plugins",
+  "slug": "virgoc0der__dsh-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugins",
+  "title": "dsh-plugins",
+  "summary": "把 GitHub PR、Jira、日历和本地 git 状态汇总成一个工作看板，随时掌握手头进度。",
+  "tags": [
+    "dsh-plugin",
+    "工作区管理",
+    "工具集成",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "virgoC0der",
+  "repo": "https://github.com/virgoC0der/dsh-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T08:55:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:virgoC0der/dsh-plugins",
+    "commands": [
+      "dsh plugin --profile web add github:virgoC0der/dsh-plugins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

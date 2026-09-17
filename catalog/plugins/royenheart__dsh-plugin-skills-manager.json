@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "royenheart/dsh-plugin-skills-manager",
+  "slug": "royenheart__dsh-plugin-skills-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-skills-manager",
+  "title": "dsh-plugin-skills-manager",
+  "summary": "管理你的技能开关，可按全局、工作区或会话范围灵活启用或禁用技能，提升操作效率。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "skill-management",
+    "插件管理",
+    "工作区管理",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "royenheart",
+  "repo": "https://github.com/royenheart/dsh-plugin-skills-manager",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T13:09:35Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:royenheart/dsh-plugin-skills-manager",
+    "commands": [
+      "dsh plugin --profile web add github:royenheart/dsh-plugin-skills-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

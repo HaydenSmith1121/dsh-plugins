@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "trees163/dsh-customizations",
+  "slug": "trees163__dsh-customizations",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-customizations",
+  "title": "dsh-customizations",
+  "summary": "为DeepSeek Harness提供三档agent预设、VS Code风格布局和文件API，还带UI美化与MCP桥接，让开发更顺手。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "效率提升",
+    "前端增强",
+    "多Agent协作",
+    "插件管理"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "trees163",
+  "repo": "https://github.com/trees163/dsh-customizations",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-22T13:34:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:trees163/dsh-customizations",
+    "commands": [
+      "dsh plugin --profile web add github:trees163/dsh-customizations"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

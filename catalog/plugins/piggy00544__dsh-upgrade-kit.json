@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "piggy00544/dsh-upgrade-kit",
+  "slug": "piggy00544__dsh-upgrade-kit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-upgrade-kit",
+  "title": "dsh-upgrade-kit",
+  "summary": "一条命令一键安装，补齐费用查询、文件预览、联网搜索与识图能力，让 DSH 开箱即用更顺手。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "dsh-skill",
+    "Token监控",
+    "多模态",
+    "插件管理",
+    "零配置"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-13T06:59:49Z",
+    "url": "https://github.com/piggy00544/dsh-upgrade-kit/releases/tag/v0.4.0"
+  },
+  "author": "piggy00544",
+  "repo": "https://github.com/piggy00544/dsh-upgrade-kit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T06:59:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:piggy00544/dsh-upgrade-kit",
+    "commands": [
+      "curl -fsSL https://raw.githubusercontent.com/piggy00544/dsh-upgrade-kit/main/install.sh | bash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

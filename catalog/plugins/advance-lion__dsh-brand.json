@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "advance-lion/dsh-brand",
+  "slug": "advance-lion__dsh-brand",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-brand",
+  "title": "dsh-brand",
+  "summary": "不用改代码重新打包，在设置里填几项就能一键换掉 DSH Web GUI 的品牌标识。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "主题",
+    "设置面板",
+    "零配置",
+    "前端增强"
+  ],
+  "version": "0.1.5-rc.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "advance-lion",
+  "repo": "https://github.com/advance-lion/dsh-brand",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T09:05:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:advance-lion/dsh-brand",
+    "commands": [
+      "dsh plugin --profile web add github:advance-lion/dsh-brand"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

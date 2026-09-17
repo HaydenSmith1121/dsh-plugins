@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-time-machine",
+  "slug": "goodandready__dsh-time-machine",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-time-machine",
+  "title": "dsh-time-machine",
+  "summary": "给 DeepSeek Harness 加时光机，自动打快照、防误操作，随时一键回滚到任意历史状态。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "工作区管理",
+    "安全审计",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.1.18",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.18",
+    "publishedAt": "2026-09-17T08:35:09Z",
+    "url": "https://github.com/GooDAnDReaDY/dsh-time-machine/releases/tag/v0.1.18"
+  },
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-time-machine",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T13:46:45Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooDAnDReaDY/dsh-time-machine",
+    "commands": [
+      "dsh plugin --profile web add github:GooDAnDReaDY/dsh-time-machine"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "wolfsonliu/zotero-skill",
+  "slug": "wolfsonliu__zotero-skill",
+  "tier": "community",
+  "package": null,
+  "name": "zotero-skill",
+  "title": "zotero-skill",
+  "summary": "让 AI 助手通过一条命令就能搜索、读取和写入你的本地 Zotero 文献库。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-skill",
+    "skills",
+    "zotero",
+    "工具集成",
+    "命令行工具",
+    "AI 助手",
+    "语义检索",
+    "效率提升"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "wolfsonliu",
+  "repo": "https://github.com/wolfsonliu/zotero-skill",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-27T22:29:03Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wolfsonliu/zotero-skill",
+    "commands": [
+      "dsh plugin --profile web add github:wolfsonliu/zotero-skill"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

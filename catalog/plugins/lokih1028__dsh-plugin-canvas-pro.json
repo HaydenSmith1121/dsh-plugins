@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "lokih1028/dsh-plugin-canvas-pro",
+  "slug": "lokih1028__dsh-plugin-canvas-pro",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-canvas-pro",
+  "title": "dsh-plugin-canvas-pro",
+  "summary": "在 DeepSeek Harness 里直接绘制和编辑 HTML、Markdown、Mermaid、SVG 及 React 画布，支持版本管理与导出，让原型和文档创作更顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "可视化",
+    "前端增强",
+    "文件管理",
+    "插件管理"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lokih1028",
+  "repo": "https://github.com/lokih1028/dsh-plugin-canvas-pro",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T16:15:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lokih1028/dsh-plugin-canvas-pro",
+    "commands": [
+      "dsh plugin --profile web add github:lokih1028/dsh-plugin-canvas-pro"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

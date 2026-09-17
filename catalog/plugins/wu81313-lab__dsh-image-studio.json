@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "wu81313-lab/dsh-image-studio",
+  "slug": "wu81313-lab__dsh-image-studio",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-image-studio",
+  "title": "dsh-image-studio",
+  "summary": "在对话里直接查看生成的图片，点左下角按钮就能标注、擦除、裁剪，改完再交回给 AI。",
+  "tags": [
+    "dsh-plugin",
+    "视觉理解",
+    "前端增强",
+    "快捷操作",
+    "报告生成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wu81313-lab",
+  "repo": "https://github.com/wu81313-lab/dsh-image-studio",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T14:43:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wu81313-lab/dsh-image-studio",
+    "commands": [
+      "dsh plugin --profile web add github:wu81313-lab/dsh-image-studio"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "c3ll256/dsh-toy",
+  "slug": "c3ll256__dsh-toy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-toy",
+  "title": "dsh-toy",
+  "summary": "给 DeepSeek Harness 加个玩具控制协议，让你能远程操控和调试插件，玩起来更顺手。",
+  "tags": [
+    "dsh-plugin",
+    "桌面自动化",
+    "开发流程",
+    "插件管理",
+    "协议支持"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-14T10:46:23Z",
+    "url": "https://github.com/c3ll256/dsh-toy/releases/tag/v0.2.0"
+  },
+  "author": "c3ll256",
+  "repo": "https://github.com/c3ll256/dsh-toy",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 65,
+  "forks": 7,
+  "pushedAt": "2026-09-08T13:05:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:c3ll256/dsh-toy",
+    "commands": [
+      "dsh plugin --profile web add github:c3ll256/dsh-toy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

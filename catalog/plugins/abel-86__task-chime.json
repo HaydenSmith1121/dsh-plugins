@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Abel-86/task-chime",
+  "slug": "abel-86__task-chime",
+  "tier": "community",
+  "package": null,
+  "name": "task-chime",
+  "title": "task-chime",
+  "summary": "审批请求和任务完成时自动播放本地提示音，声音可在 Web 界面里自己设置。",
+  "tags": [
+    "dsh-plugin",
+    "消息通知",
+    "设置面板",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "1.0.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Abel-86",
+  "repo": "https://github.com/Abel-86/task-chime",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T12:26:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "task-chime",
+    "commands": [
+      "dsh plugin --profile web add task-chime",
+      "dsh plugin --profile web add file:D:/path/to/task-chime",
+      "dsh plugin --profile web remove task-chime"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "NewSpringWei/dsh-biz-bridge",
+  "slug": "newspringwei__dsh-biz-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-biz-bridge",
+  "title": "dsh-biz-bridge",
+  "summary": "把 DSH 的 agent 能力包装成标准 HTTP 接口，业务系统发个带签名的请求就能调用，支持流式返回和多轮对话。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "会话管理",
+    "工作流增强",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "NewSpringWei",
+  "repo": "https://github.com/NewSpringWei/dsh-biz-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-09-12T09:22:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:NewSpringWei/dsh-biz-bridge",
+    "commands": [
+      "dsh plugin --profile bizbridge add ./release/dsh-biz-bridge-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

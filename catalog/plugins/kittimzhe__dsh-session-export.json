@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "kittimzhe/dsh-session-export",
+  "slug": "kittimzhe__dsh-session-export",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-export",
+  "title": "dsh-session-export",
+  "summary": "把 DeepSeek Harness 的会话记录导出成 Markdown 或 JSON 文件，方便你保存、分享或二次处理对话内容。",
+  "tags": [
+    "agent-tools",
+    "deepseek-harness",
+    "dsh-plugin",
+    "session-export",
+    "transcript",
+    "会话管理",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "1.8.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.8.0",
+    "publishedAt": "2026-09-16T01:22:32Z",
+    "url": "https://github.com/kittimzhe/dsh-session-export/releases/tag/v1.8.0"
+  },
+  "author": "kittimzhe",
+  "repo": "https://github.com/kittimzhe/dsh-session-export",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T01:49:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-session-export",
+    "commands": [
+      "dsh plugin --profile web add dsh-session-export",
+      "dsh plugin --profile web add github:kittimzhe/dsh-session-export"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

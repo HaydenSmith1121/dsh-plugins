@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "seeingrain/dsh-media-inline-preview",
+  "slug": "seeingrain__dsh-media-inline-preview",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-media-inline-preview",
+  "title": "dsh-media-inline-preview",
+  "summary": "在对话中直接预览图片、视频等媒体文件，不用跳转就能快速查看内容。",
+  "tags": [
+    "dsh-plugin",
+    "文件管理",
+    "效率提升",
+    "前端增强",
+    "可视化"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "seeingrain",
+  "repo": "https://github.com/seeingrain/dsh-media-inline-preview",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T16:42:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:seeingrain/dsh-media-inline-preview",
+    "commands": [
+      "dsh plugin --profile web add github:seeingrain/dsh-media-inline-preview"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "kongshan-zhuyu/dsh-balance-quota",
+  "slug": "kongshan-zhuyu__dsh-balance-quota",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-balance-quota",
+  "title": "dsh-balance-quota",
+  "summary": "实时监控 DeepSeek Harness Web 的余额、配额和模型健康状态，帮你及时掌握资源使用情况。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "资源优化",
+    "效率提升"
+  ],
+  "version": "0.3.7",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kongshan-zhuyu",
+  "repo": "https://github.com/kongshan-zhuyu/dsh-balance-quota",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T02:09:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-balance-quota",
+    "commands": [
+      "dsh plugin --profile web add dsh-balance-quota",
+      "dsh plugin --profile web list"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

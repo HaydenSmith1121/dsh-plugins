@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "shenhuanageshei/dsh-session-link-pro",
+  "slug": "shenhuanageshei__dsh-session-link-pro",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-link-pro",
+  "title": "dsh-session-link-pro",
+  "summary": "让 DSH 各会话互通：生成会话深链、导出完整记录，还能经批准跨会话传消息。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "多Agent协作",
+    "桥接插件",
+    "内容创作",
+    "状态持久化"
+  ],
+  "version": "0.2.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "shenhuanageshei",
+  "repo": "https://github.com/shenhuanageshei/dsh-session-link-pro",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T06:16:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shenhuanageshei/dsh-session-link-pro",
+    "commands": [
+      "dsh plugin --profile web add github:shenhuanageshei/dsh-session-link-pro"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

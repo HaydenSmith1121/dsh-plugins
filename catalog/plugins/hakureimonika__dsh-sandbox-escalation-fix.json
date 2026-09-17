@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "HakureiMonika/dsh-sandbox-escalation-fix",
+  "slug": "hakureimonika__dsh-sandbox-escalation-fix",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sandbox-escalation-fix",
+  "title": "dsh-sandbox-escalation-fix",
+  "summary": "修复DSH第三方模型会话沙箱升级兼容问题，让沙箱环境更稳定，即插即用。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "sandbox-escalation",
+    "会话管理",
+    "零配置",
+    "开发流程",
+    "设置面板"
+  ],
+  "version": "0.1.6-alpha1-win-linux",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.6-alpha1-win-linux",
+    "publishedAt": "2026-09-15T09:39:36Z",
+    "url": "https://github.com/HakureiMonika/dsh-sandbox-escalation-fix/releases/tag/v0.1.6-alpha1-win-linux"
+  },
+  "author": "HakureiMonika",
+  "repo": "https://github.com/HakureiMonika/dsh-sandbox-escalation-fix",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 53,
+  "forks": 9,
+  "pushedAt": "2026-09-15T10:26:28Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-sandbox-escalation-fix@next",
+    "commands": [
+      "dsh plugin --profile web add dsh-sandbox-escalation-fix@next",
+      "dsh plugin --profile headless add dsh-sandbox-escalation-fix@next",
+      "dsh plugin --profile web add dsh-sandbox-escalation-fix@0.1.6-alpha1-win-linux"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "baisama-cloud/dsh-stt-input",
+  "slug": "baisama-cloud__dsh-stt-input",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-stt-input",
+  "title": "dsh-stt-input",
+  "summary": "在 DSH 网页输入框旁点麦克风，说话自动转文字，支持浏览器本地和 Whisper 两种识别引擎。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "harness",
+    "sst",
+    "多模态",
+    "浏览器识别",
+    "提示词增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-16T14:41:55Z",
+    "url": "https://github.com/baisama-cloud/dsh-stt-input/releases/tag/v0.1.0"
+  },
+  "author": "baisama-cloud",
+  "repo": "https://github.com/baisama-cloud/dsh-stt-input",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 2,
+  "pushedAt": "2026-08-31T13:49:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:baisama-cloud/dsh-stt-input",
+    "commands": [
+      "dsh plugin --profile web add github:baisama-cloud/dsh-stt-input"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

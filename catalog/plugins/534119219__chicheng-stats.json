@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "534119219/chicheng-stats",
+  "slug": "534119219__chicheng-stats",
+  "tier": "community",
+  "package": null,
+  "name": "chicheng-stats",
+  "title": "chicheng-stats",
+  "summary": "在侧边栏实时显示全局用量，点开就能看模型分布、趋势和耗时明细，跨会话统计。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "数据分析",
+    "可视化",
+    "设置面板",
+    "效率提升"
+  ],
+  "version": "0.10.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "534119219",
+  "repo": "https://github.com/534119219/chicheng-stats",
+  "homepage": null,
+  "license": null,
+  "stars": 7,
+  "forks": 2,
+  "pushedAt": "2026-08-26T15:05:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:534119219/chicheng-stats",
+    "commands": [
+      "dsh plugin --profile web add github:534119219/chicheng-stats",
+      "dsh plugin --profile web add D:\\Harness\\chicheng-stats"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

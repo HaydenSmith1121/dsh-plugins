@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "dragon43pp/dsh-ops-skill",
+  "slug": "dragon43pp__dsh-ops-skill",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ops-skill",
+  "title": "dsh-ops-skill",
+  "summary": "随身携带的运维技能包，帮你快速诊断并安全修复 DeepSeek Harness 运行时的各种问题。",
+  "tags": [
+    "agent-infrastructure",
+    "deepseek-harness",
+    "devops",
+    "docker",
+    "dsh-plugin",
+    "运行时诊断",
+    "安全修复",
+    "运维自动化",
+    "Docker支持"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dragon43pp",
+  "repo": "https://github.com/dragon43pp/dsh-ops-skill",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-15T04:45:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dragon43pp/dsh-ops-skill",
+    "commands": [
+      "dsh plugin --profile web add github:dragon43pp/dsh-ops-skill"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "EasyTZ/dsh-terminal-panel",
+  "slug": "easytz__dsh-terminal-panel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-terminal-panel",
+  "title": "dsh-terminal-panel",
+  "summary": "在 DeepSeek Harness 侧边栏里直接跑命令，实时看输出，支持多标签、补全和历史记录，干活不用切窗口。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "sidebar-panel",
+    "terminal",
+    "命令行工具",
+    "效率提升",
+    "状态监控",
+    "工作流增强"
+  ],
+  "version": "0.2.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.4",
+    "publishedAt": "2026-09-04T01:58:26Z",
+    "url": "https://github.com/EasyTZ/dsh-terminal-panel/releases/tag/v0.2.4"
+  },
+  "author": "EasyTZ",
+  "repo": "https://github.com/EasyTZ/dsh-terminal-panel",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T08:21:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:EasyTZ/dsh-terminal-panel",
+    "commands": [
+      "dsh plugin --profile <name> add @easytz/dsh-terminal-panel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

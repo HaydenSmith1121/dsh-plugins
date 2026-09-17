@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "rayafriandion/dsh-oc-tui",
+  "slug": "rayafriandion__dsh-oc-tui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-oc-tui",
+  "title": "dsh-oc-tui",
+  "summary": "在终端里用类 opencode 的聊天界面操作 DeepSeek Harness，边写代码边对话，效率拉满。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "tui",
+    "前端增强",
+    "效率提升",
+    "会话管理",
+    "工作流增强"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-09-11T07:28:37Z",
+    "url": "https://github.com/rayafriandion/dsh-oc-tui/releases/tag/v0.1.3"
+  },
+  "author": "rayafriandion",
+  "repo": "https://github.com/rayafriandion/dsh-oc-tui",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 6,
+  "forks": 1,
+  "pushedAt": "2026-09-10T13:07:02Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:rayafriandion/dsh-oc-tui",
+    "commands": [
+      "dsh plugin --profile tui add -w dsh-oc-tui",
+      "npm install -g dsh-oc-tui",
+      "dsh plugin --profile tui add -w ./dsh-oc-tui-<version>.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

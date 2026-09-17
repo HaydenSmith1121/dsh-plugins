@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "ConsoleSun/Gemini-Eyes",
+  "slug": "consolesun__gemini-eyes",
+  "tier": "community",
+  "package": null,
+  "name": "Gemini-Eyes",
+  "title": "Gemini-Eyes",
+  "summary": "把 Gemini 网页版的能力接入 Agent，让它能聊天、看图、生图生视频，像多了双眼睛和手。",
+  "tags": [
+    "agent",
+    "deepseek-harness",
+    "dsh-plugin",
+    "gemini",
+    "mcp",
+    "MCP服务",
+    "多模态",
+    "视觉理解",
+    "Agent集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ConsoleSun",
+  "repo": "https://github.com/ConsoleSun/Gemini-Eyes",
+  "homepage": null,
+  "license": null,
+  "stars": 11,
+  "forks": 2,
+  "pushedAt": "2026-08-24T06:24:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ConsoleSun/Gemini-Eyes",
+    "commands": [
+      "dsh plugin --profile demo add github:ConsoleSun/Gemini-Eyes"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

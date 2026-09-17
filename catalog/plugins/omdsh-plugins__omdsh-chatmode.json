@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "omdsh-plugins/omdsh-chatmode",
+  "slug": "omdsh-plugins__omdsh-chatmode",
+  "tier": "community",
+  "package": null,
+  "name": "omdsh-chatmode",
+  "title": "omdsh-chatmode",
+  "summary": "在 DeepSeek Harness 网页界面中开启聊天模式，无需选择项目目录即可直接对话，并自动管理聊天工作区。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "文件管理",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.2.5",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "omdsh-plugins",
+  "repo": "https://github.com/omdsh-plugins/omdsh-chatmode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T15:40:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@omdsh-plugins/omdsh-basemode",
+    "commands": [
+      "npx @omdsh-plugins/omdsh-plughub add omdsh-chatmode",
+      "dsh plugin --profile web add @omdsh-plugins/omdsh-basemode",
+      "dsh plugin --profile web add <path-to-this-directory>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

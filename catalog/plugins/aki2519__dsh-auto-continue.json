@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Aki2519/dsh-auto-continue",
+  "slug": "aki2519__dsh-auto-continue",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auto-continue",
+  "title": "dsh-auto-continue",
+  "summary": "每次启动 DSH 时自动修复被并发写坏的会话日志，并接着上次的任务继续跑。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.4.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Aki2519",
+  "repo": "https://github.com/Aki2519/dsh-auto-continue",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T10:10:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Aki2519/dsh-auto-continue",
+    "commands": [
+      "dsh plugin --profile web add file:/path/to/dsh-auto-continue"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

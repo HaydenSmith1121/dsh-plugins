@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "que3sui/dsh-darwin",
+  "slug": "que3sui__dsh-darwin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-darwin",
+  "title": "dsh-darwin",
+  "summary": "自动分析会话日志找出重试、报错和浪费，再把问题变成可用的新技能，让插件自己进化。",
+  "tags": [
+    "agentic-coding",
+    "ai-agents",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "self-evolving",
+    "typescript",
+    "自动化",
+    "效率提升",
+    "会话管理",
+    "数据分析",
+    "多Agent协作"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-02T12:10:53Z",
+    "url": "https://github.com/que3sui/dsh-darwin/releases/tag/v0.1.1"
+  },
+  "author": "que3sui",
+  "repo": "https://github.com/que3sui/dsh-darwin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T08:34:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:que3sui/dsh-darwin",
+    "commands": [
+      "dsh plugin --profile <你的profile> add dsh-darwin-sentinel",
+      "dsh plugin --profile <你的profile> add dsh-darwin-forge",
+      "git clone git@github.com:que3sui/dsh-darwin.git && cd dsh-darwin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

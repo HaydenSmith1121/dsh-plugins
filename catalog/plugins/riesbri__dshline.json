@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "id": "riesbri/dshline",
+  "slug": "riesbri__dshline",
+  "tier": "community",
+  "package": null,
+  "name": "dshline",
+  "title": "dshline",
+  "summary": "在终端里直接管理 DeepSeek Harness 插件，把插件能力变成原生命令行界面，操作更顺手。",
+  "tags": [
+    "ai-agent",
+    "cli",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "developer-tools",
+    "dsh-plugin",
+    "nodejs",
+    "terminal",
+    "tui",
+    "typescript",
+    "命令行工具",
+    "插件管理",
+    "AI 助手",
+    "工作流增强"
+  ],
+  "version": "0.22.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.22.0",
+    "publishedAt": "2026-09-13T15:24:46Z",
+    "url": "https://github.com/riesbri/dshline/releases/tag/v0.22.0"
+  },
+  "author": "riesbri",
+  "repo": "https://github.com/riesbri/dshline",
+  "homepage": "https://dshline.xyz",
+  "license": "MIT",
+  "stars": 15,
+  "forks": 1,
+  "pushedAt": "2026-09-16T21:21:28Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:riesbri/dshline",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh @dshline/dshline"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

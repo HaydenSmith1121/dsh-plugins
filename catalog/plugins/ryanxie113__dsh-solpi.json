@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "ryanxie113/dsh-solpi",
+  "slug": "ryanxie113__dsh-solpi",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-solpi",
+  "title": "dsh-solpi",
+  "summary": "给 DeepSeek Harness 加装四个效率机制，让长任务会话跑得更快、更省、更好观察。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "效率提升",
+    "资源优化",
+    "成本控制",
+    "状态监控",
+    "工作流增强"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "ryanxie113",
+  "repo": "https://github.com/ryanxie113/dsh-solpi",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T06:08:29Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ryanxie113/dsh-solpi",
+    "commands": [
+      "dsh plugin --profile <name> add github:ryanxie113/dsh-solpi"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "JohnXu22786/codegraph",
+  "slug": "johnxu22786__codegraph",
+  "tier": "community",
+  "package": null,
+  "name": "JohnXu22786/codegraph",
+  "title": "JohnXu22786/codegraph",
+  "summary": "把代码库解析成可查询的索引，让你直接问“谁调用了这个函数”或“这个模块依赖什么”，快速理清代码结构。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "工作区管理",
+    "效率提升",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "JohnXu22786",
+  "repo": "https://github.com/JohnXu22786/codegraph",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-14T09:58:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JohnXu22786/codegraph",
+    "commands": [
+      "pip install -e .",
+      "pip install -e \".[treesitter]\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

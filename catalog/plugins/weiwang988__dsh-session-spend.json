@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "weiwang988/dsh-session-spend",
+  "slug": "weiwang988__dsh-session-spend",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-spend",
+  "title": "dsh-session-spend",
+  "summary": "在 DSH 客户端实时显示当前会话花了多少钱，按官方峰谷价算，还能看到省了多少。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "数据分析",
+    "资源优化",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "weiwang988",
+  "repo": "https://github.com/weiwang988/dsh-session-spend",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T01:52:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "dsh plugin --profile web add .",
+      "dsh plugin --profile web add github:weiwang988/dsh-session-spend",
+      "dsh plugin --profile web add ./dsh-session-spend-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

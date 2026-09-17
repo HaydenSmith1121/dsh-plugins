@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "klarkxy/zhihu-search",
+  "slug": "klarkxy__zhihu-search",
+  "tier": "community",
+  "package": null,
+  "name": "zhihu-search",
+  "title": "zhihu-search",
+  "summary": "让 Agent 随时搜索知乎热榜、问答和用户数据，获取中文社区真实观点与口碑，还能调用官方接口的直答、知识库等能力。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mcp",
+    "zhihu",
+    "AI工具",
+    "工具集成",
+    "效率提升",
+    "插件目录"
+  ],
+  "version": "2.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.0.0",
+    "publishedAt": "2026-08-27T03:34:24Z",
+    "url": "https://github.com/klarkxy/zhihu-search/releases/tag/v2.0.0"
+  },
+  "author": "klarkxy",
+  "repo": "https://github.com/klarkxy/zhihu-search",
+  "homepage": "https://github.com/klarkxy/zhihu-search",
+  "license": "NOASSERTION",
+  "stars": 16,
+  "forks": 0,
+  "pushedAt": "2026-08-27T07:29:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:klarkxy/zhihu-search",
+    "commands": [
+      "dsh plugin --profile web add github:klarkxy/zhihu-search"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

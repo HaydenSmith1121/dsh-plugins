@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "mingzeng21/dsh-notion",
+  "slug": "mingzeng21__dsh-notion",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notion",
+  "title": "dsh-notion",
+  "summary": "让 dsh 通过官方 MCP 连接 Notion，一次性授权后即可搜索、读取你的笔记。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "工作区管理",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "mingzeng21",
+  "repo": "https://github.com/mingzeng21/dsh-notion",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-08-30T15:58:17Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-notion-mcp",
+    "commands": [
+      "dsh plugin --profile web add dsh-notion-mcp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

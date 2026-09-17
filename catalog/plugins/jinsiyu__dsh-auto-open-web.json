@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "jinsiyu/dsh-auto-open-web",
+  "slug": "jinsiyu__dsh-auto-open-web",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auto-open-web",
+  "title": "dsh-auto-open-web",
+  "summary": "启动后自动打开独立窗口或网页标签，内置WebView2实现轻量桌面化，省去手动开浏览器的麻烦。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "自动打开",
+    "自动化",
+    "窗口管理"
+  ],
+  "version": "0.1.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "0.1.5",
+    "publishedAt": "2026-08-19T06:33:14Z",
+    "url": "https://github.com/jinsiyu/dsh-auto-open-web/releases/tag/0.1.5"
+  },
+  "author": "jinsiyu",
+  "repo": "https://github.com/jinsiyu/dsh-auto-open-web",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-09T11:01:01Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jinsiyu/dsh-auto-open-web",
+    "commands": [
+      "dsh plugin --profile web add github:jinsiyu/dsh-auto-open-web"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

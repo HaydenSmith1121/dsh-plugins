@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "dfycaly98931680/dsh-trajectory-governance",
+  "slug": "dfycaly98931680__dsh-trajectory-governance",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-trajectory-governance",
+  "title": "dsh-trajectory-governance",
+  "summary": "为 DeepSeek Harness 提供智能体轨迹治理与异常诊断，自动识别循环死锁、无效重试和目标漂移，并支持成本归因与告警。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "trajectory",
+    "轨迹治理",
+    "异常诊断",
+    "死锁检测",
+    "成本归因",
+    "告警监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dfycaly98931680",
+  "repo": "https://github.com/dfycaly98931680/dsh-trajectory-governance",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-16T08:32:02Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dfycaly98931680/dsh-trajectory-governance",
+    "commands": [
+      "dsh plugin --profile web add github:dfycaly98931680/dsh-trajectory-governance"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

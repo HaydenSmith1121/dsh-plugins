@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "kovey/dsh-memory",
+  "slug": "kovey__dsh-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memory",
+  "title": "dsh-memory",
+  "summary": "给 dsh 加上分层记忆：项目与全局记忆分开存，任务前自动召回、任务后持续学习。",
+  "tags": [
+    "agentic-ai",
+    "dsh-plugin",
+    "memory",
+    "AI 助手",
+    "工作流增强",
+    "语义检索",
+    "会话管理",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kovey",
+  "repo": "https://github.com/kovey/dsh-memory",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T07:25:18Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kovey/dsh-memory",
+    "commands": [
+      "dsh plugin --profile nvim-tui add github:kovey/dsh-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

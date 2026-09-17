@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "Nesarf/mega-index-map",
+  "slug": "nesarf__mega-index-map",
+  "tier": "community",
+  "package": null,
+  "name": "mega-index-map",
+  "title": "mega-index-map",
+  "summary": "跨工作区记录和检索文件、工具、知识等资源，方便Agent随时复用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "file-format",
+    "file-signature",
+    "interop",
+    "knowledge-base",
+    "library",
+    "workspace",
+    "会话管理",
+    "语义检索",
+    "工具集成",
+    "文件管理",
+    "多Agent协作"
+  ],
+  "version": "0.1.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.5",
+    "publishedAt": "2026-09-10T22:47:18Z",
+    "url": "https://github.com/Nesarf/mega-index-map/releases/tag/v0.1.5"
+  },
+  "author": "Nesarf",
+  "repo": "https://github.com/Nesarf/mega-index-map",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T12:12:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Nesarf/mega-index-map",
+    "commands": [
+      "dsh plugin --profile web add github:Nesarf/mega-index-map"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

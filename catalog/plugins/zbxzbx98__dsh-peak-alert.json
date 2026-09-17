@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "zbxzbx98/dsh-peak-alert",
+  "slug": "zbxzbx98__dsh-peak-alert",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-peak-alert",
+  "title": "dsh-peak-alert",
+  "summary": "在DeepSeek高峰时段显示提示并染色，帮你避开高价时段、聪明省钱。",
+  "tags": [
+    "dsh-plugin",
+    "资源优化",
+    "状态监控",
+    "消息通知",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zbxzbx98",
+  "repo": "https://github.com/zbxzbx98/dsh-peak-alert",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-22T14:28:10Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zbxzbx98/dsh-peak-alert",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/zbxzbx98/dsh-peak-alert",
+      "git clone https://github.com/zbxzbx98/dsh-peak-alert.git",
+      "dsh plugin --profile web add link:<绝对路径>/dsh-peak-alert"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

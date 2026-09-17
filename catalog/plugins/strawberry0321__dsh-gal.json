@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "strawberry0321/dsh-gal",
+  "slug": "strawberry0321__dsh-gal",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-gal",
+  "title": "dsh-gal",
+  "summary": "在 DSH 界面放个会说话的立绘，实时看余额和今日花费，点一下还能随机播语音换立绘。",
+  "tags": [
+    "deepseek-harness",
+    "desktop-pet",
+    "dsh",
+    "dsh-plugin",
+    "galgame",
+    "sprite",
+    "voice",
+    "桌宠",
+    "状态监控",
+    "主题",
+    "语音播报",
+    "界面美化"
+  ],
+  "version": "2.2.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.2.2",
+    "publishedAt": "2026-09-12T07:09:23Z",
+    "url": "https://github.com/strawberry0321/dsh-gal/releases/tag/v2.2.2"
+  },
+  "author": "strawberry0321",
+  "repo": "https://github.com/strawberry0321/dsh-gal",
+  "homepage": "https://github.com/strawberry0321/dsh-gal#readme",
+  "license": "NOASSERTION",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-13T05:04:45Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:strawberry0321/dsh-gal",
+    "commands": [
+      "dsh plugin --profile web add github:strawberry0321/dsh-gal"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

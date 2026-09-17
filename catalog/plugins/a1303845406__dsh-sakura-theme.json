@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "a1303845406/dsh-sakura-theme",
+  "slug": "a1303845406__dsh-sakura-theme",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sakura-theme",
+  "title": "dsh-sakura-theme",
+  "summary": "让 DeepSeek Harness 换上晴樱或夜樱主题，浅色深色自动跟随系统，好看又不影响阅读。",
+  "tags": [
+    "dark-mode",
+    "deepseek-harness",
+    "dsh-plugin",
+    "sakura",
+    "theme",
+    "界面美化",
+    "前端增强",
+    "零配置"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-08-27T08:31:46Z",
+    "url": "https://github.com/a1303845406/dsh-sakura-theme/releases/tag/v0.3.0"
+  },
+  "author": "a1303845406",
+  "repo": "https://github.com/a1303845406/dsh-sakura-theme",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T01:32:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:a1303845406/dsh-sakura-theme",
+    "commands": [
+      "dsh plugin --profile web add github:a1303845406/dsh-sakura-theme"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

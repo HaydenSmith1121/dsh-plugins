@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "Doub1eS/dsh-Private-Browsing",
+  "slug": "doub1es__dsh-private-browsing",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-Private-Browsing",
+  "title": "dsh-Private-Browsing",
+  "summary": "给 DSH Web 配置加一个独立私密聊天，上下文可随时开关，本地留审计记录。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "安全审计",
+    "数据脱敏",
+    "设置面板",
+    "工作区管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-15T08:00:54Z",
+    "url": "https://github.com/Doub1eS/dsh-Private-Browsing/releases/tag/v0.1.0"
+  },
+  "author": "Doub1eS",
+  "repo": "https://github.com/Doub1eS/dsh-Private-Browsing",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T08:00:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Doub1eS/dsh-Private-Browsing",
+    "commands": [
+      "dsh plugin --profile web add github:Doub1eS/dsh-Private-Browsing"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

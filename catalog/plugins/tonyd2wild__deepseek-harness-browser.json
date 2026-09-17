@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "tonyd2wild/DeepSeek-Harness-Browser",
+  "slug": "tonyd2wild__deepseek-harness-browser",
+  "tier": "community",
+  "package": null,
+  "name": "DeepSeek-Harness-Browser",
+  "title": "DeepSeek-Harness-Browser",
+  "summary": "在 DeepSeek Harness 内嵌一个浏览器面板，通过 CDP 控制真实 Chrome，还能预览本地文件、Markdown 和 PDF，方便调试和查看内容。",
+  "tags": [
+    "browser",
+    "cdp",
+    "deepseek-harness",
+    "dsh-plugin",
+    "preview",
+    "自动化",
+    "效率提升",
+    "开发流程",
+    "零配置"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "tonyd2wild",
+  "repo": "https://github.com/tonyd2wild/DeepSeek-Harness-Browser",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 14,
+  "forks": 0,
+  "pushedAt": "2026-08-21T07:37:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tonyd2wild/DeepSeek-Harness-Browser",
+    "commands": [
+      "dsh plugin --profile web add /absolute/path/to/DeepSeek-Harness-Browser/plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

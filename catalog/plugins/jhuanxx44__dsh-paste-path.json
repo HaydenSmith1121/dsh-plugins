@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "jhuanxx44/dsh-paste-path",
+  "slug": "jhuanxx44__dsh-paste-path",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-paste-path",
+  "title": "dsh-paste-path",
+  "summary": "macOS专属小工具，支持把Finder文件路径直接粘贴到DeepSeek Harness输入框，快速引用本地文件超顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "0.1.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jhuanxx44",
+  "repo": "https://github.com/jhuanxx44/dsh-paste-path",
+  "homepage": "https://jhuanxx44.github.io/dsh-paste-path/",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-21T10:48:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-paste-path",
+    "commands": [
+      "dsh plugin --profile web add dsh-paste-path",
+      "dsh plugin --profile web add github:jhuanxx44/dsh-paste-path",
+      "dsh plugin --profile web add /absolute/path/to/dsh-paste-path"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

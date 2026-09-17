@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Icstick/dsh-work-continuity",
+  "slug": "icstick__dsh-work-continuity",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-work-continuity",
+  "title": "dsh-work-continuity",
+  "summary": "跨会话保存工作状态，目标、决策、下一步随时可查，不和记忆混在一起，干活不中断。",
+  "tags": [
+    "agent-memory",
+    "ai-agent",
+    "cross-session",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "work-continuity",
+    "会话管理",
+    "工作流增强"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-11T12:30:48Z",
+    "url": "https://github.com/Icstick/dsh-work-continuity/releases/tag/v0.4.0"
+  },
+  "author": "Icstick",
+  "repo": "https://github.com/Icstick/dsh-work-continuity",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-12T02:45:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Icstick/dsh-work-continuity",
+    "commands": [
+      "dsh plugin --profile <profile> add github:Icstick/dsh-work-continuity"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

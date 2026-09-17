@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "NOirBRight/dsh-mobile",
+  "slug": "noirbright__dsh-mobile",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mobile",
+  "title": "dsh-mobile",
+  "summary": "把 DeepSeek Harness 装进口袋，手机扫码配对即用，端到端加密隧道连接你的主机。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "可视化",
+    "效率提升",
+    "模型适配"
+  ],
+  "version": "1.1.17",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.1.17",
+    "publishedAt": "2026-09-15T23:19:15Z",
+    "url": "https://github.com/NOirBRight/dsh-mobile/releases/tag/v1.1.17"
+  },
+  "author": "NOirBRight",
+  "repo": "https://github.com/NOirBRight/dsh-mobile",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-09-14T15:58:57Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:NOirBRight/dsh-mobile",
+    "commands": [
+      "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-mobile-pairing/releases/latest/download/dsh-mobile-pairing-0.1.17.tgz",
+      "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-mobile/releases/latest/download/dsh-mobile-interaction-operations.tgz",
+      "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-codex-sidebar/releases/latest/download/dsh-codex-sidebar.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

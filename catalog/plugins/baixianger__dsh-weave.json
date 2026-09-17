@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "baixianger/dsh-weave",
+  "slug": "baixianger__dsh-weave",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-weave",
+  "title": "dsh-weave",
+  "summary": "把 DSH 插件生态里的能力缺口、构建简报和生态洞察串起来，帮你快速看清该做什么、缺什么。",
+  "tags": [
+    "dsh-plugin",
+    "能力缺口分析",
+    "构建简报生成",
+    "生态洞察",
+    "插件开发",
+    "插件管理"
+  ],
+  "version": "0.1.0-rc.13",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "baixianger",
+  "repo": "https://github.com/baixianger/dsh-weave",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T10:04:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-weave@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-weave@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

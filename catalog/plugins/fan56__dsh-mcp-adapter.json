@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "fan56/dsh-mcp-adapter",
+  "slug": "fan56__dsh-mcp-adapter",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mcp-adapter",
+  "title": "dsh-mcp-adapter",
+  "summary": "把 MCP 工具统一收拢成两个元工具，省 token 又省心，让智能体更高效地调用工具。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "资源优化",
+    "模型配置",
+    "AI 助手"
+  ],
+  "version": "0.4.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.2",
+    "publishedAt": "2026-09-11T04:05:50Z",
+    "url": "https://github.com/fan56/dsh-mcp-adapter/releases/tag/v0.4.2"
+  },
+  "author": "fan56",
+  "repo": "https://github.com/fan56/dsh-mcp-adapter",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T03:33:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fan56/dsh-mcp-adapter",
+    "commands": [
+      "dsh plugin --profile web add github:fan56/dsh-mcp-adapter"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

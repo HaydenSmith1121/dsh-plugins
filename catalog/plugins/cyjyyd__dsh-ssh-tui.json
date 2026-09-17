@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "cyjyyd/dsh-ssh-tui",
+  "slug": "cyjyyd__dsh-ssh-tui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ssh-tui",
+  "title": "dsh-ssh-tui",
+  "summary": "在 SSH 终端里跑 DeepSeek Harness，纯 ANSI 增量重绘，不用开浏览器。",
+  "tags": [
+    "ansi",
+    "deepseek",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "harness-engineering",
+    "ssh",
+    "terminal",
+    "tui",
+    "命令行工具",
+    "跨设备",
+    "效率提升",
+    "主题"
+  ],
+  "version": "0.7.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.1",
+    "publishedAt": "2026-09-16T06:23:20Z",
+    "url": "https://github.com/cyjyyd/dsh-ssh-tui/releases/tag/v0.7.1"
+  },
+  "author": "cyjyyd",
+  "repo": "https://github.com/cyjyyd/dsh-ssh-tui",
+  "homepage": "https://www.npmjs.com/package/dsh-ssh-tui",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T06:23:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-ssh-tui@latest",
+    "commands": [
+      "dsh plugin --profile tui add dsh-ssh-tui@latest",
+      "dsh plugin --profile tui add dsh-llm-xai-oauth",
+      "dsh plugin --profile headless add dsh-llm-xai-oauth"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "myYangyunfan/dsh_desktop",
+  "slug": "myyangyunfan__dsh_desktop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh_desktop",
+  "title": "dsh_desktop",
+  "summary": "开箱即用的桌面版 DSH，内置运行环境与官方插件，双击直接跑，不用折腾环境配置。",
+  "tags": [
+    "ai-agent",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "desktop",
+    "desktop-app",
+    "dsh",
+    "dsh-desktop",
+    "dsh-plugin",
+    "electron",
+    "tauri",
+    "windows",
+    "零配置",
+    "开发流程",
+    "效率提升"
+  ],
+  "version": "0.6.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.4",
+    "publishedAt": "2026-09-15T07:36:19Z",
+    "url": "https://github.com/myYangyunfan/dsh_desktop/releases/tag/v0.6.4"
+  },
+  "author": "myYangyunfan",
+  "repo": "https://github.com/myYangyunfan/dsh_desktop",
+  "homepage": "https://github.com/myYangyunfan/dsh_desktop/releases",
+  "license": "MIT",
+  "stars": 665,
+  "forks": 36,
+  "pushedAt": "2026-09-15T10:46:29Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:myYangyunfan/dsh_desktop",
+    "commands": [
+      "dsh plugin --profile web add github:myYangyunfan/dsh_desktop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "sidleo/skill-filesystem-plus",
+  "slug": "sidleo__skill-filesystem-plus",
+  "tier": "community",
+  "package": null,
+  "name": "skill-filesystem-plus",
+  "title": "skill-filesystem-plus",
+  "summary": "可配置的技能发现插件，支持多级目录扫描和插件卡片展示，让智能体更快找到并调用技能。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "skill",
+    "typescript",
+    "AI 助手",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "0.2.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sidleo",
+  "repo": "https://github.com/sidleo/skill-filesystem-plus",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T05:37:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sidleo/skill-filesystem-plus",
+    "commands": [
+      "dsh plugin --profile web add github:sidleo/skill-filesystem-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

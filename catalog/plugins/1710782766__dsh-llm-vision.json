@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "1710782766/dsh-llm-vision",
+  "slug": "1710782766__dsh-llm-vision",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-vision",
+  "title": "dsh-llm-vision",
+  "summary": "给纯文本模型加眼睛，支持图片描述和文字提取，自动重试和缓存，让LLM看懂图片。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "image-understanding",
+    "llm",
+    "multimodal",
+    "ocr",
+    "vision",
+    "vlm",
+    "视觉理解",
+    "AI 助手",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.3.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.2",
+    "publishedAt": "2026-08-31T06:30:36Z",
+    "url": "https://github.com/1710782766/dsh-llm-vision/releases/tag/v0.3.2"
+  },
+  "author": "1710782766",
+  "repo": "https://github.com/1710782766/dsh-llm-vision",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-31T06:30:18Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-llm-vision@0.3.2",
+    "commands": [
+      "dsh plugin --profile web add dsh-llm-vision@0.3.2"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

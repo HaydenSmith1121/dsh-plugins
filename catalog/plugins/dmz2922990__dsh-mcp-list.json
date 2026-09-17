@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "dmz2922990/dsh-mcp-list",
+  "slug": "dmz2922990__dsh-mcp-list",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mcp-list",
+  "title": "dsh-mcp-list",
+  "summary": "在 DeepSeek Harness 设置面板中新增 MCP 页面，清晰列出所有挂载的 MCP 服务器及其工具，方便你快速查看和管理。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "设置面板",
+    "插件管理",
+    "状态监控",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dmz2922990",
+  "repo": "https://github.com/dmz2922990/dsh-mcp-list",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T04:14:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dmz2922990/dsh-mcp-list",
+    "commands": [
+      "dsh plugin --profile web add github:dmz2922990/dsh-mcp-list"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

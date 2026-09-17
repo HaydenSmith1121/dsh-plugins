@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "LianbinZhou/dsh-archive-manager",
+  "slug": "lianbinzhou__dsh-archive-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-archive-manager",
+  "title": "dsh-archive-manager",
+  "summary": "在 DSH 侧边栏管理历史归档会话，一键恢复回工作区，免刷新实时同步。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "归档管理",
+    "会话恢复",
+    "侧边栏插件",
+    "实时刷新"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "LianbinZhou",
+  "repo": "https://github.com/LianbinZhou/dsh-archive-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T09:46:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LianbinZhou/dsh-archive-manager",
+    "commands": [
+      "pnpm add dsh-archive-manager",
+      "dsh plugin --profile web ..."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

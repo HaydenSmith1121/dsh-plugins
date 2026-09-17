@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "Haoxiang-Fant/dsh-task-notice",
+  "slug": "haoxiang-fant__dsh-task-notice",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-task-notice",
+  "title": "dsh-task-notice",
+  "summary": "任务跑完自动发系统通知，还能看每个模型的 Token 消耗和花费。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-market",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "消息通知",
+    "状态监控",
+    "成本控制",
+    "模型适配",
+    "效率提升"
+  ],
+  "version": "0.3.8",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "version0.3.8",
+    "publishedAt": "2026-09-17T15:49:50Z",
+    "url": "https://github.com/Haoxiang-Fant/dsh-task-notice/releases/tag/version0.3.8"
+  },
+  "author": "Haoxiang-Fant",
+  "repo": "https://github.com/Haoxiang-Fant/dsh-task-notice",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T13:39:54Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Haoxiang-Fant/dsh-task-notice",
+    "commands": [
+      "dsh plugin add <tarball 路径>",
+      "dsh plugin remove dsh-task-notice",
+      "dsh plugin --profile <profile 名> remove dsh-task-notice"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

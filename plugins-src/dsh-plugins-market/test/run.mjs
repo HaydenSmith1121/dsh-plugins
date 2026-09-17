@@ -6,7 +6,7 @@
  *   util          tar 只读访问 / YAML 局部合并 —— 都是自己实现的部分
  *   gate          ★ 核心安全属性：致命硬拦截 / 可覆盖 / 未审核必须确认
  *   state         ★ 已装状态判定（决定「安装」是否置灰）+ 点赞收藏 + 三层合并
- *   catalog-refresh ★ 已验证层远程优先（解耦）+ 锚规则（不可改写已发布版本）+ 304 提速
+ *   catalog-refresh ★ 目录远程优先 + 304 提速 + 单条配置文件的取用与回退
  *   client-bundle ★ CLI 侧查不出来的那类错误（注册 id、slot 同名、经典脚本文法）
  *
  * 前置：先跑 `node build.mjs`（gate 与 client-bundle 都依赖构建产物）。
@@ -28,7 +28,9 @@ console.log(`  ${'-'.repeat(70)}`);
 const artifacts = [
   ['.build/package/lib/client.js', '客户端半产物'],
   ['.build/package/lib/index.js', '服务器半产物'],
-  ['.build/package/catalog/verified.json', '已验证层目录'],
+  ['.build/package/lib/catalog.js', '目录层产物'],
+  ['.build/package/catalog/index.json', '包内离线兜底目录'],
+  ['.build/package/catalog/plugins/dsh-plugins-market.json', '市场插件自己的配置文件'],
 ];
 const missing = artifacts.filter(([rel]) => !fs.existsSync(path.join(PKG, rel)));
 if (missing.length > 0) {

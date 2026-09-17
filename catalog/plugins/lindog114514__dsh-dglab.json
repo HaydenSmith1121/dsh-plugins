@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "lindog114514/dsh-dglab",
+  "slug": "lindog114514__dsh-dglab",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-dglab",
+  "title": "dsh-dglab",
+  "summary": "让 AI 通过工具直接控制 DG-LAB 设备，支持扫码配对和波形调节，实现远程互动体验。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "零配置",
+    "模型配置",
+    "自动化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lindog114514",
+  "repo": "https://github.com/lindog114514/dsh-dglab",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-23T18:12:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lindog114514/dsh-dglab",
+    "commands": [
+      "dsh plugin --profile web add \"github:lindog114514/dsh-dglab"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

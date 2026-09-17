@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Wh1stle05/dsh-delegation-workflow",
+  "slug": "wh1stle05__dsh-delegation-workflow",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-delegation-workflow",
+  "title": "dsh-delegation-workflow",
+  "summary": "让主 agent 把计划步骤委派给子代理执行，还能指定子代理用哪个模型和思考强度。",
+  "tags": [
+    "dsh-plugin",
+    "多Agent协作",
+    "工作流增强",
+    "模型配置",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Wh1stle05",
+  "repo": "https://github.com/Wh1stle05/dsh-delegation-workflow",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T09:22:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Wh1stle05/dsh-delegation-workflow",
+    "commands": [
+      "dsh plugin --profile web add github:Wh1stle05/dsh-delegation-workflow",
+      "dsh plugin --profile web add link:/path/to/dsh-delegation-workflow"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "DamonBao/dsh-models-input-modalities",
+  "slug": "damonbao__dsh-models-input-modalities",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-models-input-modalities",
+  "title": "dsh-models-input-modalities",
+  "summary": "在模型设置页为第三方 pi-ai 模型单独选择输入模态，支持文本和图像。",
+  "tags": [
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "模型适配",
+    "视觉理解",
+    "设置面板",
+    "模型配置"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "DamonBao",
+  "repo": "https://github.com/DamonBao/dsh-models-input-modalities",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T08:46:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@jcy2387/dsh-models-input-modalities",
+    "commands": [
+      "dsh plugin --profile web add @jcy2387/dsh-models-input-modalities",
+      "git clone https://github.com/DamonBao/dsh-models-input-modalities.git",
+      "dsh plugin --profile web add link:$PWD"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

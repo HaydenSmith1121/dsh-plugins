@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "master1Sun/dsh-QQbot",
+  "slug": "master1sun__dsh-qqbot",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-QQbot",
+  "title": "dsh-QQbot",
+  "summary": "把 QQ 官方机器人接到本机 dsh，让 AI 直接在 QQ 群聊和单聊里干活。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugins",
+    "dsh-qq",
+    "dsh-qq-bot",
+    "harness",
+    "qqbot",
+    "桥接插件",
+    "工具集成",
+    "AI 助手",
+    "自动化",
+    "会话管理"
+  ],
+  "version": "0.1.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.9",
+    "publishedAt": "2026-09-16T15:54:10Z",
+    "url": "https://github.com/master1Sun/dsh-QQbot/releases/tag/v0.1.9"
+  },
+  "author": "master1Sun",
+  "repo": "https://github.com/master1Sun/dsh-QQbot",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T15:54:01Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:master1Sun/dsh-QQbot",
+    "commands": [
+      "dsh plugin --profile web add <本目录或 git 地址>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

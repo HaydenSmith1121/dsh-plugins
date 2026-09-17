@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "lemonxiny55/dsh-code-index",
+  "slug": "lemonxiny55__dsh-code-index",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-code-index",
+  "title": "dsh-code-index",
+  "summary": "为代码建立索引，让你在 DeepSeek Harness 里快速定位和跳转代码，提升开发效率。",
+  "tags": [
+    "code-index",
+    "deepseek-harness",
+    "dsh-plugin",
+    "tree-sitter",
+    "工作区管理",
+    "工作流增强",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.5.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.0",
+    "publishedAt": "2026-09-13T07:01:27Z",
+    "url": "https://github.com/lemonxiny55/dsh-code-index/releases/tag/v0.5.0"
+  },
+  "author": "lemonxiny55",
+  "repo": "https://github.com/lemonxiny55/dsh-code-index",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-13T08:06:38Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lemonxiny55/dsh-code-index",
+    "commands": [
+      "dsh plugin --profile web add github:lemonxiny55/dsh-code-index"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

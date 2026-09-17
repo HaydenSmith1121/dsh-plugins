@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "force-push/dsh-llm-fallback",
+  "slug": "force-push__dsh-llm-fallback",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-fallback",
+  "title": "dsh-llm-fallback",
+  "summary": "模型请求失败时自动切换备用模型，无需人工干预，让对话和任务持续稳定运行。",
+  "tags": [
+    "agent",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "failover",
+    "fault-tolerance",
+    "llm",
+    "model-fallback",
+    "resilience",
+    "self-healing",
+    "模型配置",
+    "自动化",
+    "故障恢复",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-27T23:03:16Z",
+    "url": "https://github.com/force-push/dsh-llm-fallback/releases/tag/v0.1.0"
+  },
+  "author": "force-push",
+  "repo": "https://github.com/force-push/dsh-llm-fallback",
+  "homepage": "https://github.com/deepseek-ai/deepseek-harness",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T05:34:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:force-push/dsh-llm-fallback",
+    "commands": [
+      "git clone https://github.com/force-push/dsh-llm-fallback.git packages/llm/llm-fallback"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

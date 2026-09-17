@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "Yvesgao/dsh-shortcut-creator",
+  "slug": "yvesgao__dsh-shortcut-creator",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-shortcut-creator",
+  "title": "dsh-shortcut-creator",
+  "summary": "在 DSH 设置页一键创建 Windows 桌面快捷方式，双击即可启动本地服务并自动打开浏览器，还能固定到任务栏。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "shortcut",
+    "windows",
+    "效率提升",
+    "自动化",
+    "开发流程",
+    "插件管理",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-15T15:55:46Z",
+    "url": "https://github.com/Yvesgao/dsh-shortcut-creator/releases/tag/v0.1.0"
+  },
+  "author": "Yvesgao",
+  "repo": "https://github.com/Yvesgao/dsh-shortcut-creator",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-30T12:35:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-shortcut-creator",
+    "commands": [
+      "dsh plugin --profile web add dsh-shortcut-creator",
+      "dsh plugin --profile web add github:Yvesgao/dsh-shortcut-creator"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "ericw0315/dsh-usage-lite",
+  "slug": "ericw0315__dsh-usage-lite",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage-lite",
+  "title": "dsh-usage-lite",
+  "summary": "在 DSH 网页界面里一眼看清余额和 Token 用量，简洁又好看。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "主题",
+    "数据分析"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ericw0315",
+  "repo": "https://github.com/ericw0315/dsh-usage-lite",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-10T12:58:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-usage-lite",
+    "commands": [
+      "dsh plugin --profile web add dsh-usage-lite",
+      "dsh plugin --profile web update dsh-usage-lite",
+      "dsh plugin --profile web remove dsh-usage-lite"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

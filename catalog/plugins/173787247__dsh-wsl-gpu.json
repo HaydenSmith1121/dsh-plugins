@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "173787247/dsh-wsl-gpu",
+  "slug": "173787247__dsh-wsl-gpu",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wsl-gpu",
+  "title": "dsh-wsl-gpu",
+  "summary": "在 WSL 里快速检测 GPU 和 CUDA 环境，帮你排查 nvidia-smi 不可见的问题。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "wsl",
+    "命令行工具",
+    "资源优化",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "0.2.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "173787247",
+  "repo": "https://github.com/173787247/dsh-wsl-gpu",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:22:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:173787247/dsh-wsl-gpu",
+    "commands": [
+      "dsh plugin --profile web add github:173787247/dsh-wsl-gpu"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

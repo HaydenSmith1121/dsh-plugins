@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "hytime/dsh-client-ui-shortcuts",
+  "slug": "hytime__dsh-client-ui-shortcuts",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-client-ui-shortcuts",
+  "title": "dsh-client-ui-shortcuts",
+  "summary": "为 DeepSeek Harness 网页客户端提供按配置文件区分的键盘快捷键，提升操作效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "keyboard-shortcuts",
+    "react",
+    "typescript",
+    "效率提升",
+    "会话管理",
+    "零配置",
+    "工作流增强"
+  ],
+  "version": "0.1.21",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.21",
+    "publishedAt": "2026-09-10T16:11:23Z",
+    "url": "https://github.com/hytime/dsh-client-ui-shortcuts/releases/tag/v0.1.21"
+  },
+  "author": "hytime",
+  "repo": "https://github.com/hytime/dsh-client-ui-shortcuts",
+  "homepage": null,
+  "license": null,
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-10T16:10:57Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@hytime/dsh-client-ui-shortcuts@0.1.21",
+    "commands": [
+      "dsh plugin --profile web add @hytime/dsh-client-ui-shortcuts@0.1.21",
+      "dsh plugin --profile web add github:hytime/dsh-client-ui-shortcuts"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

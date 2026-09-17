@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "huantian1223/dsh-token-stats",
+  "slug": "huantian1223__dsh-token-stats",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-token-stats",
+  "title": "dsh-token-stats",
+  "summary": "直接读取 DSH 会话日志，统计 Token 用量、聊天时长和连续使用天数，还能看 12 个月活动热力图。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "成本控制",
+    "可视化",
+    "效率提升",
+    "内容创作"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "huantian1223",
+  "repo": "https://github.com/huantian1223/dsh-token-stats",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T10:36:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:huantian1223/dsh-token-stats",
+    "commands": [
+      "dsh plugin --profile web add github:huantian1223/dsh-token-stats"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

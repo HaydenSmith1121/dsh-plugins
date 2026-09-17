@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "STARDUSTLC666/dsh-codex-port",
+  "slug": "stardustlc666__dsh-codex-port",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codex-port",
+  "title": "dsh-codex-port",
+  "summary": "一键把 Codex 官方插件全家桶（186+ 插件、583+ 技能）批量移植成 DSH 技能，自动转换格式、幂等跳过，实测 577 个零失败。",
+  "tags": [
+    "codex",
+    "deepseek-harness",
+    "dsh-plugin",
+    "skills",
+    "技能移植",
+    "Codex兼容",
+    "批量导入",
+    "格式转换"
+  ],
+  "version": "0.2.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "STARDUSTLC666",
+  "repo": "https://github.com/STARDUSTLC666/dsh-codex-port",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-09-12T10:14:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-codex-port",
+    "commands": [
+      "dsh plugin --profile web add dsh-codex-port"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

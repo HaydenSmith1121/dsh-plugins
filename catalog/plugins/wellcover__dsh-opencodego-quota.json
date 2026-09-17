@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "wellcover/dsh-opencodego-quota",
+  "slug": "wellcover__dsh-opencodego-quota",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-opencodego-quota",
+  "title": "dsh-opencodego-quota",
+  "summary": "在 DSH 侧边栏常驻 OpenCode Go 额度卡片，实时显示日/周/月用量进度条和费用，支持自定义刷新间隔。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "状态监控",
+    "前端增强",
+    "资源优化",
+    "可视化"
+  ],
+  "version": "1.0.3",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wellcover",
+  "repo": "https://github.com/wellcover/dsh-opencodego-quota",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-21T16:22:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wellcover/dsh-opencodego-quota",
+    "commands": [
+      "dsh plugin --profile web add github:wellcover/dsh-opencodego-quota"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "wx-yss/dsh-composer-enter",
+  "slug": "wx-yss__dsh-composer-enter",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-composer-enter",
+  "title": "dsh-composer-enter",
+  "summary": "让 DSH 输入框用 Enter 换行、Cmd/Ctrl+Enter 提交，告别误发送。",
+  "tags": [
+    "dsh-plugin",
+    "快捷操作",
+    "前端增强",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wx-yss",
+  "repo": "https://github.com/wx-yss/dsh-composer-enter",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T17:38:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-composer-enter",
+    "commands": [
+      "dsh plugin --profile web add dsh-composer-enter"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

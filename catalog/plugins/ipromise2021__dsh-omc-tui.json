@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ipromise2021/dsh-omc-tui",
+  "slug": "ipromise2021__dsh-omc-tui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-omc-tui",
+  "title": "dsh-omc-tui",
+  "summary": "为 DeepSeek Harness 打造的原生终端界面，让你在命令行里像用 Claude Code 一样流畅地写代码、跑 Agent。",
+  "tags": [
+    "agent",
+    "ai-coding",
+    "claude-code",
+    "cli",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "terminal",
+    "tui",
+    "命令行工具",
+    "AI编程",
+    "Agent交互"
+  ],
+  "version": "0.2.14",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.14",
+    "publishedAt": "2026-09-10T05:26:21Z",
+    "url": "https://github.com/ipromise2021/dsh-omc-tui/releases/tag/v0.2.14"
+  },
+  "author": "ipromise2021",
+  "repo": "https://github.com/ipromise2021/dsh-omc-tui",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-10T10:51:38Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ipromise2021/dsh-omc-tui",
+    "commands": [
+      "dsh plugin --profile web add github:ipromise2021/dsh-omc-tui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

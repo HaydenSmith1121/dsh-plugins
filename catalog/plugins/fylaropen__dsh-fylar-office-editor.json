@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "FylarOpen/dsh-fylar-office-editor",
+  "slug": "fylaropen__dsh-fylar-office-editor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-fylar-office-editor",
+  "title": "dsh-fylar-office-editor",
+  "summary": "在 DeepSeek Harness 里直接预览、编辑 Office 文档，还能生成 DOCX 文件，不用切换软件就能搞定。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "office",
+    "office-editor",
+    "文件管理",
+    "效率提升",
+    "工作流增强",
+    "前端增强"
+  ],
+  "version": "0.1.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.5",
+    "publishedAt": "2026-09-11T09:14:40Z",
+    "url": "https://github.com/FylarOpen/dsh-fylar-office-editor/releases/tag/v0.1.5"
+  },
+  "author": "FylarOpen",
+  "repo": "https://github.com/FylarOpen/dsh-fylar-office-editor",
+  "homepage": "https://fylar.ai",
+  "license": null,
+  "stars": 57,
+  "forks": 4,
+  "pushedAt": "2026-09-11T09:14:04Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:FylarOpen/dsh-fylar-office-editor",
+    "commands": [
+      "dsh plugin --profile web add github:FylarOpen/dsh-fylar-office-editor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

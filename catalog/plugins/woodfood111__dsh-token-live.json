@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "woodfood111/dsh-token-live",
+  "slug": "woodfood111__dsh-token-live",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-token-live",
+  "title": "dsh-token-live",
+  "summary": "在输入框下方实时显示草稿 token 数、本次会话花费和上下文占用，还能对比其他模型的价格。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "成本控制",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "woodfood111",
+  "repo": "https://github.com/woodfood111/dsh-token-live",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T13:03:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-token-live",
+    "commands": [
+      "dsh plugin --profile web add dsh-token-live"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

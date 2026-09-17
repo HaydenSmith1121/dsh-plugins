@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "better-er/dsh-tool-autoexpand",
+  "slug": "better-er__dsh-tool-autoexpand",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tool-autoexpand",
+  "title": "dsh-tool-autoexpand",
+  "summary": "自动展开新到的工具调用卡片，侧栏一键切换展开、不干预、折叠三种状态。",
+  "tags": [
+    "ai-assistant",
+    "browser-plugin",
+    "client-plugin",
+    "deepseek",
+    "developer-tools",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "productivity",
+    "web-plugin",
+    "效率提升",
+    "前端增强",
+    "快捷操作",
+    "工具集成"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-03T15:38:45Z",
+    "url": "https://github.com/better-er/dsh-tool-autoexpand/releases/tag/v0.2.0"
+  },
+  "author": "better-er",
+  "repo": "https://github.com/better-er/dsh-tool-autoexpand",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 11,
+  "forks": 1,
+  "pushedAt": "2026-09-08T15:08:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:better-er/dsh-tool-autoexpand",
+    "commands": [
+      "dsh plugin --profile web add github:better-er/dsh-tool-autoexpand"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

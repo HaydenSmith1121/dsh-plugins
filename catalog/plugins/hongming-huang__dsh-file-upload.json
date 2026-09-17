@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "HongMing-Huang/dsh-file-upload",
+  "slug": "hongming-huang__dsh-file-upload",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-file-upload",
+  "title": "dsh-file-upload",
+  "summary": "为 DeepSeek Harness 添加文件上传能力，支持拖拽/附件、内容识别，并将文档自动转成 Markdown 文本。",
+  "tags": [
+    "dsh-plugin",
+    "文件管理",
+    "拖拽附件",
+    "内容识别"
+  ],
+  "version": "0.4.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "HongMing-Huang",
+  "repo": "https://github.com/HongMing-Huang/dsh-file-upload",
+  "homepage": "https://www.npmjs.com/package/dsh-file-upload",
+  "license": "MIT",
+  "stars": 23,
+  "forks": 8,
+  "pushedAt": "2026-08-19T15:41:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-file-upload",
+    "commands": [
+      "dsh plugin --profile web add dsh-file-upload"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "WMXS-A/dsh-utility-plugins",
+  "slug": "wmxs-a__dsh-utility-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-utility-plugins",
+  "title": "dsh-utility-plugins",
+  "summary": "为 DeepSeek Harness 提供技能速查面板和会话启动健康检查，轻量实用，即插即用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "状态监控",
+    "会话管理",
+    "零配置",
+    "AI 助手"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "WMXS-A",
+  "repo": "https://github.com/WMXS-A/dsh-utility-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T13:52:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-skill-cheatsheet",
+    "commands": [
+      "dsh plugin --profile web add dsh-skill-cheatsheet"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

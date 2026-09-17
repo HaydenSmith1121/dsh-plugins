@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "supery0ung/dsh-recovery-center",
+  "slug": "supery0ung__dsh-recovery-center",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-recovery-center",
+  "title": "dsh-recovery-center",
+  "summary": "给 DeepSeek Harness 做本地恢复点，插件搞崩了也能离线回滚，救急界面独立可用。",
+  "tags": [
+    "backup",
+    "deepseek-harness",
+    "dsh-plugin",
+    "插件管理",
+    "文件管理",
+    "安全审计",
+    "状态监控",
+    "命令行工具"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-05T01:58:02Z",
+    "url": "https://github.com/supery0ung/dsh-recovery-center/releases/tag/v0.1.2"
+  },
+  "author": "supery0ung",
+  "repo": "https://github.com/supery0ung/dsh-recovery-center",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T06:06:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:supery0ung/dsh-recovery-center",
+    "commands": [
+      "dsh plugin --profile web add dsh-recovery-center@0.1.2 --config.auto-install-peers=false"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

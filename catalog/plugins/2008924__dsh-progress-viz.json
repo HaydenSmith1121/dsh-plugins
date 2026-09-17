@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "2008924/dsh-progress-viz",
+  "slug": "2008924__dsh-progress-viz",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-progress-viz",
+  "title": "dsh-progress-viz",
+  "summary": "实时展示 dsh 任务各阶段进度和预计完成时间，让你随时掌握任务动态。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "progress-dashboard",
+    "visualization",
+    "状态监控",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-15T05:17:38Z",
+    "url": "https://github.com/2008924/dsh-progress-viz/releases/tag/v0.1.0"
+  },
+  "author": "2008924",
+  "repo": "https://github.com/2008924/dsh-progress-viz",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-16T21:50:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:2008924/dsh-progress-viz",
+    "commands": [
+      "pip install \"zstandard>=0.21\"",
+      "pip install .",
+      "dsh plugin --profile headless add <plugin 目录绝对路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "axelfreeman/hermes-security-audit",
+  "slug": "axelfreeman__hermes-security-audit",
+  "tier": "community",
+  "package": null,
+  "name": "hermes-security-audit",
+  "title": "hermes-security-audit",
+  "summary": "给 Hermes Agent 做 12 项安全体检，查病毒、揪rootkit、防SSH暴力破解，让AI助手跑得更安心。",
+  "tags": [
+    "ai-agents",
+    "audit",
+    "deepseek-harness",
+    "dsh-plugin",
+    "linux",
+    "security",
+    "安全审计",
+    "状态监控",
+    "自动化",
+    "工具集成"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-25T15:11:43Z",
+    "url": "https://github.com/axelfreeman/hermes-security-audit/releases/tag/v1.0.0"
+  },
+  "author": "axelfreeman",
+  "repo": "https://github.com/axelfreeman/hermes-security-audit",
+  "homepage": "https://axelfreeman.com",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T11:48:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:axelfreeman/hermes-security-audit",
+    "commands": [
+      "dsh plugin --profile web add github:axelfreeman/hermes-security-audit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

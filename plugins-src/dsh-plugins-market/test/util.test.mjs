@@ -2,7 +2,12 @@
  * 基础设施层测试：tar 只读访问、YAML 局部合并、patch 行抽取。
  *
  * 这三块都是「自己实现、不引依赖」的部分，也就是最容易出错的部分，
- * 所以用仓库里真实存在的 8 个 tarball 做输入来测。
+ * 所以用**真实的 tarball** 做输入来测。
+ *
+ * ★ 自 0.4.0 起，市场仓库里只剩一个 tarball：市场插件自己。
+ *   插件集合仓库（dsh-plugin-collection）托管的那批不在这个仓库里，
+ *   所以本机有它时顺带一起测（开发机上通常有），没有就只测自己那一个 ——
+ *   测试不该因为「另一个仓库没 clone」而变红。
  */
 
 import fs from 'node:fs';
@@ -12,10 +17,33 @@ import { suite, test, assert, eq, REPO_ROOT as REPO, importBuilt } from './harne
 const { readTarGzEntries, listTarGzEntries, extractPatchRows, readAllowBuilds, mergeAllowBuilds, checkWorkspaceInvariants } =
   await importBuilt('lib/util.js');
 
-const compat = JSON.parse(fs.readFileSync(path.join(REPO, 'compatibility.json'), 'utf8'));
-const runtime = compat.runtimes.find((r) => r.status === 'supported' && r.recommended);
-const first = runtime.plugins[0];
+/** 本仓库自己那个 tarball：路径的唯一来源是市场插件自己的配置文件 */
+const selfConfig = JSON.parse(
+  fs.readFileSync(path.join(REPO, 'catalog', 'plugins', 'dsh-plugins-market.json'), 'utf8'),
+);
+const first = {
+  package: selfConfig.package,
+  version: selfConfig.version,
+  tarball: selfConfig.install.tarball,
+};
 const tgzPath = path.join(REPO, first.tarball);
+
+/** 本机存在插件集合仓库时，把它的 tarball 也纳进来一起测 */
+function collectionTarballs() {
+  const candidates = [
+    process.env.DSH_PLUGIN_COLLECTION,
+    path.join(path.dirname(REPO), 'dsh-plugin-collection'),
+  ].filter(Boolean);
+  for (const dir of candidates) {
+    const manifest = path.join(dir, 'manifest.json');
+    if (!fs.existsSync(manifest)) continue;
+    const doc = JSON.parse(fs.readFileSync(manifest, 'utf8'));
+    return (doc.plugins ?? [])
+      .map((p) => ({ package: p.package, version: p.version, abs: path.join(dir, p.tarball) }))
+      .filter((p) => fs.existsSync(p.abs));
+  }
+  return [];
+}
 
 suite('util / tar');
 
@@ -25,28 +53,25 @@ test('能从真实 tarball 里读出 package.json 与 cordis.patch.yml', () => {
   assert(entries, 'readTarGzEntries 返回 null（gzip 解压失败）');
   assert(entries.has('package/package.json'), '没读到 package/package.json');
   const pkg = JSON.parse(entries.get('package/package.json').toString('utf8'));
-  eq(pkg.name, first.package, 'tarball 里的包名应与 compatibility.json 一致');
-  eq(pkg.version, first.version, 'tarball 里的版本应与 compatibility.json 一致');
+  eq(pkg.name, first.package, 'tarball 里的包名应与配置文件一致');
+  eq(pkg.version, first.version, 'tarball 里的版本应与配置文件一致');
 });
 
-test('文件条目数与 compatibility.json 记录的 files 一致', () => {
-  const list = listTarGzEntries(tgzPath);
-  assert(Array.isArray(list) && list.length > 0, '应列出至少一个文件条目');
-  if (typeof first.files === 'number') {
-    eq(list.length, first.files, `${first.package} 的 tarball 文件数`);
-  }
-});
+test('每个真实 tarball 都可读，且都声明了 dsh.bundle.patch', () => {
+  // 自研插件那批在插件集合仓库里，本机有就一起测；没有就只测本仓库自己那个。
+  const targets = [
+    { label: `${first.package}@${first.version}（本仓库）`, abs: tgzPath },
+    ...collectionTarballs().map((p) => ({ label: `${p.package}@${p.version}（集合仓库）`, abs: p.abs })),
+  ];
+  assert(targets.length > 0, '至少要有一个可测的 tarball');
 
-test('8 个 tarball 全部可读且都声明了 dsh.bundle.patch', () => {
-  for (const p of runtime.plugins) {
-    const abs = path.join(REPO, p.tarball);
-    assert(fs.existsSync(abs), `${p.package}: tarball 缺失`);
-    const e = readTarGzEntries(abs, ['package/package.json', 'package/cordis.patch.yml']);
-    assert(e?.has('package/package.json'), `${p.package}: 读不到 package.json`);
+  for (const t of targets) {
+    const e = readTarGzEntries(t.abs, ['package/package.json', 'package/cordis.patch.yml']);
+    assert(e?.has('package/package.json'), `${t.label}: 读不到 package.json`);
     const manifest = JSON.parse(e.get('package/package.json').toString('utf8'));
-    assert(manifest.dsh?.bundle?.patch, `${p.package}: 没有声明 dsh.bundle.patch（装了也不会加载）`);
+    assert(manifest.dsh?.bundle?.patch, `${t.label}: 没有声明 dsh.bundle.patch（装了也不会加载）`);
     const rel = `package/${String(manifest.dsh.bundle.patch).replace(/^\.\//, '')}`;
-    assert(e.has(rel), `${p.package}: 声明了 ${manifest.dsh.bundle.patch} 但包里没有 ${rel}（boot 期会 fatal）`);
+    assert(e.has(rel), `${t.label}: 声明了 ${manifest.dsh.bundle.patch} 但包里没有 ${rel}（boot 期会 fatal）`);
   }
 });
 
@@ -104,11 +129,18 @@ test('★ 不把 patch 的定位目标与嵌套 config 里的 id 当插入行（
   eq(rows, [{ id: 'ark-plans', name: 'dsh-ark-plans' }]);
 });
 
-test('★ 对仓库里 8 个真实 tarball 抽出的插入行都只有自己那一条', () => {
-  const runtime = compat.runtimes.find((r) => r.status === 'supported' && r.recommended);
-  for (const p of runtime.plugins) {
-    const abs = path.join(REPO, p.tarball);
-    const e = readTarGzEntries(abs, ['package/cordis.patch.yml']);
+test('★ 对每个真实 tarball 抽出的插入行都只有自己那一条', () => {
+  // 自研插件那批在插件集合仓库里（本机有就一起测）；本仓库自己那个永远在。
+  // 这里刻意**不**从任何「插件清单」里取路径 —— 清单已经不存在了，
+  // 事实来源是每个插件自己的 plugin.json / 市场插件自己的配置文件。
+  const targets = [
+    { package: selfConfig.package, abs: tgzPath },
+    ...collectionTarballs().map((p) => ({ package: p.package, abs: p.abs })),
+  ];
+  assert(targets.length > 0, '至少要有一个可测的 tarball');
+
+  for (const p of targets) {
+    const e = readTarGzEntries(p.abs, ['package/cordis.patch.yml']);
     assert(e?.has('package/cordis.patch.yml'), `${p.package}: 读不到 cordis.patch.yml`);
     const rows = extractPatchRows(e.get('package/cordis.patch.yml').toString('utf8'));
     assert(Array.isArray(rows) && rows.length >= 1, `${p.package}: 应当至少抽到一条插入行`);

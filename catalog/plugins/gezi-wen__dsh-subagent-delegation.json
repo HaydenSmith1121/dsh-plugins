@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "gezi-wen/dsh-subagent-delegation",
+  "slug": "gezi-wen__dsh-subagent-delegation",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subagent-delegation",
+  "title": "dsh-subagent-delegation",
+  "summary": "教 agent 什么时候该派子任务、并行开几个、怎么验收结果，让多 Agent 协作更靠谱。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "skill",
+    "多Agent协作",
+    "工作流增强",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "gezi-wen",
+  "repo": "https://github.com/gezi-wen/dsh-subagent-delegation",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T14:04:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-subagent-delegation",
+    "commands": [
+      "dsh plugin --profile web add dsh-subagent-delegation"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

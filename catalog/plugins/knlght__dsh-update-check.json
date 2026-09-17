@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "knlght/DSH-update-check",
+  "slug": "knlght__dsh-update-check",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-update-check",
+  "title": "DSH-update-check",
+  "summary": "让 DSH 随时看到有没有新版本，模型工具、设置页、定期复查三管齐下，只提醒不自动升级。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-update-check",
+    "状态监控",
+    "插件管理",
+    "设置面板",
+    "消息通知"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "knlght",
+  "repo": "https://github.com/knlght/DSH-update-check",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-10T05:39:56Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:knlght/DSH-update-check",
+    "commands": [
+      "dsh plugin --profile web add <本仓库 / npm 包名>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

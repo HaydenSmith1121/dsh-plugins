@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "SLin-code/dsh-custom-skin",
+  "slug": "slin-code__dsh-custom-skin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-custom-skin",
+  "title": "dsh-custom-skin",
+  "summary": "给 DeepSeek Harness 网页换上自定义壁纸和半透明皮肤，让界面更个性、更好看。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "可视化",
+    "会话增强",
+    "主题",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "SLin-code",
+  "repo": "https://github.com/SLin-code/dsh-custom-skin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 101,
+  "forks": 8,
+  "pushedAt": "2026-08-27T11:27:59Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:SLin-code/dsh-custom-skin",
+    "commands": [
+      "dsh plugin --profile web add github:SLin-code/dsh-custom-skin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

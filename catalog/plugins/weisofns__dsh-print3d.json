@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "weisofns/dsh-print3d",
+  "slug": "weisofns__dsh-print3d",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-print3d",
+  "title": "dsh-print3d",
+  "summary": "为 DeepSeek Harness 提供 3D 打印能力，支持参数化建模、G-code 校准、STL/G-code 分析与刀路可视化，并桥接 PrusaSlicer。",
+  "tags": [
+    "3d-printing",
+    "additive-manufacturing",
+    "dsh-plugin",
+    "gcode",
+    "slicing",
+    "stl",
+    "可视化",
+    "效率提升",
+    "工作流增强",
+    "模型配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-05T15:58:13Z",
+    "url": "https://github.com/weisofns/dsh-print3d/releases/tag/v0.1.0"
+  },
+  "author": "weisofns",
+  "repo": "https://github.com/weisofns/dsh-print3d",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T12:07:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:weisofns/dsh-print3d",
+    "commands": [
+      "dsh plugin --profile web add github:weisofns/dsh-print3d"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

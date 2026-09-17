@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "Practice019/dsh-plugins-store",
+  "slug": "practice019__dsh-plugins-store",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugins-store",
+  "title": "dsh-plugins-store",
+  "summary": "把本机已装的 DSH 插件备份成一份份目录，方便丢进 GitHub 仓库归档留存。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "plugin-store",
+    "插件管理",
+    "文件管理",
+    "工具集成"
+  ],
+  "version": "2026.09.10-2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2026.09.10-2",
+    "publishedAt": "2026-09-10T13:37:55Z",
+    "url": "https://github.com/Practice019/dsh-plugins-store/releases/tag/v2026.09.10-2"
+  },
+  "author": "Practice019",
+  "repo": "https://github.com/Practice019/dsh-plugins-store",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T13:37:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Practice019/dsh-plugins-store",
+    "commands": [
+      "dsh plugin --profile web add github:Practice019/dsh-plugins-store"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

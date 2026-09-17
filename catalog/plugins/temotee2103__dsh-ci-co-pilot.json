@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "temotee2103/dsh-ci-co-pilot",
+  "slug": "temotee2103__dsh-ci-co-pilot",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ci-co-pilot",
+  "title": "dsh-ci-co-pilot",
+  "summary": "帮你自动审 PR、查 CI 报错并修、整理 issue、起草发布说明的 GitHub 工作流助手。",
+  "tags": [
+    "agent-tools",
+    "ci",
+    "coding-agent",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "github",
+    "工作流增强",
+    "变更审查",
+    "自动化",
+    "工具集成",
+    "内容创作"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-08-22T10:36:02Z",
+    "url": "https://github.com/temotee2103/dsh-ci-co-pilot/releases/tag/v0.3.1"
+  },
+  "author": "temotee2103",
+  "repo": "https://github.com/temotee2103/dsh-ci-co-pilot",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-22T10:35:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@temotee2103/dsh-ci-co-pilot",
+    "commands": [
+      "dsh plugin --profile web add @temotee2103/dsh-ci-co-pilot",
+      "dsh plugin --profile web add github:temotee2103/dsh-ci-co-pilot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

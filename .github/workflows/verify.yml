@@ -1,0 +1,71 @@
+name: 校验
+
+# 每次 push / PR 都跑的只读校验。全部**不联网**，所以很快，也不依赖任何密钥。
+#
+# 它拦的是三类「界面上完全看不出来」的问题：
+#   ① 目录与生成器脱节 —— catalog/index.json 与 catalog/plugins/*.json 不一致，
+#      或者某个文件的字段顺序/时间戳被手工改过（那会让每日同步产生噪音 diff）
+#   ② 改了源码却忘了重打市场包 —— 同一个 tarball 路径内容变了时 pnpm 会跳过解包，
+#      已经装过的人永远收不到新版本。这里用 git diff 把它逼出来
+#   ③ 插件集合仓库那边的 manifest.json 与本仓库的期望格式对不上（在那边跑）
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  catalog:
+    name: 目录一致性
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19'
+
+      - name: 目录与生成器一致（不联网）
+        run: node scripts/sync-catalog.mjs --check
+
+      - name: 配置文件数量与索引对得上
+        run: |
+          set -euo pipefail
+          files=$(ls catalog/plugins/*.json | wc -l)
+          indexed=$(node -e "console.log(require('./catalog/index.json').counts.total)")
+          echo "catalog/plugins/*.json = $files，index.json 记录 = $indexed"
+          if [ "$files" -ne "$indexed" ]; then
+            echo "::error::配置文件数量与索引不一致 —— 请重跑 node scripts/sync-catalog.mjs"
+            exit 1
+          fi
+
+  market:
+    name: 市场插件可构建
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.19'
+
+      - name: 单元测试
+        working-directory: plugins-src/dsh-plugins-market
+        run: node test/run.mjs
+
+      - name: 构建（会重打 tarball）
+        run: node plugins-src/dsh-plugins-market/build.mjs
+
+      - name: 产物必须已提交，且内容一致
+        run: |
+          set -euo pipefail
+          # build.mjs 是确定性的：同样的输入必得同样的字节。
+          # 所以只要它跑完 git 里有 diff，就说明「源码改了但没重新构建并提交」。
+          if ! git diff --quiet -- plugins/ ; then
+            echo "::error::plugins/ 下的 tarball 与当前源码不一致 —— 请本地跑一次 node plugins-src/dsh-plugins-market/build.mjs 并提交产物。"
+            git --no-pager diff --stat -- plugins/
+            exit 1
+          fi
+          echo "产物与源码一致。"

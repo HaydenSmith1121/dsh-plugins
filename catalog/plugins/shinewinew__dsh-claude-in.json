@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "ShinewineW/dsh-claude-in",
+  "slug": "shinewinew__dsh-claude-in",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-claude-in",
+  "title": "dsh-claude-in",
+  "summary": "把 Claude Code 的 Skills、Rules、Hooks 和 Agents 配置无缝接入 DeepSeek Harness，让 .claude 目录成为唯一配置源，实现零迁移成本复用。",
+  "tags": [
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "配置兼容",
+    "技能迁移",
+    "工作流集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-16T05:25:30Z",
+    "url": "https://github.com/ShinewineW/dsh-claude-in/releases/tag/v0.1.0"
+  },
+  "author": "ShinewineW",
+  "repo": "https://github.com/ShinewineW/dsh-claude-in",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-16T05:32:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ShinewineW/dsh-claude-in",
+    "commands": [
+      "dsh plugin --profile web add github:ShinewineW/dsh-claude-in"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "pk7j7sqryy-ops/dsh-token-pet",
+  "slug": "pk7j7sqryy-ops__dsh-token-pet",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-token-pet",
+  "title": "dsh-token-pet",
+  "summary": "在会话栏养只可爱小宠物，实时看上下文占用和用量，还能顺手查天气和预报。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "会话管理",
+    "主题",
+    "可视化",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "pk7j7sqryy-ops",
+  "repo": "https://github.com/pk7j7sqryy-ops/dsh-token-pet",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-15T16:10:18Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:pk7j7sqryy-ops/dsh-token-pet",
+    "commands": [
+      "dsh plugin --profile web add github:pk7j7sqryy-ops/dsh-token-pet"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

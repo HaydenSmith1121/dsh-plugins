@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "qianshe/dsh-assistant-optimization",
+  "slug": "qianshe__dsh-assistant-optimization",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-assistant-optimization",
+  "title": "dsh-assistant-optimization",
+  "summary": "把渲染错乱的思考内容折叠起来，并直接在对话中显示 Mermaid 图表，让输出更清爽。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "主题",
+    "会话管理"
+  ],
+  "version": "1.8.0-rollback",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "qianshe",
+  "repo": "https://github.com/qianshe/dsh-assistant-optimization",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-14T16:19:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qianshe/dsh-assistant-optimization",
+    "commands": [
+      "dsh plugin --profile web add github:qianshe/dsh-assistant-optimization"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

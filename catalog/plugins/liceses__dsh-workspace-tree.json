@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "liceses/dsh-workspace-tree",
+  "slug": "liceses__dsh-workspace-tree",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workspace-tree",
+  "title": "dsh-workspace-tree",
+  "summary": "把 DSH 左侧栏工作区改成文件系统树，会话与目录强绑定，环境真正隔离。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "工作区管理",
+    "文件管理",
+    "主题",
+    "会话管理"
+  ],
+  "version": "1.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "liceses",
+  "repo": "https://github.com/liceses/dsh-workspace-tree",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 1,
+  "pushedAt": "2026-09-08T04:50:18Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "dsh plugin add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

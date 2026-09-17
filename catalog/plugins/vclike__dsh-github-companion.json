@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "vclike/dsh-github-companion",
+  "slug": "vclike__dsh-github-companion",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-github-companion",
+  "title": "dsh-github-companion",
+  "summary": "让 AI 直接操作 GitHub，33 个工具覆盖仓库、Issue、PR，还带权限门和成本控制。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "工具集成",
+    "自动化",
+    "安全审计",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "1.0.8-rc1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.8-rc1",
+    "publishedAt": "2026-09-11T12:23:49Z",
+    "url": "https://github.com/vclike/dsh-github-companion/releases/tag/v1.0.8-rc1"
+  },
+  "author": "vclike",
+  "repo": "https://github.com/vclike/dsh-github-companion",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T12:23:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:vclike/dsh-github-companion",
+    "commands": [
+      "dsh plugin --profile web add github:vclike/dsh-github-companion"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

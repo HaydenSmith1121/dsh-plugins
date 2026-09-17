@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "TencentCloud/tencentcloud-agentobs-sdk-dsh",
+  "slug": "tencentcloud__tencentcloud-agentobs-sdk-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "tencentcloud-agentobs-sdk-dsh",
+  "title": "tencentcloud-agentobs-sdk-dsh",
+  "summary": "将 DeepSeek Harness 的 GenAI 追踪数据直接上报到腾讯云日志服务，实现 AI 应用的可观测性。",
+  "tags": [
+    "agent-observability",
+    "ai-coding",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "genai",
+    "observability",
+    "多智能体协作",
+    "任务编排",
+    "安全审查",
+    "多Agent协作"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.0.1",
+    "publishedAt": "2026-08-18T07:07:02Z",
+    "url": "https://github.com/TencentCloud/tencentcloud-agentobs-sdk-dsh/releases/tag/v0.0.1"
+  },
+  "author": "TencentCloud",
+  "repo": "https://github.com/TencentCloud/tencentcloud-agentobs-sdk-dsh",
+  "homepage": "https://github.com/TencentCloud/tencentcloud-agentobs-sdk-dsh/blob/main/README.md",
+  "license": "Apache-2.0",
+  "stars": 13,
+  "forks": 3,
+  "pushedAt": "2026-08-26T06:22:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "tencentcloud-agentobs-sdk-dsh",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh",
+      "dsh plugin --profile web add tencentcloud-agentobs-sdk-dsh",
+      "dsh plugin --profile headless add tencentcloud-agentobs-sdk-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

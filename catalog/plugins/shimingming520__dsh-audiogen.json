@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "shimingming520/dsh-audiogen",
+  "slug": "shimingming520__dsh-audiogen",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-audiogen",
+  "title": "dsh-audiogen",
+  "summary": "在 DeepSeek Harness 网页界面里直接生成语音、音乐和音效，还能设计声音，支持多模型对比和资源库，让 AI 音频创作变得简单顺手。",
+  "tags": [
+    "ai-audio",
+    "deepseek-harness",
+    "dsh-plugin",
+    "tts",
+    "AI 助手",
+    "模型配置",
+    "可视化",
+    "资源优化"
+  ],
+  "version": "0.4.26",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "shimingming520",
+  "repo": "https://github.com/shimingming520/dsh-audiogen",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-09T07:27:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-audiogen",
+    "commands": [
+      "dsh plugin --profile web add dsh-audiogen",
+      "dsh plugin --profile web add /path/to/dsh-audiogen"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

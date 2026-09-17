@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "huawolf/news-agent",
+  "slug": "huawolf__news-agent",
+  "tier": "community",
+  "package": null,
+  "name": "news-agent",
+  "title": "news-agent",
+  "summary": "本地运行的 AI 新闻聚合器，自动抓取 RSS 和 Hacker News，用大模型打分排序，并推送精选到飞书或 Discord。",
+  "tags": [
+    "dsh-plugin",
+    "news-aggregator",
+    "news-worker",
+    "rss-reader",
+    "vaneworker",
+    "新闻聚合",
+    "消息通知",
+    "语义检索"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "huawolf",
+  "repo": "https://github.com/huawolf/news-agent",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 15,
+  "forks": 3,
+  "pushedAt": "2026-09-07T12:11:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:huawolf/news-agent",
+    "commands": [
+      "curl -fsSL https://raw.githubusercontent.com/huawolf/news-agent/main/scripts/install.sh | bash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

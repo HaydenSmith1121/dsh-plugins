@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "Lichtspur/deepseek-style-theme",
+  "slug": "lichtspur__deepseek-style-theme",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-style-theme",
+  "title": "deepseek-style-theme",
+  "summary": "把 DSH 网页界面换成 DeepSeek 官网同款皮肤，流体粒子背景加玻璃质感，好看又好用。",
+  "tags": [
+    "dsh-plugin",
+    "界面美化",
+    "主题",
+    "前端增强",
+    "可视化"
+  ],
+  "version": "2.0.88",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.0.88",
+    "publishedAt": "2026-09-16T07:04:05Z",
+    "url": "https://github.com/Lichtspur/deepseek-style-theme/releases/tag/v2.0.88"
+  },
+  "author": "Lichtspur",
+  "repo": "https://github.com/Lichtspur/deepseek-style-theme",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T07:03:58Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Lichtspur/deepseek-style-theme",
+    "commands": [
+      "dsh plugin --profile web add file:D:\\plugins\\dsh-deepseek-style-theme",
+      "dsh plugin --profile web add github:Lichtspur/deepseek-style-theme",
+      "dsh plugin --profile web add ./releases/dsh-deepseek-style-theme-1.43.1.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

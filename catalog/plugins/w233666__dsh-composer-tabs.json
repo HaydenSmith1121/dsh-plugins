@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "W233666/dsh-composer-tabs",
+  "slug": "w233666__dsh-composer-tabs",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-composer-tabs",
+  "title": "dsh-composer-tabs",
+  "summary": "给输入框菜单加上 Tab 分页，指令、技能、插件技能按来源分开，找起来更快更清楚。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "插件管理",
+    "快捷操作",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "W233666",
+  "repo": "https://github.com/W233666/dsh-composer-tabs",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T07:43:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@luoye233666/dsh-composer-tabs@latest",
+    "commands": [
+      "dsh plugin --profile web add @luoye233666/dsh-composer-tabs@latest",
+      "git clone <这个仓库的地址> dsh-composer-tabs"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

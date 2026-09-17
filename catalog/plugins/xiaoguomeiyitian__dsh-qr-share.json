@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaoguomeiyitian/dsh-qr-share",
+  "slug": "xiaoguomeiyitian__dsh-qr-share",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-qr-share",
+  "title": "dsh-qr-share",
+  "summary": "在网页侧边栏加一个二维码按钮，手机扫码就能复用当前浏览器的登录链接，快速打开同一会话。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "qr-code",
+    "安全审计",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xiaoguomeiyitian",
+  "repo": "https://github.com/xiaoguomeiyitian/dsh-qr-share",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-01T12:12:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiaoguomeiyitian/dsh-qr-share",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-qr-share@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

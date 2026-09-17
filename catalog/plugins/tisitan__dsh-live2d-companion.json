@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Tisitan/dsh-live2d-companion",
+  "slug": "tisitan__dsh-live2d-companion",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-live2d-companion",
+  "title": "dsh-live2d-companion",
+  "summary": "让 Live2D 看板娘住进 DSH 界面，实时用动作反馈 AI 工作状态，还能当桌面宠物陪着你。",
+  "tags": [
+    "deepseek-harness",
+    "desktop-pet",
+    "dsh-plugin",
+    "live2d",
+    "状态监控",
+    "娱乐互动",
+    "交互反馈"
+  ],
+  "version": "1.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Tisitan",
+  "repo": "https://github.com/Tisitan/dsh-live2d-companion",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 2,
+  "pushedAt": "2026-09-07T16:33:46Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Tisitan/dsh-live2d-companion",
+    "commands": [
+      "dsh plugin --profile web add github:Tisitan/dsh-live2d-companion"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

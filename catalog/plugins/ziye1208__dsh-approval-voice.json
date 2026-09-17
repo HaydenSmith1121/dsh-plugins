@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "ZIye1208/dsh-approval-voice",
+  "slug": "ziye1208__dsh-approval-voice",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-approval-voice",
+  "title": "dsh-approval-voice",
+  "summary": "审批弹窗出现时自动响铃并语音播报，防止漏看审批或提问，提升处理效率。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "消息通知",
+    "视觉理解",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-11T04:26:20Z",
+    "url": "https://github.com/ZIye1208/dsh-approval-voice/releases/tag/v0.2.1"
+  },
+  "author": "ZIye1208",
+  "repo": "https://github.com/ZIye1208/dsh-approval-voice",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-07T13:28:08Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ZIye1208/dsh-approval-voice",
+    "commands": [
+      "dsh plugin --profile web add github:ZIye1208/dsh-approval-voice"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

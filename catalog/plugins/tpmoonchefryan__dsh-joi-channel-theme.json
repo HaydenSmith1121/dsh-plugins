@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "tpmoonchefryan/dsh-joi-channel-theme",
+  "slug": "tpmoonchefryan__dsh-joi-channel-theme",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-joi-channel-theme",
+  "title": "dsh-joi-channel-theme",
+  "summary": "把 DeepSeek Harness 界面换成轴伊 Joi 双衣装主题，一键美化，粉丝专属。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "joi-channel",
+    "theme",
+    "virtuareal",
+    "vtuber",
+    "vup",
+    "界面美化",
+    "主题",
+    "插件管理"
+  ],
+  "version": "0.1.11",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.11",
+    "publishedAt": "2026-09-09T17:59:59Z",
+    "url": "https://github.com/tpmoonchefryan/dsh-joi-channel-theme/releases/tag/v0.1.11"
+  },
+  "author": "tpmoonchefryan",
+  "repo": "https://github.com/tpmoonchefryan/dsh-joi-channel-theme",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 18,
+  "forks": 3,
+  "pushedAt": "2026-09-09T19:36:54Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tpmoonchefryan/dsh-joi-channel-theme",
+    "commands": [
+      "npm install -g pnpm",
+      "npm install -g @deepseek-ai/dsh",
+      "dsh plugin --profile web add dsh-joi-channel-theme && dsh web"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

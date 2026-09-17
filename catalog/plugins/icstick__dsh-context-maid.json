@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "Icstick/dsh-context-maid",
+  "slug": "icstick__dsh-context-maid",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-context-maid",
+  "title": "dsh-context-maid",
+  "summary": "自动清理对话里的工具输出和无效日志，压缩前先归档重要内容，让上下文保持精简高效。",
+  "tags": [
+    "ai-agent",
+    "context-compaction",
+    "context-curation",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "token-efficiency",
+    "会话管理",
+    "效率提升",
+    "资源优化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-07T04:47:03Z",
+    "url": "https://github.com/Icstick/dsh-context-maid/releases/tag/v0.1.0"
+  },
+  "author": "Icstick",
+  "repo": "https://github.com/Icstick/dsh-context-maid",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T13:35:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Icstick/dsh-context-maid",
+    "commands": [
+      "dsh plugin --profile <profile> add github:Icstick/dsh-context-maid"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "lengzhanbao/dsh-taffy-theme",
+  "slug": "lengzhanbao__dsh-taffy-theme",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-taffy-theme",
+  "title": "dsh-taffy-theme",
+  "summary": "粉金亚克力风的 DSH Web 主题，带塔菲立绘和 Q 版侧栏，还有可选 Agent 预设，让界面秒变可爱直播工房。",
+  "tags": [
+    "acrylic",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "taffy",
+    "theme",
+    "ui",
+    "ui-theme",
+    "主题",
+    "娱乐互动",
+    "零配置"
+  ],
+  "version": "0.1.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.9",
+    "publishedAt": "2026-09-16T15:34:08Z",
+    "url": "https://github.com/lengzhanbao/dsh-taffy-theme/releases/tag/v0.1.9"
+  },
+  "author": "lengzhanbao",
+  "repo": "https://github.com/lengzhanbao/dsh-taffy-theme",
+  "homepage": "https://github.com/lengzhanbao/dsh-taffy-theme",
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-16T15:33:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lengzhanbao/dsh-taffy-theme",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/lengzhanbao/dsh-taffy-theme/releases/download/v0.1.3/dsh-external-dsh-taffy-theme-0.1.3.tgz",
+      "dsh plugin --profile web remove @dsh-external/dsh-taffy-theme"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

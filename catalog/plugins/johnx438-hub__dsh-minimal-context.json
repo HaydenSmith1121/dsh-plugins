@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "johnx438-hub/dsh-minimal-context",
+  "slug": "johnx438-hub__dsh-minimal-context",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-minimal-context",
+  "title": "dsh-minimal-context",
+  "summary": "自动精简对话历史，把冗长的工具结果压缩成要点，帮智能体省上下文、降成本、提速度。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "资源优化",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "johnx438-hub",
+  "repo": "https://github.com/johnx438-hub/dsh-minimal-context",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T19:59:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-minimal-context",
+    "commands": [
+      "dsh plugin --profile web add dsh-minimal-context"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "zhang-guo-wen/dsh-claude-compat",
+  "slug": "zhang-guo-wen__dsh-claude-compat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-claude-compat",
+  "title": "dsh-claude-compat",
+  "summary": "让 DSH 直接复用你现有的 Claude Code 技能、规则和 MCP 配置，不用重新折腾。",
+  "tags": [
+    "dsh-plugin",
+    "桥接插件",
+    "模型配置",
+    "工具集成",
+    "零配置"
+  ],
+  "version": "0.1.1-alpha.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhang-guo-wen",
+  "repo": "https://github.com/zhang-guo-wen/dsh-claude-compat",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T05:45:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhang-guo-wen/dsh-claude-compat",
+    "commands": [
+      "dsh plugin --profile web add github:zhang-guo-wen/dsh-claude-compat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

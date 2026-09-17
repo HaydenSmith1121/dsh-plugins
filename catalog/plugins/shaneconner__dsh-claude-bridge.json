@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "shaneconner/dsh-claude-bridge",
+  "slug": "shaneconner__dsh-claude-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-claude-bridge",
+  "title": "dsh-claude-bridge",
+  "summary": "把 Claude Pro 或 Max 订阅变成 DeepSeek Harness 的模型后端，直接通过 Claude Code CLI 调用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "shaneconner",
+  "repo": "https://github.com/shaneconner/dsh-claude-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T20:19:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-claude-bridge",
+    "commands": [
+      "dsh plugin --profile web add dsh-claude-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

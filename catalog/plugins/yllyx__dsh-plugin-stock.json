@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "yllyx/dsh-plugin-stock",
+  "slug": "yllyx__dsh-plugin-stock",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-stock",
+  "title": "dsh-plugin-stock",
+  "summary": "专注A股行情监控与持仓跟踪，支持实时数据、K线与AI对话查询，后台自动运行辅助你理性决策。",
+  "tags": [
+    "china-stock",
+    "dsh-plugin",
+    "pytdx",
+    "stock",
+    "零配置",
+    "消息通知",
+    "模型配置"
+  ],
+  "version": "0.4.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yllyx",
+  "repo": "https://github.com/yllyx/dsh-plugin-stock",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-02T09:54:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-stock",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-stock"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

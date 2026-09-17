@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "chaos-03x/dsh-agy",
+  "slug": "chaos-03x__dsh-agy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agy",
+  "title": "dsh-agy",
+  "summary": "给 DeepSeek Harness 接入 Google Antigravity 模型，支持多账号池、429 自动轮换和命令行/网页登录。",
+  "tags": [
+    "agy",
+    "antigravity",
+    "claude",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "gemini",
+    "模型适配",
+    "模型配置",
+    "命令行工具",
+    "工具集成",
+    "资源优化"
+  ],
+  "version": "0.2.6",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chaos-03x",
+  "repo": "https://github.com/chaos-03x/dsh-agy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 40,
+  "forks": 14,
+  "pushedAt": "2026-09-06T02:17:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-agy",
+    "commands": [
+      "dsh plugin --profile web add dsh-agy",
+      "npm install -g dsh-agy",
+      "git clone https://github.com/chaos-03x/dsh-agy.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

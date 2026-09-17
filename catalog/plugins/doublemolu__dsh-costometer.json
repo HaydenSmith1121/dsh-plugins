@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "doublemolu/dsh-costometer",
+  "slug": "doublemolu__dsh-costometer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-costometer",
+  "title": "dsh-costometer",
+  "summary": "实时查看 DeepSeek 账户余额、充值记录和每次对话的花费与 token 用量，带低余额提醒和分段进度条，帮你管住钱包。",
+  "tags": [
+    "balance",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "状态监控",
+    "资源优化",
+    "会话管理",
+    "可视化"
+  ],
+  "version": "1.2.8",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.8",
+    "publishedAt": "2026-09-01T07:11:02Z",
+    "url": "https://github.com/doublemolu/dsh-costometer/releases/tag/v1.2.8"
+  },
+  "author": "doublemolu",
+  "repo": "https://github.com/doublemolu/dsh-costometer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-01T07:07:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:doublemolu/dsh-costometer",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/doublemolu/dsh-costometer.git",
+      "git clone https://github.com/doublemolu/dsh-costometer.git",
+      "pnpm add file:/absolute/path/to/dsh-costometer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

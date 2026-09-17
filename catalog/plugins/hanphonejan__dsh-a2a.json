@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "HanphoneJan/dsh-a2a",
+  "slug": "hanphonejan__dsh-a2a",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-a2a",
+  "title": "dsh-a2a",
+  "summary": "让 DeepSeek Harness 支持 A2A 协议，实现智能体间的双向通信与协作。",
+  "tags": [
+    "a2a",
+    "dsh-plugin",
+    "多Agent协作",
+    "模型配置",
+    "插件管理"
+  ],
+  "version": "0.3.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "HanphoneJan",
+  "repo": "https://github.com/HanphoneJan/dsh-a2a",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T04:57:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@hanphone/dsh-a2a",
+    "commands": [
+      "dsh plugin --profile web add @hanphone/dsh-a2a",
+      "dsh plugin --profile <name> add @hanphone/dsh-a2a",
+      "dsh plugin --profile <name> add <path-to>/hanphone-dsh-a2a-<version>.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

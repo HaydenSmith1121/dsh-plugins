@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "534119219/chicheng-push",
+  "slug": "534119219__chicheng-push",
+  "tier": "community",
+  "package": null,
+  "name": "chicheng-push",
+  "title": "chicheng-push",
+  "summary": "DSH网页消息推送插件，支持Server酱、PushPlus、Bark、钉钉、企微、Telegram等多种渠道，方便其他插件调用接口发送通知。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "状态监控",
+    "零配置",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "534119219",
+  "repo": "https://github.com/534119219/chicheng-push",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-08-16T15:37:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "chicheng-push",
+    "commands": [
+      "dsh plugin --profile web add chicheng-push",
+      "dsh plugin --profile web add chicheng-push-0.1.0.tgz",
+      "dsh plugin --profile web add D:\\Harness\\chicheng-push"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

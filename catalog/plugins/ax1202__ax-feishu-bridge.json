@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "AX1202/ax-feishu-bridge",
+  "slug": "ax1202__ax-feishu-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "ax-feishu-bridge",
+  "title": "ax-feishu-bridge",
+  "summary": "把飞书/Lark 变成你的编程助手聊天窗口，随时远程和本机 DSH、Pi 对话协作。",
+  "tags": [
+    "chatbot",
+    "cordis",
+    "dsh",
+    "dsh-plugin",
+    "feishu",
+    "lark",
+    "pi-plugin",
+    "桥接插件",
+    "工具集成",
+    "AI 助手",
+    "跨设备",
+    "会话管理"
+  ],
+  "version": "0.4.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.9",
+    "publishedAt": "2026-08-27T13:50:13Z",
+    "url": "https://github.com/AX1202/ax-feishu-bridge/releases/tag/v0.4.9"
+  },
+  "author": "AX1202",
+  "repo": "https://github.com/AX1202/ax-feishu-bridge",
+  "homepage": null,
+  "license": null,
+  "stars": 47,
+  "forks": 27,
+  "pushedAt": "2026-08-27T13:50:13Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AX1202/ax-feishu-bridge",
+    "commands": [
+      "dsh plugin --profile web add ax-feishu-bridge --ignore-scripts"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

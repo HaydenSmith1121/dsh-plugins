@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "TwilightSpirit/dsh-message-edit",
+  "slug": "twilightspirit__dsh-message-edit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-message-edit",
+  "title": "dsh-message-edit",
+  "summary": "给消息气泡加个修改按钮，改完直接改写模型上下文，还能保留审计记录。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "快捷操作",
+    "会话管理",
+    "数据可审计",
+    "前端增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "TwilightSpirit",
+  "repo": "https://github.com/TwilightSpirit/dsh-message-edit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-22T15:46:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TwilightSpirit/dsh-message-edit",
+    "commands": [
+      "dsh plugin --profile web add github:TwilightSpirit/dsh-message-edit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

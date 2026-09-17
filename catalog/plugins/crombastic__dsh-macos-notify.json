@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "CrombastiC/dsh-macos-notify",
+  "slug": "crombastic__dsh-macos-notify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-macos-notify",
+  "title": "dsh-macos-notify",
+  "summary": "让 DeepSeek Harness 在 macOS 上发送原生通知，支持自定义声音、过滤和合并任务提醒，实时掌握运行状态。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "macos",
+    "状态监控",
+    "效率提升",
+    "自动化",
+    "设置面板"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-08-18T07:14:42Z",
+    "url": "https://github.com/CrombastiC/dsh-macos-notify/releases/tag/v0.3.0"
+  },
+  "author": "CrombastiC",
+  "repo": "https://github.com/CrombastiC/dsh-macos-notify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-05T03:40:06Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CrombastiC/dsh-macos-notify",
+    "commands": [
+      "dsh plugin --profile web add github:CrombastiC/dsh-macos-notify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

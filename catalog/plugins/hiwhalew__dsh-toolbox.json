@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "HiWhaleW/dsh-toolbox",
+  "slug": "hiwhalew__dsh-toolbox",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-toolbox",
+  "title": "dsh-toolbox",
+  "summary": "本地优先的插件工具集，帮你做产品调研、路由上下文、插件预检和兼容性监控，让插件管理更省心。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "可验证执行",
+    "自动化",
+    "资源优化",
+    "状态监控"
+  ],
+  "version": "0.2.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "HiWhaleW",
+  "repo": "https://github.com/HiWhaleW/dsh-toolbox",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 29,
+  "forks": 0,
+  "pushedAt": "2026-09-03T12:06:27Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:HiWhaleW/dsh-toolbox",
+    "commands": [
+      "npm install --global @deepseek-ai/dsh@0.1.1-rc.2",
+      "git clone https://github.com/HiWhaleW/dsh-toolbox.git",
+      "dsh plugin --profile toolbox add ./dist/dsh-toolbox-product-research-workbench-0.2.1.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

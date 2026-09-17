@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "hherosoul/dsh-smart-charts",
+  "slug": "hherosoul__dsh-smart-charts",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-smart-charts",
+  "title": "dsh-smart-charts",
+  "summary": "把 CSV、Excel、JSON 数据一键变成交互式图表网页，自动识别数据形态并推荐图表，支持多文件合并和离线渲染。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "效率提升",
+    "零配置",
+    "桌宠",
+    "前端增强"
+  ],
+  "version": "8.0.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hherosoul",
+  "repo": "https://github.com/hherosoul/dsh-smart-charts",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 11,
+  "forks": 1,
+  "pushedAt": "2026-09-01T01:00:06Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hherosoul/dsh-smart-charts",
+    "commands": [
+      "dsh plugin --profile web add github:hherosoul/dsh-smart-charts"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

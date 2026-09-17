@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "xi-kari/dsh-amphoreus",
+  "slug": "xi-kari__dsh-amphoreus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-amphoreus",
+  "title": "dsh-amphoreus",
+  "summary": "把翁法罗斯黄金裔的席位概念搬进 DSH，给你一个可视化画布工作台，方便管理多个 Agent 的工作区与协作流程。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "star-rail",
+    "工作区管理",
+    "多Agent协作",
+    "可视化",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-06T01:03:21Z",
+    "url": "https://github.com/xi-kari/dsh-amphoreus/releases/tag/v0.3.0"
+  },
+  "author": "xi-kari",
+  "repo": "https://github.com/xi-kari/dsh-amphoreus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-06T01:22:32Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-amphoreus@alpha",
+    "commands": [
+      "dsh plugin --profile web add dsh-amphoreus@alpha",
+      "dsh plugin --profile web add dsh-amphoreus@0.3.0",
+      "dsh plugin --profile web add ./dsh-amphoreus-0.3.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

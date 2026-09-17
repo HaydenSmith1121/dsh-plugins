@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "lkh081231/screenshot-feedback-hook-mcp",
+  "slug": "lkh081231__screenshot-feedback-hook-mcp",
+  "tier": "community",
+  "package": null,
+  "name": "screenshot-feedback-hook-mcp",
+  "title": "screenshot-feedback-hook-mcp",
+  "summary": "让编程助手实时看到自己构建的界面，跨平台截图反馈，开发调试更直观。",
+  "tags": [
+    "claude-code",
+    "dsh-plugin",
+    "mcp",
+    "screenshots",
+    "自动化",
+    "工作流增强",
+    "状态监控",
+    "命令行工具",
+    "模型配置"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "lkh081231",
+  "repo": "https://github.com/lkh081231/screenshot-feedback-hook-mcp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-31T11:42:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lkh081231/screenshot-feedback-hook-mcp",
+    "commands": [
+      "dsh plugin --profile web add github:lkh081231/screenshot-feedback-hook-mcp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

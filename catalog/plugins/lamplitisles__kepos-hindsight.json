@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "LamplitIsles/kepos-hindsight",
+  "slug": "lamplitisles__kepos-hindsight",
+  "tier": "community",
+  "package": null,
+  "name": "kepos-hindsight",
+  "title": "kepos-hindsight",
+  "summary": "给陪伴式智能体装上长期记忆，让对话更懂你，告别每次重头聊。",
+  "tags": [
+    "agent-memory",
+    "companion-ai",
+    "dsh-plugin",
+    "会话管理",
+    "语义检索",
+    "多Agent协作",
+    "效率提升",
+    "模型配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "LamplitIsles",
+  "repo": "https://github.com/LamplitIsles/kepos-hindsight",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T13:58:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@lamplitisles/kepos-hindsight",
+    "commands": [
+      "dsh plugin --profile web add file:/absolute/path/to/kepos-hindsight",
+      "dsh plugin --profile web add @lamplitisles/kepos-hindsight"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

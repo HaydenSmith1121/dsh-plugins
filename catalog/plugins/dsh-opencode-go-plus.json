@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "dsh-opencode-go-plus",
+  "slug": "dsh-opencode-go-plus",
+  "tier": "verified",
+  "package": "dsh-opencode-go-plus",
+  "name": "dsh-opencode-go-plus",
+  "title": "OpenCode Go 模型供应商（自研维护分支）",
+  "summary": "OpenCode Go 的模型供应商适配器，本仓库维护的派生分支：修复上游改名后客户端注册 id 错配导致的白屏，并在「设置 → 模型」页给出一条 OpenCode Go 行（不再自带侧边栏分区）。取代 dsh-opencode-go，两者不能同装。",
+  "tags": [
+    "模型接入",
+    "自研",
+    "运行关键"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:25:08.895Z",
+  "latestRelease": null,
+  "author": "HaydenSmith1121",
+  "repo": "https://github.com/HaydenSmith1121/dsh-plugin-collection",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": null,
+  "pushedAt": null,
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": "0.1.6-alpha.1",
+  "peerVerdict": "critical",
+  "peerNote": "整套 @deepseek-ai/* 精确 pin 在 0.1.6-alpha.1 —— 沿用基线、未做改动，所以它仍是决定整批插件运行时基线的那一个。0.1.5-rc.x 内置的 @deepseek-ai/dsh-llm 缺 IMAGE_OFFLOAD_REQUIRED_CODE / offloadedImageText / projectOffloadedImages / requiredImageOffload 导出 → ESM 具名导入确定性失败 → 整棵插件树加载失败、dsh web 完全起不来。上游 0.1.0 / 0.1.1 / 0.1.2 全部要求 alpha，没有兼容 0.1.5 的版本可选，所以只能升 dsh、不能退插件。",
+  "coexistenceWarning": null,
+  "notes": "上游 0.1.2 的 peerDependencies / dependencies 原样保留（0.3.0 只去掉了一个 peer：@deepseek-ai/dsh-client-ui-settings，客户端不再读 settings scope 服务），files 字段沿用上游写法（lib / cordis.patch.yml / THIRD_PARTY_NOTICES.md / docs / examples），package.json 与 LICENSE、README.md 由 npm 自动附带。包内 docs/verification.md 是分发版的实测记录 —— 基线那份描述的是源码仓库，它引用的 npm run typecheck / npm test / verify:installed 在 tarball 里根本没有对应文件，跑不通。★ 0.3.0 的注册细节：可配置 provider 目录拒绝重复声明，而 opencode-go 已被 @deepseek-ai/dsh-llm-pi-ai 声明（它内置的 pi-ai 目录里就有同名路由，declared: false），所以本包把这一行声明在 opencode-go-plus 上 —— 若声明成 opencode-go，registerConfigurableProviders 会抛 DUPLICATE_DIRECTORY，且异常从 apply() 里逸出，其后所有语句（含路由注册与设置段安装）全部跳过，插件彻底失效：实测 listProviders() 里只剩先注册的那一个，插件自己的 route registered 日志根本不出现；换成 opencode-go-plus 后启动干净，目录里恰好新增一条 opencode-go-plus <- llm-opencode-go[]，模型页的 OpenCode Go 行随之出现（显示名 + 凭据绿点，凭据引用取本段 apiKeyEnv，即插件真正在用的那把 key）。",
+  "sha256Note": null,
+  "install": {
+    "method": "tarball",
+    "spec": null,
+    "commands": [
+      "# 下载 plugins/dsh-opencode-go-plus/0.1.6-alpha.1/dsh-opencode-go-plus-0.3.0.tgz",
+      "dsh plugin --profile web add <下载后的 .tgz 绝对路径>"
+    ],
+    "url": "https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugin-collection/main/plugins/dsh-opencode-go-plus/0.1.6-alpha.1/dsh-opencode-go-plus-0.3.0.tgz",
+    "sha256": "481b8f6bbdee38dc15d2b5cc729fbe7bc25edea6ce52d0f11e69f5d66252cc37",
+    "bytes": 65141,
+    "tarball": "plugins/dsh-opencode-go-plus/0.1.6-alpha.1/dsh-opencode-go-plus-0.3.0.tgz",
+    "dshVersion": "0.1.6-alpha.1",
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "collection",
+    "url": "https://github.com/HaydenSmith1121/dsh-plugin-collection",
+    "firstSeenAt": "2026-09-17T16:23:45.415Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

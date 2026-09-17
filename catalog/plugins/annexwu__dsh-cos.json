@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "annexwu/dsh-cos",
+  "slug": "annexwu__dsh-cos",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cos",
+  "title": "dsh-cos",
+  "summary": "一键接入腾讯云 COS，让你在 DSH 网页端轻松备份、同步和管理云端文件。",
+  "tags": [
+    "dsh-plugin",
+    "文件管理",
+    "零配置",
+    "云存储"
+  ],
+  "version": "0.2.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "annexwu",
+  "repo": "https://github.com/annexwu/dsh-cos",
+  "homepage": null,
+  "license": null,
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-08T03:01:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-cos",
+    "commands": [
+      "dsh plugin --profile web add dsh-cos"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

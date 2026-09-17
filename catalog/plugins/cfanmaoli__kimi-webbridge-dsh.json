@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "cfanmaoli/kimi-webbridge-dsh",
+  "slug": "cfanmaoli__kimi-webbridge-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "kimi-webbridge-dsh",
+  "title": "kimi-webbridge-dsh",
+  "summary": "自动下载并守护 Kimi WebBridge 进程，启动时注册技能，让 Kimi 能力即插即用。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "AI 助手",
+    "模型配置",
+    "状态监控"
+  ],
+  "version": "1.4.8",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.4.8",
+    "publishedAt": "2026-09-10T12:06:53Z",
+    "url": "https://github.com/cfanmaoli/kimi-webbridge-dsh/releases/tag/v1.4.8"
+  },
+  "author": "cfanmaoli",
+  "repo": "https://github.com/cfanmaoli/kimi-webbridge-dsh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T12:06:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cfanmaoli/kimi-webbridge-dsh",
+    "commands": [
+      "dsh plugin --profile web add github:cfanmaoli/kimi-webbridge-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

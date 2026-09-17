@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "zhuifengqug/dsh-adaptive-reasoning",
+  "slug": "zhuifengqug__dsh-adaptive-reasoning",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-adaptive-reasoning",
+  "title": "dsh-adaptive-reasoning",
+  "summary": "内置推理力度滑块，按需调节模型思考深度，轻松在响应速度和回答质量之间找到最佳平衡。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "reasoning",
+    "效率提升",
+    "资源优化",
+    "会话管理"
+  ],
+  "version": "2.0.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhuifengqug",
+  "repo": "https://github.com/zhuifengqug/dsh-adaptive-reasoning",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-23T03:27:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-adaptive-reasoning",
+    "commands": [
+      "dsh plugin --profile web add dsh-adaptive-reasoning",
+      "dsh plugin --profile web add github:zhuifengqug/dsh-adaptive-reasoning"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "jmcc-guo/dsh-ssh",
+  "slug": "jmcc-guo__dsh-ssh",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ssh",
+  "title": "dsh-ssh",
+  "summary": "在 DeepSeek Harness 里直接管理 SSH 连接，带多标签实时终端面板，操作更顺手。",
+  "tags": [
+    "dsh-plugin",
+    "远程控制",
+    "命令行工具",
+    "多标签",
+    "远程管理"
+  ],
+  "version": "0.5.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jmcc-guo",
+  "repo": "https://github.com/jmcc-guo/dsh-ssh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-10T03:56:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@jmcc-guo/dsh-ssh",
+    "commands": [
+      "dsh plugin --profile web add @jmcc-guo/dsh-ssh",
+      "dsh plugin --profile web add \"github:jmcc-guo/dsh-ssh",
+      "dsh plugin --profile web add <path-to-this-repo>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

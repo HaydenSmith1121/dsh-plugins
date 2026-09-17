@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "qiuyiwu1989-star/dsh-deepbrain",
+  "slug": "qiuyiwu1989-star__dsh-deepbrain",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-deepbrain",
+  "title": "dsh-deepbrain",
+  "summary": "把组织的“第二大脑”接入 DeepSeek Harness，让 AI 直接调用带证据链的结论、原话引述和可复用的分析方法。",
+  "tags": [
+    "ai-agent",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mcp",
+    "second-brain",
+    "AI 助手",
+    "语义检索",
+    "多Agent协作",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "qiuyiwu1989-star",
+  "repo": "https://github.com/qiuyiwu1989-star/dsh-deepbrain",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-07T11:28:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qiuyiwu1989-star/dsh-deepbrain",
+    "commands": [
+      "dsh plugin --profile web add github:qiuyiwu1989-star/dsh-deepbrain"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

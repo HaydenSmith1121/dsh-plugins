@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "spirits001/dsh-tokensforce",
+  "slug": "spirits001__dsh-tokensforce",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tokensforce",
+  "title": "dsh-tokensforce",
+  "summary": "快速接入 TokensForce 网关，支持一键登录、模型分组与用量看板，帮你轻松管理 AI 服务。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "model-gateway",
+    "tokensforce",
+    "模型配置",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.6.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "spirits001",
+  "repo": "https://github.com/spirits001/dsh-tokensforce",
+  "homepage": "https://tokensforce.com",
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-05T16:15:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-tokensforce",
+    "commands": [
+      "dsh plugin --profile web add dsh-tokensforce"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

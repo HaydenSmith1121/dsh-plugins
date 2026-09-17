@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "zoahdev/dsh-cn-boot",
+  "slug": "zoahdev__dsh-cn-boot",
+  "tier": "community",
+  "package": null,
+  "name": "zoahdev/dsh-cn-boot",
+  "title": "zoahdev/dsh-cn-boot",
+  "summary": "自动探测国内网络环境，推荐可用的镜像和代理，并生成一键配置脚本。",
+  "tags": [
+    "bootstrap",
+    "china",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mirror",
+    "network",
+    "命令行工具",
+    "工具集成",
+    "零配置",
+    "效率提升",
+    "资源优化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-18T10:50:44Z",
+    "url": "https://github.com/zoahdev/dsh-cn-boot/releases/tag/v0.1.0"
+  },
+  "author": "zoahdev",
+  "repo": "https://github.com/zoahdev/dsh-cn-boot",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-18T22:30:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-cn-boot",
+    "commands": [
+      "dsh plugin add dsh-cn-boot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

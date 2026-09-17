@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "hasan-aghayev/dsh-session-resilience",
+  "slug": "hasan-aghayev__dsh-session-resilience",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-resilience",
+  "title": "dsh-session-resilience",
+  "summary": "DSH 重启后自动恢复会话，断线重连不丢上下文，还能按策略续上没做完的活。",
+  "tags": [
+    "auto-continue",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "resilience",
+    "restart",
+    "session-recovery",
+    "会话管理",
+    "状态监控",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-16T00:32:36Z",
+    "url": "https://github.com/hasan-aghayev/dsh-session-resilience/releases/tag/v0.1.1"
+  },
+  "author": "hasan-aghayev",
+  "repo": "https://github.com/hasan-aghayev/dsh-session-resilience",
+  "homepage": "https://github.com/hasan-aghayev/dsh-session-resilience#readme",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T00:32:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hasan-aghayev/dsh-session-resilience",
+    "commands": [
+      "dsh plugin --profile web add github:hasan-aghayev/dsh-session-resilience"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "himeope/dsh-queue-first-enter",
+  "slug": "himeope__dsh-queue-first-enter",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-queue-first-enter",
+  "title": "dsh-queue-first-enter",
+  "summary": "在输入框为空时按回车，立即将队列中的第一条消息送入当前对话，提升多轮交互效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "自动化",
+    "工作流增强",
+    "插件管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-09T05:06:22Z",
+    "url": "https://github.com/himeope/dsh-queue-first-enter/releases/tag/v1.0.0"
+  },
+  "author": "himeope",
+  "repo": "https://github.com/himeope/dsh-queue-first-enter",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T05:44:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:himeope/dsh-queue-first-enter",
+    "commands": [
+      "dsh plugin --profile web add github:himeope/dsh-queue-first-enter",
+      "dsh plugin --profile web add /path/to/dsh-queue-first-enter"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "Raylen-berry/dsh-browser-live",
+  "slug": "raylen-berry__dsh-browser-live",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-browser-live",
+  "title": "dsh-browser-live",
+  "summary": "让AI直接驱动你本机浏览器干活，右下角实时围观操作过程，还能随时接管鼠标键盘。",
+  "tags": [
+    "ai-agent",
+    "browser-automation",
+    "cdp",
+    "chrome-devtools-protocol",
+    "deepseek-harness",
+    "dsh",
+    "observed-ui",
+    "plugin",
+    "web-scraping",
+    "自动化",
+    "可视化",
+    "状态监控",
+    "工具集成"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-08T09:42:37Z",
+    "url": "https://github.com/Raylen-berry/dsh-browser-live/releases/tag/v0.3.0"
+  },
+  "author": "Raylen-berry",
+  "repo": "https://github.com/Raylen-berry/dsh-browser-live",
+  "homepage": "https://github.com/Raylen-berry/dsh-browser-live#readme",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T07:46:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Raylen-berry/dsh-browser-live",
+    "commands": [
+      "dsh plugin --profile web add github:Raylen-berry/dsh-browser-live"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

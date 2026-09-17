@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "duhu2000/dsh-data-cleaning-agent",
+  "slug": "duhu2000__dsh-data-cleaning-agent",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-data-cleaning-agent",
+  "title": "dsh-data-cleaning-agent",
+  "summary": "面向 Excel/CSV/JSON 企业名单的一站式数据清洗与补全工具，支持去重、字段补全和企查查数据增强，自动生成新文件不修改原数据。",
+  "tags": [
+    "data-cleaning",
+    "data-enrichment",
+    "dsh-plugin",
+    "enterprise-data",
+    "spreadsheet-cleaning",
+    "效率提升",
+    "自动化",
+    "工具集成",
+    "数据清洗",
+    "数据补全"
+  ],
+  "version": "0.9.16",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.9.16",
+    "publishedAt": "2026-09-15T09:07:10Z",
+    "url": "https://github.com/duhu2000/dsh-data-cleaning-agent/releases/tag/v0.9.16"
+  },
+  "author": "duhu2000",
+  "repo": "https://github.com/duhu2000/dsh-data-cleaning-agent",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T09:06:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-data-cleaning-agent@0.9.15",
+    "commands": [
+      "dsh plugin --profile web add dsh-data-cleaning-agent@0.9.15"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

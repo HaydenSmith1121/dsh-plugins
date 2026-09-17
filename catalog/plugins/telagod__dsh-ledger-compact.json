@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "telagod/dsh-ledger-compact",
+  "slug": "telagod__dsh-ledger-compact",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ledger-compact",
+  "title": "dsh-ledger-compact",
+  "summary": "在工具结果送达模型前进行压缩整形，并支持本地快速压缩，提升 DeepSeek Harness 处理效率。",
+  "tags": [
+    "compaction",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "模型适配",
+    "插件管理",
+    "资源优化"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-05T10:00:24Z",
+    "url": "https://github.com/telagod/dsh-ledger-compact/releases/tag/v0.3.0"
+  },
+  "author": "telagod",
+  "repo": "https://github.com/telagod/dsh-ledger-compact",
+  "homepage": "https://github.com/telagod/dsh-ledger-compact",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-11T09:43:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:telagod/dsh-ledger-compact",
+    "commands": [
+      "dsh plugin --profile web add github:telagod/dsh-ledger-compact",
+      "git clone https://github.com/telagod/dsh-ledger-compact.git",
+      "dsh plugin --profile web add ./dsh-ledger-compact"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

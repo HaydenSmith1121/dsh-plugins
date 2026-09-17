@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "jinsiyu/dsh-safemode-profile",
+  "slug": "jinsiyu__dsh-safemode-profile",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-safemode-profile",
+  "title": "dsh-safemode-profile",
+  "summary": "让 dsh 以安全模式启动，强制清空第三方插件，只保留白名单核心功能，排查问题更放心。",
+  "tags": [
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dsh-plugins",
+    "安全审计",
+    "插件管理",
+    "命令行工具",
+    "状态监控"
+  ],
+  "version": "0.3.12",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jinsiyu",
+  "repo": "https://github.com/jinsiyu/dsh-safemode-profile",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-02T11:27:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jinsiyu/dsh-safemode-profile",
+    "commands": [
+      "dsh plugin --profile web add github:jinsiyu/dsh-safemode-profile"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

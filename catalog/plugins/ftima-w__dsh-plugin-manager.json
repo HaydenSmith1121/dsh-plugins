@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ftima-w/dsh-plugin-manager",
+  "slug": "ftima-w__dsh-plugin-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-manager",
+  "title": "dsh-plugin-manager",
+  "summary": "在 DSH 设置面板里像管 App 一样开关、停止、删除 MCP 服务、Skills 和插件，改完立刻生效不用重启。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "插件管理",
+    "设置面板",
+    "工具集成",
+    "快捷操作"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ftima-w",
+  "repo": "https://github.com/ftima-w/dsh-plugin-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-16T16:37:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ftima-w/dsh-plugin-manager",
+    "commands": [
+      "git clone https://github.com/liqichen/dsh-plugin-manager.git",
+      "dsh plugin --profile web add ~/.dsh/plugins/dsh-plugin-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

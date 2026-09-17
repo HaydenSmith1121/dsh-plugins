@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "justarook1e/dsh-file-edit",
+  "slug": "justarook1e__dsh-file-edit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-file-edit",
+  "title": "dsh-file-edit",
+  "summary": "在 DSH 网页界面里直接浏览和编辑文件，支持 AI 改动的审阅、接受或拒绝，还能看差异对比和 Markdown 渲染效果。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "工作流增强",
+    "效率提升",
+    "工作区管理"
+  ],
+  "version": "1.12.6",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "justarook1e",
+  "repo": "https://github.com/justarook1e/dsh-file-edit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T13:07:05Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:justarook1e/dsh-file-edit",
+    "commands": [
+      "dsh plugin --profile web add github:justarook1e/dsh-file-edit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

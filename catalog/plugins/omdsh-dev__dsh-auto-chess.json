@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "omdsh-dev/dsh-auto-chess",
+  "slug": "omdsh-dev__dsh-auto-chess",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auto-chess",
+  "title": "dsh-auto-chess",
+  "summary": "在DSH聊天界面里玩自走棋，可以人机对战或看两个AI互相对弈，每步决策都是真实模型请求。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "娱乐互动",
+    "游戏对战",
+    "模型演示"
+  ],
+  "version": "0.0.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "omdsh-dev",
+  "repo": "https://github.com/omdsh-dev/dsh-auto-chess",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-13T09:29:29Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:omdsh-dev/dsh-auto-chess",
+    "commands": [
+      "dsh plugin --profile web add /Users/yejiming/Desktop/OpenSource/dsh-auto-chess"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

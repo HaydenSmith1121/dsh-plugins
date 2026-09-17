@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "MingYU-kalo/dsh-https-fix",
+  "slug": "mingyu-kalo__dsh-https-fix",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-https-fix",
+  "title": "dsh-https-fix",
+  "summary": "给 dsh 的 Web GUI 加个 HTTPS 反向代理，配上账密登录和证书，外网也能安全访问。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "网络代理",
+    "安全审计",
+    "设置面板",
+    "插件管理"
+  ],
+  "version": "0.1.5-rc.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "MingYU-kalo",
+  "repo": "https://github.com/MingYU-kalo/dsh-https-fix",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T18:30:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MingYU-kalo/dsh-https-fix",
+    "commands": [
+      "dsh plugin --profile web add github:MingYU-kalo/dsh-https-fix"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

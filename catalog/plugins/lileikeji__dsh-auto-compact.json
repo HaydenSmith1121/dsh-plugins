@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "lileikeji/dsh-auto-compact",
+  "slug": "lileikeji__dsh-auto-compact",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auto-compact",
+  "title": "dsh-auto-compact",
+  "summary": "自动监测对话长度，上下文快满时智能摘要压缩，防溢出且更省Token。",
+  "tags": [
+    "context-compaction",
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "summarization",
+    "资源优化",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lileikeji",
+  "repo": "https://github.com/lileikeji/dsh-auto-compact",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-25T23:19:16Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lileikeji/dsh-auto-compact",
+    "commands": [
+      "pnpm add -w dsh-auto-compact",
+      "pnpm add -w dsh-auto-compact@github:lileikeji/dsh-auto-compact"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

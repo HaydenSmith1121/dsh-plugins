@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "jkStars/dsh-token-usage-stats",
+  "slug": "jkstars__dsh-token-usage-stats",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-token-usage-stats",
+  "title": "dsh-token-usage-stats",
+  "summary": "跨会话统计 Token 用量和请求次数，自带可视化仪表盘，帮你掌握成本与消耗趋势。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "dsh-token-monitor",
+    "资源优化",
+    "状态监控",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.3.6",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jkStars",
+  "repo": "https://github.com/jkStars/dsh-token-usage-stats",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-12T06:04:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-token-usage-stats@0.3.13",
+    "commands": [
+      "dsh plugin --profile web add dsh-token-usage-stats@0.3.13",
+      "dsh plugin --profile web add dsh-token-usage-stats@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

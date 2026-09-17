@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Hou-DL/dsh-token-pulse",
+  "slug": "hou-dl__dsh-token-pulse",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-token-pulse",
+  "title": "dsh-token-pulse",
+  "summary": "在 DSH Web 设置页里查看本地 Token 用量热图，按小时/周/月/季度/年展示，完全本地统计，不花一分钱。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "状态监控",
+    "资源优化",
+    "设置面板",
+    "零配置"
+  ],
+  "version": "0.3.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Hou-DL",
+  "repo": "https://github.com/Hou-DL/dsh-token-pulse",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-06T08:05:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-token-pulse",
+    "commands": [
+      "dsh plugin --profile web add dsh-token-pulse",
+      "dsh plugin --profile web add github:Hou-DL/dsh-token-pulse",
+      "dsh plugin --profile web add \"git+https://gitee.com/HouDL/dsh-token-pulse.git\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

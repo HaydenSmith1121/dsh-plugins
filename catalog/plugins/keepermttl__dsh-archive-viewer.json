@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "keepermttl/dsh-archive-viewer",
+  "slug": "keepermttl__dsh-archive-viewer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-archive-viewer",
+  "title": "dsh-archive-viewer",
+  "summary": "在 DSH 网页界面里查看和恢复已归档的会话，还能一键关闭 dsh，省得翻文件找记录。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin",
+    "session-archive",
+    "web-ui",
+    "会话管理",
+    "工作区管理",
+    "快捷操作",
+    "前端增强"
+  ],
+  "version": "3.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v3.1.0",
+    "publishedAt": "2026-09-12T12:22:50Z",
+    "url": "https://github.com/keepermttl/dsh-archive-viewer/releases/tag/v3.1.0"
+  },
+  "author": "keepermttl",
+  "repo": "https://github.com/keepermttl/dsh-archive-viewer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-12T12:22:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:keepermttl/dsh-archive-viewer",
+    "commands": [
+      "git clone https://github.com/keepermttl/dsh-archive-viewer.git",
+      "dsh plugin --profile web add link:$(pwd)",
+      "dsh plugin --profile web add link:E:\\path\\to\\dsh-archive-viewer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

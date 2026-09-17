@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "zaizaizhao/dsh-branchmark",
+  "slug": "zaizaizhao__dsh-branchmark",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-branchmark",
+  "title": "dsh-branchmark",
+  "summary": "边写代码边摘录灵感，随时保存有用答案、快速提问或开个相关对话，不打断当前思路。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "harness-framework",
+    "效率提升",
+    "会话管理",
+    "AI 助手",
+    "工作流增强"
+  ],
+  "version": "0.1.1-rc.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1-rc.2",
+    "publishedAt": "2026-09-02T14:29:04Z",
+    "url": "https://github.com/zaizaizhao/dsh-branchmark/releases/tag/v0.1.1-rc.2"
+  },
+  "author": "zaizaizhao",
+  "repo": "https://github.com/zaizaizhao/dsh-branchmark",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 24,
+  "forks": 0,
+  "pushedAt": "2026-09-07T13:42:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-branchmark@0.1.2-rc.2",
+    "commands": [
+      "npm install --global @deepseek-ai/dsh@0.1.2-rc.1",
+      "dsh plugin --profile web add dsh-branchmark@0.1.2-rc.2",
+      "dsh plugin --profile web remove dsh-branchmark"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

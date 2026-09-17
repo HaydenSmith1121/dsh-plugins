@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "lengduan/dsh-usage-stats",
+  "slug": "lengduan__dsh-usage-stats",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage-stats",
+  "title": "dsh-usage-stats",
+  "summary": "把每次模型调用的 token 用量记进本地账本，按天、服务商、模型分类统计，删会话也不丢数据。",
+  "tags": [
+    "dsh-plugin",
+    "成本控制",
+    "状态监控",
+    "内容创作",
+    "零配置"
+  ],
+  "version": "0.1.4",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lengduan",
+  "repo": "https://github.com/lengduan/dsh-usage-stats",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T12:16:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@lengduan/dsh-usage-stats",
+    "commands": [
+      "dsh plugin --profile web add @lengduan/dsh-usage-stats",
+      "dsh plugin --profile web update @lengduan/dsh-usage-stats"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

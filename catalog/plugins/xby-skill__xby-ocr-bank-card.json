@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-ocr-bank-card",
+  "slug": "xby-skill__xby-ocr-bank-card",
+  "tier": "community",
+  "package": null,
+  "name": "xby-ocr-bank-card",
+  "title": "xby-ocr-bank-card",
+  "summary": "上传银行卡图片，自动识别卡号、发卡银行和卡类型，并用Luhn算法校验卡号是否有效。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "效率提升",
+    "零配置",
+    "插件管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-ocr-bank-card",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:20:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-ocr-bank-card",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-ocr-bank-card",
+      "dsh plugin --profile web add /absolute/path/to/xby-ocr-bank-card"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

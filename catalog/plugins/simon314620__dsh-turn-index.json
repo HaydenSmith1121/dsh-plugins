@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Simon314620/dsh-turn-index",
+  "slug": "simon314620__dsh-turn-index",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-turn-index",
+  "title": "dsh-turn-index",
+  "summary": "在聊天界面右侧加一条轮次索引栏，点哪轮就跳到哪轮，滚动时还会自动高亮当前轮次。",
+  "tags": [
+    "dsh-plugin",
+    "快捷操作",
+    "会话管理",
+    "前端增强",
+    "可视化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Simon314620",
+  "repo": "https://github.com/Simon314620/dsh-turn-index",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-13T19:50:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-turn-index",
+    "commands": [
+      "dsh plugin --profile web add dsh-turn-index",
+      "dsh plugin --profile web add https://github.com/Simon314620/dsh-turn-index/archive/refs/tags/v0.1.1.tar.gz",
+      "dsh plugin --profile web add file:D:/path/to/dsh-turn-index"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

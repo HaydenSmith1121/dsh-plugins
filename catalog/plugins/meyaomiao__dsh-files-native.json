@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "meyaomiao/dsh-files-native",
+  "slug": "meyaomiao__dsh-files-native",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-files-native",
+  "title": "dsh-files-native",
+  "summary": "给 DeepSeek Harness 加上接近原生质感的附件上传，支持拖入、粘贴和回形针，图片与文件混排显示。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "前端增强",
+    "桌宠",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.2.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "meyaomiao",
+  "repo": "https://github.com/meyaomiao/dsh-files-native",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-14T15:28:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-files-native",
+    "commands": [
+      "npm i -g dsh-files-native",
+      "dsh plugin --profile web add dsh-files-native",
+      "dsh plugin --profile web add github:meyaomiao/dsh-files-native"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

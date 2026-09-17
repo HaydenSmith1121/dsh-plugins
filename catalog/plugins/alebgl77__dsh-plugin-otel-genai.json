@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "alebgl77/dsh-plugin-otel-genai",
+  "slug": "alebgl77__dsh-plugin-otel-genai",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-otel-genai",
+  "title": "dsh-plugin-otel-genai",
+  "summary": "把 DeepSeek Harness 的会话日志转成 OpenTelemetry 指标，按模型和供应商统计 token 用量与延迟，方便接入 Grafana 监控。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "grafana",
+    "llmops",
+    "opentelemetry",
+    "状态监控",
+    "可视化",
+    "模型配置",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-06T08:19:42Z",
+    "url": "https://github.com/alebgl77/dsh-plugin-otel-genai/releases/tag/v0.1.0"
+  },
+  "author": "alebgl77",
+  "repo": "https://github.com/alebgl77/dsh-plugin-otel-genai",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T08:19:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:alebgl77/dsh-plugin-otel-genai",
+    "commands": [
+      "npm install dsh-plugin-otel-genai"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

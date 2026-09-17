@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "inmny/dsh-sandbox-escalation-fix",
+  "slug": "inmny__dsh-sandbox-escalation-fix",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sandbox-escalation-fix",
+  "title": "dsh-sandbox-escalation-fix",
+  "summary": "修复DSH沟槽权限管理问题，自动忽略无效的权限升级请求，避免AI与权限系统反复冲突。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "设置面板",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "inmny",
+  "repo": "https://github.com/inmny/dsh-sandbox-escalation-fix",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 17,
+  "forks": 1,
+  "pushedAt": "2026-08-21T07:28:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-sandbox-escalation-fix@0.1.2",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-sandbox-escalation-fix@0.1.2",
+      "dsh plugin --profile web add dsh-plugin-sandbox-escalation-fix"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

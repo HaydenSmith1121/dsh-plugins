@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "levodoubt/dsh-longtext-input",
+  "slug": "levodoubt__dsh-longtext-input",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-longtext-input",
+  "title": "dsh-longtext-input",
+  "summary": "把超长正文存成工作区文件，输入框只留一个 @ 引用，聊天界面清爽不刷屏。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh",
+    "dsh-plugin",
+    "longtext",
+    "plugin",
+    "效率提升",
+    "工作区管理",
+    "文件管理",
+    "快捷操作",
+    "前端增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-12T08:30:12Z",
+    "url": "https://github.com/levodoubt/dsh-longtext-input/releases/tag/v1.0.0"
+  },
+  "author": "levodoubt",
+  "repo": "https://github.com/levodoubt/dsh-longtext-input",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T09:19:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:levodoubt/dsh-longtext-input",
+    "commands": [
+      "dsh plugin --profile web add github:levodoubt/dsh-longtext-input"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

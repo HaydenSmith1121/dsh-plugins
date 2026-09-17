@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "liudejua27-blip/fitmeet-dsh-plugin",
+  "slug": "liudejua27-blip__fitmeet-dsh-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "fitmeet-dsh-plugin",
+  "title": "fitmeet-dsh-plugin",
+  "summary": "在 DSH 里安全授权后找人、发帖、私聊，帮你搭建真人社交网络。",
+  "tags": [
+    "agent-skill",
+    "deepseek-harness",
+    "dsh-plugin",
+    "human-network",
+    "mcp",
+    "oauth",
+    "people-search",
+    "pkce",
+    "工具集成",
+    "AI 助手",
+    "消息通知",
+    "安全审计",
+    "娱乐互动"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-12T14:13:54Z",
+    "url": "https://github.com/liudejua27-blip/fitmeet-dsh-plugin/releases/tag/v0.1.2"
+  },
+  "author": "liudejua27-blip",
+  "repo": "https://github.com/liudejua27-blip/fitmeet-dsh-plugin",
+  "homepage": "https://fitmeet.cn/mcp",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T15:04:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:liudejua27-blip/fitmeet-dsh-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:liudejua27-blip/fitmeet-dsh-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

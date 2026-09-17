@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ddtcorex/dsh-maestro-govard",
+  "slug": "ddtcorex__dsh-maestro-govard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-maestro-govard",
+  "title": "dsh-maestro-govard",
+  "summary": "把 Govard 命令行工具桥接到 DeepSeek Harness，让智能体直接管理工作区和项目。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "docker",
+    "dsh-plugin",
+    "govard",
+    "laravel",
+    "maestro",
+    "magento2",
+    "文件管理",
+    "工作流增强",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-09-13T22:01:50Z",
+    "url": "https://github.com/ddtcorex/dsh-maestro-govard/releases/tag/v0.3.1"
+  },
+  "author": "ddtcorex",
+  "repo": "https://github.com/ddtcorex/dsh-maestro-govard",
+  "homepage": "https://github.com/ddtcorex/dsh-maestro-govard",
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-13T21:14:00Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@ddtcorex/dsh-maestro-govard",
+    "commands": [
+      "dsh plugin --profile web add @ddtcorex/dsh-maestro-govard",
+      "dsh plugin --profile web add @ddtcorex/dsh-maestro-meta"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Saretheya/dsh-settings-nav-order",
+  "slug": "saretheya__dsh-settings-nav-order",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-settings-nav-order",
+  "title": "dsh-settings-nav-order",
+  "summary": "长按拖动就能重排设置面板左侧的大项，顺序存在插件自己的文件夹里，卸载后自动还原。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "settings",
+    "ui",
+    "ui-design",
+    "设置面板",
+    "快捷操作",
+    "主题",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Saretheya",
+  "repo": "https://github.com/Saretheya/dsh-settings-nav-order",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T19:49:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-settings-nav-order",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh pnpm",
+      "dsh plugin --profile web add dsh-settings-nav-order"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

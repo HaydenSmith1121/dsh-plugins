@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "Hotsteel2901/dsh-client-ui-mobile-adapt",
+  "slug": "hotsteel2901__dsh-client-ui-mobile-adapt",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-client-ui-mobile-adapt",
+  "title": "dsh-client-ui-mobile-adapt",
+  "summary": "把 DeepSeek Harness 网页界面改造成手机友好版，专为 Termux 用户优化，单手操作更顺手。",
+  "tags": [
+    "android",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mobile-ui",
+    "responsive-design",
+    "termux",
+    "移动端",
+    "Termux优化",
+    "响应式界面",
+    "单手操作"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-14T11:21:36Z",
+    "url": "https://github.com/Hotsteel2901/dsh-client-ui-mobile-adapt/releases/tag/v0.1.0"
+  },
+  "author": "Hotsteel2901",
+  "repo": "https://github.com/Hotsteel2901/dsh-client-ui-mobile-adapt",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 10,
+  "forks": 2,
+  "pushedAt": "2026-08-28T09:15:02Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Hotsteel2901/dsh-client-ui-mobile-adapt",
+    "commands": [
+      "npm install",
+      "dsh plugin --profile web <profile 名> add https://github.com/Hotsteel2901/dsh-client-ui-mobile-adapt/archive/refs/heads/main.tar.gz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

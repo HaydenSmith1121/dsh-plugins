@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "xwh-01/dsh-mediacrawler",
+  "slug": "xwh-01__dsh-mediacrawler",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mediacrawler",
+  "title": "dsh-mediacrawler",
+  "summary": "为 DeepSeek Harness 集成 MediaCrawler，一键安装配置，轻松抓取社交媒体数据。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mcp",
+    "mediacrawler",
+    "python",
+    "web-crawler",
+    "社交媒体抓取",
+    "数据采集",
+    "MCP适配",
+    "零配置"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-08-14T09:10:54Z",
+    "url": "https://github.com/xwh-01/dsh-mediacrawler/releases/tag/v0.3.0"
+  },
+  "author": "xwh-01",
+  "repo": "https://github.com/xwh-01/dsh-mediacrawler",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-14T09:34:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xwh-01/dsh-mediacrawler",
+    "commands": [
+      "dsh plugin --profile web add github:xwh-01/dsh-mediacrawler"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

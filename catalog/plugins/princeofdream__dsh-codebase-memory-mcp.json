@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "princeofdream/dsh-codebase-memory-mcp",
+  "slug": "princeofdream__dsh-codebase-memory-mcp",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codebase-memory-mcp",
+  "title": "dsh-codebase-memory-mcp",
+  "summary": "将代码库知识图谱 MCP 服务接入 DSH，让你在对话中直接查询代码结构、依赖关系和调用链。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "语义检索",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "princeofdream",
+  "repo": "https://github.com/princeofdream/dsh-codebase-memory-mcp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-25T17:02:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-codebase-memory-mcp",
+    "commands": [
+      "dsh plugin --profile web add dsh-codebase-memory-mcp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

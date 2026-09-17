@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "bitterSmilezzz/dsh-model-selector",
+  "slug": "bittersmilezzz__dsh-model-selector",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-selector",
+  "title": "dsh-model-selector",
+  "summary": "把模型选择变成单层菜单，搜索分组一步到位，底部滑杆随手调推理强度。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "effort",
+    "model-selector",
+    "reasoning",
+    "ui",
+    "模型适配",
+    "快捷操作",
+    "主题",
+    "效率提升"
+  ],
+  "version": "0.1.18",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.18",
+    "publishedAt": "2026-09-14T07:45:50Z",
+    "url": "https://github.com/bitterSmilezzz/dsh-model-selector/releases/tag/v0.1.18"
+  },
+  "author": "bitterSmilezzz",
+  "repo": "https://github.com/bitterSmilezzz/dsh-model-selector",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T14:06:49Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bitterSmilezzz/dsh-model-selector",
+    "commands": [
+      "dsh plugin --profile <profile> add @bittersmilezzz/dsh-model-selector",
+      "dsh plugin --profile <profile> add github:bitterSmilezzz/dsh-model-selector",
+      "dsh plugin --profile <profile> add <path-to-repo>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

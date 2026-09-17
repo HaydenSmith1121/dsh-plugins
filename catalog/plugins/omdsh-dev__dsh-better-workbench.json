@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "omdsh-dev/dsh-better-workbench",
+  "slug": "omdsh-dev__dsh-better-workbench",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-better-workbench",
+  "title": "dsh-better-workbench",
+  "summary": "把常用页面和应用固定在工作台上，打造专属高效工作空间，快速访问不迷路。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "界面美化",
+    "工作流增强",
+    "前端增强"
+  ],
+  "version": "0.3.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "omdsh-dev",
+  "repo": "https://github.com/omdsh-dev/dsh-better-workbench",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T14:19:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-better-workbench",
+    "commands": [
+      "dsh plugin --profile web add dsh-better-workbench",
+      "dsh plugin --profile web add github:omdsh-dev/dsh-better-workbench",
+      "dsh plugin --profile web add /path/to/dsh-better-workbench"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

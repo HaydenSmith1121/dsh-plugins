@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "CroissanTTs/dsh-effort-slider",
+  "slug": "croissantts__dsh-effort-slider",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-effort-slider",
+  "title": "dsh-effort-slider",
+  "summary": "在对话输入框加个推理强度滑块，随时调节模型的思考深度，按会话生效。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "模型适配",
+    "快捷操作",
+    "前端增强",
+    "会话管理"
+  ],
+  "version": "1.3.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "CroissanTTs",
+  "repo": "https://github.com/CroissanTTs/dsh-effort-slider",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T05:21:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-reasoning-effort-slider",
+    "commands": [
+      "dsh plugin --profile web add dsh-reasoning-effort-slider"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

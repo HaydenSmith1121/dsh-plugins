@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "justwe-bot/dsh-browser",
+  "slug": "justwe-bot__dsh-browser",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-browser",
+  "title": "dsh-browser",
+  "summary": "让 DeepSeek Harness 智能体直接读取和操作浏览器标签页，实现网页自动化交互。",
+  "tags": [
+    "browser-automation",
+    "chrome-extension",
+    "deepseek-harness",
+    "dsh-plugin",
+    "自动化",
+    "AI 助手",
+    "桌宠",
+    "安全审计"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "justwe-bot",
+  "repo": "https://github.com/justwe-bot/dsh-browser",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 1,
+  "pushedAt": "2026-08-25T11:39:45Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:justwe-bot/dsh-browser",
+    "commands": [
+      "dsh plugin --profile web add github:justwe-bot/dsh-browser"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

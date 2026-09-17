@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "mitian233/dsh-plugin-commandcode-provider",
+  "slug": "mitian233__dsh-plugin-commandcode-provider",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-commandcode-provider",
+  "title": "dsh-plugin-commandcode-provider",
+  "summary": "为 DeepSeek Harness 接入 Command Code 大模型，让任务自动调用该模型执行。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "llm-provider",
+    "模型配置",
+    "插件管理",
+    "工具集成",
+    "命令行工具"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "mitian233",
+  "repo": "https://github.com/mitian233/dsh-plugin-commandcode-provider",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-09T02:02:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "dsh plugin --profile web add .",
+      "dsh plugin --profile web add ./dsh-plugin-commandcode-provider-0.1.0.tgz",
+      "dsh plugin --profile web add github:mitian233/dsh-plugin-commandcode-provider"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

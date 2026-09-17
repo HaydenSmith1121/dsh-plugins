@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "oksure/dsh-mobile-comfort",
+  "slug": "oksure__dsh-mobile-comfort",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mobile-comfort",
+  "title": "dsh-mobile-comfort",
+  "summary": "为触屏设备优化 DeepSeek Harness 网页端，修复幽灵提示和触摸操作问题，提升移动端使用体验。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "前端增强",
+    "桌宠",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "oksure",
+  "repo": "https://github.com/oksure/dsh-mobile-comfort",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-26T01:39:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:oksure/dsh-mobile-comfort",
+    "commands": [
+      "dsh plugin --profile web add file:/path/to/dsh-mobile-comfort"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

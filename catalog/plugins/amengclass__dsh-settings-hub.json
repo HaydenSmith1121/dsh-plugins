@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Amengclass/dsh-settings-hub",
+  "slug": "amengclass__dsh-settings-hub",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-settings-hub",
+  "title": "dsh-settings-hub",
+  "summary": "把第三方插件的设置项收进一个可折叠分组，统一接管设置面板，找配置不再东翻西找。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-settings",
+    "设置面板",
+    "插件管理",
+    "集中仓库",
+    "主题"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Amengclass",
+  "repo": "https://github.com/Amengclass/dsh-settings-hub",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T10:08:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-settings-hub",
+    "commands": [
+      "dsh plugin --profile web add dsh-settings-hub"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

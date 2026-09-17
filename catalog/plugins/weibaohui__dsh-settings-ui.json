@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "weibaohui/dsh-settings-ui",
+  "slug": "weibaohui__dsh-settings-ui",
+  "tier": "community",
+  "package": null,
+  "name": "weibaohui/dsh-settings-ui",
+  "title": "weibaohui/dsh-settings-ui",
+  "summary": "自定义 DSH 设置窗口的大小、全屏、透明度和主题背景，还能用悬浮球快速打开。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "设置面板",
+    "主题",
+    "界面美化",
+    "快捷操作",
+    "状态持久化"
+  ],
+  "version": "0.2.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.2",
+    "publishedAt": "2026-09-11T15:44:56Z",
+    "url": "https://github.com/weibaohui/dsh-settings-ui/releases/tag/v0.2.2"
+  },
+  "author": "weibaohui",
+  "repo": "https://github.com/weibaohui/dsh-settings-ui",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T05:12:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:weibaohui/dsh-settings-ui",
+    "commands": [
+      "dsh plugin --profile web add @weibaohui/dsh-settings-ui -w"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

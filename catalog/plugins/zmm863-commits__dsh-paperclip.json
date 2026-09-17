@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zmm863-commits/dsh-paperclip",
+  "slug": "zmm863-commits__dsh-paperclip",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-paperclip",
+  "title": "dsh-paperclip",
+  "summary": "在 DSH 输入框加个回形针按钮，点一下或拖拽文件，内容自动填进输入框，代码文本直接发给 AI。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "快捷操作",
+    "文件管理",
+    "效率提升",
+    "前端增强",
+    "工具集成"
+  ],
+  "version": "0.2.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zmm863-commits",
+  "repo": "https://github.com/zmm863-commits/dsh-paperclip",
+  "homepage": null,
+  "license": null,
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-29T07:47:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-paperclip",
+    "commands": [
+      "dsh plugin --profile web add dsh-paperclip",
+      "dsh plugin --profile web add ./dsh-paperclip"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

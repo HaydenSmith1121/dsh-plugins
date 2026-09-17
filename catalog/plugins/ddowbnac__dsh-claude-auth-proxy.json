@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "ddowbnac/dsh-claude-auth-proxy",
+  "slug": "ddowbnac__dsh-claude-auth-proxy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-claude-auth-proxy",
+  "title": "dsh-claude-auth-proxy",
+  "summary": "不用 Anthropic API Key，直接用 Claude Code 订阅额度给 dsh 提供 Claude 模型。",
+  "tags": [
+    "bun",
+    "claude-code",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "llm",
+    "typescript",
+    "模型配置",
+    "模型适配",
+    "零配置",
+    "工具集成"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-09-14T22:12:17Z",
+    "url": "https://github.com/ddowbnac/dsh-claude-auth-proxy/releases/tag/v0.1.3"
+  },
+  "author": "ddowbnac",
+  "repo": "https://github.com/ddowbnac/dsh-claude-auth-proxy",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T20:46:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ddowbnac/dsh-claude-auth-proxy",
+    "commands": [
+      "dsh plugin --profile <name> add @djdowbnac/dsh-claude-auth"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

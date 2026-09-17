@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-wq-bridge",
+  "slug": "jonah791__dsh-wq-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wq-bridge",
+  "title": "dsh-wq-bridge",
+  "summary": "把 WorldQuant BRAIN 的 AlphaFactory 能力接进 DSH，用 30 个 wq_* 工具跑通查配额、回测到四关全流程。",
+  "tags": [
+    "dsh-plugin",
+    "桥接插件",
+    "工具集成",
+    "工作流增强",
+    "自动化",
+    "状态监控"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-07T11:07:49Z",
+    "url": "https://github.com/jonah791/dsh-wq-bridge/releases/tag/v0.1.1"
+  },
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-wq-bridge",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T06:17:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-wq-bridge",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-wq-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

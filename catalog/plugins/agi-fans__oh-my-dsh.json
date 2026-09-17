@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "agi-fans/oh-my-dsh",
+  "slug": "agi-fans__oh-my-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "oh-my-dsh",
+  "title": "oh-my-dsh",
+  "summary": "基于 DeepSeek Harness 的插件优先终端编程助手，交互灵感来自 oh-my-pi，让命令行写代码更顺手。",
+  "tags": [
+    "coding-agent",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "harness",
+    "oh-my-pi",
+    "omdsh",
+    "tui",
+    "终端编程",
+    "插件化",
+    "AI工具",
+    "命令行工具"
+  ],
+  "version": "0.17.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.17.0",
+    "publishedAt": "2026-09-12T05:37:45Z",
+    "url": "https://github.com/agi-fans/oh-my-dsh/releases/tag/v0.17.0"
+  },
+  "author": "agi-fans",
+  "repo": "https://github.com/agi-fans/oh-my-dsh",
+  "homepage": "https://omdsh.agi.fans",
+  "license": "MIT",
+  "stars": 31,
+  "forks": 4,
+  "pushedAt": "2026-09-12T10:10:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:agi-fans/oh-my-dsh",
+    "commands": [
+      "npm install --global @agi-fans/oh-my-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

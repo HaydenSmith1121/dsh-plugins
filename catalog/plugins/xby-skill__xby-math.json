@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-math",
+  "slug": "xby-skill__xby-math",
+  "tier": "community",
+  "package": null,
+  "name": "xby-math",
+  "title": "xby-math",
+  "summary": "在聊天里直接算数学，从加减乘除到微积分、线性代数都能搞定，还能记住你的API密钥。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "零配置",
+    "会话管理",
+    "模型配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-math",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:46:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby-skill/xby-math",
+    "commands": [
+      "dsh plugin --profile web add github:xby-skill/xby-math"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

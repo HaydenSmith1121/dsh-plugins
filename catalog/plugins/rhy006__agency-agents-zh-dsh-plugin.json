@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "RHY006/agency-agents-zh-dsh-plugin",
+  "slug": "rhy006__agency-agents-zh-dsh-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "agency-agents-zh-dsh-plugin",
+  "title": "agency-agents-zh-dsh-plugin",
+  "summary": "内置268个中文AI专家角色，覆盖20个部门，一键切换专业身份，随时调用高效办公。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "工作流增强",
+    "会话管理",
+    "中文模式",
+    "零配置"
+  ],
+  "version": "1.1.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "RHY006",
+  "repo": "https://github.com/RHY006/agency-agents-zh-dsh-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T08:26:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:RHY006/agency-agents-zh-dsh-plugin",
+    "commands": [
+      "dsh plugin --profile web add \"github:RHY006/agency-agents-zh-dsh-plugin\"",
+      "dsh plugin --profile web add ./agency-agents-zh-dsh-plugin",
+      "dsh plugin --profile web add ./agency-agents-zh-dsh-plugin-1.0.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

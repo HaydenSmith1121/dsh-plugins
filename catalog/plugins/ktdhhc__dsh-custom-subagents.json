@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "ktdhhc/dsh-custom-subagents",
+  "slug": "ktdhhc__dsh-custom-subagents",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-custom-subagents",
+  "title": "dsh-custom-subagents",
+  "summary": "为 DeepSeek Harness 添加自定义子智能体，灵活分配任务并提升协作效率。",
+  "tags": [
+    "delegation",
+    "dsh",
+    "dsh-plugin",
+    "subagents",
+    "多Agent协作",
+    "工作流增强",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.1.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ktdhhc",
+  "repo": "https://github.com/ktdhhc/dsh-custom-subagents",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-25T09:59:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-custom-subagents",
+    "commands": [
+      "dsh plugin --profile web add dsh-custom-subagents",
+      "dsh plugin --profile web add ./dsh-custom-subagents-<版本>.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

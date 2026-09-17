@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "az790871109/dsh-summary-sidebar",
+  "slug": "az790871109__dsh-summary-sidebar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-summary-sidebar",
+  "title": "dsh-summary-sidebar",
+  "summary": "给 DeepSeek Harness Web 加上摘要和侧边栏，风格统一，独立部署，即插即用。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "会话管理",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "az790871109",
+  "repo": "https://github.com/az790871109/dsh-summary-sidebar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-22T12:07:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:az790871109/dsh-summary-sidebar",
+    "commands": [
+      "dsh plugin --profile web add github:az790871109/dsh-summary-sidebar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "EveGoodEvening/dsh-llmwiki",
+  "slug": "evegoodevening__dsh-llmwiki",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llmwiki",
+  "title": "dsh-llmwiki",
+  "summary": "本地优先的 Markdown 知识库插件，基于证据链支撑，帮你构建可信赖的个人 wiki。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "语义检索",
+    "零配置",
+    "证据链"
+  ],
+  "version": "0.1.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "EveGoodEvening",
+  "repo": "https://github.com/EveGoodEvening/dsh-llmwiki",
+  "homepage": "https://www.npmjs.com/package/@evegoodevening/dsh-llmwiki",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T04:46:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@evegoodevening/dsh-llmwiki",
+    "commands": [
+      "dsh plugin --profile web add @evegoodevening/dsh-llmwiki",
+      "dsh plugin --profile web add --ignore-scripts \"$PACK_DIR/evegoodevening-dsh-llmwiki-0.1.3.tgz\"",
+      "dsh plugin --profile web remove @evegoodevening/dsh-llmwiki"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

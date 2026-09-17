@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "shanliuling/dsh-image-gen",
+  "slug": "shanliuling__dsh-image-gen",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-image-gen",
+  "title": "dsh-image-gen",
+  "summary": "在 DeepSeek Harness 里直接生成图片，支持 Gemini、OpenAI 和字节 Seedream 等多种模型，即插即用。",
+  "tags": [
+    "ai-agent",
+    "ai-image-generation-api",
+    "comfyui",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "gemini",
+    "image-generation",
+    "openai",
+    "prompt-library",
+    "seedream",
+    "模型适配",
+    "零配置"
+  ],
+  "version": "0.6.8",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.8",
+    "publishedAt": "2026-09-14T15:26:26Z",
+    "url": "https://github.com/shanliuling/dsh-image-gen/releases/tag/v0.6.8"
+  },
+  "author": "shanliuling",
+  "repo": "https://github.com/shanliuling/dsh-image-gen",
+  "homepage": "https://github.com/shanliuling/dsh-image-gen#readme",
+  "license": "MIT",
+  "stars": 429,
+  "forks": 30,
+  "pushedAt": "2026-09-14T15:26:07Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-image-gen@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-image-gen@latest",
+      "git clone https://github.com/shanliuling/dsh-image-gen.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

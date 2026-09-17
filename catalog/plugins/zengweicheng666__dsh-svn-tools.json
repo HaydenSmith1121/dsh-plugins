@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "zengweicheng666/dsh-svn-tools",
+  "slug": "zengweicheng666__dsh-svn-tools",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-svn-tools",
+  "title": "dsh-svn-tools",
+  "summary": "为 DeepSeek Harness 提供 SVN 版本控制工具集和侧边栏界面，支持中文提交日志，方便代码管理。",
+  "tags": [
+    "dsh-plugin",
+    "命令行工具",
+    "工作流增强",
+    "插件管理",
+    "前端增强",
+    "AI 助手"
+  ],
+  "version": "0.11.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zengweicheng666",
+  "repo": "https://github.com/zengweicheng666/dsh-svn-tools",
+  "homepage": null,
+  "license": null,
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-06T09:15:50Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-better-sidebar",
+    "commands": [
+      "dsh plugin --profile web add dsh-better-sidebar",
+      "dsh plugin --profile web add file:./plugins/dsh-svn-tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

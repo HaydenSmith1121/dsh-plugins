@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "DXF1024/dsh-plugin-desktop-shortcut",
+  "slug": "dxf1024__dsh-plugin-desktop-shortcut",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-desktop-shortcut",
+  "title": "dsh-plugin-desktop-shortcut",
+  "summary": "一键给桌面生成插件快捷方式，省去手动找入口的麻烦，打开更顺手。",
+  "tags": [
+    "dsh-plugin",
+    "快捷操作",
+    "自动化",
+    "效率提升",
+    "工具集成"
+  ],
+  "version": "0.2.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.3",
+    "publishedAt": "2026-08-17T04:11:31Z",
+    "url": "https://github.com/DXF1024/dsh-plugin-desktop-shortcut/releases/tag/v0.2.3"
+  },
+  "author": "DXF1024",
+  "repo": "https://github.com/DXF1024/dsh-plugin-desktop-shortcut",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T12:30:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:DXF1024/dsh-plugin-desktop-shortcut",
+    "commands": [
+      "dsh plugin --profile web add github:DXF1024/dsh-plugin-desktop-shortcut"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

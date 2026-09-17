@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "azazo1/dsh-copy-session-ref",
+  "slug": "azazo1__dsh-copy-session-ref",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-copy-session-ref",
+  "title": "dsh-copy-session-ref",
+  "summary": "在会话菜单里一键复制会话引用，粘贴到别处就能快速找回上下文。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "session",
+    "web-ui",
+    "会话管理",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "azazo1",
+  "repo": "https://github.com/azazo1/dsh-copy-session-ref",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T08:41:33Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:azazo1/dsh-copy-session-ref",
+    "commands": [
+      "dsh plugin --profile web add github:azazo1/dsh-copy-session-ref",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "hyqhyq3/dsh-gemini-oauth-bridge",
+  "slug": "hyqhyq3__dsh-gemini-oauth-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-gemini-oauth-bridge",
+  "title": "dsh-gemini-oauth-bridge",
+  "summary": "把 Google AI 订阅（Antigravity/Gemini OAuth）转成 OpenAI 兼容接口，让 DeepSeek Harness 直接调用。",
+  "tags": [
+    "antigravity",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "gemini",
+    "google",
+    "oauth",
+    "openai-compatible",
+    "AI 助手",
+    "模型配置",
+    "零配置",
+    "安全审计"
+  ],
+  "version": "0.2.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.2",
+    "publishedAt": "2026-09-09T02:39:20Z",
+    "url": "https://github.com/hyqhyq3/dsh-gemini-oauth-bridge/releases/tag/v0.2.2"
+  },
+  "author": "hyqhyq3",
+  "repo": "https://github.com/hyqhyq3/dsh-gemini-oauth-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T13:33:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hyqhyq3/dsh-gemini-oauth-bridge",
+    "commands": [
+      "dsh plugin --profile web add github:hyqhyq3/dsh-gemini-oauth-bridge",
+      "dsh plugin --profile web add link:/path/to/dsh-gemini-oauth-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

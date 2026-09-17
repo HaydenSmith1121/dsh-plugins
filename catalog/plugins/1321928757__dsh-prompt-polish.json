@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "1321928757/dsh-prompt-polish",
+  "slug": "1321928757__dsh-prompt-polish",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-polish",
+  "title": "dsh-prompt-polish",
+  "summary": "一键优化输入栏里的提示词草稿，支持6种策略和3种语言，让指令更清晰、更具体、更好用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "prompt-engineering",
+    "效率提升",
+    "会话管理",
+    "AI 助手",
+    "视觉理解"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "1321928757",
+  "repo": "https://github.com/1321928757/dsh-prompt-polish",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-06T10:30:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:1321928757/dsh-prompt-polish",
+    "commands": [
+      "dsh plugin --profile web add github:1321928757/dsh-prompt-polish"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

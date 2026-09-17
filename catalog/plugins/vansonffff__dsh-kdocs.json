@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "vansonffff/dsh-kdocs",
+  "slug": "vansonffff__dsh-kdocs",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-kdocs",
+  "title": "dsh-kdocs",
+  "summary": "在 DSH 侧栏浏览预览金山文档，把文档引用进对话，还能让 Agent 直接读正文。",
+  "tags": [
+    "cloud-documents",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "kdocs",
+    "wps",
+    "工具集成",
+    "文件管理",
+    "工作区管理",
+    "AI 助手"
+  ],
+  "version": "0.2.8",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.8",
+    "publishedAt": "2026-09-13T11:37:54Z",
+    "url": "https://github.com/vansonffff/dsh-kdocs-sidebar/releases/tag/v0.2.8"
+  },
+  "author": "vansonffff",
+  "repo": "https://github.com/vansonffff/dsh-kdocs",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T14:44:57Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-kdocs-inside",
+    "commands": [
+      "dsh plugin --profile web add dsh-kdocs-inside",
+      "dsh plugin --profile web add kdocs-settings"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -3,6 +3,11 @@
 *.log
 *.tmp
 
+# 目录采集器的本地缓存（公开索引的瘦身副本 + 插件集合仓库清单）
+# 它只是「少下一次网」的加速层，任何一份都能由 scripts/sync-catalog.mjs 重新拉出来，
+# 所以不进版本库 —— 22MB 的索引快照塞进 git 只会让 clone 变慢。
+.cache/
+
 # OS junk
 Thumbs.db
 .DS_Store

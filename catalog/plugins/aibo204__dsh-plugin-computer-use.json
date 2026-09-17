@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "aibo204/dsh-plugin-computer-use",
+  "slug": "aibo204__dsh-plugin-computer-use",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-computer-use",
+  "title": "dsh-plugin-computer-use",
+  "summary": "让 AI 直接操作用户的桌面，每一步都需你批准，并留下本地审计记录。",
+  "tags": [
+    "computer-use",
+    "deepseek-harness",
+    "desktop-automation",
+    "dsh-plugin",
+    "mcp",
+    "自动化",
+    "安全审计",
+    "工具集成",
+    "桌宠"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-11T09:36:43Z",
+    "url": "https://github.com/aibo204/dsh-plugin-computer-use/releases/tag/v0.2.1"
+  },
+  "author": "aibo204",
+  "repo": "https://github.com/aibo204/dsh-plugin-computer-use",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T09:40:44Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aibo204/dsh-plugin-computer-use",
+    "commands": [
+      "dsh plugin --profile web add github:aibo204/dsh-plugin-computer-use"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

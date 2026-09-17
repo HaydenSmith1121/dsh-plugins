@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "jsoncode/dsh-voice-input-qwen-asr",
+  "slug": "jsoncode__dsh-voice-input-qwen-asr",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-voice-input-qwen-asr",
+  "title": "dsh-voice-input-qwen-asr",
+  "summary": "在聊天输入框旁加个麦克风按钮，点一下就能说话，自动转成文字，打字累了就用嘴说。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-voice-input",
+    "dsh-voice-input-qwen-asr",
+    "dsh-voice-plugin",
+    "效率提升",
+    "视觉理解"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-05T13:37:29Z",
+    "url": "https://github.com/jsoncode/dsh-voice-input-qwen-asr/releases/tag/v0.1.1"
+  },
+  "author": "jsoncode",
+  "repo": "https://github.com/jsoncode/dsh-voice-input-qwen-asr",
+  "homepage": "https://github.com/jsoncode/dsh-voice-input-qwen-asr",
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T14:50:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jsoncode/dsh-voice-input-qwen-asr",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-voice-input-qwen-asr"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

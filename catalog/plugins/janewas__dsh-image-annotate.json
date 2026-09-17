@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "janewas/dsh-image-annotate",
+  "slug": "janewas__dsh-image-annotate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-image-annotate",
+  "title": "dsh-image-annotate",
+  "summary": "在输入框里点开待发送的图片，随手涂鸦、画框、加箭头或打字，标注好的副本会作为新附件插回原图旁边。",
+  "tags": [
+    "annotation",
+    "composer",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "harness",
+    "image",
+    "plugin",
+    "screenshot",
+    "ui",
+    "图片问答",
+    "快捷操作",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.4.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.1",
+    "publishedAt": "2026-09-14T12:37:15Z",
+    "url": "https://github.com/janewas/dsh-image-annotate/releases/tag/v0.4.1"
+  },
+  "author": "janewas",
+  "repo": "https://github.com/janewas/dsh-image-annotate",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T12:37:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:janewas/dsh-image-annotate",
+    "commands": [
+      "dsh plugin --profile web add github:janewas/dsh-image-annotate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

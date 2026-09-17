@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "QuantumKuba/dsh-graphify-plugin",
+  "slug": "quantumkuba__dsh-graphify-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-graphify-plugin",
+  "title": "dsh-graphify-plugin",
+  "summary": "将 DeepSeek Harness 接入 Graphify 本地知识图谱，提供代码智能、关键节点识别与拓扑智能体工具，帮你快速理清项目架构和依赖关系。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "graphify",
+    "graphifyy",
+    "文件管理",
+    "可视化",
+    "AI 助手",
+    "工作流增强"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-11T16:19:43Z",
+    "url": "https://github.com/QuantumKuba/dsh-graphify-plugin/releases/tag/v0.2.0"
+  },
+  "author": "QuantumKuba",
+  "repo": "https://github.com/QuantumKuba/dsh-graphify-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-14T20:03:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:QuantumKuba/dsh-graphify-plugin",
+    "commands": [
+      "dsh plugin --profile <profile> add dsh-graphify",
+      "uv tool install 'graphifyy[mcp]==0.9.57'"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

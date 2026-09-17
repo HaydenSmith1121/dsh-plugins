@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "LvsH13/dsh-desktop",
+  "slug": "lvsh13__dsh-desktop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-desktop",
+  "title": "dsh-desktop",
+  "summary": "Windows 桌面伴侣，托盘鲸鱼图标、开机自启直达窗口，一键切换桌面和网页端。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "desktop",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugin-verify",
+    "桌面快捷方式",
+    "开机自启",
+    "托盘图标",
+    "设置面板"
+  ],
+  "version": "0.8.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.1",
+    "publishedAt": "2026-09-12T12:46:23Z",
+    "url": "https://github.com/LvsH13/dsh-desktop/releases/tag/v0.8.1"
+  },
+  "author": "LvsH13",
+  "repo": "https://github.com/LvsH13/dsh-desktop",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-12T12:46:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LvsH13/dsh-desktop",
+    "commands": [
+      "dsh plugin --profile web add github:LvsH13/dsh-desktop",
+      "git clone https://github.com/LvsH13/dsh-desktop.git",
+      "dsh plugin --profile web add \"克隆后的 dsh-desktop 目录绝对路径\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "xiazhi88/dshgo",
+  "slug": "xiazhi88__dshgo",
+  "tier": "community",
+  "package": null,
+  "name": "dshgo",
+  "title": "dshgo",
+  "summary": "装个安卓 App，再给电脑加个插件，就能在手机平板上随时用 DSH，还能收通知、传附件。",
+  "tags": [
+    "android",
+    "android-app",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "lan",
+    "mobile",
+    "proxy",
+    "qrcode",
+    "跨设备",
+    "桥接插件",
+    "消息通知",
+    "文件管理",
+    "AI 助手"
+  ],
+  "version": "4.2.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "app-v4.2.3",
+    "publishedAt": "2026-09-16T10:04:32Z",
+    "url": "https://github.com/xiazhi88/dshgo/releases/tag/app-v4.2.3"
+  },
+  "author": "xiazhi88",
+  "repo": "https://github.com/xiazhi88/dshgo",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T11:55:36Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiazhi88/dshgo",
+    "commands": [
+      "npm i -g @deepseek-ai/dsh@latest",
+      "dsh plugin --profile web add github:xiazhi88/dshgo -w"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "qq33357486/dsh-notification-sounds",
+  "slug": "qq33357486__dsh-notification-sounds",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notification-sounds",
+  "title": "dsh-notification-sounds",
+  "summary": "DSH 需要你输入或完成任务时，用中文语音提示叫你回来，不用一直盯着屏幕。",
+  "tags": [
+    "audio",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "notification",
+    "效率提升",
+    "状态监控",
+    "快捷操作",
+    "零配置"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "qq33357486",
+  "repo": "https://github.com/qq33357486/dsh-notification-sounds",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-16T21:41:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-notification-sounds",
+    "commands": [
+      "dsh plugin --profile web add dsh-notification-sounds"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

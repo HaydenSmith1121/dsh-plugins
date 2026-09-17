@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaozhiaixue/dsh-session-id",
+  "slug": "xiaozhiaixue__dsh-session-id",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-id",
+  "title": "dsh-session-id",
+  "summary": "在DSH会话区底部显示当前会话ID，点击即可一键复制，方便分享和定位会话。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xiaozhiaixue",
+  "repo": "https://github.com/xiaozhiaixue/dsh-session-id",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T16:24:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:realpkuasule/dsh-session-id",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-session-id",
+      "dsh plugin --profile web add github:realpkuasule/dsh-session-id"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

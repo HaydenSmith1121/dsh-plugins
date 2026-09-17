@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "lanscer/dsh-workspace-drag",
+  "slug": "lanscer__dsh-workspace-drag",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workspace-drag",
+  "title": "dsh-workspace-drag",
+  "summary": "支持把对话直接拖到工作区进行归类，帮你轻松整理聊天记录。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-workspace-drag",
+    "workspace",
+    "工作区管理",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "1.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lanscer",
+  "repo": "https://github.com/lanscer/dsh-workspace-drag",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T05:33:49Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lanscer/dsh-workspace-drag",
+    "commands": [
+      "dsh plugin --profile web add github:lanscer/dsh-workspace-drag"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

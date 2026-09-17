@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "AmigaMeow/dsh-asset-library",
+  "slug": "amigameow__dsh-asset-library",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-asset-library",
+  "title": "dsh-asset-library",
+  "summary": "把和 AI 聊出来的方案、分析一键存进本地素材库，按时间、类型、会话、项目自动归档，随时翻出来复用。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "文件管理",
+    "报告生成",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "AmigaMeow",
+  "repo": "https://github.com/AmigaMeow/dsh-asset-library",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T04:52:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AmigaMeow/dsh-asset-library",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-asset-library"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

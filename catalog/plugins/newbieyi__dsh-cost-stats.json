@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "newbieYi/dsh-cost-stats",
+  "slug": "newbieyi__dsh-cost-stats",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cost-stats",
+  "title": "dsh-cost-stats",
+  "summary": "在 DSH 界面里直接查看每个会话的 token 用量和费用，按模型分组统计，支持人民币美元切换，不用再手动算账。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "会话管理",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "newbieYi",
+  "repo": "https://github.com/newbieYi/dsh-cost-stats",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T10:51:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:newbieYi/dsh-cost-stats",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh",
+      "dsh plugin --profile web add \"github:$REPO\" \\"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

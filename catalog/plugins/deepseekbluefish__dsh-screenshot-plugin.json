@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "deepseekbluefish/dsh-screenshot-plugin",
+  "slug": "deepseekbluefish__dsh-screenshot-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-screenshot-plugin",
+  "title": "dsh-screenshot-plugin",
+  "summary": "在 DeepSeek Harness 里像微信一样框选截屏，自动编号保存并往输入框写入截图标记，方便发给智能体。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "AI 助手",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "deepseekbluefish",
+  "repo": "https://github.com/deepseekbluefish/dsh-screenshot-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T05:18:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:deepseekbluefish/dsh-screenshot-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:deepseekbluefish/dsh-screenshot-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

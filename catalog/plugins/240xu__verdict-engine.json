@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "240xu/verdict-engine",
+  "slug": "240xu__verdict-engine",
+  "tier": "community",
+  "package": null,
+  "name": "verdict-engine",
+  "title": "verdict-engine",
+  "summary": "把工程规范变成机器可校验的规则，让智能体按证据驱动干活，避免拍脑袋决策。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "opencode",
+    "tech-lead",
+    "状态监控",
+    "工作流增强",
+    "AI 助手"
+  ],
+  "version": "5.5.7",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "240xu",
+  "repo": "https://github.com/240xu/verdict-engine",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-26T17:16:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-themis",
+    "commands": [
+      "npm i -g nomos-skill",
+      "dsh plugin --profile headless add dsh-themis",
+      "dsh plugin --profile headless add /path/to/tech-lead-skill/packages/dsh-themis"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

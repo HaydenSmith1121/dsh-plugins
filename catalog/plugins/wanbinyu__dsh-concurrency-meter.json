@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "Wanbinyu/dsh-concurrency-meter",
+  "slug": "wanbinyu__dsh-concurrency-meter",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-concurrency-meter",
+  "title": "dsh-concurrency-meter",
+  "summary": "实时查看模型请求并发量，掌握当前活动请求、峰值和供应商统计，不干预请求。",
+  "tags": [
+    "concurrency",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "monitoring",
+    "plugin",
+    "状态监控",
+    "资源优化",
+    "前端增强"
+  ],
+  "version": "0.1.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.6",
+    "publishedAt": "2026-09-11T03:57:00Z",
+    "url": "https://github.com/Wanbinyu/dsh-concurrency-meter/releases/tag/v0.1.6"
+  },
+  "author": "Wanbinyu",
+  "repo": "https://github.com/Wanbinyu/dsh-concurrency-meter",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-11T03:57:00Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Wanbinyu/dsh-concurrency-meter",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/Wanbinyu/dsh-concurrency-meter/releases/download/v0.1.6/dsh-concurrency-meter-0.1.6.tgz",
+      "dsh plugin --profile web remove dsh-concurrency-meter"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

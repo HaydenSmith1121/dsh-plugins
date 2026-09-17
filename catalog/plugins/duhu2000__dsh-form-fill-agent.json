@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "duhu2000/dsh-form-fill-agent",
+  "slug": "duhu2000__dsh-form-fill-agent",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-form-fill-agent",
+  "title": "dsh-form-fill-agent",
+  "summary": "用企查查数据自动填 Excel 表格，填前可预览、确认后导出新副本。",
+  "tags": [
+    "ai-agent",
+    "dsh-plugin",
+    "enterprise-data",
+    "form-filling",
+    "qcc",
+    "spreadsheet-autofill",
+    "xlsx",
+    "自动化",
+    "工具集成",
+    "效率提升",
+    "文件管理"
+  ],
+  "version": "0.2.31",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.31",
+    "publishedAt": "2026-09-15T08:48:53Z",
+    "url": "https://github.com/duhu2000/dsh-form-fill-agent/releases/tag/v0.2.31"
+  },
+  "author": "duhu2000",
+  "repo": "https://github.com/duhu2000/dsh-form-fill-agent",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T09:04:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-form-fill-agent@0.2.30",
+    "commands": [
+      "dsh plugin --profile web add dsh-form-fill-agent@0.2.30"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

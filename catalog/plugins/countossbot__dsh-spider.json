@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "countossbot/dsh-spider",
+  "slug": "countossbot__dsh-spider",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-spider",
+  "title": "dsh-spider",
+  "summary": "自动把选好的技能注入 DSH 会话，还能从其他 AI 工具目录采集技能，设置简单即点即存。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "自动化",
+    "会话管理",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "countossbot",
+  "repo": "https://github.com/countossbot/dsh-spider",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T16:25:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:countossbot/dsh-spider",
+    "commands": [
+      "dsh plugin --profile web add github:countossbot/dsh-spider"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "xtd1145/dsh-full-access-switch",
+  "slug": "xtd1145__dsh-full-access-switch",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-full-access-switch",
+  "title": "dsh-full-access-switch",
+  "summary": "给 DSH 加个一次性开关，开启后新工作区不再每次弹确认，省心省事。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "插件管理",
+    "零配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xtd1145",
+  "repo": "https://github.com/xtd1145/dsh-full-access-switch",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-27T14:40:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xtd1145/dsh-full-access-switch",
+    "commands": [
+      "dsh plugin --profile web add github:xtd1145/dsh-full-access-switch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

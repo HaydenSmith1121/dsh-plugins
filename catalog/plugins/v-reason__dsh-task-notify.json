@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "V-Reason/dsh-task-notify",
+  "slug": "v-reason__dsh-task-notify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-task-notify",
+  "title": "dsh-task-notify",
+  "summary": "任务跑完或 agent 停下来等你操作时，自动弹 Windows 系统通知加微信提醒，不用守着屏幕。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "消息通知",
+    "状态监控",
+    "效率提升",
+    "多智能体协作",
+    "工具集成"
+  ],
+  "version": "1.8.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "V-Reason",
+  "repo": "https://github.com/V-Reason/dsh-task-notify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T13:01:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:V-Reason/dsh-task-notify",
+    "commands": [
+      "dsh plugin --profile web add github:V-Reason/dsh-task-notify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

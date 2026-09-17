@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "maxmilian/dsh-odoo",
+  "slug": "maxmilian__dsh-odoo",
+  "tier": "community",
+  "package": null,
+  "name": "maxmilian/dsh-odoo",
+  "title": "maxmilian/dsh-odoo",
+  "summary": "为 DeepSeek Harness 提供 Odoo 外部 API 的只读访问，可安全查看业务数据，并可选启用受限的草稿创建功能。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "odoo",
+    "AI工具",
+    "模型适配",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-27T03:56:57Z",
+    "url": "https://github.com/maxmilian/dsh-odoo/releases/tag/v0.1.0"
+  },
+  "author": "maxmilian",
+  "repo": "https://github.com/maxmilian/dsh-odoo",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-27T04:34:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:maxmilian/dsh-odoo",
+    "commands": [
+      "dsh plugin --profile web add github:maxmilian/dsh-odoo"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

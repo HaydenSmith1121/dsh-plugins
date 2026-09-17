@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "jasen215/dsh-continual-harness",
+  "slug": "jasen215__dsh-continual-harness",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-continual-harness",
+  "title": "dsh-continual-harness",
+  "summary": "帮AI记住历史并跨会话共享知识，定期自动复盘优化，配合安全回滚机制，让它越用越聪明。",
+  "tags": [
+    "agent-memory",
+    "ai-agent",
+    "continual-learning",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "self-evolution",
+    "self-improving-agents",
+    "会话管理",
+    "任务编排",
+    "效率提升"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-09-10T09:16:13Z",
+    "url": "https://github.com/jasen215/dsh-continual-harness/releases/tag/v0.3.1"
+  },
+  "author": "jasen215",
+  "repo": "https://github.com/jasen215/dsh-continual-harness",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 1,
+  "pushedAt": "2026-09-10T09:15:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jasen215/dsh-continual-harness",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-continual-harness"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

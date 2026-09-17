@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "CreateCN/DSH-peak-valley",
+  "slug": "createcn__dsh-peak-valley",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-peak-valley",
+  "title": "DSH-peak-valley",
+  "summary": "DSH 峰谷提醒悬浮窗，实时显示 DeepSeek 调价后的最佳调用时段，带倒计时和自动刷新。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-plugins",
+    "峰谷提醒",
+    "时段监控",
+    "资源优化",
+    "悬浮窗"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "CreateCN",
+  "repo": "https://github.com/CreateCN/DSH-peak-valley",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-16T04:54:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CreateCN/dsh-peak-valley",
+    "commands": [
+      "dsh plugin --profile web add github:CreateCN/dsh-peak-valley",
+      "curl -fsSL https://raw.githubusercontent.com/CreateCN/dsh-peak-valley/main/install.sh | bash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

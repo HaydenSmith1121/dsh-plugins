@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "liangchen-harold/local-dsh",
+  "slug": "liangchen-harold__local-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "local-dsh",
+  "title": "local-dsh",
+  "summary": "本地运行 DeepSeek Harness 的桌面客户端，提供可视化界面和插件管理，让 AI 助手更易用。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "可视化",
+    "设置面板",
+    "零配置"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-08-30T13:44:16Z",
+    "url": "https://github.com/liangchen-harold/local-dsh/releases/tag/v0.1.3"
+  },
+  "author": "liangchen-harold",
+  "repo": "https://github.com/liangchen-harold/local-dsh",
+  "homepage": "https://localdsh.com",
+  "license": "Apache-2.0",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-08-31T13:32:49Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:liangchen-harold/local-dsh",
+    "commands": [
+      "git clone https://github.com/liangchen-harold/local-dsh.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "lumose0/dsh-file-reference-everything",
+  "slug": "lumose0__dsh-file-reference-everything",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-file-reference-everything",
+  "title": "dsh-file-reference-everything",
+  "summary": "让 DeepSeek Harness 的 @ 引用支持全盘搜索，基于 Everything 实现秒级模糊匹配，无 Everything 时自动切换备用索引。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "everything",
+    "file-search",
+    "效率提升",
+    "AI 助手",
+    "会话管理",
+    "模型配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lumose0",
+  "repo": "https://github.com/lumose0/dsh-file-reference-everything",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-28T00:33:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lumose0/dsh-file-reference-everything",
+    "commands": [
+      "dsh plugin --profile web add github:lumose0/dsh-file-reference-everything"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

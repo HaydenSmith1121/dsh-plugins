@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "yflmq001/dsh-cost-tracker",
+  "slug": "yflmq001__dsh-cost-tracker",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cost-tracker",
+  "title": "dsh-cost-tracker",
+  "summary": "实时统计 DeepSeek Harness 的 Token 消耗，按模型灵活配置价格，帮你精准掌控成本。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "Token追踪",
+    "模型计费"
+  ],
+  "version": "1.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.1",
+    "publishedAt": "2026-08-20T04:35:53Z",
+    "url": "https://github.com/yflmq001/dsh-cost-tracker/releases/tag/v1.0.1"
+  },
+  "author": "yflmq001",
+  "repo": "https://github.com/yflmq001/dsh-cost-tracker",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-26T06:26:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yflmq001/dsh-cost-tracker",
+    "commands": [
+      "dsh plugin --profile web add github:yflmq001/dsh-cost-tracker"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

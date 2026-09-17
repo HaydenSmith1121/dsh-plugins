@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "geokkjer/dsh-peak",
+  "slug": "geokkjer__dsh-peak",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-peak",
+  "title": "dsh-peak",
+  "summary": "实时显示 DeepSeek API 的峰谷计价状态，帮你挑便宜时段调用，省钱又省心。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "geokkjer",
+  "repo": "https://github.com/geokkjer/dsh-peak",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T06:39:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-peak",
+    "commands": [
+      "dsh plugin --profile web add dsh-peak",
+      "dsh plugin --profile web add github:geokkjer/dsh-peak",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "hpyperry/dsh-ref-lib",
+  "slug": "hpyperry__dsh-ref-lib",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ref-lib",
+  "title": "dsh-ref-lib",
+  "summary": "给每个会话挂一个只读参考库，回答前先查本地资料，答案有据可依，不靠瞎猜。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "文件管理",
+    "工作区管理",
+    "效率提升"
+  ],
+  "version": "0.17.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hpyperry",
+  "repo": "https://github.com/hpyperry/dsh-ref-lib",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-05T12:26:10Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@hpyperry/dsh-ref-lib",
+    "commands": [
+      "dsh plugin --profile web add @hpyperry/dsh-ref-lib",
+      "dsh plugin --profile web remove @hpyperry/dsh-ref-lib"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

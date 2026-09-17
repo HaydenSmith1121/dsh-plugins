@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "sanshanya/better-model-provider",
+  "slug": "sanshanya__better-model-provider",
+  "tier": "community",
+  "package": null,
+  "name": "better-model-provider",
+  "title": "better-model-provider",
+  "summary": "为 DeepSeek Harness 自定义模型声明视觉输入和推理强度，让 OpenAI 兼容提供商接入更省心。",
+  "tags": [
+    "ai-providers",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "reasoning-effort",
+    "模型适配",
+    "模型配置",
+    "多模态"
+  ],
+  "version": "0.0.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "0.0.4",
+    "publishedAt": "2026-08-31T07:49:54Z",
+    "url": "https://github.com/sanshanya/better-model-provider/releases/tag/0.0.4"
+  },
+  "author": "sanshanya",
+  "repo": "https://github.com/sanshanya/better-model-provider",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 12,
+  "forks": 0,
+  "pushedAt": "2026-09-11T07:03:44Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sanshanya/better-model-provider",
+    "commands": [
+      "dsh plugin --profile web add github:sanshanya/better-model-provider"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

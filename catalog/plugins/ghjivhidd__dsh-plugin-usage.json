@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "GHJIVHIDD/dsh-plugin-usage",
+  "slug": "ghjivhidd__dsh-plugin-usage",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-usage",
+  "title": "dsh-plugin-usage",
+  "summary": "在 DeepSeek Harness 会话中实时查看 token 用量和费用，支持峰谷价与套餐价，可导出数据。",
+  "tags": [
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dsh-plugin-market",
+    "dsh-plugin-verify",
+    "dsh-plugins",
+    "dsh-skill",
+    "dsharpplus",
+    "状态监控",
+    "文件管理",
+    "会话管理"
+  ],
+  "version": "0.1.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.5",
+    "publishedAt": "2026-08-16T22:48:40Z",
+    "url": "https://github.com/GHJIVHIDD/dsh-plugin-usage/releases/tag/v0.1.5"
+  },
+  "author": "GHJIVHIDD",
+  "repo": "https://github.com/GHJIVHIDD/dsh-plugin-usage",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-20T08:33:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GHJIVHIDD/dsh-plugin-usage",
+    "commands": [
+      "dsh plugin --profile web add github:GHJIVHIDD/dsh-plugin-usage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

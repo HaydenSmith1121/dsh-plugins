@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "Unintendedz/dsh-session-tools",
+  "slug": "unintendedz__dsh-session-tools",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-tools",
+  "title": "dsh-session-tools",
+  "summary": "跨会话归档、读取和复制ID，轻松管理DeepSeek Harness对话记录。",
+  "tags": [
+    "conversation",
+    "dsh-plugin",
+    "session-management",
+    "会话管理",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-24T13:50:16Z",
+    "url": "https://github.com/Unintendedz/dsh-session-tools/releases/tag/v0.2.0"
+  },
+  "author": "Unintendedz",
+  "repo": "https://github.com/Unintendedz/dsh-session-tools",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T15:39:56Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Unintendedz/dsh-session-tools",
+    "commands": [
+      "dsh plugin --profile web add github:Unintendedz/dsh-session-tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "ajuwm/dsh-roleplay-plugin",
+  "slug": "ajuwm__dsh-roleplay-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-roleplay-plugin",
+  "title": "dsh-roleplay-plugin",
+  "summary": "让AI角色有生活感，按时段作息、记住你的互动和重要日子，还能当桌宠陪你。",
+  "tags": [
+    "ai",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "roleplay",
+    "桌宠",
+    "会话管理",
+    "娱乐互动"
+  ],
+  "version": "1.4.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.4.5",
+    "publishedAt": "2026-09-03T08:26:48Z",
+    "url": "https://github.com/ajuwm/dsh-roleplay-plugin/releases/tag/v1.4.5"
+  },
+  "author": "ajuwm",
+  "repo": "https://github.com/ajuwm/dsh-roleplay-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-13T13:56:22Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ajuwm/dsh-roleplay-plugin",
+    "commands": [
+      "dsh plugin --profile web remove @ajuwm/dsh-roleplay-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Luaphes/dsh-plugins-market",
+  "slug": "luaphes__dsh-plugins-market",
+  "tier": "community",
+  "package": null,
+  "name": "Luaphes/dsh-plugins-market",
+  "title": "Luaphes/dsh-plugins-market",
+  "summary": "在 DSH 网页界面里直接逛插件市场，自动过滤噪音、打上可信标，还能一键安装，省心省力。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "零配置",
+    "可信认证",
+    "噪音过滤"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Luaphes",
+  "repo": "https://github.com/Luaphes/dsh-plugins-market",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T07:00:30Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Luaphes/dsh-plugins-market",
+    "commands": [
+      "dsh plugin --profile web add github:Luaphes/dsh-plugins-market"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

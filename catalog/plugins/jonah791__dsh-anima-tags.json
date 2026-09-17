@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-anima-tags",
+  "slug": "jonah791__dsh-anima-tags",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-anima-tags",
+  "title": "dsh-anima-tags",
+  "summary": "封装 danbooru-tags 工具，提供硬锚点校验、随机抽卡和批量打标，帮你快速组装 Anima 生图提示词。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "桌宠",
+    "效率提升",
+    "自动化",
+    "模型适配"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-07T11:07:04Z",
+    "url": "https://github.com/jonah791/dsh-anima-tags/releases/tag/v0.1.1"
+  },
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-anima-tags",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T06:17:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-anima-tags",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-anima-tags"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

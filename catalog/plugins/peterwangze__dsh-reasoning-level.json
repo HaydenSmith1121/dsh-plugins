@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "peterwangze/dsh-reasoning-level",
+  "slug": "peterwangze__dsh-reasoning-level",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-reasoning-level",
+  "title": "dsh-reasoning-level",
+  "summary": "统一管理所有模型的默认思考强度，自动探测模型能力，实时查看调用统计，一个插件搞定。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm",
+    "plugin",
+    "reasoning-effort",
+    "模型适配",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "0.7.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.7",
+    "publishedAt": "2026-09-12T12:25:57Z",
+    "url": "https://github.com/peterwangze/dsh-reasoning-level/releases/tag/v0.7.7"
+  },
+  "author": "peterwangze",
+  "repo": "https://github.com/peterwangze/dsh-reasoning-level",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-13T08:01:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:peterwangze/dsh-reasoning-level",
+    "commands": [
+      "dsh plugin --profile web add peterwangze/dsh-reasoning-level",
+      "dsh plugin --profile web update dsh-reasoning-level",
+      "dsh plugin --profile web remove dsh-reasoning-level"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "liujuntao123/dsh-trusted-page",
+  "slug": "liujuntao123__dsh-trusted-page",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-trusted-page",
+  "title": "dsh-trusted-page",
+  "summary": "在设置面板里可视化配置受信域名，修复远程访问 DSH Web 时 Models 和设置页报错的问题。",
+  "tags": [
+    "dsh-plugin",
+    "设置面板",
+    "跨设备",
+    "安全审计",
+    "桥接插件"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "liujuntao123",
+  "repo": "https://github.com/liujuntao123/dsh-trusted-page",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T02:09:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:liujuntao123/dsh-trusted-page",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/liujuntao123/dsh-trusted-page.git",
+      "pnpm add git+https://github.com/liujuntao123/dsh-trusted-page.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

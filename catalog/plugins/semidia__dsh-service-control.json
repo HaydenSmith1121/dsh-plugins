@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "Semidia/dsh-service-control",
+  "slug": "semidia__dsh-service-control",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-service-control",
+  "title": "dsh-service-control",
+  "summary": "在会话头部直接重启或关闭 dsh web 服务，不用切回终端，重启后页面自动重连。",
+  "tags": [
+    "快捷操作",
+    "状态监控",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Semidia",
+  "repo": "https://github.com/Semidia/dsh-service-control",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-16T18:26:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Semidia/dsh-service-control",
+    "commands": [
+      "dsh plugin --profile web add github:Semidia/dsh-service-control"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

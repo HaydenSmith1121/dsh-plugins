@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-web-research-assistant",
+  "slug": "xby-skill__xby-web-research-assistant",
+  "tier": "community",
+  "package": null,
+  "name": "xby-web-research-assistant",
+  "title": "xby-web-research-assistant",
+  "summary": "一站式网络研究助手，集成搜索、爬取和分析工具，帮你快速收集和整理网络信息。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "模型配置",
+    "自动化",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-web-research-assistant",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:59:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-web-research-assistant",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-web-research-assistant",
+      "dsh plugin --profile web add /absolute/path/to/xby-web-research-assistant"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "aminuosi/dsh-skin-switcher",
+  "slug": "aminuosi__dsh-skin-switcher",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skin-switcher",
+  "title": "dsh-skin-switcher",
+  "summary": "在 dsh 设置里一键切换皮肤，悬停预览效果，点击即生效，轻松换装。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "前端增强",
+    "娱乐互动",
+    "主题",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "aminuosi",
+  "repo": "https://github.com/aminuosi/dsh-skin-switcher",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-25T09:08:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aminuosi/dsh-skin-switcher",
+    "commands": [
+      "dsh plugin --profile web add ../dsh-skin-switcher",
+      "dsh plugin --profile web add github:<你的用户名>/dsh-skin-switcher",
+      "dsh plugin --profile web remove @dsh-external/dsh-client-ui-skin-switcher"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

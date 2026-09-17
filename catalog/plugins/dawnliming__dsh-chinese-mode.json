@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "dawnliming/dsh-chinese-mode",
+  "slug": "dawnliming__dsh-chinese-mode",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-chinese-mode",
+  "title": "dsh-chinese-mode",
+  "summary": "在输入框加个「中」字开关，一键给所有会话注入简体中文要求，全局生效。",
+  "tags": [
+    "dsh-plugin",
+    "视觉理解",
+    "设置面板",
+    "提示词优化",
+    "会话管理"
+  ],
+  "version": "0.2.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dawnliming",
+  "repo": "https://github.com/dawnliming/dsh-chinese-mode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 0,
+  "pushedAt": "2026-08-18T01:32:29Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dawnliming/dsh-chinese-mode",
+    "commands": [
+      "dsh plugin --profile web add github:dawnliming/dsh-chinese-mode"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

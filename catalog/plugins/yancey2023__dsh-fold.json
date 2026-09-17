@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Yancey2023/dsh-fold",
+  "slug": "yancey2023__dsh-fold",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-fold",
+  "title": "dsh-fold",
+  "summary": "将同一轮对话中的连续工具调用折叠成一行，带实时状态和计数，让界面更清爽、好浏览。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "插件管理",
+    "前端增强",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Yancey2023",
+  "repo": "https://github.com/Yancey2023/dsh-fold",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T11:51:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Yancey2023/dsh-fold",
+    "commands": [
+      "dsh plugin --profile web add github:Yancey2023/dsh-fold",
+      "dsh plugin --profile web update dsh-fold",
+      "dsh plugin --profile web add /absolute/path/to/dsh-fold"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

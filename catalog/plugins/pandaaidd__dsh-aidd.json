@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "PandaAIDD/dsh-aidd",
+  "slug": "pandaaidd__dsh-aidd",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-aidd",
+  "title": "dsh-aidd",
+  "summary": "面向药物研发的AI科研工作台，集成ReAct研究循环、版本化产物追踪及17项虚拟筛选、分子生成、ADMET预测技能。",
+  "tags": [
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-plugins",
+    "药物研发",
+    "虚拟筛选",
+    "分子生成",
+    "ADMET预测",
+    "科研工作台"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-17T09:33:52Z",
+    "url": "https://github.com/PandaAIDD/dsh-aidd/releases/tag/v0.1.0"
+  },
+  "author": "PandaAIDD",
+  "repo": "https://github.com/PandaAIDD/dsh-aidd",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-17T09:14:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-aidd",
+    "commands": [
+      "dsh plugin --profile web add dsh-aidd",
+      "dsh plugin --profile web add \"github:panda_aidd/dsh-aidd\"",
+      "git clone https://github.com/panda_aidd/dsh-aidd ~/.dsh/.agent-presets/aidd"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

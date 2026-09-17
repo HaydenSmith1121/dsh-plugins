@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "aokamoaki/dsh-stall-sentinel",
+  "slug": "aokamoaki__dsh-stall-sentinel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-stall-sentinel",
+  "title": "dsh-stall-sentinel",
+  "summary": "给 DeepSeek Harness 加个轻量看门狗，自动盯梢子进程，卡住时提醒并留证据，绝不误杀进行中的任务。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "longtask",
+    "stall",
+    "watchdog",
+    "状态监控",
+    "AI 助手",
+    "资源优化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "aokamoaki",
+  "repo": "https://github.com/aokamoaki/dsh-stall-sentinel",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T13:56:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aokamoaki/dsh-stall-sentinel",
+    "commands": [
+      "dsh plugin --profile web add github:aokamoaki/dsh-stall-sentinel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

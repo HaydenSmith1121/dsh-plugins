@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Francesco502/dsh-quota",
+  "slug": "francesco502__dsh-quota",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-quota",
+  "title": "dsh-quota",
+  "summary": "实时监控 DeepSeek Harness 中 AI 额度和 Token 消耗，帮你掌握用量、避免超支。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "quota",
+    "token-monitor",
+    "状态监控",
+    "模型配置",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.2.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Francesco502",
+  "repo": "https://github.com/Francesco502/dsh-quota",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T07:34:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@francescoli/dsh-quota",
+    "commands": [
+      "dsh plugin --profile web add @francescoli/dsh-quota",
+      "dsh plugin --profile web add github:Francesco502/dsh-quota"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

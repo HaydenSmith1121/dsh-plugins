@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "a903067276-rgb/dsh-plan-switch",
+  "slug": "a903067276-rgb__dsh-plan-switch",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plan-switch",
+  "title": "dsh-plan-switch",
+  "summary": "在 DSH 网页输入栏一键进入或退出 Plan 模式，省去输入 /plan 的麻烦，快速切换规划状态。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "plan-mode",
+    "快捷操作",
+    "设置面板",
+    "输入栏增强"
+  ],
+  "version": "0.3.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.2",
+    "publishedAt": "2026-08-22T00:49:18Z",
+    "url": "https://github.com/a903067276-rgb/dsh-plan-switch/releases/tag/v0.3.2"
+  },
+  "author": "a903067276-rgb",
+  "repo": "https://github.com/a903067276-rgb/dsh-plan-switch",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-09-10T04:44:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:a903067276-rgb/dsh-plan-switch",
+    "commands": [
+      "dsh plugin --profile web add \"github:a903067276-rgb/dsh-plan-switch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

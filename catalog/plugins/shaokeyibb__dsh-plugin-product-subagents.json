@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "shaokeyibb/dsh-plugin-product-subagents",
+  "slug": "shaokeyibb__dsh-plugin-product-subagents",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-product-subagents",
+  "title": "dsh-plugin-product-subagents",
+  "summary": "为 DeepSeek Harness 提供基于角色的 Codex、Claude Code 等子代理，支持会话恢复、权限控制和委派，让外部 AI 工具变成可续跑的得力助手。",
+  "tags": [
+    "acp",
+    "claude-code",
+    "codex",
+    "cursor",
+    "dsh-plugin",
+    "命令行工具",
+    "安全审计"
+  ],
+  "version": "0.4.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "shaokeyibb",
+  "repo": "https://github.com/shaokeyibb/dsh-plugin-product-subagents",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 19,
+  "forks": 4,
+  "pushedAt": "2026-09-10T03:34:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-product-subagents",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-product-subagents"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

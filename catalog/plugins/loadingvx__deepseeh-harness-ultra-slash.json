@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "loadingvx/deepseeh-harness-ultra-slash",
+  "slug": "loadingvx__deepseeh-harness-ultra-slash",
+  "tier": "community",
+  "package": null,
+  "name": "deepseeh-harness-ultra-slash",
+  "title": "deepseeh-harness-ultra-slash",
+  "summary": "给 DeepSeek Harness 加上 /steer 系列命令，让你用斜杠指令快速切换会话、操控工作区。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "快捷操作",
+    "会话管理",
+    "命令行工具",
+    "工作区管理"
+  ],
+  "version": "0.2.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.4",
+    "publishedAt": "2026-09-13T00:37:58Z",
+    "url": "https://github.com/loadingvx/deepseeh-harness-ultra-slash/releases/tag/v0.2.4"
+  },
+  "author": "loadingvx",
+  "repo": "https://github.com/loadingvx/deepseeh-harness-ultra-slash",
+  "homepage": "https://www.npmjs.com/package/deepseek-harness-ultra-slash",
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-09-13T00:36:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "deepseek-harness-ultra-slash@0.2.4",
+    "commands": [
+      "dsh plugin --profile web add deepseek-harness-ultra-slash@0.2.4",
+      "dsh plugin --profile web add github:loadingvx/deepseeh-harness-ultra-slash",
+      "dsh plugin --profile web remove dsh-steer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

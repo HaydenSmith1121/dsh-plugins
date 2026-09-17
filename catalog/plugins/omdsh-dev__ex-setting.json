@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "omdsh-dev/ex-setting",
+  "slug": "omdsh-dev__ex-setting",
+  "tier": "community",
+  "package": null,
+  "name": "ex-setting",
+  "title": "ex-setting",
+  "summary": "自动抓取并整合主机与浏览器配置，提供一站式设置面板，改参数不用来回找入口了。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "设置面板",
+    "零配置"
+  ],
+  "version": "0.3.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.2",
+    "publishedAt": "2026-08-21T00:05:26Z",
+    "url": "https://github.com/omdsh-dev/ex-setting/releases/tag/v0.3.2"
+  },
+  "author": "omdsh-dev",
+  "repo": "https://github.com/omdsh-dev/ex-setting",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-22T14:12:48Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:omdsh-dev/ex-setting",
+    "commands": [
+      "dsh plugin --profile web add github:omdsh-dev/ex-setting"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

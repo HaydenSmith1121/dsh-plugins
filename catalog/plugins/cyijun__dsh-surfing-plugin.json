@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "cyijun/dsh-surfing-plugin",
+  "slug": "cyijun__dsh-surfing-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-surfing-plugin",
+  "title": "dsh-surfing-plugin",
+  "summary": "为 DeepSeek Harness 接入自托管搜索与抓取能力，支持 SearXNG 搜索和 Crawl4AI 网页抓取。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "web-fetch",
+    "web-search",
+    "webfetch",
+    "websearch",
+    "语义检索",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "cyijun",
+  "repo": "https://github.com/cyijun/dsh-surfing-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 15,
+  "forks": 0,
+  "pushedAt": "2026-08-14T09:42:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cyijun/dsh-surfing-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:cyijun/dsh-surfing-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

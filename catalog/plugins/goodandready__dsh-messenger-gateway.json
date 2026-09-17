@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-messenger-gateway",
+  "slug": "goodandready__dsh-messenger-gateway",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-messenger-gateway",
+  "title": "dsh-messenger-gateway",
+  "summary": "把 DeepSeek Harness 接到 Telegram，用按钮和语音消息随时管会话、发指令。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "桥接插件",
+    "消息通知",
+    "会话管理",
+    "工具集成",
+    "快捷操作"
+  ],
+  "version": "0.3.22",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-messenger-gateway",
+  "homepage": "https://www.npmjs.com/package/@goodandready/dsh-messenger-gateway",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-09-15T18:53:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@goodandready/dsh-messenger-gateway",
+    "commands": [
+      "dsh plugin --profile web add @goodandready/dsh-messenger-gateway"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

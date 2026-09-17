@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "csiroqa/dsh-schedule",
+  "slug": "csiroqa__dsh-schedule",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-schedule",
+  "title": "dsh-schedule",
+  "summary": "按 cron 定时自动跑 Agent 任务，还能随时查看系统和 Harness 的运行状态，省心又高效。",
+  "tags": [
+    "cordis",
+    "cron",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "schedule",
+    "消息通知",
+    "状态监控",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-13T20:44:45Z",
+    "url": "https://github.com/csiroqa/dsh-schedule/releases/tag/v0.1.0"
+  },
+  "author": "csiroqa",
+  "repo": "https://github.com/csiroqa/dsh-schedule",
+  "homepage": "https://github.com/csiroqa/dsh-schedule",
+  "license": "MIT",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-08-23T16:49:27Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:csiroqa/dsh-schedule",
+    "commands": [
+      "git clone https://github.com/csiroqa/dsh-schedule.git",
+      "dsh plugin --profile web add link:$(pwd)",
+      "dsh plugin --profile web add link:E:\\path\\to\\dsh-schedule"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

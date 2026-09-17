@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Neutron3529/dsh-plugin-tool-gaming-host",
+  "slug": "neutron3529__dsh-plugin-tool-gaming-host",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-tool-gaming-host",
+  "title": "dsh-plugin-tool-gaming-host",
+  "summary": "让沙箱里的 agent 也能调用宿主机程序，GPU、图形界面、宿主配置都能用上。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "工具集成",
+    "自动化",
+    "安全审计"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "Neutron3529",
+  "repo": "https://github.com/Neutron3529/dsh-plugin-tool-gaming-host",
+  "homepage": null,
+  "license": "AGPL-3.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T23:51:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Neutron3529/dsh-plugin-tool-gaming-host",
+    "commands": [
+      "dsh plugin --profile web add github:Neutron3529/dsh-plugin-tool-gaming-host"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

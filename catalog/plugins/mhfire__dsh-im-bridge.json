@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "MHfire/dsh-im-bridge",
+  "slug": "mhfire__dsh-im-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-im-bridge",
+  "title": "dsh-im-bridge",
+  "summary": "把企业微信消息接到 DeepSeek Harness 智能体上，无需公网地址，每个成员都有独立会话。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "wecom-bot",
+    "桥接插件",
+    "工具集成",
+    "会话管理",
+    "AI 助手",
+    "状态持久化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "MHfire",
+  "repo": "https://github.com/MHfire/dsh-im-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-10T02:18:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MHfire/dsh-im-bridge",
+    "commands": [
+      "dsh plugin --profile web add github:MHfire/dsh-im-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

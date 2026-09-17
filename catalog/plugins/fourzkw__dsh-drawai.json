@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "fourzkw/dsh-drawai",
+  "slug": "fourzkw__dsh-drawai",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-drawai",
+  "title": "dsh-drawai",
+  "summary": "在 DSH 右侧栏放一块可编辑画布，还能让模型直接动手帮你改图。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "报告生成",
+    "AI 助手",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fourzkw",
+  "repo": "https://github.com/fourzkw/dsh-drawai",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T15:28:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-drawai",
+    "commands": [
+      "dsh plugin --profile web add dsh-drawai",
+      "dsh plugin --profile web add github:fourzkw/dsh-drawai"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

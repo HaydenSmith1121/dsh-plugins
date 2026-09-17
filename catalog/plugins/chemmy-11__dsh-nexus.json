@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "chemmy-11/dsh-nexus",
+  "slug": "chemmy-11__dsh-nexus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-nexus",
+  "title": "dsh-nexus",
+  "summary": "给 Obsidian 库和 AI 会话装上仪表盘，实时看编辑统计和对话数据，全程只读不打扰。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.0.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chemmy-11",
+  "repo": "https://github.com/chemmy-11/dsh-nexus",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-12T17:17:31Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chemmy-11/dsh-nexus",
+    "commands": [
+      "dsh plugin --profile <name> add github:chemmy-11/dsh-nexus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

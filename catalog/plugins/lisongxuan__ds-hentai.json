@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "lisongxuan/ds-hentai",
+  "slug": "lisongxuan__ds-hentai",
+  "tier": "community",
+  "package": null,
+  "name": "ds-hentai",
+  "title": "ds-hentai",
+  "summary": "给 DeepSeek Harness 换上 ExHentai 风格界面，深色背景配灰白文字，会话列表像画廊索引，聊天框也很有味道。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "ex-hentai",
+    "exhentai",
+    "前端增强",
+    "可视化",
+    "零配置"
+  ],
+  "version": "0.6.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.0",
+    "publishedAt": "2026-08-28T16:59:50Z",
+    "url": "https://github.com/lisongxuan/ds-hentai/releases/tag/v0.6.0"
+  },
+  "author": "lisongxuan",
+  "repo": "https://github.com/lisongxuan/ds-hentai",
+  "homepage": "https://dshentai-demo.arkady14.site/",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T17:21:31Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lisongxuan/ds-hentai",
+    "commands": [
+      "dsh plugin --profile web remove ds-hentai",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

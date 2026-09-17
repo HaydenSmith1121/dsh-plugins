@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "PensiveFei/dsh-secure-audit",
+  "slug": "pensivefei__dsh-secure-audit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-secure-audit",
+  "title": "dsh-secure-audit",
+  "summary": "为 DeepSeek Harness 提供只读安全审计：检测提示注入、脱敏中文个人隐私，并生成可复现的本地配置审计报告。",
+  "tags": [
+    "audit",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "pii",
+    "prompt-injection",
+    "security",
+    "安全审查",
+    "智能体安全",
+    "代码检查",
+    "设置面板"
+  ],
+  "version": "0.2.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.9",
+    "publishedAt": "2026-09-01T16:01:40Z",
+    "url": "https://github.com/PensiveFei/dsh-secure-audit/releases/tag/v0.2.9"
+  },
+  "author": "PensiveFei",
+  "repo": "https://github.com/PensiveFei/dsh-secure-audit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 86,
+  "forks": 4,
+  "pushedAt": "2026-09-12T02:56:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:PensiveFei/dsh-secure-audit",
+    "commands": [
+      "dsh plugin add ./dsh-secure-audit-0.1.0.tgz",
+      "dsh plugin add github:PensiveFei/dsh-secure-audit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

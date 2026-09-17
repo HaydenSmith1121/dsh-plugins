@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-shadow-auditor",
+  "slug": "goodandready__dsh-shadow-auditor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-shadow-auditor",
+  "title": "dsh-shadow-auditor",
+  "summary": "后台自动做安全审计，帮你揪出泄露的密钥，还能拦截危险命令，给 DeepSeek Harness 加道防火墙。",
+  "tags": [
+    "audit",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "security",
+    "安全审计",
+    "状态监控",
+    "插件管理",
+    "命令行工具"
+  ],
+  "version": "0.2.10",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.10",
+    "publishedAt": "2026-09-17T14:14:43Z",
+    "url": "https://github.com/GooDAnDReaDY/dsh-shadow-auditor/releases/tag/v0.2.10"
+  },
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-shadow-auditor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T17:28:32Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooDAnDReaDY/dsh-shadow-auditor",
+    "commands": [
+      "dsh plugin --profile web add github:GooDAnDReaDY/dsh-shadow-auditor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

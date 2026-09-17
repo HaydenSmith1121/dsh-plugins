@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "shy19805/dsh-tool-args-unwrap",
+  "slug": "shy19805__dsh-tool-args-unwrap",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tool-args-unwrap",
+  "title": "dsh-tool-args-unwrap",
+  "summary": "修复模型返回的畸形工具调用参数，自动解包嵌套和别名，让工具调用更稳定。",
+  "tags": [
+    "cordis",
+    "dsh",
+    "dsh-plugin",
+    "llm",
+    "tool-call",
+    "AI 助手",
+    "任务感知",
+    "插件优化",
+    "工作流增强"
+  ],
+  "version": "0.3.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "shy19805",
+  "repo": "https://github.com/shy19805/dsh-tool-args-unwrap",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T16:46:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shy19805/dsh-tool-args-unwrap",
+    "commands": [
+      "dsh plugin --profile web add github:shy19805/dsh-tool-args-unwrap"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

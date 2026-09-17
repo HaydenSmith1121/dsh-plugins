@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "dragonbaba/dsh-routing-suite",
+  "slug": "dragonbaba__dsh-routing-suite",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-routing-suite",
+  "title": "dsh-routing-suite",
+  "summary": "给 DSH 加一个轻量智能路由模式，在模式菜单里一选就能按任务自动分流，省心又高效。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "task-routing",
+    "模型配置",
+    "效率提升",
+    "快捷操作",
+    "工作流增强"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dragonbaba",
+  "repo": "https://github.com/dragonbaba/dsh-routing-suite",
+  "homepage": "https://www.npmjs.com/package/dsh-routing-suite",
+  "license": "MIT",
+  "stars": 20,
+  "forks": 1,
+  "pushedAt": "2026-08-15T17:47:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-routing-suite",
+    "commands": [
+      "dsh plugin --profile web add dsh-routing-suite"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

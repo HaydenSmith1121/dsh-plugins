@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "CaiZongyuan/dsh-react-surface",
+  "slug": "caizongyuan__dsh-react-surface",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-react-surface",
+  "title": "dsh-react-surface",
+  "summary": "让现有 React 应用直接作为 DeepSeek Harness 原生界面运行，保留原有 UI 和状态。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "react",
+    "前端增强",
+    "零配置",
+    "可视化",
+    "开发流程"
+  ],
+  "version": "0.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "CaiZongyuan",
+  "repo": "https://github.com/CaiZongyuan/dsh-react-surface",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-09-16T01:43:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CaiZongyuan/dsh-react-surface",
+    "commands": [
+      "dsh plugin --profile web add github:CaiZongyuan/dsh-react-surface"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

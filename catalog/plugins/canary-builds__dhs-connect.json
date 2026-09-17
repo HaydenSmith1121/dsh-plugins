@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Canary-Builds/dhs-connect",
+  "slug": "canary-builds__dhs-connect",
+  "tier": "community",
+  "package": null,
+  "name": "dhs-connect",
+  "title": "dhs-connect",
+  "summary": "把 DeepSeek Harness 接到 ChatGPT 模型上，用 OAuth 登录就能直接调用，省去手动配置的麻烦。",
+  "tags": [
+    "chatgpt",
+    "codex",
+    "connector",
+    "deepseek-harness",
+    "dsh-plugin",
+    "模型配置",
+    "安全审计",
+    "零配置"
+  ],
+  "version": "0.3.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Canary-Builds",
+  "repo": "https://github.com/Canary-Builds/dhs-connect",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T02:10:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@canary-builds/dsh-connect",
+    "commands": [
+      "dsh plugin --profile web add @canary-builds/dsh-connect"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

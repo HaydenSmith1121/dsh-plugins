@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "Zhangbo-cn/dsh-voice-input-plugin",
+  "slug": "zhangbo-cn__dsh-voice-input-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "Zhangbo-cn/dsh-voice-input-plugin",
+  "title": "Zhangbo-cn/dsh-voice-input-plugin",
+  "summary": "在 DeepSeek Harness 输入框加个麦克风按钮，直接用浏览器语音识别转文字，说话就能写提示词。",
+  "tags": [
+    "dsh-plugin",
+    "多模态",
+    "提示词增强",
+    "浏览器识别"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Zhangbo-cn",
+  "repo": "https://github.com/Zhangbo-cn/dsh-voice-input-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 1,
+  "pushedAt": "2026-08-25T16:01:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@zhangbo-cn/dsh-client-ui-voice-input",
+    "commands": [
+      "dsh plugin add @zhangbo-cn/dsh-client-ui-voice-input"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

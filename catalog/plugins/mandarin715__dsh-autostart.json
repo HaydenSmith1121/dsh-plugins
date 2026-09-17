@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "Mandarin715/dsh-autostart",
+  "slug": "mandarin715__dsh-autostart",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-autostart",
+  "title": "dsh-autostart",
+  "summary": "Windows 专用：一键让 DSH 开机自启，还能一键重启，重启失败也不会把 DSH 弄丢，全程无控制台窗口。",
+  "tags": [
+    "autostart",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "plugin",
+    "windows",
+    "自动化",
+    "快捷操作",
+    "状态监控",
+    "插件管理",
+    "工作流增强"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-12T15:12:52Z",
+    "url": "https://github.com/Mandarin715/dsh-autostart/releases/tag/v0.2.0"
+  },
+  "author": "Mandarin715",
+  "repo": "https://github.com/Mandarin715/dsh-autostart",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-12T14:57:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Mandarin715/dsh-autostart",
+    "commands": [
+      "dsh plugin --profile web add github:Mandarin715/dsh-autostart"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

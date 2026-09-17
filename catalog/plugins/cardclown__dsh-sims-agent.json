@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "cardclown/dsh-sims-agent",
+  "slug": "cardclown__dsh-sims-agent",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sims-agent",
+  "title": "dsh-sims-agent",
+  "summary": "给 SIMS 助手配好连接和凭据，还能检查真实账号，顺手管理用户模板。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "模型配置",
+    "AI 助手",
+    "状态监控"
+  ],
+  "version": "0.1.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "cardclown",
+  "repo": "https://github.com/cardclown/dsh-sims-agent",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T14:47:35Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cardclown/dsh-sims-agent",
+    "commands": [
+      "dsh plugin --profile web add 'git+https://github.com/cardclown/dsh-sims-agent.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

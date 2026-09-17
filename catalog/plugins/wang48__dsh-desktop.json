@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "wang48/dsh-desktop",
+  "slug": "wang48__dsh-desktop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-desktop",
+  "title": "dsh-desktop",
+  "summary": "把 DeepSeek Harness 打包成桌面应用，Windows、macOS、Linux 装上就能用，不用折腾环境。",
+  "tags": [
+    "ai-agent",
+    "deepseek",
+    "deepseek-harness",
+    "desktop-app",
+    "dsh",
+    "electron",
+    "linux",
+    "macos",
+    "windows",
+    "零配置",
+    "AI 助手",
+    "工具集成",
+    "跨平台桌面"
+  ],
+  "version": "0.2.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.6",
+    "publishedAt": "2026-08-17T14:32:53Z",
+    "url": "https://github.com/wang48/dsh-desktop/releases/tag/v0.2.6"
+  },
+  "author": "wang48",
+  "repo": "https://github.com/wang48/dsh-desktop",
+  "homepage": "https://github.com/wang48/dsh-desktop/releases/latest",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T09:03:53Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wang48/dsh-desktop",
+    "commands": [
+      "dsh plugin --profile web add github:wang48/dsh-desktop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

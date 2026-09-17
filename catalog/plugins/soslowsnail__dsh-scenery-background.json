@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "soslowsnail/dsh-scenery-background",
+  "slug": "soslowsnail__dsh-scenery-background",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-scenery-background",
+  "title": "dsh-scenery-background",
+  "summary": "给 Web UI 换上会轮播的风景背景，支持每日一图和幻灯片模式，内置五套离线场景，还能接 Unsplash 图库。",
+  "tags": [
+    "dsh-plugin",
+    "主题",
+    "界面美化",
+    "可视化",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "soslowsnail",
+  "repo": "https://github.com/soslowsnail/dsh-scenery-background",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-18T15:22:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-scenery-background",
+    "commands": [
+      "dsh plugin --profile web add dsh-scenery-background",
+      "dsh plugin --profile web add \"github:soslowsnail/dsh-scenery-background\"",
+      "dsh plugin --profile web add \"file:/绝对路径/dsh-scenery-background\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

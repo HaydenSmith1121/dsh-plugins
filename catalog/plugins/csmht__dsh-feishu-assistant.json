@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "csmht/dsh-feishu-assistant",
+  "slug": "csmht__dsh-feishu-assistant",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-feishu-assistant",
+  "title": "dsh-feishu-assistant",
+  "summary": "通过飞书机器人读取群聊消息，配合 DSH 内核实现智能助手回复和群管理。",
+  "tags": [
+    "ai-assistant",
+    "dsh",
+    "feishu",
+    "lark",
+    "python",
+    "工具集成",
+    "桌宠",
+    "会话管理",
+    "消息通知"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "csmht",
+  "repo": "https://github.com/csmht/dsh-feishu-assistant",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T14:50:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:csmht/dsh-feishu-assistant",
+    "commands": [
+      "dsh plugin --profile web add github:csmht/dsh-feishu-assistant"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

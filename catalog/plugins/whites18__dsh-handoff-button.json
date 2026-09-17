@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "whiteS18/dsh-handoff-button",
+  "slug": "whites18__dsh-handoff-button",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-handoff-button",
+  "title": "dsh-handoff-button",
+  "summary": "在每条 AI 回复底部添加 Handoff 按钮，一键将当前会话压缩成文档保存到工作区，方便交接和复盘。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "whiteS18",
+  "repo": "https://github.com/whiteS18/dsh-handoff-button",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T17:48:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:whiteS18/dsh-handoff-button",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-handoff-button",
+      "dsh plugin --profile <name> add /绝对路径/dsh-handoff-button"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

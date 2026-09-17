@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "Zhuang-A/dsh-go-sensei",
+  "slug": "zhuang-a__dsh-go-sensei",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-go-sensei",
+  "title": "dsh-go-sensei",
+  "summary": "把SGF棋谱交给它，像围棋老师一样逐手讲解问题手和更优下法，还能导出复盘报告。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "报告生成",
+    "零配置",
+    "工具集成",
+    "娱乐互动"
+  ],
+  "version": "0.2.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.4",
+    "publishedAt": "2026-09-15T14:30:07Z",
+    "url": "https://github.com/Zhuang-A/dsh-go-sensei/releases/tag/v0.2.4"
+  },
+  "author": "Zhuang-A",
+  "repo": "https://github.com/Zhuang-A/dsh-go-sensei",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T14:29:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Zhuang-A/dsh-go-sensei",
+    "commands": [
+      "dsh plugin --profile web add github:Zhuang-A/dsh-go-sensei"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

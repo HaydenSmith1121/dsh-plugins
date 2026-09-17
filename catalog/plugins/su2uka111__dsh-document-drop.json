@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "Su2uka111/dsh-document-drop",
+  "slug": "su2uka111__dsh-document-drop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-document-drop",
+  "title": "dsh-document-drop",
+  "summary": "拖拽PDF、Word、Excel和文本文件进对话，自动解析内容，扫描件还能OCR识别，大文档按需检索，提升文档处理效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "ocr",
+    "office-document",
+    "pdf",
+    "效率提升",
+    "视觉理解",
+    "语义检索",
+    "文件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-05T15:50:50Z",
+    "url": "https://github.com/Su2uka111/dsh-document-drop/releases/tag/v0.1.0"
+  },
+  "author": "Su2uka111",
+  "repo": "https://github.com/Su2uka111/dsh-document-drop",
+  "homepage": "https://github.com/Su2uka111/dsh-document-drop/releases/latest",
+  "license": "BSD-3-Clause",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-05T15:57:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Su2uka111/dsh-document-drop",
+    "commands": [
+      "dsh plugin --profile web add <解压目录>",
+      "dsh plugin --profile web add github:Su2uka111/dsh-document-drop",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

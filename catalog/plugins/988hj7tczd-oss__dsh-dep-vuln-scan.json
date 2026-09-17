@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "988hj7tczd-oss/dsh-dep-vuln-scan",
+  "slug": "988hj7tczd-oss__dsh-dep-vuln-scan",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-dep-vuln-scan",
+  "title": "dsh-dep-vuln-scan",
+  "summary": "扫描项目锁文件，对接OSV漏洞库，自动识别依赖漏洞并给出修复版本。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "osv",
+    "security",
+    "vulnerability",
+    "工作流增强",
+    "内容创作",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "988hj7tczd-oss",
+  "repo": "https://github.com/988hj7tczd-oss/dsh-dep-vuln-scan",
+  "homepage": "https://aibunkhouse.com/tools/",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-24T14:53:31Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:988hj7tczd-oss/dsh-dep-vuln-scan",
+    "commands": [
+      "dsh plugin --profile demo add ./dsh-dep-vuln-scan"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "1024483906-pixel/dsh-novel-reader",
+  "slug": "1024483906-pixel__dsh-novel-reader",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-novel-reader",
+  "title": "dsh-novel-reader",
+  "summary": "在 DeepSeek Harness 界面里摸鱼看小说的插件，支持悬浮窗分页阅读和透明隐形模式。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "novel-reader",
+    "前端增强",
+    "娱乐互动",
+    "桌宠"
+  ],
+  "version": "1.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.1.1",
+    "publishedAt": "2026-08-26T01:31:05Z",
+    "url": "https://github.com/1024483906-pixel/dsh-novel-reader/releases/tag/v1.1.1"
+  },
+  "author": "1024483906-pixel",
+  "repo": "https://github.com/1024483906-pixel/dsh-novel-reader",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-26T01:34:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:1024483906-pixel/dsh-novel-reader",
+    "commands": [
+      "dsh plugin --profile web add github:1024483906-pixel/dsh-novel-reader"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

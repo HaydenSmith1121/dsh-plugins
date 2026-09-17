@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "2286893544/feishu-dsh-plugin",
+  "slug": "2286893544__feishu-dsh-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "feishu-dsh-plugin",
+  "title": "feishu-dsh-plugin",
+  "summary": "把飞书接进 DSH，用 24 个工具收发消息、读写云文档表格和多维表格。",
+  "tags": [
+    "dsh-plugin",
+    "feishu",
+    "lark",
+    "工具集成",
+    "消息通知",
+    "文件管理",
+    "视觉理解",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "2286893544",
+  "repo": "https://github.com/2286893544/feishu-dsh-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T11:09:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-feishu",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-feishu",
+      "dsh plugin --profile web add github:2286893544/feishu-dsh-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

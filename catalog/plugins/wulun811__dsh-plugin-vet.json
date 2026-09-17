@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "wulun811/dsh-plugin-vet",
+  "slug": "wulun811__dsh-plugin-vet",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-vet",
+  "title": "dsh-plugin-vet",
+  "summary": "给 DSH 插件做安全体检：静态扫描加 AI 审计双保险，还能挂运行时监控，帮你判断插件靠不靠谱。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "安全审计",
+    "静态扫描",
+    "AI检测",
+    "插件体检"
+  ],
+  "version": "0.3.12",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wulun811",
+  "repo": "https://github.com/wulun811/dsh-plugin-vet",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-09-11T18:55:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wulun811/dsh-plugin-vet",
+    "commands": [
+      "dsh plugin --profile <profile> add @jieai/dsh-plugin-vet"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

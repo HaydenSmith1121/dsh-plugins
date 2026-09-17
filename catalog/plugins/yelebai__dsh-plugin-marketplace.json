@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "YELEBAI/dsh-plugin-marketplace",
+  "slug": "yelebai__dsh-plugin-marketplace",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-marketplace",
+  "title": "dsh-plugin-marketplace",
+  "summary": "为 DeepSeek Harness 提供经过验证的插件市场，自动扫描并收录可靠的 dsh 插件，方便你发现和安装。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "自动扫描"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "YELEBAI",
+  "repo": "https://github.com/YELEBAI/dsh-plugin-marketplace",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 21,
+  "forks": 3,
+  "pushedAt": "2026-09-16T21:36:08Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:YELEBAI/dsh-plugin-marketplace",
+    "commands": [
+      "dsh plugin --profile web add github:YELEBAI/dsh-plugin-marketplace",
+      "dsh plugin --profile web add D:/path/to/dsh_Market"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

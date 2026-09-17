@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "lifeopsgo/dsh-capability-toggle-plugin",
+  "slug": "lifeopsgo__dsh-capability-toggle-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-capability-toggle-plugin",
+  "title": "dsh-capability-toggle-plugin",
+  "summary": "在 DSH 界面中按会话、项目或全局灵活开关智能体的各项能力（技能、MCP、工具等），并真正生效。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-desktop",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dsh-plugins",
+    "插件管理",
+    "会话管理",
+    "安全审计",
+    "效率提升"
+  ],
+  "version": "1.3.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.3.2",
+    "publishedAt": "2026-09-12T05:35:26Z",
+    "url": "https://github.com/lifeopsgo/dsh-capability-toggle-plugin/releases/tag/v1.3.2"
+  },
+  "author": "lifeopsgo",
+  "repo": "https://github.com/lifeopsgo/dsh-capability-toggle-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-12T05:35:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lifeopsgo/dsh-capability-toggle-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:lifeopsgo/dsh-capability-toggle-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

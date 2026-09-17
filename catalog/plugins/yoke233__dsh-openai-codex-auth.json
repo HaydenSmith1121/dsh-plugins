@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "yoke233/dsh-openai-codex-auth",
+  "slug": "yoke233__dsh-openai-codex-auth",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-openai-codex-auth",
+  "title": "dsh-openai-codex-auth",
+  "summary": "在 DeepSeek Harness 里直接登录 ChatGPT 订阅，随时查看 Codex 用量并接入本地凭据。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "openai-codex",
+    "模型适配",
+    "工具集成",
+    "状态监控",
+    "AI 助手"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yoke233",
+  "repo": "https://github.com/yoke233/dsh-openai-codex-auth",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 12,
+  "forks": 2,
+  "pushedAt": "2026-09-07T04:46:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yoke233/dsh-openai-codex-auth",
+    "commands": [
+      "dsh plugin --profile web add github:yoke233/dsh-openai-codex-auth"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

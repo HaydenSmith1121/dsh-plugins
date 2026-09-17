@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "NaivG/dsh-network",
+  "slug": "naivg__dsh-network",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-network",
+  "title": "dsh-network",
+  "summary": "让 DeepSeek Harness 顺畅联网，替换官方搜索抓取工具，还能解析 PDF、Office 和 EPUB 文档。",
+  "tags": [
+    "dsh-plugin",
+    "search",
+    "webfetch",
+    "工具集成",
+    "网络代理",
+    "语义检索",
+    "文件管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "NaivG",
+  "repo": "https://github.com/NaivG/dsh-network",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T06:19:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:NaivG/dsh-network",
+    "commands": [
+      "dsh plugin --profile web add github:NaivG/dsh-network",
+      "dsh plugin --profile web add link:<path-to-this-checkout>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "developerdh/dsh-sandbox-allowlist",
+  "slug": "developerdh__dsh-sandbox-allowlist",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sandbox-allowlist",
+  "title": "dsh-sandbox-allowlist",
+  "summary": "给 DSH 沙箱加几个可信目录，工作区外也能直接读写，不用反复审批、不用关沙箱。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "工作区管理",
+    "文件管理",
+    "安全审计",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "developerdh",
+  "repo": "https://github.com/developerdh/dsh-sandbox-allowlist",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 1,
+  "pushedAt": "2026-09-07T01:31:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-sandbox-allowlist",
+    "commands": [
+      "dsh plugin --profile web add dsh-sandbox-allowlist",
+      "dsh plugin --profile web add /tmp/pkg/dsh-sandbox-allowlist-*.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

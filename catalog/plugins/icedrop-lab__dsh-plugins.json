@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "icedrop-lab/dsh-plugins",
+  "slug": "icedrop-lab__dsh-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugins",
+  "title": "dsh-plugins",
+  "summary": "一个仓库打包两款 DSH 插件：帮你盯住 API 花费，还能让 AI 自己开浏览器干活。",
+  "tags": [
+    "browser-automation",
+    "cost-meter",
+    "deepseek-harness",
+    "dsh-plugin",
+    "成本控制",
+    "状态监控",
+    "自动化",
+    "工具集成"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-10T22:53:40Z",
+    "url": "https://github.com/icedrop-lab/dsh-plugins/releases/tag/v0.3.0"
+  },
+  "author": "icedrop-lab",
+  "repo": "https://github.com/icedrop-lab/dsh-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T15:18:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@icedrop-ai/dsh-cost-meter",
+    "commands": [
+      "dsh plugin --profile web add @icedrop-ai/dsh-cost-meter",
+      "dsh plugin --profile web add @icedrop-ai/dsh-browser-use",
+      "dsh plugin --profile web add @icedrop-ai/dsh-all"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

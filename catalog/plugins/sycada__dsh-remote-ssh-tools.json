@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Sycada/dsh-remote-ssh-tools",
+  "slug": "sycada__dsh-remote-ssh-tools",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-remote-ssh-tools",
+  "title": "dsh-remote-ssh-tools",
+  "summary": "集中管理 SSH 连接，让 Agent 一键远程执行命令、开终端、传文件，密码只存凭据中心，界面永不明文。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "命令行工具",
+    "文件管理",
+    "安全审计",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Sycada",
+  "repo": "https://github.com/Sycada/dsh-remote-ssh-tools",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-08T06:52:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Sycada/dsh-remote-ssh-tools",
+    "commands": [
+      "dsh plugin --profile web add github:Sycada/dsh-remote-ssh-tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

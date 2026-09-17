@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "tingao/dsh-peaktime-clock",
+  "slug": "tingao__dsh-peaktime-clock",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-peaktime-clock",
+  "title": "dsh-peaktime-clock",
+  "summary": "在 DeepSeek Harness 聊天界面角落显示当前是否处于 API 高峰计费时段，帮你省钱省心。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "效率提升",
+    "可视化",
+    "前端增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "tingao",
+  "repo": "https://github.com/tingao/dsh-peaktime-clock",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T23:51:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-peaktime-clock",
+    "commands": [
+      "dsh plugin --profile web add dsh-peaktime-clock"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

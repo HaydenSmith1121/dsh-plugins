@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "Wanbinyu/dsh-billing",
+  "slug": "wanbinyu__dsh-billing",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-billing",
+  "title": "dsh-billing",
+  "summary": "查看 DeepSeek Harness 会话费用与额度，帮你掌握成本、优化资源使用。",
+  "tags": [
+    "billing",
+    "cost-tracking",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "typescript",
+    "资源优化",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.6.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.6",
+    "publishedAt": "2026-09-11T03:56:50Z",
+    "url": "https://github.com/Wanbinyu/dsh-billing/releases/tag/v0.6.6"
+  },
+  "author": "Wanbinyu",
+  "repo": "https://github.com/Wanbinyu/dsh-billing",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-11T03:56:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Wanbinyu/dsh-billing",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/Wanbinyu/dsh-billing/releases/download/v0.6.6/dsh-billing-community-bundle-0.6.6.tgz",
+      "npm install ./packages/dsh-billing ./packages/dsh-client-ui-billing"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

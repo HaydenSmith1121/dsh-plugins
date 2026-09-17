@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "liceses/dsh-gitbash-preset",
+  "slug": "liceses__dsh-gitbash-preset",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-gitbash-preset",
+  "title": "dsh-gitbash-preset",
+  "summary": "一键安装极简模式 Git Bash 预设，让 Windows 上的 DSH 极简模式真正可用。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "Windows适配",
+    "极简模式",
+    "预设安装"
+  ],
+  "version": "0.1.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "liceses",
+  "repo": "https://github.com/liceses/dsh-gitbash-preset",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 131,
+  "forks": 0,
+  "pushedAt": "2026-09-14T12:48:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@icelily/dsh-gitbash-preset",
+    "commands": [
+      "dsh plugin --profile web add @icelily/dsh-gitbash-preset"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

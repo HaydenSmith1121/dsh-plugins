@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "EricWang1358/dsh-jspace-trigger",
+  "slug": "ericwang1358__dsh-jspace-trigger",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-jspace-trigger",
+  "title": "dsh-jspace-trigger",
+  "summary": "按规则判断值不值得，才提醒 DSH 智能体加载 J-Space 认知套件，不做无脑注入。",
+  "tags": [
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "j-space",
+    "模型适配",
+    "AI 助手",
+    "自动化",
+    "工作流增强"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "EricWang1358",
+  "repo": "https://github.com/EricWang1358/dsh-jspace-trigger",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-18T15:27:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:EricWang1358/dsh-jspace-trigger",
+    "commands": [
+      "dsh plugin --profile web add github:EricWang1358/dsh-jspace-trigger"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

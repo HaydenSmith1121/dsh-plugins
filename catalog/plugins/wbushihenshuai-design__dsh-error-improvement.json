@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "wbushihenshuai-design/dsh-error-improvement",
+  "slug": "wbushihenshuai-design__dsh-error-improvement",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-error-improvement",
+  "title": "dsh-error-improvement",
+  "summary": "把用户确认过的错误变成执行前的检查项，帮智能体避免重蹈覆辙，越用越稳。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "error-improvement",
+    "自动化",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wbushihenshuai-design",
+  "repo": "https://github.com/wbushihenshuai-design/dsh-error-improvement",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T03:42:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wbushihenshuai-design/dsh-error-improvement",
+    "commands": [
+      "dsh plugin --profile web add github:wbushihenshuai-design/dsh-error-improvement"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

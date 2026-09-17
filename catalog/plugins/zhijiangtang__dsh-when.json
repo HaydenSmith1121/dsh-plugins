@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ZhijiangTang/dsh-when",
+  "slug": "zhijiangtang__dsh-when",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-when",
+  "title": "dsh-when",
+  "summary": "把「两小时后」这类中文相对时间直接转成 ISO 时间戳，让插件和脚本能准确算时间。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "工具集成",
+    "效率提升",
+    "自动化",
+    "命令行工具"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ZhijiangTang",
+  "repo": "https://github.com/ZhijiangTang/dsh-when",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-16T13:08:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ZhijiangTang/dsh-when",
+    "commands": [
+      "dsh plugin --profile <name> add file:./plugins/dsh-when"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

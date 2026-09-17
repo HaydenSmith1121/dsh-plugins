@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "fengb3/dsh-session-icons",
+  "slug": "fengb3__dsh-session-icons",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-icons",
+  "title": "dsh-session-icons",
+  "summary": "为 DSH 的会话列表添加 SVG 图标，让不同会话一眼可辨，美化侧边栏并提升切换效率。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "svg-icons",
+    "会话管理",
+    "前端增强",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fengb3",
+  "repo": "https://github.com/fengb3/dsh-session-icons",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-22T18:29:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fengb3/dsh-session-icons",
+    "commands": [
+      "dsh plugin --profile web add github:fengb3/dsh-session-icons"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

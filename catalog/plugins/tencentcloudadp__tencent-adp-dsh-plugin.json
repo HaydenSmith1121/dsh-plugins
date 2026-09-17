@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "TencentCloudADP/Tencent-ADP-dsh-plugin",
+  "slug": "tencentcloudadp__tencent-adp-dsh-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "Tencent-ADP-dsh-plugin",
+  "title": "Tencent-ADP-dsh-plugin",
+  "summary": "深度集成腾讯云智能体平台，让你在 DeepSeek Harness 中直接发现和调用云端 AI 模型。",
+  "tags": [
+    "deepseek",
+    "dsh-plugin",
+    "plugin",
+    "模型配置",
+    "工作流增强"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "TencentCloudADP",
+  "repo": "https://github.com/TencentCloudADP/Tencent-ADP-dsh-plugin",
+  "homepage": "https://cloud.tencent.com/product/adp",
+  "license": "NOASSERTION",
+  "stars": 5,
+  "forks": 3,
+  "pushedAt": "2026-09-09T08:23:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@tencentcloudadp/dsh-adp",
+    "commands": [
+      "dsh plugin --profile web add @tencentcloudadp/dsh-adp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

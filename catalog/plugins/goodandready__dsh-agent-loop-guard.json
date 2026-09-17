@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-agent-loop-guard",
+  "slug": "goodandready__dsh-agent-loop-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-loop-guard",
+  "title": "dsh-agent-loop-guard",
+  "summary": "为 DeepSeek Harness 运行时提供防死循环保护，自动中断失控的工具调用与回复循环，保障任务稳定结束。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "安全审计",
+    "状态监控",
+    "插件管理",
+    "AI 助手"
+  ],
+  "version": "0.2.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.7",
+    "publishedAt": "2026-09-14T21:50:03Z",
+    "url": "https://github.com/GooDAnDReaDY/dsh-agent-loop-guard/releases/tag/v0.2.7"
+  },
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-agent-loop-guard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T21:49:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooDAnDReaDY/dsh-agent-loop-guard",
+    "commands": [
+      "dsh plugin --profile web add github:GooDAnDReaDY/dsh-agent-loop-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

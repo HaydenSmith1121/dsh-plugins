@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "jwilson411/dsh-otel",
+  "slug": "jwilson411__dsh-otel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-otel",
+  "title": "dsh-otel",
+  "summary": "把 DeepSeek Harness 的会话记录导出成 OpenTelemetry 链路，方便用 Jaeger 等工具可视化调试每一步调用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "opentelemetry",
+    "可视化",
+    "状态监控",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jwilson411",
+  "repo": "https://github.com/jwilson411/dsh-otel",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T10:26:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jwilson411/dsh-otel",
+    "commands": [
+      "dsh plugin --profile web add github:jwilson411/dsh-otel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "shawnlone/dsh-theme-tuner",
+  "slug": "shawnlone__dsh-theme-tuner",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-theme-tuner",
+  "title": "dsh-theme-tuner",
+  "summary": "在 DSH 设置里直接调界面主题的强调色、背景、前景和对比度，改完立刻生效，不用重启。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "theme",
+    "前端增强",
+    "模型配置",
+    "界面美化",
+    "效率提升"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "shawnlone",
+  "repo": "https://github.com/shawnlone/dsh-theme-tuner",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-03T13:54:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shawnlone/dsh-theme-tuner",
+    "commands": [
+      "dsh plugin --profile web add github:shawnlone/dsh-theme-tuner"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

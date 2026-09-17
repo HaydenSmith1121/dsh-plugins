@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "publieople/dsh-omniroute-models",
+  "slug": "publieople__dsh-omniroute-models",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-omniroute-models",
+  "title": "dsh-omniroute-models",
+  "summary": "集中管理 OmniRoute 网关的所有模型，支持按模态筛选和批量启用，让 DSH 只调用你想要的模型。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "设置面板",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.2.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.5",
+    "publishedAt": "2026-09-07T06:29:06Z",
+    "url": "https://github.com/publieople/dsh-omniroute-models/releases/tag/v0.2.5"
+  },
+  "author": "publieople",
+  "repo": "https://github.com/publieople/dsh-omniroute-models",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T06:29:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:publieople/dsh-omniroute-models",
+    "commands": [
+      "dsh plugin --profile web add github:publieople/dsh-omniroute-models"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

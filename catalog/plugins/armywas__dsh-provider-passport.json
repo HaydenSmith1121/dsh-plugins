@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ArmyWas/dsh-provider-passport",
+  "slug": "armywas__dsh-provider-passport",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-provider-passport",
+  "title": "dsh-provider-passport",
+  "summary": "为自定义 DeepSeek Harness 提供商做请求方言预检，提前发现兼容性问题，确保接入顺畅。",
+  "tags": [
+    "deepseek-harness",
+    "developer-tools",
+    "dsh-plugin",
+    "openai-compatible",
+    "模型配置",
+    "安全审计",
+    "效率提升",
+    "开发者工具"
+  ],
+  "version": "0.1.0-preview.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ArmyWas",
+  "repo": "https://github.com/ArmyWas/dsh-provider-passport",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T18:16:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ArmyWas/dsh-provider-passport",
+    "commands": [
+      "dsh plugin --profile web add github:ArmyWas/dsh-provider-passport"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

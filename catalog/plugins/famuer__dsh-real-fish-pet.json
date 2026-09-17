@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "FaMuer/dsh-real-fish-pet",
+  "slug": "famuer__dsh-real-fish-pet",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-real-fish-pet",
+  "title": "dsh-real-fish-pet",
+  "summary": "在 DeepSeek Harness 网页界面里养一只 3D 鲸鱼宠物，任务完成时会游动、卖萌并发出鲸鸣声，让工作氛围更生动有趣。",
+  "tags": [
+    "dsh-plugin",
+    "娱乐互动",
+    "可视化",
+    "前端增强",
+    "消息通知"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "FaMuer",
+  "repo": "https://github.com/FaMuer/dsh-real-fish-pet",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T12:15:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:FaMuer/dsh-real-fish-pet",
+    "commands": [
+      "dsh plugin --profile web add link:<本目录绝对路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

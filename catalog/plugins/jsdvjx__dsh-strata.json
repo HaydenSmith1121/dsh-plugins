@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "jsdvjx/dsh-strata",
+  "slug": "jsdvjx__dsh-strata",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-strata",
+  "title": "dsh-strata",
+  "summary": "将对话滚动条升级为彩色导航地图，高亮个人发言并支持点击跳转，轻松掌控长篇对话。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "minimap",
+    "scrollbar",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.12.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jsdvjx",
+  "repo": "https://github.com/jsdvjx/dsh-strata",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 102,
+  "forks": 1,
+  "pushedAt": "2026-09-11T07:46:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-strata",
+    "commands": [
+      "dsh plugin --profile web add dsh-strata",
+      "dsh plugin --profile web add \"github:jsdvjx/dsh-strata",
+      "dsh plugin --profile web remove dsh-strata"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

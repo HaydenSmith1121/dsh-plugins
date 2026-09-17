@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "langyo/dsh-mobile-upgrade",
+  "slug": "langyo__dsh-mobile-upgrade",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mobile-upgrade",
+  "title": "dsh-mobile-upgrade",
+  "summary": "修复 DeepSeek Harness 网页版在手机上的显示问题，优化上传、重启、抽屉和模型菜单，让移动端操作更顺手。",
+  "tags": [
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "harness",
+    "mobile",
+    "移动端",
+    "前端增强",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.8.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "langyo",
+  "repo": "https://github.com/langyo/dsh-mobile-upgrade",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-12T08:04:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-mobile-upgrade",
+    "commands": [
+      "dsh plugin --profile web add dsh-mobile-upgrade"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

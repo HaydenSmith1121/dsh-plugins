@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "Wanbinyu/dsh-plugin-git-inspect",
+  "slug": "wanbinyu__dsh-plugin-git-inspect",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-git-inspect",
+  "title": "dsh-plugin-git-inspect",
+  "summary": "在 DeepSeek Harness 中只读检查 Git 仓库，安全查看提交、分支和状态，助力代码审查。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "git",
+    "git-tools",
+    "typescript",
+    "安全审计",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.3.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.6",
+    "publishedAt": "2026-09-11T03:57:10Z",
+    "url": "https://github.com/Wanbinyu/dsh-plugin-git-inspect/releases/tag/v0.3.6"
+  },
+  "author": "Wanbinyu",
+  "repo": "https://github.com/Wanbinyu/dsh-plugin-git-inspect",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T03:57:10Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Wanbinyu/dsh-plugin-git-inspect",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/Wanbinyu/dsh-plugin-git-inspect/releases/download/v0.3.6/dsh-plugin-git-inspect-0.3.6.tgz",
+      "npm install github:Wanbinyu/dsh-plugin-git-inspect"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

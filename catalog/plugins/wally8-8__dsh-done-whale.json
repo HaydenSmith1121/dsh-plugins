@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "wally8-8/dsh-done-whale",
+  "slug": "wally8-8__dsh-done-whale",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-done-whale",
+  "title": "dsh-done-whale",
+  "summary": "标签页鲸鱼图标变身状态灯：会话完成变绿，需处理变琥珀，忙时瞄一眼就知道。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "favicon",
+    "whale",
+    "状态监控",
+    "消息通知",
+    "会话管理",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.2.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.3",
+    "publishedAt": "2026-09-16T08:58:22Z",
+    "url": "https://github.com/wally8-8/dsh-done-whale/releases/tag/v0.2.3"
+  },
+  "author": "wally8-8",
+  "repo": "https://github.com/wally8-8/dsh-done-whale",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 2,
+  "pushedAt": "2026-09-16T21:54:55Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-done-whale",
+    "commands": [
+      "dsh plugin --profile web add dsh-done-whale"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

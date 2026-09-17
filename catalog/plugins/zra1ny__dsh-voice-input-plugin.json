@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zRa1ny/dsh-voice-input-plugin",
+  "slug": "zra1ny__dsh-voice-input-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-voice-input-plugin",
+  "title": "dsh-voice-input-plugin",
+  "summary": "在 DeepSeek Harness 输入框旁加个麦克风按钮，点一下就能说话，识别结果实时逐字填进待发送框。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "快捷操作",
+    "效率提升",
+    "前端增强",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zRa1ny",
+  "repo": "https://github.com/zRa1ny/dsh-voice-input-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T09:49:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zRa1ny/dsh-voice-input-plugin",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/zRa1ny/dsh-voice-input-plugin",
+      "dsh plugin --profile web add github:zRa1ny/dsh-voice-input-plugin",
+      "dsh plugin --profile web add ./dsh-voice-input-plugin-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

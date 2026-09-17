@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "fz-lyle/dsh-deveco-cli",
+  "slug": "fz-lyle__dsh-deveco-cli",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-deveco-cli",
+  "title": "dsh-deveco-cli",
+  "summary": "把 DevEco Studio 工具链打包成命令行，一站式搞定 HarmonyOS 开发、调试、模拟器和文档检索。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deveco",
+    "dsh-plugin",
+    "harmonyos",
+    "HarmonyOS开发",
+    "命令行工具",
+    "项目脚手架",
+    "调试模拟",
+    "文档检索"
+  ],
+  "version": "1.3.0-Test.19",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fz-lyle",
+  "repo": "https://github.com/fz-lyle/dsh-deveco-cli",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-08-17T02:19:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fz-lyle/dsh-deveco-cli",
+    "commands": [
+      "npm install -g @ah-plugins/dsh-deveco-cli@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

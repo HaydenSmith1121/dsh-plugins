@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "ptonlix/dsh-forge",
+  "slug": "ptonlix__dsh-forge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-forge",
+  "title": "dsh-forge",
+  "summary": "围绕 DSH 打造可审计的桌面发行版，帮你构建、组合并验证整套智能体工作环境。",
+  "tags": [
+    "agents",
+    "dsh",
+    "dsh-plugin",
+    "AI 助手",
+    "状态监控",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-08T03:58:46Z",
+    "url": "https://github.com/ptonlix/dsh-forge/releases/tag/v0.4.0"
+  },
+  "author": "ptonlix",
+  "repo": "https://github.com/ptonlix/dsh-forge",
+  "homepage": "https://ptonlix.github.io/dsh-forge/",
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-09T08:14:31Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ptonlix/dsh-forge",
+    "commands": [
+      "npx skills add ptonlix/dsh-forge --skill dsh-forge-add-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

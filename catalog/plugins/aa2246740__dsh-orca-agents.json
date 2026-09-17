@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "aa2246740/dsh-orca-agents",
+  "slug": "aa2246740__dsh-orca-agents",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-orca-agents",
+  "title": "dsh-orca-agents",
+  "summary": "把 Grok、Codex、Claude、Cursor 等 AI 编程助手接进本地 Orca，统一调度使用。",
+  "tags": [
+    "dsh-plugin",
+    "多Agent协作",
+    "工具集成",
+    "模型适配",
+    "命令行工具"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "aa2246740",
+  "repo": "https://github.com/aa2246740/dsh-orca-agents",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T13:04:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aa2246740/dsh-orca-agents",
+    "commands": [
+      "dsh plugin --profile web add github:aa2246740/dsh-orca-agents"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

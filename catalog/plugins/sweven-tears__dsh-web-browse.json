@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "sweven-tears/dsh-web-browse",
+  "slug": "sweven-tears__dsh-web-browse",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-browse",
+  "title": "dsh-web-browse",
+  "summary": "把网页以独立标签页打开，在桌面壳和浏览器里都能用，不怕站点禁止内嵌。",
+  "tags": [
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "dsh-plugins",
+    "网页浏览",
+    "独立标签页",
+    "桌面集成",
+    "浏览器扩展"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sweven-tears",
+  "repo": "https://github.com/sweven-tears/dsh-web-browse",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-16T12:57:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sweven-tears/dsh-web-browse",
+    "commands": [
+      "dsh plugin --profile web add github:sweven-tears/dsh-web-browse"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

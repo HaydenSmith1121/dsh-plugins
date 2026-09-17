@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ruisenbai/dsh-turn-fold",
+  "slug": "ruisenbai__dsh-turn-fold",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-turn-fold",
+  "title": "dsh-turn-fold",
+  "summary": "在 DeepSeek Harness 网页界面中，将推理和工具调用过程折叠为两级视图，让对话更清爽、聚焦核心内容。",
+  "tags": [
+    "dsh-plugin",
+    "界面美化",
+    "效率提升",
+    "插件管理",
+    "前端增强"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-09T06:54:13Z",
+    "url": "https://github.com/ruisenbai/dsh-turn-fold/releases/tag/v0.3.0"
+  },
+  "author": "ruisenbai",
+  "repo": "https://github.com/ruisenbai/dsh-turn-fold",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T08:37:43Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ruisenbai/dsh-turn-fold",
+    "commands": [
+      "dsh plugin --profile web add \"$PWD\" --offline",
+      "dsh plugin --profile web remove dsh-turn-fold"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

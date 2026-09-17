@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ymh0000123/dsh-theme-endfield",
+  "slug": "ymh0000123__dsh-theme-endfield",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-theme-endfield",
+  "title": "dsh-theme-endfield",
+  "summary": "给 DSH Web 界面换上《终末地》官网风格，奶油纸底配墨黑文字，信号黄点缀，全直角工业风，看着就带感。",
+  "tags": [
+    "arknights",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "endfield",
+    "plugin",
+    "theme",
+    "web-theme",
+    "主题",
+    "前端增强",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "1.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.1",
+    "publishedAt": "2026-09-12T07:43:32Z",
+    "url": "https://github.com/ymh0000123/dsh-theme-endfield/releases/tag/v1.0.1"
+  },
+  "author": "ymh0000123",
+  "repo": "https://github.com/ymh0000123/dsh-theme-endfield",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 90,
+  "forks": 3,
+  "pushedAt": "2026-09-12T07:43:29Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ymh0000123/dsh-theme-endfield",
+    "commands": [
+      "dsh plugin --profile web add github:ymh0000123/dsh-theme-endfield",
+      "dsh plugin --profile web rm dsh-theme-endfield"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

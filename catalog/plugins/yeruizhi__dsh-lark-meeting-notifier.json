@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "yeruizhi/dsh-lark-meeting-notifier",
+  "slug": "yeruizhi__dsh-lark-meeting-notifier",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-lark-meeting-notifier",
+  "title": "dsh-lark-meeting-notifier",
+  "summary": "在飞书里盯着你今天的会议，快开始时闪屏提醒，别聊 AI 聊到忘了开会。",
+  "tags": [
+    "calendar",
+    "dsh-plugin",
+    "feishu",
+    "lark",
+    "工具集成",
+    "效率提升",
+    "状态监控",
+    "快捷操作"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yeruizhi",
+  "repo": "https://github.com/yeruizhi/dsh-lark-meeting-notifier",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-17T01:41:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yeruizhi/dsh-lark-meeting-notifier",
+    "commands": [
+      "dsh plugin --profile web add github:yeruizhi/dsh-lark-meeting-notifier"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

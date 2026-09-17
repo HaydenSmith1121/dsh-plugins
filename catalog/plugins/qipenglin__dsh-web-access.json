@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "qipenglin/dsh-web-access",
+  "slug": "qipenglin__dsh-web-access",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-access",
+  "title": "dsh-web-access",
+  "summary": "为 DeepSeek Harness Web 界面提供本机 token 与 Cookie 访问认证，增强安全性。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "可视化",
+    "零配置",
+    "插件管理"
+  ],
+  "version": "0.1.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "qipenglin",
+  "repo": "https://github.com/qipenglin/dsh-web-access",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-29T13:39:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qipenglin/dsh-web-access",
+    "commands": [
+      "dsh plugin --profile web add github:qipenglin/dsh-web-access"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

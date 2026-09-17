@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "heshuren371/dsh-music-player-tui",
+  "slug": "heshuren371__dsh-music-player-tui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-music-player-tui",
+  "title": "dsh-music-player-tui",
+  "summary": "终端本地音乐播放器，输入/music开启全屏听歌，切场景音乐不断，边聊边听超方便。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-tui",
+    "music-player",
+    "tui",
+    "娱乐互动",
+    "命令行工具"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "heshuren371",
+  "repo": "https://github.com/heshuren371/dsh-music-player-tui",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-21T12:06:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:heshuren371/dsh-music-player-tui",
+    "commands": [
+      "dsh plugin --profile dsh-tui add github:heshuren371/dsh-music-player-tui",
+      "dsh plugin --profile dsh-tui remove @local/dsh-music-player-tui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

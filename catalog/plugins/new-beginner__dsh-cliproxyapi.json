@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "new-Beginner/dsh-cliproxyapi",
+  "slug": "new-beginner__dsh-cliproxyapi",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cliproxyapi",
+  "title": "dsh-cliproxyapi",
+  "summary": "在 DeepSeek Harness 里直接接入 Codex 和 Antigravity 订阅账号，省去额外配置。",
+  "tags": [
+    "antigravity",
+    "cliproxyapi",
+    "codex",
+    "deepseek-harness",
+    "dsh-plugin",
+    "gemini",
+    "模型适配",
+    "模型配置",
+    "工具集成",
+    "桥接插件"
+  ],
+  "version": "2.3.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.3.5",
+    "publishedAt": "2026-09-14T07:27:26Z",
+    "url": "https://github.com/new-Beginner/dsh-cliproxyapi/releases/tag/v2.3.5"
+  },
+  "author": "new-Beginner",
+  "repo": "https://github.com/new-Beginner/dsh-cliproxyapi",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T13:06:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:new-Beginner/dsh-cliproxyapi",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-cliproxyapi-2.3.5.tgz",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "sunshine-lang/dsh-pdf",
+  "slug": "sunshine-lang__dsh-pdf",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pdf",
+  "title": "dsh-pdf",
+  "summary": "本地解析 PDF，快速提取文本、元数据和指定页面内容，无需联网和 API key。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "pdf",
+    "PDF解析",
+    "文本提取",
+    "元数据",
+    "本地处理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sunshine-lang",
+  "repo": "https://github.com/sunshine-lang/dsh-pdf",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 1,
+  "pushedAt": "2026-08-14T06:05:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sunshine-lang/dsh-pdf",
+    "commands": [
+      "dsh plugin --profile web add \"github:sunshine-lang/dsh-pdf\"",
+      "dsh plugin --profile web add dsh-pdf",
+      "dsh plugin --profile web add ./dsh-pdf"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

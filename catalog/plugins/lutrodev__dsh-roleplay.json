@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "lutrodev/dsh-roleplay",
+  "slug": "lutrodev__dsh-roleplay",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-roleplay",
+  "title": "dsh-roleplay",
+  "summary": "为 DeepSeek Harness 打造的角色扮演套件，支持角色卡、世界书、人设与对话工具，轻松玩转沉浸式剧情。",
+  "tags": [
+    "airoleplay",
+    "character-card",
+    "dsh-plugin",
+    "sillytavern",
+    "娱乐互动",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lutrodev",
+  "repo": "https://github.com/lutrodev/dsh-roleplay",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-03T14:32:45Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lutrodev/dsh-roleplay",
+    "commands": [
+      "dsh plugin --profile web add github:lutrodev/dsh-roleplay"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

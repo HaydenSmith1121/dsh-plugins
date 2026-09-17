@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "qipenglin/dsh-theme-spectrum",
+  "slug": "qipenglin__dsh-theme-spectrum",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-theme-spectrum",
+  "title": "dsh-theme-spectrum",
+  "summary": "为 DSH Web 界面提供十套浅色/深色主题预设，一键切换外观，还能跟随系统设置。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "界面美化",
+    "零配置",
+    "可视化",
+    "设置面板"
+  ],
+  "version": "0.1.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "qipenglin",
+  "repo": "https://github.com/qipenglin/dsh-theme-spectrum",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-29T13:39:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qipenglin/dsh-theme-spectrum",
+    "commands": [
+      "dsh plugin --profile web add github:qipenglin/dsh-theme-spectrum"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

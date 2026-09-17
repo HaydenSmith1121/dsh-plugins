@@ -1,0 +1,116 @@
+name: 同步插件目录
+
+# ════════════════════════════════════════════════════════════════════════
+# 这个工作流就是需求里的「项目定期更新配置文件」。
+#
+# 它做一件事：重新采集一遍插件目录 —— 版本号 / 收藏量 / 仓库地址 / 安装方法 ——
+# 把结果写回 catalog/plugins/<slug>.json（一个插件一个配置文件）与 catalog/index.json，
+# 内容有变化就提交。
+#
+# ★ 为什么必须有它
+#   目录是本仓库的**运行时数据**：市场面板显示的版本号、能不能升级、按什么方式安装，
+#   全部来自这些配置文件。它们过期的表现很隐蔽 —— 界面照常工作，只是「明明上游
+#   发了 0.5.0，这里还写着 0.4.2」，而用户没有任何办法看出来。所以刷新必须是
+#   自动的、定时的，而不是「想起来才跑一次」。
+#
+# ★ 为什么不需要额外的密钥
+#   GitHub 数据用工作流自带的 GITHUB_TOKEN 读（公开仓库的 release / tag /
+#   package.json / star 数），提交也用它。批量 GraphQL 让 7000+ 个仓库的查询
+#   只花掉一百多点点数，远在 5000/小时 的配额之内。
+#
+# ★ 为什么不会产生「每天一次空提交」
+#   采集脚本只在**内容真的变了**的时候才推进 lastSyncedAt / generatedAt 这些
+#   时间戳（见 scripts/sync-catalog.mjs 里 contentEquals 那一节）。没有实质变化时
+#   生成的文件逐字节相同，git 自然没有东西可提交。
+# ════════════════════════════════════════════════════════════════════════
+
+on:
+  schedule:
+    # 每天 18:00 UTC = 次日 02:00（北京时间）。挑这个点是为了避开上游
+    # 索引（dsh.market）与自己仓库的提交高峰，也让白天的 diff 是「昨天夜里拉的」。
+    - cron: '0 18 * * *'
+  workflow_dispatch:
+    inputs:
+      only:
+        description: '只刷新一个插件（slug，留空表示全部）'
+        required: false
+        type: string
+      limit:
+        description: '只解析前 N 个插件的版本（试跑用；>0 时不会写盘）'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-catalog
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: 采集并提交目录
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 准备 Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.19'
+
+      - name: 采集目录
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          args=()
+          if [ -n "${{ inputs.only }}" ]; then args+=(--only "${{ inputs.only }}"); fi
+          if [ -n "${{ inputs.limit }}" ]; then args+=(--limit "${{ inputs.limit }}"); fi
+          node scripts/sync-catalog.mjs "${args[@]}"
+
+      - name: 校验生成物自洽
+        run: |
+          set -euo pipefail
+          node scripts/sync-catalog.mjs --check
+
+      - name: 统计变更
+        id: diff
+        run: |
+          set -euo pipefail
+          changed=$(git status --porcelain -- catalog | wc -l)
+          echo "changed=$changed" >> "$GITHUB_OUTPUT"
+          echo "本次变化的文件数：$changed"
+          if [ "$changed" -gt 0 ]; then
+            echo '--- 变化明细（前 50 条）---'
+            git status --porcelain -- catalog | head -50
+          fi
+
+      - name: 提交并推送
+        if: steps.diff.outputs.changed != '0'
+        run: |
+          set -euo pipefail
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add catalog
+          # 提交信息里带上条数，方便日后翻历史时一眼看出哪天的变化大
+          total=$(node -e "const i=require('./catalog/index.json');console.log(i.counts.total)")
+          git commit -m "chore(catalog): 定期刷新插件目录（共 ${total} 条）" \
+                     -m "由 .github/workflows/sync-catalog.yml 自动生成。内容：版本号 / 收藏量 / 仓库地址 / 安装方法。"
+          git push
+
+      - name: 汇总
+        if: always()
+        run: |
+          {
+            echo "### 插件目录同步"
+            echo ""
+            if [ "${{ steps.diff.outputs.changed }}" = "0" ]; then
+              echo "目录没有实质变化，未提交。"
+            else
+              echo "已提交 ${{ steps.diff.outputs.changed }} 个文件的变化。"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "oxgbl/dsh-deepseek-price",
+  "slug": "oxgbl__dsh-deepseek-price",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-deepseek-price",
+  "title": "dsh-deepseek-price",
+  "summary": "在侧边栏显示 DeepSeek 高峰/空闲价格，倒计时半价时段，点击查看详情，支持 /price 命令。",
+  "tags": [
+    "badge",
+    "cordis",
+    "countdown",
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "plugins",
+    "pricing",
+    "timer",
+    "资源优化",
+    "前端增强",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-21T12:18:42Z",
+    "url": "https://github.com/oxgbl/dsh-deepseek-price/releases/tag/v0.1.0"
+  },
+  "author": "oxgbl",
+  "repo": "https://github.com/oxgbl/dsh-deepseek-price",
+  "homepage": null,
+  "license": null,
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-05T14:53:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:oxgbl/dsh-deepseek-price",
+    "commands": [
+      "dsh plugin --profile web add github:oxgbl/dsh-deepseek-price"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

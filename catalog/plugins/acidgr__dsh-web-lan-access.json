@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "AcidGr/dsh-web-lan-access",
+  "slug": "acidgr__dsh-web-lan-access",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-lan-access",
+  "title": "dsh-web-lan-access",
+  "summary": "让 DeepSeek Harness 支持局域网或远程访问，方便你从其他设备随时调用和操作。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "远程控制",
+    "远程连接",
+    "设备互联",
+    "网络支持"
+  ],
+  "version": "1.3.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "AcidGr",
+  "repo": "https://github.com/AcidGr/dsh-web-lan-access",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 31,
+  "forks": 5,
+  "pushedAt": "2026-09-10T07:03:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-web-lan-access",
+    "commands": [
+      "dsh plugin --profile web add dsh-web-lan-access",
+      "dsh plugin --profile web add github:AcidGr/dsh-web-lan-access"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

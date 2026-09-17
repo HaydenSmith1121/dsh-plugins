@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "PerryLink/dsh-cert-mcp",
+  "slug": "perrylink__dsh-cert-mcp",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cert-mcp",
+  "title": "dsh-cert-mcp",
+  "summary": "把 DSH 插件认证信息做成 MCP 服务，让 AI 随时查认证、列已认证插件、读认证规范。",
+  "tags": [
+    "certification",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "supply-chain-security",
+    "插件管理",
+    "工具集成",
+    "安全审查",
+    "桥接插件"
+  ],
+  "version": "0.1.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.6",
+    "publishedAt": "2026-09-13T01:40:01Z",
+    "url": "https://github.com/PerryLink/dsh-cert-mcp/releases/tag/v0.1.6"
+  },
+  "author": "PerryLink",
+  "repo": "https://github.com/PerryLink/dsh-cert-mcp",
+  "homepage": "https://www.npmjs.com/package/@perrylink/dsh-cert-mcp",
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T01:37:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:PerryLink/dsh-cert-mcp",
+    "commands": [
+      "git clone https://github.com/PerryLink/dsh-cert-mcp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

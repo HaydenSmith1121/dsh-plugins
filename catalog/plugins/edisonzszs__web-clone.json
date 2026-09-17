@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Edisonzszs/web-clone",
+  "slug": "edisonzszs__web-clone",
+  "tier": "community",
+  "package": null,
+  "name": "web-clone",
+  "title": "web-clone",
+  "summary": "想抄站、仿站或复刻某个网页效果？它给你一套从拿源码到搭工程的完整拆解思路。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "前端增强",
+    "脚手架",
+    "工具集成"
+  ],
+  "version": "1.6.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Edisonzszs",
+  "repo": "https://github.com/Edisonzszs/web-clone",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:36:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Edisonzszs/web-clone",
+    "commands": [
+      "dsh plugin add Edisonzszs/web-clone",
+      "git clone https://github.com/Edisonzszs/web-clone.git ~/.claude/skills/web-clone"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

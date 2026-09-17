@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "idoall/dsh-update-status",
+  "slug": "idoall__dsh-update-status",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-update-status",
+  "title": "dsh-update-status",
+  "summary": "在 DeepSeek Harness 网页侧边栏显示版本状态和更新渠道的只读小插件，方便你随时掌握当前版本信息。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "update-status",
+    "状态监控",
+    "插件管理",
+    "可视化",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.4",
+    "publishedAt": "2026-09-16T14:47:17Z",
+    "url": "https://github.com/idoall/dsh-update-status/releases/tag/v0.1.4"
+  },
+  "author": "idoall",
+  "repo": "https://github.com/idoall/dsh-update-status",
+  "homepage": "https://www.npmjs.com/package/dsh-update-status",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T14:48:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-update-status@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-update-status@latest",
+      "dsh plugin --profile web add \"link:$(pwd)\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

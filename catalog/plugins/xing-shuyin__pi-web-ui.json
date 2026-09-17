@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "xing-shuyin/pi-web-ui",
+  "slug": "xing-shuyin__pi-web-ui",
+  "tier": "community",
+  "package": null,
+  "name": "pi-web-ui",
+  "title": "pi-web-ui",
+  "summary": "为 pi 编程智能体提供精致的浏览器操作界面，让你像用 IDE 一样轻松掌控和交互。",
+  "tags": [
+    "dsh-plugin",
+    "pi",
+    "可视化",
+    "AI工具",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.89.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.89.0",
+    "publishedAt": "2026-09-17T10:17:34Z",
+    "url": "https://github.com/xing-shuyin/pi-web-ui/releases/tag/v0.89.0"
+  },
+  "author": "xing-shuyin",
+  "repo": "https://github.com/xing-shuyin/pi-web-ui",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 180,
+  "forks": 40,
+  "pushedAt": "2026-09-16T14:55:55Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xing-shuyin/pi-web-ui",
+    "commands": [
+      "npm i -g pi-web-ui",
+      "npm i -g .",
+      "npm i -g --allow-scripts=node-pty,@google/genai,protobufjs pi-web-ui@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

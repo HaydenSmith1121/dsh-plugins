@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "hunter118/dsh-s7r",
+  "slug": "hunter118__dsh-s7r",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-s7r",
+  "title": "dsh-s7r",
+  "summary": "把 DeepSeek Harness 的界面变成复古的 System 7 桌面风格，让你在怀旧氛围里操作和查看任务。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "react",
+    "retro-computing",
+    "retro-macos",
+    "system-7",
+    "typescript",
+    "界面美化",
+    "娱乐互动",
+    "零配置"
+  ],
+  "version": "0.9.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.9.4",
+    "publishedAt": "2026-08-29T07:45:27Z",
+    "url": "https://github.com/hunter118/dsh-s7r/releases/tag/v0.9.4"
+  },
+  "author": "hunter118",
+  "repo": "https://github.com/hunter118/dsh-s7r",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-29T07:44:55Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-s7r-0.9.4.tgz",
+      "git clone https://github.com/hunter118/dsh-s7r.git",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

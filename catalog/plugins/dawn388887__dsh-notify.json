@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "Dawn388887/dsh-notify",
+  "slug": "dawn388887__dsh-notify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notify",
+  "title": "dsh-notify",
+  "summary": "Agent 跑完或出错时，通过桌面弹窗和手机浏览器提醒你，不用一直盯着屏幕。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "notifications",
+    "消息通知",
+    "状态监控",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "1.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.0",
+    "publishedAt": "2026-09-03T12:51:19Z",
+    "url": "https://github.com/Dawn388887/dsh-notify/releases/tag/v1.2.0"
+  },
+  "author": "Dawn388887",
+  "repo": "https://github.com/Dawn388887/dsh-notify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-03T12:51:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Dawn388887/dsh-notify",
+    "commands": [
+      "dsh plugin --profile web add ~/.dsh/plugins/dsh-notify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

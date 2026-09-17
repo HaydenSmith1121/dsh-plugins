@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "ding7015869-alt/dsh-task-board",
+  "slug": "ding7015869-alt__dsh-task-board",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-task-board",
+  "title": "dsh-task-board",
+  "summary": "在 DeepSeek Harness 网页界面里加一个多列任务看板，支持真实任务执行、定时调度、依赖控制、项目分组和并发限制，让任务管理更直观高效。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "kanban",
+    "plugin",
+    "react",
+    "task-board",
+    "typescript",
+    "web-ui",
+    "工作流增强",
+    "自动化",
+    "可视化",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-09T16:31:24Z",
+    "url": "https://github.com/ding7015869-alt/dsh-task-board/releases/tag/v0.4.0"
+  },
+  "author": "ding7015869-alt",
+  "repo": "https://github.com/ding7015869-alt/dsh-task-board",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T16:31:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@linxin666/dsh-client-ui-task-board",
+    "commands": [
+      "dsh plugin --profile web add @linxin666/dsh-client-ui-task-board",
+      "dsh plugin --profile web add file:$(pwd)/linxin666-dsh-client-ui-task-board-0.4.0.tgz",
+      "git clone https://github.com/ding7015869-alt/dsh-task-board.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

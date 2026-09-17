@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "lucyTrump/dsh-runninghub-api",
+  "slug": "lucytrump__dsh-runninghub-api",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-runninghub-api",
+  "title": "dsh-runninghub-api",
+  "summary": "在 DSH 里直接跑 RunningHub 云端 ComfyUI 工作流，配好密钥就能让 AI 助手调用出图。",
+  "tags": [
+    "comfyui",
+    "deepseek-harness",
+    "dsh-plugin",
+    "runninghub",
+    "工具集成",
+    "工作流增强",
+    "模型适配",
+    "AI 助手",
+    "设置面板"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lucyTrump",
+  "repo": "https://github.com/lucyTrump/dsh-runninghub-api",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T07:52:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-runninghub-api",
+    "commands": [
+      "dsh plugin --profile web add dsh-runninghub-api"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

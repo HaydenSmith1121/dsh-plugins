@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-medical-knowledge-graph",
+  "slug": "xby-skill__xby-medical-knowledge-graph",
+  "tier": "community",
+  "package": null,
+  "name": "xby-medical-knowledge-graph",
+  "title": "xby-medical-knowledge-graph",
+  "summary": "围绕疾病、药品、症状等关系构建的医药知识图谱，帮你快速查询和梳理医学信息，仅限初步研究参考。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "会话管理",
+    "医药查询",
+    "研究辅助"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-medical-knowledge-graph",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:18:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-medical-knowledge-graph",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-medical-knowledge-graph",
+      "dsh plugin --profile web add /absolute/path/to/xby-medical-knowledge-graph"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

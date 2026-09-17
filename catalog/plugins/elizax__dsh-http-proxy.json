@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "elizax/dsh-http-proxy",
+  "slug": "elizax__dsh-http-proxy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-http-proxy",
+  "title": "dsh-http-proxy",
+  "summary": "给 DSH 装上代理，让模型请求走代理、其他请求直连，不碰官方代码，即插即用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "模型配置",
+    "零配置",
+    "安全审计",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "elizax",
+  "repo": "https://github.com/elizax/dsh-http-proxy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-07T09:28:46Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-http-proxy@0.1.3",
+    "commands": [
+      "dsh plugin --profile web add dsh-http-proxy@0.1.3",
+      "dsh plugin --profile web add github:elizax/dsh-http-proxy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

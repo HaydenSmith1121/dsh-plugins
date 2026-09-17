@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "swarm-apps/dsh-swarmdrop",
+  "slug": "swarm-apps__dsh-swarmdrop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-swarmdrop",
+  "title": "dsh-swarmdrop",
+  "summary": "让智能体直接把文件加密发到手机，也能引用手机回传的内容，无需账号和公网IP。",
+  "tags": [
+    "cordis-plugin",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "file-transfer",
+    "p2p",
+    "效率提升",
+    "消息通知",
+    "安全审计",
+    "AI 助手"
+  ],
+  "version": "0.7.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.1",
+    "publishedAt": "2026-08-24T03:34:25Z",
+    "url": "https://github.com/swarm-apps/dsh-swarmdrop/releases/tag/v0.7.1"
+  },
+  "author": "swarm-apps",
+  "repo": "https://github.com/swarm-apps/dsh-swarmdrop",
+  "homepage": "https://www.npmjs.com/package/dsh-swarmdrop",
+  "license": null,
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-24T03:33:55Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:swarm-apps/dsh-swarmdrop",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-swarmdrop",
+      "dsh plugin --profile <name> add /path/to/dsh-swarmdrop",
+      "dsh plugin --profile <name> add ./dsh-swarmdrop-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

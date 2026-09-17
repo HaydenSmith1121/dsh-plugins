@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "lumoping/dsh-todo-inbox",
+  "slug": "lumoping__dsh-todo-inbox",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-todo-inbox",
+  "title": "dsh-todo-inbox",
+  "summary": "把各会话里需要你处理的事（合并MR、审批、评审等）统一收进全局待办箱，侧边栏随时查看处理，再也不怕漏事。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "消息通知",
+    "工作流增强",
+    "多Agent协作"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lumoping",
+  "repo": "https://github.com/lumoping/dsh-todo-inbox",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T08:28:24Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lumoping/dsh-todo-inbox",
+    "commands": [
+      "dsh plugin --profile web add ~/dsh-todo-inbox"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

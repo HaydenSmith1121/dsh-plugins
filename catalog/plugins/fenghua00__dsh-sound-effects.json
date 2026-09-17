@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "fenghua00/dsh-sound-effects",
+  "slug": "fenghua00__dsh-sound-effects",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sound-effects",
+  "title": "dsh-sound-effects",
+  "summary": "任务完成或需要权限审批时自动播放提示音，支持随时更换音效，让你不错过重要节点。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "消息通知",
+    "效率提升",
+    "设置面板",
+    "状态监控"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fenghua00",
+  "repo": "https://github.com/fenghua00/dsh-sound-effects",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T15:58:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fenghua00/dsh-sound-effects",
+    "commands": [
+      "dsh plugin --profile web add github:fenghua00/dsh-sound-effects",
+      "dsh plugin --profile web add <plugins>/dsh-sound-effects"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

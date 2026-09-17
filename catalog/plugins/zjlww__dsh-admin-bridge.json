@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "zjlww/dsh-admin-bridge",
+  "slug": "zjlww__dsh-admin-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-admin-bridge",
+  "title": "dsh-admin-bridge",
+  "summary": "给 DeepSeek Harness 提供临时管理员权限，需人工实时验证密码，不存储 sudo 密码，安全可控。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "linux",
+    "sudo",
+    "安全审计",
+    "插件管理",
+    "命令行工具"
+  ],
+  "version": "0.3.0-alpha.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zjlww",
+  "repo": "https://github.com/zjlww/dsh-admin-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T06:57:43Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zjlww/dsh-admin-bridge",
+    "commands": [
+      "dsh plugin --profile web add 'github:zjlww/dsh-admin-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

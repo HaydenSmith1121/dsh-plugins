@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "666emmm/dsh-file-upload",
+  "slug": "666emmm__dsh-file-upload",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-file-upload",
+  "title": "dsh-file-upload",
+  "summary": "管理已上传文件，支持列表、查看、删除和路径引用，还能直接读取剪贴板路径，让文件操作更顺手。",
+  "tags": [
+    "clipboard",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "file-upload",
+    "工作区管理",
+    "效率提升",
+    "命令行工具",
+    "剪贴板"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-16T07:13:04Z",
+    "url": "https://github.com/666emmm/dsh-file-upload/releases/tag/v0.2.1"
+  },
+  "author": "666emmm",
+  "repo": "https://github.com/666emmm/dsh-file-upload",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T08:07:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:666emmm/dsh-file-upload",
+    "commands": [
+      "dsh plugin --profile web add \"github:666emmm/dsh-file-upload"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

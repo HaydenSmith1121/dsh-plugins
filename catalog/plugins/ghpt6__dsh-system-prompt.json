@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Ghpt6/dsh-system-prompt",
+  "slug": "ghpt6__dsh-system-prompt",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-system-prompt",
+  "title": "dsh-system-prompt",
+  "summary": "在 DSH 设置页直接编辑系统提示词，随时恢复默认或撤销修改，调模型更省心。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "system-prompt",
+    "设置面板",
+    "模型配置",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Ghpt6",
+  "repo": "https://github.com/Ghpt6/dsh-system-prompt",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T10:26:54Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Ghpt6/dsh-system-prompt",
+    "commands": [
+      "dsh plugin --profile web add github:Ghpt6/dsh-system-prompt"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

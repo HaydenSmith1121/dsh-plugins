@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "kitterfast/dsh-ppt-maker",
+  "slug": "kitterfast__dsh-ppt-maker",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ppt-maker",
+  "title": "dsh-ppt-maker",
+  "summary": "在输入框「+」菜单加个「PPT 制作」入口，一点就自动跑完整套 PPT 生成流程，只发一条消息、只确认一次。",
+  "tags": [
+    "ai-agent",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "ppt",
+    "presentation",
+    "prompt",
+    "slides",
+    "快捷操作",
+    "报告生成",
+    "内容创作",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "1.4.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.4.2",
+    "publishedAt": "2026-09-13T14:18:46Z",
+    "url": "https://github.com/kitterfast/dsh-ppt-maker/releases/tag/v1.4.2"
+  },
+  "author": "kitterfast",
+  "repo": "https://github.com/kitterfast/dsh-ppt-maker",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T15:54:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kitterfast/dsh-ppt-maker",
+    "commands": [
+      "dsh plugin --profile web add github:kitterfast/dsh-ppt-maker"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

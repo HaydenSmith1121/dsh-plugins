@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "173787247/dsh-wsl-distro",
+  "slug": "173787247__dsh-wsl-distro",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wsl-distro",
+  "title": "dsh-wsl-distro",
+  "summary": "查看当前 WSL 发行版信息，多发行版环境下及时提醒，避免用错系统。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "wsl",
+    "状态监控",
+    "命令行工具",
+    "工具集成",
+    "工作区管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "173787247",
+  "repo": "https://github.com/173787247/dsh-wsl-distro",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:21:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:173787247/dsh-wsl-distro",
+    "commands": [
+      "dsh plugin --profile web add github:173787247/dsh-wsl-distro"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

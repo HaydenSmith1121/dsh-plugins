@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "chenchen4396/dsh-notepad",
+  "slug": "chenchen4396__dsh-notepad",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notepad",
+  "title": "dsh-notepad",
+  "summary": "把常用提示词、模板和代码片段集中存好，聊天时在输入框旁一键取用，省去反复敲打的麻烦。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "效率提升",
+    "前端增强",
+    "桌宠",
+    "文件管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chenchen4396",
+  "repo": "https://github.com/chenchen4396/dsh-notepad",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-25T15:32:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chenchen4396/dsh-notepad",
+    "commands": [
+      "dsh plugin --profile web add github:chenchen4396/dsh-notepad",
+      "dsh plugin --profile web add @chenchen4396/dsh-notepad"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

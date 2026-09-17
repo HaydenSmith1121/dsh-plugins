@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "GreyRaphael/dsh-web-fetch-moli",
+  "slug": "greyraphael__dsh-web-fetch-moli",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-fetch-moli",
+  "title": "dsh-web-fetch-moli",
+  "summary": "给 DSH 接上 Moli 网页抓取后端，让 AI 助手能直接读取网页内容。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "AI 助手",
+    "自动化",
+    "零配置"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-17T03:41:01Z",
+    "url": "https://github.com/GreyRaphael/dsh-web-fetch-moli/releases/tag/v0.4.0"
+  },
+  "author": "GreyRaphael",
+  "repo": "https://github.com/GreyRaphael/dsh-web-fetch-moli",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T09:28:58Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GreyRaphael/dsh-web-fetch-moli",
+    "commands": [
+      "dsh plugin --profile web add github:GreyRaphael/dsh-web-fetch-moli",
+      "dsh plugin --profile web add dsh-web-fetch-moli"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "Wenaixi/dsh-cfbridge",
+  "slug": "wenaixi__dsh-cfbridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cfbridge",
+  "title": "dsh-cfbridge",
+  "summary": "把 Cloudflare 官方 MCP 工具、cfbridge 技能和 wrangler 命令打包成 DSH 全局桥接，让你在 DeepSeek Harness 里直接调用 Cloudflare 能力。",
+  "tags": [
+    "bundle",
+    "cloudflare",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "mcp",
+    "skill",
+    "wrangler",
+    "模型配置",
+    "命令行工具",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "0.5.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.0",
+    "publishedAt": "2026-09-04T19:51:06Z",
+    "url": "https://github.com/Wenaixi/dsh-cfbridge/releases/tag/v0.5.0"
+  },
+  "author": "Wenaixi",
+  "repo": "https://github.com/Wenaixi/dsh-cfbridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-04T20:09:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Wenaixi/dsh-cfbridge",
+    "commands": [
+      "dsh plugin --profile web add github:Wenaixi/dsh-cfbridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "Heeweelee/dsh-session-plugin",
+  "slug": "heeweelee__dsh-session-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-plugin",
+  "title": "dsh-session-plugin",
+  "summary": "在输入框用上下键快速回填历史命令，右键会话即可彻底删除本地记录，让会话管理更顺手。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "命令行工具"
+  ],
+  "version": "0.1.5",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Heeweelee",
+  "repo": "https://github.com/Heeweelee/dsh-session-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T09:09:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@heeweelee/dsh-session-plugin@0.1.11",
+    "commands": [
+      "dsh plugin add @heeweelee/dsh-session-plugin@0.1.11"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

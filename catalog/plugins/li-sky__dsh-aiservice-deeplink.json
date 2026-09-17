@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "li-sky/dsh-aiservice-deeplink",
+  "slug": "li-sky__dsh-aiservice-deeplink",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-aiservice-deeplink",
+  "title": "dsh-aiservice-deeplink",
+  "summary": "在 DSH 里支持 aiservice:// 链接，一键导入导出模型配置，省去手动填参数的麻烦。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "模型配置",
+    "快捷操作",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "li-sky",
+  "repo": "https://github.com/li-sky/dsh-aiservice-deeplink",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T10:18:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:li-sky/dsh-aiservice-deeplink",
+    "commands": [
+      "dsh plugin --profile web add github:li-sky/dsh-aiservice-deeplink"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "popujiang/dsh-turn-scratch",
+  "slug": "popujiang__dsh-turn-scratch",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-turn-scratch",
+  "title": "dsh-turn-scratch",
+  "summary": "自动清理 dsh 每轮对话产生的临时文件，让工作区保持干净，不用再手动删。",
+  "tags": [
+    "dsh-plugin",
+    "文件管理",
+    "工作区管理",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "popujiang",
+  "repo": "https://github.com/popujiang/dsh-turn-scratch",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T15:48:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:popujiang/dsh-turn-scratch",
+    "commands": [
+      "dsh plugin --profile web add github:popujiang/dsh-turn-scratch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

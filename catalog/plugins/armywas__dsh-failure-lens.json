@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "ArmyWas/dsh-failure-lens",
+  "slug": "armywas__dsh-failure-lens",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-failure-lens",
+  "title": "dsh-failure-lens",
+  "summary": "定位 Windows 沙箱启动 EPERM 报错的原因，给出可读的上下文解释。",
+  "tags": [
+    "deepseek-harness",
+    "developer-tools",
+    "dsh-plugin",
+    "sandbox",
+    "typescript",
+    "windows",
+    "状态监控",
+    "命令行工具",
+    "工作流增强",
+    "安全审计"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-08T02:15:04Z",
+    "url": "https://github.com/ArmyWas/dsh-failure-lens/releases/tag/v0.3.0"
+  },
+  "author": "ArmyWas",
+  "repo": "https://github.com/ArmyWas/dsh-failure-lens",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T14:35:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-failure-lens@0.3.0",
+    "commands": [
+      "dsh plugin --profile web add dsh-failure-lens@0.3.0",
+      "dsh plugin --profile web add https://github.com/ArmyWas/dsh-failure-lens/releases/download/v0.3.0/dsh-failure-lens-0.3.0.tgz",
+      "dsh plugin --profile web add link:<path-to-dsh-failure-lens>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

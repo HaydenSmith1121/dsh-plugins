@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "Pasumao/dsh-plugin-workbench",
+  "slug": "pasumao__dsh-plugin-workbench",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-workbench",
+  "title": "dsh-plugin-workbench",
+  "summary": "给 dsh 网页界面加上 VS Code 那样的文件树，浏览和管理工作区文件更方便。",
+  "tags": [
+    "code-editor",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "file-explorer",
+    "file-manager",
+    "plugin",
+    "vscode",
+    "workbench",
+    "文件管理",
+    "工作区管理",
+    "前端增强",
+    "主题"
+  ],
+  "version": "0.0.25",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.0.25",
+    "publishedAt": "2026-09-11T12:10:07Z",
+    "url": "https://github.com/Pasumao/dsh-plugin-workbench/releases/tag/v0.0.25"
+  },
+  "author": "Pasumao",
+  "repo": "https://github.com/Pasumao/dsh-plugin-workbench",
+  "homepage": "https://github.com/Pasumao/dsh-plugin-workbench#readme",
+  "license": "MIT",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-09-11T12:09:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Pasumao/dsh-plugin-workbench",
+    "commands": [
+      "dsh plugin --profile web remove dsh-plugin-workbench"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

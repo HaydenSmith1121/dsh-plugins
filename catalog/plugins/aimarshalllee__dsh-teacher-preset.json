@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "AIMarshallLee/dsh-teacher-preset",
+  "slug": "aimarshalllee__dsh-teacher-preset",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-teacher-preset",
+  "title": "dsh-teacher-preset",
+  "summary": "面向教师的教学工作台预设，一键生成教案、评价量规、测验和教学材料，让备课更高效。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "education",
+    "teacher",
+    "效率提升",
+    "会话管理",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-08-19T15:03:11Z",
+    "url": "https://github.com/AIMarshallLee/dsh-teacher-preset/releases/tag/v0.3.0"
+  },
+  "author": "AIMarshallLee",
+  "repo": "https://github.com/AIMarshallLee/dsh-teacher-preset",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T22:44:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AIMarshallLee/dsh-teacher-preset",
+    "commands": [
+      "dsh plugin --profile web add github:AIMarshallLee/dsh-teacher-preset",
+      "git clone https://github.com/AIMarshallLee/dsh-teacher-preset.git",
+      "dsh plugin --profile web add file:./dsh-teacher-preset"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

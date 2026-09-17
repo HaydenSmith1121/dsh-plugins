@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "tdyangbo/PianpianUI",
+  "slug": "tdyangbo__pianpianui",
+  "tier": "community",
+  "package": null,
+  "name": "PianpianUI",
+  "title": "PianpianUI",
+  "summary": "给 DeepSeek Harness 换上林翩翩主题，半透明背景可调深浅，聊天界面颜值拉满还不影响阅读。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin",
+    "theme",
+    "ui",
+    "界面美化",
+    "零配置",
+    "娱乐互动"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "tdyangbo",
+  "repo": "https://github.com/tdyangbo/PianpianUI",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-13T11:49:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tdyangbo/PianpianUI",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/tdyangbo/PianpianUI.git",
+      "dsh plugin --profile web add \"file:E:\\software\\PianpianUI-main\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

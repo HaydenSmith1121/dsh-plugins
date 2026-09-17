@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaoyuink/dsh-workbench",
+  "slug": "xiaoyuink__dsh-workbench",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workbench",
+  "title": "dsh-workbench",
+  "summary": "把文件管理、真实终端、内嵌浏览器和后台任务都塞进 DSH 侧边栏，还能预览编辑 Office、PSD 等文件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "sidebar",
+    "workbench",
+    "文件管理",
+    "工作区管理",
+    "命令行工具",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "0.4.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.7",
+    "publishedAt": "2026-09-11T12:09:10Z",
+    "url": "https://github.com/xiaoyuink/dsh-workbench/releases/tag/v0.4.7"
+  },
+  "author": "xiaoyuink",
+  "repo": "https://github.com/xiaoyuink/dsh-workbench",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T12:09:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiaoyuink/dsh-workbench",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/xiaoyuink/dsh-workbench/releases/latest/download/dsh-workbench-latest.tgz",
+      "dsh plugin --profile web add https://github.com/xiaoyuink/dsh-workbench/releases/download/v0.4.5/dsh-workbench-0.4.5.tgz",
+      "git clone https://github.com/xiaoyuink/dsh-workbench.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "robiteame/dsh-session-tree-extension",
+  "slug": "robiteame__dsh-session-tree-extension",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-tree-extension",
+  "title": "dsh-session-tree-extension",
+  "summary": "把对话历史变成可随时分叉的树状结构，支持追加和分支，方便回溯和探索不同对话路径。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "可视化",
+    "多Agent协作",
+    "效率提升"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-15T13:30:00Z",
+    "url": "https://github.com/robiteame/dsh-session-tree-extension/releases/tag/v0.3.0"
+  },
+  "author": "robiteame",
+  "repo": "https://github.com/robiteame/dsh-session-tree-extension",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 20,
+  "forks": 0,
+  "pushedAt": "2026-09-14T02:37:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:robiteame/dsh-session-tree-extension",
+    "commands": [
+      "dsh plugin --profile <profile> add @robiteame/dsh-session-tree",
+      "dsh plugin --profile <profile> add robiteame-dsh-session-tree-0.3.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

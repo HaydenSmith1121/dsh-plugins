@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "buhuikongpan/dsh-pluginmanager",
+  "slug": "buhuikongpan__dsh-pluginmanager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pluginmanager",
+  "title": "dsh-pluginmanager",
+  "summary": "插件装太多找不到北？这个管理器帮你分层看清所有插件，还能一键停用、启用、卸载，连描述都能自己改。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "分层展示",
+    "启停控制",
+    "插件卸载",
+    "描述编辑"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-19T12:20:38Z",
+    "url": "https://github.com/buhuikongpan/dsh-pluginmanager/releases/tag/v0.2.0"
+  },
+  "author": "buhuikongpan",
+  "repo": "https://github.com/buhuikongpan/dsh-pluginmanager",
+  "homepage": null,
+  "license": null,
+  "stars": 9,
+  "forks": 1,
+  "pushedAt": "2026-08-20T13:39:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:buhuikongpan/dsh-pluginmanager",
+    "commands": [
+      "dsh plugin add github:buhuikongpan/dsh-pluginmanager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

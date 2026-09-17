@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-wikimedia-search-images",
+  "slug": "xby-skill__xby-wikimedia-search-images",
+  "tier": "community",
+  "package": null,
+  "name": "xby-wikimedia-search-images",
+  "title": "xby-wikimedia-search-images",
+  "summary": "在 Wikimedia Commons 上搜索图片，获取详细元数据和缩略图，方便 AI 进行视觉比较。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "零配置",
+    "可视化",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-wikimedia-search-images",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:40:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-wikimedia-search-images",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-wikimedia-search-images",
+      "dsh plugin --profile web add /absolute/path/to/xby-wikimedia-search-images"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

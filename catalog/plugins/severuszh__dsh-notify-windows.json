@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "SeverusZh/dsh-notify-windows",
+  "slug": "severuszh__dsh-notify-windows",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notify-windows",
+  "title": "dsh-notify-windows",
+  "summary": "Agent 需要你关注时，自动弹出 Windows 系统桌面通知，零依赖开箱即用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugins",
+    "notifications",
+    "windows",
+    "零配置",
+    "状态监控",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.7.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.4",
+    "publishedAt": "2026-09-04T07:16:25Z",
+    "url": "https://github.com/SeverusZh/dsh-notify-windows/releases/tag/v0.7.4"
+  },
+  "author": "SeverusZh",
+  "repo": "https://github.com/SeverusZh/dsh-notify-windows",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 1,
+  "pushedAt": "2026-09-10T10:13:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:SeverusZh/dsh-notify-windows",
+    "commands": [
+      "dsh plugin --profile web add github:SeverusZh/dsh-notify-windows"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Mempemp/DSH-CodeEditor_BSL",
+  "slug": "mempemp__dsh-codeeditor_bsl",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-CodeEditor_BSL",
+  "title": "DSH-CodeEditor_BSL",
+  "summary": "在 DeepSeek Harness 中直接打开 1C 配置，用 Monaco 编辑器查看和编辑 BSL 代码，支持元数据树和文件筛选。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "文件管理",
+    "效率提升"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-15T12:00:49Z",
+    "url": "https://github.com/Mempemp/DSH-CodeEditor_BSL/releases/tag/v0.4.0"
+  },
+  "author": "Mempemp",
+  "repo": "https://github.com/Mempemp/DSH-CodeEditor_BSL",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T12:00:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-bsl-editor-0.4.0.tgz",
+    "commands": [
+      "dsh plugin --profile web add dsh-bsl-editor-0.4.0.tgz",
+      "dsh plugin --profile web add https://github.com/Mempemp/DSH-CodeEditor_BSL/releases/download/v0.4.0/dsh-bsl-editor-0.4.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

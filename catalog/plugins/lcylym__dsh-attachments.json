@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "LCYLYM/dsh-attachments",
+  "slug": "lcylym__dsh-attachments",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-attachments",
+  "title": "dsh-attachments",
+  "summary": "拖拽文件到对话区就能加附件，拖到侧边栏直接建工作区，跨平台都好用。",
+  "tags": [
+    "dsh-plugin",
+    "文件管理",
+    "工作区管理",
+    "前端增强",
+    "快捷操作"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-14T14:41:37Z",
+    "url": "https://github.com/LCYLYM/dsh-attachments/releases/tag/v0.1.0"
+  },
+  "author": "LCYLYM",
+  "repo": "https://github.com/LCYLYM/dsh-attachments",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T09:30:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LCYLYM/dsh-attachments",
+    "commands": [
+      "dsh plugin --profile web add github:LCYLYM/dsh-attachments"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

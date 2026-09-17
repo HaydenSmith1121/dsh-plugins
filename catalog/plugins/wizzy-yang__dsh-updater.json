@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "wizzy-yang/dsh-updater",
+  "slug": "wizzy-yang__dsh-updater",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-updater",
+  "title": "dsh-updater",
+  "summary": "自动检测 DeepSeek Harness 官方新版本，一键升级并自动重启，省心省力。",
+  "tags": [
+    "auto-update",
+    "cordis-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "自动化",
+    "插件管理",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-11T15:45:03Z",
+    "url": "https://github.com/wizzy-yang/dsh-updater/releases/tag/v0.2.1"
+  },
+  "author": "wizzy-yang",
+  "repo": "https://github.com/wizzy-yang/dsh-updater",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T15:47:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@wizzy-1547/dsh-updater@latest",
+    "commands": [
+      "dsh plugin --profile web add @wizzy-1547/dsh-updater@latest",
+      "git clone https://github.com/wizzy-yang/dsh-updater.git",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

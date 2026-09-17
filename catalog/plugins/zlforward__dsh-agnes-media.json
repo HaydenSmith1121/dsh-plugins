@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "zlforward/dsh-agnes-media",
+  "slug": "zlforward__dsh-agnes-media",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agnes-media",
+  "title": "dsh-agnes-media",
+  "summary": "在 DeepSeek Harness 里直接调用 Agnes AI 生成图片和视频，让 AI 助手能画图做视频。",
+  "tags": [
+    "agnes-ai",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "多模态",
+    "视觉理解",
+    "工具集成",
+    "报告生成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zlforward",
+  "repo": "https://github.com/zlforward/dsh-agnes-media",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T02:28:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zlforward/dsh-agnes-media",
+    "commands": [
+      "dsh plugin --profile <profile> add dsh-agnes-media"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "SnowCrescenter-tech/dsh-milestone",
+  "slug": "snowcrescenter-tech__dsh-milestone",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-milestone",
+  "title": "dsh-milestone",
+  "summary": "在会话右侧加一条时间轴导航条，像 Git 提交图一样快速跳到任意一条用户消息。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "milestone",
+    "navigation",
+    "会话管理",
+    "快捷操作",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.7.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.2",
+    "publishedAt": "2026-09-12T11:09:23Z",
+    "url": "https://github.com/SnowCrescenter-tech/dsh-milestone/releases/tag/v0.7.2"
+  },
+  "author": "SnowCrescenter-tech",
+  "repo": "https://github.com/SnowCrescenter-tech/dsh-milestone",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 24,
+  "forks": 1,
+  "pushedAt": "2026-09-12T13:32:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-milestone",
+    "commands": [
+      "dsh plugin --profile demo add dsh-milestone",
+      "dsh plugin --profile demo add \"github:SnowCrescenter-tech/dsh-milestone"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

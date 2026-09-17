@@ -1902,14 +1902,16 @@ window.__ModuleLoader__.load({
 					if (r && r.ok === false) fail(new Error(r.error || "刷新失败"));
 					else if (aliveRef.current) {
 						/*
-						 * ★ 如实报出三层各自的来源。
+						 * ★ 如实报出**目录是从哪来的**。
 						 *
-						 *   刷新不再必然是一次大下载：公共索引带 ETag，目录没变时服务端答 304，
-						 *   传输量几乎为零（原先无条件重下 4.8MB，在这条线路上要 ~28 秒）。
+						 *   自 0.4.0 起目录只有一个来源：市场仓库里的 catalog/index.json
+						 *   （由「一个插件一个配置文件」catalog/plugins/*.json 派生）。
+						 *   刷新不再是一次大下载：它是仓库里的静态文件，带 ETag，
+						 *   目录没变时服务端答 304，传输量几乎为零。
 						 *   所以提示语要说「目录未变」而不是让用户以为白点了一下。
 						 *
-						 *   verified 现在是远程优先的，它到底是「远程」还是「离线包内兜底」
-						 *   直接决定用户看到的版本新不新 —— 这个必须显式说出来，不能藏。
+						 *   ★ 来源是 cache / bundled 时必须显式说出来 ——
+						 *   那意味着显示的版本号可能不是最新的，这是用户唯一能判断的依据。
 						 */
 						var srcText = {
 							'remote': "远程最新",
@@ -1919,11 +1921,16 @@ window.__ModuleLoader__.load({
 							'bundled': "离线包内快照",
 							'unavailable': "不可用",
 						};
+						var stale = r.source === 'bundled' || r.source === 'cache' || r.source === 'cache-error';
+						var counts = r.counts || {};
 						setToast(
-							"目录已刷新 · 已验证：" + (srcText[r.verified] || r.verified || "?")
-							+ " · 已审核：" + (srcText[r.reviewed] || r.reviewed || "?")
-							+ " · 公共索引：" + (srcText[r.community] || r.community || "?")
-							+ (r.verified === 'bundled' || r.verified === 'cache' ? "（已验证层没能取到远程目录，显示的版本可能不是最新）" : ""),
+							"目录已刷新 · " + (srcText[r.source] || r.source || "?")
+							+ (counts.total ? " · 共 " + counts.total + " 条"
+								+ "（已验证 " + txt(counts.verified, "0")
+								+ " / 已审核 " + txt(counts.reviewed, "0")
+								+ " / 未审核 " + txt(counts.community, "0") + "）" : "")
+							+ (r.upstreamGeneratedAt ? " · 上游索引生成于 " + r.upstreamGeneratedAt.slice(0, 10) : "")
+							+ (stale ? "（没取到远程目录，显示的版本可能不是最新）" : ""),
 						);
 					}
 					await loadStatus();
@@ -2030,11 +2037,15 @@ window.__ModuleLoader__.load({
 						),
 					),
 
-					list && list.communityMeta && list.communityMeta.error
-						? h(Flag, { kind: "risk", icon: "!" }, "公共索引拉取有问题：" + list.communityMeta.error + "（下面的结果可能来自磁盘缓存）")
+					list && list.indexMeta && list.indexMeta.error
+						? h(Flag, { kind: "risk", icon: "!" },
+							"目录没能从仓库拉取：" + txt(list.indexMeta.error)
+							+ "（下面的结果来自本机缓存或包内离线快照，版本号可能不是最新的）")
 						: null,
-					list && list.verifiedAvailable === false
-						? h(Flag, { kind: "bad", icon: "✗" }, "包内目录缺失：" + txt(list.verifiedError))
+					list && list.indexMeta && list.indexMeta.source === 'bundled'
+						? h(Flag, { kind: "risk", icon: "!" },
+							"正在用**包内离线目录**：它只含本仓库托管的插件（已验证层），"
+							+ "完整的 7000+ 条插件列表需要联网从仓库拉取。")
 						: null,
 
 					// ★ 问题 1 的全局提示：装了但仓库里有新版
@@ -2337,14 +2348,24 @@ window.__ModuleLoader__.load({
 					upgradable.length > 0
 						? h(Badge, { kind: "update" }, "可更新 " + upgradable.length)
 						: null,
-					catalog.verified && catalog.verified.available === false
-						? h(Badge, { kind: "bad" }, "包内目录缺失")
+					/*
+					 * 目录取用情况的如实提示。
+					 *
+					 * 目录现在是 market 仓库里的 catalog/index.json（静态文件，带 ETag）。
+					 * 来源是 cache / bundled 时，显示的版本号可能不是最新的 ——
+					 * 这一点必须让用户看见，而不是让他以为看到的就是最新的。
+					 */
+					catalog.index && catalog.index.error
+						? h(Badge, { kind: "neutral" }, "目录：" + txt(catalog.index.source))
 						: null,
-					catalog.community && catalog.community.error
-						? h(Badge, { kind: "neutral" }, "公共索引：" + txt(catalog.community.source))
+					catalog.index && (catalog.index.source === 'bundled')
+						? h(Badge, { kind: "bad" }, "离线包内目录（可能不是最新）")
 						: null,
-					catalog.community && catalog.community.stale
-						? h(Badge, { kind: "neutral" }, "索引缓存 " + ageText(catalog.community.ageMs))
+					catalog.index && catalog.index.source === 'cache'
+						? h(Badge, { kind: "neutral" }, "目录缓存 " + ageText(catalog.index.ageMs))
+						: null,
+					catalog.index && catalog.index.sourceIndex && catalog.index.sourceIndex.generatedAt
+						? h("span", { className: "dpm-muted" }, "上游索引 " + catalog.index.sourceIndex.generatedAt.slice(0, 10))
 						: null,
 					h("span", { className: "dpm-spacer" }),
 					status && status.repo && status.repo.detected

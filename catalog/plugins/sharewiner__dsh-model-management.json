@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "sharewiner/dsh-model-management",
+  "slug": "sharewiner__dsh-model-management",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-management",
+  "title": "dsh-model-management",
+  "summary": "管理 OpenAI 兼容模型提供商，设置默认模型、控制可见性，并可选将网络搜索接入模型。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "model-management",
+    "openai",
+    "web-search",
+    "模型配置",
+    "插件管理"
+  ],
+  "version": "0.2.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.3",
+    "publishedAt": "2026-08-26T12:01:25Z",
+    "url": "https://github.com/sharewiner/dsh-model-management/releases/tag/v0.2.3"
+  },
+  "author": "sharewiner",
+  "repo": "https://github.com/sharewiner/dsh-model-management",
+  "homepage": "https://github.com/sharewiner/dsh-model-management",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-26T12:16:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@sharewiner/dsh-model-management@0.2.3",
+    "commands": [
+      "dsh plugin --profile web add @sharewiner/dsh-model-management@0.2.3"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

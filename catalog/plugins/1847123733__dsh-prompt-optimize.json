@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "1847123733/dsh-prompt-optimize",
+  "slug": "1847123733__dsh-prompt-optimize",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-optimize",
+  "title": "dsh-prompt-optimize",
+  "summary": "给提问自动加锚点并优化提示词，还能自定义指令、随手调用 DeepSeek API。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "AI 助手",
+    "快捷操作",
+    "设置面板",
+    "报告生成"
+  ],
+  "version": "0.8.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "1847123733",
+  "repo": "https://github.com/1847123733/dsh-prompt-optimize",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-09-07T02:40:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:184712373/dsh-prompt-optimize",
+    "commands": [
+      "dsh plugin --profile web add \"github:184712373/dsh-prompt-optimize\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

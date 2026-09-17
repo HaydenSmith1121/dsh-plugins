@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "hxt9805/dsh-remote-tailscale",
+  "slug": "hxt9805__dsh-remote-tailscale",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-remote-tailscale",
+  "title": "dsh-remote-tailscale",
+  "summary": "通过 Tailscale 网络，在手机、平板或电脑上远程访问本地 DSH 网页界面，随时随地管理。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "tailscale",
+    "零配置",
+    "安全审计",
+    "效率提升",
+    "多设备支持"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hxt9805",
+  "repo": "https://github.com/hxt9805/dsh-remote-tailscale",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-22T13:17:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hxt9805/dsh-remote-tailscale",
+    "commands": [
+      "dsh plugin --profile web add github:hxt9805/dsh-remote-tailscale",
+      "dsh plugin --profile web add /absolute/path/to/dsh-remote-tailscale",
+      "dsh plugin --profile web remove dsh-remote-tailscale"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

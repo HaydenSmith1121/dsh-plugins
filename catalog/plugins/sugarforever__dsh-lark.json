@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "sugarforever/dsh-lark",
+  "slug": "sugarforever__dsh-lark",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-lark",
+  "title": "dsh-lark",
+  "summary": "装好后就能在飞书或 Lark 里直接跟 Harness Agent 聊天，模型、工具和会话都沿用原有配置。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "工具集成",
+    "AI 助手",
+    "会话管理",
+    "快捷操作"
+  ],
+  "version": "0.2.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.6",
+    "publishedAt": "2026-09-07T19:56:02Z",
+    "url": "https://github.com/sugarforever/dsh-lark/releases/tag/v0.2.6"
+  },
+  "author": "sugarforever",
+  "repo": "https://github.com/sugarforever/dsh-lark",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 28,
+  "forks": 8,
+  "pushedAt": "2026-09-07T19:56:02Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sugarforever/dsh-lark",
+    "commands": [
+      "git clone https://github.com/sugarforever/dsh-lark.git",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

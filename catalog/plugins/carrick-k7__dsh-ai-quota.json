@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "Carrick-K7/dsh-ai-quota",
+  "slug": "carrick-k7__dsh-ai-quota",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ai-quota",
+  "title": "dsh-ai-quota",
+  "summary": "一个插件，集中查看 Codex、Kimi、DeepSeek 等 AI 订阅的配额和余额，方便管理用量。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "效率提升",
+    "状态监控",
+    "模型配置"
+  ],
+  "version": "0.7.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.2",
+    "publishedAt": "2026-08-24T14:31:02Z",
+    "url": "https://github.com/Carrick-K7/dsh-ai-quota/releases/tag/v0.7.2"
+  },
+  "author": "Carrick-K7",
+  "repo": "https://github.com/Carrick-K7/dsh-ai-quota",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T14:42:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Carrick-K7/dsh-ai-quota",
+    "commands": [
+      "dsh plugin --profile web add github:Carrick-K7/dsh-ai-quota"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

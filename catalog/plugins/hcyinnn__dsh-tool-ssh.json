@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "hcyinnn/dsh-tool-ssh",
+  "slug": "hcyinnn__dsh-tool-ssh",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tool-ssh",
+  "title": "dsh-tool-ssh",
+  "summary": "让 Agent 通过 SSH 在远程主机上执行命令、上传下载文件，无需安装额外组件，即连即用。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "ssh",
+    "安全审计",
+    "命令行工具",
+    "零配置",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hcyinnn",
+  "repo": "https://github.com/hcyinnn/dsh-tool-ssh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T13:02:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hcyinnn/dsh-tool-ssh",
+    "commands": [
+      "dsh plugin add github:<你的用户名>/dsh-tool-ssh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

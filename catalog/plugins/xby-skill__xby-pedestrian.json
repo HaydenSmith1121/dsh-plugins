@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-pedestrian",
+  "slug": "xby-skill__xby-pedestrian",
+  "tier": "community",
+  "package": null,
+  "name": "xby-pedestrian",
+  "title": "xby-pedestrian",
+  "summary": "上传图片即可自动识别行人，返回每个目标的检测框、置信度和标签，适合安防、监控等场景。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "零配置",
+    "自动化",
+    "状态监控"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-pedestrian",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:25:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-pedestrian",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-pedestrian",
+      "dsh plugin --profile web add /absolute/path/to/xby-pedestrian"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

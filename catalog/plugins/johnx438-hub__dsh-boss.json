@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "johnx438-hub/dsh-boss",
+  "slug": "johnx438-hub__dsh-boss",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-boss",
+  "title": "dsh-boss",
+  "summary": "让任何会话都能创建子会话、派发任务并回收结论，轻松编排多智能体协作。",
+  "tags": [
+    "dsh-plugin",
+    "多Agent协作",
+    "工作流增强",
+    "会话管理",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "johnx438-hub",
+  "repo": "https://github.com/johnx438-hub/dsh-boss",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T19:59:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-boss",
+    "commands": [
+      "dsh plugin --profile web add dsh-boss"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

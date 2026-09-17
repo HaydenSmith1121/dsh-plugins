@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ErrorLst/dsh-notes",
+  "slug": "errorlst__dsh-notes",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notes",
+  "title": "dsh-notes",
+  "summary": "在侧栏常驻会话卡片和笔记栏，随时对话、随手记录，全局与工作区笔记自动同步，适配明暗主题。",
+  "tags": [
+    "dsh-plugin",
+    "文件管理",
+    "会话管理",
+    "前端增强",
+    "主题",
+    "效率提升"
+  ],
+  "version": "0.7.17",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ErrorLst",
+  "repo": "https://github.com/ErrorLst/dsh-notes",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T09:13:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ErrorLst/dsh-notes",
+    "commands": [
+      "dsh plugin --profile web add github:ErrorLst/dsh-notes",
+      "git clone <本仓库地址> dsh-notes",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

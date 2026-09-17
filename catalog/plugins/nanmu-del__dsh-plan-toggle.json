@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Nanmu-del/dsh-plan-toggle",
+  "slug": "nanmu-del__dsh-plan-toggle",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plan-toggle",
+  "title": "dsh-plan-toggle",
+  "summary": "在 DSH 网页版输入框旁加一个常驻的计划模式开关，方便随时切换，不用每次重新设置。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "效率提升",
+    "工作流增强",
+    "设置面板"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Nanmu-del",
+  "repo": "https://github.com/Nanmu-del/dsh-plan-toggle",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T05:17:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Nanmu-del/dsh-plan-toggle",
+    "commands": [
+      "dsh plugin --profile web add github:Nanmu-del/dsh-plan-toggle"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

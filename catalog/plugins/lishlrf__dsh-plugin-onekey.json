@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "lishLRF/dsh-plugin-onekey",
+  "slug": "lishlrf__dsh-plugin-onekey",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-onekey",
+  "title": "dsh-plugin-onekey",
+  "summary": "一键安装或卸载 DeepSeek Harness 插件，复制即装、输入命令即卸，省去手动配置。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "installer",
+    "插件管理",
+    "快捷操作",
+    "零配置",
+    "效率提升",
+    "命令行工具"
+  ],
+  "version": "0.1.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.5",
+    "publishedAt": "2026-08-23T07:41:28Z",
+    "url": "https://github.com/lishLRF/dsh-plugin-onekey/releases/tag/v0.1.5"
+  },
+  "author": "lishLRF",
+  "repo": "https://github.com/lishLRF/dsh-plugin-onekey",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-23T08:57:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-onekey",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-onekey",
+      "dsh plugin --profile web add github:lishLRF/dsh-plugin-onekey",
+      "dsh plugin --profile web add link:<本仓库绝对路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

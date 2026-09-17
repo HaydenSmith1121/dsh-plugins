@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "jhuanxx44/dsh-sseye",
+  "slug": "jhuanxx44__dsh-sseye",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sseye",
+  "title": "dsh-sseye",
+  "summary": "在 DeepSeek Harness 里给 LLM 调试开个天眼：捕获每次模型调用、语义对比，还能回放和修改请求。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "llm-debugging",
+    "状态监控",
+    "工作流增强",
+    "安全审查",
+    "模型适配"
+  ],
+  "version": "0.4.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jhuanxx44",
+  "repo": "https://github.com/jhuanxx44/dsh-sseye",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:05:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-sseye",
+    "commands": [
+      "dsh plugin --profile web add dsh-sseye",
+      "dsh plugin --profile web add github:jhuanxx44/dsh-sseye",
+      "dsh plugin --profile web remove dsh-sseye"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

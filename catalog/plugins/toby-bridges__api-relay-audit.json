@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "toby-bridges/api-relay-audit",
+  "slug": "toby-bridges__api-relay-audit",
+  "tier": "reviewed",
+  "package": "dsh-api-relay-audit",
+  "name": "dsh-api-relay-audit",
+  "title": "AI API 中转安全体检",
+  "summary": "在 harness 里对 AI API 中转与 LLM 代理做本地安全体检：提示注入、模型掉包、工具调用篡改、SSE 异常、错误泄露与钱包风险，检测语义全部在 Python 侧完成。",
+  "tags": [
+    "安全审查",
+    "工具集成",
+    "模型配置",
+    "供应链安全"
+  ],
+  "version": "2.4.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:25:08.895Z",
+  "latestRelease": null,
+  "author": "toby-bridges",
+  "repo": "https://github.com/toby-bridges/api-relay-audit",
+  "homepage": "https://toby-bridges.github.io/api-relay-audit/",
+  "license": "AGPL-3.0-only",
+  "stars": 839,
+  "forks": null,
+  "pushedAt": null,
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": "@deepseek-ai/cordis ^4.0.1, @deepseek-ai/dsh-commands 0.1.0-rc.6, @deepseek-ai/dsh-credentials 0.1.0-rc.6, @deepseek-ai/dsh-llm 0.1.0-rc.6, @deepseek-ai/dsh-settings 0.1.0-rc.6, @deepseek-ai/dsh-subprocess 0.1.0-rc.6",
+  "peerVerdict": "warn",
+  "peerNote": "@deepseek-ai/cordis 要求 ^4.0.1，本机 4.0.2，满足。其余 5 个（dsh-commands / dsh-credentials / dsh-llm / dsh-settings / dsh-subprocess）**精确 pin 在 0.1.0-rc.6**，本机是 0.1.6-alpha.1 —— 属于「精确 pin 低于本机」这一档。本仓库对该档的既有判据是 warn 而非 critical（代价是 pnpm 的 peer 警告），而且 profile 设了 autoInstallPeers: false，peer 本就不参与安装；这条结论不靠推断，已用真实启动验证：插件树完整加载、无缺具名导出的失败。形态与已收录的 dsh-receipt 相同。",
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:toby-bridges/api-relay-audit",
+    "commands": [
+      "dsh plugin --profile web add github:toby-bridges/api-relay-audit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": "0.1.6-alpha.1",
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "manual",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": {
+    "reviewedAt": "2026-09-17",
+    "dshVersion": "0.1.6-alpha.1",
+    "node": "24.14.0",
+    "pnpm": "12.4.2",
+    "reviewer": "HaydenSmith1121",
+    "verdict": "ok-with-notes",
+    "sha256": null,
+    "evidence": "隔离环境：DSH_HOME=D:\\deepseek\\_review-2026Q3\\home（一次性目录，与生产 ~/.dsh 完全分离）。\n来源：默认分支 master，HEAD=cfb8da4e009b11f9eadd61895d25b4e5bff2db18。\n装法：本机沙箱禁止 git 内部管道（git ls-remote 报 'cannot create standard input pipe for remote-https: Permission denied'），故把该 commit 的仓库取到本地后以 dsh plugin add <本地目录> 安装（pnpm 记为 link:）。该包**没有任何运行时 dependencies**（只有 peerDependencies），因此 link: 与 github: 在功能上等价：github: 下 pnpm 打包的 files 字段为 audit.py / dsh/index.js / dsh/cordis.patch.yml / README / LICENSE / NOTICE / VERSION，主入口与 audit.py 两种方式下都在位。\n① 安装：exit 0，'Done in 73ms using pnpm v12.4.2'，'Packages: +1'，'dependencies: + dsh-api-relay-audit'。\n② 依赖层：dsh plugin --profile web list → dsh-api-relay-audit@link:... 在列。\n③ 注册表层：dsh.profile.bundles 追加 'dsh-api-relay-audit'（成功判据取 pnpm 退出码，不是 node_modules 里有没有文件）。\n④ 装配层：dsh --profile web --dump-config → '# == dsh-api-relay-audit'，条目为 id: api-relay-audit / name: dsh-api-relay-audit（name 等于包本名，说明模块 import 成功、没有落进 .dsh-module-fallback）。\n⑤ 真实启动：dsh web --no-open --port 3201 → 仅一行 'dsh web: http://127.0.0.1:3201/?token=...'，无 plugin tree failed to load / does not provide an export / SyntaxError / Cannot find module；端口在监听。\n⑥ 共存回归：与 dsh-web、dsh-ads 同装一个 profile 后再启动（--port 3204）仍然干净。",
+    "notes": "1. 许可要留意：**AGPL-3.0-only**，是本层三条里唯一的强 copyleft。本仓库对已审核层只记录元数据与安装规格、**不重新分发它的字节**（用户从上游装），因此不涉及再分发；但如果你把它的代码并进自己的项目，AGPL 的义务是实打实的。\n2. 用起来才需要配置：needsConfig / usageNeedsConfig 都是 true —— 它要一个可用的 provider 与凭据（--credential-ref 解析 DSH 凭据，且**不接受裸 --key / --key-env**），并且检测逻辑跑在 Python 里（本机 Python 3.12 在位；包内 audit.py 由 dsh/index.js 以 subprocess 启动）。装完不配也能正常加载，只是跑不了体检。\n3. 副作用面很小且都是显式的：宿主半只做「解析一个 provider 目标 + 解析一个凭据 + 起 audit.py + 回一个报告路径」，不写全局配置、不起常驻后台进程；真正联网的是你手动触发体检时它去访问你指定的中转端点。\n4. 仓库根同时是一个完整的 Python 项目（audit.py / api_relay_audit/ / web/ / skills/ 等），装进 profile 的只是 dsh/ 这一小部分适配层；link: 方式会把整棵仓库挂进来，属本次验证方式的产物，不影响判断。\n5. 声明了 engines.node：^22.19.0 || >=24.0.0（注意它排除 23.x），本机 24.14.0 满足。"
+  }
+}

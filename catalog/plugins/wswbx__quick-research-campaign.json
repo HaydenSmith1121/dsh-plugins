@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "wswbx/quick-research-campaign",
+  "slug": "wswbx__quick-research-campaign",
+  "tier": "community",
+  "package": null,
+  "name": "quick-research-campaign",
+  "title": "quick-research-campaign",
+  "summary": "给 DSH 装一条科研流水线，帮你管住实验组数、参数干净度和选优依据。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "工作流增强",
+    "内容创作",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wswbx",
+  "repo": "https://github.com/wswbx/quick-research-campaign",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T18:15:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "quick-research-campaign",
+    "commands": [
+      "dsh plugin --profile web add quick-research-campaign",
+      "dsh plugin --profile web remove quick-research-campaign",
+      "dsh plugin --profile web add \"file:C:/path/to/quick-research-campaign\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

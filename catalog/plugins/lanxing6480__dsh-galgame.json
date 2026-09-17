@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Lanxing6480/dsh-galgame",
+  "slug": "lanxing6480__dsh-galgame",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-galgame",
+  "title": "dsh-galgame",
+  "summary": "把聊天界面变成 GalGame 风格，和 DeepSeek 娘立绘对话，纯视觉层不影响正常工作。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "galgame",
+    "主题",
+    "界面美化",
+    "可视化",
+    "AI 助手"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Lanxing6480",
+  "repo": "https://github.com/Lanxing6480/dsh-galgame",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 19,
+  "forks": 1,
+  "pushedAt": "2026-08-14T18:26:54Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Lanxing6480/dsh-galgame",
+    "commands": [
+      "dsh plugin --profile web add github:Lanxing6480/dsh-galgame"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

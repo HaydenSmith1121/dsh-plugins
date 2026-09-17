@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "cordisplugins/acryl-dsh-editor-plugin-cli",
+  "slug": "cordisplugins__acryl-dsh-editor-plugin-cli",
+  "tier": "community",
+  "package": null,
+  "name": "acryl-dsh-editor-plugin-cli",
+  "title": "acryl-dsh-editor-plugin-cli",
+  "summary": "在 DSH 终端里直接浏览、查看和编辑文件，不用离开命令行界面。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "文件管理",
+    "命令行工具",
+    "快捷操作",
+    "工具集成"
+  ],
+  "version": "0.4.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "cordisplugins",
+  "repo": "https://github.com/cordisplugins/acryl-dsh-editor-plugin-cli",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T10:38:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cordisplugins/acryl-dsh-editor-plugin-cli",
+    "commands": [
+      "dsh plugin --profile <name> add acryl-dsh-editor-plugin-cli"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

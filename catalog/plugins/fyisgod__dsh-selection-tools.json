@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "fyisgod/dsh-selection-tools",
+  "slug": "fyisgod__dsh-selection-tools",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-selection-tools",
+  "title": "dsh-selection-tools",
+  "summary": "在任意 Windows 应用里划词，就能让 DeepSeek Harness 的 agent 帮你解释或翻译，结果直接显示在置顶小浮窗里。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "selection",
+    "translate",
+    "win32",
+    "快捷操作",
+    "AI 助手",
+    "工具集成",
+    "自动化"
+  ],
+  "version": "0.8.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.0",
+    "publishedAt": "2026-09-13T14:14:08Z",
+    "url": "https://github.com/fyisgod/dsh-selection-tools/releases/tag/v0.8.0"
+  },
+  "author": "fyisgod",
+  "repo": "https://github.com/fyisgod/dsh-selection-tools",
+  "homepage": "https://github.com/fyisgod/dsh-selection-tools",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T14:47:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fyisgod/dsh-selection-tools",
+    "commands": [
+      "dsh plugin --profile web add \"github:fyisgod/dsh-selection-tools\"",
+      "dsh plugin --profile web add .",
+      "dsh plugin --profile web add dsh-selection-tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

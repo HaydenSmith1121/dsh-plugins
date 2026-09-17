@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ZiqiaoFang/dsh-liangwen-tide",
+  "slug": "ziqiaofang__dsh-liangwen-tide",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-liangwen-tide",
+  "title": "dsh-liangwen-tide",
+  "summary": "在 DSH 界面挂一颗小胶囊，实时显示当前是峰时还是谷时，并算出今天已经花了多少钱。",
+  "tags": [
+    "cost-tracking",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "web-ui",
+    "状态监控",
+    "资源优化",
+    "可视化",
+    "主题",
+    "数据分析"
+  ],
+  "version": "3.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.3.1.1",
+    "publishedAt": "2026-09-16T03:38:02Z",
+    "url": "https://github.com/ZiqiaoFang/dsh-liangwen-tide/releases/tag/v1.3.1.1"
+  },
+  "author": "ZiqiaoFang",
+  "repo": "https://github.com/ZiqiaoFang/dsh-liangwen-tide",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T03:37:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ZiqiaoFang/dsh-liangwen-tide",
+    "commands": [
+      "dsh plugin --profile web add github:ZiqiaoFang/dsh-liangwen-tide"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

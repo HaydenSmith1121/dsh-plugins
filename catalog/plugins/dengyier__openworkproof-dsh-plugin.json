@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "dengyier/openworkproof-dsh-plugin",
+  "slug": "dengyier__openworkproof-dsh-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "openworkproof-dsh-plugin",
+  "title": "openworkproof-dsh-plugin",
+  "summary": "为 DeepSeek Harness 的 AI 智能体操作提供可验证的授权、执行证据与离线交付核验，确保代码变更可信可靠。",
+  "tags": [
+    "ai-agents",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mcp",
+    "openworkproof",
+    "verifiable-execution",
+    "自动化",
+    "工作流增强",
+    "安全审计",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-30T02:41:37Z",
+    "url": "https://github.com/dengyier/openworkproof-dsh-plugin/releases/tag/v0.1.0"
+  },
+  "author": "dengyier",
+  "repo": "https://github.com/dengyier/openworkproof-dsh-plugin",
+  "homepage": "https://github.com/dengyier/OpenWorkProof",
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T02:55:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@openworkproof/dsh-plugin@0.1.0",
+    "commands": [
+      "dsh plugin --profile owp-preview add @openworkproof/dsh-plugin@0.1.0",
+      "dsh plugin --profile owp-preview add \\"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

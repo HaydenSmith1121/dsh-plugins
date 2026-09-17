@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "SeptTpes/dsh-cache-aware-compaction",
+  "slug": "septtpes__dsh-cache-aware-compaction",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cache-aware-compaction",
+  "title": "dsh-cache-aware-compaction",
+  "summary": "压缩前自动判断缓存冷热，热时重放省算力，冷时转录省时间，让 dsh 压缩更聪明。",
+  "tags": [
+    "cache-aware",
+    "compaction",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "资源优化",
+    "效率提升",
+    "会话管理",
+    "状态监控"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "SeptTpes",
+  "repo": "https://github.com/SeptTpes/dsh-cache-aware-compaction",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T10:09:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:SeptTpes/dsh-cache-aware-compaction",
+    "commands": [
+      "dsh plugin --profile web add file:/path/to/dsh-cache-aware-compaction/dsh-compaction-cache-aware"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

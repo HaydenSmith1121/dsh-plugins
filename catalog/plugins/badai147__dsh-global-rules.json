@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "badai147/dsh-global-rules",
+  "slug": "badai147__dsh-global-rules",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-global-rules",
+  "title": "dsh-global-rules",
+  "summary": "在 DSH Web 设置面板里直接编辑 ~/.dsh/AGENTS.md 全局规则，不用再手动翻文件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "设置面板",
+    "全局规则",
+    "文件管理",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "badai147",
+  "repo": "https://github.com/badai147/dsh-global-rules",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 11,
+  "forks": 0,
+  "pushedAt": "2026-09-08T13:26:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-global-rules",
+    "commands": [
+      "dsh plugin --profile web add dsh-global-rules",
+      "dsh plugin --profile web add github:badai147/dsh-global-rules"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

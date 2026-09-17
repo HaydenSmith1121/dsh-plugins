@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "xingyingyuzhui/dsh-updater-ui",
+  "slug": "xingyingyuzhui__dsh-updater-ui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-updater-ui",
+  "title": "dsh-updater-ui",
+  "summary": "官方更新插件，在设置里一键检查并升级 DSH，支持后台自动检测与红点提醒，智能识别当前运行环境。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "消息通知",
+    "状态监控",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "1.2.2",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xingyingyuzhui",
+  "repo": "https://github.com/xingyingyuzhui/dsh-updater-ui",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-08-21T11:30:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xingyingyuzhui/dsh-updater-ui",
+    "commands": [
+      "dsh plugin --profile web add github:xingyingyuzhui/dsh-updater-ui",
+      "dsh plugin --profile web remove dsh-updater-ui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

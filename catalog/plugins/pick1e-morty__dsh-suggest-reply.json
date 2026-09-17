@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "pick1e-morty/dsh-suggest-reply",
+  "slug": "pick1e-morty__dsh-suggest-reply",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-suggest-reply",
+  "title": "dsh-suggest-reply",
+  "summary": "在侧边栏用你自定义的提示词，为最新AI回复生成候选回复，点击即可填入输入框。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-better-sidebar",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "sidebar",
+    "前端增强",
+    "会话管理",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-22T23:29:40Z",
+    "url": "https://github.com/pick1e-morty/dsh-suggest-reply/releases/tag/v0.1.0"
+  },
+  "author": "pick1e-morty",
+  "repo": "https://github.com/pick1e-morty/dsh-suggest-reply",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-23T04:57:57Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-better-sidebar@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-better-sidebar@latest",
+      "dsh plugin --profile web add <本仓库路径>",
+      "dsh plugin --profile web add dsh-suggest-reply"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

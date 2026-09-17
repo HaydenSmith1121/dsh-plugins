@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "Han-1413141/dsh-sticky-disclosure",
+  "slug": "han-1413141__dsh-sticky-disclosure",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sticky-disclosure",
+  "title": "dsh-sticky-disclosure",
+  "summary": "一键收起 DSH 网页里所有展开的思考行和工具卡片，带实时计数和自定义快捷键。",
+  "tags": [
+    "client-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "快捷操作",
+    "效率提升",
+    "前端增强",
+    "主题"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-14T01:40:17Z",
+    "url": "https://github.com/Han-1413141/dsh-sticky-disclosure/releases/tag/v1.0.0"
+  },
+  "author": "Han-1413141",
+  "repo": "https://github.com/Han-1413141/dsh-sticky-disclosure",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-15T08:18:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Han-1413141/dsh-sticky-disclosure",
+    "commands": [
+      "dsh plugin --profile web add file:./dsh-sticky-disclosure"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

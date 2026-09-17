@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Johnny-xuan/dsh-paste-to-path",
+  "slug": "johnny-xuan__dsh-paste-to-path",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-paste-to-path",
+  "title": "dsh-paste-to-path",
+  "summary": "给 DeepSeek Harness 加一个通用附件停靠栏，复制路径就能直接粘贴上传，省去繁琐操作。",
+  "tags": [
+    "attachment",
+    "deepseek-harness",
+    "dsh-plugin",
+    "效率提升",
+    "工作流增强",
+    "自动化",
+    "插件管理"
+  ],
+  "version": "0.0.6",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Johnny-xuan",
+  "repo": "https://github.com/Johnny-xuan/dsh-paste-to-path",
+  "homepage": null,
+  "license": null,
+  "stars": 6,
+  "forks": 2,
+  "pushedAt": "2026-09-07T16:19:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-paste-to-path",
+    "commands": [
+      "dsh plugin --profile web add dsh-paste-to-path",
+      "dsh plugin --profile web add github:Johnny-xuan/dsh-paste-to-path"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

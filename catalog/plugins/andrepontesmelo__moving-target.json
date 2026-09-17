@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "andrepontesmelo/moving-target",
+  "slug": "andrepontesmelo__moving-target",
+  "tier": "community",
+  "package": null,
+  "name": "moving-target",
+  "title": "moving-target",
+  "summary": "把历史会话浓缩成一段项目目标，每次新开对话自动注入，让AI始终围绕核心任务。",
+  "tags": [
+    "ai-agents",
+    "context",
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.1.5",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "andrepontesmelo",
+  "repo": "https://github.com/andrepontesmelo/moving-target",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T05:29:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:andrepontesmelo/moving-target",
+    "commands": [
+      "dsh plugin --profile <your-profile> add file:/path/to/moving-target-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

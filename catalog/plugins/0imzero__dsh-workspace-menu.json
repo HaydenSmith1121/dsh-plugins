@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "0imzero/dsh-workspace-menu",
+  "slug": "0imzero__dsh-workspace-menu",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workspace-menu",
+  "title": "dsh-workspace-menu",
+  "summary": "在 DSH 主页右键或双击工作区/会话，快速置顶、重命名、归档、分叉、复制链接或新窗口打开，管理更顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "工作区管理",
+    "会话管理",
+    "Web界面",
+    "多工具支持"
+  ],
+  "version": "1.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.0",
+    "publishedAt": "2026-08-24T17:02:44Z",
+    "url": "https://github.com/0imzero/dsh-workspace-menu/releases/tag/v1.2.0"
+  },
+  "author": "0imzero",
+  "repo": "https://github.com/0imzero/dsh-workspace-menu",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-24T17:02:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-external-dsh-workspace-menu-1.2.0.tgz",
+    "commands": [
+      "dsh plugin --profile web add dsh-external-dsh-workspace-menu-1.2.0.tgz",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

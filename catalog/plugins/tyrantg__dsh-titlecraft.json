@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "TyrantG/dsh-titlecraft",
+  "slug": "tyrantg__dsh-titlecraft",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-titlecraft",
+  "title": "dsh-titlecraft",
+  "summary": "把 DSH 会话标题自动整理成短、准、统一的格式，支持自定义模板、语义图标和 AI 生成精修。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "会话管理",
+    "效率提升",
+    "AI 助手",
+    "报告生成",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-09T14:44:37Z",
+    "url": "https://github.com/TyrantG/dsh-titlecraft/releases/tag/v0.1.0"
+  },
+  "author": "TyrantG",
+  "repo": "https://github.com/TyrantG/dsh-titlecraft",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T14:44:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TyrantG/dsh-titlecraft",
+    "commands": [
+      "dsh plugin --profile web add dsh-titlecraft -w"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

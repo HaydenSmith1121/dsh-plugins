@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "CHIP-PHILO-GH/dsh-session-namer",
+  "slug": "chip-philo-gh__dsh-session-namer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-namer",
+  "title": "dsh-session-namer",
+  "summary": "新建会话前先给会话起个名，还能预览草稿、安全截断，告别自动标题。",
+  "tags": [
+    "client-plugin",
+    "cordis",
+    "dsh",
+    "dsh-plugin",
+    "session-naming",
+    "会话管理",
+    "快捷操作",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "1.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "CHIP-PHILO-GH",
+  "repo": "https://github.com/CHIP-PHILO-GH/dsh-session-namer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T19:09:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CHIP-PHILO-GH/dsh-session-namer",
+    "commands": [
+      "dsh plugin --profile web add github:CHIP-PHILO-GH/dsh-session-namer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

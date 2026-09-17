@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Sev7een/dsh-plugin-automations",
+  "slug": "sev7een__dsh-plugin-automations",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-automations",
+  "title": "dsh-plugin-automations",
+  "summary": "给 DeepSeek Harness 网页版加定时任务，支持单次或 Cron 调度，还能选在非高峰时段自动执行。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "效率提升",
+    "工作流增强",
+    "资源优化"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Sev7een",
+  "repo": "https://github.com/Sev7een/dsh-plugin-automations",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-09-08T14:35:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Sev7een/dsh-plugin-automations",
+    "commands": [
+      "dsh plugin --profile web add github:Sev7een/dsh-plugin-automations",
+      "dsh plugin --profile web add dsh-plugin-automations",
+      "git clone https://github.com/Sev7een/dsh-plugin-automations.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "udisyue/dsh-update",
+  "slug": "udisyue__dsh-update",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-update",
+  "title": "dsh-update",
+  "summary": "在 Harness 设置里一键检查版本、在线更新并重启生效，省去手动折腾。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "设置面板",
+    "快捷操作",
+    "自动化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "udisyue",
+  "repo": "https://github.com/udisyue/dsh-update",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T13:21:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:udisyue/dsh-update",
+    "commands": [
+      "dsh plugin --profile web add -w github:udisyue/dsh-update",
+      "dsh plugin --profile web add -w /path/to/dsh-update",
+      "dsh plugin --profile web remove -w dsh-harness-updater"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

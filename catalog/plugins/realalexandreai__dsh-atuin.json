@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "RealAlexandreAI/dsh-atuin",
+  "slug": "realalexandreai__dsh-atuin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-atuin",
+  "title": "dsh-atuin",
+  "summary": "把你在 DeepSeek Harness 里输入的每条提示词自动记录到 atuin 历史中，方便统一检索和复用。",
+  "tags": [
+    "dsh-plugin",
+    "命令行工具",
+    "会话管理",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "RealAlexandreAI",
+  "repo": "https://github.com/RealAlexandreAI/dsh-atuin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-08T03:53:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-atuin",
+    "commands": [
+      "dsh plugin --profile web add dsh-atuin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

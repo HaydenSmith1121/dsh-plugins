@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "elonnzhang/dsh-system-prompt",
+  "slug": "elonnzhang__dsh-system-prompt",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-system-prompt",
+  "title": "dsh-system-prompt",
+  "summary": "查看当前会话生效中的系统提示词，帮你调试和确认模型实际使用的指令。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-bundle",
+    "dsh-plugin",
+    "dsh-plugins",
+    "会话管理",
+    "状态监控",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "elonnzhang",
+  "repo": "https://github.com/elonnzhang/dsh-system-prompt",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-23T11:07:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:elonnzhang/dsh-system-prompt",
+    "commands": [
+      "dsh plugin --profile web add github:elonnzhang/dsh-system-prompt"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

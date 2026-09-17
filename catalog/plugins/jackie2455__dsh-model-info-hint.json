@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "jackie2455/dsh-model-info-hint",
+  "slug": "jackie2455__dsh-model-info-hint",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-info-hint",
+  "title": "dsh-model-info-hint",
+  "summary": "鼠标悬停模型名，立刻弹出该模型的完整配置详情，选型更省心。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "模型适配",
+    "前端增强",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "1.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jackie2455",
+  "repo": "https://github.com/jackie2455/dsh-model-info-hint",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-06T14:34:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jackie2455/dsh-model-info-hint",
+    "commands": [
+      "dsh plugin --profile web add github:jackie2455/dsh-model-info-hint"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

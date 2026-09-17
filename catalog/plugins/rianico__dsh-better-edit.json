@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "Rianico/dsh-better-edit",
+  "slug": "rianico__dsh-better-edit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-better-edit",
+  "title": "dsh-better-edit",
+  "summary": "给 DeepSeek Harness 增加基于行哈希的精准读写编辑工具，支持批量修改和撤销上次操作，让文件编辑更安全可控。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "edit",
+    "hashline",
+    "hashline-edit",
+    "oh-my-pi",
+    "pi",
+    "tools",
+    "文件编辑",
+    "哈希定位",
+    "快捷操作",
+    "撤销功能"
+  ],
+  "version": "0.8.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.2",
+    "publishedAt": "2026-09-14T14:52:54Z",
+    "url": "https://github.com/Rianico/dsh-better-edit/releases/tag/v0.8.2"
+  },
+  "author": "Rianico",
+  "repo": "https://github.com/Rianico/dsh-better-edit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 33,
+  "forks": 6,
+  "pushedAt": "2026-09-14T16:24:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Rianico/dsh-better-edit",
+    "commands": [
+      "dsh plugin --profile web add github:Rianico/dsh-better-edit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

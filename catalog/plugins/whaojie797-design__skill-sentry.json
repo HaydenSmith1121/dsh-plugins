@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "whaojie797-design/skill-sentry",
+  "slug": "whaojie797-design__skill-sentry",
+  "tier": "community",
+  "package": null,
+  "name": "skill-sentry",
+  "title": "skill-sentry",
+  "summary": "安装前静态扫描 Agent Skill，识别危险命令、隐藏网络请求、密钥读取和提示注入，保护你的电脑安全。",
+  "tags": [
+    "agent-skills",
+    "ai-security",
+    "claude-code",
+    "codex",
+    "dsh-plugin",
+    "file-integrity",
+    "lockfile",
+    "prompt-injection",
+    "software-supply-chain",
+    "supply-chain-security",
+    "安全审计",
+    "工作流增强",
+    "自动化",
+    "命令行工具",
+    "状态监控"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-30T11:03:16Z",
+    "url": "https://github.com/whaojie797-design/skill-sentry/releases/tag/v0.2.0"
+  },
+  "author": "whaojie797-design",
+  "repo": "https://github.com/whaojie797-design/skill-sentry",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T11:03:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:whaojie797-design/skill-sentry",
+    "commands": [
+      "git clone https://github.com/whaojie797-design/skill-sentry"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

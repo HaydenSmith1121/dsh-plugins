@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Ayase34/gal-view",
+  "slug": "ayase34__gal-view",
+  "tier": "community",
+  "package": null,
+  "name": "gal-view",
+  "title": "gal-view",
+  "summary": "把 DeepSeek Harness 会话界面变成 Galgame 游戏视窗，支持立绘、对话框和场景编辑，让聊天更有代入感。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "主题",
+    "游戏化交互",
+    "场景编辑",
+    "沉浸式对话"
+  ],
+  "version": "0.3.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Ayase34",
+  "repo": "https://github.com/Ayase34/gal-view",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 173,
+  "forks": 11,
+  "pushedAt": "2026-08-16T00:02:38Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Ayase34/gal-view",
+    "commands": [
+      "dsh plugin --profile web add github:Ayase34/gal-view"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

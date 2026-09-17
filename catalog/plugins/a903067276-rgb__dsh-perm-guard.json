@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "a903067276-rgb/dsh-perm-guard",
+  "slug": "a903067276-rgb__dsh-perm-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-perm-guard",
+  "title": "dsh-perm-guard",
+  "summary": "为 DeepSeek Harness 提供智能权限守卫，自动放行安全操作，危险操作需人工确认，兼顾效率与安全。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "permission",
+    "permission-management",
+    "安全审计",
+    "审批流程",
+    "人工确认"
+  ],
+  "version": "0.2.10",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.10",
+    "publishedAt": "2026-09-10T05:15:07Z",
+    "url": "https://github.com/a903067276-rgb/dsh-perm-guard/releases/tag/v0.2.10"
+  },
+  "author": "a903067276-rgb",
+  "repo": "https://github.com/a903067276-rgb/dsh-perm-guard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 3,
+  "pushedAt": "2026-09-15T00:04:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:a903067276-rgb/dsh-perm-guard",
+    "commands": [
+      "dsh plugin --profile web add \"github:a903067276-rgb/dsh-perm-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

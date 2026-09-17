@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "moguiyu/dsh-tavily",
+  "slug": "moguiyu__dsh-tavily",
+  "tier": "community",
+  "package": null,
+  "name": "moguiyu/dsh-tavily",
+  "title": "moguiyu/dsh-tavily",
+  "summary": "为 DSH 提供 Tavily 网页搜索，支持多 API 密钥自动轮换与故障切换，并实时显示用量。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "tavily",
+    "web-search",
+    "语义检索",
+    "多密钥管理",
+    "自动故障切换",
+    "状态监控"
+  ],
+  "version": "0.2.8",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.8",
+    "publishedAt": "2026-09-15T18:20:34Z",
+    "url": "https://github.com/moguiyu/dsh-tavily/releases/tag/v0.2.8"
+  },
+  "author": "moguiyu",
+  "repo": "https://github.com/moguiyu/dsh-tavily",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 4,
+  "pushedAt": "2026-09-15T18:20:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:moguiyu/dsh-tavily",
+    "commands": [
+      "dsh plugin --profile web add github:moguiyu/dsh-tavily",
+      "dsh plugin --profile web add @moguiyu/dsh-tavily"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

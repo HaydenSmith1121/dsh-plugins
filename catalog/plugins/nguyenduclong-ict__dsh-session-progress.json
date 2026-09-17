@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "nguyenduclong-ict/dsh-session-progress",
+  "slug": "nguyenduclong-ict__dsh-session-progress",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-progress",
+  "title": "dsh-session-progress",
+  "summary": "实时追踪 DSH 会话进度和任务状态，让你随时掌握每个会话跑到哪了。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "状态监控",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "nguyenduclong-ict",
+  "repo": "https://github.com/nguyenduclong-ict/dsh-session-progress",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-13T10:46:57Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:nguyenduclong-ict/dsh-session-progress",
+    "commands": [
+      "dsh plugin --profile web add github:nguyenduclong-ict/dsh-session-progress"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

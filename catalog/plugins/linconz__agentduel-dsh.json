@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "linconz/agentduel-dsh",
+  "slug": "linconz__agentduel-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "agentduel-dsh",
+  "title": "agentduel-dsh",
+  "summary": "通过代码编写AI智能体，在可视化对战中复盘优化，边玩边提升策略。",
+  "tags": [
+    "agentduel",
+    "deepseek-harness",
+    "dsh-plugin",
+    "多Agent协作",
+    "工作流增强",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "0.1.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.5",
+    "publishedAt": "2026-09-02T08:43:16Z",
+    "url": "https://github.com/linconz/agentduel-dsh/releases/tag/v0.1.5"
+  },
+  "author": "linconz",
+  "repo": "https://github.com/linconz/agentduel-dsh",
+  "homepage": "https://agentduel.app",
+  "license": "Apache-2.0",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-02T08:25:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "git clone https://github.com/linconz/agentduel-dsh.git",
+      "dsh plugin --profile web add .",
+      "dsh plugin --profile web install @agentduel/agentduel-dsh@0.1.5"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

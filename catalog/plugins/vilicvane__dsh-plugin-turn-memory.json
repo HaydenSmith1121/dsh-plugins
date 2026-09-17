@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "vilicvane/dsh-plugin-turn-memory",
+  "slug": "vilicvane__dsh-plugin-turn-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-turn-memory",
+  "title": "dsh-plugin-turn-memory",
+  "summary": "按轮次自动记忆对话上下文，为后续压缩做准备，让长对话更连贯。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "上下文记忆",
+    "会话管理",
+    "长对话优化",
+    "插件管理"
+  ],
+  "version": "0.2.0-dev",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "vilicvane",
+  "repo": "https://github.com/vilicvane/dsh-plugin-turn-memory",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-12T19:06:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:vilicvane/dsh-plugin-turn-memory",
+    "commands": [
+      "dsh plugin --profile web add github:vilicvane/dsh-plugin-turn-memory",
+      "dsh plugin --profile web add link:/path/to/dsh-plugin-turn-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "bowang-lab/dsh-medomni",
+  "slug": "bowang-lab__dsh-medomni",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-medomni",
+  "title": "dsh-medomni",
+  "summary": "让 DeepSeek 直接看懂医学影像，自动分析病灶并生成报告，辅助医生快速诊断。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "多Agent协作",
+    "工作流增强",
+    "自动化",
+    "模型配置"
+  ],
+  "version": "0.2.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bowang-lab",
+  "repo": "https://github.com/bowang-lab/dsh-medomni",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-28T21:17:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bowang-lab/dsh-medomni",
+    "commands": [
+      "dsh plugin --profile web add github:bowang-lab/dsh-medomni"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

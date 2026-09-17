@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Hanice404/dsh-width",
+  "slug": "hanice404__dsh-width",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-width",
+  "title": "dsh-width",
+  "summary": "在设置里加两个滑杆，随手调输入框和内容区宽度，宽屏用起来更舒服。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "主题",
+    "设置面板",
+    "快捷操作",
+    "状态持久化"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Hanice404",
+  "repo": "https://github.com/Hanice404/dsh-width",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-28T08:11:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Hanice404/dsh-width",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/Hanice404/dsh-width/archive/refs/heads/main.tar.gz",
+      "dsh plugin --profile web add link:/path/to/dsh-width"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "messageer/dsh-notif-plugin",
+  "slug": "messageer__dsh-notif-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notif-plugin",
+  "title": "dsh-notif-plugin",
+  "summary": "会话停止或阻塞时，通过弹窗、提示音和系统通知及时提醒你，不错过任务进展。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "messageer",
+  "repo": "https://github.com/messageer/dsh-notif-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:31:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:messageer/dsh-notif-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:messageer/dsh-notif-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

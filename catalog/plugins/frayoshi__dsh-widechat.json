@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "FraYoshi/dsh-widechat",
+  "slug": "frayoshi__dsh-widechat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-widechat",
+  "title": "dsh-widechat",
+  "summary": "把 DeepSeek Harness 的聊天界面拉宽到全屏，文字不再挤在窄栏里，输入框也更顺手。",
+  "tags": [
+    "ai",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "webui",
+    "前端增强",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "0.8.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "FraYoshi",
+  "repo": "https://github.com/FraYoshi/dsh-widechat",
+  "homepage": "https://www.npmjs.com/package/@furayoshi/dsh-widechat",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-09T06:59:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@furayoshi/dsh-widechat",
+    "commands": [
+      "dsh plugin --profile web add @furayoshi/dsh-widechat",
+      "dsh plugin --profile web add @furayoshi/dsh-widechat@github:FraYoshi/dsh-widechat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

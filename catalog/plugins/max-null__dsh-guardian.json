@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Max-Null/dsh-guardian",
+  "slug": "max-null__dsh-guardian",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-guardian",
+  "title": "dsh-guardian",
+  "summary": "为 DeepSeek Harness 任务保驾护航，自动检查断言、揪出纠正行为，还能把可疑结果送进审查队列，省心又可靠。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "guardian",
+    "ssid",
+    "状态监控",
+    "自动化",
+    "证据链",
+    "消息通知"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Max-Null",
+  "repo": "https://github.com/Max-Null/dsh-guardian",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-12T07:29:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Max-Null/dsh-guardian",
+    "commands": [
+      "dsh plugin --profile web add github:Max-Null/dsh-guardian"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

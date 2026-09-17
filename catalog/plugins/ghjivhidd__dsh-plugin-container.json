@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "GHJIVHIDD/dsh-plugin-container",
+  "slug": "ghjivhidd__dsh-plugin-container",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-container",
+  "title": "dsh-plugin-container",
+  "summary": "为 DSH 提供 Docker 容器沙箱，支持快照回滚、文件传输、端口转发等完整运维能力，并带原生可视化界面。",
+  "tags": [
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dsh-plugin-market",
+    "dsh-plugin-verify",
+    "dsh-plugins",
+    "dsh-skill",
+    "dsharpplus",
+    "dshot",
+    "容器沙箱",
+    "快照回滚",
+    "文件传输",
+    "端口转发",
+    "原生UI"
+  ],
+  "version": "1.0.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.3",
+    "publishedAt": "2026-08-17T10:47:47Z",
+    "url": "https://github.com/GHJIVHIDD/dsh-plugin-container/releases/tag/v1.0.3"
+  },
+  "author": "GHJIVHIDD",
+  "repo": "https://github.com/GHJIVHIDD/dsh-plugin-container",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-20T08:33:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GHJIVHIDD/dsh-plugin-container",
+    "commands": [
+      "dsh plugin --profile web add github:GHJIVHIDD/dsh-plugin-container"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

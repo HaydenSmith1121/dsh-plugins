@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "fan56/dsh-profile-switch",
+  "slug": "fan56__dsh-profile-switch",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-profile-switch",
+  "title": "dsh-profile-switch",
+  "summary": "给模型配置起名字，随时一键切换默认模型、思考等级和子智能体模型，TUI 和网页端都能用。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "快捷操作",
+    "多Agent协作",
+    "设置面板"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-14T02:49:58Z",
+    "url": "https://github.com/fan56/dsh-profile-switch/releases/tag/v0.1.2"
+  },
+  "author": "fan56",
+  "repo": "https://github.com/fan56/dsh-profile-switch",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T02:49:09Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fan56/dsh-profile-switch",
+    "commands": [
+      "dsh plugin --profile <your-profile> add @aiwayds/dsh-profile-switch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "casualjim/dsh-plugins",
+  "slug": "casualjim__dsh-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugins",
+  "title": "dsh-plugins",
+  "summary": "把 DeepSeek Harness 的各类插件打包成工作区，一条命令就能装进你的配置里用。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "dsh-skill",
+    "dsh-web",
+    "插件管理",
+    "工具集成",
+    "工作区管理",
+    "命令行工具"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "casualjim",
+  "repo": "https://github.com/casualjim/dsh-plugins",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T14:45:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:casualjim/dsh-plugins",
+    "commands": [
+      "dsh plugin --profile web add <path-or-package>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

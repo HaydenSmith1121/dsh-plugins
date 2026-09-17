@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "wold9168/dotdsh",
+  "slug": "wold9168__dotdsh",
+  "tier": "community",
+  "package": null,
+  "name": "dotdsh",
+  "title": "dotdsh",
+  "summary": "把你的 DeepSeek Harness 配置和点文件统一管起来，换设备也能一键同步。",
+  "tags": [
+    "dotfiles",
+    "dsh",
+    "同步",
+    "跨设备",
+    "模型适配",
+    "零配置"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "wold9168",
+  "repo": "https://github.com/wold9168/dotdsh",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:19:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wold9168/dotdsh",
+    "commands": [
+      "dsh plugin --profile web add github:wold9168/dotdsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

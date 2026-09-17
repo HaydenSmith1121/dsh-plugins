@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "dangxinxing090-svg/dsh-plugin-plain-slides",
+  "slug": "dangxinxing090-svg__dsh-plugin-plain-slides",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-plain-slides",
+  "title": "dsh-plugin-plain-slides",
+  "summary": "把智能体每次回复自动变成几页大白话幻灯片，不写代码也能看懂。",
+  "tags": [
+    "accessibility",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "plain-language",
+    "slides",
+    "ui-plugin",
+    "可视化",
+    "前端增强",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-17T02:18:10Z",
+    "url": "https://github.com/dangxinxing090-svg/dsh-plugin-plain-slides/releases/tag/v0.1.1"
+  },
+  "author": "dangxinxing090-svg",
+  "repo": "https://github.com/dangxinxing090-svg/dsh-plugin-plain-slides",
+  "homepage": "https://github.com/dangxinxing090-svg/dsh-plugin-plain-slides#readme",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T03:49:37Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dangxinxing090-svg/dsh-plugin-plain-slides",
+    "commands": [
+      "dsh plugin --profile web add github:dangxinxing090-svg/dsh-plugin-plain-slides",
+      "dsh plugin --profile web add dsh-plugin-plain-slides",
+      "pnpm add github:dangxinxing090-svg/dsh-plugin-plain-slides"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "snow-The/dsh-research-lab",
+  "slug": "snow-the__dsh-research-lab",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-research-lab",
+  "title": "dsh-research-lab",
+  "summary": "科研工作台：自动整理文献维基、评估实验、检索论文并辅助写作改写，提升研究效率。",
+  "tags": [
+    "arxiv",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "nlp",
+    "research",
+    "自动化",
+    "工作流增强",
+    "效率提升",
+    "工具集成",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-31T03:02:27Z",
+    "url": "https://github.com/snow-The/dsh-research-lab/releases/tag/v0.1.0"
+  },
+  "author": "snow-The",
+  "repo": "https://github.com/snow-The/dsh-research-lab",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T14:00:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:snow-The/dsh-research-lab",
+    "commands": [
+      "pnpm add @snow-the/dsh-research-lab@file:../.dsh-starter/plugins/dsh-research-lab"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

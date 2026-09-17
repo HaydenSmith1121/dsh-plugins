@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "MrMu666/dsh-LAN",
+  "slug": "mrmu666__dsh-lan",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-LAN",
+  "title": "dsh-LAN",
+  "summary": "让 DeepSeek Harness 支持局域网访问，手机浏览器也能流畅操作，界面自动适配竖屏和触控。",
+  "tags": [
+    "dsh-desktop",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "移动端",
+    "自动化",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "1.3.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.3.3",
+    "publishedAt": "2026-09-17T09:02:25Z",
+    "url": "https://github.com/MrMu666/dsh-LAN/releases/tag/v1.3.3"
+  },
+  "author": "MrMu666",
+  "repo": "https://github.com/MrMu666/dsh-LAN",
+  "homepage": null,
+  "license": null,
+  "stars": 10,
+  "forks": 2,
+  "pushedAt": "2026-09-10T09:04:12Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MrMu666/dsh-LAN",
+    "commands": [
+      "dsh plugin --profile web add github:MrMu666/dsh-LAN"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

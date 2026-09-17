@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "lehhair/dsh-split-panes",
+  "slug": "lehhair__dsh-split-panes",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-split-panes",
+  "title": "dsh-split-panes",
+  "summary": "把对话信息流拆成多个独立窗格，每个窗格绑定自己的会话，可四向拖拽分屏，多任务并行不打架。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "工作区管理",
+    "快捷操作",
+    "主题"
+  ],
+  "version": "0.6.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.5",
+    "publishedAt": "2026-09-11T00:58:28Z",
+    "url": "https://github.com/lehhair/dsh-split-panes/releases/tag/v0.6.5"
+  },
+  "author": "lehhair",
+  "repo": "https://github.com/lehhair/dsh-split-panes",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-09-11T00:58:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lehhair/dsh-split-panes",
+    "commands": [
+      "git clone https://github.com/lehhair/dsh-split-panes.git",
+      "dsh plugin --profile web add link:/path/to/dsh-split-panes"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

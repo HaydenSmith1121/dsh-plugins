@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "JingxuanC/causal-memory",
+  "slug": "jingxuanc__causal-memory",
+  "tier": "community",
+  "package": null,
+  "name": "causal-memory",
+  "title": "causal-memory",
+  "summary": "为AI智能体提供带因果记忆的存储层，记录决策与结果的关系，压缩对话后记忆也不丢失。",
+  "tags": [
+    "agent-memory",
+    "causal-inference",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm-agents",
+    "long-term-memory",
+    "mcp",
+    "mcp-server",
+    "rust",
+    "会话管理",
+    "AI工具",
+    "多Agent协作",
+    "数据库连接"
+  ],
+  "version": "0.9.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.9.3",
+    "publishedAt": "2026-09-07T07:55:33Z",
+    "url": "https://github.com/JingxuanC/causal-memory/releases/tag/v0.9.3"
+  },
+  "author": "JingxuanC",
+  "repo": "https://github.com/JingxuanC/causal-memory",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 78,
+  "forks": 8,
+  "pushedAt": "2026-09-10T08:25:15Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JingxuanC/causal-memory",
+    "commands": [
+      "git clone https://github.com/JingxuanC/causal-memory.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

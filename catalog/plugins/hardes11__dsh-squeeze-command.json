@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "hardes11/dsh-squeeze-command",
+  "slug": "hardes11__dsh-squeeze-command",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-squeeze-command",
+  "title": "dsh-squeeze-command",
+  "summary": "手动按预算压缩对话历史，让模型自己选重点，用便宜模型写摘要，省下长会话的Token开销。",
+  "tags": [
+    "context-compression",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "状态监控",
+    "资源优化",
+    "效率提升",
+    "模型配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-02T19:22:16Z",
+    "url": "https://github.com/hardes11/dsh-squeeze-command/releases/tag/v0.1.1"
+  },
+  "author": "hardes11",
+  "repo": "https://github.com/hardes11/dsh-squeeze-command",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-06T21:53:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hardes11/dsh-squeeze-command",
+    "commands": [
+      "git clone https://github.com/hardes11/dsh-squeeze-command.git ~/.dsh/commands/dsh-squeeze-command"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

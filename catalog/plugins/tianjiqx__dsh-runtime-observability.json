@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "tianjiqx/dsh-runtime-observability",
+  "slug": "tianjiqx__dsh-runtime-observability",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-runtime-observability",
+  "title": "dsh-runtime-observability",
+  "summary": "实时监控 DSH 运行时的性能与健康状态，快速定位事件循环延迟、内存和 CPU 瓶颈，保障插件稳定运行。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "otel",
+    "profiling",
+    "状态监控",
+    "资源优化",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "tianjiqx",
+  "repo": "https://github.com/tianjiqx/dsh-runtime-observability",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-05T03:58:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tianjiqx/dsh-runtime-observability",
+    "commands": [
+      "dsh plugin --profile web add github:tianjiqx/dsh-runtime-observability"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

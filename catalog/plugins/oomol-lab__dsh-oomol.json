@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "oomol-lab/dsh-oomol",
+  "slug": "oomol-lab__dsh-oomol",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-oomol",
+  "title": "dsh-oomol",
+  "summary": "在 DeepSeek Harness 里直接调用 OOMOL 已连接应用的动作，凭据不暴露，支持托管和自建。",
+  "tags": [
+    "ai-agents",
+    "connector",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mcp",
+    "model-context-protocol",
+    "oomol",
+    "plugin",
+    "typescript",
+    "工具集成",
+    "自动化",
+    "工作流增强",
+    "桥接插件",
+    "安全审计"
+  ],
+  "version": "0.1.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.4",
+    "publishedAt": "2026-08-17T09:09:50Z",
+    "url": "https://github.com/oomol-lab/dsh-oomol/releases/tag/v0.1.4"
+  },
+  "author": "oomol-lab",
+  "repo": "https://github.com/oomol-lab/dsh-oomol",
+  "homepage": "https://oomol.com",
+  "license": "MIT",
+  "stars": 12,
+  "forks": 1,
+  "pushedAt": "2026-08-20T15:31:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:oomol-lab/dsh-oomol",
+    "commands": [
+      "dsh plugin --profile web add -w dsh-oomol"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

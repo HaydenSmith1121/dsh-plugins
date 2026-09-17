@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "SiriusWJ/dsh-rp-tools",
+  "slug": "siriuswj__dsh-rp-tools",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-rp-tools",
+  "title": "dsh-rp-tools",
+  "summary": "给跑团 DM 用的助手：随机裁决、本地 ComfyUI 配图，战役设定按会话隔离保存。",
+  "tags": [
+    "comfyui",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dungeon-master",
+    "image-generation",
+    "trpg",
+    "ttrpg",
+    "报告生成",
+    "视觉理解",
+    "会话管理",
+    "工具集成",
+    "零配置"
+  ],
+  "version": "1.15.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.15.3",
+    "publishedAt": "2026-09-17T11:55:50Z",
+    "url": "https://github.com/SiriusWJ/dsh-rp-tools/releases/tag/v1.15.3"
+  },
+  "author": "SiriusWJ",
+  "repo": "https://github.com/SiriusWJ/dsh-rp-tools",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-14T03:22:47Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@changfenhuang/dsh-genui",
+    "commands": [
+      "dsh plugin --profile web add @changfenhuang/dsh-genui",
+      "dsh plugin --profile web add github:SiriusWJ/dsh-rp-tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

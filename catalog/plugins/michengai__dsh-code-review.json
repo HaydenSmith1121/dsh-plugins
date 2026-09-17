@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "MichengAI/dsh-code-review",
+  "slug": "michengai__dsh-code-review",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-code-review",
+  "title": "dsh-code-review",
+  "summary": "在对话里就能发起代码审查，独立子 Agent 干活，范围随便挑，中英文报告都有。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "多智能体协作",
+    "内容创作",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-16T07:09:57Z",
+    "url": "https://github.com/MichengAI/dsh-code-review/releases/tag/v0.1.2"
+  },
+  "author": "MichengAI",
+  "repo": "https://github.com/MichengAI/dsh-code-review",
+  "homepage": "dsh-codex-desktop.micheng.dev",
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T07:09:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MichengAI/dsh-code-review",
+    "commands": [
+      "dsh plugin --profile web add github:MichengAI/dsh-code-review"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

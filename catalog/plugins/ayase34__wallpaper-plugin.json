@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Ayase34/wallpaper-plugin",
+  "slug": "ayase34__wallpaper-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "wallpaper-plugin",
+  "title": "wallpaper-plugin",
+  "summary": "给 DeepSeek Harness 换个壁纸和主题，一键切换外观预设，还能深度定制界面风格。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "主题",
+    "零配置",
+    "设置面板"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Ayase34",
+  "repo": "https://github.com/Ayase34/wallpaper-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 10,
+  "forks": 0,
+  "pushedAt": "2026-08-18T10:40:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Ayase34/wallpaper-plugin",
+    "commands": [
+      "dsh plugin --profile <name> add github:Ayase34/wallpaper-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

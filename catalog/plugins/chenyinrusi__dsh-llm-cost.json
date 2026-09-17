@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "chenyinrusi/dsh-llm-cost",
+  "slug": "chenyinrusi__dsh-llm-cost",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-cost",
+  "title": "dsh-llm-cost",
+  "summary": "按轮次和步骤统计LLM调用成本，自动更新价格表，让费用一目了然。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm-cost",
+    "效率提升",
+    "状态监控",
+    "模型配置"
+  ],
+  "version": "0.6.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.0",
+    "publishedAt": "2026-08-24T00:00:12Z",
+    "url": "https://github.com/chenyinrusi/dsh-llm-cost/releases/tag/v0.6.0"
+  },
+  "author": "chenyinrusi",
+  "repo": "https://github.com/chenyinrusi/dsh-llm-cost",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-08-24T00:06:26Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chenyinrusi/dsh-llm-cost",
+    "commands": [
+      "dsh plugin --profile web add github:chenyinrusi/dsh-llm-cost",
+      "dsh plugin --profile web add ./dsh-llm-cost-0.6.1.tgz",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

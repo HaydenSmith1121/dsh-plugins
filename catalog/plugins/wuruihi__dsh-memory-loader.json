@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "wuruihi/dsh-memory-loader",
+  "slug": "wuruihi__dsh-memory-loader",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memory-loader",
+  "title": "dsh-memory-loader",
+  "summary": "会话开始时自动注入全局和项目记忆文件及今日笔记，让 AI 更懂上下文。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "memory",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wuruihi",
+  "repo": "https://github.com/wuruihi/dsh-memory-loader",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T11:50:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wuruihi/dsh-memory-loader",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/wuruihi/dsh-memory-loader/archive/refs/heads/main.tar.gz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

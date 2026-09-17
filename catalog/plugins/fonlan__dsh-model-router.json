@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "fonlan/dsh-model-router",
+  "slug": "fonlan__dsh-model-router",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-router",
+  "title": "dsh-model-router",
+  "summary": "把多个模型提供商聚合成一个虚拟路由，每次请求自动选当前激活的提供商，省去手动切换。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "资源优化",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "0.3.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fonlan",
+  "repo": "https://github.com/fonlan/dsh-model-router",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T01:30:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@fonlan/dsh-model-router",
+    "commands": [
+      "dsh plugin --profile web add @fonlan/dsh-model-router",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

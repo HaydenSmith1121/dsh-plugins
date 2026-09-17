@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "echo-xianyu/dsh-go-rotator",
+  "slug": "echo-xianyu__dsh-go-rotator",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-go-rotator",
+  "title": "dsh-go-rotator",
+  "summary": "自动切换 opencode 的 Go 订阅，帮你省心管理授权，避免手动折腾。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "订阅管理",
+    "自动切换",
+    "授权管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-14T05:00:20Z",
+    "url": "https://github.com/echo-xianyu/dsh-go-rotator/releases/tag/v0.2.0"
+  },
+  "author": "echo-xianyu",
+  "repo": "https://github.com/echo-xianyu/dsh-go-rotator",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-14T05:10:56Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:echo-xianyu/dsh-go-rotator",
+    "commands": [
+      "dsh plugin --profile <profile> add ./dsh-go-rotator-0.2.0.tgz",
+      "dsh plugin --profile <profile> add file:/path/to/dsh-go-rotator"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

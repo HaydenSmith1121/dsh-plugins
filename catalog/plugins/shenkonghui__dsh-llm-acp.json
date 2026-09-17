@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "shenkonghui/dsh-llm-acp",
+  "slug": "shenkonghui__dsh-llm-acp",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-acp",
+  "title": "dsh-llm-acp",
+  "summary": "通过外部 ACP 服务器接入模型，并提供网页管理界面来配置和浏览服务器。",
+  "tags": [
+    "acp-protocol",
+    "deepseek-harness",
+    "dsh-plugin",
+    "模型适配",
+    "设置面板",
+    "插件管理",
+    "多智能体协作"
+  ],
+  "version": "0.1.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.4",
+    "publishedAt": "2026-09-16T04:25:49Z",
+    "url": "https://github.com/shenkonghui/dsh-llm-acp/releases/tag/v0.1.4"
+  },
+  "author": "shenkonghui",
+  "repo": "https://github.com/shenkonghui/dsh-llm-acp",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T04:25:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shenkonghui/dsh-llm-acp",
+    "commands": [
+      "dsh plugin --profile my-acp add github:shenkonghui/dsh-llm-acp",
+      "dsh plugin --profile my-acp add ./dsh-llm-acp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

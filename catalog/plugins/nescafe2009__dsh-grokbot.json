@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "nescafe2009/dsh-grokbot",
+  "slug": "nescafe2009__dsh-grokbot",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-grokbot",
+  "title": "dsh-grokbot",
+  "summary": "在 DSH 里搭一支常驻 AI 专家团队，能群聊交接、记住上下文，还能审批把关。",
+  "tags": [
+    "agent",
+    "deepseek",
+    "dsh",
+    "grok-bot",
+    "多Agent协作",
+    "AI 助手",
+    "会话管理",
+    "工作流增强",
+    "插件管理"
+  ],
+  "version": "0.6.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.1",
+    "publishedAt": "2026-09-13T15:13:24Z",
+    "url": "https://github.com/nescafe2009/dsh-grokbot/releases/tag/v0.6.1"
+  },
+  "author": "nescafe2009",
+  "repo": "https://github.com/nescafe2009/dsh-grokbot",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 2,
+  "pushedAt": "2026-09-13T15:12:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:nescafe2009/dsh-grokbot",
+    "commands": [
+      "dsh plugin --profile web add <本目录>",
+      "dsh plugin --profile web add github:nescafe2009/dsh-grokbot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

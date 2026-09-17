@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "yejiming/dsh-museai-tavern",
+  "slug": "yejiming__dsh-museai-tavern",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-museai-tavern",
+  "title": "dsh-museai-tavern",
+  "summary": "把 MuseAI 角色搬进 DSH，在会话标签栏新增 MuseAI 页签，聊天冒险羁绊一站搞定。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "桥接插件",
+    "AI 助手",
+    "工具集成",
+    "零配置",
+    "主题"
+  ],
+  "version": "0.0.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yejiming",
+  "repo": "https://github.com/yejiming/dsh-museai-tavern",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 21,
+  "forks": 0,
+  "pushedAt": "2026-08-15T05:14:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@yejiming/dsh-museai-tavern",
+    "commands": [
+      "dsh plugin --profile web add @yejiming/dsh-museai-tavern",
+      "dsh plugin --profile web add github:omdsh-dev/dsh-museai-tavern"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

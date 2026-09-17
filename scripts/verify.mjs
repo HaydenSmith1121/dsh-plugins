@@ -80,15 +80,26 @@ const runtime = compat.runtimes.find((r) => r.dshVersion === report.dsh.version)
 /**
  * 期望的 bundle 集合。
  *
- * 自 2026-09 起，安装方式收敛到市场面板：`install` 脚本只装引导插件（市场本身），
- * 其余插件由用户在 GUI 里按需点装。所以「期望哪些 bundle」不能再等于
- * 「兼容矩阵里的全部插件」—— 那样会把「你还没点装」误报成校验失败。
+ * 自 0.4.0 起「一键装全套」这件事没有了：插件市场与插件本体分离，
+ * 引导脚本只装**市场插件自己**，其余插件由用户在面板里按需点装
+ * （第三方插件也不再随任何仓库分发）。所以「期望哪些 bundle」不能等于
+ * 「某个清单里的全部插件」—— 那样会把「你还没点装」误报成校验失败。
  *
- * 现在的定义：内置 bundle + 市场插件（必须存在）+ **profile 里实际装了的**运行时插件。
- * 这样既能强制要求引导插件到位，又只校验用户真正装过的东西。
+ * 现在的定义：内置 bundle + 市场插件（硬性要求）+ **profile 里实际装了的**运行时插件。
  */
 const BOOTSTRAP_PACKAGE = 'dsh-plugins-market';
-const runtimePackages = new Set((runtime?.plugins ?? []).map((p) => p.package));
+
+// 引导插件是否存在于**目录**里（而不是某份插件清单里）。
+// 目录就是事实来源：catalog/index.json 的 verified 层至少有市场自己一条。
+let bootstrapInCatalog = false;
+try {
+  const index = JSON.parse(fs.readFileSync(path.join(REPO_ROOT, 'catalog', 'index.json'), 'utf8'));
+  bootstrapInCatalog = (index.plugins ?? []).some(
+    (p) => p.tier === 'verified' && (p.package === BOOTSTRAP_PACKAGE || p.id === BOOTSTRAP_PACKAGE),
+  );
+} catch {
+  bootstrapInCatalog = false;
+}
 
 let installedUserBundles = [];
 try {
@@ -103,10 +114,10 @@ try {
 
 // 引导插件是硬性要求：没有它，用户就没有任何按需安装的入口
 const userPlugins = [...new Set([
-  ...(runtimePackages.has(BOOTSTRAP_PACKAGE) && installedUserBundles.includes(BOOTSTRAP_PACKAGE) ? [BOOTSTRAP_PACKAGE] : []),
+  ...(bootstrapInCatalog && installedUserBundles.includes(BOOTSTRAP_PACKAGE) ? [BOOTSTRAP_PACKAGE] : []),
   ...installedUserBundles,
 ])];
-const bootstrapMissing = runtimePackages.has(BOOTSTRAP_PACKAGE) && !installedUserBundles.includes(BOOTSTRAP_PACKAGE);
+const bootstrapMissing = bootstrapInCatalog && !installedUserBundles.includes(BOOTSTRAP_PACKAGE);
 
 // The expected assembly order: in-box bundles first, then the user plugins in the
 // order the profile actually lists them. Shared by steps ③ and ④ so neither has

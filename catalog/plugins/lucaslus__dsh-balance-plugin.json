@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "lucaslus/dsh-balance-plugin",
+  "slug": "lucaslus__dsh-balance-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-balance-plugin",
+  "title": "dsh-balance-plugin",
+  "summary": "在 DeepSeek Harness 输入框下方实时显示 DeepSeek、Kimi 和 Qwen 账户余额，方便你随时掌握费用消耗。",
+  "tags": [
+    "ai",
+    "ai-coding",
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "plguin",
+    "状态监控",
+    "资源优化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lucaslus",
+  "repo": "https://github.com/lucaslus/dsh-balance-plugin",
+  "homepage": "https://github.com/lucaslus/dsh-balance-plugin",
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-01T06:30:50Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lucaslus/dsh-balance-plugin",
+    "commands": [
+      "curl -fsSL https://raw.githubusercontent.com/lucaslus/dsh-balance-plugin/main/install.sh | bash",
+      "dsh plugin --profile web add github:lucaslus/dsh-balance-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

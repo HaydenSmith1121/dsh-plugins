@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "orpheus0829/dsh-identity-control",
+  "slug": "orpheus0829__dsh-identity-control",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-identity-control",
+  "title": "dsh-identity-control",
+  "summary": "在对话栏旁填写人设文本，一键开关，新对话自动带上你的风格，无需重启，且不影响安全护栏。",
+  "tags": [
+    "ai-assisted",
+    "cordis",
+    "custom-personas",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "identity-control",
+    "persona",
+    "plugin",
+    "web-ui-plugin",
+    "零配置",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-21T18:06:58Z",
+    "url": "https://github.com/orpheus0829/dsh-identity-control/releases/tag/v0.1.0"
+  },
+  "author": "orpheus0829",
+  "repo": "https://github.com/orpheus0829/dsh-identity-control",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-21T18:20:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:orpheus0829/dsh-identity-control",
+    "commands": [
+      "dsh plugin --profile web add github:orpheus0829/dsh-identity-control",
+      "dsh plugin --profile web add link:<本地路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

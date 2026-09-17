@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "shuind/dsh-codex-harness",
+  "slug": "shuind__dsh-codex-harness",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codex-harness",
+  "title": "dsh-codex-harness",
+  "summary": "为 DSH 提供可自定义提示词的编码模式，内置精简 Codex 提示词并防御 GPT 过度输出，支持命令执行与补丁应用。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "提示词优化",
+    "工作流增强",
+    "AI 助手",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "shuind",
+  "repo": "https://github.com/shuind/dsh-codex-harness",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-09-09T10:26:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@shuind/dsh-codex-harness@0.2.1",
+    "commands": [
+      "dsh plugin --profile web add @shuind/dsh-codex-harness@0.2.1"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

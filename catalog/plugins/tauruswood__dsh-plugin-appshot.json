@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "TaurusWood/dsh-plugin-appshot",
+  "slug": "tauruswood__dsh-plugin-appshot",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-appshot",
+  "title": "dsh-plugin-appshot",
+  "summary": "macOS 全局快捷键一键截取当前窗口，自动作为图片上下文挂入 DSH Composer，让 Agent 零摩擦看到你的工作画面。",
+  "tags": [
+    "dsh-plugin",
+    "截图工具",
+    "命令行工具",
+    "会话管理"
+  ],
+  "version": "0.4.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "TaurusWood",
+  "repo": "https://github.com/TaurusWood/dsh-plugin-appshot",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-09-03T16:37:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-appshot",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-appshot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

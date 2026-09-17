@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "1Ecc/dsh-lenovo-toolkit",
+  "slug": "1ecc__dsh-lenovo-toolkit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-lenovo-toolkit",
+  "title": "dsh-lenovo-toolkit",
+  "summary": "联想专业工具集，帮你检测电池健康度、循环次数和衰减趋势，还能生成官方报告，随时掌握设备状态。",
+  "tags": [
+    "agent-skills",
+    "battery-health",
+    "deepseek-harness",
+    "diagnostics",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "1Ecc",
+  "repo": "https://github.com/1Ecc/dsh-lenovo-toolkit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T14:05:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:1Ecc/dsh-lenovo-toolkit",
+    "commands": [
+      "dsh plugin --profile web add github:1Ecc/dsh-lenovo-toolkit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

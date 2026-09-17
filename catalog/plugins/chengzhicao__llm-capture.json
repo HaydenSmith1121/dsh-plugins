@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "chengzhicao/llm-capture",
+  "slug": "chengzhicao__llm-capture",
+  "tier": "community",
+  "package": null,
+  "name": "llm-capture",
+  "title": "llm-capture",
+  "summary": "在会话页面新增标签页，帮你查看每次模型调用的请求、返回、Token 用量和耗时，调试更直观。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chengzhicao",
+  "repo": "https://github.com/chengzhicao/llm-capture",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T07:39:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chengzhicao/llm-capture",
+    "commands": [
+      "dsh plugin --profile web add github:chengzhicao/llm-capture",
+      "dsh plugin --profile web remove dsh-llm-capture"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

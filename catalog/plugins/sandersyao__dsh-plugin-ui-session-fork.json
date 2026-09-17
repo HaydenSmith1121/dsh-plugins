@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "sandersyao/dsh-plugin-ui-session-fork",
+  "slug": "sandersyao__dsh-plugin-ui-session-fork",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-ui-session-fork",
+  "title": "dsh-plugin-ui-session-fork",
+  "summary": "给 dsh 工作区侧栏增加树形分组，按会话分叉关系嵌套展示，方便理清对话脉络。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "前端增强",
+    "桌宠",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sandersyao",
+  "repo": "https://github.com/sandersyao/dsh-plugin-ui-session-fork",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-25T09:58:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sandersyao/dsh-plugin-ui-session-fork",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-plugin-ui-session-fork"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

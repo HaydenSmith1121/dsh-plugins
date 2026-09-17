@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "vonweller/dsh-skillhub",
+  "slug": "vonweller__dsh-skillhub",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skillhub",
+  "title": "dsh-skillhub",
+  "summary": "在 DeepSeek Harness 里逛 SkillHub 技能市场，挑中哪个装哪个，直接装到本地技能目录。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "skillhub",
+    "零配置",
+    "工作区管理",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "vonweller",
+  "repo": "https://github.com/vonweller/dsh-skillhub",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-09T04:43:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:vonweller/dsh-skillhub",
+    "commands": [
+      "dsh plugin --profile web add github:vonweller/dsh-skillhub"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

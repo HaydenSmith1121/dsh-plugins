@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "WayneJin0918/dsh-wm",
+  "slug": "waynejin0918__dsh-wm",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wm",
+  "title": "dsh-wm",
+  "summary": "世界模型研究工具箱，可查看帧、标记3D/像素/潜空间路径，对比预测与真值，并评估RSI技能和wm.yaml配置。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "rsi",
+    "video-generation",
+    "world-model",
+    "world-models",
+    "世界模型",
+    "多模态",
+    "研究工具",
+    "模型评估"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-17T02:14:52Z",
+    "url": "https://github.com/WayneJin0918/dsh-wm/releases/tag/v0.2.0"
+  },
+  "author": "WayneJin0918",
+  "repo": "https://github.com/WayneJin0918/dsh-wm",
+  "homepage": "https://github.com/WayneJin0918/dsh-wm",
+  "license": "MIT",
+  "stars": 4,
+  "forks": 2,
+  "pushedAt": "2026-08-18T05:30:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:WayneJin0918/dsh-wm",
+    "commands": [
+      "dsh plugin --profile wm add github:WayneJin0918/dsh-wm",
+      "dsh plugin --profile web add github:WayneJin0918/dsh-wm",
+      "dsh plugin --profile headless add github:WayneJin0918/dsh-wm"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

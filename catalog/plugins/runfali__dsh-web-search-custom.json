@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "runfali/dsh-web-search-custom",
+  "slug": "runfali__dsh-web-search-custom",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-search-custom",
+  "title": "dsh-web-search-custom",
+  "summary": "让 DSH Web UI 接上任意 JSON 搜索 API，默认用自建 SearXNG，支持 API Key 和字段映射。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "工具集成",
+    "模型配置",
+    "语义检索",
+    "插件管理"
+  ],
+  "version": "0.1.2-alpha.4",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "runfali",
+  "repo": "https://github.com/runfali/dsh-web-search-custom",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T12:43:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-web-search-custom",
+    "commands": [
+      "dsh plugin --profile web add dsh-web-search-custom"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

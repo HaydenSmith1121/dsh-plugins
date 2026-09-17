@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "whoscrizzz/dsh-hello",
+  "slug": "whoscrizzz__dsh-hello",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hello",
+  "title": "dsh-hello",
+  "summary": "一个用于演示和测试 DSH 插件开发流程的示例插件，帮助开发者快速上手。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "whoscrizzz",
+  "repo": "https://github.com/whoscrizzz/dsh-hello",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T15:47:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:whoscrizzz/dsh-hello",
+    "commands": [
+      "dsh plugin --profile web add github:whoscrizzz/dsh-hello"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

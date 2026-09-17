@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "dboycht/dsh-cooldown-retry",
+  "slug": "dboycht__dsh-cooldown-retry",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cooldown-retry",
+  "title": "dsh-cooldown-retry",
+  "summary": "遇到 429 限流时自动读出冷却时间并耐心等待重试，不再两次就放弃。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "自动化",
+    "模型适配",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "1.0.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "1.0.2",
+    "publishedAt": "2026-09-11T07:26:38Z",
+    "url": "https://github.com/dboycht/dsh-cooldown-retry/releases/tag/1.0.2"
+  },
+  "author": "dboycht",
+  "repo": "https://github.com/dboycht/dsh-cooldown-retry",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T05:08:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dboycht/dsh-cooldown-retry",
+    "commands": [
+      "dsh plugin --profile web add github:dboycht/dsh-cooldown-retry"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "yangbobo2021/relay-dsh-plugin-monitor-time",
+  "slug": "yangbobo2021__relay-dsh-plugin-monitor-time",
+  "tier": "community",
+  "package": null,
+  "name": "relay-dsh-plugin-monitor-time",
+  "title": "relay-dsh-plugin-monitor-time",
+  "summary": "给 Relay 加个时间截止监控，任务超时自动提醒，不用手动盯着。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "monitor-bundles",
+    "monitoring",
+    "状态监控",
+    "自动化",
+    "效率提升",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-02T23:20:18Z",
+    "url": "https://github.com/yangbobo2021/relay-dsh-plugin-monitor-time/releases/tag/v0.1.0"
+  },
+  "author": "yangbobo2021",
+  "repo": "https://github.com/yangbobo2021/relay-dsh-plugin-monitor-time",
+  "homepage": "https://www.npmjs.com/package/relay-dsh-plugin-monitor-time",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T03:53:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yangbobo2021/relay-dsh-plugin-monitor-time",
+    "commands": [
+      "dsh plugin --profile web add github:yangbobo2021/relay-dsh-plugin-monitor-time"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "sidhu-master/VectorAI-plugin",
+  "slug": "sidhu-master__vectorai-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "VectorAI-plugin",
+  "title": "VectorAI-plugin",
+  "summary": "本地优先的二维画布与工程图插件，支持绘图、空间查询和自动标注，让 AI 直接操作矢量图形。",
+  "tags": [
+    "apache-2-0",
+    "cad",
+    "dsh",
+    "local-first",
+    "vector-graphics",
+    "可视化",
+    "工作流增强",
+    "前端增强",
+    "视觉理解"
+  ],
+  "version": "0.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sidhu-master",
+  "repo": "https://github.com/sidhu-master/VectorAI-plugin",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T15:18:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sidhu-master/VectorAI-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:sidhu-master/VectorAI-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

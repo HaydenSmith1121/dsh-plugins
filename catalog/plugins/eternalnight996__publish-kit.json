@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "EternalNight996/publish-kit",
+  "slug": "eternalnight996__publish-kit",
+  "tier": "community",
+  "package": null,
+  "name": "publish-kit",
+  "title": "publish-kit",
+  "summary": "一键搞定 npm、GitHub、PyPI 等多渠道发布，自动生成双语 README 和版本标签，让 AI 代理发布更省心。",
+  "tags": [
+    "agent-skills",
+    "cargo",
+    "dsh-skill",
+    "npm",
+    "publishing",
+    "pypi",
+    "release",
+    "自动化",
+    "工作流增强",
+    "命令行工具",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "0.5.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "EternalNight996",
+  "repo": "https://github.com/EternalNight996/publish-kit",
+  "homepage": "https://github.com/EternalNight996/publish-kit",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-06T03:28:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@eternalnight/publish-kit",
+    "commands": [
+      "npx skills add https://github.com/EternalNight996/publish-kit",
+      "npm install -g @eternalnight/publish-kit",
+      "dsh plugin --profile web add @eternalnight/publish-kit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

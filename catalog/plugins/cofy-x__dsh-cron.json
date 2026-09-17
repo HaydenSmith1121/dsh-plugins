@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "cofy-x/dsh-cron",
+  "slug": "cofy-x__dsh-cron",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cron",
+  "title": "dsh-cron",
+  "summary": "给 DSH 加上定时任务，按计划自动向会话注入消息或触发后续动作。",
+  "tags": [
+    "cron",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "工作流增强",
+    "会话管理",
+    "工具集成"
+  ],
+  "version": "0.7.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.2",
+    "publishedAt": "2026-08-30T02:47:59Z",
+    "url": "https://github.com/cofy-x/dsh-cron/releases/tag/v0.7.2"
+  },
+  "author": "cofy-x",
+  "repo": "https://github.com/cofy-x/dsh-cron",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 2,
+  "pushedAt": "2026-09-11T12:20:17Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-automation@next",
+    "commands": [
+      "dsh plugin --profile web add dsh-automation@next",
+      "dsh plugin --profile web add @cofy-x/dsh-cron",
+      "dsh plugin --profile web add github:cofy-x/dsh-automation"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

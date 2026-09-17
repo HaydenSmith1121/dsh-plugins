@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-russian-lang",
+  "slug": "goodandready__dsh-russian-lang",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-russian-lang",
+  "title": "dsh-russian-lang",
+  "summary": "为 DeepSeek Harness 提供完整的俄语界面翻译，并优化排版和键盘布局，让俄语用户用起来更顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "i18n",
+    "localization",
+    "russian",
+    "typography",
+    "多后端",
+    "本地化",
+    "可视化",
+    "设置面板",
+    "效率提升"
+  ],
+  "version": "0.2.23",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.23",
+    "publishedAt": "2026-09-16T20:37:57Z",
+    "url": "https://github.com/GooDAnDReaDY/dsh-russian-lang/releases/tag/v0.2.23"
+  },
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-russian-lang",
+  "homepage": "https://goodandready.app",
+  "license": "MIT",
+  "stars": 11,
+  "forks": 1,
+  "pushedAt": "2026-09-16T20:37:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooDAnDReaDY/dsh-russian-lang",
+    "commands": [
+      "dsh plugin --profile web add github:GooDAnDReaDY/dsh-russian-lang"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

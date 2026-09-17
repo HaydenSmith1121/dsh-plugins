@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "chouyong/dsh-fork-diff",
+  "slug": "chouyong__dsh-fork-diff",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-fork-diff",
+  "title": "dsh-fork-diff",
+  "summary": "在 DSH Web 里只读对比父分支和兄弟分支，一眼看清消息、工具调用和耗时的差异。",
+  "tags": [
+    "conversation-diff",
+    "deepseek-harness",
+    "dsh-plugin",
+    "session",
+    "会话管理",
+    "变更审查",
+    "文件差异",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-16T09:24:23Z",
+    "url": "https://github.com/chouyong/dsh-fork-diff/releases/tag/v0.1.0"
+  },
+  "author": "chouyong",
+  "repo": "https://github.com/chouyong/dsh-fork-diff",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-16T10:44:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chouyong/dsh-fork-diff",
+    "commands": [
+      "dsh plugin --profile web add github:chouyong/dsh-fork-diff"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "Kevin66Z0/dsh-telegram",
+  "slug": "kevin66z0__dsh-telegram",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-telegram",
+  "title": "dsh-telegram",
+  "summary": "通过 Telegram 远程遥控 DeepSeek Harness，随时查看回复、一键操作，安全白名单，无需开放端口。",
+  "tags": [
+    "deepseek",
+    "deepseek-chat",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugin-dev",
+    "deepseek-harness-plugins",
+    "dsh-plugin",
+    "安全连接",
+    "状态监控",
+    "交互宠物",
+    "效率提升",
+    "AI工具"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-02T02:39:36Z",
+    "url": "https://github.com/Kevin66Z0/dsh-telegram/releases/tag/v1.0.0"
+  },
+  "author": "Kevin66Z0",
+  "repo": "https://github.com/Kevin66Z0/dsh-telegram",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-02T02:39:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Kevin66Z0/dsh-telegram",
+    "commands": [
+      "git clone https://github.com/Kevin66Z0/dsh-telegram.git dsh-telegram",
+      "dsh plugin --profile web add git+https://github.com/Kevin66Z0/dsh-telegram.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

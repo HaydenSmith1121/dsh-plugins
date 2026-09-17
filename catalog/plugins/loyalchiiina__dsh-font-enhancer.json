@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "loyalchiiina/dsh-font-enhancer",
+  "slug": "loyalchiiina__dsh-font-enhancer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-font-enhancer",
+  "title": "dsh-font-enhancer",
+  "summary": "按区域自定义 DSH 界面字体、字号和颜色，支持主题保存切换，轻松打造专属界面风格。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "主题",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "1.4.10",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.4.10",
+    "publishedAt": "2026-09-14T03:15:18Z",
+    "url": "https://github.com/loyalchiiina/dsh-font-enhancer/releases/tag/v1.4.10"
+  },
+  "author": "loyalchiiina",
+  "repo": "https://github.com/loyalchiiina/dsh-font-enhancer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-14T03:15:17Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:loyalchiiina/dsh-font-enhancer",
+    "commands": [
+      "dsh plugin --profile desktop add ./dsh-font-enhancer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

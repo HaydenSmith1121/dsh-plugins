@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "pureexe/dsh-image-base64",
+  "slug": "pureexe__dsh-image-base64",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-image-base64",
+  "title": "dsh-image-base64",
+  "summary": "把图片自动转成 PNG 再发给视觉模型，解决 WebP 被网关拒收的 400 报错。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "视觉理解",
+    "图片问答",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "pureexe",
+  "repo": "https://github.com/pureexe/dsh-image-base64",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T13:53:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:pureexe/dsh-image-base64",
+    "commands": [
+      "dsh plugin --profile <name> add /home/pakkapon/dsh-image-base64"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

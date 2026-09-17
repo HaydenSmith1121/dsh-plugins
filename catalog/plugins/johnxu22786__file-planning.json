@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "JohnXu22786/file-planning",
+  "slug": "johnxu22786__file-planning",
+  "tier": "community",
+  "package": null,
+  "name": "JohnXu22786/file-planning",
+  "title": "JohnXu22786/file-planning",
+  "summary": "把多步任务的计划、执行进度和复盘笔记存到本地，随时查看和回溯，让复杂任务不迷路。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "多Agent协作"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "JohnXu22786",
+  "repo": "https://github.com/JohnXu22786/file-planning",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-17T01:31:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JohnXu22786/file-planning",
+    "commands": [
+      "dsh plugin --profile demo add github:JohnXu22786/file-planning",
+      "dsh plugin --profile demo add ./file-planning"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

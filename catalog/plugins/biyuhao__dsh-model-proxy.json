@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "biyuhao/dsh-model-proxy",
+  "slug": "biyuhao__dsh-model-proxy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-proxy",
+  "title": "dsh-model-proxy",
+  "summary": "按模型单独配置代理（HTTP/HTTPS/SOCKS5），带设置界面，让不同模型走不同网络通道。",
+  "tags": [
+    "dsh-plugin",
+    "model-proxy",
+    "模型配置",
+    "安全审计",
+    "零配置"
+  ],
+  "version": "0.1.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "biyuhao",
+  "repo": "https://github.com/biyuhao/dsh-model-proxy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T15:31:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:biyuhao/dsh-model-proxy",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-plugin-model-proxy",
+      "dsh plugin --profile <name> add socks",
+      "dsh plugin --profile <name> remove dsh-plugin-model-proxy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

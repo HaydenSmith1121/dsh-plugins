@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "leolee9086/SAC_search",
+  "slug": "leolee9086__sac_search",
+  "tier": "community",
+  "package": null,
+  "name": "SAC_search",
+  "title": "SAC_search",
+  "summary": "聚合约200个免密钥搜索引擎，零配置零依赖，让AI助手直接联网搜遍全网。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "metasearch",
+    "search",
+    "工具集成",
+    "零配置",
+    "语义检索",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-16T03:07:51Z",
+    "url": "https://github.com/leolee9086/SAC_search/releases/tag/v0.1.1"
+  },
+  "author": "leolee9086",
+  "repo": "https://github.com/leolee9086/SAC_search",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T03:07:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:leolee9086/SAC_search",
+    "commands": [
+      "pnpm add ./dsh-tool-websearch-0.1.1.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

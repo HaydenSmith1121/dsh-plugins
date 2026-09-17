@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "MoonShadow1976/chiral-pulse",
+  "slug": "moonshadow1976__chiral-pulse",
+  "tier": "community",
+  "package": null,
+  "name": "chiral-pulse",
+  "title": "chiral-pulse",
+  "summary": "把 DeepSeek Harness 界面换成《死亡搁浅》风格，还能用心跳脉冲实时显示 AI 思考和调用工具的状态。",
+  "tags": [
+    "death-stranding",
+    "deepseek-harness",
+    "dsh-plugin",
+    "ui-plugin",
+    "界面美化",
+    "可视化",
+    "状态监控",
+    "前端增强"
+  ],
+  "version": "1.2.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.7",
+    "publishedAt": "2026-08-14T23:17:37Z",
+    "url": "https://github.com/MoonShadow1976/chiral-pulse/releases/tag/v1.2.7"
+  },
+  "author": "MoonShadow1976",
+  "repo": "https://github.com/MoonShadow1976/chiral-pulse",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-14T15:20:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "chiral-pulse",
+    "commands": [
+      "dsh plugin --profile web add chiral-pulse"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

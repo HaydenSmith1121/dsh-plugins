@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "MaxHou-infinity/dsh-scout",
+  "slug": "maxhou-infinity__dsh-scout",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-scout",
+  "title": "dsh-scout",
+  "summary": "司察帮你查公司、查岗位，基于证据做尽调，面试前摸清底细，少踩坑。",
+  "tags": [
+    "ai-agent",
+    "company-research",
+    "deepseek-harness",
+    "dsh-plugin",
+    "due-diligence",
+    "evidence-based",
+    "hr-tech",
+    "interview-prep",
+    "job-research",
+    "llm",
+    "AI 助手",
+    "效率提升",
+    "工作流增强",
+    "可视化",
+    "状态监控"
+  ],
+  "version": "0.8.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.2",
+    "publishedAt": "2026-09-04T01:08:43Z",
+    "url": "https://github.com/MaxHou-infinity/dsh-scout/releases/tag/v0.8.2"
+  },
+  "author": "MaxHou-infinity",
+  "repo": "https://github.com/MaxHou-infinity/dsh-scout",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-04T01:10:03Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MaxHou-infinity/dsh-scout",
+    "commands": [
+      "dsh plugin --profile scout-demo add github:MaxHou-infinity/dsh-scout"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "chushixixin/dsh-harness-mcp-server",
+  "slug": "chushixixin__dsh-harness-mcp-server",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-harness-mcp-server",
+  "title": "dsh-harness-mcp-server",
+  "summary": "把 DeepSeek Harness 的编码能力封装成 MCP 服务，让 Hermes 等任意 MCP 客户端直接调用它干活。",
+  "tags": [
+    "ai-agent",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mcp",
+    "model-context-protocol",
+    "工具集成",
+    "AI 助手",
+    "自动化",
+    "桥接插件",
+    "工作流增强"
+  ],
+  "version": "0.1.8",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.8",
+    "publishedAt": "2026-08-15T11:47:03Z",
+    "url": "https://github.com/chushixixin/dsh-harness-mcp-server/releases/tag/v0.1.8"
+  },
+  "author": "chushixixin",
+  "repo": "https://github.com/chushixixin/dsh-harness-mcp-server",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 12,
+  "forks": 4,
+  "pushedAt": "2026-08-15T13:44:50Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chushixixin/dsh-harness-mcp-server",
+    "commands": [
+      "npm install @chushixixin/dsh-harness-mcp-server"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

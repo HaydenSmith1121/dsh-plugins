@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "JochenYang/dsh-remote",
+  "slug": "jochenyang__dsh-remote",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-remote",
+  "title": "dsh-remote",
+  "summary": "把 DeepSeek Harness 装进口袋，手机浏览器远程操控桌面端，随时随地管理任务和状态。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mobile",
+    "reverse-proxy",
+    "self-hosted",
+    "tunnel",
+    "websocket",
+    "可视化",
+    "状态监控",
+    "自动化",
+    "零配置"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "dsh-remote@0.2.1",
+    "publishedAt": "2026-09-12T15:12:16Z",
+    "url": "https://github.com/JochenYang/dsh-remote/releases/tag/dsh-remote%400.2.1"
+  },
+  "author": "JochenYang",
+  "repo": "https://github.com/JochenYang/dsh-remote",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T15:38:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JochenYang/dsh-remote",
+    "commands": [
+      "dsh plugin --profile web add github:JochenYang/dsh-remote"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

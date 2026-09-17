@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "IcyCreme/resume-reviser",
+  "slug": "icycreme__resume-reviser",
+  "tier": "community",
+  "package": null,
+  "name": "resume-reviser",
+  "title": "resume-reviser",
+  "summary": "把资深HR和简历教练的活儿打包成技能，从诊断改写、出Word和PDF，到岗位推荐和模拟面试一条龙。",
+  "tags": [
+    "ai",
+    "dsh-skill",
+    "prompt-engineering",
+    "resume",
+    "resume-reviser",
+    "AI 助手",
+    "报告生成",
+    "内容创作",
+    "状态持久化",
+    "工作流增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-29T11:44:50Z",
+    "url": "https://github.com/IcyCreme/resume-reviser/releases/tag/v1.0.0"
+  },
+  "author": "IcyCreme",
+  "repo": "https://github.com/IcyCreme/resume-reviser",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-29T11:42:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:IcyCreme/resume-reviser",
+    "commands": [
+      "dsh plugin --profile web add github:IcyCreme/resume-reviser"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

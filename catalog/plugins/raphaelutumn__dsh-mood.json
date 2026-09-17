@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "Raphaelutumn/dsh-mood",
+  "slug": "raphaelutumn__dsh-mood",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mood",
+  "title": "dsh-mood",
+  "summary": "给AI编码助手装个心情指示灯，实时显示它的工作状态（顺利/困惑/受挫/过载），让你一眼看懂当前进展。",
+  "tags": [
+    "ai-agent",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mood",
+    "observability",
+    "状态监控",
+    "可视化",
+    "开发流程",
+    "AI工具",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-27T21:55:15Z",
+    "url": "https://github.com/Raphaelutumn/dsh-mood/releases/tag/v0.1.0"
+  },
+  "author": "Raphaelutumn",
+  "repo": "https://github.com/Raphaelutumn/dsh-mood",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-27T22:26:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Raphaelutumn/dsh-mood",
+    "commands": [
+      "dsh plugin --profile web add github:Raphaelutumn/dsh-mood"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

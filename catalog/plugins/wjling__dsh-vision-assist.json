@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "wjling/dsh-vision-assist",
+  "slug": "wjling__dsh-vision-assist",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-vision-assist",
+  "title": "dsh-vision-assist",
+  "summary": "给没有视觉能力的文本模型装上“眼睛”，自动调用外部视觉服务识别图片内容，让纯文本模型也能看懂图。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "vision",
+    "视觉理解",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wjling",
+  "repo": "https://github.com/wjling/dsh-vision-assist",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T06:26:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wjling/dsh-vision-assist",
+    "commands": [
+      "dsh plugin --profile web add github:wjling/dsh-vision-assist",
+      "git clone https://github.com/wjling/dsh-vision-assist"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

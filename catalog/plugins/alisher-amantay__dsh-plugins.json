@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "alisher-amantay/dsh-plugins",
+  "slug": "alisher-amantay__dsh-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugins",
+  "title": "dsh-plugins",
+  "summary": "给 DeepSeek Harness 加上跨会话记忆，还能按需分发插件包，装一次就够。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "observational-memory",
+    "会话管理",
+    "插件管理",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "alisher-amantay",
+  "repo": "https://github.com/alisher-amantay/dsh-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T05:14:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:alisher-amantay/dsh-plugins",
+    "commands": [
+      "dsh plugin --profile web add github:alisher-amantay/dsh-plugins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

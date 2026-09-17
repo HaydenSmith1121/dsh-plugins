@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "eve1329/dsh-shared-handoff",
+  "slug": "eve1329__dsh-shared-handoff",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-shared-handoff",
+  "title": "dsh-shared-handoff",
+  "summary": "把 shared-handoff-kit 的交接流程搬进 dsh，装好就能用 handoff 和 task-id-bootstrap，让任务交接更顺滑。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "效率提升",
+    "AI 助手",
+    "零配置",
+    "工作区管理"
+  ],
+  "version": "0.3.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "eve1329",
+  "repo": "https://github.com/eve1329/dsh-shared-handoff",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T07:34:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "shared-handoff-dsh",
+    "commands": [
+      "dsh plugin --profile web add shared-handoff-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

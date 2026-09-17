@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "sakthiveltofficial/dsh-git-plugins",
+  "slug": "sakthiveltofficial__dsh-git-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-git-plugins",
+  "title": "dsh-git-plugins",
+  "summary": "把 Git 和代码托管平台集成到 DeepSeek Harness，帮你管代码、看提交、提 PR，还能自动记住项目历史。",
+  "tags": [
+    "dsh-plugin",
+    "工作区管理",
+    "工作流增强",
+    "模型配置",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sakthiveltofficial",
+  "repo": "https://github.com/sakthiveltofficial/dsh-git-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-25T11:43:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@dsh-git/bundle",
+    "commands": [
+      "dsh plugin --profile web add @dsh-git/bundle",
+      "dsh plugin --profile web add github:sakthiveltofficial/dsh-git-plugins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

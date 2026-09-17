@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "SingleOne/dsh-notify-center",
+  "slug": "singleone__dsh-notify-center",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notify-center",
+  "title": "dsh-notify-center",
+  "summary": "任务完成或等待审批时自动推送桌面弹窗和Webhook通知，零配置干扰，随时掌握Agent动态。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "消息通知",
+    "效率提升",
+    "任务编排"
+  ],
+  "version": "0.2.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "SingleOne",
+  "repo": "https://github.com/SingleOne/dsh-notify-center",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-20T02:15:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:SingleOne/dsh-notify-center",
+    "commands": [
+      "dsh plugin --profile web add github:SingleOne/dsh-notify-center"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

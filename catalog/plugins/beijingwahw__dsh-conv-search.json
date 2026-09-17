@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "beijingwahw/dsh-conv-search",
+  "slug": "beijingwahw__dsh-conv-search",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-conv-search",
+  "title": "dsh-conv-search",
+  "summary": "在 DeepSeek Harness 对话里直接 Ctrl+F 搜聊天记录，支持大小写、全词匹配，流式输出也能用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "in-conversation-search",
+    "对话搜索",
+    "快捷键查找",
+    "聊天记录检索",
+    "流式兼容"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "beijingwahw",
+  "repo": "https://github.com/beijingwahw/dsh-conv-search",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-22T14:04:50Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:beijingwahw/dsh-conv-search",
+    "commands": [
+      "dsh plugin add beijingwahw/dsh-conv-search --profile web"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

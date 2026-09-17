@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-agent-context-steward",
+  "slug": "jonah791__dsh-agent-context-steward",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-context-steward",
+  "title": "dsh-agent-context-steward",
+  "summary": "给当前会话上下文做体检，看压力、构成和健康度，还能打标签方便管理。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "状态监控",
+    "效率提升",
+    "工具集成"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-07T11:06:31Z",
+    "url": "https://github.com/jonah791/dsh-agent-context-steward/releases/tag/v0.1.1"
+  },
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-agent-context-steward",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T06:03:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-agent-context-steward",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-agent-context-steward"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

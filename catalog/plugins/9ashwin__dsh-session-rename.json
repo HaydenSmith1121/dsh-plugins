@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "9Ashwin/dsh-session-rename",
+  "slug": "9ashwin__dsh-session-rename",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-rename",
+  "title": "dsh-session-rename",
+  "summary": "给模型一个改标题的工具，让 AI 在对话里就能直接给会话重命名。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "工具集成",
+    "AI 助手",
+    "快捷操作"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "9Ashwin",
+  "repo": "https://github.com/9Ashwin/dsh-session-rename",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T06:36:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:9Ashwin/dsh-session-rename",
+    "commands": [
+      "dsh plugin --profile web add -w github:9Ashwin/dsh-session-rename",
+      "dsh plugin --profile web add -w link:/absolute/path/to/dsh-session-rename",
+      "dsh plugin --profile web remove -w dsh-session-rename"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

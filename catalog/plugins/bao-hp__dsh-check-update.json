@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "bao-hp/dsh-check-update",
+  "slug": "bao-hp__dsh-check-update",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-check-update",
+  "title": "dsh-check-update",
+  "summary": "检查 DSH 更新，自动备份数据，查看更新日志，升级更安心。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "语义检索",
+    "状态监控",
+    "零配置"
+  ],
+  "version": "0.0.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bao-hp",
+  "repo": "https://github.com/bao-hp/dsh-check-update",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T10:03:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-check-update",
+    "commands": [
+      "dsh plugin add ./dsh-check-update",
+      "dsh plugin add dsh-check-update"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

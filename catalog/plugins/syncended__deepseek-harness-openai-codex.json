@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "syncended/deepseek-harness-openai-codex",
+  "slug": "syncended__deepseek-harness-openai-codex",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-openai-codex",
+  "title": "deepseek-harness-openai-codex",
+  "summary": "把 ChatGPT Plus/Pro 订阅变成 DeepSeek Harness 的大模型供应商，用设备码登录即可接入。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "模型配置",
+    "工作流增强",
+    "插件管理",
+    "会话管理"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "syncended",
+  "repo": "https://github.com/syncended/deepseek-harness-openai-codex",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-04T20:42:24Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:syncended/deepseek-harness-openai-codex",
+    "commands": [
+      "dsh plugin --profile web add -w @syncended/dsh-codex",
+      "dsh plugin --profile web add -w /absolute/path/to/deepseek-harness-openai-codex",
+      "dsh plugin --profile web remove @syncended/dsh-codex"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

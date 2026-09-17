@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "qimidandapigu/dsh-xiaotangyuan-game",
+  "slug": "qimidandapigu__dsh-xiaotangyuan-game",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-xiaotangyuan-game",
+  "title": "dsh-xiaotangyuan-game",
+  "summary": "给单机游戏加个AI同伴「小汤圆」，陪你聊天解闷、辅助游戏，即插即用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "game-ai",
+    "xiaotangyuan",
+    "娱乐互动",
+    "零配置",
+    "AI 助手",
+    "会话管理"
+  ],
+  "version": "0.6.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "oni-v0.6.1",
+    "publishedAt": "2026-08-16T17:51:16Z",
+    "url": "https://github.com/qimidandapigu/dsh-xiaotangyuan-game/releases/tag/oni-v0.6.1"
+  },
+  "author": "qimidandapigu",
+  "repo": "https://github.com/qimidandapigu/dsh-xiaotangyuan-game",
+  "homepage": "https://qimidandapigu.github.io/ai-native-game-harness/",
+  "license": "MIT",
+  "stars": 10,
+  "forks": 0,
+  "pushedAt": "2026-08-26T15:53:18Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qimidandapigu/dsh-xiaotangyuan-game",
+    "commands": [
+      "dsh plugin --profile web add github:qimidandapigu/dsh-xiaotangyuan-game"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

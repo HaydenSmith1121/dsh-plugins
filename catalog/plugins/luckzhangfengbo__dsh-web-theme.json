@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "luckzhangfengbo/dsh-web-theme",
+  "slug": "luckzhangfengbo__dsh-web-theme",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-theme",
+  "title": "dsh-web-theme",
+  "summary": "给 DeepSeek Harness 换个背景主题，让界面更顺眼，用起来更舒服。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugin-theme",
+    "界面美化",
+    "零配置",
+    "视觉理解"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "luckzhangfengbo",
+  "repo": "https://github.com/luckzhangfengbo/dsh-web-theme",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-30T01:49:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:luckzhangfengbo/dsh-web-theme",
+    "commands": [
+      "dsh plugin --profile web add dsh-web-theme && dsh web"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

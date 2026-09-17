@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-agent-memory",
+  "slug": "jonah791__dsh-agent-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-memory",
+  "title": "dsh-agent-memory",
+  "summary": "给 AI 助手装上长期记忆，按工作区分区存储事实与经验，还能自动压缩和关联检索。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "语义检索",
+    "工作区管理",
+    "会话管理",
+    "自动化"
+  ],
+  "version": "0.2.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.3",
+    "publishedAt": "2026-09-07T08:55:12Z",
+    "url": "https://github.com/jonah791/dsh-agent-memory/releases/tag/v0.2.3"
+  },
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-agent-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T12:01:34Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-agent-memory",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-agent-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

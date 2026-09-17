@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "keman-ai/dsh-skin-pack",
+  "slug": "keman-ai__dsh-skin-pack",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skin-pack",
+  "title": "dsh-skin-pack",
+  "summary": "给 DeepSeek Harness 换肤的一整套皮肤包，一个仓库多套主题，按需独立安装，轻松切换界面风格。",
+  "tags": [
+    "dark-theme",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "skin",
+    "theme",
+    "ui-theme",
+    "界面美化",
+    "零配置",
+    "前端增强",
+    "可视化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "dsh-sunset-catbus-v0.1.1",
+    "publishedAt": "2026-08-31T05:59:11Z",
+    "url": "https://github.com/keman-ai/dsh-skin-pack/releases/tag/dsh-sunset-catbus-v0.1.1"
+  },
+  "author": "keman-ai",
+  "repo": "https://github.com/keman-ai/dsh-skin-pack",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-31T05:59:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:keman-ai/dsh-skin-pack",
+    "commands": [
+      "dsh plugin --profile web add -w github:keman-ai/dsh-skin-market",
+      "dsh plugin --profile web add -w https://github.com/keman-ai/dsh-skin-pack/releases/download/<tag>/<package>-<version>.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

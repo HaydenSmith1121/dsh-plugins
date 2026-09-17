@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Chinesezjc/dsh-interconnect",
+  "slug": "chinesezjc__dsh-interconnect",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-interconnect",
+  "title": "dsh-interconnect",
+  "summary": "让多个 DSH 实例之间互相发消息、传事件、探活，实现跨机器协作。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "interconnect",
+    "消息互通",
+    "事件通知"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Chinesezjc",
+  "repo": "https://github.com/Chinesezjc/dsh-interconnect",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 34,
+  "forks": 3,
+  "pushedAt": "2026-09-16T16:13:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Chinesezjc/dsh-interconnect",
+    "commands": [
+      "dsh plugin --profile web add github:Chinesezjc/dsh-interconnect"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

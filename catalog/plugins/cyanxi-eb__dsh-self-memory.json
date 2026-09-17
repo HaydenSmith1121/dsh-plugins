@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "cyanxi-eb/dsh-self-memory",
+  "slug": "cyanxi-eb__dsh-self-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-self-memory",
+  "title": "dsh-self-memory",
+  "summary": "让 DSH 智能体跨会话记住踩过的坑和解决办法，新会话自动查记录、试方案、回写经验。",
+  "tags": [
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh-plugin",
+    "dsh-plugins",
+    "会话管理",
+    "状态持久化",
+    "自动化",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "cyanxi-eb",
+  "repo": "https://github.com/cyanxi-eb/dsh-self-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-21T13:22:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cyanxi-eb/dsh-self-memory",
+    "commands": [
+      "dsh plugin --profile web add <本目录>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

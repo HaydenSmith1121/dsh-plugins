@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "ZK-Andy/dsh-frecency",
+  "slug": "zk-andy__dsh-frecency",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-frecency",
+  "title": "dsh-frecency",
+  "summary": "常驻索引加 frecency 文件搜索，秒级定位常用文件，直接替代内置 grep/glob。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "file-search",
+    "frecency",
+    "glob",
+    "grep",
+    "nodejs",
+    "typescript",
+    "效率提升",
+    "命令行工具",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-12T19:46:02Z",
+    "url": "https://github.com/ZK-Andy/dsh-frecency/releases/tag/v0.1.2"
+  },
+  "author": "ZK-Andy",
+  "repo": "https://github.com/ZK-Andy/dsh-frecency",
+  "homepage": "https://github.com/ZK-Andy/dsh-frecency",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T20:01:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ZK-Andy/dsh-frecency",
+    "commands": [
+      "dsh plugin --profile <profile> add dsh-frecency"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

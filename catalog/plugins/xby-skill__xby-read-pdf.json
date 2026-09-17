@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-read-pdf",
+  "slug": "xby-skill__xby-read-pdf",
+  "tier": "community",
+  "package": null,
+  "name": "xby-read-pdf",
+  "title": "xby-read-pdf",
+  "summary": "让AI直接读取PDF文件，提取文字、按页阅读和搜索关键词，方便快速处理文档内容。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "插件管理",
+    "零配置",
+    "会话管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-read-pdf",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:29:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-read-pdf",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-read-pdf",
+      "dsh plugin --profile web add /absolute/path/to/xby-read-pdf"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

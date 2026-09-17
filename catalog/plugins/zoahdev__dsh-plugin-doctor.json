@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "zoahdev/dsh-plugin-doctor",
+  "slug": "zoahdev__dsh-plugin-doctor",
+  "tier": "community",
+  "package": null,
+  "name": "zoahdev/dsh-plugin-doctor",
+  "title": "zoahdev/dsh-plugin-doctor",
+  "summary": "给 DSH 插件做全面体检，从清单、补丁到构建安装逐项排查，还能让模型自己调用检查。",
+  "tags": [
+    "cli",
+    "deepseek-harness",
+    "developer-tools",
+    "dsh-plugin",
+    "health-check",
+    "插件管理",
+    "状态监控",
+    "命令行工具",
+    "工作流增强",
+    "安全审计"
+  ],
+  "version": "1.14.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.14.0",
+    "publishedAt": "2026-08-15T17:16:28Z",
+    "url": "https://github.com/zoahdev/dsh-plugin-doctor/releases/tag/v1.14.0"
+  },
+  "author": "zoahdev",
+  "repo": "https://github.com/zoahdev/dsh-plugin-doctor",
+  "homepage": "https://github.com/deepseek-ai/deepseek-harness/discussions/1693",
+  "license": "MIT",
+  "stars": 6,
+  "forks": 1,
+  "pushedAt": "2026-08-22T17:16:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-doctor",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-doctor",
+      "dsh plugin --profile web add ./dsh-plugin-doctor-1.6.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

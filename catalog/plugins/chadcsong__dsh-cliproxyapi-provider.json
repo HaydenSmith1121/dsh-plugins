@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ChadCSong/dsh-cliproxyapi-provider",
+  "slug": "chadcsong__dsh-cliproxyapi-provider",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cliproxyapi-provider",
+  "title": "dsh-cliproxyapi-provider",
+  "summary": "自动发现并接入 CLIProxyAPI，模型动态同步、一键切换，还能挑视觉模型。",
+  "tags": [
+    "cliproxyapi",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm-provider",
+    "openai-compatible",
+    "零配置",
+    "模型适配",
+    "模型配置",
+    "视觉理解",
+    "工具集成"
+  ],
+  "version": "0.1.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.9",
+    "publishedAt": "2026-09-16T17:50:47Z",
+    "url": "https://github.com/ChadCSong/dsh-cliproxyapi-provider/releases/tag/v0.1.9"
+  },
+  "author": "ChadCSong",
+  "repo": "https://github.com/ChadCSong/dsh-cliproxyapi-provider",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T17:47:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ChadCSong/dsh-cliproxyapi-provider",
+    "commands": [
+      "dsh plugin --profile web add github:ChadCSong/dsh-cliproxyapi-provider",
+      "dsh plugin --profile desktop add github:ChadCSong/dsh-cliproxyapi-provider",
+      "git clone https://github.com/ChadCSong/dsh-cliproxyapi-provider.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "firecrawl/dsh-firecrawl",
+  "slug": "firecrawl__dsh-firecrawl",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-firecrawl",
+  "title": "dsh-firecrawl",
+  "summary": "将 DeepSeek Harness 内置的网页搜索与抓取能力无缝切换到 Firecrawl，无需新增工具，即插即用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "firecrawl",
+    "web-scraping",
+    "零配置",
+    "效率提升",
+    "工具集成",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "firecrawl",
+  "repo": "https://github.com/firecrawl/dsh-firecrawl",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 13,
+  "forks": 1,
+  "pushedAt": "2026-08-17T03:19:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:firecrawl/dsh-firecrawl",
+    "commands": [
+      "dsh plugin --profile web add github:firecrawl/dsh-firecrawl"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

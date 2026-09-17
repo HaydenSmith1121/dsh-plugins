@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "Tzhen-X/dsh-upstream-first-debug",
+  "slug": "tzhen-x__dsh-upstream-first-debug",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-upstream-first-debug",
+  "title": "dsh-upstream-first-debug",
+  "summary": "第三方工具报错时，先查上游版本和修复进展，再动手本地排障，少走弯路。",
+  "tags": [
+    "agent-skills",
+    "debugging",
+    "deepseek",
+    "dsh",
+    "troubleshooting",
+    "工作流增强",
+    "效率提升",
+    "工具集成",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-15T13:54:50Z",
+    "url": "https://github.com/Tzhen-X/dsh-upstream-first-debug/releases/tag/v0.1.0"
+  },
+  "author": "Tzhen-X",
+  "repo": "https://github.com/Tzhen-X/dsh-upstream-first-debug",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T13:54:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Tzhen-X/dsh-upstream-first-debug",
+    "commands": [
+      "dsh plugin --profile web add github:Tzhen-X/dsh-upstream-first-debug"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

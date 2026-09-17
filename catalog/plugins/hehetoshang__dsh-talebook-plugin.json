@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "hehetoshang/dsh-talebook-plugin",
+  "slug": "hehetoshang__dsh-talebook-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-talebook-plugin",
+  "title": "dsh-talebook-plugin",
+  "summary": "为 DeepSeek Harness 提供 Talebook 工具，安全调用书籍管理 API，方便自动化管理书库。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "talebook",
+    "AI 助手",
+    "插件管理",
+    "命令行工具",
+    "零配置",
+    "自动化"
+  ],
+  "version": "0.2.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.6",
+    "publishedAt": "2026-08-29T07:03:35Z",
+    "url": "https://github.com/hehetoshang/dsh-talebook-plugin/releases/tag/v0.2.6"
+  },
+  "author": "hehetoshang",
+  "repo": "https://github.com/hehetoshang/dsh-talebook-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-29T07:06:45Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-talebook-plugin-0.2.6.tgz",
+      "dsh plugin --profile web add .",
+      "dsh plugin --profile web add github:hehetoshang/dsh-talebook-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

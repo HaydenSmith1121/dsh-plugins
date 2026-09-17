@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "akslcw/dsh-negative-ledger",
+  "slug": "akslcw__dsh-negative-ledger",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-negative-ledger",
+  "title": "dsh-negative-ledger",
+  "summary": "记录编程智能体走过的弯路，避免重复踩坑，提升开发效率。",
+  "tags": [
+    "agent-ledger",
+    "deepseek-harness",
+    "dsh-plugin",
+    "negative-knowledge",
+    "AI 助手",
+    "效率提升",
+    "会话管理",
+    "工作流增强"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-08-23T15:16:38Z",
+    "url": "https://github.com/akslcw/dsh-negative-ledger/releases/tag/v0.1.2"
+  },
+  "author": "akslcw",
+  "repo": "https://github.com/akslcw/dsh-negative-ledger",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-11T11:27:00Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:akslcw/dsh-negative-ledger",
+    "commands": [
+      "dsh plugin --profile <name> add @akslcw/dsh-negative-ledger"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

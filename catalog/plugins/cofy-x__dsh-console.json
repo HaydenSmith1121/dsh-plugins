@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "cofy-x/dsh-console",
+  "slug": "cofy-x__dsh-console",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-console",
+  "title": "dsh-console",
+  "summary": "在终端里直接和 DeepSeek Harness 智能体聊天、协作，不用开浏览器，效率拉满。",
+  "tags": [
+    "ai-agent",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "ink",
+    "terminal",
+    "terminal-ui",
+    "tui",
+    "typescript",
+    "命令行工具",
+    "机器人对话",
+    "AI工具",
+    "多Agent协作",
+    "会话管理"
+  ],
+  "version": "0.1.0-alpha.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "cofy-x",
+  "repo": "https://github.com/cofy-x/dsh-console",
+  "homepage": "https://dsh-console.cofy-x.space",
+  "license": "Apache-2.0",
+  "stars": 21,
+  "forks": 1,
+  "pushedAt": "2026-09-15T08:10:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cofy-x/dsh-console",
+    "commands": [
+      "npm install --global @deepseek-ai/dsh @cofy-x/dsh-console"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

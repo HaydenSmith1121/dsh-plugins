@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "lw-storm/dsh-plugin-masterprompt",
+  "slug": "lw-storm__dsh-plugin-masterprompt",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-masterprompt",
+  "title": "dsh-plugin-masterprompt",
+  "summary": "在输入框旁边常驻人设小框，随时新建、切换人设模板，让每次对话都按你设定的角色来回答。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "AI 助手",
+    "会话管理",
+    "快捷操作",
+    "设置面板"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lw-storm",
+  "repo": "https://github.com/lw-storm/dsh-plugin-masterprompt",
+  "homepage": null,
+  "license": null,
+  "stars": 9,
+  "forks": 1,
+  "pushedAt": "2026-09-06T19:00:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lw-storm/dsh-plugin-masterprompt",
+    "commands": [
+      "dsh plugin --profile web add <本目录绝对路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

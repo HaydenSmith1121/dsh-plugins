@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-smoking-detection",
+  "slug": "xby-skill__xby-smoking-detection",
+  "tier": "community",
+  "package": null,
+  "name": "xby-smoking-detection",
+  "title": "xby-smoking-detection",
+  "summary": "上传一张图像，自动检测其中的香烟目标，返回检测框、置信度和标签，方便快速识别吸烟行为。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "自动化",
+    "零配置",
+    "可视化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-smoking-detection",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:35:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-smoking-detection",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-smoking-detection",
+      "dsh plugin --profile web add /absolute/path/to/xby-smoking-detection"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

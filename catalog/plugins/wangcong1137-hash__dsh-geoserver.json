@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "wangcong1137-hash/dsh-geoserver",
+  "slug": "wangcong1137-hash__dsh-geoserver",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-geoserver",
+  "title": "dsh-geoserver",
+  "summary": "在 DSH 网页界面里直接读取 GeoServer 服务、发布数据并渲染地图图片，方便可视化操作。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "工作区管理",
+    "零配置",
+    "模型适配"
+  ],
+  "version": "0.3.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wangcong1137-hash",
+  "repo": "https://github.com/wangcong1137-hash/dsh-geoserver",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:08:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-geoserver",
+    "commands": [
+      "dsh plugin --profile web add dsh-geoserver"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

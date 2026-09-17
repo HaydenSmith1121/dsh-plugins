@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "MJ-Chang/dsh-vscode",
+  "slug": "mj-chang__dsh-vscode",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-vscode",
+  "title": "dsh-vscode",
+  "summary": "在 VS Code 右侧开个 AI 聊天窗口，帮你读代码、改文件、跑项目，像 Claude Code 一样顺手。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "vscode",
+    "AI 助手",
+    "工具集成",
+    "工作流增强",
+    "效率提升",
+    "文件管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-14T14:24:29Z",
+    "url": "https://github.com/MJ-Chang/dsh-vscode/releases/tag/v0.2.0"
+  },
+  "author": "MJ-Chang",
+  "repo": "https://github.com/MJ-Chang/dsh-vscode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-21T21:45:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MJ-Chang/dsh-vscode",
+    "commands": [
+      "dsh plugin --profile web add github:MJ-Chang/dsh-vscode"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

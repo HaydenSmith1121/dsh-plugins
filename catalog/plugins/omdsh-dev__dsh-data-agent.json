@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "omdsh-dev/dsh-data-agent",
+  "slug": "omdsh-dev__dsh-data-agent",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-data-agent",
+  "title": "dsh-data-agent",
+  "summary": "让 AI 帮你连数据库、写 SQL，并根据执行结果自动调试，搞定数据任务。",
+  "tags": [
+    "data-agent",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "文件管理",
+    "内容创作"
+  ],
+  "version": "0.1.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "omdsh-dev",
+  "repo": "https://github.com/omdsh-dev/dsh-data-agent",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 195,
+  "forks": 15,
+  "pushedAt": "2026-09-10T09:34:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@yejiming/dsh-data-agent",
+    "commands": [
+      "dsh plugin --profile web add @yejiming/dsh-data-agent",
+      "dsh plugin --profile dsh-tui add @yejiming/dsh-data-agent"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

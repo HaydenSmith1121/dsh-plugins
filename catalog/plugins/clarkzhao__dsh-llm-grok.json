@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "clarkzhao/dsh-llm-grok",
+  "slug": "clarkzhao__dsh-llm-grok",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-grok",
+  "title": "dsh-llm-grok",
+  "summary": "把 Grok 订阅额度接入 DSH，让 Grok 4.6/4.5 原生多模态能力直接在插件里用，贴图就能聊。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "零配置",
+    "视觉理解"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "clarkzhao",
+  "repo": "https://github.com/clarkzhao/dsh-llm-grok",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-07T14:16:31Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-llm-grok",
+    "commands": [
+      "dsh plugin --profile web add dsh-llm-grok"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

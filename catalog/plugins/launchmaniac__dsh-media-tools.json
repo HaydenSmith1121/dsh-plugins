@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "launchmaniac/dsh-media-tools",
+  "slug": "launchmaniac__dsh-media-tools",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-media-tools",
+  "title": "dsh-media-tools",
+  "summary": "把 OpenRouter 的图片、视频和语音生成能力接入 deepseek-harness，无需改代码即插即用。",
+  "tags": [
+    "ai-agents",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "image-generation",
+    "openrouter",
+    "text-to-speech",
+    "video-generation",
+    "视觉理解",
+    "AI 助手",
+    "零配置",
+    "模型配置"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-08-24T04:40:40Z",
+    "url": "https://github.com/launchmaniac/dsh-media-tools/releases/tag/v0.2.1"
+  },
+  "author": "launchmaniac",
+  "repo": "https://github.com/launchmaniac/dsh-media-tools",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-24T04:40:24Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:launchmaniac/dsh-media-tools",
+    "commands": [
+      "dsh plugin --profile <name> add @launchmaniac/dsh-media-tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

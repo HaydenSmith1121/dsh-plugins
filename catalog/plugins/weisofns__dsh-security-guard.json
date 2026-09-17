@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "weisofns/dsh-security-guard",
+  "slug": "weisofns__dsh-security-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-security-guard",
+  "title": "dsh-security-guard",
+  "summary": "给 DeepSeek Harness 插件做安全体检，28 条规则扫描风险并打分，支持黑白名单和本地看板，防偷 Token 和数据外发。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "插件管理",
+    "状态监控",
+    "可视化"
+  ],
+  "version": "2.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "weisofns",
+  "repo": "https://github.com/weisofns/dsh-security-guard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T15:04:18Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:weisofns/dsh-security-guard",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-security-guard-2.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "nicecx/dsh-macos-calendar",
+  "slug": "nicecx__dsh-macos-calendar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-macos-calendar",
+  "title": "dsh-macos-calendar",
+  "summary": "让 DeepSeek Harness 智能体直接操作 macOS 日历，创建、查询、删除日程事件，实现日历管理自动化。",
+  "tags": [
+    "calendar",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "macos",
+    "AI 助手",
+    "效率提升",
+    "工作流增强",
+    "日历管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "nicecx",
+  "repo": "https://github.com/nicecx/dsh-macos-calendar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-29T02:23:09Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:nicecx/dsh-macos-calendar",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-macos-calendar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

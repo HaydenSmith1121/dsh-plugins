@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "jaaty/dsh-gsd-bundle",
+  "slug": "jaaty__dsh-gsd-bundle",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-gsd-bundle",
+  "title": "dsh-gsd-bundle",
+  "summary": "把 GSD 阶段循环搬进 DeepSeek Harness，让智能体按 Git Ship Done 流程干活，替代默认循环。",
+  "tags": [
+    "coding-agent",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-bundle",
+    "git-ship-done",
+    "gsd",
+    "opengsd",
+    "plugin",
+    "工作流增强",
+    "AI工具",
+    "自动化",
+    "多智能体协作"
+  ],
+  "version": "3.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v3.1.0",
+    "publishedAt": "2026-09-08T06:46:44Z",
+    "url": "https://github.com/jaaty/dsh-gsd-bundle/releases/tag/v3.1.0"
+  },
+  "author": "jaaty",
+  "repo": "https://github.com/jaaty/dsh-gsd-bundle",
+  "homepage": "https://www.npmjs.com/package/@dsh-gsd/bundle",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-09T04:35:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jaaty/dsh-gsd-bundle",
+    "commands": [
+      "dsh plugin --profile <name> add @dsh-gsd/bundle",
+      "git clone https://github.com/jaaty/dsh-gsd-bundle.git",
+      "dsh plugin --profile <name> add <path-to-this-bundle>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "kira4094/dsh-system-fonts",
+  "slug": "kira4094__dsh-system-fonts",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-system-fonts",
+  "title": "dsh-system-fonts",
+  "summary": "一键枚举电脑所有字体，自由切换 DSH 界面的显示字体和代码字体，让界面更合你眼缘。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "font",
+    "theme",
+    "typography",
+    "可视化",
+    "效率提升",
+    "界面美化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-24T01:54:34Z",
+    "url": "https://github.com/kira4094/dsh-system-fonts/releases/tag/v0.1.0"
+  },
+  "author": "kira4094",
+  "repo": "https://github.com/kira4094/dsh-system-fonts",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-24T15:07:03Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kiray/dsh-system-fonts",
+    "commands": [
+      "dsh plugin --profile web add github:kiray/dsh-system-fonts"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "hanxuanliang/dsh-chaos",
+  "slug": "hanxuanliang__dsh-chaos",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-chaos",
+  "title": "dsh-chaos",
+  "summary": "让 DeepSeek Harness 里的多个智能体像团队一样持久协作，支持频道、线程、任务和可恢复的会话，干活不中断。",
+  "tags": [
+    "dsh-plugin",
+    "多Agent协作",
+    "会话管理",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hanxuanliang",
+  "repo": "https://github.com/hanxuanliang/dsh-chaos",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-24T12:10:30Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@hanxuanliang/dsh-chaos@0.1.2",
+    "commands": [
+      "dsh plugin --profile web add @hanxuanliang/dsh-chaos@0.1.2",
+      "dsh plugin --profile web add --workspace-root \"$PWD\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

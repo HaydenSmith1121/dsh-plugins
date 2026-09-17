@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "NIGHT576/dsh-delete-session",
+  "slug": "night576__dsh-delete-session",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-delete-session",
+  "title": "dsh-delete-session",
+  "summary": "给 DSH Web 侧栏补上真正的会话删除，右键删单条、区头批量删多条，连日志和缓存一起清掉。",
+  "tags": [
+    "dsh-harness",
+    "dsh-plugin",
+    "会话管理",
+    "快捷操作",
+    "前端增强",
+    "资源优化"
+  ],
+  "version": "1.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "NIGHT576",
+  "repo": "https://github.com/NIGHT576/dsh-delete-session",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T11:50:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:NIGHT576/dsh-delete-session",
+    "commands": [
+      "dsh plugin --profile web add github:NIGHT576/dsh-delete-session"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

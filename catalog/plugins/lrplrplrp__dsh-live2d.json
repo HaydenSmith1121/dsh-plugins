@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "lrplrplrp/dsh-live2d",
+  "slug": "lrplrplrp__dsh-live2d",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-live2d",
+  "title": "dsh-live2d",
+  "summary": "在 DeepSeek Harness 网页界面里添加可拖动的 Live2D 看板娘，能根据真实工作状态实时驱动动画，还会跟着鼠标看。",
+  "tags": [
+    "deepeek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "live2d",
+    "娱乐互动",
+    "状态监控",
+    "前端增强",
+    "多模态"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lrplrplrp",
+  "repo": "https://github.com/lrplrplrp/dsh-live2d",
+  "homepage": "https://www.npmjs.com/package/@lrplrplrp/dsh-live2d",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-12T07:32:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lrplrplrp/dsh-live2d",
+    "commands": [
+      "dsh plugin --profile web add link:/path/to/dsh-live2d"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

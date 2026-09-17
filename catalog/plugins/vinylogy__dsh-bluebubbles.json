@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "vINyLogY/dsh-bluebubbles",
+  "slug": "vinylogy__dsh-bluebubbles",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-bluebubbles",
+  "title": "dsh-bluebubbles",
+  "summary": "让 BlueBubbles 接入 DSH，直接在终端里收发 iMessage，不用再开额外客户端。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "命令行工具",
+    "零配置",
+    "模型适配"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "vINyLogY",
+  "repo": "https://github.com/vINyLogY/dsh-bluebubbles",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T03:51:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:vINyLogY/dsh-bluebubbles",
+    "commands": [
+      "dsh plugin --profile web add github:vINyLogY/dsh-bluebubbles"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "vlln/dsh-navbar",
+  "slug": "vlln__dsh-navbar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-navbar",
+  "title": "dsh-navbar",
+  "summary": "在对话右侧加一条导航条，点一下就能跳到某条用户消息，翻长对话不用再滚半天。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "ui",
+    "前端增强",
+    "快捷操作",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "vlln",
+  "repo": "https://github.com/vlln/dsh-navbar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 53,
+  "forks": 1,
+  "pushedAt": "2026-09-10T06:24:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:vlln/dsh-navbar",
+    "commands": [
+      "dsh plugin --profile web add \"github:vlln/dsh-navbar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

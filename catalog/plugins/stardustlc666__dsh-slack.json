@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "STARDUSTLC666/dsh-slack",
+  "slug": "stardustlc666__dsh-slack",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-slack",
+  "title": "dsh-slack",
+  "summary": "让 DeepSeek Harness 智能体直接接入 Slack，双向收发消息、查看频道、回复线程，无需公网回调。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "notification",
+    "slack",
+    "socket-mode",
+    "多Agent协作",
+    "会话管理",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.3.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "STARDUSTLC666",
+  "repo": "https://github.com/STARDUSTLC666/dsh-slack",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-12T10:15:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-slack",
+    "commands": [
+      "dsh plugin --profile web add dsh-slack"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "lunw/shopline-ai-toolkit-dsh",
+  "slug": "lunw__shopline-ai-toolkit-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "shopline-ai-toolkit-dsh",
+  "title": "shopline-ai-toolkit-dsh",
+  "summary": "为 SHOPLINE 开发者提供官方 MCP 工具桥接和平台知识技能，方便在 DeepSeek Harness 中直接调用电商 API 和开发辅助能力。",
+  "tags": [
+    "ai-toolkit",
+    "deepseek-harness",
+    "dsh-plugin",
+    "ecommerce",
+    "graphql",
+    "mcp",
+    "openapi",
+    "shopline",
+    "电商集成",
+    "API 工具"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-08-27T16:38:13Z",
+    "url": "https://github.com/lunw/shopline-ai-toolkit-dsh/releases/tag/v0.2.1"
+  },
+  "author": "lunw",
+  "repo": "https://github.com/lunw/shopline-ai-toolkit-dsh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-27T16:38:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "shopline-ai-toolkit-dsh",
+    "commands": [
+      "dsh plugin --profile web add shopline-ai-toolkit-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

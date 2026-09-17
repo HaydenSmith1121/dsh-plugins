@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "67-68/dsh-plugins",
+  "slug": "67-68__dsh-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugins",
+  "title": "dsh-plugins",
+  "summary": "把整套 DSH 配置当 git 仓库管理，一条命令幂等同步插件、预设和文档，可回滚可协作。",
+  "tags": [
+    "agent-presets",
+    "deepseek-harness",
+    "dotfiles",
+    "dsh",
+    "插件管理",
+    "工作流增强",
+    "工作区管理",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "67-68",
+  "repo": "https://github.com/67-68/dsh-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:16:22Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:67-68/dsh-plugins",
+    "commands": [
+      "dsh plugin --profile web add github:67-68/dsh-plugins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "upstash/skills",
+  "slug": "upstash__skills",
+  "tier": "community",
+  "package": null,
+  "name": "skills",
+  "title": "skills",
+  "summary": "为AI编程助手提供Upstash SDK技能包，快速上手数据库、缓存等操作。",
+  "tags": [
+    "dsh-plugin",
+    "gemini-cli-extension",
+    "mcp",
+    "skills",
+    "工具集成",
+    "AI编程",
+    "命令行工具"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "1.0.0",
+    "publishedAt": "2026-08-28T11:02:01Z",
+    "url": "https://github.com/upstash/skills/releases/tag/1.0.0"
+  },
+  "author": "upstash",
+  "repo": "https://github.com/upstash/skills",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 25,
+  "forks": 7,
+  "pushedAt": "2026-09-16T14:41:42Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:upstash/skills",
+    "commands": [
+      "npx skills add upstash/skills --agent opencode --global",
+      "npx skills add upstash/skills --agent opencode",
+      "npx skills add upstash/skills --agent zed --global"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

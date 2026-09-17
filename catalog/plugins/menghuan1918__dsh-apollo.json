@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Menghuan1918/dsh-apollo",
+  "slug": "menghuan1918__dsh-apollo",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-apollo",
+  "title": "dsh-apollo",
+  "summary": "把一次会话做不完的大任务拆成可独立验证的子任务，逐波并行执行、审查通过才合入。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "dsh-skill",
+    "多Agent协作",
+    "工作流增强",
+    "变更审查",
+    "自动化"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Menghuan1918",
+  "repo": "https://github.com/Menghuan1918/dsh-apollo",
+  "homepage": null,
+  "license": "GPL-3.0",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-09-12T07:55:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Menghuan1918/dsh-apollo",
+    "commands": [
+      "dsh plugin --profile <name> add github:Menghuan1918/dsh-apollo",
+      "dsh plugin --profile <name> add link:/path/to/dsh-apollo"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

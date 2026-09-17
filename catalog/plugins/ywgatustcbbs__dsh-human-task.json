@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ywgATustcbbs/dsh-human-task",
+  "slug": "ywgatustcbbs__dsh-human-task",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-human-task",
+  "title": "dsh-human-task",
+  "summary": "让 Agent 把真实用户当成传感器和执行器，需要人确认或操作时自动弹出对话窗口。",
+  "tags": [
+    "agent-skills",
+    "ai-agents",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "human-in-the-loop",
+    "多智能体协作",
+    "工作流增强",
+    "消息通知",
+    "AI工具",
+    "工具集成"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-15T06:08:17Z",
+    "url": "https://github.com/ywgATustcbbs/dsh-human-task/releases/tag/v0.1.1"
+  },
+  "author": "ywgATustcbbs",
+  "repo": "https://github.com/ywgATustcbbs/dsh-human-task",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T10:46:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-human-task",
+    "commands": [
+      "dsh plugin add dsh-human-task"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

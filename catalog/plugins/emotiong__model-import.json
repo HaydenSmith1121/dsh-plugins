@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "EmotionG/model-import",
+  "slug": "emotiong__model-import",
+  "tier": "community",
+  "package": null,
+  "name": "model-import",
+  "title": "model-import",
+  "summary": "给 DSH 的每个模型供应商单独配接口、密钥和思考强度，导入订阅后也能正常调参。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "模型适配",
+    "设置面板",
+    "工具集成"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.0.1",
+    "publishedAt": "2026-09-16T05:47:13Z",
+    "url": "https://github.com/EmotionG/dsh-llm-config/releases/tag/v0.0.1"
+  },
+  "author": "EmotionG",
+  "repo": "https://github.com/EmotionG/model-import",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T14:32:05Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:EmotionG/model-import",
+    "commands": [
+      "dsh plugin --profile web add github:EmotionG/model-import"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

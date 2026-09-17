@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "DeepTrial/dsh-bash-rtk",
+  "slug": "deeptrial__dsh-bash-rtk",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-bash-rtk",
+  "title": "dsh-bash-rtk",
+  "summary": "把符合条件的 bash 命令交给 rtk 压缩输出，省下 token；没装 rtk 也能安全直通。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "rtk",
+    "token-saver",
+    "命令行工具",
+    "资源优化",
+    "工具集成",
+    "零配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-24T12:13:08Z",
+    "url": "https://github.com/DeepTrial/dsh-bash-rtk/releases/tag/v0.1.1"
+  },
+  "author": "DeepTrial",
+  "repo": "https://github.com/DeepTrial/dsh-bash-rtk",
+  "homepage": "https://github.com/rtk-ai/rtk",
+  "license": "MIT",
+  "stars": 12,
+  "forks": 4,
+  "pushedAt": "2026-08-25T01:54:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:DeepTrial/dsh-bash-rtk",
+    "commands": [
+      "dsh plugin --profile web add github:DeepTrial/dsh-bash-rtk"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

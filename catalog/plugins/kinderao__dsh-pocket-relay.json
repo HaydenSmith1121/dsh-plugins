@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "kinderao/dsh-pocket-relay",
+  "slug": "kinderao__dsh-pocket-relay",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pocket-relay",
+  "title": "dsh-pocket-relay",
+  "summary": "把手机变成 DSH 的随身遥控器，随时随地远程操控会话和工作流。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "移动端",
+    "桥接插件",
+    "快捷操作"
+  ],
+  "version": "1.0.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.2",
+    "publishedAt": "2026-09-17T00:51:33Z",
+    "url": "https://github.com/kinderao/dsh-pocket-relay/releases/tag/v1.0.2"
+  },
+  "author": "kinderao",
+  "repo": "https://github.com/kinderao/dsh-pocket-relay",
+  "homepage": null,
+  "license": "GPL-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T06:22:27Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kinderao/dsh-pocket-relay",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh",
+      "dsh plugin --profile web add dsh-pocket-relay -w"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

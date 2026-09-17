@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "inxups/dsh-user-plugins",
+  "slug": "inxups__dsh-user-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-user-plugins",
+  "title": "dsh-user-plugins",
+  "summary": "在设置里加个「我安装的插件」页，一眼看清每个插件的来源、版本、类型和实时加载状态。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-bundle",
+    "插件管理",
+    "设置面板",
+    "状态监控",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-11T05:16:31Z",
+    "url": "https://github.com/inxups/dsh-user-plugins/releases/tag/v0.1.0"
+  },
+  "author": "inxups",
+  "repo": "https://github.com/inxups/dsh-user-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T03:54:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:inxups/dsh-user-plugins",
+    "commands": [
+      "dsh plugin --profile web add /绝对路径/dsh-user-plugins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

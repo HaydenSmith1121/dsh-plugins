@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "1624318455/dsh-plugin-tts",
+  "slug": "1624318455__dsh-plugin-tts",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-tts",
+  "title": "dsh-plugin-tts",
+  "summary": "让 DeepSeek Harness 用 Edge 语音朗读助手回复，支持自动朗读开关和语音设置面板，免费无需 API 密钥。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "edge-tts",
+    "text-to-speech",
+    "语音朗读",
+    "无障碍辅助",
+    "免费无密钥"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-09-11T09:22:02Z",
+    "url": "https://github.com/1624318455/dsh-plugin-tts/releases/tag/v0.3.1"
+  },
+  "author": "1624318455",
+  "repo": "https://github.com/1624318455/dsh-plugin-tts",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 19,
+  "forks": 5,
+  "pushedAt": "2026-09-12T20:21:26Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:1624318455/dsh-plugin-tts",
+    "commands": [
+      "dsh plugin --profile web add \"github:1624318455/dsh-plugin-tts",
+      "dsh plugin --profile web add \"file:/path/to/dsh-plugin-tts\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

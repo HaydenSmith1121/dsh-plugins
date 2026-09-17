@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "HarnessDesk/dsh-acp",
+  "slug": "harnessdesk__dsh-acp",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-acp",
+  "title": "dsh-acp",
+  "summary": "给 DeepSeek Harness 补上完整 ACP 服务端，把推理过程、工具调用、计划和 token 用量都实时透出来。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "桥接插件",
+    "模型轨迹",
+    "工具集成",
+    "状态监控",
+    "会话进度"
+  ],
+  "version": "0.5.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "HarnessDesk",
+  "repo": "https://github.com/HarnessDesk/dsh-acp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T00:36:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:HarnessDesk/dsh-acp",
+    "commands": [
+      "npm install @harnessdesk/dsh-acp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

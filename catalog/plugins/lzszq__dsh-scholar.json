@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "lzszq/dsh-scholar",
+  "slug": "lzszq__dsh-scholar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-scholar",
+  "title": "dsh-scholar",
+  "summary": "一站式 AI 科研工作台，把资料、对话、代码、实验和论文草稿整合在可恢复的项目里，支持从零开始或接续已有研究。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "文件管理",
+    "数据分析"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lzszq",
+  "repo": "https://github.com/lzszq/dsh-scholar",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 46,
+  "forks": 1,
+  "pushedAt": "2026-09-09T21:48:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lzszq/dsh-scholar",
+    "commands": [
+      "dsh plugin --profile web add github:lzszq/dsh-scholar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

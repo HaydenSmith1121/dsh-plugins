@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "idoall/dsh-quick-replies",
+  "slug": "idoall__dsh-quick-replies",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-quick-replies",
+  "title": "dsh-quick-replies",
+  "summary": "在 DSH 会话输入框里一键发送常用回复，还能随时管理这些快捷短语。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "quick-replies",
+    "快捷操作",
+    "会话管理",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-09-16T09:25:54Z",
+    "url": "https://github.com/idoall/dsh-quick-replies/releases/tag/v0.1.3"
+  },
+  "author": "idoall",
+  "repo": "https://github.com/idoall/dsh-quick-replies",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T09:25:17Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-quick-replies@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-quick-replies@latest",
+      "dsh plugin --profile web add dshmarket",
+      "dsh plugin --profile web add \"link:$(pwd)\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "hrhgit/dsh-test",
+  "slug": "hrhgit__dsh-test",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-test",
+  "title": "dsh-test",
+  "summary": "独立运行 Web 测试的 CLI 工具，每个测试拥有独立工作区和浏览器会话，自动生成测试证据。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "命令行工具",
+    "自动化",
+    "状态监控",
+    "工作区管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hrhgit",
+  "repo": "https://github.com/hrhgit/dsh-test",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T06:04:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hrhgit/dsh-test",
+    "commands": [
+      "dsh plugin --profile web add github:hrhgit/dsh-test"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

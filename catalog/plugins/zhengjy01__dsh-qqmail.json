@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "zhengjy01/dsh-qqmail",
+  "slug": "zhengjy01__dsh-qqmail",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-qqmail",
+  "title": "dsh-qqmail",
+  "summary": "让 AI 助手直接收发 QQ 邮箱，支持搜索、读取、发送邮件，还能接入 MCP 和命令行。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "email",
+    "imap",
+    "mcp",
+    "qqmail",
+    "smtp",
+    "工具集成",
+    "AI 助手",
+    "命令行工具",
+    "设置面板",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-16T07:39:32Z",
+    "url": "https://github.com/zhengjy01/dsh-qqmail/releases/tag/v0.1.0"
+  },
+  "author": "zhengjy01",
+  "repo": "https://github.com/zhengjy01/dsh-qqmail",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T07:38:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhengjy01/dsh-qqmail",
+    "commands": [
+      "dsh plugin --profile web add github:zhengjy01/dsh-qqmail",
+      "dsh plugin --profile web add @zhengjunyao/dsh-qqmail",
+      "dsh plugin --profile web add link:/path/to/dsh-qqmail"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

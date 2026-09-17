@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "czj-git/dsh-plugin-hub",
+  "slug": "czj-git__dsh-plugin-hub",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-hub",
+  "title": "dsh-plugin-hub",
+  "summary": "在 DeepSeek Harness 里快速搜索和筛选官方认证插件，支持在对话中直接让 Agent 帮你找，也能浏览市场排行榜。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "插件管理",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.4.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "czj-git",
+  "repo": "https://github.com/czj-git/dsh-plugin-hub",
+  "homepage": "https://dshpluginhub.dev/",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-03T09:25:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@czj-git/dsh-plugin-hub",
+    "commands": [
+      "dsh plugin --profile web add @czj-git/dsh-plugin-hub"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "xxxyz/DeepSeekHarness-MCP-Manager",
+  "slug": "xxxyz__deepseekharness-mcp-manager",
+  "tier": "community",
+  "package": null,
+  "name": "DeepSeekHarness-MCP-Manager",
+  "title": "DeepSeekHarness-MCP-Manager",
+  "summary": "一站式管理所有MCP服务，界面化配置、启停重启和安装卸载全搞定，连接状态一眼看清。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh-mcp-manager",
+    "dsh-plugin",
+    "dsh-plugins",
+    "插件管理",
+    "效率提升",
+    "零配置",
+    "设置面板"
+  ],
+  "version": "2.2.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.2.7",
+    "publishedAt": "2026-09-10T06:59:01Z",
+    "url": "https://github.com/xxxyz/DeepSeekHarness-MCP-Manager/releases/tag/v2.2.7"
+  },
+  "author": "xxxyz",
+  "repo": "https://github.com/xxxyz/DeepSeekHarness-MCP-Manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 17,
+  "forks": 3,
+  "pushedAt": "2026-09-10T06:59:01Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@xxxyz/dsh-mcp-manager@latest",
+    "commands": [
+      "dsh plugin --profile web add @xxxyz/dsh-mcp-manager@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

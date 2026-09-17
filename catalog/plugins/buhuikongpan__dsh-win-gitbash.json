@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "buhuikongpan/dsh-win-gitbash",
+  "slug": "buhuikongpan__dsh-win-gitbash",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-win-gitbash",
+  "title": "dsh-win-gitbash",
+  "summary": "在 Windows 上为 DSH 提供 Git Bash 工具支持，替代 PowerShell 和仅限 WSL 的 Bash，方便直接跑命令。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.2.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.3",
+    "publishedAt": "2026-08-27T03:31:19Z",
+    "url": "https://github.com/buhuikongpan/dsh-win-gitbash/releases/tag/v0.2.3"
+  },
+  "author": "buhuikongpan",
+  "repo": "https://github.com/buhuikongpan/dsh-win-gitbash",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 11,
+  "forks": 2,
+  "pushedAt": "2026-08-27T03:30:52Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-tool-gitbash",
+    "commands": [
+      "dsh plugin add dsh-tool-gitbash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

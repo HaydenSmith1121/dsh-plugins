@@ -233,30 +233,67 @@ const allowBuildsSnapshot = ab.text;
 console.log('  ' + dim('[4/5] 安装插件…'));
 
 const runtime = compat.runtimes.find((r) => r.dshVersion === report.dsh.version);
-const allPlugins = runtime?.plugins ?? [];
-if (!allPlugins.length) {
-  die(`没有找到适配 dsh ${report.dsh.version} 的插件集。请查看 CONTRIBUTING.md 了解如何补充适配。`, 3);
-}
 
 /**
- * 默认装「全套插件」，加 --bootstrap-only 时只装引导插件（= 市场本身）。
+ * 引导路径**只装一个插件**：市场自己。
  *
- * 市场自己必须先被装进来（鸡生蛋），所以引导路径永远保留；只想用面板逐个点装的
- * 用户可以用 --bootstrap-only 跳过批量安装 —— 批量装是全有或全无，中间某一个
- * 装失败（pnpm 非 0），后面的就都不会进 bundles，而失败点往往与用户真正想要的
- * 那个插件无关；市场在装每个插件前会跑一遍兼容性闸门并支持失败回滚。
+ * ★ 自 0.4.0 起插件市场与插件本体是分离的：
+ *   · 本仓库（dsh-plugins）只托管**市场插件自己**的那一个 tarball；
+ *   · 其余自研插件在 HaydenSmith1121/dsh-plugin-collection 里；
+ *   · 第三方插件不再随任何仓库分发，市场按各自的上游安装方式去装。
+ *
+ * 所以「一键装全套」这件事本身没有了 —— 装插件是市场面板的职责（它会在装每个
+ * 插件前跑兼容闸门、失败自动回滚）。引导脚本只负责把市场这个入口装上。
+ *
+ * 市场自己的版本与 tarball 从目录里读（catalog/index.json 的 verified 层），
+ * 不再从 compatibility.json 的 plugins 数组里找 —— 那个数组已经不存在了。
  */
 const BOOTSTRAP_PACKAGE = 'dsh-plugins-market';
-const plugins = BOOTSTRAP_ONLY ? allPlugins.filter((p) => p.package === BOOTSTRAP_PACKAGE) : allPlugins;
-if (!plugins.length) {
-  die(`兼容矩阵里找不到引导插件 ${BOOTSTRAP_PACKAGE}，无法引导。请检查 compatibility.json。`, 3);
+
+function resolveBootstrap() {
+  const indexPath = path.join(REPO_ROOT, 'catalog', 'index.json');
+  if (!fs.existsSync(indexPath)) return null;
+  let index;
+  try {
+    index = JSON.parse(fs.readFileSync(indexPath, 'utf8'));
+  } catch {
+    return null;
+  }
+  const entry = (index.plugins ?? []).find(
+    (p) => p.tier === 'verified' && (p.package === BOOTSTRAP_PACKAGE || p.id === BOOTSTRAP_PACKAGE),
+  );
+  if (!entry) return null;
+  const configPath = path.join(REPO_ROOT, 'catalog', 'plugins', `${entry.slug}.json`);
+  let install = null;
+  if (fs.existsSync(configPath)) {
+    try {
+      install = JSON.parse(fs.readFileSync(configPath, 'utf8'))?.install ?? null;
+    } catch { /* 配置坏了就走下面的兜底 */ }
+  }
+  return {
+    package: BOOTSTRAP_PACKAGE,
+    origin: 'self',
+    version: entry.version ?? null,
+    tarball: install?.tarball ?? null,
+    sha256Note: install?.sha256 ? null : 'sha256 见同目录的 .tgz.sha256 边车文件',
+  };
 }
 
-const rest = allPlugins.filter((p) => !plugins.includes(p));
+const bootstrap = resolveBootstrap();
+if (!bootstrap || !bootstrap.tarball) {
+  die(`目录里找不到引导插件 ${BOOTSTRAP_PACKAGE}（catalog/index.json 的 verified 层，或它的配置文件）。`
+    + '请检查仓库是否完整，或先运行 node scripts/sync-catalog.mjs。', 3);
+}
+if (runtime?.dshVersion && bootstrap.version) {
+  console.log('  ' + dim(`  引导插件 ${BOOTSTRAP_PACKAGE}@${bootstrap.version}`));
+}
+
+const plugins = [bootstrap];
 if (BOOTSTRAP_ONLY) {
-  console.log('  ' + dim(`  --bootstrap-only：本次只安装引导插件 ${BOOTSTRAP_PACKAGE}（其余 ${rest.length} 个请在 GUI 里点装）`));
+  console.log('  ' + dim(`  --bootstrap-only：只装引导插件 ${BOOTSTRAP_PACKAGE}`));
 } else {
-  console.log('  ' + dim(`  本次安装 ${plugins.length} 个插件（加 --bootstrap-only 可只装市场，其余在 GUI 里点装）`));
+  console.log('  ' + dim('  只装引导插件（市场面板）—— 其余插件请在装好之后的「插件市场」里点装：'));
+  console.log('  ' + dim('  装每个插件前会跑一遍兼容性闸门，失败自动回滚，比批量装安全得多。'));
 }
 
 let failed = [];
@@ -309,15 +346,13 @@ if (failed.length) {
   console.log('    ' + dim('即使 node_modules 里已经能看到文件，也当作「没装完」。') + '\n');
 } else {
   console.log('  ' + green('✓ ') + `${plugins.length} 个插件安装成功\n`);
-  if (rest.length) {
-    console.log('  ' + bold('接下来：还可以在 GUI 里按需补装其余插件。'));
-    console.log('    ' + dim('1. 重启 dsh web（新增的 bundle 是在启动时合成的）'));
-    console.log('    ' + dim('2. 左侧导航栏点「插件市场」'));
-    console.log('    ' + dim(`3. 在「已验证」页里点装需要的插件（还有 ${rest.length} 个可选）`));
-    console.log('    ' + dim('市场会在每次安装前跑兼容性闸门，失败会自动回滚。') + '\n');
-  } else {
-    console.log('  ' + dim('重启 dsh web 后，左侧导航栏即可看到「插件市场」。') + '\n');
-  }
+  // ★ 自 0.4.0 起引导脚本**只装市场插件**，「其余插件」不再是一份本地清单里
+  //   还没装的那些（那份清单已经不存在了）—— 它们在市场面板里，按需点装。
+  console.log('  ' + bold('接下来：在「插件市场」里按需点装其余插件。'));
+  console.log('    ' + dim('1. 重启 dsh web（新增的 bundle 是在启动时合成的）'));
+  console.log('    ' + dim('2. 左侧导航栏点「插件市场」'));
+  console.log('    ' + dim('3. 浏览 / 搜索 / 点装 —— 目录里有 7000+ 条，含本仓库收录的已验证插件'));
+  console.log('    ' + dim('市场会在每次安装前跑兼容性闸门，失败会自动回滚。') + '\n');
 }
 
 // ---------------------------------------------------------------- 5. 校验

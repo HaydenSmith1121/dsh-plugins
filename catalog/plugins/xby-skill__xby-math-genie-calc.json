@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-math-genie-calc",
+  "slug": "xby-skill__xby-math-genie-calc",
+  "tier": "community",
+  "package": null,
+  "name": "xby-math-genie-calc",
+  "title": "xby-math-genie-calc",
+  "summary": "在聊天里直接算数、做科学计算，支持三角函数等复杂运算，适合学生和科研人员快速使用。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "零配置",
+    "插件管理",
+    "会话管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-math-genie-calc",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:16:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-math-genie-calc",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-math-genie-calc",
+      "dsh plugin --profile web add /absolute/path/to/xby-math-genie-calc"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

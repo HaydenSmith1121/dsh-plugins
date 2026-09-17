@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-cost-meter",
+  "slug": "goodandready__dsh-cost-meter",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cost-meter",
+  "title": "dsh-cost-meter",
+  "summary": "在会话顶部实时显示token消耗和费用，自动切换峰谷电价并倒计时下次调价，帮你掌控成本。",
+  "tags": [
+    "cost",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "tariff",
+    "token-usage",
+    "状态监控",
+    "资源优化",
+    "会话管理",
+    "可视化"
+  ],
+  "version": "0.8.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.3",
+    "publishedAt": "2026-09-17T12:34:15Z",
+    "url": "https://github.com/GooDAnDReaDY/dsh-cost-meter/releases/tag/v0.8.3"
+  },
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-cost-meter",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T12:42:24Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooDAnDReaDY/dsh-cost-meter",
+    "commands": [
+      "dsh plugin --profile web add github:GooDAnDReaDY/dsh-cost-meter"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zhengjy01/dsh-task-dispatcher",
+  "slug": "zhengjy01__dsh-task-dispatcher",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-task-dispatcher",
+  "title": "dsh-task-dispatcher",
+  "summary": "每天早晨自动从滴答清单拉取今日到期任务，定时执行并同步到 flomo 或 macOS 通知，帮你高效管理每日待办。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "ticktick",
+    "自动化",
+    "效率提升",
+    "AI 助手",
+    "桌宠"
+  ],
+  "version": "0.4.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhengjy01",
+  "repo": "https://github.com/zhengjy01/dsh-task-dispatcher",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T06:37:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-task-dispatcher",
+    "commands": [
+      "dsh plugin --profile web add dsh-task-dispatcher",
+      "dsh plugin --profile web add link:/path/to/dsh-task-dispatcher"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "MoonlitDropOfBlood/dsh-whale-pet",
+  "slug": "moonlitdropofblood__dsh-whale-pet",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-whale-pet",
+  "title": "dsh-whale-pet",
+  "summary": "把大白鲸娘桌宠挂到 WhaleHarbor 里，实时显示 DSH 工作状态，透明置顶不挡操作，摸鱼也能盯任务。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "状态监控",
+    "可视化",
+    "娱乐互动",
+    "前端增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "MoonlitDropOfBlood",
+  "repo": "https://github.com/MoonlitDropOfBlood/dsh-whale-pet",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-06T15:53:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@duke-dsh-plugins/dsh-whaleharbor-pet",
+    "commands": [
+      "dsh plugin --profile web add @duke-dsh-plugins/dsh-whaleharbor-pet"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "yunhuantian/dsh-plugin-hub",
+  "slug": "yunhuantian__dsh-plugin-hub",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-hub",
+  "title": "dsh-plugin-hub",
+  "summary": "在 DSH 网页界面里逛插件商店，搜索并一键安装 GitHub 上的插件，还自带 21 个开箱即用的内置插件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin-hub",
+    "插件管理",
+    "安全审计",
+    "可视化",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yunhuantian",
+  "repo": "https://github.com/yunhuantian/dsh-plugin-hub",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 2,
+  "pushedAt": "2026-09-11T08:28:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-hub",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-hub",
+      "npm install",
+      "dsh plugin --profile web add <本包目录>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

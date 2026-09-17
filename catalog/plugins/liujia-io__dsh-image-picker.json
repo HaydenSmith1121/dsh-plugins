@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "liujia-io/dsh-image-picker",
+  "slug": "liujia-io__dsh-image-picker",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-image-picker",
+  "title": "dsh-image-picker",
+  "summary": "在 DeepSeek Harness 聊天输入框加个回形针按钮，点一下就能从电脑选图或文档，自动走官方附件流程上传。",
+  "tags": [
+    "composer",
+    "deepseek-harness",
+    "dsh-plugin",
+    "image",
+    "会话管理",
+    "可视化",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "1.2.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "liujia-io",
+  "repo": "https://github.com/liujia-io/dsh-image-picker",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T09:28:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:liujia-io/dsh-image-picker",
+    "commands": [
+      "dsh plugin --profile web add github:liujia-io/dsh-image-picker"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

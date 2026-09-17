@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "falling-ts/dsh-web-ding",
+  "slug": "falling-ts__dsh-web-ding",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-ding",
+  "title": "dsh-web-ding",
+  "summary": "智能体跑完任务时，浏览器里叮一声提醒你，服务器部署也能用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "前端增强",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "falling-ts",
+  "repo": "https://github.com/falling-ts/dsh-web-ding",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T21:15:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:falling-ts/dsh-web-ding",
+    "commands": [
+      "dsh plugin --profile web add github:falling-ts/dsh-web-ding"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

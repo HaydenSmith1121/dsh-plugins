@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "dhicoc/dsh-theme-mineradio",
+  "slug": "dhicoc__dsh-theme-mineradio",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-theme-mineradio",
+  "title": "dsh-theme-mineradio",
+  "summary": "一键换上电影感玻璃拟态皮肤，搭配流体背景与自定义旋钮，轻松提升DeepSeek Harness的界面颜值。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "liquid-glass",
+    "主题",
+    "零配置",
+    "趣味交互"
+  ],
+  "version": "2.3.8",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.3.8",
+    "publishedAt": "2026-09-05T05:15:49Z",
+    "url": "https://github.com/dhicoc/dsh-theme-mineradio/releases/tag/v2.3.8"
+  },
+  "author": "dhicoc",
+  "repo": "https://github.com/dhicoc/dsh-theme-mineradio",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 11,
+  "forks": 1,
+  "pushedAt": "2026-09-13T04:16:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dhicoc/dsh-theme-mineradio",
+    "commands": [
+      "dsh plugin --profile web add github:dhicoc/dsh-theme-mineradio"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

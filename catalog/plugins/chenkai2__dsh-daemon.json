@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "chenkai2/dsh-daemon",
+  "slug": "chenkai2__dsh-daemon",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-daemon",
+  "title": "dsh-daemon",
+  "summary": "将 dsh web 注册为开机自启、崩溃自动恢复的后台服务，省心省力。",
+  "tags": [
+    "cordis",
+    "daemon",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "watchdog",
+    "零配置",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.1.21",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chenkai2",
+  "repo": "https://github.com/chenkai2/dsh-daemon",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-29T15:07:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@chenkai114/dsh-daemon",
+    "commands": [
+      "dsh plugin --profile web add @chenkai114/dsh-daemon"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

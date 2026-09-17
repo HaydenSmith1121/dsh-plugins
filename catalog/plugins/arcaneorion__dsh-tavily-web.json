@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "ArcaneOrion/dsh-tavily-web",
+  "slug": "arcaneorion__dsh-tavily-web",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tavily-web",
+  "title": "dsh-tavily-web",
+  "summary": "给 DSH 接上 Tavily 搜索和网页抓取，多个 API Key 轮着用，查资料更省心。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "语义检索",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ArcaneOrion",
+  "repo": "https://github.com/ArcaneOrion/dsh-tavily-web",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T02:50:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@arcaneorion/dsh-tavily-web",
+    "commands": [
+      "dsh plugin --profile web add @arcaneorion/dsh-tavily-web"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

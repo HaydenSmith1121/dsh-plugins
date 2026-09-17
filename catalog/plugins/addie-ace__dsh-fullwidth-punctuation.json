@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "addie-ace/dsh-fullwidth-punctuation",
+  "slug": "addie-ace__dsh-fullwidth-punctuation",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-fullwidth-punctuation",
+  "title": "dsh-fullwidth-punctuation",
+  "summary": "让 AI 回答自动输出中文全角标点，复制也是全角，适合公文汇报等正式写作场景。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-03T11:56:29Z",
+    "url": "https://github.com/addie-ace/dsh-fullwidth-punctuation/releases/tag/v0.1.0"
+  },
+  "author": "addie-ace",
+  "repo": "https://github.com/addie-ace/dsh-fullwidth-punctuation",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T11:56:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:addie-ace/dsh-fullwidth-punctuation",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-fullwidth-punctuation-0.1.0.tgz",
+      "dsh plugin --profile web add ./dsh-fullwidth-punctuation",
+      "dsh plugin --profile web remove dsh-fullwidth-punctuation"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

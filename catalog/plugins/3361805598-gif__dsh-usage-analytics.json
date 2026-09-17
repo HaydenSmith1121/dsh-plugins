@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "3361805598-gif/dsh-usage-analytics",
+  "slug": "3361805598-gif__dsh-usage-analytics",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage-analytics",
+  "title": "dsh-usage-analytics",
+  "summary": "在本地查看 DeepSeek Harness 的使用数据，用热力图和图表直观展示 Token 消耗、模型分布与技能调用情况。",
+  "tags": [
+    "analytics",
+    "deepseek-harness",
+    "dsh-plugin",
+    "local-first",
+    "可视化",
+    "状态监控",
+    "资源优化",
+    "安全审计"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-06T17:57:14Z",
+    "url": "https://github.com/3361805598-gif/dsh-usage-analytics/releases/tag/v0.2.1"
+  },
+  "author": "3361805598-gif",
+  "repo": "https://github.com/3361805598-gif/dsh-usage-analytics",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T17:57:06Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:3361805598-gif/dsh-usage-analytics",
+    "commands": [
+      "dsh plugin --profile web add file:vendor/dsh-usage-analytics-0.2.1.tgz",
+      "npm install",
+      "dsh plugin --profile web add file:vendor/dsh-usage-analytics-<version>.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

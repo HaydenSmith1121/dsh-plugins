@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "retmon2333/dsh-background",
+  "slug": "retmon2333__dsh-background",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-background",
+  "title": "dsh-background",
+  "summary": "给 DeepSeek Harness 换背景壁纸，支持单图或文件夹轮播，还能调透明度、模糊和樱花雪花特效，让界面更有个性。",
+  "tags": [
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "界面美化",
+    "前端增强",
+    "自动化",
+    "设置面板"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-04T06:50:49Z",
+    "url": "https://github.com/retmon2333/dsh-background/releases/tag/v0.1.0"
+  },
+  "author": "retmon2333",
+  "repo": "https://github.com/retmon2333/dsh-background",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T18:39:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:retmon2333/dsh-background",
+    "commands": [
+      "dsh plugin --profile web add github:retmon2333/dsh-background"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

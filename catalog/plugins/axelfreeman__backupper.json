@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "axelfreeman/backupper",
+  "slug": "axelfreeman__backupper",
+  "tier": "community",
+  "package": null,
+  "name": "backupper",
+  "title": "backupper",
+  "summary": "在 Windows 上就能给远程 Linux 服务器做加密去重备份，服务器端不用装任何软件。",
+  "tags": [
+    "ai-agent",
+    "backup",
+    "deepseek-harness",
+    "devops",
+    "dsh-plugin",
+    "encryption",
+    "restic",
+    "self-hosted",
+    "server-backup",
+    "skill",
+    "skills",
+    "零配置",
+    "安全审计",
+    "自动化",
+    "AI 助手"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-09T22:34:57Z",
+    "url": "https://github.com/axelfreeman/backupper/releases/tag/v0.3.0"
+  },
+  "author": "axelfreeman",
+  "repo": "https://github.com/axelfreeman/backupper",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T11:47:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:axelfreeman/backupper",
+    "commands": [
+      "npx skills add axelfreeman/backupper"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

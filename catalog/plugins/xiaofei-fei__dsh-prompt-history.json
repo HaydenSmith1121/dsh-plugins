@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Xiaofei-fei/dsh-prompt-history",
+  "slug": "xiaofei-fei__dsh-prompt-history",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-history",
+  "title": "dsh-prompt-history",
+  "summary": "在DSH网页输入框里像用终端一样，按上下箭头快速找回历史消息，零配置即装即用。",
+  "tags": [
+    "dsh-plugin",
+    "语义检索",
+    "命令行工具",
+    "效率提升",
+    "零配置",
+    "会话管理"
+  ],
+  "version": "1.2.15",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Xiaofei-fei",
+  "repo": "https://github.com/Xiaofei-fei/dsh-prompt-history",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-15T05:54:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-prompt-history",
+    "commands": [
+      "dsh plugin --profile web add dsh-prompt-history"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

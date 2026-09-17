@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "ivanon/dsh-dev-crew",
+  "slug": "ivanon__dsh-dev-crew",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-dev-crew",
+  "title": "dsh-dev-crew",
+  "summary": "把开发任务按职责分给不同模型的子代理，强模型管需求评审，低成本模型管批量实现，一个会话搞定。",
+  "tags": [
+    "agent",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "subagent",
+    "多Agent协作",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.1.14",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ivanon",
+  "repo": "https://github.com/ivanon/dsh-dev-crew",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-21T06:18:09Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ivanon/dsh-dev-crew",
+    "commands": [
+      "dsh plugin --profile <你的 profile> add <本仓库绝对路径>",
+      "dsh plugin --profile <你的 profile> add dsh-dev-crew"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/computer-use",
+  "slug": "jonah791__computer-use",
+  "tier": "community",
+  "package": null,
+  "name": "computer-use",
+  "title": "computer-use",
+  "summary": "让 AI 自己看屏幕、动鼠标键盘，独立完成开发、验证、迭代闭环",
+  "tags": [
+    "automation",
+    "computer-use",
+    "deepseek-harness",
+    "dsh-plugin",
+    "自动化",
+    "AI 助手",
+    "视觉理解",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/computer-use",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T06:14:55Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/computer-use",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/computer-use"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

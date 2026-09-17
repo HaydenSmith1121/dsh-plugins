@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "stelmakhdigital/dsh-web-automation",
+  "slug": "stelmakhdigital__dsh-web-automation",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-automation",
+  "title": "dsh-web-automation",
+  "summary": "给本地模型装上无密钥的联网搜索与网页抓取工具，支持多引擎和平台搜索，数据本地缓存，开箱即用。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "webautomation",
+    "websearch",
+    "自动化",
+    "AI 助手",
+    "插件管理",
+    "零配置"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "stelmakhdigital",
+  "repo": "https://github.com/stelmakhdigital/dsh-web-automation",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T16:51:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:stelmakhdigital/dsh-web-automation",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/stelmakhdigital/dsh-web-automation.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

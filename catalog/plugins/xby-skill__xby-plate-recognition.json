@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-plate-recognition",
+  "slug": "xby-skill__xby-plate-recognition",
+  "tier": "community",
+  "package": null,
+  "name": "xby-plate-recognition",
+  "title": "xby-plate-recognition",
+  "summary": "识别车牌号、车牌颜色、单双层车牌及位置框，只需输入图片链接即可快速获取结果。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "效率提升",
+    "零配置",
+    "模型配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-plate-recognition",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:27:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-plate-recognition",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-plate-recognition",
+      "dsh plugin --profile web add /absolute/path/to/xby-plate-recognition"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

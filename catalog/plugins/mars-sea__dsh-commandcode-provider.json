@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "Mars-Sea/dsh-commandcode-provider",
+  "slug": "mars-sea__dsh-commandcode-provider",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-commandcode-provider",
+  "title": "dsh-commandcode-provider",
+  "summary": "为 DeepSeek Harness 接入 Command Code 模型，支持实时模型列表、推理强度调节和模型卡片展示。",
+  "tags": [
+    "command-code",
+    "commandcode",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm",
+    "llm-provider",
+    "plugin",
+    "provider",
+    "typescript",
+    "LLM 提供商",
+    "模型配置",
+    "插件管理"
+  ],
+  "version": "0.11.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.11.4",
+    "publishedAt": "2026-09-17T05:45:59Z",
+    "url": "https://github.com/Mars-Sea/dsh-commandcode-provider/releases/tag/v0.11.4"
+  },
+  "author": "Mars-Sea",
+  "repo": "https://github.com/Mars-Sea/dsh-commandcode-provider",
+  "homepage": "https://www.npmjs.com/package/@mars-sea/dsh-commandcode-provider",
+  "license": "MIT",
+  "stars": 273,
+  "forks": 19,
+  "pushedAt": "2026-09-16T06:19:24Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@mars-sea/dsh-commandcode-provider@latest",
+    "commands": [
+      "dsh plugin --profile web add @mars-sea/dsh-commandcode-provider@latest",
+      "dsh plugin --profile web add @mars-sea/dsh-commandcode-provider@0.9.1",
+      "dsh plugin --profile web add @mars-sea/dsh-commandcode-provider@0.11.1"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

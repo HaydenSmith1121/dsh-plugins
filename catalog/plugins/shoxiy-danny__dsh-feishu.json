@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "shoxiy-danny/dsh-feishu",
+  "slug": "shoxiy-danny__dsh-feishu",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-feishu",
+  "title": "dsh-feishu",
+  "summary": "把 Harness 直接搬进飞书，用目标卡片和实时进度管理多机器人协作，不用再遥控网页。",
+  "tags": [
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "feishu",
+    "lark",
+    "多Agent协作",
+    "状态监控",
+    "工具集成",
+    "工作流增强",
+    "AI 助手"
+  ],
+  "version": "0.1.9",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "shoxiy-danny",
+  "repo": "https://github.com/shoxiy-danny/dsh-feishu",
+  "homepage": "https://github.com/shoxiy-danny/dsh-feishu",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T08:08:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shoxiy-danny/dsh-feishu",
+    "commands": [
+      "npm i -g @deepseek-ai/dsh",
+      "dsh plugin --profile feishu add github:shoxiy-danny/dsh-feishu"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

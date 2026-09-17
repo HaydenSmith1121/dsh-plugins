@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "1014029855/dsh-context-lens",
+  "slug": "1014029855__dsh-context-lens",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-context-lens",
+  "title": "dsh-context-lens",
+  "summary": "把每次模型请求的上下文完整记录下来，在会话里加个页签，方便查看、搜索和对比。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh-plugin",
+    "dsh-plugins",
+    "prompt-debugging",
+    "状态监控",
+    "可视化",
+    "数据分析",
+    "模型轨迹",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-23T06:57:47Z",
+    "url": "https://github.com/1014029855/dsh-context-lens/releases/tag/v0.1.0"
+  },
+  "author": "1014029855",
+  "repo": "https://github.com/1014029855/dsh-context-lens",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-23T06:57:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:OWNER/dsh-context-lens",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-context-lens-0.1.0.tgz",
+      "dsh plugin --profile web add github:OWNER/dsh-context-lens"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

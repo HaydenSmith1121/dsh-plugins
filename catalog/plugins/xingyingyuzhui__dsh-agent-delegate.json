@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "xingyingyuzhui/dsh-agent-delegate",
+  "slug": "xingyingyuzhui__dsh-agent-delegate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-delegate",
+  "title": "dsh-agent-delegate",
+  "summary": "给子代理委派加上深度和角色管控，超限直接拒绝，避免任务失控。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "多Agent协作",
+    "工作流增强",
+    "安全审计",
+    "状态监控"
+  ],
+  "version": "0.2.10",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xingyingyuzhui",
+  "repo": "https://github.com/xingyingyuzhui/dsh-agent-delegate",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T07:11:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xingyingyuzhui/dsh-agent-delegate",
+    "commands": [
+      "dsh plugin --profile web add github:xingyingyuzhui/dsh-agent-delegate",
+      "dsh plugin --profile web add link:/abs/path/to/dsh-agent-delegate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

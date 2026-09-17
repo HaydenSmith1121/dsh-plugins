@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "coderHeJiyu/dsh-setting-manager",
+  "slug": "coderhejiyu__dsh-setting-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-setting-manager",
+  "title": "dsh-setting-manager",
+  "summary": "右键设置页导航就能勾选显示或隐藏各个设置分区，纯视觉隐藏不影响功能，状态跨浏览器共享。",
+  "tags": [
+    "dsh-plugin",
+    "设置面板",
+    "主题",
+    "快捷操作",
+    "插件管理"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "coderHeJiyu",
+  "repo": "https://github.com/coderHeJiyu/dsh-setting-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T07:00:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:coderHeJiyu/dsh-setting-manager",
+    "commands": [
+      "dsh plugin --profile web add github:coderHeJiyu/dsh-setting-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

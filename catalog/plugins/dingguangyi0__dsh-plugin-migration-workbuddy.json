@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "dingguangyi0/dsh-plugin-migration-workbuddy",
+  "slug": "dingguangyi0__dsh-plugin-migration-workbuddy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-migration-workbuddy",
+  "title": "dsh-plugin-migration-workbuddy",
+  "summary": "把 WorkBuddy 的会话、记忆、MCP 配置和自动化任务先预览再安全搬进 DSH。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "migration",
+    "workbuddy",
+    "设置面板",
+    "会话管理",
+    "自动化",
+    "工具集成",
+    "安全审计"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-12T04:08:20Z",
+    "url": "https://github.com/dingguangyi0/dsh-plugin-migration-workbuddy/releases/tag/v0.1.0"
+  },
+  "author": "dingguangyi0",
+  "repo": "https://github.com/dingguangyi0/dsh-plugin-migration-workbuddy",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T04:22:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dingguangyi0/dsh-plugin-migration-workbuddy",
+    "commands": [
+      "dsh plugin --profile <name> add \\",
+      "dsh plugin --profile <name> add github:dingguangyi0/dsh-plugin-migration-workbuddy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

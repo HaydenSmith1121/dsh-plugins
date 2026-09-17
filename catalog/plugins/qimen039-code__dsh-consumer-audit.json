@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "qimen039-code/dsh-consumer-audit",
+  "slug": "qimen039-code__dsh-consumer-audit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-consumer-audit",
+  "title": "dsh-consumer-audit",
+  "summary": "帮你揪出装了却没人用的插件能力，还能给完成声明附上证据。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "状态监控",
+    "内容创作",
+    "安全审计"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-14T01:42:17Z",
+    "url": "https://github.com/qimen039-code/dsh-consumer-audit/releases/tag/v0.1.0"
+  },
+  "author": "qimen039-code",
+  "repo": "https://github.com/qimen039-code/dsh-consumer-audit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T06:33:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qimen039-code/dsh-consumer-audit",
+    "commands": [
+      "dsh plugin --profile <profile> add github:qimen039-code/dsh-consumer-audit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

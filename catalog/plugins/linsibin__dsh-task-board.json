@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "linsibin/dsh-task-board",
+  "slug": "linsibin__dsh-task-board",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-task-board",
+  "title": "dsh-task-board",
+  "summary": "在 DeepSeek Harness 桌面版中新增「任务」看板，用三栏看板直观管理并真正执行每个任务。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "工作流增强",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "linsibin",
+  "repo": "https://github.com/linsibin/dsh-task-board",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T09:23:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:linsibin/dsh-task-board",
+    "commands": [
+      "dsh plugin --profile desktop add <absolute/path/to/dsh-task-board>",
+      "npm install @linsibin/dsh-task-board"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

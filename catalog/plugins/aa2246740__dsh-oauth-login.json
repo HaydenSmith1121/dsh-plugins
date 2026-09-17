@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "aa2246740/dsh-oauth-login",
+  "slug": "aa2246740__dsh-oauth-login",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-oauth-login",
+  "title": "dsh-oauth-login",
+  "summary": "把 ChatGPT、Claude、Grok 等主流服务的 OAuth 登录接到 DeepSeek Harness，复用 Pi Agent 适配器，不碰官方 CLI 配置。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "零配置",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-15T10:00:41Z",
+    "url": "https://github.com/aa2246740/dsh-oauth-login/releases/tag/v0.1.0"
+  },
+  "author": "aa2246740",
+  "repo": "https://github.com/aa2246740/dsh-oauth-login",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T09:20:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aa2246740/dsh-oauth-login",
+    "commands": [
+      "git clone https://github.com/aa2246740/dsh-oauth-login.git",
+      "dsh plugin --profile web add file:./dsh-oauth-login",
+      "dsh plugin --profile web exec dsh-oauth-login login openai-codex"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

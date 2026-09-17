@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "weibaohui/dsh-fde-tools",
+  "slug": "weibaohui__dsh-fde-tools",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-fde-tools",
+  "title": "dsh-fde-tools",
+  "summary": "装一个插件带一批插件，Git 服务器、WebDAV 挂载盘、知识库、定时任务、自动续跑、界面微调、自动复盘全都有。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "工具集成",
+    "自动化",
+    "文件管理",
+    "效率提升"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "weibaohui",
+  "repo": "https://github.com/weibaohui/dsh-fde-tools",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T11:08:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@weibaohui/dsh-fde-tools",
+    "commands": [
+      "dsh plugin --profile web add @weibaohui/dsh-fde-tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

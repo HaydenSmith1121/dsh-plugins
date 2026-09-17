@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "fatatalia/dsh-webhook",
+  "slug": "fatatalia__dsh-webhook",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-webhook",
+  "title": "dsh-webhook",
+  "summary": "把外部 HTTP 请求转成消息投递到固定会话，让 agent 自动处理，随 dsh web 启停，即插即用。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "自动化",
+    "AI 助手",
+    "会话管理",
+    "安全审计"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fatatalia",
+  "repo": "https://github.com/fatatalia/dsh-webhook",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T08:49:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fatatalia/dsh-webhook",
+    "commands": [
+      "dsh plugin --profile web add github:fatatalia/dsh-webhook"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

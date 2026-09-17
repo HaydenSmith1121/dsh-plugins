@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "kuma-loong/dsh-llm-sampling",
+  "slug": "kuma-loong__dsh-llm-sampling",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-sampling",
+  "title": "dsh-llm-sampling",
+  "summary": "为 DeepSeek Harness 精确控制模型采样策略，按路由灵活配置，提升生成质量与成本效率。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "资源优化",
+    "安全审计"
+  ],
+  "version": "0.1.0-rc.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kuma-loong",
+  "repo": "https://github.com/kuma-loong/dsh-llm-sampling",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-21T05:27:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kuma-loong/dsh-llm-sampling",
+    "commands": [
+      "dsh plugin --profile web add github:kuma-loong/dsh-llm-sampling"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

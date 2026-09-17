@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "YannZhou/dsh-about",
+  "slug": "yannzhou__dsh-about",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-about",
+  "title": "dsh-about",
+  "summary": "在设置中心「关于」页查看版本信息，一键检查并更新到最新版，自动重启生效。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "效率提升",
+    "零配置",
+    "命令行工具"
+  ],
+  "version": "1.6.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.6.2",
+    "publishedAt": "2026-09-08T09:31:05Z",
+    "url": "https://github.com/YannZhou/dsh-about/releases/tag/v1.6.2"
+  },
+  "author": "YannZhou",
+  "repo": "https://github.com/YannZhou/dsh-about",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-08T09:32:13Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:YannZhou/dsh-about",
+    "commands": [
+      "npm install -g --dangerously-allow-all-scripts @deepseek-ai/dsh@latest",
+      "npm install -g --dangerously-allow-all-scripts --force @deepseek-ai/dsh@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

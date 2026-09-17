@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "fu827707013/dsh-concurrency-guard",
+  "slug": "fu827707013__dsh-concurrency-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-concurrency-guard",
+  "title": "dsh-concurrency-guard",
+  "summary": "实时监控 DeepSeek Harness 的并发请求，并用门闩机制控制流量，防止过载。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "状态监控",
+    "效率提升",
+    "工作流增强",
+    "插件管理"
+  ],
+  "version": "1.5.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.5.6",
+    "publishedAt": "2026-09-17T08:05:38Z",
+    "url": "https://github.com/fu827707013/dsh-concurrency-guard/releases/tag/v1.5.6"
+  },
+  "author": "fu827707013",
+  "repo": "https://github.com/fu827707013/dsh-concurrency-guard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-01T16:53:54Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fu827707013/dsh-concurrency-guard",
+    "commands": [
+      "dsh plugin --profile web add github:fu827707013/dsh-concurrency-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

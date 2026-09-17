@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "yangfei222666-9/memory-auditor",
+  "slug": "yangfei222666-9__memory-auditor",
+  "tier": "community",
+  "package": null,
+  "name": "memory-auditor",
+  "title": "memory-auditor",
+  "summary": "给AI记忆做体检，扫出没证据的完成声明、越界宣称和重复条款，输出候选供人工复核。",
+  "tags": [
+    "audit",
+    "deepseek-harness",
+    "dsh-plugin",
+    "zero-dependencies",
+    "工作流增强",
+    "状态监控",
+    "自动化",
+    "AI 助手"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yangfei222666-9",
+  "repo": "https://github.com/yangfei222666-9/memory-auditor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T13:34:31Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yangfei222666-9/memory-auditor",
+    "commands": [
+      "dsh plugin --profile web add github:yangfei222666-9/memory-auditor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "FranklinZaneDurant/agent-discipline",
+  "slug": "franklinzanedurant__agent-discipline",
+  "tier": "community",
+  "package": null,
+  "name": "agent-discipline",
+  "title": "agent-discipline",
+  "summary": "给AI编码Agent立规矩的插件，用方法论提示和审计工具让代码提交更规范、可追溯。",
+  "tags": [
+    "agent-ai",
+    "ai-agent",
+    "claude-code",
+    "dsh-plugin",
+    "harness-engineering",
+    "工作流增强",
+    "代码检查",
+    "自动化",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "FranklinZaneDurant",
+  "repo": "https://github.com/FranklinZaneDurant/agent-discipline",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T08:29:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "agent-discipline",
+    "commands": [
+      "dsh plugin --profile web add agent-discipline"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

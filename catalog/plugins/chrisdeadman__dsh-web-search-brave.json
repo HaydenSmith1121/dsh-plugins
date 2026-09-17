@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "ChrisDeadman/dsh-web-search-brave",
+  "slug": "chrisdeadman__dsh-web-search-brave",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-search-brave",
+  "title": "dsh-web-search-brave",
+  "summary": "为 DeepSeek Harness 接入 Brave 搜索，让模型能实时联网查资料，提升回答的时效性和准确性。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ChrisDeadman",
+  "repo": "https://github.com/ChrisDeadman/dsh-web-search-brave",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T00:58:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@deads-inc/dsh-web-search-brave",
+    "commands": [
+      "dsh plugin --profile web add @deads-inc/dsh-web-search-brave",
+      "git clone https://github.com/ChrisDeadman/dsh-web-search-brave.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

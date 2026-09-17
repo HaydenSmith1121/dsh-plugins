@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "ysr666/dsh-vision-router",
+  "slug": "ysr666__dsh-vision-router",
+  "tier": "community",
+  "package": null,
+  "name": "ysr666/dsh-vision-router",
+  "title": "ysr666/dsh-vision-router",
+  "summary": "给纯文本AI装上眼睛：免密钥看图问答、抠图、截图、OCR、颜色识别等，粘贴图片就能用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "multimodal",
+    "vision",
+    "多模态",
+    "图像处理",
+    "零配置"
+  ],
+  "version": "2.1.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.1.7",
+    "publishedAt": "2026-09-14T08:58:02Z",
+    "url": "https://github.com/ysr666/dsh-vision-router/releases/tag/v2.1.7"
+  },
+  "author": "ysr666",
+  "repo": "https://github.com/ysr666/dsh-vision-router",
+  "homepage": "https://github.com/ysr666/dsh-vision-router",
+  "license": "MIT",
+  "stars": 1105,
+  "forks": 48,
+  "pushedAt": "2026-09-16T16:50:12Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ysr666/dsh-vision-router",
+    "commands": [
+      "dsh plugin --profile web add github:ysr666/dsh-vision-router"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

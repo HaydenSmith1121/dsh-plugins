@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "fonlan/dsh-apply-patch",
+  "slug": "fonlan__dsh-apply-patch",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-apply-patch",
+  "title": "dsh-apply-patch",
+  "summary": "给 DSH 补上 GPT 模型习惯用的 apply_patch 工具，让模型改代码不再报错。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "工具集成",
+    "文件管理",
+    "零配置"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fonlan",
+  "repo": "https://github.com/fonlan/dsh-apply-patch",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T08:59:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@fonlan/dsh-apply-patch",
+    "commands": [
+      "dsh plugin --profile web add @fonlan/dsh-apply-patch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

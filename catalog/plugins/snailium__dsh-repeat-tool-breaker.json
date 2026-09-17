@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "snailium/dsh-repeat-tool-breaker",
+  "slug": "snailium__dsh-repeat-tool-breaker",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-repeat-tool-breaker",
+  "title": "dsh-repeat-tool-breaker",
+  "summary": "在 DSH 里拦截同一智能体重复调用相同工具，第二次直接拒绝，防止死循环空转。",
+  "tags": [
+    "agent",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "guard",
+    "自动化",
+    "状态监控",
+    "多Agent协作",
+    "资源优化"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-11T15:41:26Z",
+    "url": "https://github.com/snailium/dsh-repeat-tool-breaker/releases/tag/v0.1.2"
+  },
+  "author": "snailium",
+  "repo": "https://github.com/snailium/dsh-repeat-tool-breaker",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T01:25:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:snailium/dsh-repeat-tool-breaker",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-repeat-tool-breaker"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "mario03690/dsh-devkit",
+  "slug": "mario03690__dsh-devkit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-devkit",
+  "title": "dsh-devkit",
+  "summary": "开发中台小工具集，支持JSON/YAML互转、Schema校验、文本对比、JWT解码、正则测试和SQL方言转换。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mcp",
+    "工作流增强",
+    "效率提升",
+    "命令行工具",
+    "模型配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "mario03690",
+  "repo": "https://github.com/mario03690/dsh-devkit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-22T03:54:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mario03690/dsh-devkit",
+    "commands": [
+      "dsh plugin --profile <your-profile> add github:mario03690/dsh-devkit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

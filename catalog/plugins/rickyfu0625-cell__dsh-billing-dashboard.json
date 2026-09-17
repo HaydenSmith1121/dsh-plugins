@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "rickyfu0625-cell/dsh-billing-dashboard",
+  "slug": "rickyfu0625-cell__dsh-billing-dashboard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-billing-dashboard",
+  "title": "dsh-billing-dashboard",
+  "summary": "DSH 常驻用量看板：实时显示余额、消费和 token 用量，7 日趋势一目了然，低余额提醒，还能一键跳转充值。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "效率提升",
+    "消息通知",
+    "可视化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "rickyfu0625-cell",
+  "repo": "https://github.com/rickyfu0625-cell/dsh-billing-dashboard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T12:16:57Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:rickyfu0625-cell/dsh-billing-dashboard",
+    "commands": [
+      "dsh plugin --profile web add github:rickyfu0625-cell/dsh-billing-dashboard",
+      "dsh plugin --profile web add link:/path/to/dsh-billing-dashboard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

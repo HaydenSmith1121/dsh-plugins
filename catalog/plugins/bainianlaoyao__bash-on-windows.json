@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "bainianlaoyao/bash-on-windows",
+  "slug": "bainianlaoyao__bash-on-windows",
+  "tier": "community",
+  "package": null,
+  "name": "bash-on-windows",
+  "title": "bash-on-windows",
+  "summary": "在 Windows 上把可用的 bash 工具限定为 Git Bash，并关掉 PowerShell，避免命令环境混用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "git-bash",
+    "windows",
+    "工具集成",
+    "模型适配",
+    "零配置",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bainianlaoyao",
+  "repo": "https://github.com/bainianlaoyao/bash-on-windows",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-13T14:10:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bainianlaoyao/bash-on-windows",
+    "commands": [
+      "dsh plugin --profile web add github:bainianlaoyao/bash-on-windows"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "futrime/webdsh",
+  "slug": "futrime__webdsh",
+  "tier": "community",
+  "package": null,
+  "name": "webdsh",
+  "title": "webdsh",
+  "summary": "在浏览器标签页里直接运行 DeepSeek Harness，无需安装服务器，即开即用。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "零配置",
+    "可视化",
+    "效率提升",
+    "资源优化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "futrime",
+  "repo": "https://github.com/futrime/webdsh",
+  "homepage": "https://dsh.zjzh.me/",
+  "license": "Apache-2.0",
+  "stars": 30,
+  "forks": 2,
+  "pushedAt": "2026-08-29T12:32:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:futrime/webdsh",
+    "commands": [
+      "dsh plugin --profile web add github:futrime/webdsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

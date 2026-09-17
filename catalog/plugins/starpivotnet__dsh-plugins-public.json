@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "StarPivotNet/dsh-plugins-public",
+  "slug": "starpivotnet__dsh-plugins-public",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugins-public",
+  "title": "dsh-plugins-public",
+  "summary": "DeepSeek Harness 的公共插件市场，直接在设置里浏览安装各类社区插件，即装即用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "插件管理",
+    "命令行工具",
+    "零配置"
+  ],
+  "version": "0.1.15",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "StarPivotNet",
+  "repo": "https://github.com/StarPivotNet/dsh-plugins-public",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-09-05T12:56:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@starpivot/dsh-plugin-marketplace",
+    "commands": [
+      "dsh plugin --profile web add @starpivot/dsh-plugin-marketplace",
+      "dsh plugin --profile web add github:StarPivotNet/dsh-plugins-public"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

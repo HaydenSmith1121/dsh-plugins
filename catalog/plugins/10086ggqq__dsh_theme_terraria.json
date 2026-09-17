@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "10086ggqq/dsh_theme_terraria",
+  "slug": "10086ggqq__dsh_theme_terraria",
+  "tier": "community",
+  "package": null,
+  "name": "dsh_theme_terraria",
+  "title": "dsh_theme_terraria",
+  "summary": "把 DSH 编码控制台换成泰拉瑞亚像素世界，向导陪你写代码，单文件零依赖。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "界面美化",
+    "主题",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "10086ggqq",
+  "repo": "https://github.com/10086ggqq/dsh_theme_terraria",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 26,
+  "forks": 3,
+  "pushedAt": "2026-08-26T12:58:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-theme-terraria",
+    "commands": [
+      "dsh plugin --profile web add dsh-theme-terraria",
+      "dsh plugin --profile web add github:10086ggqq/dsh_theme_terraria",
+      "dsh plugin --profile web add /path/to/dsh_theme_terraria"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

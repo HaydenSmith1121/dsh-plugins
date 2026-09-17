@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "TYEclipse/dsh-ipcalc",
+  "slug": "tyeclipse__dsh-ipcalc",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ipcalc",
+  "title": "dsh-ipcalc",
+  "summary": "纯计算 IP 与子网工具，支持 IPv4/IPv6 解析、CIDR 汇总和子网规划，零依赖离线可用。",
+  "tags": [
+    "cidr",
+    "cidr-math",
+    "deepseek-harness",
+    "dsh-plugin",
+    "ipv4",
+    "ipv6",
+    "ipv6-subnet",
+    "networking",
+    "subnet",
+    "子网计算",
+    "CIDR汇总",
+    "IP解析",
+    "网络规划"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-30T21:57:36Z",
+    "url": "https://github.com/TYEclipse/dsh-ipcalc/releases/tag/v0.2.0"
+  },
+  "author": "TYEclipse",
+  "repo": "https://github.com/TYEclipse/dsh-ipcalc",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-10T16:42:31Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TYEclipse/dsh-ipcalc",
+    "commands": [
+      "dsh plugin --profile <your-profile> add github:TYEclipse/dsh-ipcalc"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

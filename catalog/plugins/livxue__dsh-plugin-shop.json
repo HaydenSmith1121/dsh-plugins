@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "LivXue/dsh-plugin-shop",
+  "slug": "livxue__dsh-plugin-shop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-shop",
+  "title": "dsh-plugin-shop",
+  "summary": "为 DeepSeek Harness 提供插件市场，帮你发现、安装、启用和更新各类 dsh 插件，目录可审计。",
+  "tags": [
+    "agent",
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "harness",
+    "插件管理",
+    "工具集成",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.8.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.2",
+    "publishedAt": "2026-09-15T03:11:04Z",
+    "url": "https://github.com/LivXue/dsh-plugin-shop/releases/tag/v0.8.2"
+  },
+  "author": "LivXue",
+  "repo": "https://github.com/LivXue/dsh-plugin-shop",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 762,
+  "forks": 11,
+  "pushedAt": "2026-09-16T11:12:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-shop@0.8.2",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-shop@0.8.2",
+      "dsh plugin --profile <profile> add dsh-plugin-shop@0.8.2",
+      "dsh plugin --profile <profile> list --depth 0"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

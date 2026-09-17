@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "xia-sc/dsh-cc-studio",
+  "slug": "xia-sc__dsh-cc-studio",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cc-studio",
+  "title": "dsh-cc-studio",
+  "summary": "一句话点子就能生成可导入 SillyTavern / Risu 的 CCv3 角色卡，专治世界观薄弱。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "报告生成",
+    "AI 助手",
+    "工具集成",
+    "自动化"
+  ],
+  "version": "0.3.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xia-sc",
+  "repo": "https://github.com/xia-sc/dsh-cc-studio",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-16T10:23:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@xia-sc/dsh-cc-studio",
+    "commands": [
+      "dsh plugin --profile web add @xia-sc/dsh-cc-studio",
+      "dsh plugin --profile web add @xia-sc/dsh-cc-studio@0.3.3",
+      "dsh plugin --profile web add github:xia-sc/dsh-cc-studio"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

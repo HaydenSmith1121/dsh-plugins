@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "Amouren7/dsh-plugin-desk",
+  "slug": "amouren7__dsh-plugin-desk",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-desk",
+  "title": "dsh-plugin-desk",
+  "summary": "用人话讲清每个插件和技能是干嘛的，一键停用启用、安全卸载，不用再手改配置文件。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin-manager",
+    "插件管理",
+    "设置面板",
+    "效率提升",
+    "快捷操作"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-11T05:17:27Z",
+    "url": "https://github.com/Amouren7/dsh-plugin-desk/releases/tag/v0.2.1"
+  },
+  "author": "Amouren7",
+  "repo": "https://github.com/Amouren7/dsh-plugin-desk",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T05:17:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Amouren7/dsh-plugin-desk",
+    "commands": [
+      "dsh plugin --profile web add github:Amouren7/dsh-plugin-desk"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "xsluck/dsh-llm-pi-ai-headers",
+  "slug": "xsluck__dsh-llm-pi-ai-headers",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-pi-ai-headers",
+  "title": "dsh-llm-pi-ai-headers",
+  "summary": "支持为各 AI 服务商自由添加自定义请求头，完整保留官方适配器的所有核心功能。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "模型配置",
+    "零配置",
+    "会话管理"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xsluck",
+  "repo": "https://github.com/xsluck/dsh-llm-pi-ai-headers",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T10:08:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-llm-pi-ai-headers",
+    "commands": [
+      "dsh plugin --profile web add dsh-llm-pi-ai-headers",
+      "dsh plugin --profile web add \"git+https://github.com/xsluck/dsh-llm-pi-ai-headers.git\"",
+      "dsh plugin --profile web add \"github:xsluck/dsh-llm-pi-ai-headers"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

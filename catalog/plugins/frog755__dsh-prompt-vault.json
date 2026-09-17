@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Frog755/dsh-prompt-vault",
+  "slug": "frog755__dsh-prompt-vault",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-vault",
+  "title": "dsh-prompt-vault",
+  "summary": "输入框上方的提示词库，点开📚面板一键填入常用 prompt，省去反复输入。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "prompt",
+    "效率提升",
+    "AI 助手",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "1.0.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Frog755",
+  "repo": "https://github.com/Frog755/dsh-prompt-vault",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-10T03:03:07Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Frog755/dsh-prompt-vault",
+    "commands": [
+      "dsh plugin --profile web add github:Frog755/dsh-prompt-vault"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

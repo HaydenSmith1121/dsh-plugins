@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "fatatalia/dsh-dreaming",
+  "slug": "fatatalia__dsh-dreaming",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-dreaming",
+  "title": "dsh-dreaming",
+  "summary": "每天凌晨随机时段，把当天记忆自动写成梦境日记，并智能提炼高价值洞察存回记忆库，随 dsh web 启停。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "会话管理",
+    "工作流增强",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fatatalia",
+  "repo": "https://github.com/fatatalia/dsh-dreaming",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T06:56:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fatatalia/dsh-dreaming",
+    "commands": [
+      "dsh plugin --profile web add github:fatatalia/dsh-dreaming"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

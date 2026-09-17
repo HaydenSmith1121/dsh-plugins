@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Yidien/dsh-host-router",
+  "slug": "yidien__dsh-host-router",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-host-router",
+  "title": "dsh-host-router",
+  "summary": "按域名给 dsh 请求分流，勾选走本地代理，其余直连，内置嗅探自动记录，设置页勾选即生效。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "设置面板",
+    "插件管理",
+    "网络分流"
+  ],
+  "version": "0.1.8",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Yidien",
+  "repo": "https://github.com/Yidien/dsh-host-router",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T14:05:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Yidien/dsh-host-router",
+    "commands": [
+      "dsh plugin --profile web add D:/ai/dsh/dsh-host-router"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

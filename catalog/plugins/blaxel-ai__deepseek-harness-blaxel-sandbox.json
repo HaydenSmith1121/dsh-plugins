@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "blaxel-ai/deepseek-harness-blaxel-sandbox",
+  "slug": "blaxel-ai__deepseek-harness-blaxel-sandbox",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-blaxel-sandbox",
+  "title": "deepseek-harness-blaxel-sandbox",
+  "summary": "为 DeepSeek Harness 提供 Blaxel 远程沙箱执行环境，让模型在隔离环境中安全运行代码。",
+  "tags": [
+    "blaxel",
+    "deepseek-harness",
+    "dsh-plugin",
+    "remote-execution",
+    "sandbox",
+    "安全审计",
+    "工作流增强",
+    "安全隔离",
+    "模型配置"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-04T19:06:03Z",
+    "url": "https://github.com/blaxel-ai/deepseek-harness-blaxel-sandbox/releases/tag/v0.1.2"
+  },
+  "author": "blaxel-ai",
+  "repo": "https://github.com/blaxel-ai/deepseek-harness-blaxel-sandbox",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-09T20:59:33Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:blaxel-ai/deepseek-harness-blaxel-sandbox",
+    "commands": [
+      "dsh plugin --profile web add github:blaxel-ai/deepseek-harness-blaxel-sandbox"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

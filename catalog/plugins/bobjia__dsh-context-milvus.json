@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "bobjia/dsh-context-milvus",
+  "slug": "bobjia__dsh-context-milvus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-context-milvus",
+  "title": "dsh-context-milvus",
+  "summary": "为 DeepSeek Harness 提供 Milvus 向量数据库上下文管理，增强会话记忆与检索能力。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-context-milvus",
+    "dsh-plugin",
+    "会话管理",
+    "模型配置",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bobjia",
+  "repo": "https://github.com/bobjia/dsh-context-milvus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T23:56:39Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-context-milvus",
+    "commands": [
+      "dsh plugin --profile web add dsh-context-milvus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

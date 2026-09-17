@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "linyp/dsh-plugin-langfuse",
+  "slug": "linyp__dsh-plugin-langfuse",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-langfuse",
+  "title": "dsh-plugin-langfuse",
+  "summary": "把 DeepSeek Harness 的智能体会话导出为 OpenTelemetry 追踪树，接入 Langfuse 做 LLM 可观测性分析。",
+  "tags": [
+    "agent-tracing",
+    "deepseek-harness",
+    "dsh-plugin",
+    "langfuse",
+    "llm-observability",
+    "opentelemetry",
+    "状态监控",
+    "链路追踪",
+    "Langfuse集成"
+  ],
+  "version": "0.6.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "linyp",
+  "repo": "https://github.com/linyp/dsh-plugin-langfuse",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 13,
+  "forks": 1,
+  "pushedAt": "2026-09-10T11:41:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-langfuse",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-langfuse"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

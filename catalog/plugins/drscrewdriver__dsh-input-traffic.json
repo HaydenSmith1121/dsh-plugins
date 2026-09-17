@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "drscrewdriver/dsh-input-traffic",
+  "slug": "drscrewdriver__dsh-input-traffic",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-input-traffic",
+  "title": "dsh-input-traffic",
+  "summary": "给 DeepSeek Harness 网页界面加三档输入交通管制，支持打断插入、下一轮插入和逻辑完成后输入，还能避开高峰高价时段。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "plugin",
+    "plugins",
+    "ts",
+    "输入控制",
+    "流量调度",
+    "会话管理",
+    "资源优化"
+  ],
+  "version": "0.2.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.6",
+    "publishedAt": "2026-08-18T18:23:28Z",
+    "url": "https://github.com/drscrewdriver/dsh-input-traffic/releases/tag/v0.2.6"
+  },
+  "author": "drscrewdriver",
+  "repo": "https://github.com/drscrewdriver/dsh-input-traffic",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-16T20:34:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:drscrewdriver/dsh-input-traffic",
+    "commands": [
+      "dsh plugin --profile web add /absolute/path/to/dsh-input-traffic -w"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

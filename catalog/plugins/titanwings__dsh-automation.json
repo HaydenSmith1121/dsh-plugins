@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "titanwings/dsh-automation",
+  "slug": "titanwings__dsh-automation",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-automation",
+  "title": "dsh-automation",
+  "summary": "定时在全新 Agent 会话中自动运行 Coding 任务，支持在网页或通过 Agent 灵活创建和管理计划任务。",
+  "tags": [
+    "automation",
+    "coding-agent",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "scheduled-tasks",
+    "通知推送",
+    "自动化",
+    "工作流增强",
+    "Agent管理"
+  ],
+  "version": "0.1.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.7",
+    "publishedAt": "2026-08-23T19:19:38Z",
+    "url": "https://github.com/titanwings/dsh-automation/releases/tag/v0.1.7"
+  },
+  "author": "titanwings",
+  "repo": "https://github.com/titanwings/dsh-automation",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 92,
+  "forks": 12,
+  "pushedAt": "2026-09-08T12:09:08Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:titanwings/dsh-automation",
+    "commands": [
+      "dsh plugin --profile web add github:titanwings/dsh-automation",
+      "git clone https://github.com/titanwings/dsh-automation.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

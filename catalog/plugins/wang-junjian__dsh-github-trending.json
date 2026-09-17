@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "wang-junjian/dsh-github-trending",
+  "slug": "wang-junjian__dsh-github-trending",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-github-trending",
+  "title": "dsh-github-trending",
+  "summary": "查看 GitHub 每日热门仓库，快速发现 trending 项目，方便开发者追踪技术动态。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "github-trending",
+    "效率提升",
+    "工作区管理",
+    "AI 助手",
+    "模型配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wang-junjian",
+  "repo": "https://github.com/wang-junjian/dsh-github-trending",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-29T06:11:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@wangjunjian/dsh-github-trending",
+    "commands": [
+      "dsh plugin --profile headless add /Users/junjian/GitHub/wang-junjian/dsh-github-trending",
+      "dsh plugin --profile headless add @wangjunjian/dsh-github-trending"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ostar999/ostar-dsh-left-sidebar",
+  "slug": "ostar999__ostar-dsh-left-sidebar",
+  "tier": "community",
+  "package": null,
+  "name": "ostar-dsh-left-sidebar",
+  "title": "ostar-dsh-left-sidebar",
+  "summary": "在 DeepSeek Harness 左侧边栏里批量管理会话，支持删除、迁移复制和一键折叠，让工作区更清爽高效。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "前端增强",
+    "工作区管理"
+  ],
+  "version": "0.4.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ostar999",
+  "repo": "https://github.com/ostar999/ostar-dsh-left-sidebar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T22:29:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ostar999/ostar-dsh-left-sidebar",
+    "commands": [
+      "dsh plugin --profile web add github:ostar999/ostar-dsh-left-sidebar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

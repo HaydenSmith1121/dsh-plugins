@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "yuyi2439/dsh-1bot",
+  "slug": "yuyi2439__dsh-1bot",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-1bot",
+  "title": "dsh-1bot",
+  "summary": "把 QQ（OneBot 11）变成 DeepSeek Harness 的聊天界面，消息驱动 AI 回合，模型可主动调用工具回复。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "onebot",
+    "onebot-sdk",
+    "桌宠",
+    "会话管理",
+    "工具集成",
+    "多Agent协作",
+    "模型配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yuyi2439",
+  "repo": "https://github.com/yuyi2439/dsh-1bot",
+  "homepage": "https://www.npmjs.com/package/dsh-1bot",
+  "license": "Apache-2.0",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-06T16:09:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-1bot",
+    "commands": [
+      "dsh plugin --profile onebot add dsh-1bot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

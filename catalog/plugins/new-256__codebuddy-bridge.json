@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "new-256/codebuddy-bridge",
+  "slug": "new-256__codebuddy-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "codebuddy-bridge",
+  "title": "codebuddy-bridge",
+  "summary": "让 DSH 把编码、构建、调试这些活儿优先交给本机 codebuddy CLI 干，还能看状态灯和 token 用量。",
+  "tags": [
+    "agent",
+    "claude-code",
+    "codebuddy",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "mcp",
+    "命令行工具",
+    "工具集成",
+    "状态监控",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "1.1.10",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.1.10",
+    "publishedAt": "2026-09-12T20:00:22Z",
+    "url": "https://github.com/new-256/codebuddy-bridge/releases/tag/v1.1.10"
+  },
+  "author": "new-256",
+  "repo": "https://github.com/new-256/codebuddy-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T20:04:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:new-256/codebuddy-bridge",
+    "commands": [
+      "dsh plugin --profile web add github:new-256/codebuddy-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

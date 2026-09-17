@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "DDDMUC/dsh-free-search",
+  "slug": "dddmuc__dsh-free-search",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-free-search",
+  "title": "dsh-free-search",
+  "summary": "给 DeepSeek Harness 加个免费网页搜索，不用 API key，还能切换多个搜索引擎。",
+  "tags": [
+    "bing",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "duckduckgo",
+    "web-search",
+    "零配置",
+    "工具集成",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.4.29",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.29",
+    "publishedAt": "2026-09-17T15:16:40Z",
+    "url": "https://github.com/DDDMUC/dsh-free-search/releases/tag/v0.4.29"
+  },
+  "author": "DDDMUC",
+  "repo": "https://github.com/DDDMUC/dsh-free-search",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 196,
+  "forks": 14,
+  "pushedAt": "2026-09-13T14:49:05Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:DDDMUC/dsh-free-search",
+    "commands": [
+      "git clone https://github.com/DDDMUC/dsh-free-search.git",
+      "dsh plugin --profile web add /path/to/dsh-free-search"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

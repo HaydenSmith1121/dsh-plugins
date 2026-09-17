@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "lan450/dsh-mobile-ui",
+  "slug": "lan450__dsh-mobile-ui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mobile-ui",
+  "title": "dsh-mobile-ui",
+  "summary": "让 DeepSeek Harness 网页界面在手机上也能正常用，不再横向溢出，操作顺手又好看。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mobile-ui",
+    "ui",
+    "可视化",
+    "界面美化",
+    "零配置"
+  ],
+  "version": "0.3.8",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.8",
+    "publishedAt": "2026-08-24T06:11:01Z",
+    "url": "https://github.com/lan450/dsh-mobile-ui/releases/tag/v0.3.8"
+  },
+  "author": "lan450",
+  "repo": "https://github.com/lan450/dsh-mobile-ui",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T09:08:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lan450/dsh-mobile-ui",
+    "commands": [
+      "git clone --depth 1 https://github.com/lan450/dsh-mobile-ui.git \\",
+      "pnpm add \"dsh-mobile-ui@file:plugins/dsh-mobile-ui\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

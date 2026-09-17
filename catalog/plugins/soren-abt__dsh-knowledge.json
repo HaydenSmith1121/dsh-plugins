@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "Soren-ABT/dsh-knowledge",
+  "slug": "soren-abt__dsh-knowledge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-knowledge",
+  "title": "dsh-knowledge",
+  "summary": "为 DeepSeek Harness 打造的知识库与 RAG 插件，支持文档分块、本地向量化、混合检索和可视化管理面板，开箱即用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "knowledge-based-systems",
+    "rag",
+    "知识库管理",
+    "RAG检索",
+    "文档分块",
+    "向量化",
+    "混合搜索"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-16T13:06:48Z",
+    "url": "https://github.com/Soren-ABT/dsh-knowledge/releases/tag/v0.4.0"
+  },
+  "author": "Soren-ABT",
+  "repo": "https://github.com/Soren-ABT/dsh-knowledge",
+  "homepage": null,
+  "license": "AGPL-3.0",
+  "stars": 31,
+  "forks": 7,
+  "pushedAt": "2026-09-16T12:44:12Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Soren-ABT/dsh-knowledge",
+    "commands": [
+      "dsh plugin --profile web add github:Soren-ABT/dsh-knowledge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

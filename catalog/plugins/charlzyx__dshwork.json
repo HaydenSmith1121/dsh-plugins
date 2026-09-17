@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "charlzyx/dshwork",
+  "slug": "charlzyx__dshwork",
+  "tier": "community",
+  "package": null,
+  "name": "dshwork",
+  "title": "dshwork",
+  "summary": "人工精选的 DSH 插件集中仓库，一键安装，省去到处找插件的麻烦。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "集中仓库",
+    "快捷操作",
+    "工具集成"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "charlzyx",
+  "repo": "https://github.com/charlzyx/dshwork",
+  "homepage": "https://dsh-plugin.work",
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T02:20:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:charlzyx/dshwork",
+    "commands": [
+      "dsh plugin --profile web add github:charlzyx/dshwork"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

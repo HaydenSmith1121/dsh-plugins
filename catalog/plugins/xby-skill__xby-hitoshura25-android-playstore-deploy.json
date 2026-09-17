@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-hitoshura25-android-playstore-deploy",
+  "slug": "xby-skill__xby-hitoshura25-android-playstore-deploy",
+  "tier": "community",
+  "package": null,
+  "name": "xby-hitoshura25-android-playstore-deploy",
+  "title": "xby-hitoshura25-android-playstore-deploy",
+  "summary": "一键配置Android应用自动发布到Google Play商店的部署工具，支持密钥管理、服务账户和GitHub Actions工作流生成。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "工作流增强",
+    "设置面板",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-hitoshura25-android-playstore-deploy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:45:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-hitoshura25-android-playstore-deploy",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-hitoshura25-android-playstore-deploy",
+      "dsh plugin --profile web add /absolute/path/to/xby-hitoshura25-android-playstore-deploy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

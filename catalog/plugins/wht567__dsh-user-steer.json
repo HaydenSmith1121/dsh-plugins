@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "wht567/dsh-user-steer",
+  "slug": "wht567__dsh-user-steer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-user-steer",
+  "title": "dsh-user-steer",
+  "summary": "任务运行中随时给 agent 插话指导，消息在工具调用间隙注入，不打断执行，让 AI 干活更听话。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "steering",
+    "会话管理",
+    "AI 助手",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wht567",
+  "repo": "https://github.com/wht567/dsh-user-steer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-21T06:13:44Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wht567/dsh-user-steer",
+    "commands": [
+      "dsh plugin --profile web add github:wht567/dsh-user-steer",
+      "dsh plugin --profile web add file:/path/to/dsh-user-steer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

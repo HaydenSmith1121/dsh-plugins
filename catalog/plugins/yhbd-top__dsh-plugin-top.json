@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "yhbd-top/dsh-plugin-top",
+  "slug": "yhbd-top__dsh-plugin-top",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-top",
+  "title": "dsh-plugin-top",
+  "summary": "侧边栏一键逛 3900+ 插件雷达，搜索、分类、五榜单随便翻，点安装指引直接进会话框，零配置反代还能调工具。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-web",
+    "plugin-marketplace",
+    "yhbd",
+    "插件管理",
+    "零配置",
+    "AI 助手",
+    "可视化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-29T13:10:07Z",
+    "url": "https://github.com/yhbd-top/dsh-plugin-top/releases/tag/v1.0.0"
+  },
+  "author": "yhbd-top",
+  "repo": "https://github.com/yhbd-top/dsh-plugin-top",
+  "homepage": "https://www.yhbd.top",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-09T14:35:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yhbd-top/dsh-plugin-top",
+    "commands": [
+      "dsh plugin --profile web add github:yhbd-top/dsh-plugin-top",
+      "dsh plugin --profile web add dsh-plugin-top",
+      "dsh plugin --profile web add ./dsh-plugin-top-1.0.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

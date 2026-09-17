@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "necokeine/dsh-calendar",
+  "slug": "necokeine__dsh-calendar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-calendar",
+  "title": "dsh-calendar",
+  "summary": "把整个工作区所有会话的交互事件汇总到一个日历视图里，方便你按时间回看和追踪每一次操作。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "状态监控",
+    "会话管理",
+    "效率提升",
+    "消息通知"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "necokeine",
+  "repo": "https://github.com/necokeine/dsh-calendar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T16:00:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@necokeine/dsh-calendar",
+    "commands": [
+      "dsh plugin --profile web add @necokeine/dsh-calendar",
+      "dsh plugin --profile web remove @necokeine/dsh-calendar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "yunxiang1218/dsh-skin-deep-space-command-bridge",
+  "slug": "yunxiang1218__dsh-skin-deep-space-command-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skin-deep-space-command-bridge",
+  "title": "dsh-skin-deep-space-command-bridge",
+  "summary": "给 DSH 换上一套科幻驾驶舱皮肤，任务屏、控制台和 AI 核心屏都能转头拉近，沉浸感拉满。",
+  "tags": [
+    "cockpit",
+    "cordis-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-skin",
+    "skin",
+    "界面美化",
+    "主题",
+    "可视化",
+    "前端增强"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-15T09:13:22Z",
+    "url": "https://github.com/yunxiang1218/dsh-skin-deep-space-command-bridge/releases/tag/v0.2.1"
+  },
+  "author": "yunxiang1218",
+  "repo": "https://github.com/yunxiang1218/dsh-skin-deep-space-command-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T09:12:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yunxiang1218/dsh-skin-deep-space-command-bridge",
+    "commands": [
+      "dsh plugin --profile web add github:yunxiang1218/dsh-skin-deep-space-command-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

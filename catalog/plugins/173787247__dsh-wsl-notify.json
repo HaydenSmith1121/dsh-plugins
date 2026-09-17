@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "173787247/dsh-wsl-notify",
+  "slug": "173787247__dsh-wsl-notify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wsl-notify",
+  "title": "dsh-wsl-notify",
+  "summary": "WSL 里跑完长任务后，自动弹出 Windows 消息框提醒你，不用一直盯着终端。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "wsl",
+    "效率提升",
+    "状态监控",
+    "命令行工具",
+    "自动化",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "173787247",
+  "repo": "https://github.com/173787247/dsh-wsl-notify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:22:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:173787247/dsh-wsl-notify",
+    "commands": [
+      "dsh plugin --profile web add github:173787247/dsh-wsl-notify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

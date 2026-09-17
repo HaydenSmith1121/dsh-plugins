@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "gurio-wine/dsh-thinking-depth",
+  "slug": "gurio-wine__dsh-thinking-depth",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-thinking-depth",
+  "title": "dsh-thinking-depth",
+  "summary": "为 DeepSeek Harness 的自定义 OpenAI 兼容服务商提供分档推理深度设置，灵活调节思考强度。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "openai-compatible",
+    "reasoning",
+    "模型配置",
+    "资源优化"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "gurio-wine",
+  "repo": "https://github.com/gurio-wine/dsh-thinking-depth",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-21T17:40:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:gurio-wine/dsh-thinking-depth",
+    "commands": [
+      "dsh plugin --profile web add github:gurio-wine/dsh-thinking-depth"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

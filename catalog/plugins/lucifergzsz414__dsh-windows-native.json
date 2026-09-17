@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "lucifergzsz414/dsh-windows-native",
+  "slug": "lucifergzsz414__dsh-windows-native",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-windows-native",
+  "title": "dsh-windows-native",
+  "summary": "让 DeepSeek Harness 在原生 Windows 上顺畅运行，解决 PowerShell 环境下的编码和文件系统兼容问题。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "命令行工具",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lucifergzsz414",
+  "repo": "https://github.com/lucifergzsz414/dsh-windows-native",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T06:56:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-windows-native",
+    "commands": [
+      "dsh plugin add dsh-windows-native"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

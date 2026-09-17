@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Rain-kl/dsh-preset-plus",
+  "slug": "rain-kl__dsh-preset-plus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-preset-plus",
+  "title": "dsh-preset-plus",
+  "summary": "在 DSH 里可视化编辑预设，支持一键破甲，让模型调教更省事。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "jailbreak",
+    "preset",
+    "模型适配",
+    "设置面板",
+    "快捷操作",
+    "效率提升"
+  ],
+  "version": "0.1.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.5",
+    "publishedAt": "2026-08-27T04:56:28Z",
+    "url": "https://github.com/Rain-kl/dsh-preset-plus/releases/tag/v0.1.5"
+  },
+  "author": "Rain-kl",
+  "repo": "https://github.com/Rain-kl/dsh-preset-plus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 117,
+  "forks": 6,
+  "pushedAt": "2026-08-27T09:41:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Rain-kl/dsh-preset-plus",
+    "commands": [
+      "dsh plugin --profile web add github:Rain-kl/dsh-preset-plus",
+      "dsh plugin --profile web add @rain-kl/dsh-preset-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

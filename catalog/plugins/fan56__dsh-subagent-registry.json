@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "fan56/dsh-subagent-registry",
+  "slug": "fan56__dsh-subagent-registry",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subagent-registry",
+  "title": "dsh-subagent-registry",
+  "summary": "把 ~/.dsh/agents/ 下的 Markdown 文件注册成可按名调用的子代理，主对话直接调用，省去重复配置。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "多Agent协作",
+    "插件管理",
+    "自动化",
+    "命令行工具",
+    "零配置"
+  ],
+  "version": "0.11.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.11.0",
+    "publishedAt": "2026-09-11T03:16:41Z",
+    "url": "https://github.com/fan56/dsh-subagent-registry/releases/tag/v0.11.0"
+  },
+  "author": "fan56",
+  "repo": "https://github.com/fan56/dsh-subagent-registry",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 2,
+  "pushedAt": "2026-09-12T04:12:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fan56/dsh-subagent-registry",
+    "commands": [
+      "dsh plugin --profile tui add ~/github/dsh-subagent-registry"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

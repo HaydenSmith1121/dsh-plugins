@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "wangyuanchuan2022/dsh-prompt-optimizer",
+  "slug": "wangyuanchuan2022__dsh-prompt-optimizer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-optimizer",
+  "title": "dsh-prompt-optimizer",
+  "summary": "在输入框加个「优化」按钮，一键把草稿改写成更清晰的提示词，还能修复长文本输入问题。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "零配置",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wangyuanchuan2022",
+  "repo": "https://github.com/wangyuanchuan2022/dsh-prompt-optimizer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-24T04:29:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wangyuanchuan2022/dsh-prompt-optimizer",
+    "commands": [
+      "dsh plugin --profile web add github:wangyuanchuan2022/dsh-prompt-optimizer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "KhaosGx/dsh-stop-service",
+  "slug": "khaosgx__dsh-stop-service",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-stop-service",
+  "title": "dsh-stop-service",
+  "summary": "在 DSH 设置页实时查看服务运行状态，一键优雅终止服务，避免留下后台孤儿进程。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "设置面板",
+    "资源优化",
+    "效率提升"
+  ],
+  "version": "0.6.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "KhaosGx",
+  "repo": "https://github.com/KhaosGx/dsh-stop-service",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-06T06:54:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-stop-service",
+    "commands": [
+      "dsh plugin --profile web add dsh-stop-service",
+      "dsh plugin --profile web add github:KhaosGx/dsh-stop-service",
+      "git clone https://github.com/KhaosGx/dsh-stop-service.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

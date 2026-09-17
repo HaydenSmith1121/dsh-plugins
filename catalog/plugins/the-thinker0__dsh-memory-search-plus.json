@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "the-thinker0/dsh-memory-search-plus",
+  "slug": "the-thinker0__dsh-memory-search-plus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memory-search-plus",
+  "title": "dsh-memory-search-plus",
+  "summary": "本地优先的全文记忆搜索插件，帮你快速跨会话查找历史AI对话，精准定位消息并智能检索编码记录。",
+  "tags": [
+    "conversation-search",
+    "dsh-plugin",
+    "dsh-plugins",
+    "memory-search",
+    "语义检索",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "the-thinker0",
+  "repo": "https://github.com/the-thinker0/dsh-memory-search-plus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-26T15:04:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:the-thinker0/dsh-memory-search-plus",
+    "commands": [
+      "dsh plugin --profile web add github:the-thinker0/dsh-memory-search-plus",
+      "dsh plugin --profile web add ./",
+      "dsh plugin --profile web remove dsh-memory-search-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "xjailll/dsh-portfolio-publisher",
+  "slug": "xjailll__dsh-portfolio-publisher",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-portfolio-publisher",
+  "title": "dsh-portfolio-publisher",
+  "summary": "一键把本地项目变成专业 GitHub 求职仓库，自动生成 README、安全检查并推送，省时省力。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "github-actions",
+    "github-cli",
+    "job-hunting",
+    "llm",
+    "portfolio",
+    "readme-generator",
+    "自动化",
+    "工作流增强",
+    "可视化",
+    "命令行工具"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-08-29T17:50:55Z",
+    "url": "https://github.com/xjailll/dsh-portfolio-publisher/releases/tag/v0.3.1"
+  },
+  "author": "xjailll",
+  "repo": "https://github.com/xjailll/dsh-portfolio-publisher",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-29T17:56:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xjailll/dsh-portfolio-publisher",
+    "commands": [
+      "dsh plugin --profile web add github:xjailll/dsh-portfolio-publisher"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

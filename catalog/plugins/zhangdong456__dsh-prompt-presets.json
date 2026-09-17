@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "zhangdong456/dsh-prompt-presets",
+  "slug": "zhangdong456__dsh-prompt-presets",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-presets",
+  "title": "dsh-prompt-presets",
+  "summary": "在 DeepSeek Harness 中管理常用提示词库，一键注入到输入框，快速复用你的提示词模板。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "prompt-presets",
+    "效率提升",
+    "会话管理",
+    "零配置",
+    "自动化"
+  ],
+  "version": "1.0.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.4",
+    "publishedAt": "2026-08-22T02:09:20Z",
+    "url": "https://github.com/zhangdong456/dsh-prompt-presets/releases/tag/v1.0.4"
+  },
+  "author": "zhangdong456",
+  "repo": "https://github.com/zhangdong456/dsh-prompt-presets",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-03T14:12:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhangdong456/dsh-prompt-presets",
+    "commands": [
+      "dsh plugin --profile web add github:zhangdong456/dsh-prompt-presets",
+      "dsh plugin --profile web add dsh-prompt-presets",
+      "dsh plugin --profile web add file:./dsh-prompt-presets"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

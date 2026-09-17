@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Yiklek/dsh-settings-manager",
+  "slug": "yiklek__dsh-settings-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-settings-manager",
+  "title": "dsh-settings-manager",
+  "summary": "管理其他插件在全局设置对话框中的显示、排序和改名，无需修改上游代码，让设置界面更清爽顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "settings",
+    "插件管理",
+    "效率提升",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Yiklek",
+  "repo": "https://github.com/Yiklek/dsh-settings-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T12:39:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-settings-manager",
+    "commands": [
+      "dsh plugin --profile web add dsh-settings-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

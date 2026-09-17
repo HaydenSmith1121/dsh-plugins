@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "qwertyuiop314/dsh-recycle-bin",
+  "slug": "qwertyuiop314__dsh-recycle-bin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-recycle-bin",
+  "title": "dsh-recycle-bin",
+  "summary": "为 DSH 增加独立回收站，归档对话可移入回收站，支持批量还原、彻底删除和侧边栏批量归档。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "recycle-bin",
+    "语义检索",
+    "会话管理",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-19T13:47:30Z",
+    "url": "https://github.com/qwertyuiop314/dsh-recycle-bin/releases/tag/v0.1.0"
+  },
+  "author": "qwertyuiop314",
+  "repo": "https://github.com/qwertyuiop314/dsh-recycle-bin",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T11:32:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qwertyuiop314/dsh-recycle-bin",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-recycle-bin",
+      "dsh plugin --profile web add github:qwertyuiop314/dsh-recycle-bin",
+      "dsh plugin --profile web remove dsh-recycle-bin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

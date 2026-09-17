@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "my-dsh/dsh-token-usage-dashboard",
+  "slug": "my-dsh__dsh-token-usage-dashboard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-token-usage-dashboard",
+  "title": "dsh-token-usage-dashboard",
+  "summary": "跨会话统计Token用量，在Web面板上实时查看每日消耗，帮你掌握资源开销。",
+  "tags": [
+    "cordis",
+    "dashboard",
+    "deepseek-harness",
+    "dsh-plugin",
+    "token-usage",
+    "状态监控",
+    "可视化",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.2-alpha.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "my-dsh",
+  "repo": "https://github.com/my-dsh/dsh-token-usage-dashboard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T12:22:09Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:my-dsh/dsh-token-usage-dashboard",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/my-dsh/dsh-token-usage-dashboard/releases/download/dist/dsh-token-usage-dashboard-dist.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

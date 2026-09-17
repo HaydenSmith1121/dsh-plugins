@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "Vorpal-poem/dsh-doubao-voice",
+  "slug": "vorpal-poem__dsh-doubao-voice",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-doubao-voice",
+  "title": "dsh-doubao-voice",
+  "summary": "在 DSH 里用麦克风说话，豆包流式识别把文字实时填进输入框，打字累了就动嘴。",
+  "tags": [
+    "asr",
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "doubao",
+    "dsh-plugin",
+    "speech-to-text",
+    "voice-input",
+    "volcengine",
+    "视觉理解",
+    "工具集成",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-16T12:37:38Z",
+    "url": "https://github.com/Vorpal-poem/dsh-doubao-voice/releases/tag/v0.2.0"
+  },
+  "author": "Vorpal-poem",
+  "repo": "https://github.com/Vorpal-poem/dsh-doubao-voice",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-16T12:41:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-doubao-voice",
+    "commands": [
+      "dsh plugin --profile web add dsh-doubao-voice",
+      "dsh plugin --profile web add file:./dsh-doubao-voice-0.2.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

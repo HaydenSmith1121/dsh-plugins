@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "AllenLogo/dsh-software-tools",
+  "slug": "allenlogo__dsh-software-tools",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-software-tools",
+  "title": "dsh-software-tools",
+  "summary": "在侧边栏管理本机 WSL/Windows 软件工具，勾选后注入系统提示，让模型直接调用。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "插件管理",
+    "工具集成",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.2.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "AllenLogo",
+  "repo": "https://github.com/AllenLogo/dsh-software-tools",
+  "homepage": "https://github.com/AllenLogo/dsh-software-tools",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T01:29:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-software-tools",
+    "commands": [
+      "dsh plugin --profile web add dsh-software-tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

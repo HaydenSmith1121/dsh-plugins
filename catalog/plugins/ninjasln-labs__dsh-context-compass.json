@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "NinjaSln-labs/dsh-context-compass",
+  "slug": "ninjasln-labs__dsh-context-compass",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-context-compass",
+  "title": "dsh-context-compass",
+  "summary": "会话健康罗盘，用真实数据帮你判断该继续聊还是开新会话，告别上下文混乱。",
+  "tags": [
+    "ai-coding",
+    "context-management",
+    "deepseek-harness",
+    "dsh-plugin",
+    "llm",
+    "session-health",
+    "会话管理",
+    "状态监控",
+    "可视化"
+  ],
+  "version": "0.11.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "NinjaSln-labs",
+  "repo": "https://github.com/NinjaSln-labs/dsh-context-compass",
+  "homepage": "https://github.com/NinjaSln-labs/dsh-context-compass",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T09:27:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:NinjaSln-labs/dsh-context-compass",
+    "commands": [
+      "dsh plugin --profile web add github:NinjaSln-labs/dsh-context-compass"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

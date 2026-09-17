@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "s3yf1337/dsh-desktop",
+  "slug": "s3yf1337__dsh-desktop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-desktop",
+  "title": "dsh-desktop",
+  "summary": "将 Harness 网页端封装为原生桌面应用，支持托盘、通知与拖拽，让 AI 交互更贴近本地使用习惯。",
+  "tags": [
+    "ai-assistant",
+    "coding-agent",
+    "deepseek",
+    "deepseek-harness",
+    "desktop-app",
+    "dsh-plugin",
+    "rust",
+    "tauri",
+    "webview",
+    "消息通知",
+    "零配置",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.2.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.4",
+    "publishedAt": "2026-09-05T07:26:16Z",
+    "url": "https://github.com/s3yf1337/dsh-desktop/releases/tag/v0.2.4"
+  },
+  "author": "s3yf1337",
+  "repo": "https://github.com/s3yf1337/dsh-desktop",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-05T07:15:46Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:s3yf1337/dsh-desktop",
+    "commands": [
+      "git clone https://github.com/s3yf1337/dsh-desktop && cd dsh-desktop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

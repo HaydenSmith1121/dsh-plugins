@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaozs-com/dsh-screen-automation",
+  "slug": "xiaozs-com__dsh-screen-automation",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-screen-automation",
+  "title": "dsh-screen-automation",
+  "summary": "将本地屏幕自动化小助手桥接为dsh智能体工具，支持截图识别、控制鼠标键盘、管理自动化流程。",
+  "tags": [
+    "agent-tools",
+    "deepseek-harness",
+    "dsh-plugin",
+    "screen-automation",
+    "自动化",
+    "效率提升",
+    "AI 助手",
+    "状态监控"
+  ],
+  "version": "0.1.8",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xiaozs-com",
+  "repo": "https://github.com/xiaozs-com/dsh-screen-automation",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T16:51:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiaozs-com/dsh-screen-automation",
+    "commands": [
+      "npm install",
+      "dsh plugin --profile web add dsh-screen-automation && dsh restart web"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

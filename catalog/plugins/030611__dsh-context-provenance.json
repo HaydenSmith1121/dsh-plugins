@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "030611/dsh-context-provenance",
+  "slug": "030611__dsh-context-provenance",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-context-provenance",
+  "title": "dsh-context-provenance",
+  "summary": "为 DeepSeek Harness 运行时证据提供只读溯源账本，方便审计和追踪上下文来源，保护隐私。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "observability",
+    "privacy",
+    "provenance",
+    "状态监控",
+    "会话管理",
+    "安全审计"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-14T09:55:32Z",
+    "url": "https://github.com/030611/dsh-context-provenance/releases/tag/v0.1.0"
+  },
+  "author": "030611",
+  "repo": "https://github.com/030611/dsh-context-provenance",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-03T16:29:04Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:030611/dsh-context-provenance",
+    "commands": [
+      "dsh plugin --profile <profile> add dsh-context-provenance"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

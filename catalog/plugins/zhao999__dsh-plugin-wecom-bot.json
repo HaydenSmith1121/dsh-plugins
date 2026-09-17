@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "zhao999/dsh-plugin-wecom-bot",
+  "slug": "zhao999__dsh-plugin-wecom-bot",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-wecom-bot",
+  "title": "dsh-plugin-wecom-bot",
+  "summary": "把企业微信机器人变成 DSH 的遥控器，发消息就能让 AI 干活并把结果回传，无需公网部署。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "企业微信",
+    "消息收发",
+    "长连接",
+    "任务执行"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhao999",
+  "repo": "https://github.com/zhao999/dsh-plugin-wecom-bot",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T11:04:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

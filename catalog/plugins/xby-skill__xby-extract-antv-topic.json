@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-extract-antv-topic",
+  "slug": "xby-skill__xby-extract-antv-topic",
+  "tier": "community",
+  "package": null,
+  "name": "xby-extract-antv-topic",
+  "title": "xby-extract-antv-topic",
+  "summary": "为AI开发和QA提供AntV文档上下文和代码示例，支持在聊天中设置API密钥并自动持久化。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "工作流增强",
+    "零配置",
+    "可视化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-extract-antv-topic",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:40:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-extract-antv-topic",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-extract-antv-topic",
+      "dsh plugin --profile web add /absolute/path/to/xby-extract-antv-topic"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

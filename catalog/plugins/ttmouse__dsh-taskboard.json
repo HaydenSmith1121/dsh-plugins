@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "ttmouse/dsh-taskboard",
+  "slug": "ttmouse__dsh-taskboard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-taskboard",
+  "title": "dsh-taskboard",
+  "summary": "在 DeepSeek Harness 里直接嵌入一个本地优先的看板任务板，轻松管理项目任务和进度。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "kanban",
+    "taskboard",
+    "工作流增强",
+    "效率提升",
+    "工作区管理",
+    "前端增强"
+  ],
+  "version": "0.5.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ttmouse",
+  "repo": "https://github.com/ttmouse/dsh-taskboard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 2,
+  "pushedAt": "2026-09-12T18:41:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@ttmouse/dsh-taskboard",
+    "commands": [
+      "dsh plugin --profile web add @ttmouse/dsh-taskboard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

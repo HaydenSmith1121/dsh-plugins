@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "bobcat848/dsh-calculator",
+  "slug": "bobcat848__dsh-calculator",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-calculator",
+  "title": "dsh-calculator",
+  "summary": "在 DSH 网页界面右侧实时显示 DeepSeek API 调用费用和账户余额，帮你随时掌握花销。",
+  "tags": [
+    "balance",
+    "cost",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "spend",
+    "状态监控",
+    "API成本"
+  ],
+  "version": "1.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.4.0",
+    "publishedAt": "2026-09-06T12:40:47Z",
+    "url": "https://github.com/bobcat848/dsh-calculator/releases/tag/v1.4.0"
+  },
+  "author": "bobcat848",
+  "repo": "https://github.com/bobcat848/dsh-calculator",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-09T01:32:57Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bobcat848/dsh-calculator",
+    "commands": [
+      "curl -fsSL https://raw.githubusercontent.com/bobcat848/dsh-calculator/main/install.sh | bash",
+      "git clone https://github.com/bobcat848/dsh-calculator.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

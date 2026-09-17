@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "T-MKT/dsh-customization-settings",
+  "slug": "t-mkt__dsh-customization-settings",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-customization-settings",
+  "title": "dsh-customization-settings",
+  "summary": "给 DeepSeek Harness 加上外观设置入口，之后可以换壁纸、主题色、字体排版等，让界面更合自己口味。",
+  "tags": [
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh-plugin",
+    "dsh-plugins",
+    "主题",
+    "界面美化",
+    "设置面板",
+    "前端增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-23T06:57:54Z",
+    "url": "https://github.com/T-MKT/dsh-customization-settings/releases/tag/v0.1.0"
+  },
+  "author": "T-MKT",
+  "repo": "https://github.com/T-MKT/dsh-customization-settings",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T05:44:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:T-MKT/dsh-customization-settings",
+    "commands": [
+      "dsh plugin --profile web add <repo-path>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

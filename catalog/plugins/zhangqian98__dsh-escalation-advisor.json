@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "zhangqian98/dsh-escalation-advisor",
+  "slug": "zhangqian98__dsh-escalation-advisor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-escalation-advisor",
+  "title": "dsh-escalation-advisor",
+  "summary": "在 AI 编码代理卡住或反复失败时，自动判断该不该升级处理并给出建议，帮你少走弯路。",
+  "tags": [
+    "advisor",
+    "ai-agent",
+    "coding-agent",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "AI 助手",
+    "多Agent协作",
+    "工作流增强",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.1.0-alpha.27",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0-alpha.27",
+    "publishedAt": "2026-09-12T03:28:05Z",
+    "url": "https://github.com/zhangqian98/dsh-escalation-advisor/releases/tag/v0.1.0-alpha.27"
+  },
+  "author": "zhangqian98",
+  "repo": "https://github.com/zhangqian98/dsh-escalation-advisor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T13:45:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-escalation-advisor@0.1.0-alpha.29",
+    "commands": [
+      "dsh plugin --profile web add dsh-escalation-advisor@0.1.0-alpha.29",
+      "dsh plugin --profile web add github:zhangqian98/dsh-escalation-advisor",
+      "dsh plugin --profile web add ./dsh-escalation-advisor-0.1.0-alpha.29.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

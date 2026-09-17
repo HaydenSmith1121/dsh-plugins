@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "Zn-Dk/dsh-zhipu-toolkit",
+  "slug": "zn-dk__dsh-zhipu-toolkit",
+  "tier": "community",
+  "package": null,
+  "name": "Zn-Dk/dsh-zhipu-toolkit",
+  "title": "Zn-Dk/dsh-zhipu-toolkit",
+  "summary": "为 DeepSeek Harness 接入智谱 GLM 模型，支持双端点模型目录、思考模式映射和在线模型发现，即装即用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "glm",
+    "model-provider",
+    "zhipu",
+    "模型适配",
+    "AI 助手",
+    "设置面板",
+    "零配置",
+    "自动化"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-09T12:53:18Z",
+    "url": "https://github.com/Zn-Dk/dsh-zhipu-toolkit/releases/tag/v0.2.1"
+  },
+  "author": "Zn-Dk",
+  "repo": "https://github.com/Zn-Dk/dsh-zhipu-toolkit",
+  "homepage": "https://www.npmjs.com/package/dsh-zhipu-toolkit",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T12:53:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-zhipu-toolkit",
+    "commands": [
+      "dsh plugin --profile web add dsh-zhipu-toolkit",
+      "dsh plugin --profile web add ./dsh-zhipu-toolkit-<version>.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

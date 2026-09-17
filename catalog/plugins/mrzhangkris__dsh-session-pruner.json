@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "mrzhangkris/dsh-session-pruner",
+  "slug": "mrzhangkris__dsh-session-pruner",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-pruner",
+  "title": "dsh-session-pruner",
+  "summary": "自动清理闲置会话和一次性子代理，防止缓存膨胀卡顿，让 DSH 始终保持流畅。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "资源优化",
+    "效率提升"
+  ],
+  "version": "0.3.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "mrzhangkris",
+  "repo": "https://github.com/mrzhangkris/dsh-session-pruner",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-02T18:01:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-session-pruner",
+    "commands": [
+      "dsh plugin --profile web add dsh-session-pruner",
+      "dsh plugin --profile web add /path/to/dsh-session-pruner"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

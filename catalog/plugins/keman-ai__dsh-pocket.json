@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "keman-ai/dsh-pocket",
+  "slug": "keman-ai__dsh-pocket",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pocket",
+  "title": "dsh-pocket",
+  "summary": "在手机浏览器上远程查看和控制电脑上的 DSH 智能体，随时批准工具调用、发消息或停止任务。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mobile",
+    "plugin",
+    "remote-control",
+    "安全审计",
+    "状态监控",
+    "AI 助手",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-02T04:21:27Z",
+    "url": "https://github.com/keman-ai/dsh-pocket/releases/tag/v0.1.0"
+  },
+  "author": "keman-ai",
+  "repo": "https://github.com/keman-ai/dsh-pocket",
+  "homepage": "https://dsh-pocket.a2hmarket.ai",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-02T04:29:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:keman-ai/dsh-pocket",
+    "commands": [
+      "dsh plugin --profile web add -w github:keman-ai/dsh-pocket"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

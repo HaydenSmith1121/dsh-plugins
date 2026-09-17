@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-traditional-chinese-medicine-formulas-kg",
+  "slug": "xby-skill__xby-traditional-chinese-medicine-formulas-kg",
+  "tier": "community",
+  "package": null,
+  "name": "xby-traditional-chinese-medicine-formulas-kg",
+  "title": "xby-traditional-chinese-medicine-formulas-kg",
+  "summary": "把中药方剂、药材、剂量和主治功能整理成知识图谱，方便你快速查询和梳理方剂之间的关系。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "会话管理",
+    "科研辅助",
+    "插件管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-traditional-chinese-medicine-formulas-kg",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:38:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-traditional-chinese-medicine-formulas-kg",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-traditional-chinese-medicine-formulas-kg",
+      "dsh plugin --profile web add /absolute/path/to/xby-traditional-chinese-medicine-formulas-kg"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

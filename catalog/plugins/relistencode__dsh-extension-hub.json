@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "Relistencode/dsh-extension-hub",
+  "slug": "relistencode__dsh-extension-hub",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-extension-hub",
+  "title": "dsh-extension-hub",
+  "summary": "帮你集中管理 DSH 技能与 MCP 服务器，支持设置页和命令行操作，能直接导入其他 AI 配置并自动查更新。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "rules",
+    "插件管理",
+    "命令行工具",
+    "视觉理解"
+  ],
+  "version": "0.2.8",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.8",
+    "publishedAt": "2026-08-16T02:29:14Z",
+    "url": "https://github.com/Relistencode/dsh-extension-hub/releases/tag/v0.2.8"
+  },
+  "author": "Relistencode",
+  "repo": "https://github.com/Relistencode/dsh-extension-hub",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 2,
+  "pushedAt": "2026-08-21T11:47:18Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-extension-hub@0.2.19",
+    "commands": [
+      "dsh plugin --profile web add dsh-extension-hub@0.2.19"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

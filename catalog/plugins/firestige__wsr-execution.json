@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "firestige/wsr-execution",
+  "slug": "firestige__wsr-execution",
+  "tier": "community",
+  "package": null,
+  "name": "wsr-execution",
+  "title": "wsr-execution",
+  "summary": "为工作流自递归提供独立执行边界，解析工作流包并绑定交付清单，协调执行并输出可观测数据。",
+  "tags": [
+    "agent",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "langgraph",
+    "workflow",
+    "workflow-engine",
+    "工作流增强",
+    "多Agent协作",
+    "自动化",
+    "状态监控"
+  ],
+  "version": "0.2.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "0.2.7",
+    "publishedAt": "2026-09-05T13:09:51Z",
+    "url": "https://github.com/firestige/crystra-execution/releases/tag/0.2.7"
+  },
+  "author": "firestige",
+  "repo": "https://github.com/firestige/wsr-execution",
+  "homepage": "https://github.com/firestige/workflow-self-recursive",
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T13:09:51Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-wsr-execution@0.1.0",
+    "commands": [
+      "dsh plugin --profile web config set --location=project --json allowBuilds '{\"better-sqlite3\":true}'",
+      "dsh plugin --profile web add dsh-wsr-execution@0.1.0"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

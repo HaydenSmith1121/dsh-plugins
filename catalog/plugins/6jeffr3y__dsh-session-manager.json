@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "6jeffr3y/dsh-session-manager",
+  "slug": "6jeffr3y__dsh-session-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-manager",
+  "title": "dsh-session-manager",
+  "summary": "管理 DeepSeek Harness Web 的会话归档、标签分类与关系图谱，支持安全删除，让长对话折叠与跳转更顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "session-management",
+    "会话管理",
+    "效率提升",
+    "可视化",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-30T10:05:47Z",
+    "url": "https://github.com/6jeffr3y/dsh-session-manager/releases/tag/v0.1.0"
+  },
+  "author": "6jeffr3y",
+  "repo": "https://github.com/6jeffr3y/dsh-session-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T10:18:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:6jeffr3y/dsh-session-manager",
+    "commands": [
+      "dsh plugin --profile web add github:6jeffr3y/dsh-session-manager",
+      "dsh plugin --profile web remove dsh-plugin-session-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

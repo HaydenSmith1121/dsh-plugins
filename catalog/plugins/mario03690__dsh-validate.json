@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "mario03690/dsh-validate",
+  "slug": "mario03690__dsh-validate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-validate",
+  "title": "dsh-validate",
+  "summary": "校验身份证、银行卡、车牌、ISBN等各类编码，还能算金额大写、个税、房贷和调休工作日，办公必备小工具。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mcp",
+    "效率提升",
+    "自动化",
+    "命令行工具",
+    "安全审计"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "mario03690",
+  "repo": "https://github.com/mario03690/dsh-validate",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-22T03:53:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mario03690/dsh-validate",
+    "commands": [
+      "dsh plugin --profile <your-profile> add github:mario03690/dsh-validate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

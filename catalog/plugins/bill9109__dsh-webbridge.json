@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "bill9109/dsh-webbridge",
+  "slug": "bill9109__dsh-webbridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-webbridge",
+  "title": "dsh-webbridge",
+  "summary": "让模型直接操控你真实的浏览器，网页操作、填表、抓取都能自动搞定。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "桥接插件",
+    "自动化",
+    "工具集成",
+    "AI 助手"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bill9109",
+  "repo": "https://github.com/bill9109/dsh-webbridge",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-26T09:59:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:omdsh-dev/dsh-webbridge",
+    "commands": [
+      "dsh plugin --profile web add github:omdsh-dev/dsh-webbridge",
+      "dsh plugin --profile web add /path/to/dsh-webbridge",
+      "dsh plugin --profile web update github:omdsh-dev/dsh-webbridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

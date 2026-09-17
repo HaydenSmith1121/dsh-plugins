@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "penguin-oo/dsh-pathlink",
+  "slug": "penguin-oo__dsh-pathlink",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pathlink",
+  "title": "dsh-pathlink",
+  "summary": "在 DeepSeek Harness 聊天中按住 Ctrl 点击文件路径或链接，即可在系统文件管理器中打开对应文件夹，或在新浏览器标签页中打开链接。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "文件路径跳转",
+    "链接打开",
+    "会话管理",
+    "快捷键操作"
+  ],
+  "version": "0.1.4",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "penguin-oo",
+  "repo": "https://github.com/penguin-oo/dsh-pathlink",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-08T09:46:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-pathlink",
+    "commands": [
+      "dsh plugin --profile web add dsh-pathlink",
+      "dsh plugin --profile web add github:penguin-oo/dsh-pathlink"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

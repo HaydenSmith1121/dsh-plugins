@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "asdasdsdsdasdasdasd/dsh-computer-use",
+  "slug": "asdasdsdsdasdasdasd__dsh-computer-use",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-computer-use",
+  "title": "dsh-computer-use",
+  "summary": "在 Linux X11 桌面上直接操控电脑，支持截图、鼠标和键盘操作，无需额外依赖，让 AI 代理像人一样使用图形界面。",
+  "tags": [
+    "ai-agent",
+    "automation",
+    "computer-use",
+    "deepseek-harness",
+    "dsh-plugin",
+    "linux",
+    "x11",
+    "xtest",
+    "自动化",
+    "AI 助手",
+    "视觉理解",
+    "桌宠",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-29T05:34:34Z",
+    "url": "https://github.com/asdasdsdsdasdasdasd/dsh-computer-use/releases/tag/v0.1.0"
+  },
+  "author": "asdasdsdsdasdasdasd",
+  "repo": "https://github.com/asdasdsdsdasdasdasd/dsh-computer-use",
+  "homepage": "https://github.com/asdasdsdsdasdasdasd/dsh-computer-use",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-29T15:20:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:asdasdsdsdasdasdasd/dsh-computer-use",
+    "commands": [
+      "dsh plugin --profile web add github:asdasdsdsdasdasdasd/dsh-computer-use",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

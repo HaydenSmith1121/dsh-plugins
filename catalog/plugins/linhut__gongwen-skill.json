@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "linhut/gongwen-skill",
+  "slug": "linhut__gongwen-skill",
+  "tier": "community",
+  "package": null,
+  "name": "gongwen-skill",
+  "title": "gongwen-skill",
+  "summary": "按国标处理公文全流程：格式检查修复、内容优化、模板生成、Markdown转公文，支持修订批注，克隆即用。",
+  "tags": [
+    "ai-docs",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "docx",
+    "dsh-plugin",
+    "gongwen",
+    "wps-office",
+    "公文格式",
+    "内容优化",
+    "模板生成",
+    "Markdown转换",
+    "事实核验"
+  ],
+  "version": "2.13.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.13.0",
+    "publishedAt": "2026-09-11T16:20:33Z",
+    "url": "https://github.com/linhut/gongwen-skill/releases/tag/v2.13.0"
+  },
+  "author": "linhut",
+  "repo": "https://github.com/linhut/gongwen-skill",
+  "homepage": "https://doc.linhut.cn",
+  "license": "MIT",
+  "stars": 54,
+  "forks": 11,
+  "pushedAt": "2026-09-11T16:15:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:linhut/gongwen-skill",
+    "commands": [
+      "git clone https://github.com/linhut/gongwen-skill.git",
+      "pip install -r requirements.txt",
+      "pip install gongwen-skill"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

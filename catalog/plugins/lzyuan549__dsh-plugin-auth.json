@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "lzyuan549/dsh-plugin-auth",
+  "slug": "lzyuan549__dsh-plugin-auth",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-auth",
+  "title": "dsh-plugin-auth",
+  "summary": "为 DeepSeek Harness Web UI 增加用户名密码登录验证，保护所有页面和 API 接口。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "零配置",
+    "插件管理"
+  ],
+  "version": "0.1.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lzyuan549",
+  "repo": "https://github.com/lzyuan549/dsh-plugin-auth",
+  "homepage": "https://www.npmjs.com/package/dsh-plugin-auth",
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-22T08:12:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lzyuan549/dsh-plugin-auth",
+    "commands": [
+      "dsh plugin --profile web add -w dsh-plugin-auth@0.1.3",
+      "dsh plugin --profile web exec dsh-auth add-user admin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

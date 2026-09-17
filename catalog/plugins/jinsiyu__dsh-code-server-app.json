@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "jinsiyu/dsh-code-server-app",
+  "slug": "jinsiyu__dsh-code-server-app",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-code-server-app",
+  "title": "dsh-code-server-app",
+  "summary": "把 VS Code 网页版装进 DSH，直接在插件里专业地编辑文件。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "工具集成",
+    "文件管理",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.3.47",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.47",
+    "publishedAt": "2026-09-16T15:42:16Z",
+    "url": "https://github.com/jinsiyu/dsh-code-server-app/releases/tag/v0.3.47"
+  },
+  "author": "jinsiyu",
+  "repo": "https://github.com/jinsiyu/dsh-code-server-app",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T17:27:08Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jinsiyu/dsh-code-server-app",
+    "commands": [
+      "dsh plugin --profile web add github:jinsiyu/dsh-code-server-app"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

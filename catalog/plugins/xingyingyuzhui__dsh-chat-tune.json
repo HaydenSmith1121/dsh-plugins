@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "xingyingyuzhui/dsh-chat-tune",
+  "slug": "xingyingyuzhui__dsh-chat-tune",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-chat-tune",
+  "title": "dsh-chat-tune",
+  "summary": "在 DeepSeek Harness 对话区自由调整字号、字体、行距、段距和显示宽度，让聊天界面更符合你的阅读习惯。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "界面美化",
+    "字体调整",
+    "阅读体验",
+    "布局设置"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-11T08:39:14Z",
+    "url": "https://github.com/xingyingyuzhui/dsh-chat-tune/releases/tag/v0.4.0"
+  },
+  "author": "xingyingyuzhui",
+  "repo": "https://github.com/xingyingyuzhui/dsh-chat-tune",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T08:39:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xingyingyuzhui/dsh-chat-tune",
+    "commands": [
+      "dsh plugin --profile web add github:xingyingyuzhui/dsh-chat-tune",
+      "dsh plugin --profile web add link:/abs/path/to/dsh-chat-tune"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

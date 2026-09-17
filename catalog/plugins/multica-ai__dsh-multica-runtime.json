@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "multica-ai/dsh-multica-runtime",
+  "slug": "multica-ai__dsh-multica-runtime",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-multica-runtime",
+  "title": "dsh-multica-runtime",
+  "summary": "让 DeepSeek Harness 在 Multica 上无缝运行，通过标准输入输出桥接两者，实现私有化、灵活的模型训练与推理调度。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "运行时桥接",
+    "模型调度",
+    "私有化部署",
+    "训练推理"
+  ],
+  "version": "0.1.0-private.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "multica-ai",
+  "repo": "https://github.com/multica-ai/dsh-multica-runtime",
+  "homepage": null,
+  "license": null,
+  "stars": 65,
+  "forks": 9,
+  "pushedAt": "2026-08-14T09:45:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:multica-ai/dsh-multica-runtime",
+    "commands": [
+      "dsh plugin --profile multica add /absolute/path/to/multica-dsh-runtime"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

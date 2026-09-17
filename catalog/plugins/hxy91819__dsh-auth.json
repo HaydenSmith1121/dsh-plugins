@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "hxy91819/dsh-auth",
+  "slug": "hxy91819__dsh-auth",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auth",
+  "title": "dsh-auth",
+  "summary": "为 DeepSeek Harness 提供 Caddy 前置的管理员登录认证，支持 Argon2id 加密、会话可撤销，界面中英双语，无需改动上游代码。",
+  "tags": [
+    "argon2id",
+    "authentication",
+    "caddy",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-category-security",
+    "dsh-plugin",
+    "dsh-security",
+    "npm-package",
+    "安全审计",
+    "零配置",
+    "可视化",
+    "会话管理"
+  ],
+  "version": "0.2.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.3",
+    "publishedAt": "2026-08-19T14:03:34Z",
+    "url": "https://github.com/hxy91819/dsh-auth/releases/tag/v0.2.3"
+  },
+  "author": "hxy91819",
+  "repo": "https://github.com/hxy91819/dsh-auth",
+  "homepage": "https://www.npmjs.com/package/dsh-auth",
+  "license": "MIT",
+  "stars": 6,
+  "forks": 1,
+  "pushedAt": "2026-09-07T01:14:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hxy91819/dsh-auth",
+    "commands": [
+      "dsh plugin --profile web add github:hxy91819/dsh-auth"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

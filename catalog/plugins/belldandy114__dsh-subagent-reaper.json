@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "belldandy114/dsh-subagent-reaper",
+  "slug": "belldandy114__dsh-subagent-reaper",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subagent-reaper",
+  "title": "dsh-subagent-reaper",
+  "summary": "一键列出并删除会话中的一次性子代理，连数据一起清掉，让会话页头干净利落。",
+  "tags": [
+    "cordis",
+    "cordis-plugin",
+    "dsh",
+    "session-management",
+    "subagent",
+    "会话管理",
+    "多Agent协作",
+    "效率提升",
+    "资源优化"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-09-09T06:59:21Z",
+    "url": "https://github.com/belldandy114/dsh-subagent-reaper/releases/tag/v0.1.3"
+  },
+  "author": "belldandy114",
+  "repo": "https://github.com/belldandy114/dsh-subagent-reaper",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-09T06:59:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:belldandy114/dsh-subagent-reaper",
+    "commands": [
+      "dsh plugin --profile web add github:belldandy114/dsh-subagent-reaper"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

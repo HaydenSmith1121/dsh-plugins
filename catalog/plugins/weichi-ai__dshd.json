@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "weichi-ai/dshd",
+  "slug": "weichi-ai__dshd",
+  "tier": "community",
+  "package": null,
+  "name": "dshd",
+  "title": "dshd",
+  "summary": "鲸彩世界 DSHD 是一款桌面应用，让你在电脑上更顺手地使用 DeepSeek，管理插件、提升效率。",
+  "tags": [
+    "deepseek-harness",
+    "desktop-app",
+    "dsh-plugin",
+    "dshd",
+    "electron",
+    "可视化",
+    "插件管理",
+    "效率提升",
+    "模型配置"
+  ],
+  "version": "1.0.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.3",
+    "publishedAt": "2026-08-21T16:46:00Z",
+    "url": "https://github.com/weichi-ai/dshd/releases/tag/v1.0.3"
+  },
+  "author": "weichi-ai",
+  "repo": "https://github.com/weichi-ai/dshd",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-21T16:45:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:weichi-ai/dshd",
+    "commands": [
+      "dsh plugin --profile web add github:weichi-ai/dshd"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

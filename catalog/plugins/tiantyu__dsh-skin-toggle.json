@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "tiantyu/dsh-skin-toggle",
+  "slug": "tiantyu__dsh-skin-toggle",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skin-toggle",
+  "title": "dsh-skin-toggle",
+  "summary": "给 DSH 网页界面换肤的悬浮按钮，可拖动、右键切换皮肤，左键一键恢复默认。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "maid-atelier",
+    "plugin",
+    "skin",
+    "theme",
+    "皮肤管理",
+    "界面美化",
+    "悬浮按钮"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-08-17T06:11:54Z",
+    "url": "https://github.com/tiantyu/dsh-skin-toggle/releases/tag/v0.4.0"
+  },
+  "author": "tiantyu",
+  "repo": "https://github.com/tiantyu/dsh-skin-toggle",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-17T06:11:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tiantyu/dsh-skin-toggle",
+    "commands": [
+      "dsh plugin --profile web add github:tiantyu/dsh-skin-toggle"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

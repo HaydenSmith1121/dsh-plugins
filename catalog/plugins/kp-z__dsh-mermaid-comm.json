@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "kp-z/dsh-mermaid-comm",
+  "slug": "kp-z__dsh-mermaid-comm",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mermaid-comm",
+  "title": "dsh-mermaid-comm",
+  "summary": "让 AI 在开发对话里默认画 Mermaid 图，自带语法校验和输出安全把关。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "AI 助手",
+    "效率提升",
+    "工具集成"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kp-z",
+  "repo": "https://github.com/kp-z/dsh-mermaid-comm",
+  "homepage": "https://github.com/kp-z/dsh-mermaid-comm#readme",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T10:24:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-mermaid-comm",
+    "commands": [
+      "dsh plugin --profile web add dsh-mermaid-comm",
+      "dsh plugin --profile web add dsh-mermaid",
+      "dsh plugin --profile web add file:/path/to/packages/dsh-mermaid-comm"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

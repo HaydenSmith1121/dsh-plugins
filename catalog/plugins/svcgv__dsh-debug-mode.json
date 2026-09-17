@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "svcgv/dsh-debug-mode",
+  "slug": "svcgv__dsh-debug-mode",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-debug-mode",
+  "title": "dsh-debug-mode",
+  "summary": "给 DeepSeek Harness 加个调试模式，让 agent 在 Web 编辑器里能切 Normal/Plan/Debug，通过埋点拿到可验证的故障证据。",
+  "tags": [
+    "debug-tool",
+    "debugger",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugin-verify",
+    "dsh-plugins",
+    "前端增强",
+    "工作流增强",
+    "状态监控",
+    "插件管理",
+    "调试器"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "0.0.1",
+    "publishedAt": "2026-09-06T14:07:53Z",
+    "url": "https://github.com/svcgv/dsh-debug-mode/releases/tag/0.0.1"
+  },
+  "author": "svcgv",
+  "repo": "https://github.com/svcgv/dsh-debug-mode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T02:14:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:svcgv/dsh-debug-mode",
+    "commands": [
+      "dsh plugin --profile web add github:svcgv/dsh-debug-mode"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

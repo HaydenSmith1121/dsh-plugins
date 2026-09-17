@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "shendeguize/Remote_DSH_Center",
+  "slug": "shendeguize__remote_dsh_center",
+  "tier": "community",
+  "package": null,
+  "name": "Remote_DSH_Center",
+  "title": "Remote_DSH_Center",
+  "summary": "一站式管理本地和远程 DSH 实例，支持 SSH 隧道，轻松连接远程主机。",
+  "tags": [
+    "dashboard",
+    "dsh",
+    "dsh-plugin",
+    "ssh-tunnel",
+    "安全审计",
+    "可视化",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.10.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.10.1",
+    "publishedAt": "2026-09-02T20:01:13Z",
+    "url": "https://github.com/shendeguize/Remote_DSH_Center/releases/tag/v0.10.1"
+  },
+  "author": "shendeguize",
+  "repo": "https://github.com/shendeguize/Remote_DSH_Center",
+  "homepage": "https://shendeguize.github.io/Remote_DSH_Center/",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-09-02T19:57:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shendeguize/Remote_DSH_Center",
+    "commands": [
+      "curl -fsSL https://raw.githubusercontent.com/shendeguize/Remote_DSH_Center/main/install.sh | bash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

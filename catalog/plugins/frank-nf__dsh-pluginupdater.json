@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "Frank-NF/DSH-PluginUpdater",
+  "slug": "frank-nf__dsh-pluginupdater",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-PluginUpdater",
+  "title": "DSH-PluginUpdater",
+  "summary": "独立运行的 DSH 插件管家，能扫描、更新、启停和卸载插件，还带插件市场和离线部署。",
+  "tags": [
+    "deepseek",
+    "dsh",
+    "linux",
+    "plugin-manager",
+    "plugin-updater",
+    "rust",
+    "tauri",
+    "vue",
+    "windows",
+    "插件管理",
+    "自动化",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "1.15.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.15.0",
+    "publishedAt": "2026-09-10T07:37:20Z",
+    "url": "https://github.com/Frank-NF/DSH-PluginUpdater/releases/tag/v1.15.0"
+  },
+  "author": "Frank-NF",
+  "repo": "https://github.com/Frank-NF/DSH-PluginUpdater",
+  "homepage": "https://dsh.huilinsh.cn",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T10:42:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Frank-NF/DSH-PluginUpdater",
+    "commands": [
+      "git clone https://github.com/Frank-NF/DSH-PluginUpdater.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

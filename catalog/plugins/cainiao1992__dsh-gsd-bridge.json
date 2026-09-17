@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "cainiao1992/dsh-gsd-bridge",
+  "slug": "cainiao1992__dsh-gsd-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-gsd-bridge",
+  "title": "dsh-gsd-bridge",
+  "summary": "把 GSD Core 的规范驱动开发流程（讨论→计划→执行→验证→发布）接入 DeepSeek Harness，让 AI 助手按规范一步步推进项目。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "自动化",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "cainiao1992",
+  "repo": "https://github.com/cainiao1992/dsh-gsd-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T08:51:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cainiao1992/dsh-gsd-bridge",
+    "commands": [
+      "dsh plugin --profile web add github:cainiao1992/dsh-gsd-bridge --config.auto-install-peers=false"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

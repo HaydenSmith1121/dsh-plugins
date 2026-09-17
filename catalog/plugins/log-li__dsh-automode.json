@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "log-li/dsh-automode",
+  "slug": "log-li__dsh-automode",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-automode",
+  "title": "dsh-automode",
+  "summary": "给 DeepSeek Harness 加一层自动审批，让智能体放手干活，危险操作自动拦截并转人工，还能先影子模式试跑。",
+  "tags": [
+    "auto-approval",
+    "deepseek-harness",
+    "dsh-plugin",
+    "自动化",
+    "安全审查",
+    "插件管理",
+    "状态监控"
+  ],
+  "version": "0.15.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "log-li",
+  "repo": "https://github.com/log-li/dsh-automode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-09-16T12:08:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@log.li/dsh-automode",
+    "commands": [
+      "dsh plugin add @log.li/dsh-automode",
+      "dsh plugin add ./path/to/dsh-automode"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

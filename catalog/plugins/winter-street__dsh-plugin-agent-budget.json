@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "winter-street/dsh-plugin-agent-budget",
+  "slug": "winter-street__dsh-plugin-agent-budget",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-agent-budget",
+  "title": "dsh-plugin-agent-budget",
+  "summary": "为 DeepSeek Harness 智能体树统一分配和管理 token 预算，避免子任务超额消耗。",
+  "tags": [
+    "agent",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm",
+    "token-budget",
+    "typescript",
+    "资源优化",
+    "多Agent协作",
+    "工作流增强",
+    "会话管理",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-29T07:12:51Z",
+    "url": "https://github.com/winter-street/dsh-plugin-agent-budget/releases/tag/v0.1.0"
+  },
+  "author": "winter-street",
+  "repo": "https://github.com/winter-street/dsh-plugin-agent-budget",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-29T09:02:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:winter-street/dsh-plugin-agent-budget",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-plugin-agent-budget",
+      "pnpm add dsh-plugin-agent-budget"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "uckkk/dsh-valley-meter",
+  "slug": "uckkk__dsh-valley-meter",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-valley-meter",
+  "title": "dsh-valley-meter",
+  "summary": "实时显示峰谷电价倒计时、账户余额和今日花费，支持极简与详细样式切换，帮你省钱省心。",
+  "tags": [
+    "balance-tracker",
+    "cost-tracking",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "electricity-price",
+    "peak-valley-pricing",
+    "usage-meter",
+    "状态监控",
+    "资源优化",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-25T09:37:38Z",
+    "url": "https://github.com/uckkk/dsh-valley-meter/releases/tag/v0.1.0"
+  },
+  "author": "uckkk",
+  "repo": "https://github.com/uckkk/dsh-valley-meter",
+  "homepage": "https://www.npmjs.com/package/dsh-valley-meter",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T16:05:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:uckkk/dsh-valley-meter",
+    "commands": [
+      "npm install dsh-valley-meter",
+      "dsh plugin add github:uckkk/dsh-valley-meter"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

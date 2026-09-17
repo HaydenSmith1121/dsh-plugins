@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Sttrevens/dsh-cost-meter",
+  "slug": "sttrevens__dsh-cost-meter",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cost-meter",
+  "title": "dsh-cost-meter",
+  "summary": "在 Web 界面实时显示每轮对话和整个会话的美元费用，悬停可查看 token 用量和价格明细。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "Token计量",
+    "价格明细",
+    "可视化"
+  ],
+  "version": "0.1.0-rc.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Sttrevens",
+  "repo": "https://github.com/Sttrevens/dsh-cost-meter",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-17T05:53:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Sttrevens/dsh-cost-meter",
+    "commands": [
+      "dsh plugin --profile web add github:Sttrevens/dsh-cost-meter"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

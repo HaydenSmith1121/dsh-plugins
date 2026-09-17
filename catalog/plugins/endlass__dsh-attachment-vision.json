@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "endlass/dsh-attachment-vision",
+  "slug": "endlass__dsh-attachment-vision",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-attachment-vision",
+  "title": "dsh-attachment-vision",
+  "summary": "自动把 GUI 图片附件转成本地路径，并桥接任意兼容 OpenAI 的视觉模型，让纯文本 DeepSeek 也能看图。",
+  "tags": [
+    "图片转路径",
+    "视觉模型桥接",
+    "多模态扩展",
+    "GUI附件处理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "endlass",
+  "repo": "https://github.com/endlass/dsh-attachment-vision",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-21T12:35:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:endlass/dsh-attachment-vision",
+    "commands": [
+      "git clone https://github.com/endlass/dsh-attachment-vision ~/dsh-plugins/dsh-attachment-vision"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

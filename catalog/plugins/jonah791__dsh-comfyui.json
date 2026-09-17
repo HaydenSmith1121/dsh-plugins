@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-comfyui",
+  "slug": "jonah791__dsh-comfyui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-comfyui",
+  "title": "dsh-comfyui",
+  "summary": "把 ComfyUI 封装成 DSH 工具面，让 Anima 直接操控状态、工作流、任务、队列和显存，轻松生图。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "状态监控",
+    "模型适配",
+    "自动化",
+    "资源优化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-07T11:07:13Z",
+    "url": "https://github.com/jonah791/dsh-comfyui/releases/tag/v0.1.1"
+  },
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-comfyui",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T06:01:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-comfyui",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-comfyui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

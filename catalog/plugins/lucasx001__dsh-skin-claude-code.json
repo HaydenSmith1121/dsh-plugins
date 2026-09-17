@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "lucasx001/dsh-skin-claude-code",
+  "slug": "lucasx001__dsh-skin-claude-code",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skin-claude-code",
+  "title": "dsh-skin-claude-code",
+  "summary": "给 DeepSeek Harness 网页界面换上 Claude Code 风格皮肤，界面更清爽、更贴近终端美学。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugin-dev",
+    "deepseek-harness-plugins",
+    "界面美化",
+    "Claude Code风格",
+    "视觉优化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lucasx001",
+  "repo": "https://github.com/lucasx001/dsh-skin-claude-code",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-15T10:14:15Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-skin-claude-code",
+    "commands": [
+      "dsh plugin --profile web add dsh-skin-claude-code"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

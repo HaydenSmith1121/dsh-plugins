@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "kiwings/dsh-security",
+  "slug": "kiwings__dsh-security",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-security",
+  "title": "dsh-security",
+  "summary": "在 Web 界面中一键启动安全审计，自动完成威胁建模、漏洞扫描和分诊判定，让安全排查更直观高效。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "安全审计",
+    "可视化",
+    "自动化",
+    "报告生成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kiwings",
+  "repo": "https://github.com/kiwings/dsh-security",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T07:01:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kiwings/dsh-security",
+    "commands": [
+      "dsh plugin --profile web add file:./dsh-security-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

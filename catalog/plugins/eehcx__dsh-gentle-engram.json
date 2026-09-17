@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "eehcx/dsh-gentle-engram",
+  "slug": "eehcx__dsh-gentle-engram",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-gentle-engram",
+  "title": "dsh-gentle-engram",
+  "summary": "为 DeepSeek Harness 接入 Engram 持久记忆桥，让对话历史跨会话留存，提升连续交互体验。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "engram",
+    "会话管理",
+    "语义检索",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-29T04:35:18Z",
+    "url": "https://github.com/eehcx/dsh-gentle-engram/releases/tag/v0.1.1"
+  },
+  "author": "eehcx",
+  "repo": "https://github.com/eehcx/dsh-gentle-engram",
+  "homepage": "https://npmjs.com/dsh-gentle-engram",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T23:12:07Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:eehcx/dsh-gentle-engram",
+    "commands": [
+      "dsh plugin --profile web add github:eehcx/dsh-gentle-engram"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

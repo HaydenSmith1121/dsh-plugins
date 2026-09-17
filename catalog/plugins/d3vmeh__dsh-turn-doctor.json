@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "d3vmeh/dsh-turn-doctor",
+  "slug": "d3vmeh__dsh-turn-doctor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-turn-doctor",
+  "title": "dsh-turn-doctor",
+  "summary": "诊断 DeepSeek Harness 中回合失败的原因，精准定位是哪个超时或设置导致的。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "自动化",
+    "效率提升",
+    "证据链"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "d3vmeh",
+  "repo": "https://github.com/d3vmeh/dsh-turn-doctor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T16:56:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-turn-doctor",
+    "commands": [
+      "dsh plugin --profile web add dsh-turn-doctor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

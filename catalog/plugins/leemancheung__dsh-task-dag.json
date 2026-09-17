@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "LeemanCheung/dsh-task-dag",
+  "slug": "leemancheung__dsh-task-dag",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-task-dag",
+  "title": "dsh-task-dag",
+  "summary": "把 DeepSeek Harness 里的会话、子代理和持久化工作流，实时画成一张可拖拽浏览的 DAG 拓扑图。",
+  "tags": [
+    "dag",
+    "deepseek-harness",
+    "dsh-plugin",
+    "subagents",
+    "visualization",
+    "workflow",
+    "多Agent协作",
+    "会话管理",
+    "可视化",
+    "工作流",
+    "效率提升"
+  ],
+  "version": "1.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.4.0",
+    "publishedAt": "2026-08-26T05:42:27Z",
+    "url": "https://github.com/LeemanCheung/dsh-task-dag/releases/tag/v1.4.0"
+  },
+  "author": "LeemanCheung",
+  "repo": "https://github.com/LeemanCheung/dsh-task-dag",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 11,
+  "forks": 0,
+  "pushedAt": "2026-09-05T06:06:20Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LeemanCheung/dsh-task-dag",
+    "commands": [
+      "dsh plugin --profile web add github:LeemanCheung/dsh-task-dag"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

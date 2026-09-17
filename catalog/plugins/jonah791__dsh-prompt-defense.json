@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-prompt-defense",
+  "slug": "jonah791__dsh-prompt-defense",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-defense",
+  "title": "dsh-prompt-defense",
+  "summary": "给外部内容打上来源标记，检测提示词注入，危险操作转人工确认，全程留痕可审计。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "数据可审计",
+    "工具集成",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-prompt-defense",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T00:54:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-prompt-defense",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-prompt-defense"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

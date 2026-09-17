@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "Ultronen/dsh-archived-chats",
+  "slug": "ultronen__dsh-archived-chats",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-archived-chats",
+  "title": "dsh-archived-chats",
+  "summary": "本地归档所有聊天记录，支持全文搜索、只读预览和版本恢复，数据全留在本机。",
+  "tags": [
+    "archive",
+    "backup",
+    "chat-history",
+    "conversation-search",
+    "data-recovery",
+    "deepseek-harness",
+    "dsh-plugin",
+    "local-first",
+    "recycle-bin",
+    "session-management",
+    "会话管理",
+    "数据恢复",
+    "零配置",
+    "工作区管理"
+  ],
+  "version": "1.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.0",
+    "publishedAt": "2026-09-17T10:42:40Z",
+    "url": "https://github.com/Ultronen/dsh-archived-chats/releases/tag/v1.2.0"
+  },
+  "author": "Ultronen",
+  "repo": "https://github.com/Ultronen/dsh-archived-chats",
+  "homepage": "https://awesome-dsh-plugin.com/p/Ultronen/dsh-archived-chats/",
+  "license": "MIT",
+  "stars": 22,
+  "forks": 4,
+  "pushedAt": "2026-09-16T21:01:37Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-archived-chats@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-archived-chats@latest",
+      "dsh plugin --profile web update dsh-archived-chats"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

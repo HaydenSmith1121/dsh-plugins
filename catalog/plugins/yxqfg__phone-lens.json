@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "yxqfg/phone-lens",
+  "slug": "yxqfg__phone-lens",
+  "tier": "community",
+  "package": null,
+  "name": "phone-lens",
+  "title": "phone-lens",
+  "summary": "手机拍照或实时取景，一键把图片直接送进本机 dsh 会话，让模型直接看懂画面。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "会话管理",
+    "效率提升",
+    "模型适配"
+  ],
+  "version": "0.3.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.2",
+    "publishedAt": "2026-09-14T08:16:39Z",
+    "url": "https://github.com/yxqfg/phone-lens/releases/tag/v0.3.2"
+  },
+  "author": "yxqfg",
+  "repo": "https://github.com/yxqfg/phone-lens",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-14T08:16:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yxqfg/phone-lens",
+    "commands": [
+      "dsh plugin --profile web add github:yxqfg/phone-lens"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

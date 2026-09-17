@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "pqkisvery666/dsh-basic-office",
+  "slug": "pqkisvery666__dsh-basic-office",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-basic-office",
+  "title": "dsh-basic-office",
+  "summary": "让 Agent 能读 PDF、Word、Excel、PPT，也能直接生成这些办公文件，处理文档不用再手动转格式。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "文件管理",
+    "PDF支持",
+    "效率提升",
+    "内容创作"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "pqkisvery666",
+  "repo": "https://github.com/pqkisvery666/dsh-basic-office",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-11T08:25:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:pqkisvery666/dsh-basic-office",
+    "commands": [
+      "dsh plugin --profile web add https://codeload.github.com/pqkisvery666/dsh-basic-office/tar.gz/refs/heads/main",
+      "dsh plugin --profile web add git+https://github.com/pqkisvery666/dsh-basic-office.git",
+      "dsh plugin --profile web up"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

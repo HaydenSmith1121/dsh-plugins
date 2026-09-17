@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "young1lin/dsh-ui-gitworkbench",
+  "slug": "young1lin__dsh-ui-gitworkbench",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ui-gitworkbench",
+  "title": "dsh-ui-gitworkbench",
+  "summary": "给 dsh 网页界面加个 Git 工作台，每个会话都能直接看状态、查改动，不用改本体。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "变更审查",
+    "文件差异",
+    "状态监控",
+    "前端增强"
+  ],
+  "version": "0.1.23",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "young1lin",
+  "repo": "https://github.com/young1lin/dsh-ui-gitworkbench",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:03:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@young1lin/dsh-ui-gitworkbench",
+    "commands": [
+      "dsh plugin --profile web add @young1lin/dsh-ui-gitworkbench",
+      "dsh plugin --profile web update @young1lin/dsh-ui-gitworkbench",
+      "curl -fsSL https://raw.githubusercontent.com/young1lin/dsh-ui-gitworkbench/main/scripts/install.sh | bash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

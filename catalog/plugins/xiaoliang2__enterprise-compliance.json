@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaoliang2/enterprise-compliance",
+  "slug": "xiaoliang2__enterprise-compliance",
+  "tier": "community",
+  "package": null,
+  "name": "enterprise-compliance",
+  "title": "enterprise-compliance",
+  "summary": "自动读取运行数据，对照 SOC2 和 GDPR 标准逐项核查，一键生成合规自检报告，让企业审计更省心。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "1.1.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xiaoliang2",
+  "repo": "https://github.com/xiaoliang2/enterprise-compliance",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T09:28:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiaoliang2/enterprise-compliance",
+    "commands": [
+      "dsh plugin --profile desktop add github:<owner>/<repository>",
+      "dsh plugin --profile desktop add file:./enterprise-compliance",
+      "dsh plugin --profile web add file:./enterprise-compliance"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

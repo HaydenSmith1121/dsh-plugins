@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "slatinwine/dsh-sentience-audit",
+  "slug": "slatinwine__dsh-sentience-audit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sentience-audit",
+  "title": "dsh-sentience-audit",
+  "summary": "对照14项意识指标给DSH会话打分，看看AI到底有没有\"意识\"。",
+  "tags": [
+    "ai-welfare",
+    "consciousness",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "interpretability",
+    "安全审计",
+    "状态监控",
+    "报告生成",
+    "AI 助手"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-14T23:18:37Z",
+    "url": "https://github.com/slatinwine/dsh-sentience-audit/releases/tag/v0.1.1"
+  },
+  "author": "slatinwine",
+  "repo": "https://github.com/slatinwine/dsh-sentience-audit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T13:46:28Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:slatinwine/dsh-sentience-audit",
+    "commands": [
+      "dsh plugin --profile web add github:slatinwine/dsh-sentience-audit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

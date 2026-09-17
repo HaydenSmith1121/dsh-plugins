@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-gathering-card-lookup-service",
+  "slug": "xby-skill__xby-gathering-card-lookup-service",
+  "tier": "community",
+  "package": null,
+  "name": "xby-gathering-card-lookup-service",
+  "title": "xby-gathering-card-lookup-service",
+  "summary": "在聊天中直接查询万智牌中文卡牌信息，支持按系列和编号精确查找，API密钥自动保存。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "会话管理",
+    "模型配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-gathering-card-lookup-service",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:44:18Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-gathering-card-lookup-service",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-gathering-card-lookup-service",
+      "dsh plugin --profile web add /absolute/path/to/xby-gathering-card-lookup-service"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

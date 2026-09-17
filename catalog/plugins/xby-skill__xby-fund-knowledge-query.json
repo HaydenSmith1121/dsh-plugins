@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-fund-knowledge-query",
+  "slug": "xby-skill__xby-fund-knowledge-query",
+  "tier": "community",
+  "package": null,
+  "name": "xby-fund-knowledge-query",
+  "title": "xby-fund-knowledge-query",
+  "summary": "在聊天中直接查询基金知识，设置密钥后即插即用，方便快捷。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "知识查询",
+    "效率提升",
+    "设置面板"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-fund-knowledge-query",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:07:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-fund-knowledge-query",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-fund-knowledge-query",
+      "dsh plugin --profile web add /absolute/path/to/xby-fund-knowledge-query"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Nagi-ovo/dsh-visualize",
+  "slug": "nagi-ovo__dsh-visualize",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-visualize",
+  "title": "dsh-visualize",
+  "summary": "在 DSH 对话里直接生成可交互的可视化卡片，让模型输出的数据一看就懂。",
+  "tags": [
+    "data-visualization",
+    "deepseek-harness",
+    "dsh-plugin",
+    "interactive-visualization",
+    "可视化",
+    "数据分析",
+    "视觉理解",
+    "AI 助手",
+    "前端增强"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Nagi-ovo",
+  "repo": "https://github.com/Nagi-ovo/dsh-visualize",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 262,
+  "forks": 5,
+  "pushedAt": "2026-08-27T21:36:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Nagi-ovo/dsh-visualize",
+    "commands": [
+      "dsh plugin --profile web add github:Nagi-ovo/dsh-visualize"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Yinxe/dsh-custom-ui",
+  "slug": "yinxe__dsh-custom-ui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-custom-ui",
+  "title": "dsh-custom-ui",
+  "summary": "为 DSH 界面换肤，内置 23 套品牌与原创主题，设置页一键切换，偏好自动保存。",
+  "tags": [
+    "dsh-plugin",
+    "设置面板",
+    "前端增强",
+    "可视化",
+    "主题切换"
+  ],
+  "version": "0.1.1-rc.2",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Yinxe",
+  "repo": "https://github.com/Yinxe/dsh-custom-ui",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T11:03:59Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Yinxe/dsh-custom-ui",
+    "commands": [
+      "pnpm add --offline \"@dshp-inx/custom-ui@link:../../plugins/dsh-custom-ui\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

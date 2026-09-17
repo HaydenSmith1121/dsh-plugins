@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "joao-paulo-santos/dsh-workspace-overview",
+  "slug": "joao-paulo-santos__dsh-workspace-overview",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workspace-overview",
+  "title": "dsh-workspace-overview",
+  "summary": "在聊天旁增加工作区概览标签页，并支持其他插件挂载子页，有GitHub仓库时显示状态标识。",
+  "tags": [
+    "dsh-plugin",
+    "工作区管理",
+    "插件管理",
+    "工作流增强",
+    "状态监控",
+    "可视化"
+  ],
+  "version": "0.2.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "joao-paulo-santos",
+  "repo": "https://github.com/joao-paulo-santos/dsh-workspace-overview",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T15:36:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:joao-paulo-santos/dsh-workspace-overview",
+    "commands": [
+      "git clone https://github.com/joao-paulo-santos/dsh-granular-settings.git",
+      "git clone https://github.com/joao-paulo-santos/dsh-workspace-overview.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

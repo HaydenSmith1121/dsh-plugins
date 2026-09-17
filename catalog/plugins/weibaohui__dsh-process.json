@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "weibaohui/dsh-process",
+  "slug": "weibaohui__dsh-process",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-process",
+  "title": "dsh-process",
+  "summary": "把多阶段 agent 工艺模板接进 dsh web，可浏览编辑校验、导入导出、AI 生成，还能让 agent 按工艺推进任务",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "工作流增强",
+    "多Agent协作",
+    "AI 助手",
+    "工具集成"
+  ],
+  "version": "0.5.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "weibaohui",
+  "repo": "https://github.com/weibaohui/dsh-process",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T04:14:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@weibaohui/dsh-process",
+    "commands": [
+      "dsh plugin --profile web add @weibaohui/dsh-process"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

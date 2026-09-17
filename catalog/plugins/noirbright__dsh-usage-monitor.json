@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "NOirBRight/dsh-usage-monitor",
+  "slug": "noirbright__dsh-usage-monitor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage-monitor",
+  "title": "dsh-usage-monitor",
+  "summary": "查看 DeepSeek Harness 会话日志里的 token 用量，用图表直观展示，方便掌握消耗情况。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "成本控制"
+  ],
+  "version": "0.2.16",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.16",
+    "publishedAt": "2026-09-15T23:18:50Z",
+    "url": "https://github.com/NOirBRight/dsh-usage-monitor/releases/tag/v0.2.16"
+  },
+  "author": "NOirBRight",
+  "repo": "https://github.com/NOirBRight/dsh-usage-monitor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-13T05:44:25Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:NOirBRight/dsh-usage-monitor",
+    "commands": [
+      "dsh plugin --profile web add --force https://github.com/NOirBRight/dsh-usage-monitor/releases/latest/download/dsh-usage-monitor-0.2.14.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "bleakbelladonnals/dsh-echo",
+  "slug": "bleakbelladonnals__dsh-echo",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-echo",
+  "title": "dsh-echo",
+  "summary": "录制一次 MCP 交互，即可在 DeepSeek Harness 中安全回放，让测试与调试更省心。",
+  "tags": [
+    "contract-testing",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mcp",
+    "model-context-protocol",
+    "record-replay",
+    "testing",
+    "工作流增强",
+    "自动化",
+    "状态监控",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-01T15:56:31Z",
+    "url": "https://github.com/bleakbelladonnals/dsh-echo/releases/tag/v0.1.0"
+  },
+  "author": "bleakbelladonnals",
+  "repo": "https://github.com/bleakbelladonnals/dsh-echo",
+  "homepage": "https://bleakbelladonnals.github.io/dsh-echo/",
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T15:56:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bleakbelladonnals/dsh-echo",
+    "commands": [
+      "dsh plugin --profile web add github:bleakbelladonnals/dsh-echo"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

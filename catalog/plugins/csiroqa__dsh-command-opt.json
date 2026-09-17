@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "csiroqa/dsh-command-opt",
+  "slug": "csiroqa__dsh-command-opt",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-command-opt",
+  "title": "dsh-command-opt",
+  "summary": "DSH 命令优化插件，支持 Tab/Enter 补全命令名、参数格式提示，修复空对话输出，提升命令行操作效率。",
+  "tags": [
+    "command",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "tab-completion",
+    "命令行工具",
+    "效率提升",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-13T23:13:45Z",
+    "url": "https://github.com/csiroqa/dsh-command-opt/releases/tag/v0.1.0"
+  },
+  "author": "csiroqa",
+  "repo": "https://github.com/csiroqa/dsh-command-opt",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-23T16:49:23Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:csiroqa/dsh-command-opt",
+    "commands": [
+      "git clone https://github.com/csiroqa/dsh-command-opt.git",
+      "dsh plugin --profile web add link:$(pwd)",
+      "dsh plugin --profile web add link:D:\\path\\to\\dsh-command-opt"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

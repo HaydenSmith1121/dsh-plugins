@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "mozhuanzuojing/dsh-liangwengu",
+  "slug": "mozhuanzuojing__dsh-liangwengu",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-liangwengu",
+  "title": "dsh-liangwengu",
+  "summary": "按DeepSeek API定价高峰/空闲时段提醒你，峰来了快跑，峰走了开薅，支持弹窗、通知和倒计时。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "效率提升",
+    "设置面板"
+  ],
+  "version": "0.7.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "mozhuanzuojing",
+  "repo": "https://github.com/mozhuanzuojing/dsh-liangwengu",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-04T05:44:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mozhuanzuojing/dsh-liangwengu",
+    "commands": [
+      "dsh plugin --profile <name> add ./dsh-liangwengu",
+      "dsh plugin --profile <name> add dsh-liangwengu",
+      "dsh plugin --profile <name> add ./dsh-liangwengu-0.1.1.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

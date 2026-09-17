@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "ytmaps/dsh-flowtext",
+  "slug": "ytmaps__dsh-flowtext",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-flowtext",
+  "title": "dsh-flowtext",
+  "summary": "把用户指令渲染成精简执行轨迹并记录最终答案，方便追踪和复盘对话过程。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "flowtext",
+    "可视化",
+    "会话管理",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "0.9.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ytmaps",
+  "repo": "https://github.com/ytmaps/dsh-flowtext",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T06:34:34Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ytmaps/dsh-flowtext",
+    "commands": [
+      "dsh plugin --profile web add github:ytmaps/dsh-flowtext"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

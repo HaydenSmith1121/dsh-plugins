@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "beijingwahw/dsh-usage-ledger",
+  "slug": "beijingwahw__dsh-usage-ledger",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage-ledger",
+  "title": "dsh-usage-ledger",
+  "summary": "自动记录每笔对话的Token和费用，支持按对话、按天、累计查询，价格自动更新，预算超限自动提醒并拦截调用，附可视化仪表盘。",
+  "tags": [
+    "cost-control",
+    "deepseek-harness",
+    "dsh-plugin",
+    "token-usage",
+    "资源优化",
+    "状态监控",
+    "消息通知",
+    "自动化"
+  ],
+  "version": "0.9.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "beijingwahw",
+  "repo": "https://github.com/beijingwahw/dsh-usage-ledger",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-31T23:34:28Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:beijingwahw/dsh-usage-ledger",
+    "commands": [
+      "dsh plugin add beijingwahw/dsh-usage-ledger --profile web"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

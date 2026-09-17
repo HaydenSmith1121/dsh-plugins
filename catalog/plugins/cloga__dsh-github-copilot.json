@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "cloga/dsh-github-copilot",
+  "slug": "cloga__dsh-github-copilot",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-github-copilot",
+  "title": "dsh-github-copilot",
+  "summary": "让 DSH 接入 GitHub Copilot 账号，自动匹配模型配置，还能用内置搜索查资料。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "github-copilot",
+    "hosted-search",
+    "model-provider",
+    "oauth",
+    "openai-responses",
+    "typescript",
+    "web-search",
+    "模型适配",
+    "工具集成",
+    "语义检索",
+    "AI 助手"
+  ],
+  "version": "0.3.0-cloga.15",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0-cloga.15",
+    "publishedAt": "2026-09-04T14:34:52Z",
+    "url": "https://github.com/cloga/dsh-github-copilot/releases/tag/v0.3.0-cloga.15"
+  },
+  "author": "cloga",
+  "repo": "https://github.com/cloga/dsh-github-copilot",
+  "homepage": "https://github.com/cloga/dsh-github-copilot/releases/latest",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T17:58:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cloga/dsh-github-copilot",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/cloga/dsh-github-copilot/releases/download/v0.4.0-alpha.23/dsh-github-copilot-0.4.0-alpha.23.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

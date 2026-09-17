@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "I-am-shy/dsh-my-plugins",
+  "slug": "i-am-shy__dsh-my-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-my-plugins",
+  "title": "dsh-my-plugins",
+  "summary": "一个专门管理你自己安装的插件的面板，能查看、启用、关闭和卸载，不掺和别的。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin-manager",
+    "插件管理",
+    "设置面板",
+    "快捷操作"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "I-am-shy",
+  "repo": "https://github.com/I-am-shy/dsh-my-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T08:34:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:I-am-shy/dsh-my-plugins",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/I-am-shy/dsh-my-plugins.git",
+      "git clone git@github.com:I-am-shy/dsh-my-plugins.git",
+      "dsh plugin --profile web add file:/path/to/dsh-my-plugins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

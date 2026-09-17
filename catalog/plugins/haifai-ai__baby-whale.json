@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "Haifai-AI/baby-whale",
+  "slug": "haifai-ai__baby-whale",
+  "tier": "community",
+  "package": null,
+  "name": "baby-whale",
+  "title": "baby-whale",
+  "summary": "本地优先的知识工作助手，在聊天里交代任务，它直接写代码帮你把活儿干完，是 Claude CoWork 和 ChatGPT Work 的替代方案。",
+  "tags": [
+    "agent",
+    "agent-skills",
+    "agentic-ai",
+    "agents",
+    "chatgpt-work",
+    "claude-cowork",
+    "cowork",
+    "coworker",
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "deepseek-v4",
+    "design",
+    "office-automation",
+    "office-suite",
+    "office-tools",
+    "AI 助手",
+    "自动化",
+    "效率提升",
+    "工作流增强",
+    "工具集成"
+  ],
+  "version": "0.1.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.9",
+    "publishedAt": "2026-09-08T21:36:48Z",
+    "url": "https://github.com/Haifai-AI/baby-whale/releases/tag/v0.1.9"
+  },
+  "author": "Haifai-AI",
+  "repo": "https://github.com/Haifai-AI/baby-whale",
+  "homepage": "https://babywhale.site",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:07:11Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Haifai-AI/baby-whale",
+    "commands": [
+      "npm install -g @haifai/bwhale"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

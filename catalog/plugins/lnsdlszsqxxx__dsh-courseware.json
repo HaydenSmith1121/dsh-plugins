@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "lnsdlszsqxxx/dsh-courseware",
+  "slug": "lnsdlszsqxxx__dsh-courseware",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-courseware",
+  "title": "dsh-courseware",
+  "summary": "用你自己的 PPT 模板和一份课程大纲，自动生成中小学课件 pptx 文件。",
+  "tags": [
+    "dsh-plugin",
+    "报告生成",
+    "文件管理",
+    "工具集成",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lnsdlszsqxxx",
+  "repo": "https://github.com/lnsdlszsqxxx/dsh-courseware",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T06:13:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-courseware",
+    "commands": [
+      "dsh plugin --profile web add /路径/到/dsh-courseware",
+      "dsh plugin --profile web add dsh-courseware",
+      "dsh plugin --profile web add https://github.com/你的账号/dsh-courseware.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

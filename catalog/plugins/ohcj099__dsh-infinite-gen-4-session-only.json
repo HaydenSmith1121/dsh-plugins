@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "OHCJ099/dsh-infinite-gen-4-session-only",
+  "slug": "ohcj099__dsh-infinite-gen-4-session-only",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-infinite-gen-4-session-only",
+  "title": "dsh-infinite-gen-4-session-only",
+  "summary": "把无限四代破甲插件改成按会话开关，选对应预设才启用，换别的预设就自动关闭。",
+  "tags": [
+    "agent-preset",
+    "deepseek-harness",
+    "dsh",
+    "session-only",
+    "会话管理",
+    "模型适配",
+    "插件管理",
+    "快捷操作"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "OHCJ099",
+  "repo": "https://github.com/OHCJ099/dsh-infinite-gen-4-session-only",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T14:38:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:OHCJ099/dsh-infinite-gen-4-session-only",
+    "commands": [
+      "dsh plugin --profile web add github:OHCJ099/dsh-infinite-gen-4-session-only"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

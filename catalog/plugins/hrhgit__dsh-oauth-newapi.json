@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "hrhgit/dsh-oauth-newapi",
+  "slug": "hrhgit__dsh-oauth-newapi",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-oauth-newapi",
+  "title": "dsh-oauth-newapi",
+  "summary": "为 DeepSeek Harness 提供 New API 的 OAuth 登录，自动管理账号、分组和令牌选择，安全又省心。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hrhgit",
+  "repo": "https://github.com/hrhgit/dsh-oauth-newapi",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T08:55:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hrhgit/dsh-oauth-newapi",
+    "commands": [
+      "dsh plugin --profile web add github:hrhgit/dsh-oauth-newapi"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "vuldin/yapa",
+  "slug": "vuldin__yapa",
+  "tier": "community",
+  "package": null,
+  "name": "yapa",
+  "title": "yapa",
+  "summary": "一个轻量级个人助理插件，帮你管理记忆和日常任务，开箱即用无需复杂配置。",
+  "tags": [
+    "agent-memory",
+    "dsh-plugin",
+    "AI 助手",
+    "会话管理",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "vuldin",
+  "repo": "https://github.com/vuldin/yapa",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-28T12:20:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:vuldin/yapa",
+    "commands": [
+      "dsh plugin --profile web add github:vuldin/yapa"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

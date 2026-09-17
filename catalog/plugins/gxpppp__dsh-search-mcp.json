@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "gxpppp/dsh-search-mcp",
+  "slug": "gxpppp__dsh-search-mcp",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-search-mcp",
+  "title": "dsh-search-mcp",
+  "summary": "用搜索类 MCP 服务器替换 DSH 内置搜索，支持 Tavily、Brave 等，可在设置页配置。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "mcp",
+    "search",
+    "插件管理",
+    "零配置",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.1.0-rc.7",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "gxpppp",
+  "repo": "https://github.com/gxpppp/dsh-search-mcp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 11,
+  "forks": 0,
+  "pushedAt": "2026-08-30T13:34:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:gxpppp/dsh-search-mcp",
+    "commands": [
+      "dsh plugin --profile web add github:gxpppp/dsh-search-mcp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

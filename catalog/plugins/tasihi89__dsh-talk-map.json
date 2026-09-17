@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Tasihi89/dsh-talk-map",
+  "slug": "tasihi89__dsh-talk-map",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-talk-map",
+  "title": "dsh-talk-map",
+  "summary": "把每个会话变成白板上的卡片，拖拽排列、双击聊天、连线分支，用空间记忆替代工作记忆，专为 ADHD 友好设计。",
+  "tags": [
+    "adhd",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "whiteboard",
+    "会话管理",
+    "趣味交互",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Tasihi89",
+  "repo": "https://github.com/Tasihi89/dsh-talk-map",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 89,
+  "forks": 12,
+  "pushedAt": "2026-08-23T13:59:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Tasihi89/dsh-talk-map",
+    "commands": [
+      "dsh plugin --profile web add github:Tasihi89/dsh-talk-map",
+      "dsh plugin --profile dev add /abs/path/dsh-talk-map"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

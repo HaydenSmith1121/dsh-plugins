@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "geecraft23/dsh-hello-plugin",
+  "slug": "geecraft23__dsh-hello-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hello-plugin",
+  "title": "dsh-hello-plugin",
+  "summary": "一个极简的 DeepSeek Harness 示例插件，帮你快速上手插件开发流程。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "typescript",
+    "零配置",
+    "工作流增强",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-02T10:23:11Z",
+    "url": "https://github.com/geecraft23/dsh-hello-plugin/releases/tag/v0.1.0"
+  },
+  "author": "geecraft23",
+  "repo": "https://github.com/geecraft23/dsh-hello-plugin",
+  "homepage": "https://www.npmjs.com/package/@geecraft23/dsh-hello-plugin",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T10:35:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:geecraft23/dsh-hello-plugin",
+    "commands": [
+      "dsh plugin --profile <name> add @geecraft23/dsh-hello-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

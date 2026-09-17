@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "lihuu/dsh-lazy-skill",
+  "slug": "lihuu__dsh-lazy-skill",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-lazy-skill",
+  "title": "dsh-lazy-skill",
+  "summary": "把相关技能打包成盒子，一个根技能带多个子技能，方便管理和调用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "插件管理",
+    "效率提升",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lihuu",
+  "repo": "https://github.com/lihuu/dsh-lazy-skill",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-30T10:15:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@lihuu/dsh-skill-bundle",
+    "commands": [
+      "dsh plugin --profile web add @lihuu/dsh-skill-bundle"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

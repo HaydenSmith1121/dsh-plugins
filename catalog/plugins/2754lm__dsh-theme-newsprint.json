@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "2754LM/dsh-theme-newsprint",
+  "slug": "2754lm__dsh-theme-newsprint",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-theme-newsprint",
+  "title": "dsh-theme-newsprint",
+  "summary": "把报纸排版的衬线质感搬进 DSH 界面，暖白纸配墨色字，纯 CSS 零配置换肤。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-theme",
+    "界面美化",
+    "主题",
+    "零配置",
+    "前端增强"
+  ],
+  "version": "2.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.2.0",
+    "publishedAt": "2026-09-16T00:16:49Z",
+    "url": "https://github.com/2754LM/dsh-theme-newsprint/releases/tag/v2.2.0"
+  },
+  "author": "2754LM",
+  "repo": "https://github.com/2754LM/dsh-theme-newsprint",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-09-16T00:16:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:2754LM/dsh-theme-newsprint",
+    "commands": [
+      "dsh plugin --profile web add github:2754LM/dsh-theme-newsprint",
+      "dsh plugin --profile web add https://github.com/2754LM/dsh-theme-newsprint/releases/latest/download/dsh-theme-newsprint.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

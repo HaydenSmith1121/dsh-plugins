@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "afoxsss/dsh-conversation-map",
+  "slug": "afoxsss__dsh-conversation-map",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-conversation-map",
+  "title": "dsh-conversation-map",
+  "summary": "在聊天界面侧边栏显示会话代码地图，快速定位和跳转到任意对话节点，提升长会话浏览效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "前端增强",
+    "可视化",
+    "桌宠",
+    "效率提升"
+  ],
+  "version": "0.1.8",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "afoxsss",
+  "repo": "https://github.com/afoxsss/dsh-conversation-map",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-13T03:16:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-conversation-map",
+    "commands": [
+      "dsh plugin --profile web add dsh-conversation-map",
+      "dsh plugin --profile web add dsh-conversation-map@0.1.8",
+      "dsh plugin --profile web update dsh-conversation-map@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "luoxunhao/dsh-quote",
+  "slug": "luoxunhao__dsh-quote",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-quote",
+  "title": "dsh-quote",
+  "summary": "选中对话中的任意文字，一键引用为上下文，随下一条消息喂给模型，方便接着追问。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "插件管理",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "luoxunhao",
+  "repo": "https://github.com/luoxunhao/dsh-quote",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T07:14:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:luoxunhao/dsh-quote",
+    "commands": [
+      "dsh plugin --profile <name> add <dsh-quote 本地路径或包名>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

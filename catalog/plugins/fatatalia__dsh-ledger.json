@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "fatatalia/dsh-ledger",
+  "slug": "fatatalia__dsh-ledger",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ledger",
+  "title": "dsh-ledger",
+  "summary": "在会话页记账Tab展示beancount账本月度快照，收支、资产、支出分类一目了然，只读不干扰记账。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "状态监控",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fatatalia",
+  "repo": "https://github.com/fatatalia/dsh-ledger",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T04:33:44Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fatatalia/dsh-ledger",
+    "commands": [
+      "dsh plugin --profile web add github:fatatalia/dsh-ledger"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

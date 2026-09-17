@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "dzf-code/dsh-paste-doc",
+  "slug": "dzf-code__dsh-paste-doc",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-paste-doc",
+  "title": "dsh-paste-doc",
+  "summary": "在输入框粘贴长文本时自动生成可折叠的文档引用，让聊天界面更清爽，完整内容照常发送。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.12",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dzf-code",
+  "repo": "https://github.com/dzf-code/dsh-paste-doc",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T06:46:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dzf-code/dsh-paste-doc",
+    "commands": [
+      "dsh plugin --profile web add \"github:dzf-code/dsh-paste-doc\"",
+      "dsh plugin --profile web add \"file:/绝对路径/dsh-paste-doc-<version>.tgz\"",
+      "dsh plugin --profile web add \"link:/绝对路径/dsh-paste-doc\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

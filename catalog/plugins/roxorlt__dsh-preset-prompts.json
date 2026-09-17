@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "roxorlt/dsh-preset-prompts",
+  "slug": "roxorlt__dsh-preset-prompts",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-preset-prompts",
+  "title": "dsh-preset-prompts",
+  "summary": "在聊天框一键选用或自定义预设提示词，支持变量修改和版本回退，内置10条思维框架。",
+  "tags": [
+    "dsh",
+    "快捷操作",
+    "效率提升",
+    "会话管理",
+    "状态持久化",
+    "零配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "roxorlt",
+  "repo": "https://github.com/roxorlt/dsh-preset-prompts",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:22:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-preset-prompts@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-preset-prompts@latest",
+      "dsh plugin --profile web add \"github:roxorlt/dsh-preset-prompts"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

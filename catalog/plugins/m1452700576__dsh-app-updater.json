@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "m1452700576/dsh-app-updater",
+  "slug": "m1452700576__dsh-app-updater",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-app-updater",
+  "title": "dsh-app-updater",
+  "summary": "在侧边栏一键检查 DSH 客户端更新，自动下载安装包并打开，带实时进度条。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "状态监控",
+    "自动化",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "m1452700576",
+  "repo": "https://github.com/m1452700576/dsh-app-updater",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T10:18:32Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:m1452700576/dsh-app-updater",
+    "commands": [
+      "dsh plugin --profile web add github:m1452700576/dsh-app-updater"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

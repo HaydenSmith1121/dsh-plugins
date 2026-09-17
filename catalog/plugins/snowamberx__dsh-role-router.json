@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "SnowAmberX/dsh-role-router",
+  "slug": "snowamberx__dsh-role-router",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-role-router",
+  "title": "dsh-role-router",
+  "summary": "按角色自动路由模型，计划与执行阶段无需手动切换，提升多智能体协作效率。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "多Agent协作",
+    "工作流增强",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "SnowAmberX",
+  "repo": "https://github.com/SnowAmberX/dsh-role-router",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-31T15:33:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:SnowAmberX/dsh-role-router",
+    "commands": [
+      "dsh plugin --profile web add github:SnowAmberX/dsh-role-router"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

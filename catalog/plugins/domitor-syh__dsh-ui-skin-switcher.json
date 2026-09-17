@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "domitor-syh/dsh-ui-skin-switcher",
+  "slug": "domitor-syh__dsh-ui-skin-switcher",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ui-skin-switcher",
+  "title": "dsh-ui-skin-switcher",
+  "summary": "给 DSH 网页端换上 Claude 风格切换器，一键切换模型和思考强度，调推理力度更方便。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "model-selector",
+    "模型配置",
+    "前端增强",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "domitor-syh",
+  "repo": "https://github.com/domitor-syh/dsh-ui-skin-switcher",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-07T14:10:34Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@domitor-syh/dsh-ui-skin-switcher",
+    "commands": [
+      "dsh plugin --profile web add @domitor-syh/dsh-ui-skin-switcher"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

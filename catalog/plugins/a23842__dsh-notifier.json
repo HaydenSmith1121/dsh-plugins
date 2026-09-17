@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "a23842/dsh-notifier",
+  "slug": "a23842__dsh-notifier",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notifier",
+  "title": "dsh-notifier",
+  "summary": "给 DeepSeek Harness 加多渠道通知，任务跑完或出错时自动推送到企业微信、邮件等，随时掌握运行状态。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "效率提升",
+    "模型配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "a23842",
+  "repo": "https://github.com/a23842/dsh-notifier",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-08T14:48:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@czf1995/dsh-notifier",
+    "commands": [
+      "dsh plugin --profile web add @czf1995/dsh-notifier"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

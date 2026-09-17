@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "quan-v/dsh-safe-gate",
+  "slug": "quan-v__dsh-safe-gate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-safe-gate",
+  "title": "dsh-safe-gate",
+  "summary": "装插件前先扫一遍供应链和契约，帮你提前拦雷，避免装到投毒或坏版本。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "safe",
+    "安全审计",
+    "插件管理",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "quan-v",
+  "repo": "https://github.com/quan-v/dsh-safe-gate",
+  "homepage": "https://github.com/quan-v/dsh-safe-gate",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T14:26:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:quan-v/dsh-safe-gate",
+    "commands": [
+      "pip install \"git+https://github.com/quan-v/dsh-safe-gate.git@v0.1.8\"",
+      "git clone https://github.com/quan-v/dsh-safe-gate.git",
+      "dsh mcp add dsh-guard -- uvx \"dsh-guard @ git+https://github.com/quan-v/dsh-safe-gate.git@v0.1.8\" --mcp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

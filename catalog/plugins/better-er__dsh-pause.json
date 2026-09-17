@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "better-er/dsh-pause",
+  "slug": "better-er__dsh-pause",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pause",
+  "title": "dsh-pause",
+  "summary": "在 DeepSeek 下一轮请求前暂停，让你按回车插话或放行，不打断上下文。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "gate",
+    "human-in-the-loop",
+    "pause",
+    "steer",
+    "人机协作",
+    "工作流增强",
+    "会话管理",
+    "快捷操作",
+    "AI 助手"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-10T20:45:00Z",
+    "url": "https://github.com/better-er/dsh-pause/releases/tag/v0.1.1"
+  },
+  "author": "better-er",
+  "repo": "https://github.com/better-er/dsh-pause",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-10T20:40:31Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:better-er/dsh-pause",
+    "commands": [
+      "dsh plugin --profile web add github:better-er/dsh-pause"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "geecraft23/dsh-workbench",
+  "slug": "geecraft23__dsh-workbench",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workbench",
+  "title": "dsh-workbench",
+  "summary": "为 DeepSeek Harness 打造的实验性第三方插件工作台，方便你管理和运行各类插件。",
+  "tags": [
+    "ai-agent",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "typescript",
+    "插件管理",
+    "工作流增强",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "geecraft23",
+  "repo": "https://github.com/geecraft23/dsh-workbench",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T09:18:54Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:geecraft23/dsh-workbench",
+    "commands": [
+      "dsh plugin --profile web add github:geecraft23/dsh-workbench"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

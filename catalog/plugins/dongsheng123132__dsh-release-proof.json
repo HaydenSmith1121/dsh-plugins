@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "dongsheng123132/dsh-release-proof",
+  "slug": "dongsheng123132__dsh-release-proof",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-release-proof",
+  "title": "dsh-release-proof",
+  "summary": "为 DeepSeek Harness 生成可复现的多源发布证据，自动下载清单中所有镜像，保障软件供应链安全。",
+  "tags": [
+    "ai-agent",
+    "artifact-verification",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "release-engineering",
+    "software-supply-chain",
+    "安全审计",
+    "发布工程"
+  ],
+  "version": "0.2.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dongsheng123132",
+  "repo": "https://github.com/dongsheng123132/dsh-release-proof",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-07T13:34:12Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dongsheng123132/dsh-release-proof",
+    "commands": [
+      "dsh plugin --profile web add github:dongsheng123132/dsh-release-proof"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

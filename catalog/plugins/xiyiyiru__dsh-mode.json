@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "xiyiyiru/dsh-mode",
+  "slug": "xiyiyiru__dsh-mode",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mode",
+  "title": "dsh-mode",
+  "summary": "给 dsh 智能体切换五种工作模式，切换瞬间注入对应方法论，让 AI 干活更对路。",
+  "tags": [
+    "agent",
+    "dsh",
+    "dsh-plugin",
+    "llm",
+    "AI 助手",
+    "工作流增强",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.1.0-rc.6",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xiyiyiru",
+  "repo": "https://github.com/xiyiyiru/dsh-mode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T03:20:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiyiyiru/dsh-mode",
+    "commands": [
+      "dsh plugin --profile <name> add @xiyiyiru/dsh-mode"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "hrhgit/dsh-agent-manager",
+  "slug": "hrhgit__dsh-agent-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-manager",
+  "title": "dsh-agent-manager",
+  "summary": "为智能体预设配置工具使用策略，在设置中新增代理管理器，只显示明确允许的工具，提升安全性与可控性。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "插件管理",
+    "安全审查",
+    "多智能体协作"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hrhgit",
+  "repo": "https://github.com/hrhgit/dsh-agent-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T05:55:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hrhgit/dsh-agent-manager",
+    "commands": [
+      "dsh plugin --profile web add github:hrhgit/dsh-agent-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

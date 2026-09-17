@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "CuteSamurai24/dsh-md-memory",
+  "slug": "cutesamurai24__dsh-md-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-md-memory",
+  "title": "dsh-md-memory",
+  "summary": "让模型把要记住的内容写成 Markdown 小文件，下次对话自动注入，实现轻量级长期记忆。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh-plugin",
+    "dsh-plugins",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "CuteSamurai24",
+  "repo": "https://github.com/CuteSamurai24/dsh-md-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-18T17:37:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CuteSamurai24/dsh-md-memory",
+    "commands": [
+      "dsh plugin --profile web add github:CuteSamurai24/dsh-md-memory",
+      "dsh plugin --profile web remove dsh-md-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

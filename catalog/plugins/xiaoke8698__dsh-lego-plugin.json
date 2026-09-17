@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "XIAOke8698/dsh-lego-plugin",
+  "slug": "xiaoke8698__dsh-lego-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-lego-plugin",
+  "title": "dsh-lego-plugin",
+  "summary": "把 DSH 插件在网页界面里变成乐高积木，拖拖拽拽就能搭出可视化视图，直观又好玩。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "界面美化",
+    "可视化",
+    "零配置",
+    "文件管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "XIAOke8698",
+  "repo": "https://github.com/XIAOke8698/dsh-lego-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T05:58:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-lego-plugin",
+    "commands": [
+      "dsh plugin --profile web add dsh-lego-plugin",
+      "dsh plugin --profile web add github:XIAOke8698/dsh-lego-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "esonx/dsh-project-j4agent",
+  "slug": "esonx__dsh-project-j4agent",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-project-j4agent",
+  "title": "dsh-project-j4agent",
+  "summary": "把 Jira 式项目管理搬进 DSH 工作区，让智能体帮你建任务、理依赖、盯进度，轻量又本地化。",
+  "tags": [
+    "agent-native",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "issue-tracker",
+    "mini-jira",
+    "multi-agent",
+    "project-management",
+    "task-graph",
+    "多Agent协作",
+    "工作区管理",
+    "任务图",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-24T14:21:37Z",
+    "url": "https://github.com/esonx/dsh-project-j4agent/releases/tag/v0.1.1"
+  },
+  "author": "esonx",
+  "repo": "https://github.com/esonx/dsh-project-j4agent",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-30T14:30:05Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:esonx/dsh-project-j4agent",
+    "commands": [
+      "dsh plugin --profile web add github:esonx/dsh-project-j4agent",
+      "dsh plugin --profile web add ./dsh-project-j4agent-0.2.0-alpha.1.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "AKS1st/dsh-skill-manager",
+  "slug": "aks1st__dsh-skill-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skill-manager",
+  "title": "dsh-skill-manager",
+  "summary": "在设置面板中管理技能，支持浏览系统/用户/工作区/预设技能，文件树编辑、zip导入导出及删除，系统技能只读。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "skills",
+    "插件管理",
+    "文件树编辑",
+    "导入导出",
+    "设置面板"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "AKS1st",
+  "repo": "https://github.com/AKS1st/dsh-skill-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-09-08T03:19:40Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AKS1st/dsh-skill-manager",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/AKS1st/dsh-skill-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

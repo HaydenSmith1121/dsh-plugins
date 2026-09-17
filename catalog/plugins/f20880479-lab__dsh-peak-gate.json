@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "f20880479-lab/dsh-peak-gate",
+  "slug": "f20880479-lab__dsh-peak-gate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-peak-gate",
+  "title": "dsh-peak-gate",
+  "summary": "把高峰时段的请求自动排队到空闲时段发送，享受半价优惠，省钱又省心。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "peak-pricing",
+    "资源优化",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "f20880479-lab",
+  "repo": "https://github.com/f20880479-lab/dsh-peak-gate",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-26T14:34:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-peak-gate",
+    "commands": [
+      "dsh plugin --profile desktop add dsh-peak-gate",
+      "dsh plugin --profile web add dsh-peak-gate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

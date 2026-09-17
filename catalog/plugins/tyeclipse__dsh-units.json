@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "TYEclipse/dsh-units",
+  "slug": "tyeclipse__dsh-units",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-units",
+  "title": "dsh-units",
+  "summary": "17 类单位换算工具箱，覆盖功率、力、扭矩、排版单位、油耗、数据容量等，纯本地计算零依赖。",
+  "tags": [
+    "css-units",
+    "deepseek-harness",
+    "dsh-plugin",
+    "force",
+    "fuel-economy",
+    "horsepower",
+    "measurement",
+    "power",
+    "torque",
+    "typography",
+    "unit-conversion",
+    "效率提升",
+    "零配置",
+    "命令行工具"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-10T21:59:03Z",
+    "url": "https://github.com/TYEclipse/dsh-units/releases/tag/v0.4.0"
+  },
+  "author": "TYEclipse",
+  "repo": "https://github.com/TYEclipse/dsh-units",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-10T16:43:42Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TYEclipse/dsh-units",
+    "commands": [
+      "dsh plugin --profile default add github:TYEclipse/dsh-units",
+      "git clone https://github.com/TYEclipse/dsh-units.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

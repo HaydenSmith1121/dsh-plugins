@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "UnKnownFish125/dsh-deepmemory",
+  "slug": "unknownfish125__dsh-deepmemory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-deepmemory",
+  "title": "dsh-deepmemory",
+  "summary": "给 DeepSeek Harness 装上长期记忆，能语义召回、建实体图谱，还能用状态卡和预设快速恢复上下文。",
+  "tags": [
+    "agpl",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "knowledge-graph",
+    "livingmemory",
+    "long-term-memory",
+    "memory",
+    "rag",
+    "semantic-search",
+    "会话管理",
+    "语义检索",
+    "AI 助手"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-07T17:43:39Z",
+    "url": "https://github.com/UnKnownFish125/dsh-deepmemory/releases/tag/v0.4.0"
+  },
+  "author": "UnKnownFish125",
+  "repo": "https://github.com/UnKnownFish125/dsh-deepmemory",
+  "homepage": null,
+  "license": "AGPL-3.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-08T18:58:13Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:UnKnownFish125/dsh-deepmemory",
+    "commands": [
+      "git clone https://github.com/UnKnownFish125/dsh-deepmemory.git && cd dsh-deepmemory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

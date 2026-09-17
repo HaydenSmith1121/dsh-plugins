@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "cuteG41cute/dsh-api",
+  "slug": "cuteg41cute__dsh-api",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-api",
+  "title": "dsh-api",
+  "summary": "让其他 agent 或程序通过 HTTP 提交任务、查状态、取回复和对话记录，还能取消和续接会话。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "工具集成",
+    "多Agent协作",
+    "会话管理",
+    "自动化",
+    "状态监控"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-15T16:08:36Z",
+    "url": "https://github.com/cuteG41cute/dsh-api/releases/tag/v1.0.0"
+  },
+  "author": "cuteG41cute",
+  "repo": "https://github.com/cuteG41cute/dsh-api",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-15T16:08:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cuteG41cute/dsh-api",
+    "commands": [
+      "dsh plugin --profile web add github:cuteG41cute/dsh-api"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "chenbin-dev/dsh-auth-everying",
+  "slug": "chenbin-dev__dsh-auth-everying",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auth-everying",
+  "title": "dsh-auth-everying",
+  "summary": "一键导入本地 Claude、Codex 等编程工具登录配置，支持官方 OAuth 登录，自动发现并管理可用模型，让模型选择更省心。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.4",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chenbin-dev",
+  "repo": "https://github.com/chenbin-dev/dsh-auth-everying",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-21T17:32:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-auth-everying",
+    "commands": [
+      "dsh plugin --profile web add dsh-auth-everying",
+      "dsh plugin --profile web add github:chenbin-dev/dsh-auth-everying"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

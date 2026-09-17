@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "mafeis/dsh-net-proxy",
+  "slug": "mafeis__dsh-net-proxy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-net-proxy",
+  "title": "dsh-net-proxy",
+  "summary": "让 agent 自己发起的联网请求走你配置的代理，搜索、抓网页、调外部 API 都能通。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "模型适配",
+    "网络代理",
+    "效率提升"
+  ],
+  "version": "0.7.20",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.20",
+    "publishedAt": "2026-09-16T05:28:53Z",
+    "url": "https://github.com/mafeis/dsh-net-proxy/releases/tag/v0.7.20"
+  },
+  "author": "mafeis",
+  "repo": "https://github.com/mafeis/dsh-net-proxy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 11,
+  "forks": 2,
+  "pushedAt": "2026-09-16T05:28:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mafeis/dsh-net-proxy",
+    "commands": [
+      "dsh plugin --profile web add github:mafeis/dsh-net-proxy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "boxeryao/dsh-mini-tui",
+  "slug": "boxeryao__dsh-mini-tui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mini-tui",
+  "title": "dsh-mini-tui",
+  "summary": "轻量极简的终端界面插件，直连 DSH 运行时，把执行过程收进后台，让你专注输入和最终回答。",
+  "tags": [
+    "ai-agent",
+    "deepseek",
+    "developer-tools",
+    "dsh",
+    "dsh-plugin",
+    "dsh-tui",
+    "pi-tui",
+    "terminal",
+    "terminal-ui",
+    "tui",
+    "typescript",
+    "命令行工具",
+    "极简轻量",
+    "AI工具",
+    "后台执行"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-15T12:08:47Z",
+    "url": "https://github.com/boxeryao/dsh-mini-tui/releases/tag/v0.2.0"
+  },
+  "author": "boxeryao",
+  "repo": "https://github.com/boxeryao/dsh-mini-tui",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 2,
+  "pushedAt": "2026-08-16T14:59:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:boxeryao/dsh-mini-tui",
+    "commands": [
+      "dsh plugin --profile web add github:boxeryao/dsh-mini-tui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

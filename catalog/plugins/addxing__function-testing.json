@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "addxing/function-testing",
+  "slug": "addxing__function-testing",
+  "tier": "community",
+  "package": null,
+  "name": "function-testing",
+  "title": "function-testing",
+  "summary": "根据 PRD、Git 提交或用户故事自动生成功能测试用例，并导出 Excel 报告，帮 AI 编程代理快速补齐测试。",
+  "tags": [
+    "agent-skills",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-skill",
+    "skill",
+    "测试用例生成",
+    "功能测试",
+    "Excel报告"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "addxing",
+  "repo": "https://github.com/addxing/function-testing",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-14T08:25:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:addxing/function-testing",
+    "commands": [
+      "npx skills add addxing/function-testing"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

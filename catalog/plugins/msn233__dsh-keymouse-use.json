@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "msn233/dsh-keymouse-use",
+  "slug": "msn233__dsh-keymouse-use",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-keymouse-use",
+  "title": "dsh-keymouse-use",
+  "summary": "让 DeepSeek Harness 直接操控 Windows 键鼠、截图和窗口，实现桌面自动化操作。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "命令行工具",
+    "效率提升"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "msn233",
+  "repo": "https://github.com/msn233/dsh-keymouse-use",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T02:17:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:msn233/dsh-keymouse-use",
+    "commands": [
+      "dsh plugin --profile <name> add <path-to-dsh-keymouse>",
+      "dsh plugin --profile <name> add @temsmie/dsh-tool-keymouse"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

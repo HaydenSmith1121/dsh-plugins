@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "fan56/dsh-topics-memory",
+  "slug": "fan56__dsh-topics-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-topics-memory",
+  "title": "dsh-topics-memory",
+  "summary": "把工作记忆整理成本地知识包，自动提炼重点，让AI随时记住上下文，无需重复说明。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "工作流增强",
+    "工作区管理"
+  ],
+  "version": "0.16.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.16.0",
+    "publishedAt": "2026-09-14T07:38:29Z",
+    "url": "https://github.com/fan56/dsh-topics-memory/releases/tag/v0.16.0"
+  },
+  "author": "fan56",
+  "repo": "https://github.com/fan56/dsh-topics-memory",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T07:36:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fan56/dsh-topics-memory",
+    "commands": [
+      "dsh plugin --profile <your profile> add @aiwayds/dsh-topics-memory",
+      "dsh plugin --profile <name> remove @aiwayds/dsh-topics-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

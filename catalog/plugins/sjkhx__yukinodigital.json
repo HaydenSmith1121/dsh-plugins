@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Sjkhx/yukinoDigital",
+  "slug": "sjkhx__yukinodigital",
+  "tier": "community",
+  "package": null,
+  "name": "yukinoDigital",
+  "title": "yukinoDigital",
+  "summary": "把雪之下雪乃接入DSH，自带Live2D形象和日语音色，能主动搭话、监听任务完成并语音播报，还能当陪伴面板。",
+  "tags": [
+    "dsh-plugin",
+    "娱乐互动",
+    "自动化",
+    "AI 助手",
+    "前端增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Sjkhx",
+  "repo": "https://github.com/Sjkhx/yukinoDigital",
+  "homepage": null,
+  "license": null,
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-12T08:36:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Sjkhx/yukinoDigital",
+    "commands": [
+      "dsh plugin --profile web add github:Sjkhx/yukinoDigital"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "zuoyunlai/lunheng-article-pipeline-dsh",
+  "slug": "zuoyunlai__lunheng-article-pipeline-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "lunheng-article-pipeline-dsh",
+  "title": "lunheng-article-pipeline-dsh",
+  "summary": "让多个 AI 智能体分工协作，帮你把长篇文章从选题一路写到成稿。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-plugins",
+    "多智能体协作",
+    "报告生成",
+    "工作流增强",
+    "自动化"
+  ],
+  "version": "18.2.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zuoyunlai",
+  "repo": "https://github.com/zuoyunlai/lunheng-article-pipeline-dsh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-15T02:09:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "lunheng-article-pipeline",
+    "commands": [
+      "dsh plugin --profile web add lunheng-article-pipeline"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

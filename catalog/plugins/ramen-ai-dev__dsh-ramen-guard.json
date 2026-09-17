@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "ramen-ai-dev/dsh-ramen-guard",
+  "slug": "ramen-ai-dev__dsh-ramen-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ramen-guard",
+  "title": "dsh-ramen-guard",
+  "summary": "在工具执行前强制检查 ramen-ai 核心 IT 策略，不通过就拦截，防止违规操作。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "插件管理",
+    "自动化",
+    "工作流增强",
+    "插件目录"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ramen-ai-dev",
+  "repo": "https://github.com/ramen-ai-dev/dsh-ramen-guard",
+  "homepage": "https://ramenai.dev",
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T18:14:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@ramen-ai/dsh-ramen-guard@0.1.0",
+    "commands": [
+      "dsh plugin --profile web add @ramen-ai/dsh-ramen-guard@0.1.0",
+      "npm install",
+      "dsh plugin --profile web add /absolute/path/to/ramen-ai-dsh-ramen-guard-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

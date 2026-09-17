@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaokaizhou/dsh-media-preview",
+  "slug": "xiaokaizhou__dsh-media-preview",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-media-preview",
+  "title": "dsh-media-preview",
+  "summary": "在聊天记录里直接把本地音视频路径变成可播放的预览，不用再手动打开文件了。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "前端增强",
+    "可视化",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xiaokaizhou",
+  "repo": "https://github.com/xiaokaizhou/dsh-media-preview",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T14:01:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiaokaizhou/dsh-media-preview",
+    "commands": [
+      "dsh plugin --profile web add xiaokaizhou/dsh-media-preview",
+      "pnpm add xiaokaizhou/dsh-media-preview"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

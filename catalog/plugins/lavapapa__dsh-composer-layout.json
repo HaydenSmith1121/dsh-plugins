@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "lavapapa/dsh-composer-layout",
+  "slug": "lavapapa__dsh-composer-layout",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-composer-layout",
+  "title": "dsh-composer-layout",
+  "summary": "让长回答和详细提示词并排显示，配合可停靠的Composer面板，提升DeepSeek Harness网页版的操作效率。",
+  "tags": [
+    "composer-layout",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "ui-enhancement",
+    "工作区管理",
+    "界面美化",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.1.17",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.17",
+    "publishedAt": "2026-09-09T09:29:49Z",
+    "url": "https://github.com/lavapapa/dsh-composer-layout/releases/tag/v0.1.17"
+  },
+  "author": "lavapapa",
+  "repo": "https://github.com/lavapapa/dsh-composer-layout",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-09T09:29:01Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-composer-layout@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-composer-layout@latest",
+      "dsh plugin --profile web add \"github:lavapapa/dsh-composer-layout",
+      "dsh plugin --profile web remove dsh-composer-layout"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

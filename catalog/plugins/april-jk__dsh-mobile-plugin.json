@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "april-jk/dsh-mobile-plugin",
+  "slug": "april-jk__dsh-mobile-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mobile-plugin",
+  "title": "dsh-mobile-plugin",
+  "summary": "通过配对手机远程访问本地 DeepSeek Harness 网页界面，无需公网 IP，走加密中继连接。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mobile",
+    "remote-access",
+    "安全审计",
+    "手机配对",
+    "内网穿透",
+    "中继连接"
+  ],
+  "version": "0.1.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.9",
+    "publishedAt": "2026-09-04T06:31:55Z",
+    "url": "https://github.com/april-jk/dsh-mobile-plugin/releases/tag/v0.1.9"
+  },
+  "author": "april-jk",
+  "repo": "https://github.com/april-jk/dsh-mobile-plugin",
+  "homepage": "https://github.com/april-jk/dsh-mobile-suite",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T06:28:38Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:april-jk/dsh-mobile-plugin",
+    "commands": [
+      "git clone https://github.com/april-jk/dsh-mobile-plugin.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

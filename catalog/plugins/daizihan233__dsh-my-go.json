@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "daizihan233/dsh-my-go",
+  "slug": "daizihan233__dsh-my-go",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-my-go",
+  "title": "dsh-my-go",
+  "summary": "基于 DSH 的多智能体编排调度系统，将主会话与专业子智能体组合，自动分配任务、协同处理复杂流程。",
+  "tags": [
+    "dsh-plugin",
+    "多Agent协作",
+    "自动化",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "daizihan233",
+  "repo": "https://github.com/daizihan233/dsh-my-go",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-08-27T14:58:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:daizihan233/dsh-my-go",
+    "commands": [
+      "dsh plugin --profile web add dsh-my-go@latest --config.minimumReleaseAge=0"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

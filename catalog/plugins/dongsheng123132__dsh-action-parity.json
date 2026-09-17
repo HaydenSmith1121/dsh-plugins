@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "dongsheng123132/dsh-action-parity",
+  "slug": "dongsheng123132__dsh-action-parity",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-action-parity",
+  "title": "dsh-action-parity",
+  "summary": "验证 DeepSeek Harness 中同一业务操作在 CLI、MCP 和 GUI 三种界面下行为一致，确保跨界面操作无偏差。",
+  "tags": [
+    "action-parity",
+    "ai-agent",
+    "conformance",
+    "cross-surface",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "命令行工具"
+  ],
+  "version": "0.2.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dongsheng123132",
+  "repo": "https://github.com/dongsheng123132/dsh-action-parity",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-07T13:32:42Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dongsheng123132/dsh-action-parity",
+    "commands": [
+      "dsh plugin --profile web add github:dongsheng123132/dsh-action-parity"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

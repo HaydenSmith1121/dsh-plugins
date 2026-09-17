@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Zalpha263/dsh-archived-sessions",
+  "slug": "zalpha263__dsh-archived-sessions",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-archived-sessions",
+  "title": "dsh-archived-sessions",
+  "summary": "在 DSH 里轻松管理归档会话，秒开列表、一键恢复或彻底删除，告别繁琐操作。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "归档管理",
+    "会话恢复",
+    "批量删除",
+    "资源优化"
+  ],
+  "version": "1.3.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Zalpha263",
+  "repo": "https://github.com/Zalpha263/dsh-archived-sessions",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-08T12:32:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Zalpha263/dsh-archived-sessions",
+    "commands": [
+      "dsh plugin --profile web add github:Zalpha263/dsh-archived-sessions"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

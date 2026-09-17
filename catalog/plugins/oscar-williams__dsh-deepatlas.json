@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Oscar-Williams/dsh-deepatlas",
+  "slug": "oscar-williams__dsh-deepatlas",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-deepatlas",
+  "title": "dsh-deepatlas",
+  "summary": "扫描 dsh 插件生态，按任务推荐合适插件，安装前审计，经你确认后才安装。",
+  "tags": [
+    "deepatlas",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin-navigation",
+    "插件管理",
+    "自动化",
+    "安全审计",
+    "效率提升"
+  ],
+  "version": "0.2.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.3",
+    "publishedAt": "2026-08-24T13:57:45Z",
+    "url": "https://github.com/Oscar-Williams/dsh-deepatlas/releases/tag/v0.2.3"
+  },
+  "author": "Oscar-Williams",
+  "repo": "https://github.com/Oscar-Williams/dsh-deepatlas",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-09T09:48:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Oscar-Williams/dsh-deepatlas",
+    "commands": [
+      "dsh plugin --profile web add https://codeload.github.com/Oscar-Williams/dsh-deepatlas/tar.gz/refs/tags/v0.2.3"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "lsq-dsh-plugins/dsh-windows-notifications",
+  "slug": "lsq-dsh-plugins__dsh-windows-notifications",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-windows-notifications",
+  "title": "dsh-windows-notifications",
+  "summary": "为 DeepSeek Harness 网页版提供 Windows 桌面通知、提示音和应用内通知卡片，切走页面也能实时收到消息提醒。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.1.6",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lsq-dsh-plugins",
+  "repo": "https://github.com/lsq-dsh-plugins/dsh-windows-notifications",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-10T15:11:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@lsq64737/dsh-windows-notifications",
+    "commands": [
+      "dsh plugin --profile web add @lsq64737/dsh-windows-notifications",
+      "dsh plugin --profile web remove @lsq64737/dsh-windows-notifications"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

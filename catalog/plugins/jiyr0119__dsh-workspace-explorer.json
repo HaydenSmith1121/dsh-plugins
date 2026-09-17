@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "Jiyr0119/dsh-workspace-explorer",
+  "slug": "jiyr0119__dsh-workspace-explorer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workspace-explorer",
+  "title": "dsh-workspace-explorer",
+  "summary": "在 DeepSeek Harness 右侧显示文件目录树，点击或拖拽文件即可快速引用到输入框，操作更顺手。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "file-explorer",
+    "文件管理",
+    "目录树",
+    "拖拽引用",
+    "工作区"
+  ],
+  "version": "0.8.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.0",
+    "publishedAt": "2026-09-12T02:44:37Z",
+    "url": "https://github.com/Jiyr0119/dsh-workspace-explorer/releases/tag/v0.8.0"
+  },
+  "author": "Jiyr0119",
+  "repo": "https://github.com/Jiyr0119/dsh-workspace-explorer",
+  "homepage": "https://jiyr0119.github.io/dsh-workspace-explorer/",
+  "license": "MIT",
+  "stars": 27,
+  "forks": 0,
+  "pushedAt": "2026-09-12T02:44:22Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Jiyr0119/dsh-workspace-explorer",
+    "commands": [
+      "dsh plugin --profile web add -w @jiyr0119/dsh-workspace-explorer@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

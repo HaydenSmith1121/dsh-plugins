@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "muretai/muretai-dsh-skill",
+  "slug": "muretai__muretai-dsh-skill",
+  "tier": "community",
+  "package": null,
+  "name": "muretai-dsh-skill",
+  "title": "muretai-dsh-skill",
+  "summary": "一键接入 Muretai 智能体网络，自动配置 MCP 协议，支持邮件唤醒，让 DeepSeek Harness 与其他智能体无缝协作。",
+  "tags": [
+    "agent-to-agent",
+    "dsh-plugin",
+    "mcp",
+    "muretai",
+    "多Agent协作",
+    "零配置",
+    "工具集成",
+    "消息通知",
+    "AI 助手"
+  ],
+  "version": "0.2.54",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "muretai",
+  "repo": "https://github.com/muretai/muretai-dsh-skill",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-04T16:05:35Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:muretai/muretai-dsh-skill",
+    "commands": [
+      "git clone https://github.com/muretai/muretai-dsh-skill"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "mastereal/dsh-sidebar-enhancement-search",
+  "slug": "mastereal__dsh-sidebar-enhancement-search",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sidebar-enhancement-search",
+  "title": "dsh-sidebar-enhancement-search",
+  "summary": "在侧边栏直接搜文件，支持模糊匹配，还带文件类型彩色图标，找文件快又准。",
+  "tags": [
+    "better-sidebar",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "file-search",
+    "sidebar",
+    "效率提升",
+    "工作区管理"
+  ],
+  "version": "1.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.1",
+    "publishedAt": "2026-08-17T02:28:42Z",
+    "url": "https://github.com/mastereal/dsh-sidebar-enhancement-search/releases/tag/v1.0.1"
+  },
+  "author": "mastereal",
+  "repo": "https://github.com/mastereal/dsh-sidebar-enhancement-search",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T15:08:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mastereal/dsh-sidebar-enhancement-search",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/mastereal/dsh-sidebar-enhancement-search/archive/refs/tags/v1.0.5.tar.gz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

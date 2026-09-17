@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "zsxian11/dsh-flywheel",
+  "slug": "zsxian11__dsh-flywheel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-flywheel",
+  "title": "dsh-flywheel",
+  "summary": "让长会话像 Cursor 一样只带工作集，用项目产物图和倒排在会话间传短卡，告别 transcript 堆积。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "工作区管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zsxian11",
+  "repo": "https://github.com/zsxian11/dsh-flywheel",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T10:45:00Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zsxian11/dsh-flywheel",
+    "commands": [
+      "dsh plugin --profile web add github:zsxian11/dsh-flywheel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

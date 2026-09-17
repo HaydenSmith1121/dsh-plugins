@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "uigdwunm/dsh-process-fold",
+  "slug": "uigdwunm__dsh-process-fold",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-process-fold",
+  "title": "dsh-process-fold",
+  "summary": "把 DeepSeek Harness 网页端的执行步骤折叠成可展开的流程框，让界面更清爽、查看更省心。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "ui-plugin",
+    "界面美化",
+    "步骤折叠",
+    "流程展示",
+    "网页插件"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-09-13T06:46:09Z",
+    "url": "https://github.com/uigdwunm/dsh-process-fold/releases/tag/v0.3.1"
+  },
+  "author": "uigdwunm",
+  "repo": "https://github.com/uigdwunm/dsh-process-fold",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T05:52:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:uigdwunm/dsh-process-fold",
+    "commands": [
+      "dsh plugin --profile web add github:uigdwunm/dsh-process-fold"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

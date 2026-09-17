@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Huuuuung/dsh-artifact-index",
+  "slug": "huuuuung__dsh-artifact-index",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-artifact-index",
+  "title": "dsh-artifact-index",
+  "summary": "给 dsh-artifacts 侧边栏补上缺失的后端，提供 artifact 索引和文件内容，让前端能正常显示。",
+  "tags": [
+    "artifacts",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "nodejs",
+    "文件管理",
+    "前端增强",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Huuuuung",
+  "repo": "https://github.com/Huuuuung/dsh-artifact-index",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T16:43:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-artifact-index",
+    "commands": [
+      "dsh plugin --profile desktop add dsh-artifact-index"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "stevenx65/dsh-balance-plugin",
+  "slug": "stevenx65__dsh-balance-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-balance-plugin",
+  "title": "dsh-balance-plugin",
+  "summary": "在页面底部实时显示 DeepSeek API 余额和 Token 用量，方便随时监控消耗。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "API余额",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "stevenx65",
+  "repo": "https://github.com/stevenx65/dsh-balance-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-14T16:18:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-balance-plugin",
+    "commands": [
+      "dsh plugin --profile web add dsh-balance-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

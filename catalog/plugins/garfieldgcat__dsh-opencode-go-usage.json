@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "GarfieldGCat/dsh-opencode-go-usage",
+  "slug": "garfieldgcat__dsh-opencode-go-usage",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-opencode-go-usage",
+  "title": "dsh-opencode-go-usage",
+  "summary": "在聊天输入框旁显示 OpenCode Go 剩余配额，悬停即可查看 5 小时滚动用量，方便你随时掌握额度。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "效率提升",
+    "AI 助手",
+    "可视化"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "GarfieldGCat",
+  "repo": "https://github.com/GarfieldGCat/dsh-opencode-go-usage",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T03:10:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GarfieldGCat/dsh-opencode-go-usage",
+    "commands": [
+      "dsh plugin --profile web add github:GarfieldGCat/dsh-opencode-go-usage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

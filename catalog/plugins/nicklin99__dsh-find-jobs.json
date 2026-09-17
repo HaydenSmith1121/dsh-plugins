@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "nicklin99/dsh-find-jobs",
+  "slug": "nicklin99__dsh-find-jobs",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-find-jobs",
+  "title": "dsh-find-jobs",
+  "summary": "告诉它求职目标，自动搜职位、精读JD并评估匹配度，只推荐值得投的Top N工作。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "效率提升",
+    "AI 助手",
+    "语义检索"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "nicklin99",
+  "repo": "https://github.com/nicklin99/dsh-find-jobs",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T16:24:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:nicklin99/dsh-find-jobs",
+    "commands": [
+      "npm install -g @tencent/browserskill",
+      "dsh plugin --profile web add \"$(pwd)\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

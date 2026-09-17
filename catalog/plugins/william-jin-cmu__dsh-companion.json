@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "william-jin-cmu/dsh-companion",
+  "slug": "william-jin-cmu__dsh-companion",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-companion",
+  "title": "dsh-companion",
+  "summary": "常驻桌面聊天助手，支持全局快捷键唤起、屏幕上下文感知、定时任务和文件交接，提升日常操作效率。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "效率提升",
+    "会话管理",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "0.3.52",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "william-jin-cmu",
+  "repo": "https://github.com/william-jin-cmu/dsh-companion",
+  "homepage": "https://github.com/drewnekota/cetus",
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-16T13:39:51Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:william-jin-cmu/dsh-companion",
+    "commands": [
+      "dsh plugin --profile web add github:william-jin-cmu/dsh-companion"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

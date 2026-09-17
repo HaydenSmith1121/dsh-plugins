@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "GooodWei/arcana",
+  "slug": "gooodwei__arcana",
+  "tier": "community",
+  "package": null,
+  "name": "arcana",
+  "title": "arcana",
+  "summary": "把所有斜杠命令变成悬浮按钮面板，按使用频率排序，点一下就能运行。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "快捷操作",
+    "命令行工具",
+    "效率提升",
+    "主题"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "GooodWei",
+  "repo": "https://github.com/GooodWei/arcana",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-15T02:36:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooodWei/arcana",
+    "commands": [
+      "dsh plugin --profile web add github:GooodWei/arcana"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

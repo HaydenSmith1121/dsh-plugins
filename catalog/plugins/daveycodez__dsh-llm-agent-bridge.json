@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "daveycodez/dsh-llm-agent-bridge",
+  "slug": "daveycodez__dsh-llm-agent-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-agent-bridge",
+  "title": "dsh-llm-agent-bridge",
+  "summary": "在 DeepSeek Harness 中把 Claude 当作可选的大模型提供商，通过官方 Agent SDK 接入，适配所有模式。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "零配置",
+    "工作流增强"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "daveycodez",
+  "repo": "https://github.com/daveycodez/dsh-llm-agent-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-29T02:14:33Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:daveycodez/dsh-llm-agent-bridge",
+    "commands": [
+      "dsh plugin --profile web add github:daveycodez/dsh-llm-agent-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

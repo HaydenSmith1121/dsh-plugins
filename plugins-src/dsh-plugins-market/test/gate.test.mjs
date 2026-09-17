@@ -20,7 +20,7 @@ import { suite, test, assert, eq, REPO_ROOT as REPO, importBuilt } from './harne
 const { runGate, extractCleanSpec, readPackageFromTarball } = await importBuilt('lib/gate.js');
 const { detectEnvironment, readJsonSafe, compareVersions } = await importBuilt('lib/util.js');
 const { readProfileState, scanInstalled, composedTree, resolveRuntimePackageVersion } = await importBuilt('lib/profile.js');
-const { loadVerified, normalizeEntry } = await importBuilt('lib/catalog.js');
+const { loadCatalogIndex, normalizeEntry } = await importBuilt('lib/catalog.js');
 
 // 测试针对**隔离环境**跑，绝不碰生产 profile
 const DEV_HOME = process.env.DPM_TEST_HOME ?? path.join(os.homedir(), '.dsh-dev');
@@ -29,7 +29,7 @@ process.env.DSH_HOME = DEV_HOME;
 const compat = readJsonSafe(path.join(REPO, 'compatibility.json'));
 // ★ preferRemote:false —— 闸门测试要的是「给定一份目录，判定是否正确」，
 // 不该依赖网络、也不该被上游目录此刻的内容左右。用包内那份，测试才是可复现的。
-const verified = await loadVerified({ preferRemote: false });
+const verified = await loadCatalogIndex({ preferRemote: false });
 
 /** 迷你 tar.gz 写入器：只为造一个可控的候选包 */
 function makeTgz(files) {
@@ -85,33 +85,55 @@ test('隔离环境存在且是健康的（测试前置）', () => {
   assert(state.bundles.length >= 2, '应当至少有内置的两个 bundle');
 });
 
-test('仓库自带插件的 verified 目录已生成且条数对得上', () => {
-  assert(verified.available, `verified 目录不可用：${verified.error}`);
-  const rt = compat.runtimes.find((r) => r.status === 'supported' && r.recommended);
-  eq(verified.plugins.length, rt.plugins.length, 'verified 条数应等于兼容矩阵里的插件数');
-  for (const p of verified.plugins) {
-    const isSelf = p.id === 'dsh-plugins-market';
-    if (isSelf) {
-      // 自引用条目无法自包含 hash（算完 hash 又要重写 tarball），但必须如实说明
-      eq(p.sha256, null, '自引用条目不应带 sha256');
-      assert(p.sha256Note, '自引用条目必须带 sha256Note 说明为什么没有校验和');
-    } else {
-      assert(p.sha256?.length === 64, `${p.id} 应当带上 sha256（补上仓库原先只有 1/8 有校验和的缺口）`);
-    }
-    assert(p.install.tarball, `${p.id} 应当带 tarball 相对路径`);
+test('包内兜底目录（tier=verified）已生成且条目自洽', () => {
+  assert(verified.available, `包内目录不可用：${verified.error}`);
+  assert(verified.entries.length > 0, '包内兜底目录不能是空的');
+  for (const p of verified.entries) {
+    eq(p.tier, 'verified', `${p.id} 出现在包内兜底目录里就必须是 verified 层`);
+    eq(p.install.method, 'tarball', `${p.id} 的安装方法应当是 tarball`);
+    assert(p.slug, `${p.id} 索引条目必须带 slug —— 它没有 slug 就读不到自己的配置文件`);
   }
-  assert(verified.plugins.some((p) => p.id === 'dsh-plugins-market'), '本插件应当把自己也列进目录');
+  assert(verified.entries.some((p) => p.package === 'dsh-plugins-market'), '本插件应当把自己也列进目录');
 });
 
-test('★ 仓库原有 8 个插件的 sha256 都补上了（原先只有 1 个有）', () => {
-  const withHash = verified.plugins.filter((p) => p.sha256?.length === 64);
-  eq(withHash.length, verified.plugins.length - 1, '除自引用条目外，其余条目都应当有校验和');
-  assert(withHash.length >= 8, `应当至少覆盖仓库原有的 8 个插件，实际 ${withHash.length}`);
+test('★ 索引只负责「列出来」，安装用的字段在**单条配置文件**里', async () => {
+  // 这条断言钉住的是本版的核心约定：
+  //   索引（catalog/index.json）是给列表页看的，里面**没有** sha256 / tarball / url；
+  //   安装要用的那些字段只能来自那个插件自己的 catalog/plugins/<slug>.json。
+  //   如果哪天有人图省事把安装字段塞回索引，这条会红。
+  const { loadPluginConfig, entryFromConfig } = await importBuilt('lib/catalog.js');
+  const indexEntry = verified.entries.find((p) => p.package === 'dsh-plugins-market');
+  assert(indexEntry, '包内兜底目录里应当有本插件');
+
+  const { config, source } = await loadPluginConfig(indexEntry);
+  assert(config, `读不到本插件的配置文件（来源 ${source}）`);
+  const merged = entryFromConfig(config, indexEntry);
+
+  const isSelf = merged.package === 'dsh-plugins-market';
+  if (isSelf) {
+    // 自引用条目无法自包含 hash（算完 hash 又要重写 tarball），但必须如实说明
+    eq(merged.sha256, null, '自引用条目不应带 sha256');
+    assert(merged.sha256Note, '自引用条目必须带 sha256Note 说明为什么没有校验和');
+  } else {
+    assert(merged.sha256?.length === 64, `${merged.package} 应当带上 sha256（tarball 的字节完整性靠它）`);
+  }
+  assert(merged.install.tarball, `${merged.package} 应当带 tarball 相对路径`);
+  assert(merged.install.url, `${merged.package} 应当带可下载地址`);
+  eq(merged.install.method, 'tarball');
 });
 
-test('已验证插件在健康 profile 上放行（verdict=pass/warn，可安装）', () => {
+test('已验证插件在健康 profile 上放行（verdict=pass/warn，可安装）', async () => {
+  // ★ 必须先读**那个插件自己的配置文件**，再拿去跑闸门 —— 这正是市场的真实路径
+  //   （索引只负责列出来，安装用的 url / sha256 / tarball 只在配置文件里）。
+  //   如果这里图省事直接拿索引条目跑闸门，得到的会是「没有可用的安装方式」——
+  //   那不是 bug，而是「索引不足以决定怎么装」这条设计的直接体现。
+  const { loadPluginConfig, entryFromConfig } = await importBuilt('lib/catalog.js');
   const ctx = buildCtx();
-  for (const entry of verified.plugins) {
+  for (const indexEntry of verified.entries) {
+    const { config, error } = await loadPluginConfig(indexEntry);
+    assert(config, `${indexEntry.slug}: 读不到配置文件（${error ?? ''}）`);
+    const entry = entryFromConfig(config, indexEntry);
+
     const report = runGate(entry, ctx, { targetProfile: compat.profile ?? 'web' });
     const fatalHard = report.checks.filter((c) => c.status === 'fail' && c.severity === 'fatal' && !c.overridable);
     assert(
@@ -126,7 +148,7 @@ test('已验证插件在健康 profile 上放行（verdict=pass/warn，可安装
 
 test('检查项覆盖环境层 / profile 层 / 候选包层', () => {
   const ctx = buildCtx();
-  const report = runGate(verified.plugins[0], ctx, {});
+  const report = runGate(verified.entries[0], ctx, {});
   const ids = report.checks.map((c) => c.id);
   assert(ids.some((i) => i.startsWith('env.')), '应包含环境层检查');
   assert(ids.some((i) => i.startsWith('profile.')), '应包含 profile 层检查');

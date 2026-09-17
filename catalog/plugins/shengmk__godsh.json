@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "shengmk/godsh",
+  "slug": "shengmk__godsh",
+  "tier": "community",
+  "package": null,
+  "name": "godsh",
+  "title": "godsh",
+  "summary": "像 Anaconda Navigator 一样图形化管理 dsh 环境，配置档案、插件、内核和版本一键搞定。",
+  "tags": [
+    "dsh",
+    "dsh-bundle",
+    "dsh-desktop",
+    "dsh-plugin-desktop",
+    "dsh-plugin-market",
+    "dsh-plugin-verify",
+    "dsh-plugins",
+    "设置面板",
+    "插件管理",
+    "模型适配",
+    "工作区管理",
+    "可视化"
+  ],
+  "version": "0.7.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.1",
+    "publishedAt": "2026-09-16T04:41:19Z",
+    "url": "https://github.com/shengmk/godsh/releases/tag/v0.7.1"
+  },
+  "author": "shengmk",
+  "repo": "https://github.com/shengmk/godsh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T04:33:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shengmk/godsh",
+    "commands": [
+      "dsh plugin --profile web add github:shengmk/godsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "Kr-ATG/dsh-webui",
+  "slug": "kr-atg__dsh-webui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-webui",
+  "title": "dsh-webui",
+  "summary": "给 DeepSeek Harness 会话加装定时任务、记忆检索、用量统计和团队协作等一整套增强功能。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "自动化",
+    "语义检索",
+    "多Agent协作",
+    "状态监控"
+  ],
+  "version": "0.5.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.1",
+    "publishedAt": "2026-08-26T07:53:43Z",
+    "url": "https://github.com/Kr-ATG/dsh-webui/releases/tag/v0.5.1"
+  },
+  "author": "Kr-ATG",
+  "repo": "https://github.com/Kr-ATG/dsh-webui",
+  "homepage": null,
+  "license": null,
+  "stars": 17,
+  "forks": 1,
+  "pushedAt": "2026-08-27T14:48:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:statem-li/dsh-webui",
+    "commands": [
+      "dsh plugin --profile web add github:statem-li/dsh-webui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

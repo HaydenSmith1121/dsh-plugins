@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "awesome-dsh-plugin/dsh-find-plugin",
+  "slug": "awesome-dsh-plugin__dsh-find-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-find-plugin",
+  "title": "dsh-find-plugin",
+  "summary": "在会话里直接搜 GitHub 上的 DSH 插件，按星标排序，帮你快速找到想要的插件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "语义检索",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "0.3.7",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "awesome-dsh-plugin",
+  "repo": "https://github.com/awesome-dsh-plugin/dsh-find-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 139,
+  "forks": 6,
+  "pushedAt": "2026-08-19T05:24:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-find-plugin",
+    "commands": [
+      "dsh plugin --profile web add dsh-find-plugin",
+      "dsh plugin --profile web add github:awesome-dsh-plugin/dsh-find-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "JohnXu22786/hooks-adapter",
+  "slug": "johnxu22786__hooks-adapter",
+  "tier": "community",
+  "package": null,
+  "name": "JohnXu22786/hooks-adapter",
+  "title": "JohnXu22786/hooks-adapter",
+  "summary": "把 Claude Code、Codex 等工具的 hooks 配置无缝迁移到 dsh，即插即用，省去重复配置的麻烦。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "设置面板",
+    "工具集成",
+    "无缝导入",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "JohnXu22786",
+  "repo": "https://github.com/JohnXu22786/hooks-adapter",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-17T01:32:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JohnXu22786/hooks-adapter",
+    "commands": [
+      "dsh plugin --profile web add github:JohnXu22786/hooks-adapter"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

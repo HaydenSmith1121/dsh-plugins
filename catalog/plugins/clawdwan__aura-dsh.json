@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "clawdwan/aura-dsh",
+  "slug": "clawdwan__aura-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "aura-dsh",
+  "title": "aura-dsh",
+  "summary": "把AI对话里的结构化信息变成图表、表格和卡片，让数据一目了然。",
+  "tags": [
+    "deeepseek-harness-plugins",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "可视化",
+    "前端增强",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "clawdwan",
+  "repo": "https://github.com/clawdwan/aura-dsh",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T15:17:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:clawdwan/dsh-aura",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-aura",
+      "dsh plugin --profile web add github:clawdwan/dsh-aura",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

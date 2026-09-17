@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "huhaodong/dsh-auto-driving",
+  "slug": "huhaodong__dsh-auto-driving",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auto-driving",
+  "title": "dsh-auto-driving",
+  "summary": "让 DSH 智能体自动跑任务：模型挂了自动换、卡住自动重试、审批自动放行，全程无人值守。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dsh-plugin-market",
+    "自动化",
+    "模型配置",
+    "状态监控",
+    "效率提升",
+    "数据可审计"
+  ],
+  "version": "0.6.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.0",
+    "publishedAt": "2026-09-10T03:56:47Z",
+    "url": "https://github.com/huhaodong/dsh-auto-driving/releases/tag/v0.6.0"
+  },
+  "author": "huhaodong",
+  "repo": "https://github.com/huhaodong/dsh-auto-driving",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T11:03:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:huhaodong/dsh-auto-driving",
+    "commands": [
+      "dsh plugin --profile web add github:huhaodong/dsh-auto-driving"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

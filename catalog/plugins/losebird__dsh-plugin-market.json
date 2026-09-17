@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "losebird/dsh-plugin-market",
+  "slug": "losebird__dsh-plugin-market",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-market",
+  "title": "dsh-plugin-market",
+  "summary": "一键浏览和安装 6000 多个 DSH 社区插件，按功能分类，每天自动更新。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "market",
+    "插件管理",
+    "集中仓库",
+    "工具集成",
+    "自动化"
+  ],
+  "version": "0.1.66",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "losebird",
+  "repo": "https://github.com/losebird/dsh-plugin-market",
+  "homepage": "https://www.dsh-plugin.shop/",
+  "license": null,
+  "stars": 5,
+  "forks": 13,
+  "pushedAt": "2026-09-16T09:57:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@ace-zone/dsh-market",
+    "commands": [
+      "dsh plugin --profile web add @ace-zone/dsh-market"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

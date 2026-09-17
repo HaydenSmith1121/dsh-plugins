@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "wenzetan/dsh-llm-newapi",
+  "slug": "wenzetan__dsh-llm-newapi",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-newapi",
+  "title": "dsh-llm-newapi",
+  "summary": "为 DeepSeek Harness 接入 NewAPI 网关，自动发现聊天模型，免改代码即可在设置中配置使用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "llm",
+    "newapi",
+    "openai-compatible",
+    "模型配置",
+    "插件管理"
+  ],
+  "version": "0.8.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.4",
+    "publishedAt": "2026-09-03T06:05:15Z",
+    "url": "https://github.com/wenzetan/dsh-llm-newapi/releases/tag/v0.8.4"
+  },
+  "author": "wenzetan",
+  "repo": "https://github.com/wenzetan/dsh-llm-newapi",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 2,
+  "pushedAt": "2026-09-11T09:23:05Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wenzetan/dsh-llm-newapi",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh@0.1.2-rc.1",
+      "npm install -g pnpm",
+      "dsh plugin --profile web add --save-exact dsh-llm-newapi@0.8.6-rc.1"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

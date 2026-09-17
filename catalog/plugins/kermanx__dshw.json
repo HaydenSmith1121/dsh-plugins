@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "kermanx/dshw",
+  "slug": "kermanx__dshw",
+  "tier": "community",
+  "package": null,
+  "name": "dshw",
+  "title": "dshw",
+  "summary": "在 DeepSeek Harness 里用看板管理 PR，自动同步分支、监控 CI，还能让智能体帮你解决冲突和 review 问题。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "工作流增强",
+    "自动化",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kermanx",
+  "repo": "https://github.com/kermanx/dshw",
+  "homepage": null,
+  "license": null,
+  "stars": 9,
+  "forks": 0,
+  "pushedAt": "2026-09-08T09:28:48Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kermanx/dshw",
+    "commands": [
+      "git clone https://github.com/kermanx/dshw.git",
+      "dsh plugin --profile web add \"$PWD\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

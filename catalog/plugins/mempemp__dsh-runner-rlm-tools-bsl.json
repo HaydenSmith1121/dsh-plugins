@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Mempemp/DSH-runner-rlm-tools-bsl",
+  "slug": "mempemp__dsh-runner-rlm-tools-bsl",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-runner-rlm-tools-bsl",
+  "title": "DSH-runner-rlm-tools-bsl",
+  "summary": "让 rlm-tools-bsl 随 DSH 一起启停，自动跑 1C 代码分析，省去手动开服务。",
+  "tags": [
+    "1c",
+    "bsl",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mcp",
+    "rlm",
+    "工具集成",
+    "自动化",
+    "命令行工具",
+    "工作流增强"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-09-10T12:53:52Z",
+    "url": "https://github.com/Mempemp/DSH-runner-rlm-tools-bsl/releases/tag/v0.1.3"
+  },
+  "author": "Mempemp",
+  "repo": "https://github.com/Mempemp/DSH-runner-rlm-tools-bsl",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T12:54:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Mempemp/DSH-runner-rlm-tools-bsl",
+    "commands": [
+      "dsh plugin --profile web add github:Mempemp/DSH-runner-rlm-tools-bsl"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

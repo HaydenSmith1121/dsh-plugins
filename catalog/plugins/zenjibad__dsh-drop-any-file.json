@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Zenjibad/dsh-drop-any-file",
+  "slug": "zenjibad__dsh-drop-any-file",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-drop-any-file",
+  "title": "dsh-drop-any-file",
+  "summary": "让聊天框能拖入任意文件，非图片文件自动存进工作区，智能体可直接读取使用。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "工作区管理",
+    "会话管理",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Zenjibad",
+  "repo": "https://github.com/Zenjibad/dsh-drop-any-file",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T15:49:04Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Zenjibad/dsh-drop-any-file",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-drop-any-file",
+      "dsh plugin --profile web add github:Zenjibad/dsh-drop-any-file",
+      "dsh plugin --profile web add git+https://github.com/Zenjibad/dsh-drop-any-file.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

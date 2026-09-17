@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Moeblack/dsh-prompt-studio",
+  "slug": "moeblack__dsh-prompt-studio",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-studio",
+  "title": "dsh-prompt-studio",
+  "summary": "在对话页直接编辑系统提示词，实时预览完整请求效果，支持覆盖原生提示词。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "提示词编辑",
+    "可视化",
+    "提示词优化",
+    "请求调试"
+  ],
+  "version": "0.4.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Moeblack",
+  "repo": "https://github.com/Moeblack/dsh-prompt-studio",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-08-13T14:00:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Moeblack/dsh-prompt-studio",
+    "commands": [
+      "dsh plugin --profile web add github:Moeblack/dsh-prompt-studio"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

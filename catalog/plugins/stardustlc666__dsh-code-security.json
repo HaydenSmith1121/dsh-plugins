@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "STARDUSTLC666/dsh-code-security",
+  "slug": "stardustlc666__dsh-code-security",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-code-security",
+  "title": "dsh-code-security",
+  "summary": "给 AI 代码审查加一道安全锁：自动扫描密钥泄露、漏洞规则和变更差异，还能导出 SARIF 报告，零依赖即插即用。",
+  "tags": [
+    "code-review",
+    "code-security",
+    "dsh-plugin",
+    "sast",
+    "security",
+    "工作流增强",
+    "安全审计",
+    "自动化",
+    "命令行工具"
+  ],
+  "version": "0.3.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "STARDUSTLC666",
+  "repo": "https://github.com/STARDUSTLC666/dsh-code-security",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-13T03:05:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-code-security",
+    "commands": [
+      "dsh plugin --profile web add dsh-code-security"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

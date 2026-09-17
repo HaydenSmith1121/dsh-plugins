@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "YrracOwl/dsh-hmos-sidebar",
+  "slug": "yrracowl__dsh-hmos-sidebar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hmos-sidebar",
+  "title": "dsh-hmos-sidebar",
+  "summary": "在 DeepSeek Harness 里给原生鸿蒙开发配上工作台和 41 个工具，能构建、部署、查日志、控设备，还能跑 UI 自动化。",
+  "tags": [
+    "arkts",
+    "deepseek-harness",
+    "deveco-studio",
+    "dsh-plugin",
+    "dsh-plugins",
+    "dsh-tools",
+    "dsh-web",
+    "harmonyos",
+    "harmonyos-next",
+    "工作流增强",
+    "命令行工具",
+    "状态监控",
+    "AI 助手"
+  ],
+  "version": "0.3.13",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.13",
+    "publishedAt": "2026-09-10T15:04:23Z",
+    "url": "https://github.com/YrracOwl/dsh-hmos-sidebar/releases/tag/v0.3.13"
+  },
+  "author": "YrracOwl",
+  "repo": "https://github.com/YrracOwl/dsh-hmos-sidebar",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T15:03:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:YrracOwl/dsh-hmos-sidebar",
+    "commands": [
+      "dsh plugin --profile web add github:YrracOwl/dsh-hmos-sidebar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

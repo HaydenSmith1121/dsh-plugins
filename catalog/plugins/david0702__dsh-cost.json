@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "david0702/dsh-cost",
+  "slug": "david0702__dsh-cost",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cost",
+  "title": "dsh-cost",
+  "summary": "在对话底部实时显示累计费用，按请求时间和模型精准计费，支持分时段、模型归属、读图金额和余额查看。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "效率提升",
+    "可视化",
+    "模型配置",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "david0702",
+  "repo": "https://github.com/david0702/dsh-cost",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T16:27:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:david0702/dsh-cost",
+    "commands": [
+      "dsh plugin --profile web add github:david0702/dsh-cost"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

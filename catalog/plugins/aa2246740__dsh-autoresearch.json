@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "aa2246740/dsh-autoresearch",
+  "slug": "aa2246740__dsh-autoresearch",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-autoresearch",
+  "title": "dsh-autoresearch",
+  "summary": "在官方 Web 界面里自动跑研究实验，创建、运行、监控一条龙，实验过程可持久追踪。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "状态监控",
+    "可视化",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "1.0.5",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "aa2246740",
+  "repo": "https://github.com/aa2246740/dsh-autoresearch",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T13:04:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aa2246740/dsh-autoresearch",
+    "commands": [
+      "dsh plugin --profile web add github:aa2246740/dsh-autoresearch",
+      "git clone https://github.com/aa2246740/dsh-autoresearch.git",
+      "dsh plugin --profile web add ./dsh-autoresearch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

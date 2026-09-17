@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "bill9109/dsh-drag-and-drop",
+  "slug": "bill9109__dsh-drag-and-drop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-drag-and-drop",
+  "title": "dsh-drag-and-drop",
+  "summary": "把本地文件直接拖进来，自动插入真实路径，跨平台都能用。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "文件管理",
+    "快捷操作",
+    "效率提升",
+    "跨设备"
+  ],
+  "version": "0.1.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.6",
+    "publishedAt": "2026-08-21T04:40:00Z",
+    "url": "https://github.com/bill9109/dsh-drag-and-drop/releases/tag/v0.1.6"
+  },
+  "author": "bill9109",
+  "repo": "https://github.com/bill9109/dsh-drag-and-drop",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 24,
+  "forks": 4,
+  "pushedAt": "2026-08-26T09:58:55Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:omdsh-dev/dsh-drag-and-drop",
+    "commands": [
+      "dsh plugin --profile web add github:omdsh-dev/dsh-drag-and-drop",
+      "dsh plugin --profile web add /path/to/dsh-drag-and-drop",
+      "dsh plugin --profile web update github:omdsh-dev/dsh-drag-and-drop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

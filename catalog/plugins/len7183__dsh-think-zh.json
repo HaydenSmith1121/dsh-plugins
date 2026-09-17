@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "Len7183/DSH-Think-zh",
+  "slug": "len7183__dsh-think-zh",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-Think-zh",
+  "title": "DSH-Think-zh",
+  "summary": "强制 DeepSeek 用简体中文思考，中文用户看推理过程不再费劲。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dsh-plugin-market",
+    "dsh-plugin-theme",
+    "dsh-plugins",
+    "dsh-plugins-terminal",
+    "模型适配",
+    "AI 助手",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-05T16:09:27Z",
+    "url": "https://github.com/Len7183/DSH-Think-zh/releases/tag/v0.2.0"
+  },
+  "author": "Len7183",
+  "repo": "https://github.com/Len7183/DSH-Think-zh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 21,
+  "forks": 1,
+  "pushedAt": "2026-09-05T16:09:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Len7183/DSH-Think-zh",
+    "commands": [
+      "dsh plugin --profile web add github:Len7183/DSH-Think-zh",
+      "git clone https://github.com/Len7183/DSH-Think-zh.git",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

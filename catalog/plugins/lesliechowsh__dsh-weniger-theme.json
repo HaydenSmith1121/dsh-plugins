@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "lesliechowsh/dsh-weniger-theme",
+  "slug": "lesliechowsh__dsh-weniger-theme",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-weniger-theme",
+  "title": "dsh-weniger-theme",
+  "summary": "受迪特·拉姆斯设计哲学启发的极简主题，让 DeepSeek Harness 界面更清爽、更专注。",
+  "tags": [
+    "deepseek-harness",
+    "dieter-rams",
+    "dsh-plugin",
+    "theme",
+    "界面美化",
+    "零配置"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-08-20T05:52:13Z",
+    "url": "https://github.com/lesliechowsh/dsh-weniger-theme/releases/tag/v0.1.3"
+  },
+  "author": "lesliechowsh",
+  "repo": "https://github.com/lesliechowsh/dsh-weniger-theme",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-09-12T04:22:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-weniger-theme@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-weniger-theme@latest",
+      "dsh plugin --profile web add github:lesliechowsh/dsh-weniger-theme",
+      "npm install dsh-weniger-theme"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

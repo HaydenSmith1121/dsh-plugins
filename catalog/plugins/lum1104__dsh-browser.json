@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "Lum1104/dsh-browser",
+  "slug": "lum1104__dsh-browser",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-browser",
+  "title": "dsh-browser",
+  "summary": "给 Chrome 装上侧边栏，让 DeepSeek 助手随时待命，边看网页边指挥它干活。",
+  "tags": [
+    "browser-automation",
+    "chrome-extension",
+    "coding-agent",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "桌面自动化",
+    "多智能体协作",
+    "效率提升",
+    "可视化",
+    "会话管理"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-09-04T06:47:37Z",
+    "url": "https://github.com/Lum1104/dsh-browser/releases/tag/v0.1.3"
+  },
+  "author": "Lum1104",
+  "repo": "https://github.com/Lum1104/dsh-browser",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 668,
+  "forks": 47,
+  "pushedAt": "2026-09-13T14:44:57Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Lum1104/dsh-browser",
+    "commands": [
+      "curl -fsSL https://raw.githubusercontent.com/Lum1104/dsh-browser/refs/heads/main/scripts/install.sh | bash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

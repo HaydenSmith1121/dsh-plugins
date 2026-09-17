@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "940842546/dsh-permissions",
+  "slug": "940842546__dsh-permissions",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-permissions",
+  "title": "dsh-permissions",
+  "summary": "为 DeepSeek Harness 提供细粒度的权限管理，控制插件和智能体的访问范围，保障使用安全。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "permissions",
+    "security",
+    "插件管理",
+    "安全审计",
+    "权限控制"
+  ],
+  "version": "1.2.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "940842546",
+  "repo": "https://github.com/940842546/dsh-permissions",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-31T08:34:57Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-permissions",
+    "commands": [
+      "dsh plugin add dsh-permissions"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

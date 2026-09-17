@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "dandibbert/dsh-shadow-mind",
+  "slug": "dandibbert__dsh-shadow-mind",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-shadow-mind",
+  "title": "dsh-shadow-mind",
+  "summary": "给 DeepSeek Harness 配上持久认知副脑，回合结束后自动检查架构、事实、测试等，并把结果回注主 Agent。",
+  "tags": [
+    "agent-tools",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "multi-agent",
+    "多Agent协作",
+    "认知调度",
+    "质量检查",
+    "架构审查",
+    "自动化"
+  ],
+  "version": "0.4.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.2",
+    "publishedAt": "2026-08-23T05:37:10Z",
+    "url": "https://github.com/dandibbert/dsh-shadow-mind/releases/tag/v0.4.2"
+  },
+  "author": "dandibbert",
+  "repo": "https://github.com/dandibbert/dsh-shadow-mind",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T09:06:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dandibbert/dsh-shadow-mind",
+    "commands": [
+      "dsh plugin --profile web add github:dandibbert/dsh-shadow-mind"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

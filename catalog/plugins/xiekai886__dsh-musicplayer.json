@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "xiekai886/dsh-MusicPlayer",
+  "slug": "xiekai886__dsh-musicplayer",
+  "tier": "community",
+  "package": null,
+  "name": "xiekai886/dsh-MusicPlayer",
+  "title": "xiekai886/dsh-MusicPlayer",
+  "summary": "边聊天边听歌的悬浮音乐播放器，可拖动折叠，支持网易云歌单导入和歌曲搜索。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "快捷操作",
+    "主题",
+    "视觉理解"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xiekai886",
+  "repo": "https://github.com/xiekai886/dsh-MusicPlayer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-08-16T15:59:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:你的用户名/dsh-music",
+    "commands": [
+      "dsh plugin --profile web add \"github:你的用户名/dsh-music\"",
+      "dsh plugin --profile web add \"file:/path/to/dsh-music\"",
+      "dsh plugin --profile web remove @dsh-external/dsh-music"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

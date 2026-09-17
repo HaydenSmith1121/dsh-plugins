@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "bychv/dsh-preset-enhance",
+  "slug": "bychv__dsh-preset-enhance",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-preset-enhance",
+  "title": "dsh-preset-enhance",
+  "summary": "让 DeepSeek Harness 直接加载和编辑 SillyTavern 预设，发消息前按顺序注入内容并控制工具。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "模型适配",
+    "会话管理",
+    "工具集成",
+    "工作流增强"
+  ],
+  "version": "0.3.2-alpha.2",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bychv",
+  "repo": "https://github.com/bychv/dsh-preset-enhance",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 1,
+  "pushedAt": "2026-09-16T02:24:47Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bychv/dsh-preset-enhance",
+    "commands": [
+      "dsh plugin --profile web add github:bychv/dsh-preset-enhance"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

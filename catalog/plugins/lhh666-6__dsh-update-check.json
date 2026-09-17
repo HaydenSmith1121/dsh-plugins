@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "lhh666-6/dsh-update-check",
+  "slug": "lhh666-6__dsh-update-check",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-update-check",
+  "title": "dsh-update-check",
+  "summary": "检查 DSH 桌面端和 GitHub 源码更新，会话头部显示状态，一键下载安装。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "状态监控",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lhh666-6",
+  "repo": "https://github.com/lhh666-6/dsh-update-check",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-23T17:29:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-update-check-plus",
+    "commands": [
+      "dsh plugin --profile web add dsh-update-check-plus",
+      "dsh plugin --profile desktop add dsh-update-check-plus",
+      "dsh plugin --profile web add github:lhh666-6/dsh-update-check"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

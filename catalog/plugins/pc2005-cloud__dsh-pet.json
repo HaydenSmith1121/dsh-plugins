@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "PC2005-cloud/dsh-pet",
+  "slug": "pc2005-cloud__dsh-pet",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pet",
+  "title": "dsh-pet",
+  "summary": "给 DeepSeek Harness 装个桌面宠物，一行命令就能用现成的 28 个透明动画，还能用 AI 视频自制专属宠物。",
+  "tags": [
+    "deepseek-harness",
+    "desktop-pet",
+    "dsh",
+    "dsh-plugin",
+    "桌宠",
+    "零配置",
+    "AI视频生成",
+    "动画素材",
+    "趣味工具"
+  ],
+  "version": "0.2.11",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "PC2005-cloud",
+  "repo": "https://github.com/PC2005-cloud/dsh-pet",
+  "homepage": "https://www.npmjs.com/package/dsh-pet",
+  "license": "MIT",
+  "stars": 649,
+  "forks": 46,
+  "pushedAt": "2026-09-16T12:39:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-pet",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh pnpm",
+      "dsh plugin --profile web add dsh-pet",
+      "git clone https://github.com/PC2005-cloud/dsh-pet.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

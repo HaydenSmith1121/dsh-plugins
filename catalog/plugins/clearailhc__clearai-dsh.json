@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Clearailhc/clearai-dsh",
+  "slug": "clearailhc__clearai-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "clearai-dsh",
+  "title": "clearai-dsh",
+  "summary": "把认知循环带进 DeepSeek Harness，让 AI 智能体像科学家一样推理、验证和发现。",
+  "tags": [
+    "agent-preset",
+    "ai-agents",
+    "deepseek-harness",
+    "dsh-plugin",
+    "epistemic-loop",
+    "scientific-discovery",
+    "多Agent协作",
+    "AI 助手",
+    "工作流增强",
+    "模型配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-17T09:02:09Z",
+    "url": "https://github.com/Clearailhc/clearai-dsh/releases/tag/v0.2.0"
+  },
+  "author": "Clearailhc",
+  "repo": "https://github.com/Clearailhc/clearai-dsh",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 17,
+  "forks": 3,
+  "pushedAt": "2026-09-16T08:01:18Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Clearailhc/clearai-dsh",
+    "commands": [
+      "dsh plugin --profile web add github:Clearailhc/clearai-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

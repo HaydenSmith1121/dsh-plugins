@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "RiRi9909/DeepSeekHarness-community-index",
+  "slug": "riri9909__deepseekharness-community-index",
+  "tier": "community",
+  "package": null,
+  "name": "DeepSeekHarness-community-index",
+  "title": "DeepSeekHarness-community-index",
+  "summary": "在设置面板中新增情绪驾驶舱，实时展示对话情绪分析结果，帮你快速掌握交流氛围。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-plugins",
+    "sentiment-analysis",
+    "会话管理",
+    "前端增强",
+    "情绪分析"
+  ],
+  "version": "0.2.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.3",
+    "publishedAt": "2026-08-18T05:04:28Z",
+    "url": "https://github.com/RiRi9909/DeepSeekHarness-community-index/releases/tag/v0.2.3"
+  },
+  "author": "RiRi9909",
+  "repo": "https://github.com/RiRi9909/DeepSeekHarness-community-index",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-18T05:14:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:RiRi9909/DeepSeekHarness-community-index",
+    "commands": [
+      "dsh plugin --profile web add github:RiRi9909/DeepSeekHarness-community-index"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

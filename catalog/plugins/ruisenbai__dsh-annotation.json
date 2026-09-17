@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "ruisenbai/dsh-annotation",
+  "slug": "ruisenbai__dsh-annotation",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-annotation",
+  "title": "dsh-annotation",
+  "summary": "在 DeepSeek Harness 回复中直接添加行内评论，支持批量批注，方便团队协作和代码审查。",
+  "tags": [
+    "annotation",
+    "deepseek-harness",
+    "dsh-plugin",
+    "messages",
+    "session",
+    "行内评论",
+    "批量批注",
+    "工作流增强",
+    "多Agent协作",
+    "效率提升"
+  ],
+  "version": "0.8.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.0",
+    "publishedAt": "2026-09-09T03:40:34Z",
+    "url": "https://github.com/ruisenbai/dsh-annotation/releases/tag/v0.8.0"
+  },
+  "author": "ruisenbai",
+  "repo": "https://github.com/ruisenbai/dsh-annotation",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-14T06:39:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ruisenbai/dsh-annotation",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-annotation.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

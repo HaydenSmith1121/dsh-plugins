@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "runfali/dsh-login-gateway",
+  "slug": "runfali__dsh-login-gateway",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-login-gateway",
+  "title": "dsh-login-gateway",
+  "summary": "给 dsh 的 Web UI 加一道登录墙，让本机服务安全地对外开放，登录后全功能反代，零依赖零侵入。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "安全审计",
+    "工作流增强",
+    "前端增强",
+    "自动化"
+  ],
+  "version": "0.1.2-rc.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "runfali",
+  "repo": "https://github.com/runfali/dsh-login-gateway",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-03T13:46:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:runfali/dsh-login-gateway",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-login-gateway",
+      "dsh plugin --profile web remove dsh-login-gateway"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

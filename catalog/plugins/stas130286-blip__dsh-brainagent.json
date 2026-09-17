@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "stas130286-blip/dsh-brainagent",
+  "slug": "stas130286-blip__dsh-brainagent",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-brainagent",
+  "title": "dsh-brainagent",
+  "summary": "给 AI 装上类脑记忆和目标系统，能自主上网探索、靠奖励机制自我学习进化。",
+  "tags": [
+    "ai-agent",
+    "autonomy",
+    "brainagent",
+    "cognitive-architecture",
+    "deepseek-harness",
+    "dsh-plugin",
+    "memory",
+    "plugin",
+    "reinforcement-learning",
+    "多Agent协作",
+    "自动化",
+    "状态持久化",
+    "语义检索",
+    "AI 助手"
+  ],
+  "version": "0.9.27",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.9.27",
+    "publishedAt": "2026-08-28T18:44:38Z",
+    "url": "https://github.com/stas130286-blip/dsh-brainagent/releases/tag/v0.9.27"
+  },
+  "author": "stas130286-blip",
+  "repo": "https://github.com/stas130286-blip/dsh-brainagent",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-06T12:55:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:stas130286-blip/dsh-brainagent",
+    "commands": [
+      "dsh plugin --profile web add github:stas130286-blip/dsh-brainagent"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

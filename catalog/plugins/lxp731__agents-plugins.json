@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "lxp731/agents-plugins",
+  "slug": "lxp731__agents-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "agents-plugins",
+  "title": "agents-plugins",
+  "summary": "为 AI 编程助手（DSH、OpenClaw、Pi）提供桌面通知和提示音，回复完成时提醒你，可自定义时长阈值。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "状态监控",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "1.0.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lxp731",
+  "repo": "https://github.com/lxp731/agents-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-04T16:28:03Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lxp731/agents-plugins",
+    "commands": [
+      "dsh plugin --profile web add github:lxp731/agents-plugins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Elinpf/dsh-plugin-forge",
+  "slug": "elinpf__dsh-plugin-forge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-forge",
+  "title": "dsh-plugin-forge",
+  "summary": "从需求到合并PR，全流程帮你开发DeepSeek Harness插件，六阶段逐步推进。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "工作流增强",
+    "安全审计",
+    "AI 助手"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "Elinpf",
+  "repo": "https://github.com/Elinpf/dsh-plugin-forge",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T09:44:59Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Elinpf/dsh-plugin-forge",
+    "commands": [
+      "dsh plugin --profile web add github:Elinpf/dsh-plugin-forge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

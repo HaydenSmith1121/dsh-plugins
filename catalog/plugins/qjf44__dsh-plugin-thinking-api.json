@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "qjf44/dsh-plugin-thinking-api",
+  "slug": "qjf44__dsh-plugin-thinking-api",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-thinking-api",
+  "title": "dsh-plugin-thinking-api",
+  "summary": "一个插件块配置任意 OpenAI 兼容 API，自动获得思考模式，即插即用。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "零配置",
+    "工具集成",
+    "效率提升",
+    "设置面板"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-18T09:04:15Z",
+    "url": "https://github.com/qjf44/dsh-plugin-thinking-api/releases/tag/v0.1.1"
+  },
+  "author": "qjf44",
+  "repo": "https://github.com/qjf44/dsh-plugin-thinking-api",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-11T16:38:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qjf44/dsh-plugin-thinking-api",
+    "commands": [
+      "dsh plugin --profile web add github:qjf44/dsh-plugin-thinking-api"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

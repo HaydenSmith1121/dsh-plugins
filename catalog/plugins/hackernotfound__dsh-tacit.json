@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "hackernotfound/dsh-tacit",
+  "slug": "hackernotfound__dsh-tacit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tacit",
+  "title": "dsh-tacit",
+  "summary": "自动补全你提示词中没明说的意图，替你向智能体传达，让操作更省心。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "prompt-engineering",
+    "效率提升",
+    "自动化",
+    "AI 助手",
+    "工作流增强"
+  ],
+  "version": "0.6.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.1",
+    "publishedAt": "2026-09-01T10:50:37Z",
+    "url": "https://github.com/hackernotfound/dsh-tacit/releases/tag/v0.6.1"
+  },
+  "author": "hackernotfound",
+  "repo": "https://github.com/hackernotfound/dsh-tacit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-09-09T14:43:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hackernotfound/dsh-tacit",
+    "commands": [
+      "dsh plugin --profile web add github:hackernotfound/dsh-tacit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

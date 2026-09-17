@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "QQ-M/dsh-skill-market",
+  "slug": "qq-m__dsh-skill-market",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skill-market",
+  "title": "dsh-skill-market",
+  "summary": "在 DSH 设置页里逛技能市场，从 GitHub 搜技能，一键装到本地，省心省力。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-skill",
+    "plugin-market",
+    "skill-market",
+    "技能市场",
+    "零配置",
+    "GitHub搜索",
+    "设置页集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-17T14:17:15Z",
+    "url": "https://github.com/QQ-M/dsh-skill-market/releases/tag/v0.1.0"
+  },
+  "author": "QQ-M",
+  "repo": "https://github.com/QQ-M/dsh-skill-market",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-18T18:16:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:QQ-M/dsh-skill-market",
+    "commands": [
+      "dsh plugin --profile web add \"github:QQ-M/dsh-skill-market\"",
+      "dsh plugin --profile web add ./dsh-skill-market-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

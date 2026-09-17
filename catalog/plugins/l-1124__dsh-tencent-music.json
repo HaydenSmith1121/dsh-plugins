@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "L-1124/dsh-tencent-music",
+  "slug": "l-1124__dsh-tencent-music",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tencent-music",
+  "title": "dsh-tencent-music",
+  "summary": "在 DeepSeek Harness 里直接搜索、播放腾讯音乐的歌曲，听歌不用切窗口。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-plugins",
+    "工具集成",
+    "快捷操作",
+    "效率提升",
+    "报告生成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "L-1124",
+  "repo": "https://github.com/L-1124/dsh-tencent-music",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-19T10:07:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:L-1124/dsh-tencent-music",
+    "commands": [
+      "dsh plugin --profile web add github:L-1124/dsh-tencent-music"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

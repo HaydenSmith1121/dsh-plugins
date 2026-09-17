@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "SenmuuuuW/dsh-group-photo",
+  "slug": "senmuuuuw__dsh-group-photo",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-group-photo",
+  "title": "dsh-group-photo",
+  "summary": "DSH 内测收官合影墙，支持 GitHub 零权限登录和白名单校验，生成拍立得风格合影，永久纪念版可离线查看。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "娱乐互动",
+    "多模态",
+    "安全审查"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "SenmuuuuW",
+  "repo": "https://github.com/SenmuuuuW/dsh-group-photo",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 17,
+  "forks": 1,
+  "pushedAt": "2026-08-14T01:54:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:SenmuuuuW/dsh-group-photo",
+    "commands": [
+      "git clone https://github.com/dsh-external/dsh-group-photo.git",
+      "git clone https://github.com/SenmuuuuW/dsh-group-photo-data.git /tmp/dsh-data"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

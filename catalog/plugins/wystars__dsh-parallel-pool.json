@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "wyStars/dsh-parallel-pool",
+  "slug": "wystars__dsh-parallel-pool",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-parallel-pool",
+  "title": "dsh-parallel-pool",
+  "summary": "一次性提交一批独立任务，后台自动滚动接力执行，主对话不卡顿，跑完自动汇总结果。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "0.7.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.1",
+    "publishedAt": "2026-08-24T02:46:23Z",
+    "url": "https://github.com/wyStars/dsh-parallel-pool/releases/tag/v0.7.1"
+  },
+  "author": "wyStars",
+  "repo": "https://github.com/wyStars/dsh-parallel-pool",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T09:18:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@stars-w/dsh-parallel-pool",
+    "commands": [
+      "dsh plugin --profile web add @stars-w/dsh-parallel-pool"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

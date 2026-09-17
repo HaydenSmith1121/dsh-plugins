@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Moveharder/dsh_plugins",
+  "slug": "moveharder__dsh_plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh_plugins",
+  "title": "dsh_plugins",
+  "summary": "个人维护的 DSH 插件大合集，各插件独立更新发布，帮你一站式查找、安装和扩展实用功能。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-pet",
+    "dsh-plugins",
+    "插件管理",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Moveharder",
+  "repo": "https://github.com/Moveharder/dsh_plugins",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T09:56:20Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Moveharder/dsh_plugins",
+    "commands": [
+      "dsh plugin --profile web add github:Moveharder/dsh_plugins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

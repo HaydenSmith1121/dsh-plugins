@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "zh851233/docs-mode",
+  "slug": "zh851233__docs-mode",
+  "tier": "community",
+  "package": null,
+  "name": "docs-mode",
+  "title": "docs-mode",
+  "summary": "把 Agent 变成技术文档撰写专员，自动写开发简报、用户手册、报告和 API 文档，还能抹掉 AI 味。",
+  "tags": [
+    "dsh-plugin",
+    "内容创作",
+    "报告生成",
+    "AI 助手",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zh851233",
+  "repo": "https://github.com/zh851233/docs-mode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-13T14:48:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zh851233/docs-mode",
+    "commands": [
+      "dsh plugin add https://github.com/zh851233/docs-mode"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

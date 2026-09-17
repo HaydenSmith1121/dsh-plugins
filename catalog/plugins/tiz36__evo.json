@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "TIZ36/evo",
+  "slug": "tiz36__evo",
+  "tier": "community",
+  "package": null,
+  "name": "evo",
+  "title": "evo",
+  "summary": "给AI智能体配上会进化的记忆，思考前自动调取历史，回答后自动总结沉淀。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-08-28T10:54:22Z",
+    "url": "https://github.com/TIZ36/evo/releases/tag/v0.3.0"
+  },
+  "author": "TIZ36",
+  "repo": "https://github.com/TIZ36/evo",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-04T10:01:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TIZ36/evo",
+    "commands": [
+      "dsh plugin --profile web add github:TIZ36/evo"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

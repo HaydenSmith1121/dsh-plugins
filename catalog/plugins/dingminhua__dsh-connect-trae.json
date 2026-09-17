@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "dingminhua/dsh-connect-trae",
+  "slug": "dingminhua__dsh-connect-trae",
+  "tier": "reviewed",
+  "package": "dsh-connect-trae",
+  "name": "dsh-connect-trae",
+  "title": "Trae 模型接入",
+  "summary": "接入 Trae 的模型目录。登录态不随包迁移，新机器装完需要重新登录一次。",
+  "tags": [
+    "模型接入",
+    "第三方",
+    "需登录"
+  ],
+  "version": "2.0.4",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dingminhua",
+  "repo": "https://github.com/dingminhua/dsh-connect-trae",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 13,
+  "forks": null,
+  "pushedAt": null,
+  "metricsCheckedAt": "2026-09-17T16:36:09.187Z",
+  "origin": null,
+  "peerRuntimePin": ">=0.1.5-0 <0.2.0-0",
+  "peerVerdict": "ok",
+  "peerNote": "范围两端都带 -0，正是为了把预发布版纳入比较 —— 0.1.6-alpha.1 满足该范围。此前仓库文档写成「严格来说不在这个范围里」，是错的。",
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dingminhua/dsh-connect-trae",
+    "commands": [
+      "dsh plugin --profile web add github:dingminhua/dsh-connect-trae"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": "0.1.6-alpha.1",
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "manual",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:36:09.187Z"
+  },
+  "review": {
+    "reviewedAt": "2026-09-17",
+    "dshVersion": "0.1.6-alpha.1",
+    "node": "24.14.0",
+    "pnpm": "12.4.2",
+    "reviewer": "HaydenSmith1121",
+    "verdict": "ok-with-notes",
+    "sha256": null,
+    "evidence": "★ 来源变更（2026-09 市场与插件分离）：本条原先在旧仓库的「已验证」层，字节由本仓库以离线 tarball 分发（dsh-connect-trae-2.0.1.tgz，sha256 5ca7dacf1d748268fab0b1a51c833705d6e2311afd871322488fa8115a3c32e0，282670 字节，12 个文件）。分离后改为上游 github: 规格。\n原先的收录与实测记录（取自旧仓库 compatibility.json）：在 dsh 0.1.6-alpha.1 / Node 24.14.0 / pnpm 12.4.2 上装进 profile，插件树正常装配、dsh web 正常启动；peer 范围 >=0.1.5-0 <0.2.0-0 **包含** 0.1.6-alpha.1（两端带 -0 就是为了纳入预发布版），因此 peerVerdict 记 ok。",
+    "notes": "1. **依赖登录态**：登录态不随包迁移，新机器装完需要重新登录一次。\n2. 它会把 Trae 的模型目录写进 settings（settings.yaml 里的 trae.regions.*.lastCatalog 就是它留下的），属于对本机配置的正常写入，不是副作用异常。\n3. 未重新实测上游默认分支当前 HEAD —— 上面记的是 2.0.1 那一版 tarball 的结论。"
+  }
+}

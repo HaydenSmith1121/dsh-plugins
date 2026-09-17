@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "leetom314/dsh-delivery-ledger",
+  "slug": "leetom314__dsh-delivery-ledger",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-delivery-ledger",
+  "title": "dsh-delivery-ledger",
+  "summary": "定时任务执行器，每次运行都记录台账，失败可查可补发，同窗口自动去重。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "状态监控",
+    "工作流增强",
+    "命令行工具"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "leetom314",
+  "repo": "https://github.com/leetom314/dsh-delivery-ledger",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T14:59:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:leetom314/dsh-delivery-ledger",
+    "commands": [
+      "dsh plugin --profile web add \"github:leetom314/dsh-delivery-ledger",
+      "git clone https://github.com/leetom314/dsh-delivery-ledger.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

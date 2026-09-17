@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Barry-Liu-001/dsh_chat_index",
+  "slug": "barry-liu-001__dsh_chat_index",
+  "tier": "community",
+  "package": null,
+  "name": "dsh_chat_index",
+  "title": "dsh_chat_index",
+  "summary": "在对话区右侧显示小圆点索引，快速定位和跳转到任意用户消息，提升长对话浏览效率。",
+  "tags": [
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "会话增强",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Barry-Liu-001",
+  "repo": "https://github.com/Barry-Liu-001/dsh_chat_index",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T09:45:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Barry-Liu-001/dsh_chat_index",
+    "commands": [
+      "dsh plugin --profile web add github:Barry-Liu-001/dsh_chat_index",
+      "dsh plugin --profile web add dsh-chat-index",
+      "dsh plugin --profile web add ./dsh-chat-index-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

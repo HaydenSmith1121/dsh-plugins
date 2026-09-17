@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "yongshuai0314/dsh-readcache",
+  "slug": "yongshuai0314__dsh-readcache",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-readcache",
+  "title": "dsh-readcache",
+  "summary": "给 DSH read 工具加个进程内缓存，重复读文件直接命中，还能用版本令牌校验，省时省力。",
+  "tags": [
+    "cache",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "缓存",
+    "AI 助手",
+    "会话管理"
+  ],
+  "version": "1.0.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yongshuai0314",
+  "repo": "https://github.com/yongshuai0314/dsh-readcache",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-23T15:39:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-readcache",
+    "commands": [
+      "dsh plugin --profile web add dsh-readcache",
+      "dsh plugin --profile web add ../dsh-readcache/dsh-readcache-1.0.1.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

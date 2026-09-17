@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "bluechips-zhao/dsh-receipt",
+  "slug": "bluechips-zhao__dsh-receipt",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-receipt",
+  "title": "dsh-receipt",
+  "summary": "给 DeepSeek Harness 会话生成消费小票，按模型统计令牌用量、调用次数、耗时和成本，一目了然。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "obsidian",
+    "plugin",
+    "receipt",
+    "token-usage",
+    "usage-cost",
+    "效率提升",
+    "状态监控",
+    "内容创作",
+    "会话管理",
+    "模型配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-24T14:08:06Z",
+    "url": "https://github.com/bluechips-zhao/dsh-receipt/releases/tag/v0.1.0"
+  },
+  "author": "bluechips-zhao",
+  "repo": "https://github.com/bluechips-zhao/dsh-receipt",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T09:26:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bluechips-zhao/dsh-receipt",
+    "commands": [
+      "dsh plugin --profile web add github:bluechips-zhao/dsh-receipt"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

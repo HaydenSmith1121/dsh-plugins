@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "succlz123/dsh-model-switch",
+  "slug": "succlz123__dsh-model-switch",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-switch",
+  "title": "dsh-model-switch",
+  "summary": "按一下任意按键（遥控器、小键盘都行）就能切换模型和思考强度，不用再点开设置翻菜单。",
+  "tags": [
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "快捷操作",
+    "模型适配",
+    "效率提升",
+    "跨设备"
+  ],
+  "version": "1.0.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "succlz123",
+  "repo": "https://github.com/succlz123/dsh-model-switch",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T23:54:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:succlz123/dsh-model-switch",
+    "commands": [
+      "dsh plugin --profile web add link:<本目录绝对路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

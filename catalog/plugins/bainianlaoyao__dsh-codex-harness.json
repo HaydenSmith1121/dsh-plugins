@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "bainianlaoyao/dsh-codex-harness",
+  "slug": "bainianlaoyao__dsh-codex-harness",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codex-harness",
+  "title": "dsh-codex-harness",
+  "summary": "为 DeepSeek Harness 提供 Codex 风格的编码预设，集成命令行工具与补丁编辑，提升开发效率。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "命令行工具",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.3.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bainianlaoyao",
+  "repo": "https://github.com/bainianlaoyao/dsh-codex-harness",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T14:10:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-codex-mode",
+    "commands": [
+      "dsh plugin --profile web add file:D:/Data/DEV/dsh/dsh-codex-mode",
+      "dsh plugin --profile web add dsh-codex-mode"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

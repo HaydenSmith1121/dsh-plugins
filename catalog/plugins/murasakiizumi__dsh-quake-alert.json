@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "MurasakiIzumi/dsh-quake-alert",
+  "slug": "murasakiizumi__dsh-quake-alert",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-quake-alert",
+  "title": "dsh-quake-alert",
+  "summary": "在用 DSH 时实时推送日本地震、紧急地震速报、海啸和气象警报，按你关注区域和阈值筛选。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "disaster-alerter",
+    "dsh-plugin",
+    "earthquakes",
+    "eew",
+    "jmap",
+    "p2pquake",
+    "tsunami",
+    "消息通知",
+    "状态监控",
+    "自动化",
+    "安全审计"
+  ],
+  "version": "0.3.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.3",
+    "publishedAt": "2026-09-12T02:28:09Z",
+    "url": "https://github.com/MurasakiIzumi/dsh-quake-alert/releases/tag/v0.3.3"
+  },
+  "author": "MurasakiIzumi",
+  "repo": "https://github.com/MurasakiIzumi/dsh-quake-alert",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T13:11:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MurasakiIzumi/dsh-quake-alert",
+    "commands": [
+      "dsh plugin --profile web add github:MurasakiIzumi/dsh-quake-alert"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "yjh051108/dsh-super-injector",
+  "slug": "yjh051108__dsh-super-injector",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-super-injector",
+  "title": "dsh-super-injector",
+  "summary": "给 DeepSeek Harness 运行时注入模组，按官方 REPLACE 结构排程重载，插件升级不用手动折腾。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "工具集成",
+    "自动化",
+    "状态持久化"
+  ],
+  "version": "0.3.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.3",
+    "publishedAt": "2026-08-15T08:44:00Z",
+    "url": "https://github.com/yjh051108/dsh-super-injector/releases/tag/v0.3.3"
+  },
+  "author": "yjh051108",
+  "repo": "https://github.com/yjh051108/dsh-super-injector",
+  "homepage": null,
+  "license": null,
+  "stars": 161,
+  "forks": 19,
+  "pushedAt": "2026-08-24T19:11:01Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yjh051108/dsh-super-injector",
+    "commands": [
+      "dsh plugin --profile web add <解压目录>",
+      "dsh plugin --profile web add github:yjh051108/dsh-super-injector"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

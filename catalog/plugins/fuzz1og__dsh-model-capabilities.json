@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "fuzz1og/dsh-model-capabilities",
+  "slug": "fuzz1og__dsh-model-capabilities",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-capabilities",
+  "title": "dsh-model-capabilities",
+  "summary": "在模型设置页内直接配置思考强度、模态和网关开关，让自定义模型更贴合你的使用场景。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "设置面板",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fuzz1og",
+  "repo": "https://github.com/fuzz1og/dsh-model-capabilities",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T06:46:39Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fuzz1og/dsh-model-capabilities",
+    "commands": [
+      "dsh plugin --profile web add github:fuzz1og/dsh-model-capabilities",
+      "dsh plugin --profile web add ./",
+      "dsh plugin --profile web remove dsh-model-capabilities"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

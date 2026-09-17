@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "fatatalia/dsh-imessage",
+  "slug": "fatatalia__dsh-imessage",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-imessage",
+  "title": "dsh-imessage",
+  "summary": "把 iMessage 接入 dsh，自动监听、路由、回复消息，还能模拟打字和已读回执，随 dsh web 启停。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "会话管理",
+    "自动化",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fatatalia",
+  "repo": "https://github.com/fatatalia/dsh-imessage",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T07:08:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fatatalia/dsh-imessage",
+    "commands": [
+      "dsh plugin --profile web add github:fatatalia/dsh-imessage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

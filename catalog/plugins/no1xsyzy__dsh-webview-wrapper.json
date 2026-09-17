@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "no1xsyzy/dsh-webview-wrapper",
+  "slug": "no1xsyzy__dsh-webview-wrapper",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-webview-wrapper",
+  "title": "dsh-webview-wrapper",
+  "summary": "把 DeepSeek Harness 网页界面打包成桌面应用，即插即用，让 AI 工具用起来更顺手。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "工作流增强",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.1.4",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "no1xsyzy",
+  "repo": "https://github.com/no1xsyzy/dsh-webview-wrapper",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T04:56:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-webview-wrapper",
+    "commands": [
+      "dsh plugin --profile web add dsh-webview-wrapper",
+      "dsh plugin --profile ww add dsh-webview-wrapper",
+      "dsh plugin --profile web add file:/absolute/path/to/dsh-webview-wrapper"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

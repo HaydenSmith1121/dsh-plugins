@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Proton1917/dsh-harness-plugin",
+  "slug": "proton1917__dsh-harness-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-harness-plugin",
+  "title": "dsh-harness-plugin",
+  "summary": "为 DeepSeek Harness 提供独立 TypeScript 插件，包含实时统计、Web 界面定制和医学寓言模式。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugins",
+    "typescript",
+    "状态监控",
+    "前端增强",
+    "娱乐互动",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-28T06:40:04Z",
+    "url": "https://github.com/Proton1917/dsh-harness-plugin/releases/tag/v0.1.0"
+  },
+  "author": "Proton1917",
+  "repo": "https://github.com/Proton1917/dsh-harness-plugin",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T12:50:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Proton1917/dsh-harness-plugin",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/Proton1917/dsh-harness-plugin/releases/download/v0.1.0/proton1917-dsh-live-stats-0.1.0.tgz",
+      "dsh plugin --profile web add https://github.com/Proton1917/dsh-harness-plugin/releases/download/v0.1.0/proton1917-dsh-web-background-0.1.0.tgz",
+      "dsh plugin --profile web add https://github.com/Proton1917/dsh-harness-plugin/releases/download/v0.1.0/proton1917-dsh-brand-mascot-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

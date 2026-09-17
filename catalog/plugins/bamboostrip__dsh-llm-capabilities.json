@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "bamboostrip/dsh-llm-capabilities",
+  "slug": "bamboostrip__dsh-llm-capabilities",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-capabilities",
+  "title": "dsh-llm-capabilities",
+  "summary": "自动检测并配置模型能力（推理强度与输入模态），让 llm-pi-ai 更智能地适配多模态和推理需求。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "input-modalities",
+    "llm-pi-ai",
+    "model-capabilities",
+    "multimodal",
+    "reasoning-effort",
+    "vision",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-04T05:56:16Z",
+    "url": "https://github.com/bamboostrip/dsh-llm-capabilities/releases/tag/v0.1.2"
+  },
+  "author": "bamboostrip",
+  "repo": "https://github.com/bamboostrip/dsh-llm-capabilities",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T02:27:08Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bamboostrip/dsh-llm-capabilities",
+    "commands": [
+      "dsh plugin --profile web add github:bamboostrip/dsh-llm-capabilities"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

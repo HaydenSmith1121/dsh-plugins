@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "zehenk/dsh-tu4-notification",
+  "slug": "zehenk__dsh-tu4-notification",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tu4-notification",
+  "title": "dsh-tu4-notification",
+  "summary": "Windows 上 agent 操作需要审批时，立刻弹出带 DSH 黑鲸鱼 logo 的深色通知卡片，让你第一时间处理。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "状态监控",
+    "自动化",
+    "插件管理",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.5.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "dsh-tu4-notification-v0.5.1",
+    "publishedAt": "2026-09-15T10:48:30Z",
+    "url": "https://github.com/zehenk/dsh-tu4-notification/releases/tag/dsh-tu4-notification-v0.5.1"
+  },
+  "author": "zehenk",
+  "repo": "https://github.com/zehenk/dsh-tu4-notification",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T10:48:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zehenk/dsh-tu4-notification",
+    "commands": [
+      "dsh plugin --profile web remove dsh-approval-notify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

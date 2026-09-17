@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "nutsDad/dsh-plugin-vllm-ascend-profiler",
+  "slug": "nutsdad__dsh-plugin-vllm-ascend-profiler",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-vllm-ascend-profiler",
+  "title": "dsh-plugin-vllm-ascend-profiler",
+  "summary": "上传昇腾 NPU 的 vLLM profiling 产物，自动解析并可视化耗时分布，给出可追溯的优化建议和报告。",
+  "tags": [
+    "ascend",
+    "deepseek-harness",
+    "dsh-plugin",
+    "npu",
+    "performance-analysis",
+    "profiling",
+    "trace-viewer",
+    "vllm-ascend",
+    "可视化",
+    "性能分析",
+    "内容创作",
+    "资源优化",
+    "模型配置"
+  ],
+  "version": "1.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.3.0",
+    "publishedAt": "2026-09-14T13:34:41Z",
+    "url": "https://github.com/nutsDad/dsh-plugin-vllm-ascend-profiler/releases/tag/v1.3.0"
+  },
+  "author": "nutsDad",
+  "repo": "https://github.com/nutsDad/dsh-plugin-vllm-ascend-profiler",
+  "homepage": "https://github.com/nutsDad/dsh-plugin-vllm-ascend-profiler",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T14:17:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:nutsDad/dsh-plugin-vllm-ascend-profiler",
+    "commands": [
+      "dsh plugin --profile web add github:nutsDad/dsh-plugin-vllm-ascend-profiler"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

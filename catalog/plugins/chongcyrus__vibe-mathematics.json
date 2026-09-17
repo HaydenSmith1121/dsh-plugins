@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ChongCyrus/Vibe-Mathematics",
+  "slug": "chongcyrus__vibe-mathematics",
+  "tier": "community",
+  "package": null,
+  "name": "Vibe-Mathematics",
+  "title": "Vibe-Mathematics",
+  "summary": "用多个 AI 代理协作解数学题，还能自动做形式化验证，帮你把推理过程查个明白。",
+  "tags": [
+    "agent-preset",
+    "ai-agents",
+    "deepseek-harness",
+    "dsh-plugin",
+    "llm",
+    "math",
+    "multi-agent",
+    "theorem-proving",
+    "多Agent协作",
+    "AI 助手",
+    "自动化",
+    "数据分析"
+  ],
+  "version": "2.0.21",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.0.21",
+    "publishedAt": "2026-09-06T05:44:09Z",
+    "url": "https://github.com/ChongCyrus/Vibe-Mathematics/releases/tag/v2.0.21"
+  },
+  "author": "ChongCyrus",
+  "repo": "https://github.com/ChongCyrus/Vibe-Mathematics",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 28,
+  "forks": 1,
+  "pushedAt": "2026-09-06T05:43:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ChongCyrus/Vibe-Mathematics",
+    "commands": [
+      "dsh plugin --profile <你的 profile> add dsh-vibe-math",
+      "dsh plugin --profile <你的 profile> add github:ChongCyrus/Vibe-Mathematics"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -28,8 +28,20 @@ test('pluginDir() 在打包布局下指向包根', async () => {
 test('包内资源在打包布局下都读得到', async () => {
   const { pluginDir } = await importBuilt('lib/util.js');
   const dir = pluginDir();
-  for (const rel of ['catalog/verified.json', 'catalog/compat-snapshot.json', 'catalog/curated.json', 'cordis.patch.yml', 'lib/client.js']) {
+  // 包内只放**离线兜底目录**：派生索引 + tier=verified 的逐条配置文件。
+  // 完整目录（7000+ 条）不进包 —— 那会让每次目录变化都必须重打市场包。
+  for (const rel of [
+    'catalog/index.json',
+    'catalog/plugins/dsh-plugins-market.json',
+    'catalog/compat-snapshot.json',
+    'cordis.patch.yml',
+    'lib/client.js',
+  ]) {
     assert(fs.existsSync(path.join(dir, rel)), `打包后应当存在 ${rel}`);
+  }
+  // 反过来的不变量：完整目录与采集脚本**不能**被打进包里
+  for (const rel of ['catalog/plugins/zzz.json', 'scripts', 'catalog/overrides']) {
+    assert(!fs.existsSync(path.join(dir, rel)), `包里不该出现 ${rel}`);
   }
 });
 
@@ -43,50 +55,73 @@ test('源码树里不再混入构建产物', () => {
   assert(readme.length > 500, '源码树的 README.md 应当是真文档，而不是构建脚本写的占位符');
 });
 
-test('loadVerified() 的条数与兼容矩阵一致，且含本插件自己', async () => {
-  const { loadVerified } = await importBuilt('lib/catalog.js');
+test('包内兜底目录含本插件自己，且逐条配置齐备', async () => {
+  const { loadCatalogIndex, loadPluginConfig, entryFromConfig } = await importBuilt('lib/catalog.js');
+  const { resolveDataDir } = await importBuilt('lib/util.js');
+
+  // ★ 先清掉单条配置的磁盘缓存。
+  //   catalog-refresh.test.mjs 会往那里写一份**伪造的**「远程」配置；它留在磁盘上，
+  //   后面的用例就会读到那份假数据 —— 表现为「包内兜底目录里的 sha256 是上一轮构建的」，
+  //   看起来像是构建坏了，其实是测试之间互相污染。
+  const cacheDir = path.join(resolveDataDir(), 'plugin-configs');
+  fs.rmSync(cacheDir, { recursive: true, force: true });
+
   // ★ preferRemote:false —— 这里测的是**包内兜底那份**的内容形态（离线可用性），
   // 不该让单元测试依赖网络。远程优先那条路有专门的 catalog-refresh.test.mjs 覆盖。
-  const v = await loadVerified({ preferRemote: false });
-  assert(v.available, `verified 目录不可用：${v.error}`);
+  const idx = await loadCatalogIndex({ preferRemote: false });
+  assert(idx.available, `包内目录不可用：${idx.error}`);
 
-  // 刻意不写死数字：仓库会继续加插件（并行的另一条会话刚加了 dsh-memory）。
-  // 唯一的不变量是「目录条数 == 兼容矩阵里该 runtime 的插件数」。
-  const compat = JSON.parse(fs.readFileSync(path.join(REPO_ROOT, 'compatibility.json'), 'utf8'));
-  const runtime = compat.runtimes.find((r) => r.status === 'supported' && r.recommended);
-  eq(v.plugins.length, runtime.plugins.length, '目录条数应等于兼容矩阵里的插件数');
-
-  for (const p of v.plugins) {
-    if (p.id === 'dsh-plugins-market') {
-      eq(p.sha256, null, '自引用条目无法自包含 hash，应当为 null 并附说明');
-      assert(p.sha256Note, '自引用条目必须说明为什么没有校验和');
-    } else {
-      assert(p.sha256?.length === 64, `${p.id} 缺少 sha256`);
-    }
-    assert(p.install.tarball, `${p.id} 缺少 tarball 路径`);
-    assert(p.summary, `${p.id} 缺少展示用的简介（verified-meta.json 没覆盖到？）`);
+  // 刻意不写死数字：仓库会继续加插件。
+  // 不变量是「包内兜底目录 == tier=verified 的那些」，而且市场自己必须在内。
+  assert(idx.entries.length > 0, '包内兜底目录不能是空的');
+  for (const p of idx.entries) {
+    eq(p.tier, 'verified', `${p.id} 出现在包内兜底目录里就必须是 verified 层`);
+    assert(p.slug, `${p.id} 缺少 slug —— 没有它就读不到这个插件的配置文件`);
+    assert(p.summary, `${p.id} 缺少展示用的简介`);
   }
-  assert(v.plugins.some((p) => p.id === 'dsh-plugins-market'), '本插件应当把自己也列进目录');
-  assert(v.plugins.length >= 9, `目录至少应含仓库原有 8 个 + 本插件，实际 ${v.plugins.length}`);
+
+  const self = idx.entries.find((p) => p.package === 'dsh-plugins-market');
+  assert(self, '本插件应当把自己也列进目录（否则面板里看不到引导插件、也升不了级）');
+
+  // ★ 索引里没有安装字段是**设计如此**：真正要装的时候去读单条配置文件。
+  //   这里逐条确认「读取配置文件 → 合并成可安装条目」这条路是通的。
+  for (const p of idx.entries) {
+    const { config, source, error } = await loadPluginConfig(p);
+    assert(config, `${p.slug}: 读不到配置文件（来源 ${source}，${error ?? ''}）`);
+    const merged = entryFromConfig(config, p);
+    eq(merged.install.method, 'tarball', `${p.package} 的安装方法应当是 tarball`);
+    assert(merged.install.tarball, `${p.package} 缺少 tarball 路径`);
+    assert(merged.install.url, `${p.package} 缺少可下载地址`);
+
+    if (p.package === 'dsh-plugins-market') {
+      eq(merged.sha256, null, '自引用条目无法自包含 hash，应当为 null 并附说明');
+      assert(merged.sha256Note, '自引用条目必须说明为什么没有校验和');
+    } else {
+      assert(merged.sha256?.length === 64, `${p.package} 缺少 sha256（tarball 无法校验字节）`);
+    }
+  }
 });
 
 test('自引用 tarball 的实际 sha256 有边车文件可查', () => {
-  // ★ 版本号必须从源头读，不能写死。
-  //   写死的话每次 bump 版本都要回来改测试，改漏了会以「边车文件找不到」的形式失败 ——
-  //   看起来像构建坏了，其实是测试过期了。
-  //   tarball 路径的唯一来源是 compatibility.json 里那条自引用条目。
-  const compat = JSON.parse(fs.readFileSync(path.join(REPO_ROOT, 'compatibility.json'), 'utf8'));
-  const runtime = compat.runtimes.find((r) => r.status === 'supported' && r.recommended);
-  const self = runtime.plugins.find((p) => p.package === 'dsh-plugins-market');
-  assert(self, '兼容矩阵里应当有 dsh-plugins-market 这一条');
+  // ★ 版本号与路径必须从源头读，不能写死 —— 写死的话每次 bump 版本都要回来改测试，
+  //   改漏了会以「边车文件找不到」的形式失败，看起来像构建坏了，其实是测试过期了。
+  //   路径的唯一来源是市场插件自己的配置文件（catalog/plugins/dsh-plugins-market.json）。
+  const config = JSON.parse(
+    fs.readFileSync(path.join(REPO_ROOT, 'catalog', 'plugins', 'dsh-plugins-market.json'), 'utf8'),
+  );
+  assert(config.install?.tarball, '市场插件的配置文件里应当有 tarball 路径');
+  assert(config.version, '市场插件的配置文件里应当有版本号');
 
-  const tgz = path.join(REPO_ROOT, self.tarball);
+  const tgz = path.join(REPO_ROOT, config.install.tarball);
   const sidecar = `${tgz}.sha256`;
   assert(fs.existsSync(tgz), `自引用条目指向的 tarball 应当已构建出来：${tgz}`);
   assert(fs.existsSync(sidecar), `自引用条目的 hash 应当落在边车文件里：${sidecar}`);
   const text = fs.readFileSync(sidecar, 'utf8').trim();
   assert(/^[0-9a-f]{64}\s+/.test(text), '边车文件应当是 "sha256  <文件名>" 格式');
-  assert(text.includes(`${self.package}-${self.version}.tgz`), `边车文件应当对应 ${self.package}-${self.version}.tgz`);
+  assert(
+    text.includes(`dsh-plugins-market-${config.version}.tgz`),
+    `边车文件应当对应 dsh-plugins-market-${config.version}.tgz`,
+  );
 
   // 并且要与磁盘上的 tarball 真的一致
   const actual = createHash('sha256').update(fs.readFileSync(tgz)).digest('hex');
@@ -119,11 +154,13 @@ test('从 profile 的 file: 规格反推仓库根（正斜杠形态）', async (
     const idx = specPath.indexOf(`/plugins/${PLUGIN_PACKAGE}/`);
     if (idx <= 0) continue;
     const native = path.normalize(specPath.slice(0, idx));
-    if (fs.existsSync(path.join(native, 'compatibility.json'))) found = native;
+    // 仓库根的判定标记：自 0.4.0 起是 catalog/index.json（目录才是市场仓库的本体），
+    // compatibility.json 已经瘦身成只描述运行时矩阵，不能再当标记用。
+    if (fs.existsSync(path.join(native, 'catalog', 'index.json'))) found = native;
   }
 
   assert(found, '应当能从 profile 规格里反推出仓库根（若为 null，说明分隔符归一化又漏了）');
-  assert(fs.existsSync(path.join(found, 'compatibility.json')), '推出来的仓库根里应当有 compatibility.json');
+  assert(fs.existsSync(path.join(found, 'catalog', 'index.json')), '推出来的仓库根里应当有 catalog/index.json');
   assert(fs.existsSync(path.join(found, 'plugins')), '推出来的仓库根里应当有 plugins/');
 });
 

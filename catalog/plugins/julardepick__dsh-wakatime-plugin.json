@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "JularDepick/dsh-wakatime-plugin",
+  "slug": "julardepick__dsh-wakatime-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wakatime-plugin",
+  "title": "dsh-wakatime-plugin",
+  "summary": "把每次 dsh Agent 交互量化成可视化指标并自动同步到 WakaTime，用数据展示你的生产力。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "wakatime",
+    "wakatime-plugin",
+    "工具集成",
+    "数据分析",
+    "可视化",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-10T14:07:43Z",
+    "url": "https://github.com/JularDepick/dsh-wakatime-plugin/releases/tag/v0.1.1"
+  },
+  "author": "JularDepick",
+  "repo": "https://github.com/JularDepick/dsh-wakatime-plugin",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T14:07:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JularDepick/dsh-wakatime-plugin",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-wakatime-plugin",
+      "dsh plugin --profile <name> add github:JularDepick/dsh-wakatime-plugin",
+      "dsh plugin --profile <name> add release/dsh-wakatime-plugin-0.1.1.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

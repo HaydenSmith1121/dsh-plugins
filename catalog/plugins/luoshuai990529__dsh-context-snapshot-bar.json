@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "luoshuai990529/dsh-context-snapshot-bar",
+  "slug": "luoshuai990529__dsh-context-snapshot-bar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-context-snapshot-bar",
+  "title": "dsh-context-snapshot-bar",
+  "summary": "在 DeepSeek Harness Web 里实时查看运行时上下文快照和上下文变化轨迹，方便排查和调优。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "前端增强",
+    "会话管理"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-09-13T13:49:25Z",
+    "url": "https://github.com/luoshuai990529/dsh-context-snapshot-bar/releases/tag/v0.3.1"
+  },
+  "author": "luoshuai990529",
+  "repo": "https://github.com/luoshuai990529/dsh-context-snapshot-bar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T10:56:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-context-snapshot-bar@0.2.0",
+    "commands": [
+      "dsh plugin --profile web add dsh-context-snapshot-bar@0.2.0",
+      "dsh plugin --profile web remove dsh-context-snapshot-bar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

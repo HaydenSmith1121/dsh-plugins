@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Viktirr/dsh-llm-lmstudio",
+  "slug": "viktirr__dsh-llm-lmstudio",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-lmstudio",
+  "title": "dsh-llm-lmstudio",
+  "summary": "连接 LM Studio 本地模型服务，让 DeepSeek Harness 直接调用本地大模型，无需云端 API。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "零配置",
+    "工作流增强",
+    "设置面板"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Viktirr",
+  "repo": "https://github.com/Viktirr/dsh-llm-lmstudio",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T17:32:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Viktirr/dsh-llm-lmstudio",
+    "commands": [
+      "dsh plugin --profile web add github:Viktirr/dsh-llm-lmstudio"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "wxj783428795/dsh-plugins",
+  "slug": "wxj783428795__dsh-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugins",
+  "title": "dsh-plugins",
+  "summary": "一站式开发和管理 DeepSeek Harness 插件，内置可切换的 WebGPU 动态黑洞主题，让界面更酷炫。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "theme",
+    "webgpu",
+    "插件管理",
+    "界面美化",
+    "可视化",
+    "前端增强",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-04T08:49:14Z",
+    "url": "https://github.com/wxj783428795/dsh-plugins/releases/tag/v0.1.0"
+  },
+  "author": "wxj783428795",
+  "repo": "https://github.com/wxj783428795/dsh-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T09:00:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wxj783428795/dsh-plugins",
+    "commands": [
+      "dsh plugin --profile web add github:wxj783428795/dsh-plugins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

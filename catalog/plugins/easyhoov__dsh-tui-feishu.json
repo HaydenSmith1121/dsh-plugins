@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "Easyhoov/dsh-tui-feishu",
+  "slug": "easyhoov__dsh-tui-feishu",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tui-feishu",
+  "title": "dsh-tui-feishu",
+  "summary": "通过飞书远程操控 dsh-TUI agent，扫码配对即可聊天、审批、传图，让智能体随时待命。",
+  "tags": [
+    "agent",
+    "automation",
+    "dsh",
+    "feishu",
+    "lark",
+    "plugin",
+    "tui",
+    "AI 助手",
+    "效率提升",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.3.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.2",
+    "publishedAt": "2026-08-23T18:41:59Z",
+    "url": "https://github.com/Easyhoov/dsh-tui-feishu/releases/tag/v0.3.2"
+  },
+  "author": "Easyhoov",
+  "repo": "https://github.com/Easyhoov/dsh-tui-feishu",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T08:17:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-tui-feishu",
+    "commands": [
+      "dsh plugin --profile dsh-tui add dsh-tui-feishu",
+      "dsh plugin --profile dsh-tui add file:dsh-tui-feishu-0.3.1.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

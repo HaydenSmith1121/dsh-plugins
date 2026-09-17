@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "OMSociety/dsh-fishpai",
+  "slug": "omsociety__dsh-fishpai",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-fishpai",
+  "title": "dsh-fishpai",
+  "summary": "在 DeepSeek Harness 侧栏里给公众号排版，你改字加批注，模型用块级 diff 看懂你的意图。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "wechat",
+    "报告生成",
+    "前端增强",
+    "工作流增强",
+    "AI 助手"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-15T17:41:50Z",
+    "url": "https://github.com/OMSociety/dsh-fishpai/releases/tag/v1.0.0"
+  },
+  "author": "OMSociety",
+  "repo": "https://github.com/OMSociety/dsh-fishpai",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-15T17:58:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:OMSociety/dsh-fishpai",
+    "commands": [
+      "dsh plugin --profile web add github:OMSociety/dsh-fishpai"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

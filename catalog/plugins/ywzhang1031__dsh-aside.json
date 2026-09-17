@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "ywzhang1031/dsh-aside",
+  "slug": "ywzhang1031__dsh-aside",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-aside",
+  "title": "dsh-aside",
+  "summary": "把追问钉在原文具体句子上，只读旁注随对话持久保存，随时回看。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "状态持久化",
+    "会话管理",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ywzhang1031",
+  "repo": "https://github.com/ywzhang1031/dsh-aside",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-20T13:48:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-aside",
+    "commands": [
+      "dsh plugin --profile web add dsh-aside",
+      "npm install -g @deepseek-ai/dsh@0.1.0-rc.7 pnpm@11.7.0"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

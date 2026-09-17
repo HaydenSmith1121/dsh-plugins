@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaoshihou514/dsh-weixin",
+  "slug": "xiaoshihou514__dsh-weixin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-weixin",
+  "title": "dsh-weixin",
+  "summary": "扫码登录微信，收发文件，让 DeepSeek Harness 直接操控你的微信。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "零配置",
+    "模型配置",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xiaoshihou514",
+  "repo": "https://github.com/xiaoshihou514/dsh-weixin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-31T02:09:42Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiaoshihou514/dsh-weixin",
+    "commands": [
+      "npm i -g @deepseek-ai/dsh",
+      "dsh plugin --profile web add \"github:xiaoshihou514/dsh-weixin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "wanyexin1998/dsh-workbench",
+  "slug": "wanyexin1998__dsh-workbench",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workbench",
+  "title": "dsh-workbench",
+  "summary": "双Pane工作台，让DeepSeek Harness Web的会话并行处理，效率翻倍。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "工作流增强",
+    "可视化"
+  ],
+  "version": "0.2.0-rc.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wanyexin1998",
+  "repo": "https://github.com/wanyexin1998/dsh-workbench",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-08T10:51:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wanyexin1998/dsh-workbench",
+    "commands": [
+      "dsh plugin --profile web add github:wanyexin1998/dsh-workbench"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

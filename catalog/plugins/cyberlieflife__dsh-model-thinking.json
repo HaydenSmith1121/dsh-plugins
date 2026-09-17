@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "cyberlieflife/dsh-model-thinking",
+  "slug": "cyberlieflife__dsh-model-thinking",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-thinking",
+  "title": "dsh-model-thinking",
+  "summary": "为自定义 OpenAI 兼容模型单独设置思考强度，按提供方精细调节推理力度。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "思考强度",
+    "推理设置",
+    "模型配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "cyberlieflife",
+  "repo": "https://github.com/cyberlieflife/dsh-model-thinking",
+  "homepage": null,
+  "license": null,
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-08-14T00:21:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cyberlieflife/dsh-model-thinking",
+    "commands": [
+      "pnpm add 到 profile + 自动加入 dsh.profile.bundles（因本包声明了 dsh.bundle.patch）"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

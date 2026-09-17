@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "of1102/dsh-web-search-ark",
+  "slug": "of1102__dsh-web-search-ark",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-search-ark",
+  "title": "dsh-web-search-ark",
+  "summary": "通过火山方舟接入联网搜索，让 DeepSeek Harness 的 web_search 能力更稳定高效。",
+  "tags": [
+    "ark",
+    "deepseek-harness",
+    "dsh-plugin",
+    "volcengine",
+    "web-search",
+    "AI 助手",
+    "插件管理",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "1.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.1.1",
+    "publishedAt": "2026-09-06T10:52:38Z",
+    "url": "https://github.com/of1102/dsh-web-search-ark/releases/tag/v1.1.1"
+  },
+  "author": "of1102",
+  "repo": "https://github.com/of1102/dsh-web-search-ark",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T10:52:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:of1102/dsh-web-search-ark",
+    "commands": [
+      "npm install -g pnpm",
+      "dsh plugin --profile web add ~/.dsh/profiles/web/packages/web-search-ark"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

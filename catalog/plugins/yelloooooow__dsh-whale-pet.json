@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "Yelloooooow/dsh-whale-pet",
+  "slug": "yelloooooow__dsh-whale-pet",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-whale-pet",
+  "title": "dsh-whale-pet",
+  "summary": "右下角常驻一只鲸鱼娘桌宠，气泡实时显示 DeepSeek 余额，单击刷新、双击打开用量页。",
+  "tags": [
+    "deepseek-harness",
+    "desktop-pet",
+    "dsh",
+    "dsh-plugin",
+    "whale-pet",
+    "桌宠",
+    "状态监控",
+    "前端增强",
+    "AI 助手"
+  ],
+  "version": "1.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.1",
+    "publishedAt": "2026-09-09T03:19:58Z",
+    "url": "https://github.com/Yelloooooow/dsh-whale-pet/releases/tag/v1.0.1"
+  },
+  "author": "Yelloooooow",
+  "repo": "https://github.com/Yelloooooow/dsh-whale-pet",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-09T03:19:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Yelloooooow/dsh-whale-pet",
+    "commands": [
+      "dsh plugin --profile web add github:Yelloooooow/dsh-whale-pet"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

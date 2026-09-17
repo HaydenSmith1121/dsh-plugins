@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "TropicWiden/dsh-history-question-nav",
+  "slug": "tropicwiden__dsh-history-question-nav",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-history-question-nav",
+  "title": "dsh-history-question-nav",
+  "summary": "右侧列出当前会话问过的所有问题，点一下就能跳回对应回答，长对话找内容不再费劲。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "question-navigator",
+    "web-plugin",
+    "快捷操作",
+    "会话管理",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "TropicWiden",
+  "repo": "https://github.com/TropicWiden/dsh-history-question-nav",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 1,
+  "pushedAt": "2026-08-25T07:02:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@known-mouse/dsh-history-question-nav",
+    "commands": [
+      "dsh plugin --profile web add @known-mouse/dsh-history-question-nav"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

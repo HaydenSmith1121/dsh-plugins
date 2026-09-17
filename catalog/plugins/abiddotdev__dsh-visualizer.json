@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "abiddotdev/dsh-visualizer",
+  "slug": "abiddotdev__dsh-visualizer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-visualizer",
+  "title": "dsh-visualizer",
+  "summary": "在模型写作时实时预览生成的HTML文档，让聊天界面直接展示可视化内容。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "前端增强",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.9.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.9.0",
+    "publishedAt": "2026-09-06T00:31:56Z",
+    "url": "https://github.com/abiddotdev/dsh-visualizer/releases/tag/v0.9.0"
+  },
+  "author": "abiddotdev",
+  "repo": "https://github.com/abiddotdev/dsh-visualizer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 14,
+  "forks": 1,
+  "pushedAt": "2026-09-06T16:32:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:abiddotdev/dsh-visualizer",
+    "commands": [
+      "dsh plugin --profile web add 'git+https://github.com/abidhmuhsin/dsh-visualizer.git'",
+      "dsh plugin --profile <your-profile> add 'git+https://github.com/abidhmuhsin/dsh-visualizer.git'",
+      "dsh plugin --profile <your-profile> add 'git+https://github.com/abidhmuhsin/dsh-visualizer.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

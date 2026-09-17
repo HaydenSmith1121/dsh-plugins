@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Hyna-hla/dsh-remote",
+  "slug": "hyna-hla__dsh-remote",
+  "tier": "community",
+  "package": null,
+  "name": "harness-remote",
+  "title": "harness-remote",
+  "summary": "把电脑上的 DSH 变成手机遥控端，扫码连上就能聊天、审批、切模型，还能收后台推送。",
+  "tags": [
+    "android",
+    "deepseek-harness",
+    "dsh-plugin",
+    "kotlin",
+    "remote-control",
+    "跨设备",
+    "快捷操作",
+    "状态监控",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "2.5.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.5.1",
+    "publishedAt": "2026-08-18T02:37:21Z",
+    "url": "https://github.com/Hyna-hla/dsh-remote/releases/tag/v2.5.1"
+  },
+  "author": "Hyna-hla",
+  "repo": "https://github.com/Hyna-hla/dsh-remote",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 12,
+  "forks": 2,
+  "pushedAt": "2026-08-31T00:56:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Hyna-hla/dsh-remote",
+    "commands": [
+      "dsh plugin --profile web add github:Hyna-hla/dsh-remote"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

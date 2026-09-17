@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "233fxr-collab/dsh-launch-in-one-click",
+  "slug": "233fxr-collab__dsh-launch-in-one-click",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-launch-in-one-click",
+  "title": "dsh-launch-in-one-click",
+  "summary": "Windows 上一键生成 DeepSeek Harness 启动器，端口被占用时自动拒绝重复启动。",
+  "tags": [
+    "dsh-plugin",
+    "快捷操作",
+    "命令行工具",
+    "自动化",
+    "状态监控"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "233fxr-collab",
+  "repo": "https://github.com/233fxr-collab/dsh-launch-in-one-click",
+  "homepage": "https://github.com/233fxr-collab/dsh-launch-in-one-click#readme",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T04:27:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-launch-in-one-click",
+    "commands": [
+      "dsh plugin --profile web add dsh-launch-in-one-click",
+      "dsh plugin --profile web add github:233fxr-collab/dsh-launch-in-one-click"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "fan56/dsh-feishu",
+  "slug": "fan56__dsh-feishu",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-feishu",
+  "title": "dsh-feishu",
+  "summary": "在手机上通过飞书/Lark 远程操控已有的 dsh 会话，随时派活、看进度，还能一键恢复任务。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "安全审查",
+    "状态监控",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.12.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.12.0",
+    "publishedAt": "2026-09-16T00:30:54Z",
+    "url": "https://github.com/fan56/dsh-feishu/releases/tag/v0.12.0"
+  },
+  "author": "fan56",
+  "repo": "https://github.com/fan56/dsh-feishu",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T00:28:25Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fan56/dsh-feishu",
+    "commands": [
+      "git clone git@github.com:fan56/dsh-feishu.git ~/github/dsh-feishu"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

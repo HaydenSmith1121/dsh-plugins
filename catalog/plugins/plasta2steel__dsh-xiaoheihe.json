@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "plasta2steel/dsh-xiaoheihe",
+  "slug": "plasta2steel__dsh-xiaoheihe",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-xiaoheihe",
+  "title": "dsh-xiaoheihe",
+  "summary": "在 DeepSeek Harness 里养一只桌面小黑盒宠物，陪你聊天互动，给开发过程加点乐子。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "桌宠",
+    "娱乐互动",
+    "零配置",
+    "自动化"
+  ],
+  "version": "0.3.12",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "plasta2steel",
+  "repo": "https://github.com/plasta2steel/dsh-xiaoheihe",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T03:01:11Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:plasta2steel/dsh-xiaoheihe",
+    "commands": [
+      "dsh plugin --profile web add github:plasta2steel/dsh-xiaoheihe",
+      "dsh plugin --profile web add /path/to/dsh-xiaoheihe"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

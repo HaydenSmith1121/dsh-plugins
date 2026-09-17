@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "imrascal/dsh-archive",
+  "slug": "imrascal__dsh-archive",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-archive",
+  "title": "dsh-archive",
+  "summary": "归档并管理 DeepSeek Harness 的会话记录，方便你随时回溯、整理和清理历史对话。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "语义检索",
+    "会话管理",
+    "工作区管理"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "imrascal",
+  "repo": "https://github.com/imrascal/dsh-archive",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-26T06:27:24Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:imrascal/dsh-archive",
+    "commands": [
+      "dsh plugin --profile web add github:imrascal/dsh-archive",
+      "dsh plugin --profile web add file:C:/path/to/dsh-archive"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

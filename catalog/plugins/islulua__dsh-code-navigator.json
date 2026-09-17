@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Islulua/dsh-code-navigator",
+  "slug": "islulua__dsh-code-navigator",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-code-navigator",
+  "title": "dsh-code-navigator",
+  "summary": "在 DeepSeek Harness 中实现持久化的代码跳转与符号导航，支持 C/C++、Python 和 TypeScript，让浏览源码像在 VS Code 里一样顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "工作流增强",
+    "效率提升",
+    "模型配置",
+    "语义检索"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "Islulua",
+  "repo": "https://github.com/Islulua/dsh-code-navigator",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T02:34:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Islulua/dsh-code-navigator",
+    "commands": [
+      "dsh plugin --profile web add file:./packages/code-navigator/dsh-code-navigator-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

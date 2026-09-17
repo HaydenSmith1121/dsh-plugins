@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "1014029855/dsh-codevault",
+  "slug": "1014029855__dsh-codevault",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codevault",
+  "title": "dsh-codevault",
+  "summary": "边读源码边记笔记，按仓库、文件、符号自动归档成 Markdown，随时用 Obsidian 打开回看。",
+  "tags": [
+    "code-reading",
+    "dsh-codevault",
+    "dsh-plugin",
+    "obsidian",
+    "报告生成",
+    "文件管理",
+    "工具集成",
+    "状态持久化",
+    "效率提升"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-07T16:15:45Z",
+    "url": "https://github.com/1014029855/dsh-codevault/releases/tag/v0.2.0"
+  },
+  "author": "1014029855",
+  "repo": "https://github.com/1014029855/dsh-codevault",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T05:38:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dshmarket",
+    "commands": [
+      "dsh plugin --profile web add dshmarket",
+      "dsh plugin --profile web add dsh-codevault"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

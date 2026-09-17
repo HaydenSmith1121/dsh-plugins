@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "LeemanCheung/dsh-token-usage",
+  "slug": "leemancheung__dsh-token-usage",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-token-usage",
+  "title": "dsh-token-usage",
+  "summary": "自动记录 DeepSeek Harness 的 token 消耗，并用面板直观展示用量趋势，帮你随时掌握花费。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "token-usage",
+    "状态监控",
+    "数据分析",
+    "状态持久化",
+    "可视化",
+    "资源优化"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-09-02T03:47:52Z",
+    "url": "https://github.com/LeemanCheung/dsh-token-usage/releases/tag/v0.3.1"
+  },
+  "author": "LeemanCheung",
+  "repo": "https://github.com/LeemanCheung/dsh-token-usage",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 12,
+  "forks": 0,
+  "pushedAt": "2026-09-12T08:03:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LeemanCheung/dsh-token-usage",
+    "commands": [
+      "dsh plugin --profile web add github:LeemanCheung/dsh-token-usage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

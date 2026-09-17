@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-agent-llm-retry",
+  "slug": "jonah791__dsh-agent-llm-retry",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-llm-retry",
+  "title": "dsh-agent-llm-retry",
+  "summary": "LLM 运维一体化插件：自动重试失败请求（最高20次）并实时跟踪Token预算，提升模型调用稳定性与成本控制。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "资源优化",
+    "自动化",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-07T11:06:37Z",
+    "url": "https://github.com/jonah791/dsh-agent-llm-retry/releases/tag/v0.2.0"
+  },
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-agent-llm-retry",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T06:00:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-agent-llm-retry",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-agent-llm-retry"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

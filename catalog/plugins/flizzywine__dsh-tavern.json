@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "flizzywine/dsh-tavern",
+  "slug": "flizzywine__dsh-tavern",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tavern",
+  "title": "dsh-tavern",
+  "summary": "导入 SillyTavern 人物卡，和 AI 一起玩文字冒险，还能对话改设定、按剧本推进剧情。",
+  "tags": [
+    "dsh-plugin",
+    "报告生成",
+    "AI 助手",
+    "会话管理",
+    "工具集成"
+  ],
+  "version": "1.9.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "flizzywine",
+  "repo": "https://github.com/flizzywine/dsh-tavern",
+  "homepage": null,
+  "license": "AGPL-3.0",
+  "stars": 344,
+  "forks": 27,
+  "pushedAt": "2026-09-16T19:28:01Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:flizzywine/dsh-tavern",
+    "commands": [
+      "dsh plugin --profile web add github:flizzywine/dsh-tavern"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

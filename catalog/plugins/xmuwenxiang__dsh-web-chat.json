@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "xmuwenxiang/dsh-web-chat",
+  "slug": "xmuwenxiang__dsh-web-chat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-chat",
+  "title": "dsh-web-chat",
+  "summary": "在DeepSeek Harness内直接调用网页版DeepSeek聊天，聊完一键将上下文迁入本地继续开发，省下前期规划Token。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "模型适配",
+    "会话管理",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xmuwenxiang",
+  "repo": "https://github.com/xmuwenxiang/dsh-web-chat",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 12,
+  "forks": 6,
+  "pushedAt": "2026-09-07T09:04:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-webchat",
+    "commands": [
+      "dsh plugin --profile web add dsh-webchat",
+      "dsh plugin --profile web add github:xmuwenxiang/dsh-web-chat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

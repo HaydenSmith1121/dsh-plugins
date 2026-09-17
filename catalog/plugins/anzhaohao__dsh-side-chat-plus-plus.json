@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "anzhaohao/dsh-side-chat-plus-plus",
+  "slug": "anzhaohao__dsh-side-chat-plus-plus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-side-chat-plus-plus",
+  "title": "dsh-side-chat-plus-plus",
+  "summary": "把侧聊升级成多标签页，还能一键整条引用历史消息，追问和对比更顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "side-chat",
+    "会话管理",
+    "前端增强",
+    "效率提升",
+    "多Agent协作"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "anzhaohao",
+  "repo": "https://github.com/anzhaohao/dsh-side-chat-plus-plus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-29T10:35:36Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:anzhaohao/dsh-side-chat-plus-plus",
+    "commands": [
+      "dsh plugin --profile web add github:anzhaohao/dsh-side-chat-plus-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

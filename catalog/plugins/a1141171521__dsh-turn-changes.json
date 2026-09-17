@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "a1141171521/dsh-turn-changes",
+  "slug": "a1141171521__dsh-turn-changes",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-turn-changes",
+  "title": "dsh-turn-changes",
+  "summary": "每回合自动汇总改动的文件，点「审查」就能在右侧看行级 diff，改了什么一目了然。",
+  "tags": [
+    "code-review",
+    "cordis",
+    "diff",
+    "dsh",
+    "plugin",
+    "版本回看",
+    "可视化",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "a1141171521",
+  "repo": "https://github.com/a1141171521/dsh-turn-changes",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T13:17:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:a1141171521/dsh-turn-changes",
+    "commands": [
+      "dsh plugin --profile web add <本仓库绝对路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

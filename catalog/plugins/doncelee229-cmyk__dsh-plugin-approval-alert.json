@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "doncelee229-cmyk/dsh-plugin-approval-alert",
+  "slug": "doncelee229-cmyk__dsh-plugin-approval-alert",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-approval-alert",
+  "title": "dsh-plugin-approval-alert",
+  "summary": "当 Harness 需要审批或选择方案时，弹出桌面通知提醒，显示工作区名并支持点击跳转，多语言。",
+  "tags": [
+    "approval",
+    "deepseek-harness",
+    "dsh-plugin",
+    "notification",
+    "消息通知",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "1.0.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "doncelee229-cmyk",
+  "repo": "https://github.com/doncelee229-cmyk/dsh-plugin-approval-alert",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-22T15:54:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-approval-alert",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-approval-alert"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

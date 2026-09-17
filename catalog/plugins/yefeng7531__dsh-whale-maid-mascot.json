@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "yefeng7531/dsh-whale-maid-mascot",
+  "slug": "yefeng7531__dsh-whale-maid-mascot",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-whale-maid-mascot",
+  "title": "dsh-whale-maid-mascot",
+  "summary": "在 DeepSeek Harness 网页界面里养一只鲸鱼娘吉祥物，让页面更可爱更有陪伴感。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mascot",
+    "主题",
+    "前端增强",
+    "AI 助手"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-17T11:56:35Z",
+    "url": "https://github.com/yefeng7531/dsh-whale-maid-mascot/releases/tag/v1.0.0"
+  },
+  "author": "yefeng7531",
+  "repo": "https://github.com/yefeng7531/dsh-whale-maid-mascot",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-08-17T11:56:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yefeng7531/dsh-whale-maid-mascot",
+    "commands": [
+      "dsh plugin --profile web add <本目录路径>",
+      "dsh plugin --profile web remove dsh-whale-maid-mascot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

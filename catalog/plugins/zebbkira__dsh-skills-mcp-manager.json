@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "zebbkira/dsh-skills-mcp-manager",
+  "slug": "zebbkira__dsh-skills-mcp-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skills-mcp-manager",
+  "title": "dsh-skills-mcp-manager",
+  "summary": "在 Web 设置页里直接管理技能和 MCP 服务器，不用改配置文件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "设置面板",
+    "插件管理",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zebbkira",
+  "repo": "https://github.com/zebbkira/dsh-skills-mcp-manager",
+  "homepage": null,
+  "license": null,
+  "stars": 22,
+  "forks": 4,
+  "pushedAt": "2026-08-23T05:30:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zebbkira/dsh-skills-mcp-manager",
+    "commands": [
+      "dsh plugin --profile web add github:zebbkira/dsh-skills-mcp-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

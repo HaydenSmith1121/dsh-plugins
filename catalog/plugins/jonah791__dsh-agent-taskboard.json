@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-agent-taskboard",
+  "slug": "jonah791__dsh-agent-taskboard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-taskboard",
+  "title": "dsh-agent-taskboard",
+  "summary": "让主人或任意 agent 把任务丢进异步队列，宿主 agent 空闲时自己领取完成，不打断当前会话。",
+  "tags": [
+    "dsh-plugin",
+    "多Agent协作",
+    "自动化",
+    "消息通知",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-07T11:06:52Z",
+    "url": "https://github.com/jonah791/dsh-agent-taskboard/releases/tag/v0.1.1"
+  },
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-agent-taskboard",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T06:07:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-agent-taskboard",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-agent-taskboard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

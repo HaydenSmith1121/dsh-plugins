@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xuexiaolei1997/dsh-plugin-stock-x",
+  "slug": "xuexiaolei1997__dsh-plugin-stock-x",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-stock-x",
+  "title": "dsh-plugin-stock-x",
+  "summary": "实时盯盘与量化投研助手，帮你监控股票行情、分析数据并辅助决策。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "1.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xuexiaolei1997",
+  "repo": "https://github.com/xuexiaolei1997/dsh-plugin-stock-x",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-07T12:31:53Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xuexiaolei1997/dsh-plugin-stock-x",
+    "commands": [
+      "git clone https://github.com/xuexiaolei1997/dsh-plugin-stock-x.git",
+      "npm install",
+      "dsh plugin --profile web add file:."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

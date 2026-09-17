@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Sttrevens/dsh-linked-folders",
+  "slug": "sttrevens__dsh-linked-folders",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-linked-folders",
+  "title": "dsh-linked-folders",
+  "summary": "为会话提供多文件夹工作区，支持全局链接列表和即时挂载/卸载文件夹，方便在侧边栏管理多个目录。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "多文件夹管理",
+    "会话工作区",
+    "文件夹链接",
+    "侧边栏操作"
+  ],
+  "version": "0.1.0-rc.6",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Sttrevens",
+  "repo": "https://github.com/Sttrevens/dsh-linked-folders",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-18T02:50:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@steven-wu/dsh-linked-folders",
+    "commands": [
+      "dsh plugin --profile web add @steven-wu/dsh-linked-folders"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

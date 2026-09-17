@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "lhf6623/dsh-proxy-config",
+  "slug": "lhf6623__dsh-proxy-config",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-proxy-config",
+  "title": "dsh-proxy-config",
+  "summary": "配置代理后自动生效，让 Harness 及子进程走 HTTP/SOCKS 代理，访问外网更顺畅，本机内网直连不绕路。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "工作流增强",
+    "命令行工具",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.3.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lhf6623",
+  "repo": "https://github.com/lhf6623/dsh-proxy-config",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-26T14:57:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lhf6623/dsh-proxy-config",
+    "commands": [
+      "dsh plugin --profile web add github:lhf6623/dsh-proxy-config"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

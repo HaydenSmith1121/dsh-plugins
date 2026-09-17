@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "PaoMoXML/dsh-paste-names",
+  "slug": "paomoxml__dsh-paste-names",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-paste-names",
+  "title": "dsh-paste-names",
+  "summary": "在 DSH 聊天框粘贴或拖入非图片文件/文件夹，自动生成 @path 引用或绝对路径，告别报错。",
+  "tags": [
+    "dsh-plugin",
+    "文件管理",
+    "效率提升",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "1.4.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.4.3",
+    "publishedAt": "2026-09-03T10:29:59Z",
+    "url": "https://github.com/PaoMoXML/dsh-paste-names/releases/tag/v1.4.3"
+  },
+  "author": "PaoMoXML",
+  "repo": "https://github.com/PaoMoXML/dsh-paste-names",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-04T01:04:04Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:PaoMoXML/dsh-paste-names",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/PaoMoXML/dsh-paste-names.git",
+      "git clone https://github.com/PaoMoXML/dsh-paste-names.git ~/.dsh/profiles/web/plugins/dsh-paste-names"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

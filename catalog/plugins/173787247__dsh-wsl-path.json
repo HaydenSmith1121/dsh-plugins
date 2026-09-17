@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "173787247/dsh-wsl-path",
+  "slug": "173787247__dsh-wsl-path",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wsl-path",
+  "title": "dsh-wsl-path",
+  "summary": "在 WSL 和 Windows 间快速互转路径，自动处理 /mnt/c 等挂载点差异，开发更省心。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "wsl",
+    "命令行工具",
+    "效率提升",
+    "工作流增强",
+    "工作区管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "173787247",
+  "repo": "https://github.com/173787247/dsh-wsl-path",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:22:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:173787247/dsh-wsl-path",
+    "commands": [
+      "dsh plugin --profile web add github:173787247/dsh-wsl-path"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

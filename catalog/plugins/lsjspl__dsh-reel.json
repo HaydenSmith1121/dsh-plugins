@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "lsjspl/dsh-reel",
+  "slug": "lsjspl__dsh-reel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-reel",
+  "title": "dsh-reel",
+  "summary": "在 dsh 网页里管理和播放本地影音库，手机电脑都能滑动刷视频，拖拽即播。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "前端增强",
+    "移动端",
+    "文件管理",
+    "娱乐互动"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lsjspl",
+  "repo": "https://github.com/lsjspl/dsh-reel",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-14T08:02:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lsjspl/dsh-reel",
+    "commands": [
+      "dsh plugin --profile web add github:lsjspl/dsh-reel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

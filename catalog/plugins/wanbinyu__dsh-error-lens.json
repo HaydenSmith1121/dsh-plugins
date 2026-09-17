@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "Wanbinyu/dsh-error-lens",
+  "slug": "wanbinyu__dsh-error-lens",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-error-lens",
+  "title": "dsh-error-lens",
+  "summary": "把 DeepSeek Harness 里模糊的报错整理成可操作信息，还能一键生成脱敏诊断报告，方便排查和反馈问题。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "diagnostics",
+    "dsh",
+    "dsh-plugin",
+    "typescript",
+    "状态监控",
+    "效率提升",
+    "工作流增强",
+    "安全审计",
+    "自动化"
+  ],
+  "version": "0.1.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.7",
+    "publishedAt": "2026-09-11T03:56:55Z",
+    "url": "https://github.com/Wanbinyu/dsh-error-lens/releases/tag/v0.1.7"
+  },
+  "author": "Wanbinyu",
+  "repo": "https://github.com/Wanbinyu/dsh-error-lens",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-09-11T03:56:54Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Wanbinyu/dsh-error-lens",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/Wanbinyu/dsh-error-lens/releases/download/v0.1.7/dsh-error-lens-0.1.7.tgz",
+      "dsh plugin --profile web remove dsh-error-lens"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

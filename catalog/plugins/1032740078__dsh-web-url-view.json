@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "1032740078/dsh-web-url-view",
+  "slug": "1032740078__dsh-web-url-view",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-url-view",
+  "title": "dsh-web-url-view",
+  "summary": "在设置页显示固定的 Web 访问地址，重启后不变，局域网内其他设备也能直接打开。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "web-ui",
+    "设置面板",
+    "零配置",
+    "自动化",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "1032740078",
+  "repo": "https://github.com/1032740078/dsh-web-url-view",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T09:19:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dshmarket",
+    "commands": [
+      "dsh plugin --profile web add dshmarket",
+      "dsh plugin --profile web add github:1032740078/dsh-web-url-view"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

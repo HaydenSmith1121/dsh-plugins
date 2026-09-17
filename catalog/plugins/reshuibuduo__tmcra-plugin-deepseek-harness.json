@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "reshuibuduo/tmcra-plugin-deepseek-harness",
+  "slug": "reshuibuduo__tmcra-plugin-deepseek-harness",
+  "tier": "community",
+  "package": null,
+  "name": "tmcra-plugin-deepseek-harness",
+  "title": "tmcra-plugin-deepseek-harness",
+  "summary": "把 DeepSeek Harness 的项目记忆带到 Codex 等工具，跨应用跨对话无缝衔接，不用重复解释上下文。",
+  "tags": [
+    "agent-memory",
+    "cross-session-memory",
+    "deepseek-harness",
+    "dsh-plugin",
+    "long-term-memory",
+    "multi-agent",
+    "tmcra",
+    "typescript",
+    "会话管理",
+    "多Agent协作",
+    "跨应用记忆"
+  ],
+  "version": "0.1.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.7",
+    "publishedAt": "2026-09-03T22:54:43Z",
+    "url": "https://github.com/reshuibuduo/tmcra-plugin-deepseek-harness/releases/tag/v0.1.7"
+  },
+  "author": "reshuibuduo",
+  "repo": "https://github.com/reshuibuduo/tmcra-plugin-deepseek-harness",
+  "homepage": "https://tmcra.com",
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-05T20:07:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:reshuibuduo/tmcra-plugin-deepseek-harness",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/reshuibuduo/tmcra-plugin-deepseek-harness/releases/download/v1.0.0-rc.1/dsh-tmcra-memory-1.0.0-rc.1.tgz",
+      "dsh plugin --profile web exec dsh-tmcra-memory login"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

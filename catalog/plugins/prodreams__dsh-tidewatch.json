@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "proDreams/dsh-tidewatch",
+  "slug": "prodreams__dsh-tidewatch",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tidewatch",
+  "title": "dsh-tidewatch",
+  "summary": "在 DeepSeek Harness 里挂一张悬浮潮汐卡片，按本地时间显示峰谷时段和会话花费，支持中英俄三语。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "主题",
+    "可视化",
+    "会话管理",
+    "资源优化"
+  ],
+  "version": "2.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.0.0",
+    "publishedAt": "2026-09-16T10:27:12Z",
+    "url": "https://github.com/proDreams/dsh-tidewatch/releases/tag/v2.0.0"
+  },
+  "author": "proDreams",
+  "repo": "https://github.com/proDreams/dsh-tidewatch",
+  "homepage": "https://t.me/napkincode",
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-09-16T10:26:43Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:proDreams/dsh-tidewatch",
+    "commands": [
+      "dsh plugin --profile web add github:proDreams/dsh-tidewatch",
+      "dsh plugin --profile web add https://github.com/proDreams/dsh-tidewatch/releases/download/v2.0.0/dsh-tidewatch-2.0.0.tgz",
+      "dsh plugin --profile web add link:/path/to/dsh-tidewatch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

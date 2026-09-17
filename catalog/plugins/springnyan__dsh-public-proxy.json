@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "SpringNyan/dsh-public-proxy",
+  "slug": "springnyan__dsh-public-proxy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-public-proxy",
+  "title": "dsh-public-proxy",
+  "summary": "将 DSH 的 Web 界面暴露到局域网，方便其他设备远程访问和使用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "proxy",
+    "安全审计",
+    "零配置",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "SpringNyan",
+  "repo": "https://github.com/SpringNyan/dsh-public-proxy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T18:32:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-public-proxy@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-public-proxy@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

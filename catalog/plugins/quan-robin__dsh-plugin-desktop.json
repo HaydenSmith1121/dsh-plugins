@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "Quan-Robin/dsh-plugin-desktop",
+  "slug": "quan-robin__dsh-plugin-desktop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-desktop",
+  "title": "dsh-plugin-desktop",
+  "summary": "给极简桌面端解锁增强功能：暴露内部状态接口，并往网页界面加右键菜单和置顶会话。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "快捷操作",
+    "会话管理",
+    "桥接插件",
+    "工具集成"
+  ],
+  "version": "0.4.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.4",
+    "publishedAt": "2026-09-13T07:22:26Z",
+    "url": "https://github.com/Quan-Robin/dsh-plugin-desktop/releases/tag/v0.4.4"
+  },
+  "author": "Quan-Robin",
+  "repo": "https://github.com/Quan-Robin/dsh-plugin-desktop",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T07:22:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Quan-Robin/dsh-plugin-desktop",
+    "commands": [
+      "dsh plugin add github:Quan-Robin/dsh-plugin-desktop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

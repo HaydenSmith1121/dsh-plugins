@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "fengzhiyushui/dsh-desktop-window",
+  "slug": "fengzhiyushui__dsh-desktop-window",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-desktop-window",
+  "title": "dsh-desktop-window",
+  "summary": "把 DSH 网页界面变成独立桌面应用窗口，双击就能启动，不用再开浏览器。",
+  "tags": [
+    "deepseek-harness",
+    "desktop",
+    "dsh-plugin",
+    "桌宠",
+    "快捷操作",
+    "零配置",
+    "工具集成"
+  ],
+  "version": "0.4.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fengzhiyushui",
+  "repo": "https://github.com/fengzhiyushui/dsh-desktop-window",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T11:23:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fengzhiyushui/dsh-desktop-window",
+    "commands": [
+      "dsh plugin --profile web add github:fengzhiyushui/dsh-desktop-window"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

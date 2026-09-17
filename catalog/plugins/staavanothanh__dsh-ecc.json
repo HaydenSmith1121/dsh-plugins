@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "staavanothanh/dsh-ecc",
+  "slug": "staavanothanh__dsh-ecc",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ecc",
+  "title": "dsh-ecc",
+  "summary": "把 Everything Claude Code 的智能体、技能、钩子和子智能体能力无缝接入 DSH，让 Claude 生态玩法直接在 DeepSeek Harness 里跑起来。",
+  "tags": [
+    "agents",
+    "dsh",
+    "dsh-plugin",
+    "ecc",
+    "plugin",
+    "多Agent协作",
+    "模型配置",
+    "零配置",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.7.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.0",
+    "publishedAt": "2026-08-22T15:53:23Z",
+    "url": "https://github.com/staavanothanh/dsh-ecc/releases/tag/v0.7.0"
+  },
+  "author": "staavanothanh",
+  "repo": "https://github.com/staavanothanh/dsh-ecc",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-22T15:53:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:staavanothanh/dsh-ecc",
+    "commands": [
+      "dsh plugin --profile web add github:staavanothanh/dsh-ecc"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

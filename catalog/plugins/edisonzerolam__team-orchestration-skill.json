@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "edisonzerolam/team-orchestration-skill",
+  "slug": "edisonzerolam__team-orchestration-skill",
+  "tier": "community",
+  "package": null,
+  "name": "team-orchestration-skill",
+  "title": "team-orchestration-skill",
+  "summary": "让多位AI专家分组辩论、交叉审核，帮你把复杂任务拆细搞透，出活更准更稳。",
+  "tags": [
+    "dsh",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "3.9.0-dsh",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v3.9.0-dsh",
+    "publishedAt": "2026-08-17T02:50:14Z",
+    "url": "https://github.com/edisonzerolam/team-orchestration-skill/releases/tag/v3.9.0-dsh"
+  },
+  "author": "edisonzerolam",
+  "repo": "https://github.com/edisonzerolam/team-orchestration-skill",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-09-13T02:54:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:edisonzerolam/team-orchestration-skill",
+    "commands": [
+      "dsh plugin --profile web add github:edisonzerolam/team-orchestration-skill"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "caoyixian06/dsh-lanchat",
+  "slug": "caoyixian06__dsh-lanchat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-lanchat",
+  "title": "dsh-lanchat",
+  "summary": "让多台设备上的 DSH 和 AI 像群聊一样互相交流，自动接话、排队投递，人类随时插话管理。",
+  "tags": [
+    "dsh-plugin",
+    "多Agent协作",
+    "状态监控",
+    "效率提升",
+    "桌宠"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "caoyixian06",
+  "repo": "https://github.com/caoyixian06/dsh-lanchat",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-30T05:04:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:caoyixian06/dsh-lanchat",
+    "commands": [
+      "dsh plugin --profile web add github:caoyixian06/dsh-lanchat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

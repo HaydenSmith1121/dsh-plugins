@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "dvaJi/dsh-codex-context",
+  "slug": "dvaji__dsh-codex-context",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codex-context",
+  "title": "dsh-codex-context",
+  "summary": "为 DeepSeek Harness 提供 Codex 风格窗口化上下文管理，支持实时笔记与冷历史检索，实现无损召回。",
+  "tags": [
+    "context-management",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "gpt-6-astra",
+    "sliding-window",
+    "会话管理",
+    "语义检索",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dvaJi",
+  "repo": "https://github.com/dvaJi/dsh-codex-context",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T04:40:45Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dvaJi/dsh-codex-context",
+    "commands": [
+      "dsh plugin --profile demo add /path/to/dsh-codex-context"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

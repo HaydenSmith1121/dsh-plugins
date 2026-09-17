@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "lw-storm/dsh-plugin-noticeme",
+  "slug": "lw-storm__dsh-plugin-noticeme",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-noticeme",
+  "title": "dsh-plugin-noticeme",
+  "summary": "页面在后台时，DSH 需要你审批或提问时，通过桌面通知（或标签页标题）提醒你，不错过关键操作。",
+  "tags": [
+    "dsh-plugin",
+    "notification",
+    "状态监控",
+    "安全审计",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lw-storm",
+  "repo": "https://github.com/lw-storm/dsh-plugin-noticeme",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-08T17:59:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lw-storm/dsh-plugin-noticeme",
+    "commands": [
+      "dsh plugin --profile web add link:/absolute/path/to/this/pkg",
+      "dsh plugin add github:lw-storm/dsh-plugin-noticeme"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

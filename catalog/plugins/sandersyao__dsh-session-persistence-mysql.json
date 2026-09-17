@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "sandersyao/dsh-session-persistence-mysql",
+  "slug": "sandersyao__dsh-session-persistence-mysql",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-persistence-mysql",
+  "title": "dsh-session-persistence-mysql",
+  "summary": "把 DeepSeek Harness 的会话存储换成 MySQL，让对话记录更持久、好管理。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "可视化",
+    "安全审计",
+    "语义检索"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sandersyao",
+  "repo": "https://github.com/sandersyao/dsh-session-persistence-mysql",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 2,
+  "pushedAt": "2026-09-15T10:59:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sandersyao/dsh-session-persistence-mysql",
+    "commands": [
+      "dsh plugin --profile web add github:sandersyao/dsh-session-persistence-mysql"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

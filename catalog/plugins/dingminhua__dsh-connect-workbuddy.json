@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "dingminhua/dsh-connect-workbuddy",
+  "slug": "dingminhua__dsh-connect-workbuddy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-connect-workbuddy",
+  "title": "dsh-connect-workbuddy",
+  "summary": "将本机已登录的 WorkBuddy 模型接入 DeepSeek Harness，支持只读查看余额并管理模型。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "模型适配",
+    "状态监控",
+    "零配置",
+    "设置面板"
+  ],
+  "version": "2.0.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dingminhua",
+  "repo": "https://github.com/dingminhua/dsh-connect-workbuddy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 19,
+  "forks": 0,
+  "pushedAt": "2026-09-15T20:27:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-connect-workbuddy",
+    "commands": [
+      "dsh plugin --profile desktop add dsh-connect-workbuddy",
+      "npm install dsh-connect-workbuddy",
+      "dsh plugin --profile web add dsh-connect-workbuddy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

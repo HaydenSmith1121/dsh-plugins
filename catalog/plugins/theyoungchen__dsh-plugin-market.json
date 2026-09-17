@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "TheYoungChen/dsh-plugin-market",
+  "slug": "theyoungchen__dsh-plugin-market",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-market",
+  "title": "dsh-plugin-market",
+  "summary": "在 dsh 里直接逛插件市场，搜索、一键安装 GitHub 上的 dsh-plugin 插件，还能看实时进度。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "插件管理",
+    "集中仓库",
+    "工具集成",
+    "快捷操作",
+    "设置面板"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-14T05:20:45Z",
+    "url": "https://github.com/TheYoungChen/dsh-plugin-market/releases/tag/v1.0.0"
+  },
+  "author": "TheYoungChen",
+  "repo": "https://github.com/TheYoungChen/dsh-plugin-market",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-16T19:16:36Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TheYoungChen/dsh-plugin-market",
+    "commands": [
+      "dsh plugin --profile web add github:TheYoungChen/dsh-plugin-market && dsh web"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

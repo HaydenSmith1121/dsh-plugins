@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "whiteguo233/dsh-openbiliclaw",
+  "slug": "whiteguo233__dsh-openbiliclaw",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-openbiliclaw",
+  "title": "dsh-openbiliclaw",
+  "summary": "在 DSH 侧边栏一键唤起本地 OpenBiliClaw 推荐 Agent，看推荐、聊画像、边用边学。",
+  "tags": [
+    "agent-bridge",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "openbiliclaw",
+    "AI 助手",
+    "工具集成",
+    "桥接插件",
+    "状态持久化",
+    "报告生成"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-11T03:38:57Z",
+    "url": "https://github.com/whiteguo233/dsh-openbiliclaw/releases/tag/v0.4.0"
+  },
+  "author": "whiteguo233",
+  "repo": "https://github.com/whiteguo233/dsh-openbiliclaw",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 59,
+  "forks": 4,
+  "pushedAt": "2026-09-11T03:38:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:whiteguo233/dsh-openbiliclaw",
+    "commands": [
+      "npm install @openbiliclaw/dsh-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "freedomkk-qfeng/dsh-oidc",
+  "slug": "freedomkk-qfeng__dsh-oidc",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-oidc",
+  "title": "dsh-oidc",
+  "summary": "为企业接入 OIDC 登录、安全绑定 API 密钥，并快速集成 OpenAI 兼容模型，统一身份与模型管理。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "模型配置",
+    "设置面板",
+    "零配置"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "freedomkk-qfeng",
+  "repo": "https://github.com/freedomkk-qfeng/dsh-oidc",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T06:06:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@eduwork/dsh-oidc@0.1.0",
+    "commands": [
+      "dsh plugin --profile web add @eduwork/dsh-oidc@0.1.0",
+      "git clone https://github.com/freedomkk-qfeng/dsh-oidc.git",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

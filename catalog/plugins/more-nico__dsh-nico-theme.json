@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "more-nico/dsh-nico-theme",
+  "slug": "more-nico__dsh-nico-theme",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-nico-theme",
+  "title": "dsh-nico-theme",
+  "summary": "给 DeepSeek Harness 网页界面换上 Nico 毛玻璃主题，面板通透有质感。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "liquid-glass",
+    "界面美化",
+    "主题",
+    "前端增强",
+    "零配置"
+  ],
+  "version": "0.3.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "more-nico",
+  "repo": "https://github.com/more-nico/dsh-nico-theme",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T15:50:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-nico-theme@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-nico-theme@latest",
+      "dsh plugin --profile nico-theme-test add dsh-nico-theme@latest",
+      "dsh plugin --profile nico-theme-test add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

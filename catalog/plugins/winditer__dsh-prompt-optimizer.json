@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "winditer/dsh-prompt-optimizer",
+  "slug": "winditer__dsh-prompt-optimizer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-optimizer",
+  "title": "dsh-prompt-optimizer",
+  "summary": "一键优化你的提示词，让 AI 更懂你，输出更精准。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-prompt-optimizer",
+    "效率提升",
+    "自动化",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "2.0.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "winditer",
+  "repo": "https://github.com/winditer/dsh-prompt-optimizer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-03T09:09:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-prompt-optimizer",
+    "commands": [
+      "dsh plugin --profile desktop add dsh-prompt-optimizer",
+      "git clone https://github.com/winditer/dsh-prompt-optimizer.git && cd dsh-prompt-optimizer",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

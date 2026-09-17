@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "goldgish/dsh-gamepad-approval",
+  "slug": "goldgish__dsh-gamepad-approval",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-gamepad-approval",
+  "title": "dsh-gamepad-approval",
+  "summary": "让 AI 的高危操作必须通过 Xbox 手柄物理按键确认，A 键批准、B 键驳回，给智能体加一道硬件安全锁。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "gamepad",
+    "security",
+    "安全审计",
+    "桌宠",
+    "自动化",
+    "零配置"
+  ],
+  "version": "0.1.4",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "goldgish",
+  "repo": "https://github.com/goldgish/dsh-gamepad-approval",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T12:15:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-gamepad-approval",
+    "commands": [
+      "dsh plugin --profile default add dsh-gamepad-approval"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

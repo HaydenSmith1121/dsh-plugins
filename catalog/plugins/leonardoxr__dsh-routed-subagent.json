@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "leonardoxr/dsh-routed-subagent",
+  "slug": "leonardoxr__dsh-routed-subagent",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-routed-subagent",
+  "title": "dsh-routed-subagent",
+  "summary": "按任务复杂度自动分配不同模型，让 DeepSeek Harness 的子代理调用更聪明、更省成本。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-web",
+    "dsh-web-ui",
+    "模型配置",
+    "资源优化",
+    "多Agent协作",
+    "自动化"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-08-24T14:02:01Z",
+    "url": "https://github.com/leonardoxr/dsh-routed-subagent/releases/tag/v0.3.1"
+  },
+  "author": "leonardoxr",
+  "repo": "https://github.com/leonardoxr/dsh-routed-subagent",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-24T19:03:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:leonardoxr/dsh-routed-subagent",
+    "commands": [
+      "dsh plugin --profile <your-profile> add github:leonardoxr/dsh-routed-subagent",
+      "dsh plugin --profile <your-profile> add C:/path/to/dsh-routed-subagent-0.3.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

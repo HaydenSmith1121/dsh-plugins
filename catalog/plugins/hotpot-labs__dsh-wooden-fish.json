@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "hotpot-labs/dsh-wooden-fish",
+  "slug": "hotpot-labs__dsh-wooden-fish",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wooden-fish",
+  "title": "dsh-wooden-fish",
+  "summary": "在 dsh 网页界面里敲木鱼，边干活边攒功德，点击木鱼就有敲击动画，解压又好玩。",
+  "tags": [
+    "dsh-plugin",
+    "桌宠",
+    "娱乐互动",
+    "可视化",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hotpot-labs",
+  "repo": "https://github.com/hotpot-labs/dsh-wooden-fish",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T13:35:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-wooden-fish",
+    "commands": [
+      "dsh plugin --profile web add dsh-wooden-fish",
+      "dsh plugin --profile web add github:your-org/dsh-wooden-fish"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

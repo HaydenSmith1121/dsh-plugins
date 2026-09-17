@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Wickaninnish/dsh-skill-manager",
+  "slug": "wickaninnish__dsh-skill-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skill-manager",
+  "title": "dsh-skill-manager",
+  "summary": "自动发现、审计、去重和优化技能，带安全门禁的维护闭环，默认只读，可手动开启自动更新。",
+  "tags": [
+    "automation",
+    "dsh-plugin",
+    "skill-management",
+    "自动化",
+    "插件管理",
+    "状态监控",
+    "安全审计"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Wickaninnish",
+  "repo": "https://github.com/Wickaninnish/dsh-skill-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T07:55:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Wickaninnish/dsh-skill-manager",
+    "commands": [
+      "dsh plugin --profile web add github:Wickaninnish/dsh-skill-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

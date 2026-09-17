@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "aijunjiang/dsh-remote-ssh",
+  "slug": "aijunjiang__dsh-remote-ssh",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-remote-ssh",
+  "title": "dsh-remote-ssh",
+  "summary": "把 DSH 工作区的文件读写和命令执行搬到远程 SSH 主机上，本地界面不变，远程干活更顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "remote-development",
+    "remote-workspace",
+    "ssh",
+    "安全审计",
+    "文件管理",
+    "命令行工具",
+    "工作流增强"
+  ],
+  "version": "0.3.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.3",
+    "publishedAt": "2026-09-11T01:29:13Z",
+    "url": "https://github.com/aijunjiang/dsh-remote-ssh/releases/tag/v0.3.3"
+  },
+  "author": "aijunjiang",
+  "repo": "https://github.com/aijunjiang/dsh-remote-ssh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T01:43:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aijunjiang/dsh-remote-ssh",
+    "commands": [
+      "dsh plugin --profile web add github:aijunjiang/dsh-remote-ssh",
+      "git clone https://github.com/aijunjiang/dsh-remote-ssh && cd dsh-remote-ssh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

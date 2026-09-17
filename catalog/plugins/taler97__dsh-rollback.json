@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Taler97/dsh-rollback",
+  "slug": "taler97__dsh-rollback",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-rollback",
+  "title": "dsh-rollback",
+  "summary": "给 DeepSeek Harness 加个后悔药，文件改动出问题能一键回滚到之前的检查点。",
+  "tags": [
+    "checkpoint",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "rollback",
+    "状态恢复",
+    "自动化",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Taler97",
+  "repo": "https://github.com/Taler97/dsh-rollback",
+  "homepage": "https://www.npmjs.com/package/dsh-rollback",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T04:18:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-rollback",
+    "commands": [
+      "dsh plugin --profile demo add dsh-rollback"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

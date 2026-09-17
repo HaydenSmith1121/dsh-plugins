@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "BorisShaw6/dsh-cyber-pet",
+  "slug": "borisshaw6__dsh-cyber-pet",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cyber-pet",
+  "title": "dsh-cyber-pet",
+  "summary": "网页上养一只赛博鲸鱼宠物，能喂食变色，还能实时显示 token 用量和上下文占用。",
+  "tags": [
+    "cyber-pet",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh-plugin",
+    "dsh-plugin-pet",
+    "状态监控",
+    "主题",
+    "可视化",
+    "AI 助手",
+    "快捷操作"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-08-15T12:22:29Z",
+    "url": "https://github.com/BorisShaw6/dsh-cyber-pet/releases/tag/v0.3.1"
+  },
+  "author": "BorisShaw6",
+  "repo": "https://github.com/BorisShaw6/dsh-cyber-pet",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-15T12:13:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:BorisShaw6/dsh-cyber-pet",
+    "commands": [
+      "git clone https://github.com/deepseek-ai/deepseek-harness.git",
+      "git clone https://github.com/BorisShaw6/dsh-cyber-pet.git",
+      "git clone https://github.com/BorisShaw6/dsh-cyber-pet.git && cd dsh-cyber-pet && ./install.sh --quick"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

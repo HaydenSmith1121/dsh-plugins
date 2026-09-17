@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "justarook1e/dsh-ide-lite",
+  "slug": "justarook1e__dsh-ide-lite",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ide-lite",
+  "title": "dsh-ide-lite",
+  "summary": "在会话侧边栏里加个轻量 IDE，能看文件树、审改动、编辑文件还带终端。",
+  "tags": [
+    "dsh-plugin",
+    "工作区管理",
+    "文件管理",
+    "前端增强",
+    "命令行工具",
+    "效率提升"
+  ],
+  "version": "1.12.6",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "justarook1e",
+  "repo": "https://github.com/justarook1e/dsh-ide-lite",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T08:28:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:justarook1e/dsh-ide-lite",
+    "commands": [
+      "dsh plugin --profile web add github:justarook1e/dsh-ide-lite"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

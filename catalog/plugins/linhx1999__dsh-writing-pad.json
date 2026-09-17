@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "linhx1999/dsh-writing-pad",
+  "slug": "linhx1999__dsh-writing-pad",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-writing-pad",
+  "title": "dsh-writing-pad",
+  "summary": "在 DeepSeek Harness 网页界面里写 Markdown 的便签板，支持分会话编辑、实时预览，还能让 AI 帮你改写。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "前端增强",
+    "桌宠",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "linhx1999",
+  "repo": "https://github.com/linhx1999/dsh-writing-pad",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-25T14:38:06Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-writing-pad",
+    "commands": [
+      "dsh plugin --profile web add dsh-writing-pad"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

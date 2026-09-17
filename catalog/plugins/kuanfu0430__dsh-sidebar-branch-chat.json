@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "kuanfu0430/dsh-sidebar-branch-chat",
+  "slug": "kuanfu0430__dsh-sidebar-branch-chat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sidebar-branch-chat",
+  "title": "dsh-sidebar-branch-chat",
+  "summary": "在侧边栏中为当前对话开启独立分支会话，保留上下文摘要，并复用主助手的全部工具，方便并行探索不同思路。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "多Agent协作",
+    "效率提升"
+  ],
+  "version": "0.6.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kuanfu0430",
+  "repo": "https://github.com/kuanfu0430/dsh-sidebar-branch-chat",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-26T01:48:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-better-sidebar",
+    "commands": [
+      "dsh plugin --profile web add dsh-better-sidebar",
+      "dsh plugin --profile web add github:kuanfu0430/dsh-sidebar-branch-chat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

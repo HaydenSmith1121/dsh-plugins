@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "2BingLing/dsh-market",
+  "slug": "2bingling__dsh-market",
+  "tier": "reviewed",
+  "package": "@dsh-market/plugin",
+  "name": "@dsh-market/plugin",
+  "title": "DSH Market 插件市场（公共索引官方前端）",
+  "summary": "公共插件市场的官方前端：浏览、搜索、猜你喜欢、一键安装与已装管理。数据源为 dsh.market 的公开索引。",
+  "tags": [
+    "插件市场",
+    "第三方",
+    "UI 面板"
+  ],
+  "version": "0.4.8",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:36:09.187Z",
+  "latestRelease": null,
+  "author": "2BingLing",
+  "repo": "https://github.com/2BingLing/dsh-market",
+  "homepage": "https://dsh.market/",
+  "license": "MIT",
+  "stars": null,
+  "forks": null,
+  "pushedAt": null,
+  "metricsCheckedAt": "2026-09-17T16:36:09.187Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": "ok",
+  "peerNote": "peerDependencies 是空对象，不对 dsh 运行时版本设约束。包内 README 自称要求 DSH >= 0.1.5、Node >= 20。★ 该包 package.json 没有 author / repository 字段，上游信息来自包内 README.md。",
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@dsh-market/plugin",
+    "commands": [
+      "dsh plugin --profile web add @dsh-market/plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": "0.1.6-alpha.1",
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "manual",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T16:36:09.187Z",
+    "lastSyncedAt": "2026-09-17T16:36:09.187Z"
+  },
+  "review": {
+    "reviewedAt": "2026-09-17",
+    "dshVersion": "0.1.6-alpha.1",
+    "node": "24.14.0",
+    "pnpm": "12.4.2",
+    "reviewer": "HaydenSmith1121",
+    "verdict": "ok-with-notes",
+    "sha256": null,
+    "evidence": "★ 来源变更（2026-09 市场与插件分离）：本条原先在旧仓库的「已验证」层，字节由本仓库以离线 tarball 分发（dsh-market-plugin-0.4.8.tgz，sha256 cb6275ca80a379fa1270db68b490196c1623498aced151ae995e6777af3a561f，86426 字节，7 个文件）。分离后本仓库不再分发任何第三方字节，安装改为上游 npm 规格 @dsh-market/plugin。\n原先的收录与实测记录（取自旧仓库 compatibility.json，仍可在 git 历史里查到）：在 dsh 0.1.6-alpha.1 / Node 24.14.0 / pnpm 12.4.2 上装进 profile 并随插件树正常装配；peerDependencies 为空对象，不存在「精确 pin 到另一个 dsh 版本 → 缺具名导出 → 整棵树挂」的失败面。\n★ 注意：改为 npm 规格后拿到的是**上游当前最新版**（实测 2026-09-17 为 0.4.9），不再是被实测过的 0.4.8。0.4.8 的结论不能自动外推到 0.4.9；要重新给结论就得在隔离环境里再装一次。",
+    "notes": "1. 该包 package.json **没有** author / repository 字段，作者与上游依据包内 README.md 声明核实为 2BingLing / 2BingLing/dsh-market；tarball 内未附 LICENSE 正文（package.json 声明 MIT）。\n2. 它与本仓库自带的 dsh-plugins-market 是**两个不同的市场**，可以共存：数据源不同（它读 dsh.market 的公开索引，本插件读本仓库的 catalog/plugins/*.json），安全模型也不同（它没有装前兼容性闸门）。\n3. 本插件是**引导插件**：本仓库的一键安装脚本只装 dsh-plugins-market；想同时用公共市场，在面板里点装它即可。\n4. peerDependencies 为空对象，因此不存在运行时 peer 失配的失败面。\n5. 未重新实测 npm 上的 0.4.9 —— 见 evidence 末尾的说明。"
+  }
+}

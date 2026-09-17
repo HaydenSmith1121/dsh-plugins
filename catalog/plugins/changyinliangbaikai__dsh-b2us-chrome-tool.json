@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "changyinliangbaikai/dsh-b2us-chrome-tool",
+  "slug": "changyinliangbaikai__dsh-b2us-chrome-tool",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-b2us-chrome-tool",
+  "title": "dsh-b2us-chrome-tool",
+  "summary": "在本地安全地自动化 Chrome 浏览器操作，为 DeepSeek Harness 提供可控的网页交互能力。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "安全审计",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "0.1.2-rc.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "changyinliangbaikai",
+  "repo": "https://github.com/changyinliangbaikai/dsh-b2us-chrome-tool",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T06:46:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:changyinliangbaikai/dsh-b2us-chrome-tool",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-auto-chrome-tool-0.4.2.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

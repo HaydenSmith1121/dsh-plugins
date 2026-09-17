@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "hw-cola/dsh-remote-control",
+  "slug": "hw-cola__dsh-remote-control",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-remote-control",
+  "title": "dsh-remote-control",
+  "summary": "手机扫码就能远程控制电脑上的 DSH WebUI，局域网内随时访问，未授权设备自动拦截。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "安全审计",
+    "桌宠",
+    "前端增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hw-cola",
+  "repo": "https://github.com/hw-cola/dsh-remote-control",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-25T01:37:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hw-cola/dsh-remote-control",
+    "commands": [
+      "dsh plugin --profile web add \"git+https://github.com/hw-cola/dsh-remote-control.git\"",
+      "dsh plugin --profile web add \"git+https://github.com/hw-cola/dsh-remote-control.git",
+      "dsh plugin --profile web add \"link:${PATH}/dsh-remote-control\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

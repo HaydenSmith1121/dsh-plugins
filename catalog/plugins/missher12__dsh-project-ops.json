@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Missher12/dsh-project-ops",
+  "slug": "missher12__dsh-project-ops",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-project-ops",
+  "title": "dsh-project-ops",
+  "summary": "为 DeepSeek Harness 提供项目任务发现与执行记录，让智能体按计划自动跑任务并追踪结果。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "project-automation",
+    "task-runner",
+    "自动化",
+    "工作流增强",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-09-14T08:50:44Z",
+    "url": "https://github.com/Missher12/dsh-project-ops/releases/tag/v0.3.1"
+  },
+  "author": "Missher12",
+  "repo": "https://github.com/Missher12/dsh-project-ops",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T08:50:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Missher12/dsh-project-ops",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/Missher12/dsh-project-ops/releases/download/v0.3.1/dsh-project-ops-0.3.1.tgz",
+      "dsh plugin --profile web remove dsh-project-ops"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

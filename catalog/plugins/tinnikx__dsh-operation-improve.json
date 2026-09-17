@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Tinnikx/dsh-operation-improve",
+  "slug": "tinnikx__dsh-operation-improve",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-operation-improve",
+  "title": "dsh-operation-improve",
+  "summary": "增强 DeepSeek Harness 客户端操作体验，侧边栏多选、右键菜单、对话时间戳、思考区限高等八项实用功能。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "效率提升",
+    "会话管理",
+    "可视化",
+    "工作流增强"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Tinnikx",
+  "repo": "https://github.com/Tinnikx/dsh-operation-improve",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T14:51:22Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Tinnikx/dsh-operation-improve",
+    "commands": [
+      "dsh plugin --profile web add github:Tinnikx/dsh-operation-improve",
+      "dsh plugin --profile web add <本目录>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

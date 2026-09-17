@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "LiPu-jpg/Openwrite",
+  "slug": "lipu-jpg__openwrite",
+  "tier": "community",
+  "package": null,
+  "name": "Openwrite",
+  "title": "Openwrite",
+  "summary": "一站式小说创作助手，集成统一创作Agent、90个写作工具和审稿流程，帮你高效完成从构思到成稿的全过程。",
+  "tags": [
+    "ai-novel",
+    "deepseek-harness",
+    "dsh-plugin",
+    "story-writing",
+    "writing-assistant",
+    "AI 助手",
+    "多Agent协作",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.2.10",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.10",
+    "publishedAt": "2026-09-14T11:18:26Z",
+    "url": "https://github.com/LiPu-jpg/Openwrite/releases/tag/v0.2.10"
+  },
+  "author": "LiPu-jpg",
+  "repo": "https://github.com/LiPu-jpg/Openwrite",
+  "homepage": "https://github.com/LiPu-jpg/Openwrite#readme",
+  "license": "Apache-2.0",
+  "stars": 736,
+  "forks": 117,
+  "pushedAt": "2026-09-16T19:31:32Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LiPu-jpg/Openwrite",
+    "commands": [
+      "dsh plugin --profile web add -w https://github.com/LiPu-jpg/Openwrite/releases/download/v0.2.10/dsh-openwrite-0.2.10.tgz",
+      "dsh plugin --profile web add -w dsh-openwrite@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

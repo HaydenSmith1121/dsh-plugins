@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Breathay/dsh-chat-turn-fold",
+  "slug": "breathay__dsh-chat-turn-fold",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-chat-turn-fold",
+  "title": "dsh-chat-turn-fold",
+  "summary": "将对话按轮次折叠，让长对话更清爽，快速定位关键内容。",
+  "tags": [
+    "会话管理",
+    "效率提升",
+    "语义检索"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-01T17:33:50Z",
+    "url": "https://github.com/Breathay/dsh-chat-turn-fold/releases/tag/v0.1.0"
+  },
+  "author": "Breathay",
+  "repo": "https://github.com/Breathay/dsh-chat-turn-fold",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T17:32:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Breathay/dsh-chat-turn-fold",
+    "commands": [
+      "dsh plugin --profile <你的profile名> add dsh-chat-turn-fold",
+      "pnpm add \"dsh-chat-turn-fold@github:Breathay/dsh-chat-turn-fold\"",
+      "pnpm add \"dsh-chat-turn-fold@file:/路径/to/dsh-chat-turn-fold\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

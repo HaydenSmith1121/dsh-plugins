@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "boomzikazita/dsh-memory",
+  "slug": "boomzikazita__dsh-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memory",
+  "title": "dsh-memory",
+  "summary": "给 DSH 智能体装上分层长期记忆，五路召回更准，写入需确认，数据加密更安全，还能自动转录会话。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "knowledge",
+    "memory",
+    "recall",
+    "rrf",
+    "会话管理",
+    "安全审计"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "boomzikazita",
+  "repo": "https://github.com/boomzikazita/dsh-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-25T13:10:13Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:boomzikazita/dsh-memory",
+    "commands": [
+      "dsh plugin --profile web add github:boomzikazita/dsh-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

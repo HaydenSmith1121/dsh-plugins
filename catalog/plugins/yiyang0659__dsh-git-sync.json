@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "Yiyang0659/dsh-git-sync",
+  "slug": "yiyang0659__dsh-git-sync",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-git-sync",
+  "title": "dsh-git-sync",
+  "summary": "把 DeepSeek Harness 的配置实时同步到 GitHub，多工具配置统一管理，冲突自动修复，换工具不用重新配。",
+  "tags": [
+    "cline",
+    "config-management",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "git",
+    "opencode",
+    "roo-code",
+    "sync",
+    "模型配置",
+    "状态监控",
+    "工作流增强",
+    "效率提升",
+    "文件管理"
+  ],
+  "version": "2.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.0.0",
+    "publishedAt": "2026-09-02T15:43:43Z",
+    "url": "https://github.com/Yiyang0659/dsh-git-sync/releases/tag/v2.0.0"
+  },
+  "author": "Yiyang0659",
+  "repo": "https://github.com/Yiyang0659/dsh-git-sync",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T15:43:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Yiyang0659/dsh-git-sync",
+    "commands": [
+      "dsh plugin --profile web add github:Yiyang0659/dsh-git-sync"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

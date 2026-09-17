@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "yangcanbin31-coder/dsh-nazuna-wallpaper-engine",
+  "slug": "yangcanbin31-coder__dsh-nazuna-wallpaper-engine",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-nazuna-wallpaper-engine",
+  "title": "dsh-nazuna-wallpaper-engine",
+  "summary": "把本机壁纸或视频变成 DeepSeek Harness 的动态背景，换上七草荠主题的月光紫液态玻璃风格。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "liquid-glass",
+    "nazuna",
+    "theme",
+    "wallpaper-engine",
+    "界面美化",
+    "可视化",
+    "设置面板"
+  ],
+  "version": "0.7.1-nazuna.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.1-nazuna.1",
+    "publishedAt": "2026-09-09T08:35:07Z",
+    "url": "https://github.com/yangcanbin31-coder/dsh-nazuna-wallpaper-engine/releases/tag/v0.7.1-nazuna.1"
+  },
+  "author": "yangcanbin31-coder",
+  "repo": "https://github.com/yangcanbin31-coder/dsh-nazuna-wallpaper-engine",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T08:35:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yangcanbin31-coder/dsh-nazuna-wallpaper-engine",
+    "commands": [
+      "dsh plugin --profile web add link:G:/iPolloWork/dsh-skin-dev/nazuna-wallpaper-engine",
+      "dsh plugin --profile desktop add link:G:/iPolloWork/dsh-skin-dev/nazuna-wallpaper-engine"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

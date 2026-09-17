@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Ri0n72Y/dsh-workspace-scope",
+  "slug": "ri0n72y__dsh-workspace-scope",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workspace-scope",
+  "title": "dsh-workspace-scope",
+  "summary": "让每个工作区独立配置自己的技能和 MCP 服务，互不干扰，提升多项目协作效率。",
+  "tags": [
+    "dsh-plugin",
+    "工作区管理",
+    "模型配置",
+    "效率提升"
+  ],
+  "version": "0.5.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Ri0n72Y",
+  "repo": "https://github.com/Ri0n72Y/dsh-workspace-scope",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-12T14:05:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-workspace-scope",
+    "commands": [
+      "dsh plugin --profile web add dsh-workspace-scope",
+      "dsh plugin --profile web remove dsh-workspace-scope"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "ryubyte/dsh-a2a",
+  "slug": "ryubyte__dsh-a2a",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-a2a",
+  "title": "dsh-a2a",
+  "summary": "让 DSH 实例变身 A2A 双端节点，既能连接远程智能体，也能对外提供服务，实现跨系统智能体协作。",
+  "tags": [
+    "a2a",
+    "agent2agent",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "多Agent协作",
+    "任务编排",
+    "零配置",
+    "AI工具"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-08-26T11:21:47Z",
+    "url": "https://github.com/ryubyte/dsh-a2a/releases/tag/v0.2.1"
+  },
+  "author": "ryubyte",
+  "repo": "https://github.com/ryubyte/dsh-a2a",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-26T11:21:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ryubyte/dsh-a2a",
+    "commands": [
+      "dsh plugin --profile web add github:ryubyte/dsh-a2a"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

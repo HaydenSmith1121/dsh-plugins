@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Enosensu/dsh-fork-relink",
+  "slug": "enosensu__dsh-fork-relink",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-fork-relink",
+  "title": "dsh-fork-relink",
+  "summary": "DSH fork 后自动把子 agent 记录复制到新会话，两个分支互不干扰。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "多Agent协作",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Enosensu",
+  "repo": "https://github.com/Enosensu/dsh-fork-relink",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T11:24:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Enosensu/dsh-fork-relink",
+    "commands": [
+      "dsh plugin --profile web add github:Enosensu/dsh-fork-relink",
+      "dsh plugin --profile web add \"link:<本目录>\"",
+      "dsh plugin --profile web remove dsh-fork-relink"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

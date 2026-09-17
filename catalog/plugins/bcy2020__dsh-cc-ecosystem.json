@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "Bcy2020/dsh-cc-ecosystem",
+  "slug": "bcy2020__dsh-cc-ecosystem",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cc-ecosystem",
+  "title": "dsh-cc-ecosystem",
+  "summary": "让 DeepSeek Harness 直接加载 Claude Code 全家桶资产，技能、命令、规则、子代理等即插即用，无缝迁移。",
+  "tags": [
+    "claude-code",
+    "dsh-plugin",
+    "dsh-plugins",
+    "AI 助手",
+    "插件管理",
+    "多Agent协作",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-06T06:19:46Z",
+    "url": "https://github.com/Bcy2020/dsh-cc-ecosystem/releases/tag/v0.1.2"
+  },
+  "author": "Bcy2020",
+  "repo": "https://github.com/Bcy2020/dsh-cc-ecosystem",
+  "homepage": null,
+  "license": null,
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-09-06T09:15:26Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Bcy2020/dsh-cc-ecosystem",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-cc-loader dsh-cc-skills dsh-cc-permissions dsh-cc-agents dsh-cc-hooks dsh-cc-mcp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

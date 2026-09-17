@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "spacexun2/dsh-worktime-board",
+  "slug": "spacexun2__dsh-worktime-board",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-worktime-board",
+  "title": "dsh-worktime-board",
+  "summary": "把 Agent 的工时统计做成修仙看板，日周月悬浮数据、热力图、甘特图和学年日历一眼看清。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "worktime",
+    "可视化",
+    "数据分析",
+    "状态监控",
+    "效率提升",
+    "主题"
+  ],
+  "version": "0.1.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.9",
+    "publishedAt": "2026-08-31T08:41:29Z",
+    "url": "https://github.com/spacexun2/dsh-worktime-board/releases/tag/v0.1.9"
+  },
+  "author": "spacexun2",
+  "repo": "https://github.com/spacexun2/dsh-worktime-board",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 3,
+  "pushedAt": "2026-08-31T08:41:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:spacexun2/dsh-worktime-board",
+    "commands": [
+      "dsh plugin --profile web add github:spacexun2/dsh-worktime-board"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

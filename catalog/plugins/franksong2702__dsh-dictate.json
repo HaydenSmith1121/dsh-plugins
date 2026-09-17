@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "franksong2702/dsh-dictate",
+  "slug": "franksong2702__dsh-dictate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-dictate",
+  "title": "dsh-dictate",
+  "summary": "在 Composer 里用浏览器语音输入，边说边转文字，还能结合当前会话润色，发送由你决定。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "效率提升",
+    "视觉理解",
+    "AI 助手",
+    "报告生成"
+  ],
+  "version": "0.3.0-alpha.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "franksong2702",
+  "repo": "https://github.com/franksong2702/dsh-dictate",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-07T14:08:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-dictate@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-dictate@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "joao-paulo-santos/dsh-event-relay",
+  "slug": "joao-paulo-santos__dsh-event-relay",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-event-relay",
+  "title": "dsh-event-relay",
+  "summary": "把主机端事件实时推送到浏览器页面，支持按主题过滤和断线重连，让前端界面随时感知后端动态。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "前端增强",
+    "安全审计"
+  ],
+  "version": "0.3.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "joao-paulo-santos",
+  "repo": "https://github.com/joao-paulo-santos/dsh-event-relay",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-28T14:44:20Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:joao-paulo-santos/dsh-event-relay",
+    "commands": [
+      "dsh plugin --profile web add github:joao-paulo-santos/dsh-event-relay"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

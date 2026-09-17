@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "Pasumao/dsh-plugin-context-trim",
+  "slug": "pasumao__dsh-plugin-context-trim",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-context-trim",
+  "title": "dsh-plugin-context-trim",
+  "summary": "按会话动态裁剪注入模型的技能、工具和提示词，避免上下文超限，节省 token 开销。",
+  "tags": [
+    "context-window",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "session",
+    "skills",
+    "system-prompt",
+    "token-usage",
+    "会话管理",
+    "资源优化",
+    "效率提升",
+    "模型配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-05T17:11:55Z",
+    "url": "https://github.com/Pasumao/dsh-plugin-context-trim/releases/tag/v0.1.1"
+  },
+  "author": "Pasumao",
+  "repo": "https://github.com/Pasumao/dsh-plugin-context-trim",
+  "homepage": "https://github.com/Pasumao/dsh-plugin-context-trim#readme",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T17:11:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Pasumao/dsh-plugin-context-trim",
+    "commands": [
+      "dsh plugin --profile web add github:Pasumao/dsh-plugin-context-trim"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

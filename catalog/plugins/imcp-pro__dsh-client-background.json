@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "imcp-pro/dsh-client-background",
+  "slug": "imcp-pro__dsh-client-background",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-client-background",
+  "title": "dsh-client-background",
+  "summary": "把 DSH 网页客户端背景换成随机 Unsplash 高清图，透过半透明界面若隐若现，颜值拉满。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "imcp-pro",
+  "repo": "https://github.com/imcp-pro/dsh-client-background",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T05:01:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:imcp-pro/dsh-client-background",
+    "commands": [
+      "dsh plugin --profile web add github:imcp-pro/dsh-client-background"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

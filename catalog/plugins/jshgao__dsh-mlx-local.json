@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "JshGao/dsh-mlx-local",
+  "slug": "jshgao__dsh-mlx-local",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mlx-local",
+  "title": "dsh-mlx-local",
+  "summary": "在 Apple Silicon Mac 上一键跑本地大模型，自动管好 Python 环境和 mlx_lm.server，并接入 DSH 使用。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "模型适配",
+    "零配置",
+    "工具集成",
+    "设置面板"
+  ],
+  "version": "0.4.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.2",
+    "publishedAt": "2026-09-17T15:12:13Z",
+    "url": "https://github.com/JshGao/dsh-mlx-local/releases/tag/v0.4.2"
+  },
+  "author": "JshGao",
+  "repo": "https://github.com/JshGao/dsh-mlx-local",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T10:37:39Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JshGao/dsh-mlx-local",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/JshGao/dsh-mlx-local/releases/download/v0.4.1/dsh-mlx-local-0.4.1.tgz",
+      "dsh plugin --profile web add ./dsh-mlx-local-0.4.1.tgz",
+      "git clone https://github.com/JshGao/dsh-mlx-local.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

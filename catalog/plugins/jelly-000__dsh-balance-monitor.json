@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "jelly-000/dsh-balance-monitor",
+  "slug": "jelly-000__dsh-balance-monitor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-balance-monitor",
+  "title": "dsh-balance-monitor",
+  "summary": "在侧边栏集中查看多个AI平台的余额、配额和用量，并用热力图直观展示每日Token消耗。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "模型适配",
+    "可视化",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.2.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jelly-000",
+  "repo": "https://github.com/jelly-000/dsh-balance-monitor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 2,
+  "pushedAt": "2026-08-28T17:28:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jelly-000/dsh-balance-monitor",
+    "commands": [
+      "dsh plugin --profile web add \"github:<you>/dsh-balance-monitor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

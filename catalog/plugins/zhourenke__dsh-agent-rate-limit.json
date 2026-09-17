@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "zhourenke/dsh-agent-rate-limit",
+  "slug": "zhourenke__dsh-agent-rate-limit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-rate-limit",
+  "title": "dsh-agent-rate-limit",
+  "summary": "给 LLM 请求加自适应延迟，自动重试 429 和过载错误，防止 TPM/RPM 超限。",
+  "tags": [
+    "dsh-plugin",
+    "资源优化",
+    "状态监控",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhourenke",
+  "repo": "https://github.com/zhourenke/dsh-agent-rate-limit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-12T06:42:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhourenke/dsh-agent-rate-limit",
+    "commands": [
+      "dsh plugin --profile web add github:zhourenke/dsh-agent-rate-limit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

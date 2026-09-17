@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "YuZtArt/dsh-plugin-background-browser",
+  "slug": "yuztart__dsh-plugin-background-browser",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-background-browser",
+  "title": "dsh-plugin-background-browser",
+  "summary": "让 DSH 助手直接操控隐藏浏览器，自动完成网页操作，不用手动开 Chrome。",
+  "tags": [
+    "browser-automation",
+    "deepseek-harness",
+    "dsh-plugin",
+    "playwright",
+    "自动化",
+    "工具集成",
+    "AI 助手",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.5.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.0",
+    "publishedAt": "2026-09-16T12:45:37Z",
+    "url": "https://github.com/YuZtArt/dsh-plugin-background-browser/releases/tag/v0.5.0"
+  },
+  "author": "YuZtArt",
+  "repo": "https://github.com/YuZtArt/dsh-plugin-background-browser",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T12:45:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:YuZtArt/dsh-plugin-background-browser",
+    "commands": [
+      "dsh plugin --profile web add github:YuZtArt/dsh-plugin-background-browser"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

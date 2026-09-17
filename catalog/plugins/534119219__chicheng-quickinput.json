@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "534119219/chicheng-quickinput",
+  "slug": "534119219__chicheng-quickinput",
+  "tier": "community",
+  "package": null,
+  "name": "chicheng-quickinput",
+  "title": "chicheng-quickinput",
+  "summary": "输入栏一键展开保险箱，自动收纳密钥网址等敏感信息，点击填入或直接发送，支持密码保护和WebDAV备份。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "快捷输入",
+    "信息管理",
+    "安全加密",
+    "自动识别"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "534119219",
+  "repo": "https://github.com/534119219/chicheng-quickinput",
+  "homepage": null,
+  "license": null,
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-26T12:35:08Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:534119219/chicheng-quickinput",
+    "commands": [
+      "dsh plugin --profile web add 534119219/chicheng-quickinput"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

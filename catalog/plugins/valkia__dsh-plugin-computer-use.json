@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "valkia/dsh-plugin-computer-use",
+  "slug": "valkia__dsh-plugin-computer-use",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-computer-use",
+  "title": "dsh-plugin-computer-use",
+  "summary": "让 DeepSeek Harness 直接操控你的电脑桌面，像人一样点击、输入、操作软件，实现真正的自动化办公。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "安全审计",
+    "AI 助手",
+    "零配置",
+    "模型配置",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "valkia",
+  "repo": "https://github.com/valkia/dsh-plugin-computer-use",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T07:05:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:valkia/dsh-plugin-computer-use",
+    "commands": [
+      "dsh plugin --profile web add github:valkia/dsh-plugin-computer-use"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

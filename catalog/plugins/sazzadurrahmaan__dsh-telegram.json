@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "sazzadurrahmaan/dsh-telegram",
+  "slug": "sazzadurrahmaan__dsh-telegram",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-telegram",
+  "title": "dsh-telegram",
+  "summary": "通过Telegram与DeepSeek Harness智能体聊天，内置白名单和危险操作确认，安全又方便。",
+  "tags": [
+    "ai-agents",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "telegram",
+    "telegram-bot",
+    "telegram-bot-ai-assistant",
+    "telegrambot",
+    "AI 助手",
+    "消息通知",
+    "安全审计",
+    "插件管理",
+    "会话管理"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-22T05:49:04Z",
+    "url": "https://github.com/sazzadurrahmaan/dsh-telegram/releases/tag/v0.1.1"
+  },
+  "author": "sazzadurrahmaan",
+  "repo": "https://github.com/sazzadurrahmaan/dsh-telegram",
+  "homepage": "https://github.com/deepseek-ai/deepseek-harness",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-22T05:59:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sazzadurrahmaan/dsh-telegram",
+    "commands": [
+      "dsh plugin --profile web add github:sazzadurrahmaan/dsh-telegram"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

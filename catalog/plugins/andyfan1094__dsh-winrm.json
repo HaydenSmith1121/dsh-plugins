@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "andyfan1094/dsh-winrm",
+  "slug": "andyfan1094__dsh-winrm",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-winrm",
+  "title": "dsh-winrm",
+  "summary": "在 dsh 网页界面里远程管理 Windows 服务器，支持 PowerShell 执行、文件传输、服务和进程管理，还能批量操作多台机器。",
+  "tags": [
+    "dsh-plugin",
+    "命令行工具",
+    "状态监控",
+    "自动化",
+    "模型配置",
+    "效率提升"
+  ],
+  "version": "0.1.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.5",
+    "publishedAt": "2026-08-27T00:01:23Z",
+    "url": "https://github.com/andyfan1094/dsh-winrm/releases/tag/v0.1.5"
+  },
+  "author": "andyfan1094",
+  "repo": "https://github.com/andyfan1094/dsh-winrm",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-08-27T00:01:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:andyfan1094/dsh-winrm",
+    "commands": [
+      "dsh plugin --profile web add github:andyfan1094/dsh-winrm"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

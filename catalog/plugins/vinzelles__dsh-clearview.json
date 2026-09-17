@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Vinzelles/dsh-clearview",
+  "slug": "vinzelles__dsh-clearview",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-clearview",
+  "title": "dsh-clearview",
+  "summary": "让DSH对话界面更清爽现代，实时展示推理过程和步骤，最终答案干净易读。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "状态监控",
+    "界面美化"
+  ],
+  "version": "0.1.15",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.15",
+    "publishedAt": "2026-09-12T13:26:44Z",
+    "url": "https://github.com/Vinzelles/dsh-clearview/releases/tag/v0.1.15"
+  },
+  "author": "Vinzelles",
+  "repo": "https://github.com/Vinzelles/dsh-clearview",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-12T13:26:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Vinzelles/dsh-clearview",
+    "commands": [
+      "dsh plugin --profile web add github:Vinzelles/dsh-clearview"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

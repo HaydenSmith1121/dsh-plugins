@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "LeemanCheung/dsh-image-gen",
+  "slug": "leemancheung__dsh-image-gen",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-image-gen",
+  "title": "dsh-image-gen",
+  "summary": "在 DeepSeek Harness 里直接生成 GPT Image 2 图片，带 Codex 风格渐进式预览，边画边看效果。",
+  "tags": [
+    "codex",
+    "deepseek-harness",
+    "dsh-plugin",
+    "gpt-image-2",
+    "gpt-image-25",
+    "image-generation",
+    "openai",
+    "模型配置",
+    "可视化",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-09-03T02:12:16Z",
+    "url": "https://github.com/LeemanCheung/dsh-image-gen/releases/tag/v0.3.1"
+  },
+  "author": "LeemanCheung",
+  "repo": "https://github.com/LeemanCheung/dsh-image-gen",
+  "homepage": "https://github.com/LeemanCheung/dsh-image-gen",
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-11T14:21:14Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LeemanCheung/dsh-image-gen",
+    "commands": [
+      "dsh plugin --profile web add github:LeemanCheung/dsh-image-gen"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

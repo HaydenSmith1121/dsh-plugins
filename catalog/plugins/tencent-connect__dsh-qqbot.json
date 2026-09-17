@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "tencent-connect/dsh-qqbot",
+  "slug": "tencent-connect__dsh-qqbot",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-qqbot",
+  "title": "dsh-qqbot",
+  "summary": "让 QQ 机器人直接接入 DeepSeek Harness，在 QQ 里就能用上 dsh 的智能体能力，即插即用。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "qqbot",
+    "零配置",
+    "工具集成",
+    "会话管理",
+    "消息通知",
+    "安全连接"
+  ],
+  "version": "0.5.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "0.5.0",
+    "publishedAt": "2026-09-08T15:21:36Z",
+    "url": "https://github.com/tencent-connect/dsh-qqbot/releases/tag/0.5.0"
+  },
+  "author": "tencent-connect",
+  "repo": "https://github.com/tencent-connect/dsh-qqbot",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 101,
+  "forks": 15,
+  "pushedAt": "2026-09-08T15:21:36Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tencent-connect/dsh-qqbot",
+    "commands": [
+      "dsh plugin --profile web add github:tencent-connect/dsh-qqbot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

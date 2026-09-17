@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "Max-Null/dsh-chat-rail",
+  "slug": "max-null__dsh-chat-rail",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-chat-rail",
+  "title": "dsh-chat-rail",
+  "summary": "画卷式消息导航栏，鼠标悬停展开消息列表，滚动时自动高亮当前消息，与侧边栏同步避让，让长对话浏览更丝滑。",
+  "tags": [
+    "chat",
+    "deepseek-harness",
+    "dsh-plugin",
+    "navigation",
+    "ssid",
+    "会话管理",
+    "导航",
+    "效率提升"
+  ],
+  "version": "0.5.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.0",
+    "publishedAt": "2026-08-29T22:50:37Z",
+    "url": "https://github.com/Max-Null/dsh-chat-rail/releases/tag/v0.5.0"
+  },
+  "author": "Max-Null",
+  "repo": "https://github.com/Max-Null/dsh-chat-rail",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-09-14T16:54:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Max-Null/dsh-chat-rail",
+    "commands": [
+      "dsh plugin --profile <name> add @max-null/dsh-chat-rail"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

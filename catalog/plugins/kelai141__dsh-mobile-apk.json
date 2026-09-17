@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "kelai141/dsh-mobile-apk",
+  "slug": "kelai141__dsh-mobile-apk",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mobile-apk",
+  "title": "dsh-mobile-apk",
+  "summary": "把 dsh 装进安卓手机：WebView 界面加内嵌 Termux 运行时，解压就能跑，本地运行更流畅。",
+  "tags": [
+    "android",
+    "dsh-plugin",
+    "kotlin",
+    "termux",
+    "webview",
+    "移动端适配",
+    "零配置",
+    "命令行工具",
+    "资源优化"
+  ],
+  "version": "0.14.0-preview",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.14.0-preview",
+    "publishedAt": "2026-09-13T00:11:52Z",
+    "url": "https://github.com/kelai141/dsh-mobile-apk/releases/tag/v0.14.0-preview"
+  },
+  "author": "kelai141",
+  "repo": "https://github.com/kelai141/dsh-mobile-apk",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 457,
+  "forks": 49,
+  "pushedAt": "2026-09-16T17:02:53Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kelai141/dsh-mobile-apk",
+    "commands": [
+      "dsh plugin --profile web add github:kelai141/dsh-mobile-apk"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ynnmuraii/dsh-plugin-chat-annotations",
+  "slug": "ynnmuraii__dsh-plugin-chat-annotations",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-chat-annotations",
+  "title": "dsh-plugin-chat-annotations",
+  "summary": "在 DeepSeek Harness 对话中选中任意文本添加注释，注释会随下一条消息以结构化内容发送给智能体，方便标记和讨论。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "前端增强",
+    "娱乐互动",
+    "会话管理"
+  ],
+  "version": "0.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ynnmuraii",
+  "repo": "https://github.com/ynnmuraii/dsh-plugin-chat-annotations",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T06:59:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ynnmuraii/dsh-plugin-chat-annotations",
+    "commands": [
+      "dsh plugin --profile web add file:/absolute/path/to/dsh-lab-dsh-plugin-chat-annotations-0.0.0.tgz --config.strictDepBuilds=false",
+      "dsh plugin --profile web add github:ynnmuraii/dsh-plugin-chat-annotations"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

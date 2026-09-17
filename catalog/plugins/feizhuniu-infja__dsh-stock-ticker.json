@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "FeiZhuNiU-INFJA/dsh-stock-ticker",
+  "slug": "feizhuniu-infja__dsh-stock-ticker",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-stock-ticker",
+  "title": "dsh-stock-ticker",
+  "summary": "页面右上角悬浮显示A股与港股核心指数，支持拖拽收起，方便工作时随时查看行情。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "stock",
+    "效率提升",
+    "零配置",
+    "娱乐互动",
+    "行情监控"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "FeiZhuNiU-INFJA",
+  "repo": "https://github.com/FeiZhuNiU-INFJA/dsh-stock-ticker",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-07T09:10:10Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:FeiZhuNiU-INFJA/dsh-stock-ticker",
+    "commands": [
+      "dsh plugin --profile web add github:FeiZhuNiU-INFJA/dsh-stock-ticker"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

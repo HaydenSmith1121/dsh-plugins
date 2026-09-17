@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "jkrandom-sudo/dsh-plugin-audit",
+  "slug": "jkrandom-sudo__dsh-plugin-audit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-audit",
+  "title": "dsh-plugin-audit",
+  "summary": "运行前摸清 DSH 插件底细：静态权限画像带证据，运行时哨兵拦截敏感访问和未知外联。",
+  "tags": [
+    "audit",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "security",
+    "安全审计",
+    "权限画像",
+    "运行时防护",
+    "插件安全"
+  ],
+  "version": "0.1.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.4",
+    "publishedAt": "2026-08-28T08:54:10Z",
+    "url": "https://github.com/jkrandom-sudo/dsh-plugin-audit/releases/tag/v0.1.4"
+  },
+  "author": "jkrandom-sudo",
+  "repo": "https://github.com/jkrandom-sudo/dsh-plugin-audit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-28T08:54:08Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jkrandom-sudo/dsh-plugin-audit",
+    "commands": [
+      "dsh plugin --profile web add github:jkrandom-sudo/dsh-plugin-audit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

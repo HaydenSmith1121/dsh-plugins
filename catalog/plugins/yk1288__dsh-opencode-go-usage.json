@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "yk1288/dsh-opencode-go-usage",
+  "slug": "yk1288__dsh-opencode-go-usage",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-opencode-go-usage",
+  "title": "dsh-opencode-go-usage",
+  "summary": "在DSH侧边栏底部展示OpenCode Go用量徽章，实时显示5小时/周/月用量，点击看详情，超阈值自动变色预警。",
+  "tags": [
+    "cordis",
+    "dsh",
+    "dsh-plugin",
+    "opencode",
+    "sidebar",
+    "typescript",
+    "状态监控",
+    "消息通知"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yk1288",
+  "repo": "https://github.com/yk1288/dsh-opencode-go-usage",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-21T06:17:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yk1288/dsh-opencode-go-usage",
+    "commands": [
+      "curl -fsSL https://raw.githubusercontent.com/yk1288/dsh-opencode-go-usage/main/install.sh | bash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "joao-paulo-santos/dsh-wo-github",
+  "slug": "joao-paulo-santos__dsh-wo-github",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wo-github",
+  "title": "dsh-wo-github",
+  "summary": "在 Workspace Overview 中直接查看 GitHub 仓库的 README、提交历史和文件改动，不用切到网页。",
+  "tags": [
+    "dsh-plugin",
+    "工作区管理",
+    "可视化",
+    "工作流增强"
+  ],
+  "version": "0.2.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "joao-paulo-santos",
+  "repo": "https://github.com/joao-paulo-santos/dsh-wo-github",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T21:47:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:joao-paulo-santos/dsh-wo-github",
+    "commands": [
+      "git clone https://github.com/joao-paulo-santos/dsh-workspace-overview.git",
+      "git clone https://github.com/joao-paulo-santos/dsh-md-view.git",
+      "git clone https://github.com/joao-paulo-santos/dsh-diff-view.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

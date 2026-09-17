@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "GLFzr/dsh-file-upload",
+  "slug": "glfzr__dsh-file-upload",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-file-upload",
+  "title": "dsh-file-upload",
+  "summary": "拖入任意文件就能上传到本机中转目录，输入框自动生成文件 chip，让 agent 直接读取。",
+  "tags": [
+    "ai-agents",
+    "cordis",
+    "deepseek-harness",
+    "drag-drop",
+    "dsh",
+    "dsh-plugin",
+    "web-ui",
+    "文件管理",
+    "快捷操作",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "2.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.1.0",
+    "publishedAt": "2026-08-15T19:57:14Z",
+    "url": "https://github.com/GLFzr/dsh-file-upload/releases/tag/v2.1.0"
+  },
+  "author": "GLFzr",
+  "repo": "https://github.com/GLFzr/dsh-file-upload",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 1,
+  "pushedAt": "2026-08-28T00:05:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GLFzr/dsh-file-upload",
+    "commands": [
+      "dsh plugin --profile web add github:GLFzr/dsh-file-upload"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "NattoCB/dsh-plugin-sidebar-views",
+  "slug": "nattocb__dsh-plugin-sidebar-views",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-sidebar-views",
+  "title": "dsh-plugin-sidebar-views",
+  "summary": "给 DSH 侧栏增加双视图切换和会话固定功能，工作区与历史会话一键切换，还能固定重要会话，避免被自动化消息淹没。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "session-pin",
+    "sidebar",
+    "会话管理",
+    "效率提升",
+    "工作流增强",
+    "插件管理"
+  ],
+  "version": "0.3.17",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "NattoCB",
+  "repo": "https://github.com/NattoCB/dsh-plugin-sidebar-views",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T14:06:08Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:NattoCB/dsh-plugin-sidebar-views",
+    "commands": [
+      "dsh plugin --profile web add github:NattoCB/dsh-plugin-sidebar-views"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

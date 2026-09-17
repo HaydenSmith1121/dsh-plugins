@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaochaZ/dsh-session-title-summary",
+  "slug": "xiaochaz__dsh-session-title-summary",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-title-summary",
+  "title": "dsh-session-title-summary",
+  "summary": "自动为会话生成滚动摘要和当前任务标题，方便快速定位和回顾对话内容。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "session-summary",
+    "session-title",
+    "会话管理",
+    "效率提升",
+    "语义检索"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-09-07T17:42:09Z",
+    "url": "https://github.com/xiaochaZ/dsh-session-title-summary/releases/tag/v0.3.1"
+  },
+  "author": "xiaochaZ",
+  "repo": "https://github.com/xiaochaZ/dsh-session-title-summary",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-07T17:41:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiaochaZ/dsh-session-title-summary",
+    "commands": [
+      "dsh plugin --profile <name> add @xiaochaz/dsh-session-title-summary@latest",
+      "git clone <this repo>",
+      "dsh plugin --profile <name> add link:$(pwd)"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

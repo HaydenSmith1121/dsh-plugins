@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "chengzhi43/dsh-file",
+  "slug": "chengzhi43__dsh-file",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-file",
+  "title": "dsh-file",
+  "summary": "在 DeepSeek Harness 网页里用 VS Code 风格的文件管理器，轻松浏览、编辑和管理项目文件。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "file-manager",
+    "文件管理",
+    "可视化",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-04T02:49:27Z",
+    "url": "https://github.com/chengzhi43/dsh-file/releases/tag/v0.2.1"
+  },
+  "author": "chengzhi43",
+  "repo": "https://github.com/chengzhi43/dsh-file",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 2,
+  "pushedAt": "2026-09-04T02:50:51Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "dsh plugin --profile web add .",
+      "dsh plugin --profile desktop add .",
+      "dsh plugin --profile web add @rose43/dsh-file"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

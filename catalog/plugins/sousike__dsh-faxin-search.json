@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "sousike/dsh-faxin-search",
+  "slug": "sousike__dsh-faxin-search",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-faxin-search",
+  "title": "dsh-faxin-search",
+  "summary": "登录法信账号后，让 AI 直接检索法律条文、司法解释和裁判规则，辅助合同审查等法律任务。",
+  "tags": [
+    "dsh-plugin",
+    "语义检索",
+    "工具集成",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sousike",
+  "repo": "https://github.com/sousike/dsh-faxin-search",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T07:14:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sousike/dsh-faxin-search",
+    "commands": [
+      "dsh plugin --profile desktop add link:<本插件目录绝对路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

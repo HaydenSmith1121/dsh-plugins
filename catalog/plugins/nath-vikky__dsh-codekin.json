@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "Nath-Vikky/dsh-codekin",
+  "slug": "nath-vikky__dsh-codekin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codekin",
+  "title": "dsh-codekin",
+  "summary": "在 DeepSeek Harness 网页里玩收集生物、三消对战 RPG 的休闲插件，给开发环境加点乐子。",
+  "tags": [
+    "creature-collector",
+    "deepseek-harness",
+    "dsh-plugin",
+    "pixel-art",
+    "可视化",
+    "桌宠",
+    "零配置"
+  ],
+  "version": "0.3.9-rc.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.9-rc.1",
+    "publishedAt": "2026-09-16T09:43:06Z",
+    "url": "https://github.com/Nath-Vikky/dsh-codekin/releases/tag/v0.3.9-rc.1"
+  },
+  "author": "Nath-Vikky",
+  "repo": "https://github.com/Nath-Vikky/dsh-codekin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T09:38:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Nath-Vikky/dsh-codekin",
+    "commands": [
+      "dsh plugin --profile web add github:Nath-Vikky/dsh-codekin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "maxmilian/dsh-grafana-query",
+  "slug": "maxmilian__dsh-grafana-query",
+  "tier": "community",
+  "package": null,
+  "name": "maxmilian/dsh-grafana-query",
+  "title": "maxmilian/dsh-grafana-query",
+  "summary": "让智能体通过 Grafana 只读查询指标和告警，用 PromQL 直接拉数据，方便监控和排查。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "grafana",
+    "状态监控",
+    "可视化",
+    "效率提升",
+    "AI工具"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-27T03:56:56Z",
+    "url": "https://github.com/maxmilian/dsh-grafana-query/releases/tag/v0.1.0"
+  },
+  "author": "maxmilian",
+  "repo": "https://github.com/maxmilian/dsh-grafana-query",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-27T03:56:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:maxmilian/dsh-grafana-query",
+    "commands": [
+      "dsh plugin --profile web add github:maxmilian/dsh-grafana-query"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

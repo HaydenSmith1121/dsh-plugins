@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "BonovaVanro/dsh-mega-chat-nav",
+  "slug": "bonovavanro__dsh-mega-chat-nav",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mega-chat-nav",
+  "title": "dsh-mega-chat-nav",
+  "summary": "在超长会话中随时跳回任意一轮提问，全文搜索所有历史内容，告别加载卡顿。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "会话管理",
+    "效率提升",
+    "语义检索",
+    "前端增强"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "BonovaVanro",
+  "repo": "https://github.com/BonovaVanro/dsh-mega-chat-nav",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T03:45:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-mega-chat-nav@0.1.5-rc.2-update.1",
+    "commands": [
+      "dsh plugin --profile web add dsh-mega-chat-nav@0.1.5-rc.2-update.1",
+      "dsh plugin --profile web add github:BonovaVanro/dsh-mega-chat-nav",
+      "dsh plugin --profile web add dsh-mega-chat-nav-0.1.5-rc.2-update.1.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

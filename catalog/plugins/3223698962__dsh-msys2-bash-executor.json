@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "3223698962/dsh-msys2-bash-executor",
+  "slug": "3223698962__dsh-msys2-bash-executor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-msys2-bash-executor",
+  "title": "dsh-msys2-bash-executor",
+  "summary": "为 DeepSeek Harness 提供可配置的 MSYS2/UCRT64 和 Git Bash 执行器，支持全局或按预设启用，让 Windows 下的 Shell 调用更灵活。",
+  "tags": [
+    "bash",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "msys2",
+    "Bash执行器",
+    "Windows兼容",
+    "MSYS2支持",
+    "配置灵活"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "3223698962",
+  "repo": "https://github.com/3223698962/dsh-msys2-bash-executor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-15T09:19:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:3223698962/dsh-msys2-bash-executor",
+    "commands": [
+      "dsh plugin --profile web add github:3223698962/dsh-msys2-bash-executor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

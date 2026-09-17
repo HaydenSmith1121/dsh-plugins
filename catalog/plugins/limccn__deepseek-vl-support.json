@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "limccn/deepseek-vl-support",
+  "slug": "limccn__deepseek-vl-support",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-vl-support",
+  "title": "deepseek-vl-support",
+  "summary": "让纯文本 DeepSeek 也能看懂图片，自动转发给外部视觉模型处理，兼顾代码编写与图像识别。",
+  "tags": [
+    "claude-code",
+    "codex",
+    "deepseek",
+    "dsh-plugin",
+    "omp-plugin",
+    "pi-agent-extension",
+    "visison",
+    "视觉理解",
+    "模型配置",
+    "会话管理"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-08-28T07:30:03Z",
+    "url": "https://github.com/limccn/deepseek-vl-support/releases/tag/v0.3.0"
+  },
+  "author": "limccn",
+  "repo": "https://github.com/limccn/deepseek-vl-support",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-01T09:49:55Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@limccn/deepseek-vl-support@latest",
+    "commands": [
+      "npx skills add https://github.com/limccn/deepseek-vl-support",
+      "dsh plugin --profile web add @limccn/deepseek-vl-support@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

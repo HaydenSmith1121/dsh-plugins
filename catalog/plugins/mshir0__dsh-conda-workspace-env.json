@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Mshir0/dsh-conda-workspace-env",
+  "slug": "mshir0__dsh-conda-workspace-env",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-conda-workspace-env",
+  "title": "dsh-conda-workspace-env",
+  "summary": "给每个 DSH 工作区单独选好并记住 Conda 环境，切换项目不用再手动激活。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "dsh-skill",
+    "工作区管理",
+    "状态持久化",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "0.2.6",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Mshir0",
+  "repo": "https://github.com/Mshir0/dsh-conda-workspace-env",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-19T14:20:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Mshir0/dsh-conda-workspace-env",
+    "commands": [
+      "git clone https://github.com/Mshir0/dsh-conda-workspace-env.git ~/dsh-conda-workspace-env"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

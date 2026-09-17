@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "soberbiak/amazon-sucareer",
+  "slug": "soberbiak__amazon-sucareer",
+  "tier": "community",
+  "package": null,
+  "name": "amazon-sucareer",
+  "title": "amazon-sucareer",
+  "summary": "把亚马逊运营经历整理成招聘方看得懂、面试讲得透的求职材料，帮你拿到更好的offer。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "工作流增强",
+    "自动化",
+    "AI 助手"
+  ],
+  "version": "0.3.0-alpha.5",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "soberbiak",
+  "repo": "https://github.com/soberbiak/amazon-sucareer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-29T20:35:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:soberbiak/amazon-sucareer",
+    "commands": [
+      "dsh plugin --profile web add github:soberbiak/amazon-sucareer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

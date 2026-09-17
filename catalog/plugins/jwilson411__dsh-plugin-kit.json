@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "jwilson411/dsh-plugin-kit",
+  "slug": "jwilson411__dsh-plugin-kit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-kit",
+  "title": "dsh-plugin-kit",
+  "summary": "一个极简、可安装的 DeepSeek Harness 插件模板，帮你快速搭建和测试自己的功能插件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "零配置",
+    "工作流增强",
+    "插件管理",
+    "设置面板"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jwilson411",
+  "repo": "https://github.com/jwilson411/dsh-plugin-kit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T11:56:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jwilson411/dsh-plugin-kit",
+    "commands": [
+      "dsh plugin --profile web add github:jwilson411/dsh-plugin-kit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

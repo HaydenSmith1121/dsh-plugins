@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "tatselkrik/dsh-web-search-ddg",
+  "slug": "tatselkrik__dsh-web-search-ddg",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-search-ddg",
+  "title": "dsh-web-search-ddg",
+  "summary": "无需API密钥和账号，直接通过DuckDuckGo进行网页搜索，零成本集成到DeepSeek Harness。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "duckduckgo",
+    "keyless",
+    "search-provider",
+    "web-search",
+    "AI 助手",
+    "零配置",
+    "效率提升",
+    "模型配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-24T19:21:05Z",
+    "url": "https://github.com/tatselkrik/dsh-web-search-ddg/releases/tag/v0.1.1"
+  },
+  "author": "tatselkrik",
+  "repo": "https://github.com/tatselkrik/dsh-web-search-ddg",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T19:12:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tatselkrik/dsh-web-search-ddg",
+    "commands": [
+      "dsh plugin --profile my-profile add github:tatselkrik/dsh-web-search-ddg"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

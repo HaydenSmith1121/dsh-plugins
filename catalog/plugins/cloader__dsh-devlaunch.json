@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "cloader/dsh-devlaunch",
+  "slug": "cloader__dsh-devlaunch",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-devlaunch",
+  "title": "dsh-devlaunch",
+  "summary": "在 DSH 项目里一键启动前端、后端等所有服务，省去手动敲命令的麻烦，日志统一输出，开发效率翻倍。",
+  "tags": [
+    "dsh-plugin",
+    "一键启动",
+    "工作流增强",
+    "日志管理"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "cloader",
+  "repo": "https://github.com/cloader/dsh-devlaunch",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-26T03:23:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cloader/dsh-devlaunch",
+    "commands": [
+      "dsh plugin --profile <你的profile名> add dsh-devlaunch",
+      "dsh plugin --profile <你的profile名> add github:cloader/dsh-devlaunch",
+      "git clone https://github.com/cloader/dsh-devlaunch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

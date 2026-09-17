@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "LiZhenNet/dsh-antigravity",
+  "slug": "lizhennet__dsh-antigravity",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-antigravity",
+  "title": "dsh-antigravity",
+  "summary": "为 DSH 接入 Google Antigravity 模型，支持网页授权登录、实时配额查看和智能推理强度路由。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "工具集成",
+    "资源优化",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "LiZhenNet",
+  "repo": "https://github.com/LiZhenNet/dsh-antigravity",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 22,
+  "forks": 7,
+  "pushedAt": "2026-08-19T12:38:14Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LiZhenNet/dsh-antigravity",
+    "commands": [
+      "dsh plugin --profile web add github:LiZhenNet/dsh-antigravity",
+      "dsh plugin --profile web add ./dist/dsh-antigravity-0.0.4.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

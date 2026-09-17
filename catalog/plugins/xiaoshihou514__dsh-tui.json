@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaoshihou514/dsh-tui",
+  "slug": "xiaoshihou514__dsh-tui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tui",
+  "title": "dsh-tui",
+  "summary": "在终端里用酷炫界面操作 DeepSeek Harness，轻松管理和运行你的 AI 任务。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "命令行工具",
+    "工作流增强",
+    "AI 工具",
+    "命令行"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xiaoshihou514",
+  "repo": "https://github.com/xiaoshihou514/dsh-tui",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-22T01:46:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiaoshihou514/dsh-tui",
+    "commands": [
+      "npm i -g @deepseek-ai/dsh",
+      "dsh plugin --profile tui add \"github:xiaoshihou514/dsh-tui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

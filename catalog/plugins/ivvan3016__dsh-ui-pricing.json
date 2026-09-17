@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ivvan3016/dsh-ui-pricing",
+  "slug": "ivvan3016__dsh-ui-pricing",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ui-pricing",
+  "title": "dsh-ui-pricing",
+  "summary": "给 DSH 配置每个模型的单价和分时段价格倍率，实时估算会话成本，帮你控制花销。",
+  "tags": [
+    "dsh-plugin",
+    "资源优化",
+    "模型配置",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.1.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ivvan3016",
+  "repo": "https://github.com/ivvan3016/dsh-ui-pricing",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-25T11:43:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-ui-pricing",
+    "commands": [
+      "dsh plugin --profile web add dsh-ui-pricing",
+      "dsh plugin --profile web add github:ivvan3016/dsh-ui-pricing"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

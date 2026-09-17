@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "MirrMeur/dsh-tavily-provider",
+  "slug": "mirrmeur__dsh-tavily-provider",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tavily-provider",
+  "title": "dsh-tavily-provider",
+  "summary": "把 DeepSeek Harness 内置搜索换成 Tavily，用你已有的 API Key 就能联网搜索和抓网页。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "tavily",
+    "工具集成",
+    "模型适配",
+    "网络代理",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "MirrMeur",
+  "repo": "https://github.com/MirrMeur/dsh-tavily-provider",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T18:40:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MirrMeur/dsh-tavily-provider",
+    "commands": [
+      "dsh plugin --profile web add github:MirrMeur/dsh-tavily-provider"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

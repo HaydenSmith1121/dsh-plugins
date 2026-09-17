@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "boomzikazita/dsh-spec-gate",
+  "slug": "boomzikazita__dsh-spec-gate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-spec-gate",
+  "title": "dsh-spec-gate",
+  "summary": "在开发前把模糊需求变成可验证的规格，锁定种子并拒绝不合格交付，确保按标准验收。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "quality-gate",
+    "specification",
+    "工作流增强",
+    "质量门禁",
+    "安全审计",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "boomzikazita",
+  "repo": "https://github.com/boomzikazita/dsh-spec-gate",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-22T14:55:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:boomzikazita/dsh-spec-gate",
+    "commands": [
+      "dsh plugin --profile web add github:boomzikazita/dsh-spec-gate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "wqy-cell/dsh-url-trace",
+  "slug": "wqy-cell__dsh-url-trace",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-url-trace",
+  "title": "dsh-url-trace",
+  "summary": "自动记录从 DSH 打开的网址，随时查看常用、最近和收藏，还能搜索，数据全在本机。",
+  "tags": [
+    "bookmarks",
+    "browser-history",
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "前端增强",
+    "效率提升",
+    "会话管理",
+    "安全审计"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wqy-cell",
+  "repo": "https://github.com/wqy-cell/dsh-url-trace",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T14:34:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wqy-cell/dsh-url-trace",
+    "commands": [
+      "dsh plugin --profile web add github:wqy-cell/dsh-url-trace"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

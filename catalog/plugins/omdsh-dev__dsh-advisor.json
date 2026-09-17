@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "omdsh-dev/dsh-advisor",
+  "slug": "omdsh-dev__dsh-advisor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-advisor",
+  "title": "dsh-advisor",
+  "summary": "搭配一个副模型，在每轮对话中被动审查内容并注入见解，帮你发现盲点、优化回答。",
+  "tags": [
+    "advisor",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "报告生成"
+  ],
+  "version": "0.4.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "omdsh-dev",
+  "repo": "https://github.com/omdsh-dev/dsh-advisor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 22,
+  "forks": 2,
+  "pushedAt": "2026-09-11T03:10:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-advisor",
+    "commands": [
+      "dsh plugin --profile web add dsh-advisor",
+      "dsh plugin --profile dsh-tui add dsh-advisor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

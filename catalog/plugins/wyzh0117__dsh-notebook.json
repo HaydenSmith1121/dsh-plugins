@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "wyzh0117/dsh-notebook",
+  "slug": "wyzh0117__dsh-notebook",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notebook",
+  "title": "dsh-notebook",
+  "summary": "在 DSH 侧边栏随手记笔记，标题正文加图片，点标题即复制，还能用 @ 引用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugin-ecosystem",
+    "notebook",
+    "sidebar",
+    "快捷操作",
+    "报告生成",
+    "效率提升",
+    "会话管理",
+    "视觉理解"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-13T18:10:21Z",
+    "url": "https://github.com/wyzh0117/dsh-notebook/releases/tag/v0.1.0"
+  },
+  "author": "wyzh0117",
+  "repo": "https://github.com/wyzh0117/dsh-notebook",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T17:33:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wyzh0117/dsh-notebook",
+    "commands": [
+      "dsh plugin --profile web add github:wyzh0117/dsh-notebook"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

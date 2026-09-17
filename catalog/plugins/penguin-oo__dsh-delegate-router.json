@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "penguin-oo/dsh-delegate-router",
+  "slug": "penguin-oo__dsh-delegate-router",
+  "tier": "community",
+  "package": null,
+  "name": "penguin-oo/dsh-delegate-router",
+  "title": "penguin-oo/dsh-delegate-router",
+  "summary": "自动给子代理分配模型，简单的跑便宜版，复杂的留强模型，帮你省算力又不掉链子。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "任务编排",
+    "资源优化",
+    "效率提升"
+  ],
+  "version": "0.4.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "penguin-oo",
+  "repo": "https://github.com/penguin-oo/dsh-delegate-router",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T10:18:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-delegate-router",
+    "commands": [
+      "dsh plugin --profile web add dsh-delegate-router"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

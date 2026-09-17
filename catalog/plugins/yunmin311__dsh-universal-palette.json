@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "yunmin311/dsh-universal-palette",
+  "slug": "yunmin311__dsh-universal-palette",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-universal-palette",
+  "title": "dsh-universal-palette",
+  "summary": "为 DeepSeek Harness 网页版提供统一命令面板，快速搜索命令、模型、会话与对话记录，排序精准且兼容公共接口。",
+  "tags": [
+    "command-palette",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "productivity",
+    "typescript",
+    "效率提升",
+    "快捷操作",
+    "会话管理",
+    "模型适配",
+    "插件管理"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-14T06:15:20Z",
+    "url": "https://github.com/yunmin311/dsh-universal-palette/releases/tag/v0.2.1"
+  },
+  "author": "yunmin311",
+  "repo": "https://github.com/yunmin311/dsh-universal-palette",
+  "homepage": "https://github.com/yunmin311/dsh-universal-palette#readme",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T05:45:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yunmin311/dsh-universal-palette",
+    "commands": [
+      "dsh plugin --profile web add github:yunmin311/dsh-universal-palette"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

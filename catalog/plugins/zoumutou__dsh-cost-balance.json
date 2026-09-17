@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "zoumutou/dsh-cost-balance",
+  "slug": "zoumutou__dsh-cost-balance",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cost-balance",
+  "title": "dsh-cost-balance",
+  "summary": "在输入框下加一条 iOS 风格统计条，一键展开查看会话花费、账户余额、缓存命中率和 Token 用量，帮你实时掌控成本。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "状态监控",
+    "成本控制",
+    "缓存命中",
+    "iOS风格"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zoumutou",
+  "repo": "https://github.com/zoumutou/dsh-cost-balance",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 4,
+  "pushedAt": "2026-08-14T16:39:53Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-cost-balance",
+    "commands": [
+      "dsh plugin --profile web add dsh-cost-balance"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

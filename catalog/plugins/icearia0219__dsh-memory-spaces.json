@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "icearia0219/dsh-memory-spaces",
+  "slug": "icearia0219__dsh-memory-spaces",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memory-spaces",
+  "title": "dsh-memory-spaces",
+  "summary": "跨会话管理记忆空间，支持溯源、版本控制和注入预览，让 AI 记住关键信息更可控。",
+  "tags": [
+    "agent-memory",
+    "ai-agent",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugins",
+    "shared-memory",
+    "sqlite",
+    "typescript",
+    "会话管理",
+    "变更透明",
+    "版本控制",
+    "注入预览"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-25T15:14:11Z",
+    "url": "https://github.com/icearia0219/dsh-memory-spaces/releases/tag/v0.1.0"
+  },
+  "author": "icearia0219",
+  "repo": "https://github.com/icearia0219/dsh-memory-spaces",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-26T09:47:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:icearia0219/dsh-memory-spaces",
+    "commands": [
+      "dsh plugin --profile web add github:icearia0219/dsh-memory-spaces"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "yingjunnan/dsh-deepseek-quota",
+  "slug": "yingjunnan__dsh-deepseek-quota",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-deepseek-quota",
+  "title": "dsh-deepseek-quota",
+  "summary": "在 DSH 网页界面挂个悬浮卡片，实时显示 DeepSeek API 剩余余额和今日用量，自动刷新。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "资源优化",
+    "可视化",
+    "AI 助手"
+  ],
+  "version": "0.5.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yingjunnan",
+  "repo": "https://github.com/yingjunnan/dsh-deepseek-quota",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 3,
+  "pushedAt": "2026-08-31T02:13:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-deepseek-quota",
+    "commands": [
+      "dsh plugin --profile web add dsh-deepseek-quota"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

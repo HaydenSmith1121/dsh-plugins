@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "HuanLinOTO/dsh-plugin-interpreters",
+  "slug": "huanlinoto__dsh-plugin-interpreters",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-interpreters",
+  "title": "dsh-interpreters",
+  "summary": "给 DSH 装上代码解释器，直接跑脚本、算数据、验证结果，不用来回切工具。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "命令行工具",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.4.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "HuanLinOTO",
+  "repo": "https://github.com/HuanLinOTO/dsh-plugin-interpreters",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 10,
+  "forks": 0,
+  "pushedAt": "2026-09-11T11:49:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@huanlin/dsh-plugin-interpreters",
+    "commands": [
+      "dsh plugin --profile web add @huanlin/dsh-plugin-interpreters",
+      "dsh plugin --profile web add \"link:D:/Projects/deepseek-harness/dsh-interpreters\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

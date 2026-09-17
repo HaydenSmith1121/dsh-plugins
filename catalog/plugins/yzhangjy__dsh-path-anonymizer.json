@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "yzhangjy/dsh-path-anonymizer",
+  "slug": "yzhangjy__dsh-path-anonymizer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-path-anonymizer",
+  "title": "dsh-path-anonymizer",
+  "summary": "在发送模型请求前自动检测并匿名化工作区外的文件路径，保护隐私，需用户确认。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "path-anonymizer",
+    "privacy",
+    "安全审计",
+    "会话管理",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yzhangjy",
+  "repo": "https://github.com/yzhangjy/dsh-path-anonymizer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-23T17:44:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yzhangjy/dsh-path-anonymizer",
+    "commands": [
+      "dsh plugin --profile web add github:yzhangjy/dsh-path-anonymizer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

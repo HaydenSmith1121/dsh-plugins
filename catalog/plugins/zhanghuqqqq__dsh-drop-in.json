@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "zhanghuqqqq/dsh-drop-in",
+  "slug": "zhanghuqqqq__dsh-drop-in",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-drop-in",
+  "title": "dsh-drop-in",
+  "summary": "把本地文件、网页图片或链接直接拖进对话框，agent 立刻拿到可用的路径或内容，省去手动上传的麻烦。",
+  "tags": [
+    "ai-agent",
+    "composer",
+    "deepseek",
+    "deepseek-harness",
+    "drag-and-drop",
+    "dsh-plugin",
+    "file-upload",
+    "文件管理",
+    "效率提升",
+    "前端增强",
+    "工作流增强"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-09-08T11:29:41Z",
+    "url": "https://github.com/zhanghuqqqq/dsh-drop-in/releases/tag/v0.1.3"
+  },
+  "author": "zhanghuqqqq",
+  "repo": "https://github.com/zhanghuqqqq/dsh-drop-in",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T11:45:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhanghuqqqq/dsh-drop-in",
+    "commands": [
+      "dsh plugin add github:zhanghuqqqq/dsh-drop-in --profile <你的profile>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

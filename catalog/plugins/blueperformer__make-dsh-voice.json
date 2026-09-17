@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "blueperformer/make-dsh-voice",
+  "slug": "blueperformer__make-dsh-voice",
+  "tier": "community",
+  "package": null,
+  "name": "make-dsh-voice",
+  "title": "make-dsh-voice",
+  "summary": "给你的 DSH 网页界面加上语音能力，用自己克隆的声音把回复读出来。",
+  "tags": [
+    "dsh-plugin",
+    "视觉理解",
+    "AI 助手",
+    "前端增强",
+    "工具集成"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "blueperformer",
+  "repo": "https://github.com/blueperformer/make-dsh-voice",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T14:29:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:blueperformer/make-dsh-voice",
+    "commands": [
+      "pip install dashscope",
+      "dsh plugin --profile web add /absolute/path/to/dsh-voice",
+      "dsh plugin --profile web add github:blueperformer/make-dsh-voice"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

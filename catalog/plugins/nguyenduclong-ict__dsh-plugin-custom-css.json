@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "nguyenduclong-ict/dsh-plugin-custom-css",
+  "slug": "nguyenduclong-ict__dsh-plugin-custom-css",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-custom-css",
+  "title": "dsh-plugin-custom-css",
+  "summary": "给 DSH 设置里加个自定义 CSS 页面，开关一开就能实时注入样式，随手改界面外观。",
+  "tags": [
+    "custom-css",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "settings",
+    "theme",
+    "界面美化",
+    "设置面板",
+    "前端增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "nguyenduclong-ict",
+  "repo": "https://github.com/nguyenduclong-ict/dsh-plugin-custom-css",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T18:34:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:nguyenduclong-ict/dsh-plugin-custom-css",
+    "commands": [
+      "dsh plugin --profile web add github:nguyenduclong-ict/dsh-plugin-custom-css"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

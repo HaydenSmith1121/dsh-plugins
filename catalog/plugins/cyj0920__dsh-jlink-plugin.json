@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "cyj0920/dsh-jlink-plugin",
+  "slug": "cyj0920__dsh-jlink-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-jlink-plugin",
+  "title": "dsh-jlink-plugin",
+  "summary": "让 AI 助手直接通过 J-Link 调试真实硬件，提供可视化面板和 23 个调试工具，帮开发者高效完成嵌入式调试。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "AI 助手",
+    "自动化",
+    "硬件调试",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "cyj0920",
+  "repo": "https://github.com/cyj0920/dsh-jlink-plugin",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-21T16:31:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cyj0920/dsh-jlink-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:cyj0920/dsh-jlink-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

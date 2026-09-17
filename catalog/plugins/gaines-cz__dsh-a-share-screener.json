@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Gaines-cz/dsh-a-share-screener",
+  "slug": "gaines-cz__dsh-a-share-screener",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-a-share-screener",
+  "title": "dsh-a-share-screener",
+  "summary": "为 DeepSeek Harness 提供 A 股选股筛选，支持可插拔策略，免费行情源无需密钥。",
+  "tags": [
+    "a-share",
+    "dsh-plugin",
+    "stock-screener",
+    "tushare",
+    "自动化",
+    "状态监控",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Gaines-cz",
+  "repo": "https://github.com/Gaines-cz/dsh-a-share-screener",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T15:14:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Gaines-cz/dsh-a-share-screener",
+    "commands": [
+      "dsh plugin --profile myprofile add github:Gaines-cz/dsh-a-share-screener"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

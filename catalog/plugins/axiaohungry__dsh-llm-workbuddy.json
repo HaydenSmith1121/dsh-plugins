@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Axiaohungry/dsh-llm-workbuddy",
+  "slug": "axiaohungry__dsh-llm-workbuddy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-workbuddy",
+  "title": "dsh-llm-workbuddy",
+  "summary": "让 DSH 能直接用 WorkBuddy 的 API Key 或网页登录令牌调用模型，并在 WebUI 里管理模型和认证。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "模型适配",
+    "模型配置",
+    "工具集成",
+    "设置面板"
+  ],
+  "version": "1.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Axiaohungry",
+  "repo": "https://github.com/Axiaohungry/dsh-llm-workbuddy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 36,
+  "forks": 6,
+  "pushedAt": "2026-09-16T09:45:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Axiaohungry/dsh-llm-workbuddy",
+    "commands": [
+      "dsh plugin --profile web add github:Axiaohungry/dsh-llm-workbuddy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "Unintendedz/dsh-conversation-tree",
+  "slug": "unintendedz__dsh-conversation-tree",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-conversation-tree",
+  "title": "dsh-conversation-tree",
+  "summary": "像 ChatGPT 一样把对话分支成不可变树，随时切换分支、浏览整棵对话树，让多线讨论更清晰。",
+  "tags": [
+    "branching",
+    "conversation-tree",
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.4.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.1",
+    "publishedAt": "2026-08-23T12:57:53Z",
+    "url": "https://github.com/Unintendedz/dsh-conversation-tree/releases/tag/v0.4.1"
+  },
+  "author": "Unintendedz",
+  "repo": "https://github.com/Unintendedz/dsh-conversation-tree",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T05:09:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Unintendedz/dsh-conversation-tree",
+    "commands": [
+      "dsh plugin --profile web add github:Unintendedz/dsh-conversation-tree"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

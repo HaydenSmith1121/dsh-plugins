@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "snzhi000-sys/harness-macos-desktop-plugin-suite",
+  "slug": "snzhi000-sys__harness-macos-desktop-plugin-suite",
+  "tier": "community",
+  "package": null,
+  "name": "harness-macos-desktop-plugin-suite",
+  "title": "harness-macos-desktop-plugin-suite",
+  "summary": "把 AI 对话、文件浏览和网页浏览装进一个 macOS 桌面应用，内置多款办公插件，写 PRD、做轻量开发都顺手。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-desktop",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "AI 助手",
+    "自动化",
+    "文件管理",
+    "工作流增强",
+    "工具集成"
+  ],
+  "version": "0.1.0-rc.5",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "snzhi000-sys",
+  "repo": "https://github.com/snzhi000-sys/harness-macos-desktop-plugin-suite",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-11T04:40:56Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:snzhi000-sys/harness-macos-desktop-plugin-suite",
+    "commands": [
+      "dsh plugin --profile web add github:snzhi000-sys/harness-macos-desktop-plugin-suite"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

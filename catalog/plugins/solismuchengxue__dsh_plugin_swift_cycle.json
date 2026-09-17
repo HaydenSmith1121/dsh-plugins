@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Solismuchengxue/dsh_plugin_swift_cycle",
+  "slug": "solismuchengxue__dsh_plugin_swift_cycle",
+  "tier": "community",
+  "package": null,
+  "name": "dsh_plugin_swift_cycle",
+  "title": "dsh_plugin_swift_cycle",
+  "summary": "把 Swift Cycle 治理技能接入 Harness，需手动调用，版本锁定且可离线校验。",
+  "tags": [
+    "agent-skills",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "project-governance",
+    "swift-cycle",
+    "工具集成",
+    "工作流增强",
+    "数据可审计",
+    "插件管理"
+  ],
+  "version": "0.1.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.4",
+    "publishedAt": "2026-08-31T06:54:30Z",
+    "url": "https://github.com/Solismuchengxue/dsh_plugin_swift_cycle/releases/tag/v0.1.4"
+  },
+  "author": "Solismuchengxue",
+  "repo": "https://github.com/Solismuchengxue/dsh_plugin_swift_cycle",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 15,
+  "forks": 0,
+  "pushedAt": "2026-08-31T07:19:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Solismuchengxue/dsh_plugin_swift_cycle",
+    "commands": [
+      "dsh plugin --profile web add github:Solismuchengxue/dsh_plugin_swift_cycle"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

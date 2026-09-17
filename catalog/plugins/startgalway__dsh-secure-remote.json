@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "startGalway/dsh-secure-remote",
+  "slug": "startgalway__dsh-secure-remote",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-secure-remote",
+  "title": "dsh-secure-remote",
+  "summary": "通过 SSH 为 DeepSeek Harness 提供安全稳定的远程工作区，让你随时随地连接开发环境。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "remote-workspace",
+    "ssh",
+    "安全审计",
+    "工作区管理",
+    "零配置"
+  ],
+  "version": "1.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.1.2",
+    "publishedAt": "2026-09-03T19:07:37Z",
+    "url": "https://github.com/startGalway/dsh-secure-remote/releases/tag/v1.1.2"
+  },
+  "author": "startGalway",
+  "repo": "https://github.com/startGalway/dsh-secure-remote",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-03T19:07:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:startGalway/dsh-secure-remote",
+    "commands": [
+      "dsh plugin --profile web add github:startGalway/dsh-secure-remote",
+      "dsh plugin --profile web add file:/absolute/path/to/dsh-secure-remote",
+      "dsh plugin --profile web remove dsh-secure-remote"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

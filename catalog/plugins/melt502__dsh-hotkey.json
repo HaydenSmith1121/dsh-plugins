@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "melt502/dsh-hotkey",
+  "slug": "melt502__dsh-hotkey",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hotkey",
+  "title": "dsh-hotkey",
+  "summary": "为 DeepSeek Harness 桌面版配置自定义快捷键，让常用操作一键触发，提升操作效率。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "hotkeys",
+    "keybindings",
+    "keyboard-shortcuts",
+    "效率提升",
+    "命令行工具",
+    "自动化",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "melt502",
+  "repo": "https://github.com/melt502/dsh-hotkey",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T07:47:08Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:melt502/dsh-hotkey",
+    "commands": [
+      "dsh plugin --profile web add github:melt502/dsh-hotkey"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

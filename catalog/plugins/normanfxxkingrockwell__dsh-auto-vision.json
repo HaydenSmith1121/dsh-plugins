@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "NormanFxxkingRockwell/dsh-auto-vision",
+  "slug": "normanfxxkingrockwell__dsh-auto-vision",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auto-vision",
+  "title": "dsh-auto-vision",
+  "summary": "自动找到你已配好的多模态模型，给纯文本主模型加上看图能力，识别结果直接以文字返回。",
+  "tags": [
+    "cordic",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "image-to-text",
+    "multimodal",
+    "vision",
+    "零配置",
+    "视觉理解",
+    "模型配置",
+    "工具集成",
+    "桥接插件"
+  ],
+  "version": "0.4.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.1",
+    "publishedAt": "2026-09-15T03:26:46Z",
+    "url": "https://github.com/NormanFxxkingRockwell/dsh-auto-vision/releases/tag/v0.4.1"
+  },
+  "author": "NormanFxxkingRockwell",
+  "repo": "https://github.com/NormanFxxkingRockwell/dsh-auto-vision",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T03:26:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:NormanFxxkingRockwell/dsh-auto-vision",
+    "commands": [
+      "dsh plugin --profile <你的profile名> add dsh-auto-vision",
+      "dsh plugin --profile <你的profile名> add github:NormanFxxkingRockwell/dsh-auto-vision"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "weopenfire-git/dsh-plugin-pub-review",
+  "slug": "weopenfire-git__dsh-plugin-pub-review",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-pub-review",
+  "title": "dsh-plugin-pub-review",
+  "summary": "发布前给 DSH 插件做体检：查官方文档更新、跑 30+ 项静态检查，给出能不能发布的结论和命令引导。",
+  "tags": [
+    "dsh-plugin",
+    "变更审查",
+    "命令行工具",
+    "工作流增强",
+    "自动化",
+    "内容创作"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "weopenfire-git",
+  "repo": "https://github.com/weopenfire-git/dsh-plugin-pub-review",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-18T01:21:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:weopenfire-git/dsh-plugin-pub-review",
+    "commands": [
+      "dsh plugin --profile web add github:weopenfire-git/dsh-plugin-pub-review"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

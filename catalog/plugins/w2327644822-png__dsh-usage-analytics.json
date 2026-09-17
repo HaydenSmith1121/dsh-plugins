@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "w2327644822-png/dsh-usage-analytics",
+  "slug": "w2327644822-png__dsh-usage-analytics",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage-analytics",
+  "title": "dsh-usage-analytics",
+  "summary": "在 dsh 网页界面里查看个人用量统计和活动仪表盘，包括 Token 总数、贡献热力图、模型占比和洞察，数据仅存本地。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "token-usage",
+    "状态监控",
+    "可视化",
+    "语义检索",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "w2327644822-png",
+  "repo": "https://github.com/w2327644822-png/dsh-usage-analytics",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-26T16:36:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:w2327644822-png/dsh-usage-analytics",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-usage-analytics"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

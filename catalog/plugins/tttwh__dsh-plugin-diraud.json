@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "tttwh/dsh-plugin-diraud",
+  "slug": "tttwh__dsh-plugin-diraud",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-diraud",
+  "title": "dsh-plugin-diraud",
+  "summary": "把官方插件和你自己装的插件分开归类，列表一目了然，找插件和管理起来更轻松。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "效率提升",
+    "工作区管理"
+  ],
+  "version": "0.9.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "tttwh",
+  "repo": "https://github.com/tttwh/dsh-plugin-diraud",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-28T02:15:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-diraud",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-diraud",
+      "dsh plugin --profile web add https://github.com/tttwh/dsh-plugin-diraud/archive/refs/heads/main.tar.gz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

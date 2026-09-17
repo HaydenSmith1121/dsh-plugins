@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "xingyingyuzhui/dsh-agent-memory",
+  "slug": "xingyingyuzhui__dsh-agent-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-memory",
+  "title": "dsh-agent-memory",
+  "summary": "给 Claw 智能体装上持久记忆，自动记日记、回合后回顾，压缩前还能冲洗一下，让对话不丢上下文。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "会话管理"
+  ],
+  "version": "0.1.10",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xingyingyuzhui",
+  "repo": "https://github.com/xingyingyuzhui/dsh-agent-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T07:11:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xingyingyuzhui/dsh-agent-memory",
+    "commands": [
+      "dsh plugin --profile web add github:xingyingyuzhui/dsh-agent-memory",
+      "dsh plugin --profile web add link:/abs/path/to/dsh-agent-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

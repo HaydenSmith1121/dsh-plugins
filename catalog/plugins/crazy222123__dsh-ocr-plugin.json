@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "CraZY222123/dsh-ocr-plugin",
+  "slug": "crazy222123__dsh-ocr-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ocr-plugin",
+  "title": "dsh-ocr-plugin",
+  "summary": "给 DeepSeek Harness 加本地 OCR 能力，让纯文本模型直接看懂截图、发票、表格等图片内容，无需云端服务。",
+  "tags": [
+    "dsh-plugin",
+    "本地OCR",
+    "多模态",
+    "文件管理",
+    "离线识别"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "CraZY222123",
+  "repo": "https://github.com/CraZY222123/dsh-ocr-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 13,
+  "forks": 0,
+  "pushedAt": "2026-08-14T23:11:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CraZY222123/dsh-ocr-plugin",
+    "commands": [
+      "git clone https://github.com/CraZY222123/dsh-ocr-plugin.git",
+      "pip install rapidocr_onnxruntime onnxruntime pillow numpy opencv-python"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

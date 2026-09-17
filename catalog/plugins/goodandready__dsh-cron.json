@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-cron",
+  "slug": "goodandready__dsh-cron",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cron",
+  "title": "dsh-cron",
+  "summary": "为 DeepSeek Harness 定时执行任务，支持后台自动化与智能体调度，让工作流自动跑起来。",
+  "tags": [
+    "automation",
+    "cron",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "scheduler",
+    "自动化",
+    "工作流增强",
+    "多Agent协作",
+    "效率提升",
+    "命令行工具"
+  ],
+  "version": "0.2.19",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.19",
+    "publishedAt": "2026-09-16T20:09:49Z",
+    "url": "https://github.com/GooDAnDReaDY/dsh-cron/releases/tag/v0.2.19"
+  },
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-cron",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-09-16T20:09:32Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooDAnDReaDY/dsh-cron",
+    "commands": [
+      "dsh plugin --profile web add github:GooDAnDReaDY/dsh-cron"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

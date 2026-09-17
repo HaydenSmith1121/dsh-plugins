@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "166767/dsh-error-audit",
+  "slug": "166767__dsh-error-audit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-error-audit",
+  "title": "dsh-error-audit",
+  "summary": "实时捕获 AI 报错和警告，连同时间、会话、用户原话等完整信息写入日志，并主动通知 AI，方便随时排查问题。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "error-monitoring",
+    "状态监控",
+    "工作区管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "166767",
+  "repo": "https://github.com/166767/dsh-error-audit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-30T02:03:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:166767/dsh-error-audit",
+    "commands": [
+      "dsh plugin --profile web add \"github:166767/dsh-error-audit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

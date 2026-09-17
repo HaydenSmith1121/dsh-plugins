@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "lovstudio/dsh-plugin-creator-skill",
+  "slug": "lovstudio__dsh-plugin-creator-skill",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-creator-skill",
+  "title": "dsh-plugin-creator-skill",
+  "summary": "一键创建 DeepSeek 插件包，从选扩展点到实现工具、钩子或服务，全程自动化，省心省力。",
+  "tags": [
+    "claude-skill",
+    "deepseek-harness",
+    "dsh-skill",
+    "skill",
+    "内容创作",
+    "工作流增强",
+    "自动化",
+    "插件管理",
+    "命令行工具"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "lovstudio",
+  "repo": "https://github.com/lovstudio/dsh-plugin-creator-skill",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-23T17:11:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lovstudio/dsh-plugin-creator-skill",
+    "commands": [
+      "dsh plugin --profile web add github:lovstudio/dsh-plugin-creator-skill"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

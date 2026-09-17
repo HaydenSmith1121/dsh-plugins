@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "faith1688/dsh-usage-meter-harness",
+  "slug": "faith1688__dsh-usage-meter-harness",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage-meter-harness",
+  "title": "dsh-usage-meter-harness",
+  "summary": "在聊天框旁实时显示 tokens 用量、花费和余额，帮你随时掌握 API 消耗，避免超支。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "效率提升",
+    "消息通知",
+    "零配置"
+  ],
+  "version": "2.0.39",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.0.39",
+    "publishedAt": "2026-09-13T07:17:56Z",
+    "url": "https://github.com/faith1688/dsh-usage-meter-harness/releases/tag/v2.0.39"
+  },
+  "author": "faith1688",
+  "repo": "https://github.com/faith1688/dsh-usage-meter-harness",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-13T07:17:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:faith1688/dsh-usage-meter-harness",
+    "commands": [
+      "dsh plugin --profile web add --verbose @faith1688/dsh-usage-meter-harness@latest",
+      "dsh plugin --profile web add --verbose github:faith1688/dsh-usage-meter-harness"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

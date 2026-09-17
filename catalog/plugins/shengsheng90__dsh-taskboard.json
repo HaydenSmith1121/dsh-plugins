@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "shengsheng90/DSH-taskboard",
+  "slug": "shengsheng90__dsh-taskboard",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-taskboard",
+  "title": "DSH-taskboard",
+  "summary": "为 DeepSeek Harness 提供原生本地任务看板，用 SQLite 管理项目，支持 Agent 认领与审核，自带 Web 界面，无需 iframe 或额外聊天环境。",
+  "tags": [
+    "agent",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "task-management",
+    "taskboard",
+    "任务编排",
+    "本地看板",
+    "Agent协作",
+    "SQLite存储",
+    "可视化"
+  ],
+  "version": "0.1.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.6",
+    "publishedAt": "2026-09-16T09:59:57Z",
+    "url": "https://github.com/shengsheng90/DSH-taskboard/releases/tag/v0.1.6"
+  },
+  "author": "shengsheng90",
+  "repo": "https://github.com/shengsheng90/DSH-taskboard",
+  "homepage": "https://www.npmjs.com/package/@shengsheng/dsh-taskboard",
+  "license": "Apache-2.0",
+  "stars": 325,
+  "forks": 8,
+  "pushedAt": "2026-09-16T09:59:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shengsheng90/DSH-taskboard",
+    "commands": [
+      "git clone https://github.com/shengsheng90/DSH-taskboard.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

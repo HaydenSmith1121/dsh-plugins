@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "omdsh-dev/dsh-tool-regex",
+  "slug": "omdsh-dev__dsh-tool-regex",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tool-regex",
+  "title": "dsh-tool-regex",
+  "summary": "正则表达式工具箱，支持测试匹配、提取捕获组、安全替换，还能静态解释正则含义，零依赖纯函数。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "redos-protection",
+    "regex",
+    "可视化",
+    "安全审计",
+    "命令行工具"
+  ],
+  "version": "0.0.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "omdsh-dev",
+  "repo": "https://github.com/omdsh-dev/dsh-tool-regex",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-10T06:31:45Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:omdsh-dev/dsh-tool-regex",
+    "commands": [
+      "dsh plugin --profile web add github:omdsh-dev/dsh-tool-regex",
+      "dsh plugin --profile headless add github:omdsh-dev/dsh-tool-regex",
+      "dsh plugin --profile web add ./dsh-tool-regex-<version>.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

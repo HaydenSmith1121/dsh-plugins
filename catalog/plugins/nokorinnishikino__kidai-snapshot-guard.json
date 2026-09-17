@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "NokorinNishikino/kidai-snapshot-guard",
+  "slug": "nokorinnishikino__kidai-snapshot-guard",
+  "tier": "community",
+  "package": null,
+  "name": "kidai-snapshot-guard",
+  "title": "kidai-snapshot-guard",
+  "summary": "DSH 内部备份管家，关门前自动保存快照，开机确认，一键导出导入恢复，兼容主流备份插件。",
+  "tags": [
+    "backup",
+    "backup-tool",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "snapshot",
+    "插件管理",
+    "自动化",
+    "安全审计",
+    "效率提升",
+    "备份工具"
+  ],
+  "version": "1.3.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.3.5",
+    "publishedAt": "2026-09-12T13:21:56Z",
+    "url": "https://github.com/NokorinNishikino/kidai-snapshot-guard/releases/tag/v1.3.5"
+  },
+  "author": "NokorinNishikino",
+  "repo": "https://github.com/NokorinNishikino/kidai-snapshot-guard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-12T13:21:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:NokorinNishikino/kidai-snapshot-guard",
+    "commands": [
+      "dsh plugin --profile desktop add github:NokorinNishikino/kidai-snapshot-guard",
+      "dsh plugin --profile desktop remove kidai-snapshot-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

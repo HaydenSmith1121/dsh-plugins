@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "lehhair/dsh-mobile",
+  "slug": "lehhair__dsh-mobile",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mobile",
+  "title": "dsh-mobile",
+  "summary": "把 DSH WebUI 适配到手机窄屏，用横向翻页卡片加半开侧边栏，手机上也能顺手操作。",
+  "tags": [
+    "dsh-plugin",
+    "跨设备",
+    "前端增强",
+    "主题",
+    "快捷操作"
+  ],
+  "version": "0.1.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.6",
+    "publishedAt": "2026-09-06T08:14:44Z",
+    "url": "https://github.com/lehhair/dsh-mobile/releases/tag/v0.1.6"
+  },
+  "author": "lehhair",
+  "repo": "https://github.com/lehhair/dsh-mobile",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 25,
+  "forks": 4,
+  "pushedAt": "2026-09-06T08:14:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lehhair/dsh-mobile",
+    "commands": [
+      "dsh plugin --profile web add \"https://github.com/lehhair/dsh-mobile/releases/latest/download/dsh-external-dsh-mobile.tgz\"",
+      "git clone https://github.com/lehhair/dsh-mobile.git",
+      "dsh plugin --profile web add link:E:/dev/dsh-mobile"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

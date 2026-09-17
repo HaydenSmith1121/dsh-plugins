@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "gulagala001/oh-my-dsh",
+  "slug": "gulagala001__oh-my-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "oh-my-dsh",
+  "title": "oh-my-dsh",
+  "summary": "给 DSH Agent 加个全能工作台：记住项目、跟进任务，还能操控网页和 macOS 应用。",
+  "tags": [
+    "ai-agent",
+    "context-management",
+    "deepseek-harness",
+    "dsh",
+    "memory",
+    "plugin",
+    "工作流增强",
+    "工具集成",
+    "状态监控",
+    "自动化",
+    "会话管理"
+  ],
+  "version": "1.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.1.1",
+    "publishedAt": "2026-09-13T16:42:14Z",
+    "url": "https://github.com/gulagala001/oh-my-dsh/releases/tag/v1.1.1"
+  },
+  "author": "gulagala001",
+  "repo": "https://github.com/gulagala001/oh-my-dsh",
+  "homepage": null,
+  "license": null,
+  "stars": 9,
+  "forks": 0,
+  "pushedAt": "2026-09-16T19:36:31Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:gulagala001/oh-my-dsh",
+    "commands": [
+      "dsh plugin --profile web add github:gulagala001/oh-my-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "qydhlhz/dsh-myagent",
+  "slug": "qydhlhz__dsh-myagent",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-myagent",
+  "title": "dsh-myagent",
+  "summary": "给 dsh 换上一套更好用的工作区和文件树，整理项目文件更顺手。",
+  "tags": [
+    "agent-native",
+    "deepseek-harness",
+    "dsh",
+    "file-tree",
+    "organizer",
+    "plugin",
+    "sidebar",
+    "workspace",
+    "工作区管理",
+    "文件管理",
+    "主题",
+    "效率提升"
+  ],
+  "version": "0.1.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.5",
+    "publishedAt": "2026-09-13T08:02:31Z",
+    "url": "https://github.com/qydhlhz/dsh-myagent/releases/tag/v0.1.5"
+  },
+  "author": "qydhlhz",
+  "repo": "https://github.com/qydhlhz/dsh-myagent",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T07:55:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qydhlhz/dsh-myagent",
+    "commands": [
+      "dsh plugin --profile web add github:qydhlhz/dsh-myagent",
+      "dsh plugin --profile web add ./dsh-myagent-0.1.5.tgz",
+      "dsh plugin --profile web add ./dsh-myagent"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

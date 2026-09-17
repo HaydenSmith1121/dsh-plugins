@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "hw-cola/dsh-message-enhancer",
+  "slug": "hw-cola__dsh-message-enhancer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-message-enhancer",
+  "title": "dsh-message-enhancer",
+  "summary": "在聊天输入框上方加一条索引标尺，帮你快速定位用户消息和最终计划，一眼看清执行结果。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "可视化",
+    "消息通知"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hw-cola",
+  "repo": "https://github.com/hw-cola/dsh-message-enhancer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-24T14:10:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hw-cola/dsh-message-enhancer",
+    "commands": [
+      "dsh plugin --profile web add \"git+https://github.com/hw-cola/dsh-message-enhancer.git\"",
+      "dsh plugin --profile web add \"git+https://github.com/hw-cola/dsh-message-enhancer.git",
+      "dsh plugin --profile web add \"link:${PATH}/dsh-message-enhancer\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

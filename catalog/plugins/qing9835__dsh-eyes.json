@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "qing9835/dsh-eyes",
+  "slug": "qing9835__dsh-eyes",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-eyes",
+  "title": "dsh-eyes",
+  "summary": "给纯文本聊天装上外置眼睛，粘贴或拖入图片自动识别成文字送入对话，支持多轮复核和多提供商配置。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "视觉理解",
+    "会话管理",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "qing9835",
+  "repo": "https://github.com/qing9835/dsh-eyes",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-01T04:29:02Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qing9835/dsh-eyes",
+    "commands": [
+      "dsh plugin --profile web add github:qing9835/dsh-eyes"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

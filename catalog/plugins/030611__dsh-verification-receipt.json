@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "030611/dsh-verification-receipt",
+  "slug": "030611__dsh-verification-receipt",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-verification-receipt",
+  "title": "dsh-verification-receipt",
+  "summary": "把每轮工具调用次数和验证信号记成本地 JSONL 摘要，不存提示词和参数，方便事后核查。",
+  "tags": [
+    "agent-infrastructure",
+    "deepseek-harness",
+    "developer-tools",
+    "dsh-plugin",
+    "verification",
+    "数据可审计",
+    "状态监控",
+    "内容创作",
+    "状态持久化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "030611",
+  "repo": "https://github.com/030611/dsh-verification-receipt",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-03T16:29:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-verification-receipt",
+    "commands": [
+      "dsh plugin --profile web add dsh-verification-receipt"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

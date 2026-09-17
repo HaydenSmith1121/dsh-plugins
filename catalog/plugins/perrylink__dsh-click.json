@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "PerryLink/dsh-click",
+  "slug": "perrylink__dsh-click",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-click",
+  "title": "dsh-click",
+  "summary": "让 AI 直接操控 Windows 桌面：截图、读界面、点击输入滚动、启动应用，每步都需授权且不抢焦点。",
+  "tags": [
+    "computer-use",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "desktop-control",
+    "dsh",
+    "dsh-plugin",
+    "screen-reader",
+    "uiautomation",
+    "windows-automation",
+    "自动化",
+    "工具集成",
+    "AI 助手",
+    "安全审计",
+    "快捷操作"
+  ],
+  "version": "0.3.10",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.10",
+    "publishedAt": "2026-09-12T02:27:45Z",
+    "url": "https://github.com/PerryLink/dsh-click/releases/tag/v0.3.10"
+  },
+  "author": "PerryLink",
+  "repo": "https://github.com/PerryLink/dsh-click",
+  "homepage": "https://www.npmjs.com/package/dsh-click",
+  "license": "Apache-2.0",
+  "stars": 9,
+  "forks": 2,
+  "pushedAt": "2026-09-16T02:26:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:PerryLink/dsh-click",
+    "commands": [
+      "dsh plugin --profile web add github:PerryLink/dsh-click"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

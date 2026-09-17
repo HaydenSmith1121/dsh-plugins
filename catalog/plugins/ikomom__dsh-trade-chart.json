@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "ikomom/dsh-trade-chart",
+  "slug": "ikomom__dsh-trade-chart",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-trade-chart",
+  "title": "dsh-trade-chart",
+  "summary": "在对话里直接画K线、技术指标和热点轮动图，纯自绘SVG，零依赖，看盘分析更直观。",
+  "tags": [
+    "a-share",
+    "candlestick",
+    "deepseek-harness",
+    "dsh-plugin",
+    "kline",
+    "svg",
+    "technical-indicators",
+    "trade-chart",
+    "trading",
+    "可视化",
+    "状态监控",
+    "桌宠",
+    "前端增强"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-08-31T14:34:17Z",
+    "url": "https://github.com/ikomom/dsh-trade-chart/releases/tag/v0.3.0"
+  },
+  "author": "ikomom",
+  "repo": "https://github.com/ikomom/dsh-trade-chart",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T15:09:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ikomom/dsh-trade-chart",
+    "commands": [
+      "git clone https://github.com/ikomom/dsh-trade-chart.git",
+      "dsh plugin --profile web add link:D:\\你的真实路径\\dsh-trade-chart",
+      "dsh plugin --profile web add link:/你的/真实/路径/dsh-trade-chart"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

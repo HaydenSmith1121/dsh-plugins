@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "inmny/dsh-continue",
+  "slug": "inmny__dsh-continue",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-continue",
+  "title": "dsh-continue",
+  "summary": "会话中断后一键续跑，无需重输提示词，直接从原上下文接着聊。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "inmny",
+  "repo": "https://github.com/inmny/dsh-continue",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-11T09:13:11Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:inmny/dsh-continue",
+    "commands": [
+      "dsh plugin --profile web add \"git+ssh://git@github.com/inmny/dsh-continue.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

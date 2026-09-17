@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "fu827707013/dsh-codebuddy-cli",
+  "slug": "fu827707013__dsh-codebuddy-cli",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codebuddy-cli",
+  "title": "dsh-codebuddy-cli",
+  "summary": "复用 CodeBuddy CLI 登录态，把 GLM、DeepSeek 等模型一键接入 DeepSeek Harness，免配置直接调用。",
+  "tags": [
+    "dsh-plugin",
+    "模型适配",
+    "安全审计",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.2.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fu827707013",
+  "repo": "https://github.com/fu827707013/dsh-codebuddy-cli",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-12T08:32:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-codebuddy-cli",
+    "commands": [
+      "dsh plugin --profile web add dsh-codebuddy-cli",
+      "dsh plugin --profile web add github:fu827707013/dsh-codebuddy-cli",
+      "dsh plugin --profile desktop add dsh-codebuddy-cli"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "dancingmemory/dskin",
+  "slug": "dancingmemory__dskin",
+  "tier": "community",
+  "package": null,
+  "name": "dskin",
+  "title": "dskin",
+  "summary": "把 DeepSeek Harness 网页界面一键变成像素游戏机，换上卡通皮肤和吉祥物，纯外观美化不改功能。",
+  "tags": [
+    "cartoon",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "pixel-art",
+    "skin",
+    "theme",
+    "ui-skin",
+    "界面美化",
+    "娱乐互动",
+    "像素风格"
+  ],
+  "version": "1.0.17",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.17",
+    "publishedAt": "2026-08-21T08:42:29Z",
+    "url": "https://github.com/dancingmemory/dskin/releases/tag/v1.0.17"
+  },
+  "author": "dancingmemory",
+  "repo": "https://github.com/dancingmemory/dskin",
+  "homepage": "https://github.com/topics/dsh-plugin",
+  "license": "MIT",
+  "stars": 6,
+  "forks": 1,
+  "pushedAt": "2026-09-12T07:58:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dancingmemory/dskin",
+    "commands": [
+      "dsh plugin --profile web add github:dancingmemory/dskin",
+      "git clone https://github.com/dancingmemory/dskin.git",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

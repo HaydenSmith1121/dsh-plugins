@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "fuzz1og/dsh-font-settings",
+  "slug": "fuzz1og__dsh-font-settings",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-font-settings",
+  "title": "dsh-font-settings",
+  "summary": "在设置里换 UI 字体、代码字体和侧边栏终端字号，改完立刻生效。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "设置面板",
+    "主题",
+    "界面美化",
+    "前端增强"
+  ],
+  "version": "0.4.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fuzz1og",
+  "repo": "https://github.com/fuzz1og/dsh-font-settings",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 1,
+  "pushedAt": "2026-09-16T18:24:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fuzz1og/dsh-font-settings",
+    "commands": [
+      "dsh plugin --profile web add github:fuzz1og/dsh-font-settings"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

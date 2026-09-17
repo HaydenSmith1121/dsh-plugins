@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "MrMaii/knotline",
+  "slug": "mrmaii__knotline",
+  "tier": "community",
+  "package": null,
+  "name": "Knotline",
+  "title": "Knotline",
+  "summary": "把 AI 智能体从对话框搬到可视化画布上，用连线编排工作流，让多个 Agent 协作执行任务。",
+  "tags": [
+    "agent-orchestration",
+    "ai-agents",
+    "deepseek-harness",
+    "dsh-plugin",
+    "react-flow",
+    "workflow",
+    "可视化编排",
+    "多Agent协作",
+    "工作流设计",
+    "画布交互"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-17T16:32:37Z",
+    "url": "https://github.com/MrMaii/knotline/releases/tag/v0.1.0"
+  },
+  "author": "MrMaii",
+  "repo": "https://github.com/MrMaii/knotline",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-08-18T03:31:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MrMaii/knotline",
+    "commands": [
+      "dsh plugin --profile web add github:MrMaii/knotline"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

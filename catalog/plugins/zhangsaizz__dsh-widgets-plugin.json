@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "zhangsaizz/dsh-widgets-plugin",
+  "slug": "zhangsaizz__dsh-widgets-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-widgets-plugin",
+  "title": "dsh-widgets-plugin",
+  "summary": "为 DeepSeek Harness 提供可拖动、缩放、折叠的浮动小组件，方便自定义你的工作台。",
+  "tags": [
+    "dsh-plugin",
+    "小组件",
+    "界面美化",
+    "可配置",
+    "浮动挂件"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhangsaizz",
+  "repo": "https://github.com/zhangsaizz/dsh-widgets-plugin",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T16:06:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhangsaizz/dsh-widgets-plugin",
+    "commands": [
+      "dsh plugin --profile <name> add @dsh-plugins/dsh-widgets-plugin",
+      "dsh plugin --profile <name> add F:/dsh-balance-plugin/bundles/dsh-widgets-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

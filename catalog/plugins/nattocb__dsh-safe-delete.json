@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "NattoCB/dsh-safe-delete",
+  "slug": "nattocb__dsh-safe-delete",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-safe-delete",
+  "title": "dsh-safe-delete",
+  "summary": "让 AI 执行的 rm 命令不再直接删除文件，而是移入 macOS 废纸篓，误删也能轻松找回。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "macos",
+    "safe-delete",
+    "trash",
+    "安全审计",
+    "文件管理",
+    "命令行工具"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "NattoCB",
+  "repo": "https://github.com/NattoCB/dsh-safe-delete",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T14:39:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:NattoCB/dsh-safe-delete",
+    "commands": [
+      "dsh plugin --profile web add github:NattoCB/dsh-safe-delete"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

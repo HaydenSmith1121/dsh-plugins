@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "sakthiveltofficial/dsh-gmail-plugins",
+  "slug": "sakthiveltofficial__dsh-gmail-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-gmail-plugins",
+  "title": "dsh-gmail-plugins",
+  "summary": "为 DeepSeek Harness 提供 Gmail 与通讯录的完整插件套件，包含 61 个模型工具和 2 个轮询触发器，实现邮件收发、搜索、管理等自动化操作。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "AI 助手",
+    "效率提升",
+    "安全审计",
+    "桌宠"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sakthiveltofficial",
+  "repo": "https://github.com/sakthiveltofficial/dsh-gmail-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-25T13:06:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sakthiveltofficial/dsh-gmail-plugins",
+    "commands": [
+      "dsh plugin --profile web add github:sakthiveltofficial/dsh-gmail-plugins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "whiteguo233/dsh-cc-connect",
+  "slug": "whiteguo233__dsh-cc-connect",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cc-connect",
+  "title": "dsh-cc-connect",
+  "summary": "把 dsh 接到飞书、微信、Telegram 上，随时随地在聊天里远程调用 DeepSeek Harness。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "远程调用",
+    "消息桥接",
+    "模型配置",
+    "桌宠"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "whiteguo233",
+  "repo": "https://github.com/whiteguo233/dsh-cc-connect",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-05T17:15:29Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:whiteguo233/dsh-cc-connect",
+    "commands": [
+      "dsh plugin --profile web add git+ssh://git@github.com:dsh-external/dsh-cc-connect.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "dugujun3-cloud/dshos-dock",
+  "slug": "dugujun3-cloud__dshos-dock",
+  "tier": "community",
+  "package": null,
+  "name": "dshos-dock",
+  "title": "dshos-dock",
+  "summary": "在对话输入框上方常驻显示任务数、最近运行事件和检查日期，让你随时掌握工作区状态。",
+  "tags": [
+    "agent-workspace",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "workspace-os",
+    "状态监控",
+    "可视化",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "dugujun3-cloud",
+  "repo": "https://github.com/dugujun3-cloud/dshos-dock",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-13T05:59:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dugujun3-cloud/dshos-dock",
+    "commands": [
+      "dsh plugin --profile web add github:dugujun3-cloud/dshos-dock"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

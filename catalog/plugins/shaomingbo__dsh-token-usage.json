@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "shaomingbo/dsh-token-usage",
+  "slug": "shaomingbo__dsh-token-usage",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-token-usage",
+  "title": "dsh-token-usage",
+  "summary": "帮你查看 DeepSeek Harness 的账号、订阅额度和本地用量记录，设置面板里一目了然。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "设置面板",
+    "资源优化",
+    "模型适配"
+  ],
+  "version": "5.1.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v5.1.9",
+    "publishedAt": "2026-09-13T14:17:47Z",
+    "url": "https://github.com/shaomingbo/dsh-token-usage/releases/tag/v5.1.9"
+  },
+  "author": "shaomingbo",
+  "repo": "https://github.com/shaomingbo/dsh-token-usage",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T14:17:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shaomingbo/dsh-token-usage",
+    "commands": [
+      "dsh plugin --profile web add github:shaomingbo/dsh-token-usage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

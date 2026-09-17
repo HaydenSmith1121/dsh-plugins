@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "jing-hy/picturereader",
+  "slug": "jing-hy__picturereader",
+  "tier": "community",
+  "package": null,
+  "name": "picturereader",
+  "title": "picturereader",
+  "summary": "给纯文本模型装上眼睛，粘贴图片就能读图、OCR识别文字，还能分析像素和颜色，本地运行不吃云。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "image-reading",
+    "ocr",
+    "pixel-art",
+    "vision",
+    "零配置",
+    "文件管理",
+    "工具集成",
+    "资源优化",
+    "效率提升"
+  ],
+  "version": "3.3.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v3.3.3",
+    "publishedAt": "2026-09-11T11:47:55Z",
+    "url": "https://github.com/jing-hy/picturereader/releases/tag/v3.3.3"
+  },
+  "author": "jing-hy",
+  "repo": "https://github.com/jing-hy/picturereader",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 35,
+  "forks": 5,
+  "pushedAt": "2026-09-11T11:47:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jing-hy/picturereader",
+    "commands": [
+      "dsh plugin --profile web add github:jing-hy/picturereader"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

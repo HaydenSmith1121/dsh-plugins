@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "lakabuji-arch/dsh-model-accordion",
+  "slug": "lakabuji-arch__dsh-model-accordion",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-accordion",
+  "title": "dsh-model-accordion",
+  "summary": "把模型选择器改成按供应商折叠的样式，让切换模型更清爽高效。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "界面美化",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.2.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lakabuji-arch",
+  "repo": "https://github.com/lakabuji-arch/dsh-model-accordion",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-09T05:31:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-model-accordion",
+    "commands": [
+      "dsh plugin --profile web add dsh-model-accordion",
+      "dsh plugin --profile web add file:/absolute/path/to/dsh-model-accordion"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "tianhanly/dsh-genshin-redirect",
+  "slug": "tianhanly__dsh-genshin-redirect",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-genshin-redirect",
+  "title": "dsh-genshin-redirect",
+  "summary": "任务完成后自动打开原神官网，摸鱼娱乐两不误。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "harness",
+    "harness-plugin",
+    "自动化",
+    "娱乐互动",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-30T23:11:27Z",
+    "url": "https://github.com/tianhanly/dsh-genshin-redirect/releases/tag/v1.0.0"
+  },
+  "author": "tianhanly",
+  "repo": "https://github.com/tianhanly/dsh-genshin-redirect",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T23:05:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tianhanly/dsh-genshin-redirect",
+    "commands": [
+      "dsh plugin --profile web add \"github:<your-username>/dsh-genshin-redirect\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

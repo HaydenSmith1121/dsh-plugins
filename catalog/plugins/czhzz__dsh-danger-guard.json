@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "czhzz/dsh-danger-guard",
+  "slug": "czhzz__dsh-danger-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-danger-guard",
+  "title": "dsh-danger-guard",
+  "summary": "在执行危险命令前自动拦截，防止误操作删库、格式化磁盘等高风险操作，给命令行加一道安全门禁。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "安全审计",
+    "工作流增强",
+    "命令行工具",
+    "自动化"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "czhzz",
+  "repo": "https://github.com/czhzz/dsh-danger-guard",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T07:07:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:czhzz/dsh-danger-guard",
+    "commands": [
+      "dsh plugin --profile web add github:czhzz/dsh-danger-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

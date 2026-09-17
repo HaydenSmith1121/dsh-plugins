@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "wangzhishou/onebox-dsh-bridge",
+  "slug": "wangzhishou__onebox-dsh-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "onebox-dsh-bridge",
+  "title": "onebox-dsh-bridge",
+  "summary": "充当 OneBox 与 DSH 的桥梁，无缝对接多模型接口，让你轻松调用大模型并运行智能体。",
+  "tags": [
+    "agent",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "onebox",
+    "模型配置",
+    "任务编排",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wangzhishou",
+  "repo": "https://github.com/wangzhishou/onebox-dsh-bridge",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T22:21:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "onebox-dsh-bridge",
+    "commands": [
+      "dsh plugin --profile web add onebox-dsh-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

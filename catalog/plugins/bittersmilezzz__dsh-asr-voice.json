@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "bitterSmilezzz/dsh-asr-voice",
+  "slug": "bittersmilezzz__dsh-asr-voice",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-asr-voice",
+  "title": "dsh-asr-voice",
+  "summary": "对着麦克风说话就能自动转成文字，优化后填入输入框或直接发送，跨平台免手打。",
+  "tags": [
+    "asr",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "speech-to-text",
+    "voice-input",
+    "whisper",
+    "视觉理解",
+    "效率提升",
+    "快捷操作",
+    "AI 助手",
+    "跨设备"
+  ],
+  "version": "0.3.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.3",
+    "publishedAt": "2026-09-17T15:19:42Z",
+    "url": "https://github.com/bitterSmilezzz/dsh-asr-voice/releases/tag/v0.3.3"
+  },
+  "author": "bitterSmilezzz",
+  "repo": "https://github.com/bitterSmilezzz/dsh-asr-voice",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T14:30:44Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bitterSmilezzz/dsh-asr-voice",
+    "commands": [
+      "dsh plugin --profile <profile> add <本插件路径或 GitHub 仓库>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

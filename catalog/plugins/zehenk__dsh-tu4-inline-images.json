@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "zehenk/dsh-tu4-inline-images",
+  "slug": "zehenk__dsh-tu4-inline-images",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tu4-inline-images",
+  "title": "dsh-tu4-inline-images",
+  "summary": "在 DSH 网页对话中自动把本地图片路径渲染成图片，看图更方便。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "会话管理",
+    "会话增强",
+    "可视化",
+    "零配置"
+  ],
+  "version": "1.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zehenk",
+  "repo": "https://github.com/zehenk/dsh-tu4-inline-images",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T15:46:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zehenk/dsh-tu4-inline-images",
+    "commands": [
+      "dsh plugin --profile web add file:$(pwd)/dsh-tu4-inline-images-1.1.0.tgz",
+      "dsh plugin --profile web add file:D:\\path\\to\\dsh-tu4-inline-images-1.1.0.tgz",
+      "git clone https://github.com/zehenk/dsh-tu4-inline-images.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

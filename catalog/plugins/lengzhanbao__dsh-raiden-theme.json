@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "lengzhanbao/dsh-raiden-theme",
+  "slug": "lengzhanbao__dsh-raiden-theme",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-raiden-theme",
+  "title": "dsh-raiden-theme",
+  "summary": "给 DSH Web 换上稻妻雷电风的紫金亚克力主题，装完即用，界面立刻变好看。",
+  "tags": [
+    "acrylic",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "genshin",
+    "raiden",
+    "theme",
+    "ui",
+    "界面美化",
+    "主题",
+    "零配置",
+    "前端增强"
+  ],
+  "version": "0.1.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.6",
+    "publishedAt": "2026-09-16T15:34:13Z",
+    "url": "https://github.com/lengzhanbao/dsh-raiden-theme/releases/tag/v0.1.6"
+  },
+  "author": "lengzhanbao",
+  "repo": "https://github.com/lengzhanbao/dsh-raiden-theme",
+  "homepage": "https://github.com/lengzhanbao/dsh-raiden-theme",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T15:33:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lengzhanbao/dsh-raiden-theme",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/lengzhanbao/dsh-raiden-theme/releases/download/v0.1.0/dsh-external-dsh-raiden-theme-0.1.0.tgz",
+      "dsh plugin --profile web remove @dsh-external/dsh-raiden-theme"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

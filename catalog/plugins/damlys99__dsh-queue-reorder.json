@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "damlys99/dsh-queue-reorder",
+  "slug": "damlys99__dsh-queue-reorder",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-queue-reorder",
+  "title": "dsh-queue-reorder",
+  "summary": "在 DSH 网页版队列里拖动或点按钮调整待发消息顺序，不抢占官方面板。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "queue",
+    "reorder",
+    "前端增强",
+    "快捷操作",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-14T17:40:10Z",
+    "url": "https://github.com/damlys99/dsh-queue-reorder/releases/tag/v0.1.1"
+  },
+  "author": "damlys99",
+  "repo": "https://github.com/damlys99/dsh-queue-reorder",
+  "homepage": "https://www.npmjs.com/package/dsh-queue-reorder",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T17:40:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:damlys99/dsh-queue-reorder",
+    "commands": [
+      "dsh plugin --profile web add -w dsh-queue-reorder",
+      "dsh plugin --profile web add -w link:/absolute/path/to/dsh-queue-reorder",
+      "dsh plugin --profile web remove dsh-queue-reorder"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

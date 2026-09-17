@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "HuanLinOTO/dsh-plugin-copilot",
+  "slug": "huanlinoto__dsh-plugin-copilot",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-copilot",
+  "title": "dsh-plugin-copilot",
+  "summary": "在 WebUI 设置卡片里一键完成 GitHub 授权，自动激活模型路由并精简模型列表，让 Copilot 开箱即用。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "模型配置",
+    "可视化",
+    "设置面板",
+    "效率提升"
+  ],
+  "version": "0.2.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "HuanLinOTO",
+  "repo": "https://github.com/HuanLinOTO/dsh-plugin-copilot",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T11:49:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:HuanLinOTO/dsh-plugin-copilot",
+    "commands": [
+      "dsh plugin --profile web add github:HuanLinOTO/dsh-plugin-copilot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

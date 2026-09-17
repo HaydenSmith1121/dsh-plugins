@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "AllenLogo/dsh-restart-button",
+  "slug": "allenlogo__dsh-restart-button",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-restart-button",
+  "title": "dsh-restart-button",
+  "summary": "在设置页加一个重启按钮，一键重启 DSH 宿主进程并自动刷新页面，省去手动操作。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "快捷操作",
+    "设置面板",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "AllenLogo",
+  "repo": "https://github.com/AllenLogo/dsh-restart-button",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T01:31:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AllenLogo/dsh-restart-button",
+    "commands": [
+      "dsh plugin --profile web add github:AllenLogo/dsh-restart-button"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

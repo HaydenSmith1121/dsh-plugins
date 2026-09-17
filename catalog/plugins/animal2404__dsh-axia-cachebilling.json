@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Animal2404/dsh-axia-cachebilling",
+  "slug": "animal2404__dsh-axia-cachebilling",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-axia-cachebilling",
+  "title": "dsh-axia-cachebilling",
+  "summary": "在 DSH 上下文弹层里实时算账，看清每轮对话的缓存命中、Token 消耗和真实花费。",
+  "tags": [
+    "billing",
+    "cost-tracking",
+    "deepseek-harness",
+    "dsh-plugin",
+    "成本控制",
+    "状态监控",
+    "可视化",
+    "模型配置"
+  ],
+  "version": "0.6.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Animal2404",
+  "repo": "https://github.com/Animal2404/dsh-axia-cachebilling",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T15:04:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Animal2404/dsh-axia-cachebilling",
+    "commands": [
+      "dsh plugin --profile web add github:Animal2404/dsh-axia-cachebilling"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

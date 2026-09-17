@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "SeaOf0/dsh-redteam-model",
+  "slug": "seaof0__dsh-redteam-model",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-redteam-model",
+  "title": "dsh-redteam-model",
+  "summary": "给红队和渗透测试提供多种预设工作流，让 AI 按套路干活，省 token 又出活。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "工作流增强",
+    "多Agent协作",
+    "资源优化",
+    "工具集成"
+  ],
+  "version": "1.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "SeaOf0",
+  "repo": "https://github.com/SeaOf0/dsh-redteam-model",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 485,
+  "forks": 42,
+  "pushedAt": "2026-09-16T03:29:55Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:SeaOf0/dsh-redteam-model",
+    "commands": [
+      "dsh plugin --profile web add github:SeaOf0/dsh-redteam-model"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

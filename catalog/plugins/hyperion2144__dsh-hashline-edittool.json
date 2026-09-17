@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "hyperion2144/dsh-hashline-edittool",
+  "slug": "hyperion2144__dsh-hashline-edittool",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hashline-edittool",
+  "title": "dsh-hashline-edittool",
+  "summary": "用行号加哈希定位文件内容，支持精准编辑和撤销上次操作，省去重复读取，提升改文件效率。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "工作区管理",
+    "会话管理",
+    "工作流增强"
+  ],
+  "version": "0.7.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.2",
+    "publishedAt": "2026-09-17T15:12:17Z",
+    "url": "https://github.com/hyperion2144/dsh-hashline-edittool/releases/tag/v0.7.2"
+  },
+  "author": "hyperion2144",
+  "repo": "https://github.com/hyperion2144/dsh-hashline-edittool",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T15:08:12Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hyperion2144/dsh-hashline-edittool",
+    "commands": [
+      "dsh plugin --profile web add github:hyperion2144/dsh-hashline-edittool"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

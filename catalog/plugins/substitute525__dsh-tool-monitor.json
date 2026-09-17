@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "substitute525/dsh-tool-monitor",
+  "slug": "substitute525__dsh-tool-monitor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tool-monitor",
+  "title": "dsh-tool-monitor",
+  "summary": "后台监听文件、命令或WebSocket输出，实时唤醒会话并展示监听结果，方便随时掌握动态。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "消息通知",
+    "自动化",
+    "命令行工具",
+    "可视化"
+  ],
+  "version": "0.3.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "substitute525",
+  "repo": "https://github.com/substitute525/dsh-tool-monitor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T02:23:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@caizhiyuan/dsh-tool-monitor",
+    "commands": [
+      "dsh plugin --profile web add @caizhiyuan/dsh-tool-monitor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

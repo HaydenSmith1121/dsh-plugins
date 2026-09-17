@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "ZRui-C/dsh-minimal-first-turn",
+  "slug": "zrui-c__dsh-minimal-first-turn",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-minimal-first-turn",
+  "title": "dsh-minimal-first-turn",
+  "summary": "让 DeepSeek Harness 根会话的首次模型请求更精简，更贴近官方行为，减少不必要的开销。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "请求优化",
+    "会话精简",
+    "性能提升",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ZRui-C",
+  "repo": "https://github.com/ZRui-C/dsh-minimal-first-turn",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-08-16T03:51:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-minimal-first-turn",
+    "commands": [
+      "dsh plugin --profile web add dsh-minimal-first-turn"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

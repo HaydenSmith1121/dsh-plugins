@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zaimokuza-yoshiteru/dsh-theme-library",
+  "slug": "zaimokuza-yoshiteru__dsh-theme-library",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-theme-library",
+  "title": "dsh-theme-library",
+  "summary": "给 DSH 换动态壁纸主题的插件，网页和桌面端都能用，预览卡片一键切换、自动保存。",
+  "tags": [
+    "dsh-plugin",
+    "主题",
+    "界面美化",
+    "设置面板",
+    "前端增强"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-15T08:15:02Z",
+    "url": "https://github.com/zaimokuza-yoshiteru/dsh-theme-library/releases/tag/v0.4.0"
+  },
+  "author": "zaimokuza-yoshiteru",
+  "repo": "https://github.com/zaimokuza-yoshiteru/dsh-theme-library",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T08:13:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zaimokuza-yoshiteru/dsh-theme-library",
+    "commands": [
+      "dsh plugin --profile web add github:zaimokuza-yoshiteru/dsh-theme-library"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "focksor/dsh-plugin-node-time",
+  "slug": "focksor__dsh-plugin-node-time",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-node-time",
+  "title": "dsh-plugin-node-time",
+  "summary": "在 DSH 网页聊天界面中，鼠标悬停任意节点即可快速查看其开始与结束时间，方便排查耗时与性能问题。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "状态监控",
+    "桌宠",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "focksor",
+  "repo": "https://github.com/focksor/dsh-plugin-node-time",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-01T03:08:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-node-time",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-node-time"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

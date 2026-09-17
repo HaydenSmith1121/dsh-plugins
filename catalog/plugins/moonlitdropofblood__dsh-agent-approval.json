@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "MoonlitDropOfBlood/dsh-agent-approval",
+  "slug": "moonlitdropofblood__dsh-agent-approval",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-approval",
+  "title": "dsh-agent-approval",
+  "summary": "为 DSH 智能体提供自动审批权限，简化操作流程，提升协作效率。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "自动化",
+    "AI 助手",
+    "安全审计",
+    "效率提升"
+  ],
+  "version": "1.5.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.5.0",
+    "publishedAt": "2026-09-06T05:14:36Z",
+    "url": "https://github.com/MoonlitDropOfBlood/dsh-agent-approval/releases/tag/v1.5.0"
+  },
+  "author": "MoonlitDropOfBlood",
+  "repo": "https://github.com/MoonlitDropOfBlood/dsh-agent-approval",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-06T05:14:13Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MoonlitDropOfBlood/dsh-agent-approval",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-agent-approval",
+      "dsh plugin --profile web add https://github.com/MoonlitDropOfBlood/dsh-agent-approval/releases/download/v1.5.0/dsh-agent-approval-1.5.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

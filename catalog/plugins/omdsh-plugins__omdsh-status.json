@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "omdsh-plugins/omdsh-status",
+  "slug": "omdsh-plugins__omdsh-status",
+  "tier": "community",
+  "package": null,
+  "name": "omdsh-status",
+  "title": "omdsh-status",
+  "summary": "在对话界面右上角一眼看清当前项目名、分支和改动数量，方便随时掌握代码状态。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "项目状态",
+    "Git信息",
+    "界面美化"
+  ],
+  "version": "0.2.6",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "omdsh-plugins",
+  "repo": "https://github.com/omdsh-plugins/omdsh-status",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T16:45:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:omdsh-plugins/omdsh-status",
+    "commands": [
+      "npx @omdsh-plugins/omdsh-plughub add omdsh-status",
+      "dsh plugin --profile web add \"$PWD\"",
+      "dsh plugin --profile web remove @omdsh-plugins/omdsh-status"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

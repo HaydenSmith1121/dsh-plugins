@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "dAI-aigc/dsh-wechat",
+  "slug": "dai-aigc__dsh-wechat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wechat",
+  "title": "dsh-wechat",
+  "summary": "把微信联系人接到 DSH 上，每个人独立会话，聊天记录互不打扰。",
+  "tags": [
+    "dsh-plugin",
+    "桥接插件",
+    "工具集成",
+    "会话管理",
+    "消息通知"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dAI-aigc",
+  "repo": "https://github.com/dAI-aigc/dsh-wechat",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T04:41:42Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dAI-aigc/dsh-wechat",
+    "commands": [
+      "dsh plugin --profile web add github:dAI-aigc/dsh-wechat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

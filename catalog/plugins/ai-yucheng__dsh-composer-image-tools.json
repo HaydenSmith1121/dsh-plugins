@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "ai-yucheng/dsh-composer-image-tools",
+  "slug": "ai-yucheng__dsh-composer-image-tools",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-composer-image-tools",
+  "title": "dsh-composer-image-tools",
+  "summary": "给 DSH 聊天输入框加上传图片和区域截图功能，直接注入草稿，纯本地零依赖。",
+  "tags": [
+    "composer",
+    "deepseek-harness",
+    "desktopcapturer",
+    "dsh",
+    "dsh-plugin",
+    "image",
+    "screen-capture",
+    "screenshot",
+    "upload",
+    "会话管理",
+    "效率提升",
+    "零配置",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-21T18:45:44Z",
+    "url": "https://github.com/ai-yucheng/dsh-composer-image-tools/releases/tag/v0.1.0"
+  },
+  "author": "ai-yucheng",
+  "repo": "https://github.com/ai-yucheng/dsh-composer-image-tools",
+  "homepage": "https://github.com/ai-yucheng/dsh-composer-image-tools",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-21T18:39:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ai-yucheng/dsh-composer-image-tools",
+    "commands": [
+      "git clone https://github.com/ai-yucheng/dsh-composer-image-tools.git",
+      "pnpm add dsh-composer-image-tools@link:C:/绝对路径/dsh-composer-image-tools",
+      "pnpm add dsh-composer-image-tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

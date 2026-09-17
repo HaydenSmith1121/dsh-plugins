@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "AHGGG/dsh-side-chat",
+  "slug": "ahggg__dsh-side-chat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-side-chat",
+  "title": "dsh-side-chat",
+  "summary": "在 DeepSeek Harness 中开启侧边对话，选中代码即可追问，不打断主聊天流程。",
+  "tags": [
+    "codex",
+    "codex-desktop",
+    "dsh",
+    "dsh-plugin",
+    "side-chat",
+    "sidechat",
+    "侧边对话",
+    "代码追问",
+    "会话管理"
+  ],
+  "version": "0.7.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.3",
+    "publishedAt": "2026-09-08T13:11:32Z",
+    "url": "https://github.com/AHGGG/dsh-side-chat/releases/tag/v0.7.3"
+  },
+  "author": "AHGGG",
+  "repo": "https://github.com/AHGGG/dsh-side-chat",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 11,
+  "forks": 2,
+  "pushedAt": "2026-09-08T13:11:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AHGGG/dsh-side-chat",
+    "commands": [
+      "dsh plugin --profile web add github:AHGGG/dsh-side-chat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

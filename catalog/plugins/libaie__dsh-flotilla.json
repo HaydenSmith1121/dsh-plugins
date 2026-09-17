@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "libaie/dsh-flotilla",
+  "slug": "libaie__dsh-flotilla",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-flotilla",
+  "title": "dsh-flotilla",
+  "summary": "支持多代码库隔离开发，每个仓库配专属AI助手，中央控制器统一调度模型与任务，全程操作自动留痕。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "multi-repo",
+    "project-onboarding",
+    "workflow-isolation",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "libaie",
+  "repo": "https://github.com/libaie/dsh-flotilla",
+  "homepage": "https://github.com/libaie/onboard-code-projects",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-28T05:23:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:libaie/dsh-flotilla",
+    "commands": [
+      "dsh plugin --profile web add github:libaie/dsh-flotilla"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

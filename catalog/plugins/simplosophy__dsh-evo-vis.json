@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "simplosophy/dsh-evo-vis",
+  "slug": "simplosophy__dsh-evo-vis",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-evo-vis",
+  "title": "dsh-evo-vis",
+  "summary": "把 DeepSeek Harness 的每次组件活动实时变成一座会进化的深海生物圈，直观又好看地看到系统在忙什么。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "实时可视化",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "simplosophy",
+  "repo": "https://github.com/simplosophy/dsh-evo-vis",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T13:07:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:simplosophy/dsh-evo-vis",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-evo-vis",
+      "dsh plugin --profile web add github:simplosophy/dsh-evo-vis"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

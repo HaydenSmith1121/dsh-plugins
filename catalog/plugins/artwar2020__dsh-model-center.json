@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "artwar2020/dsh-model-center",
+  "slug": "artwar2020__dsh-model-center",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-center",
+  "title": "dsh-model-center",
+  "summary": "把免费模型、真实可用性、价格余额和用量统计聚合到一张卡片，一键切换模型，省心省钱。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "状态监控",
+    "资源优化"
+  ],
+  "version": "1.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.1",
+    "publishedAt": "2026-08-25T05:40:14Z",
+    "url": "https://github.com/artwar2020/dsh-model-center/releases/tag/v1.0.1"
+  },
+  "author": "artwar2020",
+  "repo": "https://github.com/artwar2020/dsh-model-center",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-25T05:40:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:artwar2020/dsh-model-center",
+    "commands": [
+      "dsh plugin --profile web add github:artwar2020/dsh-model-center"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

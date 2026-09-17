@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "shenhuanageshei/dsh-preset-zombie-guard",
+  "slug": "shenhuanageshei__dsh-preset-zombie-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-preset-zombie-guard",
+  "title": "dsh-preset-zombie-guard",
+  "summary": "自动清理空白僵尸会话，非空会话给出提醒，删除预设前先查依赖，避免会话恢复时装配出错。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "自动化",
+    "状态监控",
+    "安全审计",
+    "资源优化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-01T10:13:59Z",
+    "url": "https://github.com/shenhuanageshei/dsh-preset-zombie-guard/releases/tag/v0.1.0"
+  },
+  "author": "shenhuanageshei",
+  "repo": "https://github.com/shenhuanageshei/dsh-preset-zombie-guard",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T06:22:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shenhuanageshei/dsh-preset-zombie-guard",
+    "commands": [
+      "dsh plugin --profile web add github:shenhuanageshei/dsh-preset-zombie-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

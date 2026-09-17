@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "kirkchinese/CiteCiter",
+  "slug": "kirkchinese__citeciter",
+  "tier": "community",
+  "package": null,
+  "name": "CiteCiter",
+  "title": "CiteCiter",
+  "summary": "选中 AI 的回答或思考内容就能随时追问、学习和纠偏，让对话更靠谱。",
+  "tags": [
+    "ai-agent",
+    "citeciter",
+    "context-management",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "learning-tools",
+    "llm",
+    "reasoning",
+    "AI 助手",
+    "效率提升",
+    "证据链",
+    "学习工具"
+  ],
+  "version": "0.8.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.2",
+    "publishedAt": "2026-09-14T06:29:19Z",
+    "url": "https://github.com/kirkchinese/CiteCiter/releases/tag/v0.8.2"
+  },
+  "author": "kirkchinese",
+  "repo": "https://github.com/kirkchinese/CiteCiter",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 1,
+  "pushedAt": "2026-09-14T06:32:42Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kirkchinese/CiteCiter",
+    "commands": [
+      "dsh plugin --profile web add github:kirkchinese/CiteCiter"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

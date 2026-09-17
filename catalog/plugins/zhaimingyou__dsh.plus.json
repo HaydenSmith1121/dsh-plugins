@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zhaimingyou/dsh.plus",
+  "slug": "zhaimingyou__dsh.plus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh.plus",
+  "title": "dsh.plus",
+  "summary": "在 DeepSeek Harness 里直接浏览 dsh.plus 精选插件目录，方便你发现和安装好用的插件。",
+  "tags": [
+    "catalog",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "marketplace",
+    "插件管理",
+    "市场浏览"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhaimingyou",
+  "repo": "https://github.com/zhaimingyou/dsh.plus",
+  "homepage": "https://dsh.plus",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T15:03:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhaimingyou/dsh.plus",
+    "commands": [
+      "dsh plugin --profile web add github:zhaimingyou/dsh.plus",
+      "dsh plugin --profile web add dsh.plus",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

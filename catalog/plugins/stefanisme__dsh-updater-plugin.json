@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "StefanIsMe/dsh-updater-plugin",
+  "slug": "stefanisme__dsh-updater-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-updater-plugin",
+  "title": "dsh-updater-plugin",
+  "summary": "一键更新 DSH 源码，自动保留本地插件和改动，草稿不丢。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "self-updater",
+    "插件管理",
+    "自动化",
+    "效率提升",
+    "工作区管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "StefanIsMe",
+  "repo": "https://github.com/StefanIsMe/dsh-updater-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T09:52:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:StefanIsMe/dsh-updater-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:StefanIsMe/dsh-updater-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

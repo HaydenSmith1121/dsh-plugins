@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "ash-qw/dsh-theme-prts",
+  "slug": "ash-qw__dsh-theme-prts",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-theme-prts",
+  "title": "dsh-theme-prts",
+  "summary": "将 Harness 界面变成罗德岛终端，工作区、会话和对话都按明日方舟风格重新包装，纯个人同人主题。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "会话管理",
+    "可视化",
+    "零配置"
+  ],
+  "version": "0.1.92",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ash-qw",
+  "repo": "https://github.com/ash-qw/dsh-theme-prts",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T16:10:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ash-qw/dsh-theme-prts",
+    "commands": [
+      "dsh plugin --profile web add github:ash-qw/dsh-theme-prts"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

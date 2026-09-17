@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "loudMore/dsh-drop-to-path",
+  "slug": "loudmore__dsh-drop-to-path",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-drop-to-path",
+  "title": "dsh-drop-to-path",
+  "summary": "把图片、PDF、Office 文件、压缩包、音视频直接拖进 DeepSeek Harness，自动转成工作区路径发给纯文本模型，图片还能保留原生预览体验。",
+  "tags": [
+    "agent",
+    "attachments",
+    "deepseek",
+    "deepseek-harness",
+    "drag-and-drop",
+    "dsh",
+    "dsh-plugin",
+    "file-upload",
+    "plugin",
+    "text-only-llm",
+    "vision",
+    "文件管理",
+    "多模态"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-14T10:45:43Z",
+    "url": "https://github.com/loudMore/dsh-drop-to-path/releases/tag/v0.1.0"
+  },
+  "author": "loudMore",
+  "repo": "https://github.com/loudMore/dsh-drop-to-path",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 11,
+  "forks": 2,
+  "pushedAt": "2026-08-14T12:11:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:loudMore/dsh-drop-to-path",
+    "commands": [
+      "dsh plugin --profile web add github:loudMore/dsh-drop-to-path"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "LAN-TINA-WS/dsh-gui-customization",
+  "slug": "lan-tina-ws__dsh-gui-customization",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-gui-customization",
+  "title": "dsh-gui-customization",
+  "summary": "给 DSH 界面换装，改主题配色、自定义图片或视频背景，还能调氛围灯，让界面更有个性。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "skin",
+    "theme",
+    "界面美化",
+    "主题",
+    "背景图",
+    "视频背景",
+    "氛围灯"
+  ],
+  "version": "0.6.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.4",
+    "publishedAt": "2026-09-10T06:53:18Z",
+    "url": "https://github.com/LAN-TINA-WS/dsh-gui-customization/releases/tag/v0.6.4"
+  },
+  "author": "LAN-TINA-WS",
+  "repo": "https://github.com/LAN-TINA-WS/dsh-gui-customization",
+  "homepage": "https://github.com/LAN-TINA-WS/dsh-gui-customization/releases/latest",
+  "license": "MIT",
+  "stars": 18,
+  "forks": 2,
+  "pushedAt": "2026-09-10T07:19:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LAN-TINA-WS/dsh-gui-customization",
+    "commands": [
+      "dsh plugin --profile web add github:LAN-TINA-WS/dsh-gui-customization",
+      "dsh plugin --profile web add dsh-gui-customization",
+      "dsh plugin --profile web add link:<仓库>/packages/dsh-gui-customization"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "furinko/DSHOME",
+  "slug": "furinko__dshome",
+  "tier": "community",
+  "package": null,
+  "name": "DSHOME",
+  "title": "DSHOME",
+  "summary": "基于 DeepSeek Harness 的个人桌面客户端，自带主题、插件市场和心智图谱，装好就能用。",
+  "tags": [
+    "deepseek",
+    "dsh",
+    "electron",
+    "harness",
+    "personal-client",
+    "自动化",
+    "插件管理",
+    "界面美化",
+    "主题",
+    "跨设备"
+  ],
+  "version": "0.3.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.4",
+    "publishedAt": "2026-09-15T02:51:37Z",
+    "url": "https://github.com/furinko/DSHOME/releases/tag/v0.3.4"
+  },
+  "author": "furinko",
+  "repo": "https://github.com/furinko/DSHOME",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T12:50:23Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:furinko/DSHOME",
+    "commands": [
+      "dsh plugin --profile web add github:furinko/DSHOME"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

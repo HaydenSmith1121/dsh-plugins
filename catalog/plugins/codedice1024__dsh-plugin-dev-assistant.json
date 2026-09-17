@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "CodeDice1024/dsh-plugin-dev-assistant",
+  "slug": "codedice1024__dsh-plugin-dev-assistant",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-dev-assistant",
+  "title": "dsh-plugin-dev-assistant",
+  "summary": "对话式引导，帮你从零开始创建、测试并发布 DSH 插件，开发效率翻倍。",
+  "tags": [
+    "developer-tools",
+    "dsh-plugin",
+    "plugin-scaffold",
+    "工作流增强",
+    "命令行工具",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.1.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "CodeDice1024",
+  "repo": "https://github.com/CodeDice1024/dsh-plugin-dev-assistant",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T01:33:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CodeDice1024/dsh-plugin-dev-assistant",
+    "commands": [
+      "dsh plugin --profile web add github:CodeDice1024/dsh-plugin-dev-assistant"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

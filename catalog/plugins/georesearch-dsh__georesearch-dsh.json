@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "georesearch-dsh/georesearch-dsh",
+  "slug": "georesearch-dsh__georesearch-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "georesearch-dsh",
+  "title": "georesearch-dsh",
+  "summary": "为 DeepSeek Harness 打造的证据驱动科研助手，帮你自动检索、验证并生成可复现的科学结论。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "模型配置",
+    "工作流增强",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-30T15:30:02Z",
+    "url": "https://github.com/georesearch-dsh/georesearch-dsh/releases/tag/v0.1.0"
+  },
+  "author": "georesearch-dsh",
+  "repo": "https://github.com/georesearch-dsh/georesearch-dsh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-28T17:55:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:georesearch-dsh/georesearch-dsh",
+    "commands": [
+      "dsh plugin --profile web add github:georesearch-dsh/georesearch-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

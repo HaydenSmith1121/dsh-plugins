@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "dsh-tauri/deepseek-harness-desktop",
+  "slug": "dsh-tauri__deepseek-harness-desktop",
+  "tier": "community",
+  "package": null,
+  "name": "DeepSeek Harness Desktop",
+  "title": "DeepSeek Harness Desktop",
+  "summary": "把 DeepSeek Harness 打包成桌面应用，双击即用，不用装 Node.js 和 Docker。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "desktop",
+    "dsh",
+    "dsh-desktop",
+    "dsh-plugin",
+    "tauri",
+    "零配置",
+    "自动化",
+    "工具集成",
+    "跨设备"
+  ],
+  "version": "0.15.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.15.1",
+    "publishedAt": "2026-09-16T17:15:53Z",
+    "url": "https://github.com/dsh-tauri/deepseek-harness-desktop/releases/tag/v0.15.1"
+  },
+  "author": "dsh-tauri",
+  "repo": "https://github.com/dsh-tauri/deepseek-harness-desktop",
+  "homepage": "https://dshtauri.mintlify.site",
+  "license": "MIT",
+  "stars": 2164,
+  "forks": 136,
+  "pushedAt": "2026-09-16T17:00:12Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dsh-tauri/deepseek-harness-desktop",
+    "commands": [
+      "brew install dsh-tauri-desk/desktop/deepseek-harness"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

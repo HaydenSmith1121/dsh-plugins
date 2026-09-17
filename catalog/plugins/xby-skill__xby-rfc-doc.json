@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-rfc-doc",
+  "slug": "xby-skill__xby-rfc-doc",
+  "tier": "community",
+  "package": null,
+  "name": "xby-rfc-doc",
+  "title": "xby-rfc-doc",
+  "summary": "从ietf.org获取、搜索和阅读RFC文档，方便在聊天中直接查阅技术标准。",
+  "tags": [
+    "dsh-plugin",
+    "桌宠",
+    "效率提升",
+    "零配置",
+    "工作流增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-rfc-doc",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:32:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-rfc-doc",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-rfc-doc",
+      "dsh plugin --profile web add /absolute/path/to/xby-rfc-doc"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

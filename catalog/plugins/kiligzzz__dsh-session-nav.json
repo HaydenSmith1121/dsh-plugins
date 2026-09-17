@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "kiligzzz/dsh-session-nav",
+  "slug": "kiligzzz__dsh-session-nav",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-nav",
+  "title": "dsh-session-nav",
+  "summary": "为 DeepSeek Harness 网页界面添加钢琴键式会话导航栏，每个用户消息一个键，悬停预览、点击跳转，快速浏览完整对话历史。",
+  "tags": [
+    "conversation",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "navigation",
+    "piano",
+    "plugin",
+    "会话管理",
+    "效率提升",
+    "前端增强",
+    "零配置"
+  ],
+  "version": "0.1.12",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.12",
+    "publishedAt": "2026-08-30T08:19:51Z",
+    "url": "https://github.com/kiligzzz/dsh-session-nav/releases/tag/v0.1.12"
+  },
+  "author": "kiligzzz",
+  "repo": "https://github.com/kiligzzz/dsh-session-nav",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-08-30T08:21:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kiligzzz/dsh-session-nav",
+    "commands": [
+      "dsh plugin --profile web add github:kiligzzz/dsh-session-nav"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

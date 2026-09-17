@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "vinokok/dsh-external-access-guide",
+  "slug": "vinokok__dsh-external-access-guide",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-external-access-guide",
+  "title": "dsh-external-access-guide",
+  "summary": "在远程VPS上一键部署DSH，通过HTTPS安全开放外网访问，支持自动安装、升级和回滚。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "零配置",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "vinokok",
+  "repo": "https://github.com/vinokok/dsh-external-access-guide",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T13:07:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:vinokok/dsh-external-access-guide",
+    "commands": [
+      "dsh plugin --profile web add github:vinokok/dsh-external-access-guide"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

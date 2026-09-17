@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "wannanbigpig/dsh-usage-stats",
+  "slug": "wannanbigpig__dsh-usage-stats",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage-stats",
+  "title": "dsh-usage-stats",
+  "summary": "在 DeepSeek Harness 网页端随时查看余额、Token 用量和费用统计，帮你掌握花费趋势。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "资源优化",
+    "状态监控",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wannanbigpig",
+  "repo": "https://github.com/wannanbigpig/dsh-usage-stats",
+  "homepage": "http://dsh-usage-stats.wannanbigpig.com/",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T08:08:39Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-usage-stats",
+      "dsh plugin --profile web add .",
+      "dsh plugin --profile web add @wannanbigpig/dsh-usage-stats"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

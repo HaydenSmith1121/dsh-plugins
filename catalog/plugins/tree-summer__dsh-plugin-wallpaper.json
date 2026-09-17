@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "Tree-Summer/dsh-plugin-wallpaper",
+  "slug": "tree-summer__dsh-plugin-wallpaper",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-wallpaper",
+  "title": "dsh-plugin-wallpaper",
+  "summary": "给 DSH 网页界面换上自定义壁纸，还能分别调整主界面、侧边栏、输入框和消息气泡的显示透明度。",
+  "tags": [
+    "主题",
+    "壁纸设置",
+    "自定义背景",
+    "透明度调节"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-14T07:42:32Z",
+    "url": "https://github.com/Tree-Summer/dsh-plugin-wallpaper/releases/tag/v0.1.0"
+  },
+  "author": "Tree-Summer",
+  "repo": "https://github.com/Tree-Summer/dsh-plugin-wallpaper",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-14T07:21:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-wallpaper",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-wallpaper",
+      "dsh plugin --profile web add ./dsh-plugin-wallpaper-0.1.0.tgz",
+      "dsh plugin --profile web add github:<你的用户名>/dsh-plugin-wallpaper"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

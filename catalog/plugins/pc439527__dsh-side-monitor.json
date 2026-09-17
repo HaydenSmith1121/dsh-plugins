@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "pc439527/dsh-side-monitor",
+  "slug": "pc439527__dsh-side-monitor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-side-monitor",
+  "title": "dsh-side-monitor",
+  "summary": "在 DSH 侧边栏一键打开系统监控面板，实时查看主机、进程和 Docker 状态，只读安全不干扰运行。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "安全审计",
+    "效率提升"
+  ],
+  "version": "0.3.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "pc439527",
+  "repo": "https://github.com/pc439527/dsh-side-monitor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-31T07:42:48Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:pc439527/dsh-side-monitor",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-side-monitor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

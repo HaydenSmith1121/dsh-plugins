@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "caopu16/dsh-llm-kiro",
+  "slug": "caopu16__dsh-llm-kiro",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-kiro",
+  "title": "dsh-llm-kiro",
+  "summary": "把 Kiro 的 Claude 模型接进 DeepSeek Harness，让你直接用 Claude 系列模型跑任务。",
+  "tags": [
+    "claude",
+    "deepseek",
+    "dsh-plugin",
+    "kiro",
+    "模型配置",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "caopu16",
+  "repo": "https://github.com/caopu16/dsh-llm-kiro",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-27T02:19:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:caopu16/dsh-llm-kiro",
+    "commands": [
+      "dsh plugin --profile web add github:caopu16/dsh-llm-kiro",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

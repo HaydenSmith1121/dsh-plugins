@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "firestige/wsr-dsh",
+  "slug": "firestige__wsr-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "wsr-dsh",
+  "title": "wsr-dsh",
+  "summary": "为 DeepSeek Harness 提供 WSR 执行、工作室及套件集成，方便你直接运行和管理工作流。",
+  "tags": [
+    "agent",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "workflow",
+    "wsr",
+    "工作流增强",
+    "AI 助手",
+    "零配置",
+    "模型配置"
+  ],
+  "version": "0.2.12",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "0.2.12",
+    "publishedAt": "2026-09-05T15:23:28Z",
+    "url": "https://github.com/firestige/crystra-dsh/releases/tag/0.2.12"
+  },
+  "author": "firestige",
+  "repo": "https://github.com/firestige/wsr-dsh",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T15:23:27Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:firestige/wsr-dsh",
+    "commands": [
+      "dsh plugin --profile web add github:firestige/wsr-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

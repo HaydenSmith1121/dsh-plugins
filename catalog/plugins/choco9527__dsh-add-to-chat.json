@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "choco9527/dsh-add-to-chat",
+  "slug": "choco9527__dsh-add-to-chat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-add-to-chat",
+  "title": "dsh-add-to-chat",
+  "summary": "在助手回复中选中文字，一键添加到对话，作为上下文继续提问，实现极简的注释式交互。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "choco9527",
+  "repo": "https://github.com/choco9527/dsh-add-to-chat",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T09:58:42Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:choco9527/dsh-add-to-chat",
+    "commands": [
+      "dsh plugin --profile web add github:choco9527/dsh-add-to-chat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

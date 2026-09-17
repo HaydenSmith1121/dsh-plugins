@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "qewregrfhnm/dsh-session-manager",
+  "slug": "qewregrfhnm__dsh-session-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-manager",
+  "title": "dsh-session-manager",
+  "summary": "为 DSH 网页版提供完整的会话管理能力，支持删除回收、恢复、重命名、导出、跨工作区移动及批量操作，全程本地运行。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "session-manager",
+    "workspace",
+    "会话管理",
+    "工作区管理",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.4.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.1",
+    "publishedAt": "2026-08-22T14:37:40Z",
+    "url": "https://github.com/qewregrfhnm/dsh-session-manager/releases/tag/v0.4.1"
+  },
+  "author": "qewregrfhnm",
+  "repo": "https://github.com/qewregrfhnm/dsh-session-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-22T14:51:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qewregrfhnm/dsh-session-manager",
+    "commands": [
+      "dsh plugin --profile web add 'https://github.com/qewregrfhnm/dsh-session-manager/releases/download/v0.4.1/dsh-session-manager-0.4.1.tgz'",
+      "dsh plugin --profile web add 'github:qewregrfhnm/dsh-session-manager",
+      "dsh plugin --profile web add /absolute/path/to/dsh-session-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

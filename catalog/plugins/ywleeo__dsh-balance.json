@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "ywleeo/dsh-balance",
+  "slug": "ywleeo__dsh-balance",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-balance",
+  "title": "dsh-balance",
+  "summary": "在 dsh 网页对话底部显示 DeepSeek 账户余额，一行小字不占地方，方便随时查看剩余额度。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ywleeo",
+  "repo": "https://github.com/ywleeo/dsh-balance",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T09:43:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ywleeo/dsh-balance",
+    "commands": [
+      "pnpm add file:/path/to/dsh-balance"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

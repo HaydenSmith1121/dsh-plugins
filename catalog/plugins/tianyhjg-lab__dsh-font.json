@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "tianyhjg-lab/dsh-font",
+  "slug": "tianyhjg-lab__dsh-font",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-font",
+  "title": "dsh-font",
+  "summary": "给 DeepSeek Harness 界面换字体的神器，99 款界面字体加 31 款代码字体，中英文自动搭配，即选即生效，刷新不丢。",
+  "tags": [
+    "dsh-plugin",
+    "字体切换",
+    "主题",
+    "代码字体",
+    "中英搭配",
+    "本地持久化"
+  ],
+  "version": "1.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "tianyhjg-lab",
+  "repo": "https://github.com/tianyhjg-lab/dsh-font",
+  "homepage": null,
+  "license": null,
+  "stars": 12,
+  "forks": 2,
+  "pushedAt": "2026-08-14T16:26:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tianyhjg-lab/dsh-font",
+    "commands": [
+      "dsh plugin --profile web add github:tianyhjg-lab/dsh-font"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

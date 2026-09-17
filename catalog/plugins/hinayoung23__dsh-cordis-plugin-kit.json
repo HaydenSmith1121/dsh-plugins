@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "hinayoung23/dsh-cordis-plugin-kit",
+  "slug": "hinayoung23__dsh-cordis-plugin-kit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cordis-plugin-kit",
+  "title": "dsh-cordis-plugin-kit",
+  "summary": "离线搞定 Cordis/DSH 插件开发，提供规范检查、脚手架和调试工具，让插件开发更省心。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin-development",
+    "static-analysis",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.2.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hinayoung23",
+  "repo": "https://github.com/hinayoung23/dsh-cordis-plugin-kit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-05T11:31:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-cordis-plugin-kit",
+    "commands": [
+      "pnpm add -D dsh-cordis-plugin-kit",
+      "dsh plugin --profile web add dsh-cordis-plugin-kit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

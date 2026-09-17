@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "6Mikao9/dsh-wsl-workspace",
+  "slug": "6mikao9__dsh-wsl-workspace",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wsl-workspace",
+  "title": "dsh-wsl-workspace",
+  "summary": "不用在 WSL 里再装一遍 dsh，装好插件就能在 GUI 里直接添加 WSL 工作区，开箱即用。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "工作区管理",
+    "零配置",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "0.4.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "6Mikao9",
+  "repo": "https://github.com/6Mikao9/dsh-wsl-workspace",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 49,
+  "forks": 9,
+  "pushedAt": "2026-09-11T12:12:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:6Mikao9/dsh-wsl-workspace",
+    "commands": [
+      "dsh plugin --profile web add github:6Mikao9/dsh-wsl-workspace"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

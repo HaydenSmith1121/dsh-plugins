@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "lusblead/dsh-Kingdom",
+  "slug": "lusblead__dsh-kingdom",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-Kingdom",
+  "title": "dsh-Kingdom",
+  "summary": "给 Agent 分配角色、权限和领地，让每次执行与裁决都有账本可查、可追溯。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "governance",
+    "multi-agent",
+    "多Agent协作",
+    "数据可审计",
+    "工作区管理",
+    "状态持久化"
+  ],
+  "version": "2.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.0.0",
+    "publishedAt": "2026-09-13T03:16:36Z",
+    "url": "https://github.com/lusblead/dsh-Kingdom/releases/tag/v2.0.0"
+  },
+  "author": "lusblead",
+  "repo": "https://github.com/lusblead/dsh-Kingdom",
+  "homepage": null,
+  "license": "AGPL-3.0",
+  "stars": 15,
+  "forks": 0,
+  "pushedAt": "2026-09-13T03:14:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lusblead/dsh-Kingdom",
+    "commands": [
+      "dsh plugin --profile web add github:lusblead/dsh-Kingdom"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "fewoot/dsh-whale-particles",
+  "slug": "fewoot__dsh-whale-particles",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-whale-particles",
+  "title": "dsh-whale-particles",
+  "summary": "给 DSH Web 界面加上点阵鲸鱼或照片背景，粒子会独立柔和游动，支持鼠标扰动和自动屏保模式。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "可视化",
+    "前端增强",
+    "娱乐互动",
+    "界面美化"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-12T08:21:47Z",
+    "url": "https://github.com/fewoot/dsh-whale-particles/releases/tag/v0.3.0"
+  },
+  "author": "fewoot",
+  "repo": "https://github.com/fewoot/dsh-whale-particles",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T04:02:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fewoot/dsh-whale-particles",
+    "commands": [
+      "dsh plugin --profile desktop add ./dsh-whale-particles"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

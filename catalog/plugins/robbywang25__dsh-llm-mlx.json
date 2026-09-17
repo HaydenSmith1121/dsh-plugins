@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "robbywang25/dsh-llm-mlx",
+  "slug": "robbywang25__dsh-llm-mlx",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-mlx",
+  "title": "dsh-llm-mlx",
+  "summary": "在本地跑 MLX-LM 模型，作为 DeepSeek Harness 的推理后端，默认仅本机访问，可一键启动管理服务。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "local-ai",
+    "mlx",
+    "mlx-lm",
+    "模型配置",
+    "资源优化",
+    "AI 助手"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-06T03:43:25Z",
+    "url": "https://github.com/robbywang25/dsh-llm-mlx/releases/tag/v0.4.0"
+  },
+  "author": "robbywang25",
+  "repo": "https://github.com/robbywang25/dsh-llm-mlx",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T03:43:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:robbywang25/dsh-llm-mlx",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/robbywang25/dsh-llm-mlx/releases/download/v0.4.0/dsh-llm-mlx-0.4.0.tgz",
+      "dsh plugin --profile desktop add https://github.com/robbywang25/dsh-llm-mlx/releases/download/v0.4.0/dsh-llm-mlx-0.4.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

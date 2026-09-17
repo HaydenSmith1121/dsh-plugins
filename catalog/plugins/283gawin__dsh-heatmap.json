@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "283Gawin/dsh-heatmap",
+  "slug": "283gawin__dsh-heatmap",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-heatmap",
+  "title": "dsh-heatmap",
+  "summary": "在 DSH 侧边栏常驻显示近 90 天活动热力图，可切换提交/Token/花费维度，并实时统计今日消耗与模型费用。",
+  "tags": [
+    "activity-tracker",
+    "dsh",
+    "dsh-plugin",
+    "heatmap",
+    "token-usage",
+    "活动热力图",
+    "成本控制",
+    "侧边栏插件"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "283Gawin",
+  "repo": "https://github.com/283Gawin/dsh-heatmap",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-14T16:17:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:283Gawin/dsh-heatmap",
+    "commands": [
+      "dsh plugin --profile web add github:283Gawin/dsh-heatmap"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "SuperPaiGu/dsh-desktop",
+  "slug": "superpaigu__dsh-desktop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-desktop",
+  "title": "dsh-desktop",
+  "summary": "给 DSH 装个桌面窗口，双击图标就能用，不用开浏览器也不用敲命令。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "快捷操作",
+    "工具集成",
+    "前端增强"
+  ],
+  "version": "0.1.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.9",
+    "publishedAt": "2026-09-12T16:06:37Z",
+    "url": "https://github.com/SuperPaiGu/dsh-desktop/releases/tag/v0.1.9"
+  },
+  "author": "SuperPaiGu",
+  "repo": "https://github.com/SuperPaiGu/dsh-desktop",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T16:24:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:SuperPaiGu/dsh-desktop",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh",
+      "dsh plugin --profile web add ./dsh-desktop-0.1.3.tgz",
+      "dsh plugin --profile web remove dsh-desktop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

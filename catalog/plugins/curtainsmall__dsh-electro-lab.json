@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "curtainsmall/dsh-electro-lab",
+  "slug": "curtainsmall__dsh-electro-lab",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-electro-lab",
+  "title": "dsh-electro-lab",
+  "summary": "为 DeepSeek Harness 提供电气电子计算能力，快速完成电路分析、元器件参数计算等专业任务。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "效率提升",
+    "零配置",
+    "命令行工具"
+  ],
+  "version": "0.13.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "curtainsmall",
+  "repo": "https://github.com/curtainsmall/dsh-electro-lab",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T10:13:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-electro-lab",
+    "commands": [
+      "dsh plugin --profile web add dsh-electro-lab"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

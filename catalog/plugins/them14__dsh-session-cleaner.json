@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "TheM14/dsh-session-cleaner",
+  "slug": "them14__dsh-session-cleaner",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-cleaner",
+  "title": "dsh-session-cleaner",
+  "summary": "管理已归档会话，支持一键恢复、安全删除和清理残留，还能无缝续接新预设，让会话管理更省心。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "会话管理",
+    "插件管理",
+    "效率提升",
+    "工作区管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "0.1.0",
+    "publishedAt": "2026-08-21T09:43:00Z",
+    "url": "https://github.com/TheM14/dsh-session-cleaner/releases/tag/0.1.0"
+  },
+  "author": "TheM14",
+  "repo": "https://github.com/TheM14/dsh-session-cleaner",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-21T09:43:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TheM14/dsh-session-cleaner",
+    "commands": [
+      "dsh plugin --profile web add github:TheM14/dsh-session-cleaner"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "NOirBRight/dsh-llm-opencode-go",
+  "slug": "noirbright__dsh-llm-opencode-go",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-opencode-go",
+  "title": "dsh-llm-opencode-go",
+  "summary": "为 DeepSeek Harness 接入 OpenCode Go 模型，自动按模型选择接口，即插即用。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "零配置",
+    "模型适配",
+    "工作流增强"
+  ],
+  "version": "0.1.29",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.29",
+    "publishedAt": "2026-09-14T16:43:12Z",
+    "url": "https://github.com/NOirBRight/dsh-llm-opencode-go/releases/tag/v0.1.29"
+  },
+  "author": "NOirBRight",
+  "repo": "https://github.com/NOirBRight/dsh-llm-opencode-go",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-14T16:43:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:NOirBRight/dsh-llm-opencode-go",
+    "commands": [
+      "dsh plugin --profile web add github:NOirBRight/dsh-llm-opencode-go"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "guo6x/dsh-pilot",
+  "slug": "guo6x__dsh-pilot",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pilot",
+  "title": "dsh-pilot",
+  "summary": "让 DSH 智能体拥有双手，直接在聊天中驱动真实浏览器（Edge/Chrome），支持点击、独立会话和实时驾驶舱面板，无需额外依赖或密钥。",
+  "tags": [
+    "agent",
+    "browser-automation",
+    "cdp",
+    "deepseek-harness",
+    "dsh-plugin",
+    "自动化",
+    "AI工具",
+    "状态监控",
+    "零配置"
+  ],
+  "version": "0.7.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "guo6x",
+  "repo": "https://github.com/guo6x/dsh-pilot",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 20,
+  "forks": 1,
+  "pushedAt": "2026-09-13T05:04:55Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:guo6x/dsh-pilot",
+    "commands": [
+      "dsh plugin --profile web add github:guo6x/dsh-pilot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

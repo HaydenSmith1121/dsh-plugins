@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "xiyi123465/dsh-usage-calendar",
+  "slug": "xiyi123465__dsh-usage-calendar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage-calendar",
+  "title": "dsh-usage-calendar",
+  "summary": "在侧边栏常驻显示DeepSeek账户余额，点击打开日历面板查看每日花费、token用量和缓存命中率，支持按日期查看分模型明细。",
+  "tags": [
+    "balance",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "状态监控",
+    "可视化",
+    "模型配置",
+    "插件管理"
+  ],
+  "version": "0.1.5",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xiyi123465",
+  "repo": "https://github.com/xiyi123465/dsh-usage-calendar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T16:56:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiyi123465/dsh-usage-calendar",
+    "commands": [
+      "dsh plugin --profile web add github:xiyi123465/dsh-usage-calendar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

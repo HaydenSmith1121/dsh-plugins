@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "shyuan-hub/dsh-compact-button",
+  "slug": "shyuan-hub__dsh-compact-button",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-compact-button",
+  "title": "dsh-compact-button",
+  "summary": "上下文快满时一键压缩早期对话为摘要，腾出空间继续聊，省心省力。",
+  "tags": [
+    "awesome-dsh-plugin",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "会话管理",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "4.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v4.0.1",
+    "publishedAt": "2026-09-07T12:59:34Z",
+    "url": "https://github.com/shyuan-hub/dsh-compact-button/releases/tag/v4.0.1"
+  },
+  "author": "shyuan-hub",
+  "repo": "https://github.com/shyuan-hub/dsh-compact-button",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-07T12:59:34Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-compact-button@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-compact-button@latest",
+      "git clone https://github.com/shyuan-hub/dsh-compact-button.git && cd dsh-compact-button",
+      "dsh plugin --profile web add \"file:<你的本地目录>/dsh-compact-button-0.2.0.tgz\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

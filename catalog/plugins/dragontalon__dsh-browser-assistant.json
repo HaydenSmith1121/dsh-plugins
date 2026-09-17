@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "dragonTalon/dsh-browser-assistant",
+  "slug": "dragontalon__dsh-browser-assistant",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-browser-assistant",
+  "title": "dsh-browser-assistant",
+  "summary": "把 dsh 变成浏览器插件，在网页里直接调用 AI 助手，边浏览边对话。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "桥接插件",
+    "AI 助手",
+    "工具集成",
+    "前端增强"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "bridge-dsh@0.2.0",
+    "publishedAt": "2026-09-15T16:43:01Z",
+    "url": "https://github.com/dragonTalon/dsh-browser-assistant/releases/tag/bridge-dsh%400.2.0"
+  },
+  "author": "dragonTalon",
+  "repo": "https://github.com/dragonTalon/dsh-browser-assistant",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T16:48:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dragonTalon/dsh-browser-assistant",
+    "commands": [
+      "dsh plugin --profile web add -w \"bridge-dsh@0.2.0\" --config.minimumReleaseAge=0"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

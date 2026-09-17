@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "Tencent/BrowserSkill",
+  "slug": "tencent__browserskill",
+  "tier": "community",
+  "package": null,
+  "name": "BrowserSkill",
+  "title": "BrowserSkill",
+  "summary": "让 AI 助手直接用你已登录的浏览器干活，不打断你的操作，支持命令行和扩展。",
+  "tags": [
+    "agent",
+    "browser-use",
+    "dsh-plugin",
+    "桌面自动化",
+    "AI 助手",
+    "命令行工具",
+    "浏览器扩展"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "cli-v0.3.0",
+    "publishedAt": "2026-09-17T02:22:24Z",
+    "url": "https://github.com/Tencent/BrowserSkill/releases/tag/cli-v0.3.0"
+  },
+  "author": "Tencent",
+  "repo": "https://github.com/Tencent/BrowserSkill",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2919,
+  "forks": 212,
+  "pushedAt": "2026-09-16T12:22:52Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Tencent/BrowserSkill",
+    "commands": [
+      "dsh plugin --profile web add github:Tencent/BrowserSkill"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

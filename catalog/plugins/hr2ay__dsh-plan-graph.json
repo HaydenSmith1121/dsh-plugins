@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "HR2AY/DSH-Plan-Graph",
+  "slug": "hr2ay__dsh-plan-graph",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-Plan-Graph",
+  "title": "DSH-Plan-Graph",
+  "summary": "把 DeepSeek Harness 会话中的工具调用和消息流画成交互式流程图，方便直观查看执行轨迹。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "thread",
+    "trajectory",
+    "visualization",
+    "轨迹可视化",
+    "交互式流程图",
+    "会话管理",
+    "工具集成"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "HR2AY",
+  "repo": "https://github.com/HR2AY/DSH-Plan-Graph",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 16,
+  "forks": 1,
+  "pushedAt": "2026-08-16T06:00:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:HR2AY/DSH-Plan-Graph",
+    "commands": [
+      "dsh plugin --profile demo add ./plan-graph-bundle"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

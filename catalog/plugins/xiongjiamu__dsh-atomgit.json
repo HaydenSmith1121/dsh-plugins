@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "xiongjiamu/dsh-atomgit",
+  "slug": "xiongjiamu__dsh-atomgit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-atomgit",
+  "title": "dsh-atomgit",
+  "summary": "在 AtomGit 上托管和管理代码，内置 plan/implement/review/merge 工作流、ag 命令行和 GitCode MCP 工具。",
+  "tags": [
+    "atomgit",
+    "atomgit-cli",
+    "dsh-plugin",
+    "dsh-plugins",
+    "gitcode",
+    "gitcode-cli",
+    "gitcode-mpc",
+    "工具集成",
+    "命令行工具",
+    "工作流增强",
+    "集中仓库"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xiongjiamu",
+  "repo": "https://github.com/xiongjiamu/dsh-atomgit",
+  "homepage": null,
+  "license": null,
+  "stars": 6,
+  "forks": 2,
+  "pushedAt": "2026-08-15T11:04:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiongjiamu/dsh-atomgit",
+    "commands": [
+      "npm install -g @hust-open-atom-club/atomgit-cli",
+      "dsh plugin --profile web add ./dsh-atomgit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

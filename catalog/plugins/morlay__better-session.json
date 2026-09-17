@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "morlay/better-session",
+  "slug": "morlay__better-session",
+  "tier": "community",
+  "package": null,
+  "name": "better-session",
+  "title": "better-session",
+  "summary": "不改上游代码就能就地编辑、重试和分支会话，随时回退到任意节点重新出发。",
+  "tags": [
+    "dsh-plugin",
+    "session",
+    "session-branch",
+    "session-persistence",
+    "会话管理",
+    "快捷操作",
+    "工作流增强"
+  ],
+  "version": "0.0.11",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "morlay",
+  "repo": "https://github.com/morlay/better-session",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 3,
+  "pushedAt": "2026-09-13T09:11:08Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:morlay/better-session",
+    "commands": [
+      "dsh plugin --profile web add github:morlay/better-session"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "clarknu/dsh-gateway",
+  "slug": "clarknu__dsh-gateway",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-gateway",
+  "title": "dsh-gateway",
+  "summary": "给 DeepSeek Harness 网页界面加上 HTTPS 加密和账号登录，装好即用的远程访问网关，无需额外配置。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "gateway",
+    "https",
+    "安全审计",
+    "零配置"
+  ],
+  "version": "1.7.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "clarknu",
+  "repo": "https://github.com/clarknu/dsh-gateway",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 2,
+  "pushedAt": "2026-09-14T13:20:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-gateway",
+    "commands": [
+      "dsh plugin --profile web add dsh-gateway"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "phillarmonic/dsh-llm-kimi",
+  "slug": "phillarmonic__dsh-llm-kimi",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-kimi",
+  "title": "dsh-llm-kimi",
+  "summary": "为 DeepSeek Harness 接入 Kimi K3 模型，直接调用 kimi-code 接口，扩展 LLM 能力。",
+  "tags": [
+    "dsh-plugin",
+    "kimi-k3",
+    "模型适配",
+    "插件管理"
+  ],
+  "version": "0.1.6-alpha.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.6-alpha.1",
+    "publishedAt": "2026-09-15T11:04:29Z",
+    "url": "https://github.com/phillarmonic/dsh-llm-kimi/releases/tag/v0.1.6-alpha.1"
+  },
+  "author": "phillarmonic",
+  "repo": "https://github.com/phillarmonic/dsh-llm-kimi",
+  "homepage": "https://phillarmonic.github.io/dsh-llm-kimi/",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T11:04:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:phillarmonic/dsh-llm-kimi",
+    "commands": [
+      "dsh plugin --profile <name> add @phillarmonic/dsh-llm-kimi",
+      "pnpm add @phillarmonic/dsh-llm-kimi",
+      "pnpm add @deepseek-ai/cordis @deepseek-ai/dsh-llm @deepseek-ai/dsh-credentials \\"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

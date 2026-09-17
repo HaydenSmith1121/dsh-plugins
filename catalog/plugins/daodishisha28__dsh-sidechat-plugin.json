@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "daodishisha28/dsh-sidechat-plugin",
+  "slug": "daodishisha28__dsh-sidechat-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sidechat-plugin",
+  "title": "dsh-sidechat-plugin",
+  "summary": "在任意 DeepSeek Harness 会话中开启一个持久侧边对话，用于追问、澄清需求或探索方案，不干扰主任务上下文，且可随时恢复查看。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "会话管理",
+    "桌宠",
+    "工作流增强"
+  ],
+  "version": "0.3.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "daodishisha28",
+  "repo": "https://github.com/daodishisha28/dsh-sidechat-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-01T06:42:07Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:daodishisha28/dsh-sidechat-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:daodishisha28/dsh-sidechat-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "railgun0325/dsh-phone",
+  "slug": "railgun0325__dsh-phone",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-phone",
+  "title": "dsh-phone",
+  "summary": "把 DeepSeek Harness 装进安卓手机，AI 自己截图、点屏、滑页、开应用，全自动跑在本地。",
+  "tags": [
+    "agent",
+    "android",
+    "deepseek-harness",
+    "dsh-plugin",
+    "termux",
+    "安卓自动化",
+    "本地部署",
+    "手机Agent",
+    "Magisk集成"
+  ],
+  "version": "0.2.11",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.11",
+    "publishedAt": "2026-09-17T11:24:52Z",
+    "url": "https://github.com/railgun0325/dsh-phone/releases/tag/v0.2.11"
+  },
+  "author": "railgun0325",
+  "repo": "https://github.com/railgun0325/dsh-phone",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 20,
+  "forks": 4,
+  "pushedAt": "2026-09-16T17:23:27Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:railgun0325/dsh-phone",
+    "commands": [
+      "dsh plugin --profile web add github:railgun0325/dsh-phone"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

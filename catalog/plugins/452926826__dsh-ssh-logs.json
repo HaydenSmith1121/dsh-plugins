@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "452926826/dsh-ssh-logs",
+  "slug": "452926826__dsh-ssh-logs",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ssh-logs",
+  "title": "dsh-ssh-logs",
+  "summary": "通过 SSH 安全读取远程日志，让 DeepSeek Harness 会话直接查看和管理白名单主机上的日志文件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "安全审计",
+    "状态监控",
+    "命令行工具",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "452926826",
+  "repo": "https://github.com/452926826/dsh-ssh-logs",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-26T09:57:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:452926826/dsh-ssh-logs",
+    "commands": [
+      "git clone https://github.com/452926826/dsh-ssh-logs.git",
+      "npm install",
+      "dsh plugin --profile web add \"$PWD\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

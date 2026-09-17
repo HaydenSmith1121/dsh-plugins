@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "Leeminjing/dsh-messages-sanitizer",
+  "slug": "leeminjing__dsh-messages-sanitizer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-messages-sanitizer",
+  "title": "dsh-messages-sanitizer",
+  "summary": "自动修复消息数组里工具调用与消息配对错误，防止 DeepSeek Harness 会话因 400 错误崩溃。",
+  "tags": [
+    "ai-agent",
+    "coding-agent",
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "message-repair",
+    "openai-compatible",
+    "tool-calling",
+    "消息修复",
+    "工具集成",
+    "会话稳定",
+    "错误处理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-15T16:57:06Z",
+    "url": "https://github.com/Leeminjing/dsh-messages-sanitizer/releases/tag/v0.1.0"
+  },
+  "author": "Leeminjing",
+  "repo": "https://github.com/Leeminjing/dsh-messages-sanitizer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-04T12:00:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Leeminjing/dsh-messages-sanitizer",
+    "commands": [
+      "dsh plugin --profile web add github:Leeminjing/dsh-messages-sanitizer",
+      "dsh plugin --profile web update dsh-messages-sanitizer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

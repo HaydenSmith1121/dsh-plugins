@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "ChengxiuCDP/dsh-plugin-advisor",
+  "slug": "chengxiucdp__dsh-plugin-advisor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-advisor",
+  "title": "dsh-plugin-advisor",
+  "summary": "在DSH里用自然语言问agent，就能拿到带质量分、风险徽章和安装命令的插件推荐，帮你快速挑到靠谱插件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin-discovery",
+    "插件管理",
+    "AI 助手",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ChengxiuCDP",
+  "repo": "https://github.com/ChengxiuCDP/dsh-plugin-advisor",
+  "homepage": "https://dsh-plugin-hub-3t7.pages.dev",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-16T08:21:14Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ChengxiuCDP/dsh-plugin-advisor",
+    "commands": [
+      "dsh plugin --profile web add -w github:ChengxiuCDP/dsh-plugin-advisor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

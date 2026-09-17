@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "BeforeWave/dsh-with-chatgpt",
+  "slug": "beforewave__dsh-with-chatgpt",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-with-chatgpt",
+  "title": "dsh-with-chatgpt",
+  "summary": "让网页版 ChatGPT 直连本地项目自己写代码，长任务交给 DSH 持续执行，告别复制粘贴。",
+  "tags": [
+    "chatgpt",
+    "chatgpt-plugins",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "mcp",
+    "serena",
+    "typescript",
+    "工具集成",
+    "AI 助手",
+    "自动化",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.1.4",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "BeforeWave",
+  "repo": "https://github.com/BeforeWave/dsh-with-chatgpt",
+  "homepage": "https://www.npmjs.com/package/@beforewave/dsh-with-chatgpt",
+  "license": "MIT",
+  "stars": 49,
+  "forks": 6,
+  "pushedAt": "2026-09-15T11:54:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@beforewave/dsh-with-chatgpt",
+    "commands": [
+      "dsh plugin --profile web add @beforewave/dsh-with-chatgpt",
+      "curl -fsSL https://raw.githubusercontent.com/BeforeWave/dsh-with-chatgpt/main/install.sh | sh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "kaijia323/create-dsh-plugin",
+  "slug": "kaijia323__create-dsh-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "create-dsh-plugin",
+  "title": "create-dsh-plugin",
+  "summary": "一键搞定 DSH 插件从开发到发布，覆盖工具、事件、服务、适配器等全流程，附调试和打包指南。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "DSH 生态",
+    "调试打包",
+    "AI 辅助编码"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "kaijia323",
+  "repo": "https://github.com/kaijia323/create-dsh-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-24T02:52:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kaijia323/create-dsh-plugin",
+    "commands": [
+      "git clone https://github.com/kaijia323/create-dsh-plugin.git ~/.agents/skills/create-dsh-plugin",
+      "git clone https://github.com/kaijia323/create-dsh-plugin.git %USERPROFILE%\\.agents\\skills\\create-dsh-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

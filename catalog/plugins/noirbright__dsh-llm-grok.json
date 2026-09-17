@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "NOirBRight/dsh-llm-grok",
+  "slug": "noirbright__dsh-llm-grok",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-grok",
+  "title": "dsh-llm-grok",
+  "summary": "为 DeepSeek Harness 接入 Grok 订阅，支持 OAuth 登录和网页配置，轻松切换模型。",
+  "tags": [
+    "dsh-plugin",
+    "Grok接入",
+    "安全审计",
+    "网页配置",
+    "模型配置"
+  ],
+  "version": "0.3.17",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.17",
+    "publishedAt": "2026-09-14T16:42:53Z",
+    "url": "https://github.com/NOirBRight/dsh-llm-grok/releases/tag/v0.3.17"
+  },
+  "author": "NOirBRight",
+  "repo": "https://github.com/NOirBRight/dsh-llm-grok",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 1,
+  "pushedAt": "2026-09-14T16:42:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:NOirBRight/dsh-llm-grok",
+    "commands": [
+      "dsh plugin --profile web add github:NOirBRight/dsh-llm-grok"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "l541402398/dsh-file-uploads",
+  "slug": "l541402398__dsh-file-uploads",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-file-uploads",
+  "title": "dsh-file-uploads",
+  "summary": "在网页端直接上传本地文件，查看待处理卡片，并在设置中管理已存储的文件。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "file-upload",
+    "web-ui",
+    "文件管理",
+    "网页端",
+    "待处理卡片"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-14T05:32:58Z",
+    "url": "https://github.com/l541402398/dsh-file-uploads/releases/tag/v1.0.0"
+  },
+  "author": "l541402398",
+  "repo": "https://github.com/l541402398/dsh-file-uploads",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-14T05:32:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:l541402398/dsh-file-uploads",
+    "commands": [
+      "dsh plugin --profile web add \"github:l541402398/dsh-file-uploads",
+      "dsh plugin --profile web remove dsh-file-uploads"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

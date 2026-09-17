@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "adoresever/baimiao",
+  "slug": "adoresever__baimiao",
+  "tier": "community",
+  "package": null,
+  "name": "baimiao",
+  "title": "baimiao",
+  "summary": "把模板腔的中文改成有人味、有文采的写法，保留原意，读起来像真人写的。",
+  "tags": [
+    "claude-skills",
+    "codex-skill",
+    "deepseek-harness",
+    "dsh-skill",
+    "qcodes",
+    "workbuddy",
+    "内容创作",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-09T06:57:05Z",
+    "url": "https://github.com/adoresever/baimiao/releases/tag/v0.1.0"
+  },
+  "author": "adoresever",
+  "repo": "https://github.com/adoresever/baimiao",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-09-09T06:46:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:adoresever/baimiao",
+    "commands": [
+      "git clone https://github.com/adoresever/baimiao.git ~/.codex/skills/baimiao",
+      "git clone https://github.com/adoresever/baimiao.git ~/.claude/skills/baimiao"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

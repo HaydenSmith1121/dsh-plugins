@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "AikenFra/dsh-alive",
+  "slug": "aikenfra__dsh-alive",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-alive",
+  "title": "dsh-alive",
+  "summary": "零 token 消耗的在线状态指示器，让你随时掌握插件或服务的运行状态，无需额外开销。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "状态监控",
+    "零配置",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "AikenFra",
+  "repo": "https://github.com/AikenFra/dsh-alive",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-09T13:50:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-alive",
+    "commands": [
+      "dsh plugin --profile web add dsh-alive",
+      "dsh plugin --profile web remove dsh-alive"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

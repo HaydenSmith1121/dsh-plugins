@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "ai-fu-cn/dsh-plugin-memos-code-retrospect",
+  "slug": "ai-fu-cn__dsh-plugin-memos-code-retrospect",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-memos-code-retrospect",
+  "title": "dsh-plugin-memos-code-retrospect",
+  "summary": "复盘编码对话，自动蒸馏出关键经验与决策，帮你沉淀知识、优化开发流程。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "会话管理",
+    "安全审计",
+    "工作流增强"
+  ],
+  "version": "0.2.0-beta.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0-beta.1",
+    "publishedAt": "2026-08-24T15:02:55Z",
+    "url": "https://github.com/ai-fu-cn/dsh-plugin-memos-code-retrospect/releases/tag/v0.2.0-beta.1"
+  },
+  "author": "ai-fu-cn",
+  "repo": "https://github.com/ai-fu-cn/dsh-plugin-memos-code-retrospect",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T13:52:14Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ai-fu-cn/dsh-plugin-memos-code-retrospect",
+    "commands": [
+      "dsh plugin --profile web add github:ai-fu-cn/dsh-plugin-memos-code-retrospect"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "Zn-Dk/dsh-session-repair",
+  "slug": "zn-dk__dsh-session-repair",
+  "tier": "community",
+  "package": null,
+  "name": "Zn-Dk/dsh-session-repair",
+  "title": "Zn-Dk/dsh-session-repair",
+  "summary": "诊断并安全修复损坏的DSH会话历史，支持备份和可信检查点，防止数据丢失。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "session-repair",
+    "会话管理",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.6.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.2",
+    "publishedAt": "2026-08-24T09:33:13Z",
+    "url": "https://github.com/Zn-Dk/dsh-session-repair/releases/tag/v0.6.2"
+  },
+  "author": "Zn-Dk",
+  "repo": "https://github.com/Zn-Dk/dsh-session-repair",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-31T10:42:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Zn-Dk/dsh-session-repair",
+    "commands": [
+      "dsh plugin --profile web add github:Zn-Dk/dsh-session-repair"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

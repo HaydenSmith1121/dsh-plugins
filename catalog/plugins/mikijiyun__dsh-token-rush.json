@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "mikijiyun/dsh-token-rush",
+  "slug": "mikijiyun__dsh-token-rush",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-token-rush",
+  "title": "dsh-token-rush",
+  "summary": "DSH 网页会话页上的悬浮小窗，实时显示 token 消耗、估算费用和账户余额，高峰时段自动变橙红提醒你省钱。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "资源优化",
+    "会话管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "mikijiyun",
+  "repo": "https://github.com/mikijiyun/dsh-token-rush",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T16:11:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mikijiyun/dsh-token-rush",
+    "commands": [
+      "dsh plugin --profile web add github:mikijiyun/dsh-token-rush"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

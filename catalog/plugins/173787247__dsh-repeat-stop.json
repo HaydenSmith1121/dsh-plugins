@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "173787247/dsh-repeat-stop",
+  "slug": "173787247__dsh-repeat-stop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-repeat-stop",
+  "title": "dsh-repeat-stop",
+  "summary": "连续重复调用同一个工具时自动硬性拦截，防止 AI 陷入死循环空转。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "loop",
+    "wsl",
+    "自动化",
+    "状态监控",
+    "资源优化",
+    "工具集成"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "173787247",
+  "repo": "https://github.com/173787247/dsh-repeat-stop",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:23:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:173787247/dsh-repeat-stop",
+    "commands": [
+      "dsh plugin --profile web add github:173787247/dsh-repeat-stop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

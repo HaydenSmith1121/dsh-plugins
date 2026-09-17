@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "sssueason/dsh-pwsh-progress",
+  "slug": "sssueason__dsh-pwsh-progress",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pwsh-progress",
+  "title": "dsh-pwsh-progress",
+  "summary": "为后台任务实时渲染进度卡片和常驻任务条，显示状态、耗时、进度条和剩余时间，支持一键停止，无需刷新页面。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "前端增强",
+    "可视化",
+    "效率提升",
+    "桌宠"
+  ],
+  "version": "0.2.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sssueason",
+  "repo": "https://github.com/sssueason/dsh-pwsh-progress",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T12:22:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sssueason/dsh-pwsh-progress",
+    "commands": [
+      "dsh plugin --profile web add \"github:sssueason/dsh-pwsh-progress"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "InkshadeWoods/dsh-tool-visual-primitives",
+  "slug": "inkshadewoods__dsh-tool-visual-primitives",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tool-visual-primitives",
+  "title": "dsh-tool-visual-primitives",
+  "summary": "让纯文本模型也能看懂图片，把截图和文档转成带坐标的视觉描述回传对话。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "multimodal",
+    "plugin",
+    "vision",
+    "visual-primitives",
+    "视觉理解",
+    "模型配置",
+    "工具集成",
+    "AI 助手"
+  ],
+  "version": "1.5.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.5.1",
+    "publishedAt": "2026-09-11T10:05:05Z",
+    "url": "https://github.com/InkshadeWoods/dsh-tool-visual-primitives/releases/tag/v1.5.1"
+  },
+  "author": "InkshadeWoods",
+  "repo": "https://github.com/InkshadeWoods/dsh-tool-visual-primitives",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-11T09:50:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:InkshadeWoods/dsh-tool-visual-primitives",
+    "commands": [
+      "dsh plugin --profile web add github:InkshadeWoods/dsh-tool-visual-primitives"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

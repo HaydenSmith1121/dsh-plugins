@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "songer522/dsh-launcher",
+  "slug": "songer522__dsh-launcher",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-launcher",
+  "title": "dsh-launcher",
+  "summary": "在 macOS 菜单栏管理 DeepSeek Harness 服务，一键查看端口、PID 和访问链接。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "macos",
+    "menubar",
+    "swift",
+    "状态监控",
+    "消息通知",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "1.4.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.4.2",
+    "publishedAt": "2026-09-12T03:58:58Z",
+    "url": "https://github.com/songer522/dsh-launcher/releases/tag/v1.4.2"
+  },
+  "author": "songer522",
+  "repo": "https://github.com/songer522/dsh-launcher",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T03:58:40Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:songer522/dsh-launcher",
+    "commands": [
+      "git clone https://github.com/songer522/dsh-launcher.git",
+      "dsh plugin --profile web add https://github.com/songer522/dsh-launcher/releases/latest/download/dsh-menubar-launcher.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

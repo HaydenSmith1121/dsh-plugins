@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "dingzhenyao/dsh-plugin-directory",
+  "slug": "dingzhenyao__dsh-plugin-directory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-directory",
+  "title": "dsh-plugin-directory",
+  "summary": "在 DSH 网页界面里浏览、搜索 GitHub 上的插件仓库，带统计和实时筛选，装插件前还能先看 README。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "插件浏览",
+    "插件管理",
+    "GitHub 集成",
+    "Web 界面"
+  ],
+  "version": "0.1.0-rc.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dingzhenyao",
+  "repo": "https://github.com/dingzhenyao/dsh-plugin-directory",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T21:03:56Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-directory",
+    "commands": [
+      "dsh plugin add dsh-plugin-directory",
+      "dsh plugin add github:dingzhenyao/dsh-plugin-directory",
+      "dsh plugin --profile <profile-name> add ./dsh-plugin-directory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

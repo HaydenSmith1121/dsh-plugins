@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "id": "FeatherHunter/dsh-plugin-ui-debug",
+  "slug": "featherhunter__dsh-plugin-ui-debug",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-ui-debug",
+  "title": "dsh-plugin-ui-debug",
+  "summary": "让 AI 在真实 Chrome 里帮你看界面、点按钮、拖组件，调试 UI 一键搞定，装完就能用。",
+  "tags": [
+    "browser-automation",
+    "chrome",
+    "debugging",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "playwright",
+    "ui-testing",
+    "零配置",
+    "自动化",
+    "工具集成",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.0.1",
+    "publishedAt": "2026-08-18T14:55:49Z",
+    "url": "https://github.com/FeatherHunter/dsh-plugin-ui-debug/releases/tag/v0.0.1"
+  },
+  "author": "FeatherHunter",
+  "repo": "https://github.com/FeatherHunter/dsh-plugin-ui-debug",
+  "homepage": "https://github.com/FeatherHunter/dsh-plugin-ui-debug#一条命令完成安装",
+  "license": "BSD-3-Clause",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-08-22T11:46:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@feather_wch/dsh-plugin-ui-debug",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh",
+      "dsh plugin --profile web add @feather_wch/dsh-plugin-ui-debug",
+      "dsh plugin --profile web update @feather_wch/dsh-plugin-ui-debug"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

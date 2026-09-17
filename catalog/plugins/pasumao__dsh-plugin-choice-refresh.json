@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "Pasumao/dsh-plugin-choice-refresh",
+  "slug": "pasumao__dsh-plugin-choice-refresh",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-choice-refresh",
+  "title": "dsh-plugin-choice-refresh",
+  "summary": "为 DeepSeek Harness 选择操作添加“重新生成选项”和“更多选项”按钮，一键刷新可选内容。",
+  "tags": [
+    "choice",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "multiple-choice",
+    "refresh",
+    "regenerate",
+    "web-gui",
+    "会话管理",
+    "效率提升",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "0.1.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.6",
+    "publishedAt": "2026-09-04T15:11:13Z",
+    "url": "https://github.com/Pasumao/dsh-plugin-choice-refresh/releases/tag/v0.1.6"
+  },
+  "author": "Pasumao",
+  "repo": "https://github.com/Pasumao/dsh-plugin-choice-refresh",
+  "homepage": "https://github.com/Pasumao/dsh-plugin-choice-refresh#readme",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-04T15:10:43Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Pasumao/dsh-plugin-choice-refresh",
+    "commands": [
+      "dsh plugin --profile web add github:Pasumao/dsh-plugin-choice-refresh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

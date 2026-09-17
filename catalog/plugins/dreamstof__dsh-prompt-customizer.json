@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "DreamsTOF/dsh-prompt-customizer",
+  "slug": "dreamstof__dsh-prompt-customizer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-customizer",
+  "title": "dsh-prompt-customizer",
+  "summary": "在 DeepSeek Harness 里按需屏蔽、替换或注入系统提示词，还能隐藏工具、一键保存和切换预设，让对话更听话。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "提示词管理",
+    "AI 助手",
+    "会话管理",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "0.5.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "DreamsTOF",
+  "repo": "https://github.com/DreamsTOF/dsh-prompt-customizer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T16:19:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-prompt-customizer",
+    "commands": [
+      "dsh plugin --profile web add dsh-prompt-customizer",
+      "dsh plugin --profile web add /path/to/dsh-prompt-customizer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

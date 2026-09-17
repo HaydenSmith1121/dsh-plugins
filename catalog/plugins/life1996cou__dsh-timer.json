@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "life1996cou/dsh-timer",
+  "slug": "life1996cou__dsh-timer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-timer",
+  "title": "dsh-timer",
+  "summary": "自由设置计划任务时间，一键避开高峰，自动用低峰价继续跑任务。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "效率提升",
+    "资源优化",
+    "状态监控"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "life1996cou",
+  "repo": "https://github.com/life1996cou/dsh-timer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-22T17:23:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:life1996cou/dsh-timer",
+    "commands": [
+      "dsh plugin --profile web add github:life1996cou/dsh-timer",
+      "dsh plugin --profile web list"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

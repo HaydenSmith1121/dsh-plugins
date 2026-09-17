@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "muyuanjin/dsh-ptc-plus",
+  "slug": "muyuanjin__dsh-ptc-plus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ptc-plus",
+  "title": "dsh-ptc-plus",
+  "summary": "为 DeepSeek Harness PTC 模式提供会话绑定的智能 REPL，让调试和交互更顺手。",
+  "tags": [
+    "cordis-plugin",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "ptc",
+    "ptc-mode",
+    "repl",
+    "桌宠",
+    "会话管理",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.3.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.2",
+    "publishedAt": "2026-09-03T17:10:38Z",
+    "url": "https://github.com/muyuanjin/dsh-ptc-plus/releases/tag/v0.3.2"
+  },
+  "author": "muyuanjin",
+  "repo": "https://github.com/muyuanjin/dsh-ptc-plus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 2,
+  "pushedAt": "2026-09-16T21:38:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:muyuanjin/dsh-ptc-plus",
+    "commands": [
+      "dsh plugin --profile <profile> add dsh-ptc-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

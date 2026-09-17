@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "MimicHunterZ/dsh-agent-compact",
+  "slug": "mimichunterz__dsh-agent-compact",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-compact",
+  "title": "dsh-agent-compact",
+  "summary": "让智能体自主压缩对话片段为摘要，替代官方全量扫描，节省上下文空间。",
+  "tags": [
+    "context-compression",
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "AI 助手",
+    "资源优化"
+  ],
+  "version": "0.1.4",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "MimicHunterZ",
+  "repo": "https://github.com/MimicHunterZ/dsh-agent-compact",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 5,
+  "forks": 2,
+  "pushedAt": "2026-09-07T09:39:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@mimichunterz/agent-compact",
+    "commands": [
+      "dsh plugin --profile web add @mimichunterz/agent-compact",
+      "dsh plugin --profile web add ./agent-compact",
+      "dsh plugin --profile web remove @mimichunterz/agent-compact"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

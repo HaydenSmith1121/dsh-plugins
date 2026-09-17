@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "helloworld1631/dsh-volcengine-usage",
+  "slug": "helloworld1631__dsh-volcengine-usage",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-volcengine-usage",
+  "title": "dsh-volcengine-usage",
+  "summary": "在 DeepSeek Harness 网页上实时显示火山引擎 Coding Plan 用量，支持拖拽卡片，位置自动保存。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "helloworld1631",
+  "repo": "https://github.com/helloworld1631/dsh-volcengine-usage",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T16:24:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:helloworld1631/dsh-volcengine-usage",
+    "commands": [
+      "dsh plugin --profile web add github:helloworld1631/dsh-volcengine-usage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

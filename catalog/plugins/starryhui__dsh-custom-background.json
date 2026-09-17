@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "StarryHui/dsh-custom-background",
+  "slug": "starryhui__dsh-custom-background",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-custom-background",
+  "title": "dsh-custom-background",
+  "summary": "自定义 DSH WebUI 背景，支持本地图库随机切换和自由裁剪，实时生效并持久保存。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "主题",
+    "零配置",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "StarryHui",
+  "repo": "https://github.com/StarryHui/dsh-custom-background",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-08-19T03:08:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@starryhui/dsh-background@latest",
+    "commands": [
+      "dsh plugin --profile web add @starryhui/dsh-background@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

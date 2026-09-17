@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "ai-shushu/dsh-quota-meter",
+  "slug": "ai-shushu__dsh-quota-meter",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-quota-meter",
+  "title": "dsh-quota-meter",
+  "summary": "实时监控每个会话的 token 花费，进度条显示额度，超预算自动拦截，还能自定义各模型价目。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "状态监控",
+    "会话管理",
+    "资源优化",
+    "模型适配"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ai-shushu",
+  "repo": "https://github.com/ai-shushu/dsh-quota-meter",
+  "homepage": null,
+  "license": null,
+  "stars": 15,
+  "forks": 0,
+  "pushedAt": "2026-08-29T08:38:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ai-shushu/dsh-quota-meter",
+    "commands": [
+      "dsh plugin --profile web add github:ai-shushu/dsh-quota-meter",
+      "git clone git@github.com:ai-shushu/dsh-quota-meter.git",
+      "dsh plugin --profile web add ./dsh-quota-meter"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

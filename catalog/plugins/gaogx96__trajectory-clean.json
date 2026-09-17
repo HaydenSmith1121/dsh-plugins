@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "gaogx96/trajectory-clean",
+  "slug": "gaogx96__trajectory-clean",
+  "tier": "community",
+  "package": null,
+  "name": "trajectory-clean",
+  "title": "trajectory-clean",
+  "summary": "新增清爽的轨迹面板，按你的输入分组展示，清晰标注消息类型与Token消耗，点击即可查看完整细节。",
+  "tags": [
+    "dedeepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "1.0.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "gaogx96",
+  "repo": "https://github.com/gaogx96/trajectory-clean",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T12:36:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:gaogx96/trajectory-clean",
+    "commands": [
+      "dsh plugin --profile web add github:gaogx96/trajectory-clean"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "taxueseek/argo",
+  "slug": "taxueseek__argo",
+  "tier": "community",
+  "package": null,
+  "name": "argo",
+  "title": "argo",
+  "summary": "为 AI 代理打造的统一搜索工具，支持中英文学术、代码、购物、金融等多领域搜索，并附带证据核验功能。",
+  "tags": [
+    "academic-search",
+    "agent-tools",
+    "ai-agent",
+    "deep-research",
+    "dsh-ecosystem",
+    "dsh-plugin",
+    "evidence-verification",
+    "mcp-server",
+    "metasearch",
+    "python",
+    "search-engine",
+    "web-search",
+    "语义检索",
+    "数据检索"
+  ],
+  "version": "2.8.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.8.9",
+    "publishedAt": "2026-09-17T15:20:32Z",
+    "url": "https://github.com/taxueseek/argo/releases/tag/v2.8.9"
+  },
+  "author": "taxueseek",
+  "repo": "https://github.com/taxueseek/argo",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 134,
+  "forks": 9,
+  "pushedAt": "2026-09-16T10:58:52Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:taxueseek/argo",
+    "commands": [
+      "curl -fsSL https://raw.githubusercontent.com/taxueseek/argo/main/scripts/install.sh | bash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

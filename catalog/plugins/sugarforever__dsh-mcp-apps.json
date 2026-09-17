@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "sugarforever/dsh-mcp-apps",
+  "slug": "sugarforever__dsh-mcp-apps",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mcp-apps",
+  "title": "dsh-mcp-apps",
+  "summary": "让 DeepSeek Harness 变身 MCP 应用宿主，轻松接入并调用 MCP 服务器上的工具。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-plugins",
+    "MCP 集成",
+    "工具集成",
+    "插件宿主",
+    "AI 扩展"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-15T00:48:56Z",
+    "url": "https://github.com/sugarforever/dsh-mcp-apps/releases/tag/v0.1.1"
+  },
+  "author": "sugarforever",
+  "repo": "https://github.com/sugarforever/dsh-mcp-apps",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 2,
+  "pushedAt": "2026-08-15T15:46:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sugarforever/dsh-mcp-apps",
+    "commands": [
+      "npm install --global pnpm@11.7.0"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

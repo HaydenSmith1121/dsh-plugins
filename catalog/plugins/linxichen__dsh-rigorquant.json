@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "linxichen/dsh-rigorquant",
+  "slug": "linxichen__dsh-rigorquant",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-rigorquant",
+  "title": "dsh-rigorquant",
+  "summary": "为经济学与金融研究提供无人值守的数学实证研究，支持多智能体探索、双重验证和对抗性反例挖掘。",
+  "tags": [
+    "dsh-plugin",
+    "多Agent协作",
+    "多智能体协作",
+    "可验证执行",
+    "任务编排",
+    "效率提升"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-08-21T05:27:13Z",
+    "url": "https://github.com/linxichen/dsh-rigorquant/releases/tag/v0.3.1"
+  },
+  "author": "linxichen",
+  "repo": "https://github.com/linxichen/dsh-rigorquant",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-09-10T13:41:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-rigorquant",
+    "commands": [
+      "git clone https://github.com/linxichen/dsh-rigorquant",
+      "dsh plugin --profile web add dsh-rigorquant",
+      "git config core.hooksPath .githooks"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

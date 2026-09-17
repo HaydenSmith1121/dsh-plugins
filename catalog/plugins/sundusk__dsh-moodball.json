@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "sundusk/dsh-moodball",
+  "slug": "sundusk__dsh-moodball",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-moodball",
+  "title": "dsh-moodball",
+  "summary": "把 Agent 状态变成一只悬浮在 macOS 桌面的心情球，随时瞄一眼就知道它在忙什么。",
+  "tags": [
+    "deepseek-harness",
+    "desktop-app",
+    "dsh",
+    "dsh-companion",
+    "dsh-plugin",
+    "macos",
+    "menubar-app",
+    "swift",
+    "swiftui",
+    "waterball",
+    "状态监控",
+    "自动化",
+    "主题",
+    "可视化",
+    "AI 助手"
+  ],
+  "version": "0.5.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.2",
+    "publishedAt": "2026-08-25T05:36:25Z",
+    "url": "https://github.com/sundusk/dsh-moodball/releases/tag/v0.5.2"
+  },
+  "author": "sundusk",
+  "repo": "https://github.com/sundusk/dsh-moodball",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T07:16:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sundusk/dsh-moodball",
+    "commands": [
+      "curl -fsSL https://github.com/sundusk/dsh-moodball/raw/refs/heads/main/install.sh | bash",
+      "git clone --depth 1 https://github.com/sundusk/dsh-moodball.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

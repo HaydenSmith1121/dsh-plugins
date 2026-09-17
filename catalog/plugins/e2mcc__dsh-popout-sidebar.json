@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "e2mcc/dsh-popout-sidebar",
+  "slug": "e2mcc__dsh-popout-sidebar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-popout-sidebar",
+  "title": "dsh-popout-sidebar",
+  "summary": "侧边栏展示文件树和产物，支持多种预览，还能弹出成独立标签页拖到别的显示器看。",
+  "tags": [
+    "dsh-plugin",
+    "文件管理",
+    "可视化",
+    "主题",
+    "跨设备",
+    "效率提升"
+  ],
+  "version": "1.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.1",
+    "publishedAt": "2026-08-20T16:51:49Z",
+    "url": "https://github.com/e2mcc/dsh-popout-sidebar/releases/tag/v1.0.1"
+  },
+  "author": "e2mcc",
+  "repo": "https://github.com/e2mcc/dsh-popout-sidebar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 210,
+  "forks": 3,
+  "pushedAt": "2026-08-20T16:51:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dshmarket",
+    "commands": [
+      "dsh plugin --profile web add dshmarket",
+      "dsh plugin --profile web add github:e2mcc/dsh-popout-sidebar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

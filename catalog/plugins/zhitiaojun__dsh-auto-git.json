@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zhitiaojun/dsh-auto-git",
+  "slug": "zhitiaojun__dsh-auto-git",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auto-git",
+  "title": "dsh-auto-git",
+  "summary": "给每个新注册的 DSH 工作区自动 git init 并建一个空提交，让 Git 图谱等插件直接可用。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "git",
+    "workspace",
+    "自动化",
+    "工作区管理",
+    "零配置",
+    "工具集成",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhitiaojun",
+  "repo": "https://github.com/zhitiaojun/dsh-auto-git",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T14:13:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhitiaojun/dsh-auto-git",
+    "commands": [
+      "dsh plugin --profile web add github:zhitiaojun/dsh-auto-git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

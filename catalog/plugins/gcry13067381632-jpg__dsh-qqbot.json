@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "gcry13067381632-jpg/dsh-qqbot",
+  "slug": "gcry13067381632-jpg__dsh-qqbot",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-qqbot",
+  "title": "dsh-qqbot",
+  "summary": "让 AI 接管 QQ 群：自动审核放行、群发文件、表情包入库、多预设人格轮班陪聊，还能把审批和提问卡片转发到 QQ 远程处理。",
+  "tags": [
+    "bot",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "qq-bot",
+    "qqbot",
+    "AI 助手",
+    "自动化",
+    "工具集成",
+    "会话管理",
+    "桥接插件"
+  ],
+  "version": "1.5.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.5.2",
+    "publishedAt": "2026-09-15T02:34:52Z",
+    "url": "https://github.com/gcry13067381632-jpg/dsh-qqbot/releases/tag/v1.5.2"
+  },
+  "author": "gcry13067381632-jpg",
+  "repo": "https://github.com/gcry13067381632-jpg/dsh-qqbot",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T08:40:50Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:gcry13067381632-jpg/dsh-qqbot",
+    "commands": [
+      "dsh plugin --profile web add github:gcry13067381632-jpg/dsh-qqbot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

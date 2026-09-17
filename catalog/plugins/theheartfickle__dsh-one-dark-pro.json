@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "TheHeartFickle/dsh-one-dark-pro",
+  "slug": "theheartfickle__dsh-one-dark-pro",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-one-dark-pro",
+  "title": "dsh-one-dark-pro",
+  "summary": "给 DeepSeek Harness 换上 One Dark Pro 配色，外观设置里多一个主题选项，界面更护眼。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "界面美化",
+    "零配置",
+    "插件管理",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "TheHeartFickle",
+  "repo": "https://github.com/TheHeartFickle/dsh-one-dark-pro",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T11:52:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TheHeartFickle/dsh-one-dark-pro",
+    "commands": [
+      "dsh plugin --profile web add github:TheHeartFickle/dsh-one-dark-pro"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

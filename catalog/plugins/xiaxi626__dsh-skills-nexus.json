@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaxi626/dsh-skills-nexus",
+  "slug": "xiaxi626__dsh-skills-nexus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skills-nexus",
+  "title": "dsh-skills-nexus",
+  "summary": "装一次就能把任何带 SKILL.md 的 GitHub 仓库注册成 DSH 技能，每个仓库一条命令搞定。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "import",
+    "plugin",
+    "零配置",
+    "插件管理",
+    "工具集成",
+    "快捷操作"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-11T13:27:29Z",
+    "url": "https://github.com/xiaxi626/dsh-skills-nexus/releases/tag/v0.3.0"
+  },
+  "author": "xiaxi626",
+  "repo": "https://github.com/xiaxi626/dsh-skills-nexus",
+  "homepage": "https://dshmarket.com/zh/p/xiaxi626/dsh-skills-nexus/",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T14:39:55Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiaxi626/dsh-skills-nexus",
+    "commands": [
+      "npm install -g github:xiaxi626/dsh-skills-nexus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Moraxyc/dsh-cpa",
+  "slug": "moraxyc__dsh-cpa",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cpa",
+  "title": "dsh-cpa",
+  "summary": "把 CLI Proxy API 接进 dsh，注册 cpa 模型源，聊天请求和模型列表自动同步。",
+  "tags": [
+    "dsh-plugin",
+    "模型适配",
+    "模型配置",
+    "工具集成",
+    "命令行工具"
+  ],
+  "version": "0.1.8",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.8",
+    "publishedAt": "2026-09-15T18:48:15Z",
+    "url": "https://github.com/Moraxyc/dsh-cpa/releases/tag/v0.1.8"
+  },
+  "author": "Moraxyc",
+  "repo": "https://github.com/Moraxyc/dsh-cpa",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T05:30:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Moraxyc/dsh-cpa",
+    "commands": [
+      "dsh plugin --profile web add github:Moraxyc/dsh-cpa"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

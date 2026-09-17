@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "whitelonng/dshcode",
+  "slug": "whitelonng__dshcode",
+  "tier": "community",
+  "package": null,
+  "name": "dshcode",
+  "title": "dshcode",
+  "summary": "为 DeepSeek Harness 打造的桌面伴侣，一键安装，让 macOS 和 Windows 用户更便捷地使用开源项目。",
+  "tags": [
+    "agent",
+    "deepseek",
+    "deepseekharness-plugin",
+    "dsh-plugin",
+    "harness",
+    "桌面自动化"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "desktop-v1.1.0",
+    "publishedAt": "2026-09-13T18:50:40Z",
+    "url": "https://github.com/whitelonng/dshcode/releases/tag/desktop-v1.1.0"
+  },
+  "author": "whitelonng",
+  "repo": "https://github.com/whitelonng/dshcode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 714,
+  "forks": 30,
+  "pushedAt": "2026-09-13T19:03:48Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:whitelonng/dshcode",
+    "commands": [
+      "git clone https://github.com/whitelonng/dshcode.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

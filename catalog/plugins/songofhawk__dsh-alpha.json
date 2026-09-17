@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "songofhawk/dsh-alpha",
+  "slug": "songofhawk__dsh-alpha",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-alpha",
+  "title": "dsh-alpha",
+  "summary": "把编程任务分发到多台机器和不同AI运行环境，统一调度管理，提升开发效率。",
+  "tags": [
+    "dsh-plugin",
+    "多Agent协作",
+    "自动化",
+    "工作流增强",
+    "效率提升",
+    "工作区管理"
+  ],
+  "version": "0.2.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "songofhawk",
+  "repo": "https://github.com/songofhawk/dsh-alpha",
+  "homepage": "https://songofhawk.github.io/dsh-alpha/",
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-12T09:26:40Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:songofhawk/dsh-alpha",
+    "commands": [
+      "dsh plugin --profile web add github:songofhawk/dsh-alpha"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

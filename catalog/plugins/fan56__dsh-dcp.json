@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "fan56/dsh-dcp",
+  "slug": "fan56__dsh-dcp",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-dcp",
+  "title": "dsh-dcp",
+  "summary": "不调大模型也能快速压缩长对话，省Token、速度快且结果稳定，开箱即用的确定性压缩方案。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "资源优化",
+    "效率提升",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.11.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fan56",
+  "repo": "https://github.com/fan56/dsh-dcp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-11T04:03:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@aiwayds/dsh-dcp",
+    "commands": [
+      "npm i @aiwayds/dsh-tui-pi",
+      "dsh plugin add @aiwayds/dsh-dcp",
+      "npm i @aiwayds/dsh-dcp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

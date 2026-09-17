@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "Cosmicwanderer1/lean4-harness-plugin",
+  "slug": "cosmicwanderer1__lean4-harness-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "lean4-harness-plugin",
+  "title": "lean4-harness-plugin",
+  "summary": "在本地用 Lean 4 验证模型生成的证明代码，确保数学证明正确无误。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "安全审计",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Cosmicwanderer1",
+  "repo": "https://github.com/Cosmicwanderer1/lean4-harness-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T09:55:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Cosmicwanderer1/lean4-harness-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:Cosmicwanderer1/lean4-harness-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

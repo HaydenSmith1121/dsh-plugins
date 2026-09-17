@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "uckkk/dsh-pace-calc",
+  "slug": "uckkk__dsh-pace-calc",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pace-calc",
+  "title": "dsh-pace-calc",
+  "summary": "输入距离和时间，一键算出跑步配速和时速，离线可用、零依赖。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "效率提升",
+    "工具集成",
+    "零配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "uckkk",
+  "repo": "https://github.com/uckkk/dsh-pace-calc",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T16:06:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:uckkk/dsh-pace-calc",
+    "commands": [
+      "npm install dsh-pace-calc",
+      "dsh plugin add github:uckkk/dsh-pace-calc"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

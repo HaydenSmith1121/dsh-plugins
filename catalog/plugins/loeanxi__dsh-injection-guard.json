@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "loeanxi/dsh-injection-guard",
+  "slug": "loeanxi__dsh-injection-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-injection-guard",
+  "title": "dsh-injection-guard",
+  "summary": "为 DeepSeek Harness 提供智能提示注入防护，自动识别并拦截恶意指令，保障 AI 应用安全。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "安全审计",
+    "恶意检测"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "loeanxi",
+  "repo": "https://github.com/loeanxi/dsh-injection-guard",
+  "homepage": null,
+  "license": null,
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-21T18:22:50Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:loeanxi/dsh-injection-guard",
+    "commands": [
+      "dsh plugin --profile web add github:loeanxi/dsh-injection-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

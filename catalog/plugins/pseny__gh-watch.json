@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "psenY/gh-watch",
+  "slug": "pseny__gh-watch",
+  "tier": "community",
+  "package": null,
+  "name": "gh-watch",
+  "title": "gh-watch",
+  "summary": "监视 GitHub PR/issue 动态，自动通知 AI，把判断和回复留给 AI 和用户。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "工作流增强",
+    "AI 助手",
+    "模型配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "psenY",
+  "repo": "https://github.com/psenY/gh-watch",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T14:46:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:psenY/gh-watch",
+    "commands": [
+      "dsh plugin --profile web add github:psenY/gh-watch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

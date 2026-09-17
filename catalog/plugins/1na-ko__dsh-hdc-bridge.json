@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "1na-ko/dsh-hdc-bridge",
+  "slug": "1na-ko__dsh-hdc-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hdc-bridge",
+  "title": "dsh-hdc-bridge",
+  "summary": "在 DSH 里一站式调试鸿蒙设备：看设备、截图、改码、装包、验证，还能离线查官方文档、调 DevEco 构建签名。",
+  "tags": [
+    "arkts",
+    "deepseek-harness",
+    "deveco",
+    "devtools",
+    "dsh",
+    "dsh-plugin",
+    "harmonyos",
+    "hdc",
+    "openharmony",
+    "跨设备",
+    "命令行工具",
+    "工具集成",
+    "工作流增强",
+    "AI 助手"
+  ],
+  "version": "0.9.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.9.1",
+    "publishedAt": "2026-09-08T12:54:43Z",
+    "url": "https://github.com/1na-ko/dsh-hdc-bridge/releases/tag/v0.9.1"
+  },
+  "author": "1na-ko",
+  "repo": "https://github.com/1na-ko/dsh-hdc-bridge",
+  "homepage": "https://www.npmjs.com/package/dsh-hdc-bridge",
+  "license": "MIT",
+  "stars": 17,
+  "forks": 2,
+  "pushedAt": "2026-09-08T12:54:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:1na-ko/dsh-hdc-bridge",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-hdc-bridge",
+      "dsh plugin --profile <name> add github:1na-ko/dsh-hdc-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "zhengjy01/dsh-zhihu",
+  "slug": "zhengjy01__dsh-zhihu",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-zhihu",
+  "title": "dsh-zhihu",
+  "summary": "在 DSH 里直接用知乎，18 个 zhihu_* 工具读写问答评论，写操作默认关闭更安全。",
+  "tags": [
+    "ai",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "pyzhihu-cli",
+    "zhihu",
+    "zhihu-cli",
+    "工具集成",
+    "命令行工具",
+    "报告生成",
+    "可视化",
+    "设置面板"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-13T13:34:25Z",
+    "url": "https://github.com/zhengjy01/dsh-zhihu/releases/tag/v0.1.1"
+  },
+  "author": "zhengjy01",
+  "repo": "https://github.com/zhengjy01/dsh-zhihu",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T13:33:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhengjy01/dsh-zhihu",
+    "commands": [
+      "uv tool install pyzhihu-cli"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

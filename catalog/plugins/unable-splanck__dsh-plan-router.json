@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "unable-splanck/dsh-plan-router",
+  "slug": "unable-splanck__dsh-plan-router",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plan-router",
+  "title": "dsh-plan-router",
+  "summary": "让 DSH 在一个任务里自动完成计划、执行和验证，导入的官模或中转模型都能直接用。",
+  "tags": [
+    "agent-workflows",
+    "deepseek-harness-plugin",
+    "工作流增强",
+    "自动化",
+    "模型配置",
+    "多Agent协作"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "unable-splanck",
+  "repo": "https://github.com/unable-splanck/dsh-plan-router",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-15T12:54:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:unable-splanck/dsh-plan-router",
+    "commands": [
+      "dsh plugin --profile web add github:unable-splanck/dsh-plan-router"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

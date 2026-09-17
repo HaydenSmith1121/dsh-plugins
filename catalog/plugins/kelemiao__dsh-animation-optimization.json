@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "kelemiao/dsh-animation-optimization",
+  "slug": "kelemiao__dsh-animation-optimization",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-animation-optimization",
+  "title": "dsh-animation-optimization",
+  "summary": "给 DSH 网页界面换上 Claude Code 风格外观，并把思考块和工具输出改成逐段流式播放，看着更实时。",
+  "tags": [
+    "animation",
+    "appearance",
+    "claude-code",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "theme",
+    "vibe-coding",
+    "主题",
+    "界面美化",
+    "前端增强",
+    "可视化",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-19T13:03:00Z",
+    "url": "https://github.com/kelemiao/dsh-animation-optimization/releases/tag/v0.2.0"
+  },
+  "author": "kelemiao",
+  "repo": "https://github.com/kelemiao/dsh-animation-optimization",
+  "homepage": null,
+  "license": null,
+  "stars": 6,
+  "forks": 1,
+  "pushedAt": "2026-09-09T05:18:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kelemiao/dsh-animation-optimization",
+    "commands": [
+      "dsh plugin --profile web add link:C:/path/to/dsh-animation-optimization"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

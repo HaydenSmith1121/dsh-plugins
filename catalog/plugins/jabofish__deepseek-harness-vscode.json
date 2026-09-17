@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "Jabofish/deepseek-harness-vscode",
+  "slug": "jabofish__deepseek-harness-vscode",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-vscode",
+  "title": "deepseek-harness-vscode",
+  "summary": "在 VS Code 里直接使用 DeepSeek Harness，管理会话、流式回复、调用工具，让 AI 助手紧跟你的代码工作区。",
+  "tags": [
+    "ai-agent",
+    "ai-coding-assistant",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "llm",
+    "typescript",
+    "visual-studio-code",
+    "vscode-extension",
+    "工作流增强",
+    "会话管理",
+    "AI 助手",
+    "工作区管理",
+    "模型配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-16T19:15:54Z",
+    "url": "https://github.com/Jabofish/deepseek-harness-vscode/releases/tag/v0.2.0"
+  },
+  "author": "Jabofish",
+  "repo": "https://github.com/Jabofish/deepseek-harness-vscode",
+  "homepage": "https://marketplace.visualstudio.com/items?itemName=Direwolf.deepseek-harness-client",
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-16T19:10:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Jabofish/deepseek-harness-vscode",
+    "commands": [
+      "dsh plugin --profile web add github:Jabofish/deepseek-harness-vscode"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

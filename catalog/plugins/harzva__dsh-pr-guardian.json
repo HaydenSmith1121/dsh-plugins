@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Harzva/dsh-pr-guardian",
+  "slug": "harzva__dsh-pr-guardian",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pr-guardian",
+  "title": "dsh-pr-guardian",
+  "summary": "把你自己 PR 的反馈集中收进一个收件箱，还能同步 Codex/DSH 进度，并只读收集 GitHub 信息，方便统一处理。",
+  "tags": [
+    "dsh-plugin",
+    "github",
+    "pull-requests",
+    "工作流增强",
+    "自动化",
+    "效率提升",
+    "状态监控",
+    "工作区管理"
+  ],
+  "version": "0.2.0-alpha.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Harzva",
+  "repo": "https://github.com/Harzva/dsh-pr-guardian",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T22:04:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Harzva/dsh-pr-guardian",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/Harzva/dsh-pr-guardian/releases/download/v0.2.0-alpha.1/dsh-pr-guardian-0.2.0-alpha.1.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

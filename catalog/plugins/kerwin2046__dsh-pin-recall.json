@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "kerwin2046/dsh-pin-recall",
+  "slug": "kerwin2046__dsh-pin-recall",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pin-recall",
+  "title": "dsh-pin-recall",
+  "summary": "在 DeepSeek Harness 会话中固定助手回复或工具证据，一键召回并注入下一轮对话，支持网页按钮快捷操作。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kerwin2046",
+  "repo": "https://github.com/kerwin2046/dsh-pin-recall",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-14T02:53:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:YOUR_USER/dsh-pin-recall",
+    "commands": [
+      "dsh plugin --profile web add /absolute/path/to/dsh-pin-recall",
+      "dsh plugin --profile web add github:YOUR_USER/dsh-pin-recall",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

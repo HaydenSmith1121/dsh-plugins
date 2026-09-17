@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zhoujianbin/dsh-codex-continue",
+  "slug": "zhoujianbin__dsh-codex-continue",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codex-continue",
+  "title": "dsh-codex-continue",
+  "summary": "读取本机 Codex 项目与会话，在 DSH 里无缝继续，限额到了也不丢活。",
+  "tags": [
+    "codex",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "resume",
+    "会话管理",
+    "效率提升",
+    "工作流增强",
+    "工作区管理"
+  ],
+  "version": "0.2.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhoujianbin",
+  "repo": "https://github.com/zhoujianbin/dsh-codex-continue",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T07:38:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-codex-continue",
+    "commands": [
+      "dsh plugin --profile web add dsh-codex-continue"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "aorucshiea/dsh-plugin-toggle",
+  "slug": "aorucshiea__dsh-plugin-toggle",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-toggle",
+  "title": "dsh-plugin-toggle",
+  "summary": "给已安装的 DSH 插件加个热插拔开关，不用重启就能随时启用或停用，管理插件更灵活。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "效率提升",
+    "前端增强",
+    "桌宠"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-08-25T19:35:33Z",
+    "url": "https://github.com/aorucshiea/dsh-plugin-toggle/releases/tag/v0.2.1"
+  },
+  "author": "aorucshiea",
+  "repo": "https://github.com/aorucshiea/dsh-plugin-toggle",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-25T19:35:33Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aorucshiea/dsh-plugin-toggle",
+    "commands": [
+      "dsh plugin --profile web add github:aorucshiea/dsh-plugin-toggle"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

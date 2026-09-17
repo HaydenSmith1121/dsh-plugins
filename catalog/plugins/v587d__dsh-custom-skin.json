@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "v587d/dsh-custom-skin",
+  "slug": "v587d__dsh-custom-skin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-custom-skin",
+  "title": "dsh-custom-skin",
+  "summary": "自定义 DSH 界面字体、代码字体和主题配色，让 Web 界面更符合个人喜好。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-web-ui",
+    "前端增强",
+    "可视化",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "v587d",
+  "repo": "https://github.com/v587d/dsh-custom-skin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T00:57:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:v587d/dsh-custom-skin",
+    "commands": [
+      "dsh plugin --profile web add github:v587d/dsh-custom-skin",
+      "dsh plugin --profile web add link:/home/shawn/projects/dsh-custom-skin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

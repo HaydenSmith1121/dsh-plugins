@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "inxups/dsh-memento-tab",
+  "slug": "inxups__dsh-memento-tab",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memento-tab",
+  "title": "dsh-memento-tab",
+  "summary": "给 DeepSeek Harness 加一个会话级记忆标签页，和对话、轨迹、上下文并排，随时查看当前会话的记忆内容。",
+  "tags": [
+    "dsh-bundle",
+    "dsh-plugin",
+    "会话管理",
+    "状态持久化",
+    "主题",
+    "桥接插件"
+  ],
+  "version": "0.3.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "inxups",
+  "repo": "https://github.com/inxups/dsh-memento-tab",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T01:16:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-memento",
+    "commands": [
+      "dsh plugin --profile web add dsh-memento",
+      "dsh plugin --profile web add github:inxups/dsh-memento-tab",
+      "dsh plugin --profile web add link:/path/to/dsh-memento-tab"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

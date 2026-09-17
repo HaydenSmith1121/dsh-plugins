@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "gtaifu/dsh-title-index",
+  "slug": "gtaifu__dsh-title-index",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-title-index",
+  "title": "dsh-title-index",
+  "summary": "给 DSH 网页版会话标题查询提速的插件，现已废弃，新版自带 @ 功能更快。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "资源优化",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "gtaifu",
+  "repo": "https://github.com/gtaifu/dsh-title-index",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T16:27:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:gtaifu/dsh-title-index",
+    "commands": [
+      "dsh plugin --profile web add github:gtaifu/dsh-title-index"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

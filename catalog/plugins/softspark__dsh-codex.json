@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "softspark/dsh-codex",
+  "slug": "softspark__dsh-codex",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codex",
+  "title": "dsh-codex",
+  "summary": "通过 ChatGPT 订阅，在本地安全认证 Codex 应用服务器，为 DeepSeek Harness 提供模型接入。",
+  "tags": [
+    "agent-harness",
+    "ai-agents",
+    "chatgpt",
+    "codex",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm",
+    "openai",
+    "typescript",
+    "模型配置",
+    "安全审计",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "1.6.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.6.2",
+    "publishedAt": "2026-09-08T15:56:30Z",
+    "url": "https://github.com/softspark/dsh-codex/releases/tag/v1.6.2"
+  },
+  "author": "softspark",
+  "repo": "https://github.com/softspark/dsh-codex",
+  "homepage": "https://github.com/softspark/dsh-codex#readme",
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-09-09T15:06:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:softspark/dsh-codex",
+    "commands": [
+      "dsh plugin --profile web add @softspark/dsh-codex@1.4.0 --save-exact"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

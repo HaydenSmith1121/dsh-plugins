@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "masknull/dsh-workbuddy-connect",
+  "slug": "masknull__dsh-workbuddy-connect",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workbuddy-connect",
+  "title": "dsh-workbuddy-connect",
+  "summary": "不用装 WorkBuddy 桌面版，插件自带浏览器登录，把 WorkBuddy 国内版和国际版的模型接进 DSH 直接用。",
+  "tags": [
+    "codebuddy",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "llm",
+    "model-provider",
+    "workbuddy",
+    "模型配置",
+    "工具集成",
+    "零配置",
+    "AI 助手"
+  ],
+  "version": "0.6.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.2",
+    "publishedAt": "2026-09-17T10:01:36Z",
+    "url": "https://github.com/masknull/dsh-workbuddy-connect/releases/tag/v0.6.2"
+  },
+  "author": "masknull",
+  "repo": "https://github.com/masknull/dsh-workbuddy-connect",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T17:32:54Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:masknull/dsh-workbuddy-connect",
+    "commands": [
+      "dsh plugin --profile web exec dsh-workbuddy-connect login"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

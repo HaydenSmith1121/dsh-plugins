@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "thirsty5034/dsh-ssh-tunnel",
+  "slug": "thirsty5034__dsh-ssh-tunnel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ssh-tunnel",
+  "title": "dsh-ssh-tunnel",
+  "summary": "给 dsh-better-sidebar 加上多主机 SSH 隧道和 SSH 管理，远程连接、SFTP 传文件都更顺手。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-better-sidebar",
+    "dsh-plugin",
+    "sftp",
+    "ssh",
+    "工具集成",
+    "跨设备",
+    "文件管理",
+    "命令行工具",
+    "桥接插件"
+  ],
+  "version": "0.4.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.5",
+    "publishedAt": "2026-09-09T09:26:26Z",
+    "url": "https://github.com/thirsty5034/dsh-ssh-tunnel/releases/tag/v0.4.5"
+  },
+  "author": "thirsty5034",
+  "repo": "https://github.com/thirsty5034/dsh-ssh-tunnel",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-09-15T04:21:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:thirsty5034/dsh-ssh-tunnel",
+    "commands": [
+      "curl -fsSL https://raw.githubusercontent.com/thirsty5034/dsh-ssh-tunnel/main/scripts/install.sh | bash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

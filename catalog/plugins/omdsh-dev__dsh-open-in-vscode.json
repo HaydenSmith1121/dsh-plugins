@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "omdsh-dev/dsh-open-in-vscode",
+  "slug": "omdsh-dev__dsh-open-in-vscode",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-open-in-vscode",
+  "title": "dsh-open-in-vscode",
+  "summary": "在 DeepSeek Harness 网页界面里，一键用 VS Code 打开工作区目录，省去手动找路径的麻烦。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "主题"
+  ],
+  "version": "0.1.5",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "omdsh-dev",
+  "repo": "https://github.com/omdsh-dev/dsh-open-in-vscode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 53,
+  "forks": 6,
+  "pushedAt": "2026-08-16T05:24:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:omdsh-dev/dsh-open-in-vscode",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/omdsh-dev/dsh-open-in-vscode/archive/refs/tags/v0.1.6.tar.gz",
+      "dsh plugin --profile web list dsh-open-in-vscode --depth 0"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

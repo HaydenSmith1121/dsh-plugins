@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "kermars39-web/dsh-rename",
+  "slug": "kermars39-web__dsh-rename",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-rename",
+  "title": "dsh-rename",
+  "summary": "给 DeepSeek Harness 里的模型和分组起个好记的别名，不改真实路由，用起来更顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "model-alias",
+    "plugin",
+    "typescript",
+    "模型配置",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-08-26T06:58:22Z",
+    "url": "https://github.com/kermars39-web/dsh-rename/releases/tag/v0.3.0"
+  },
+  "author": "kermars39-web",
+  "repo": "https://github.com/kermars39-web/dsh-rename",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-26T06:57:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kermars39-web/dsh-rename",
+    "commands": [
+      "git clone https://github.com/kermars39-web/dsh-rename.git",
+      "dsh plugin --profile desktop add ./dsh-rename-0.3.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

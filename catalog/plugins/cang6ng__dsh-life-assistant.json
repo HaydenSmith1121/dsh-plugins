@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "cang6ng/dsh-life-assistant",
+  "slug": "cang6ng__dsh-life-assistant",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-life-assistant",
+  "title": "dsh-life-assistant",
+  "summary": "基于 DSH 的个人 AI 助手，可扩展接入用户数据，首个内置音乐库管理场景。",
+  "tags": [
+    "ai-agent",
+    "deepseek-harness",
+    "dsh",
+    "personal-assistant",
+    "react",
+    "rust",
+    "sqlite",
+    "tauri",
+    "typescript",
+    "AI 助手",
+    "工具集成",
+    "文件管理",
+    "效率提升"
+  ],
+  "version": "1.0.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.2",
+    "publishedAt": "2026-09-10T19:32:01Z",
+    "url": "https://github.com/cang6ng/dsh-life-assistant/releases/tag/v1.0.2"
+  },
+  "author": "cang6ng",
+  "repo": "https://github.com/cang6ng/dsh-life-assistant",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T19:32:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cang6ng/dsh-life-assistant",
+    "commands": [
+      "dsh plugin --profile web add github:cang6ng/dsh-life-assistant"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

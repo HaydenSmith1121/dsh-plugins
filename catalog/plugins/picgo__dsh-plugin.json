@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "PicGo/dsh-plugin",
+  "slug": "picgo__dsh-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "@picgo/dsh-plugin",
+  "title": "@picgo/dsh-plugin",
+  "summary": "在 DeepSeek Harness 中一键上传图片和文件到你的图床，由 PicGo 驱动，方便展示截图和分享内容。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "image-upload",
+    "picgo",
+    "多模态",
+    "报告生成"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "PicGo",
+  "repo": "https://github.com/PicGo/dsh-plugin",
+  "homepage": "https://picgo.app/blog/2026/picgo-deepseek-harness-plugin/",
+  "license": null,
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-23T02:46:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@picgo/dsh-plugin",
+    "commands": [
+      "dsh plugin --profile web add @picgo/dsh-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

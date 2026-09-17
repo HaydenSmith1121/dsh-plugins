@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ddtcorex/dsh-maestro-mobile",
+  "slug": "ddtcorex__dsh-maestro-mobile",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-maestro-mobile",
+  "title": "dsh-maestro-mobile",
+  "summary": "手机端专用适配，小屏下把侧栏变抽屉、对话框变弹层，让 DeepSeek Harness 在手机上更好用。",
+  "tags": [
+    "ai-agents",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mobile",
+    "mobile-ui",
+    "responsive",
+    "web-ui",
+    "前端增强",
+    "桌宠",
+    "移动端"
+  ],
+  "version": "1.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.4.0",
+    "publishedAt": "2026-09-12T01:48:25Z",
+    "url": "https://github.com/ddtcorex/dsh-maestro-mobile/releases/tag/v1.4.0"
+  },
+  "author": "ddtcorex",
+  "repo": "https://github.com/ddtcorex/dsh-maestro-mobile",
+  "homepage": "https://github.com/ddtcorex/dsh-maestro-mobile",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T23:08:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@ddtcorex/dsh-maestro-mobile",
+    "commands": [
+      "dsh plugin --profile web add @ddtcorex/dsh-maestro-mobile",
+      "dsh plugin --profile web add link:/path/to/dsh-maestro-mobile"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

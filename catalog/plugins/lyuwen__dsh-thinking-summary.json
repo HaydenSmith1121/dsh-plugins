@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "lyuwen/dsh-thinking-summary",
+  "slug": "lyuwen__dsh-thinking-summary",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-thinking-summary",
+  "title": "dsh-thinking-summary",
+  "summary": "把模型思考过程分段整理成清晰摘要，让推理内容一目了然，方便阅读和复盘。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "可视化",
+    "状态监控",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lyuwen",
+  "repo": "https://github.com/lyuwen/dsh-thinking-summary",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-27T13:45:31Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "dsh plugin --profile web add .",
+      "dsh plugin --profile web add git+https://github.com/lyuwen/dsh-thinking-summary.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

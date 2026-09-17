@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "TT-Wang/dsh-eval-infra",
+  "slug": "tt-wang__dsh-eval-infra",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-eval-infra",
+  "title": "dsh-eval-infra",
+  "summary": "为 dsh 组件提供配对 A/B 评估基础设施，支持交替重复运行、验证器自检和回归门控，帮助开发者科学对比不同配置的效果。",
+  "tags": [
+    "ab-testing",
+    "agent-evaluation",
+    "deepseek-harness",
+    "dsh-plugin",
+    "llm-evaluation",
+    "状态监控",
+    "工作流增强",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "TT-Wang",
+  "repo": "https://github.com/TT-Wang/dsh-eval-infra",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-09T09:26:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TT-Wang/dsh-eval-infra",
+    "commands": [
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

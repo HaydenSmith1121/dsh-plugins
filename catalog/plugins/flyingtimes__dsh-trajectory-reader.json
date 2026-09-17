@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "flyingtimes/dsh-trajectory-reader",
+  "slug": "flyingtimes__dsh-trajectory-reader",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-trajectory-reader",
+  "title": "dsh-trajectory-reader",
+  "summary": "在 DeepSeek Harness 中逐轮回看对话，自动总结用户意图、助手思考与执行过程，并标出文件、命令和报错，帮你快速复盘。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "轨迹解读",
+    "对话复盘",
+    "执行分析",
+    "规则引擎",
+    "LLM 总结"
+  ],
+  "version": "0.2.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "flyingtimes",
+  "repo": "https://github.com/flyingtimes/dsh-trajectory-reader",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-15T14:07:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@clarkchan/trajectory-reader",
+    "commands": [
+      "dsh plugin --profile web add @clarkchan/trajectory-reader",
+      "dsh plugin --profile web add \"github:flyingtimes/dsh-trajectory-reader"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "mahiro6/dsh-billing",
+  "slug": "mahiro6__dsh-billing",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-billing",
+  "title": "dsh-billing",
+  "summary": "为 DeepSeek Harness 提供计费与预算管理，实时查询余额、统计调用费用，帮你控制成本。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "llm",
+    "plugin",
+    "poor",
+    "状态监控",
+    "资源优化",
+    "会话管理",
+    "设置面板"
+  ],
+  "version": "1.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.1",
+    "publishedAt": "2026-08-28T18:32:22Z",
+    "url": "https://github.com/mahiro6/dsh-billing/releases/tag/v1.0.1"
+  },
+  "author": "mahiro6",
+  "repo": "https://github.com/mahiro6/dsh-billing",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-28T18:32:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mahiro6/dsh-billing",
+    "commands": [
+      "dsh plugin --profile web add github:mahiro6/dsh-billing",
+      "dsh plugin --profile web add https://github.com/mahiro6/dsh-billing/archive/refs/heads/main.tar.gz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

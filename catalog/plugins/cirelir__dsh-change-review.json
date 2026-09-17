@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "cirelir/dsh-change-review",
+  "slug": "cirelir__dsh-change-review",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-change-review",
+  "title": "dsh-change-review",
+  "summary": "实时追踪会话中的文件修改，用彩色 diff 清晰展示每次 write/edit 变化，方便审查和回溯。",
+  "tags": [
+    "dsh-plugin",
+    "修改审查",
+    "Diff对比",
+    "实时推送",
+    "会话管理"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-08-17T15:36:33Z",
+    "url": "https://github.com/cirelir/dsh-change-review/releases/tag/v0.3.0"
+  },
+  "author": "cirelir",
+  "repo": "https://github.com/cirelir/dsh-change-review",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 13,
+  "forks": 4,
+  "pushedAt": "2026-08-17T15:34:16Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-change-review",
+    "commands": [
+      "dsh plugin --profile web add dsh-change-review"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

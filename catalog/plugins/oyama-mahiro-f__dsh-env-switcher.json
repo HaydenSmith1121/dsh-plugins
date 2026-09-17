@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Oyama-Mahiro-F/dsh-env-switcher",
+  "slug": "oyama-mahiro-f__dsh-env-switcher",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-env-switcher",
+  "title": "dsh-env-switcher",
+  "summary": "在 Windows 和 WSL2 之间一键切换 DeepSeek Harness 环境，让两者共存互不干扰。",
+  "tags": [
+    "dsh-plugin",
+    "环境切换",
+    "共存模式",
+    "命令行工具"
+  ],
+  "version": "1.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.0",
+    "publishedAt": "2026-08-30T13:06:58Z",
+    "url": "https://github.com/Oyama-Mahiro-F/dsh-env-switcher/releases/tag/v1.2.0"
+  },
+  "author": "Oyama-Mahiro-F",
+  "repo": "https://github.com/Oyama-Mahiro-F/dsh-env-switcher",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T01:57:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-env-switcher",
+    "commands": [
+      "dsh plugin --profile web add dsh-env-switcher",
+      "dsh plugin --profile web add file:/path/to/dsh-env-switcher"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

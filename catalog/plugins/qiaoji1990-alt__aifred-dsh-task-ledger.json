@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "qiaoji1990-alt/aifred-dsh-task-ledger",
+  "slug": "qiaoji1990-alt__aifred-dsh-task-ledger",
+  "tier": "community",
+  "package": null,
+  "name": "aifred-dsh-task-ledger",
+  "title": "aifred-dsh-task-ledger",
+  "summary": "为 DeepSeek Harness 提供任务生命周期与幂等事件记录，可独立使用或对接 Aifred，确保任务状态可追踪。",
+  "tags": [
+    "aifred",
+    "deepseek-harness",
+    "dsh-plugin",
+    "task-ledger",
+    "状态监控",
+    "自动化",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "qiaoji1990-alt",
+  "repo": "https://github.com/qiaoji1990-alt/aifred-dsh-task-ledger",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-25T08:54:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qiaoji1990-alt/aifred-dsh-task-ledger",
+    "commands": [
+      "dsh plugin --profile web add github:qiaoji1990-alt/aifred-dsh-task-ledger"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

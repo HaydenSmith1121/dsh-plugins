@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "DeepVite/dsh-mindmap-chat",
+  "slug": "deepvite__dsh-mindmap-chat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mindmap-chat",
+  "title": "dsh-mindmap-chat",
+  "summary": "把对话变成分支思维导图，帮你理清聊天脉络，快速回溯和对比不同对话分支。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "会话管理",
+    "可视化"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-26T19:52:32Z",
+    "url": "https://github.com/DeepVite/dsh-mindmap-chat/releases/tag/v0.2.0"
+  },
+  "author": "DeepVite",
+  "repo": "https://github.com/DeepVite/dsh-mindmap-chat",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-26T19:51:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:DeepVite/dsh-mindmap-chat",
+    "commands": [
+      "dsh plugin --profile web add github:DeepVite/dsh-mindmap-chat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

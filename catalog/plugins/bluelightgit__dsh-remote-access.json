@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "bluelightgit/dsh-remote-access",
+  "slug": "bluelightgit__dsh-remote-access",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-remote-access",
+  "title": "dsh-remote-access",
+  "summary": "为本地 DSH 提供局域网访问、Tailscale 私有远程入口和可选 Cloudflare Tunnel 公网入口，方便随时随地安全连接。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "零配置",
+    "工作流增强"
+  ],
+  "version": "0.3.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bluelightgit",
+  "repo": "https://github.com/bluelightgit/dsh-remote-access",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T16:14:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@greenonion/dsh-remote-access",
+    "commands": [
+      "dsh plugin --profile web add @greenonion/dsh-remote-access",
+      "git clone <repo-url> dsh-remote-access"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

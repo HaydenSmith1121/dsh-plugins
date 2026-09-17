@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "QuanQQQ/dsh-model-palette",
+  "slug": "quanqqq__dsh-model-palette",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-palette",
+  "title": "dsh-model-palette",
+  "summary": "为 DeepSeek Harness Web 提供可搜索的模型选择面板，按 F2 快速切换最近使用的模型。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "model-selector",
+    "plugin",
+    "模型配置",
+    "效率提升",
+    "会话管理",
+    "前端增强"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "QuanQQQ",
+  "repo": "https://github.com/QuanQQQ/dsh-model-palette",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T09:42:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:QuanQQQ/dsh-model-palette",
+    "commands": [
+      "dsh plugin --profile web add github:QuanQQQ/dsh-model-palette"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "shuaihaoV/dsh-mcp-skill-control",
+  "slug": "shuaihaov__dsh-mcp-skill-control",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mcp-skill-control",
+  "title": "dsh-mcp-skill-control",
+  "summary": "DSH（DeepSeek Harness）Web GUI 的 MCP 服务器管理面板：状态查看、启停/重启、新增/删除、JSON 导入，以及本地技能启停控制。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "dsh-skill"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.0.1",
+    "publishedAt": "2026-08-25T03:42:15Z",
+    "url": "https://github.com/shuaihaoV/dsh-mcp-skill-control/releases/tag/v0.0.1"
+  },
+  "author": "shuaihaoV",
+  "repo": "https://github.com/shuaihaoV/dsh-mcp-skill-control",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-25T03:59:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shuaihaoV/dsh-mcp-skill-control",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/shuaihaoV/dsh-mcp-skill-control",
+      "dsh plugin --profile web remove @shuaihaov/dsh-mcp-skill-control"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "lovezi0/dsh-visualizer-widget",
+  "slug": "lovezi0__dsh-visualizer-widget",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-visualizer-widget",
+  "title": "dsh-visualizer-widget",
+  "summary": "模型输出SVG或HTML后，自动渲染成可交互的内联卡片，源码不污染对话上下文。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "可视化",
+    "前端增强",
+    "内容创作",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lovezi0",
+  "repo": "https://github.com/lovezi0/dsh-visualizer-widget",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T12:51:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "dsh plugin --profile web add .",
+      "dsh plugin --profile web add github:lovezi0/dsh-visualizer-widget",
+      "dsh plugin --profile web remove dsh-visualizer-widget"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

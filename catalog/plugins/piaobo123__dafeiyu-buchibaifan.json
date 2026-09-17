@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "piaobo123/dafeiyu-buchibaifan",
+  "slug": "piaobo123__dafeiyu-buchibaifan",
+  "tier": "community",
+  "package": null,
+  "name": "dafeiyu-buchibaifan",
+  "title": "dafeiyu-buchibaifan",
+  "summary": "住在 Windows 桌面上的 Agent 桌宠，实时跟着 DeepSeek Harness 的工作状态动起来。",
+  "tags": [
+    "deepseek-harness",
+    "desktop-pet",
+    "dsh-plugin",
+    "桌宠",
+    "回答状态",
+    "状态监控",
+    "可视化",
+    "界面美化"
+  ],
+  "version": "1.0.7",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "piaobo123",
+  "repo": "https://github.com/piaobo123/dafeiyu-buchibaifan",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-15T13:03:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:piaobo123/dafeiyu-buchibaifan",
+    "commands": [
+      "dsh plugin --profile web add github:piaobo123/dafeiyu-buchibaifan"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

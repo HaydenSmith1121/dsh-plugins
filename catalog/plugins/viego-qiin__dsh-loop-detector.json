@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "viego-qiin/dsh-loop-detector",
+  "slug": "viego-qiin__dsh-loop-detector",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-loop-detector",
+  "title": "dsh-loop-detector",
+  "summary": "检测并强制中断智能体的死循环和重复搜索，避免无效空转，提升任务效率。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "loop-detectors",
+    "循环检测",
+    "死循环中断",
+    "重复搜索拦截",
+    "智能体优化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-15T02:21:48Z",
+    "url": "https://github.com/viego-qiin/dsh-loop-detector/releases/tag/v1.0.0"
+  },
+  "author": "viego-qiin",
+  "repo": "https://github.com/viego-qiin/dsh-loop-detector",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-15T02:21:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:viego-qiin/dsh-loop-detector",
+    "commands": [
+      "dsh plugin --profile web add github:viego-qiin/dsh-loop-detector"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

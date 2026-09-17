@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "supergameboy/dsh-chat-focus",
+  "slug": "supergameboy__dsh-chat-focus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-chat-focus",
+  "title": "dsh-chat-focus",
+  "summary": "把工具调用、思考等运行时信息折叠起来，回复用聊天气泡展示，外观还能自己调。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "界面美化",
+    "前端增强",
+    "会话管理",
+    "设置面板"
+  ],
+  "version": "0.4.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "supergameboy",
+  "repo": "https://github.com/supergameboy/dsh-chat-focus",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 1,
+  "pushedAt": "2026-09-10T17:15:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-chat-focus",
+    "commands": [
+      "dsh plugin --profile web add dsh-chat-focus",
+      "dsh plugin --profile web add \"link:E:\\dsh-chat-focus\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

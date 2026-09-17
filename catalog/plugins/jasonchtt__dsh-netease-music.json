@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "JasonCHTT/dsh-netease-music",
+  "slug": "jasonchtt__dsh-netease-music",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-netease-music",
+  "title": "dsh-netease-music",
+  "summary": "在 DSH 网页里直接听网易云音乐，顶部迷你播放器可展开，扫码登录还能用 AI 对话点歌控制。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh-plugin",
+    "dsh-plugins",
+    "music",
+    "netease-cloud-music",
+    "工具集成",
+    "快捷操作",
+    "AI 助手",
+    "主题",
+    "视觉理解"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-15T13:01:40Z",
+    "url": "https://github.com/JasonCHTT/dsh-netease-music/releases/tag/v1.0.0"
+  },
+  "author": "JasonCHTT",
+  "repo": "https://github.com/JasonCHTT/dsh-netease-music",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-15T15:24:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JasonCHTT/dsh-netease-music",
+    "commands": [
+      "pnpm add 'link:C:/<路径>/dsh-netease-music'",
+      "pnpm add NeteaseCloudMusicApi"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

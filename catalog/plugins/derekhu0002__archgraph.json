@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "derekhu0002/archgraph",
+  "slug": "derekhu0002__archgraph",
+  "tier": "community",
+  "package": null,
+  "name": "archgraph",
+  "title": "archgraph",
+  "summary": "用架构图统一描述智能体流程和产品设计，帮你更直观地搭建、编排和管理智能体工程。",
+  "tags": [
+    "agent-framework",
+    "agent-memory",
+    "agent-orchestration",
+    "agentic",
+    "agentic-ai",
+    "agents",
+    "copilot",
+    "cursor",
+    "deepseek-harness",
+    "dsh-plugin",
+    "opencode",
+    "AI 助手",
+    "多智能体协作",
+    "工作流增强"
+  ],
+  "version": "0.9.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.9.3",
+    "publishedAt": "2026-08-21T02:42:11Z",
+    "url": "https://github.com/derekhu0002/archgraph/releases/tag/v0.9.3"
+  },
+  "author": "derekhu0002",
+  "repo": "https://github.com/derekhu0002/archgraph",
+  "homepage": "https://archgraph.org/",
+  "license": "Apache-2.0",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-16T10:00:02Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:derekhu0002/archgraph",
+    "commands": [
+      "dsh plugin --profile web add github:derekhu0002/archgraph"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

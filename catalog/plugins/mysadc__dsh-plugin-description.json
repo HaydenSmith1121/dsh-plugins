@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "MysaDC/dsh-plugin-description",
+  "slug": "mysadc__dsh-plugin-description",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-description",
+  "title": "dsh-plugin-description",
+  "summary": "给 DSH 插件列表里的每张卡片补上中英文功能说明，挑插件不再靠猜，还能让其他插件注册自己的描述。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "设置面板",
+    "主题",
+    "工具集成"
+  ],
+  "version": "1.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.1",
+    "publishedAt": "2026-08-14T04:45:27Z",
+    "url": "https://github.com/MysaDC/dsh-plugin-description/releases/tag/v1.2.1"
+  },
+  "author": "MysaDC",
+  "repo": "https://github.com/MysaDC/dsh-plugin-description",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-14T04:44:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MysaDC/dsh-plugin-description",
+    "commands": [
+      "dsh plugin --profile web add link:$(pwd)"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

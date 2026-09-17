@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "kezboardpj/dsh-btw",
+  "slug": "kezboardpj__dsh-btw",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-btw",
+  "title": "dsh-btw",
+  "summary": "在智能体干活时，用 /btw 快速问个小问题，旁路子代理只读回答，不打断主线，也不用工具。",
+  "tags": [
+    "btw",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "AI 助手",
+    "效率提升",
+    "会话管理",
+    "多Agent协作"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kezboardpj",
+  "repo": "https://github.com/kezboardpj/dsh-btw",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-23T01:58:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-btw-side",
+    "commands": [
+      "dsh plugin --profile web add dsh-btw-side"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

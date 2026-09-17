@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "yangbobo2021/relay-dsh-plugin-terminal",
+  "slug": "yangbobo2021__relay-dsh-plugin-terminal",
+  "tier": "community",
+  "package": null,
+  "name": "relay-dsh-plugin-terminal",
+  "title": "relay-dsh-plugin-terminal",
+  "summary": "为 DeepSeek Harness 工作台提供与后端无关的交互式终端底部视图，方便直接运行命令。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "terminal",
+    "typescript",
+    "workbench",
+    "xterm",
+    "命令行工具",
+    "可视化",
+    "零配置",
+    "模型配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-31T06:55:40Z",
+    "url": "https://github.com/yangbobo2021/relay-dsh-plugin-terminal/releases/tag/v0.1.1"
+  },
+  "author": "yangbobo2021",
+  "repo": "https://github.com/yangbobo2021/relay-dsh-plugin-terminal",
+  "homepage": "https://www.npmjs.com/package/relay-dsh-plugin-terminal",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T12:05:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yangbobo2021/relay-dsh-plugin-terminal",
+    "commands": [
+      "dsh plugin --profile web why relay-dsh-plugin-terminal",
+      "dsh plugin --profile web update relay-dsh-plugin-terminal",
+      "dsh plugin --profile web remove relay-dsh-plugin-terminal"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

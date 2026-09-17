@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "Imzl-zl/dsh-mcp-manager-ui",
+  "slug": "imzl-zl__dsh-mcp-manager-ui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mcp-manager-ui",
+  "title": "dsh-mcp-manager-ui",
+  "summary": "为 DeepSeek Harness 网页版提供 MCP 服务器管理面板，支持悬浮窗、JSON 导入和配置持久化，方便快速管理。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mcp",
+    "插件管理",
+    "悬浮面板",
+    "JSON导入",
+    "配置持久化"
+  ],
+  "version": "1.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.1",
+    "publishedAt": "2026-09-11T01:41:16Z",
+    "url": "https://github.com/Imzl-zl/dsh-mcp-manager-ui/releases/tag/v1.2.1"
+  },
+  "author": "Imzl-zl",
+  "repo": "https://github.com/Imzl-zl/dsh-mcp-manager-ui",
+  "homepage": "https://github.com/Imzl-zl/dsh-mcp-manager-ui#readme",
+  "license": "MIT",
+  "stars": 18,
+  "forks": 0,
+  "pushedAt": "2026-09-15T07:07:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-mcp-manager-ui@^1.2.1",
+    "commands": [
+      "dsh plugin --profile web add dsh-mcp-manager-ui@^1.2.1",
+      "dsh plugin --profile web add github:Imzl-zl/dsh-mcp-manager-ui",
+      "dsh plugin --profile web update dsh-mcp-manager-ui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

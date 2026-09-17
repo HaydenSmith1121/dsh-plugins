@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "BruzWJ/Liang-Saint-Slider",
+  "slug": "bruzwj__liang-saint-slider",
+  "tier": "community",
+  "package": null,
+  "name": "Liang-Saint-Slider",
+  "title": "Liang-Saint-Slider",
+  "summary": "把滑动变祖器搬进 DeepSeek Harness，拖动滑块就能切换模型和思考强度。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "模型适配",
+    "快捷操作",
+    "设置面板",
+    "效率提升"
+  ],
+  "version": "1.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "BruzWJ",
+  "repo": "https://github.com/BruzWJ/Liang-Saint-Slider",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 95,
+  "forks": 4,
+  "pushedAt": "2026-08-19T21:13:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-liang-calibrator",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-liang-calibrator"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

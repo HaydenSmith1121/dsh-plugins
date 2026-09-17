@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "YpipaQ/dsh-s-m-c-center",
+  "slug": "ypipaq__dsh-s-m-c-center",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-s-m-c-center",
+  "title": "dsh-s-m-c-center",
+  "summary": "一个页面管好 DSH 的技能、MCP 和命令行工具，连上就能用。",
+  "tags": [
+    "cli",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mcp",
+    "skills",
+    "插件管理",
+    "工具集成",
+    "设置面板",
+    "命令行工具",
+    "零配置"
+  ],
+  "version": "0.0.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.0.3",
+    "publishedAt": "2026-09-16T17:56:49Z",
+    "url": "https://github.com/YpipaQ/dsh-s-m-c-center/releases/tag/v0.0.3"
+  },
+  "author": "YpipaQ",
+  "repo": "https://github.com/YpipaQ/dsh-s-m-c-center",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T17:56:11Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-s-m-c-center",
+    "commands": [
+      "dsh plugin --profile web add dsh-s-m-c-center",
+      "dsh plugin --profile web add <absolute path to this folder>",
+      "dsh plugin --profile web add <path>/dsh-s-m-c-center-<version>.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

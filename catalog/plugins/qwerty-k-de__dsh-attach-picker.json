@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "qwerty-k-de/dsh-attach-picker",
+  "slug": "qwerty-k-de__dsh-attach-picker",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-attach-picker",
+  "title": "dsh-attach-picker",
+  "summary": "在 DeepSeek Harness 网页输入框工具栏加一个图片按钮，点击即可通过系统文件对话框选择图片，无需拖拽或粘贴。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "零配置",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "qwerty-k-de",
+  "repo": "https://github.com/qwerty-k-de/dsh-attach-picker",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T15:05:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-attach-picker",
+    "commands": [
+      "dsh plugin --profile web add dsh-attach-picker",
+      "dsh plugin --profile web add github:qwerty-k-de/dsh-attach-picker"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

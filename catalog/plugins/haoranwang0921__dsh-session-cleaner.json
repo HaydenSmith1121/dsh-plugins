@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "haoranwang0921/dsh-session-cleaner",
+  "slug": "haoranwang0921__dsh-session-cleaner",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-cleaner",
+  "title": "dsh-session-cleaner",
+  "summary": "在设置页里管理对话记录，能整个会话或单条消息删除，顺手清理反馈数据。",
+  "tags": [
+    "cordis-plugin",
+    "deepseek-harness",
+    "dsh-plugin",
+    "session-management",
+    "会话管理",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "1.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "haoranwang0921",
+  "repo": "https://github.com/haoranwang0921/dsh-session-cleaner",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-09-05T16:02:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:haoranwang0921/dsh-session-cleaner",
+    "commands": [
+      "dsh plugin --profile web add github:haoranwang0921/dsh-session-cleaner"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

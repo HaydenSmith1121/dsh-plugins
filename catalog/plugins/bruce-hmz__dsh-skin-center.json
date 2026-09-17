@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "bruce-hmz/dsh-skin-center",
+  "slug": "bruce-hmz__dsh-skin-center",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skin-center",
+  "title": "dsh-skin-center",
+  "summary": "一行命令给 DeepSeek Harness 换肤，35 套内置主题加自定义图片，还能导入导出皮肤包。",
+  "tags": [
+    "dark-mode",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "skin",
+    "theme",
+    "ui-theme",
+    "界面美化",
+    "主题",
+    "插件管理",
+    "快捷操作"
+  ],
+  "version": "2.2.0-rc.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.2.0-rc.1",
+    "publishedAt": "2026-09-15T03:00:55Z",
+    "url": "https://github.com/bruce-hmz/dsh-skin-center/releases/tag/v2.2.0-rc.1"
+  },
+  "author": "bruce-hmz",
+  "repo": "https://github.com/bruce-hmz/dsh-skin-center",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T03:00:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-skin-center",
+    "commands": [
+      "dsh plugin --profile web add dsh-skin-center",
+      "dsh plugin --profile web update dsh-skin-center",
+      "dsh plugin --profile web remove dsh-skin-center"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "firestige/crystra-dsh",
+  "slug": "firestige__crystra-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "crystra-dsh",
+  "title": "crystra-dsh",
+  "summary": "把重复的工作流步骤变成确定性执行，少调用 Agent 和 LLM，省时又省钱。",
+  "tags": [
+    "agent",
+    "crystra",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "workflow",
+    "工作流增强",
+    "自动化",
+    "效率提升",
+    "成本控制"
+  ],
+  "version": "0.2.12",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "0.2.12",
+    "publishedAt": "2026-09-05T15:23:28Z",
+    "url": "https://github.com/firestige/crystra-dsh/releases/tag/0.2.12"
+  },
+  "author": "firestige",
+  "repo": "https://github.com/firestige/crystra-dsh",
+  "homepage": "https://github.com/firestige/crystra-dsh",
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T07:48:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:firestige/crystra-dsh",
+    "commands": [
+      "dsh plugin --profile web add github:firestige/crystra-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

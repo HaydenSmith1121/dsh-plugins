@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "SenmuuuuW/dsh-whale-report",
+  "slug": "senmuuuuw__dsh-whale-report",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-whale-report",
+  "title": "dsh-whale-report",
+  "summary": "把 Agent 的会话日志变成日报、周报、月报或年报，任意时间段都能生成，只读不改写，帮你轻松回顾工作。",
+  "tags": [
+    "agent-report",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "内容创作",
+    "数据分析",
+    "时间统计",
+    "只读工具"
+  ],
+  "version": "0.6.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.1",
+    "publishedAt": "2026-09-03T05:01:08Z",
+    "url": "https://github.com/SenmuuuuW/dsh-whale-report/releases/tag/v0.6.1"
+  },
+  "author": "SenmuuuuW",
+  "repo": "https://github.com/SenmuuuuW/dsh-whale-report",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 31,
+  "forks": 3,
+  "pushedAt": "2026-09-03T05:31:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:SenmuuuuW/dsh-whale-report",
+    "commands": [
+      "dsh plugin --profile web add \"github:SenmuuuuW/dsh-whale-report\"",
+      "npm install dsh-whale-report@0.6.1"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

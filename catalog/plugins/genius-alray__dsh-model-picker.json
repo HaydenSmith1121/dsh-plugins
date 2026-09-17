@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "genius-alray/dsh-model-picker",
+  "slug": "genius-alray__dsh-model-picker",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-picker",
+  "title": "dsh-model-picker",
+  "summary": "把 DSH 网页版自带的模型下拉菜单升级成对话框式选择器，支持模糊搜索、按供应商分组、收藏模型和思考档位调节，切换模型更顺手。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "前端增强",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "genius-alray",
+  "repo": "https://github.com/genius-alray/dsh-model-picker",
+  "homepage": null,
+  "license": null,
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-09-02T14:58:54Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:genius-alray/dsh-model-picker",
+    "commands": [
+      "dsh plugin --profile web add genius-alray/dsh-model-picker",
+      "git clone https://github.com/genius-alray/dsh-model-picker.git model-picker",
+      "dsh plugin --profile web add /path/to/model-picker"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

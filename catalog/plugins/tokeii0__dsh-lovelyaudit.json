@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "Tokeii0/dsh-lovelyaudit",
+  "slug": "tokeii0__dsh-lovelyaudit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-lovelyaudit",
+  "title": "dsh-lovelyaudit",
+  "summary": "DSH侧边栏黑盒/代审工作台，按P0–P7分级测绘漏洞并生成含PoC/EXP的专项报告。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "安全审计",
+    "代码检查",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-08-22T04:11:54Z",
+    "url": "https://github.com/Tokeii0/dsh-lovelyaudit/releases/tag/v0.2.1"
+  },
+  "author": "Tokeii0",
+  "repo": "https://github.com/Tokeii0/dsh-lovelyaudit",
+  "homepage": null,
+  "license": null,
+  "stars": 14,
+  "forks": 2,
+  "pushedAt": "2026-08-22T04:11:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Tokeii0/dsh-lovelyaudit",
+    "commands": [
+      "dsh plugin --profile web add github:Tokeii0/dsh-lovelyaudit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

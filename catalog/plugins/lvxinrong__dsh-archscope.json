@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "lvxinrong/dsh-archscope",
+  "slug": "lvxinrong__dsh-archscope",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-archscope",
+  "title": "dsh-archscope",
+  "summary": "自动扫描多仓库项目的底层架构，基于真实证据帮你快速摸清代码脉络，接手或重构项目更轻松。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.3.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lvxinrong",
+  "repo": "https://github.com/lvxinrong/dsh-archscope",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-26T11:39:39Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lvxinrong/dsh-archscope",
+    "commands": [
+      "dsh plugin --profile web add github:lvxinrong/dsh-archscope"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

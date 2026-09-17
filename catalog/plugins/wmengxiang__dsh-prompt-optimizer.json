@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "wmengxiang/dsh-prompt-optimizer",
+  "slug": "wmengxiang__dsh-prompt-optimizer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-optimizer",
+  "title": "dsh-prompt-optimizer",
+  "summary": "输入框加个✨按钮，一键调用当前模型把草稿提示词改得更清晰具体，自动回填后直接开写，AI编程更顺手。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "AI 助手"
+  ],
+  "version": "1.0.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wmengxiang",
+  "repo": "https://github.com/wmengxiang/dsh-prompt-optimizer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-11T14:00:22Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wmengxiang/dsh-prompt-optimizer",
+    "commands": [
+      "dsh plugin --profile web add \"file:/绝对路径/to/dsh-prompt-optimizer\"",
+      "dsh plugin --profile web add \"github:<owner>/dsh-prompt-optimizer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

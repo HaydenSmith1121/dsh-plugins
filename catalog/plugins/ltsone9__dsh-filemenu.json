@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "ltsone9/dsh-filemenu",
+  "slug": "ltsone9__dsh-filemenu",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-filemenu",
+  "title": "dsh-filemenu",
+  "summary": "给DSH网页端加上文件右键菜单，一键打开、定位文件夹、调起编辑器或复制路径，日常文件操作更顺手。",
+  "tags": [
+    "dsh-plugin",
+    "工作区管理",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ltsone9",
+  "repo": "https://github.com/ltsone9/dsh-filemenu",
+  "homepage": "https://github.com/ltsone9/dsh-filemenu",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-21T13:43:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ltsone9/dsh-filemenu",
+    "commands": [
+      "dsh plugin --profile <profile> add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

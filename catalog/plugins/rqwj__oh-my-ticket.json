@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "rqwj/oh-my-ticket",
+  "slug": "rqwj__oh-my-ticket",
+  "tier": "community",
+  "package": null,
+  "name": "oh-my-ticket",
+  "title": "oh-my-ticket",
+  "summary": "给智能体用的工单小助手，帮你在对话里快速创建、查看和管理工单，提升处理效率。",
+  "tags": [
+    "agent-skills",
+    "dsh",
+    "dsh-plugin",
+    "AI 助手",
+    "自动化",
+    "效率提升",
+    "模型配置"
+  ],
+  "version": "0.6.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.4",
+    "publishedAt": "2026-09-05T04:55:41Z",
+    "url": "https://github.com/rqwj/oh-my-ticket/releases/tag/v0.6.4"
+  },
+  "author": "rqwj",
+  "repo": "https://github.com/rqwj/oh-my-ticket",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-05T04:55:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:rqwj/oh-my-ticket",
+    "commands": [
+      "dsh plugin --profile web add github:rqwj/oh-my-ticket"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

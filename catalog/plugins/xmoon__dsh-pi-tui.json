@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "XMoon/dsh-pi-tui",
+  "slug": "xmoon__dsh-pi-tui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pi-tui",
+  "title": "dsh-pi-tui",
+  "summary": "为 DeepSeek Harness 提供终端界面，让你在命令行里也能直观地查看和操作对话。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "前端增强",
+    "交互宠物",
+    "会话管理"
+  ],
+  "version": "0.4.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.6",
+    "publishedAt": "2026-09-13T13:12:26Z",
+    "url": "https://github.com/XMoon/dsh-pi-tui/releases/tag/v0.4.6"
+  },
+  "author": "XMoon",
+  "repo": "https://github.com/XMoon/dsh-pi-tui",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 17,
+  "forks": 3,
+  "pushedAt": "2026-09-16T16:24:01Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@xmoon76/dsh-pi-tui@latest",
+    "commands": [
+      "npm install -g --allow-scripts=@deepseek-ai/dsh-subprocess-local,koffi,node-pty,@google/genai,protobufjs,fs-ext @deepseek-ai/dsh@latest",
+      "dsh plugin --profile pi-tui -- add @xmoon76/dsh-pi-tui@latest",
+      "npm install -g --allow-scripts=@deepseek-ai/dsh-subprocess-local,koffi,node-pty,@google/genai,protobufjs,fs-ext @deepseek-ai/dsh@alpha"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

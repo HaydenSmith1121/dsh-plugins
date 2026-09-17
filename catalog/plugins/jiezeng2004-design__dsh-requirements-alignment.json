@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "jiezeng2004-design/dsh-requirements-alignment",
+  "slug": "jiezeng2004-design__dsh-requirements-alignment",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-requirements-alignment",
+  "title": "dsh-requirements-alignment",
+  "summary": "防止长任务中智能体悄悄改需求、扩范围，执行前对齐关键决策，轻量守护需求一致性。",
+  "tags": [
+    "agent",
+    "ai-agent",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "requirement-alignment",
+    "AI 助手",
+    "自动化",
+    "工作流增强",
+    "插件管理"
+  ],
+  "version": "0.4.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.2",
+    "publishedAt": "2026-08-28T03:37:04Z",
+    "url": "https://github.com/jiezeng2004-design/dsh-requirements-alignment/releases/tag/v0.4.2"
+  },
+  "author": "jiezeng2004-design",
+  "repo": "https://github.com/jiezeng2004-design/dsh-requirements-alignment",
+  "homepage": "https://www.npmjs.com/package/dsh-requirements-alignment",
+  "license": "MIT",
+  "stars": 9,
+  "forks": 0,
+  "pushedAt": "2026-08-29T13:10:04Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jiezeng2004-design/dsh-requirements-alignment",
+    "commands": [
+      "dsh plugin --profile web add github:jiezeng2004-design/dsh-requirements-alignment"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

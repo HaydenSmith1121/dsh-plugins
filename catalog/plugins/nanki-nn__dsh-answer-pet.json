@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Nanki-nn/dsh-answer-pet",
+  "slug": "nanki-nn__dsh-answer-pet",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-answer-pet",
+  "title": "dsh-answer-pet",
+  "summary": "给 DeepSeek Harness 网页版加一只桌面宠物，实时展示回答进度、模型执行轨迹和会话状态，让等待过程更生动有趣。",
+  "tags": [
+    "deepseek-harness",
+    "desktop-pet",
+    "dsh-plugin",
+    "桌宠",
+    "回答状态",
+    "模型轨迹",
+    "会话进度",
+    "可视化"
+  ],
+  "version": "0.6.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Nanki-nn",
+  "repo": "https://github.com/Nanki-nn/dsh-answer-pet",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 11,
+  "forks": 1,
+  "pushedAt": "2026-08-16T15:44:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Nanki-nn/dsh-answer-pet",
+    "commands": [
+      "dsh plugin --profile web add github:Nanki-nn/dsh-answer-pet"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

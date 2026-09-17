@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "moon09300731/dsh-approval-gate",
+  "slug": "moon09300731__dsh-approval-gate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-approval-gate",
+  "title": "dsh-approval-gate",
+  "summary": "用 Flash 模型预判沙箱越界，常规操作自动放行、危险操作转人工确认，省心又安全。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "安全审计",
+    "自动化",
+    "AI 助手",
+    "变更审查",
+    "操作回滚"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "moon09300731",
+  "repo": "https://github.com/moon09300731/dsh-approval-gate",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 70,
+  "forks": 13,
+  "pushedAt": "2026-08-20T06:16:50Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-approval-gate",
+    "commands": [
+      "dsh plugin --profile web add dsh-approval-gate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

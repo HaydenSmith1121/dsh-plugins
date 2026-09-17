@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "welsione/dsh-model-router",
+  "slug": "welsione__dsh-model-router",
+  "tier": "community",
+  "package": null,
+  "name": "welsione/dsh-model-router",
+  "title": "welsione/dsh-model-router",
+  "summary": "一个逻辑模型ID聚合多家供应商，自动按用途选档，故障时秒切备用模型，省钱又省心。",
+  "tags": [
+    "dsh-plugin",
+    "模型适配",
+    "资源优化",
+    "自动化",
+    "效率提升",
+    "模型配置"
+  ],
+  "version": "0.0.10",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "welsione",
+  "repo": "https://github.com/welsione/dsh-model-router",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-11T09:41:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@welsione/dsh-model-router",
+    "commands": [
+      "dsh plugin --profile web add @welsione/dsh-model-router",
+      "dsh plugin --profile web remove @welsione/dsh-model-router"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

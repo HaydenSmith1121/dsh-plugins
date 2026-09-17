@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "BaronCyrus/dsh-kimi-subscription",
+  "slug": "baroncyrus__dsh-kimi-subscription",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-kimi-subscription",
+  "title": "dsh-kimi-subscription",
+  "summary": "在 DeepSeek Harness 里直接用 Kimi Code 会员订阅，登录、额度、调用一站式搞定，不用再单独配 API 密钥。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "kimi",
+    "kimi-code",
+    "llm",
+    "oauth",
+    "模型配置",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "1.2.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.7",
+    "publishedAt": "2026-09-11T09:28:02Z",
+    "url": "https://github.com/BaronCyrus/dsh-kimi-subscription/releases/tag/v1.2.7"
+  },
+  "author": "BaronCyrus",
+  "repo": "https://github.com/BaronCyrus/dsh-kimi-subscription",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-11T09:24:34Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-kimi-subscription@1.2.7",
+    "commands": [
+      "dsh plugin --profile web add dsh-kimi-subscription@1.2.7",
+      "dsh plugin --profile web list dsh-kimi-subscription --depth 0",
+      "dsh plugin --profile web add ./dsh-kimi-subscription-1.2.7.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

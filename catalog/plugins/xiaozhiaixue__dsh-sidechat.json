@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaozhiaixue/dsh-sidechat",
+  "slug": "xiaozhiaixue__dsh-sidechat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sidechat",
+  "title": "dsh-sidechat",
+  "summary": "在DSH右侧开一个独立对话面板，方便边写边聊，但目前还读不到主会话内容。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "会话管理",
+    "多Agent协作",
+    "效率提升"
+  ],
+  "version": "0.1.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xiaozhiaixue",
+  "repo": "https://github.com/xiaozhiaixue/dsh-sidechat",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T16:24:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:realpkuasule/dsh-sidechat",
+    "commands": [
+      "dsh plugin --profile web add github:realpkuasule/dsh-sidechat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

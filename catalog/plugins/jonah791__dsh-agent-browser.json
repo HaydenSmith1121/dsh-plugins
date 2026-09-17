@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-agent-browser",
+  "slug": "jonah791__dsh-agent-browser",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-browser",
+  "title": "dsh-agent-browser",
+  "summary": "浏览器调试工具，自动捕获控制台和全局报错，让你像看F12一样随时查看页面状态。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "状态监控",
+    "AI 助手",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-07T11:06:27Z",
+    "url": "https://github.com/jonah791/dsh-agent-browser/releases/tag/v0.1.0"
+  },
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-agent-browser",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T06:03:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-agent-browser",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-agent-browser"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

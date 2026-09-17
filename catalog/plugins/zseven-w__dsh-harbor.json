@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "ZSeven-W/dsh-harbor",
+  "slug": "zseven-w__dsh-harbor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-harbor",
+  "title": "dsh-harbor",
+  "summary": "盘点已装插件的功能清单，标注代码位置，核对声明与实际能力，跨版本追踪变化，让插件管理更透明。",
+  "tags": [
+    "ai-agents",
+    "audit",
+    "capabilities",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "governance",
+    "plugin",
+    "static-analysis",
+    "supply-chain",
+    "transparency",
+    "插件管理",
+    "安全审计",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.1.0-rc.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ZSeven-W",
+  "repo": "https://github.com/ZSeven-W/dsh-harbor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 24,
+  "forks": 0,
+  "pushedAt": "2026-09-11T17:54:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@zseven-w/dsh-harbor@next",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh@latest",
+      "dsh plugin --profile web add link:/path/to/dsh-harbor",
+      "dsh plugin --profile web add @zseven-w/dsh-harbor@next"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

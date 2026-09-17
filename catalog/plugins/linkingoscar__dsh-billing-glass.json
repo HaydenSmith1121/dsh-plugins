@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "linkingoscar/dsh-billing-glass",
+  "slug": "linkingoscar__dsh-billing-glass",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-billing-glass",
+  "title": "dsh-billing-glass",
+  "summary": "为 DeepSeek Harness 网页界面添加玻璃拟态计费浮层，实时查看余额、会话费用、日消费和 Token 用量。",
+  "tags": [
+    "billing",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugin-verify",
+    "dsh-plugins",
+    "plugin",
+    "web",
+    "计费监控",
+    "状态监控",
+    "成本控制",
+    "界面美化"
+  ],
+  "version": "0.5.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.1",
+    "publishedAt": "2026-09-06T04:01:07Z",
+    "url": "https://github.com/linkingoscar/dsh-billing-glass/releases/tag/v0.5.1"
+  },
+  "author": "linkingoscar",
+  "repo": "https://github.com/linkingoscar/dsh-billing-glass",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-11T14:53:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:linkingoscar/dsh-billing-glass",
+    "commands": [
+      "dsh plugin --profile web add github:linkingoscar/dsh-billing-glass",
+      "dsh plugin --profile web add link:$(pwd)"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

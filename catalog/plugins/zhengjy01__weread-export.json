@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "zhengjy01/weread-export",
+  "slug": "zhengjy01__weread-export",
+  "tier": "community",
+  "package": null,
+  "name": "weread-export",
+  "title": "weread-export",
+  "summary": "把微信读书的书架、划线和阅读数据接入 DeepSeek Harness，还能一键导出到 flomo，方便整理读书笔记。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "AI 助手",
+    "效率提升",
+    "工作区管理",
+    "多模态"
+  ],
+  "version": "0.1.12",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhengjy01",
+  "repo": "https://github.com/zhengjy01/weread-export",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T13:06:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhengjy01/weread-export",
+    "commands": [
+      "dsh plugin --profile web add link:/path/to/weread-export",
+      "dsh plugin --profile web add github:zhengjy01/weread-export"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

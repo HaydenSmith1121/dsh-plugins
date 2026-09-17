@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "oujnit/dsh-usage-stat",
+  "slug": "oujnit__dsh-usage-stat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage-stat",
+  "title": "dsh-usage-stat",
+  "summary": "本地优先的 token 用量与项目活动仪表盘，帮你直观掌握 DSH Desktop 的使用情况。",
+  "tags": [
+    "dashboard",
+    "deepseek-harness",
+    "dsh",
+    "dsh-desktop",
+    "token-usage",
+    "typescript",
+    "状态监控",
+    "效率提升",
+    "语义检索",
+    "可视化"
+  ],
+  "version": "0.2.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.3",
+    "publishedAt": "2026-08-24T11:12:59Z",
+    "url": "https://github.com/oujnit/dsh-usage-stat/releases/tag/v0.2.3"
+  },
+  "author": "oujnit",
+  "repo": "https://github.com/oujnit/dsh-usage-stat",
+  "homepage": "https://github.com/oujnit/dsh-usage-stat#readme",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T11:12:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:oujnit/dsh-usage-stat",
+    "commands": [
+      "dsh plugin --profile desktop add https://github.com/oujnit/dsh-usage-stat/releases/download/v0.2.3/dsh-usage-stat-0.2.3.tgz",
+      "dsh plugin --profile desktop add github:oujnit/dsh-usage-stat",
+      "dsh plugin --profile desktop remove dsh-usage-stat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

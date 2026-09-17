@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "feiertu/dsh-input-rewriter",
+  "slug": "feiertu__dsh-input-rewriter",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-input-rewriter",
+  "title": "dsh-input-rewriter",
+  "summary": "打字停两秒就自动帮你把问题改写得更清楚，不用点按钮，答案质量更高。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "AI 助手",
+    "自动化",
+    "快捷操作"
+  ],
+  "version": "0.3.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "feiertu",
+  "repo": "https://github.com/feiertu/dsh-input-rewriter",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T07:27:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-input-rewriter",
+    "commands": [
+      "dsh plugin --profile web add dsh-input-rewriter",
+      "dsh plugin --profile web add github:feiertu/dsh-input-rewriter"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

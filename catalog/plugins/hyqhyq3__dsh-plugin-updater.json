@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "hyqhyq3/dsh-plugin-updater",
+  "slug": "hyqhyq3__dsh-plugin-updater",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-updater",
+  "title": "dsh-plugin-updater",
+  "summary": "为 DeepSeek Harness 提供插件包级管理，支持更新检测和 GitHub 插件市场，方便发现与升级插件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "marketplace",
+    "plugin-manager",
+    "插件管理",
+    "效率提升",
+    "命令行工具",
+    "状态监控"
+  ],
+  "version": "0.2.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.5",
+    "publishedAt": "2026-09-09T03:04:46Z",
+    "url": "https://github.com/hyqhyq3/dsh-plugin-updater/releases/tag/v0.2.5"
+  },
+  "author": "hyqhyq3",
+  "repo": "https://github.com/hyqhyq3/dsh-plugin-updater",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T13:21:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hyqhyq3/dsh-plugin-updater",
+    "commands": [
+      "dsh plugin --profile web add github:hyqhyq3/dsh-plugin-updater",
+      "dsh plugin --profile web add link:/path/to/dsh-plugin-updater"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "FYHC1/dsh-web-manager",
+  "slug": "fyhc1__dsh-web-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-manager",
+  "title": "dsh-web-manager",
+  "summary": "Windows 系统托盘常驻的 DeepSeek Harness WebUI 管理器，一键启动、守护服务并拉起 Edge 应用窗口。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "自动化",
+    "状态监控",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "3.9.16",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v3.9.16",
+    "publishedAt": "2026-09-05T09:05:40Z",
+    "url": "https://github.com/FYHC1/dsh-web-manager/releases/tag/v3.9.16"
+  },
+  "author": "FYHC1",
+  "repo": "https://github.com/FYHC1/dsh-web-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T09:04:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:FYHC1/dsh-web-manager",
+    "commands": [
+      "dsh plugin --profile web add github:FYHC1/dsh-web-manager",
+      "dsh plugin --profile web add file:/path/to/dsh-web-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

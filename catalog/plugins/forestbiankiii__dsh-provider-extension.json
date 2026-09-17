@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "forestbiankiii/dsh-provider-extension",
+  "slug": "forestbiankiii__dsh-provider-extension",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-provider-extension",
+  "title": "dsh-provider-extension",
+  "summary": "在输入框里直接切换 AI 提供商、账号和模型，还能查看每个账号的订阅额度。",
+  "tags": [
+    "chatgpt",
+    "codex",
+    "deepseek-harness",
+    "dsh",
+    "gemini",
+    "model-selector",
+    "opencode",
+    "provider-extension",
+    "provider-hub",
+    "reasoning-effort",
+    "模型适配",
+    "设置面板",
+    "快捷操作",
+    "状态监控"
+  ],
+  "version": "0.5.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.2",
+    "publishedAt": "2026-09-16T09:01:21Z",
+    "url": "https://github.com/forestbiankiii/dsh-provider-extension/releases/tag/v0.5.2"
+  },
+  "author": "forestbiankiii",
+  "repo": "https://github.com/forestbiankiii/dsh-provider-extension",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T09:01:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:forestbiankiii/dsh-provider-extension",
+    "commands": [
+      "dsh plugin --profile web add github:forestbiankiii/dsh-provider-extension"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

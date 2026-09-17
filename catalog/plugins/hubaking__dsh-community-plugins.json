@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "HubaKing/dsh-community-plugins",
+  "slug": "hubaking__dsh-community-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-community-plugins",
+  "title": "dsh-community-plugins",
+  "summary": "教智能体从 GitHub、dshmarket 和 npm 发现、评估并安装社区插件，轻松扩展 DSH 生态。",
+  "tags": [
+    "agent-skills",
+    "ai-agents",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin-marketplace",
+    "skill",
+    "插件管理",
+    "社区生态",
+    "技能指南"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-10T11:00:07Z",
+    "url": "https://github.com/HubaKing/dsh-community-plugins/releases/tag/v0.4.0"
+  },
+  "author": "HubaKing",
+  "repo": "https://github.com/HubaKing/dsh-community-plugins",
+  "homepage": "https://deepseek-harness.github.io/deepseek-harness/",
+  "license": "MIT",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-09-10T10:59:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:HubaKing/dsh-community-plugins",
+    "commands": [
+      "dsh plugin --profile web add github:HubaKing/dsh-community-plugins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

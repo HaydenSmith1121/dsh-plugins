@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "SuperLS-X/dsh-minecraft-theme",
+  "slug": "superls-x__dsh-minecraft-theme",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-minecraft-theme",
+  "title": "dsh-minecraft-theme",
+  "summary": "给 DSH 界面换上 Minecraft 方块纹理和像素风，带音效按钮、纹理管理和内置音乐播放器，让开发环境更有游戏感。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "minecraft",
+    "theme",
+    "界面美化",
+    "娱乐互动",
+    "零配置"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "SuperLS-X",
+  "repo": "https://github.com/SuperLS-X/dsh-minecraft-theme",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-08-20T13:28:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:SuperLS-X/dsh-minecraft-theme",
+    "commands": [
+      "dsh plugin --profile web add github:SuperLS-X/dsh-minecraft-theme"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

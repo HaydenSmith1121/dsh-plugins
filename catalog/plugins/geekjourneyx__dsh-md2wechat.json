@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "geekjourneyx/dsh-md2wechat",
+  "slug": "geekjourneyx__dsh-md2wechat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-md2wechat",
+  "title": "dsh-md2wechat",
+  "summary": "把 Markdown 文章安全转成微信公众号草稿，每一步都可审核、可审批，适合团队协作发布。",
+  "tags": [
+    "agent-plugin",
+    "deepseek-harness",
+    "dsh",
+    "markdown",
+    "wechat",
+    "工作流增强",
+    "自动化",
+    "多Agent协作",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-29T09:07:05Z",
+    "url": "https://github.com/geekjourneyx/dsh-md2wechat/releases/tag/v1.0.0"
+  },
+  "author": "geekjourneyx",
+  "repo": "https://github.com/geekjourneyx/dsh-md2wechat",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-29T09:06:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:geekjourneyx/dsh-md2wechat",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/geekjourneyx/dsh-md2wechat/releases/download/v1.0.0/geekjourneyx-dsh-md2wechat-1.0.0.tgz",
+      "dsh plugin --profile web why @geekjourneyx/dsh-md2wechat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

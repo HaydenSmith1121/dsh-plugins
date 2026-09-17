@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "literaf/dsh-ai4scholar",
+  "slug": "literaf__dsh-ai4scholar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ai4scholar",
+  "title": "dsh-ai4scholar",
+  "summary": "给 DeepSeek Harness 装上 38 个学术工具，查文献、找全文、自动引用，一站式搞定科研检索。",
+  "tags": [
+    "academic",
+    "ai4scholar",
+    "arxiv",
+    "deepseek-harness",
+    "dsh-plugin",
+    "google-scholar",
+    "pubmed",
+    "semantic-scholar",
+    "效率提升",
+    "工具集成",
+    "语义检索",
+    "工作区管理"
+  ],
+  "version": "0.3.7",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "literaf",
+  "repo": "https://github.com/literaf/dsh-ai4scholar",
+  "homepage": "https://ai4scholar.net",
+  "license": "MIT",
+  "stars": 26,
+  "forks": 0,
+  "pushedAt": "2026-09-11T03:47:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-ai4scholar",
+    "commands": [
+      "npm i -g pnpm",
+      "npm i -g @deepseek-ai/dsh",
+      "dsh plugin --profile web add dsh-ai4scholar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

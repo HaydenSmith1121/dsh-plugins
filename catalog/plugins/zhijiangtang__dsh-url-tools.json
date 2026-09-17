@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "ZhijiangTang/dsh-url-tools",
+  "slug": "zhijiangtang__dsh-url-tools",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-url-tools",
+  "title": "dsh-url-tools",
+  "summary": "URL 解析、清理跟踪参数、编解码和重定向展开，零依赖开箱即用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "URL解析",
+    "参数清理",
+    "编解码",
+    "重定向展开"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ZhijiangTang",
+  "repo": "https://github.com/ZhijiangTang/dsh-url-tools",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-16T13:08:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ZhijiangTang/dsh-url-tools",
+    "commands": [
+      "dsh plugin --profile <name> add file:./plugins/dsh-url-tools",
+      "dsh plugin --profile <name> add dsh-url-tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

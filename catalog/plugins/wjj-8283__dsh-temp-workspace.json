@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "wjj-8283/dsh-temp-workspace",
+  "slug": "wjj-8283__dsh-temp-workspace",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-temp-workspace",
+  "title": "dsh-temp-workspace",
+  "summary": "在 DeepSeek Harness 侧边栏一键创建临时工作区，用完即弃，方便测试和快速实验。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wjj-8283",
+  "repo": "https://github.com/wjj-8283/dsh-temp-workspace",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T10:06:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@wjj-8283/dsh-temp-workspace",
+    "commands": [
+      "dsh plugin --profile web add @wjj-8283/dsh-temp-workspace"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

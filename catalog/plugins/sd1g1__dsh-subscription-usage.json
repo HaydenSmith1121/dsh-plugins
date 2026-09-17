@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "sd1g1/dsh-subscription-usage",
+  "slug": "sd1g1__dsh-subscription-usage",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subscription-usage",
+  "title": "dsh-subscription-usage",
+  "summary": "在模型选择器旁直接显示订阅服务的剩余用量，方便你随时掌握额度，避免超支。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "资源优化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sd1g1",
+  "repo": "https://github.com/sd1g1/dsh-subscription-usage",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-27T00:23:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sd1g1/dsh-subscription-usage",
+    "commands": [
+      "dsh plugin --profile web add github:sd1g1/dsh-subscription-usage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

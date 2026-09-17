@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "slohmaier/dsh-a11y-announcer",
+  "slug": "slohmaier__dsh-a11y-announcer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-a11y-announcer",
+  "title": "dsh-a11y-announcer",
+  "summary": "让屏幕阅读器能实时播报工具调用和助手回复，视障用户也能顺畅使用 DSH 网页界面。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "消息通知",
+    "AI 助手",
+    "无障碍适配"
+  ],
+  "version": "0.1.0-rc.8",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "slohmaier",
+  "repo": "https://github.com/slohmaier/dsh-a11y-announcer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T14:10:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:slohmaier/dsh-a11y-announcer",
+    "commands": [
+      "dsh plugin --profile web add github:slohmaier/dsh-a11y-announcer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

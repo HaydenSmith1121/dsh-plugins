@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "TTTPOB/dsh-workspace-envrc",
+  "slug": "tttpob__dsh-workspace-envrc",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workspace-envrc",
+  "title": "dsh-workspace-envrc",
+  "summary": "让 DSH 工作区的 Bash 和持续终端自动加载本机 direnv 环境变量，省去手动配置。",
+  "tags": [
+    "direnv",
+    "dsh-plugin",
+    "工作区管理",
+    "持续终端",
+    "命令行工具",
+    "自动化",
+    "工具集成"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-12T17:42:49Z",
+    "url": "https://github.com/TTTPOB/dsh-workspace-envrc/releases/tag/v0.1.1"
+  },
+  "author": "TTTPOB",
+  "repo": "https://github.com/TTTPOB/dsh-workspace-envrc",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T17:49:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TTTPOB/dsh-workspace-envrc",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/TTTPOB/dsh-workspace-overlay/releases/download/v0.1.1/dsh-workspace-overlay-0.1.1.tgz",
+      "dsh plugin --profile web add https://github.com/TTTPOB/dsh-workspace-envrc/releases/download/v0.1.1/dsh-workspace-envrc-0.1.1.tgz",
+      "dsh plugin --profile web remove dsh-workspace-envrc"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

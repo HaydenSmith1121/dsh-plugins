@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "ErrorLst/dsh-code-pipeline",
+  "slug": "errorlst__dsh-code-pipeline",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-code-pipeline",
+  "title": "dsh-code-pipeline",
+  "summary": "给 code-pipeline 流水线动态注入规划、实现、审查三个子代理工具，各阶段模型和思考等级都能在设置页随时调。",
+  "tags": [
+    "code-pipeline",
+    "dsh-plugin",
+    "subagent",
+    "多Agent协作",
+    "工作流增强",
+    "模型适配",
+    "设置面板"
+  ],
+  "version": "0.2.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ErrorLst",
+  "repo": "https://github.com/ErrorLst/dsh-code-pipeline",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T15:29:16Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ErrorLst/dsh-code-pipeline",
+    "commands": [
+      "dsh plugin --profile web add github:ErrorLst/dsh-code-pipeline"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

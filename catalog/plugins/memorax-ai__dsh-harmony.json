@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "memorax-ai/dsh-harmony",
+  "slug": "memorax-ai__dsh-harmony",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-harmony",
+  "title": "dsh-harmony",
+  "summary": "运行时给 DSH 插件打补丁、替换和装饰，让插件能力动态调整，无需重启。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "harmony",
+    "nodejs",
+    "runtime-patching",
+    "typescript",
+    "零配置",
+    "效率提升",
+    "工具集成",
+    "工作流增强"
+  ],
+  "version": "0.8.10",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.10",
+    "publishedAt": "2026-09-01T21:37:30Z",
+    "url": "https://github.com/memorax-ai/dsh-harmony/releases/tag/v0.8.10"
+  },
+  "author": "memorax-ai",
+  "repo": "https://github.com/memorax-ai/dsh-harmony",
+  "homepage": "https://memorax-ai.github.io/dsh-harmony/",
+  "license": "MIT",
+  "stars": 16,
+  "forks": 2,
+  "pushedAt": "2026-09-02T04:55:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:memorax-ai/dsh-harmony",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh@0.1.1-rc.1",
+      "npm install -g dsh-harmony"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

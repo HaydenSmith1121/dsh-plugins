@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "weibaohui/dsh-tasks",
+  "slug": "weibaohui__dsh-tasks",
+  "tier": "community",
+  "package": null,
+  "name": "weibaohui/dsh-tasks",
+  "title": "weibaohui/dsh-tasks",
+  "summary": "按 cron 定时自动跑提示词，每次开新会话干活，支持工作区绑定和手动触发。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "会话管理",
+    "工作区管理",
+    "效率提升"
+  ],
+  "version": "0.4.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.5",
+    "publishedAt": "2026-09-09T12:29:07Z",
+    "url": "https://github.com/weibaohui/dsh-tasks/releases/tag/v0.4.5"
+  },
+  "author": "weibaohui",
+  "repo": "https://github.com/weibaohui/dsh-tasks",
+  "homepage": null,
+  "license": null,
+  "stars": 7,
+  "forks": 1,
+  "pushedAt": "2026-09-15T05:13:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:weibaohui/dsh-tasks",
+    "commands": [
+      "dsh plugin --profile web add @weibaohui/dsh-tasks -w"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

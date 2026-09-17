@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "chouyong/dsh-effect-doctor",
+  "slug": "chouyong__dsh-effect-doctor",
+  "tier": "community",
+  "package": null,
+  "name": "chouyong/dsh-effect-doctor",
+  "title": "chouyong/dsh-effect-doctor",
+  "summary": "验证 Cordis 管理的运行时资源在挂载、使用、卸载后能恢复基线，确保生命周期干净无泄漏。",
+  "tags": [
+    "dsh-plugin",
+    "资源泄漏检测",
+    "生命周期验证",
+    "插件测试",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chouyong",
+  "repo": "https://github.com/chouyong/dsh-effect-doctor",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-17T14:46:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chouyong/dsh-effect-doctor",
+    "commands": [
+      "dsh plugin --profile web add github:chouyong/dsh-effect-doctor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

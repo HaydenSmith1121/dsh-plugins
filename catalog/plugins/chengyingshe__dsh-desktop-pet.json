@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "chengyingshe/dsh-desktop-pet",
+  "slug": "chengyingshe__dsh-desktop-pet",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-desktop-pet",
+  "title": "dsh-desktop-pet",
+  "summary": "在 DSH 网页右下角放一只可互动的蜡笔小新桌宠，能换形象、能调设置，让写代码不那么无聊。",
+  "tags": [
+    "deepseek-harness",
+    "desktop-pet",
+    "dsh-plugin",
+    "桌宠",
+    "娱乐互动",
+    "前端增强",
+    "设置面板"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chengyingshe",
+  "repo": "https://github.com/chengyingshe/dsh-desktop-pet",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T05:43:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chengyingshe/dsh-desktop-pet",
+    "commands": [
+      "dsh plugin --profile web add github:chengyingshe/dsh-desktop-pet"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

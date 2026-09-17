@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "sliverp/dsh-hub-plugin",
+  "slug": "sliverp__dsh-hub-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hub-plugin",
+  "title": "dsh-hub-plugin",
+  "summary": "把社区插件商店直接搬进 DeepSeek Harness，找插件、装插件一站搞定。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "插件管理",
+    "集中仓库",
+    "工具集成",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sliverp",
+  "repo": "https://github.com/sliverp/dsh-hub-plugin",
+  "homepage": "https://dsh-hub.cc",
+  "license": null,
+  "stars": 18,
+  "forks": 1,
+  "pushedAt": "2026-08-16T14:51:25Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sliverp/dsh-hub-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:sliverp/dsh-hub-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

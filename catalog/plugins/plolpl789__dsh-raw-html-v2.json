@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "plolpl789/dsh-raw-html-v2",
+  "slug": "plolpl789__dsh-raw-html-v2",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-raw-html-v2",
+  "title": "dsh-raw-html-v2",
+  "summary": "让AI在对话中直接输出HTML卡片、公式、图表和SVG，实时渲染成精美视觉内容，无需额外配置。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "visual-synesthesia",
+    "可视化",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.7.29",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "plolpl789",
+  "repo": "https://github.com/plolpl789/dsh-raw-html-v2",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 48,
+  "forks": 2,
+  "pushedAt": "2026-09-04T03:35:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-raw-html-v2-0.7.28.tgz",
+    "commands": [
+      "dsh plugin --profile web add <本包路径>",
+      "dsh plugin --profile web add dsh-raw-html-v2-0.7.28.tgz",
+      "dsh plugin --profile web add <npm 包名或 owner/repo>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

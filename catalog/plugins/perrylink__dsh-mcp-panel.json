@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "PerryLink/dsh-mcp-panel",
+  "slug": "perrylink__dsh-mcp-panel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mcp-panel",
+  "title": "dsh-mcp-panel",
+  "summary": "DSH 官方 MCP 客户端的管理控制台，支持服务器增删改查、工具试用、健康诊断与连接管理，让 MCP 配置更安全省心。",
+  "tags": [
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "management",
+    "mcp",
+    "mcp-client",
+    "mcp-console",
+    "observability",
+    "panel",
+    "插件管理",
+    "设置面板",
+    "状态监控",
+    "可视化"
+  ],
+  "version": "0.6.15",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.15",
+    "publishedAt": "2026-09-15T16:50:27Z",
+    "url": "https://github.com/PerryLink/dsh-mcp-panel/releases/tag/v0.6.15"
+  },
+  "author": "PerryLink",
+  "repo": "https://github.com/PerryLink/dsh-mcp-panel",
+  "homepage": "https://www.npmjs.com/package/dsh-mcp-panel",
+  "license": "Apache-2.0",
+  "stars": 61,
+  "forks": 6,
+  "pushedAt": "2026-09-15T16:49:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:PerryLink/dsh-mcp-panel",
+    "commands": [
+      "dsh plugin --profile web add github:PerryLink/dsh-mcp-panel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

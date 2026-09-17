@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "wentao75/dsh-remote-auth",
+  "slug": "wentao75__dsh-remote-auth",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-remote-auth",
+  "title": "dsh-remote-auth",
+  "summary": "点链接或扫二维码，手机就能直接拿到 dsh web 的浏览器会话，不用再翻日志找 token。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mobile",
+    "remote-access",
+    "安全审计",
+    "会话管理",
+    "效率提升",
+    "移动端"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-17T00:33:14Z",
+    "url": "https://github.com/wentao75/dsh-remote-auth/releases/tag/v0.1.2"
+  },
+  "author": "wentao75",
+  "repo": "https://github.com/wentao75/dsh-remote-auth",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T02:53:50Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wentao75/dsh-remote-auth",
+    "commands": [
+      "dsh plugin --profile web add dsh-remote-auth -w"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

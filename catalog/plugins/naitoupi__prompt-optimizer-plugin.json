@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "naitoupi/prompt-optimizer-plugin",
+  "slug": "naitoupi__prompt-optimizer-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "prompt-optimizer-plugin",
+  "title": "prompt-optimizer-plugin",
+  "summary": "在输入框旁加一个「✨优化」按钮，一键把草稿改得更清楚有条理，让AI一次听懂你的意思。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "prompt-optimizer",
+    "AI 助手",
+    "效率提升",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.11.5",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "naitoupi",
+  "repo": "https://github.com/naitoupi/prompt-optimizer-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T02:18:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:naitoupi/prompt-optimizer-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:naitoupi/prompt-optimizer-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

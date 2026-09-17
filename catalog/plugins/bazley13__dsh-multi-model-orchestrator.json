@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Bazley13/dsh-multi-model-orchestrator",
+  "slug": "bazley13__dsh-multi-model-orchestrator",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-multi-model-orchestrator",
+  "title": "dsh-multi-model-orchestrator",
+  "summary": "把主模型变成多模型“总指挥”，复杂任务自动拆解并分派给不同模型协作完成，提升处理能力。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "多Agent协作",
+    "模型配置",
+    "自动化",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.2.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Bazley13",
+  "repo": "https://github.com/Bazley13/dsh-multi-model-orchestrator",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-07T07:31:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-multi-model-orchestrator",
+    "commands": [
+      "dsh plugin --profile web add dsh-multi-model-orchestrator",
+      "dsh plugin --profile web add github:YOU/dsh-multi-model-orchestrator"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

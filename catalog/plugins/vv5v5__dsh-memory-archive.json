@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "vv5v5/dsh-memory-archive",
+  "slug": "vv5v5__dsh-memory-archive",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memory-archive",
+  "title": "dsh-memory-archive",
+  "summary": "把 DSH 压缩掉的会话记忆重新翻出来，还能查看每轮实际发送的提示词。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "状态持久化",
+    "模型轨迹",
+    "数据可审计"
+  ],
+  "version": "0.5.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.2",
+    "publishedAt": "2026-09-16T06:02:18Z",
+    "url": "https://github.com/vv5v5/dsh-memory-archive/releases/tag/v0.5.2"
+  },
+  "author": "vv5v5",
+  "repo": "https://github.com/vv5v5/dsh-memory-archive",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T07:04:00Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:vv5v5/dsh-memory-archive",
+    "commands": [
+      "dsh plugin --profile <你的 profile 名> add dsh-memory-archive",
+      "dsh plugin --profile <你的 profile 名> add github:vv5v5/dsh-memory-archive",
+      "dsh plugin --profile <你的 profile 名> add ./dsh-memory-archive"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

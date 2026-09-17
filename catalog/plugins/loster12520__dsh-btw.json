@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "loster12520/dsh-btw",
+  "slug": "loster12520__dsh-btw",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-btw",
+  "title": "dsh-btw",
+  "summary": "给 DeepSeek Harness 加个“顺便”功能，让你在对话中快速查资料、算东西，不用切换工具。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率增强",
+    "快捷查询",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "loster12520",
+  "repo": "https://github.com/loster12520/dsh-btw",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-17T11:23:32Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:loster12520/dsh-btw",
+    "commands": [
+      "dsh plugin --profile web add <本仓库路径>",
+      "dsh plugin --profile web add git+https://github.com/loster12520/dsh-btw.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

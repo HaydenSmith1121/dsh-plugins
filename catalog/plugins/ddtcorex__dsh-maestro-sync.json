@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ddtcorex/dsh-maestro-sync",
+  "slug": "ddtcorex__dsh-maestro-sync",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-maestro-sync",
+  "title": "dsh-maestro-sync",
+  "summary": "跨设备同步 Maestro 的记忆和会话，轻松合并不同机器上的数据，即插即用。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "同步",
+    "跨设备"
+  ],
+  "version": "0.3.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ddtcorex",
+  "repo": "https://github.com/ddtcorex/dsh-maestro-sync",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-14T17:06:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@ddtcorex/dsh-maestro-sync",
+    "commands": [
+      "dsh plugin add @ddtcorex/dsh-maestro-sync"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

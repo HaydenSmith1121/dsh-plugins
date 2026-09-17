@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "Dragonk/dsh-locale-pl",
+  "slug": "dragonk__dsh-locale-pl",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-locale-pl",
+  "title": "dsh-locale-pl",
+  "summary": "给 DeepSeek Harness 网页界面加上波兰语，在设置的语言列表里就能直接切换。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "i18n",
+    "localization",
+    "polish",
+    "设置面板",
+    "界面美化",
+    "插件管理"
+  ],
+  "version": "1.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.1",
+    "publishedAt": "2026-09-11T20:05:09Z",
+    "url": "https://github.com/Dragonk/dsh-locale-pl/releases/tag/v1.0.1"
+  },
+  "author": "Dragonk",
+  "repo": "https://github.com/Dragonk/dsh-locale-pl",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T20:10:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Dragonk/dsh-locale-pl",
+    "commands": [
+      "dsh plugin --profile web add github:Dragonk/dsh-locale-pl",
+      "dsh plugin --profile web add file:/ścieżka/do/dsh-locale-pl",
+      "dsh plugin --profile web add dsh-locale-pl"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

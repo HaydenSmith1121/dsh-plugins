@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "BakaCirno233/dsh-session-delete",
+  "slug": "bakacirno233__dsh-session-delete",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-delete",
+  "title": "dsh-session-delete",
+  "summary": "在设置里的会话管理页列出所有会话，把不需要的冷会话彻底删掉，日志、索引一并清理。",
+  "tags": [
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "会话管理",
+    "设置面板",
+    "资源优化",
+    "数据可审计"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "BakaCirno233",
+  "repo": "https://github.com/BakaCirno233/dsh-session-delete",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T02:45:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:BakaCirno233/dsh-session-delete",
+    "commands": [
+      "dsh plugin --profile web add github:BakaCirno233/dsh-session-delete"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

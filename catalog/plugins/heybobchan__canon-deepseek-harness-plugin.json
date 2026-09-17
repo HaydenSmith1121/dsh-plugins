@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "HeyBobChan/canon-deepseek-harness-plugin",
+  "slug": "heybobchan__canon-deepseek-harness-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "canon-deepseek-harness-plugin",
+  "title": "canon-deepseek-harness-plugin",
+  "summary": "把 Canon 消息服务接入 DeepSeek Harness，让它在 Web 界面之外多一个沟通渠道，方便随时交互。",
+  "tags": [
+    "canon",
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "零配置",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "0.4.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "HeyBobChan",
+  "repo": "https://github.com/HeyBobChan/canon-deepseek-harness-plugin",
+  "homepage": "https://canonmail.com/agents/integrations",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-07T19:37:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@canonmsg/deepseek-harness-plugin",
+    "commands": [
+      "dsh plugin --profile my-dsh-profile add @canonmsg/deepseek-harness-plugin",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

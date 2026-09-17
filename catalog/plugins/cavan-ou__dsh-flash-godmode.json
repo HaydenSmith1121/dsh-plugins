@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Cavan-Ou/dsh-flash-godmode",
+  "slug": "cavan-ou__dsh-flash-godmode",
+  "tier": "community",
+  "package": null,
+  "name": "Cavan-Ou/dsh-flash-godmode",
+  "title": "Cavan-Ou/dsh-flash-godmode",
+  "summary": "让 V4 Flash 在无头环境下稳定输出，通过角色锚定和工具引导，把不稳定的推理变成可复现的能力。",
+  "tags": [
+    "agent-harness",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "flash",
+    "多智能体协作",
+    "工具集成",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Cavan-Ou",
+  "repo": "https://github.com/Cavan-Ou/dsh-flash-godmode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-18T13:09:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Cavan-Ou/dsh-flash-godmode",
+    "commands": [
+      "dsh plugin --profile headless add github:Cavan-Ou/dsh-flash-godmode"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

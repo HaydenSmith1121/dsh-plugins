@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "acefun29/dsh-file-mount",
+  "slug": "acefun29__dsh-file-mount",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-file-mount",
+  "title": "dsh-file-mount",
+  "summary": "文件增量挂载，重复内容不再重发，磁盘变更自动更新，省 token 还能看账本。",
+  "tags": [
+    "context",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "增量挂载",
+    "去重省token",
+    "自动失效重挂",
+    "挂载账本"
+  ],
+  "version": "0.5.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.2",
+    "publishedAt": "2026-09-12T07:44:56Z",
+    "url": "https://github.com/acefun29/dsh-file-mount/releases/tag/v0.5.2"
+  },
+  "author": "acefun29",
+  "repo": "https://github.com/acefun29/dsh-file-mount",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 15,
+  "forks": 0,
+  "pushedAt": "2026-09-12T07:44:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:acefun29/dsh-file-mount",
+    "commands": [
+      "dsh plugin --profile web add file:$(pwd)/dsh-file-mount-$(node -p \"require('./package.json').version\").tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "andyfan1094/dsh-codebase-memory",
+  "slug": "andyfan1094__dsh-codebase-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codebase-memory",
+  "title": "dsh-codebase-memory",
+  "summary": "将 Codebase Memory MCP 代码知识图谱接入 DSH，并自动监控文件变化，帮你随时掌握代码库结构。",
+  "tags": [
+    "dsh-plugin",
+    "工作区管理",
+    "工作流增强",
+    "状态监控",
+    "自动化",
+    "AI 助手"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-08-26T17:09:43Z",
+    "url": "https://github.com/andyfan1094/dsh-codebase-memory/releases/tag/v0.2.1"
+  },
+  "author": "andyfan1094",
+  "repo": "https://github.com/andyfan1094/dsh-codebase-memory",
+  "homepage": "https://github.com/andyfan1094/dsh-codebase-memory",
+  "license": "NOASSERTION",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-26T17:11:28Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:andyfan1094/dsh-codebase-memory",
+    "commands": [
+      "dsh plugin --profile web add github:andyfan1094/dsh-codebase-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

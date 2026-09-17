@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "my-dsh-plugin/thinking-level-override",
+  "slug": "my-dsh-plugin__thinking-level-override",
+  "tier": "community",
+  "package": null,
+  "name": "thinking-level-override",
+  "title": "thinking-level-override",
+  "summary": "自动修正第三方模型思考等级预设缺失或不匹配的问题，让推理更精准。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "思考等级",
+    "模型兼容",
+    "参数覆盖",
+    "推理优化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "my-dsh-plugin",
+  "repo": "https://github.com/my-dsh-plugin/thinking-level-override",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T07:53:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:my-dsh-plugin/thinking-level-override",
+    "commands": [
+      "dsh plugin --profile web add github:my-dsh-plugin/thinking-level-override"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

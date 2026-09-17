@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "Alain-Prot0s5/dsh-screenshot",
+  "slug": "alain-prot0s5__dsh-screenshot",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-screenshot",
+  "title": "dsh-screenshot",
+  "summary": "点一下相机按钮或按 Alt+A 截图，自动粘进 DSH 输入框，省去手动保存上传。",
+  "tags": [
+    "ai-generated",
+    "clipboard",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "hotkeys",
+    "powershell",
+    "screenshot",
+    "windows",
+    "快捷操作",
+    "效率提升",
+    "工具集成",
+    "自动化"
+  ],
+  "version": "1.0.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.4",
+    "publishedAt": "2026-08-24T06:57:53Z",
+    "url": "https://github.com/Alain-Prot0s5/dsh-screenshot/releases/tag/v1.0.4"
+  },
+  "author": "Alain-Prot0s5",
+  "repo": "https://github.com/Alain-Prot0s5/dsh-screenshot",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-24T06:36:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Alain-Prot0s5/dsh-screenshot",
+    "commands": [
+      "dsh plugin --profile web add github:Alain-Prot0s5/dsh-screenshot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

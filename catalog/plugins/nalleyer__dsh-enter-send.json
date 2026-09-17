@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "Nalleyer/dsh-enter-send",
+  "slug": "nalleyer__dsh-enter-send",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-enter-send",
+  "title": "dsh-enter-send",
+  "summary": "在设置里一键切换发送键，让回车直接发消息或换行，聊天更顺手。",
+  "tags": [
+    "dsh-plugin",
+    "设置面板",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Nalleyer",
+  "repo": "https://github.com/Nalleyer/dsh-enter-send",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T09:07:33Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Nalleyer/dsh-enter-send",
+    "commands": [
+      "dsh plugin --profile web add github:Nalleyer/dsh-enter-send"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

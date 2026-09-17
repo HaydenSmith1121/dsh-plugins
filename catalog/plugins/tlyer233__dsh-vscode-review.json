@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Tlyer233/dsh-vscode-review",
+  "slug": "tlyer233__dsh-vscode-review",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-vscode-review",
+  "title": "dsh-vscode-review",
+  "summary": "在 VS Code 中直观审查 DSH 智能体的文件增删改操作，支持逐行接受或撤回修改。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "review",
+    "vscode",
+    "安全审计",
+    "工作流增强",
+    "效率提升",
+    "语义检索"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "Tlyer233",
+  "repo": "https://github.com/Tlyer233/dsh-vscode-review",
+  "homepage": null,
+  "license": null,
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-09-12T04:42:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Tlyer233/dsh-vscode-review",
+    "commands": [
+      "dsh plugin --profile web add github:Tlyer233/dsh-vscode-review"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

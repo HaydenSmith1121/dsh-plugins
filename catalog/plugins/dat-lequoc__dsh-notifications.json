@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "dat-lequoc/dsh-notifications",
+  "slug": "dat-lequoc__dsh-notifications",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notifications",
+  "title": "dsh-notifications",
+  "summary": "在浏览器里给 DeepSeek Harness Web 加桌面通知和双音提示，任务完成或需要你时立刻知道。",
+  "tags": [
+    "browser",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "notifications",
+    "消息通知",
+    "前端增强",
+    "状态监控",
+    "零配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-10T13:24:27Z",
+    "url": "https://github.com/dat-lequoc/dsh-notifications/releases/tag/v0.1.1"
+  },
+  "author": "dat-lequoc",
+  "repo": "https://github.com/dat-lequoc/dsh-notifications",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T05:36:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dat-lequoc/dsh-notifications",
+    "commands": [
+      "dsh plugin --profile web add github:dat-lequoc/dsh-notifications",
+      "dsh plugin --profile web add ./dsh-notifications-0.1.1.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

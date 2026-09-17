@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "initial-d/dsh-plugin-mlquant-benchmark",
+  "slug": "initial-d__dsh-plugin-mlquant-benchmark",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-mlquant-benchmark",
+  "title": "dsh-plugin-mlquant-benchmark",
+  "summary": "内置量化交易 v1 基准测试工具，帮你轻松跑通实验流程，直观对比不同大模型的实战效果。",
+  "tags": [
+    "benchmark",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mlquant",
+    "pytorch",
+    "quantitative-finance",
+    "reproducibility",
+    "状态监控",
+    "实验记录",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-20T09:34:47Z",
+    "url": "https://github.com/initial-d/dsh-plugin-mlquant-benchmark/releases/tag/v0.1.0"
+  },
+  "author": "initial-d",
+  "repo": "https://github.com/initial-d/dsh-plugin-mlquant-benchmark",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-24T10:24:03Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:initial-d/dsh-plugin-mlquant-benchmark",
+    "commands": [
+      "dsh plugin --profile web add github:initial-d/dsh-plugin-mlquant-benchmark"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

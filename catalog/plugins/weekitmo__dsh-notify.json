@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "weekitmo/dsh-notify",
+  "slug": "weekitmo__dsh-notify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notify",
+  "title": "dsh-notify",
+  "summary": "为 DeepSeek Harness 提供桌面通知、浏览器标签页未读计数和侧边栏会话状态提示，让你不错过任何任务进展。",
+  "tags": [
+    "browser-notifications",
+    "cordis",
+    "deepseek-harness",
+    "desktop-notifications",
+    "developer-tools",
+    "dsh",
+    "dsh-plugin",
+    "notifications",
+    "typescript",
+    "web-ui",
+    "消息通知",
+    "状态监控",
+    "会话管理",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-08-20T05:38:11Z",
+    "url": "https://github.com/weekitmo/dsh-notify/releases/tag/v0.3.1"
+  },
+  "author": "weekitmo",
+  "repo": "https://github.com/weekitmo/dsh-notify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-08T02:12:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:weekitmo/dsh-notify",
+    "commands": [
+      "curl -fsSL https://github.com/weekitmo/dsh-notify/releases/latest/download/install.sh | sh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

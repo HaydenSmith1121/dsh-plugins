@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "wr-web/dsh-context-tree",
+  "slug": "wr-web__dsh-context-tree",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-context-tree",
+  "title": "dsh-context-tree",
+  "summary": "为 DeepSeek Harness 提供可复用的轨迹树上下文，支持精确回合分支和跨会话记忆，让长对话更连贯。",
+  "tags": [
+    "coding-agent",
+    "context-management",
+    "deepseek-harness",
+    "dsh-plugin",
+    "session-memory",
+    "session-visualization",
+    "会话管理",
+    "语义检索",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-26T17:20:45Z",
+    "url": "https://github.com/wr-web/dsh-context-tree/releases/tag/v0.1.0"
+  },
+  "author": "wr-web",
+  "repo": "https://github.com/wr-web/dsh-context-tree",
+  "homepage": "https://github.com/deepseek-ai/deepseek-harness",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T17:05:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wr-web/dsh-context-tree",
+    "commands": [
+      "dsh plugin --profile web add github:wr-web/dsh-context-tree",
+      "dsh plugin --profile web remove dsh-context-tree"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

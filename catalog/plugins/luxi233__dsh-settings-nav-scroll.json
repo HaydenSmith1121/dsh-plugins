@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "luxi233/dsh-settings-nav-scroll",
+  "slug": "luxi233__dsh-settings-nav-scroll",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-settings-nav-scroll",
+  "title": "dsh-settings-nav-scroll",
+  "summary": "当设置分区超出屏幕时，给 DSH 设置导航加上滚动条，方便快速访问所有设置项。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "前端增强",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-02T12:48:59Z",
+    "url": "https://github.com/luxi233/dsh-settings-nav-scroll/releases/tag/v0.1.0"
+  },
+  "author": "luxi233",
+  "repo": "https://github.com/luxi233/dsh-settings-nav-scroll",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T12:48:59Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:luxi233/dsh-settings-nav-scroll",
+    "commands": [
+      "dsh plugin --profile web add github:luxi233/dsh-settings-nav-scroll"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

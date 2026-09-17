@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "WsTe47/dsh-step-clock",
+  "slug": "wste47__dsh-step-clock",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-step-clock",
+  "title": "dsh-step-clock",
+  "summary": "在 DeepSeek Harness 网页界面里实时显示每一步的耗时，让你一眼看清哪步最慢。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "WsTe47",
+  "repo": "https://github.com/WsTe47/dsh-step-clock",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T17:02:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@climber47/dsh-step-clock",
+    "commands": [
+      "dsh plugin --profile web add @climber47/dsh-step-clock"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

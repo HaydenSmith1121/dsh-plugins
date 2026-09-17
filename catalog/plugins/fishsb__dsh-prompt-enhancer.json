@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "Fishsb/dsh-prompt-enhancer",
+  "slug": "fishsb__dsh-prompt-enhancer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-enhancer",
+  "title": "dsh-prompt-enhancer",
+  "summary": "输入框草稿一键增强提示词，还能语音输入自动停，识别结果直接填入草稿。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin",
+    "prompt-engineering",
+    "效率提升",
+    "AI 助手",
+    "快捷操作",
+    "视觉理解",
+    "语音识别"
+  ],
+  "version": "3.3.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v3.3.3",
+    "publishedAt": "2026-09-01T16:19:06Z",
+    "url": "https://github.com/Fishsb/dsh-prompt-enhancer/releases/tag/v3.3.3"
+  },
+  "author": "Fishsb",
+  "repo": "https://github.com/Fishsb/dsh-prompt-enhancer",
+  "homepage": null,
+  "license": null,
+  "stars": 69,
+  "forks": 4,
+  "pushedAt": "2026-09-12T21:59:15Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Fishsb/dsh-prompt-enhancer",
+    "commands": [
+      "dsh plugin --profile web add github:Fishsb/dsh-prompt-enhancer",
+      "dsh plugin --profile web update dsh-prompt-enhancer",
+      "dsh plugin --profile web remove dsh-prompt-enhancer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

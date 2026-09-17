@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "JRNitre/dsh_deepseekapi_quota",
+  "slug": "jrnitre__dsh_deepseekapi_quota",
+  "tier": "community",
+  "package": null,
+  "name": "dsh_deepseekapi_quota",
+  "title": "dsh_deepseekapi_quota",
+  "summary": "在 DeepSeek Harness 侧边栏直接显示 API 账户余额和高峰/闲时价格，方便你随时掌握用量与费用。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "资源优化",
+    "设置面板",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "JRNitre",
+  "repo": "https://github.com/JRNitre/dsh_deepseekapi_quota",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T15:27:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jrnitre/dsh_deepseekapi_quota",
+    "commands": [
+      "dsh plugin --profile web add github:jrnitre/dsh_deepseekapi_quota"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "truelove-dreamer/dsh-plugin-vetting",
+  "slug": "truelove-dreamer__dsh-plugin-vetting",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-vetting",
+  "title": "dsh-plugin-vetting",
+  "summary": "给已装的第三方插件做恶意行为启发式扫描，提示高权限误用，可选运行时绊线，帮你提前发现风险。",
+  "tags": [
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "恶意扫描",
+    "安全审计",
+    "插件检测",
+    "权限提示"
+  ],
+  "version": "0.5.6",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "truelove-dreamer",
+  "repo": "https://github.com/truelove-dreamer/dsh-plugin-vetting",
+  "homepage": null,
+  "license": null,
+  "stars": 5,
+  "forks": 2,
+  "pushedAt": "2026-08-26T08:59:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-vetting",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-vetting"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "louchi1984-coder/dsh-auto-update",
+  "slug": "louchi1984-coder__dsh-auto-update",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auto-update",
+  "title": "dsh-auto-update",
+  "summary": "让 DeepSeek Harness 自动检查并更新插件，省去手动升级的麻烦，保持环境始终最新。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "插件管理",
+    "效率提升",
+    "命令行工具"
+  ],
+  "version": "0.2.6",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "louchi1984-coder",
+  "repo": "https://github.com/louchi1984-coder/dsh-auto-update",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-29T13:59:42Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@louchi1984/dsh-auto-update",
+    "commands": [
+      "dsh plugin --profile web add @louchi1984/dsh-auto-update"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

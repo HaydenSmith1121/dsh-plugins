@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "OMSociety/kimi-ppt-skill",
+  "slug": "omsociety__kimi-ppt-skill",
+  "tier": "community",
+  "package": null,
+  "name": "kimi-ppt-skill",
+  "title": "kimi-ppt-skill",
+  "summary": "在 DSH 里用 kimi-ppt 技能做 PPT，创建、编辑、复刻、导出全搞定，还能纯本地导出。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-skill",
+    "报告生成",
+    "内容创作",
+    "效率提升",
+    "文件管理",
+    "工具集成"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.1.0",
+    "publishedAt": "2026-09-13T19:16:21Z",
+    "url": "https://github.com/OMSociety/kimi-ppt-skill/releases/tag/v1.1.0"
+  },
+  "author": "OMSociety",
+  "repo": "https://github.com/OMSociety/kimi-ppt-skill",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-13T19:19:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:OMSociety/kimi-ppt-skill",
+    "commands": [
+      "dsh plugin --profile web add github:OMSociety/kimi-ppt-skill"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

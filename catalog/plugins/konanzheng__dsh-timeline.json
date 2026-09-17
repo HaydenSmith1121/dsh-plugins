@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "konanzheng/dsh-timeline",
+  "slug": "konanzheng__dsh-timeline",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-timeline",
+  "title": "dsh-timeline",
+  "summary": "把 DeepSeek Harness 的会话历史变成一条 S 形能量轨迹，直观展示 AI 的思考与解决过程。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-timeline",
+    "会话管理",
+    "可视化",
+    "语义检索",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "konanzheng",
+  "repo": "https://github.com/konanzheng/dsh-timeline",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-26T16:46:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:konanzheng/dsh-timeline",
+    "commands": [
+      "dsh plugin --profile web add github:konanzheng/dsh-timeline"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

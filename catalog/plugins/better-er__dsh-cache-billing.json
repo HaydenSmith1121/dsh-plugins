@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "better-er/dsh-cache-billing",
+  "slug": "better-er__dsh-cache-billing",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cache-billing",
+  "title": "dsh-cache-billing",
+  "summary": "在上下文圆环里实时算账，峰谷自动计价，第三方中转也能看清每步每轮花了多少钱",
+  "tags": [
+    "billing",
+    "cache",
+    "cache-hit",
+    "cost",
+    "deepseek-harness",
+    "developer-tools",
+    "dsh",
+    "dsh-plugin",
+    "tokens",
+    "状态监控",
+    "资源优化",
+    "数据分析",
+    "模型适配"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-11T13:12:15Z",
+    "url": "https://github.com/better-er/dsh-cache-billing/releases/tag/v0.1.2"
+  },
+  "author": "better-er",
+  "repo": "https://github.com/better-er/dsh-cache-billing",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 10,
+  "forks": 0,
+  "pushedAt": "2026-09-11T13:02:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:better-er/dsh-cache-billing",
+    "commands": [
+      "dsh plugin --profile web add github:better-er/dsh-cache-billing"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

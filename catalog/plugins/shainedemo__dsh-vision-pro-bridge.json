@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ShaineDemo/dsh-vision-pro-bridge",
+  "slug": "shainedemo__dsh-vision-pro-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-vision-pro-bridge",
+  "title": "dsh-vision-pro-bridge",
+  "summary": "让纯文本版 DeepSeek-V4-Pro 看懂图片，无需换模型或额外 API，零依赖即插即用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "视觉理解",
+    "零配置",
+    "工作流增强",
+    "资源优化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ShaineDemo",
+  "repo": "https://github.com/ShaineDemo/dsh-vision-pro-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T15:59:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-vision-pro-bridge",
+    "commands": [
+      "dsh plugin --profile web add dsh-vision-pro-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

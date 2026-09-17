@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "lasdrder0705/dsh-pro-vision",
+  "slug": "lasdrder0705__dsh-pro-vision",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pro-vision",
+  "title": "dsh-pro-vision",
+  "summary": "让纯文本的 DeepSeek-V4-Pro 也能看图：自动把图片交给视觉模型识别，再把结果交给 Pro 继续对话。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "vision",
+    "会话管理",
+    "模型配置",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lasdrder0705",
+  "repo": "https://github.com/lasdrder0705/dsh-pro-vision",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-21T15:39:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lasdrder0705/dsh-pro-vision",
+    "commands": [
+      "dsh plugin --profile web add github:lasdrder0705/dsh-pro-vision",
+      "dsh plugin --profile web add \"github:lasdrder0705/dsh-pro-vision\"",
+      "dsh plugin --profile web remove dsh-pro-vision"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

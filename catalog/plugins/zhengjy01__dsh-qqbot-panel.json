@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zhengjy01/dsh-qqbot-panel",
+  "slug": "zhengjy01__dsh-qqbot-panel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-qqbot-panel",
+  "title": "dsh-qqbot-panel",
+  "summary": "为 dsh-qqbot 插件提供可视化网页设置面板，轻松管理 AppID/AppSecret、访问白名单和工作区，扫码即可绑定。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "可视化",
+    "插件管理",
+    "安全审计",
+    "工作区管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhengjy01",
+  "repo": "https://github.com/zhengjy01/dsh-qqbot-panel",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T13:06:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhengjy01/dsh-qqbot-panel",
+    "commands": [
+      "dsh plugin --profile web add github:zhengjy01/dsh-qqbot-panel",
+      "dsh plugin --profile web add link:/path/to/dsh-qqbot-panel",
+      "dsh plugin --profile qqbot add @tencent-connect/dsh-qqbot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

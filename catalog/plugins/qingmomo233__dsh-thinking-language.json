@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "qingmomo233/dsh-thinking-language",
+  "slug": "qingmomo233__dsh-thinking-language",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-thinking-language",
+  "title": "dsh-thinking-language",
+  "summary": "一键切换 DeepSeek 思考过程的语言，支持中英日韩等多语种，也可自动跟随系统语言。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "效率提升",
+    "模型适配",
+    "设置面板"
+  ],
+  "version": "1.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "qingmomo233",
+  "repo": "https://github.com/qingmomo233/dsh-thinking-language",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-14T06:01:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qingmomo233/dsh-thinking-language",
+    "commands": [
+      "dsh plugin --profile web add github:qingmomo233/dsh-thinking-language",
+      "dsh plugin --profile web add <插件目录>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "zsagi1368/dsh-webstack",
+  "slug": "zsagi1368__dsh-webstack",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-webstack",
+  "title": "dsh-webstack",
+  "summary": "网栈插件，集成网页搜索与抓取，开箱即搜，带SSRF防护和双语诊断，让DSH联网更安全省心。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "search-aggregator",
+    "web-search",
+    "模型适配",
+    "零配置",
+    "安全审计",
+    "效率提升"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-24T08:39:09Z",
+    "url": "https://github.com/zsagi1368/dsh-webstack/releases/tag/v0.2.0"
+  },
+  "author": "zsagi1368",
+  "repo": "https://github.com/zsagi1368/dsh-webstack",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T18:06:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zsagi1368/dsh-webstack",
+    "commands": [
+      "dsh plugin --profile web add github:zsagi1368/dsh-webstack"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

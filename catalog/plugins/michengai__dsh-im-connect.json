@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "MichengAI/dsh-im-connect",
+  "slug": "michengai__dsh-im-connect",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-im-connect",
+  "title": "dsh-im-connect",
+  "summary": "把微信、钉钉、飞书、QQ等IM接入本机DeepSeek，随时随地和AI聊天。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "IM集成",
+    "多后端",
+    "模型适配",
+    "消息通知"
+  ],
+  "version": "0.1.50",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.50",
+    "publishedAt": "2026-09-16T08:13:09Z",
+    "url": "https://github.com/MichengAI/dsh-im-connect/releases/tag/v0.1.50"
+  },
+  "author": "MichengAI",
+  "repo": "https://github.com/MichengAI/dsh-im-connect",
+  "homepage": "https://dsh-codex-desktop.micheng.dev",
+  "license": "Apache-2.0",
+  "stars": 17,
+  "forks": 1,
+  "pushedAt": "2026-09-16T08:11:44Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MichengAI/dsh-im-connect",
+    "commands": [
+      "dsh plugin --profile web add github:MichengAI/dsh-im-connect"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

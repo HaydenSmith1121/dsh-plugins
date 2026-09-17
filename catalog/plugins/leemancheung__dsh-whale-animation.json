@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "LeemanCheung/dsh-whale-animation",
+  "slug": "leemancheung__dsh-whale-animation",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-whale-animation",
+  "title": "dsh-whale-animation",
+  "summary": "为 DeepSeek Harness 网页状态栏添加两只原创鲸鱼潜水动画，让等待过程更生动有趣。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "前端增强",
+    "桌宠",
+    "状态监控"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-08-26T09:19:36Z",
+    "url": "https://github.com/LeemanCheung/dsh-whale-animation/releases/tag/v0.4.0"
+  },
+  "author": "LeemanCheung",
+  "repo": "https://github.com/LeemanCheung/dsh-whale-animation",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-09-05T06:32:13Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LeemanCheung/dsh-whale-animation",
+    "commands": [
+      "dsh plugin --profile web add github:LeemanCheung/dsh-whale-animation"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

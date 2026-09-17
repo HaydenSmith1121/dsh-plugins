@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Eric-GoodBoy-Tech/dsh-agsh-context",
+  "slug": "eric-goodboy-tech__dsh-agsh-context",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agsh-context",
+  "title": "dsh-agsh-context",
+  "summary": "让 AgentShell 持续终端成为 DSH 的唯一 shell 工具，支持 pre-step 落点和 llm/stream 短路接管，实现 git 分发与请求接管。",
+  "tags": [
+    "dsh-plugin",
+    "持续终端",
+    "请求接管",
+    "git分发",
+    "桥接插件"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Eric-GoodBoy-Tech",
+  "repo": "https://github.com/Eric-GoodBoy-Tech/dsh-agsh-context",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T05:08:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Eric-GoodBoy-Tech/dsh-agsh-context",
+    "commands": [
+      "dsh plugin --profile web add github:Eric-GoodBoy-Tech/dsh-agsh-context"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-key-limits",
+  "slug": "goodandready__dsh-key-limits",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-key-limits",
+  "title": "dsh-key-limits",
+  "summary": "实时监控 DeepSeek Harness 的 API 密钥额度和订阅配额，悬浮条、输入栏、设置页都能看。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "模型适配",
+    "设置面板",
+    "可视化"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-17T14:52:04Z",
+    "url": "https://github.com/GooDAnDReaDY/dsh-key-limits/releases/tag/v0.2.0"
+  },
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-key-limits",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T20:34:35Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooDAnDReaDY/dsh-key-limits",
+    "commands": [
+      "dsh plugin --profile web add github:GooDAnDReaDY/dsh-key-limits"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

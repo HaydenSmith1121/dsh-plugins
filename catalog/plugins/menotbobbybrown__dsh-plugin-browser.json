@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "menotbobbybrown/dsh-plugin-browser",
+  "slug": "menotbobbybrown__dsh-plugin-browser",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-browser",
+  "title": "dsh-plugin-browser",
+  "summary": "为 DeepSeek Harness 提供原生浏览器自动化能力，支持无头及可视化操作，轻松完成网页任务。",
+  "tags": [
+    "ai-agents",
+    "automation",
+    "browser",
+    "browser-automation",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "playwright",
+    "自动化",
+    "AI 助手",
+    "零配置",
+    "模型配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-26T18:19:17Z",
+    "url": "https://github.com/menotbobbybrown/dsh-plugin-browser/releases/tag/v1.0.0"
+  },
+  "author": "menotbobbybrown",
+  "repo": "https://github.com/menotbobbybrown/dsh-plugin-browser",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-08T19:20:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:menotbobbybrown/dsh-plugin-browser",
+    "commands": [
+      "dsh plugin --profile web add \"github:menotbobbybrown/dsh-plugin-browser\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "mixin-ai/dsh-git-branch-switcher",
+  "slug": "mixin-ai__dsh-git-branch-switcher",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-git-branch-switcher",
+  "title": "dsh-git-branch-switcher",
+  "summary": "在会话头部显示当前 Git 分支，并支持直接从网页界面切换分支，方便多分支协作。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "git",
+    "Git分支管理",
+    "会话头部显示",
+    "分支切换",
+    "Web界面操作"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "mixin-ai",
+  "repo": "https://github.com/mixin-ai/dsh-git-branch-switcher",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-14T05:50:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mixin-ai/dsh-git-branch-switcher",
+    "commands": [
+      "dsh plugin --profile web add \"github:mixin-ai/dsh-git-branch-switcher",
+      "git clone https://github.com/mixin-ai/dsh-git-branch-switcher"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

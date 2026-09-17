@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "rocklau/dsh-rss-reader",
+  "slug": "rocklau__dsh-rss-reader",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-rss-reader",
+  "title": "dsh-rss-reader",
+  "summary": "在 DeepSeek Harness 对话界面里直接订阅、阅读 RSS，随手划重点、做笔记，还能把文章内容拉进对话一起讨论。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "rss",
+    "rss-reader",
+    "web-ui",
+    "会话管理",
+    "前端增强",
+    "工作区管理",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "0.1.0-rc.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0-rc.2",
+    "publishedAt": "2026-08-24T03:37:46Z",
+    "url": "https://github.com/rocklau/dsh-rss-reader/releases/tag/v0.1.0-rc.2"
+  },
+  "author": "rocklau",
+  "repo": "https://github.com/rocklau/dsh-rss-reader",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-25T03:18:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:rocklau/dsh-rss-reader",
+    "commands": [
+      "dsh plugin add https://github.com/rocklau/dsh-rss-reader/releases/download/v0.1.0-rc.1/openbook-dsh-rss-reader-0.1.0-rc.1.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

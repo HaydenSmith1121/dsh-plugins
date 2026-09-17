@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "rikfish163-rgb/dsh-pets",
+  "slug": "rikfish163-rgb__dsh-pets",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pets",
+  "title": "dsh-pets",
+  "summary": "在 DSH 网页界面里养一只桌面宠物，边陪你写代码边实时展示任务进度，让开发更有趣。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "pets",
+    "娱乐互动",
+    "状态监控",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "rikfish163-rgb",
+  "repo": "https://github.com/rikfish163-rgb/dsh-pets",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-26T18:59:02Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:rikfish163-rgb/dsh-pets",
+    "commands": [
+      "dsh plugin --profile web add \"github:rikfish163-rgb/dsh-pets\"",
+      "dsh plugin --profile web link /path/to/dsh-pets"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

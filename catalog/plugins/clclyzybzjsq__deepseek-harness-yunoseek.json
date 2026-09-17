@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "clclyzybzjsq/deepseek-harness-yunoseek",
+  "slug": "clclyzybzjsq__deepseek-harness-yunoseek",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-yunoseek",
+  "title": "deepseek-harness-yunoseek",
+  "summary": "给 DeepSeek Harness 换上由乃粉主题，界面秒变二次元，好看又护眼。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "界面美化",
+    "零配置",
+    "娱乐互动"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "clclyzybzjsq",
+  "repo": "https://github.com/clclyzybzjsq/deepseek-harness-yunoseek",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-08-29T03:34:21Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:clclyzybzjsq/deepseek-harness-yunoseek",
+    "commands": [
+      "dsh plugin --profile web add github:<owner>/dsh-yunoseek-skin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

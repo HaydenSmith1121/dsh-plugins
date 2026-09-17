@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "weopenfire-git/hme-plugin",
+  "slug": "weopenfire-git__hme-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hme",
+  "title": "dsh-hme",
+  "summary": "给 DeepSeek Harness 装上跨会话长期记忆，让 Agent 记住你的项目、偏好和踩过的坑，不丢不忘。",
+  "tags": [
+    "ai-agent",
+    "ai-memory",
+    "claude-code",
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "weopenfire-git",
+  "repo": "https://github.com/weopenfire-git/hme-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-18T00:52:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:weopenfire-git/hme-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:weopenfire-git/hme-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

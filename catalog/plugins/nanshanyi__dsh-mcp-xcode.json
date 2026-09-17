@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "nanshanyi/dsh-mcp-xcode",
+  "slug": "nanshanyi__dsh-mcp-xcode",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mcp-xcode",
+  "title": "dsh-mcp-xcode",
+  "summary": "让 DSH agent 直接调用 Xcode 的无头能力，建工程、构建测试、跑模拟器、渲染预览全搞定。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "mcp",
+    "mcp-xcode",
+    "xcode27",
+    "工具集成",
+    "桥接插件",
+    "工作流增强",
+    "自动化",
+    "命令行工具"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-15T09:58:43Z",
+    "url": "https://github.com/nanshanyi/dsh-mcp-xcode/releases/tag/v1.0.0"
+  },
+  "author": "nanshanyi",
+  "repo": "https://github.com/nanshanyi/dsh-mcp-xcode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-15T11:33:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:nanshanyi/dsh-mcp-xcode",
+    "commands": [
+      "dsh plugin --profile web add \"github:nanshanyi/dsh-mcp-xcode",
+      "dsh plugin --profile web add file:/path/to/dsh-mcp-xcode"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

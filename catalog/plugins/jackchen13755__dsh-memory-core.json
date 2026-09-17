@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "jackchen13755/dsh-memory-core",
+  "slug": "jackchen13755__dsh-memory-core",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memory-core",
+  "title": "dsh-memory-core",
+  "summary": "给 AI 装上长期记忆，自动记住事实、待办和技能，随时语义检索调用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "fts5",
+    "memory",
+    "personal-knowledge-base",
+    "sqlite",
+    "语义检索",
+    "AI 助手",
+    "自动化",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.0.8",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.0.8",
+    "publishedAt": "2026-09-16T01:15:59Z",
+    "url": "https://github.com/jackchen13755/dsh-memory-core/releases/tag/v0.0.8"
+  },
+  "author": "jackchen13755",
+  "repo": "https://github.com/jackchen13755/dsh-memory-core",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T01:15:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jackchen13755/dsh-memory-core",
+    "commands": [
+      "dsh plugin --profile web add github:jackchen13755/dsh-memory-core"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "hrhgit/dsh-codegraph",
+  "slug": "hrhgit__dsh-codegraph",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codegraph",
+  "title": "dsh-codegraph",
+  "summary": "基于提问的代码解释插件，让主智能体委派子智能体进行只读调查，给出有证据支撑的架构分析。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "工作流增强",
+    "多智能体协作"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hrhgit",
+  "repo": "https://github.com/hrhgit/dsh-codegraph",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T05:57:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hrhgit/dsh-codegraph",
+    "commands": [
+      "dsh plugin --profile web add github:hrhgit/dsh-codegraph"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

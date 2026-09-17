@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "litestartup-com/dsh-api-gateway",
+  "slug": "litestartup-com__dsh-api-gateway",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-api-gateway",
+  "title": "dsh-api-gateway",
+  "summary": "把 DSH Agent 的 API 安全暴露给外部客户端，支持鉴权与反向代理，方便远程调用和管理。",
+  "tags": [
+    "api-gateway",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "restful-api",
+    "安全连接",
+    "安全审计",
+    "API网关",
+    "AI工具"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "litestartup-com",
+  "repo": "https://github.com/litestartup-com/dsh-api-gateway",
+  "homepage": "ohdsh.com",
+  "license": "MIT",
+  "stars": 9,
+  "forks": 2,
+  "pushedAt": "2026-09-11T13:32:14Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:litestartup-com/dsh-api-gateway",
+    "commands": [
+      "dsh plugin --profile web add github:litestartup-com/dsh-api-gateway"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

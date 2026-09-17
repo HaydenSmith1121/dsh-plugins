@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Eray114514/dsh-find-plugins",
+  "slug": "eray114514__dsh-find-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-find-plugins",
+  "title": "dsh-find-plugins",
+  "summary": "帮你从多个社区目录里挑出真正合适的 DSH 插件，按相关度、可信度和新鲜度排序，不再只看 star。",
+  "tags": [
+    "agent-tool",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin-discovery",
+    "插件管理",
+    "语义检索",
+    "生态洞察",
+    "工具集成"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Eray114514",
+  "repo": "https://github.com/Eray114514/dsh-find-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T05:04:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Eray114514/dsh-find-plugins",
+    "commands": [
+      "dsh plugin --profile <你的 profile> add dsh-find-plugins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

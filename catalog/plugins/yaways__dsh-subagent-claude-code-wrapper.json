@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "yaways/dsh-subagent-claude-code-wrapper",
+  "slug": "yaways__dsh-subagent-claude-code-wrapper",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subagent-claude-code-wrapper",
+  "title": "dsh-subagent-claude-code-wrapper",
+  "summary": "让DSH子代理调用任意Claude兼容CLI，灵活切换后端，提升自动化效率。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yaways",
+  "repo": "https://github.com/yaways/dsh-subagent-claude-code-wrapper",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-22T11:00:40Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@yaways/dsh-subagent-claude-code-wrapper",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-subagent-claude-code-wrapper",
+      "dsh plugin --profile web add @yaways/dsh-subagent-claude-code-wrapper",
+      "dsh plugin --profile web add github:yaways/dsh-subagent-claude-code-wrapper"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

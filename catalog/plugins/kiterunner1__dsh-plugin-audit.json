@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "kiterunner1/dsh-plugin-audit",
+  "slug": "kiterunner1__dsh-plugin-audit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-audit",
+  "title": "dsh-plugin-audit",
+  "summary": "装第三方 DSH 插件前先扫一遍，揪出 eval、安装脚本、开机自启、凭据外传等风险，安心再装。",
+  "tags": [
+    "agent-skill",
+    "agent-skills",
+    "ai-agent",
+    "claude-code",
+    "codex",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin-security",
+    "security-audit",
+    "安全审计",
+    "插件管理",
+    "数据可审计",
+    "工具集成"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "kiterunner1",
+  "repo": "https://github.com/kiterunner1/dsh-plugin-audit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T10:48:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kiterunner1/dsh-plugin-audit",
+    "commands": [
+      "npx skills add kiterunner1/dsh-plugin-audit -g -a cline -y",
+      "git clone https://github.com/kiterunner1/dsh-plugin-audit.git ~/.agents/skills/plugin-audit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

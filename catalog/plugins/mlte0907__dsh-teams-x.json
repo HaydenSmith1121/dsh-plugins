@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "Mlte0907/dsh-teams-x",
+  "slug": "mlte0907__dsh-teams-x",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-teams-x",
+  "title": "dsh-teams-x",
+  "summary": "把一个会话变成多智能体团队，队长带队员分工协作，任务依赖清晰、消息互通，还有全 SVG 活动面板。",
+  "tags": [
+    "ai-agents",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "multi-agent",
+    "plugin",
+    "typescript",
+    "多Agent协作",
+    "工作流增强",
+    "状态监控",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.2.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.2",
+    "publishedAt": "2026-09-11T14:38:33Z",
+    "url": "https://github.com/Mlte0907/dsh-teams-x/releases/tag/v0.2.2"
+  },
+  "author": "Mlte0907",
+  "repo": "https://github.com/Mlte0907/dsh-teams-x",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T21:43:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Mlte0907/dsh-teams-x",
+    "commands": [
+      "dsh plugin --profile web add <仓库路径>/dsh-teams-x-<version>.tgz",
+      "npm i dsh-teams-x && dsh plugin --profile web add <node_modules 路径>/dsh-teams-x"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

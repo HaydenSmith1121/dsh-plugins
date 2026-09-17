@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "runfali/dsh-mem0-plugins",
+  "slug": "runfali__dsh-mem0-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mem0-plugins",
+  "title": "dsh-mem0-plugins",
+  "summary": "给 DSH 装上持久化记忆，自动回忆历史对话并回写新内容，让智能体越用越懂你。",
+  "tags": [
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "dsh-plugins",
+    "会话管理",
+    "AI工具"
+  ],
+  "version": "0.1.2-rc.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "runfali",
+  "repo": "https://github.com/runfali/dsh-mem0-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T08:43:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:runfali/dsh-mem0-plugins",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-mem0-plugins",
+      "dsh plugin --profile web remove dsh-mem0-plugins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

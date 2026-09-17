@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "Kanadego/dsh-heartbeat",
+  "slug": "kanadego__dsh-heartbeat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-heartbeat",
+  "title": "dsh-heartbeat",
+  "summary": "让 Agent 按节律自己醒来，维护记忆、感知忙闲，再决定要不要开口，交流更有活人感。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "状态持久化",
+    "自动化",
+    "状态监控",
+    "会话管理"
+  ],
+  "version": "1.5.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.5.1",
+    "publishedAt": "2026-09-16T09:01:05Z",
+    "url": "https://github.com/Kanadego/dsh-heartbeat/releases/tag/v1.5.1"
+  },
+  "author": "Kanadego",
+  "repo": "https://github.com/Kanadego/dsh-heartbeat",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-16T09:00:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Kanadego/dsh-heartbeat",
+    "commands": [
+      "dsh plugin --profile web add github:Kanadego/dsh-heartbeat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

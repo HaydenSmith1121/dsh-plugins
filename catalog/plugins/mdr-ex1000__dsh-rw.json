@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "MDR-EX1000/dsh-rw",
+  "slug": "mdr-ex1000__dsh-rw",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-rw",
+  "title": "dsh-rw",
+  "summary": "支持一键连接并管理 SSH 远程服务器，把不同机器的开发环境变成 DSH 里的独立工作区，随时无缝切换。",
+  "tags": [
+    "dsh-plugin",
+    "工作区管理",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.4.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.4",
+    "publishedAt": "2026-09-15T11:18:41Z",
+    "url": "https://github.com/MDR-EX1000/dsh-rw/releases/tag/v0.4.4"
+  },
+  "author": "MDR-EX1000",
+  "repo": "https://github.com/MDR-EX1000/dsh-rw",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-15T11:18:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MDR-EX1000/dsh-rw",
+    "commands": [
+      "dsh plugin --profile web add github:MDR-EX1000/dsh-rw",
+      "dsh plugin --profile web add https://github.com/MDR-EX1000/dsh-rw/releases/latest/download/dsh-rw.tgz",
+      "dsh plugin --profile web add /path/to/dsh-rw"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

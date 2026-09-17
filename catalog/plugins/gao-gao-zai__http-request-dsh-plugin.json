@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "gao-gao-zai/http-request-dsh-plugin",
+  "slug": "gao-gao-zai__http-request-dsh-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "http-request-dsh-plugin",
+  "title": "http-request-dsh-plugin",
+  "summary": "原生 DSH 插件，直接发起 HTTP 请求，支持凭据白名单，安全又灵活。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "安全审计",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "gao-gao-zai",
+  "repo": "https://github.com/gao-gao-zai/http-request-dsh-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-30T12:29:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:gao-gao-zai/http-request-dsh-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:gao-gao-zai/http-request-dsh-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

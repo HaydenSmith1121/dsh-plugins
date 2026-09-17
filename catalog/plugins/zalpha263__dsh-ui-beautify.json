@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Zalpha263/dsh-ui-beautify",
+  "slug": "zalpha263__dsh-ui-beautify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ui-beautify",
+  "title": "dsh-ui-beautify",
+  "summary": "给 DSH 界面换套顺眼外观，四种配色加自定义背景图，随时一键还原。",
+  "tags": [
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "界面美化",
+    "前端增强",
+    "设置面板"
+  ],
+  "version": "3.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Zalpha263",
+  "repo": "https://github.com/Zalpha263/dsh-ui-beautify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-10T08:56:26Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Zalpha263/dsh-ui-beautify",
+    "commands": [
+      "dsh plugin --profile web add github:Zalpha263/dsh-ui-beautify",
+      "dsh plugin --profile web add file:<你的源码路径>",
+      "dsh plugin --profile web install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

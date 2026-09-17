@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "rj-jiangyichen/dsh-rules",
+  "slug": "rj-jiangyichen__dsh-rules",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-rules",
+  "title": "dsh-rules",
+  "summary": "为 DSH 插件市场提供规则引擎，帮你自动执行和管理插件间的协作逻辑。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "自动化",
+    "工作流增强"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-09-13T04:11:34Z",
+    "url": "https://github.com/rj-jiangyichen/dsh-rules/releases/tag/v0.1.3"
+  },
+  "author": "rj-jiangyichen",
+  "repo": "https://github.com/rj-jiangyichen/dsh-rules",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-13T04:11:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:rj-jiangyichen/dsh-rules",
+    "commands": [
+      "dsh plugin --profile web add github:rj-jiangyichen/dsh-rules"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

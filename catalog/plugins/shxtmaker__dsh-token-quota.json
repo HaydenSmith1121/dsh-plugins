@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "shxtmaker/dsh-token-quota",
+  "slug": "shxtmaker__dsh-token-quota",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-token-quota",
+  "title": "dsh-token-quota",
+  "summary": "一眼看清 DeepSeek 等供应商的周期限额和余额，还能自动识别已添加的供应商并填好 API Key。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "成本控制",
+    "零配置",
+    "可视化"
+  ],
+  "version": "1.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.3.0",
+    "publishedAt": "2026-09-12T14:52:38Z",
+    "url": "https://github.com/shxtmaker/dsh-token-quota/releases/tag/v1.3.0"
+  },
+  "author": "shxtmaker",
+  "repo": "https://github.com/shxtmaker/dsh-token-quota",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T14:59:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shxtmaker/dsh-token-quota",
+    "commands": [
+      "dsh plugin --profile web add \"link:$(pwd)\"",
+      "dsh plugin --profile web add \"$(pwd)/dsh-token-quota-1.3.0.tgz\"",
+      "git clone https://github.com/shxtmaker/dsh-token-quota.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

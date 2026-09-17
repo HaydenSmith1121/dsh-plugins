@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "rainow/dsh-simple-wiki-memory",
+  "slug": "rainow__dsh-simple-wiki-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-simple-wiki-memory",
+  "title": "dsh-simple-wiki-memory",
+  "summary": "超轻量 Wiki 记忆插件，按需加载主题文件，省 token 不塞爆上下文，随装随改。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "资源优化",
+    "零配置"
+  ],
+  "version": "0.1.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "rainow",
+  "repo": "https://github.com/rainow/dsh-simple-wiki-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-11T03:15:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-simple-wiki-memory",
+    "commands": [
+      "dsh plugin --profile web add dsh-simple-wiki-memory",
+      "dsh plugin --profile web add github:rainow/dsh-simple-wiki-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

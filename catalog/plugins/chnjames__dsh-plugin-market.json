@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "chnjames/dsh-plugin-market",
+  "slug": "chnjames__dsh-plugin-market",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-market",
+  "title": "dsh-plugin-market",
+  "summary": "在 DeepSeek Harness 里逛社区插件，看中哪个一键装，还能上网站浏览目录。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "marketplace",
+    "plugin-market",
+    "插件管理",
+    "零配置",
+    "目录浏览"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chnjames",
+  "repo": "https://github.com/chnjames/dsh-plugin-market",
+  "homepage": "https://dsh-plugin-market.vercel.app",
+  "license": null,
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-16T21:16:18Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chnjames/dsh-plugin-market",
+    "commands": [
+      "dsh plugin --profile web add github:chnjames/dsh-plugin-market",
+      "dsh plugin --profile web remove dsh-plugin-market"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

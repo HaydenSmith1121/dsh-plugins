@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "KasenRi/dsh-browser",
+  "slug": "kasenri__dsh-browser",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-browser",
+  "title": "dsh-browser",
+  "summary": "让 AI 助手直接操控浏览器，自动完成网页操作和任务。",
+  "tags": [
+    "agent-browser",
+    "browser-automation",
+    "deepseek-harness",
+    "dsh-plugin",
+    "自动化",
+    "工具集成",
+    "浏览器隔离",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "KasenRi",
+  "repo": "https://github.com/KasenRi/dsh-browser",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T06:45:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:KasenRi/dsh-browser",
+    "commands": [
+      "dsh plugin --profile web add github:KasenRi/dsh-browser"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

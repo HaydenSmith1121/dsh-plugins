@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "TYEclipse/dsh-probstat",
+  "slug": "tyeclipse__dsh-probstat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-probstat",
+  "title": "dsh-probstat",
+  "summary": "给 AI 助手补上概率统计计算能力，分布、z 值、置信区间和事件概率都能算得又快又准。",
+  "tags": [
+    "confidence-interval",
+    "deepseek-harness",
+    "dsh-plugin",
+    "probability",
+    "statistics",
+    "z-score",
+    "工具集成",
+    "AI 助手",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-06T22:02:12Z",
+    "url": "https://github.com/TYEclipse/dsh-probstat/releases/tag/v0.1.0"
+  },
+  "author": "TYEclipse",
+  "repo": "https://github.com/TYEclipse/dsh-probstat",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T16:43:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TYEclipse/dsh-probstat",
+    "commands": [
+      "dsh plugin --profile web add github:TYEclipse/dsh-probstat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

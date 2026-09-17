@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Nalleyer/dsh_session_cost",
+  "slug": "nalleyer__dsh_session_cost",
+  "tier": "community",
+  "package": null,
+  "name": "dsh_session_cost",
+  "title": "dsh_session_cost",
+  "summary": "在聊天界面底部实时显示本会话花了多少钱，点开还能看峰谷时段、单价和各模型用量明细。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "会话管理",
+    "模型配置",
+    "效率提升"
+  ],
+  "version": "1.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Nalleyer",
+  "repo": "https://github.com/Nalleyer/dsh_session_cost",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T09:28:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-session-cost",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/Nalleyer/dsh_session_cost",
+      "dsh plugin --profile web add dsh-session-cost"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "xrn1997/dsh-novel",
+  "slug": "xrn1997__dsh-novel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-novel",
+  "title": "dsh-novel",
+  "summary": "在 DSH 界面里直接看网络小说，导入书源就能搜索、加书架、滚动阅读，还能让 AI 帮你找书读章节。",
+  "tags": [
+    "dsh-plugin",
+    "ebook-reader",
+    "novel-reader",
+    "typescript",
+    "工具集成",
+    "AI 助手",
+    "快捷操作",
+    "前端增强"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xrn1997",
+  "repo": "https://github.com/xrn1997/dsh-novel",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T13:20:55Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xrn1997/dsh-novel",
+    "commands": [
+      "dsh plugin --profile web add github:xrn1997/dsh-novel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

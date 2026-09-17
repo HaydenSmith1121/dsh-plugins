@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "XJungit/omdp",
+  "slug": "xjungit__omdp",
+  "tier": "community",
+  "package": null,
+  "name": "omdp",
+  "title": "omdp",
+  "summary": "把多个 DSH 插件集中在一个仓库里管理，方便统一安装、更新和分享，省去到处找插件的麻烦。",
+  "tags": [
+    "agent-skills",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mcp",
+    "插件管理",
+    "集中仓库",
+    "命令行工具",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "XJungit",
+  "repo": "https://github.com/XJungit/omdp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T15:00:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:XJungit/omdp",
+    "commands": [
+      "dsh plugin --profile web add github:XJungit/omdp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

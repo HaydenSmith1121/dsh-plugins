@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xchannel1987/dsh-session-xc",
+  "slug": "xchannel1987__dsh-session-xc",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-xc",
+  "title": "dsh-session-xc",
+  "summary": "增强 DSH 会话体验，支持会话数量显示、归档管理和跨工作区移动，让会话管理更高效。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "工作区管理",
+    "语义检索",
+    "效率提升"
+  ],
+  "version": "0.11.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xchannel1987",
+  "repo": "https://github.com/xchannel1987/dsh-session-xc",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T18:20:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-session-xc",
+    "commands": [
+      "dsh plugin --profile web add dsh-session-xc",
+      "npm install dsh-session-xc"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

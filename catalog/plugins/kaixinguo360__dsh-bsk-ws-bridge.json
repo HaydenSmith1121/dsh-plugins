@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "kaixinguo360/dsh-bsk-ws-bridge",
+  "slug": "kaixinguo360__dsh-bsk-ws-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-bsk-ws-bridge",
+  "title": "dsh-bsk-ws-bridge",
+  "summary": "把本机浏览器控制服务通过网页桥接出去，让AI能远程操控你的浏览器，实现跨设备自动化操作。",
+  "tags": [
+    "browser-control",
+    "browserskill",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "安全审计",
+    "自动化",
+    "AI 助手"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kaixinguo360",
+  "repo": "https://github.com/kaixinguo360/dsh-bsk-ws-bridge",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-29T18:59:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kaixinguo360/dsh-bsk-ws-bridge",
+    "commands": [
+      "dsh plugin --profile web add file:<本仓库路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

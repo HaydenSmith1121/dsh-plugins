@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "realpkuasule/dsh-session-handoff",
+  "slug": "realpkuasule__dsh-session-handoff",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-handoff",
+  "title": "dsh-session-handoff",
+  "summary": "自动监测会话状态，超阈值时给出建议，经你确认后调用自动化工具执行操作，实现安全交接。",
+  "tags": [
+    "dsh-plugin",
+    "会话交接",
+    "阈值触发",
+    "人工审批",
+    "自动化执行"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "realpkuasule",
+  "repo": "https://github.com/realpkuasule/dsh-session-handoff",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T16:11:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-session-handoff",
+    "commands": [
+      "dsh plugin --profile web add dsh-session-handoff"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Casually/deepseek-harness-plugs-manage",
+  "slug": "casually__deepseek-harness-plugs-manage",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-plugs-manage",
+  "title": "deepseek-harness-plugs-manage",
+  "summary": "帮你搜索、安装、更新和卸载 DeepSeek Harness 官方插件库里的插件，省去手动折腾。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh-plugin",
+    "dsh-plugins",
+    "插件管理",
+    "集中仓库",
+    "命令行工具",
+    "效率提升"
+  ],
+  "version": "0.3.2",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Casually",
+  "repo": "https://github.com/Casually/deepseek-harness-plugs-manage",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-21T01:47:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Casually/deepseek-harness-plugs-manage",
+    "commands": [
+      "dsh plugin --profile web add github:Casually/deepseek-harness-plugs-manage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

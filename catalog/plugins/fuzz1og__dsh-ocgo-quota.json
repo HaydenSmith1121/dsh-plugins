@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "fuzz1og/dsh-ocgo-quota",
+  "slug": "fuzz1og__dsh-ocgo-quota",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ocgo-quota",
+  "title": "dsh-ocgo-quota",
+  "summary": "在 DeepSeek Harness 界面右下角显示 OpenCode Go 的额度用量，实时掌握剩余配额，避免超限。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "效率提升",
+    "消息通知",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fuzz1og",
+  "repo": "https://github.com/fuzz1og/dsh-ocgo-quota",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-26T09:24:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fuzz1og/dsh-ocgo-quota",
+    "commands": [
+      "dsh plugin --profile web add github:fuzz1og/dsh-ocgo-quota"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

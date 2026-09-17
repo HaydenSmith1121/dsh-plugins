@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "yhPrime/dsh-github-installer",
+  "slug": "yhprime__dsh-github-installer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-github-installer",
+  "title": "dsh-github-installer",
+  "summary": "粘贴 GitHub 仓库网址即可一键安装插件，也支持 npm 包名和其他 Git 地址，还能卸载和更新。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "插件管理",
+    "零配置",
+    "模型配置",
+    "自动化"
+  ],
+  "version": "2.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yhPrime",
+  "repo": "https://github.com/yhPrime/dsh-github-installer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T16:41:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@dsh-std/adapter-dsh",
+    "commands": [
+      "dsh plugin --profile web add @dsh-std/adapter-dsh",
+      "dsh plugin --profile web add github:yhPrime/dsh-github-installer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

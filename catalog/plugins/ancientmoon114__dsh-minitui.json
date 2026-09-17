@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "AncientMoon114/dsh-minitui",
+  "slug": "ancientmoon114__dsh-minitui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-minitui",
+  "title": "dsh-minitui",
+  "summary": "给 Deepseek Harness 套上一个轻量终端界面，让你在命令行里更顺手地聊天、管会话。",
+  "tags": [
+    "dsh-plugin",
+    "命令行工具",
+    "会话管理",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "AncientMoon114",
+  "repo": "https://github.com/AncientMoon114/dsh-minitui",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T18:39:38Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AncientMoon114/dsh-minitui",
+    "commands": [
+      "git clone https://github.com/AncientMoon114/dsh-minitui",
+      "npm install",
+      "dsh plugin --profile minitui add link://这里需要填入minitui的绝对路径"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

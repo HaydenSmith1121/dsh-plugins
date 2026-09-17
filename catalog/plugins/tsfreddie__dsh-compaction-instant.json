@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "TsFreddie/dsh-compaction-instant",
+  "slug": "tsfreddie__dsh-compaction-instant",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-compaction-instant",
+  "title": "dsh-compaction-instant",
+  "summary": "为 DeepSeek Harness 提供即时、近无损的上下文压缩，无需 LLM 参与，显著节省 token 成本。",
+  "tags": [
+    "agent",
+    "compaction",
+    "context-compression",
+    "cordis",
+    "dsh",
+    "dsh-plugin",
+    "llm",
+    "plugin",
+    "效率提升",
+    "资源优化",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.1.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.4",
+    "publishedAt": "2026-08-14T07:48:12Z",
+    "url": "https://github.com/TsFreddie/dsh-compaction-instant/releases/tag/v0.1.4"
+  },
+  "author": "TsFreddie",
+  "repo": "https://github.com/TsFreddie/dsh-compaction-instant",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 15,
+  "forks": 2,
+  "pushedAt": "2026-09-02T14:15:59Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@deepseek-ai/dsh-compaction-basic@npm:dsh-compaction-instant",
+    "commands": [
+      "dsh plugin --profile web add <spec>",
+      "dsh plugin --profile web add \"@deepseek-ai/dsh-compaction-basic@npm:dsh-compaction-instant\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

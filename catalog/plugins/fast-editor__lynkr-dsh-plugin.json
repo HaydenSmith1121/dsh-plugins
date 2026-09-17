@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Fast-Editor/lynkr-dsh-plugin",
+  "slug": "fast-editor__lynkr-dsh-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "lynkr-dsh-plugin",
+  "title": "lynkr-dsh-plugin",
+  "summary": "把 Lynkr 接入 DeepSeek Harness，自动按请求难度路由到最便宜的可用模型，省钱又省心。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "llm-gateway",
+    "lynkr",
+    "模型适配",
+    "资源优化",
+    "效率提升",
+    "设置面板"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Fast-Editor",
+  "repo": "https://github.com/Fast-Editor/lynkr-dsh-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T22:21:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Fast-Editor/lynkr-dsh-plugin",
+    "commands": [
+      "dsh plugin --profile <your-profile> add lynkr-dsh-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

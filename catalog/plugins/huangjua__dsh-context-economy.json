@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "huangjua/dsh-context-economy",
+  "slug": "huangjua__dsh-context-economy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-context-economy",
+  "title": "dsh-context-economy",
+  "summary": "给智能体读代码时省 token 的上下文压缩层，通过指针和拓扑索引能省 80% 到 93% 的 token 开销。",
+  "tags": [
+    "ai-agent",
+    "context-compression",
+    "deepseek-harness",
+    "dsh-context",
+    "dsh-plugin",
+    "dsh-suite",
+    "pagerank",
+    "project-index",
+    "token-efficiency",
+    "token-saving",
+    "会话管理",
+    "效率提升",
+    "资源优化",
+    "AI 助手",
+    "文件管理"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.0.1",
+    "publishedAt": "2026-08-16T06:25:00Z",
+    "url": "https://github.com/huangjua/dsh-context-economy/releases/tag/v0.0.1"
+  },
+  "author": "huangjua",
+  "repo": "https://github.com/huangjua/dsh-context-economy",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T09:53:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:huangjua/dsh-context-economy",
+    "commands": [
+      "dsh plugin --profile web add github:huangjua/dsh-context-economy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

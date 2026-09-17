@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "Linxiushen/dsh-workflow-isolate",
+  "slug": "linxiushen__dsh-workflow-isolate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workflow-isolate",
+  "title": "dsh-workflow-isolate",
+  "summary": "为 DSH 提供隔离沙箱工作流引擎，在 QuickJS/WASM 中安全运行模型编排，限制内存与执行时间。",
+  "tags": [
+    "agentic-ai",
+    "deepseek-harness",
+    "dsh-plugin",
+    "quickjs",
+    "sandbox",
+    "typescript",
+    "webassembly",
+    "workflow-engine",
+    "任务编排",
+    "安全审查",
+    "资源优化",
+    "多Agent协作"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-17T17:46:45Z",
+    "url": "https://github.com/Linxiushen/dsh-workflow-isolate/releases/tag/v0.1.0"
+  },
+  "author": "Linxiushen",
+  "repo": "https://github.com/Linxiushen/dsh-workflow-isolate",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-11T02:23:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "git clone https://github.com/Linxiushen/dsh-workflow-isolate.git",
+      "dsh plugin --profile web add ./dsh-workflow-isolate-0.1.0.tgz",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

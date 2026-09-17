@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "bigharm/dsh-agentnoodle",
+  "slug": "bigharm__dsh-agentnoodle",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agentnoodle",
+  "title": "dsh-agentnoodle",
+  "summary": "AI驱动的群像聊天游戏框架，输入行动后多个NPC各自反应，支持场景切换、关系变化和本地存档。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dsh-plugin-market",
+    "dsh-plugin-pack",
+    "dsh-plugins",
+    "多Agent协作",
+    "娱乐互动",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.1.14",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bigharm",
+  "repo": "https://github.com/bigharm/dsh-agentnoodle",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T13:01:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-agentnoodle",
+    "commands": [
+      "dsh plugin --profile web add dsh-agentnoodle"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

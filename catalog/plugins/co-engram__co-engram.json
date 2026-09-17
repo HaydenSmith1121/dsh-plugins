@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "Co-Engram/Co-Engram",
+  "slug": "co-engram__co-engram",
+  "tier": "community",
+  "package": null,
+  "name": "Co-Engram",
+  "title": "Co-Engram",
+  "summary": "让 AI 团队拥有会自我进化的共享记忆，跨会话记住经验并持续积累。",
+  "tags": [
+    "agent-memory",
+    "ai-memory",
+    "claude-code",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "engram",
+    "mcp",
+    "memory",
+    "team-memory",
+    "多Agent协作",
+    "状态持久化",
+    "语义检索",
+    "AI 助手",
+    "工具集成"
+  ],
+  "version": "0.1.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.5",
+    "publishedAt": "2026-07-03T12:30:33Z",
+    "url": "https://github.com/Co-Engram/Co-Engram/releases/tag/v0.1.5"
+  },
+  "author": "Co-Engram",
+  "repo": "https://github.com/Co-Engram/Co-Engram",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 12,
+  "forks": 0,
+  "pushedAt": "2026-08-22T08:12:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Co-Engram/Co-Engram",
+    "commands": [
+      "npm install -g @co-engram/claude-code",
+      "dsh plugin --profile <name> add @co-engram/dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

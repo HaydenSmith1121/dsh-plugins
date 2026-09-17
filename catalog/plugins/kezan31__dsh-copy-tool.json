@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "kezan31/dsh-copy-tool",
+  "slug": "kezan31__dsh-copy-tool",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-copy-tool",
+  "title": "dsh-copy-tool",
+  "summary": "增强版行选择复制工具，解决用 write 工具重构时漏选或复制不全的问题，提升编辑效率。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-tools",
+    "效率提升",
+    "工具集成",
+    "插件管理",
+    "自动化"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-09T13:31:22Z",
+    "url": "https://github.com/kezan31/dsh-copy-tool/releases/tag/v0.1.2"
+  },
+  "author": "kezan31",
+  "repo": "https://github.com/kezan31/dsh-copy-tool",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T13:31:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kezan31/dsh-copy-tool",
+    "commands": [
+      "dsh plugin --profile web add github:kezan31/dsh-copy-tool"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "saya-ch/dsh-amadeus",
+  "slug": "saya-ch__dsh-amadeus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-amadeus",
+  "title": "dsh-amadeus",
+  "summary": "把 DSH 变成 Galgame 演出，鲸鱼娘在手机上陪你，电脑上替你干活。",
+  "tags": [
+    "amadeus",
+    "android-app",
+    "deepseek-harness",
+    "dsh-plugin",
+    "galgame",
+    "llm-agent",
+    "主题",
+    "跨设备",
+    "AI 助手",
+    "自动化",
+    "界面美化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "app-v0.1.0",
+    "publishedAt": "2026-09-15T15:20:19Z",
+    "url": "https://github.com/saya-ch/dsh-amadeus/releases/tag/app-v0.1.0"
+  },
+  "author": "saya-ch",
+  "repo": "https://github.com/saya-ch/dsh-amadeus",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T05:14:23Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:saya-ch/dsh-amadeus",
+    "commands": [
+      "dsh plugin --profile web add github:saya-ch/dsh-amadeus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

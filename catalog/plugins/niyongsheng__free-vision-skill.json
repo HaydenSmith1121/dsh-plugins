@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "niyongsheng/free-vision-skill",
+  "slug": "niyongsheng__free-vision-skill",
+  "tier": "community",
+  "package": null,
+  "name": "free-vision-skill",
+  "title": "free-vision-skill",
+  "summary": "在 macOS 上本地识别图片文字，无需联网，保护隐私，即装即用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-skill",
+    "ocr",
+    "skills",
+    "vision",
+    "视觉理解",
+    "消息通知",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-08-15T10:40:26Z",
+    "url": "https://github.com/niyongsheng/free-vision-skill/releases/tag/v0.3.1"
+  },
+  "author": "niyongsheng",
+  "repo": "https://github.com/niyongsheng/free-vision-skill",
+  "homepage": "https://juejin.cn/spost/7672008490309156914",
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-19T05:26:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@niyongsheng/free-vision-skill",
+    "commands": [
+      "dsh plugin add @niyongsheng/free-vision-skill"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

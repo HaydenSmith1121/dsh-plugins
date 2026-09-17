@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "040822/dsh-codex-approval",
+  "slug": "040822__dsh-codex-approval",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codex-approval",
+  "title": "dsh-codex-approval",
+  "summary": "仿照 Codex 的 AI 审批插件，用规则加三级风险评估自动放行或拒绝沙箱操作，让审批更省心。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "安全审计",
+    "AI 助手",
+    "工作流增强"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "040822",
+  "repo": "https://github.com/040822/dsh-codex-approval",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-12T12:25:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:040822/dsh-codex-approval",
+    "commands": [
+      "dsh plugin --profile web add github:040822/dsh-codex-approval"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

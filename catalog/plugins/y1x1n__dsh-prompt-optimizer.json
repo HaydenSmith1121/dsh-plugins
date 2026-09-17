@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Y1X1n/dsh-prompt-optimizer",
+  "slug": "y1x1n__dsh-prompt-optimizer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-optimizer",
+  "title": "dsh-prompt-optimizer",
+  "summary": "帮你把随手写的提示词自动改写成更清晰、更有效的版本，让 DeepSeek 回答更准。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "AI 助手",
+    "提示词优化",
+    "工具集成"
+  ],
+  "version": "0.3.16",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Y1X1n",
+  "repo": "https://github.com/Y1X1n/dsh-prompt-optimizer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 12,
+  "forks": 2,
+  "pushedAt": "2026-09-11T04:51:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@y1x1n/dsh-prompt-optimizer",
+    "commands": [
+      "dsh plugin --profile web add @y1x1n/dsh-prompt-optimizer",
+      "dsh plugin --profile web add ./y1x1n-dsh-prompt-optimizer-<版本号>.tgz",
+      "npm install --legacy-peer-deps"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "v587d/capital-generation",
+  "slug": "v587d__capital-generation",
+  "tier": "community",
+  "package": null,
+  "name": "capital-generation",
+  "title": "capital-generation",
+  "summary": "给A股散户用的AI炒股助手，帮你分析行情、找机会、管仓位。",
+  "tags": [
+    "byok",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugin-web",
+    "finance",
+    "AI 助手",
+    "金融投资",
+    "内容创作",
+    "模型配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "v587d",
+  "repo": "https://github.com/v587d/capital-generation",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-09-15T03:50:59Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:v587d/capital-generation",
+    "commands": [
+      "dsh plugin --profile web add github:v587d/capital-generation"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

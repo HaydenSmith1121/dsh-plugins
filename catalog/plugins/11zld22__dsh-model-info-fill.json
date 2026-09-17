@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "11zld22/dsh-model-info-fill",
+  "slug": "11zld22__dsh-model-info-fill",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-info-fill",
+  "title": "dsh-model-info-fill",
+  "summary": "按模型名自动补全上下文、输出上限等缺失配置，省去手动查表填写的麻烦。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "11zld22",
+  "repo": "https://github.com/11zld22/dsh-model-info-fill",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-07T07:01:11Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:11zld22/dsh-model-info-fill",
+    "commands": [
+      "dsh plugin --profile web add github:11zld22/dsh-model-info-fill"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "errrepe/dsh-codegraph-plugin",
+  "slug": "errrepe__dsh-codegraph-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codegraph-plugin",
+  "title": "dsh-codegraph-plugin",
+  "summary": "把 codegraph 代码图谱能力打包成八个工具，让模型直接看懂代码结构、调用关系，辅助开发调试。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "可视化",
+    "AI 助手",
+    "状态监控"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "errrepe",
+  "repo": "https://github.com/errrepe/dsh-codegraph-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T10:40:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-codegraph",
+    "commands": [
+      "cargo install codegraph",
+      "dsh plugin --profile web add /caminho/para/este/checkout",
+      "dsh plugin --profile web add dsh-codegraph"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

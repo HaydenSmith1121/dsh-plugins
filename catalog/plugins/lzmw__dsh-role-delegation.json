@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "LZMW/dsh-role-delegation",
+  "slug": "lzmw__dsh-role-delegation",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-role-delegation",
+  "title": "dsh-role-delegation",
+  "summary": "给 DSH 配一支专家团队，一句话把任务派给对口角色，自动选模型、限权限，干完交结果。",
+  "tags": [
+    "dsh-plugin",
+    "多Agent协作",
+    "模型适配",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "LZMW",
+  "repo": "https://github.com/LZMW/dsh-role-delegation",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T14:32:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LZMW/dsh-role-delegation",
+    "commands": [
+      "dsh plugin --profile web add github:LZMW/dsh-role-delegation"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

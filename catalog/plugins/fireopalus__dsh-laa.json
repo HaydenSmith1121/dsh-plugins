@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "FireOpalus/dsh-laa",
+  "slug": "fireopalus__dsh-laa",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-laa",
+  "title": "dsh-laa",
+  "summary": "给每个会话加个 LAA 开关，峰时自动停下、谷时接着跑，帮你省着用 DeepSeek。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-web",
+    "会话管理",
+    "自动化",
+    "资源优化",
+    "快捷操作"
+  ],
+  "version": "0.6.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "FireOpalus",
+  "repo": "https://github.com/FireOpalus/dsh-laa",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T04:57:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-laa",
+    "commands": [
+      "dsh plugin --profile web add dsh-laa",
+      "dsh plugin --profile web add link:D:\\Project\\dsh-laa"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

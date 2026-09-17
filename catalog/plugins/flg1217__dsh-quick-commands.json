@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "flg1217/dsh-quick-commands",
+  "slug": "flg1217__dsh-quick-commands",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-quick-commands",
+  "title": "dsh-quick-commands",
+  "summary": "在设置面板自定义斜杠命令，输入/名称即可快速插入预设提示词，发送时自动展开，提升输入效率。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "零配置",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "flg1217",
+  "repo": "https://github.com/flg1217/dsh-quick-commands",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-03T10:03:25Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:flg1217/dsh-quick-commands",
+    "commands": [
+      "git clone https://github.com/flg1217/dsh-quick-commands.git",
+      "dsh plugin --profile web add <本仓库目录>",
+      "dsh plugin --profile web remove dsh-quick-commands"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

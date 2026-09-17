@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "zhangkkkai/dsh-todo-panel",
+  "slug": "zhangkkkai__dsh-todo-panel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-todo-panel",
+  "title": "dsh-todo-panel",
+  "summary": "在侧边栏里用卡片管理待办任务，支持优先级颜色标记，按会话自动保存，让开发更有序。",
+  "tags": [
+    "dsh-better-sidebar",
+    "dsh-plugin",
+    "前端增强",
+    "效率提升",
+    "工作流增强",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhangkkkai",
+  "repo": "https://github.com/zhangkkkai/dsh-todo-panel",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T01:47:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-todo-panel",
+    "commands": [
+      "dsh plugin --profile web add dsh-todo-panel",
+      "dsh plugin --profile web add github:zhangkkkai/dsh-todo-panel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

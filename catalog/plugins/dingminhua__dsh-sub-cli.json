@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "dingminhua/dsh-sub-cli",
+  "slug": "dingminhua__dsh-sub-cli",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sub-cli",
+  "title": "dsh-sub-cli",
+  "summary": "在 DeepSeek Harness 中统一管理和调用外部 Agent CLI（Codex 和 Claude Code），支持独立配置、持久会话与多模型切换。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "多Agent协作",
+    "命令行工具",
+    "会话管理",
+    "模型配置",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dingminhua",
+  "repo": "https://github.com/dingminhua/dsh-sub-cli",
+  "homepage": "https://dshfind.com/plugins/dingminhua/dsh-sub-cli",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T16:28:37Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dingminhua/dsh-sub-cli",
+    "commands": [
+      "dsh plugin --profile web add github:dingminhua/dsh-sub-cli"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

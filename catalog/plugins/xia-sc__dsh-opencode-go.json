@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "xia-sc/dsh-opencode-go",
+  "slug": "xia-sc__dsh-opencode-go",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-opencode-go",
+  "title": "dsh-opencode-go",
+  "summary": "给 DeepSeek Harness 接上 OpenCode Go 的 zen-go 推理路由，每个会话都带稳定标识。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "模型配置",
+    "模型适配",
+    "会话管理",
+    "工具集成"
+  ],
+  "version": "0.8.8",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.8",
+    "publishedAt": "2026-09-10T06:11:14Z",
+    "url": "https://github.com/xia-sc/dsh-opencode-go/releases/tag/v0.8.8"
+  },
+  "author": "xia-sc",
+  "repo": "https://github.com/xia-sc/dsh-opencode-go",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 2,
+  "pushedAt": "2026-09-16T05:24:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xia-sc/dsh-opencode-go",
+    "commands": [
+      "dsh plugin --profile web add github:xia-sc/dsh-opencode-go"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

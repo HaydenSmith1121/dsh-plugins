@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "SLAPaper/dsh-self-checking-profile",
+  "slug": "slapaper__dsh-self-checking-profile",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-self-checking-profile",
+  "title": "dsh-self-checking-profile",
+  "summary": "给 DeepSeek Harness 网页版加上 Self Checking 沙盒模式，让 AI 输出前先自我检查，更安全可靠。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "插件管理",
+    "前端增强"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "SLAPaper",
+  "repo": "https://github.com/SLAPaper/dsh-self-checking-profile",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-06T14:20:30Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:SLAPaper/dsh-self-checking-profile",
+    "commands": [
+      "dsh plugin --profile web add github:SLAPaper/dsh-self-checking-profile"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

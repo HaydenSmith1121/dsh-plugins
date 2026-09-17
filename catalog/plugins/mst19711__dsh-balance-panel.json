@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "MST19711/dsh-balance-panel",
+  "slug": "mst19711__dsh-balance-panel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-balance-panel",
+  "title": "dsh-balance-panel",
+  "summary": "在 DSH 网页界面上显示悬浮余额面板，实时查看 5 小时、每周、每月剩余额度，支持多后端。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "状态监控",
+    "模型配置",
+    "前端增强"
+  ],
+  "version": "0.3.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "MST19711",
+  "repo": "https://github.com/MST19711/dsh-balance-panel",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T14:10:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MST19711/dsh-balance-panel",
+    "commands": [
+      "dsh plugin --profile web add github:MST19711/dsh-balance-panel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "lovstudio/dsh-frontend-inspector",
+  "slug": "lovstudio__dsh-frontend-inspector",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-frontend-inspector",
+  "title": "dsh-frontend-inspector",
+  "summary": "开发调试专用，按住快捷键点击页面元素，直接跳转到对应源码位置，提升前端排查效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "工作流增强",
+    "效率提升",
+    "前端增强",
+    "娱乐互动"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-28T08:42:15Z",
+    "url": "https://github.com/lovstudio/dsh-frontend-inspector/releases/tag/v0.1.1"
+  },
+  "author": "lovstudio",
+  "repo": "https://github.com/lovstudio/dsh-frontend-inspector",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-05T07:20:56Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lovstudio/dsh-frontend-inspector",
+    "commands": [
+      "git clone --depth 1 --branch dsh-v0.1.2-rc.1 https://github.com/deepseek-ai/deepseek-harness.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "baisama-cloud/dsh-session-mover",
+  "slug": "baisama-cloud__dsh-session-mover",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-mover",
+  "title": "dsh-session-mover",
+  "summary": "把侧边栏里的会话直接拖到别的工作区，历史完整保留，原会话自动归档。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "harness",
+    "会话管理",
+    "工作区管理",
+    "快捷操作",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-17T12:36:03Z",
+    "url": "https://github.com/baisama-cloud/dsh-session-mover/releases/tag/v0.1.0"
+  },
+  "author": "baisama-cloud",
+  "repo": "https://github.com/baisama-cloud/dsh-session-mover",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-08-22T07:39:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:baisama-cloud/dsh-session-mover",
+    "commands": [
+      "dsh plugin --profile web add github:baisama-cloud/dsh-session-mover"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

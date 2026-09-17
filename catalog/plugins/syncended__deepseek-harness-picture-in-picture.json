@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "syncended/deepseek-harness-picture-in-picture",
+  "slug": "syncended__deepseek-harness-picture-in-picture",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-picture-in-picture",
+  "title": "deepseek-harness-picture-in-picture",
+  "summary": "让 DeepSeek Harness 聊天窗口悬浮在其他应用之上，随时提问、随时切换，不打断工作流。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "工作流增强",
+    "前端增强"
+  ],
+  "version": "0.1.16",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "syncended",
+  "repo": "https://github.com/syncended/deepseek-harness-picture-in-picture",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-29T09:35:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@syncended/dsh-pip",
+    "commands": [
+      "dsh plugin --profile web add @syncended/dsh-pip",
+      "dsh plugin --profile web add /absolute/path/to/deepseek-harness-picture-in-picture",
+      "dsh plugin --profile web add -w /absolute/path/to/deepseek-harness-picture-in-picture"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "SaekiRaku/deepseek-rainbow-fart",
+  "slug": "saekiraku__deepseek-rainbow-fart",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-rainbow-fart",
+  "title": "deepseek-rainbow-fart",
+  "summary": "发消息后自动生成彩虹屁并用语音夸你，让写提示词更有成就感。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-rainbow-fart",
+    "dsh-plugin",
+    "AI 助手",
+    "报告生成",
+    "视觉理解",
+    "主题",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-31T10:22:27Z",
+    "url": "https://github.com/SaekiRaku/deepseek-rainbow-fart/releases/tag/v1.0.0"
+  },
+  "author": "SaekiRaku",
+  "repo": "https://github.com/SaekiRaku/deepseek-rainbow-fart",
+  "homepage": "https://saekiraku.github.io/deepseek-rainbow-fart/",
+  "license": null,
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-31T10:58:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:SaekiRaku/deepseek-rainbow-fart",
+    "commands": [
+      "dsh plugin --profile web add github:SaekiRaku/deepseek-rainbow-fart"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

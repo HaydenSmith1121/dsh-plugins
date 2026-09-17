@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "d-dev0101/open-sea-skin",
+  "slug": "d-dev0101__open-sea-skin",
+  "tier": "community",
+  "package": null,
+  "name": "Open Sea Skin",
+  "title": "Open Sea Skin",
+  "summary": "实时 WebGPU 海洋皮肤，左下角可调波浪、日光和玻璃透明度，支持自动昼夜循环，让新标签页沉浸感拉满。",
+  "tags": [
+    "animated-background",
+    "chrome-extension",
+    "customization",
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-theme",
+    "dsh",
+    "dsh-plugin",
+    "edge-extension",
+    "glassmorphism",
+    "ocean",
+    "ocean-skin",
+    "skin",
+    "theme",
+    "threejs",
+    "webgpu",
+    "海洋主题",
+    "实时渲染",
+    "昼夜循环",
+    "新标签页"
+  ],
+  "version": "1.2.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.4",
+    "publishedAt": "2026-09-09T13:55:00Z",
+    "url": "https://github.com/d-dev0101/open-sea-skin/releases/tag/v1.2.4"
+  },
+  "author": "d-dev0101",
+  "repo": "https://github.com/d-dev0101/open-sea-skin",
+  "homepage": "https://d-dev0101.github.io/open-sea-skin/",
+  "license": "MIT",
+  "stars": 379,
+  "forks": 7,
+  "pushedAt": "2026-09-11T18:41:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "open-sea-skin@1.2.3",
+    "commands": [
+      "dsh plugin --profile web add open-sea-skin@1.2.3",
+      "dsh plugin --profile web add 'github:d-dev0101/open-sea-skin",
+      "curl -fsSL https://raw.githubusercontent.com/d-dev0101/open-sea-skin/main/install.sh | bash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

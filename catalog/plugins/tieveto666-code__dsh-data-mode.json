@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "tieveto666-code/dsh-data-mode",
+  "slug": "tieveto666-code__dsh-data-mode",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-data-mode",
+  "title": "dsh-data-mode",
+  "summary": "给 DeepSeek Harness 加个数据模式，连数据库或传表格，用大白话问数据，还能管业务知识。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "AI 助手",
+    "会话管理",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "tieveto666-code",
+  "repo": "https://github.com/tieveto666-code/dsh-data-mode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-23T13:25:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tieveto666-code/dsh-data-mode",
+    "commands": [
+      "dsh plugin --profile web add github:tieveto666-code/dsh-data-mode",
+      "dsh plugin --profile web add ./dsh-data-mode-0.1.0.tgz",
+      "dsh plugin --profile web add link:/path/to/dsh-data-mode"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

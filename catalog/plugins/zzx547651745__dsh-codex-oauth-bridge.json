@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zzx547651745/dsh-codex-oauth-bridge",
+  "slug": "zzx547651745__dsh-codex-oauth-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codex-oauth-bridge",
+  "title": "dsh-codex-oauth-bridge",
+  "summary": "安装后自动配置好 Codex 模型和 ChatGPT OAuth 登录，开箱即用，无需手动设置。",
+  "tags": [
+    "codex",
+    "deepseek-harness",
+    "dsh",
+    "oauth",
+    "openai",
+    "plugin",
+    "零配置",
+    "模型配置",
+    "安全审计"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zzx547651745",
+  "repo": "https://github.com/zzx547651745/dsh-codex-oauth-bridge",
+  "homepage": "https://www.npmjs.com/package/dsh-codex-oauth-bridge",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T15:13:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zzx547651745/dsh-codex-oauth-bridge",
+    "commands": [
+      "dsh plugin --profile web add github:zzx547651745/dsh-codex-oauth-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

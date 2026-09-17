@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ECHOUniverse/dshacp",
+  "slug": "echouniverse__dshacp",
+  "tier": "community",
+  "package": null,
+  "name": "dshacp",
+  "title": "dshacp",
+  "summary": "在 Zed 编辑器里直接调用 DeepSeek，帮你读文件、写代码、跑命令，边写边聊。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "桌宠",
+    "命令行工具",
+    "模型适配",
+    "自动化"
+  ],
+  "version": "0.2.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ECHOUniverse",
+  "repo": "https://github.com/ECHOUniverse/dshacp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T05:58:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@hanxu131/dshacp",
+    "commands": [
+      "dsh plugin --profile dshacp add @hanxu131/dshacp",
+      "dsh plugin --profile dshacp update @hanxu131/dshacp",
+      "dsh plugin --profile acp remove @hanxu131/dshacp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

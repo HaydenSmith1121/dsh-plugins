@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "viyiviyi/dsh-quiet-mode",
+  "slug": "viyiviyi__dsh-quiet-mode",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-quiet-mode",
+  "title": "dsh-quiet-mode",
+  "summary": "给每轮模型请求注入一条静默作业纪律，让 AI 少说废话、专注干活、不乱猜乱想。",
+  "tags": [
+    "dsh-plugin",
+    "模型适配",
+    "效率提升",
+    "零配置",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "viyiviyi",
+  "repo": "https://github.com/viyiviyi/dsh-quiet-mode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T06:41:24Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "git clone https://github.com/viyiviyi/dsh-quiet-mode.git",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

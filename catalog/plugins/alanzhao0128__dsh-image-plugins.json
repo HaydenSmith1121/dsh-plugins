@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "alanzhao0128/dsh-image-plugins",
+  "slug": "alanzhao0128__dsh-image-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-image-plugins",
+  "title": "dsh-image-plugins",
+  "summary": "让 DeepSeek Harness 看懂和生成图片，支持 OpenAI 兼容或 DashScope 接口，即插即用。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "零配置",
+    "可视化"
+  ],
+  "version": "0.3.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "alanzhao0128",
+  "repo": "https://github.com/alanzhao0128/dsh-image-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T09:16:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-image-plugins",
+    "commands": [
+      "dsh plugin --profile web add dsh-image-plugins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

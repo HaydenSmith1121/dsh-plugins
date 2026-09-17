@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "GDWhisper/dsh-web-startup-auth",
+  "slug": "gdwhisper__dsh-web-startup-auth",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-startup-auth",
+  "title": "dsh-web-startup-auth",
+  "summary": "给 DSH 远程 Web 启动加上用户名密码认证，防止别人随便访问你的实例。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "跨设备",
+    "快捷操作",
+    "设置面板"
+  ],
+  "version": "0.1.10",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.10",
+    "publishedAt": "2026-09-15T17:20:11Z",
+    "url": "https://github.com/GDWhisper/dsh-web-startup-auth/releases/tag/v0.1.10"
+  },
+  "author": "GDWhisper",
+  "repo": "https://github.com/GDWhisper/dsh-web-startup-auth",
+  "homepage": "https://www.npmjs.com/package/dsh-web-startup-auth",
+  "license": "MIT",
+  "stars": 43,
+  "forks": 4,
+  "pushedAt": "2026-09-16T01:08:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "git clone <仓库地址>",
+      "npm install",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

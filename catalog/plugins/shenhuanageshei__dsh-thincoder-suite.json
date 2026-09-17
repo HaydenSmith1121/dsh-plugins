@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "shenhuanageshei/dsh-thincoder-suite",
+  "slug": "shenhuanageshei__dsh-thincoder-suite",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-thincoder-suite",
+  "title": "dsh-thincoder-suite",
+  "summary": "把 thincoder 的自律套件搬进 DSH：会诊式收敛评审、工程模式、升级与咨询，帮你把开发流程管得更稳。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "多Agent协作",
+    "变更审查",
+    "AI 助手"
+  ],
+  "version": "0.17.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "shenhuanageshei",
+  "repo": "https://github.com/shenhuanageshei/dsh-thincoder-suite",
+  "homepage": "https://thincoder.com/",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T17:00:37Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shenhuanageshei/dsh-thincoder-suite",
+    "commands": [
+      "git clone https://github.com/shenhuanageshei/dsh-thincoder-suite.git",
+      "pnpm add link:<克隆路径>/dsh-thincoder-suite"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

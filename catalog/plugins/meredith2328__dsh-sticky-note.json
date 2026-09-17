@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Meredith2328/dsh-sticky-note",
+  "slug": "meredith2328__dsh-sticky-note",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sticky-note",
+  "title": "dsh-sticky-note",
+  "summary": "在输入框左下角随手记点子、感想和 TODO，自动保存还能一键发到聊天里。",
+  "tags": [
+    "dsh-external",
+    "dsh-plugin",
+    "快捷操作",
+    "效率提升",
+    "报告生成",
+    "状态持久化",
+    "工具集成"
+  ],
+  "version": "0.2.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Meredith2328",
+  "repo": "https://github.com/Meredith2328/dsh-sticky-note",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 46,
+  "forks": 5,
+  "pushedAt": "2026-08-26T16:17:07Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-sticky-note",
+    "commands": [
+      "dsh plugin --profile web add dsh-sticky-note",
+      "dsh plugin --profile web add file:/path/to/dsh-sticky-note"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

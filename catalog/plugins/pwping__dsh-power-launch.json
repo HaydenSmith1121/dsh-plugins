@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "pwping/dsh-power-launch",
+  "slug": "pwping__dsh-power-launch",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-power-launch",
+  "title": "dsh-power-launch",
+  "summary": "双击桌面图标就能启动 dsh Web UI，还带一键关机按钮，省去每次敲命令的麻烦。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "零配置",
+    "可视化",
+    "命令行工具",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "pwping",
+  "repo": "https://github.com/pwping/dsh-power-launch",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-29T12:47:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-power-launch",
+    "commands": [
+      "dsh plugin --profile web add dsh-power-launch",
+      "git clone https://github.com/pwping/dsh-power-launch.git",
+      "dsh plugin --profile web add link:$(pwd)/dsh-power-launch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

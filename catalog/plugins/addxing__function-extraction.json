@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "addxing/function-extraction",
+  "slug": "addxing__function-extraction",
+  "tier": "community",
+  "package": null,
+  "name": "function-extraction",
+  "title": "function-extraction",
+  "summary": "从项目代码中自动提取某个功能的完整实现链路，并生成带业务逻辑、数据流和Mermaid图表的技术文档，帮AI编程代理快速理解代码。",
+  "tags": [
+    "agent-skills",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-skill",
+    "skill",
+    "代码分析",
+    "功能链路提取",
+    "技术文档生成",
+    "AI编程辅助"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "addxing",
+  "repo": "https://github.com/addxing/function-extraction",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-14T08:25:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:addxing/function-extraction",
+    "commands": [
+      "npx skills add addxing/function-extraction"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

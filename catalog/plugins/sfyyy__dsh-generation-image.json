@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "sfyyy/dsh-generation-image",
+  "slug": "sfyyy__dsh-generation-image",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-generation-image",
+  "title": "dsh-generation-image",
+  "summary": "在 DSH 会话中按需生成图片，一句话描述需求即可快速出图，提升创作效率。",
+  "tags": [
+    "dsh-plugin",
+    "视觉理解",
+    "效率提升",
+    "桌宠"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sfyyy",
+  "repo": "https://github.com/sfyyy/dsh-generation-image",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-25T14:39:18Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sfyyy/dsh-generation-image",
+    "commands": [
+      "dsh plugin --profile web add github:sfyyy/dsh-generation-image"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

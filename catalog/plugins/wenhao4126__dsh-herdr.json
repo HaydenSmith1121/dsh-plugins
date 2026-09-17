@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "wenhao4126/dsh-herdr",
+  "slug": "wenhao4126__dsh-herdr",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-herdr",
+  "title": "dsh-herdr",
+  "summary": "把 Herdr 的工作区、面板和编码智能体接入 DSH，直接在对话里管理终端任务。",
+  "tags": [
+    "coding-agent",
+    "deepseek-harness",
+    "dsh-plugin",
+    "herdr",
+    "terminal",
+    "工作区管理",
+    "AI 助手",
+    "工作流增强",
+    "模型配置"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-08-26T10:56:29Z",
+    "url": "https://github.com/wenhao4126/dsh-herdr/releases/tag/v0.4.0"
+  },
+  "author": "wenhao4126",
+  "repo": "https://github.com/wenhao4126/dsh-herdr",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-26T10:56:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wenhao4126/dsh-herdr",
+    "commands": [
+      "dsh plugin --profile web add github:wenhao4126/dsh-herdr",
+      "git clone https://github.com/wenhao4126/dsh-herdr.git",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

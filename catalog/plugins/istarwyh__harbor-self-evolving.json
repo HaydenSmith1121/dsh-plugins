@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "istarwyh/harbor-self-evolving",
+  "slug": "istarwyh__harbor-self-evolving",
+  "tier": "community",
+  "package": null,
+  "name": "harbor-self-evolving",
+  "title": "harbor-self-evolving",
+  "summary": "为 DeepSeek Harness 提供持续评测与受控自进化能力，让 Agent 在安全可控的流程中自动迭代升级。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "工作流增强",
+    "模型配置",
+    "插件管理"
+  ],
+  "version": "0.9.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.9.5",
+    "publishedAt": "2026-09-07T17:24:06Z",
+    "url": "https://github.com/istarwyh/harbor-self-evolving/releases/tag/v0.9.5"
+  },
+  "author": "istarwyh",
+  "repo": "https://github.com/istarwyh/harbor-self-evolving",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-07T17:21:27Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:istarwyh/harbor-self-evolving",
+    "commands": [
+      "dsh plugin --profile web add github:istarwyh/harbor-self-evolving"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

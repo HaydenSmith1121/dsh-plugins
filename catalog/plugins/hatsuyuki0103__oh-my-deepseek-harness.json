@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "hatsuyuki0103/oh-my-deepseek-harness",
+  "slug": "hatsuyuki0103__oh-my-deepseek-harness",
+  "tier": "community",
+  "package": null,
+  "name": "oh-my-deepseek-harness",
+  "title": "oh-my-deepseek-harness",
+  "summary": "把 OMX 风格的工作流技能搬到 DeepSeek Harness，开箱即用，帮你把多步任务编排得更顺溜。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "多Agent协作",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "1.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.4.0",
+    "publishedAt": "2026-09-07T13:05:52Z",
+    "url": "https://github.com/hatsuyuki0103/oh-my-deepseek-harness/releases/tag/v1.4.0"
+  },
+  "author": "hatsuyuki0103",
+  "repo": "https://github.com/hatsuyuki0103/oh-my-deepseek-harness",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-07T13:05:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "oh-my-deepseek-harness",
+    "commands": [
+      "dsh plugin --profile web add oh-my-deepseek-harness"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

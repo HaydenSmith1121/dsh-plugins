@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Zhenyu98/dsh-context-doctor",
+  "slug": "zhenyu98__dsh-context-doctor",
+  "tier": "community",
+  "package": null,
+  "name": "context-doctor",
+  "title": "context-doctor",
+  "summary": "审计每次请求的上下文注入，量化token成本，检测重复与冲突，给出精简建议。",
+  "tags": [
+    "context",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "tool",
+    "ui",
+    "安全审查"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Zhenyu98",
+  "repo": "https://github.com/Zhenyu98/dsh-context-doctor",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 29,
+  "forks": 8,
+  "pushedAt": "2026-09-06T06:56:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Zhenyu98/dsh-context-doctor",
+    "commands": [
+      "dsh plugin --profile web add \"github:Zhenyu98/dsh-context-doctor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

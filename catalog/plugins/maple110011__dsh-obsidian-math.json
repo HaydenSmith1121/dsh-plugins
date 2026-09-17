@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "maple110011/dsh-obsidian-math",
+  "slug": "maple110011__dsh-obsidian-math",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-obsidian-math",
+  "title": "dsh-obsidian-math",
+  "summary": "在 Obsidian 右侧栏写数学笔记的智能助手，自动维护长期记忆、定理索引和问题模板，帮你按证明工作流打磨想法。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "obsidian",
+    "obsidian-plugin",
+    "前端增强",
+    "工作流增强",
+    "效率提升",
+    "AI工具",
+    "可验证执行"
+  ],
+  "version": "0.7.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "0.7.7",
+    "publishedAt": "2026-09-15T15:00:45Z",
+    "url": "https://github.com/maple110011/dsh-obsidian-math/releases/tag/0.7.7"
+  },
+  "author": "maple110011",
+  "repo": "https://github.com/maple110011/dsh-obsidian-math",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-09-15T15:09:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:maple110011/dsh-obsidian-math",
+    "commands": [
+      "npm install -g dsh-math-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

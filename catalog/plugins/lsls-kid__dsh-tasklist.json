@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "lsLs-kid/dsh-tasklist",
+  "slug": "lsls-kid__dsh-tasklist",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tasklist",
+  "title": "dsh-tasklist",
+  "summary": "跨会话任务清单记忆，帮你跨对话持续跟踪和管理任务进度。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "多Agent协作",
+    "会话管理"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lsLs-kid",
+  "repo": "https://github.com/lsLs-kid/dsh-tasklist",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T08:29:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-tasklist",
+    "commands": [
+      "dsh plugin --profile web add dsh-tasklist"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

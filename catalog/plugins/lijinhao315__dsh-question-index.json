@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "lijinhao315/dsh-question-index",
+  "slug": "lijinhao315__dsh-question-index",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-question-index",
+  "title": "dsh-question-index",
+  "summary": "在会话右侧悬浮显示用户提问列表，点击即可跳转到对应问题位置，方便快速回顾和定位。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-01T11:12:25Z",
+    "url": "https://github.com/lijinhao315/dsh-question-index/releases/tag/v0.1.2"
+  },
+  "author": "lijinhao315",
+  "repo": "https://github.com/lijinhao315/dsh-question-index",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-01T11:11:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-question-index",
+    "commands": [
+      "dsh plugin --profile web add dsh-question-index",
+      "dsh plugin --profile web add github:lijinhao315/dsh-question-index",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

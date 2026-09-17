@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "tomowang/dsh-tui",
+  "slug": "tomowang__dsh-tui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tui",
+  "title": "dsh-tui",
+  "summary": "为 DeepSeek Harness 打造的终端图形界面，让你在命令行里更直观地操作和管理 dsh 工作流。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "tui",
+    "命令行工具",
+    "工作流管理",
+    "开源插件"
+  ],
+  "version": "0.8.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "tomowang",
+  "repo": "https://github.com/tomowang/dsh-tui",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 14,
+  "forks": 5,
+  "pushedAt": "2026-09-10T16:10:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@tomowang/dsh-tui",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh",
+      "dsh plugin --profile tui add @tomowang/dsh-tui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

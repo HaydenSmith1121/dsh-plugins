@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "suntianc/dsh-antigravity-auth",
+  "slug": "suntianc__dsh-antigravity-auth",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-antigravity-auth",
+  "title": "dsh-antigravity-auth",
+  "summary": "让 DeepSeek Harness 一键接入 Antigravity 的 OAuth 登录，省去手动配置账号的麻烦。",
+  "tags": [
+    "antigravity",
+    "deepseek-harness",
+    "dsh-plugin",
+    "gemini",
+    "oauth",
+    "模型适配",
+    "工具集成",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-09-01T07:14:21Z",
+    "url": "https://github.com/suntianc/dsh-antigravity-auth/releases/tag/v0.1.3"
+  },
+  "author": "suntianc",
+  "repo": "https://github.com/suntianc/dsh-antigravity-auth",
+  "homepage": "https://github.com/deepseek-ai/deepseek-harness",
+  "license": "MIT",
+  "stars": 12,
+  "forks": 2,
+  "pushedAt": "2026-09-10T09:10:34Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:suntianc/dsh-antigravity-auth",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-antigravity-auth-0.1.4-alpha.6.tgz",
+      "dsh plugin --profile web list"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

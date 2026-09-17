@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "clown139880/dsh-live2d-avatar",
+  "slug": "clown139880__dsh-live2d-avatar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-live2d-avatar",
+  "title": "dsh-live2d-avatar",
+  "summary": "在 DeepSeek Harness 里添加一个 Live2D 看板娘，让 AI 对话更生动有趣，还能互动玩耍。",
+  "tags": [
+    "dsh-plugin",
+    "桌宠",
+    "娱乐互动",
+    "界面美化",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "clown139880",
+  "repo": "https://github.com/clown139880/dsh-live2d-avatar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T14:37:24Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:clown139880/dsh-live2d-avatar",
+    "commands": [
+      "dsh plugin --profile web add github:clown139880/dsh-live2d-avatar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

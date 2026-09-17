@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "ZhijiangTang/dsh-safeguard",
+  "slug": "zhijiangtang__dsh-safeguard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-safeguard",
+  "title": "dsh-safeguard",
+  "summary": "在命令执行前拦截危险 shell 命令和密钥泄漏，防止工具误操作造成损失。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "危险命令拦截",
+    "密钥泄漏防护",
+    "安全审计",
+    "预执行检查"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ZhijiangTang",
+  "repo": "https://github.com/ZhijiangTang/dsh-safeguard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-16T13:08:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ZhijiangTang/dsh-safeguard",
+    "commands": [
+      "dsh plugin --profile <profile> add dsh-safeguard",
+      "dsh plugin --profile <profile> add file:./plugins/dsh-safeguard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

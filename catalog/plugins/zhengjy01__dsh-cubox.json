@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "zhengjy01/dsh-cubox",
+  "slug": "zhengjy01__dsh-cubox",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cubox",
+  "title": "dsh-cubox",
+  "summary": "定时同步 Cubox 收藏，用你的提示词模板生成 AI 每日简报并存入 Obsidian，还能按卡片导出 Markdown。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "自动化",
+    "智能抓取",
+    "AI 助手",
+    "内容创作"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-13T13:25:40Z",
+    "url": "https://github.com/zhengjy01/dsh-cubox/releases/tag/v0.2.1"
+  },
+  "author": "zhengjy01",
+  "repo": "https://github.com/zhengjy01/dsh-cubox",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T13:24:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhengjy01/dsh-cubox",
+    "commands": [
+      "dsh plugin --profile web add github:zhengjy01/dsh-cubox",
+      "dsh plugin --profile web add link:/path/to/dsh-cubox"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

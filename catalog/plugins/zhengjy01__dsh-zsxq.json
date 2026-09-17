@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zhengjy01/dsh-zsxq",
+  "slug": "zhengjy01__dsh-zsxq",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-zsxq",
+  "title": "dsh-zsxq",
+  "summary": "把知识星球接进 DSH，让 AI 能读星球帖子、搜内容，还能扫码登录管理。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "工具集成",
+    "模型适配",
+    "设置面板",
+    "语义检索",
+    "报告生成"
+  ],
+  "version": "0.1.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhengjy01",
+  "repo": "https://github.com/zhengjy01/dsh-zsxq",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T13:06:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-zsxq",
+    "commands": [
+      "dsh plugin --profile web add link:/path/to/dsh-zsxq",
+      "dsh plugin --profile web add dsh-zsxq"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

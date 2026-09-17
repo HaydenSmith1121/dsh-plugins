@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "syncended/deepseek-harness-browser-use",
+  "slug": "syncended__deepseek-harness-browser-use",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-browser-use",
+  "title": "deepseek-harness-browser-use",
+  "summary": "为 DeepSeek Harness 提供持久化的 Playwright 浏览器工具和交互式浏览器面板，方便你直接操控网页。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "桌宠",
+    "自动化",
+    "可视化",
+    "会话管理"
+  ],
+  "version": "0.1.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "syncended",
+  "repo": "https://github.com/syncended/deepseek-harness-browser-use",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T18:17:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@syncended/dsh-browser-use",
+    "commands": [
+      "dsh plugin --profile web add @syncended/dsh-browser-use",
+      "git clone https://github.com/syncended/deepseek-harness-browser-use.git",
+      "dsh plugin --profile web add -w \"$PWD\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

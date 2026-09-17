@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "YouHui1/dsh-image-skin",
+  "slug": "youhui1__dsh-image-skin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-image-skin",
+  "title": "dsh-image-skin",
+  "summary": "给 DeepSeek Harness 网页换上背景图，界面文字、配色和边框会自动跟着图片色调走，颜值瞬间提升。",
+  "tags": [
+    "ai-coding",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "背景图",
+    "自动配色",
+    "主题",
+    "主题适配"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "YouHui1",
+  "repo": "https://github.com/YouHui1/dsh-image-skin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-15T14:01:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:YouHui1/dsh-image-skin",
+    "commands": [
+      "dsh plugin --profile web add link:<absolute path to this repo>",
+      "dsh plugin --profile web remove dsh-image-skin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "po-et/dsh-session-guard",
+  "slug": "po-et__dsh-session-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-guard",
+  "title": "dsh-session-guard",
+  "summary": "防止多个 dsh 进程同时写入会话日志导致数据损坏，为每个会话提供安全锁。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "lock",
+    "session",
+    "会话管理",
+    "安全审计",
+    "命令行工具",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "po-et",
+  "repo": "https://github.com/po-et/dsh-session-guard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T13:59:21Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-session-guard",
+    "commands": [
+      "dsh plugin --profile web add dsh-session-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

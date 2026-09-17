@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "sdegongzuo/dsh-webops-plugin",
+  "slug": "sdegongzuo__dsh-webops-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-webops-plugin",
+  "title": "dsh-webops-plugin",
+  "summary": "让 AI 能多会话、多标签页地打开和调试网页，自动操作页面元素。",
+  "tags": [
+    "browser-automation",
+    "cdp",
+    "deepseek-harness",
+    "dsh-plugin",
+    "自动化",
+    "工具集成",
+    "前端增强",
+    "状态监控"
+  ],
+  "version": "0.2.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "desktop-v0.2.5",
+    "publishedAt": "2026-09-17T15:01:12Z",
+    "url": "https://github.com/sdegongzuo/dsh-webops-plugin/releases/tag/desktop-v0.2.5"
+  },
+  "author": "sdegongzuo",
+  "repo": "https://github.com/sdegongzuo/dsh-webops-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T18:16:52Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sdegongzuo/dsh-webops-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:sdegongzuo/dsh-webops-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

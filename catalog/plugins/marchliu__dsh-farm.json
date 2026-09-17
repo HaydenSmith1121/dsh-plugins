@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "MarchLiu/dsh-farm",
+  "slug": "marchliu__dsh-farm",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-farm",
+  "title": "dsh-farm",
+  "summary": "把项目里的常驻服务统一管起来，注册、启停、重启、看状态，智能体和网页界面都能操作。",
+  "tags": [
+    "dsh",
+    "dsh-better-sidebar",
+    "dsh-plugin",
+    "状态监控",
+    "工作流增强",
+    "可视化",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "MarchLiu",
+  "repo": "https://github.com/MarchLiu/dsh-farm",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 1,
+  "pushedAt": "2026-09-11T03:16:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MarchLiu/dsh-farm",
+    "commands": [
+      "dsh plugin --profile <name> add /path/to/dsh-farm"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

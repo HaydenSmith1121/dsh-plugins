@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "fonlan/dsh-task-kanban",
+  "slug": "fonlan__dsh-task-kanban",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-task-kanban",
+  "title": "dsh-task-kanban",
+  "summary": "在 DSH 网页里加一个任务看板，把需求拆成阶段计划，自动在 git 分支里逐个执行，完成后自动合并主分支。",
+  "tags": [
+    "dsh-plugin",
+    "需求管理",
+    "工作流增强",
+    "效率提升",
+    "工作区管理"
+  ],
+  "version": "0.2.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fonlan",
+  "repo": "https://github.com/fonlan/dsh-task-kanban",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T04:13:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@fonlan/dsh-task-kanban",
+    "commands": [
+      "dsh plugin --profile web add @fonlan/dsh-task-kanban",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

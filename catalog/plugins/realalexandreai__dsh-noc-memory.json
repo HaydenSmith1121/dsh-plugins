@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "RealAlexandreAI/dsh-noc-memory",
+  "slug": "realalexandreai__dsh-noc-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-noc-memory",
+  "title": "dsh-noc-memory",
+  "summary": "给DeepSeek Harness装上长期记忆，自动沉淀对话上下文，让AI跨会话也能记住关键信息。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "工作区管理",
+    "AI 助手"
+  ],
+  "version": "0.3.8",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "RealAlexandreAI",
+  "repo": "https://github.com/RealAlexandreAI/dsh-noc-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-09T03:43:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-noc-memory",
+    "commands": [
+      "dsh plugin --profile web add dsh-noc-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

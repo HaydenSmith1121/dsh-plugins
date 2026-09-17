@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "CheshireJCat/blender",
+  "slug": "cheshirejcat__blender",
+  "tier": "community",
+  "package": null,
+  "name": "blender",
+  "title": "blender",
+  "summary": "让 DeepSeek Harness 直接驱动 Blender，搞定 3D 建模、重建、渲染、验证和导出的一站式工作流。",
+  "tags": [
+    "3d-modeling",
+    "agent-skills",
+    "blender",
+    "deepseek-harness",
+    "dsh-plugin",
+    "3D建模",
+    "渲染导出",
+    "工作流增强",
+    "Blender集成"
+  ],
+  "version": "0.2.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.2",
+    "publishedAt": "2026-09-16T07:06:22Z",
+    "url": "https://github.com/CheshireJCat/blender/releases/tag/v0.2.2"
+  },
+  "author": "CheshireJCat",
+  "repo": "https://github.com/CheshireJCat/blender",
+  "homepage": "https://www.npmjs.com/package/dsh-blender",
+  "license": "MIT",
+  "stars": 29,
+  "forks": 0,
+  "pushedAt": "2026-09-16T07:01:54Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CheshireJCat/blender",
+    "commands": [
+      "dsh plugin --profile web add github:CheshireJCat/blender"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "victorzhong0110/dsh-code-reference",
+  "slug": "victorzhong0110__dsh-code-reference",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-code-reference",
+  "title": "dsh-code-reference",
+  "summary": "开发前自动检索本地和开源代码，评估复用方案并询问你的选择，避免重复造轮子。",
+  "tags": [
+    "agent-tools",
+    "ai-coding",
+    "code-reference",
+    "code-reuse",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm-agents",
+    "open-source",
+    "reuse",
+    "代码复用",
+    "代码检索",
+    "开源调研",
+    "架构评估"
+  ],
+  "version": "4.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v4.3.0",
+    "publishedAt": "2026-08-20T00:29:10Z",
+    "url": "https://github.com/victorzhong0110/dsh-code-reference/releases/tag/v4.3.0"
+  },
+  "author": "victorzhong0110",
+  "repo": "https://github.com/victorzhong0110/dsh-code-reference",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-06T10:10:08Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:victorzhong0110/dsh-code-reference",
+    "commands": [
+      "git clone --branch v4.3.0 --depth 1 https://github.com/victorzhong0110/dsh-code-reference.git",
+      "dsh plugin --profile web add ./dsh-code-reference"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

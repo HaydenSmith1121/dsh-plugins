@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "ringclaw/dsh-ringcentral",
+  "slug": "ringclaw__dsh-ringcentral",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ringcentral",
+  "title": "dsh-ringcentral",
+  "summary": "将 RingCentral 团队消息机器人接入 dsh，让智能体直接在聊天窗口里对话和协作。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "ringcentral",
+    "会话管理",
+    "多Agent协作",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.4.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.4",
+    "publishedAt": "2026-08-31T05:03:32Z",
+    "url": "https://github.com/ringclaw/dsh-ringcentral/releases/tag/v0.4.4"
+  },
+  "author": "ringclaw",
+  "repo": "https://github.com/ringclaw/dsh-ringcentral",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-31T05:02:50Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ringclaw/dsh-ringcentral",
+    "commands": [
+      "dsh plugin --profile web add github:ringclaw/dsh-ringcentral"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

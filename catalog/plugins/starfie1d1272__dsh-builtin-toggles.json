@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Starfie1d1272/dsh-builtin-toggles",
+  "slug": "starfie1d1272__dsh-builtin-toggles",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-builtin-toggles",
+  "title": "dsh-builtin-toggles",
+  "summary": "把 DSH Web 官方内置功能整理成看得懂的清单，还能安全开关部分界面选项。",
+  "tags": [
+    "capability-inspector",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "设置面板",
+    "主题",
+    "安全审计",
+    "数据可审计"
+  ],
+  "version": "0.3.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Starfie1d1272",
+  "repo": "https://github.com/Starfie1d1272/dsh-builtin-toggles",
+  "homepage": "https://www.npmjs.com/package/dsh-builtin-toggles",
+  "license": "MIT",
+  "stars": 7,
+  "forks": 1,
+  "pushedAt": "2026-09-14T08:36:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-builtin-toggles",
+    "commands": [
+      "dsh plugin --profile web add dsh-builtin-toggles"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

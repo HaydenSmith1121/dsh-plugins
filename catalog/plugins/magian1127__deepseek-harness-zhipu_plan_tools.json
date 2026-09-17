@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "magian1127/deepseek-harness-zhipu_plan_tools",
+  "slug": "magian1127__deepseek-harness-zhipu_plan_tools",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-zhipu_plan_tools",
+  "title": "deepseek-harness-zhipu_plan_tools",
+  "summary": "把智谱 GLM 编码计划的 MCP 工具接进 DSH，让 AI 助手直接调用智谱能力干活。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "工具集成",
+    "模型配置",
+    "AI 助手",
+    "桥接插件"
+  ],
+  "version": "0.1.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "magian1127",
+  "repo": "https://github.com/magian1127/deepseek-harness-zhipu_plan_tools",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T10:12:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "deepseek-harness-zhipu_plan_tools",
+    "commands": [
+      "dsh plugin --profile web add deepseek-harness-zhipu_plan_tools",
+      "dsh plugin --profile open-design add deepseek-harness-zhipu_plan_tools",
+      "dsh plugin --profile headless add deepseek-harness-zhipu_plan_tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

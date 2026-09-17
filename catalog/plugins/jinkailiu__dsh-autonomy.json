@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "JinkaiLiu/dsh-autonomy",
+  "slug": "jinkailiu__dsh-autonomy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-autonomy",
+  "title": "dsh-autonomy",
+  "summary": "在 DeepSeek Harness 中一键切换聊天和智能体模式，不用打断当前会话。",
+  "tags": [
+    "agent",
+    "autonomy",
+    "chat-mode",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "AI 助手",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-03T20:39:03Z",
+    "url": "https://github.com/JinkaiLiu/dsh-autonomy/releases/tag/v0.1.2"
+  },
+  "author": "JinkaiLiu",
+  "repo": "https://github.com/JinkaiLiu/dsh-autonomy",
+  "homepage": "https://www.npmjs.com/package/dsh-autonomy",
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-03T20:39:03Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JinkaiLiu/dsh-autonomy",
+    "commands": [
+      "dsh plugin --profile web add github:JinkaiLiu/dsh-autonomy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

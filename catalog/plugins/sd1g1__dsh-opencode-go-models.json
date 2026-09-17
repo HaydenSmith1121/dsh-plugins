@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "sd1g1/dsh-opencode-go-models",
+  "slug": "sd1g1__dsh-opencode-go-models",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-opencode-go-models",
+  "title": "dsh-opencode-go-models",
+  "summary": "为 DSH 补齐 OpenCode Go 模型选择目录，缺失模型走独立适配器，不影响原有路由。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sd1g1",
+  "repo": "https://github.com/sd1g1/dsh-opencode-go-models",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-27T00:30:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sd1g1/dsh-opencode-go-models",
+    "commands": [
+      "dsh plugin --profile web add github:sd1g1/dsh-opencode-go-models"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Yu-tao-Li/dsh-computer-use-win",
+  "slug": "yu-tao-li__dsh-computer-use-win",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-computer-use-win",
+  "title": "dsh-computer-use-win",
+  "summary": "让 DeepSeek Harness 直接操控 Windows 桌面，22 个工具帮你点按钮、填表单、跑自动化。",
+  "tags": [
+    "computer-use",
+    "desktop-automation",
+    "dsh-plugin",
+    "mcp",
+    "uia",
+    "windows",
+    "自动化",
+    "工具集成",
+    "效率提升",
+    "桥接插件"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-08-17T18:46:10Z",
+    "url": "https://github.com/Yu-tao-Li/dsh-computer-use-win/releases/tag/v0.1.2"
+  },
+  "author": "Yu-tao-Li",
+  "repo": "https://github.com/Yu-tao-Li/dsh-computer-use-win",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 13,
+  "forks": 2,
+  "pushedAt": "2026-09-10T07:31:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Yu-tao-Li/dsh-computer-use-win",
+    "commands": [
+      "dsh plugin --profile web add github:Yu-tao-Li/dsh-computer-use-win"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

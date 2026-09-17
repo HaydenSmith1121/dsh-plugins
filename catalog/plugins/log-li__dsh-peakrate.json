@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "log-li/dsh-peakrate",
+  "slug": "log-li__dsh-peakrate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-peakrate",
+  "title": "dsh-peakrate",
+  "summary": "在模型选择器和输入框里实时显示各模型的高峰/低谷价格徽章，按服务商自己的时区和时段判断，一眼看清现在用哪个模型更划算。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugin-ecosystem",
+    "模型适配",
+    "状态监控",
+    "可视化",
+    "效率提升",
+    "资源优化"
+  ],
+  "version": "0.2.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "log-li",
+  "repo": "https://github.com/log-li/dsh-peakrate",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-12T06:37:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-peakrate",
+    "commands": [
+      "dsh plugin add dsh-peakrate",
+      "dsh plugin add ./path/to/dsh-peakrate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

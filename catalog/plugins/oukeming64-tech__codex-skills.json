@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "oukeming64-tech/codex-skills",
+  "slug": "oukeming64-tech__codex-skills",
+  "tier": "community",
+  "package": null,
+  "name": "codex-skills",
+  "title": "codex-skills",
+  "summary": "把真实项目经验沉淀成可复用的智能体技能，帮你在交接审计和文档同步时自动留痕、有据可查。",
+  "tags": [
+    "agent-skills",
+    "code-review",
+    "codex",
+    "deepseek-harness",
+    "documentation",
+    "dsh-plugin",
+    "工作流增强",
+    "文档同步",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "dsh-v0.1.0",
+    "publishedAt": "2026-08-17T03:17:11Z",
+    "url": "https://github.com/oukeming64-tech/codex-skills/releases/tag/dsh-v0.1.0"
+  },
+  "author": "oukeming64-tech",
+  "repo": "https://github.com/oukeming64-tech/codex-skills",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-05T03:30:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:oukeming64-tech/codex-skills",
+    "commands": [
+      "dsh plugin --profile web add 'github:oukeming64-tech/codex-skills"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

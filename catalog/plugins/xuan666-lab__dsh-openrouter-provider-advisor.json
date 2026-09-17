@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "xuan666-lab/dsh-openrouter-provider-advisor",
+  "slug": "xuan666-lab__dsh-openrouter-provider-advisor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-openrouter-provider-advisor",
+  "title": "dsh-openrouter-provider-advisor",
+  "summary": "自动对比OpenRouter各供应商的价格、速度与稳定性，推荐最优选择并一键切换当前会话。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "openrouter",
+    "provider-routing",
+    "效率提升",
+    "状态监控",
+    "零配置"
+  ],
+  "version": "0.1.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.5",
+    "publishedAt": "2026-09-04T13:42:55Z",
+    "url": "https://github.com/xuan666-lab/dsh-openrouter-provider-advisor/releases/tag/v0.1.5"
+  },
+  "author": "xuan666-lab",
+  "repo": "https://github.com/xuan666-lab/dsh-openrouter-provider-advisor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T13:42:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-openrouter-provider-advisor@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-openrouter-provider-advisor@latest",
+      "dsh plugin --profile web remove dsh-openrouter-provider-advisor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

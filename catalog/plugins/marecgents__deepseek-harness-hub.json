@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "MarecGents/deepseek-harness-hub",
+  "slug": "marecgents__deepseek-harness-hub",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-hub",
+  "title": "deepseek-harness-hub",
+  "summary": "在 Windows 桌面上以原生窗口运行 DeepSeek Harness，提供托盘、主题同步和系统通知，方便日常使用。",
+  "tags": [
+    "desktop",
+    "dsh-plugin",
+    "rust",
+    "自动化",
+    "界面美化",
+    "消息通知",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.4",
+    "publishedAt": "2026-09-01T14:34:44Z",
+    "url": "https://github.com/MarecGents/deepseek-harness-hub/releases/tag/v0.1.4"
+  },
+  "author": "MarecGents",
+  "repo": "https://github.com/MarecGents/deepseek-harness-hub",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-09-08T10:50:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MarecGents/deepseek-harness-hub",
+    "commands": [
+      "git clone https://github.com/MarecGents/deepseek-harness-hub.git",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

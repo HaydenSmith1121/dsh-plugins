@@ -1,8 +1,8 @@
 /**
- * market-review.mjs —— 「已审核层」（catalog/curated.json）的收录助手
+ * market-review.mjs —— 「已审核层」（catalog/overrides/reviewed.json）的收录助手
  *
  *   node scripts/market-review.mjs <owner/repo | npm 包名 | 目录里的插件 id>
- *   node scripts/market-review.mjs owner/repo --write      # 直接把草稿追加进 curated.json
+ *   node scripts/market-review.mjs owner/repo --write      # 直接把草稿追加进 overrides/reviewed.json
  *
  * 它做的事：把「该查什么」自动化成一次可复现的探测，产出一份**草稿条目**，
  * 你只需要复核结论并决定收不收 —— 而不是凭印象手写 JSON。
@@ -11,7 +11,11 @@
  *   脚本只能把静态事实摆出来（peer 约束、是否声明 dsh.bundle、有没有安装脚本、
  *   与本仓库基线是否兼容），最后那一步必须你自己跑、自己记。
  *
- * 收录一条 reviewed 的最低要求见 catalog/curated.json 顶部的 _comment，
+ * ★ --write 之后必须再跑一次 `node scripts/sync-catalog.mjs`：
+ *   本文件只写「人的结论」，catalog/plugins/*.json 里的 tier 与 review 字段是由
+ *   采集脚本从它派生出来的。不重跑的话，界面上的标签还是旧的，CI 的 --check 也会红。
+ *
+ * 收录一条 reviewed 的最低要求见 catalog/overrides/reviewed.json 顶部的 _comment，
  * 以及 CONTRIBUTING.md 的「插件市场收录」一节。
  */
 
@@ -231,7 +235,7 @@ console.log('  1. 在隔离环境里真装一次并启动：');
 console.log('       node scripts/dev-env.mjs install <tarball 或先 dsh plugin --profile web add <spec>>');
 console.log('       node scripts/dev-env.mjs web        # 确认 3090 起得来、面板里能看到它');
 console.log('  2. 把启动输出里的关键行、以及观察到的副作用，填进 review.evidence / review.notes');
-console.log('  3. 填 review.reviewedAt / reviewer / verdict，然后写进 catalog/curated.json');
+console.log('  3. 填 review.reviewedAt / reviewer / verdict，然后写进 catalog/overrides/reviewed.json');
 console.log('  4. 提交前跑一次：node plugins-src/dsh-plugins-market/build.mjs --check');
 console.log('');
 
@@ -242,19 +246,19 @@ if (blockers.length > 0) {
 }
 
 if (WRITE) {
-  const curatedPath = path.join(REPO, 'catalog', 'curated.json');
+  const curatedPath = path.join(REPO, 'catalog', 'overrides', 'reviewed.json');
   const curated = JSON.parse(fs.readFileSync(curatedPath, 'utf8'));
   if (curated.plugins.some((p) => p.id === draft.id || p.package === draft.package)) {
-    console.log(`  ! catalog/curated.json 里已经有 ${draft.id} 了，未改动。`);
+    console.log(`  ! catalog/overrides/reviewed.json 里已经有 ${draft.id} 了，未改动。`);
     console.log('');
     process.exit(1);
   }
   curated.plugins.push(draft);
   curated.reviewedAt = new Date().toISOString().slice(0, 10);
   fs.writeFileSync(curatedPath, `${JSON.stringify(curated, null, 2)}\n`, 'utf8');
-  console.log(`  ✓ 草稿已追加到 catalog/curated.json（还有 ★ 字段是 null，填完再审）`);
+  console.log(`  ✓ 草稿已追加到 catalog/overrides/reviewed.json（还有 ★ 字段是 null，填完再审）`);
   console.log('');
 } else {
-  console.log('  提示：加 --write 可以把上面这份草稿直接追加进 catalog/curated.json。');
+  console.log('  提示：加 --write 可以把上面这份草稿直接追加进 catalog/overrides/reviewed.json。');
   console.log('');
 }

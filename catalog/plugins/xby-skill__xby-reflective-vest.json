@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-reflective-vest",
+  "slug": "xby-skill__xby-reflective-vest",
+  "tier": "community",
+  "package": null,
+  "name": "xby-reflective-vest",
+  "title": "xby-reflective-vest",
+  "summary": "上传图片自动检测人员是否穿戴反光衣，输出带置信度的安全/不安全标注框，助力安全监管。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "自动化",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-reflective-vest",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:31:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-reflective-vest",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-reflective-vest",
+      "dsh plugin --profile web add /absolute/path/to/xby-reflective-vest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

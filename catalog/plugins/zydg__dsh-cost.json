@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "zydg/dsh-cost",
+  "slug": "zydg__dsh-cost",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cost",
+  "title": "dsh-cost",
+  "summary": "每轮对话自动统计token消耗和缓存命中率，按官方分时价格估算费用，还能查余额。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "状态监控",
+    "报告生成"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zydg",
+  "repo": "https://github.com/zydg/dsh-cost",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T10:12:58Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zydg/dsh-cost",
+    "commands": [
+      "dsh plugin --profile web add github:zydg/dsh-cost"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

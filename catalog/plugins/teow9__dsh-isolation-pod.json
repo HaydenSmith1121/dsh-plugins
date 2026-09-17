@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "Teow9/dsh-isolation-pod",
+  "slug": "teow9__dsh-isolation-pod",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-isolation-pod",
+  "title": "dsh-isolation-pod",
+  "summary": "把任务丢进沙箱里单独跑，主会话完全不留痕，结果和文件都要你点头才放行。",
+  "tags": [
+    "agent-sandbox",
+    "deepseek-harness",
+    "dsh-plugin",
+    "安全审计",
+    "会话管理",
+    "工具集成",
+    "自动化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-14T16:13:43Z",
+    "url": "https://github.com/Teow9/dsh-isolation-pod/releases/tag/v0.1.1"
+  },
+  "author": "Teow9",
+  "repo": "https://github.com/Teow9/dsh-isolation-pod",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T16:13:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Teow9/dsh-isolation-pod",
+    "commands": [
+      "dsh plugin --profile web add github:Teow9/dsh-isolation-pod"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "sujiu222/dsh-one-click-archive",
+  "slug": "sujiu222__dsh-one-click-archive",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-one-click-archive",
+  "title": "dsh-one-click-archive",
+  "summary": "一键按时间归档旧会话，先预览再清理，让聊天记录更清爽。",
+  "tags": [
+    "archive",
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "自动化",
+    "效率提升",
+    "资源优化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-22T14:59:05Z",
+    "url": "https://github.com/sujiu222/dsh-one-click-archive/releases/tag/v0.1.1"
+  },
+  "author": "sujiu222",
+  "repo": "https://github.com/sujiu222/dsh-one-click-archive",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-22T15:13:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sujiu222/dsh-one-click-archive",
+    "commands": [
+      "dsh plugin --profile <your-web-profile> add github:sujiu222/dsh-one-click-archive",
+      "npm install",
+      "dsh plugin --profile <your-web-profile> add /absolute/path/to/dsh-one-click-archive"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "yuan-source-666/dsh-task-notifier",
+  "slug": "yuan-source-666__dsh-task-notifier",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-task-notifier",
+  "title": "dsh-task-notifier",
+  "summary": "任务跑完自动弹系统通知，不用一直盯着窗口，回来就知道结果。",
+  "tags": [
+    "ai-agent",
+    "deepseek-harness",
+    "desktop-notification",
+    "dsh-bundle",
+    "dsh-plugin",
+    "notification",
+    "task-complete",
+    "状态监控",
+    "效率提升",
+    "自动化",
+    "工作流增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-28T01:08:06Z",
+    "url": "https://github.com/yuan-source-666/dsh-task-notifier/releases/tag/v1.0.0"
+  },
+  "author": "yuan-source-666",
+  "repo": "https://github.com/yuan-source-666/dsh-task-notifier",
+  "homepage": "https://github.com/yuan-source-666/dsh-task-notifier#readme",
+  "license": "NOASSERTION",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-03T02:32:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yuan-source-666/dsh-task-notifier",
+    "commands": [
+      "dsh plugin --profile demo add E:/ai_agent_workspace/deepseek_harness/dsh-task-notifier",
+      "dsh plugin --profile demo add ./dsh-task-notifier-1.0.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

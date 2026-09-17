@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "hust-open-atom-club/oh-dsh",
+  "slug": "hust-open-atom-club__oh-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "oh-dsh",
+  "title": "oh-dsh",
+  "summary": "一站式 DSH 社区发行版，TUI、桌面端和 Web 界面统一体验，分层安装一步到位，省去手动整合打包的麻烦。",
+  "tags": [
+    "ai-agent",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "社区发行版",
+    "多端界面",
+    "零配置",
+    "统一体验"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-08T14:20:35Z",
+    "url": "https://github.com/hust-open-atom-club/oh-dsh/releases/tag/v0.2.0"
+  },
+  "author": "hust-open-atom-club",
+  "repo": "https://github.com/hust-open-atom-club/oh-dsh",
+  "homepage": "https://dsh.openatom.club/",
+  "license": "MIT",
+  "stars": 317,
+  "forks": 34,
+  "pushedAt": "2026-09-12T13:58:15Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hust-open-atom-club/oh-dsh",
+    "commands": [
+      "dsh plugin --profile web add github:hust-open-atom-club/oh-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

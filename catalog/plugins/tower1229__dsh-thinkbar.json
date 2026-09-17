@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "tower1229/dsh-thinkbar",
+  "slug": "tower1229__dsh-thinkbar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-thinkbar",
+  "title": "dsh-thinkbar",
+  "summary": "在 DeepSeek Harness 网页编辑器中显示动态推理等待指示条，让思考过程一目了然。",
+  "tags": [
+    "dsh-plugin",
+    "thinkbar",
+    "thinking",
+    "状态监控",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.1.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "tower1229",
+  "repo": "https://github.com/tower1229/dsh-thinkbar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-05T11:30:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tower1229/dsh-thinkbar",
+    "commands": [
+      "dsh plugin --profile web add github:tower1229/dsh-thinkbar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

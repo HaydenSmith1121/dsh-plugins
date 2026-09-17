@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ph4310822/dsh-edex-ui",
+  "slug": "ph4310822__dsh-edex-ui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-edex-ui",
+  "title": "dsh-edex-ui",
+  "summary": "给 DSH 网页界面加上 eDEX-UI 风格终端皮肤，左侧显示系统实时数据，右侧展示世界地图，酷炫又实用。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "前端增强",
+    "可视化",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "0.1.0-rc.7",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ph4310822",
+  "repo": "https://github.com/ph4310822/dsh-edex-ui",
+  "homepage": null,
+  "license": null,
+  "stars": 9,
+  "forks": 1,
+  "pushedAt": "2026-08-27T05:51:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ph4310822/dsh-edex-ui",
+    "commands": [
+      "dsh plugin --profile web add github:ph4310822/dsh-edex-ui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

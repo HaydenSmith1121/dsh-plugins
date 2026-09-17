@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "devmom/dsh-trajectory-debug",
+  "slug": "devmom__dsh-trajectory-debug",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-trajectory-debug",
+  "title": "dsh-trajectory-debug",
+  "summary": "把 DSH 会话变成可视化调试台，支持断点回放、改完重跑和分支对比，让 AI 轨迹调试像写代码一样顺手。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "工作流增强",
+    "开发流程",
+    "会话管理",
+    "效率提升",
+    "多Agent协作"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "devmom",
+  "repo": "https://github.com/devmom/dsh-trajectory-debug",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-14T14:00:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-trajectory-debug-bundle",
+    "commands": [
+      "dsh plugin --profile web add dsh-trajectory-debug-bundle",
+      "dsh plugin --profile web add ./packages/trajectory-debug-bundle"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

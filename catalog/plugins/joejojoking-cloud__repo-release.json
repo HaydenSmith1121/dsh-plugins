@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "joejojoking-cloud/repo-release",
+  "slug": "joejojoking-cloud__repo-release",
+  "tier": "community",
+  "package": null,
+  "name": "repo-release",
+  "title": "repo-release",
+  "summary": "Git/GitHub 版本发布与仓库运营一条龙，推送前自动扫描密钥和敏感信息，防止泄露。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "skill",
+    "工作流增强",
+    "自动化",
+    "安全审计",
+    "命令行工具"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "joejojoking-cloud",
+  "repo": "https://github.com/joejojoking-cloud/repo-release",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T05:45:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:joejojoking-cloud/repo-release",
+    "commands": [
+      "dsh plugin --profile web add github:joejojoking-cloud/repo-release"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

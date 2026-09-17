@@ -1,29 +1,34 @@
 # DSH 插件包 — 安装说明
 
-> ## ⚠️ 安装方式：一条命令装完，不需要先 clone
+> ## ⚠️ 安装方式：一条命令装市场，其余在面板点装
 >
-> 自 2026-09 起，**不需要先 `git clone` 再 `cd` 再逐条执行** —— 一条命令即可：
-> 脚本自己把仓库落地到 `~/.dsh-plugins`，再完成预检 → 判定 → 补环境 → 安装 → 校验。
+> 自 2026-09 起不需要先 `git clone` 再 `cd` 再逐条执行 —— 一条命令即可：
+> 脚本自己把仓库落地到 `~/.dsh-plugins`，再完成预检 → 判定 → 补环境 → 装引导插件 → 校验。
 >
-> 装完之后，**其余插件的推荐安装入口是 GUI 里的「插件市场」面板**：
+> 装完之后，**其余插件的安装入口是 GUI 里的「插件市场」面板**：
 > 面板会在装前跑兼容性闸门（环境 / profile / 候选包三层），致命项硬拦截、失败自动回滚，
-> 这是批量脚本给不了的保护。因此也提供 `--bootstrap-only`（Windows：`-BootstrapOnly`）
-> 只装市场本身，其余插件全部在面板里按需点装。
+> 安装全程可见进度与预计时间、可随时中止，并始终给出一份可复制的手动安装命令。
 >
-> 不加这个开关时脚本会把兼容矩阵里的插件一次装完 —— 批量装是**全有或全无**的：
-> 中间某一个装失败（pnpm 非 0 退出），后面的就都不会进 `dsh.profile.bundles`，
-> 而失败点往往与你真正想要的那个插件无关。
-
-本仓库把插件打成离线 tarball，连同 web profile 的 bundle 顺序与 settings 快照，
-做到**新机可完整复现**。
-
-> 部分插件为自研，部分收集自他人开源项目，来源与许可见
-> [`docs/插件清单与来源.md`](./docs/插件清单与来源.md#二插件来源与许可)。所有第三方插件版权归原作者所有。
+> ★ **自 0.4.0（市场与插件分离）起，脚本只装一个插件：引导插件 `dsh-plugins-market`。**
+> 插件的字节已经不在本仓库：自研插件在
+> [dsh-plugin-collection](https://github.com/HaydenSmith1121/dsh-plugin-collection)，
+> 第三方插件按各自配置里记录的 `github:` / npm 规格从上游安装。
+> 所以「一键装全套」这件事本身没有了，`-BootstrapOnly` / `--bootstrap-only` 仍然接受，
+> 含义与默认行为一致（保留是为了兼容旧命令与显式表达意图）。
 
 **本文件是唯一的安装文档，自包含。** 里面每一步都已经把「容易出错的地方」
 直接写成了预防措施和自检项 —— 照着走就不会遇到那些问题，出问题也能就地定位。
 
+> 逐插件的版本 / sha256 / 安装与配置说明在**集合仓库**：
+> [`dsh-plugin-collection` 的 README](https://github.com/HaydenSmith1121/dsh-plugin-collection/blob/main/README.md)
+> 与 [`manifest.json`](https://github.com/HaydenSmith1121/dsh-plugin-collection/blob/main/manifest.json)。
+> 本仓库里插件的**目录数据**（版本 / 收藏量 / 安装方式 / 信任层级）见
+> [`docs/插件清单与来源.md`](./docs/插件清单与来源.md)。
+> 所有第三方插件版权归原作者所有。
+
 ---
+
+<a name="ch1"></a>
 
 ## 一、30 秒开始
 
@@ -49,10 +54,11 @@ curl -fsSL https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/sc
 脚本会自动做完这五件事，**每一步都先检测再决定**：
 
 1. **环境预检** —— Node 版本、dsh 是否存在及版本、pnpm 是否存在
-2. **判定** —— 你这台机器的 dsh 版本对应仓库里哪一套插件；不匹配就停下来告诉你该装哪个版本
+2. **判定** —— 你这台机器的 dsh 版本是否在本仓库的兼容矩阵里；不在就停下来告诉你该装哪个版本
 3. **补齐缺失环境** —— 没有 pnpm 就装（且装在 dsh 所在的那个 Node 上）；预置 `allowBuilds`
-4. **安装插件** —— 默认装兼容矩阵里的全部插件；加 `-BootstrapOnly` / `--bootstrap-only`
-   则只装引导插件 `dsh-plugins-market`（插件市场）这一个
+4. **安装引导插件** —— 只装 `dsh-plugins-market`（市场面板）；
+   它的版本与 tarball 地址从目录 `catalog/index.json` 的「已验证」层读，再按
+   它自己的配置文件 `catalog/plugins/dsh-plugins-market.json` 安装
 5. **四步校验** —— 版本 / 依赖层 / 装配层 / 真实启动，四层都可能出不同的问题
 
 想先看看不改动任何东西？加 `-PreflightOnly`（Windows）或 `--preflight-only`：
@@ -66,15 +72,18 @@ curl -fsSL https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/sc
 > `The assignment expression is not valid` 解析失败；
 > 二是管道进 `iex` 没法传参。
 > `[scriptblock]::Create(...)` 先去掉 BOM 再执行，两条都解决。
-> 也可以用环境变量：`$env:DSH_INSTALL_ARGS = '-BootstrapOnly'`。
+> 也可以用环境变量：`$env:DSH_INSTALL_ARGS = '-SkipVerify'`。
+> Windows 上若嫌 `.ps1` 被执行策略挡着，可以直接用薄壳 `scripts\install.cmd`。
 
 | 参数（PowerShell / sh） | 作用 |
 |---|---|
 | `-PreflightOnly` / `--preflight-only` | 只体检，不装 |
 | `-DryRun` / `--dry-run` | 只打印将要执行的命令 |
-| `-BootstrapOnly` / `--bootstrap-only` | 只装引导插件 `dsh-plugins-market` |
 | `-SkipVerify` / `--skip-verify` | 跳过装完的四步校验 |
+| `-BootstrapOnly` / `--bootstrap-only` | 与默认行为相同：只装引导插件（保留以兼容旧命令） |
 | `-Profile web` / `--profile web` | 指定 profile，默认 `web` |
+| `-Force` / `--force` | dsh 版本不受支持也强装（不推荐，启动很可能失败） |
+| `-RepoDir <路径>` / `-RepoUrl <URL>` / `-Ref <分支>` | 仓库落地位置 / 地址 / 分支，默认 `~/.dsh-plugins`、官方仓库、`main` |
 
 ### 第 2 步：重启 harness，在面板里补装其余插件
 
@@ -83,24 +92,35 @@ dsh web          # 默认 http://127.0.0.1:3080
 ```
 
 1. 左侧导航栏点 **「插件市场」**
-2. 在 **「已验证」** 页签里挑需要的插件，点 **「安装」**
-3. 面板会先跑**装前检查**并展示逐项结论 —— 有问题会拦下来，你不需要自己判断兼容性
+2. 在列表里挑需要的插件（可以用顶部筛选器：`已审核 / 未审核`、`已安装 / 可升级 / 我点赞的 / 我收藏的`）
+3. 点 **「安装」** —— 面板会先跑**装前检查**并展示逐项结论，有问题会拦下来，你不需要自己判断兼容性；
+   安装全程可见进度与预计时间，可随时中止
 4. 装完**再重启一次 `dsh web`**（新增的 bundle 是在启动时合成的）
 
-> 「已验证」= 本仓库自带、按当前 dsh 版本实测过、用仓内离线 tarball 安装，
-> 装前检查必须全绿才放行。
-> 「已审核」与「未审核」两层分别对应人工审核收录的第三方插件与公共索引，
-> 都会明确提示风险；未审核层需要你**显式确认**才能继续。
-> 详见 [`plugins-src/dsh-plugins-market/README.md`](./plugins-src/dsh-plugins-market/README.md)。
+每条插件都带审核标签：
 
-**如果市场面板起不来**（装坏了、或想回退），用「体检」页的**快照回滚**，
-或者直接跑一次校验看是哪一层出的问题：
+| 标签 | 含义 | 安装包 |
+|---|---|---|
+| **已验证** | 由插件集合仓库托管 tarball、按当前 dsh 版本实测过 | 仓库托管的离线 tarball，带 sha256 校验；装前检查必须全绿 |
+| **已审核** | 维护者人工审核过、留了证据的第三方插件 | 按各自配置声明（通常是 `github:` / npm），同样要过闸门 |
+| **未审核** | 公开索引里的插件，未经本仓库验证 | 按各自配置声明；只做远程静态探测，**必须显式确认风险** |
+
+> 面板每次安装都会：读**那个插件自己的配置文件**（`catalog/plugins/<slug>.json`）→
+> 按它写的 `install.method` 装 → 备份 profile → 装完校验 → 失败自动回滚。
+> **配置文件读不到就不装**（而不是拿列表里的字段猜一个安装方法），并在详情里给出可复制的手动命令。
+> 完整说明见 [`plugins-src/dsh-plugins-market/README.md`](./plugins-src/dsh-plugins-market/README.md)。
+
+**如果市场面板起不来**（装坏了、或想回退），打开面板的 **「已装」** 页
+（0.3.0 起不再有独立的「体检」页签，能力都搬到了这里），里面有**三层校验 /
+真实启动校验 / 快照回滚 / 修复 profile**；或者直接跑一次校验看是哪一层出的问题：
 
 ```bash
 node scripts/verify.mjs --profile web
 ```
 
 ---
+
+<a name="ch2"></a>
 
 ## 二、环境要求
 
@@ -154,6 +174,8 @@ ls "$(dirname "$(which dsh)")/pnpm"
 
 ---
 
+<a name="ch3"></a>
+
 ## 三、dsh 版本：为什么必须锁定 `0.1.6-alpha.1`
 
 dsh 在 npm 上有多条发行通道：
@@ -162,7 +184,7 @@ dsh 在 npm 上有多条发行通道：
 |---|---|---|
 | `latest` | `0.1.5-rc.1` | `npm i -g @deepseek-ai/dsh`（**不带版本**）默认装这个 |
 | `next` | `0.1.5-rc.2` | |
-| **`alpha`** | **`0.1.6-alpha.1`** | ★ 本仓库插件要求的 |
+| **`alpha`** | **`0.1.6-alpha.1`** | ★ 本仓库基线要求的 |
 
 **必须显式带版本号安装**：
 
@@ -173,7 +195,7 @@ dsh --version        # 必须显示 0.1.6-alpha.1
 
 ### 版本不对会怎样：整个插件树加载失败
 
-不是「某个插件不能用」，而是 **10 层 bundle 整体加载失败、`dsh web` 完全起不来**：
+不是「某个插件不能用」，而是 **整棵 bundle 树加载失败、`dsh web` 完全起不来**：
 
 ```none
 Error: dsh: plugin tree failed to load: failed to apply loader entry include (cordis:include):
@@ -216,39 +238,18 @@ pnpm 不会安装 peer 依赖，插件的 `import "@deepseek-ai/dsh-llm"` 只能
 
 ### 版本兼容矩阵
 
-照各包 `package.json` 的 `peerDependencies` 实测（**这是选 dsh 版本的唯一依据**）：
-
-| 插件 | 要求的 `@deepseek-ai/dsh-llm` | 0.1.5-rc.x | 0.1.6-alpha.1 |
-|---|---|---|---|
-| `@dsh-market/plugin` | 无 `@deepseek-ai` peer | ✓ | ✓ |
-| `dsh-workbuddy-connect` | `^0.1.5-rc.1` | ✓ | ✓（仅有 peer 警告） |
-| **`dsh-opencode-go-plus`** | **`0.1.6-alpha.1`（精确 pin）** | **✗** | **✓** |
-| `dsh-connect-trae` | `>=0.1.5-0 <0.2.0-0` | ✓ | ✓ |
-| `dsh-workbuddy-quota` | 仅 cordis / react | ✓ | ✓ |
-| `dsh-receipt` | `cordis@4.0.1`、`dsh-session@0.1.0-rc.6`、`dsh-tools@0.1.0-rc.6` | ✓ | ✓（仅有 peer 警告） |
-| `dsh-session-cleanup` | 仅 cordis / react | ✓ | ✓ |
-| `dsh-ark-plans` | `@deepseek-ai/dsh-llm-pi-ai` / `dsh-credentials` 精确 pin `0.1.6-alpha.1` | ✗ | ✓ |
+**逐插件的 peer 约束与实测结论统一记在 [`docs/版本兼容矩阵.md`](./docs/版本兼容矩阵.md)**：
+自研 6 个插件在集合仓库（`plugins/<id>/plugin.json`），第三方插件的结论附在
+[`catalog/overrides/reviewed.json`](./catalog/overrides/reviewed.json) 的 `peerVerdict` / `review.evidence` 里
+（例：`dsh-workbuddy-connect` 的 `^0.1.5-rc.1`、`dsh-connect-trae` 的 `>=0.1.5-0 <0.2.0-0`
+按 semver 预发布规则的实际含义，以及 `@dsh-external/dsh-ads` 的 `dsh-client-locale` 警告）。
+机器可读的那份是 [`compatibility.json`](./compatibility.json)。
 
 **→ 整批插件以 `0.1.6-alpha.1` 为运行时基线。**
 
-<details>
-<summary>两个 peer 警告的准确含义（点开）</summary>
-
-- **`dsh-workbuddy-connect`**（`^0.1.5-rc.1`）：按 semver 的预发布规则，
-  `^0.1.5-rc.1` 的上界是裸 `0.2.0`，而预发布版只有在范围里存在
-  **同 major.minor.patch** 的预发布比较器时才会被纳入 —— 所以 `0.1.6-alpha.1`
-  严格来说不在这个范围里。但因为 `autoInstallPeers: false` 本来就不装 peer，
-  这只产生警告，不影响加载。
-- **`dsh-connect-trae`**（`>=0.1.5-0 <0.2.0-0`）：范围**两端都带 `-0`**，
-  这正是为了把预发布版纳入比较 —— **`0.1.6-alpha.1` 满足该范围**，不是警告。
-- **`dsh-receipt`**：精确 pin 在 `0.1.0-rc.6` 的 `dsh-session` / `dsh-tools`
-  与 `0.1.6-alpha.1` 不一致，会产生 peer 警告；但这两个包在运行时仍存在，实测可加载。
-
-以上均为实测结论（7/7 插件在 `0.1.6-alpha.1` 上正常加载）。
-
-</details>
-
 ---
+
+<a name="ch4"></a>
 
 ## 四、手动安装（不想用脚本时）
 
@@ -280,7 +281,7 @@ Copy-Item ".\settings\settings.yaml" "$env:USERPROFILE\.dsh\settings.yaml" -Forc
 
 > ⚠️ **仓库里这份是「导出那一刻的快照」，可能比目标机更旧。**
 > 实测遇到过的差异：仓库那份顶层键是 `ui-onboarding / agent-default-model / trae`
-> （默认模型 `trae/glm-5.2`），而目标机那份是
+> （默认模型 `trae/glm-5.2`），而另一台机器那份是
 > `ui-onboarding / agent-default-model / ui-theme / llm-pi-ai`
 > （默认模型 `opencode-go/deepseek-v4-flash`）。
 > 整体覆盖会**丢掉目标机 `llm-pi-ai.providers.*` 的完整模型清单**。
@@ -295,6 +296,7 @@ Copy-Item ".\settings\settings.yaml" "$env:USERPROFILE\.dsh\settings.yaml" -Forc
 
 `dsh-opencode-go-plus` 的依赖树里有两个包声明了 install 脚本，pnpm 10+ 默认拦截它们。
 不预先处理，安装时会撞 `ERR_PNPM_IGNORED_BUILDS` —— 而那个报错**极具欺骗性**（见第七节）。
+本仓库的 `compatibility.json` 里也记着这条：`allowBuilds.triggeredBy = dsh-opencode-go-plus`。
 
 在 `~/.dsh/profiles/web/pnpm-workspace.yaml` 里加上：
 
@@ -320,54 +322,68 @@ allowBuilds:
 > ✅ 已实测：dsh **不会覆盖**这个文件，手写的 `allowBuilds` 能长期留存。
 > 也无需 `pnpm approve-builds`（那是交互式的，不适合脚本化）。
 
-### 4) 按顺序安装 8 个插件
-
-**顺序即 bundle 层级顺序，别乱**（见 `profile-config/profile-bundles.yaml`）：
+### 4) 装引导插件（市场面板）
 
 ```powershell
-dsh plugin --profile web add .\plugins\dsh-market-plugin\0.1.6-alpha.1\dsh-market-plugin-0.4.8.tgz
-dsh plugin --profile web add .\plugins\dsh-workbuddy-connect\0.1.6-alpha.1\dsh-workbuddy-connect-0.5.3.tgz
-dsh plugin --profile web add .\plugins\dsh-opencode-go-plus\0.1.6-alpha.1\dsh-opencode-go-plus-0.3.0.tgz
-dsh plugin --profile web add .\plugins\dsh-connect-trae\0.1.6-alpha.1\dsh-connect-trae-2.0.1.tgz
-dsh plugin --profile web add .\plugins\dsh-workbuddy-quota\0.1.6-alpha.1\dsh-workbuddy-quota-0.2.0.tgz
-dsh plugin --profile web add .\plugins\dsh-receipt\0.1.6-alpha.1\dsh-receipt-0.1.0.tgz
-dsh plugin --profile web add .\plugins\dsh-session-cleanup\0.1.6-alpha.1\dsh-session-cleanup-0.1.2.tgz
-dsh plugin --profile web add .\plugins\dsh-ark-plans\0.1.6-alpha.1\dsh-ark-plans-0.1.0.tgz
+# 下载本仓库托管的市场插件 tarball（版本与 sha256 见 catalog/plugins/dsh-plugins-market.json
+# 与同目录的 .tgz.sha256 边车文件）
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/plugins/dsh-plugins-market/0.1.6-alpha.1/dsh-plugins-market-0.4.0.tgz -OutFile $env:TEMP\dsh-plugins-market.tgz
+dsh plugin --profile web add $env:TEMP\dsh-plugins-market.tgz
 ```
 
 ```bash
-# macOS / Linux：把 \ 换成 / 即可
-dsh plugin --profile web add ./plugins/dsh-market-plugin/0.1.6-alpha.1/dsh-market-plugin-0.4.8.tgz
-# ...
+# macOS / Linux 等价写法
+curl -fL -o /tmp/dsh-plugins-market.tgz https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/plugins/dsh-plugins-market/0.1.6-alpha.1/dsh-plugins-market-0.4.0.tgz
+dsh plugin --profile web add /tmp/dsh-plugins-market.tgz
 ```
 
 `dsh plugin --profile web add <tarball>` 会：
 - 在 `~/.dsh/profiles/web` 跑 `pnpm add <tarball>`
 - 成功后把声明了 `dsh.bundle` 的包追加进 `package.json` 的 `dsh.profile.bundles`
 
+**其余插件有两种手动装法**（都不经过本仓库的 `plugins/`）：
+
+```bash
+# ① 自研插件：下载集合仓库的 tarball → 校验 sha256 → add
+#    地址与 sha256 见 https://github.com/HaydenSmith1121/dsh-plugin-collection 的 README/manifest.json
+curl -fL -o /tmp/dsh-memory-0.1.0.tgz https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugin-collection/main/plugins/dsh-memory/0.1.6-alpha.1/dsh-memory-0.1.0.tgz
+sha256sum /tmp/dsh-memory-0.1.0.tgz        # 与 manifest.json 里的值比对
+dsh plugin --profile web add /tmp/dsh-memory-0.1.0.tgz
+
+# ② 第三方插件：按它配置里记录的安装方式装（github: 或 npm）
+dsh plugin --profile web add github:Nagi-ovo/dsh-ads
+```
+
 > **路径里的 `0.1.6-alpha.1` 是 dsh 运行时版本，不是插件版本** ——
-> 这是本仓库的多版本目录结构，详见 [`CONTRIBUTING.md`](./CONTRIBUTING.md)
-> 与 [`docs/目录结构.md`](./docs/目录结构.md)。
+> 这套多版本目录约定见 [`CONTRIBUTING.md` 第三节](./CONTRIBUTING.md#naming)
+> 与 [`docs/目录结构.md`](./docs/目录结构.md#two-layers)。
+>
+> 手动装插件时**没有装前闸门**：兼容性要你自己对着
+> [`docs/版本兼容矩阵.md`](./docs/版本兼容矩阵.md) 判断，
+> sha256 要你自己核对。想省事就用面板点装。
 
 ---
+
+<a name="ch5"></a>
 
 ## 五、路径要求（★ 装之前先看）
 
 `dsh plugin add <tarball>` 生成的**不是**把包内容拷进去，而是 `file:` 形式的依赖：
 
 ```json
-"dsh-opencode-go-plus": "file:D:/deepseek/dsh-plugins/plugins/dsh-opencode-go-plus/0.1.6-alpha.1/dsh-opencode-go-plus-0.3.0.tgz"
+"dsh-plugins-market": "file:C:/Users/你/.dsh-plugins/plugins/dsh-plugins-market/0.1.6-alpha.1/dsh-plugins-market-0.4.0.tgz"
 ```
 
-**后果**：这个目录**不能删除、不能移动**，否则以后任何 `pnpm install` /
+这个 `file:` 指向的路径**不能删除、不能移动**，否则以后任何 `pnpm install` /
 `dsh plugin` 操作都会失败（找不到 tarball）。
 
-**所以**：
+自 0.4.0 起 tarball 只可能来自这三处，规则对它们**一视同仁**：
 
-- 仓库 clone 到**持久路径**（如 `D:\dsh-plugins`），**别放 `%TEMP%`**
-- 也别放会被清理的下载目录
-- 已经装好的 profile 运行时**不需要** tarball（内容已在 `node_modules`），
-  但重新安装 / 升级时会需要
+| 来源 | 路径 |
+|---|---|
+| 本仓库的 clone（市场插件） | `~/.dsh-plugins/plugins/dsh-plugins-market/<dsh 版本>/*.tgz` |
+| 市场面板下载的缓存（集合仓库与第三方 tarball） | `$DSH_HOME/storages/dsh-plugins-market/tarballs/`（按 sha256 复用） |
+| 你自己手动下载的 | 你放它的地方 —— **别放 `%TEMP%` 或会被清理的下载目录** |
 
 **自检**：
 
@@ -376,10 +392,10 @@ grep -o 'file:[^"]*' ~/.dsh/profiles/web/package.json
 # 逐条确认这些 tarball 路径真实存在
 ```
 
-万一必须挪动仓库目录，正确做法是三步：**改完路径 → 重新 install → 跑校验**：
+万一必须挪动仓库目录或清过缓存，正确做法是三步：**重新 add → 重跑 install → 跑校验**：
 
 ```bash
-# 1) 把 profile 里 7 条 file: 路径改成新位置（或直接重新 add 一遍）
+# 1) 把失链的那几个包重新 add 一遍（或直接用面板的「修复 / 重装」）
 # 2) 重跑 pnpm install 让链接指向新位置
 cd ~/.dsh/profiles/web && pnpm install
 # 3) 真实启动校验（见第六节第 ④ 步）
@@ -387,6 +403,8 @@ node scripts/verify.mjs
 ```
 
 ---
+
+<a name="ch6"></a>
 
 ## 六、安装后校验：四步，缺一不可
 
@@ -398,9 +416,13 @@ node scripts/verify.mjs
 | # | 查什么 | 命令 | 期望 |
 |---|---|---|---|
 | ① | **dsh 版本** | `dsh --version` | `0.1.6-alpha.1` |
-| ② | **依赖层** | `dsh plugin --profile web list` | 7 packages |
-| ③ | **装配层** | `dsh --profile web --dump-config` | 9 个 bundle，顺序正确 |
+| ② | **依赖层** | `dsh plugin --profile web list` | 引导插件 `dsh-plugins-market` 在列；你点装过的插件都在列 |
+| ③ | **装配层** | `dsh --profile web --dump-config` | 内置 bundle + 你实际装了的插件，顺序单调 |
 | ④ | **真实启动** | `dsh web --no-open --port 0` | 只有一行服务地址，无致命错误 |
+
+> ②③ 的期望集合**不再是「某个清单里的全部插件」**：插件现在是按需点装的，
+> 校验脚本的判据是「**内置 bundle + 引导插件（硬性要求）+ profile 里实际装了的运行时插件**」。
+> 你还没点装的插件不会被算成缺失 —— 那不算装坏。
 
 ### ③ 的正确写法（`grep bundles` 永远返回空）
 
@@ -413,20 +435,16 @@ dsh --profile web --dump-config | grep -n '^# == '
 
 **不要用 `grep bundles`** —— 会返回空，很容易误判成「配置没生效」。
 
-期望看到 10 个 bundle 头，末尾 8 个是用户插件：
+刚装完引导插件时的期望输出（顺序即层级顺序）：
 
 ```none
 # == @deepseek-ai/dsh-base        （这个头会重复出现多次，属正常，不是重复装配）
 # == @deepseek-ai/dsh-web-app
-# == @dsh-market/plugin          → - id: dsh-market        name: '@dsh-market/plugin'
-# == dsh-workbuddy-connect       → - id: llm-workbuddy     name: dsh-workbuddy-connect
-# == dsh-opencode-go-plus        → - id: opencode-go-plus  name: dsh-opencode-go-plus
-# == dsh-connect-trae            → - id: dsh-connect-trae  name: dsh-connect-trae
-# == dsh-workbuddy-quota         → - id: workbuddy-quota   name: dsh-workbuddy-quota
-# == dsh-receipt                 → - id: receipt           name: dsh-receipt
-# == dsh-session-cleanup         → - id: session-cleanup   name: dsh-session-cleanup
-# == dsh-ark-plans               → - id: ark-plans         name: dsh-ark-plans
+# == dsh-plugins-market           → - id: dsh-plugins-market  name: dsh-plugins-market
 ```
+
+面板里点装的插件会依次追加在后面（`# == <包名>`），例如
+`# == @dsh-external/dsh-ads`、`# == dsh-memory` 等。
 
 若某个 bundle 的 `name:` 不是包本名，说明模块 import 失败 →
 查 `~/.dsh/profiles/web/.dsh-module-fallback/`。
@@ -451,6 +469,8 @@ kill %1
 
 ---
 
+<a name="ch7"></a>
+
 ## 七、GUI 里看不到某个插件？按这个顺序查
 
 **不要一上来就查前端。** 按层次查，每层都能独立定位问题：
@@ -460,7 +480,8 @@ kill %1
       └─→ 第三节。升级 dsh（必须带版本号），然后真实启动验证
 
 ② dsh plugin --profile web list 里少包？
-      └─→ 重跑安装。若报 ERR_PNPM_IGNORED_BUILDS，看下面那段
+      └─→ 面板装的：重开面板看「已装」页的状态与失败原因（安装是事务化的，失败会回滚）
+          手动装的：重跑那条 add。若报 ERR_PNPM_IGNORED_BUILDS，看下面那段
 
 ③ --dump-config 里少 bundle 或顺序不对？
       └─→ 直接编辑 ~/.dsh/profiles/web/package.json 的 dsh.profile.bundles，
@@ -469,6 +490,8 @@ kill %1
 ④ 配置树正常但启动报错、或 GUI 里面板不出现？
       └─→ 真实启动看 boot log
 ```
+
+<a name="pitfalls-ignored-builds"></a>
 
 ### ★ 特别当心：`ERR_PNPM_IGNORED_BUILDS` 的假象
 
@@ -484,7 +507,7 @@ dsh: pnpm failed in profile directory ...
 
 | 检查项 | 实际 |
 |---|---|
-| `node_modules/dsh-opencode-go-plus/` | ✅ **已存在**，98 个依赖也全部链接完毕 |
+| `node_modules/dsh-opencode-go-plus/` | ✅ **已存在**，依赖也全部链接完毕 |
 | `package.json` 的 `dependencies` | ✅ **已写入** |
 | `package.json` 的 `dsh.profile.bundles` | ❌ **没有追加** |
 
@@ -499,18 +522,25 @@ dsh: pnpm failed in profile directory ...
 >
 > **修法**：按第 3 节预置 `allowBuilds`，然后**重跑同一条 `dsh plugin add`**
 > （幂等，会报 `Lockfile is up to date`）→ 退出码 0 → dsh 这才补上 bundles 条目。
+> 面板点装时这一步是自动的（撞到这个错会自动补 `allowBuilds` 后重试一次）。
 
 ---
 
+<a name="ch8"></a>
+
 ## 八、凭据与登录态不随包迁移
 
-本包**有意不含** `.credentials.yaml`（API key 所在）：
+本仓库**有意不含** `.credentials.yaml`（API key 所在）：
 
 - 各 provider 的 API key → 首次启动后在 GUI 设置里手填
 - **trae 登录态** → 需在目标机重新登录
 - `dsh-workbuddy-connect` 复用 **WorkBuddy 桌面端**的登录态，不另起 OAuth
+- `dsh-ark-plans` 的额度 pill 复用本机 `~/.arkcli` 的身份；**没登录 arkcli 时插件照常工作**，
+  只是那条车道显示「不可用」并写明原因
 
 ---
+
+<a name="ch9"></a>
 
 ## 九、卸载 / 回滚
 
@@ -518,21 +548,30 @@ dsh: pnpm failed in profile directory ...
 dsh plugin --profile web remove <包名>     # 例如: dsh plugin --profile web remove dsh-receipt
 ```
 
-> 动手前建议先备份 `~/.dsh/profiles/web/` 下的这 3 个文件：
+面板点装的插件也可以在「已装」页里直接**更新 / 校验 / 卸载**，
+并在安装或卸载**之前**自动备份 profile 的 5 个状态文件到
+`$DSH_HOME/storages/dsh-plugins-market/backups/`；出错时可以回滚。
+
+> 手动操作前建议先自己备份 `~/.dsh/profiles/web/` 下的这 3 个文件：
 > `package.json`、`pnpm-workspace.yaml`、`cordis.patch.yml`。
 > 出错时把它们还原即可整体回滚。
 
 ---
 
+<a name="ch10"></a>
+
 ## 十、关于 `dsh-opencode-go-plus` 的来历、改造与共存禁忌
 
-本仓库的 `dsh-opencode-go-plus@0.3.0` 是**派生包**，基线为上游
+`dsh-opencode-go-plus@0.3.0` 是**派生包**，基线为上游
 [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go)`@0.1.2`（MIT）。
 它**取代**了此前收录的 `dsh-opencode-go@0.1.2`（那一版含 13 处本地源码改动）。
+自 0.4.0 起它的 tarball 与源码在**插件集合仓库**：
+下载地址与 sha256 见
+[集合仓库 README](https://github.com/HaydenSmith1121/dsh-plugin-collection/blob/main/README.md)。
 
 包里的 tarball 是**编译产物**（只有 `lib/`，没有 `src/`），所以新机装上就能用，
-**不需要重新构建**，也不需要源码 / node_modules。要继续改它的逻辑，就得另拿源码项目目录，
-当前仓库不含源码。
+**不需要重新构建**，也不需要源码 / node_modules（集合仓库的 `src/dsh-opencode-go-plus/`
+只是源码留档）。
 
 ### 0.3.0：配置入口在「设置 → 模型」里，不再有独立分区
 
@@ -581,7 +620,7 @@ dsh plugin --profile web remove <包名>     # 例如: dsh plugin --profile web 
 
 ```bash
 dsh plugin --profile web remove dsh-opencode-go
-dsh plugin --profile web add .\plugins\dsh-opencode-go-plus\0.1.6-alpha.1\dsh-opencode-go-plus-0.3.0.tgz
+dsh plugin --profile web add <下载后的 dsh-opencode-go-plus-0.3.0.tgz 绝对路径>
 ```
 
 **怎么确认装对了：数模型数**。plus 是 **38** 条并含 `union-alpha`；基线是 37 条且没有它。
@@ -597,34 +636,30 @@ dsh plugin --profile web add .\plugins\dsh-opencode-go-plus\0.1.6-alpha.1\dsh-op
 
 ---
 
-## 附录：tarball 校验信息
+<a name="appendix"></a>
 
-每个 tarball 均已验证含 `package.json` + `cordis.patch.yml` + `lib/`：
+## 附录：tarball 校验信息去哪了
 
-| 插件 | 版本 | 文件数 | 含 cordis.patch.yml | 含 lib | 含 LICENSE |
-|---|---|---|---|---|---|
-| `@dsh-market/plugin` | 0.4.8 | 7 | ✓ | ✓ | **✗** |
-| `dsh-workbuddy-connect` | 0.5.3 | 11 | ✓ | ✓ | ✓ |
-| `dsh-opencode-go-plus` | 0.3.0 | 31 | ✓ | ✓ | ✓ |
-| `dsh-connect-trae` | 2.0.1 | 12 | ✓ | ✓ | ✓ |
-| `dsh-workbuddy-quota` | 0.2.0 | 5 | ✓ | ✓ | **✗** |
-| `dsh-receipt` | 0.1.0 | 16 | ✓ | ✓ | ✓ |
-| `dsh-session-cleanup` | 0.1.2 | 6 | ✓ | ✓ | ✓ |
-| `dsh-ark-plans` | 0.1.0 | 6 | ✓ | ✓ | ✓ |
+**搬去插件集合仓库了。** 本仓库自 0.4.0 起只托管**市场插件自己**一个 tarball：
 
-> `LICENSE` 列标注 **✗** 的两个包，其 `package.json` 里 `license` 字段均为 `MIT`，
-> 但 tarball 内未附许可文件正文。`@dsh-market/plugin` 的上游许可见
-> [`docs/插件清单与来源.md`](./docs/插件清单与来源.md#二插件来源与许可)；`dsh-workbuddy-quota` 为本仓库自研。
-> 新入库的插件一律要求带许可文件，见 [`CONTRIBUTING.md`](./CONTRIBUTING.md)。
+| 内容 | 去哪看 |
+|---|---|
+| 6 个自研插件的版本 / sha256 / 字节数 / 文件数 | [集合仓库 README 的「校验信息总表」](https://github.com/HaydenSmith1121/dsh-plugin-collection/blob/main/README.md) 与 [`manifest.json`](https://github.com/HaydenSmith1121/dsh-plugin-collection/blob/main/manifest.json)（派生，禁止手写） |
+| 市场插件自己的版本 / sha256 | `catalog/plugins/dsh-plugins-market.json`（版本取自源码 `package.json`，sha256 由采集脚本实测）与 `plugins/dsh-plugins-market/0.1.6-alpha.1/*.tgz.sha256` 边车文件 |
+| 第三方插件的字节完整性 | **本仓库不再分发它们的字节**。审核证据（含验证时的 commit）在 [`catalog/overrides/reviewed.json`](./catalog/overrides/reviewed.json)；装的时候由市场面板校验配置里记录的 sha256（若有） |
 
-自查命令：
+**自查命令**（在集合仓库的 clone 里跑；那份 tarball 才是分发内容）：
 
 ```bash
 for f in plugins/*/*/*.tgz; do
-  printf "%-60s files=%s cordis=%s lib=%s lic=%s\n" "$f" \
+  printf "%-62s files=%s cordis=%s lib=%s lic=%s\n" "$f" \
     "$(tar -tzf "$f" | grep -vc '/$')" \
     "$(tar -tzf "$f" | grep -c 'cordis.patch.yml')" \
     "$(tar -tzf "$f" | grep -c 'package/lib/')" \
     "$(tar -tzf "$f" | grep -ciE 'package/LICENSE' )"
 done
 ```
+
+> `LICENSE` 列标注缺的两个包（`dsh-memory`、`dsh-workbuddy-quota`），其 `package.json` 里
+> `license` 字段均为 `MIT`，但 tarball 内未附许可文件正文 —— 集合仓库那边**如实记录、不做补写**。
+> 新入库的插件一律要求带许可文件，见 [`CONTRIBUTING.md`](./CONTRIBUTING.md#requirements)。

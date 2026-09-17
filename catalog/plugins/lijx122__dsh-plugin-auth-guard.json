@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "lijx122/dsh-plugin-auth-guard",
+  "slug": "lijx122__dsh-plugin-auth-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-auth-guard",
+  "title": "dsh-plugin-auth-guard",
+  "summary": "为 DeepSeek Harness 提供企业级零信任认证与访问控制，守护局域网和公网环境下的插件安全。",
+  "tags": [
+    "auth",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "zero-trust",
+    "零信任认证",
+    "安全审计",
+    "企业级"
+  ],
+  "version": "0.1.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.4",
+    "publishedAt": "2026-08-26T04:10:57Z",
+    "url": "https://github.com/lijx122/dsh-plugin-auth-guard/releases/tag/v0.1.4"
+  },
+  "author": "lijx122",
+  "repo": "https://github.com/lijx122/dsh-plugin-auth-guard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T16:40:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lijx122/dsh-plugin-auth-guard",
+    "commands": [
+      "dsh plugin --profile web add github:lijx122/dsh-plugin-auth-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

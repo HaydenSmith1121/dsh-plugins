@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "GreenLv/dsh-completion-guard",
+  "slug": "greenlv__dsh-completion-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-completion-guard",
+  "title": "dsh-completion-guard",
+  "summary": "为 DeepSeek Harness 任务提供契约管理与完成认证，确保需求、限制和验收标准被完整执行，防止任务偏离。",
+  "tags": [
+    "completion-certification",
+    "deepseek-harness",
+    "dsh-plugin",
+    "hooks",
+    "task-contract",
+    "typescript",
+    "工作流增强",
+    "插件管理",
+    "零配置"
+  ],
+  "version": "0.6.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.2",
+    "publishedAt": "2026-09-16T08:38:42Z",
+    "url": "https://github.com/GreenLv/dsh-completion-guard/releases/tag/v0.6.2"
+  },
+  "author": "GreenLv",
+  "repo": "https://github.com/GreenLv/dsh-completion-guard",
+  "homepage": "https://github.com/GreenLv/dsh-completion-guard",
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T09:28:44Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-completion-guard@0.6.1",
+    "commands": [
+      "dsh plugin --profile web add dsh-completion-guard@0.6.1"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

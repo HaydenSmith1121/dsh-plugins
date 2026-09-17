@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-bilibili-video-info",
+  "slug": "xby-skill__xby-bilibili-video-info",
+  "tier": "community",
+  "package": null,
+  "name": "xby-bilibili-video-info",
+  "title": "xby-bilibili-video-info",
+  "summary": "从B站视频链接一键获取字幕、弹幕和评论，方便追剧、做笔记或分析内容。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "AI 助手",
+    "状态监控"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-bilibili-video-info",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:37:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-bilibili-video-info",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-bilibili-video-info",
+      "dsh plugin --profile web add /absolute/path/to/xby-bilibili-video-info"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

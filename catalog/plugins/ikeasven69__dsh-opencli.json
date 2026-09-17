@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "IKEASven69/dsh-opencli",
+  "slug": "ikeasven69__dsh-opencli",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-opencli",
+  "title": "dsh-opencli",
+  "summary": "让 dsh 用真实登录态浏览器替你操作 170+ 网站，写入前还要过审批，办事更放心。",
+  "tags": [
+    "browser",
+    "deepseek-harness",
+    "dsh-plugin",
+    "opencli",
+    "自动化",
+    "工具集成",
+    "AI工具",
+    "安全审查",
+    "效率提升"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-16T06:42:18Z",
+    "url": "https://github.com/IKEASven69/dsh-opencli/releases/tag/v0.4.0"
+  },
+  "author": "IKEASven69",
+  "repo": "https://github.com/IKEASven69/dsh-opencli",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T15:21:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:IKEASven69/dsh-opencli",
+    "commands": [
+      "npm i -g @jackwener/opencli",
+      "dsh plugin add IKEASven69/dsh-opencli"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

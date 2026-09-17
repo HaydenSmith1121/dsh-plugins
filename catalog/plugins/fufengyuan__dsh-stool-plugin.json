@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "fufengyuan/dsh-stool-plugin",
+  "slug": "fufengyuan__dsh-stool-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-stool-plugin",
+  "title": "dsh-stool-plugin",
+  "summary": "把运维命令变成AI能直接调用的工具，让Agent自动搞定服务器管理、日志查询和部署，省心省力。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "自动化",
+    "AI 助手",
+    "安全审计",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "1.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fufengyuan",
+  "repo": "https://github.com/fufengyuan/dsh-stool-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-04T02:08:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fufengyuan/dsh-stool-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:fufengyuan/dsh-stool-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "zjl88858/dsh-huadongbianzuqi",
+  "slug": "zjl88858__dsh-huadongbianzuqi",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-huadongbianzuqi",
+  "title": "dsh-huadongbianzuqi",
+  "summary": "给 DeepSeek Harness 输入框加个滑动变阻器，拖一拖就能调整参数，好玩又实用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugins",
+    "模型配置",
+    "滑动控制",
+    "前端增强",
+    "桌宠"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-13T18:31:15Z",
+    "url": "https://github.com/zjl88858/dsh-huadongbianzuqi/releases/tag/v0.1.0"
+  },
+  "author": "zjl88858",
+  "repo": "https://github.com/zjl88858/dsh-huadongbianzuqi",
+  "homepage": null,
+  "license": "MIT-0",
+  "stars": 7,
+  "forks": 2,
+  "pushedAt": "2026-08-13T18:31:15Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zjl88858/dsh-huadongbianzuqi",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/zjl88858/dsh-huadongbianzuqi/releases/download/v0.1.0/dsh-huadong-bianzuqi-0.1.0.tgz",
+      "dsh plugin --profile web add github:zjl88858/dsh-huadongbianzuqi"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

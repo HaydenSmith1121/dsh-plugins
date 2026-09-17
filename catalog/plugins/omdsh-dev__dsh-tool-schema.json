@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "omdsh-dev/dsh-tool-schema",
+  "slug": "omdsh-dev__dsh-tool-schema",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tool-schema",
+  "title": "dsh-tool-schema",
+  "summary": "DSH 的 JSON Schema 验证工具，能校验数据、定位失败路径、解释约束并安全填充默认值，全程离线且不执行动态代码。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "json-schema",
+    "validation",
+    "可视化",
+    "自动化",
+    "命令行工具"
+  ],
+  "version": "0.0.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "omdsh-dev",
+  "repo": "https://github.com/omdsh-dev/dsh-tool-schema",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-10T06:31:49Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:omdsh-dev/dsh-tool-schema",
+    "commands": [
+      "dsh plugin --profile web add github:omdsh-dev/dsh-tool-schema"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

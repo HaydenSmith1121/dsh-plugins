@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "dimensionlesslu-dotcom/cybersyn-for-dsh",
+  "slug": "dimensionlesslu-dotcom__cybersyn-for-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "cybersyn-for-dsh",
+  "title": "cybersyn-for-dsh",
+  "summary": "把复杂任务拆解、证据核查和偏差诊断变成可回放的流程，帮你理清AI推理过程，不碰隐藏思维。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "多Agent协作",
+    "工作流增强",
+    "文件管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dimensionlesslu-dotcom",
+  "repo": "https://github.com/dimensionlesslu-dotcom/cybersyn-for-dsh",
+  "homepage": null,
+  "license": "GPL-3.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T12:41:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dimensionlesslu-dotcom/cybersyn-for-dsh",
+    "commands": [
+      "dsh plugin --profile web add github:dimensionlesslu-dotcom/cybersyn-for-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

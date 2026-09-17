@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "PerryLink/dsh-session-pin",
+  "slug": "perrylink__dsh-session-pin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-pin",
+  "title": "dsh-session-pin",
+  "summary": "把会话和工作区固定到侧边栏顶部，支持彩色标记，还能用看板、标签和快捷跳转来整理导航。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "pin",
+    "session-pin",
+    "workspace",
+    "会话管理",
+    "工作区管理",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.7.11",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.11",
+    "publishedAt": "2026-09-12T02:35:41Z",
+    "url": "https://github.com/PerryLink/dsh-session-pin/releases/tag/v0.7.11"
+  },
+  "author": "PerryLink",
+  "repo": "https://github.com/PerryLink/dsh-session-pin",
+  "homepage": "https://www.npmjs.com/package/dsh-session-pin",
+  "license": "Apache-2.0",
+  "stars": 8,
+  "forks": 1,
+  "pushedAt": "2026-09-12T09:33:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:PerryLink/dsh-session-pin",
+    "commands": [
+      "dsh plugin --profile web add github:PerryLink/dsh-session-pin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

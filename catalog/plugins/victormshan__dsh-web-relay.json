@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "victormshan/dsh-web-relay",
+  "slug": "victormshan__dsh-web-relay",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-relay",
+  "title": "dsh-web-relay",
+  "summary": "把用户、主 agent 和外部 AI 的协作变成可执行协议，还能接上 Claude Code 混合审核链自动续跑。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "多Agent协作",
+    "工作流增强",
+    "变更审查",
+    "自动化",
+    "工具集成"
+  ],
+  "version": "4.9.7",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "victormshan",
+  "repo": "https://github.com/victormshan/dsh-web-relay",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T12:05:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-web-relay",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/victormshan/dsh-web-relay.git",
+      "dsh plugin --profile web add dsh-web-relay"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "moxingovo/dsh-bilibili",
+  "slug": "moxingovo__dsh-bilibili",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-bilibili",
+  "title": "dsh-bilibili",
+  "summary": "在 DeepSeek Harness 里搜 B 站视频、看元数据和字幕文稿，匿名可用，登录后还能解锁更多内容。",
+  "tags": [
+    "agent-tool",
+    "bilibili",
+    "deepseek-harness",
+    "dsh-plugin",
+    "subtitles",
+    "video",
+    "AI 助手",
+    "语义检索",
+    "插件管理",
+    "效率提升",
+    "视频"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-08-25T11:07:28Z",
+    "url": "https://github.com/moxingovo/dsh-bilibili/releases/tag/v0.2.1"
+  },
+  "author": "moxingovo",
+  "repo": "https://github.com/moxingovo/dsh-bilibili",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-25T10:56:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:moxingovo/dsh-bilibili",
+    "commands": [
+      "dsh plugin --profile web add github:moxingovo/dsh-bilibili"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

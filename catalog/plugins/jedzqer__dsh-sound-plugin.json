@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "jedzqer/dsh-sound-plugin",
+  "slug": "jedzqer__dsh-sound-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sound-plugin",
+  "title": "dsh-sound-plugin",
+  "summary": "AI干完活或有问题时自动响铃提醒，不用一直盯着屏幕，忙别的也能第一时间知道。",
+  "tags": [
+    "dsh-plugin",
+    "remind",
+    "sound",
+    "提示音",
+    "任务完成通知",
+    "交互提示",
+    "免打扰"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jedzqer",
+  "repo": "https://github.com/jedzqer/dsh-sound-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T11:37:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-sound-plugin",
+    "commands": [
+      "dsh plugin --profile web add dsh-sound-plugin",
+      "dsh plugin --profile web add ./dsh-sound-plugin",
+      "dsh plugin --profile web remove dsh-sound-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "AskingTheHeavens/dsh-openclaw-persona",
+  "slug": "askingtheheavens__dsh-openclaw-persona",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-openclaw-persona",
+  "title": "dsh-openclaw-persona",
+  "summary": "把 OpenClaw 风格的人格文件（SOUL.md 等）自动加载进 DSH 会话，让 AI 拥有稳定人设和记忆。",
+  "tags": [
+    "agent",
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "openclaw",
+    "persona",
+    "人格加载",
+    "会话管理",
+    "OpenClaw兼容"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "AskingTheHeavens",
+  "repo": "https://github.com/AskingTheHeavens/dsh-openclaw-persona",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-18T05:19:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AskingTheHeavens/dsh-openclaw-persona",
+    "commands": [
+      "dsh plugin --profile web add github:AskingTheHeavens/dsh-openclaw-persona"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

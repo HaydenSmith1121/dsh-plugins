@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xchannel1987/dsh-power-xc",
+  "slug": "xchannel1987__dsh-power-xc",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-power-xc",
+  "title": "dsh-power-xc",
+  "summary": "为 DSH 提供电源控制菜单，支持重启/关机操作，并带 Windows 风格的开机动画效果。",
+  "tags": [
+    "dsh-plugin",
+    "命令行工具",
+    "娱乐互动",
+    "状态监控",
+    "零配置"
+  ],
+  "version": "0.1.4",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xchannel1987",
+  "repo": "https://github.com/xchannel1987/dsh-power-xc",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T02:41:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-power-xc",
+    "commands": [
+      "dsh plugin --profile web add dsh-power-xc",
+      "npm install dsh-power-xc"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

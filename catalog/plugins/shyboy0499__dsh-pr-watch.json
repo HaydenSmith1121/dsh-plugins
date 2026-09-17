@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Shyboy0499/dsh-pr-watch",
+  "slug": "shyboy0499__dsh-pr-watch",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pr-watch",
+  "title": "dsh-pr-watch",
+  "summary": "自动盯着你提的 PR，一有合并、关闭或搁置就提醒你，不用反复手动查。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "状态监控",
+    "消息通知",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Shyboy0499",
+  "repo": "https://github.com/Shyboy0499/dsh-pr-watch",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T13:24:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-pr-watch",
+    "commands": [
+      "dsh plugin --profile web add dsh-pr-watch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

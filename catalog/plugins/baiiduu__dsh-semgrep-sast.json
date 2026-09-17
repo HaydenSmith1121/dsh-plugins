@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Baiiduu/dsh-semgrep-sast",
+  "slug": "baiiduu__dsh-semgrep-sast",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-semgrep-sast",
+  "title": "dsh-semgrep-sast",
+  "summary": "给 DeepSeek Harness 加个静态代码扫描工具，直接调用 Semgrep 揪出代码里的安全漏洞。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "sast",
+    "security",
+    "semgrep",
+    "安全审计",
+    "工作流增强",
+    "AI 助手"
+  ],
+  "version": "0.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Baiiduu",
+  "repo": "https://github.com/Baiiduu/dsh-semgrep-sast",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T15:18:52Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Baiiduu/dsh-semgrep-sast",
+    "commands": [
+      "dsh plugin --profile web add github:Baiiduu/dsh-semgrep-sast"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

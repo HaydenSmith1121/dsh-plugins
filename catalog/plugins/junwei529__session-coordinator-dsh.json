@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "junwei529/session-coordinator-dsh",
+  "slug": "junwei529__session-coordinator-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "session-coordinator-dsh",
+  "title": "session-coordinator-dsh",
+  "summary": "为 DeepSeek Harness 提供多会话与多工作流的统一协调管理，让复杂任务协作更顺畅。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "session-coordination",
+    "typescript",
+    "多Agent协作",
+    "会话管理",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.1.0-rc.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "junwei529",
+  "repo": "https://github.com/junwei529/session-coordinator-dsh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-30T14:25:09Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:junwei529/session-coordinator-dsh",
+    "commands": [
+      "dsh plugin --profile web add github:junwei529/session-coordinator-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

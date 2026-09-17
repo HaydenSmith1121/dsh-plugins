@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "an4nsi/dsh-fork-view",
+  "slug": "an4nsi__dsh-fork-view",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-fork-view",
+  "title": "dsh-fork-view",
+  "summary": "把左侧原生工作区浏览器换成会话树视图，方便按会话浏览和切换。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "工作区管理",
+    "界面美化",
+    "前端增强"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "an4nsi",
+  "repo": "https://github.com/an4nsi/dsh-fork-view",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T10:59:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:an4nsi/dsh-fork-view",
+    "commands": [
+      "dsh plugin --profile web add github:an4nsi/dsh-fork-view"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

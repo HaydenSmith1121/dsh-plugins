@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "PerryLink/dsh-doublecheck",
+  "slug": "perrylink__dsh-doublecheck",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-doublecheck",
+  "title": "dsh-doublecheck",
+  "summary": "上线前多一道保险：帮你严审需求、验证实现、证明交付，适合追求工程严谨度的团队。",
+  "tags": [
+    "deepseek-harness",
+    "delivery-gate",
+    "dsh",
+    "dsh-plugin",
+    "engineering-discipline",
+    "guard",
+    "quality-gate",
+    "requirements",
+    "skill",
+    "可验证执行",
+    "安全审查"
+  ],
+  "version": "0.9.11",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.9.11",
+    "publishedAt": "2026-09-12T02:29:19Z",
+    "url": "https://github.com/PerryLink/dsh-doublecheck/releases/tag/v0.9.11"
+  },
+  "author": "PerryLink",
+  "repo": "https://github.com/PerryLink/dsh-doublecheck",
+  "homepage": "https://www.npmjs.com/package/dsh-doublecheck",
+  "license": "Apache-2.0",
+  "stars": 33,
+  "forks": 0,
+  "pushedAt": "2026-09-12T09:34:09Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:PerryLink/dsh-doublecheck",
+    "commands": [
+      "dsh plugin --profile web add github:PerryLink/dsh-doublecheck"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

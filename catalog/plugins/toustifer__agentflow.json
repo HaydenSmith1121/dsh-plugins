@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "toustifer/agentflow",
+  "slug": "toustifer__agentflow",
+  "tier": "community",
+  "package": null,
+  "name": "agentflow",
+  "title": "agentflow",
+  "summary": "给 AI 智能体团队用的轻量任务状态机，通过 MCP 接口编排软件项目全流程。",
+  "tags": [
+    "dsh-plugin",
+    "多Agent协作",
+    "工作流增强",
+    "状态持久化",
+    "工具集成"
+  ],
+  "version": "0.2.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.9",
+    "publishedAt": "2026-09-16T00:49:34Z",
+    "url": "https://github.com/toustifer/agentflow/releases/tag/v0.2.9"
+  },
+  "author": "toustifer",
+  "repo": "https://github.com/toustifer/agentflow",
+  "homepage": null,
+  "license": null,
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-16T00:49:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:toustifer/agentflow",
+    "commands": [
+      "dsh plugin --profile web add github:toustifer/agentflow"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

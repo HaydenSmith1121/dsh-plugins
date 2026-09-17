@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "cinob/dsh-plugin-custom-provider-enhancer",
+  "slug": "cinob__dsh-plugin-custom-provider-enhancer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-custom-provider-enhancer",
+  "title": "dsh-plugin-custom-provider-enhancer",
+  "summary": "配置第三方模型时自动补齐上下文、Token上限、视觉输入和思考档位，省去手动查参数。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "模型配置",
+    "视觉理解",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "cinob",
+  "repo": "https://github.com/cinob/dsh-plugin-custom-provider-enhancer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-25T11:41:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cinob/dsh-plugin-custom-provider-enhancer",
+    "commands": [
+      "dsh plugin --profile web add github:cinob/dsh-plugin-custom-provider-enhancer",
+      "dsh plugin --profile web remove dsh-plugin-custom-provider-enhancer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

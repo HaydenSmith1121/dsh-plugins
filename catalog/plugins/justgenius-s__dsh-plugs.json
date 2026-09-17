@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "JustGenius-s/DSH-Plugs",
+  "slug": "justgenius-s__dsh-plugs",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-Plugs",
+  "title": "DSH-Plugs",
+  "summary": "一个插件合集仓库，每个文件夹一个插件，方便你按需选用和扩展 DeepSeek Harness 的功能。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "零配置",
+    "模型适配",
+    "工作流增强"
+  ],
+  "version": "0.1.1-rc.2",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "JustGenius-s",
+  "repo": "https://github.com/JustGenius-s/DSH-Plugs",
+  "homepage": null,
+  "license": null,
+  "stars": 7,
+  "forks": 1,
+  "pushedAt": "2026-09-16T11:05:03Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JustGenius-s/DSH-Plugs",
+    "commands": [
+      "dsh plugin --profile web add ./plugins/dsh-codex",
+      "dsh plugin --profile web remove @just-genius/dsh-codex"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

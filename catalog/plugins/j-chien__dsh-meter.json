@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "J-Chien/dsh-meter",
+  "slug": "j-chien__dsh-meter",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-meter",
+  "title": "dsh-meter",
+  "summary": "按会话实时统计 token 用量和费用，区分缓存命中与高峰计价，帮您精准掌控每次对话成本。",
+  "tags": [
+    "dsh-plugin",
+    "计费统计",
+    "状态监控",
+    "价格配置",
+    "资源优化"
+  ],
+  "version": "0.3.22",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "J-Chien",
+  "repo": "https://github.com/J-Chien/dsh-meter",
+  "homepage": null,
+  "license": null,
+  "stars": 5,
+  "forks": 3,
+  "pushedAt": "2026-09-16T02:53:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:J-Chien/dsh-meter",
+    "commands": [
+      "dsh plugin --profile web add github:J-Chien/dsh-meter"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

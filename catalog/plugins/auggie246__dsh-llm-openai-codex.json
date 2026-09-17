@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "auggie246/dsh-llm-openai-codex",
+  "slug": "auggie246__dsh-llm-openai-codex",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-openai-codex",
+  "title": "dsh-llm-openai-codex",
+  "summary": "用 ChatGPT 订阅账号直接接入 DeepSeek Harness，免 API 密钥，OAuth 登录就能跑 Codex 模型。",
+  "tags": [
+    "dsh-plugin",
+    "模型适配",
+    "零配置",
+    "安全审计"
+  ],
+  "version": "0.5.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "auggie246",
+  "repo": "https://github.com/auggie246/dsh-llm-openai-codex",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T16:02:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-llm-openai-codex",
+    "commands": [
+      "dsh plugin --profile web add dsh-llm-openai-codex",
+      "dsh plugin --profile web add github:auggie246/dsh-llm-openai-codex"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

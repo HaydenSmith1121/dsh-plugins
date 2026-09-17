@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "jiesou/dsh-commandcode-go-provider",
+  "slug": "jiesou__dsh-commandcode-go-provider",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-commandcode-go-provider",
+  "title": "dsh-commandcode-go-provider",
+  "summary": "让 dsh 直接接入 Command Code Go 订阅，不用额外配置就能调用其 API 模型。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "工具集成",
+    "零配置",
+    "AI 助手"
+  ],
+  "version": "0.1.12",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jiesou",
+  "repo": "https://github.com/jiesou/dsh-commandcode-go-provider",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 17,
+  "forks": 1,
+  "pushedAt": "2026-09-16T11:23:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@jiesou/dsh-commandcode-go-provider",
+    "commands": [
+      "dsh plugin --profile web add @jiesou/dsh-commandcode-go-provider",
+      "dsh plugin --profile web add github:jiesou/dsh-commandcode-go-provider"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

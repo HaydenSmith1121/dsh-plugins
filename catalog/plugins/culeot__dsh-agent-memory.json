@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Culeot/dsh-agent-memory",
+  "slug": "culeot__dsh-agent-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-memory",
+  "title": "dsh-agent-memory",
+  "summary": "跨会话长期记忆插件，帮 DSH 记住事实、偏好和决策，让对话更连贯。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "memory",
+    "会话管理",
+    "偏好记录"
+  ],
+  "version": "0.8.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Culeot",
+  "repo": "https://github.com/Culeot/dsh-agent-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-17T05:24:27Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Culeot/dsh-agent-memory",
+    "commands": [
+      "npm install dsh-agent-memory",
+      "pnpm add dsh-agent-memory@file:/path/to/dsh-agent-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

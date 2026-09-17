@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "sd1g1/dsh-response-notification",
+  "slug": "sd1g1__dsh-response-notification",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-response-notification",
+  "title": "dsh-response-notification",
+  "summary": "当 DeepSeek Harness 在浏览器后台完成响应时，发送桌面通知提醒你，不错过任务结果。",
+  "tags": [
+    "dsh-plugin",
+    "消息通知",
+    "状态监控",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sd1g1",
+  "repo": "https://github.com/sd1g1/dsh-response-notification",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-27T00:25:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sd1g1/dsh-response-notification",
+    "commands": [
+      "dsh plugin --profile web add github:sd1g1/dsh-response-notification"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

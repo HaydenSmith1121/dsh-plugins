@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "nabin-qq273274877/dsh-model-balance",
+  "slug": "nabin-qq273274877__dsh-model-balance",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-balance",
+  "title": "dsh-model-balance",
+  "summary": "在 DeepSeek Harness 网页界面里直接查看多家供应商的真实账户余额，不用来回切换后台。",
+  "tags": [
+    "balance",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "多供应商",
+    "账户管理",
+    "可视化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "nabin-qq273274877",
+  "repo": "https://github.com/nabin-qq273274877/dsh-model-balance",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-09T08:10:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:nabin-qq273274877/dsh-model-balance",
+    "commands": [
+      "dsh plugin --profile web add github:nabin-qq273274877/dsh-model-balance"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "RuyiAI-Stack/dsh-osc",
+  "slug": "ruyiai-stack__dsh-osc",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-osc",
+  "title": "dsh-osc",
+  "summary": "为 DeepSeek Harness 打造的开源协作插件，方便团队共享和复用 AI 工作流。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "多Agent协作",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "RuyiAI-Stack",
+  "repo": "https://github.com/RuyiAI-Stack/dsh-osc",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T11:31:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:RuyiAI-Stack/dsh-osc",
+    "commands": [
+      "dsh plugin --profile web add github:RuyiAI-Stack/dsh-osc"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

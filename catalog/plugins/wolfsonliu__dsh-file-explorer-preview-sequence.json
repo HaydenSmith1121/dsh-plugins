@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "wolfsonliu/dsh-file-explorer-preview-sequence",
+  "slug": "wolfsonliu__dsh-file-explorer-preview-sequence",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-file-explorer-preview-sequence",
+  "title": "dsh-file-explorer-preview-sequence",
+  "summary": "在文件浏览器里直接预览基因序列文件，支持 FASTA、GenBank 等多种格式，无需下载即可查看。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wolfsonliu",
+  "repo": "https://github.com/wolfsonliu/dsh-file-explorer-preview-sequence",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T08:17:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wolfsonliu/dsh-file-explorer-preview-sequence",
+    "commands": [
+      "dsh plugin --profile web add github:wolfsonliu/dsh-file-explorer-preview-sequence",
+      "git clone https://github.com/wolfsonliu/dsh-file-explorer-preview-sequence",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

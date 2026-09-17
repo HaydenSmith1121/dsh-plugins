@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "qing3a/dsh-event-auditor",
+  "slug": "qing3a__dsh-event-auditor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-event-auditor",
+  "title": "dsh-event-auditor",
+  "summary": "为插件作者打造的事件流审计面板，直观展示事件类型、分布、计数和最近事件，帮你快速搞懂 DSH 内部动态。",
+  "tags": [
+    "dsh-plugin",
+    "事件审计",
+    "开发调试",
+    "插件管理",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "qing3a",
+  "repo": "https://github.com/qing3a/dsh-event-auditor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-14T05:43:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qing3a/dsh-event-auditor",
+    "commands": [
+      "dsh plugin --profile <profile> add @qing3a/dsh-event-auditor",
+      "git clone https://github.com/qing3a/dsh-event-auditor.git",
+      "dsh plugin --profile <profile> add link:$(pwd)/dsh-event-auditor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

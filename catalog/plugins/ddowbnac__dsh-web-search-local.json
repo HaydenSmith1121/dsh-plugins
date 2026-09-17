@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "ddowbnac/dsh-web-search-local",
+  "slug": "ddowbnac__dsh-web-search-local",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-search-local",
+  "title": "dsh-web-search-local",
+  "summary": "不用账号和 API Key 就能给 DeepSeek Harness 加上网页搜索，还能在本地文件里做全文检索。",
+  "tags": [
+    "bun",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "llm",
+    "typescript",
+    "websearch",
+    "零配置",
+    "工具集成",
+    "语义检索",
+    "AI 助手",
+    "文件管理"
+  ],
+  "version": "1.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.1.3",
+    "publishedAt": "2026-09-12T18:42:54Z",
+    "url": "https://github.com/ddowbnac/dsh-web-search-local/releases/tag/v1.1.3"
+  },
+  "author": "ddowbnac",
+  "repo": "https://github.com/ddowbnac/dsh-web-search-local",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T18:40:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@djdowbnac/dsh-web-search-local",
+    "commands": [
+      "dsh plugin --profile web add @djdowbnac/dsh-web-search-local",
+      "dsh plugin --profile web remove @djdowbnac/dsh-web-search-local"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

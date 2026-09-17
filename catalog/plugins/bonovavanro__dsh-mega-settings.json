@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "BonovaVanro/dsh-mega-settings",
+  "slug": "bonovavanro__dsh-mega-settings",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mega-settings",
+  "title": "dsh-mega-settings",
+  "summary": "把散落插件的设置入口统一收进一处，按你的习惯分组管理，告别到处翻设置。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "设置面板",
+    "插件管理",
+    "效率提升",
+    "工作区管理"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "BonovaVanro",
+  "repo": "https://github.com/BonovaVanro/dsh-mega-settings",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T04:55:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-mega-settings@0.1.5-rc.2-update.1",
+    "commands": [
+      "dsh plugin --profile web add dsh-mega-settings@0.1.5-rc.2-update.1",
+      "dsh plugin --profile web add github:BonovaVanro/dsh-mega-settings",
+      "dsh plugin --profile web add dsh-mega-settings-0.1.5-rc.2-update.1.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

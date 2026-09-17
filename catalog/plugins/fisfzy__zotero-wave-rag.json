@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Fisfzy/zotero-wave-rag",
+  "slug": "fisfzy__zotero-wave-rag",
+  "tier": "community",
+  "package": null,
+  "name": "zotero-wave-rag",
+  "title": "zotero-wave-rag",
+  "summary": "让 AI 直接检索你的 Zotero 论文库，用浪潮式语义动力学找到更精准的文献细节。",
+  "tags": [
+    "dsh-plugin",
+    "marisa-plugin",
+    "rag",
+    "typescript",
+    "zotero",
+    "语义检索",
+    "工具集成",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "0.7.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Fisfzy",
+  "repo": "https://github.com/Fisfzy/zotero-wave-rag",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-07T03:53:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Fisfzy/zotero-wave-rag",
+    "commands": [
+      "dsh plugin --profile web add github:Fisfzy/zotero-wave-rag"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

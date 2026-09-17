@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "sunyuhuirong/fsviewer",
+  "slug": "sunyuhuirong__fsviewer",
+  "tier": "community",
+  "package": null,
+  "name": "fsviewer",
+  "title": "fsviewer",
+  "summary": "在 DeepSeek 网页右侧直接浏览文件目录、预览 Markdown 和源码，还能内嵌浏览器和侧边聊天，方便边看代码边操作。",
+  "tags": [
+    "dsh-plugin",
+    "文件管理",
+    "预览",
+    "浏览器",
+    "聊天",
+    "效率提升"
+  ],
+  "version": "1.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.3.0",
+    "publishedAt": "2026-09-03T14:53:02Z",
+    "url": "https://github.com/sunyuhuirong/fsviewer/releases/tag/v1.3.0"
+  },
+  "author": "sunyuhuirong",
+  "repo": "https://github.com/sunyuhuirong/fsviewer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T16:06:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sunyuhuirong/fsviewer",
+    "commands": [
+      "git clone https://github.com/sunyuhuirong/fsviewer.git YOUR_PLUGIN_PATH"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

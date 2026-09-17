@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "LaoYueHanNi/dsh-token-usage",
+  "slug": "laoyuehanni__dsh-token-usage",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-token-usage",
+  "title": "dsh-token-usage",
+  "summary": "实时统计每次请求的 token 用量和费用，用图表看清趋势、模型定价和配额。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "数据分析",
+    "可视化",
+    "资源优化",
+    "模型适配"
+  ],
+  "version": "0.4.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "LaoYueHanNi",
+  "repo": "https://github.com/LaoYueHanNi/dsh-token-usage",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 12,
+  "forks": 1,
+  "pushedAt": "2026-09-16T14:08:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@laoyuehanni/dsh-token-usage",
+    "commands": [
+      "dsh plugin --profile web add @laoyuehanni/dsh-token-usage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

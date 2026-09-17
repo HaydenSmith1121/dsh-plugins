@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "CanglongCl/dsh-web-review",
+  "slug": "canglongcl__dsh-web-review",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-review",
+  "title": "dsh-web-review",
+  "summary": "在内置浏览器里像用设计工具一样选中网页元素、写修改意见并临时调样式，确认后让 Agent 按批注改源码。",
+  "tags": [
+    "ai-agents",
+    "dsh",
+    "dsh-plugin",
+    "human-in-the-loop",
+    "前端增强",
+    "可视化",
+    "工作流增强",
+    "AI 助手",
+    "主题"
+  ],
+  "version": "0.6.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "CanglongCl",
+  "repo": "https://github.com/CanglongCl/dsh-web-review",
+  "homepage": null,
+  "license": null,
+  "stars": 19,
+  "forks": 3,
+  "pushedAt": "2026-09-05T04:06:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@canglongcl/dsh-web-review",
+    "commands": [
+      "dsh plugin --profile web add @canglongcl/dsh-web-review"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

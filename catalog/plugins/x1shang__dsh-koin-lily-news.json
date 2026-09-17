@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "x1shang/dsh-koin-lily-news",
+  "slug": "x1shang__dsh-koin-lily-news",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-koin-lily-news",
+  "title": "dsh-koin-lily-news",
+  "summary": "输入番名，AI 帮你搜遍动画漫画同人，一键提炼头条资讯，还能在会话里直接调用。",
+  "tags": [
+    "animation",
+    "deepseek-harness",
+    "dsh-plugin",
+    "news",
+    "模型配置",
+    "工作流增强",
+    "娱乐互动",
+    "效率提升"
+  ],
+  "version": "3.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v3.0.0",
+    "publishedAt": "2026-08-26T09:38:53Z",
+    "url": "https://github.com/x1shang/dsh-koin-lily-news/releases/tag/v3.0.0"
+  },
+  "author": "x1shang",
+  "repo": "https://github.com/x1shang/dsh-koin-lily-news",
+  "homepage": null,
+  "license": "GPL-3.0",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-26T09:38:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-koin-lily-news",
+    "commands": [
+      "dsh plugin --profile web add github:<你的用户名>/dsh-koin-lily-news",
+      "dsh plugin --profile web add dsh-koin-lily-news"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

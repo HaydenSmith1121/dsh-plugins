@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "kingOfSoySauce/dsh-skin-market",
+  "slug": "kingofsoysauce__dsh-skin-market",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skin-market",
+  "title": "dsh-skin-market",
+  "summary": "在 DSH 设置页里直接逛皮肤市场，200+ 款社区皮肤一键装、换、停、更新和卸载。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin-market",
+    "skin-market",
+    "themes",
+    "界面美化",
+    "主题",
+    "插件管理",
+    "设置面板",
+    "集中仓库"
+  ],
+  "version": "0.1.54",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.54",
+    "publishedAt": "2026-09-15T06:29:11Z",
+    "url": "https://github.com/kingOfSoySauce/dsh-skin-market/releases/tag/v0.1.54"
+  },
+  "author": "kingOfSoySauce",
+  "repo": "https://github.com/kingOfSoySauce/dsh-skin-market",
+  "homepage": "https://kingofsoysauce.github.io/dsh-skin-market/",
+  "license": "MIT",
+  "stars": 145,
+  "forks": 14,
+  "pushedAt": "2026-09-16T03:56:42Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-skin-market@latest",
+    "commands": [
+      "dsh plugin --profile web add \"dsh-skin-market@latest\"",
+      "pnpm add \"github:owner/repo"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "tobysunsun/dsh-code-reading-coach",
+  "slug": "tobysunsun__dsh-code-reading-coach",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-code-reading-coach",
+  "title": "dsh-code-reading-coach",
+  "summary": "交互式引导你逐段研读论文配套开源代码，用五段研读法吃透实现细节，提升代码理解效率。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "tobysunsun",
+  "repo": "https://github.com/tobysunsun/dsh-code-reading-coach",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-08-24T07:31:21Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tobysunsun/dsh-code-reading-coach",
+    "commands": [
+      "dsh plugin --profile web add github:tobysunsun/dsh-code-reading-coach",
+      "dsh plugin --profile web remove dsh-code-reading-coach"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

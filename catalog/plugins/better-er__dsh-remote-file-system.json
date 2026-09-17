@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "better-er/dsh-remote-file-system",
+  "slug": "better-er__dsh-remote-file-system",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-remote-file-system",
+  "title": "dsh-remote-file-system",
+  "summary": "让模型直接通过 ssh 读写远程主机文件，不用再在 PowerShell 里套 bash 命令，省事又少出错。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "file-tools",
+    "filesystem",
+    "remote",
+    "ssh",
+    "文件管理",
+    "自动化",
+    "工具集成",
+    "命令行工具"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-13T18:48:28Z",
+    "url": "https://github.com/better-er/dsh-remote-file-system/releases/tag/v0.1.0"
+  },
+  "author": "better-er",
+  "repo": "https://github.com/better-er/dsh-remote-file-system",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-13T18:33:04Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:better-er/dsh-remote-file-system",
+    "commands": [
+      "dsh plugin --profile web add github:better-er/dsh-remote-file-system"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

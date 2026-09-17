@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Moeblack/deepseek-manners",
+  "slug": "moeblack__deepseek-manners",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-manners",
+  "title": "deepseek-manners",
+  "summary": "每次回复后自动替你说声谢谢，给鲸鱼娘道个谢，只对当轮生效。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "快捷操作",
+    "AI 助手",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Moeblack",
+  "repo": "https://github.com/Moeblack/deepseek-manners",
+  "homepage": null,
+  "license": null,
+  "stars": 14,
+  "forks": 0,
+  "pushedAt": "2026-08-13T13:48:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:moeblack/deepseek-manners",
+    "commands": [
+      "dsh plugin --profile web add -w link:/path/to/deepseek-manners",
+      "dsh plugin --profile web add github:moeblack/deepseek-manners"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

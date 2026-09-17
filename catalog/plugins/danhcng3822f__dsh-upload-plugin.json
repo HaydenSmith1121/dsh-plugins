@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "danhcng3822f/dsh-upload-plugin",
+  "slug": "danhcng3822f__dsh-upload-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-upload-plugin",
+  "title": "dsh-upload-plugin",
+  "summary": "给 DSH 聊天界面加上传照片和文件的功能，支持图片识别校验，各会话互不干扰。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "文件管理",
+    "前端增强",
+    "工具集成",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "danhcng3822f",
+  "repo": "https://github.com/danhcng3822f/dsh-upload-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T14:22:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:danhcng3822f/dsh-upload-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:danhcng3822f/dsh-upload-plugin",
+      "git clone https://github.com/danhcng3822f/dsh-upload-plugin.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

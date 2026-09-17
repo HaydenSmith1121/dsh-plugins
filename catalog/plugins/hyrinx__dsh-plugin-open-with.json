@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "hyrinx/dsh-plugin-open-with",
+  "slug": "hyrinx__dsh-plugin-open-with",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-open-with",
+  "title": "dsh-plugin-open-with",
+  "summary": "为 DeepSeek Harness 提供灵活的文件打开方式，让你快速选择应用或工具处理内容，提升操作效率。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "模型配置",
+    "零配置",
+    "插件管理"
+  ],
+  "version": "1.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hyrinx",
+  "repo": "https://github.com/hyrinx/dsh-plugin-open-with",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-09-06T08:27:52Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hyrinx/dsh-plugin-open-with",
+    "commands": [
+      "dsh --profile web plugin add dsh-plugin-open-with",
+      "git clone https://github.com/hyrinx/dsh-plugin-open-with.git",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

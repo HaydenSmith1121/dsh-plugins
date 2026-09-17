@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "jo32/dsh-strudel-studio",
+  "slug": "jo32__dsh-strudel-studio",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-strudel-studio",
+  "title": "dsh-strudel-studio",
+  "summary": "把 Strudel 音乐编程环境搬进 DeepDeck，可视化编排歌曲，还能用 AI 助手帮你安全地改曲谱。",
+  "tags": [
+    "ai-music",
+    "cordis-plugin",
+    "deepdeck",
+    "deepseek-harness",
+    "dsh-plugin",
+    "generative-music",
+    "music-sequencer",
+    "strudel",
+    "web-audio",
+    "工作流增强",
+    "AI 助手",
+    "可视化",
+    "工作区管理",
+    "生成式音乐"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-29T18:30:55Z",
+    "url": "https://github.com/jo32/dsh-strudel-studio/releases/tag/v0.2.0"
+  },
+  "author": "jo32",
+  "repo": "https://github.com/jo32/dsh-strudel-studio",
+  "homepage": "https://dshfind.com/plugins/jo32/dsh-strudel-studio",
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T07:24:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jo32/dsh-strudel-studio",
+    "commands": [
+      "git clone https://github.com/jo32/dsh-strudel-studio.git",
+      "dsh plugin --profile web add \"$PWD\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

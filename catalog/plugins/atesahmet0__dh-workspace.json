@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "atesahmet0/dh-workspace",
+  "slug": "atesahmet0__dh-workspace",
+  "tier": "community",
+  "package": null,
+  "name": "dh-workspace",
+  "title": "dh-workspace",
+  "summary": "为 DeepSeek Harness 提供多智能体协作编排，让规划、编码、研究等角色分工协作，高效完成复杂任务。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "多Agent协作",
+    "工作流增强",
+    "角色协作",
+    "自动化"
+  ],
+  "version": "0.1.9",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "atesahmet0",
+  "repo": "https://github.com/atesahmet0/dh-workspace",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-17T22:48:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:atesahmet0/dh-workspace",
+    "commands": [
+      "dsh plugin --profile <name> init",
+      "dsh plugin --profile <name> add @dh-multiagents/bundle"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

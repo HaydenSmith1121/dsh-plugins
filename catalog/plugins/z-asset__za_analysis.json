@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Z-Asset/ZA_analysis",
+  "slug": "z-asset__za_analysis",
+  "tier": "community",
+  "package": null,
+  "name": "ZA_analysis",
+  "title": "ZA_analysis",
+  "summary": "资产定价与机器学习研究的模型训练和估计工具，帮你跑完端到端分析流程。",
+  "tags": [
+    "asset-pricing",
+    "deepseek-harness",
+    "dsh-plugin",
+    "模型适配",
+    "自动化",
+    "工作流增强",
+    "报告生成"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Z-Asset",
+  "repo": "https://github.com/Z-Asset/ZA_analysis",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T02:26:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Z-Asset/ZA_analysis",
+    "commands": [
+      "dsh plugin --profile <你的profile> add zresearch-analysis",
+      "npm install zresearch-analysis"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "PerryLink/dsh-talk",
+  "slug": "perrylink__dsh-talk",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-talk",
+  "title": "dsh-talk",
+  "summary": "让 DeepSeek Harness 支持语音对话，按麦克风说话、听语音回复，还能随时打断重说。",
+  "tags": [
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "microphone",
+    "speech",
+    "speech-to-text",
+    "stt",
+    "text-to-speech",
+    "tts",
+    "voice",
+    "多模态",
+    "文字转语音",
+    "对话打断"
+  ],
+  "version": "0.3.10",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.10",
+    "publishedAt": "2026-09-12T02:33:46Z",
+    "url": "https://github.com/PerryLink/dsh-talk/releases/tag/v0.3.10"
+  },
+  "author": "PerryLink",
+  "repo": "https://github.com/PerryLink/dsh-talk",
+  "homepage": "https://www.npmjs.com/package/dsh-talk",
+  "license": "Apache-2.0",
+  "stars": 12,
+  "forks": 2,
+  "pushedAt": "2026-09-16T02:26:54Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:PerryLink/dsh-talk",
+    "commands": [
+      "dsh plugin --profile web add github:PerryLink/dsh-talk"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

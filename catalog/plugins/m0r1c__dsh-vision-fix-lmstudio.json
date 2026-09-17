@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "M0R1C/dsh-vision-fix-lmstudio",
+  "slug": "m0r1c__dsh-vision-fix-lmstudio",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-vision-fix-lmstudio",
+  "title": "dsh-vision-fix-lmstudio",
+  "summary": "修复 LM Studio 本地视觉模型报错，让图片能正常发给模型识别。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "模型配置",
+    "视觉理解",
+    "图片问答",
+    "模型适配"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-12T12:39:22Z",
+    "url": "https://github.com/M0R1C/dsh-vision-fix-lmstudio/releases/tag/v0.1.0"
+  },
+  "author": "M0R1C",
+  "repo": "https://github.com/M0R1C/dsh-vision-fix-lmstudio",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T12:39:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MORIC/dsh-vision-fix-lmstudio",
+    "commands": [
+      "dsh plugin --profile web add github:MORIC/dsh-vision-fix-lmstudio",
+      "git clone https://github.com/MORIC/dsh-vision-fix-lmstudio.git",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Niobium-41-nb/dsh-tool-luogu",
+  "slug": "niobium-41-nb__dsh-tool-luogu",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tool-luogu",
+  "title": "dsh-tool-luogu",
+  "summary": "让 AI 助手直接刷洛谷：搜题看题、随机跳题、提交代码、查提交记录，还能离线缓存题目。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "工具集成",
+    "AI 助手",
+    "自动化",
+    "效率提升",
+    "命令行工具"
+  ],
+  "version": "0.1.2-alpha.6",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Niobium-41-nb",
+  "repo": "https://github.com/Niobium-41-nb/dsh-tool-luogu",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T11:23:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Niobium-41-nb/dsh-tool-luogu",
+    "commands": [
+      "dsh plugin --profile web add github:Niobium-41-nb/dsh-tool-luogu"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

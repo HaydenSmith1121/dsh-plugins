@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "skymecode/dsh-deep-diving",
+  "slug": "skymecode__dsh-deep-diving",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-deep-diving",
+  "title": "dsh-deep-diving",
+  "summary": "给 DeepSeek Harness 网页版的「Deep diving…」状态栏加一只会动的蓝鲸女仆，思考、运行时都有动画陪伴。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "娱乐互动",
+    "桌宠",
+    "状态监控"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-12T19:58:08Z",
+    "url": "https://github.com/skymecode/dsh-deep-diving/releases/tag/v0.2.1"
+  },
+  "author": "skymecode",
+  "repo": "https://github.com/skymecode/dsh-deep-diving",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-12T19:57:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:skymecode/dsh-deep-diving",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/skymecode/dsh-deep-diving/releases/download/v0.2.1/dsh-deep-dive-skins-0.2.1.tgz",
+      "git clone https://github.com/skymecode/dsh-deep-diving.git",
+      "dsh plugin --profile web add link:$(pwd)"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

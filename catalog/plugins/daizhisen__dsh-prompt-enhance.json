@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "DAIZHISEN/dsh-prompt-enhance",
+  "slug": "daizhisen__dsh-prompt-enhance",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-enhance",
+  "title": "dsh-prompt-enhance",
+  "summary": "在输入框旁加一颗星标按钮，一键把草稿改写成结构清晰的高质量提示词，支持中英双语。",
+  "tags": [
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "prompt-engineering",
+    "prompt-forge",
+    "效率提升",
+    "会话管理",
+    "模型配置",
+    "AI 助手"
+  ],
+  "version": "1.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.3.0",
+    "publishedAt": "2026-09-04T06:00:36Z",
+    "url": "https://github.com/DAIZHISEN/dsh-prompt-enhance/releases/tag/v1.3.0"
+  },
+  "author": "DAIZHISEN",
+  "repo": "https://github.com/DAIZHISEN/dsh-prompt-enhance",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T05:59:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:DAIZHISEN/dsh-prompt-enhance",
+    "commands": [
+      "dsh plugin --profile web add github:DAIZHISEN/dsh-prompt-enhance"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

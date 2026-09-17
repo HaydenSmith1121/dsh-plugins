@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "yhlooo/dsh-bridges",
+  "slug": "yhlooo__dsh-bridges",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-bridges",
+  "title": "dsh-bridges",
+  "summary": "把 DeepSeek Harness 无缝接入 CodeBuddy、Codex 等主流 Harness Agent 项目，实现多工具统一协作。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "多Agent协作",
+    "零配置",
+    "工作流增强"
+  ],
+  "version": "0.3.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yhlooo",
+  "repo": "https://github.com/yhlooo/dsh-bridges",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-09-14T15:35:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-bridges",
+    "commands": [
+      "dsh plugin --profile <profile-name> add dsh-bridges",
+      "dsh plugin --profile web add dsh-bridges",
+      "dsh plugin --profile headless add dsh-bridges"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

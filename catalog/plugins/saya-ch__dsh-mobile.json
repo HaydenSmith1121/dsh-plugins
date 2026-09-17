@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "saya-ch/dsh-mobile",
+  "slug": "saya-ch__dsh-mobile",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mobile",
+  "title": "dsh-mobile",
+  "summary": "让手机轻松连上 DeepSeek Harness，出门在外也能安全访问本地 AI 服务，支持安卓 App 和浏览器。",
+  "tags": [
+    "android",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mobile",
+    "remote-access",
+    "webview",
+    "移动端",
+    "远程控制",
+    "安卓支持",
+    "安全审查"
+  ],
+  "version": "0.4.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.2",
+    "publishedAt": "2026-09-16T14:21:56Z",
+    "url": "https://github.com/saya-ch/dsh-mobile/releases/tag/v0.4.2"
+  },
+  "author": "saya-ch",
+  "repo": "https://github.com/saya-ch/dsh-mobile",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 270,
+  "forks": 19,
+  "pushedAt": "2026-09-16T14:27:55Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:saya-ch/dsh-mobile",
+    "commands": [
+      "dsh plugin --profile web add github:saya-ch/dsh-mobile"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

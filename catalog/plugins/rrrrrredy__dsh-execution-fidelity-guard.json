@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "rrrrrredy/dsh-execution-fidelity-guard",
+  "slug": "rrrrrredy__dsh-execution-fidelity-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-execution-fidelity-guard",
+  "title": "dsh-execution-fidelity-guard",
+  "summary": "在执行工具调用前核对任务契约，执行后验证结果真实性，防止智能体谎报完成情况。",
+  "tags": [
+    "agent-safety",
+    "deepseek-harness",
+    "dsh-plugin",
+    "execution-fidelity",
+    "状态监控",
+    "安全审计",
+    "插件管理",
+    "AI 助手"
+  ],
+  "version": "0.1.0-alpha.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "rrrrrredy",
+  "repo": "https://github.com/rrrrrredy/dsh-execution-fidelity-guard",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T10:45:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:rrrrrredy/dsh-execution-fidelity-guard",
+    "commands": [
+      "dsh plugin --profile <profile> add github:rrrrrredy/dsh-execution-fidelity-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

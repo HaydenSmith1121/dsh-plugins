@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "Wonjader/dsh-permission-workspace-write-plus",
+  "slug": "wonjader__dsh-permission-workspace-write-plus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-permission-workspace-write-plus",
+  "title": "dsh-permission-workspace-write-plus",
+  "summary": "给 DSH 工作区写入权限加码，能写工作区外的配置文件和插件、技能目录，还带跨平台睡眠守护。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-permission",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "sleep-guard",
+    "工作区管理",
+    "文件管理",
+    "插件管理",
+    "状态持久化",
+    "自动化"
+  ],
+  "version": "1.2.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "1.2.2",
+    "publishedAt": "2026-09-14T16:03:34Z",
+    "url": "https://github.com/Wonjader/dsh-permission-workspace-write-plus/releases/tag/1.2.2"
+  },
+  "author": "Wonjader",
+  "repo": "https://github.com/Wonjader/dsh-permission-workspace-write-plus",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T16:03:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Wonjader/dsh-permission-workspace-write-plus",
+    "commands": [
+      "dsh plugin --profile web add github:Wonjader/dsh-permission-workspace-write-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

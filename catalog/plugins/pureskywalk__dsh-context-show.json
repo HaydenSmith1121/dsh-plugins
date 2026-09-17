@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "pureskywalk/dsh-context-show",
+  "slug": "pureskywalk__dsh-context-show",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-context-show",
+  "title": "dsh-context-show",
+  "summary": "在 DSH Web 里实时查看上下文占用，可拖动面板，按工具和供应商统计 token 用量与花费，支持峰谷计价。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "资源优化",
+    "效率提升"
+  ],
+  "version": "0.9.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "pureskywalk",
+  "repo": "https://github.com/pureskywalk/dsh-context-show",
+  "homepage": "https://github.com/deepseek-ai/deepseek-harness",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T09:29:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-context-show",
+    "commands": [
+      "dsh plugin --profile web add \"C:\\path\\to\\dsh-context-show\"",
+      "dsh plugin --profile web add dsh-context-show",
+      "dsh plugin --profile web add github:<owner>/<repo>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

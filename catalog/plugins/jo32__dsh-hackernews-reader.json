@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "jo32/dsh-hackernews-reader",
+  "slug": "jo32__dsh-hackernews-reader",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hackernews-reader",
+  "title": "dsh-hackernews-reader",
+  "summary": "在 DeepDeck 里直接刷 Hacker News，还能针对每条新闻进行 AI 对话讨论，边看边聊。",
+  "tags": [
+    "cordis-plugin",
+    "deepdeck",
+    "deepseek-harness",
+    "dsh-plugin",
+    "hacker-news",
+    "可视化",
+    "多Agent协作",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-24T05:07:06Z",
+    "url": "https://github.com/jo32/dsh-hackernews-reader/releases/tag/v0.1.1"
+  },
+  "author": "jo32",
+  "repo": "https://github.com/jo32/dsh-hackernews-reader",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T05:07:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jo32/dsh-hackernews-reader",
+    "commands": [
+      "git clone https://github.com/jo32/dsh-hackernews-reader.git",
+      "dsh plugin --profile web add \"$PWD\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

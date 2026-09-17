@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "minhdevtry/dsh-markdown-ide",
+  "slug": "minhdevtry__dsh-markdown-ide",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-markdown-ide",
+  "title": "dsh-markdown-ide",
+  "summary": "在 DSH 里用 Notion 式所见即所得体验写 Markdown，还能三栏 VS Code 工作区加 AI 提效。",
+  "tags": [
+    "dsh-plugin",
+    "markdown-editor",
+    "notion",
+    "vscode",
+    "内容创作",
+    "工作区管理",
+    "可视化",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "minhdevtry",
+  "repo": "https://github.com/minhdevtry/dsh-markdown-ide",
+  "homepage": null,
+  "license": null,
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-15T09:40:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:minhdevtry/dsh-markdown-ide",
+    "commands": [
+      "dsh plugin --profile web add github:minhdevtry/dsh-markdown-ide"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

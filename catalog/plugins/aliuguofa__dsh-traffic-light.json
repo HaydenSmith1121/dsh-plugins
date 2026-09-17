@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "aliuguofa/dsh-traffic-light",
+  "slug": "aliuguofa__dsh-traffic-light",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-traffic-light",
+  "title": "dsh-traffic-light",
+  "summary": "在聊天输入框旁显示红黄绿信号灯，实时反映会话状态，点击即可查看详情，让对话状态一目了然。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "会话管理",
+    "可视化",
+    "零配置"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "0.0.1",
+    "publishedAt": "2026-08-24T08:05:08Z",
+    "url": "https://github.com/aliuguofa/dsh-traffic-light/releases/tag/0.0.1"
+  },
+  "author": "aliuguofa",
+  "repo": "https://github.com/aliuguofa/dsh-traffic-light",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T08:05:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aliuguofa/dsh-traffic-light",
+    "commands": [
+      "dsh plugin --profile desktop add ./traffic-light",
+      "dsh plugin --profile desktop add D:/workbuddy/dsh/traffic-light"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

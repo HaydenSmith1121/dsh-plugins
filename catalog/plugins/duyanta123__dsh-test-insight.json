@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "duyanta123/dsh-test-insight",
+  "slug": "duyanta123__dsh-test-insight",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-test-insight",
+  "title": "dsh-test-insight",
+  "summary": "帮你分析测试结果、定位失败原因，让 AI 代理写代码时测试跑得更明白。",
+  "tags": [
+    "ai-agent",
+    "dsh",
+    "dsh-plugin",
+    "testing",
+    "自动化",
+    "AI 助手",
+    "状态监控",
+    "工具集成"
+  ],
+  "version": "1.0.0-rc.2",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "duyanta123",
+  "repo": "https://github.com/duyanta123/dsh-test-insight",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T05:25:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:duyanta123/dsh-test-insight",
+    "commands": [
+      "dsh plugin --profile web add \"github:duyanta123/dsh-test-insight",
+      "npm install dsh-test-insight"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

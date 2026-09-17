@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "xia-sc/dsh-update-notifier",
+  "slug": "xia-sc__dsh-update-notifier",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-update-notifier",
+  "title": "dsh-update-notifier",
+  "summary": "自动检测 DSH 官方新版本，支持定时轮询与手动检查，有更新第一时间提醒你。",
+  "tags": [
+    "dsh-plugin",
+    "消息通知",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "0.4.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.1",
+    "publishedAt": "2026-09-14T02:16:23Z",
+    "url": "https://github.com/xia-sc/dsh-update-notifier/releases/tag/v0.4.1"
+  },
+  "author": "xia-sc",
+  "repo": "https://github.com/xia-sc/dsh-update-notifier",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T06:59:57Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xia-sc/dsh-update-notifier",
+    "commands": [
+      "dsh plugin --profile web add github:xia-sc/dsh-update-notifier"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

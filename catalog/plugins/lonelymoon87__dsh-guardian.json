@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "lonelymoon87/dsh-guardian",
+  "slug": "lonelymoon87__dsh-guardian",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-guardian",
+  "title": "dsh-guardian",
+  "summary": "为 DeepSeek Harness 提供运行时工具策略管控，拦截危险命令并自动脱敏敏感输出，保障 AI 操作安全。",
+  "tags": [
+    "ai-security",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "secret-redaction",
+    "安全审计",
+    "插件管理",
+    "状态监控"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-08-21T08:44:37Z",
+    "url": "https://github.com/lonelymoon87/dsh-guardian/releases/tag/v0.1.3"
+  },
+  "author": "lonelymoon87",
+  "repo": "https://github.com/lonelymoon87/dsh-guardian",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-21T08:44:37Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lonelymoon87/dsh-guardian",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/lonelymoon87/dsh-guardian/releases/download/v0.1.3/dsh-guardian-0.1.3.tgz",
+      "dsh plugin --profile web add github:lonelymoon87/dsh-guardian",
+      "dsh plugin --profile web remove dsh-guardian"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

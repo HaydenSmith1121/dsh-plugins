@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "polohot/dsh-adrian-agents-group-work",
+  "slug": "polohot__dsh-adrian-agents-group-work",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-adrian-agents-group-work",
+  "title": "dsh-adrian-agents-group-work",
+  "summary": "把一个会话变成多人房间，让主智能体和多个成员智能体互相发消息、共享任务清单，协作干活。",
+  "tags": [
+    "agent-teams",
+    "ai-agents",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "group-work",
+    "multi-agent",
+    "orchestration",
+    "subagents",
+    "多Agent协作",
+    "会话管理",
+    "工作流增强",
+    "AI 助手"
+  ],
+  "version": "0.1.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.4",
+    "publishedAt": "2026-09-10T16:03:46Z",
+    "url": "https://github.com/polohot/dsh-adrian-agents-group-work/releases/tag/v0.1.4"
+  },
+  "author": "polohot",
+  "repo": "https://github.com/polohot/dsh-adrian-agents-group-work",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T16:03:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:polohot/dsh-adrian-agents-group-work",
+    "commands": [
+      "dsh plugin --profile <profile> add github:<owner>/dsh-adrian-agents-group-work"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

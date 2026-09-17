@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "tnnevol/fn-os-apps",
+  "slug": "tnnevol__fn-os-apps",
+  "tier": "community",
+  "package": null,
+  "name": "fn-os-apps",
+  "title": "fn-os-apps",
+  "summary": "把阅读、小雅、Bitwarden、MySQL 等第三方应用打包上架飞牛 fnOS 应用商店的合集仓库。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "fnos",
+    "fnos-app",
+    "集中仓库",
+    "工具集成",
+    "插件管理",
+    "文件管理"
+  ],
+  "version": "5.4.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v5.4.1",
+    "publishedAt": "2026-09-17T04:47:01Z",
+    "url": "https://github.com/tnnevol/fn-os-apps/releases/tag/v5.4.1"
+  },
+  "author": "tnnevol",
+  "repo": "https://github.com/tnnevol/fn-os-apps",
+  "homepage": "https://fnapps-doc.tnnevol.cn/",
+  "license": "AGPL-3.0",
+  "stars": 38,
+  "forks": 1,
+  "pushedAt": "2026-09-16T10:47:53Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tnnevol/fn-os-apps",
+    "commands": [
+      "dsh plugin --profile web add github:tnnevol/fn-os-apps"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

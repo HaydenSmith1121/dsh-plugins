@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "zoahdev/dsh-zh",
+  "slug": "zoahdev__dsh-zh",
+  "tier": "community",
+  "package": null,
+  "name": "zoahdev/dsh-zh",
+  "title": "zoahdev/dsh-zh",
+  "summary": "让 DeepSeek Harness 用简体中文思考和回复，但代码、命令、报错和标识符保持原样，适合中文用户日常使用。",
+  "tags": [
+    "chinese",
+    "deepseek-harness",
+    "dsh-plugin",
+    "i18n",
+    "system-prompt",
+    "中文支持",
+    "提示词优化",
+    "国际化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zoahdev",
+  "repo": "https://github.com/zoahdev/dsh-zh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-17T08:59:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-zh",
+    "commands": [
+      "dsh plugin --profile web add dsh-zh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

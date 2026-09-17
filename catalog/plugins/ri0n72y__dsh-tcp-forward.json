@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "Ri0n72Y/dsh-tcp-forward",
+  "slug": "ri0n72y__dsh-tcp-forward",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tcp-forward",
+  "title": "dsh-tcp-forward",
+  "summary": "把 DSH 的 Web 服务通过 TCP 转发暴露到局域网，并自动加入可信地址，方便局域网内其他设备访问。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "零配置",
+    "网络转发"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Ri0n72Y",
+  "repo": "https://github.com/Ri0n72Y/dsh-tcp-forward",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T03:46:29Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Ri0n72Y/dsh-tcp-forward",
+    "commands": [
+      "dsh plugin --profile web add github:Ri0n72Y/dsh-tcp-forward"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

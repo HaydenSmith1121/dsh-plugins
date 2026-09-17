@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "bottledkzk/dsh-search-router",
+  "slug": "bottledkzk__dsh-search-router",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-search-router",
+  "title": "dsh-search-router",
+  "summary": "把多个搜索后端打包成一个搜索接口，支持随时切换、查看状态，后端挂了自动换到官方搜索，省心又稳定。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "web-search",
+    "模型配置",
+    "状态监控",
+    "工具集成",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "bottledkzk",
+  "repo": "https://github.com/bottledkzk/dsh-search-router",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-05T09:52:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bottledkzk/dsh-search-router",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-search-router"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

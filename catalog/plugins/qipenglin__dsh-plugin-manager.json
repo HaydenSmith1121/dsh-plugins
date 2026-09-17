@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "qipenglin/dsh-plugin-manager",
+  "slug": "qipenglin__dsh-plugin-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-manager",
+  "title": "dsh-plugin-manager",
+  "summary": "在设置里直接管理当前 Profile 的插件，支持安装、单包更新和卸载，省心又方便。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "插件管理",
+    "设置面板",
+    "零配置"
+  ],
+  "version": "0.3.7",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "qipenglin",
+  "repo": "https://github.com/qipenglin/dsh-plugin-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-29T13:39:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qipenglin/dsh-plugin-manager",
+    "commands": [
+      "dsh plugin --profile web add github:qipenglin/dsh-plugin-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

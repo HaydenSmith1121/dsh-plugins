@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Iliyasfiel/dsh-rescue",
+  "slug": "iliyasfiel__dsh-rescue",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-rescue",
+  "title": "dsh-rescue",
+  "summary": "DSH 升级后插件冲突导致界面无法启动时，临时进入救援模式，帮你恢复系统正常运行。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "命令行工具",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Iliyasfiel",
+  "repo": "https://github.com/Iliyasfiel/dsh-rescue",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T17:31:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-rescue",
+    "commands": [
+      "npm install -g dsh-rescue",
+      "dsh plugin --profile web add dsh-rescue"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

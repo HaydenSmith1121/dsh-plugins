@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "zhuifengqug/dsh-quick-restart",
+  "slug": "zhuifengqug__dsh-quick-restart",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-quick-restart",
+  "title": "dsh-quick-restart",
+  "summary": "在侧边栏加个一键重启按钮，点一下就能快速重载 DeepSeek Harness 服务，不用手动敲命令了。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "restart",
+    "效率提升",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhuifengqug",
+  "repo": "https://github.com/zhuifengqug/dsh-quick-restart",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-23T11:07:26Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhuifengqug/dsh-quick-restart",
+    "commands": [
+      "dsh plugin --profile web add D:/dsh/dsh-quick-restart",
+      "dsh plugin --profile web add github:zhuifengqug/dsh-quick-restart"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

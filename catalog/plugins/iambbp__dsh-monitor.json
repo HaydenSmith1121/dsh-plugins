@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "iambbp/dsh-monitor",
+  "slug": "iambbp__dsh-monitor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-monitor",
+  "title": "dsh-monitor",
+  "summary": "实时监控 DSH 会话的 token 消耗和费用，按官方峰谷定价计算，在页面右上角显示悬浮窗。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugins",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "资源优化",
+    "界面美化"
+  ],
+  "version": "1.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "iambbp",
+  "repo": "https://github.com/iambbp/dsh-monitor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-23T11:29:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:iambbp/dsh-monitor",
+    "commands": [
+      "dsh plugin --profile web add github:iambbp/dsh-monitor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

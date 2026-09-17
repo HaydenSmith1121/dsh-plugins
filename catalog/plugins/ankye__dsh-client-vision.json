@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "ankye/dsh-client-vision",
+  "slug": "ankye__dsh-client-vision",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-client-vision",
+  "title": "dsh-client-vision",
+  "summary": "让 DeepSeek Harness 智能体拥有视觉能力，通过截图或外部图片识别来理解屏幕内容。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "可视化",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "0.1.2-alpha.5",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ankye",
+  "repo": "https://github.com/ankye/dsh-client-vision",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T11:27:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ankye/dsh-client-vision",
+    "commands": [
+      "dsh plugin --profile web add \\",
+      "dsh plugin --profile web add file:/path/to/deepseek-ai-dsh-tool-vision-0.1.0-rc.7.tgz \\",
+      "dsh plugin --profile web add @deepseek-ai/dsh-tool-vision @deepseek-ai/dsh-client-ui-vision"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

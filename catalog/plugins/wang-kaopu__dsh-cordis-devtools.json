@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "wang-kaopu/dsh-cordis-devtools",
+  "slug": "wang-kaopu__dsh-cordis-devtools",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cordis-devtools",
+  "title": "dsh-cordis-devtools",
+  "summary": "让编码智能体实时查看 Cordis 运行时状态，调试和验证 DSH 插件更轻松。",
+  "tags": [
+    "agentic",
+    "deepseek-harness",
+    "devtools",
+    "devtools-extension",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "状态监控",
+    "工作流增强",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.8.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.0",
+    "publishedAt": "2026-08-26T08:40:41Z",
+    "url": "https://github.com/wang-kaopu/dsh-cordis-devtools/releases/tag/v0.8.0"
+  },
+  "author": "wang-kaopu",
+  "repo": "https://github.com/wang-kaopu/dsh-cordis-devtools",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-29T04:05:20Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wang-kaopu/dsh-cordis-devtools",
+    "commands": [
+      "dsh plugin --profile web add github:wang-kaopu/dsh-cordis-devtools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

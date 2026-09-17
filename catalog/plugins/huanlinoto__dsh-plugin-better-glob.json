@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "HuanLinOTO/dsh-plugin-better-glob",
+  "slug": "huanlinoto__dsh-plugin-better-glob",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-better-glob",
+  "title": "dsh-plugin-better-glob",
+  "summary": "按智能体分别替换内置 glob，自动跳过 node_modules 等无底洞目录，传白名单才能搜进去，提升搜索效率。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "AI 助手",
+    "工作区管理",
+    "设置面板"
+  ],
+  "version": "0.1.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "HuanLinOTO",
+  "repo": "https://github.com/HuanLinOTO/dsh-plugin-better-glob",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T11:49:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:HuanLinOTO/dsh-plugin-better-glob",
+    "commands": [
+      "dsh plugin --profile web add \"link:D:/Projects/deepseek-harness/dsh-plugin-better-glob\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

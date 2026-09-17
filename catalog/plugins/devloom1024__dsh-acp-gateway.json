@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "devloom1024/dsh-acp-gateway",
+  "slug": "devloom1024__dsh-acp-gateway",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-acp-gateway",
+  "title": "dsh-acp-gateway",
+  "summary": "让任何支持 ACP 的客户端（如 Zed、VS Code）直接接入 DeepSeek Harness 智能体，一条命令即可运行，还支持离线使用。",
+  "tags": [
+    "acp",
+    "agent",
+    "agent-client-protocol",
+    "ai-agents",
+    "cli",
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "stdio",
+    "ACP协议",
+    "DeepSeek集成",
+    "命令行工具",
+    "离线可用"
+  ],
+  "version": "3.12.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v3.12.0",
+    "publishedAt": "2026-09-04T07:07:47Z",
+    "url": "https://github.com/devloom1024/dsh-acp-gateway/releases/tag/v3.12.0"
+  },
+  "author": "devloom1024",
+  "repo": "https://github.com/devloom1024/dsh-acp-gateway",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T07:07:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:devloom1024/dsh-acp-gateway",
+    "commands": [
+      "dsh plugin --profile web add github:devloom1024/dsh-acp-gateway"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

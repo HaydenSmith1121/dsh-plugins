@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "Socialist-Sister/dsh-survival-mode",
+  "slug": "socialist-sister__dsh-survival-mode",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-survival",
+  "title": "dsh-survival",
+  "summary": "把 Minecraft 生存规则搬进编码工作，血量饥饿昼夜怪物硬结算，死亡真实发生，还带浏览器状态栏。",
+  "tags": [
+    "agent-preset",
+    "deepseek-harness",
+    "dsh-plugin",
+    "minecraft",
+    "状态监控",
+    "状态持久化",
+    "工作流增强",
+    "AI 助手",
+    "界面美化"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-08-22T05:31:47Z",
+    "url": "https://github.com/Socialist-Sister/dsh-survival-mode/releases/tag/v0.2.1"
+  },
+  "author": "Socialist-Sister",
+  "repo": "https://github.com/Socialist-Sister/dsh-survival-mode",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-22T05:31:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Socialist-Sister/dsh-survival-mode",
+    "commands": [
+      "dsh plugin --profile web add github:Socialist-Sister/dsh-survival-mode"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

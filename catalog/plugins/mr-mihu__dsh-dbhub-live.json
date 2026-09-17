@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "mr-mihu/dsh-dbhub-live",
+  "slug": "mr-mihu__dsh-dbhub-live",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-dbhub-live",
+  "title": "dsh-dbhub-live",
+  "summary": "让 DSH 直接连数据库干活，支持多数据源常驻连接、按工作区管理工具，还能临时动态建连，没装 dbhub 会自动装好并更新。",
+  "tags": [
+    "database",
+    "dbhub",
+    "dsh-plugin",
+    "文件管理",
+    "插件管理",
+    "零配置",
+    "状态监控"
+  ],
+  "version": "4.0.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "mr-mihu",
+  "repo": "https://github.com/mr-mihu/dsh-dbhub-live",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T10:12:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-dbhub-live",
+    "commands": [
+      "dsh plugin --profile web add dsh-dbhub-live",
+      "dsh plugin --profile web update dsh-dbhub-live@4.0.0"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

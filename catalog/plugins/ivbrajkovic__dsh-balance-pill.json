@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ivbrajkovic/dsh-balance-pill",
+  "slug": "ivbrajkovic__dsh-balance-pill",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-balance-pill",
+  "title": "dsh-balance-pill",
+  "summary": "在会话顶部常驻显示 DeepSeek 余额，一眼看到还剩多少钱，轻量无干扰。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "状态监控",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ivbrajkovic",
+  "repo": "https://github.com/ivbrajkovic/dsh-balance-pill",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T19:56:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ivbrajkovic/dsh-balance-pill",
+    "commands": [
+      "dsh plugin --profile web add github:ivbrajkovic/dsh-balance-pill",
+      "dsh plugin --profile web add link:$(pwd)"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

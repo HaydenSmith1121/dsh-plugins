@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "7dgroup-ai/dsh-7d-tray-win",
+  "slug": "7dgroup-ai__dsh-7d-tray-win",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-7d-tray-win",
+  "title": "dsh-7d-tray-win",
+  "summary": "Windows 专属托盘插件，运行 dsh 时显示鲸鱼图标，停止后自动消失；双击桌面快捷方式即可无窗口启动服务并打开浏览器。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "效率提升",
+    "状态监控",
+    "零配置",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "7dgroup-ai",
+  "repo": "https://github.com/7dgroup-ai/dsh-7d-tray-win",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-08-21T13:49:03Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:7dgroup-ai/dsh-7d-tray-win",
+    "commands": [
+      "dsh plugin --profile web add github:7dgroup-ai/dsh-7d-tray-win"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

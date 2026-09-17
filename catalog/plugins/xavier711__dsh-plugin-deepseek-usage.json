@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "xavier711/dsh-plugin-deepseek-usage",
+  "slug": "xavier711__dsh-plugin-deepseek-usage",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-deepseek-usage",
+  "title": "dsh-plugin-deepseek-usage",
+  "summary": "在 DeepSeek Harness 网页界面左侧栏底部添加「用量」面板，方便随时查看 API 使用情况。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "资源优化",
+    "前端增强",
+    "零配置"
+  ],
+  "version": "0.4.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.3",
+    "publishedAt": "2026-09-10T11:53:19Z",
+    "url": "https://github.com/xavier711/dsh-plugin-deepseek-usage/releases/tag/v0.4.3"
+  },
+  "author": "xavier711",
+  "repo": "https://github.com/xavier711/dsh-plugin-deepseek-usage",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T11:53:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@xavier711/dsh-deepseek-usage",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/xavier711/dsh-deepseek-usage.git",
+      "git clone https://github.com/xavier711/dsh-deepseek-usage.git",
+      "dsh plugin --profile web add @xavier711/dsh-deepseek-usage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

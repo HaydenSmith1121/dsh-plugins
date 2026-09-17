@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "ArcaneOrion/dsh-model-selector-search",
+  "slug": "arcaneorion__dsh-model-selector-search",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-selector-search",
+  "title": "dsh-model-selector-search",
+  "summary": "为DSH会话模型选择器增加搜索和推理强度调节面板，替换原生组件，提升模型切换效率。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ArcaneOrion",
+  "repo": "https://github.com/ArcaneOrion/dsh-model-selector-search",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T13:16:46Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ArcaneOrion/dsh-model-selector-search",
+    "commands": [
+      "dsh plugin --profile web add github:ArcaneOrion/dsh-model-selector-search"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "CroissanTTs/dsh-voice-mini",
+  "slug": "croissantts__dsh-voice-mini",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-voice-mini",
+  "title": "dsh-voice-mini",
+  "summary": "让 DSH 助手用语音播报结果、决策点和提醒，还能按会话换音色、加提示音。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "AI 助手",
+    "状态监控",
+    "视觉理解",
+    "快捷操作",
+    "主题"
+  ],
+  "version": "0.3.6",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "CroissanTTs",
+  "repo": "https://github.com/CroissanTTs/dsh-voice-mini",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T09:16:53Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CroissanTTs/dsh-voice-mini",
+    "commands": [
+      "dsh plugin --profile web add github:CroissanTTs/dsh-voice-mini"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

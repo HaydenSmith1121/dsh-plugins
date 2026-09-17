@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "orangeshinee/dsh-mem0",
+  "slug": "orangeshinee__dsh-mem0",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mem0",
+  "title": "dsh-mem0",
+  "summary": "让 DeepSeek Harness 直接读写自托管的 mem0 记忆服务，实现长期记忆的存取与检索。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "语义检索",
+    "AI 助手",
+    "安全审计"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-30T03:30:09Z",
+    "url": "https://github.com/orangeshinee/dsh-mem0/releases/tag/v0.1.1"
+  },
+  "author": "orangeshinee",
+  "repo": "https://github.com/orangeshinee/dsh-mem0",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 2,
+  "pushedAt": "2026-08-30T03:29:48Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:orangeshinee/dsh-mem0",
+    "commands": [
+      "dsh plugin --profile web add github:orangeshinee/dsh-mem0",
+      "dsh plugin --profile web add dsh-mem0",
+      "dsh plugin --profile web add link:$(pwd)"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "gwj001/arch-lens",
+  "slug": "gwj001__arch-lens",
+  "tier": "community",
+  "package": null,
+  "name": "arch-lens",
+  "title": "arch-lens",
+  "summary": "把代码仓库变成可学习的对象，用AI画图和讲解帮你直观理解架构，边看边学。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "可视化",
+    "AI 助手",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-07T09:52:19Z",
+    "url": "https://github.com/gwj001/arch-lens/releases/tag/v0.1.0"
+  },
+  "author": "gwj001",
+  "repo": "https://github.com/gwj001/arch-lens",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-07T10:11:41Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:gwj001/arch-lens",
+    "commands": [
+      "dsh plugin --profile web add github:gwj001/arch-lens"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

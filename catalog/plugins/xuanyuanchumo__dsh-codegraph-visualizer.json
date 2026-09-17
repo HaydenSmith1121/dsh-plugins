@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "xuanyuanchumo/dsh-codegraph-visualizer",
+  "slug": "xuanyuanchumo__dsh-codegraph-visualizer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codegraph-visualizer",
+  "title": "dsh-codegraph-visualizer",
+  "summary": "把代码图谱和工具调用数据变成交互式关系图，帮你直观看清代码结构和依赖。",
+  "tags": [
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "dsh-plugins",
+    "plugin",
+    "可视化",
+    "工作流增强",
+    "代码检查"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-05T06:45:37Z",
+    "url": "https://github.com/xuanyuanchumo/dsh-codegraph-visualizer/releases/tag/v0.1.1"
+  },
+  "author": "xuanyuanchumo",
+  "repo": "https://github.com/xuanyuanchumo/dsh-codegraph-visualizer",
+  "homepage": "https://github.com/xuanyuanchumo/dsh-codegraph-visualizer",
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-05T06:45:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xuanyuanchumo/dsh-codegraph-visualizer",
+    "commands": [
+      "dsh plugin --profile web add github:xuanyuanchumo/dsh-codegraph-visualizer",
+      "dsh plugin --profile web add xuanyuanchumo/dsh-codegraph-visualizer",
+      "dsh plugin --profile web remove dsh-codegraph-visualizer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

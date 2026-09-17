@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "leonardoxr/dsh-status-bar-config",
+  "slug": "leonardoxr__dsh-status-bar-config",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-status-bar-config",
+  "title": "dsh-status-bar-config",
+  "summary": "让 DeepSeek Harness 的对话统计栏可自由配置，无需修改核心代码即可调整显示内容。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-web",
+    "dsh-web-ui",
+    "会话管理",
+    "状态监控",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-08-24T13:31:23Z",
+    "url": "https://github.com/leonardoxr/dsh-status-bar-config/releases/tag/v0.2.1"
+  },
+  "author": "leonardoxr",
+  "repo": "https://github.com/leonardoxr/dsh-status-bar-config",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T19:03:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:leonardoxr/dsh-status-bar-config",
+    "commands": [
+      "dsh plugin --profile web add github:leonardoxr/dsh-status-bar-config"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

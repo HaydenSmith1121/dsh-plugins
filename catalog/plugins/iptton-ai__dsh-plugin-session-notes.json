@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "iptton-ai/dsh-plugin-session-notes",
+  "slug": "iptton-ai__dsh-plugin-session-notes",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-session-notes",
+  "title": "dsh-plugin-session-notes",
+  "summary": "在 DSH 会话中给任意句子划线、加便签做标注，方便回顾和整理对话重点。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "前端增强",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "iptton-ai",
+  "repo": "https://github.com/iptton-ai/dsh-plugin-session-notes",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-08T16:20:00Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:iptton-ai/dsh-plugin-session-notes",
+    "commands": [
+      "dsh plugin --profile web add github:iptton-ai/dsh-plugin-session-notes"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

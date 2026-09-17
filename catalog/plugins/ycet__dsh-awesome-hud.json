@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "Ycet/dsh-awesome-hud",
+  "slug": "ycet__dsh-awesome-hud",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-awesome-hud",
+  "title": "dsh-awesome-hud",
+  "summary": "在侧边栏展示HUD面板，可自定义信息模块，支持压缩上下文和查看Git图谱，提升开发效率。",
+  "tags": [
+    "deeps",
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-awesome-hud",
+    "dsh-hud",
+    "dsh-plugin",
+    "dsh-plugins",
+    "效率提升",
+    "状态监控",
+    "工作流增强",
+    "可视化",
+    "开发流程"
+  ],
+  "version": "0.14.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.14.1",
+    "publishedAt": "2026-09-13T06:10:33Z",
+    "url": "https://github.com/Ycet/dsh-awesome-hud/releases/tag/v0.14.1"
+  },
+  "author": "Ycet",
+  "repo": "https://github.com/Ycet/dsh-awesome-hud",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-13T06:06:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Ycet/dsh-awesome-hud",
+    "commands": [
+      "dsh plugin --profile web add github:Ycet/dsh-awesome-hud",
+      "dsh plugin --profile web add dsh-awesome-hud@link:<absolute-path-to-plugin>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

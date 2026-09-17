@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "joao-paulo-santos/dsh-granular-settings",
+  "slug": "joao-paulo-santos__dsh-granular-settings",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-granular-settings",
+  "title": "dsh-granular-settings",
+  "summary": "为其他 DSH 插件提供统一设置面板，按工作区/会话/全局分类管理参数，支持九种控件类型。",
+  "tags": [
+    "dsh-plugin",
+    "设置面板",
+    "模型配置",
+    "插件管理",
+    "工作区管理",
+    "会话管理"
+  ],
+  "version": "0.17.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "joao-paulo-santos",
+  "repo": "https://github.com/joao-paulo-santos/dsh-granular-settings",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T18:51:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:joao-paulo-santos/dsh-granular-settings",
+    "commands": [
+      "git clone https://github.com/joao-paulo-santos/dsh-event-relay.git",
+      "git clone https://github.com/joao-paulo-santos/dsh-granular-settings.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "syncended/deepseek-harness-messenger",
+  "slug": "syncended__deepseek-harness-messenger",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-messenger",
+  "title": "deepseek-harness-messenger",
+  "summary": "把 DeepSeek Harness 接到 Telegram 等聊天平台，让你在消息里直接跟智能体对话、下指令。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "模型配置",
+    "零配置",
+    "自动化"
+  ],
+  "version": "0.14.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "syncended",
+  "repo": "https://github.com/syncended/deepseek-harness-messenger",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T15:48:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@syncended/dsh-messenger",
+    "commands": [
+      "dsh plugin --profile web add @syncended/dsh-messenger",
+      "dsh plugin --profile web add -w --config.auto-install-peers=false @syncended/dsh-messenger",
+      "dsh plugin --profile web add /absolute/path/to/deepseek-harness-messenger"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

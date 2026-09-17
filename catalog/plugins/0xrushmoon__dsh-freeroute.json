@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "0xrushmoon/dsh-freeroute",
+  "slug": "0xrushmoon__dsh-freeroute",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-freeroute",
+  "title": "dsh-freeroute",
+  "summary": "免费模型聚合插件，自动切换可用模型和密钥，让 DeepSeek Harness 更稳定省钱。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "模型适配",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-25T09:21:22Z",
+    "url": "https://github.com/0xrushmoon/dsh-freeroute/releases/tag/v0.1.0"
+  },
+  "author": "0xrushmoon",
+  "repo": "https://github.com/0xrushmoon/dsh-freeroute",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 2,
+  "pushedAt": "2026-08-27T02:58:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-freeroute",
+    "commands": [
+      "dsh plugin --profile web add dsh-freeroute"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

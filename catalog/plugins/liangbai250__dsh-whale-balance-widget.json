@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "liangbai250/DSH-Whale-Balance-Widget",
+  "slug": "liangbai250__dsh-whale-balance-widget",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-Whale-Balance-Widget",
+  "title": "DSH-Whale-Balance-Widget",
+  "summary": "一只住在 DSH 右下角的小鲸鱼娘，帮你实时盯着 DeepSeek 和 Sub2API 的账户余额，支持拖拽吸附和数字滚动动画，余额变动一目了然。",
+  "tags": [
+    "balance-widget",
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-eac",
+    "deepseek-harness-plugin",
+    "dsh",
+    "eac",
+    "sub2api",
+    "状态监控",
+    "资源优化",
+    "效率提升",
+    "零配置",
+    "模型适配"
+  ],
+  "version": "1.0.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "1.0.2",
+    "publishedAt": "2026-08-23T14:14:40Z",
+    "url": "https://github.com/liangbai250/DSH-Whale-Balance-Widget/releases/tag/1.0.2"
+  },
+  "author": "liangbai250",
+  "repo": "https://github.com/liangbai250/DSH-Whale-Balance-Widget",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-08-23T14:32:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:liangbai250/DSH-Whale-Balance-Widget",
+    "commands": [
+      "dsh plugin --profile web add github:liangbai250/DSH-Whale-Balance-Widget"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

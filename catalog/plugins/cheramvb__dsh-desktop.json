@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "cheramvb/dsh-desktop",
+  "slug": "cheramvb__dsh-desktop",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-desktop",
+  "title": "dsh-desktop",
+  "summary": "把 DeepSeek Harness 网页界面变成独立桌面应用，隐藏浏览器元素，像原生软件一样使用。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dsh-plugins",
+    "可视化",
+    "界面封装",
+    "原生窗口",
+    "无浏览器"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-24T13:13:24Z",
+    "url": "https://github.com/cheramvb/dsh-desktop/releases/tag/v0.1.1"
+  },
+  "author": "cheramvb",
+  "repo": "https://github.com/cheramvb/dsh-desktop",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T13:13:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cheramvb/dsh-desktop",
+    "commands": [
+      "dsh plugin --profile web add github:cheramvb/dsh-desktop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

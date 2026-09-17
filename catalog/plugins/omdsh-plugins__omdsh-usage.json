@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "omdsh-plugins/omdsh-usage",
+  "slug": "omdsh-plugins__omdsh-usage",
+  "tier": "community",
+  "package": null,
+  "name": "omdsh-usage",
+  "title": "omdsh-usage",
+  "summary": "在 DeepSeek Harness 界面直接查看当前对话、项目花费和账户余额，方便控制成本。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "成本控制",
+    "界面美化"
+  ],
+  "version": "0.2.5",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "omdsh-plugins",
+  "repo": "https://github.com/omdsh-plugins/omdsh-usage",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T16:45:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:omdsh-plugins/omdsh-usage",
+    "commands": [
+      "npx @omdsh-plugins/omdsh-plughub add omdsh-usage",
+      "dsh plugin --profile web add /path/to/omdsh-usage",
+      "dsh plugin --profile web remove @omdsh-plugins/omdsh-usage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

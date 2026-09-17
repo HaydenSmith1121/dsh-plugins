@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "wss534857356/dsh-plugin-codex",
+  "slug": "wss534857356__dsh-plugin-codex",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-codex",
+  "title": "dsh-plugin-codex",
+  "summary": "用本地 Codex 登录态给 DeepSeek Harness 当模型提供方，省去额外配置。",
+  "tags": [
+    "codex",
+    "deepseek-harness",
+    "dsh-plugin",
+    "模型适配",
+    "工作流增强",
+    "安全审计"
+  ],
+  "version": "0.1.20",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.20",
+    "publishedAt": "2026-08-24T11:31:51Z",
+    "url": "https://github.com/wss534857356/dsh-plugin-codex/releases/tag/v0.1.20"
+  },
+  "author": "wss534857356",
+  "repo": "https://github.com/wss534857356/dsh-plugin-codex",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 1,
+  "pushedAt": "2026-09-12T06:14:40Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-llm-codex-app-server@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-llm-codex-app-server@latest",
+      "dsh plugin --profile web add ./dist/dsh-llm-codex-app-server-<version>.tgz",
+      "dsh plugin --profile web add github:wss534857356/dsh-plugin-codex"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "ClickPM/dsh-acp-interactive",
+  "slug": "clickpm__dsh-acp-interactive",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-acp-interactive",
+  "title": "dsh-acp-interactive",
+  "summary": "为 Zed 等编辑器提供 ACP 服务，整合 Harness 插件能力，让 AI 助手直接参与编码协作。",
+  "tags": [
+    "acp",
+    "agent-client-protocol",
+    "coding-agent",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "typescript",
+    "zed",
+    "AI 助手",
+    "多智能体协作",
+    "工具集成",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "1.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.3.0",
+    "publishedAt": "2026-09-10T06:29:36Z",
+    "url": "https://github.com/ClickPM/dsh-acp-interactive/releases/tag/v1.3.0"
+  },
+  "author": "ClickPM",
+  "repo": "https://github.com/ClickPM/dsh-acp-interactive",
+  "homepage": "https://www.npmjs.com/package/deepseekharness-acp-interactive",
+  "license": "MIT",
+  "stars": 53,
+  "forks": 0,
+  "pushedAt": "2026-09-10T07:22:27Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ClickPM/dsh-acp-interactive",
+    "commands": [
+      "npm install --global deepseekharness-acp-interactive"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

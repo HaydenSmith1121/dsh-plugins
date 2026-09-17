@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "DDDFXYqiming/dsh-annotation-patched",
+  "slug": "dddfxyqiming__dsh-annotation-patched",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-annotation-patched",
+  "title": "dsh-annotation-patched",
+  "summary": "在 DSH Web 中选中助手消息文字即可引用，可加备注或留空，本地增强版更顺手。",
+  "tags": [
+    "annotation",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "web",
+    "会话管理",
+    "桌宠",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-21T15:13:19Z",
+    "url": "https://github.com/DDDFXYqiming/dsh-annotation-patched/releases/tag/v0.2.0"
+  },
+  "author": "DDDFXYqiming",
+  "repo": "https://github.com/DDDFXYqiming/dsh-annotation-patched",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-03T03:24:57Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:DDDFXYqiming/dsh-annotation-patched",
+    "commands": [
+      "dsh plugin --profile web add github:DDDFXYqiming/dsh-annotation-patched",
+      "dsh plugin --profile web add <本目录>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "AlienGene/dsh-llm-balance-siderbar",
+  "slug": "aliengene__dsh-llm-balance-siderbar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-balance-siderbar",
+  "title": "dsh-llm-balance-siderbar",
+  "summary": "在界面角落常驻一张小卡片，随时显示各家 AI 账号还剩多少余额和额度，不用再挨个翻官网。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "状态监控",
+    "成本控制",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.7.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "AlienGene",
+  "repo": "https://github.com/AlienGene/dsh-llm-balance-siderbar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T03:45:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-llm-balance",
+    "commands": [
+      "dsh plugin --profile web add dsh-llm-balance"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

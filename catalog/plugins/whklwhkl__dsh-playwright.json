@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "whklwhkl/dsh-playwright",
+  "slug": "whklwhkl__dsh-playwright",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-playwright",
+  "title": "dsh-playwright",
+  "summary": "让 DeepSeek Harness 能直接操控浏览器，自动完成网页操作和任务。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-02T19:28:10Z",
+    "url": "https://github.com/whklwhkl/dsh-playwright/releases/tag/v0.3.0"
+  },
+  "author": "whklwhkl",
+  "repo": "https://github.com/whklwhkl/dsh-playwright",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T20:00:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:whklwhkl/dsh-playwright",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/whklwhkl/dsh-playwright.git",
+      "dsh plugin --profile web add link:/path/to/dsh-playwright",
+      "npm i -D playwright && npx playwright install chromium"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

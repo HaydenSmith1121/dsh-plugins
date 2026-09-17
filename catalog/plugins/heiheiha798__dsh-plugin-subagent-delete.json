@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "heiheiha798/dsh-plugin-subagent-delete",
+  "slug": "heiheiha798__dsh-plugin-subagent-delete",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-subagent-delete",
+  "title": "dsh-plugin-subagent-delete",
+  "summary": "在 DeepSeek Harness 网页界面中释放或永久删除子代理会话，补全子代理生命周期管理。",
+  "tags": [
+    "cleanup",
+    "deepseek-harness",
+    "delete",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "subagent",
+    "多Agent协作",
+    "会话房间",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-21T07:36:56Z",
+    "url": "https://github.com/heiheiha798/dsh-plugin-subagent-delete/releases/tag/v0.2.0"
+  },
+  "author": "heiheiha798",
+  "repo": "https://github.com/heiheiha798/dsh-plugin-subagent-delete",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-12T13:47:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:heiheiha798/dsh-plugin-subagent-delete",
+    "commands": [
+      "dsh plugin --profile web add github:heiheiha798/dsh-plugin-subagent-delete",
+      "dsh plugin --profile web add /path/to/dsh-plugin-subagent-delete"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

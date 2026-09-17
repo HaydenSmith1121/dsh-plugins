@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Ayaka157/dsh-conversation-cost",
+  "slug": "ayaka157__dsh-conversation-cost",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-conversation-cost",
+  "title": "dsh-conversation-cost",
+  "summary": "在对话底部实时显示本次 DeepSeek 用量费用，人民币美元双币，含缓存命中与峰谷价",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "资源优化",
+    "可视化",
+    "模型适配"
+  ],
+  "version": "0.1.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Ayaka157",
+  "repo": "https://github.com/Ayaka157/dsh-conversation-cost",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-11T14:20:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "git clone https://github.com/Ayaka157/dsh-conversation-cost.git",
+      "dsh plugin --profile web add .",
+      "dsh plugin --profile web remove dsh-conversation-cost"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "vlln/whale-girl",
+  "slug": "vlln__whale-girl",
+  "tier": "community",
+  "package": null,
+  "name": "whale-girl",
+  "title": "whale-girl",
+  "summary": "在 DSH Web 界面里养一只可拖拽的桌面宠物，支持喂食和互动，陪你写代码。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-repository-plugin",
+    "pet",
+    "娱乐互动",
+    "主题",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "vlln",
+  "repo": "https://github.com/vlln/whale-girl",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 323,
+  "forks": 16,
+  "pushedAt": "2026-08-31T09:40:54Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:vlln/whale-girl",
+    "commands": [
+      "dsh plugin --profile web add \"github:vlln/whale-girl",
+      "npm install -g whale-girl-desktop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

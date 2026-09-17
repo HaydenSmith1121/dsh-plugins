@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "FanetheDivine/dsh-plugin-om",
+  "slug": "fanethedivine__dsh-plugin-om",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-om",
+  "title": "dsh-plugin-om",
+  "summary": "用 Observational Memory 方式管理上下文，让智能体记住关键信息，提升对话连贯性和效率。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "FanetheDivine",
+  "repo": "https://github.com/FanetheDivine/dsh-plugin-om",
+  "homepage": "https://fanethedivine.github.io/dsh-plugin-om/",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-10T11:53:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:FanetheDivine/dsh-plugin-om",
+    "commands": [
+      "dsh plugin --profile <profile> add dsh-plugin-om"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

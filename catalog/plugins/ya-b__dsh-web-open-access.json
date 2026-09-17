@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "ya-b/dsh-web-open-access",
+  "slug": "ya-b__dsh-web-open-access",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-open-access",
+  "title": "dsh-web-open-access",
+  "summary": "放开 dsh web 的登录认证和本机访问限制，让远程设备也能直接打开网页，省去 token 和网络门槛。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "安全审计",
+    "插件管理",
+    "零配置"
+  ],
+  "version": "0.1.2-open-access",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ya-b",
+  "repo": "https://github.com/ya-b/dsh-web-open-access",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T11:51:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ya-b/dsh-web-open-access",
+    "commands": [
+      "dsh plugin --profile web add github:ya-b/dsh-web-open-access"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

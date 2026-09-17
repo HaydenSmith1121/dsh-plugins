@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "yankihue/deepseek-harness-voice-mode",
+  "slug": "yankihue__deepseek-harness-voice-mode",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-voice-mode",
+  "title": "deepseek-harness-voice-mode",
+  "summary": "给 DeepSeek Harness 加上语音层，用 ElevenLabs 实现实时字幕、按住说话、语音回复和打断，直接操控真实线程。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "elevenlabs",
+    "speech-to-text",
+    "voice-assistant",
+    "桌宠",
+    "状态监控",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.1.0-beta.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yankihue",
+  "repo": "https://github.com/yankihue/deepseek-harness-voice-mode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-25T09:23:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yankihue/deepseek-harness-voice-mode",
+    "commands": [
+      "dsh plugin --profile web add github:yankihue/deepseek-harness-voice-mode"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

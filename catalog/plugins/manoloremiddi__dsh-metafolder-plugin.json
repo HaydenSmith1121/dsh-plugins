@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ManoloRemiddi/DSH-Metafolder-Plugin",
+  "slug": "manoloremiddi__dsh-metafolder-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-Metafolder-Plugin",
+  "title": "DSH-Metafolder-Plugin",
+  "summary": "把侧边栏里的真实文件夹拖进带名字和颜色的分组里，整理工作区又不改动路径和权限。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "manolo-dsh-plugins",
+    "metafolders",
+    "sidebar",
+    "workspaces",
+    "工作区管理",
+    "文件管理",
+    "可视化",
+    "效率提升",
+    "主题"
+  ],
+  "version": "1.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.1",
+    "publishedAt": "2026-09-13T15:00:16Z",
+    "url": "https://github.com/ManoloRemiddi/DSH-Metafolder-Plugin/releases/tag/v1.2.1"
+  },
+  "author": "ManoloRemiddi",
+  "repo": "https://github.com/ManoloRemiddi/DSH-Metafolder-Plugin",
+  "homepage": "https://github.com/ManoloRemiddi/deepseek-harness-plugins",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T14:59:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ManoloRemiddi/DSH-Metafolder-Plugin",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/ManoloRemiddi/DSH-Metafolder-Plugin/releases/download/v1.2.1/dsh-metafolder-plugin-1.2.1.tgz",
+      "dsh plugin --profile web remove dsh-metafolder-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

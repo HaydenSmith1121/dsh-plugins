@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "jifeng15/dsh-web-restart",
+  "slug": "jifeng15__dsh-web-restart",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-restart",
+  "title": "dsh-web-restart",
+  "summary": "True hot-loading for dsh web: safely auto-restart after installing plugins, editing config, or upgrading dsh. DSH plugin/skill, tmux-hosted safe restart. 让 dsh web 实现真·热装载：装插件/改配置/升级本体后自动安全重启，不用再手动去命令行重启。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-skill"
+  ],
+  "version": "2.0.11",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.0.11",
+    "publishedAt": "2026-08-17T09:47:28Z",
+    "url": "https://github.com/jifeng15/dsh-web-restart/releases/tag/v2.0.11"
+  },
+  "author": "jifeng15",
+  "repo": "https://github.com/jifeng15/dsh-web-restart",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-17T09:47:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jifeng15/dsh-web-restart",
+    "commands": [
+      "git clone https://github.com/jifeng15/dsh-web-restart.git && cd dsh-web-restart"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "RizenHNT/dsh-skin-digital-arcade",
+  "slug": "rizenhnt__dsh-skin-digital-arcade",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skin-digital-arcade",
+  "title": "dsh-skin-digital-arcade",
+  "summary": "给 DeepSeek Harness 网页界面换上霓虹电玩风 HUD 皮肤，光标、按钮、浮窗全都动起来。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "skin",
+    "theme",
+    "web-ui",
+    "界面美化",
+    "前端增强",
+    "娱乐互动"
+  ],
+  "version": "0.2.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.3",
+    "publishedAt": "2026-09-10T17:13:24Z",
+    "url": "https://github.com/RizenHNT/dsh-skin-digital-arcade/releases/tag/v0.2.3"
+  },
+  "author": "RizenHNT",
+  "repo": "https://github.com/RizenHNT/dsh-skin-digital-arcade",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-10T17:13:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:RizenHNT/dsh-skin-digital-arcade",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/RizenHNT/dsh-skin-digital-arcade",
+      "dsh plugin --profile web add /path/to/dsh-skin-digital-arcade",
+      "dsh plugin --profile web remove dsh-skin-digital-arcade"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

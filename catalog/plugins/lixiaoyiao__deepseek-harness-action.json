@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "Lixiaoyiao/deepseek-harness-action",
+  "slug": "lixiaoyiao__deepseek-harness-action",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-action",
+  "title": "deepseek-harness-action",
+  "summary": "GitHub Action 接入 DeepSeek Harness，自动做 PR 审查、CI 诊断、可信修复，还能把 issue 直接变成 PR 实现。",
+  "tags": [
+    "ai-agent",
+    "ci-cd",
+    "code-review",
+    "coding-agent",
+    "deepseek",
+    "deepseek-harness",
+    "developer-tools",
+    "dsh",
+    "dsh-plugin",
+    "github-actions",
+    "代码检查",
+    "自动化",
+    "工作流增强",
+    "AI工具",
+    "AI 助手"
+  ],
+  "version": "0.8.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.1",
+    "publishedAt": "2026-08-26T18:43:13Z",
+    "url": "https://github.com/Lixiaoyiao/deepseek-harness-action/releases/tag/v0.8.1"
+  },
+  "author": "Lixiaoyiao",
+  "repo": "https://github.com/Lixiaoyiao/deepseek-harness-action",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 17,
+  "forks": 0,
+  "pushedAt": "2026-09-12T20:35:58Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Lixiaoyiao/deepseek-harness-action",
+    "commands": [
+      "dsh plugin --profile web add github:Lixiaoyiao/deepseek-harness-action"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "chuling-lingling/dsh-plugin-reasoning-efforts",
+  "slug": "chuling-lingling__dsh-plugin-reasoning-efforts",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-reasoning-efforts",
+  "title": "dsh-plugin-reasoning-efforts",
+  "summary": "给第三方中转模型补上推理等级选择器，聊天框里和官方模型一样好用。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "前端增强",
+    "零配置"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chuling-lingling",
+  "repo": "https://github.com/chuling-lingling/dsh-plugin-reasoning-efforts",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T02:37:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chuling-lingling/dsh-plugin-reasoning-efforts",
+    "commands": [
+      "dsh plugin --profile web add github:chuling-lingling/dsh-plugin-reasoning-efforts",
+      "dsh plugin --profile web add /path/to/dsh-plugin-reasoning-efforts-0.3.0.tgz",
+      "dsh plugin --profile web add /path/to/dsh-plugin-reasoning-efforts"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

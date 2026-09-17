@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "seeingrain/dsh-session-todos",
+  "slug": "seeingrain__dsh-session-todos",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-todos",
+  "title": "dsh-session-todos",
+  "summary": "在聊天窗口管理待办事项，自动同步到服务器，未完成会话一眼可见。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "状态监控"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "seeingrain",
+  "repo": "https://github.com/seeingrain/dsh-session-todos",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T08:34:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:seeingrain/dsh-session-todos",
+    "commands": [
+      "dsh plugin --profile web add github:seeingrain/dsh-session-todos"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

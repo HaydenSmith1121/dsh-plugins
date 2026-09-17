@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xx-hub/dsh-craft-your-textbook",
+  "slug": "xx-hub__dsh-craft-your-textbook",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-craft-your-textbook",
+  "title": "dsh-craft-your-textbook",
+  "summary": "把教材PDF加工成AI教学蓝本，六阶段流水线，你只需上传材料、确认结果、拍板把关，全程中文零门槛。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "效率提升",
+    "工作流增强",
+    "多Agent协作"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xx-hub",
+  "repo": "https://github.com/xx-hub/dsh-craft-your-textbook",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 2,
+  "pushedAt": "2026-09-08T06:09:02Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xx-hub/dsh-craft-your-textbook",
+    "commands": [
+      "dsh plugin --profile web add github:xx-hub/dsh-craft-your-textbook",
+      "dsh plugin --profile web add dsh-craft-your-textbook"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

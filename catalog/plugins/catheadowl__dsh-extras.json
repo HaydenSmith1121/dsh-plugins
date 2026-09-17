@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "CatheadOwl/dsh-extras",
+  "slug": "catheadowl__dsh-extras",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-extras",
+  "title": "dsh-extras",
+  "summary": "为 dsh 提供开箱即用的扩展模块，涵盖 Markdown 链接检查、质量门禁与评测任务分发，提升开发流程效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "markdown-tooling",
+    "工作流增强",
+    "状态监控",
+    "效率提升",
+    "命令行工具"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "CatheadOwl",
+  "repo": "https://github.com/CatheadOwl/dsh-extras",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T05:02:55Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CatheadOwl/dsh-extras",
+    "commands": [
+      "dsh plugin --profile web add github:CatheadOwl/dsh-extras"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

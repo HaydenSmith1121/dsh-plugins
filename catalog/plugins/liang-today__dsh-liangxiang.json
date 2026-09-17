@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "liang-today/dsh-liangxiang",
+  "slug": "liang-today__dsh-liangxiang",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-liangxiang",
+  "title": "dsh-liangxiang",
+  "summary": "每天一道梁案，用DSH烧掉的Token凝成香火，社区合力显梁子，日终收入梁祠。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "娱乐互动",
+    "社区协作",
+    "状态监控",
+    "效率提升",
+    "视觉理解"
+  ],
+  "version": "1.1.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.1.6",
+    "publishedAt": "2026-09-02T23:48:16Z",
+    "url": "https://github.com/liang-today/dsh-liangxiang/releases/tag/v1.1.6"
+  },
+  "author": "liang-today",
+  "repo": "https://github.com/liang-today/dsh-liangxiang",
+  "homepage": "https://liang.today",
+  "license": "MIT",
+  "stars": 9,
+  "forks": 0,
+  "pushedAt": "2026-09-02T23:53:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:liang-today/dsh-liangxiang",
+    "commands": [
+      "dsh plugin --profile web add github:liang-today/dsh-liangxiang"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

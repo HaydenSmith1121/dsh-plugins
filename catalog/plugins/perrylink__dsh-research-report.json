@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "PerryLink/dsh-research-report",
+  "slug": "perrylink__dsh-research-report",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-research-report",
+  "title": "dsh-research-report",
+  "summary": "给研究报告的每条结论绑定可追溯证据，防篡改并逐条给出核验结论。",
+  "tags": [
+    "audit",
+    "citation-verification",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "evidence-ledger",
+    "research",
+    "verifiable-report",
+    "内容创作",
+    "数据可审计",
+    "安全审计",
+    "报告生成"
+  ],
+  "version": "0.3.10",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.10",
+    "publishedAt": "2026-09-12T02:32:54Z",
+    "url": "https://github.com/PerryLink/dsh-research-report/releases/tag/v0.3.10"
+  },
+  "author": "PerryLink",
+  "repo": "https://github.com/PerryLink/dsh-research-report",
+  "homepage": "https://www.npmjs.com/package/dsh-research-report",
+  "license": "Apache-2.0",
+  "stars": 120,
+  "forks": 0,
+  "pushedAt": "2026-09-12T09:33:31Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:YOUR_ORG/dsh-research-report",
+    "commands": [
+      "dsh plugin --profile demo add \"github:YOUR_ORG/dsh-research-report",
+      "dsh plugin --profile demo add dsh-research-report",
+      "dsh plugin --profile demo remove dsh-research-report"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

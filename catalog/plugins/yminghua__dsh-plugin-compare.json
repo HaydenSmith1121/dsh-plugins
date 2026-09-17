@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "yminghua/dsh-plugin-compare",
+  "slug": "yminghua__dsh-plugin-compare",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-compare",
+  "title": "dsh-plugin-compare",
+  "summary": "对比 DeepSeek Harness 插件和预设的运行效果，用受控 A/B 测试和证据报告帮你选出最优方案。",
+  "tags": [
+    "ab-testing",
+    "ai-agents",
+    "benchmarking",
+    "deepseek-harness",
+    "developer-tools",
+    "dsh-plugin",
+    "llm-evaluation",
+    "typescript",
+    "自动化",
+    "效率提升",
+    "AI 助手",
+    "命令行工具"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-08T08:02:40Z",
+    "url": "https://github.com/yminghua/dsh-plugin-compare/releases/tag/v0.1.0"
+  },
+  "author": "yminghua",
+  "repo": "https://github.com/yminghua/dsh-plugin-compare",
+  "homepage": "https://www.npmjs.com/package/dsh-plugin-compare",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T08:42:32Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-compare@next",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-compare@next",
+      "dsh plugin --profile web add dsh-plugin-compare",
+      "dsh plugin --profile web update dsh-plugin-compare@next"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "d86e/dsh-doctor",
+  "slug": "d86e__dsh-doctor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-doctor",
+  "title": "dsh-doctor",
+  "summary": "DSH 自愈看门狗，插件导致启动失败时 60 秒内自动恢复，并持续监控工具错误，保障工作台稳定运行。",
+  "tags": [
+    "agent",
+    "cordis",
+    "deepseek-harness",
+    "doctor",
+    "dsh",
+    "dsh-plugin",
+    "self-healing",
+    "watchdog",
+    "状态监控",
+    "自动化",
+    "工作流增强",
+    "效率提升",
+    "命令行工具"
+  ],
+  "version": "0.2.17",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.17",
+    "publishedAt": "2026-08-30T00:54:04Z",
+    "url": "https://github.com/d86e/dsh-doctor/releases/tag/v0.2.17"
+  },
+  "author": "d86e",
+  "repo": "https://github.com/d86e/dsh-doctor",
+  "homepage": "https://github.com/d86e/dsh-doctor#readme",
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-08T14:26:43Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:d86e/dsh-doctor",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/d86e/dsh-doctor.git",
+      "dsh plugin --profile web reload"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

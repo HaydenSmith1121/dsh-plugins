@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "wzxaaaa/dsh-w-plugin-ecosystem",
+  "slug": "wzxaaaa__dsh-w-plugin-ecosystem",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-w-plugin-ecosystem",
+  "title": "dsh-w-plugin-ecosystem",
+  "summary": "为dsh Windows/Web版打造的原生插件生态，支持可配置、独立协议和热拔插，即装即用。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-w-series",
+    "插件管理",
+    "零配置",
+    "工具集成",
+    "自动化"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "wzxaaaa",
+  "repo": "https://github.com/wzxaaaa/dsh-w-plugin-ecosystem",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 23,
+  "forks": 0,
+  "pushedAt": "2026-09-12T14:52:42Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wzxaaaa/dsh-w-plugin-ecosystem",
+    "commands": [
+      "dsh plugin --profile web add github:wzxaaaa/dsh-w-plugin-ecosystem"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

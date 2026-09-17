@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "zoahdev/dsh-poison-guard",
+  "slug": "zoahdev__dsh-poison-guard",
+  "tier": "community",
+  "package": null,
+  "name": "zoahdev/dsh-poison-guard",
+  "title": "zoahdev/dsh-poison-guard",
+  "summary": "装插件前先扫一遍，用 AST 加反混淆揪出供应链投毒，有问题直接报错拦住 CI。",
+  "tags": [
+    "ast",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "js-x-ray",
+    "malware",
+    "obfuscation",
+    "sast",
+    "security",
+    "supply-chain",
+    "安全审计",
+    "命令行工具",
+    "自动化",
+    "工具集成"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zoahdev",
+  "repo": "https://github.com/zoahdev/dsh-poison-guard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-17T14:18:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-poison-guard",
+    "commands": [
+      "dsh plugin --profile web add dsh-poison-guard",
+      "npm install -g dsh-poison-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

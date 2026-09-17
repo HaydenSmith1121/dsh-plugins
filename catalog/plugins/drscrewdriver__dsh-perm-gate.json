@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "drscrewdriver/dsh-perm-gate",
+  "slug": "drscrewdriver__dsh-perm-gate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-perm-gate",
+  "title": "dsh-perm-gate",
+  "summary": "给 DSH 插件加上权限门禁，按规则放行或拦截操作，防止误改误删。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "typescript",
+    "安全审计",
+    "插件管理",
+    "工作流增强",
+    "状态监控"
+  ],
+  "version": "2.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "drscrewdriver",
+  "repo": "https://github.com/drscrewdriver/dsh-perm-gate",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T21:31:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-perm-gate",
+    "commands": [
+      "dsh plugin --profile web add dsh-perm-gate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

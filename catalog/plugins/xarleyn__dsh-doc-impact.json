@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "xarleyn/dsh-doc-impact",
+  "slug": "xarleyn__dsh-doc-impact",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-doc-impact",
+  "title": "dsh-doc-impact",
+  "summary": "让代码改动自动关联并提醒受影响的文档，保持文档与代码同步更新。",
+  "tags": [
+    "agentic-coding",
+    "ai-agents",
+    "change-impact-analysis",
+    "deepseek-harness",
+    "docs-as-code",
+    "documentation",
+    "documentation-automation",
+    "documentation-maintenance",
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "工作流增强",
+    "文档维护",
+    "变更影响分析"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-08-28T16:27:56Z",
+    "url": "https://github.com/xarleyn/dsh-doc-impact/releases/tag/v0.2.1"
+  },
+  "author": "xarleyn",
+  "repo": "https://github.com/xarleyn/dsh-doc-impact",
+  "homepage": "https://www.npmjs.com/package/dsh-doc-impact",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T09:19:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xarleyn/dsh-doc-impact",
+    "commands": [
+      "dsh plugin --profile web add github:xarleyn/dsh-doc-impact"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

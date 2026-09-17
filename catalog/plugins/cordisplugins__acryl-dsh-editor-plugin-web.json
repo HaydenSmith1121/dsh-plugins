@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "cordisplugins/acryl-dsh-editor-plugin-web",
+  "slug": "cordisplugins__acryl-dsh-editor-plugin-web",
+  "tier": "community",
+  "package": null,
+  "name": "acryl-dsh-editor-plugin-web",
+  "title": "acryl-dsh-editor-plugin-web",
+  "summary": "已废弃的网页版 DSH 编辑器插件，功能已被通用版 acryl-dsh-editor-plugin 完全取代。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "插件管理",
+    "工具集成",
+    "前端增强"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "cordisplugins",
+  "repo": "https://github.com/cordisplugins/acryl-dsh-editor-plugin-web",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T10:38:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "acryl-dsh-editor-plugin-web",
+    "commands": [
+      "dsh plugin --profile web add acryl-dsh-editor-plugin-web",
+      "dsh plugin --profile web add git+https://github.com/acryldev/acryl-dsh-editor-plugin-web.git",
+      "dsh plugin --profile web add file:/path/to/acryl-dsh-editor-plugin-web"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

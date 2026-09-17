@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "PivotStackIntelligence/dsh-github",
+  "slug": "pivotstackintelligence__dsh-github",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-github",
+  "title": "dsh-github",
+  "summary": "在 DeepSeek Harness 里加一个像 VS Code 那样的源代码管理面板，直接查看和操作 GitHub 仓库。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "变更审查",
+    "文件差异",
+    "集中仓库",
+    "状态监控"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "PivotStackIntelligence",
+  "repo": "https://github.com/PivotStackIntelligence/dsh-github",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 98,
+  "forks": 1,
+  "pushedAt": "2026-09-09T04:32:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "dongsheng123132/dsh-output-custody-proof",
+  "slug": "dongsheng123132__dsh-output-custody-proof",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-output-custody-proof",
+  "title": "dsh-output-custody-proof",
+  "summary": "为无实体输出的DSH工具结果生成内容寻址证明，离线校验留存与溢出托管凭证，确保可审计性。",
+  "tags": [
+    "audit",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "evidence",
+    "retention",
+    "安全审计",
+    "证据",
+    "留存"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dongsheng123132",
+  "repo": "https://github.com/dongsheng123132/dsh-output-custody-proof",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-07T13:35:21Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dongsheng123132/dsh-output-custody-proof",
+    "commands": [
+      "dsh plugin --profile web add github:dongsheng123132/dsh-output-custody-proof"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

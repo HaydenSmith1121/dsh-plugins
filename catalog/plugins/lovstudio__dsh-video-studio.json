@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "lovstudio/dsh-video-studio",
+  "slug": "lovstudio__dsh-video-studio",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-video-studio",
+  "title": "dsh-video-studio",
+  "summary": "在 DeepSeek Harness 对话里直接剪辑视频，用 Remotion 预览和导出 MP4，还能接入语音识别做字幕。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "remotion",
+    "video-editor",
+    "视觉理解",
+    "内容创作",
+    "工作流增强"
+  ],
+  "version": "0.2.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.2",
+    "publishedAt": "2026-09-06T03:05:24Z",
+    "url": "https://github.com/lovstudio/dsh-video-studio/releases/tag/v0.2.2"
+  },
+  "author": "lovstudio",
+  "repo": "https://github.com/lovstudio/dsh-video-studio",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T03:04:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lovstudio/dsh-video-studio",
+    "commands": [
+      "dsh plugin --profile web add github:lovstudio/dsh-video-studio"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

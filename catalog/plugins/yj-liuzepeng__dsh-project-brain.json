@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "yj-liuzepeng/dsh-project-brain",
+  "slug": "yj-liuzepeng__dsh-project-brain",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-project-brain",
+  "title": "dsh-project-brain",
+  "summary": "给 DeepSeek Harness 装上项目大脑，跨会话记住架构、待办和上下文，随时检索项目情报。",
+  "tags": [
+    "ai-assistant",
+    "deepseek-harness",
+    "developer-tools",
+    "dsh-plugin",
+    "local-first",
+    "project-memory",
+    "会话管理",
+    "语义检索",
+    "工作区管理",
+    "效率提升"
+  ],
+  "version": "1.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.3.0",
+    "publishedAt": "2026-09-15T14:55:39Z",
+    "url": "https://github.com/yj-liuzepeng/dsh-project-brain/releases/tag/v1.3.0"
+  },
+  "author": "yj-liuzepeng",
+  "repo": "https://github.com/yj-liuzepeng/dsh-project-brain",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T15:25:21Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yj-liuzepeng/dsh-project-brain",
+    "commands": [
+      "dsh plugin --profile web add github:yj-liuzepeng/dsh-project-brain",
+      "git clone https://github.com/yj-liuzepeng/dsh-project-brain.git",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

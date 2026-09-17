@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "andyfan1094/dsh-feishu",
+  "slug": "andyfan1094__dsh-feishu",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-feishu",
+  "title": "dsh-feishu",
+  "summary": "让飞书消息直达 DSH 智能体，自动确认并原聊回复，轻松开启对话。",
+  "tags": [
+    "dsh-plugin",
+    "消息通知",
+    "会话管理",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "0.2.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.2",
+    "publishedAt": "2026-08-23T12:11:52Z",
+    "url": "https://github.com/andyfan1094/dsh-feishu/releases/tag/v0.2.2"
+  },
+  "author": "andyfan1094",
+  "repo": "https://github.com/andyfan1094/dsh-feishu",
+  "homepage": "https://github.com/andyfan1094/dsh-feishu",
+  "license": "NOASSERTION",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-26T17:12:37Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:andyfan1094/dsh-feishu",
+    "commands": [
+      "dsh plugin --profile web add github:andyfan1094/dsh-feishu"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

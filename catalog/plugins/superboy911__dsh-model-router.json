@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "superboy911/dsh-model-router",
+  "slug": "superboy911__dsh-model-router",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-router",
+  "title": "dsh-model-router",
+  "summary": "给 DeepSeek Harness 加个智能路由，按关键词自动分配模型，还能隔离生图任务，省钱又省心。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm-gateway",
+    "model-router",
+    "模型配置",
+    "资源优化",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.2.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.2",
+    "publishedAt": "2026-08-14T14:36:25Z",
+    "url": "https://github.com/superboy911/dsh-model-router/releases/tag/v0.2.2"
+  },
+  "author": "superboy911",
+  "repo": "https://github.com/superboy911/dsh-model-router",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-08-21T20:35:27Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:superboy911/dsh-model-router",
+    "commands": [
+      "git clone https://github.com/superboy911/dsh-model-router.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

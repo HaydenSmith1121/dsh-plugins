@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "csiroqa/dsh-hotkeys",
+  "slug": "csiroqa__dsh-hotkeys",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hotkeys",
+  "title": "dsh-hotkeys",
+  "summary": "为 DeepSeek Harness 添加全局快捷键，快速切换会话、发送草稿、停止生成、复制与归档，操作更顺手。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "hotkeys",
+    "keyboard",
+    "效率提升",
+    "会话管理",
+    "零配置",
+    "命令行工具"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-13T22:40:56Z",
+    "url": "https://github.com/csiroqa/dsh-hotkeys/releases/tag/v0.1.0"
+  },
+  "author": "csiroqa",
+  "repo": "https://github.com/csiroqa/dsh-hotkeys",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-23T16:49:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:csiroqa/dsh-hotkeys",
+    "commands": [
+      "dsh plugin --profile web add github:csiroqa/dsh-hotkeys"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

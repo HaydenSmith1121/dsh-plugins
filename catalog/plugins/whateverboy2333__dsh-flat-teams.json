@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "whateverboy2333/dsh-flat-teams",
+  "slug": "whateverboy2333__dsh-flat-teams",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-flat-teams",
+  "title": "dsh-flat-teams",
+  "summary": "让多个独立Agent窗口组成无队长扁平团队，跨窗口互派任务，内置记录员实时汇报进展。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "multi-agent",
+    "多Agent协作",
+    "工作流增强",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-25T05:22:59Z",
+    "url": "https://github.com/whateverboy2333/dsh-flat-teams/releases/tag/v0.1.0"
+  },
+  "author": "whateverboy2333",
+  "repo": "https://github.com/whateverboy2333/dsh-flat-teams",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-26T02:40:11Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:whateverboy2333/dsh-flat-teams",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-flat-teams",
+      "dsh plugin --profile <name> add github:whateverboy2333/dsh-flat-teams",
+      "dsh plugin --profile <profile> add /absolute/path/to/dsh-flat-teams"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

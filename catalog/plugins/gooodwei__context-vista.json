@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "GooodWei/context-vista",
+  "slug": "gooodwei__context-vista",
+  "tier": "community",
+  "package": null,
+  "name": "context-vista",
+  "title": "context-vista",
+  "summary": "在右侧浮窗和 /context 命令里实时看上下文 token 占用、分配和预估花费，环形图一目了然。",
+  "tags": [
+    "deepseekharness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "资源优化",
+    "效率提升",
+    "快捷操作"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "GooodWei",
+  "repo": "https://github.com/GooodWei/context-vista",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 11,
+  "forks": 0,
+  "pushedAt": "2026-09-08T12:51:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooodWei/context-vista",
+    "commands": [
+      "dsh plugin --profile web add github:GooodWei/context-vista"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

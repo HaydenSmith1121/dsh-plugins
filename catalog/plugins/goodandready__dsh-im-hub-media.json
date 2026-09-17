@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-im-hub-media",
+  "slug": "goodandready__dsh-im-hub-media",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-im-hub-media",
+  "title": "dsh-im-hub-media",
+  "summary": "把 Telegram、飞书、企业微信接入 DeepSeek Harness，支持语音转文字、图片和文档收发，实现多平台双向消息互通。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "会话管理",
+    "AI 助手"
+  ],
+  "version": "0.2.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.2",
+    "publishedAt": "2026-09-05T13:32:03Z",
+    "url": "https://github.com/GooDAnDReaDY/dsh-im-hub-media/releases/tag/v0.2.2"
+  },
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-im-hub-media",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T13:31:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooDAnDReaDY/dsh-im-hub-media",
+    "commands": [
+      "dsh plugin --profile web add github:GooDAnDReaDY/dsh-im-hub-media"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

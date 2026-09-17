@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "Edge-HH/GrokBot_in_DeepseekHerness",
+  "slug": "edge-hh__grokbot_in_deepseekherness",
+  "tier": "community",
+  "package": null,
+  "name": "GrokBot_in_DeepseekHerness",
+  "title": "GrokBot_in_DeepseekHerness",
+  "summary": "把 GrokBot 桌宠搬进 DSH 网页端，能换装、可拖拽甩出，还会发通知陪你干活。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-r1",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "grokbot",
+    "pet",
+    "主题",
+    "前端增强",
+    "快捷操作",
+    "界面美化"
+  ],
+  "version": "2.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.0.0",
+    "publishedAt": "2026-08-27T11:48:31Z",
+    "url": "https://github.com/Edge-HH/GrokBot_in_DeepseekHerness/releases/tag/v2.0.0"
+  },
+  "author": "Edge-HH",
+  "repo": "https://github.com/Edge-HH/GrokBot_in_DeepseekHerness",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 1,
+  "pushedAt": "2026-09-09T09:08:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@edge-hh/dsh-grokbot-pet",
+    "commands": [
+      "dsh plugin --profile web add @edge-hh/dsh-grokbot-pet",
+      "dsh plugin --profile web add git+https://github.com/Edge-HH/GrokBot_in_DeepseekHerness.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

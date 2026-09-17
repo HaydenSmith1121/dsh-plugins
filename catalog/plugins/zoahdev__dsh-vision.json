@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zoahdev/dsh-vision",
+  "slug": "zoahdev__dsh-vision",
+  "tier": "community",
+  "package": null,
+  "name": "zoahdev/dsh-vision",
+  "title": "zoahdev/dsh-vision",
+  "summary": "给 DeepSeek Harness 装上眼睛，直接分析本地图片或网络图片，用视觉模型回答你的问题。",
+  "tags": [
+    "agent",
+    "deepseek-harness",
+    "dsh-plugin",
+    "image",
+    "multimodal",
+    "vision",
+    "图片分析",
+    "多模态",
+    "视觉理解"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zoahdev",
+  "repo": "https://github.com/zoahdev/dsh-vision",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-17T09:02:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-vision",
+    "commands": [
+      "dsh plugin --profile web add dsh-vision"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

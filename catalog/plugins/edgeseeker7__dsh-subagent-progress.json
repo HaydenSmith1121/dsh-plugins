@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "edgeseeker7/dsh-subagent-progress",
+  "slug": "edgeseeker7__dsh-subagent-progress",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subagent-progress",
+  "title": "dsh-subagent-progress",
+  "summary": "在输入框上方实时显示子智能体的进度，一眼看清它们在做什么、进展如何、有没有卡住。",
+  "tags": [
+    "agent-progress",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "subagent",
+    "状态监控",
+    "多Agent协作",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.7.9",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "edgeseeker7",
+  "repo": "https://github.com/edgeseeker7/dsh-subagent-progress",
+  "homepage": "https://www.npmjs.com/package/dsh-subagent-progress",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T12:28:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-subagent-progress",
+    "commands": [
+      "dsh plugin --profile web add dsh-subagent-progress"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

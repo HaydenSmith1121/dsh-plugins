@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "masknull/dsh-delete-session",
+  "slug": "masknull__dsh-delete-session",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-delete-session",
+  "title": "dsh-delete-session",
+  "summary": "在侧栏会话的 ⋯ 菜单里加一个「删除会话」，一键永久清掉不想要的会话。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "快捷操作",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-15T11:15:05Z",
+    "url": "https://github.com/masknull/dsh-delete-session/releases/tag/v0.1.0"
+  },
+  "author": "masknull",
+  "repo": "https://github.com/masknull/dsh-delete-session",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T11:15:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:masknull/dsh-delete-session",
+    "commands": [
+      "dsh plugin --profile web add github:masknull/dsh-delete-session"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

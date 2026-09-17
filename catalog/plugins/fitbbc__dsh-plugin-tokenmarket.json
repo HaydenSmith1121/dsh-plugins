@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "FitBBC/dsh-plugin-tokenmarket",
+  "slug": "fitbbc__dsh-plugin-tokenmarket",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-tokenmarket",
+  "title": "dsh-plugin-tokenmarket",
+  "summary": "把 Token Market 接进 DeepSeek Harness，装完就能当 OpenAI 兼容模型用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "llm-provider",
+    "tokensmarket",
+    "模型配置",
+    "工具集成",
+    "零配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-10T07:27:42Z",
+    "url": "https://github.com/FitBBC/dsh-plugin-tokenmarket/releases/tag/v0.1.1"
+  },
+  "author": "FitBBC",
+  "repo": "https://github.com/FitBBC/dsh-plugin-tokenmarket",
+  "homepage": "https://www.tokensmarket.ai",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T09:15:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:FitBBC/dsh-plugin-tokenmarket",
+    "commands": [
+      "dsh plugin --profile web add github:FitBBC/dsh-plugin-tokenmarket"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "jiang539/dsh-auth-gate",
+  "slug": "jiang539__dsh-auth-gate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auth-gate",
+  "title": "dsh-auth-gate",
+  "summary": "给 DSH Web UI 加一道登录门，用 SVG 图形验证码拦住暴力破解，保护你的管理界面。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "认证门禁",
+    "图形验证码",
+    "防暴力破解",
+    "安全审计"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jiang539",
+  "repo": "https://github.com/jiang539/dsh-auth-gate",
+  "homepage": "https://github.com/jiang539/dsh-auth-gate",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-15T01:39:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-auth-gate",
+    "commands": [
+      "dsh plugin --profile web add dsh-auth-gate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

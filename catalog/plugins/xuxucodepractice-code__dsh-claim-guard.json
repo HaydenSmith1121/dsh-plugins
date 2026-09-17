@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "xuxucodepractice-code/dsh-claim-guard",
+  "slug": "xuxucodepractice-code__dsh-claim-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-claim-guard",
+  "title": "dsh-claim-guard",
+  "summary": "在写入文件前自动检查冲突，防止覆盖或误改，让文件操作更安全。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "文件管理",
+    "安全审计",
+    "状态监控",
+    "工作区管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-03T17:11:29Z",
+    "url": "https://github.com/xuxucodepractice-code/dsh-claim-guard/releases/tag/v0.1.0"
+  },
+  "author": "xuxucodepractice-code",
+  "repo": "https://github.com/xuxucodepractice-code/dsh-claim-guard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T17:11:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xuxucodepractice-code/dsh-claim-guard",
+    "commands": [
+      "dsh plugin --profile claim-guard-smoke add ./dsh-claim-guard-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

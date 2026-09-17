@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "Fisfzy/dsh-ego-browser",
+  "slug": "fisfzy__dsh-ego-browser",
+  "tier": "community",
+  "package": null,
+  "name": "ego-browser",
+  "title": "ego-browser",
+  "summary": "让 AI 直接操控浏览器，自动打开网页、点击和填表，还能看到它的每一步操作。",
+  "tags": [
+    "agent-browser",
+    "browser-automation",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-better-sidebar",
+    "dsh-plugin",
+    "dshfind",
+    "dshx",
+    "ego-lite",
+    "自动化",
+    "工具集成",
+    "可视化",
+    "AI 助手",
+    "桌面自动化"
+  ],
+  "version": "0.8.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.4",
+    "publishedAt": "2026-09-15T07:10:04Z",
+    "url": "https://github.com/Fisfzy/dsh-ego-browser/releases/tag/v0.8.4"
+  },
+  "author": "Fisfzy",
+  "repo": "https://github.com/Fisfzy/dsh-ego-browser",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 171,
+  "forks": 28,
+  "pushedAt": "2026-09-15T07:10:15Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Fisfzy/dsh-ego-browser",
+    "commands": [
+      "dsh plugin --profile web add github:Fisfzy/dsh-ego-browser"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

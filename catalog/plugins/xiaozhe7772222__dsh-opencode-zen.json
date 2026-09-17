@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaozhe7772222/dsh-opencode-zen",
+  "slug": "xiaozhe7772222__dsh-opencode-zen",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-opencode-zen",
+  "title": "dsh-opencode-zen",
+  "summary": "零配置接入 6 个免费大模型，免注册免充值，多 Key 轮换自动限流，让 DSH 白嫖 AI 能力。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "opencode",
+    "模型配置",
+    "零配置",
+    "多Key轮换",
+    "限流退避"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xiaozhe7772222",
+  "repo": "https://github.com/xiaozhe7772222/dsh-opencode-zen",
+  "homepage": "https://github.com/xiaozhe7772222/dsh-opencode-zen",
+  "license": "MIT",
+  "stars": 23,
+  "forks": 8,
+  "pushedAt": "2026-08-20T18:06:48Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiaozhe7772222/dsh-opencode-zen",
+    "commands": [
+      "dsh plugin --profile web add github:xiaozhe7772222/dsh-opencode-zen"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

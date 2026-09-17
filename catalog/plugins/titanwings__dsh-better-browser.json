@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "titanwings/dsh-better-browser",
+  "slug": "titanwings__dsh-better-browser",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-better-browser",
+  "title": "dsh-better-browser",
+  "summary": "让 Agent 直接操作你已登录的真实浏览器，13 个工具搞定网页自动化。",
+  "tags": [
+    "automation",
+    "browser",
+    "deepseek-harness",
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "kimi-webbridge",
+    "tool",
+    "自动化",
+    "工具集成",
+    "桥接插件",
+    "AI 助手"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-08-13T14:00:13Z",
+    "url": "https://github.com/titanwings/dsh-better-browser/releases/tag/v0.3.1"
+  },
+  "author": "titanwings",
+  "repo": "https://github.com/titanwings/dsh-better-browser",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 10,
+  "forks": 0,
+  "pushedAt": "2026-08-13T16:18:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:titanwings/dsh-better-browser",
+    "commands": [
+      "curl -fsSL https://cdn.kimi.com/webbridge/install.sh | bash",
+      "dsh plugin --profile web add github:titanwings/dsh-better-browser"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

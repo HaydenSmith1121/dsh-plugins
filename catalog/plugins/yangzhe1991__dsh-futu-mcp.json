@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "yangzhe1991/dsh-futu-mcp",
+  "slug": "yangzhe1991__dsh-futu-mcp",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-futu-mcp",
+  "title": "dsh-futu-mcp",
+  "summary": "通过 OAuth 2.1 安全连接富途 MCP，授权令牌加密存储在系统目录，方便在 DSH 中调用富途行情与交易能力。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yangzhe1991",
+  "repo": "https://github.com/yangzhe1991/dsh-futu-mcp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T15:51:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@yangzhe1991/dsh-futu-mcp",
+    "commands": [
+      "dsh plugin --profile web add @yangzhe1991/dsh-futu-mcp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

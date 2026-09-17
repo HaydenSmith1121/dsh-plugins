@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "loker66fan/dsh-market-github",
+  "slug": "loker66fan__dsh-market-github",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-market-github",
+  "title": "dsh-market-github",
+  "summary": "在 DeepSeek Harness 里直接逛插件商城，实时搜 GitHub 上的 dsh-plugin 项目，一键装好还能顺手重启。",
+  "tags": [
+    "agent-harness",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-plugins",
+    "插件管理",
+    "集中仓库",
+    "快捷操作",
+    "工具集成"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-08-15T12:11:17Z",
+    "url": "https://github.com/loker66fan/dsh-market-github/releases/tag/v0.3.0"
+  },
+  "author": "loker66fan",
+  "repo": "https://github.com/loker66fan/dsh-market-github",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-16T11:16:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:loker66fan/dsh-market-github",
+    "commands": [
+      "dsh plugin --profile web add github:loker66fan/dsh-market-github"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

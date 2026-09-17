@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "xingyingyuzhui/dsh-vision-bench",
+  "slug": "xingyingyuzhui__dsh-vision-bench",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-vision-bench",
+  "title": "dsh-vision-bench",
+  "summary": "在会话视图里搞定 Keil 调试和 Modbus 上位机，日常开发台架，一键自检绑定环境。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "工作流增强",
+    "状态监控",
+    "自动化",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "0.26.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.26.0",
+    "publishedAt": "2026-09-02T03:03:10Z",
+    "url": "https://github.com/xingyingyuzhui/dsh-vision-bench/releases/tag/v0.26.0"
+  },
+  "author": "xingyingyuzhui",
+  "repo": "https://github.com/xingyingyuzhui/dsh-vision-bench",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T09:18:06Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xingyingyuzhui/dsh-vision-bench",
+    "commands": [
+      "dsh plugin --profile web add github:xingyingyuzhui/dsh-vision-bench",
+      "dsh plugin --profile web add ./dsh-vision-bench-*.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

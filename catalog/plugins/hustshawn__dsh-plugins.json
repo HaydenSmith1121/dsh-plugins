@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "hustshawn/dsh-plugins",
+  "slug": "hustshawn__dsh-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugins",
+  "title": "dsh-plugins",
+  "summary": "为 DeepSeek Harness 提供即插即用的插件集合，无需修改源码即可扩展 UI、工具和宿主能力。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "零配置",
+    "工具集成",
+    "插件管理",
+    "AI工具"
+  ],
+  "version": "0.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hustshawn",
+  "repo": "https://github.com/hustshawn/dsh-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-18T16:04:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hustshawn/dsh-plugins",
+    "commands": [
+      "dsh plugin --profile web add github:hustshawn/dsh-plugins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

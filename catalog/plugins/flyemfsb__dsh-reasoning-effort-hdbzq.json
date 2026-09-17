@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "flyemFSB/dsh-reasoning-effort-hdbzq",
+  "slug": "flyemfsb__dsh-reasoning-effort-hdbzq",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-reasoning-effort-hdbzq",
+  "title": "dsh-reasoning-effort-hdbzq",
+  "summary": "把模型选择换成滑块，三档推理强度随心调，轻松控制回答深度。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "slider-plugin",
+    "模型配置",
+    "滑块调节",
+    "界面美化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-14T12:40:46Z",
+    "url": "https://github.com/flyemFSB/dsh-reasoning-effort-hdbzq/releases/tag/v0.1.0"
+  },
+  "author": "flyemFSB",
+  "repo": "https://github.com/flyemFSB/dsh-reasoning-effort-hdbzq",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-14T12:59:01Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:flyemFSB/dsh-reasoning-effort-hdbzq",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/flyemFSB/dsh-reasoning-effort-hdbzq/releases/download/v0.1.0/dsh-reasoning-effort-hdbzq-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

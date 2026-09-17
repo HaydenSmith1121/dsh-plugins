@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "kairoz9/dsh-mcp-admin",
+  "slug": "kairoz9__dsh-mcp-admin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mcp-admin",
+  "title": "dsh-mcp-admin",
+  "summary": "在 dsh 里直接查看 MCP 服务状态，还能在设置页增删改启停，配置自动写回文件。",
+  "tags": [
+    "cordis",
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "mcp",
+    "mcp-client",
+    "mcp-server",
+    "model-context-protocol",
+    "typert",
+    "typescript",
+    "插件管理",
+    "状态查看",
+    "服务配置",
+    "设置页集成"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-15T02:56:19Z",
+    "url": "https://github.com/kairoz9/dsh-mcp-admin/releases/tag/v0.2.0"
+  },
+  "author": "kairoz9",
+  "repo": "https://github.com/kairoz9/dsh-mcp-admin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-08-15T04:41:02Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kairoz9/dsh-mcp-admin",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-mcp-admin-0.2.0.tgz",
+      "dsh plugin --profile web add github:kairoz9/dsh-mcp-admin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Aafff623/dsh-keyboard-manager",
+  "slug": "aafff623__dsh-keyboard-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-keyboard-manager",
+  "title": "dsh-keyboard-manager",
+  "summary": "为 DeepSeek Harness 网页界面添加键盘快捷键，让你不用鼠标也能快速操作，提升操作效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "效率提升",
+    "前端增强",
+    "界面美化",
+    "自动化"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Aafff623",
+  "repo": "https://github.com/Aafff623/dsh-keyboard-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T12:34:23Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Aafff623/dsh-keyboard-manager",
+    "commands": [
+      "dsh plugin --profile web add github:Aafff623/dsh-keyboard-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "liuyangdongdong/dsh-session-rerun",
+  "slug": "liuyangdongdong__dsh-session-rerun",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-rerun",
+  "title": "dsh-session-rerun",
+  "summary": "回放已完成的智能体会话步骤，方便排查问题、复现结果或复盘对话过程。",
+  "tags": [
+    "dsh-plugin",
+    "语义检索",
+    "状态监控",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.1-rc.8",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "liuyangdongdong",
+  "repo": "https://github.com/liuyangdongdong/dsh-session-rerun",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T18:38:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:liuyangdongdong/dsh-session-rerun",
+    "commands": [
+      "dsh plugin --profile web add github:liuyangdongdong/dsh-session-rerun"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "kongdexu/dsh-nav-pointer",
+  "slug": "kongdexu__dsh-nav-pointer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-nav-pointer",
+  "title": "dsh-nav-pointer",
+  "summary": "在聊天界面左侧添加消息指针导轨，点击标记快速跳转，悬停预览消息内容，提升长对话浏览效率。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "效率提升",
+    "语义检索",
+    "会话管理"
+  ],
+  "version": "0.4.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kongdexu",
+  "repo": "https://github.com/kongdexu/dsh-nav-pointer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-31T09:46:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-nav-pointer",
+    "commands": [
+      "dsh plugin --profile web add dsh-nav-pointer",
+      "dsh plugin --profile web add dsh-nav-pointer --config.minimumReleaseAge=0",
+      "git clone https://github.com/kongdexu/dsh-nav-pointer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "dargonburn337845818/skill-group",
+  "slug": "dargonburn337845818__skill-group",
+  "tier": "community",
+  "package": null,
+  "name": "skill-group",
+  "title": "skill-group",
+  "summary": "把蒸馏出的技能按场景统一管理，支持单个开关控制，还带Web面板和开源技能库，方便随时调用。",
+  "tags": [
+    "agent-skills",
+    "deepseek-harness",
+    "dsh",
+    "knowledge-management",
+    "plugin",
+    "typescript",
+    "AI 助手",
+    "插件管理",
+    "可视化",
+    "自动化",
+    "语义检索"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.0.1",
+    "publishedAt": "2026-09-06T16:22:07Z",
+    "url": "https://github.com/dargonburn337845818/skill-group/releases/tag/v0.0.1"
+  },
+  "author": "dargonburn337845818",
+  "repo": "https://github.com/dargonburn337845818/skill-group",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T15:51:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dargonburn337845818/skill-group",
+    "commands": [
+      "dsh plugin --profile web add github:dargonburn337845818/skill-group"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

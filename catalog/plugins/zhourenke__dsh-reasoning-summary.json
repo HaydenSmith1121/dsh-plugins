@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "zhourenke/dsh-reasoning-summary",
+  "slug": "zhourenke__dsh-reasoning-summary",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-reasoning-summary",
+  "title": "dsh-reasoning-summary",
+  "summary": "让闭源模型也能看到自己上一步的思考，避免每轮重新猜测、白费力气。",
+  "tags": [
+    "dsh-plugin",
+    "模型适配",
+    "工作流增强",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhourenke",
+  "repo": "https://github.com/zhourenke/dsh-reasoning-summary",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T16:13:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhourenke/dsh-reasoning-summary",
+    "commands": [
+      "dsh plugin --profile web add github:zhourenke/dsh-reasoning-summary"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

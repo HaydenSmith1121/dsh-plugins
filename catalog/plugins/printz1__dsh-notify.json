@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "printz1/dsh-notify",
+  "slug": "printz1__dsh-notify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notify",
+  "title": "dsh-notify",
+  "summary": "需要审批、模型提问或任务跑完时主动提醒你，DSH 可以放心丢后台。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "notifications",
+    "web-ui",
+    "消息通知",
+    "设置面板",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-11T17:32:33Z",
+    "url": "https://github.com/printz1/dsh-notify/releases/tag/v0.1.0"
+  },
+  "author": "printz1",
+  "repo": "https://github.com/printz1/dsh-notify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T17:32:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:printz1/dsh-notify",
+    "commands": [
+      "dsh plugin --profile web add github:printz1/dsh-notify",
+      "dsh plugin --profile web add link:/path/to/dsh-notify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

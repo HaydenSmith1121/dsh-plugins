@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "IT-coder-Yy/dsh-git-plugin",
+  "slug": "it-coder-yy__dsh-git-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-git-plugin",
+  "title": "dsh-git-plugin",
+  "summary": "专为 Harness Web 打造的可视化 Git 工作台，方便查看仓库、执行常用操作，安全运行 AI 生成的自动化流程。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "git",
+    "工作流增强",
+    "安全审计"
+  ],
+  "version": "0.2.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.3",
+    "publishedAt": "2026-08-20T11:25:59Z",
+    "url": "https://github.com/IT-coder-Yy/dsh-git-plugin/releases/tag/v0.2.3"
+  },
+  "author": "IT-coder-Yy",
+  "repo": "https://github.com/IT-coder-Yy/dsh-git-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 1,
+  "pushedAt": "2026-08-20T11:25:28Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:IT-coder-Yy/dsh-git-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:IT-coder-Yy/dsh-git-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

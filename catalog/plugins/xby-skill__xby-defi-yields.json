@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-defi-yields",
+  "slug": "xby-skill__xby-defi-yields",
+  "tier": "community",
+  "package": null,
+  "name": "xby-defi-yields",
+  "title": "xby-defi-yields",
+  "summary": "为AI代理提供DeFi收益池数据查询与关键指标分析，帮助快速发现和评估链上理财机会。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-defi-yields",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:40:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-defi-yields",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-defi-yields",
+      "dsh plugin --profile web add /absolute/path/to/xby-defi-yields"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

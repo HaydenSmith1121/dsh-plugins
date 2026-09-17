@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "hkkz9522/dsh-session-manager",
+  "slug": "hkkz9522__dsh-session-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-manager",
+  "title": "dsh-session-manager",
+  "summary": "管理 DeepSeek Harness 会话，支持归档、删除、跨工作区移动，还能迁移智能体预设。",
+  "tags": [
+    "agent-preset",
+    "dsh",
+    "dsh-plugin",
+    "session-manager",
+    "会话管理",
+    "文件管理",
+    "效率提升"
+  ],
+  "version": "0.4.11",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hkkz9522",
+  "repo": "https://github.com/hkkz9522/dsh-session-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 10,
+  "forks": 1,
+  "pushedAt": "2026-09-14T10:35:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hkkz9522/dsh-session-manager",
+    "commands": [
+      "dsh plugin --profile web add github:hkkz9522/dsh-session-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

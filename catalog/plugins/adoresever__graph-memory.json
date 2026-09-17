@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "adoresever/graph-memory",
+  "slug": "adoresever__graph-memory",
+  "tier": "community",
+  "package": null,
+  "name": "graph-memory",
+  "title": "graph-memory",
+  "summary": "把对话变成知识图谱，压缩上下文75%，让AI跨会话记住经验，越用越聪明。",
+  "tags": [
+    "claude-code",
+    "codex",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "knowledge-graph",
+    "memory",
+    "openclaw",
+    "openclaw-plugin",
+    "opencode",
+    "语义检索",
+    "会话管理",
+    "跨会话复用"
+  ],
+  "version": "2.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.0.0",
+    "publishedAt": "2026-03-18T16:14:57Z",
+    "url": "https://github.com/adoresever/graph-memory/releases/tag/v2.0.0"
+  },
+  "author": "adoresever",
+  "repo": "https://github.com/adoresever/graph-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 626,
+  "forks": 91,
+  "pushedAt": "2026-09-09T07:51:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:adoresever/graph-memory",
+    "commands": [
+      "dsh plugin --profile web add github:adoresever/graph-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

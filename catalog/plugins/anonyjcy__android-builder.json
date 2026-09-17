@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "AnonyJcy/android-builder",
+  "slug": "anonyjcy__android-builder",
+  "tier": "community",
+  "package": null,
+  "name": "android-builder",
+  "title": "android-builder",
+  "summary": "自动检测Android项目信息，一键完成构建、测试、安装和启动，支持USB/WiFi连接，无需手动配置。",
+  "tags": [
+    "adb",
+    "android",
+    "automation",
+    "build-tool",
+    "dsh-skill",
+    "gradle",
+    "shell",
+    "自动化",
+    "可验证执行",
+    "命令行工具",
+    "开发流程",
+    "零配置"
+  ],
+  "version": "1.0.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.2",
+    "publishedAt": "2026-06-09T02:54:38Z",
+    "url": "https://github.com/AnonyJcy/android-builder/releases/tag/v1.0.2"
+  },
+  "author": "AnonyJcy",
+  "repo": "https://github.com/AnonyJcy/android-builder",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-06-09T02:54:38Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AnonyJcy/android-builder",
+    "commands": [
+      "git clone https://github.com/AnonyJcy/android-builder.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

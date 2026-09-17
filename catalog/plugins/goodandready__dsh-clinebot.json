@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-clinebot",
+  "slug": "goodandready__dsh-clinebot",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-clinebot",
+  "title": "dsh-clinebot",
+  "summary": "为 DeepSeek Harness 深度集成 ClineBot/ClinePass，提供专属设置页、实时额度看板与模型管理，一条命令轻松调用。",
+  "tags": [
+    "cline",
+    "clinebot",
+    "clinepass",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "设置面板",
+    "状态监控",
+    "模型适配",
+    "模型配置",
+    "命令行工具"
+  ],
+  "version": "0.3.12",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.12",
+    "publishedAt": "2026-09-16T20:06:34Z",
+    "url": "https://github.com/GooDAnDReaDY/dsh-clinebot/releases/tag/v0.3.12"
+  },
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-clinebot",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T20:05:45Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooDAnDReaDY/dsh-clinebot",
+    "commands": [
+      "dsh plugin --profile web add github:GooDAnDReaDY/dsh-clinebot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

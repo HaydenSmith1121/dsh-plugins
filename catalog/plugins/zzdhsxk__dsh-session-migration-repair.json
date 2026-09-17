@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "zzdhsxk/dsh-session-migration-repair",
+  "slug": "zzdhsxk__dsh-session-migration-repair",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-migration-repair",
+  "title": "dsh-session-migration-repair",
+  "summary": "修复当前版本无法迁移的旧版 v0 会话日志，扫描、备份、修复并离线校验后写回。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "jsonl",
+    "migration",
+    "session-repair",
+    "zstd",
+    "会话管理",
+    "文件管理",
+    "自动化",
+    "安全审计"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-11T18:51:36Z",
+    "url": "https://github.com/zzdhsxk/dsh-session-migration-repair/releases/tag/v0.1.0"
+  },
+  "author": "zzdhsxk",
+  "repo": "https://github.com/zzdhsxk/dsh-session-migration-repair",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T18:51:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-session-migration-repair",
+    "commands": [
+      "dsh plugin --profile web add dsh-session-migration-repair",
+      "dsh plugin --profile web add github:<owner>/dsh-session-migration-repair"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

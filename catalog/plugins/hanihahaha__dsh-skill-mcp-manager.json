@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Hanihahaha/dsh-skill-mcp-manager",
+  "slug": "hanihahaha__dsh-skill-mcp-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skill-mcp-manager",
+  "title": "dsh-skill-mcp-manager",
+  "summary": "在会话中直接管理技能和MCP服务器，并配有专属Web设置界面，让配置更顺手。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "会话配置",
+    "Web设置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Hanihahaha",
+  "repo": "https://github.com/Hanihahaha/dsh-skill-mcp-manager",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T10:03:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Hanihahaha/dsh-skill-mcp-manager",
+    "commands": [
+      "dsh plugin --profile web add github:Hanihahaha/dsh-skill-mcp-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

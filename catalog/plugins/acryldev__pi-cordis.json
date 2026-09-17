@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "acryldev/pi-cordis",
+  "slug": "acryldev__pi-cordis",
+  "tier": "community",
+  "package": null,
+  "name": "pi-cordis",
+  "title": "pi-cordis",
+  "summary": "将 Pi 编码智能体打包为 Cordis 运行时插件，让 ACRYL 能直接挂载、移除或替换 Pi 会话，实现多智能体协作。",
+  "tags": [
+    "acryl-package",
+    "agent-engine",
+    "cordis-plugin",
+    "dsh-plugin",
+    "pi",
+    "多Agent协作",
+    "工具集成",
+    "自动化",
+    "插件管理",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-09T13:05:06Z",
+    "url": "https://github.com/cordisplugins/pi-cordis/releases/tag/v0.1.0"
+  },
+  "author": "acryldev",
+  "repo": "https://github.com/acryldev/pi-cordis",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T13:04:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:acryldev/pi-cordis",
+    "commands": [
+      "pnpm add pi-cordis @deepseek-ai/cordis@4.0.1"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

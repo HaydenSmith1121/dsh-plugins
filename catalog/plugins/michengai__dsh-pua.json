@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "MichengAI/dsh-pua",
+  "slug": "michengai__dsh-pua",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pua",
+  "title": "dsh-pua",
+  "summary": "让 AI 助手别轻易放弃，换个思路再试，并在收工前自己检查一遍结果。",
+  "tags": [
+    "ai-agent",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "prompt-engineering",
+    "pua",
+    "typescript",
+    "自动化",
+    "工作流增强",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.3.13",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.13",
+    "publishedAt": "2026-09-16T07:53:33Z",
+    "url": "https://github.com/MichengAI/dsh-pua/releases/tag/v0.3.13"
+  },
+  "author": "MichengAI",
+  "repo": "https://github.com/MichengAI/dsh-pua",
+  "homepage": "dsh-codex-desktop.micheng.dev",
+  "license": "Apache-2.0",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T07:51:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MichengAI/dsh-pua",
+    "commands": [
+      "dsh plugin --profile web add github:MichengAI/dsh-pua"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

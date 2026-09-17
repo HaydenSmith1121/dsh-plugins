@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "MuWinds/dsh-archived-sessions",
+  "slug": "muwinds__dsh-archived-sessions",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-archived-sessions",
+  "title": "dsh-archived-sessions",
+  "summary": "管理 Harness 归档会话，一键查看占用、释放或清除，轻松整理磁盘空间。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "归档管理",
+    "磁盘清理",
+    "会话管理",
+    "设置扩展"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "MuWinds",
+  "repo": "https://github.com/MuWinds/dsh-archived-sessions",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 1,
+  "pushedAt": "2026-09-12T05:20:33Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MuWinds/dsh-archived-sessions",
+    "commands": [
+      "dsh plugin --profile web add github:MuWinds/dsh-archived-sessions",
+      "dsh plugin --profile web add ./dsh-archived-sessions"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "culture-flask/dsh-aemeath-pet",
+  "slug": "culture-flask__dsh-aemeath-pet",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-aemeath-pet",
+  "title": "dsh-aemeath-pet",
+  "summary": "在 DeepSeek Harness 网页界面角落放一只像素风桌宠爱弥斯，陪你一起干活。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "主题",
+    "AI 助手",
+    "前端增强",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "culture-flask",
+  "repo": "https://github.com/culture-flask/dsh-aemeath-pet",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-08-18T17:51:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:culture-flask/dsh-aemeath-pet",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/culture-flask/dsh-aemeath-pet/archive/refs/tags/v0.1.0.tar.gz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

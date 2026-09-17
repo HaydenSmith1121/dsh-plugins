@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "satan9394/dsh-usage-unified",
+  "slug": "satan9394__dsh-usage-unified",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage-unified",
+  "title": "dsh-usage-unified",
+  "summary": "统计全机 DSH 的 token 用量，看趋势、按模型拆分、查调用明细，还能导出 CSV/JSON。",
+  "tags": [
+    "analytics",
+    "dashboard",
+    "data-visualization",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "token-usage",
+    "typescript",
+    "usage-statistics",
+    "状态监控",
+    "可视化",
+    "成本控制",
+    "内容创作"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-13T09:43:40Z",
+    "url": "https://github.com/satan9394/dsh-usage-unified/releases/tag/v0.1.1"
+  },
+  "author": "satan9394",
+  "repo": "https://github.com/satan9394/dsh-usage-unified",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T14:28:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:satan9394/dsh-usage-unified",
+    "commands": [
+      "dsh plugin --profile web add github:satan9394/dsh-usage-unified"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "suntianc/dsh-codex-auth",
+  "slug": "suntianc__dsh-codex-auth",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codex-auth",
+  "title": "dsh-codex-auth",
+  "summary": "让 DSH 直接复用本地 Codex CLI 的 ChatGPT 登录，免去重复配置，还带一个 GPT 认证设置卡片。",
+  "tags": [
+    "chatgpt",
+    "codex",
+    "deepseek-harness",
+    "dsh-plugin",
+    "oauth",
+    "零配置",
+    "模型适配",
+    "设置面板",
+    "工具集成",
+    "AI 助手"
+  ],
+  "version": "0.3.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.2",
+    "publishedAt": "2026-09-02T08:42:42Z",
+    "url": "https://github.com/suntianc/dsh-codex-auth/releases/tag/v0.3.2"
+  },
+  "author": "suntianc",
+  "repo": "https://github.com/suntianc/dsh-codex-auth",
+  "homepage": "https://github.com/deepseek-ai/deepseek-harness",
+  "license": "MIT",
+  "stars": 14,
+  "forks": 6,
+  "pushedAt": "2026-09-10T09:10:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:suntianc/dsh-codex-auth",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-codex-auth-0.3.3-alpha.6.tgz",
+      "dsh plugin --profile web list"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

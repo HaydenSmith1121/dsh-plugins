@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "aa2246740/dsh-cuadrive-mac",
+  "slug": "aa2246740__dsh-cuadrive-mac",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cuadrive-mac",
+  "title": "dsh-cuadrive-mac",
+  "summary": "让 DSH 里的 agent 在 macOS 上直接操作窗口和 App，实现真正的电脑自动化控制。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "AI 助手",
+    "多模态",
+    "安全审查",
+    "命令行工具"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "aa2246740",
+  "repo": "https://github.com/aa2246740/dsh-cuadrive-mac",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T00:36:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aa2246740/dsh-cuadrive-mac",
+    "commands": [
+      "dsh plugin --profile web add github:aa2246740/dsh-cuadrive-mac",
+      "git clone https://github.com/aa2246740/dsh-cuadrive-mac.git",
+      "dsh plugin --profile web add ./dsh-cuadrive-mac"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

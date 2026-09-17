@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "TikaFlow/dsh-model-fix",
+  "slug": "tikaflow__dsh-model-fix",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-fix",
+  "title": "dsh-model-fix",
+  "summary": "自动为自定义模型补全推理级别、上下文长度等参数，数据来自 models.dev，省去手动配置。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "自动化",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.11.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.11.2",
+    "publishedAt": "2026-09-11T16:24:40Z",
+    "url": "https://github.com/TikaFlow/dsh-model-fix/releases/tag/v0.11.2"
+  },
+  "author": "TikaFlow",
+  "repo": "https://github.com/TikaFlow/dsh-model-fix",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T16:24:03Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TikaFlow/dsh-model-fix",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/TikaFlow/dsh-model-fix/releases/latest/download/dsh-model-fix.tgz",
+      "dsh plugin --profile web add github:TikaFlow/dsh-model-fix"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "lzbaclz/dsh-conversation-outline",
+  "slug": "lzbaclz__dsh-conversation-outline",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-conversation-outline",
+  "title": "dsh-conversation-outline",
+  "summary": "在 DeepSeek Harness 网页右侧生成对话大纲，悬停预览、点击跳转，快速定位历史消息。",
+  "tags": [
+    "conversation",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "outline",
+    "对话大纲",
+    "快速导航",
+    "悬停预览",
+    "消息定位"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-17T10:50:12Z",
+    "url": "https://github.com/lzbaclz/dsh-conversation-outline/releases/tag/v0.2.0"
+  },
+  "author": "lzbaclz",
+  "repo": "https://github.com/lzbaclz/dsh-conversation-outline",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-17T12:15:25Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lzbaclz/dsh-conversation-outline",
+    "commands": [
+      "dsh plugin --profile web add github:lzbaclz/dsh-conversation-outline",
+      "dsh plugin --profile web add dsh-conversation-outline",
+      "git clone https://github.com/lzbaclz/dsh-conversation-outline.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

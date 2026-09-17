@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "RealAlexandreAI/dsh-all-search",
+  "slug": "realalexandreai__dsh-all-search",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-all-search",
+  "title": "dsh-all-search",
+  "summary": "为DeepSeek Harness添加AnySearch联网搜索能力，让模型实时检索网页信息，回答更准确。",
+  "tags": [
+    "dsh-plugin",
+    "语义检索",
+    "零配置",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.2.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "RealAlexandreAI",
+  "repo": "https://github.com/RealAlexandreAI/dsh-all-search",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-08T03:53:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-all-search",
+    "commands": [
+      "dsh plugin --profile web add dsh-all-search"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

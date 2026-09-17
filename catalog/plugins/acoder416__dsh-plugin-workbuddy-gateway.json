@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Acoder416/dsh-plugin-workbuddy-gateway",
+  "slug": "acoder416__dsh-plugin-workbuddy-gateway",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-workbuddy-gateway",
+  "title": "dsh-plugin-workbuddy-gateway",
+  "summary": "把 WorkBuddy 订阅额度接进 DSH 当模型用，本地网关自动托管，设置页里就能管。",
+  "tags": [
+    "codebuddy",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "workbuddy",
+    "模型适配",
+    "模型配置",
+    "工具集成",
+    "设置面板",
+    "桥接插件"
+  ],
+  "version": "0.2.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.2",
+    "publishedAt": "2026-09-17T07:59:08Z",
+    "url": "https://github.com/Acoder416/dsh-plugin-workbuddy-gateway/releases/tag/v0.2.2"
+  },
+  "author": "Acoder416",
+  "repo": "https://github.com/Acoder416/dsh-plugin-workbuddy-gateway",
+  "homepage": "https://github.com/Acoder416/dsh-plugin-workbuddy-gateway#readme",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:09:14Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Acoder416/dsh-plugin-workbuddy-gateway",
+    "commands": [
+      "dsh plugin --profile web add github:Acoder416/dsh-plugin-workbuddy-gateway"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

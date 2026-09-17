@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "syncended/deepseek-harness-split-screen",
+  "slug": "syncended__deepseek-harness-split-screen",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-split-screen",
+  "title": "deepseek-harness-split-screen",
+  "summary": "把多个 Harness 会话并排放在一个屏幕上，像 iTerm 分屏一样同时操作，切换方便，效率翻倍。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "多Agent协作",
+    "工作区管理",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.4.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "syncended",
+  "repo": "https://github.com/syncended/deepseek-harness-split-screen",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-29T09:35:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@syncended/dsh-split-screen",
+    "commands": [
+      "dsh plugin --profile web add @syncended/dsh-split-screen",
+      "dsh plugin --profile web add /absolute/path/to/deepseek-harness-split-screen",
+      "dsh plugin --profile web add -w /absolute/path/to/deepseek-harness-split-screen"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

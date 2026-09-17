@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "canghai666x/dsh-news-plugin",
+  "slug": "canghai666x__dsh-news-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-news-plugin",
+  "title": "dsh-news-plugin",
+  "summary": "一键抓取中英文RSS新闻，整理成结构化信息，方便模型快速评分和生成简报。",
+  "tags": [
+    "cordis",
+    "dsh-plugin",
+    "rss",
+    "新闻聚合",
+    "RSS订阅",
+    "信息简报",
+    "数据分析"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "canghai666x",
+  "repo": "https://github.com/canghai666x/dsh-news-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-14T08:31:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:canghai666x/dsh-news-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:canghai666x/dsh-news-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

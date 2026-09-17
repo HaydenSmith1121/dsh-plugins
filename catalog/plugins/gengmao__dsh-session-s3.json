@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "gengmao/dsh-session-s3",
+  "slug": "gengmao__dsh-session-s3",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-s3",
+  "title": "dsh-session-s3",
+  "summary": "把对话记录安全存到S3云端，利用不可变日志和哈希校验，实现可靠备份与跨设备无缝同步。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "s3",
+    "会话管理",
+    "云存储",
+    "会话备份",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "gengmao",
+  "repo": "https://github.com/gengmao/dsh-session-s3",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-03T18:31:33Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:gengmao/dsh-session-s3",
+    "commands": [
+      "dsh plugin --profile web add github:gengmao/dsh-session-s3"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

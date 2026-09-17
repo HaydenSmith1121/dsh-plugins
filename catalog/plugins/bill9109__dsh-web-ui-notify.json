@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "bill9109/dsh-web-ui-notify",
+  "slug": "bill9109__dsh-web-ui-notify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-ui-notify",
+  "title": "dsh-web-ui-notify",
+  "summary": "审批、提问和回合结束时自动弹出桌面通知，不用一直盯着 WebUI 等结果。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "状态监控",
+    "效率提升",
+    "快捷操作"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bill9109",
+  "repo": "https://github.com/bill9109/dsh-web-ui-notify",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 28,
+  "forks": 0,
+  "pushedAt": "2026-09-01T07:45:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:omdsh-dev/dsh-web-ui-notify",
+    "commands": [
+      "dsh plugin --profile web add github:omdsh-dev/dsh-web-ui-notify",
+      "dsh plugin --profile web add /path/to/dsh-web-ui-notify",
+      "dsh plugin --profile web update github:omdsh-dev/dsh-web-ui-notify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

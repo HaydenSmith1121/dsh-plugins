@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "nonmean/dsh-lan-access",
+  "slug": "nonmean__dsh-lan-access",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-lan-access",
+  "title": "dsh-lan-access",
+  "summary": "为 DSH 增加局域网访问开关，无需手动改配置，一键开启/关闭 Web GUI 的局域网访问。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "lan-access",
+    "局域网转发",
+    "零配置"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "nonmean",
+  "repo": "https://github.com/nonmean/dsh-lan-access",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-13T13:08:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:nonmean/dsh-lan-access",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/<owner>/<repo>.git",
+      "git clone https://github.com/<owner>/<repo>.git",
+      "dsh plugin --profile web add link:/path/to/dsh-lan-access"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

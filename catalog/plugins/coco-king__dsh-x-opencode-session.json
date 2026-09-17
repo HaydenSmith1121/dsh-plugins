@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Coco-king/dsh-x-opencode-session",
+  "slug": "coco-king__dsh-x-opencode-session",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-x-opencode-session",
+  "title": "dsh-x-opencode-session",
+  "summary": "自动为发往 OpenCode 服务的请求附加会话标识，无需配置即可保持同一对话内会话值固定。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "会话管理",
+    "AI 助手",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Coco-king",
+  "repo": "https://github.com/Coco-king/dsh-x-opencode-session",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-07T07:37:15Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Coco-king/dsh-x-opencode-session",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/Coco-king/dsh-x-opencode-session.git",
+      "dsh plugin --profile web add https://gitee.com/kkcoco/dsh-x-opencode-session.git",
+      "dsh plugin --profile web remove dsh-x-opencode-session"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

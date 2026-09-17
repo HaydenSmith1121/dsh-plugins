@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "alonelypigeon/dsh-plugin-balance-panel",
+  "slug": "alonelypigeon__dsh-plugin-balance-panel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-balance-panel",
+  "title": "dsh-plugin-balance-panel",
+  "summary": "在右下角挂个玻璃气泡，随时查看各家 API 余额和 Coding Plan 用量，还能统计每天花了多少钱和多少 Token。",
+  "tags": [
+    "dsh",
+    "dsh-plugins",
+    "状态监控",
+    "可视化",
+    "主题",
+    "数据分析",
+    "工具集成"
+  ],
+  "version": "0.12.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "alonelypigeon",
+  "repo": "https://github.com/alonelypigeon/dsh-plugin-balance-panel",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T13:59:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-balance-panel",
+    "commands": [
+      "dsh plugin add dsh-plugin-balance-panel",
+      "npm install -g dsh-plugin-balance-panel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

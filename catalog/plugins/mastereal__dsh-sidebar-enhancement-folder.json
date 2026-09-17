@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "mastereal/dsh-sidebar-enhancement-folder",
+  "slug": "mastereal__dsh-sidebar-enhancement-folder",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sidebar-enhancement-folder",
+  "title": "dsh-sidebar-enhancement-folder",
+  "summary": "给侧边栏每个文件标签加个按钮，一键打开该文件所在文件夹，不用管哪个窗格是活动的。",
+  "tags": [
+    "better-sidebar",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "sidebar",
+    "文件管理",
+    "快捷操作",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "1.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.1",
+    "publishedAt": "2026-08-17T02:29:03Z",
+    "url": "https://github.com/mastereal/dsh-sidebar-enhancement-folder/releases/tag/v1.0.1"
+  },
+  "author": "mastereal",
+  "repo": "https://github.com/mastereal/dsh-sidebar-enhancement-folder",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T12:16:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mastereal/dsh-sidebar-enhancement-folder",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/mastereal/dsh-sidebar-enhancement-folder/archive/refs/tags/v1.0.7.tar.gz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

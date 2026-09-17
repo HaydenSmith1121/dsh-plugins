@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "chinng-inta/dsh-web-search-searxng",
+  "slug": "chinng-inta__dsh-web-search-searxng",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-search-searxng",
+  "title": "dsh-web-search-searxng",
+  "summary": "用自托管的SearXNG给DeepSeek Harness加联网搜索能力，让模型能实时查资料。",
+  "tags": [
+    "dsh-plugin",
+    "searxng",
+    "AI 助手",
+    "零配置",
+    "效率提升",
+    "模型配置"
+  ],
+  "version": "0.4.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "chinng-inta",
+  "repo": "https://github.com/chinng-inta/dsh-web-search-searxng",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 2,
+  "pushedAt": "2026-09-04T15:05:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-web-search-searxng",
+    "commands": [
+      "dsh plugin --profile web add dsh-web-search-searxng",
+      "dsh plugin --profile web add github:chinng-inta/dsh-web-search-searxng"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

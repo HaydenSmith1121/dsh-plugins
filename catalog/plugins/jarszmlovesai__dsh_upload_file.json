@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "JarszmLovesAI/dsh_upload_file",
+  "slug": "jarszmlovesai__dsh_upload_file",
+  "tier": "community",
+  "package": null,
+  "name": "dsh_upload_file",
+  "title": "dsh_upload_file",
+  "summary": "在 DSH 网页端直接粘贴或选择文件存入 inbox，自动生成缩略图，文本内容可被智能体读取。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "文件管理",
+    "收件箱存储",
+    "缩略图预览",
+    "文本读取"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "JarszmLovesAI",
+  "repo": "https://github.com/JarszmLovesAI/dsh_upload_file",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-16T05:43:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JarszmLovesAI/dsh_upload_file",
+    "commands": [
+      "dsh plugin --profile web add github:JarszmLovesAI/dsh_upload_file"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

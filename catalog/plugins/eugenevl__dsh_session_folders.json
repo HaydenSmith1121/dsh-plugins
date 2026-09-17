@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "EugeneVl/dsh_session_folders",
+  "slug": "eugenevl__dsh_session_folders",
+  "tier": "community",
+  "package": null,
+  "name": "dsh_session_folders",
+  "title": "dsh_session_folders",
+  "summary": "为 DSH 网页侧边栏增加会话文件夹，支持拖拽或右键把会话分组，数据自动保存，无需改动核心。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "前端增强",
+    "会话管理",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.4.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "EugeneVl",
+  "repo": "https://github.com/EugeneVl/dsh_session_folders",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 2,
+  "pushedAt": "2026-09-15T01:12:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-session-folders",
+    "commands": [
+      "dsh plugin --profile web add dsh-session-folders",
+      "dsh plugin --profile web add 'github:EugeneVl/dsh_session_folders"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

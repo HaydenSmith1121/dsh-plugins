@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "hpyperry/dsh-cajita",
+  "slug": "hpyperry__dsh-cajita",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cajita",
+  "title": "dsh-cajita",
+  "summary": "DSH 小工具箱，内置消息编辑与内网抓取放行等实用小工具，即装即用。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "安全审计",
+    "插件管理"
+  ],
+  "version": "0.1.5",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hpyperry",
+  "repo": "https://github.com/hpyperry/dsh-cajita",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T12:21:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@hpyperry/dsh-cajita@0.1.5",
+    "commands": [
+      "dsh plugin --profile web add @hpyperry/dsh-cajita@0.1.5",
+      "dsh plugin --profile web add @hpyperry/dsh-cajita@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

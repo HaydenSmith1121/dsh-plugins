@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "havingautism/dsh-deepresearch",
+  "slug": "havingautism__dsh-deepresearch",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-deepresearch",
+  "title": "dsh-deepresearch",
+  "summary": "把证据优先的深度研究工作区带到 DSH，支持持久化工作流状态、模型工具和深度研究 Web 界面，帮你系统化完成多步研究任务。",
+  "tags": [
+    "dsh-plugin",
+    "研究辅助",
+    "工作流管理"
+  ],
+  "version": "0.2.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "havingautism",
+  "repo": "https://github.com/havingautism/dsh-deepresearch",
+  "homepage": null,
+  "license": null,
+  "stars": 14,
+  "forks": 3,
+  "pushedAt": "2026-08-26T14:35:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:havingautism/dsh-deepresearch",
+    "commands": [
+      "dsh plugin --profile web add github:havingautism/dsh-deepresearch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

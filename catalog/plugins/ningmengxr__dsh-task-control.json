@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ningmengxr/dsh-task-control",
+  "slug": "ningmengxr__dsh-task-control",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-task-control",
+  "title": "dsh-task-control",
+  "summary": "下载卡死一键急停，实时检测pip/GitHub下载进度，自动识别卡死并隐形追加条件，告别网络超时干等。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "download",
+    "dsh",
+    "dsh-plugin",
+    "emergency-stop",
+    "plugin",
+    "productivity",
+    "task-control",
+    "效率提升",
+    "资源优化",
+    "工作区管理",
+    "自动化"
+  ],
+  "version": "0.4.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.4",
+    "publishedAt": "2026-09-17T05:15:29Z",
+    "url": "https://github.com/ningmengxr/dsh-task-control/releases/tag/v0.4.4"
+  },
+  "author": "ningmengxr",
+  "repo": "https://github.com/ningmengxr/dsh-task-control",
+  "homepage": null,
+  "license": null,
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-27T07:48:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ningmengxr/dsh-task-control",
+    "commands": [
+      "dsh plugin --profile web add github:ningmengxr/dsh-task-control"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

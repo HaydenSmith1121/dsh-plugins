@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "qyw233/dsh-deeplink",
+  "slug": "qyw233__dsh-deeplink",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-deeplink",
+  "title": "dsh-deeplink",
+  "summary": "通过 URL 参数直接打开指定项目对话，省去手动切换会话的麻烦。",
+  "tags": [
+    "dsh-plugin",
+    "深链跳转",
+    "会话直达",
+    "WebUI增强",
+    "快捷导航"
+  ],
+  "version": "0.6.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "qyw233",
+  "repo": "https://github.com/qyw233/dsh-deeplink",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-13T09:12:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qyw233/dsh-deeplink",
+    "commands": [
+      "dsh plugin --profile web add github:qyw233/dsh-deeplink",
+      "dsh plugin --profile web add /path/to/dsh-deeplink"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "openma-ai/deepseek-harness-acp",
+  "slug": "openma-ai__deepseek-harness-acp",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-acp",
+  "title": "deepseek-harness-acp",
+  "summary": "把 DeepSeek Harness 的能力开放给 Zed 等 ACP 客户端，共享登录状态和会话，让你在编辑器里直接用上完整 DSH 智能体。",
+  "tags": [
+    "acp",
+    "agent-client-protocol",
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-plugins",
+    "命令行工具"
+  ],
+  "version": "0.4.32",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.32",
+    "publishedAt": "2026-09-17T04:01:44Z",
+    "url": "https://github.com/openma-ai/deepseek-harness-acp/releases/tag/v0.4.32"
+  },
+  "author": "openma-ai",
+  "repo": "https://github.com/openma-ai/deepseek-harness-acp",
+  "homepage": "https://dshsuite.dev/#other-products",
+  "license": "NOASSERTION",
+  "stars": 30,
+  "forks": 4,
+  "pushedAt": "2026-09-10T07:51:32Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@openma/deepseek-harness-acp@latest",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh",
+      "dsh plugin --profile acp add @openma/deepseek-harness-acp@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

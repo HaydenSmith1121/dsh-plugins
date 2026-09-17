@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "988hj7tczd-oss/dsh-pr-description",
+  "slug": "988hj7tczd-oss__dsh-pr-description",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pr-description",
+  "title": "dsh-pr-description",
+  "summary": "分析当前分支的代码差异，自动生成符合 Conventional Commits 规范的 PR 标题、描述和自检清单，提升提交流程效率。",
+  "tags": [
+    "conventional-commits",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "pull-request",
+    "工作流增强",
+    "内容创作",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "988hj7tczd-oss",
+  "repo": "https://github.com/988hj7tczd-oss/dsh-pr-description",
+  "homepage": "https://aibunkhouse.com/tools/",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-24T14:53:34Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:988hj7tczd-oss/dsh-pr-description",
+    "commands": [
+      "dsh plugin --profile demo add ./dsh-pr-description"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

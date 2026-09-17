@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "1304836815/dsh-auto-memory",
+  "slug": "1304836815__dsh-auto-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auto-memory",
+  "title": "dsh-auto-memory",
+  "summary": "会话级记忆插件：自动收尾提醒、维护记忆索引，记录并压缩对话日志，让跨会话决策不丢失。",
+  "tags": [
+    "agent-skills",
+    "dsh",
+    "dsh-plugin",
+    "memory",
+    "memory-management",
+    "会话管理",
+    "效率提升",
+    "自动化",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "1304836815",
+  "repo": "https://github.com/1304836815/dsh-auto-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-21T17:54:06Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:1304836815/dsh-auto-memory",
+    "commands": [
+      "dsh plugin --profile web add <仓库地址或本地目录>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

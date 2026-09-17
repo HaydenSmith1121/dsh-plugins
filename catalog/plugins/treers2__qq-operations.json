@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "treers2/qq-operations",
+  "slug": "treers2__qq-operations",
+  "tier": "community",
+  "package": null,
+  "name": "qq-operations",
+  "title": "qq-operations",
+  "summary": "操控 QQ NT 桌面版，自动读消息、发消息、发文件、群文件，支持多会话陪聊，Windows 上稳定可靠。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "powershell",
+    "qq-automation",
+    "uiautomation",
+    "自动化",
+    "AI 助手",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "1.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.0",
+    "publishedAt": "2026-08-25T18:12:15Z",
+    "url": "https://github.com/treers2/qq-operations/releases/tag/v1.2.0"
+  },
+  "author": "treers2",
+  "repo": "https://github.com/treers2/qq-operations",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-30T06:40:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:treers2/qq-operations",
+    "commands": [
+      "dsh plugin --profile web add github:treers2/qq-operations"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

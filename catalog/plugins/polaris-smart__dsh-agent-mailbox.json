@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "polaris-smart/dsh-agent-mailbox",
+  "slug": "polaris-smart__dsh-agent-mailbox",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-mailbox",
+  "title": "dsh-agent-mailbox",
+  "summary": "给你的 dsh 智能体装个信箱，能和本机其他 AI 智能体互相收发消息、派发任务。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mailbox",
+    "mcp",
+    "multi-agent",
+    "多智能体协作",
+    "桥接插件",
+    "消息通知",
+    "工具集成",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-15T15:39:26Z",
+    "url": "https://github.com/polaris-smart/dsh-agent-mailbox/releases/tag/v0.1.0"
+  },
+  "author": "polaris-smart",
+  "repo": "https://github.com/polaris-smart/dsh-agent-mailbox",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T10:26:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:polaris-smart/dsh-agent-mailbox",
+    "commands": [
+      "dsh plugin add github:polaris-smart/dsh-agent-mailbox"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

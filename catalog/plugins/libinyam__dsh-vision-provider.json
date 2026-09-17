@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "libinyam/dsh-vision-provider",
+  "slug": "libinyam__dsh-vision-provider",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-vision-provider",
+  "title": "dsh-vision-provider",
+  "summary": "为 DeepSeek Harness 一键接入 OpenAI 兼容视觉模型，轻松实现多模态识别与理解。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "multimodal",
+    "openai-compatible",
+    "vision",
+    "视觉理解",
+    "模型配置",
+    "插件管理"
+  ],
+  "version": "0.3.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.3",
+    "publishedAt": "2026-08-14T07:27:32Z",
+    "url": "https://github.com/libinyam/dsh-vision-provider/releases/tag/v0.3.3"
+  },
+  "author": "libinyam",
+  "repo": "https://github.com/libinyam/dsh-vision-provider",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-15T04:05:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:libinyam/dsh-vision-provider",
+    "commands": [
+      "dsh plugin --profile web add github:libinyam/dsh-vision-provider"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

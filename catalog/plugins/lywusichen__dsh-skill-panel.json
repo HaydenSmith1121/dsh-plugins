@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "lywusichen/dsh-skill-panel",
+  "slug": "lywusichen__dsh-skill-panel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skill-panel",
+  "title": "dsh-skill-panel",
+  "summary": "在侧边栏底部一键查看当前会话已加载的技能，并快速打开本地技能目录，方便管理。",
+  "tags": [
+    "deepseek",
+    "deepseek-v4",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "javascript",
+    "panel",
+    "skills",
+    "工具集成",
+    "会话管理",
+    "工作区管理",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-10T15:06:50Z",
+    "url": "https://github.com/lywusichen/dsh-skill-panel/releases/tag/v0.1.2"
+  },
+  "author": "lywusichen",
+  "repo": "https://github.com/lywusichen/dsh-skill-panel",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-10T15:02:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lywusichen/dsh-skill-panel",
+    "commands": [
+      "dsh plugin --profile web add github:lywusichen/dsh-skill-panel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "12398k/dsh-opencode-go-dashboard",
+  "slug": "12398k__dsh-opencode-go-dashboard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-opencode-go-dashboard",
+  "title": "dsh-opencode-go-dashboard",
+  "summary": "在 DSH 网页界面中实时查看 OpenCode Go 套餐的滚动、每周、每月用量及重置倒计时，方便管理额度。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "状态监控",
+    "可视化",
+    "效率提升",
+    "内容创作"
+  ],
+  "version": "0.1.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "12398k",
+  "repo": "https://github.com/12398k/dsh-opencode-go-dashboard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-25T02:26:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-opencode-go-dashboard@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-opencode-go-dashboard@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

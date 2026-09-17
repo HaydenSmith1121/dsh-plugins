@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-awslabs-aws-diagram",
+  "slug": "xby-skill__xby-awslabs-aws-diagram",
+  "tier": "community",
+  "package": null,
+  "name": "xby-awslabs-aws-diagram",
+  "title": "xby-awslabs-aws-diagram",
+  "summary": "在 GitHub Codespace 里快速生成 AWS 架构图，省时省力，画图更高效。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "命令行工具",
+    "AI 助手",
+    "可视化",
+    "工作流增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-awslabs-aws-diagram",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:35:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-awslabs-aws-diagram",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-awslabs-aws-diagram",
+      "dsh plugin --profile web add /absolute/path/to/xby-awslabs-aws-diagram"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

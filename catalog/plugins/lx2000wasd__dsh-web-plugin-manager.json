@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "LX2000WASD/dsh-web-plugin-manager",
+  "slug": "lx2000wasd__dsh-web-plugin-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-plugin-manager",
+  "title": "dsh-web-plugin-manager",
+  "summary": "在 Web 界面里一键管理 DSH 插件，支持查看、启停、安装卸载和环境配置，覆盖所有插件类型。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "可视化"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "LX2000WASD",
+  "repo": "https://github.com/LX2000WASD/dsh-web-plugin-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 70,
+  "forks": 3,
+  "pushedAt": "2026-09-12T20:00:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-web-plugin-manager@latest",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-web-plugin-manager@latest",
+      "dsh plugin --profile <name> add .",
+      "dsh plugin --profile NAME add dsh-web-plugin-manager@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

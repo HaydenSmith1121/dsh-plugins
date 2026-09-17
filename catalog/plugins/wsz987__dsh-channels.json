@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "wsz987/dsh-channels",
+  "slug": "wsz987__dsh-channels",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-channels",
+  "title": "dsh-channels",
+  "summary": "把微信、QQ、钉钉、飞书和Telegram接入DeepSeek Harness，扫码即可在IM里与Agent对话，还支持收发图片和文档。",
+  "tags": [
+    "ai-agent",
+    "deepseek",
+    "deepseek-harness",
+    "dingding",
+    "dsh",
+    "dsh-channels",
+    "dsh-plugin",
+    "feishu",
+    "qqbot",
+    "telegram",
+    "weixin",
+    "AI工具",
+    "工具集成",
+    "效率提升",
+    "会话管理",
+    "零配置"
+  ],
+  "version": "0.5.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.1",
+    "publishedAt": "2026-09-11T13:08:43Z",
+    "url": "https://github.com/wsz987/dsh-channels/releases/tag/v0.5.1"
+  },
+  "author": "wsz987",
+  "repo": "https://github.com/wsz987/dsh-channels",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 11,
+  "forks": 1,
+  "pushedAt": "2026-09-11T14:17:51Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wsz987/dsh-channels",
+    "commands": [
+      "npm i -g @deepseek-ai/dsh@next"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

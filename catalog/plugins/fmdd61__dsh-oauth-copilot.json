@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "FMDD61/dsh-oauth-copilot",
+  "slug": "fmdd61__dsh-oauth-copilot",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-oauth-copilot",
+  "title": "dsh-oauth-copilot",
+  "summary": "用 GitHub 账号一键登录 Copilot，并自动配置 DeepSeek Harness 的模型路由，省去手动设置。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "模型配置",
+    "工作流增强",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "FMDD61",
+  "repo": "https://github.com/FMDD61/dsh-oauth-copilot",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T12:25:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-oauth-copilot",
+    "commands": [
+      "dsh plugin --profile web add dsh-oauth-copilot",
+      "npm install && npm run build",
+      "dsh plugin --profile web add /path/to/dsh-oauth-copilot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

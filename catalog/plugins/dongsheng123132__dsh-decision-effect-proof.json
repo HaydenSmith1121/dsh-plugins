@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "dongsheng123132/dsh-decision-effect-proof",
+  "slug": "dongsheng123132__dsh-decision-effect-proof",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-decision-effect-proof",
+  "title": "dsh-decision-effect-proof",
+  "summary": "离线验证DSH授权决策与实际记录效果是否一致，自动揪出越权操作或未生效的授权，方便审计排查。",
+  "tags": [
+    "audit",
+    "authorization",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "evidence",
+    "安全审计",
+    "插件管理",
+    "自动化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dongsheng123132",
+  "repo": "https://github.com/dongsheng123132/dsh-decision-effect-proof",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-07T13:35:11Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dongsheng123132/dsh-decision-effect-proof",
+    "commands": [
+      "dsh plugin --profile web add github:dongsheng123132/dsh-decision-effect-proof"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

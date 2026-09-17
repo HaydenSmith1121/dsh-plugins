@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ravenli059/dsh-login",
+  "slug": "ravenli059__dsh-login",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-login",
+  "title": "dsh-login",
+  "summary": "给 dsh-web 加一道登录门，输入用户名密码验证通过后才能访问界面，账号信息加密存储更安全。",
+  "tags": [
+    "dsh-login-plugin",
+    "dsh-plugin",
+    "dsh-plugins",
+    "安全审计"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-18T07:35:31Z",
+    "url": "https://github.com/ravenli059/dsh-login/releases/tag/v0.1.1"
+  },
+  "author": "ravenli059",
+  "repo": "https://github.com/ravenli059/dsh-login",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-31T07:16:34Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ravenli059/dsh-login",
+    "commands": [
+      "dsh plugin --profile web add github:ravenli059/dsh-login"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

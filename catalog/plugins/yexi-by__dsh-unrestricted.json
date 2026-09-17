@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "yexi-by/dsh-unrestricted",
+  "slug": "yexi-by__dsh-unrestricted",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-unrestricted",
+  "title": "dsh-unrestricted",
+  "summary": "给 DSH Web 加个开关，随时切换破限提示词，支持多模式和子代理，关掉就恢复原版。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "prompt-engineering",
+    "typescript",
+    "模型适配",
+    "快捷操作",
+    "多Agent协作",
+    "设置面板",
+    "插件管理"
+  ],
+  "version": "0.1.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.7",
+    "publishedAt": "2026-09-11T13:23:04Z",
+    "url": "https://github.com/yexi-by/dsh-unrestricted/releases/tag/v0.1.7"
+  },
+  "author": "yexi-by",
+  "repo": "https://github.com/yexi-by/dsh-unrestricted",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 51,
+  "forks": 7,
+  "pushedAt": "2026-09-11T13:22:54Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yexi-by/dsh-unrestricted",
+    "commands": [
+      "dsh plugin --profile web add github:yexi-by/dsh-unrestricted",
+      "dsh plugin --profile web remove dsh-unrestricted",
+      "git clone https://github.com/yexi-by/dsh-unrestricted.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

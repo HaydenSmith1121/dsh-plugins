@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "POPCORNBOOM/dsh-insight-dock",
+  "slug": "popcornboom__dsh-insight-dock",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-insight-dock",
+  "title": "dsh-insight-dock",
+  "summary": "让 AI 干活时把冒出的零碎想法先存到侧边栏，你之后再决定要不要听。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "状态持久化",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.2.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "POPCORNBOOM",
+  "repo": "https://github.com/POPCORNBOOM/dsh-insight-dock",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T23:54:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:POPCORNBOOM/dsh-insight-dock",
+    "commands": [
+      "dsh plugin --profile <profile> add dsh-insight-dock",
+      "dsh plugin --profile <profile> add link:/absolute/path/to/dsh-insight"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

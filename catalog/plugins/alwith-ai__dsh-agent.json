@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "ALwith-ai/dsh-agent",
+  "slug": "alwith-ai__dsh-agent",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent",
+  "title": "dsh-agent",
+  "summary": "把 DeepSeek Harness 变成聊天机器人，让桌面和编辑器客户端能直接对话、看运行状态并授权操作。",
+  "tags": [
+    "acp",
+    "agent-client-protocol",
+    "alwith",
+    "deepseek-harness",
+    "dsh-plugin",
+    "桌宠",
+    "会话管理",
+    "状态监控",
+    "安全审计",
+    "多Agent协作"
+  ],
+  "version": "0.2.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.9",
+    "publishedAt": "2026-09-10T02:03:04Z",
+    "url": "https://github.com/ALwith-ai/dsh-agent/releases/tag/v0.2.9"
+  },
+  "author": "ALwith-ai",
+  "repo": "https://github.com/ALwith-ai/dsh-agent",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T14:53:03Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ALwith-ai/dsh-agent",
+    "commands": [
+      "dsh plugin --profile web add github:ALwith-ai/dsh-agent"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "tr1v3r/dsh-quote-followup",
+  "slug": "tr1v3r__dsh-quote-followup",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-quote-followup",
+  "title": "dsh-quote-followup",
+  "summary": "把选中的对话内容一键引用到回复框，针对特定消息发起追问，提升对话效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "前端增强",
+    "插件管理"
+  ],
+  "version": "0.2.6",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "tr1v3r",
+  "repo": "https://github.com/tr1v3r/dsh-quote-followup",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-09-13T14:57:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-quote-followup",
+    "commands": [
+      "dsh plugin --profile web add dsh-quote-followup"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

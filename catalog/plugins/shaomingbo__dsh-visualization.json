@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "shaomingbo/dsh-visualization",
+  "slug": "shaomingbo__dsh-visualization",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-visualization",
+  "title": "dsh-visualization",
+  "summary": "为 DeepSeek Harness 网页版提供安全的图表、表格和可视化渲染，让数据展示更直观。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "报告生成",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.3.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.6",
+    "publishedAt": "2026-09-14T09:43:27Z",
+    "url": "https://github.com/shaomingbo/dsh-visualization/releases/tag/v0.3.6"
+  },
+  "author": "shaomingbo",
+  "repo": "https://github.com/shaomingbo/dsh-visualization",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T09:41:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shaomingbo/dsh-visualization",
+    "commands": [
+      "dsh plugin --profile web add github:shaomingbo/dsh-visualization",
+      "dsh plugin --profile web remove dsh-visualization --config.ignore-scripts=true"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

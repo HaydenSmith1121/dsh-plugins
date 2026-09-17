@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "huenjie/dsh-paste-collapse",
+  "slug": "huenjie__dsh-paste-collapse",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-paste-collapse",
+  "title": "dsh-paste-collapse",
+  "summary": "粘贴大段文本时自动折叠成摘要，让聊天界面更清爽，阅读更高效。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "效率提升",
+    "会话管理",
+    "前端增强"
+  ],
+  "version": "1.5.10",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.5.10",
+    "publishedAt": "2026-09-01T01:51:54Z",
+    "url": "https://github.com/huenjie/dsh-paste-collapse/releases/tag/v1.5.10"
+  },
+  "author": "huenjie",
+  "repo": "https://github.com/huenjie/dsh-paste-collapse",
+  "homepage": "dsh-plugin",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-04T09:15:09Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:huenjie/dsh-paste-collapse",
+    "commands": [
+      "dsh plugin --profile web add github:huenjie/dsh-paste-collapse"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

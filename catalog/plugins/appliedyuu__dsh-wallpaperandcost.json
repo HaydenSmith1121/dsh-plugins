@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "AppliedYuu/dsh-WallpaperAndCost",
+  "slug": "appliedyuu__dsh-wallpaperandcost",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-WallpaperAndCost",
+  "title": "dsh-WallpaperAndCost",
+  "summary": "一个集壁纸自定义与DeepSeek余额用量查询于一体的DSH插件，美化界面同时实时掌握成本。",
+  "tags": [
+    "dsh-plugin",
+    "资源优化",
+    "状态监控",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "AppliedYuu",
+  "repo": "https://github.com/AppliedYuu/dsh-WallpaperAndCost",
+  "homepage": null,
+  "license": null,
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-13T08:46:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-WallpaperAndCost",
+    "commands": [
+      "dsh plugin --profile web add dsh-WallpaperAndCost",
+      "dsh plugin --profile web add github:<owner>/dsh-WallpaperAndCost"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

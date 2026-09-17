@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "big0lives/dsh-web-window-companion",
+  "slug": "big0lives__dsh-web-window-companion",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-window-companion",
+  "title": "dsh-web-window-companion",
+  "summary": "用App窗口模式打开Web界面，关掉窗口就自动停掉服务，省心又干净。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "launcher",
+    "nodejs",
+    "windows",
+    "零配置",
+    "自动化",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-31T18:36:16Z",
+    "url": "https://github.com/big0lives/dsh-web-window-companion/releases/tag/v0.1.0"
+  },
+  "author": "big0lives",
+  "repo": "https://github.com/big0lives/dsh-web-window-companion",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-03T19:22:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:big0lives/dsh-web-window-companion",
+    "commands": [
+      "dsh plugin --profile web add github:big0lives/dsh-web-window-companion",
+      "dsh plugin --profile web remove dsh-web-window-companion"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

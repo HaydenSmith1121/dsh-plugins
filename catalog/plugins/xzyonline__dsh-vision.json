@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "xzyonline/dsh-vision",
+  "slug": "xzyonline__dsh-vision",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-vision",
+  "title": "dsh-vision",
+  "summary": "给纯文本 DeepSeek 装上眼睛，通过任意兼容 OpenAI 的视觉模型实现看图、OCR 和追问细节。",
+  "tags": [
+    "ai-assisted",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "view-image",
+    "vision",
+    "vlm",
+    "AI 助手",
+    "模型配置",
+    "效率提升"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-08-15T15:57:21Z",
+    "url": "https://github.com/xzyonline/dsh-vision/releases/tag/v0.3.0"
+  },
+  "author": "xzyonline",
+  "repo": "https://github.com/xzyonline/dsh-vision",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-08-22T13:34:47Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xzyonline/dsh-vision",
+    "commands": [
+      "git clone https://github.com/xzyonline/dsh-vision.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

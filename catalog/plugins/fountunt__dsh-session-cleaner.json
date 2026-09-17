@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "fountunt/dsh-session-cleaner",
+  "slug": "fountunt__dsh-session-cleaner",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-cleaner",
+  "title": "dsh-session-cleaner",
+  "summary": "无需重启即可清理运行中 DeepSeek Harness 的会话数据，包括文件、存储和记录，方便管理。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "session-manager",
+    "会话管理",
+    "数据清理"
+  ],
+  "version": "1.0.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fountunt",
+  "repo": "https://github.com/fountunt/dsh-session-cleaner",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 2,
+  "pushedAt": "2026-08-15T08:10:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-session-cleaner",
+    "commands": [
+      "dsh plugin --profile web add dsh-session-cleaner",
+      "dsh plugin --profile web add github:fountunt/dsh-session-cleaner",
+      "dsh plugin --profile web add file:/path/to/dsh-session-cleaner"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

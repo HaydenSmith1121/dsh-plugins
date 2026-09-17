@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "Apoze/dsh-web-fetch-local",
+  "slug": "apoze__dsh-web-fetch-local",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-fetch-local",
+  "title": "dsh-web-fetch-local",
+  "summary": "在本地安全抓取网页正文，为 DeepSeek Harness 的 web_fetch 工具提供防 SSRF 的阅读模式提取。",
+  "tags": [
+    "ai-tools",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "local-first",
+    "plugin",
+    "readability",
+    "ssrf",
+    "web-fetch",
+    "安全审计",
+    "效率提升",
+    "资源优化",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-26T04:51:54Z",
+    "url": "https://github.com/Apoze/dsh-web-fetch-local/releases/tag/v0.1.0"
+  },
+  "author": "Apoze",
+  "repo": "https://github.com/Apoze/dsh-web-fetch-local",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T13:14:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Apoze/dsh-web-fetch-local",
+    "commands": [
+      "dsh plugin --profile web add \"git+https://github.com/Apoze/dsh-web-fetch-local.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "helibeiqi/dsh-quant-factor-pipeline",
+  "slug": "helibeiqi__dsh-quant-factor-pipeline",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-quant-factor-pipeline",
+  "title": "dsh-quant-factor-pipeline",
+  "summary": "面向量化研究员的因子研究流水线，集成探针驱动、面板分析、IC评估与回测，支持市场状态感知，提升因子开发效率。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "工作流增强",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "helibeiqi",
+  "repo": "https://github.com/helibeiqi/dsh-quant-factor-pipeline",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T13:56:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:helibeiqi/dsh-quant-factor-pipeline",
+    "commands": [
+      "dsh plugin --profile web add github:helibeiqi/dsh-quant-factor-pipeline"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

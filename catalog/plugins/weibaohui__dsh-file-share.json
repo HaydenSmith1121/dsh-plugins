@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "weibaohui/dsh-file-share",
+  "slug": "weibaohui__dsh-file-share",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-file-share",
+  "title": "dsh-file-share",
+  "summary": "把任意目录变成网页，在线浏览、上传、下载文件，还能在对话框里 @ 文件直接交给 agent 处理。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "文件管理",
+    "工具集成",
+    "AI 助手",
+    "快捷操作"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-08T15:20:01Z",
+    "url": "https://github.com/weibaohui/dsh-file-share/releases/tag/v0.3.0"
+  },
+  "author": "weibaohui",
+  "repo": "https://github.com/weibaohui/dsh-file-share",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T05:12:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:weibaohui/dsh-file-share",
+    "commands": [
+      "dsh plugin --profile web add @weibaohui/dsh-file-share -w"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

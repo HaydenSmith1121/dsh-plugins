@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "aa2246740/dsh-grok-plan-mode",
+  "slug": "aa2246740__dsh-grok-plan-mode",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-grok-plan-mode",
+  "title": "dsh-grok-plan-mode",
+  "summary": "把 Grok 的 Plan 模式整套搬到 DSH，用状态机和 plan.md 编辑门控替代官方 /plan，现已暂停维护。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "插件开发",
+    "工具集成",
+    "会话管理"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "aa2246740",
+  "repo": "https://github.com/aa2246740/dsh-grok-plan-mode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T08:25:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aa2246740/dsh-grok-plan-mode",
+    "commands": [
+      "dsh plugin --profile web add github:aa2246740/dsh-grok-plan-mode",
+      "git clone https://github.com/aa2246740/dsh-grok-plan-mode.git",
+      "dsh plugin --profile web add ./dsh-grok-plan-mode"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

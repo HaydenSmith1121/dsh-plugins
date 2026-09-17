@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Retr67/dsh-opencode-models",
+  "slug": "retr67__dsh-opencode-models",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-opencode-models",
+  "title": "dsh-opencode-models",
+  "summary": "在 DSH 设置页一键同步 OpenCode Go 的全部模型，自动实测可用性和视觉能力，并写回 llm-pi-ai 配置。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "opencode-go",
+    "opencode-plugin",
+    "模型配置",
+    "效率提升",
+    "视觉理解"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Retr67",
+  "repo": "https://github.com/Retr67/dsh-opencode-models",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-10T16:47:09Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Retr67/dsh-opencode-models",
+    "commands": [
+      "dsh plugin --profile web add github:Retr67/dsh-opencode-models"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "wuwaka/dsh-clipboard-menu",
+  "slug": "wuwaka__dsh-clipboard-menu",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-clipboard-menu",
+  "title": "dsh-clipboard-menu",
+  "summary": "给没有右键菜单的桌面版 DeepSeek Harness 补上剪切、复制、粘贴和全选，选中文字还能复制为纯文本。",
+  "tags": [
+    "clipboard",
+    "context-menu",
+    "deepseek-harness",
+    "dsh-plugin",
+    "paste",
+    "快捷操作",
+    "前端增强",
+    "效率提升",
+    "工具集成"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-12T16:45:31Z",
+    "url": "https://github.com/wuwaka/dsh-clipboard-menu/releases/tag/v0.3.0"
+  },
+  "author": "wuwaka",
+  "repo": "https://github.com/wuwaka/dsh-clipboard-menu",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T16:45:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wuwaka/dsh-clipboard-menu",
+    "commands": [
+      "dsh plugin --profile <profile> add github:wuwaka/dsh-clipboard-menu",
+      "dsh plugin --profile <profile> add /path/to/dsh-clipboard-menu"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "kentleenot/dsh-trading-toolkit",
+  "slug": "kentleenot__dsh-trading-toolkit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-trading-toolkit",
+  "title": "dsh-trading-toolkit",
+  "summary": "给 DSH 智能体用的 A 股美股行情工具，实时报价、K线、ADX 信号和回测预览，只读不下单。",
+  "tags": [
+    "dsh-plugin",
+    "数据分析",
+    "工具集成",
+    "多智能体协作",
+    "效率提升",
+    "安全审查"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kentleenot",
+  "repo": "https://github.com/kentleenot/dsh-trading-toolkit",
+  "homepage": "https://github.com/kentleenot/dsh-trading-toolkit",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 2,
+  "pushedAt": "2026-08-29T13:51:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kentleenot/dsh-trading-toolkit",
+    "commands": [
+      "dsh plugin --profile web add github:kentleenot/dsh-trading-toolkit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "boomzikazita/dsh-skill-authoring",
+  "slug": "boomzikazita__dsh-skill-authoring",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skill-authoring",
+  "title": "dsh-skill-authoring",
+  "summary": "DSH skill 创作流水线：脚手架生成、9 项质量门禁审计、写入自动复检，让 skill 达到可复用标准。",
+  "tags": [
+    "authoring",
+    "deepseek-harness",
+    "dsh-plugin",
+    "quality-gate",
+    "skill",
+    "工作流增强",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "boomzikazita",
+  "repo": "https://github.com/boomzikazita/dsh-skill-authoring",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-25T13:10:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:boomzikazita/dsh-skill-authoring",
+    "commands": [
+      "dsh plugin --profile web add github:boomzikazita/dsh-skill-authoring",
+      "dsh plugin --profile web add github:boomzikazita/dsh-skill-authoring@v0.1.0"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

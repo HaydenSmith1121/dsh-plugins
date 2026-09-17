@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "he-yufeng/dsh-tool-reading-map",
+  "slug": "he-yufeng__dsh-tool-reading-map",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tool-reading-map",
+  "title": "dsh-tool-reading-map",
+  "summary": "改代码前先给 AI 一份按优先级排好的代码库阅读地图，快速摸清项目结构",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "工具集成",
+    "语义检索",
+    "效率提升",
+    "插件开发"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "he-yufeng",
+  "repo": "https://github.com/he-yufeng/dsh-tool-reading-map",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T16:14:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:he-yufeng/dsh-tool-reading-map",
+    "commands": [
+      "dsh plugin --profile <name> add github:he-yufeng/dsh-tool-reading-map",
+      "dsh plugin --profile <name> add dsh-tool-reading-map"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "blauerberg/dsh-subagent-concurrency-limit",
+  "slug": "blauerberg__dsh-subagent-concurrency-limit",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subagent-concurrency-limit",
+  "title": "dsh-subagent-concurrency-limit",
+  "summary": "限制同一进程中 DeepSeek Harness 子代理和本地子任务的并发数量，避免资源过载，提升稳定性。",
+  "tags": [
+    "concurrency",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "subagent",
+    "多Agent协作",
+    "资源优化",
+    "插件管理",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-09T10:16:38Z",
+    "url": "https://github.com/blauerberg/dsh-subagent-concurrency-limit/releases/tag/v0.1.0"
+  },
+  "author": "blauerberg",
+  "repo": "https://github.com/blauerberg/dsh-subagent-concurrency-limit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T10:16:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:blauerberg/dsh-subagent-concurrency-limit",
+    "commands": [
+      "dsh plugin --profile web add \\"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

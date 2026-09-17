@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "keman-ai/dsh-opencode-zen",
+  "slug": "keman-ai__dsh-opencode-zen",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-opencode-zen",
+  "title": "dsh-opencode-zen",
+  "summary": "把 OpenCode Zen 的免费模型一键接入 DeepSeek Harness，无需配置和 API 密钥，即插即用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "free-models",
+    "llm",
+    "openai-compatible",
+    "plugin",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "keman-ai",
+  "repo": "https://github.com/keman-ai/dsh-opencode-zen",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 2,
+  "pushedAt": "2026-08-27T12:08:37Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:keman-ai/dsh-opencode-zen",
+    "commands": [
+      "dsh plugin --profile web add -w github:keman-ai/dsh-opencode-zen"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

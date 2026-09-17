@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "GHJIVHIDD/dsh-plugin-canvas",
+  "slug": "ghjivhidd__dsh-plugin-canvas",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-canvas",
+  "title": "dsh-plugin-canvas",
+  "summary": "在会话中直接预览HTML设计稿，支持隐私打码和沙箱渲染，方便视觉评审。",
+  "tags": [
+    "dsh",
+    "dsh-bundle",
+    "dsh-ctest",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugin-verify",
+    "dsh-plugins",
+    "dsh-skill",
+    "dsharpplus",
+    "dshot",
+    "画布预览",
+    "HTML渲染",
+    "隐私打码",
+    "视觉评审",
+    "沙箱安全"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-15T15:36:29Z",
+    "url": "https://github.com/GHJIVHIDD/dsh-plugin-canvas/releases/tag/v0.1.1"
+  },
+  "author": "GHJIVHIDD",
+  "repo": "https://github.com/GHJIVHIDD/dsh-plugin-canvas",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-20T08:33:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GHJIVHIDD/dsh-plugin-canvas",
+    "commands": [
+      "dsh plugin --profile web add github:GHJIVHIDD/dsh-plugin-canvas"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

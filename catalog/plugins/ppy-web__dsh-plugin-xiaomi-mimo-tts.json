@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "ppy-web/dsh-plugin-xiaomi-mimo-tts",
+  "slug": "ppy-web__dsh-plugin-xiaomi-mimo-tts",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-xiaomi-mimo-tts",
+  "title": "dsh-plugin-xiaomi-mimo-tts",
+  "summary": "给 DSH 接入免费的小米 MiMo 语音合成，用预置、自定义或浏览器声音把正文读出来。",
+  "tags": [
+    "awesome-dsh-plugin",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "xiaomi-mimo",
+    "xiaomi-mimo-tts",
+    "工具集成",
+    "视觉理解",
+    "零配置",
+    "报告生成",
+    "AI 助手"
+  ],
+  "version": "3.0.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v3.0.3",
+    "publishedAt": "2026-09-11T08:04:04Z",
+    "url": "https://github.com/ppy-web/dsh-plugin-xiaomi-mimo-tts/releases/tag/v3.0.3"
+  },
+  "author": "ppy-web",
+  "repo": "https://github.com/ppy-web/dsh-plugin-xiaomi-mimo-tts",
+  "homepage": "https://ppy-web.github.io/dsh-plugin-xiaomi-mimo-tts/",
+  "license": "MIT",
+  "stars": 7,
+  "forks": 2,
+  "pushedAt": "2026-09-16T07:48:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-xiaomi-tts@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-xiaomi-tts@latest",
+      "dsh plugin --profile web add github:ppy-web/dsh-plugin-xiaomi-mimo-tts"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

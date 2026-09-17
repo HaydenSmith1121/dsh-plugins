@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "ylwl1997/dshbase-catalog",
+  "slug": "ylwl1997__dshbase-catalog",
+  "tier": "community",
+  "package": null,
+  "name": "dshbase-catalog",
+  "title": "dshbase-catalog",
+  "summary": "在 DeepSeek Harness 里直接搜索、浏览 dshbase 插件库，获取 1100+ 社区插件的安装命令，不用离开会话。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "命令行工具"
+  ],
+  "version": "0.3.30",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ylwl1997",
+  "repo": "https://github.com/ylwl1997/dshbase-catalog",
+  "homepage": "https://dshbase.com",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T10:15:22Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dshbase-catalog",
+    "commands": [
+      "dsh plugin add dshbase-catalog"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

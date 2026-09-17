@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "andyfan1094/dsh-github",
+  "slug": "andyfan1094__dsh-github",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-github",
+  "title": "dsh-github",
+  "summary": "在 dsh 网页界面里管理 GitHub 账号和本地 Git 仓库，支持浏览、克隆、提交、推送等常用操作。",
+  "tags": [
+    "dsh-plugin",
+    "工作区管理",
+    "工作流增强",
+    "命令行工具",
+    "效率提升",
+    "安全审计"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-08-22T11:42:07Z",
+    "url": "https://github.com/andyfan1094/dsh-github/releases/tag/v0.1.2"
+  },
+  "author": "andyfan1094",
+  "repo": "https://github.com/andyfan1094/dsh-github",
+  "homepage": "https://github.com/andyfan1094/dsh-github",
+  "license": "Apache-2.0",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-26T17:11:35Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:andyfan1094/dsh-github",
+    "commands": [
+      "dsh plugin --profile web add github:andyfan1094/dsh-github"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

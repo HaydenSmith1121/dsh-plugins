@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Alphauni-x/dsh-ds-home-bg",
+  "slug": "alphauni-x__dsh-ds-home-bg",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ds-home-bg",
+  "title": "dsh-ds-home-bg",
+  "summary": "为 DeepSeek Harness 网页界面换上深蓝极光背景，带网格和游动鲸鱼，跟随系统外观自动切换。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-theme",
+    "前端增强",
+    "可视化",
+    "设置面板",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Alphauni-x",
+  "repo": "https://github.com/Alphauni-x/dsh-ds-home-bg",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T09:47:52Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Alphauni-x/dsh-ds-home-bg",
+    "commands": [
+      "dsh plugin --profile web add github:Alphauni-x/dsh-ds-home-bg",
+      "git clone https://github.com/Alphauni-x/dsh-ds-home-bg.git",
+      "dsh plugin --profile web add ./dsh-ds-home-bg"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

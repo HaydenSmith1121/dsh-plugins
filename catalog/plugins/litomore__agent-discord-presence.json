@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "LitoMore/agent-discord-presence",
+  "slug": "litomore__agent-discord-presence",
+  "tier": "community",
+  "package": null,
+  "name": "agent-discord-presence",
+  "title": "agent-discord-presence",
+  "summary": "把 Codex、Claude Code 等 AI 编码工具的当前工作状态同步到 Discord，让队友随时看到你在忙什么。",
+  "tags": [
+    "claude-code",
+    "codex",
+    "deepseek-harness",
+    "discord-presence",
+    "dsh-plugin",
+    "pi-agent",
+    "状态监控",
+    "工具集成",
+    "AI 助手",
+    "跨设备"
+  ],
+  "version": "0.0.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.0.3",
+    "publishedAt": "2026-09-17T08:51:58Z",
+    "url": "https://github.com/LitoMore/agent-discord-presence/releases/tag/v0.0.3"
+  },
+  "author": "LitoMore",
+  "repo": "https://github.com/LitoMore/agent-discord-presence",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-09-16T01:44:46Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LitoMore/agent-discord-presence",
+    "commands": [
+      "dsh plugin --profile web add github:LitoMore/agent-discord-presence"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

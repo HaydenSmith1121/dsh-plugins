@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "dsh-publish/dsh-pair-quick",
+  "slug": "dsh-publish__dsh-pair-quick",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pair-quick",
+  "title": "dsh-pair-quick",
+  "summary": "在 dsh 设置页一键生成远程访问配对链接和二维码，扫码即可快速连接。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "可视化",
+    "零配置",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-09T14:17:13Z",
+    "url": "https://github.com/dsh-publish/dsh-pair-quick/releases/tag/v0.1.0"
+  },
+  "author": "dsh-publish",
+  "repo": "https://github.com/dsh-publish/dsh-pair-quick",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T14:19:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-pair-quick",
+    "commands": [
+      "dsh plugin --profile web add dsh-pair-quick"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

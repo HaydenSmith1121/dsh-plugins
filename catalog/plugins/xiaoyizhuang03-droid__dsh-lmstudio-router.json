@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaoyizhuang03-droid/dsh-lmstudio-router",
+  "slug": "xiaoyizhuang03-droid__dsh-lmstudio-router",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-lmstudio-router",
+  "title": "dsh-lmstudio-router",
+  "summary": "将高成本的批量文本任务路由到本地 LM Studio 模型，节省 API 费用并提升处理效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "lm-studio",
+    "效率提升",
+    "工作流增强",
+    "AI 助手",
+    "资源优化"
+  ],
+  "version": "0.1.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xiaoyizhuang03-droid",
+  "repo": "https://github.com/xiaoyizhuang03-droid/dsh-lmstudio-router",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T12:02:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiaoyizhuang03-droid/dsh-lmstudio-router",
+    "commands": [
+      "dsh plugin --profile web add link:<path-to-this-package>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

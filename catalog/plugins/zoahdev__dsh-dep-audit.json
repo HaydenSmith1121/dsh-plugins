@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "zoahdev/dsh-dep-audit",
+  "slug": "zoahdev__dsh-dep-audit",
+  "tier": "community",
+  "package": null,
+  "name": "zoahdev/dsh-dep-audit",
+  "title": "zoahdev/dsh-dep-audit",
+  "summary": "检查项目依赖的供应链健康度，揪出失效版本、缺失许可证和声明与安装不一致等问题。",
+  "tags": [
+    "deepseek-harness",
+    "dependency-audit",
+    "dsh-plugin",
+    "npm",
+    "security",
+    "supply-chain",
+    "安全审计",
+    "命令行工具",
+    "数据可审计",
+    "状态监控",
+    "内容创作"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-18T15:29:00Z",
+    "url": "https://github.com/zoahdev/dsh-dep-audit/releases/tag/v0.1.1"
+  },
+  "author": "zoahdev",
+  "repo": "https://github.com/zoahdev/dsh-dep-audit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-18T22:30:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-dep-audit",
+    "commands": [
+      "dsh plugin add dsh-dep-audit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "zhang8019/dsh-permission-matrix",
+  "slug": "zhang8019__dsh-permission-matrix",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-permission-matrix",
+  "title": "dsh-permission-matrix",
+  "summary": "把 DSH 权限拆成沙箱和审批两个维度，组合出 9 种执行档位，还能记审计日志、存 git 检查点。",
+  "tags": [
+    "approval",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "permission",
+    "sandbox",
+    "安全审计",
+    "工作区管理",
+    "自动化",
+    "设置面板",
+    "模型配置"
+  ],
+  "version": "0.3.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.3",
+    "publishedAt": "2026-09-11T01:12:31Z",
+    "url": "https://github.com/zhang8019/dsh-permission-matrix/releases/tag/v0.3.3"
+  },
+  "author": "zhang8019",
+  "repo": "https://github.com/zhang8019/dsh-permission-matrix",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T01:13:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhang8019/dsh-permission-matrix",
+    "commands": [
+      "dsh plugin --profile <profile> add dsh-permission-matrix"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

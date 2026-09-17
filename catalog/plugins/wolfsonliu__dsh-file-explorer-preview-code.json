@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "wolfsonliu/dsh-file-explorer-preview-code",
+  "slug": "wolfsonliu__dsh-file-explorer-preview-code",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-file-explorer-preview-code",
+  "title": "dsh-file-explorer-preview-code",
+  "summary": "在 DSH Web 文件管理器中直接预览和编辑代码，支持语法高亮、自动保存和明暗主题。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "工作流增强",
+    "零配置",
+    "界面美化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wolfsonliu",
+  "repo": "https://github.com/wolfsonliu/dsh-file-explorer-preview-code",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-01T08:16:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "git clone https://github.com/wolfsonliu/dsh-file-explorer-preview-code.git",
+      "npm install && npm run build",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

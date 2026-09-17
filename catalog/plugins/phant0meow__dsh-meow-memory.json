@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "Phant0Meow/dsh-meow-memory",
+  "slug": "phant0meow__dsh-meow-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-meow-memory",
+  "title": "dsh-meow-memory",
+  "summary": "给 DSH 加上跨会话长期记忆，七层 SQLite 存储加 BM25 检索，聊过的内容下次还能想起来。",
+  "tags": [
+    "agent-memory",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "memory",
+    "会话管理",
+    "状态持久化",
+    "语义检索",
+    "AI 助手",
+    "工作区管理"
+  ],
+  "version": "0.25.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.25.1",
+    "publishedAt": "2026-09-10T14:40:20Z",
+    "url": "https://github.com/Phant0Meow/dsh-meow-memory/releases/tag/v0.25.1"
+  },
+  "author": "Phant0Meow",
+  "repo": "https://github.com/Phant0Meow/dsh-meow-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 106,
+  "forks": 9,
+  "pushedAt": "2026-09-10T19:37:59Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Phant0Meow/dsh-meow-memory",
+    "commands": [
+      "dsh plugin --profile web add github:Phant0Meow/dsh-meow-memory",
+      "dsh plugin --profile web remove meow-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

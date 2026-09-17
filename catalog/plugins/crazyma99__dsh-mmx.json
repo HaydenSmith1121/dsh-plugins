@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "crazyma99/dsh-mmx",
+  "slug": "crazyma99__dsh-mmx",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mmx",
+  "title": "dsh-mmx",
+  "summary": "把 MiniMax 的搜索和识图能力接进 DSH，自动回退搜索、贴图即识图，装好 CLI 就能用。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "minimax",
+    "视觉理解",
+    "模型配置",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "1.5.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "crazyma99",
+  "repo": "https://github.com/crazyma99/dsh-mmx",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-24T09:43:55Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:crazyma99/dsh-mmx",
+    "commands": [
+      "dsh plugin --profile web add github:crazyma99/dsh-mmx",
+      "dsh plugin --profile web add dsh-mmx",
+      "dsh plugin --profile web add file:/path/to/dsh-mmx"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

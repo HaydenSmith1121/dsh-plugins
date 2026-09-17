@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "YLifeOnlyOnce/dsh-smarthome",
+  "slug": "ylifeonlyonce__dsh-smarthome",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-smarthome",
+  "title": "dsh-smarthome",
+  "summary": "让 DeepSeek Harness 智能体直接控制你家灯光、开关和空调，操作需你点头确认，安全又省心。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "home-assistant",
+    "智能家居",
+    "设备控制",
+    "权限审批"
+  ],
+  "version": "1.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.3.1",
+    "publishedAt": "2026-08-19T11:03:43Z",
+    "url": "https://github.com/YLifeOnlyOnce/dsh-smarthome/releases/tag/v1.3.1"
+  },
+  "author": "YLifeOnlyOnce",
+  "repo": "https://github.com/YLifeOnlyOnce/dsh-smarthome",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-08-19T10:57:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-smarthome",
+    "commands": [
+      "dsh plugin --profile web add dsh-smarthome",
+      "dsh plugin --profile web add github:YLifeOnlyOnce/dsh-smarthome",
+      "git clone https://github.com/YLifeOnlyOnce/dsh-smarthome"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-ocr-pass",
+  "slug": "xby-skill__xby-ocr-pass",
+  "tier": "community",
+  "package": null,
+  "name": "xby-ocr-pass",
+  "title": "xby-ocr-pass",
+  "summary": "识别港澳台通行证上的号码、姓名、有效期等信息，并支持MRZ机读码解析，方便快速录入证件数据。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "自动化",
+    "零配置",
+    "插件管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-ocr-pass",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:22:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-ocr-pass",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-ocr-pass",
+      "dsh plugin --profile web add /absolute/path/to/xby-ocr-pass"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "2327644800/dsh-usage-analytics",
+  "slug": "2327644800__dsh-usage-analytics",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage-analytics",
+  "title": "dsh-usage-analytics",
+  "summary": "为 DeepSeek Harness 网页界面提供个人使用统计与活动仪表盘，展示 token 消耗、贡献热力图和模型占比，帮助了解使用情况。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "token-usage",
+    "效率提升",
+    "资源优化",
+    "状态监控"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "2327644800",
+  "repo": "https://github.com/2327644800/dsh-usage-analytics",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-26T16:27:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:2327644800/dsh-usage-analytics",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-usage-analytics"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

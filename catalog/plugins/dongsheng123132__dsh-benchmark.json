@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "dongsheng123132/dsh-benchmark",
+  "slug": "dongsheng123132__dsh-benchmark",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-benchmark",
+  "title": "dsh-benchmark",
+  "summary": "为 DeepSeek Harness 工具和插件提供可复现、确定性的基准测试证据，方便做回归测试和性能对比。",
+  "tags": [
+    "ai-agent",
+    "benchmark",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "regression-testing",
+    "reproducibility",
+    "自动化",
+    "命令行工具"
+  ],
+  "version": "0.2.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dongsheng123132",
+  "repo": "https://github.com/dongsheng123132/dsh-benchmark",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-07T13:32:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dongsheng123132/dsh-benchmark",
+    "commands": [
+      "dsh plugin --profile benchmark add github:dongsheng123132/dsh-benchmark"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "zmh2000829/dsh-x-connect",
+  "slug": "zmh2000829__dsh-x-connect",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-x-connect",
+  "title": "dsh-x-connect",
+  "summary": "通过 OAuth 2.0 安全绑定 X 账号，让 DeepSeek Harness 直接读取和发布 X 内容，实现社交媒体数据接入。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "x-api",
+    "安全审计",
+    "自动化",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zmh2000829",
+  "repo": "https://github.com/zmh2000829/dsh-x-connect",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-26T03:09:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-x-connect",
+    "commands": [
+      "dsh plugin --profile web add dsh-x-connect"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

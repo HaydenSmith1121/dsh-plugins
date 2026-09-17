@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "robbin810130/dsh-rtk",
+  "slug": "robbin810130__dsh-rtk",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-rtk",
+  "title": "dsh-rtk",
+  "summary": "启动时自动给 bash 工具加上 RTK 命令输出过滤，让命令行结果更干净好读。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "rtk",
+    "命令行工具",
+    "工具集成",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "1.0.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.3",
+    "publishedAt": "2026-09-16T06:40:44Z",
+    "url": "https://github.com/robbin810130/dsh-rtk/releases/tag/v1.0.3"
+  },
+  "author": "robbin810130",
+  "repo": "https://github.com/robbin810130/dsh-rtk",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T06:40:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:robbin810130/dsh-rtk",
+    "commands": [
+      "dsh plugin --profile web remove @robbin810130/dsh-rtk",
+      "dsh plugin --profile web add github:robbin810130/dsh-rtk"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

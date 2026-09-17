@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "errorcode7/dsh-prompt-manager",
+  "slug": "errorcode7__dsh-prompt-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-manager",
+  "title": "dsh-prompt-manager",
+  "summary": "把系统提示词从黑盒变成可视化流水线，轻松查看、调整和审计每次发给模型的提示词内容。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "插件管理",
+    "工作流增强",
+    "会话管理",
+    "效率提升",
+    "模型配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "errorcode7",
+  "repo": "https://github.com/errorcode7/dsh-prompt-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-14T19:27:51Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-prompt-manager",
+    "commands": [
+      "dsh plugin --profile web add dsh-prompt-manager",
+      "dsh plugin --profile web add /path/to/dsh-prompt-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

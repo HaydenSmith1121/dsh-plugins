@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "liuyun847/dsh-host-compliance-check",
+  "slug": "liuyun847__dsh-host-compliance-check",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-host-compliance-check",
+  "title": "dsh-host-compliance-check",
+  "summary": "轮末自动派发合规检查子智能体，帮你把关需求合规性，省心又省力。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "多Agent协作",
+    "安全审计",
+    "效率提升"
+  ],
+  "version": "0.4.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "liuyun847",
+  "repo": "https://github.com/liuyun847/dsh-host-compliance-check",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T13:09:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:liuyun847/dsh-host-compliance-check",
+    "commands": [
+      "dsh plugin --profile web add github:liuyun847/dsh-host-compliance-check"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

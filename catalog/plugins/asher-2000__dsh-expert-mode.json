@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "Asher-2000/dsh-expert-mode",
+  "slug": "asher-2000__dsh-expert-mode",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-expert-mode",
+  "title": "dsh-expert-mode",
+  "summary": "把 DSH 变成「1 个总指挥 + 11 位领域专家」的多智能体团队，自动分工协作搞定复杂任务。",
+  "tags": [
+    "agent-preset",
+    "ai-agent",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "expert-mode",
+    "multi-agent",
+    "subagent",
+    "多Agent协作",
+    "任务编排",
+    "效率提升",
+    "AI工具"
+  ],
+  "version": "0.9.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.9.2",
+    "publishedAt": "2026-08-27T06:49:39Z",
+    "url": "https://github.com/Asher-2000/dsh-expert-mode/releases/tag/v0.9.2"
+  },
+  "author": "Asher-2000",
+  "repo": "https://github.com/Asher-2000/dsh-expert-mode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 13,
+  "forks": 1,
+  "pushedAt": "2026-09-07T06:26:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-expert-mode",
+    "commands": [
+      "dsh plugin add dsh-expert-mode",
+      "npm install dsh-expert-mode",
+      "git clone https://github.com/Asher-2000/dsh-expert-mode.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

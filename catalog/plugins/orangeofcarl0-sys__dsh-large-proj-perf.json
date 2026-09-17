@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "orangeofcarl0-sys/dsh-large-proj-perf",
+  "slug": "orangeofcarl0-sys__dsh-large-proj-perf",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-large-proj-perf",
+  "title": "dsh-large-proj-perf",
+  "summary": "针对超长会话场景的性能优化插件，通过零拷贝分叉、投影预热和分块物化，让大项目操作更流畅。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "performance",
+    "效率提升",
+    "资源优化",
+    "会话管理"
+  ],
+  "version": "1.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.1.1",
+    "publishedAt": "2026-08-15T19:24:03Z",
+    "url": "https://github.com/orangeofcarl0-sys/dsh-large-proj-perf/releases/tag/v1.1.1"
+  },
+  "author": "orangeofcarl0-sys",
+  "repo": "https://github.com/orangeofcarl0-sys/dsh-large-proj-perf",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T12:46:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:orangeofcarl0-sys/dsh-large-proj-perf",
+    "commands": [
+      "dsh plugin --profile web add github:orangeofcarl0-sys/dsh-large-proj-perf",
+      "dsh plugin --profile web add file:<本仓库路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

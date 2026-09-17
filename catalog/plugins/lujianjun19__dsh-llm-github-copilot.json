@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "lujianjun19/dsh-llm-github-copilot",
+  "slug": "lujianjun19__dsh-llm-github-copilot",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-github-copilot",
+  "title": "dsh-llm-github-copilot",
+  "summary": "登录 GitHub 账号，在 DeepSeek Harness 里直接调用所有 Copilot 模型，白嫖 AI 能力。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "github-copilot",
+    "GitHub登录",
+    "Copilot模型",
+    "LLM适配器",
+    "AI编程"
+  ],
+  "version": "0.4.6",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lujianjun19",
+  "repo": "https://github.com/lujianjun19/dsh-llm-github-copilot",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 6,
+  "pushedAt": "2026-09-10T09:49:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@lujianjun19/dsh-llm-github-copilot",
+    "commands": [
+      "dsh plugin --profile web add @lujianjun19/dsh-llm-github-copilot",
+      "dsh plugin --profile web add github:lujianjun19/dsh-llm-github-copilot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

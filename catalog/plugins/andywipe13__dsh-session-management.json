@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "AndyWipe13/dsh-session-management",
+  "slug": "andywipe13__dsh-session-management",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-management",
+  "title": "dsh-session-management",
+  "summary": "管理 DeepSeek Harness 生成的会话，可删除遗留会话，并支持从 Claude Code 等第三方 Agent 导入会话。",
+  "tags": [
+    "ai-agents",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "多Agent协作",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-10T05:33:44Z",
+    "url": "https://github.com/AndyWipe13/dsh-session-management/releases/tag/v1.0.0"
+  },
+  "author": "AndyWipe13",
+  "repo": "https://github.com/AndyWipe13/dsh-session-management",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-10T05:33:44Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@nathan110628/dsh-session-management",
+    "commands": [
+      "dsh plugin --profile web add @nathan110628/dsh-session-management",
+      "dsh plugin --profile web add github:AndyWipe13/dsh-session-management",
+      "dsh plugin --profile web remove @nathan110628/dsh-session-management"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

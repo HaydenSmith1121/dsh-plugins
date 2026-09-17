@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "fonlan/dsh-quick-commands",
+  "slug": "fonlan__dsh-quick-commands",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-quick-commands",
+  "title": "dsh-quick-commands",
+  "summary": "按工作区管理常用命令，一键点击快速运行，实时查看输出，提升开发效率。",
+  "tags": [
+    "dsh-plugin",
+    "工作区管理",
+    "命令行工具",
+    "效率提升",
+    "状态监控",
+    "工作流增强"
+  ],
+  "version": "0.1.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fonlan",
+  "repo": "https://github.com/fonlan/dsh-quick-commands",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T16:08:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@fonlan/dsh-quick-commands",
+    "commands": [
+      "dsh plugin --profile web add @fonlan/dsh-quick-commands",
+      "dsh plugin --profile web add github:fonlan/dsh-quick-commands",
+      "dsh plugin --profile web remove @fonlan/dsh-quick-commands"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

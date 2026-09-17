@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "yhfgyyf/dsh-audit-mode",
+  "slug": "yhfgyyf__dsh-audit-mode",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-audit-mode",
+  "title": "dsh-audit-mode",
+  "summary": "为 DeepSeek Harness 增加独立审计模式，代码展示与人工复核结合，确保关键操作安全可控。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "安全审计",
+    "工作流增强",
+    "状态监控"
+  ],
+  "version": "0.6.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yhfgyyf",
+  "repo": "https://github.com/yhfgyyf/dsh-audit-mode",
+  "homepage": "https://github.com/topics/dsh-plugin",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-07T18:03:56Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yhfgyyf/dsh-audit-mode",
+    "commands": [
+      "pnpm add dsh-audit-mode@github:yhfgyyf/dsh-audit-mode",
+      "pnpm add dsh-progressive-tools@github:yhfgyyf/dsh-progressive-tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

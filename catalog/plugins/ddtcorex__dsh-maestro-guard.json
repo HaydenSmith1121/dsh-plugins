@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "ddtcorex/dsh-maestro-guard",
+  "slug": "ddtcorex__dsh-maestro-guard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-maestro-guard",
+  "title": "dsh-maestro-guard",
+  "summary": "为 DeepSeek Harness 提供主机侧安全门控，在工具执行前拦截审批、脱敏密钥并执行权限策略，防止敏感信息泄露。",
+  "tags": [
+    "approval",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "maestro",
+    "redaction",
+    "secrets",
+    "security",
+    "工作流增强",
+    "安全审计",
+    "数据脱敏"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-14T07:56:59Z",
+    "url": "https://github.com/ddtcorex/dsh-maestro-guard/releases/tag/v0.3.0"
+  },
+  "author": "ddtcorex",
+  "repo": "https://github.com/ddtcorex/dsh-maestro-guard",
+  "homepage": "https://github.com/ddtcorex/dsh-maestro-guard",
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T17:07:17Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ddtcorex/dsh-maestro-guard",
+    "commands": [
+      "dsh plugin --profile web add github:ddtcorex/dsh-maestro-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

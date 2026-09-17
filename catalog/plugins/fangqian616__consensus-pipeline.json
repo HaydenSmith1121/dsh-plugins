@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "id": "fangqian616/consensus-pipeline",
+  "slug": "fangqian616__consensus-pipeline",
+  "tier": "community",
+  "package": null,
+  "name": "consensus-pipeline",
+  "title": "consensus-pipeline",
+  "summary": "多智能体部门协作框架，专攻长线复杂任务，通过共识机制减少AI幻觉，适合学术研究等严谨场景。",
+  "tags": [
+    "academic-research",
+    "consensus-pipeline",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh-plugin",
+    "dsh-plugins",
+    "literature-review",
+    "llm",
+    "multi-agent",
+    "multi-agent-debate",
+    "python",
+    "AI工具",
+    "工具集成",
+    "证据链",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.12.18",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.12.18",
+    "publishedAt": "2026-08-01T08:17:54Z",
+    "url": "https://github.com/fangqian616/consensus-pipeline/releases/tag/v0.12.18"
+  },
+  "author": "fangqian616",
+  "repo": "https://github.com/fangqian616/consensus-pipeline",
+  "homepage": "https://consensus-pipeline.streamlit.app/",
+  "license": "MIT",
+  "stars": 124,
+  "forks": 13,
+  "pushedAt": "2026-09-09T12:25:19Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fangqian616/consensus-pipeline",
+    "commands": [
+      "curl -fsSL https://github.com/fangqian616/consensus-pipeline/raw/main/install.sh | bash",
+      "git clone --depth 1 https://github.com/fangqian616/consensus-pipeline.git",
+      "git clone https://github.com/fangqian616/consensus-pipeline.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

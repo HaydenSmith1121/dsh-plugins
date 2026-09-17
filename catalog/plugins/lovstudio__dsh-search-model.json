@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "lovstudio/dsh-search-model",
+  "slug": "lovstudio__dsh-search-model",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-search-model",
+  "title": "dsh-search-model",
+  "summary": "给 DeepSeek Harness 的对话输入框加上智能搜索，快速找到想用的模型，不用再翻长长的列表。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "效率提升",
+    "语义检索"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-06T02:24:26Z",
+    "url": "https://github.com/lovstudio/dsh-search-model/releases/tag/v0.2.1"
+  },
+  "author": "lovstudio",
+  "repo": "https://github.com/lovstudio/dsh-search-model",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T02:24:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lovstudio/dsh-search-model",
+    "commands": [
+      "dsh plugin --profile web add github:lovstudio/dsh-search-model"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

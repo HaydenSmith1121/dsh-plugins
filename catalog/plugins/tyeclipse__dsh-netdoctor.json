@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "TYEclipse/dsh-netdoctor",
+  "slug": "tyeclipse__dsh-netdoctor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-netdoctor",
+  "title": "dsh-netdoctor",
+  "summary": "网络诊断工具箱，提供DNS查询、Ping、端口检测、TLS证书检查、路由追踪、WHOIS和公网IP查询，纯只读操作，零依赖。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "network-tools",
+    "whois",
+    "状态监控",
+    "效率提升",
+    "安全审计",
+    "自动化"
+  ],
+  "version": "0.2.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.3",
+    "publishedAt": "2026-09-10T16:41:56Z",
+    "url": "https://github.com/TYEclipse/dsh-netdoctor/releases/tag/v0.2.3"
+  },
+  "author": "TYEclipse",
+  "repo": "https://github.com/TYEclipse/dsh-netdoctor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-10T16:43:04Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TYEclipse/dsh-netdoctor",
+    "commands": [
+      "dsh plugin --profile web add github:TYEclipse/dsh-netdoctor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

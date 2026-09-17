@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "squirrel20/dsh-cron",
+  "slug": "squirrel20__dsh-cron",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cron",
+  "title": "dsh-cron",
+  "summary": "给 DeepSeek Harness 添加定时任务，让智能体或命令按计划自动运行，无需人工值守。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "工作流增强",
+    "效率提升",
+    "命令行工具"
+  ],
+  "version": "0.14.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.14.1",
+    "publishedAt": "2026-09-15T02:53:55Z",
+    "url": "https://github.com/squirrel20/dsh-cron/releases/tag/v0.14.1"
+  },
+  "author": "squirrel20",
+  "repo": "https://github.com/squirrel20/dsh-cron",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-09-15T02:53:55Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:squirrel20/dsh-cron",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/squirrel20/dsh-cron/releases/latest/download/dsh-cron.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

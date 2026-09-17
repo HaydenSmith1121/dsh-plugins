@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "yh01010/dsh-mcp-matlab",
+  "slug": "yh01010__dsh-mcp-matlab",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mcp-matlab",
+  "title": "dsh-mcp-matlab",
+  "summary": "将本地 MATLAB MCP 服务器接入 DSH，在会话中直接执行代码、运行脚本和测试、查看工具箱。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "matlab",
+    "mcp",
+    "工具集成",
+    "自动化",
+    "命令行工具",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yh01010",
+  "repo": "https://github.com/yh01010/dsh-mcp-matlab",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T11:17:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yh01010/dsh-mcp-matlab",
+    "commands": [
+      "dsh plugin --profile desktop add github:yh01010/dsh-mcp-matlab"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

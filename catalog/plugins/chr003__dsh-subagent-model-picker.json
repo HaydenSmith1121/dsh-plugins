@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "chr003/dsh-subagent-model-picker",
+  "slug": "chr003__dsh-subagent-model-picker",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subagent-model-picker",
+  "title": "dsh-subagent-model-picker",
+  "summary": "给每个子代理单独选模型和推理强度，不用改主对话的设置。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "model-selection",
+    "reasoning-effort",
+    "subagents",
+    "模型配置",
+    "多Agent协作",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-07T12:14:21Z",
+    "url": "https://github.com/chr003/dsh-subagent-model-picker/releases/tag/v0.1.0"
+  },
+  "author": "chr003",
+  "repo": "https://github.com/chr003/dsh-subagent-model-picker",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-07T17:07:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chr003/dsh-subagent-model-picker",
+    "commands": [
+      "git clone --branch v0.1.0 --depth 1 https://github.com/chr003/dsh-subagent-model-picker.git &&",
+      "dsh plugin --profile web add \"link:$PWD\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

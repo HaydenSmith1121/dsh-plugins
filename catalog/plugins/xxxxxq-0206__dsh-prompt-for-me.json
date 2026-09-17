@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "XXXXXQ-0206/dsh-prompt-for-me",
+  "slug": "xxxxxq-0206__dsh-prompt-for-me",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-for-me",
+  "title": "dsh-prompt-for-me",
+  "summary": "帮你设计下一轮开发提示词，还能结合项目上下文优化现有草稿，写 prompt 更省心。",
+  "tags": [
+    "coding-agent",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "prompt",
+    "prompt-design",
+    "prompt-engineering",
+    "prompt-optimizer",
+    "AI 助手",
+    "效率提升",
+    "工作流增强",
+    "报告生成"
+  ],
+  "version": "0.7.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.1",
+    "publishedAt": "2026-09-13T14:54:25Z",
+    "url": "https://github.com/XXXXXQ-0206/dsh-prompt-for-me/releases/tag/v0.7.1"
+  },
+  "author": "XXXXXQ-0206",
+  "repo": "https://github.com/XXXXXQ-0206/dsh-prompt-for-me",
+  "homepage": "https://github.com/XXXXXQ-0206/dsh-prompt-for-me#readme",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T14:54:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:XXXXXQ-0206/dsh-prompt-for-me",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/XXXXXQ-0206/dsh-prompt-for-me/releases/download/v0.7.1/dsh-prompt-for-me-0.7.1.tgz",
+      "dsh plugin --profile web add github:XXXXXQ-0206/dsh-prompt-for-me",
+      "dsh plugin --profile web update dsh-prompt-for-me"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

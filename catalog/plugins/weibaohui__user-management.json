@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "weibaohui/user-management",
+  "slug": "weibaohui__user-management",
+  "tier": "community",
+  "package": null,
+  "name": "weibaohui/user-management",
+  "title": "weibaohui/user-management",
+  "summary": "给 DSH 网页界面加一道 HTTPS 登录门，管用户角色、TOTP 验证和审计日志，首个注册者自动成管理员。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "安全审计",
+    "数据可审计",
+    "设置面板",
+    "工具集成"
+  ],
+  "version": "0.9.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.9.5",
+    "publishedAt": "2026-09-13T15:41:16Z",
+    "url": "https://github.com/weibaohui/user-management/releases/tag/v0.9.5"
+  },
+  "author": "weibaohui",
+  "repo": "https://github.com/weibaohui/user-management",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T05:13:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:weibaohui/user-management",
+    "commands": [
+      "dsh plugin --profile web add @weibaohui/user-management -w"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

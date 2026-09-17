@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "warrenop/open-preset-harness",
+  "slug": "warrenop__open-preset-harness",
+  "tier": "community",
+  "package": null,
+  "name": "open-preset-harness",
+  "title": "open-preset-harness",
+  "summary": "为多角色AI智能体提供共享项目记忆，让所有预设都能读取同一知识库，实现跨会话信息复用。",
+  "tags": [
+    "ai-agents",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "memory",
+    "会话管理",
+    "多Agent协作"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-26T09:46:57Z",
+    "url": "https://github.com/warrenop/open-preset-harness/releases/tag/v1.0.0"
+  },
+  "author": "warrenop",
+  "repo": "https://github.com/warrenop/open-preset-harness",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-26T09:46:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:warrenop/open-preset-harness",
+    "commands": [
+      "dsh plugin --profile web add \"github:warrenop/open-preset-harness",
+      "dsh plugin --profile headless add \"github:warrenop/open-preset-harness",
+      "dsh plugin --profile web add ./packages/tool-project-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

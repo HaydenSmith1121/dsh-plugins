@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Letter2025/dsh-approval-llm",
+  "slug": "letter2025__dsh-approval-llm",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-approval-llm",
+  "title": "dsh-approval-llm",
+  "summary": "用独立审查模型帮你自动审批权限请求，省心又安全，适合需要人工把关的自动化场景。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "自动化",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.1.6",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Letter2025",
+  "repo": "https://github.com/Letter2025/dsh-approval-llm",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-09-08T03:17:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-approval-llm",
+    "commands": [
+      "dsh plugin --profile web add dsh-approval-llm"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

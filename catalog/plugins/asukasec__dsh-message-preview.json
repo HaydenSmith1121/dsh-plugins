@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "asukasec/dsh-message-preview",
+  "slug": "asukasec__dsh-message-preview",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-message-preview",
+  "title": "dsh-message-preview",
+  "summary": "在 DeepSeek Harness 网页界面右侧加一个消息导航栏，快速跳转到任意历史提问。",
+  "tags": [
+    "conversation-navigation",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "快捷操作",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "asukasec",
+  "repo": "https://github.com/asukasec/dsh-message-preview",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-08-14T09:39:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:asukasec/dsh-message-preview",
+    "commands": [
+      "dsh plugin --profile web add github:asukasec/dsh-message-preview"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

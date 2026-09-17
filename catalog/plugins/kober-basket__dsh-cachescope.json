@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "kober-basket/dsh-cachescope",
+  "slug": "kober-basket__dsh-cachescope",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cachescope",
+  "title": "dsh-cachescope",
+  "summary": "查看每次模型调用的缓存命中情况，缓存未命中时还能告诉你哪里变了，帮你省token。",
+  "tags": [
+    "dsh-plugin",
+    "资源优化",
+    "状态监控",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kober-basket",
+  "repo": "https://github.com/kober-basket/dsh-cachescope",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-30T12:24:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@kober-basket/dsh-cachescope",
+    "commands": [
+      "dsh plugin --profile web add @kober-basket/dsh-cachescope"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

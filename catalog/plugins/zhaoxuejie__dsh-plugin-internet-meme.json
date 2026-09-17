@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "zhaoxuejie/dsh-plugin-internet-meme",
+  "slug": "zhaoxuejie__dsh-plugin-internet-meme",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-internet-meme",
+  "title": "dsh-plugin-internet-meme",
+  "summary": "给 DeepSeek Harness Web 加一层热梗弹幕字幕，Agent 思考或调用工具时右侧飘过趣味短句，支持自定义文案和提示音。",
+  "tags": [
+    "ai-agent",
+    "danmaku",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "sse",
+    "typescript",
+    "前端增强",
+    "娱乐互动",
+    "界面美化",
+    "消息通知",
+    "可视化"
+  ],
+  "version": "0.4.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.4",
+    "publishedAt": "2026-09-07T08:11:30Z",
+    "url": "https://github.com/zhaoxuejie/dsh-plugin-internet-meme/releases/tag/v0.4.4"
+  },
+  "author": "zhaoxuejie",
+  "repo": "https://github.com/zhaoxuejie/dsh-plugin-internet-meme",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T10:04:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhaoxuejie/dsh-plugin-internet-meme",
+    "commands": [
+      "dsh plugin --profile web add github:zhaoxuejie/dsh-plugin-internet-meme"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "lgquan/dsh-workspace-memory",
+  "slug": "lgquan__dsh-workspace-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workspace-memory",
+  "title": "dsh-workspace-memory",
+  "summary": "为 DeepSeek Harness 提供按工作区隔离的长期记忆，跨会话记住项目事实、技术决策和用户偏好，不同项目互不干扰。",
+  "tags": [
+    "agent-memory",
+    "cordis-plugin",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-voco",
+    "typescript",
+    "voice-agent",
+    "workspace-memory",
+    "会话管理",
+    "工作区管理",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.2.15",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.15",
+    "publishedAt": "2026-09-02T18:32:13Z",
+    "url": "https://github.com/lgquan/dsh-workspace-memory/releases/tag/v0.2.15"
+  },
+  "author": "lgquan",
+  "repo": "https://github.com/lgquan/dsh-workspace-memory",
+  "homepage": "https://www.npmjs.com/package/@flowingspring/dsh-workspace-memory",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T18:33:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lgquan/dsh-workspace-memory",
+    "commands": [
+      "dsh plugin --profile web add github:lgquan/dsh-workspace-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

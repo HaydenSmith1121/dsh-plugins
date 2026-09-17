@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "bitsmug/dsh-bgjobs",
+  "slug": "bitsmug__dsh-bgjobs",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-bgjobs",
+  "title": "dsh-bgjobs",
+  "summary": "把命令丢到后台跑，关掉 DSH 也不中断，还能用网页或命令行随时查看和管理任务状态。",
+  "tags": [
+    "dsh-plugin",
+    "命令行工具",
+    "状态监控",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "0.1.35",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bitsmug",
+  "repo": "https://github.com/bitsmug/dsh-bgjobs",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T13:21:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bitsmug/dsh-bgjobs",
+    "commands": [
+      "dsh plugin --profile web add github:bitsmug/dsh-bgjobs"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

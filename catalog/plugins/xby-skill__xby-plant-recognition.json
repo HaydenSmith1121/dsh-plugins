@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-plant-recognition",
+  "slug": "xby-skill__xby-plant-recognition",
+  "tier": "community",
+  "package": null,
+  "name": "xby-plant-recognition",
+  "title": "xby-plant-recognition",
+  "summary": "上传植物图片，快速识别名称或所属科属种，适合植物爱好者和科研人员。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "模型配置",
+    "状态监控",
+    "自动化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-plant-recognition",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:26:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-plant-recognition",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-plant-recognition",
+      "dsh plugin --profile web add /absolute/path/to/xby-plant-recognition"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

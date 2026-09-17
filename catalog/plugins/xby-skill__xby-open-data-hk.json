@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-open-data-hk",
+  "slug": "xby-skill__xby-open-data-hk",
+  "tier": "community",
+  "package": null,
+  "name": "xby-open-data-hk",
+  "title": "xby-open-data-hk",
+  "summary": "一键接入香港政府开放数据，支持数据集搜索、分类浏览和格式筛选，方便做数据分析和应用开发。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "模型配置",
+    "效率提升",
+    "数据访问"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-open-data-hk",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-02T07:47:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-open-data-hk",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-open-data-hk",
+      "dsh plugin --profile web add /absolute/path/to/xby-open-data-hk"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

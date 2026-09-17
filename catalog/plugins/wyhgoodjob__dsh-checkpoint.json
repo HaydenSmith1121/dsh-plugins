@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "wyhgoodjob/dsh-checkpoint",
+  "slug": "wyhgoodjob__dsh-checkpoint",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-checkpoint",
+  "title": "dsh-checkpoint",
+  "summary": "给 DeepSeek Harness 加个存档点，随时把会话和文件回滚到之前任何一步，不怕改错。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "文件管理",
+    "会话管理",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "wyhgoodjob",
+  "repo": "https://github.com/wyhgoodjob/dsh-checkpoint",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T07:56:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wyhgoodjob/dsh-checkpoint",
+    "commands": [
+      "dsh plugin --profile web add github:wyhgoodjob/dsh-checkpoint"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

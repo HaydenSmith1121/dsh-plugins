@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaoxiao44443/dfy-dsh-plugins",
+  "slug": "xiaoxiao44443__dfy-dsh-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dfy-dsh-plugins",
+  "title": "dfy-dsh-plugins",
+  "summary": "个人维护的 DeepSeek Harness 插件合集，提供版本化资源引用与进程内 provider 注册等公共能力，方便扩展和复用。",
+  "tags": [
+    "ai-agents",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin-system",
+    "插件管理",
+    "工作流增强",
+    "工作区管理",
+    "效率提升"
+  ],
+  "version": "0.1.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "dsh-appearance-v0.1.4",
+    "publishedAt": "2026-09-10T06:55:16Z",
+    "url": "https://github.com/xiaoxiao44443/dfy-dsh-plugins/releases/tag/dsh-appearance-v0.1.4"
+  },
+  "author": "xiaoxiao44443",
+  "repo": "https://github.com/xiaoxiao44443/dfy-dsh-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T06:55:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiaoxiao44443/dfy-dsh-plugins",
+    "commands": [
+      "dsh plugin --profile web add ./plugins/archive-manager",
+      "dsh plugin --profile web add ./plugins/appearance",
+      "dsh plugin --profile web add ./plugins/wallpaper"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

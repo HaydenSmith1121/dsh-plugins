@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "yuanzehui313/dsh-workspace-enhance",
+  "slug": "yuanzehui313__dsh-workspace-enhance",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workspace-enhance",
+  "title": "dsh-workspace-enhance",
+  "summary": "增强 DSH 工作区与会话管理：回收站防误删、跨工作区拖拽、未分组会话整理、多根目录支持，还能合并会话。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "前端增强",
+    "会话管理",
+    "桌宠"
+  ],
+  "version": "1.0.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yuanzehui313",
+  "repo": "https://github.com/yuanzehui313/dsh-workspace-enhance",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-31T07:28:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yuanzehui313/dsh-workspace-enhance",
+    "commands": [
+      "dsh plugin --profile web add github:yuanzehui313/dsh-workspace-enhance"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

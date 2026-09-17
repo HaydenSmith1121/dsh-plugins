@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "kelai141/dsh-shell-termux",
+  "slug": "kelai141__dsh-shell-termux",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-shell-termux",
+  "title": "dsh-shell-termux",
+  "summary": "让 dsh 在安卓 Termux 里跑通 bash，自动注入环境、探测诊断，并如实说明沙箱边界。",
+  "tags": [
+    "android",
+    "cordis-plugin",
+    "dsh-plugin",
+    "termux",
+    "命令行工具",
+    "工具集成",
+    "模型适配",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kelai141",
+  "repo": "https://github.com/kelai141/dsh-shell-termux",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-13T00:22:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kelai141/dsh-shell-termux",
+    "commands": [
+      "npm install /path/to/dsh-shell-termux-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

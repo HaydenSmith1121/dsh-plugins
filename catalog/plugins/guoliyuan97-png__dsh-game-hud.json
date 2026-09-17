@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "guoliyuan97-png/dsh-game-hud",
+  "slug": "guoliyuan97-png__dsh-game-hud",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-game-hud",
+  "title": "dsh-game-hud",
+  "summary": "把 DeepSeek 余额和上下文用量做成游戏血条蓝条悬浮显示，余额不足还会报警。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "界面美化",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "guoliyuan97-png",
+  "repo": "https://github.com/guoliyuan97-png/dsh-game-hud",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-10T10:18:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:guoliyuan97-png/dsh-game-hud",
+    "commands": [
+      "dsh plugin --profile web add github:guoliyuan97-png/dsh-game-hud"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

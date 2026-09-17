@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "xie129716/computer-user-vision",
+  "slug": "xie129716__computer-user-vision",
+  "tier": "community",
+  "package": null,
+  "name": "computer-user-vision",
+  "title": "computer-user-vision",
+  "summary": "让 DSH 能看懂屏幕并操控鼠标键盘，截图直接喂给视觉模型，坐标精准对得上。",
+  "tags": [
+    "computer-use",
+    "deepseek-harness",
+    "dsh-plugin",
+    "视觉理解",
+    "自动化",
+    "工具集成",
+    "模型适配"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-15T07:36:02Z",
+    "url": "https://github.com/xie129716/computer-user-vision/releases/tag/v0.4.0"
+  },
+  "author": "xie129716",
+  "repo": "https://github.com/xie129716/computer-user-vision",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T09:14:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xie129716/computer-user-vision",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/xie129716/computer-user-vision.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

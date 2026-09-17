@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "JohnXu22786/model-catalog",
+  "slug": "johnxu22786__model-catalog",
+  "tier": "community",
+  "package": null,
+  "name": "JohnXu22786/model-catalog",
+  "title": "JohnXu22786/model-catalog",
+  "summary": "自动发现 OpenAI 兼容接口的模型列表、价格和能力，一键生成可直接使用的配置。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "工具集成",
+    "设置面板",
+    "效率提升",
+    "资源优化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "JohnXu22786",
+  "repo": "https://github.com/JohnXu22786/model-catalog",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-16T23:59:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JohnXu22786/model-catalog",
+    "commands": [
+      "dsh plugin --profile demo add github:JohnXu22786/model-catalog",
+      "dsh plugin --profile demo remove model-catalog"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

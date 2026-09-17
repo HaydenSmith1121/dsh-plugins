@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "233fxr-collab/dsh-mobile-push-notify",
+  "slug": "233fxr-collab__dsh-mobile-push-notify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mobile-push-notify",
+  "title": "dsh-mobile-push-notify",
+  "summary": "任务完成时电脑弹通知、手机锁屏提醒，扫码配对零配置，点一下就能回到 dsh。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mobile",
+    "notification",
+    "pwa",
+    "web-push",
+    "效率提升",
+    "状态监控",
+    "零配置",
+    "移动端"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-06T03:11:10Z",
+    "url": "https://github.com/233fxr-collab/dsh-mobile-push-notify/releases/tag/v0.2.0"
+  },
+  "author": "233fxr-collab",
+  "repo": "https://github.com/233fxr-collab/dsh-mobile-push-notify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-06T03:11:08Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-mobile-push-notify",
+    "commands": [
+      "dsh plugin --profile web add dsh-mobile-push-notify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

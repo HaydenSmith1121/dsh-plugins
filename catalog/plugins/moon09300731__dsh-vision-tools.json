@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "moon09300731/dsh-vision-tools",
+  "slug": "moon09300731__dsh-vision-tools",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-vision-tools",
+  "title": "dsh-vision-tools",
+  "summary": "让 DeepSeek 纯文本模型也能看图，支持粘贴截图、拖拽图片，自动调用视觉 API 识别内容。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "视觉理解",
+    "多模态",
+    "截图工具",
+    "API集成"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "moon09300731",
+  "repo": "https://github.com/moon09300731/dsh-vision-tools",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-17T11:42:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-vision-tools",
+    "commands": [
+      "dsh plugin --profile web add dsh-vision-tools",
+      "dsh plugin --profile web add \"github:moon09300731/dsh-vision-tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

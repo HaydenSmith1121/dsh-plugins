@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "rex178178/dsh-turnbar",
+  "slug": "rex178178__dsh-turnbar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-turnbar",
+  "title": "dsh-turnbar",
+  "summary": "给对话加一条进度条，能悬停预览、拖动跳转、⌘K 搜索，随时回到任意一轮。",
+  "tags": [
+    "chat-navigation",
+    "conversation",
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin",
+    "progress-bar",
+    "会话管理",
+    "快捷操作",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.3.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "rex178178",
+  "repo": "https://github.com/rex178178/dsh-turnbar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T18:30:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-turnbar",
+    "commands": [
+      "dsh plugin --profile web add dsh-turnbar",
+      "npm install -g @deepseek-ai/dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

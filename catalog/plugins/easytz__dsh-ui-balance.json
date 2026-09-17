@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "EasyTZ/dsh-ui-balance",
+  "slug": "easytz__dsh-ui-balance",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ui-balance",
+  "title": "dsh-ui-balance",
+  "summary": "在每条回复旁显示 DeepSeek 账户余额、token 用量和实时花费，帮你随时掌握成本。",
+  "tags": [
+    "api-balance",
+    "deepseek",
+    "deepseek-api",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "资源优化",
+    "状态监控",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.9.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.9.0",
+    "publishedAt": "2026-09-10T08:01:41Z",
+    "url": "https://github.com/EasyTZ/dsh-ui-balance/releases/tag/v0.9.0"
+  },
+  "author": "EasyTZ",
+  "repo": "https://github.com/EasyTZ/dsh-ui-balance",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T08:01:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:EasyTZ/dsh-ui-balance",
+    "commands": [
+      "dsh plugin --profile <name> add @easytz/dsh-ui-balance"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

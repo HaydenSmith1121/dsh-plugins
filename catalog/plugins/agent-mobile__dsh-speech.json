@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "agent-mobile/dsh-speech",
+  "slug": "agent-mobile__dsh-speech",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-speech",
+  "title": "dsh-speech",
+  "summary": "给 DeepSeek Harness 装上语音能力，支持语音转写、合成和实时转录，手机或局域网设备可直接调用。",
+  "tags": [
+    "asr",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "speech",
+    "tts",
+    "AI 助手",
+    "视觉理解",
+    "工具集成",
+    "移动端",
+    "自动化"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-08T08:25:09Z",
+    "url": "https://github.com/agent-mobile/dsh-speech/releases/tag/v0.4.0"
+  },
+  "author": "agent-mobile",
+  "repo": "https://github.com/agent-mobile/dsh-speech",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-09T00:02:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:agent-mobile/dsh-speech",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh",
+      "dsh plugin --profile web add github:agent-mobile/dsh-speech"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

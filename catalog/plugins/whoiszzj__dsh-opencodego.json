@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "whoiszzj/dsh-opencodego",
+  "slug": "whoiszzj__dsh-opencodego",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-opencodego",
+  "title": "dsh-opencodego",
+  "summary": "把 OpenCode Go 接进 DSH，自动按模型支持的协议发请求，还能自适应请求头。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "模型配置",
+    "模型适配",
+    "桥接插件",
+    "工具集成"
+  ],
+  "version": "0.7.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "whoiszzj",
+  "repo": "https://github.com/whoiszzj/dsh-opencodego",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T16:40:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:whoiszzj/dsh-opencodego",
+    "commands": [
+      "dsh plugin --profile web add github:whoiszzj/dsh-opencodego"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

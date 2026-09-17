@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "AkinoHaruka/companion-memory",
+  "slug": "akinoharuka__companion-memory",
+  "tier": "community",
+  "package": null,
+  "name": "companion-memory",
+  "title": "companion-memory",
+  "summary": "给 AI 伴侣装上长期记忆，该记的记住、该说的才说，让用户画像慢慢长大。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "memory",
+    "AI 助手",
+    "语义检索",
+    "会话管理",
+    "安全审计"
+  ],
+  "version": "0.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "AkinoHaruka",
+  "repo": "https://github.com/AkinoHaruka/companion-memory",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T13:13:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AkinoHaruka/companion-memory",
+    "commands": [
+      "dsh plugin --profile web add github:AkinoHaruka/companion-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

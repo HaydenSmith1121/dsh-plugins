@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "KasenRi/dsh-orbit-browser-plugins",
+  "slug": "kasenri__dsh-orbit-browser-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-orbit-browser-plugins",
+  "title": "dsh-orbit-browser-plugins",
+  "summary": "给 DSH 加上确定性的工程编排和可控浏览器自动化，让多智能体按流程干活、自动操作网页。",
+  "tags": [
+    "agent-orchestration",
+    "ai-agent",
+    "browser-automation",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "orbit",
+    "多Agent协作",
+    "自动化",
+    "工具集成"
+  ],
+  "version": "0.5.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.6",
+    "publishedAt": "2026-09-15T12:05:40Z",
+    "url": "https://github.com/KasenRi/dsh-orbit-browser-plugins/releases/tag/v0.5.6"
+  },
+  "author": "KasenRi",
+  "repo": "https://github.com/KasenRi/dsh-orbit-browser-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T12:04:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:KasenRi/dsh-orbit-browser-plugins",
+    "commands": [
+      "dsh plugin --profile web add github:KasenRi/dsh-orbit-browser-plugins"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

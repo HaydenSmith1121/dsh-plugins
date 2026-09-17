@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "springbrand-lab/dsh-oauth-mcp-client",
+  "slug": "springbrand-lab__dsh-oauth-mcp-client",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-oauth-mcp-client",
+  "title": "dsh-oauth-mcp-client",
+  "summary": "为 DeepSeek Harness 提供 OAuth 2.1 认证的流式 HTTP MCP 客户端，让 AI 安全连接外部工具和服务。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-v4",
+    "deepseek-v4-pro",
+    "dsh-plugin",
+    "mcp",
+    "mcp-client",
+    "安全审计"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "springbrand-lab",
+  "repo": "https://github.com/springbrand-lab/dsh-oauth-mcp-client",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 1,
+  "pushedAt": "2026-08-14T04:02:35Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:springbrand-lab/dsh-oauth-mcp-client",
+    "commands": [
+      "git clone https://github.com/springbrand-lab/dsh-oauth-mcp-client.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

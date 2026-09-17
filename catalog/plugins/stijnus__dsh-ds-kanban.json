@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Stijnus/dsh-ds-kanban",
+  "slug": "stijnus__dsh-ds-kanban",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ds-kanban",
+  "title": "dsh-ds-kanban",
+  "summary": "为 DeepSeek Harness Web 添加实时任务看板，支持侧边栏入口、搜索筛选、导出和诊断，让任务状态一目了然。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-02T19:40:15Z",
+    "url": "https://github.com/Stijnus/dsh-ds-kanban/releases/tag/v0.3.0"
+  },
+  "author": "Stijnus",
+  "repo": "https://github.com/Stijnus/dsh-ds-kanban",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T19:10:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Stijnus/dsh-ds-kanban",
+    "commands": [
+      "dsh plugin --profile web add github:Stijnus/dsh-ds-kanban"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

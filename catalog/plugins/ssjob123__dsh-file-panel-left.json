@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ssjob123/dsh-file-panel-left",
+  "slug": "ssjob123__dsh-file-panel-left",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-file-panel-left",
+  "title": "dsh-file-panel-left",
+  "summary": "在 DSH 网页里加一个 VSCode 风格的左侧文件面板，能浏览、编辑、预览文件，还支持 @引用，每个会话独立互不干扰。",
+  "tags": [
+    "code-editor",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "file-explorer",
+    "sidebar",
+    "sidebar-menu",
+    "sidebar-navigation",
+    "前端增强",
+    "工作区管理",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "1.0.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.3",
+    "publishedAt": "2026-08-26T11:08:54Z",
+    "url": "https://github.com/ssjob123/dsh-file-panel-left/releases/tag/v1.0.3"
+  },
+  "author": "ssjob123",
+  "repo": "https://github.com/ssjob123/dsh-file-panel-left",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-26T11:08:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-file-panel-left",
+    "commands": [
+      "dsh plugin --profile web add dsh-file-panel-left"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

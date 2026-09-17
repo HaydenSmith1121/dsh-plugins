@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "peterliucius/dsh-prompt-optimize",
+  "slug": "peterliucius__dsh-prompt-optimize",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-optimize",
+  "title": "dsh-prompt-optimize",
+  "summary": "一键调用辅助大模型重写当前草稿，只替换内容不发送消息，方便你反复打磨措辞。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "草稿重写",
+    "辅助润色",
+    "不发送消息",
+    "提示词优化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "peterliucius",
+  "repo": "https://github.com/peterliucius/dsh-prompt-optimize",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-17T06:44:05Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:peterliucius/dsh-prompt-optimize",
+    "commands": [
+      "dsh plugin --profile web add github:peterliucius/dsh-prompt-optimize"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "NOirBRight/dsh-llm-codex",
+  "slug": "noirbright__dsh-llm-codex",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-codex",
+  "title": "dsh-llm-codex",
+  "summary": "为 DeepSeek Harness 接入 ChatGPT Codex 登录，提供可排序模型目录和快速模型切换，提升开发效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "模型配置",
+    "效率提升",
+    "工作流增强",
+    "工具集成"
+  ],
+  "version": "0.3.20",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.20",
+    "publishedAt": "2026-09-14T16:42:27Z",
+    "url": "https://github.com/NOirBRight/dsh-llm-codex/releases/tag/v0.3.20"
+  },
+  "author": "NOirBRight",
+  "repo": "https://github.com/NOirBRight/dsh-llm-codex",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 2,
+  "pushedAt": "2026-09-14T16:42:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:NOirBRight/dsh-llm-codex",
+    "commands": [
+      "dsh plugin --profile web add github:NOirBRight/dsh-llm-codex"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

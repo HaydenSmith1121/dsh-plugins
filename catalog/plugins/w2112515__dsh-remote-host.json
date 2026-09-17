@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "w2112515/dsh-remote-host",
+  "slug": "w2112515__dsh-remote-host",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-remote-host",
+  "title": "dsh-remote-host",
+  "summary": "将安卓手机与 DeepSeek Harness 主机配对，通过局域网远程连接和控制，实现移动端便捷访问。",
+  "tags": [
+    "android",
+    "deepseek-harness",
+    "dsh-category-channel",
+    "dsh-plugin",
+    "lan",
+    "remote",
+    "安全审计",
+    "局域网转发",
+    "移动端"
+  ],
+  "version": "0.2.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.2",
+    "publishedAt": "2026-08-24T17:09:25Z",
+    "url": "https://github.com/w2112515/dsh-remote-host/releases/tag/v0.2.2"
+  },
+  "author": "w2112515",
+  "repo": "https://github.com/w2112515/dsh-remote-host",
+  "homepage": "https://github.com/w2112515/dsh-remote-android/releases",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-24T17:09:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:w2112515/dsh-remote-host",
+    "commands": [
+      "dsh plugin --profile web add github:w2112515/dsh-remote-host",
+      "npm install --omit=dev --prefix /path/to/dsh-remote-host"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "causebefore/dsh-pomodoro",
+  "slug": "causebefore__dsh-pomodoro",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pomodoro",
+  "title": "dsh-pomodoro",
+  "summary": "在 DeepSeek Harness 网页里用番茄钟管理专注时间，可调时长，侧栏和浮动面板随时用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "javascript",
+    "pomodoro",
+    "pomodoro-timer",
+    "productivity",
+    "番茄钟",
+    "专注计时",
+    "时间管理"
+  ],
+  "version": "0.5.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.2",
+    "publishedAt": "2026-09-03T16:46:45Z",
+    "url": "https://github.com/causebefore/dsh-pomodoro/releases/tag/v0.5.2"
+  },
+  "author": "causebefore",
+  "repo": "https://github.com/causebefore/dsh-pomodoro",
+  "homepage": "https://www.npmjs.com/package/dsh-pomodoro",
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-03T16:46:45Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:causebefore/dsh-pomodoro",
+    "commands": [
+      "dsh plugin --profile web add github:causebefore/dsh-pomodoro"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

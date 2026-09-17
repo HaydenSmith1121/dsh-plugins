@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "MirrMeur/dsh-workspace-colors",
+  "slug": "mirrmeur__dsh-workspace-colors",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-workspace-colors",
+  "title": "dsh-workspace-colors",
+  "summary": "给侧边栏每个工作区配上专属颜色，还能给整个界面叠一层背景色，深浅主题都好看。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "theme",
+    "界面美化",
+    "前端增强",
+    "工作区管理",
+    "设置面板"
+  ],
+  "version": "0.4.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "MirrMeur",
+  "repo": "https://github.com/MirrMeur/dsh-workspace-colors",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T18:40:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MirrMeur/dsh-workspace-colors",
+    "commands": [
+      "dsh plugin --profile web add github:MirrMeur/dsh-workspace-colors",
+      "dsh plugin --profile web add file:/path/to/dsh-workspace-colors"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

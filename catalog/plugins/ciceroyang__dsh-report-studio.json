@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "ciceroyang/dsh-report-studio",
+  "slug": "ciceroyang__dsh-report-studio",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-report-studio",
+  "title": "dsh-report-studio",
+  "summary": "把 DeepSeek Harness 会话一键变成日报周报、交接文档和文章，还能跨会话汇总并发布到飞书、Notion。",
+  "tags": [
+    "agent",
+    "deepseek-harness",
+    "deliverable",
+    "dsh-plugin",
+    "report",
+    "内容创作",
+    "报告生成",
+    "工作流增强",
+    "工具集成",
+    "数据可审计"
+  ],
+  "version": "0.4.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.7",
+    "publishedAt": "2026-09-15T02:58:11Z",
+    "url": "https://github.com/ciceroyang/dsh-report-studio/releases/tag/v0.4.7"
+  },
+  "author": "ciceroyang",
+  "repo": "https://github.com/ciceroyang/dsh-report-studio",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-15T02:58:10Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ciceroyang/dsh-report-studio",
+    "commands": [
+      "dsh plugin --profile web add github:ciceroyang/dsh-report-studio"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

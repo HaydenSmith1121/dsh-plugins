@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "lazybot114514/dsh-token-budget",
+  "slug": "lazybot114514__dsh-token-budget",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-token-budget",
+  "title": "dsh-token-budget",
+  "summary": "给每次 AI 对话装一根 Token 保险丝，按消息设定总预算，自动控制输入、思考与回答，防止超支。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "资源优化",
+    "会话管理",
+    "状态监控"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-01T06:26:26Z",
+    "url": "https://github.com/lazybot114514/dsh-token-budget/releases/tag/v0.2.0"
+  },
+  "author": "lazybot114514",
+  "repo": "https://github.com/lazybot114514/dsh-token-budget",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-01T13:53:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Zyc20010326/dsh-token-budget",
+    "commands": [
+      "dsh plugin --profile web add github:Zyc20010326/dsh-token-budget",
+      "dsh plugin --profile web add ./dsh-token-budget-0.2.1.tgz",
+      "git clone https://github.com/Zyc20010326/dsh-token-budget.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "ZSCDumin/dsh-wellness",
+  "slug": "zscdumin__dsh-wellness",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wellness",
+  "title": "dsh-wellness",
+  "summary": "在 DeepSeek Harness 工作时提醒你按时吃饭睡觉，久坐两小时后还会督促你起身活动。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "效率提升",
+    "状态监控",
+    "自动化",
+    "健康提醒"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ZSCDumin",
+  "repo": "https://github.com/ZSCDumin/dsh-wellness",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T04:04:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ZSCDumin/dsh-wellness",
+    "commands": [
+      "dsh plugin --profile web add <PACKAGE-NAME>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

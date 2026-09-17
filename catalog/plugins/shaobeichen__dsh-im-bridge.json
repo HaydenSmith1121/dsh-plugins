@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "shaobeichen/dsh-im-bridge",
+  "slug": "shaobeichen__dsh-im-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-im-bridge",
+  "title": "dsh-im-bridge",
+  "summary": "在飞书、企业微信或 Telegram 里远程指挥 DeepSeek Harness，派活、收通知、审批危险操作。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh-plugin",
+    "dsh-plugin-bundle",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "feishu",
+    "im-bridge",
+    "lark",
+    "telegram",
+    "wecom",
+    "桥接插件",
+    "工具集成",
+    "跨设备",
+    "自动化",
+    "状态监控"
+  ],
+  "version": "1.0.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.5",
+    "publishedAt": "2026-08-15T09:07:26Z",
+    "url": "https://github.com/shaobeichen/dsh-im-bridge/releases/tag/v1.0.5"
+  },
+  "author": "shaobeichen",
+  "repo": "https://github.com/shaobeichen/dsh-im-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 2,
+  "pushedAt": "2026-08-15T09:08:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shaobeichen/dsh-im-bridge",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

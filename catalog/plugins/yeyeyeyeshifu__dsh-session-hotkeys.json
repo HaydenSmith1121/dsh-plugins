@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "YEYEYEYESHIFU/dsh-session-hotkeys",
+  "slug": "yeyeyeyeshifu__dsh-session-hotkeys",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-hotkeys",
+  "title": "dsh-session-hotkeys",
+  "summary": "为 DeepSeek Harness 会话窗口添加自定义快捷键，快速执行常用操作，提升操作效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "hotkeys",
+    "效率提升",
+    "会话管理",
+    "命令行工具",
+    "零配置"
+  ],
+  "version": "1.8.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "YEYEYEYESHIFU",
+  "repo": "https://github.com/YEYEYEYESHIFU/dsh-session-hotkeys",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-05T21:20:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-session-hotkeys",
+    "commands": [
+      "dsh plugin --profile web add \"dsh-session-hotkeys\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "lxj808624/dsh-tool-git",
+  "slug": "lxj808624__dsh-tool-git",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tool-git",
+  "title": "dsh-tool-git",
+  "summary": "结构化封装 Git 常用操作，带危险命令保护，让 AI 安全地帮你管理代码版本。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "git",
+    "tool",
+    "命令行工具",
+    "安全审查"
+  ],
+  "version": "0.1.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lxj808624",
+  "repo": "https://github.com/lxj808624/dsh-tool-git",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-08-16T06:17:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-tool-git",
+    "commands": [
+      "dsh plugin --profile web add dsh-tool-git",
+      "dsh plugin --profile web add github:lxj808624/dsh-tool-git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "xyzs996/dsh-switch-cost",
+  "slug": "xyzs996__dsh-switch-cost",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-switch-cost",
+  "title": "dsh-switch-cost",
+  "summary": "算算当前会话在不同模型下的花费，对比实际开销和换模型能省多少。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "llm-cost",
+    "pricing",
+    "效率提升",
+    "资源优化",
+    "模型配置",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-24T15:56:12Z",
+    "url": "https://github.com/xyzs996/dsh-switch-cost/releases/tag/v0.1.0"
+  },
+  "author": "xyzs996",
+  "repo": "https://github.com/xyzs996/dsh-switch-cost",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T15:56:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-switch-cost",
+    "commands": [
+      "dsh plugin add dsh-switch-cost"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

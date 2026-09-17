@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "skkjkk/dsh-usage-dashboard",
+  "slug": "skkjkk__dsh-usage-dashboard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage-dashboard",
+  "title": "dsh-usage-dashboard",
+  "summary": "本地用量数据看板，帮你直观掌握Token、费用和时长的消耗趋势，数据不出本机。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "会话管理",
+    "可视化",
+    "资源优化"
+  ],
+  "version": "0.3.10",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "skkjkk",
+  "repo": "https://github.com/skkjkk/dsh-usage-dashboard",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-09T13:14:18Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@skkjkk/dsh-usage-dashboard",
+    "commands": [
+      "dsh plugin --profile web add @skkjkk/dsh-usage-dashboard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

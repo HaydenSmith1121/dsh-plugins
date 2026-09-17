@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "lansi-ai/dsh-forge",
+  "slug": "lansi-ai__dsh-forge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-forge",
+  "title": "dsh-forge",
+  "summary": "把 DeepSeek Harness 装进桌面应用，托盘、热键、通知等原生能力全都有，不用开浏览器。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "快捷操作",
+    "工具集成",
+    "桥接插件",
+    "主题"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-15T06:38:47Z",
+    "url": "https://github.com/lansi-ai/dsh-forge/releases/tag/v0.1.1"
+  },
+  "author": "lansi-ai",
+  "repo": "https://github.com/lansi-ai/dsh-forge",
+  "homepage": null,
+  "license": null,
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-16T05:45:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lansi-ai/dsh-forge",
+    "commands": [
+      "dsh plugin --profile web add github:lansi-ai/dsh-forge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

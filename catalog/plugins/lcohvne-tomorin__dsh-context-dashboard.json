@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "lcohvne-tomorin/dsh-context-dashboard",
+  "slug": "lcohvne-tomorin__dsh-context-dashboard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-context-dashboard",
+  "title": "dsh-context-dashboard",
+  "summary": "在侧边栏实时看上下文占用、会话花费、账户余额和额度，随时掌握用量。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "会话管理",
+    "资源优化",
+    "设置面板"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-09-16T12:50:49Z",
+    "url": "https://github.com/lcohvne-tomorin/dsh-context-dashboard/releases/tag/v0.3.1"
+  },
+  "author": "lcohvne-tomorin",
+  "repo": "https://github.com/lcohvne-tomorin/dsh-context-dashboard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T12:50:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lcohvne-tomorin/dsh-context-dashboard",
+    "commands": [
+      "dsh plugin --profile web add github:lcohvne-tomorin/dsh-context-dashboard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

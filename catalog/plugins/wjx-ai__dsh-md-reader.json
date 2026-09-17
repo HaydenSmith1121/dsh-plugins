@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "wjx-ai/dsh-md-reader",
+  "slug": "wjx-ai__dsh-md-reader",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-md-reader",
+  "title": "dsh-md-reader",
+  "summary": "点开会话里的 Markdown 或图片链接，直接在浏览器右侧三栏布局里阅读，带目录、图片预览和实时更新。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "markdown",
+    "markdown-reader",
+    "web-ui",
+    "前端增强",
+    "文件管理",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "1.2.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.3",
+    "publishedAt": "2026-09-12T01:25:58Z",
+    "url": "https://github.com/wjx-ai/dsh-md-reader/releases/tag/v1.2.3"
+  },
+  "author": "wjx-ai",
+  "repo": "https://github.com/wjx-ai/dsh-md-reader",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T02:45:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wjx-ai/dsh-md-reader",
+    "commands": [
+      "dsh plugin --profile web add github:wjx-ai/dsh-md-reader"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

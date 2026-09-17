@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Plaaasma/dsh-subagent-claude-live",
+  "slug": "plaaasma__dsh-subagent-claude-live",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subagent-claude-live",
+  "title": "dsh-subagent-claude-live",
+  "summary": "把 Claude Code 变成 dsh 里真正的流式子代理，支持会话续接、按次选模型和实时拉取模型列表。",
+  "tags": [
+    "claude-code",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "subagent",
+    "多Agent协作",
+    "模型配置",
+    "会话管理",
+    "命令行工具"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-05T20:21:14Z",
+    "url": "https://github.com/Plaaasma/dsh-subagent-claude-live/releases/tag/v0.1.1"
+  },
+  "author": "Plaaasma",
+  "repo": "https://github.com/Plaaasma/dsh-subagent-claude-live",
+  "homepage": "https://github.com/Plaaasma/dsh-subagent-claude-live#readme",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T20:21:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-subagent-claude-live",
+    "commands": [
+      "dsh plugin --profile web add dsh-subagent-claude-live",
+      "dsh plugin --profile headless add dsh-subagent-claude-live"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

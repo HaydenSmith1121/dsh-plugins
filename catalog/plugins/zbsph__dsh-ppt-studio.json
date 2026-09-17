@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zbsph/dsh-ppt-studio",
+  "slug": "zbsph__dsh-ppt-studio",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ppt-studio",
+  "title": "dsh-ppt-studio",
+  "summary": "在 DeepSeek Harness 里直接说需求，就能从头做、补完、修改或总结 PPT，并带质量门禁和视觉审阅，交付可验证。",
+  "tags": [
+    "dsh-plugin",
+    "报告生成",
+    "自动化",
+    "视觉理解",
+    "状态监控"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-05T09:23:05Z",
+    "url": "https://github.com/zbsph/dsh-ppt-studio/releases/tag/v1.0.0"
+  },
+  "author": "zbsph",
+  "repo": "https://github.com/zbsph/dsh-ppt-studio",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T17:52:06Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zbsph/dsh-ppt-studio",
+    "commands": [
+      "dsh plugin --profile web add github:zbsph/dsh-ppt-studio"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

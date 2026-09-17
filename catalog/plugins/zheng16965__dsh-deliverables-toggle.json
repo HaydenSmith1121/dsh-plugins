@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "zheng16965/dsh-deliverables-toggle",
+  "slug": "zheng16965__dsh-deliverables-toggle",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-deliverables-toggle",
+  "title": "dsh-deliverables-toggle",
+  "summary": "让对话结束后的产物列表支持主动展开和收起，查看文件更顺手。",
+  "tags": [
+    "ai-agent",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "ui-plugin",
+    "web-ui",
+    "前端增强",
+    "效率提升",
+    "可视化",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-24T06:43:35Z",
+    "url": "https://github.com/zheng16965/dsh-deliverables-toggle/releases/tag/v0.1.0"
+  },
+  "author": "zheng16965",
+  "repo": "https://github.com/zheng16965/dsh-deliverables-toggle",
+  "homepage": "https://github.com/zheng16965/dsh-deliverables-toggle",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-24T07:51:55Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-deliverables-toggle",
+    "commands": [
+      "dsh plugin --profile web add dsh-deliverables-toggle"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

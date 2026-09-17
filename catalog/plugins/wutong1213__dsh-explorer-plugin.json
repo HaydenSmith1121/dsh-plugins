@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "WuTong1213/dsh-explorer-plugin",
+  "slug": "wutong1213__dsh-explorer-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-explorer-plugin",
+  "title": "dsh-explorer-plugin",
+  "summary": "在 DSH 里用 VS Code 式文件树浏览文件，会话标签按工作区分组，找文件切会话都更顺手。",
+  "tags": [
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "文件管理",
+    "工作区管理",
+    "会话管理",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "WuTong1213",
+  "repo": "https://github.com/WuTong1213/dsh-explorer-plugin",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T09:22:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:WuTong1213/dsh-explorer-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:WuTong1213/dsh-explorer-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

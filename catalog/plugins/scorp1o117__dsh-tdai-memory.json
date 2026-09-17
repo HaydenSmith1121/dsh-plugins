@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "Scorp1o117/dsh-tdai-memory",
+  "slug": "scorp1o117__dsh-tdai-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tdai-memory",
+  "title": "dsh-tdai-memory",
+  "summary": "为 DeepSeek Harness 提供持久化记忆能力，让智能体在对话中记住关键信息，实现跨会话的连续交互体验。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理"
+  ],
+  "version": "0.3.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Scorp1o117",
+  "repo": "https://github.com/Scorp1o117/dsh-tdai-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-09-03T13:29:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-tdai-memory",
+    "commands": [
+      "dsh plugin --profile web add dsh-tdai-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

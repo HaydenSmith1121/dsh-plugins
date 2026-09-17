@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "MichengAI/dsh-archive-manager",
+  "slug": "michengai__dsh-archive-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-archive-manager",
+  "title": "dsh-archive-manager",
+  "summary": "安全归档和管理 DeepSeek Harness 会话记录，让历史对话井井有条、随时可查。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "会话归档",
+    "历史管理",
+    "数据安全"
+  ],
+  "version": "0.1.43",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.43",
+    "publishedAt": "2026-09-16T07:11:07Z",
+    "url": "https://github.com/MichengAI/dsh-archive-manager/releases/tag/v0.1.43"
+  },
+  "author": "MichengAI",
+  "repo": "https://github.com/MichengAI/dsh-archive-manager",
+  "homepage": "https://dsh-codex-desktop.micheng.dev",
+  "license": "Apache-2.0",
+  "stars": 62,
+  "forks": 5,
+  "pushedAt": "2026-09-16T07:19:53Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MichengAI/dsh-archive-manager",
+    "commands": [
+      "dsh plugin --profile web add github:MichengAI/dsh-archive-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

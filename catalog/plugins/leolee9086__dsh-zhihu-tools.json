@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "leolee9086/dsh-zhihu-tools",
+  "slug": "leolee9086__dsh-zhihu-tools",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-zhihu-tools",
+  "title": "dsh-zhihu-tools",
+  "summary": "把知乎数据开放平台的 17 个工具接进 DSH，配精美卡片和限流保护，查数据、做内容都顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "工具集成",
+    "内容创作",
+    "状态监控",
+    "设置面板",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "leolee9086",
+  "repo": "https://github.com/leolee9086/dsh-zhihu-tools",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-12T12:58:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@leolee9086/zhihu-tools",
+    "commands": [
+      "dsh plugin --profile web add @leolee9086/zhihu-tools",
+      "dsh plugin --profile web add link:D:/dev/zhihu-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

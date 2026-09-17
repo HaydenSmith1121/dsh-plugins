@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "sumarilkkxx/dsh-artifact",
+  "slug": "sumarilkkxx__dsh-artifact",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-artifact",
+  "title": "dsh-artifact",
+  "summary": "把自然语言变成原生交互式 ECharts 和 Mermaid 图表，让数据可视化随手就来。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "效率提升",
+    "主题",
+    "工具集成",
+    "零配置"
+  ],
+  "version": "2.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.0.0",
+    "publishedAt": "2026-08-20T06:29:14Z",
+    "url": "https://github.com/sumarilkkxx/dsh-artifact/releases/tag/v2.0.0"
+  },
+  "author": "sumarilkkxx",
+  "repo": "https://github.com/sumarilkkxx/dsh-artifact",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 20,
+  "forks": 1,
+  "pushedAt": "2026-08-26T04:34:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sumarilkkxx/dsh-artifact",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

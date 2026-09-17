@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "sycamorestr/dsh-platform-account-manager-plugin",
+  "slug": "sycamorestr__dsh-platform-account-manager-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-platform-account-manager-plugin",
+  "title": "dsh-platform-account-manager-plugin",
+  "summary": "管理 DeepSeek Harness 平台账号，并持久化浏览器会话，免去重复登录烦恼。",
+  "tags": [
+    "account-management",
+    "browser-session",
+    "cookie-persistence",
+    "deepseek-harness",
+    "dsh-plugin",
+    "账号管理",
+    "会话管理",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-08-29T08:35:52Z",
+    "url": "https://github.com/sycamorestr/dsh-platform-account-manager-plugin/releases/tag/v0.3.1"
+  },
+  "author": "sycamorestr",
+  "repo": "https://github.com/sycamorestr/dsh-platform-account-manager-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-29T09:24:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sycamorestr/dsh-platform-account-manager-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:sycamorestr/dsh-platform-account-manager-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "oneirictouch/dsh-explorer-editor",
+  "slug": "oneirictouch__dsh-explorer-editor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-explorer-editor",
+  "title": "dsh-explorer-editor",
+  "summary": "将资料浏览器和文本编辑器整合为页签式界面，减少工作区分割，提升操作效率。",
+  "tags": [
+    "dsh-plugin",
+    "文件管理",
+    "效率提升",
+    "前端增强",
+    "工作流增强"
+  ],
+  "version": "0.10.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "oneirictouch",
+  "repo": "https://github.com/oneirictouch/dsh-explorer-editor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T11:33:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "dsh plugin --profile web add .",
+      "dsh plugin --profile desktop add .",
+      "dsh plugin --profile web add dsh-explorer-editor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-context-lens",
+  "slug": "goodandready__dsh-context-lens",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-context-lens",
+  "title": "dsh-context-lens",
+  "summary": "自动压缩代码上下文、过滤测试日志并控制Token预算，让DeepSeek Harness跑得更省更稳。",
+  "tags": [
+    "context",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "token-guard",
+    "会话管理",
+    "资源优化",
+    "效率提升",
+    "状态监控",
+    "自动化"
+  ],
+  "version": "0.1.18",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.18",
+    "publishedAt": "2026-09-16T20:47:13Z",
+    "url": "https://github.com/GooDAnDReaDY/dsh-context-lens/releases/tag/v0.1.18"
+  },
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-context-lens",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 1,
+  "pushedAt": "2026-09-16T20:46:55Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooDAnDReaDY/dsh-context-lens",
+    "commands": [
+      "dsh plugin --profile web add github:GooDAnDReaDY/dsh-context-lens"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

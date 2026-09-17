@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "kvmem/dsh-super-advisor",
+  "slug": "kvmem__dsh-super-advisor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-super-advisor",
+  "title": "dsh-super-advisor",
+  "summary": "让主模型随时呼叫更强模型当顾问，请求可改、人工确认后才执行，安全又灵活。",
+  "tags": [
+    "advisor",
+    "deepseek-harness",
+    "dsh-plugin",
+    "superadvisor",
+    "AI 助手",
+    "多Agent协作",
+    "安全审计",
+    "工具集成",
+    "工作流增强"
+  ],
+  "version": "0.1.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.7",
+    "publishedAt": "2026-09-09T08:22:30Z",
+    "url": "https://github.com/kvmem/dsh-super-advisor/releases/tag/v0.1.7"
+  },
+  "author": "kvmem",
+  "repo": "https://github.com/kvmem/dsh-super-advisor",
+  "homepage": "https://github.com/kvmem/dsh-super-advisor#readme",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-09T14:15:50Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kvmem/dsh-super-advisor",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-super-advisor.tgz",
+      "dsh plugin --profile web remove dsh-tool-advisor",
+      "git clone https://github.com/kvmem/dsh-super-advisor.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

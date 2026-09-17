@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "hoyin-law/dsh-notify-plus",
+  "slug": "hoyin-law__dsh-notify-plus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-notify-plus",
+  "title": "dsh-notify-plus",
+  "summary": "把 DSH 桌面通知变聪明：标题显示当前会话名，正文用十几个字说清这轮干了啥。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-desktop",
+    "dsh-plugin",
+    "dsh-plugins",
+    "electron",
+    "notifications",
+    "plugin",
+    "windows-toast",
+    "消息通知",
+    "效率提升",
+    "前端增强",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-13T21:07:27Z",
+    "url": "https://github.com/hoyin-law/dsh-notify-plus/releases/tag/v0.1.0"
+  },
+  "author": "hoyin-law",
+  "repo": "https://github.com/hoyin-law/dsh-notify-plus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T14:20:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hoyin-law/dsh-notify-plus",
+    "commands": [
+      "dsh plugin --profile web add github:hoyin-law/dsh-notify-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

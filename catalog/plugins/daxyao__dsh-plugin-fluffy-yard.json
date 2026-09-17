@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "DaXYao/dsh-plugin-fluffy-yard",
+  "slug": "daxyao__dsh-plugin-fluffy-yard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-fluffy-yard",
+  "title": "dsh-plugin-fluffy-yard",
+  "summary": "在会话面板里养一座小院，猫猫狗狗会来做客，能摸摸、合影、收集明信片和成就。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "pet",
+    "webview",
+    "主题",
+    "可视化",
+    "状态持久化",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-16T16:27:15Z",
+    "url": "https://github.com/DaXYao/dsh-plugin-fluffy-yard/releases/tag/v0.1.0"
+  },
+  "author": "DaXYao",
+  "repo": "https://github.com/DaXYao/dsh-plugin-fluffy-yard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:35:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:DaXYao/dsh-plugin-fluffy-yard",
+    "commands": [
+      "dsh plugin --profile pets add ./dsh-plugin-fluffy-yard-0.1.0.tgz",
+      "dsh plugin --profile pets add github:DaXYao/dsh-plugin-fluffy-yard",
+      "git clone https://github.com/DaXYao/dsh-plugin-fluffy-yard && cd dsh-plugin-fluffy-yard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

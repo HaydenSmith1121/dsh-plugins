@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Minglink/dsh-infinite-gen-4",
+  "slug": "minglink__dsh-infinite-gen-4",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-infinite-gen-4",
+  "title": "dsh-infinite-gen-4",
+  "summary": "给 DeepSeek 做网络安全红队测试的越狱提示词和测试套件，帮你检验模型安全边界。",
+  "tags": [
+    "armor-breaking",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "安全审计",
+    "模型配置",
+    "工具集成",
+    "AI 助手"
+  ],
+  "version": "0.5.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Minglink",
+  "repo": "https://github.com/Minglink/dsh-infinite-gen-4",
+  "homepage": "https://deepseek.stream/plugins/dsh-infinite-gen-4",
+  "license": "MIT",
+  "stars": 1632,
+  "forks": 114,
+  "pushedAt": "2026-09-14T13:45:13Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Minglink/dsh-infinite-gen-4",
+    "commands": [
+      "dsh plugin --profile web add github:Minglink/dsh-infinite-gen-4"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

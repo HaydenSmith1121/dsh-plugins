@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "VinciBeans/dsh-dashboard",
+  "slug": "vincibeans__dsh-dashboard",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-dashboard",
+  "title": "dsh-dashboard",
+  "summary": "在对话界面实时查看每次会话的 token 用量、耗时和工具调用统计，方便你掌握资源消耗和运行状态。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "会话管理",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.1.3-alpha.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3-alpha.2",
+    "publishedAt": "2026-09-08T12:52:11Z",
+    "url": "https://github.com/VinciBeans/dsh-dashboard/releases/tag/v0.1.3-alpha.2"
+  },
+  "author": "VinciBeans",
+  "repo": "https://github.com/VinciBeans/dsh-dashboard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T12:52:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@wenqi_bian/dsh-dashboard@alpha",
+    "commands": [
+      "dsh plugin --profile web add @wenqi_bian/dsh-dashboard@alpha",
+      "dsh plugin --profile web add @wenqi_bian/dsh-dashboard",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

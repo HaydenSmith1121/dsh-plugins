@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "hjj345/dsh-sm-version-display",
+  "slug": "hjj345__dsh-sm-version-display",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sm-version-display",
+  "title": "dsh-sm-version-display",
+  "summary": "在侧边栏设置按钮上方显示当前安装的 dsh 版本号，方便随时查看插件版本信息。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "前端增强",
+    "状态监控",
+    "零配置"
+  ],
+  "version": "1.2.10",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.10",
+    "publishedAt": "2026-09-15T07:55:37Z",
+    "url": "https://github.com/hjj345/dsh-sm-version-display/releases/tag/v1.2.10"
+  },
+  "author": "hjj345",
+  "repo": "https://github.com/hjj345/dsh-sm-version-display",
+  "homepage": "https://github.com/hjj345/dsh-sm-version-display",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T07:54:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hjj345/dsh-sm-version-display",
+    "commands": [
+      "dsh plugin --profile web add github:hjj345/dsh-sm-version-display"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

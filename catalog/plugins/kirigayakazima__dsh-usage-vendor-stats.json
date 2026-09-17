@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "kirigayakazima/dsh-usage-vendor-stats",
+  "slug": "kirigayakazima__dsh-usage-vendor-stats",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage-vendor-stats",
+  "title": "dsh-usage-vendor-stats",
+  "summary": "按订阅/官方API维度统计DeepSeek Harness用量，展示53周热力图、趋势图、模型下钻和健康卡片，支持CSV导出。",
+  "tags": [
+    "dashboard",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "heatmap",
+    "llm",
+    "open-source",
+    "plugin",
+    "tokens",
+    "usage",
+    "可视化",
+    "状态监控",
+    "效率提升",
+    "资源优化"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-16T02:22:50Z",
+    "url": "https://github.com/kirigayakazima/dsh-usage-vendor-stats/releases/tag/v0.2.0"
+  },
+  "author": "kirigayakazima",
+  "repo": "https://github.com/kirigayakazima/dsh-usage-vendor-stats",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-09-12T05:45:19Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kirigayakazima/dsh-usage-vendor-stats",
+    "commands": [
+      "dsh plugin --profile web add \"github:kirigayakazima/dsh-usage-vendor-stats\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

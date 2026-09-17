@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "fuxin123z/dsh-skill-manage",
+  "slug": "fuxin123z__dsh-skill-manage",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skill-manage",
+  "title": "dsh-skill-manage",
+  "summary": "让智能体在运行时动态编写、修复、停用和删除自己的技能，支持热重载与分层删除，提升自主能力。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "AI 助手",
+    "自动化",
+    "工作区管理",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.2.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fuxin123z",
+  "repo": "https://github.com/fuxin123z/dsh-skill-manage",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-22T11:18:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-skill-manage",
+    "commands": [
+      "dsh plugin --profile web add dsh-skill-manage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

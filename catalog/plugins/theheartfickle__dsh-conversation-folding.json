@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "TheHeartFickle/dsh-conversation-folding",
+  "slug": "theheartfickle__dsh-conversation-folding",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-conversation-folding",
+  "title": "dsh-conversation-folding",
+  "summary": "把思考过程和工具调用折叠起来，只留对话正文，长对话看着更清爽。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "界面美化",
+    "会话管理",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "TheHeartFickle",
+  "repo": "https://github.com/TheHeartFickle/dsh-conversation-folding",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T13:46:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@the-heart-fickle/dsh-conversation-folding@latest",
+    "commands": [
+      "dsh plugin --profile web add @the-heart-fickle/dsh-conversation-folding@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

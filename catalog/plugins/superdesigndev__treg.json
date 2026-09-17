@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "superdesigndev/treg",
+  "slug": "superdesigndev__treg",
+  "tier": "community",
+  "package": null,
+  "name": "treg",
+  "title": "treg",
+  "summary": "给 AI 智能体用的工具版 OpenRouter，一个地址一个令牌就能接入各种工具。",
+  "tags": [
+    "agents",
+    "api-keys",
+    "cli",
+    "credentials",
+    "developer-tools",
+    "dsh-plugin",
+    "mcp",
+    "proxy",
+    "python",
+    "registry",
+    "secrets",
+    "工具集成",
+    "集中仓库",
+    "命令行工具",
+    "零配置",
+    "桥接插件"
+  ],
+  "version": "0.19.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "superdesigndev",
+  "repo": "https://github.com/superdesigndev/treg",
+  "homepage": "https://treg.to",
+  "license": "NOASSERTION",
+  "stars": 1504,
+  "forks": 152,
+  "pushedAt": "2026-09-16T21:13:07Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:superdesigndev/treg",
+    "commands": [
+      "curl -fsSL https://treg.to/install.sh | sh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

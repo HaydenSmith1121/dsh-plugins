@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "JohnXu22786/headless-json",
+  "slug": "johnxu22786__headless-json",
+  "tier": "community",
+  "package": null,
+  "name": "headless-json",
+  "title": "headless-json",
+  "summary": "帮你把DeepSeek Harness的运行结果自动转成机器可读的报告，顺手过滤隐私数据，直接对接CI流水线，跑自动化超省事。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "证据链",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "JohnXu22786",
+  "repo": "https://github.com/JohnXu22786/headless-json",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-11T12:00:17Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JohnXu22786/headless-json",
+    "commands": [
+      "npm install",
+      "dsh plugin --profile headless add /path/to/headless-json",
+      "dsh plugin --profile headless add github:JohnXu22786/headless-json"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

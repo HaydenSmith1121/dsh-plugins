@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "Tyan66666/billion-context-dsh",
+  "slug": "tyan66666__billion-context-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "billion-context-dsh",
+  "title": "billion-context-dsh",
+  "summary": "让模型自己决定何时压缩上下文，大幅扩展对话长度，告别长文本截断烦恼。",
+  "tags": [
+    "acp",
+    "billion-context",
+    "context-management",
+    "dsh-plugin",
+    "会话管理"
+  ],
+  "version": "0.2.23",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.23",
+    "publishedAt": "2026-09-14T05:33:00Z",
+    "url": "https://github.com/Tyan66666/billion-context-dsh/releases/tag/v0.2.23"
+  },
+  "author": "Tyan66666",
+  "repo": "https://github.com/Tyan66666/billion-context-dsh",
+  "homepage": "https://www.npmjs.com/package/billion-context-dsh",
+  "license": "MIT",
+  "stars": 97,
+  "forks": 17,
+  "pushedAt": "2026-09-14T05:32:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "billion-context-dsh",
+    "commands": [
+      "dsh plugin --profile web add billion-context-dsh",
+      "npm install billion-context-dsh",
+      "dsh plugin --profile web add github:Tyan66666/billion-context-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

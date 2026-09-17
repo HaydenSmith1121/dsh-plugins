@@ -56,13 +56,25 @@ export function manualInstallPlan(entry, ctx, spec = null) {
   const dshHome = ctx?.profileState?.dir ? path.dirname(path.dirname(ctx.profileState.dir)) : null;
   const relTarball = entry?.install?.tarball ?? null;
 
+  /**
+   * ★ 安装包的地址与规格，**一律以配置文件为准**（自 0.4.0 起）。
+   *
+   * 上一版是从 `entry.install.tarball` 拼 `${REPO_RAW_BASE}/<相对路径>` —— 那个
+   * 相对路径只在市场仓库内成立。现在自研插件的 tarball 托管在**另一个仓库**
+   * （dsh-plugin-collection），所以地址必须来自插件自己的配置文件；
+   * 只有它没给地址时，才退回市场仓库的拼接规则。
+   */
+  const directSpec = spec && spec.kind !== 'local-tarball' ? spec.spec : null;
+
   // ── 安装包从哪来 ────────────────────────────────────────
   const localRepoPath = ctx?.repoRoot && relTarball ? path.join(ctx.repoRoot, relTarball) : null;
   const localRepoOk = Boolean(localRepoPath && fs.existsSync(localRepoPath));
   const resolved = spec?.resolvedPath && fs.existsSync(spec.resolvedPath) ? spec.resolvedPath : null;
 
-  const downloadUrl = relTarball ? `${REPO_RAW_BASE}/${slash(relTarball)}` : null;
-  const cacheFile = relTarball ? path.join(tarballCacheDir(), path.basename(relTarball)) : null;
+  const downloadUrl = spec?.downloadUrl
+    ?? entry?.install?.url
+    ?? (relTarball ? `${REPO_RAW_BASE}/${slash(relTarball)}` : null);
+  const cacheFile = downloadUrl ? path.join(tarballCacheDir(), path.basename(new URL(downloadUrl).pathname)) : null;
 
   const tgz = resolved ?? (localRepoOk ? localRepoPath : cacheFile ?? null);
   const needDownload = !resolved && !localRepoOk && Boolean(downloadUrl);
@@ -73,7 +85,7 @@ export function manualInstallPlan(entry, ctx, spec = null) {
         : 'none';
 
   // ── 校验和 ──────────────────────────────────────────────
-  let sha = entry?.sha256 ?? null;
+  let sha = spec?.sha256 ?? entry?.sha256 ?? null;
   let shaSource = sha ? 'catalog' : null;
   if (!sha && tgz && fs.existsSync(tgz)) {
     try {
@@ -86,9 +98,21 @@ export function manualInstallPlan(entry, ctx, spec = null) {
   const notes = [];
   const steps = [];
 
-  if (sourceKind === 'none') {
-    // 没有仓内快照，也没有可下载地址 —— 如实说明，并给出通用路径
-    notes.push('本条目没有仓内 tarball 快照，也没有可推导的下载地址，所以下面给的是**通用**命令模板。');
+  if (directSpec) {
+    // npm / github 规格：一条命令就够，不需要下载任何东西
+    notes.push(`这条插件配置的安装方法是 **${spec.kind}**：直接把规格交给 dsh（底层是 pnpm），不需要先下载 tarball。`);
+    steps.push({
+      id: 'add',
+      title: '1) 直接安装',
+      why: `${spec.kind} 规格由 pnpm 自己解析并拉取，目标明确（不会装进来一个同名但无关的包）。`,
+      commands: [{ shell: 'any', text: `dsh plugin --profile ${profile} add ${directSpec}` }],
+    });
+  } else if (sourceKind === 'none') {
+    // 既没有仓内快照，也没有可下载地址，也没有直接规格 —— 如实说明，并给出通用路径
+    notes.push('这条插件**没有**仓内 tarball 快照、没有可推导的下载地址，也没有可用的 npm / GitHub 规格，所以下面给的是通用命令模板。');
+    if (entry?.install?.commands?.length) {
+      notes.push(`它的配置文件里记着上游给的命令，可以照抄：\n${entry.install.commands.map((c) => `    ${c}`).join('\n')}`);
+    }
     steps.push({
       id: 'resolve',
       title: '先拿到这个包的安装规格',

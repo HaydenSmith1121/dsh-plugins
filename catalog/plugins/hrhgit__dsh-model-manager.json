@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "hrhgit/dsh-model-manager",
+  "slug": "hrhgit__dsh-model-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-manager",
+  "title": "dsh-model-manager",
+  "summary": "统一管理模型连接与配置，支持标签、推理能力、图像路由和视觉代理，让模型调用更灵活高效。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.2.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hrhgit",
+  "repo": "https://github.com/hrhgit/dsh-model-manager",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-31T08:55:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hrhgit/dsh-model-manager",
+    "commands": [
+      "dsh plugin --profile web add github:hrhgit/dsh-model-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

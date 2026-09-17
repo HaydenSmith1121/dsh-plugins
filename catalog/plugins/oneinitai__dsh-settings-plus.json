@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "oneinitAI/dsh-settings-plus",
+  "slug": "oneinitai__dsh-settings-plus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-settings-plus",
+  "title": "dsh-settings-plus",
+  "summary": "增强 DSH 设置管理，提供更灵活、更高效的配置选项，让插件设置更顺手。",
+  "tags": [
+    "dsh-plugin",
+    "设置增强",
+    "设置面板"
+  ],
+  "version": "0.0.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "oneinitAI",
+  "repo": "https://github.com/oneinitAI/dsh-settings-plus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-16T06:54:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:oneinitAI/dsh-settings-plus",
+    "commands": [
+      "dsh plugin --profile <name> add file:/<repo-dir>/dsh-settings-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

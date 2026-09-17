@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "nonewind/dsh-spend",
+  "slug": "nonewind__dsh-spend",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-spend",
+  "title": "dsh-spend",
+  "summary": "在 DSH 网页界面里实时查看各模型、每天和每次会话的 Token 用量与预估花费。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "数据分析",
+    "可视化",
+    "资源优化"
+  ],
+  "version": "0.6.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "nonewind",
+  "repo": "https://github.com/nonewind/dsh-spend",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 3,
+  "pushedAt": "2026-09-07T02:42:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-spend",
+    "commands": [
+      "dsh plugin --profile web add dsh-spend"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

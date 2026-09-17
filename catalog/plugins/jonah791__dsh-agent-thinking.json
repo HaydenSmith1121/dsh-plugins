@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-agent-thinking",
+  "slug": "jonah791__dsh-agent-thinking",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-thinking",
+  "title": "dsh-agent-thinking",
+  "summary": "按需激活14种思维模块，让AI自动切换推理方式，复杂任务处理更聪明高效。",
+  "tags": [
+    "agent",
+    "dsh-plugin",
+    "llm",
+    "AI 助手",
+    "自动化",
+    "效率提升",
+    "工作流增强",
+    "模型适配"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-07T11:06:55Z",
+    "url": "https://github.com/jonah791/dsh-agent-thinking/releases/tag/v0.1.0"
+  },
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-agent-thinking",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T06:06:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-agent-thinking",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-agent-thinking"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

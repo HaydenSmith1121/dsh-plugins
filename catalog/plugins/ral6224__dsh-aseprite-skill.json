@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Ral6224/dsh-aseprite-skill",
+  "slug": "ral6224__dsh-aseprite-skill",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-aseprite-skill",
+  "title": "dsh-aseprite-skill",
+  "summary": "让智能体通过写 Lua 脚本调用真实 Aseprite 引擎，自动绘制和批量渲染像素画。",
+  "tags": [
+    "dsh",
+    "dsh-skill",
+    "多模态",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "Ral6224",
+  "repo": "https://github.com/Ral6224/dsh-aseprite-skill",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-18T09:19:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Ral6224/dsh-aseprite-skill",
+    "commands": [
+      "dsh plugin --profile web add github:Ral6224/dsh-aseprite-skill"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

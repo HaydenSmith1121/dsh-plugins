@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "xby-skill/xby-traditional-chinese-medicine-kg",
+  "slug": "xby-skill__xby-traditional-chinese-medicine-kg",
+  "tier": "community",
+  "package": null,
+  "name": "xby-traditional-chinese-medicine-kg",
+  "title": "xby-traditional-chinese-medicine-kg",
+  "summary": "围绕中药名、药材、别名、归经等构建知识图谱，帮你快速查询和梳理中药关联信息，适合初步研究参考。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "会话管理",
+    "零配置",
+    "设置面板",
+    "状态监控"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xby-skill",
+  "repo": "https://github.com/xby-skill/xby-traditional-chinese-medicine-kg",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-28T11:39:18Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xby_skill/xby-traditional-chinese-medicine-kg",
+    "commands": [
+      "dsh plugin --profile web add github:xby_skill/xby-traditional-chinese-medicine-kg",
+      "dsh plugin --profile web add /absolute/path/to/xby-traditional-chinese-medicine-kg"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ywleeo/browser-mcp",
+  "slug": "ywleeo__browser-mcp",
+  "tier": "community",
+  "package": null,
+  "name": "browser-mcp",
+  "title": "browser-mcp",
+  "summary": "通过本地 Chrome 浏览器直接读取和操作网页，让 AI 能实时浏览网页内容并与之交互。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "AI 助手",
+    "安全审计",
+    "桌宠"
+  ],
+  "version": "0.12.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ywleeo",
+  "repo": "https://github.com/ywleeo/browser-mcp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-09-14T10:50:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ywleeo/browser-mcp",
+    "commands": [
+      "pip install ai-browser-mcp",
+      "git clone https://github.com/ywleeo/browser-mcp.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

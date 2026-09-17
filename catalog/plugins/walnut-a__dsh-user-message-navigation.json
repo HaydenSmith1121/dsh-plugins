@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "walnut-a/dsh-user-message-navigation",
+  "slug": "walnut-a__dsh-user-message-navigation",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-user-message-navigation",
+  "title": "dsh-user-message-navigation",
+  "summary": "在长对话左侧显示用户消息缩略图，快速定位并跳回之前的指令，让长对话导航更高效。",
+  "tags": [
+    "conversation-navigation",
+    "deepseek-harness",
+    "dsh-plugin",
+    "minimap",
+    "会话管理",
+    "前端增强",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "walnut-a",
+  "repo": "https://github.com/walnut-a/dsh-user-message-navigation",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-21T19:13:46Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-user-message-navigation",
+    "commands": [
+      "dsh plugin --profile web add dsh-user-message-navigation"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

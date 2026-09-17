@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Floatingfur/dsh-paperpanel",
+  "slug": "floatingfur__dsh-paperpanel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-paperpanel",
+  "title": "dsh-paperpanel",
+  "summary": "把本地论文和数据文件整理成 Zotero 风格文献库，在 DSH 里统一查看和管理。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "效率提升",
+    "可视化",
+    "工作流增强",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Floatingfur",
+  "repo": "https://github.com/Floatingfur/dsh-paperpanel",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T15:57:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-paperpanel",
+    "commands": [
+      "dsh plugin --profile web add dsh-paperpanel",
+      "dsh plugin --profile web add github:Floatingfur/dsh-paperpanel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

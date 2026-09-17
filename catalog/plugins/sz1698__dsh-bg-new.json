@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "sz1698/dsh-bg-new",
+  "slug": "sz1698__dsh-bg-new",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-bg-new",
+  "title": "dsh-bg-new",
+  "summary": "给 DSH 网页界面换背景，支持预设、纯色、渐变、图片和视频，滚轮拖动调缩放定位，还能开毛玻璃。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "主题",
+    "界面美化",
+    "快捷操作",
+    "设置面板",
+    "状态持久化"
+  ],
+  "version": "0.7.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sz1698",
+  "repo": "https://github.com/sz1698/dsh-bg-new",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 20,
+  "forks": 0,
+  "pushedAt": "2026-09-11T09:18:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sz1698/dsh-bg-new",
+    "commands": [
+      "dsh plugin --profile web add github:sz1698/dsh-bg-new",
+      "git clone https://github.com/sz1698/dsh-bg-new.git",
+      "npm install && npm run build"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

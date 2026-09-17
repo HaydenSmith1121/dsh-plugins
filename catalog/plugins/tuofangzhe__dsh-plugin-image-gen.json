@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "tuofangzhe/dsh-plugin-image-gen",
+  "slug": "tuofangzhe__dsh-plugin-image-gen",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-image-gen",
+  "title": "dsh-plugin-image-gen",
+  "summary": "为 DeepSeek Harness 提供 OpenAI 兼容的图像生成工具，一键调用接口并自动保存生成的图片。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "tuofangzhe",
+  "repo": "https://github.com/tuofangzhe/dsh-plugin-image-gen",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-27T10:40:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@dopilot/dsh-plugin-image-gen",
+    "commands": [
+      "dsh plugin --profile web add @dopilot/dsh-plugin-image-gen"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

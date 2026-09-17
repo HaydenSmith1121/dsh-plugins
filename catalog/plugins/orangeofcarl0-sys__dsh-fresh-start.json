@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "orangeofcarl0-sys/dsh-fresh-start",
+  "slug": "orangeofcarl0-sys__dsh-fresh-start",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-fresh-start",
+  "title": "dsh-fresh-start",
+  "summary": "一键开启全新对话，自动总结当前会话并归档，让聊天记录不丢失、上下文更清爽。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "1.2.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.4",
+    "publishedAt": "2026-08-15T23:54:58Z",
+    "url": "https://github.com/orangeofcarl0-sys/dsh-fresh-start/releases/tag/v1.2.4"
+  },
+  "author": "orangeofcarl0-sys",
+  "repo": "https://github.com/orangeofcarl0-sys/dsh-fresh-start",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-14T12:41:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:orangeofcarl0-sys/dsh-fresh-start",
+    "commands": [
+      "dsh plugin --profile web add github:orangeofcarl0-sys/dsh-fresh-start",
+      "dsh plugin --profile web update dsh-fresh-start"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

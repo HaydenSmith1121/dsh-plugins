@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "NOirBRight/dsh-mobile-pairing",
+  "slug": "noirbright__dsh-mobile-pairing",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mobile-pairing",
+  "title": "dsh-mobile-pairing",
+  "summary": "让手机与DSH主机配对，通过回环网关和加密隧道实现远程控制与安全连接。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "会话管理",
+    "桌宠",
+    "可视化",
+    "插件管理"
+  ],
+  "version": "0.1.19",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.19",
+    "publishedAt": "2026-09-16T01:08:03Z",
+    "url": "https://github.com/NOirBRight/dsh-mobile-pairing/releases/tag/v0.1.19"
+  },
+  "author": "NOirBRight",
+  "repo": "https://github.com/NOirBRight/dsh-mobile-pairing",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T01:08:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:NOirBRight/dsh-mobile-pairing",
+    "commands": [
+      "dsh plugin --profile web add github:NOirBRight/dsh-mobile-pairing"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

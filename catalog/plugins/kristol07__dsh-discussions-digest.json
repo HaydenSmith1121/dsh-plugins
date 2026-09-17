@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "kristol07/dsh-discussions-digest",
+  "slug": "kristol07__dsh-discussions-digest",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-discussions-digest",
+  "title": "dsh-discussions-digest",
+  "summary": "面向 DevRel 的社区工作台，帮你持续跟进官方 GitHub Discussions 的最新讨论，批量整理、可恢复任务，省心省力。",
+  "tags": [
+    "deepseek-harness",
+    "developer-relations",
+    "dsh-plugin",
+    "github-discussions",
+    "自动化",
+    "效率提升",
+    "工作流增强",
+    "状态监控"
+  ],
+  "version": "0.1.0-rc.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kristol07",
+  "repo": "https://github.com/kristol07/dsh-discussions-digest",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T10:24:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kristol07/dsh-discussions-digest",
+    "commands": [
+      "dsh plugin --profile web add github:kristol07/dsh-discussions-digest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

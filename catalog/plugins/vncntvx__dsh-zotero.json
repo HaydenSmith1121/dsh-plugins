@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "Vncntvx/dsh-zotero",
+  "slug": "vncntvx__dsh-zotero",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-zotero",
+  "title": "dsh-zotero",
+  "summary": "将 Zotero 文献管理接入 DeepSeek Harness，方便 AI 助手读取和引用你的文献库。",
+  "tags": [
+    "ai-agents",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "zotero",
+    "文献管理",
+    "Zotero集成",
+    "内容创作",
+    "AI工具"
+  ],
+  "version": "0.8.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.4",
+    "publishedAt": "2026-09-13T15:25:16Z",
+    "url": "https://github.com/Vncntvx/dsh-zotero/releases/tag/v0.8.4"
+  },
+  "author": "Vncntvx",
+  "repo": "https://github.com/Vncntvx/dsh-zotero",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 20,
+  "forks": 5,
+  "pushedAt": "2026-09-14T05:49:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Vncntvx/dsh-zotero",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-zotero",
+      "dsh plugin --profile <name> add github:Vncntvx/dsh-zotero",
+      "dsh plugin --profile <name> add ./dsh-zotero-*.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

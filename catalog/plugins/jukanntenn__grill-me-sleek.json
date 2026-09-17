@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "jukanntenn/grill-me-sleek",
+  "slug": "jukanntenn__grill-me-sleek",
+  "tier": "community",
+  "package": null,
+  "name": "grill-me-sleek",
+  "title": "grill-me-sleek",
+  "summary": "在写代码前，让 AI 通过提问帮你把方案想透，用简洁网页界面回答问题，提前发现计划漏洞。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "自动化",
+    "可视化",
+    "AI 助手"
+  ],
+  "version": "0.0.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "dsh-v0.0.3",
+    "publishedAt": "2026-09-02T13:05:22Z",
+    "url": "https://github.com/jukanntenn/grill-me-sleek/releases/tag/dsh-v0.0.3"
+  },
+  "author": "jukanntenn",
+  "repo": "https://github.com/jukanntenn/grill-me-sleek",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-09-02T14:50:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jukanntenn/grill-me-sleek",
+    "commands": [
+      "dsh plugin --profile web add github:jukanntenn/grill-me-sleek"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

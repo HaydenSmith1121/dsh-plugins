@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "liyongzheng666/dsh-browser-bridge",
+  "slug": "liyongzheng666__dsh-browser-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-browser-bridge",
+  "title": "dsh-browser-bridge",
+  "summary": "让DSH智能体通过本地WebSocket实时读取和控制浏览器，实现浏览器自动化操作。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "AI 助手",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "liyongzheng666",
+  "repo": "https://github.com/liyongzheng666/dsh-browser-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-22T15:27:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-browser-bridge",
+    "commands": [
+      "dsh plugin --profile web add dsh-browser-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

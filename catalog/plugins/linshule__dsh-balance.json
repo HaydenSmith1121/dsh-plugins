@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "linshule/dsh-balance",
+  "slug": "linshule__dsh-balance",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-balance",
+  "title": "dsh-balance",
+  "summary": "在 DeepSeek 网页界面左下角实时显示账户余额，徽章可拖拽，点击查看多币种详情。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "web-ui",
+    "状态监控",
+    "界面美化",
+    "实时显示",
+    "拖拽交互"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-08-16T12:21:49Z",
+    "url": "https://github.com/linshule/dsh-balance/releases/tag/v0.3.0"
+  },
+  "author": "linshule",
+  "repo": "https://github.com/linshule/dsh-balance",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-16T12:21:49Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:linshule/dsh-balance",
+    "commands": [
+      "dsh plugin --profile web add github:linshule/dsh-balance"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

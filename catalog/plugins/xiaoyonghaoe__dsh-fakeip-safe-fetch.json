@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaoyonghaoe/dsh-fakeip-safe-fetch",
+  "slug": "xiaoyonghaoe__dsh-fakeip-safe-fetch",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-fakeip-safe-fetch",
+  "title": "dsh-fakeip-safe-fetch",
+  "summary": "让 DSH 的网页抓取在 Clash/Mihomo fake-IP 模式下照常能用，同时拦住内网等非公网目标。",
+  "tags": [
+    "clash",
+    "cordis",
+    "deepseek-harness",
+    "dns-over-https",
+    "doh",
+    "dsh",
+    "fake-ip",
+    "mihomo",
+    "tun",
+    "typescript",
+    "web-fetch",
+    "工具集成",
+    "安全审计",
+    "桥接插件",
+    "网络代理"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-15T12:40:33Z",
+    "url": "https://github.com/xiaoyonghaoe/dsh-fakeip-safe-fetch/releases/tag/v0.1.1"
+  },
+  "author": "xiaoyonghaoe",
+  "repo": "https://github.com/xiaoyonghaoe/dsh-fakeip-safe-fetch",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T12:40:32Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiaoyonghaoe/dsh-fakeip-safe-fetch",
+    "commands": [
+      "dsh plugin --profile web add github:xiaoyonghaoe/dsh-fakeip-safe-fetch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

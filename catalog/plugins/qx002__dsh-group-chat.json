@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Qx002/dsh-group-chat",
+  "slug": "qx002__dsh-group-chat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-group-chat",
+  "title": "dsh-group-chat",
+  "summary": "在 DSH 界面里建个 AI 群聊，你当群主，让多个不同模型角色围绕同一话题轮流发言，协作讨论更高效。",
+  "tags": [
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "dsh-plugins",
+    "多Agent协作",
+    "多智能体协作",
+    "会话管理",
+    "任务编排",
+    "模型适配"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Qx002",
+  "repo": "https://github.com/Qx002/dsh-group-chat",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-21T10:49:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Qx002/dsh-group-chat",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/Qx002/dsh-group-chat.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

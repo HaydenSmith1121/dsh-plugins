@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "xfqz86/dsh-usage-stats",
+  "slug": "xfqz86__dsh-usage-stats",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage-stats",
+  "title": "dsh-usage-stats",
+  "summary": "在侧边栏实时查看今日Token用量，点击展开按模型、会话、日期统计的详情面板，还能监控OpenCode额度和DeepSeek余额。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "usage-analytics",
+    "状态监控",
+    "可视化",
+    "前端增强"
+  ],
+  "version": "0.4.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xfqz86",
+  "repo": "https://github.com/xfqz86/dsh-usage-stats",
+  "homepage": "https://www.npmjs.com/package/@xfqz86/dsh-usage-stats",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T19:43:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@xfqz86/dsh-usage-stats",
+    "commands": [
+      "dsh plugin --profile web add @xfqz86/dsh-usage-stats",
+      "dsh plugin --profile web add github:xfqz86/dsh-usage-stats",
+      "dsh plugin --profile web add https://github.com/xfqz86/dsh-usage-stats/releases/latest/download/xfqz86-dsh-usage-stats.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

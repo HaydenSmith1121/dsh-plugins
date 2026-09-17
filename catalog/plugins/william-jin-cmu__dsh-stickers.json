@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "william-jin-cmu/dsh-stickers",
+  "slug": "william-jin-cmu__dsh-stickers",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-stickers",
+  "title": "dsh-stickers",
+  "summary": "给 DSH 加上表情包能力，让用户和 Agent 都能发图斗图，聊天更有活人感。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "娱乐互动",
+    "主题"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "william-jin-cmu",
+  "repo": "https://github.com/william-jin-cmu/dsh-stickers",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 24,
+  "forks": 0,
+  "pushedAt": "2026-08-13T02:26:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:william-jin-cmu/dsh-stickers",
+    "commands": [
+      "dsh plugin --profile web add /absolute/path/to/dsh-stickers"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

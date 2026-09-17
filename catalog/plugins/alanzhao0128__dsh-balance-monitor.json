@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "alanzhao0128/dsh-balance-monitor",
+  "slug": "alanzhao0128__dsh-balance-monitor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-balance-monitor",
+  "title": "dsh-balance-monitor",
+  "summary": "在 dsh 侧边栏底部实时显示当前渠道的余额和用量，方便随时掌握花费情况。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "前端增强",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.7.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.2",
+    "publishedAt": "2026-09-10T06:19:19Z",
+    "url": "https://github.com/alanzhao0128/dsh-balance-monitor/releases/tag/v0.7.2"
+  },
+  "author": "alanzhao0128",
+  "repo": "https://github.com/alanzhao0128/dsh-balance-monitor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-10T09:41:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:alanzhao0128/dsh-balance-monitor",
+    "commands": [
+      "dsh plugin --profile web add \"github:alanzhao0128/dsh-balance-monitor",
+      "dsh plugin --profile web add @alanzhao/dsh-balance-monitor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

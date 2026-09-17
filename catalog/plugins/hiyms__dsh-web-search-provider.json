@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "hiyms/dsh-web-search-provider",
+  "slug": "hiyms__dsh-web-search-provider",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-search-provider",
+  "title": "dsh-web-search-provider",
+  "summary": "为 DeepSeek Harness 接入服务端搜索服务，提升联网搜索能力，让 AI 获取更实时的信息。",
+  "tags": [
+    "ai",
+    "ai-tools",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "模型配置",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.2.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hiyms",
+  "repo": "https://github.com/hiyms/dsh-web-search-provider",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-09-01T16:50:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-web-search-provider",
+    "commands": [
+      "dsh plugin add dsh-web-search-provider"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

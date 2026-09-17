@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "sqs404/dsh-client-ui-beautify",
+  "slug": "sqs404__dsh-client-ui-beautify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-client-ui-beautify",
+  "title": "dsh-client-ui-beautify",
+  "summary": "一键美化 DeepSeek Harness 界面，支持设置切换、极光背景和玻璃拟态面板，让客户端颜值瞬间提升。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "界面美化",
+    "零配置",
+    "前端增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sqs404",
+  "repo": "https://github.com/sqs404/dsh-client-ui-beautify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-23T13:10:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sqs404/dsh-client-ui-beautify",
+    "commands": [
+      "dsh plugin --profile web add github:sqs404/dsh-client-ui-beautify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

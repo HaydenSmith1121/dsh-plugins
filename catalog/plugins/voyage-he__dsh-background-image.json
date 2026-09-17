@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Voyage-He/dsh-background-image",
+  "slug": "voyage-he__dsh-background-image",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-background-image",
+  "title": "dsh-background-image",
+  "summary": "给 DeepSeek Harness 界面设置背景图片，支持网络图片、本地图片或纯色背景，让工作区更个性化。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "界面美化",
+    "可视化",
+    "前端增强",
+    "零配置"
+  ],
+  "version": "1.2.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Voyage-He",
+  "repo": "https://github.com/Voyage-He/dsh-background-image",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T07:21:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Voyage-He/dsh-background-image",
+    "commands": [
+      "dsh plugin --profile web add github:Voyage-He/dsh-background-image"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "guhanfei-ai/dsh-grafana",
+  "slug": "guhanfei-ai__dsh-grafana",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-grafana",
+  "title": "dsh-grafana",
+  "summary": "贴个 Grafana 大盘链接，就能用对话直接改图表配置并写回，调试可视化不用再手撸 JSON。",
+  "tags": [
+    "agent-observability",
+    "ai-agent",
+    "alerts",
+    "deepseek-harness",
+    "dsh-plugin",
+    "grafana",
+    "metrics",
+    "monitoring",
+    "observability",
+    "效率提升",
+    "零配置",
+    "工作流增强",
+    "报告生成",
+    "可视化"
+  ],
+  "version": "0.14.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.14.1",
+    "publishedAt": "2026-09-16T20:18:51Z",
+    "url": "https://github.com/guhanfei-ai/dsh-grafana/releases/tag/v0.14.1"
+  },
+  "author": "guhanfei-ai",
+  "repo": "https://github.com/guhanfei-ai/dsh-grafana",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-09-16T20:43:49Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:guhanfei-ai/dsh-grafana",
+    "commands": [
+      "dsh plugin --profile <profile> add github:guhanfei-ai/dsh-grafana",
+      "dsh plugin --profile <profile> add link:/absolute/path/to/dsh-grafana"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "lzxcs/dsh-enter-swap",
+  "slug": "lzxcs__dsh-enter-swap",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-enter-swap",
+  "title": "dsh-enter-swap",
+  "summary": "把网页输入框的快捷键换一下：Ctrl/⌘+回车换行，Shift+回车发送，告别误发消息。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "效率提升",
+    "前端增强",
+    "桌宠",
+    "零配置"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lzxcs",
+  "repo": "https://github.com/lzxcs/dsh-enter-swap",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-26T08:34:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lzxcs/dsh-enter-swap",
+    "commands": [
+      "dsh plugin --profile web add github:lzxcs/dsh-enter-swap"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaohj233/dsh-tavily-search-provider",
+  "slug": "xiaohj233__dsh-tavily-search-provider",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tavily-search-provider",
+  "title": "dsh-tavily-search-provider",
+  "summary": "为 DeepSeek Harness 接入 Tavily 搜索，支持完整搜索控制映射和密钥管理，并兼容 rc.6 版本。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "tavily",
+    "web-search",
+    "AI 助手",
+    "模型配置",
+    "零配置",
+    "安全审计"
+  ],
+  "version": "0.3.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.5",
+    "publishedAt": "2026-08-15T17:32:14Z",
+    "url": "https://github.com/xiaohj233/dsh-tavily-search-provider/releases/tag/v0.3.5"
+  },
+  "author": "xiaohj233",
+  "repo": "https://github.com/xiaohj233/dsh-tavily-search-provider",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-21T09:57:50Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiaohj233/dsh-tavily-search-provider",
+    "commands": [
+      "dsh plugin --profile web add \"github:xiaohj233/dsh-tavily-search-provider"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

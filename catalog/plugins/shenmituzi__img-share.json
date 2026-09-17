@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "shenmituzi/img-share",
+  "slug": "shenmituzi__img-share",
+  "tier": "community",
+  "package": null,
+  "name": "img-share",
+  "title": "img-share",
+  "summary": "把浏览器截图或本地图片直接贴进 DSH 聊天，缩略图点开看全屏，手机也能看。",
+  "tags": [
+    "agent-skills",
+    "deepseek-harness",
+    "dsh",
+    "dsh-skill",
+    "视觉理解",
+    "跨设备",
+    "工具集成",
+    "快捷操作"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "shenmituzi",
+  "repo": "https://github.com/shenmituzi/img-share",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-06T09:56:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shenmituzi/img-share",
+    "commands": [
+      "git clone https://github.com/shenmituzi/img-share ~/.dsh/skills/img-share"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

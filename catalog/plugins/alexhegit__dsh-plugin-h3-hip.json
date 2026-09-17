@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "alexhegit/dsh-plugin-h3-hip",
+  "slug": "alexhegit__dsh-plugin-h3-hip",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-h3-hip",
+  "title": "dsh-plugin-h3-hip",
+  "summary": "把 h3-hip.c 的 --serve 服务接进 DSH 的宿主插件，让 h3 协议 v1alpha 能在 Harness 里跑起来。",
+  "tags": [
+    "dsh-plugin",
+    "h3-hip",
+    "桥接插件",
+    "工具集成",
+    "命令行工具",
+    "插件开发"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "alexhegit",
+  "repo": "https://github.com/alexhegit/dsh-plugin-h3-hip",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T03:19:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:alexhegit/dsh-plugin-h3-hip",
+    "commands": [
+      "dsh plugin --profile web add github:alexhegit/dsh-plugin-h3-hip",
+      "dsh plugin --profile web add ./"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

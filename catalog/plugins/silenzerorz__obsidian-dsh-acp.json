@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "SilenZerOrz/obsidian-dsh-acp",
+  "slug": "silenzerorz__obsidian-dsh-acp",
+  "tier": "community",
+  "package": null,
+  "name": "obsidian-dsh-acp",
+  "title": "obsidian-dsh-acp",
+  "summary": "把 DeepSeek Harness 接进 Obsidian，作为自定义智能体使用，让你在笔记里直接调用 DSH 能力。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "零配置",
+    "多Agent协作",
+    "效率提升"
+  ],
+  "version": "0.2.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.3",
+    "publishedAt": "2026-09-17T03:56:28Z",
+    "url": "https://github.com/SilenZerOrz/obsidian-dsh-acp/releases/tag/v0.2.3"
+  },
+  "author": "SilenZerOrz",
+  "repo": "https://github.com/SilenZerOrz/obsidian-dsh-acp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T07:55:25Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:SilenZerOrz/obsidian-dsh-acp",
+    "commands": [
+      "dsh plugin --profile web add github:SilenZerOrz/obsidian-dsh-acp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

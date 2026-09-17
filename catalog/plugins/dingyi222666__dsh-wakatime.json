@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "dingyi222666/dsh-wakatime",
+  "slug": "dingyi222666__dsh-wakatime",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wakatime",
+  "title": "dsh-wakatime",
+  "summary": "在 DeepSeek Harness 中自动记录 AI 编程时长、代码行数，帮你统计开发效率。",
+  "tags": [
+    "dsh-plugin",
+    "wakatime",
+    "编程统计",
+    "时间追踪",
+    "代码行数",
+    "效率提升"
+  ],
+  "version": "0.2.4",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dingyi222666",
+  "repo": "https://github.com/dingyi222666/dsh-wakatime",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-16T11:06:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@dingyi222666/dsh-wakatime",
+    "commands": [
+      "dsh plugin --profile web add @dingyi222666/dsh-wakatime",
+      "dsh plugin --profile headless add @dingyi222666/dsh-wakatime",
+      "git clone https://github.com/dingyi222666/dsh-wakatime"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

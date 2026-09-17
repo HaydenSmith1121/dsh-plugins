@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "EIGHTfs/dsh-git-push",
+  "slug": "eightfs__dsh-git-push",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-git-push",
+  "title": "dsh-git-push",
+  "summary": "提交前自动审计代码，一键完成 git 提交推送，还能扫描仓库、管理凭据和 SSH 公钥。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "安全审查",
+    "命令行工具",
+    "工具集成",
+    "设置面板"
+  ],
+  "version": "1.3.6",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "EIGHTfs",
+  "repo": "https://github.com/EIGHTfs/dsh-git-push",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T17:40:57Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:EIGHTfs/dsh-git-push",
+    "commands": [
+      "dsh plugin --profile web add github:EIGHTfs/dsh-git-push"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

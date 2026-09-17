@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "junarch/voice_for_dsh",
+  "slug": "junarch__voice_for_dsh",
+  "tier": "community",
+  "package": null,
+  "name": "voice_for_dsh",
+  "title": "voice_for_dsh",
+  "summary": "给 DeepSeek Harness 网页版加语音朗读，每轮回答自动口语化转述并读出来，代码表格自动跳过，免费浏览器 TTS 还支持豆包云 TTS。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "text-to-speech",
+    "tts",
+    "voice",
+    "会话管理",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-09-06T14:27:24Z",
+    "url": "https://github.com/junarch/voice_for_dsh/releases/tag/v0.3.1"
+  },
+  "author": "junarch",
+  "repo": "https://github.com/junarch/voice_for_dsh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T14:42:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:junarch/voice_for_dsh",
+    "commands": [
+      "git clone https://github.com/junarch/voice_for_dsh.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

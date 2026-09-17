@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Yukari316/dsh-toolcall-compat",
+  "slug": "yukari316__dsh-toolcall-compat",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-toolcall-compat",
+  "title": "dsh-toolcall-compat",
+  "summary": "修复第三方模型调用 DSH 工具时参数解析出错、反复失败的问题，还能自动跳过长时间等待的工具调用。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "模型配置",
+    "工具集成",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Yukari316",
+  "repo": "https://github.com/Yukari316/dsh-toolcall-compat",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-21T08:13:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Yukari316/dsh-toolcall-compat",
+    "commands": [
+      "dsh plugin --profile web add github:Yukari316/dsh-toolcall-compat"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

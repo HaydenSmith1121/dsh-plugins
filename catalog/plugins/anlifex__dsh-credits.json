@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "AnLifeX/dsh-credits",
+  "slug": "anlifex__dsh-credits",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-credits",
+  "title": "dsh-credits",
+  "summary": "在输入框下实时显示官方余额或订阅用量，估算本会话消耗并累计跨会话总花费，帮你随时掌握成本。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "资源优化",
+    "会话管理"
+  ],
+  "version": "0.4.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "AnLifeX",
+  "repo": "https://github.com/AnLifeX/dsh-credits",
+  "homepage": "https://www.npmjs.com/package/dsh-credits",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-14T09:55:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-credits",
+    "commands": [
+      "dsh plugin --profile web add dsh-credits",
+      "dsh plugin --profile web add <本目录绝对路径>",
+      "dsh plugin --profile web remove dsh-credits"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

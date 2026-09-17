@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "Spirtxiaoqi7/mindspace-dsh-session-memory",
+  "slug": "spirtxiaoqi7__mindspace-dsh-session-memory",
+  "tier": "community",
+  "package": null,
+  "name": "mindspace-dsh-session-memory",
+  "title": "mindspace-dsh-session-memory",
+  "summary": "给 DSH 加一份可编辑的会话级记忆，聊天和工作分开存，让 AI 记住你的偏好。",
+  "tags": [
+    "agent-memory",
+    "deepseek-harness",
+    "dsh-plugin",
+    "memory",
+    "personalization",
+    "roleplay",
+    "session-memory",
+    "会话管理",
+    "AI 助手",
+    "个性化记忆",
+    "设置面板"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-08-14T07:49:33Z",
+    "url": "https://github.com/Spirtxiaoqi7/mindspace-dsh-session-memory/releases/tag/v0.2.1"
+  },
+  "author": "Spirtxiaoqi7",
+  "repo": "https://github.com/Spirtxiaoqi7/mindspace-dsh-session-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-09-14T04:42:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Spirtxiaoqi7/mindspace-dsh-session-memory",
+    "commands": [
+      "dsh plugin --profile web add github:Spirtxiaoqi7/mindspace-dsh-session-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

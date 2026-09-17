@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "LittleBlackTong/dsh-plugin-memory",
+  "slug": "littleblacktong__dsh-plugin-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-memory",
+  "title": "dsh-plugin-memory",
+  "summary": "给 DeepSeek Harness 装上记忆，让智能体在会话中记住关键信息，提升交互连续性。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "LittleBlackTong",
+  "repo": "https://github.com/LittleBlackTong/dsh-plugin-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 2,
+  "pushedAt": "2026-09-09T15:24:20Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LittleBlackTong/dsh-plugin-memory",
+    "commands": [
+      "dsh plugin --profile <profile> add dsh-plugin-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

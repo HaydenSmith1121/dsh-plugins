@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "lehhair/dsh-home-ui",
+  "slug": "lehhair__dsh-home-ui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-home-ui",
+  "title": "dsh-home-ui",
+  "summary": "让 DeepSeek Harness 主页信息流更好看，纯前端视觉优化，不改底层逻辑。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "可视化",
+    "界面美化",
+    "零配置"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-06T07:36:44Z",
+    "url": "https://github.com/lehhair/dsh-home-ui/releases/tag/v0.2.0"
+  },
+  "author": "lehhair",
+  "repo": "https://github.com/lehhair/dsh-home-ui",
+  "homepage": null,
+  "license": null,
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-06T07:42:27Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lehhair/dsh-home-ui",
+    "commands": [
+      "dsh plugin --profile web add \"https://github.com/lehhair/dsh-home-ui/releases/latest/download/dsh-external-dsh-home-ui.tgz\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

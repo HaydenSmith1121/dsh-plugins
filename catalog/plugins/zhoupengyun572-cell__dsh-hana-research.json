@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zhoupengyun572-cell/dsh-hana-research",
+  "slug": "zhoupengyun572-cell__dsh-hana-research",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hana-research",
+  "title": "dsh-hana-research",
+  "summary": "在 DeepSeek Harness 里搞定文献综述、PDF 精读、证据整理和研究笔记，本地优先的科研工作台。",
+  "tags": [
+    "academic-research",
+    "deepseek-harness",
+    "dsh-plugin",
+    "literature-review",
+    "pdf-annotation",
+    "状态监控",
+    "效率提升",
+    "工作区管理",
+    "会话管理"
+  ],
+  "version": "0.4.0-beta.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhoupengyun572-cell",
+  "repo": "https://github.com/zhoupengyun572-cell/dsh-hana-research",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T12:25:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhoupengyun572-cell/dsh-hana-research",
+    "commands": [
+      "dsh plugin --profile web add github:zhoupengyun572-cell/dsh-hana-research"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "88514205-oss/dsh-ryoshu-slash",
+  "slug": "88514205-oss__dsh-ryoshu-slash",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ryoshu-slash",
+  "title": "dsh-ryoshu-slash",
+  "summary": "带斩击特效的文件删除工具，删前强制审查确认，防止手滑误删。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "file-deletion",
+    "tool",
+    "ui",
+    "文件管理",
+    "安全审计",
+    "主题",
+    "操作回滚"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "88514205-oss",
+  "repo": "https://github.com/88514205-oss/dsh-ryoshu-slash",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-25T06:39:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:88514205-oss/dsh-ryoshu-slash",
+    "commands": [
+      "dsh plugin --profile web add github:88514205-oss/dsh-ryoshu-slash",
+      "npm install -g pnpm"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

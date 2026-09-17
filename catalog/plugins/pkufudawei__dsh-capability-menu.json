@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "PKUfudawei/dsh-capability-menu",
+  "slug": "pkufudawei__dsh-capability-menu",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-capability-menu",
+  "title": "dsh-capability-menu",
+  "summary": "为 DeepSeek Harness 提供统一能力菜单，分级管控 MCP 工具和技能的暴露范围与执行方式，节省上下文开销。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "插件管理",
+    "安全审计",
+    "资源优化",
+    "AI工具"
+  ],
+  "version": "0.1.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "PKUfudawei",
+  "repo": "https://github.com/PKUfudawei/dsh-capability-menu",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 85,
+  "forks": 2,
+  "pushedAt": "2026-09-14T14:15:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@daweifu/capability-menu",
+    "commands": [
+      "dsh plugin --profile web add @daweifu/capability-menu",
+      "git clone https://github.com/PKUfudawei/dsh-capability-menu.git",
+      "dsh plugin --profile web add ./dsh-capability-menu"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "whisperflo/dsh-deepseek-console",
+  "slug": "whisperflo__dsh-deepseek-console",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-deepseek-console",
+  "title": "dsh-deepseek-console",
+  "summary": "DeepSeek 账户控制台，实时监控余额与用量，全局悬浮 HUD 显示费用，官方 API 直连，密钥仅存本机。",
+  "tags": [
+    "account",
+    "balance",
+    "cost-tracking",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "hud",
+    "quota",
+    "usage",
+    "状态监控",
+    "资源优化",
+    "效率提升"
+  ],
+  "version": "1.5.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.5.5",
+    "publishedAt": "2026-08-25T12:26:06Z",
+    "url": "https://github.com/whisperflo/dsh-deepseek-console/releases/tag/v1.5.5"
+  },
+  "author": "whisperflo",
+  "repo": "https://github.com/whisperflo/dsh-deepseek-console",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-25T12:25:52Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@hzjjxc/dsh-deepseek-console",
+    "commands": [
+      "dsh plugin --profile web add @hzjjxc/dsh-deepseek-console",
+      "dsh plugin --profile web add github:whisperflo/dsh-deepseek-console",
+      "dsh plugin --profile web add link:/path/to/deepseek-console-plugin/composition"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

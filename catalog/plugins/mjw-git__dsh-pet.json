@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "mjw-git/dsh-pet",
+  "slug": "mjw-git__dsh-pet",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pet",
+  "title": "dsh-pet",
+  "summary": "在桌面上养一只会随你Token消耗成长的小宠物，边用AI边攒经验，趣味又解压。",
+  "tags": [
+    "ai-companion",
+    "cordis",
+    "deepseek-harness",
+    "desktop-pet",
+    "dsh-plugin",
+    "桌宠",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "mjw-git",
+  "repo": "https://github.com/mjw-git/dsh-pet",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-10T15:54:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mjw-git/dsh-pet",
+    "commands": [
+      "dsh plugin --profile web add github:mjw-git/dsh-pet"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

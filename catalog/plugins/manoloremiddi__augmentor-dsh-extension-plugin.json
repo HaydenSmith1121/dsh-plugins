@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "ManoloRemiddi/augmentor-dsh-extension-plugin",
+  "slug": "manoloremiddi__augmentor-dsh-extension-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "augmentor-dsh-extension-plugin",
+  "title": "augmentor-dsh-extension-plugin",
+  "summary": "在 Chromium 侧边栏里直接操控浏览器，让 DSH 帮你上网干活。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "manolo-dsh-plugins",
+    "工具集成",
+    "浏览器隔离",
+    "快捷操作",
+    "前端增强",
+    "桥接插件"
+  ],
+  "version": "0.1.32",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.32",
+    "publishedAt": "2026-09-10T08:21:26Z",
+    "url": "https://github.com/ManoloRemiddi/augmentor-dsh-extension-plugin/releases/tag/v0.1.32"
+  },
+  "author": "ManoloRemiddi",
+  "repo": "https://github.com/ManoloRemiddi/augmentor-dsh-extension-plugin",
+  "homepage": "https://github.com/ManoloRemiddi/deepseek-harness-plugins",
+  "license": "MIT",
+  "stars": 29,
+  "forks": 4,
+  "pushedAt": "2026-09-10T08:17:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ManoloRemiddi/augmentor-dsh-extension-plugin",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/ManoloRemiddi/dsh-model-picker-augmented/releases/download/v1.1.2/dsh-model-picker-augmented-1.1.2.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

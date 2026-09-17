@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "lyfZhixing/dsh-cost-tracker",
+  "slug": "lyfzhixing__dsh-cost-tracker",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cost-tracker",
+  "title": "dsh-cost-tracker",
+  "summary": "记录 DeepSeek Harness Web 每日 LLM 调用花费，按会话、模型、天多维度查看，帮你掌握成本。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "可视化",
+    "状态监控"
+  ],
+  "version": "1.0.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lyfZhixing",
+  "repo": "https://github.com/lyfZhixing/dsh-cost-tracker",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 2,
+  "pushedAt": "2026-09-04T01:59:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-cost-tracker",
+    "commands": [
+      "dsh plugin --profile web add dsh-cost-tracker",
+      "dsh plugin --profile web add github:lyfZhixing/dsh-cost-tracker",
+      "dsh plugin --profile web add /path/to/dsh-cost-tracker"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

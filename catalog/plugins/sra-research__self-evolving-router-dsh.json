@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "sra-research/self-evolving-router-dsh",
+  "slug": "sra-research__self-evolving-router-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "self-evolving-router-dsh",
+  "title": "self-evolving-router-dsh",
+  "summary": "在模型调用前用自进化规则做确定性路由，让请求分发更准更省。",
+  "tags": [
+    "deepseek-harness",
+    "deterministic-routing",
+    "dsh-plugin",
+    "self-evolving-agents",
+    "模型配置",
+    "自动化",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.1.0-alpha.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sra-research",
+  "repo": "https://github.com/sra-research/self-evolving-router-dsh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T12:28:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sra-research/self-evolving-router-dsh",
+    "commands": [
+      "git clone https://github.com/sra-research/self-evolving-router-dsh.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

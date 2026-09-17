@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "siberiah2o/dsh-plugin-terminal",
+  "slug": "siberiah2o__dsh-plugin-terminal",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-terminal",
+  "title": "dsh-plugin-terminal",
+  "summary": "在 DSH 网页界面底部固定一个多标签页终端，支持 Windows/Linux/macOS，方便随时执行命令。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "terminal",
+    "命令行工具",
+    "多标签页",
+    "网页集成",
+    "模型适配"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-19T07:00:26Z",
+    "url": "https://github.com/siberiah2o/dsh-plugin-terminal/releases/tag/v0.2.0"
+  },
+  "author": "siberiah2o",
+  "repo": "https://github.com/siberiah2o/dsh-plugin-terminal",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 3,
+  "pushedAt": "2026-08-19T06:53:57Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:siberiah2o/dsh-plugin-terminal",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-terminal && dsh web"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

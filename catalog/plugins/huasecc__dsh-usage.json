@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Huasecc/dsh-usage",
+  "slug": "huasecc__dsh-usage",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage",
+  "title": "dsh-usage",
+  "summary": "在 DSH 里直接查看 DeepSeek 账户余额和全平台 Token 用量，连网页端调用也算得清清楚楚。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "数据分析",
+    "设置面板",
+    "工具集成"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Huasecc",
+  "repo": "https://github.com/Huasecc/dsh-usage",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-06T04:00:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Huasecc/dsh-usage",
+    "commands": [
+      "dsh plugin --profile web add \"github:Huasecc/dsh-usage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

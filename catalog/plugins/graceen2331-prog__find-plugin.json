@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "graceen2331-prog/find-plugin",
+  "slug": "graceen2331-prog__find-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "find-plugin",
+  "title": "find-plugin",
+  "summary": "帮 DSH Agent 在 GitHub 上查找并验证社区插件，安全安装后自动扩展新能力。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "AI 助手",
+    "自动化",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "graceen2331-prog",
+  "repo": "https://github.com/graceen2331-prog/find-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-23T13:04:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:graceen2331-prog/find-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:graceen2331-prog/find-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

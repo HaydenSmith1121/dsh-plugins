@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "nina27486486/dsh-prompt-forge",
+  "slug": "nina27486486__dsh-prompt-forge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-forge",
+  "title": "dsh-prompt-forge",
+  "summary": "把输入框里的草稿一键锻成好提示词，流式优化、文件词库、一键存技能，零配置即用。",
+  "tags": [
+    "agent",
+    "deepseek-harness",
+    "dsh-plugin",
+    "prompt-engineering",
+    "prompt-optimizer",
+    "效率提升",
+    "快捷操作",
+    "零配置",
+    "内容创作",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-13T15:56:55Z",
+    "url": "https://github.com/nina27486486/dsh-prompt-forge/releases/tag/v0.1.0"
+  },
+  "author": "nina27486486",
+  "repo": "https://github.com/nina27486486/dsh-prompt-forge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T15:56:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:nina27486486/dsh-prompt-forge",
+    "commands": [
+      "dsh plugin --profile web add github:nina27486486/dsh-prompt-forge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

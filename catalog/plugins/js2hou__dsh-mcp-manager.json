@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Js2Hou/dsh-mcp-manager",
+  "slug": "js2hou__dsh-mcp-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mcp-manager",
+  "title": "dsh-mcp-manager",
+  "summary": "在 DeepSeek Harness 设置里可视化增删、启停 MCP 服务器，并实时查看连接状态，一眼看清装没装、连没连。",
+  "tags": [
+    "dsh-plugin",
+    "插件管理",
+    "可视化",
+    "连接状态"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Js2Hou",
+  "repo": "https://github.com/Js2Hou/dsh-mcp-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 18,
+  "forks": 3,
+  "pushedAt": "2026-09-16T08:37:11Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@js2hou/dsh-mcp-manager",
+    "commands": [
+      "dsh plugin --profile web add @js2hou/dsh-mcp-manager",
+      "dsh plugin --profile web add github:Js2Hou/dsh-mcp-manager",
+      "curl -fsSL https://raw.githubusercontent.com/Js2Hou/dsh-mcp-manager/main/scripts/install.sh | bash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

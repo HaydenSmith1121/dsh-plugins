@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "CyraZm49/dsh-shutdown",
+  "slug": "cyrazm49__dsh-shutdown",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-shutdown",
+  "title": "dsh-shutdown",
+  "summary": "在 dsh 网页界面里一键关掉面板和后台服务进程，不用再跑去命令行手动停。",
+  "tags": [
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "harness",
+    "快捷操作",
+    "命令行工具",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "CyraZm49",
+  "repo": "https://github.com/CyraZm49/dsh-shutdown",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T03:36:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CyraZm49/dsh-shutdown",
+    "commands": [
+      "dsh plugin --profile web add github:CyraZm49/dsh-shutdown"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

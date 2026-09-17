@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "sakuraqqq/dsh-auto-paste",
+  "slug": "sakuraqqq__dsh-auto-paste",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auto-paste",
+  "title": "dsh-auto-paste",
+  "summary": "粘贴大段文字时自动存成附件文件，聊天界面更清爽，内容也不丢。",
+  "tags": [
+    "better-sidebar",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "效率提升",
+    "文件管理",
+    "快捷操作",
+    "前端增强"
+  ],
+  "version": "0.1.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.4",
+    "publishedAt": "2026-09-12T16:43:56Z",
+    "url": "https://github.com/sakuraqqq/dsh-auto-paste/releases/tag/v0.1.4"
+  },
+  "author": "sakuraqqq",
+  "repo": "https://github.com/sakuraqqq/dsh-auto-paste",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-16T05:40:45Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sakuraqqq/dsh-auto-paste",
+    "commands": [
+      "dsh plugin --profile web add github:sakuraqqq/dsh-auto-paste"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

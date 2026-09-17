@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "joshryandavis/dsh-catalog-refresh",
+  "slug": "joshryandavis__dsh-catalog-refresh",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-catalog-refresh",
+  "title": "dsh-catalog-refresh",
+  "summary": "自动重建模型目录，让 OpenRouter 等工具实时显示最新模型列表，告别过时快照。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "模型配置",
+    "自动化",
+    "状态监控",
+    "效率提升"
+  ],
+  "version": "0.5.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "0.5.0",
+    "publishedAt": "2026-08-30T12:31:16Z",
+    "url": "https://github.com/joshryandavis/dsh-catalog-refresh/releases/tag/0.5.0"
+  },
+  "author": "joshryandavis",
+  "repo": "https://github.com/joshryandavis/dsh-catalog-refresh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T12:28:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:joshryandavis/dsh-catalog-refresh",
+    "commands": [
+      "dsh plugin --profile <profile> add dsh-catalog-refresh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

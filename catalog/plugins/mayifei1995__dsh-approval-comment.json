@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "MaYiFei1995/dsh-approval-comment",
+  "slug": "mayifei1995__dsh-approval-comment",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-approval-comment",
+  "title": "dsh-approval-comment",
+  "summary": "审批时可直接拒绝并附言，让模型结合意见重新思考，替代内置审批窗口，提升协作效率。",
+  "tags": [
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh-plugin",
+    "dsh-plugins",
+    "审批增强",
+    "拒绝附言",
+    "流程优化",
+    "模型协作"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-14T07:27:27Z",
+    "url": "https://github.com/MaYiFei1995/dsh-approval-comment/releases/tag/v0.1.0"
+  },
+  "author": "MaYiFei1995",
+  "repo": "https://github.com/MaYiFei1995/dsh-approval-comment",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-14T07:27:27Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MaYiFei1995/dsh-approval-comment",
+    "commands": [
+      "dsh plugin --profile web add github:MaYiFei1995/dsh-approval-comment"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

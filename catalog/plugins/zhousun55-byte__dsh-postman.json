@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "zhousun55-byte/dsh-postman",
+  "slug": "zhousun55-byte__dsh-postman",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-postman",
+  "title": "dsh-postman",
+  "summary": "在 DeepSeek Harness 对话里直接上传文件和文件夹，图片自动作为消息块展示，文本进草稿，文件夹按目录结构整理。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "upload",
+    "文件管理",
+    "文件夹上传",
+    "图片附件",
+    "会话内操作"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhousun55-byte",
+  "repo": "https://github.com/zhousun55-byte/dsh-postman",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-16T15:53:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhousun55-byte/dsh-postman",
+    "commands": [
+      "dsh plugin --profile web add github:zhousun55-byte/dsh-postman"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "fengyungithub/dsh-short-video-studio",
+  "slug": "fengyungithub__dsh-short-video-studio",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-short-video-studio",
+  "title": "dsh-short-video-studio",
+  "summary": "在本地画布上做短剧和动画，接 ComfyUI 出片，全程免费不联网。",
+  "tags": [
+    "comfyui",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh-plugin",
+    "minimax-h3",
+    "报告生成",
+    "视觉理解",
+    "工作流增强",
+    "工具集成",
+    "可视化"
+  ],
+  "version": "1.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.3.0",
+    "publishedAt": "2026-09-15T06:38:29Z",
+    "url": "https://github.com/fengyungithub/dsh-short-video-studio/releases/tag/v1.3.0"
+  },
+  "author": "fengyungithub",
+  "repo": "https://github.com/fengyungithub/dsh-short-video-studio",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 8,
+  "forks": 2,
+  "pushedAt": "2026-09-15T06:37:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-lark-channel@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-lark-channel@latest",
+      "dsh plugin --profile web add dsh-short-video-studio",
+      "dsh plugin --profile web add github:fengyungithub/dsh-short-video-studio"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

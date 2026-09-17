@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "shaomingbo/dsh-open-in-editor",
+  "slug": "shaomingbo__dsh-open-in-editor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-open-in-editor",
+  "title": "dsh-open-in-editor",
+  "summary": "在 macOS 上点击 DSH Web 生成的文件，直接用本地 IDE 打开或复制绝对路径，省去手动查找的麻烦。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "效率提升",
+    "命令行工具",
+    "零配置"
+  ],
+  "version": "0.3.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.2",
+    "publishedAt": "2026-09-11T15:19:01Z",
+    "url": "https://github.com/shaomingbo/dsh-open-in-editor/releases/tag/v0.3.2"
+  },
+  "author": "shaomingbo",
+  "repo": "https://github.com/shaomingbo/dsh-open-in-editor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T15:18:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shaomingbo/dsh-open-in-editor",
+    "commands": [
+      "dsh plugin --profile web add github:shaomingbo/dsh-open-in-editor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

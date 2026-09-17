@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "vibe-any/dsh-plugin-save-token",
+  "slug": "vibe-any__dsh-plugin-save-token",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-save-token",
+  "title": "dsh-plugin-save-token",
+  "summary": "自动精简过大的工具输出，在不牺牲模型能力的前提下大幅降低Token消耗，省钱又省心。",
+  "tags": [
+    "agent",
+    "dsh-plugin",
+    "token-optimization",
+    "资源优化",
+    "效率提升",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "2.4.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "vibe-any",
+  "repo": "https://github.com/vibe-any/dsh-plugin-save-token",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-06T05:07:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-save-token",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-save-token",
+      "dsh plugin --profile web add github:vibe-any/dsh-plugin-save-token",
+      "dsh plugin --profile web add /absolute/path/to/dsh-plugin-save-token"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

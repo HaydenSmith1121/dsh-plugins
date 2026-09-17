@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "yis94744/dsh-darkplus-code",
+  "slug": "yis94744__dsh-darkplus-code",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-darkplus-code",
+  "title": "dsh-darkplus-code",
+  "summary": "给 dsh 代码块换上 VS Code Dark+ 配色，还能调字号，看着更舒服。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "shiki",
+    "syntax-highlighting",
+    "界面美化",
+    "设置面板",
+    "前端增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yis94744",
+  "repo": "https://github.com/yis94744/dsh-darkplus-code",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T10:13:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yis94744/dsh-darkplus-code",
+    "commands": [
+      "dsh plugin --profile <your-profile> add dsh-darkplus-code",
+      "dsh plugin --profile <your-profile> remove dsh-darkplus-code"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "Pasumao/dsh-plugin-dev-kb",
+  "slug": "pasumao__dsh-plugin-dev-kb",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-dev-kb",
+  "title": "dsh-plugin-dev-kb",
+  "summary": "dsh 插件开发知识库，完整镜像官方文档，支持主题导航和快速检索，方便开发者随时查阅。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "documentation",
+    "dsh",
+    "dsh-plugin",
+    "knowledge-base",
+    "plugin-development",
+    "文件管理",
+    "语义检索",
+    "工作流增强",
+    "零配置"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.1.0",
+    "publishedAt": "2026-09-05T10:16:01Z",
+    "url": "https://github.com/Pasumao/dsh-plugin-dev-kb/releases/tag/v1.1.0"
+  },
+  "author": "Pasumao",
+  "repo": "https://github.com/Pasumao/dsh-plugin-dev-kb",
+  "homepage": "https://github.com/Pasumao/dsh-plugin-dev-kb#readme",
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-05T10:15:37Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Pasumao/dsh-plugin-dev-kb",
+    "commands": [
+      "dsh plugin --profile web add github:Pasumao/dsh-plugin-dev-kb"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

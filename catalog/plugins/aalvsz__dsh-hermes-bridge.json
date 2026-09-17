@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "aalvsz/dsh-hermes-bridge",
+  "slug": "aalvsz__dsh-hermes-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hermes-bridge",
+  "title": "dsh-hermes-bridge",
+  "summary": "将 Hermes 智能体无缝接入 DeepSeek Harness，共享记忆、技能与实时工具，支持 MCP 和全代理委派，让多智能体协作更高效。",
+  "tags": [
+    "ai-agent",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "hermes-agent",
+    "mcp",
+    "多Agent协作",
+    "AI 助手",
+    "模型配置",
+    "工作流增强"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-08-27T14:33:03Z",
+    "url": "https://github.com/aalvsz/dsh-hermes-bridge/releases/tag/v0.2.1"
+  },
+  "author": "aalvsz",
+  "repo": "https://github.com/aalvsz/dsh-hermes-bridge",
+  "homepage": "https://github.com/aalvsz/dsh-hermes-bridge#readme",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-27T14:32:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aalvsz/dsh-hermes-bridge",
+    "commands": [
+      "dsh plugin --profile web add github:aalvsz/dsh-hermes-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

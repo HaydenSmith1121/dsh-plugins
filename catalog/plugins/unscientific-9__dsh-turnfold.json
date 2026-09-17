@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "UNscientific-9/dsh-turnfold",
+  "slug": "unscientific-9__dsh-turnfold",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-turnfold",
+  "title": "dsh-turnfold",
+  "summary": "把 DeepSeek 的思考和工具调用过程折叠成一行摘要，让对话界面更清爽，看历史记录不费劲。",
+  "tags": [
+    "ai-chat",
+    "conversation-ui",
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "dsh-turnfold",
+    "plugin",
+    "前端增强",
+    "会话管理",
+    "效率提升",
+    "语义检索"
+  ],
+  "version": "0.5.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.0",
+    "publishedAt": "2026-09-12T00:51:15Z",
+    "url": "https://github.com/UNscientific-9/dsh-turnfold/releases/tag/v0.5.0"
+  },
+  "author": "UNscientific-9",
+  "repo": "https://github.com/UNscientific-9/dsh-turnfold",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-12T00:51:15Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:UNscientific-9/dsh-turnfold",
+    "commands": [
+      "dsh plugin --profile web add github:UNscientific-9/dsh-turnfold"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "weopenfire-git/dsh-market-quote",
+  "slug": "weopenfire-git__dsh-market-quote",
+  "tier": "community",
+  "package": null,
+  "name": "weopenfire-git/dsh-market-quote",
+  "title": "weopenfire-git/dsh-market-quote",
+  "summary": "免密钥查 A股、港股、美股实时行情和历史 K 线，给 Agent 提供结构化数据。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "零配置",
+    "工具集成",
+    "数据分析",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "weopenfire-git",
+  "repo": "https://github.com/weopenfire-git/dsh-market-quote",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-18T16:28:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-market-quote",
+    "commands": [
+      "dsh plugin add dsh-market-quote",
+      "dsh plugin add github:weopenfire-git/dsh-market-quote"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

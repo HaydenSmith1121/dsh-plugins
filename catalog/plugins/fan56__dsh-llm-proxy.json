@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "fan56/dsh-llm-proxy",
+  "slug": "fan56__dsh-llm-proxy",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-llm-proxy",
+  "title": "dsh-llm-proxy",
+  "summary": "按域名把 LLM 请求分流到不同代理，其余走系统代理或直连，开箱即用。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "模型适配",
+    "安全审计",
+    "零配置"
+  ],
+  "version": "0.5.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fan56",
+  "repo": "https://github.com/fan56/dsh-llm-proxy",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-12T04:12:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@aiwayds/dsh-llm-proxy",
+    "commands": [
+      "dsh plugin add @aiwayds/dsh-llm-proxy",
+      "dsh plugin --profile <profile> remove @aiwayds/dsh-llm-proxy",
+      "npx skills add fan56/dsh-llm-proxy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

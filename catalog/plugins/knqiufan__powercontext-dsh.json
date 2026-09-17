@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "knqiufan/powercontext-dsh",
+  "slug": "knqiufan__powercontext-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "powercontext-dsh",
+  "title": "powercontext-dsh",
+  "summary": "连接 PowerContext 服务器，为 DeepSeek Harness 提供记忆、召回、交接、经验和技能等上下文增强能力。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理"
+  ],
+  "version": "0.0.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.0.5",
+    "publishedAt": "2026-08-26T12:15:30Z",
+    "url": "https://github.com/knqiufan/powercontext-dsh/releases/tag/v0.0.5"
+  },
+  "author": "knqiufan",
+  "repo": "https://github.com/knqiufan/powercontext-dsh",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 11,
+  "forks": 0,
+  "pushedAt": "2026-08-26T12:15:29Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:knqiufan/powercontext-dsh",
+    "commands": [
+      "uv tool install \"powercontext[cli,server] @ git+https://github.com/oceanbase/powercontext.git@master\"",
+      "dsh plugin --profile web add /path/to/powercontext/integrations/dsh/plugins/powercontext",
+      "dsh plugin --profile web add ./powercontext-dsh-0.0.5.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

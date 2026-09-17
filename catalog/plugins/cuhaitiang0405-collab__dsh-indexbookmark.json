@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "cuhaitiang0405-collab/dsh-indexbookmark",
+  "slug": "cuhaitiang0405-collab__dsh-indexbookmark",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-indexbookmark",
+  "title": "dsh-indexbookmark",
+  "summary": "给对话加个书签索引，一键回看所有问过的问题，长对话翻找不再头疼。",
+  "tags": [
+    "bookmark",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "会话管理",
+    "语义检索",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "cuhaitiang0405-collab",
+  "repo": "https://github.com/cuhaitiang0405-collab/dsh-indexbookmark",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-25T06:27:20Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cuhaitiang0405-collab/dsh-indexbookmark",
+    "commands": [
+      "dsh plugin --profile web add github:cuhaitiang0405-collab/dsh-indexbookmark"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

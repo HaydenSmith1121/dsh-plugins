@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "reinocheong/dsh-session-move",
+  "slug": "reinocheong__dsh-session-move",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-move",
+  "title": "dsh-session-move",
+  "summary": "在网页界面里拖拽或右键移动、删除会话，还能让 AI 读对话自动起名，附赠智能体工具。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "session-management",
+    "会话管理",
+    "快捷操作",
+    "AI 助手",
+    "效率提升",
+    "工具集成"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-15T11:53:16Z",
+    "url": "https://github.com/reinocheong/dsh-session-move/releases/tag/v0.1.1"
+  },
+  "author": "reinocheong",
+  "repo": "https://github.com/reinocheong/dsh-session-move",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 1,
+  "pushedAt": "2026-09-12T07:04:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:reinocheong/dsh-session-move",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/reinocheong/dsh-session-move/archive/refs/tags/v0.1.2.tar.gz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Sal7one/DSH-Design-Studio",
+  "slug": "sal7one__dsh-design-studio",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-design-studio",
+  "title": "dsh-design-studio",
+  "summary": "把设计稿变成可交互的网页原型，实时预览、AI 视觉审稿，还能一键打包导出。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "可视化",
+    "AI 审稿",
+    "内容创作",
+    "导出打包"
+  ],
+  "version": "1.2.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Sal7one",
+  "repo": "https://github.com/Sal7one/DSH-Design-Studio",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-15T02:40:20Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Sal7one/DSH-Design-Studio",
+    "commands": [
+      "dsh plugin --profile web add github:Sal7one/DSH-Design-Studio"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

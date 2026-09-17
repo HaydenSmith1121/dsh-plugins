@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "xxwj225-James/tomilite-dsh-plugin",
+  "slug": "xxwj225-james__tomilite-dsh-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "tomilite-dsh-plugin",
+  "title": "tomilite-dsh-plugin",
+  "summary": "让 DSH 智能体直接对接本地 TomiLite，随时读写任务、笔记和项目数据，轻松管理日常进度。",
+  "tags": [
+    "ai-agent",
+    "dev-tools",
+    "dsh-plugin",
+    "report",
+    "task-management",
+    "工作流增强",
+    "文件管理",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xxwj225-James",
+  "repo": "https://github.com/xxwj225-James/tomilite-dsh-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T13:05:58Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xxwj225-James/tomilite-dsh-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:xxwj225-James/tomilite-dsh-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

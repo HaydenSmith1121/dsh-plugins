@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "liguanyu/dsh_PromptRecall",
+  "slug": "liguanyu__dsh_promptrecall",
+  "tier": "community",
+  "package": null,
+  "name": "dsh_PromptRecall",
+  "title": "dsh_PromptRecall",
+  "summary": "在 DSH 网页对话框中用 ↑/↓ 快速翻看历史输入，跨会话重启也不丢，纯文本存储，安全不误伤草稿。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "会话管理",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "1.0.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "liguanyu",
+  "repo": "https://github.com/liguanyu/dsh_PromptRecall",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-09T17:33:41Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:liguanyu/dsh_PromptRecall",
+    "commands": [
+      "dsh plugin --profile web add github:liguanyu/dsh_PromptRecall",
+      "git clone https://github.com/liguanyu/dsh_PromptRecall",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

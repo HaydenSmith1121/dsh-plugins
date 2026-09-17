@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "dundunhan/dsh-video-lens",
+  "slug": "dundunhan__dsh-video-lens",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-video-lens",
+  "title": "dsh-video-lens",
+  "summary": "让纯文本大模型看懂视频，提取画面与音频信息，扩展智能体的视觉与听觉能力。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "多模态",
+    "多智能体协作",
+    "会话管理",
+    "工具集成"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-08-18T17:39:37Z",
+    "url": "https://github.com/dundunhan/dsh-video-lens/releases/tag/v0.3.1"
+  },
+  "author": "dundunhan",
+  "repo": "https://github.com/dundunhan/dsh-video-lens",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 112,
+  "forks": 2,
+  "pushedAt": "2026-08-18T17:39:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dundunhan/dsh-video-lens",
+    "commands": [
+      "pnpm add dsh-video-lens",
+      "git clone https://github.com/dundunhan/dsh-video-lens.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

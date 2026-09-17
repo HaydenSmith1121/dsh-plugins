@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "bill277048-hash/DSH-guardian",
+  "slug": "bill277048-hash__dsh-guardian",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-guardian",
+  "title": "DSH-guardian",
+  "summary": "在 dsh WebUI 中一键管理 macOS 守护程序，启动、停止或查看运行状态，无需打开终端。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "效率提升",
+    "命令行工具"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-03T12:06:54Z",
+    "url": "https://github.com/bill277048-hash/DSH-guardian/releases/tag/v1.0.0"
+  },
+  "author": "bill277048-hash",
+  "repo": "https://github.com/bill277048-hash/DSH-guardian",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-08T12:29:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bill277048-hash/DSH-guardian",
+    "commands": [
+      "dsh plugin --profile web add github:bill277048-hash/DSH-guardian"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

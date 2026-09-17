@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "yangbobo2021/relay-dsh-plugin-codex",
+  "slug": "yangbobo2021__relay-dsh-plugin-codex",
+  "tier": "community",
+  "package": null,
+  "name": "relay-dsh-plugin-codex",
+  "title": "relay-dsh-plugin-codex",
+  "summary": "在 DSH 里直接和 Codex 对话，支持工作区、终端、审批和工具调用。",
+  "tags": [
+    "ai-agent",
+    "codex",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "openai",
+    "plugin",
+    "typescript",
+    "AI 助手",
+    "工具集成",
+    "工作区管理",
+    "桥接插件",
+    "多智能体协作"
+  ],
+  "version": "0.1.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.5",
+    "publishedAt": "2026-08-30T12:11:50Z",
+    "url": "https://github.com/yangbobo2021/relay-dsh-plugin-codex/releases/tag/v0.1.5"
+  },
+  "author": "yangbobo2021",
+  "repo": "https://github.com/yangbobo2021/relay-dsh-plugin-codex",
+  "homepage": "https://www.npmjs.com/package/relay-dsh-plugin-codex",
+  "license": "MIT",
+  "stars": 10,
+  "forks": 3,
+  "pushedAt": "2026-09-16T03:57:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yangbobo2021/relay-dsh-plugin-codex",
+    "commands": [
+      "dsh plugin --profile web why relay-dsh-plugin-codex",
+      "dsh plugin --profile web update relay-dsh-plugin-codex",
+      "dsh plugin --profile web remove relay-dsh-plugin-codex"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

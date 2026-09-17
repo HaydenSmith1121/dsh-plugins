@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "zeropointnine/dsh-compact-and-branch",
+  "slug": "zeropointnine__dsh-compact-and-branch",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-compact-and-branch",
+  "title": "dsh-compact-and-branch",
+  "summary": "把冗长会话压缩成摘要，并开个新会话继续干活，保持上下文清爽不卡壳。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "session-compaction",
+    "会话管理",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zeropointnine",
+  "repo": "https://github.com/zeropointnine/dsh-compact-and-branch",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-13T03:44:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zeropointnine/dsh-compact-and-branch",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/zeropointnine/dsh-compact-and-branch",
+      "dsh plugin --profile web add github:zeropointnine/dsh-compact-and-branch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

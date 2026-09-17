@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "aorucshiea/dsh-easy-start",
+  "slug": "aorucshiea__dsh-easy-start",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-easy-start",
+  "title": "dsh-easy-start",
+  "summary": "双击桌面图标就能启动 DSH Web，不用开终端；在设置页还能一键重启或关闭服务，省心省力。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "效率提升",
+    "插件管理",
+    "前端增强"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-08-25T21:04:26Z",
+    "url": "https://github.com/aorucshiea/dsh-easy-start/releases/tag/v0.3.1"
+  },
+  "author": "aorucshiea",
+  "repo": "https://github.com/aorucshiea/dsh-easy-start",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-25T21:04:26Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aorucshiea/dsh-easy-start",
+    "commands": [
+      "dsh plugin --profile web add github:aorucshiea/dsh-easy-start"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

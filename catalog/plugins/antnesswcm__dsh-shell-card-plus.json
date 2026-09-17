@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "antnesswcm/dsh-shell-card-plus",
+  "slug": "antnesswcm__dsh-shell-card-plus",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-shell-card-plus",
+  "title": "dsh-shell-card-plus",
+  "summary": "给 DeepSeek Harness 的 Shell 卡片加上更多实用功能，让命令行操作更顺手、更高效。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "命令行工具",
+    "效率提升",
+    "娱乐互动",
+    "零配置"
+  ],
+  "version": "0.3.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "antnesswcm",
+  "repo": "https://github.com/antnesswcm/dsh-shell-card-plus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-09T18:48:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-shell-card-plus",
+    "commands": [
+      "dsh plugin --profile web add dsh-shell-card-plus",
+      "dsh plugin --profile web add github:antnesswcm/dsh-shell-card-plus",
+      "dsh plugin --profile web add ./dsh-shell-card-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

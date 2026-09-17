@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "MarcSierszen/dsh-specify-lite",
+  "slug": "marcsierszen__dsh-specify-lite",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-specify-lite",
+  "title": "dsh-specify-lite",
+  "summary": "把模糊想法一步步变成可验证的实现，在 DSH 里就能完成需求梳理到落地。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "自动化",
+    "AI 助手",
+    "脚手架"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "MarcSierszen",
+  "repo": "https://github.com/MarcSierszen/dsh-specify-lite",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T16:51:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MarcSierszen/dsh-specify-lite",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/MarcSierszen/dsh-specify-lite.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

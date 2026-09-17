@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "778672151/dsh-session-turn-eta",
+  "slug": "778672151__dsh-session-turn-eta",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-turn-eta",
+  "title": "dsh-session-turn-eta",
+  "summary": "在输入框下方用进度条实时显示当前回合的剩余时间百分比，让你心里有数。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "eta",
+    "progress-bar",
+    "状态监控",
+    "可视化",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-13T18:36:43Z",
+    "url": "https://github.com/778672151/dsh-session-turn-eta/releases/tag/v0.2.0"
+  },
+  "author": "778672151",
+  "repo": "https://github.com/778672151/dsh-session-turn-eta",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T11:50:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:778672151/dsh-session-turn-eta",
+    "commands": [
+      "dsh plugin --profile web add github:778672151/dsh-session-turn-eta"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

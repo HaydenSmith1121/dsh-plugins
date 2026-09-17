@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "yuanbaoerer/dsh-decision-split",
+  "slug": "yuanbaoerer__dsh-decision-split",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-decision-split",
+  "title": "dsh-decision-split",
+  "summary": "左右分屏处理长方案，右侧通读全文左侧写决策，一键发回 Agent，告别反复滚动与记忆负担。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "会话管理",
+    "AI 助手"
+  ],
+  "version": "0.2.4",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yuanbaoerer",
+  "repo": "https://github.com/yuanbaoerer/dsh-decision-split",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-08T10:01:53Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-decision-split",
+    "commands": [
+      "dsh plugin --profile web add dsh-decision-split",
+      "dsh plugin --profile web add https://github.com/yuanbaoerer/dsh-decision-split/releases/latest/download/dsh-decision-split-0.2.4.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

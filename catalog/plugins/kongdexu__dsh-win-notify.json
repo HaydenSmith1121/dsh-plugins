@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "kongdexu/dsh-win-notify",
+  "slug": "kongdexu__dsh-win-notify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-win-notify",
+  "title": "dsh-win-notify",
+  "summary": "在 Windows 通知中心弹出系统级提醒，任务完成、需要输入或审批时第一时间告诉你，无需额外依赖。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "notifications",
+    "消息通知",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "kongdexu",
+  "repo": "https://github.com/kongdexu/dsh-win-notify",
+  "homepage": "https://www.npmjs.com/package/dsh-win-notify",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-25T04:30:48Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-win-notify",
+    "commands": [
+      "dsh plugin --profile web add dsh-win-notify",
+      "dsh plugin --profile web add dsh-win-notify --config.minimumReleaseAge=0",
+      "git clone https://github.com/kongdexu/dsh-win-notify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

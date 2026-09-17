@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "Roarpeng/GraphFlow",
+  "slug": "roarpeng__graphflow",
+  "tier": "community",
+  "package": null,
+  "name": "GraphFlow",
+  "title": "GraphFlow",
+  "summary": "为编程智能体提供本地优先的代码知识图谱与上下文管理，让AI更懂你的项目结构。",
+  "tags": [
+    "context-engine",
+    "cordis",
+    "cordis-plugin",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "mcp",
+    "multi-agent",
+    "会话管理",
+    "多Agent协作",
+    "插件管理",
+    "文件管理",
+    "上下文引擎"
+  ],
+  "version": "1.20.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.20.1",
+    "publishedAt": "2026-09-16T03:24:08Z",
+    "url": "https://github.com/Roarpeng/GraphFlow/releases/tag/v1.20.1"
+  },
+  "author": "Roarpeng",
+  "repo": "https://github.com/Roarpeng/GraphFlow",
+  "homepage": "https://www.npmjs.com/package/@roarpeng/graphflow",
+  "license": "Apache-2.0",
+  "stars": 11,
+  "forks": 0,
+  "pushedAt": "2026-09-16T03:18:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Roarpeng/GraphFlow",
+    "commands": [
+      "dsh plugin --profile web add github:Roarpeng/GraphFlow"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

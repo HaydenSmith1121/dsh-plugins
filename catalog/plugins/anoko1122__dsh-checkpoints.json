@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "ANOKO1122/dsh-checkpoints",
+  "slug": "anoko1122__dsh-checkpoints",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-checkpoints",
+  "title": "dsh-checkpoints",
+  "summary": "把每条用户指令变成对话检查点，能定位、回退和改写，还带文件快照与单文件撤销。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "快捷操作",
+    "文件管理",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.2.5",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ANOKO1122",
+  "repo": "https://github.com/ANOKO1122/dsh-checkpoints",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-11T08:35:33Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ANOKO1122/dsh-checkpoints",
+    "commands": [
+      "npm install",
+      "dsh plugin --profile web add /absolute/path/to/dsh-checkpoints"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "MutaLucem/dsh-plugin-integration",
+  "slug": "mutalucem__dsh-plugin-integration",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-integration",
+  "title": "dsh-plugin-integration",
+  "summary": "自动发现已装插件并分类打标，还能查重叠、查兼容、一键启停，装完即用不用改代码。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin-manager",
+    "插件管理",
+    "工具集成",
+    "状态监控",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "1.3.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.3.5",
+    "publishedAt": "2026-08-16T09:53:50Z",
+    "url": "https://github.com/MutaLucem/dsh-plugin-integration/releases/tag/v1.3.5"
+  },
+  "author": "MutaLucem",
+  "repo": "https://github.com/MutaLucem/dsh-plugin-integration",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 10,
+  "forks": 0,
+  "pushedAt": "2026-08-16T13:29:14Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MutaLucem/dsh-plugin-integration",
+    "commands": [
+      "dsh plugin --profile web add github:MutaLucem/dsh-plugin-integration"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

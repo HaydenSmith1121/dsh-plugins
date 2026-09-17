@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "simon300000/dsh-auto",
+  "slug": "simon300000__dsh-auto",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-auto",
+  "title": "dsh-auto",
+  "summary": "给 DeepSeek Harness 网页界面加一个自动审批预设，每次操作前由独立子代理快速审核，省去手动点确认的麻烦。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "权限预设",
+    "子代理审核",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "simon300000",
+  "repo": "https://github.com/simon300000/dsh-auto",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 2,
+  "pushedAt": "2026-09-10T14:17:56Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:simon300000/dsh-auto",
+    "commands": [
+      "dsh plugin --profile web add github:simon300000/dsh-auto"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

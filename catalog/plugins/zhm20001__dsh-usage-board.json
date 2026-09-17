@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "zhm20001/dsh-usage-board",
+  "slug": "zhm20001__dsh-usage-board",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-usage-board",
+  "title": "dsh-usage-board",
+  "summary": "实时查看Token消耗和成本，按子任务树状追溯用量明细，帮你快速定位性能瓶颈。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "效率提升",
+    "资源优化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zhm20001",
+  "repo": "https://github.com/zhm20001/dsh-usage-board",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T14:51:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhm20001/dsh-usage-board",
+    "commands": [
+      "git clone https://github.com/zhm20001/dsh-usage-board.git",
+      "npm install",
+      "dsh plugin --profile web add \"$(pwd)\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

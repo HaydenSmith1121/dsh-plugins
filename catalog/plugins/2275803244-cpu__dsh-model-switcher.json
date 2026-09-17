@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "2275803244-cpu/dsh-model-switcher",
+  "slug": "2275803244-cpu__dsh-model-switcher",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-model-switcher",
+  "title": "dsh-model-switcher",
+  "summary": "在 DeepSeek Harness 网页界面里一键切换服务商和模型，不用再进设置里慢慢配。",
+  "tags": [
+    "chat",
+    "client-plugin",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "model-switcher",
+    "provider",
+    "web",
+    "效率提升",
+    "会话管理",
+    "零配置",
+    "模型配置"
+  ],
+  "version": "0.8.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.8.0",
+    "publishedAt": "2026-09-06T15:10:47Z",
+    "url": "https://github.com/2275803244-cpu/dsh-model-switcher/releases/tag/v0.8.0"
+  },
+  "author": "2275803244-cpu",
+  "repo": "https://github.com/2275803244-cpu/dsh-model-switcher",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 1,
+  "pushedAt": "2026-09-09T14:27:11Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:2275803244-cpu/dsh-model-switcher",
+    "commands": [
+      "dsh plugin --profile web add github:2275803244-cpu/dsh-model-switcher"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "xingyingyuzhui/dsh-session-permissions",
+  "slug": "xingyingyuzhui__dsh-session-permissions",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-permissions",
+  "title": "dsh-session-permissions",
+  "summary": "给会话加一层权限管控，官方、Agent 和本会话权限取交集，越权操作自动拦住。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "安全审计",
+    "多Agent协作",
+    "工作区管理"
+  ],
+  "version": "0.2.30",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xingyingyuzhui",
+  "repo": "https://github.com/xingyingyuzhui/dsh-session-permissions",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-15T07:11:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xingyingyuzhui/dsh-session-permissions",
+    "commands": [
+      "dsh plugin --profile web add github:xingyingyuzhui/dsh-session-permissions",
+      "dsh plugin --profile web add link:/abs/path/to/dsh-session-permissions"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

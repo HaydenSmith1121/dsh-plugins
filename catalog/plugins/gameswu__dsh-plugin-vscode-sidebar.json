@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "gameswu/dsh-plugin-vscode-sidebar",
+  "slug": "gameswu__dsh-plugin-vscode-sidebar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-vscode-sidebar",
+  "title": "dsh-plugin-vscode-sidebar",
+  "summary": "把 VSCode 风格的右侧栏搬进 DSH，文件预览、会话管理一栏搞定。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "主题",
+    "前端增强",
+    "文件管理",
+    "会话管理",
+    "工具集成"
+  ],
+  "version": "0.6.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "gameswu",
+  "repo": "https://github.com/gameswu/dsh-plugin-vscode-sidebar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-09-16T14:02:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:gameswu/dsh-plugin-vscode-sidebar",
+    "commands": [
+      "dsh plugin --profile web add <路径>/dsh-plugin-vscode-sidebar",
+      "dsh plugin --profile web add github:gameswu/dsh-plugin-vscode-sidebar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

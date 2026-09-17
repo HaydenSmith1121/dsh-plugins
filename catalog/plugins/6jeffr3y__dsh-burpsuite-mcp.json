@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "6jeffr3y/dsh-burpsuite-mcp",
+  "slug": "6jeffr3y__dsh-burpsuite-mcp",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-burpsuite-mcp",
+  "title": "dsh-burpsuite-mcp",
+  "summary": "把 Burp Suite 的代理、重放、拦截等能力直接接入 DeepSeek Harness，让 AI 能调用安全测试工具。",
+  "tags": [
+    "burp-suite",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mcp",
+    "security-testing",
+    "安全审计",
+    "模型配置",
+    "自动化",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-08-30T10:34:27Z",
+    "url": "https://github.com/6jeffr3y/dsh-burpsuite-mcp/releases/tag/v0.3.1"
+  },
+  "author": "6jeffr3y",
+  "repo": "https://github.com/6jeffr3y/dsh-burpsuite-mcp",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T10:34:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:6jeffr3y/dsh-burpsuite-mcp",
+    "commands": [
+      "dsh plugin --profile web add github:6jeffr3y/dsh-burpsuite-mcp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

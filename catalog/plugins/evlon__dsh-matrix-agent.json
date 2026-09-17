@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "evlon/dsh-matrix-agent",
+  "slug": "evlon__dsh-matrix-agent",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-matrix-agent",
+  "title": "dsh-matrix-agent",
+  "summary": "把 Matrix 房间桥接到 dsh 智能体会话，每个房间一个会话，聊天里就能远程监控、审批和追加指令。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "多Agent协作",
+    "会话管理",
+    "AI 助手",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "0.3.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.4",
+    "publishedAt": "2026-09-15T10:31:13Z",
+    "url": "https://github.com/evlon/dsh-matrix-agent/releases/tag/v0.3.4"
+  },
+  "author": "evlon",
+  "repo": "https://github.com/evlon/dsh-matrix-agent",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T10:30:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "dsh plugin --profile web add .",
+      "dsh plugin --profile web add github:you/dsh-matrix"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

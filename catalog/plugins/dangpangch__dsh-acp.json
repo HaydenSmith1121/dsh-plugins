@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "dangpangch/dsh-acp",
+  "slug": "dangpangch__dsh-acp",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-acp",
+  "title": "dsh-acp",
+  "summary": "为 dsh 补齐 ACP 能力，让 DeepSeek Harness 能接入 Zed 编辑器，实现交互式编程。",
+  "tags": [
+    "cordis",
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "工作流增强",
+    "效率提升",
+    "命令行工具"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dangpangch",
+  "repo": "https://github.com/dangpangch/dsh-acp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-15T14:19:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dangpangch/dsh-acp",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh@0.1.5-rc.1",
+      "dsh plugin --profile acp add https://github.com/dangpangch/dsh-acp.git",
+      "dsh plugin --profile acp add /path/to/dsh-acp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "baixianger/dsh-bridge",
+  "slug": "baixianger__dsh-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-bridge",
+  "title": "dsh-bridge",
+  "summary": "让同一个进程里的多个会话直接互相发消息，方便多智能体协作和任务接力。",
+  "tags": [
+    "dsh-plugin",
+    "多Agent协作",
+    "会话管理",
+    "桥接插件",
+    "消息通知"
+  ],
+  "version": "0.1.0-rc.14",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "baixianger",
+  "repo": "https://github.com/baixianger/dsh-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-09-14T10:04:51Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-bridge@latest",
+    "commands": [
+      "dsh plugin --profile web add dsh-bridge@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

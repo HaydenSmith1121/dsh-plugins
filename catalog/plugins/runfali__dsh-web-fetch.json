@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "runfali/dsh-web-fetch",
+  "slug": "runfali__dsh-web-fetch",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-web-fetch",
+  "title": "dsh-web-fetch",
+  "summary": "双源网页抓取，CDP真实渲染加Tavily极速提取，让LLM自己选工具，灵活又高效。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "自动化",
+    "AI 助手",
+    "效率提升",
+    "模型配置"
+  ],
+  "version": "0.1.2-alpha.4",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "runfali",
+  "repo": "https://github.com/runfali/dsh-web-fetch",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T13:34:47Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-web-fetch",
+    "commands": [
+      "dsh plugin --profile web add dsh-web-fetch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

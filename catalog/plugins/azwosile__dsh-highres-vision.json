@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "azwosile/dsh-highres-vision",
+  "slug": "azwosile__dsh-highres-vision",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-highres-vision",
+  "title": "dsh-highres-vision",
+  "summary": "专为 deepseek-v4-flash-vision-exp 打造的高清识图增强插件，突破图片限制并支持分块读取大图。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "image-recognition",
+    "vision",
+    "视觉理解",
+    "资源优化",
+    "模型配置",
+    "效率提升"
+  ],
+  "version": "0.3.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.2",
+    "publishedAt": "2026-09-11T09:56:57Z",
+    "url": "https://github.com/azwosile/dsh-highres-vision/releases/tag/v0.3.2"
+  },
+  "author": "azwosile",
+  "repo": "https://github.com/azwosile/dsh-highres-vision",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-09-11T09:51:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:azwosile/dsh-highres-vision",
+    "commands": [
+      "dsh plugin --profile web add github:azwosile/dsh-highres-vision"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

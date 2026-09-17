@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "KhanZou/Deepseek-Harness-as-Desktop",
+  "slug": "khanzou__deepseek-harness-as-desktop",
+  "tier": "community",
+  "package": null,
+  "name": "Deepseek-Harness-as-Desktop",
+  "title": "Deepseek-Harness-as-Desktop",
+  "summary": "把 DeepSeek Harness 变成 Codex 风格的桌面应用，带系统托盘、开机自启和皮肤中心。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "主题",
+    "界面美化",
+    "设置面板",
+    "快捷操作"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "KhanZou",
+  "repo": "https://github.com/KhanZou/Deepseek-Harness-as-Desktop",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-16T06:59:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:KhanZou/Deepseek-Harness-as-Desktop",
+    "commands": [
+      "dsh plugin --profile web add github:KhanZou/Deepseek-Harness-as-Desktop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

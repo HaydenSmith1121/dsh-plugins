@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "imroc/dsh-browser-panel",
+  "slug": "imroc__dsh-browser-panel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-browser-panel",
+  "title": "dsh-browser-panel",
+  "summary": "在 DSH 里开个共享浏览器，AI 用工具自动操作，你随时能看能接手，登录扫码都不怕。",
+  "tags": [
+    "browser-automation",
+    "chrome-devtools-protocol",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "human-in-the-loop",
+    "工具集成",
+    "自动化",
+    "可视化",
+    "AI 助手",
+    "桥接插件"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-14T06:13:22Z",
+    "url": "https://github.com/imroc/dsh-browser-panel/releases/tag/v0.2.0"
+  },
+  "author": "imroc",
+  "repo": "https://github.com/imroc/dsh-browser-panel",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T06:14:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:imroc/dsh-browser-panel",
+    "commands": [
+      "dsh plugin --profile web add github:imroc/dsh-browser-panel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

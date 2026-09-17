@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "pgmi-builds/omp-web",
+  "slug": "pgmi-builds__omp-web",
+  "tier": "community",
+  "package": null,
+  "name": "omp-web",
+  "title": "omp-web",
+  "summary": "为 OMP 提供 Web 管理界面，让你在浏览器中轻松操作和监控系统。",
+  "tags": [
+    "cordis",
+    "cordis-plugin",
+    "dsh",
+    "oh-my-pi",
+    "omp",
+    "typescript",
+    "可视化",
+    "状态监控",
+    "前端增强"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-30T16:36:06Z",
+    "url": "https://github.com/pgmi-builds/omp-web/releases/tag/v0.1.1"
+  },
+  "author": "pgmi-builds",
+  "repo": "https://github.com/pgmi-builds/omp-web",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T01:31:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:pgmi-builds/omp-web",
+    "commands": [
+      "dsh plugin --profile web add github:pgmi-builds/omp-web"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

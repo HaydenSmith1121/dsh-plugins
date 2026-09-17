@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "leanderli/dsh-files-git",
+  "slug": "leanderli__dsh-files-git",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-files-git",
+  "title": "dsh-files-git",
+  "summary": "在 WebUI 里直接浏览、编辑文件，还能顺手完成 Git 提交、推送等版本控制操作，不用再切终端。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "前端增强",
+    "文件管理",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.6.9",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "leanderli",
+  "repo": "https://github.com/leanderli/dsh-files-git",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T13:13:23Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:leanderli/dsh-files-git",
+    "commands": [
+      "git clone https://github.com/leanderli/dsh-files-git.git",
+      "dsh plugin --profile web add ~/.dsh/plugins/dsh-files-git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

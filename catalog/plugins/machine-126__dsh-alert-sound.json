@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Machine-126/dsh-alert-sound",
+  "slug": "machine-126__dsh-alert-sound",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-alert-sound",
+  "title": "dsh-alert-sound",
+  "summary": "为 DeepSeek Harness 网页界面添加中文语音和提示音，审批、回答、完成或出错时及时提醒你。",
+  "tags": [
+    "dsh-plugin",
+    "消息通知",
+    "状态监控",
+    "设置面板",
+    "界面美化",
+    "效率提升"
+  ],
+  "version": "0.3.13",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Machine-126",
+  "repo": "https://github.com/Machine-126/dsh-alert-sound",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-09-09T11:48:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@machine-126/dsh-alert-sound",
+    "commands": [
+      "dsh plugin --profile web add @machine-126/dsh-alert-sound",
+      "dsh plugin --profile web add github:Machine-126/dsh-alert-sound",
+      "dsh plugin --profile web add ./dsh-alert-sound"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "xianfanwindy/dsh-doctor-windows",
+  "slug": "xianfanwindy__dsh-doctor-windows",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-doctor-windows",
+  "title": "dsh-doctor-windows",
+  "summary": "只读检查Windows启动项和DSH配置，快速定位启动问题，不发送任何数据。",
+  "tags": [
+    "deepseek-harness",
+    "diagnostics",
+    "dsh-plugin",
+    "windows",
+    "状态监控",
+    "故障诊断",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "xianfanwindy",
+  "repo": "https://github.com/xianfanwindy/dsh-doctor-windows",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-21T12:02:56Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xianfanwindy/dsh-doctor-windows",
+    "commands": [
+      "dsh plugin --profile web add github:xianfanwindy/dsh-doctor-windows"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

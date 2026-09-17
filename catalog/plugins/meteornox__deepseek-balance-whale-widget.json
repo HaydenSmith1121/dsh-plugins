@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "MeteorNOX/DeepSeek-Balance-Whale-Widget",
+  "slug": "meteornox__deepseek-balance-whale-widget",
+  "tier": "community",
+  "package": null,
+  "name": "DeepSeek-Balance-Whale-Widget",
+  "title": "DeepSeek-Balance-Whale-Widget",
+  "summary": "住在 DSH 右下角的小鲸鱼挂件，实时盯着 DeepSeek 余额和每轮消耗，还能拖拽吸附、自定义气泡内容。",
+  "tags": [
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "developer-tools",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "floating-widget",
+    "plugin",
+    "状态监控",
+    "主题",
+    "零配置",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.3.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.2",
+    "publishedAt": "2026-09-16T05:38:11Z",
+    "url": "https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget/releases/tag/v0.3.2"
+  },
+  "author": "MeteorNOX",
+  "repo": "https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2553,
+  "forks": 100,
+  "pushedAt": "2026-09-16T05:38:11Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MeteorNOX/DeepSeek-Balance-Whale-Widget",
+    "commands": [
+      "dsh plugin --profile web add github:MeteorNOX/DeepSeek-Balance-Whale-Widget"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

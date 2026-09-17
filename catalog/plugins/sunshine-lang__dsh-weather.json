@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "sunshine-lang/dsh-weather",
+  "slug": "sunshine-lang__dsh-weather",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-weather",
+  "title": "dsh-weather",
+  "summary": "查任意城市实时天气和多日预报，数据来自 Open-Meteo，免费免注册免 API key。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "weather",
+    "零配置",
+    "工具集成",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "sunshine-lang",
+  "repo": "https://github.com/sunshine-lang/dsh-weather",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 1,
+  "pushedAt": "2026-08-14T06:05:17Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sunshine-lang/dsh-weather",
+    "commands": [
+      "dsh plugin --profile web add \"github:sunshine-lang/dsh-weather\"",
+      "dsh plugin --profile web add dsh-weather",
+      "dsh plugin --profile web add ./dsh-weather"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "fenglin-ai/dsh-funasr-voice",
+  "slug": "fenglin-ai__dsh-funasr-voice",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-funasr-voice",
+  "title": "dsh-funasr-voice",
+  "summary": "本地离线语音输入插件，用麦克风说话，自动识别成文字填入输入框，全程不联网。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "效率提升",
+    "桌宠",
+    "前端增强",
+    "零配置"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "fenglin-ai",
+  "repo": "https://github.com/fenglin-ai/dsh-funasr-voice",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-26T16:03:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fenglin-ai/dsh-funasr-voice",
+    "commands": [
+      "dsh plugin --profile <你的profile> add <本插件目录或仓库地址>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

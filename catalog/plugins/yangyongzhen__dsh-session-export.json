@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "yangyongzhen/dsh-session-export",
+  "slug": "yangyongzhen__dsh-session-export",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-export",
+  "title": "dsh-session-export",
+  "summary": "自动把 DeepSeek Harness 会话导出成 Markdown，方便复盘、写博客和审计。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "会话导出",
+    "复盘审计",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yangyongzhen",
+  "repo": "https://github.com/yangyongzhen/dsh-session-export",
+  "homepage": null,
+  "license": null,
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-14T08:55:34Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yangyongzhen/dsh-session-export",
+    "commands": [
+      "dsh plugin --profile <web|tui|headless> add file:/path/to/dsh-session-export",
+      "dsh plugin --profile <web|tui|headless> add https://gitcode.com/qq8864/dsh-session-export.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

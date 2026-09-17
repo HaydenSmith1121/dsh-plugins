@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "loyalchiiina/dsh-skill-browser",
+  "slug": "loyalchiiina__dsh-skill-browser",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skill-browser",
+  "title": "dsh-skill-browser",
+  "summary": "在 DSH 里用悬浮球快速浏览技能库，支持分类搜索和查看说明，还能自动记录失效技能，方便排查问题。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "skill-browser",
+    "插件管理",
+    "效率提升",
+    "状态监控",
+    "桌宠"
+  ],
+  "version": "1.8.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.8.1",
+    "publishedAt": "2026-09-14T03:15:21Z",
+    "url": "https://github.com/loyalchiiina/dsh-skill-browser/releases/tag/v1.8.1"
+  },
+  "author": "loyalchiiina",
+  "repo": "https://github.com/loyalchiiina/dsh-skill-browser",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T03:15:20Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:loyalchiiina/dsh-skill-browser",
+    "commands": [
+      "dsh plugin --profile web add github:loyalchiiina/dsh-skill-browser"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

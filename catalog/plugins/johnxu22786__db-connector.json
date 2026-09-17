@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "JohnXu22786/db-connector",
+  "slug": "johnxu22786__db-connector",
+  "tier": "community",
+  "package": null,
+  "name": "db-connector",
+  "title": "db-connector",
+  "summary": "一键连接主流数据库，提供只读保护、写入审批和审计日志，让 AI 安全高效地查改数据。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "只读安全",
+    "开发流程",
+    "零配置",
+    "AI工具"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "JohnXu22786",
+  "repo": "https://github.com/JohnXu22786/db-connector",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T13:57:43Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JohnXu22786/db-connector",
+    "commands": [
+      "dsh plugin --profile <name> add /path/to/dsh-db-connector",
+      "npm install -g dsh-db-connector",
+      "npm install dsh-db-connector"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

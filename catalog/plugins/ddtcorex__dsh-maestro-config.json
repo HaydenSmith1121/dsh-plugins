@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "ddtcorex/dsh-maestro-config",
+  "slug": "ddtcorex__dsh-maestro-config",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-maestro-config",
+  "title": "dsh-maestro-config",
+  "summary": "为 dsh-maestro 系列插件提供统一的配置存储服务，集中管理各域设置，方便又安全。",
+  "tags": [
+    "configuration",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "maestro",
+    "settings",
+    "settings-ui",
+    "typescript",
+    "插件管理",
+    "会话管理",
+    "工作区管理",
+    "设置面板"
+  ],
+  "version": "0.5.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.1",
+    "publishedAt": "2026-09-13T21:52:03Z",
+    "url": "https://github.com/ddtcorex/dsh-maestro-config/releases/tag/v0.5.1"
+  },
+  "author": "ddtcorex",
+  "repo": "https://github.com/ddtcorex/dsh-maestro-config",
+  "homepage": "https://www.npmjs.com/package/@ddtcorex/dsh-maestro-config",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T17:06:54Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ddtcorex/dsh-maestro-config",
+    "commands": [
+      "dsh plugin --profile web add github:ddtcorex/dsh-maestro-config"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

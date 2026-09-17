@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "liangsheng999/dsh-client-ui-connection-status",
+  "slug": "liangsheng999__dsh-client-ui-connection-status",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-client-ui-connection-status",
+  "title": "dsh-client-ui-connection-status",
+  "summary": "在 DeepSeek Harness Web 界面角落显示实时连接状态的小药丸，一眼看清事件流是否在线。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "前端增强",
+    "可视化",
+    "零配置"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "liangsheng999",
+  "repo": "https://github.com/liangsheng999/dsh-client-ui-connection-status",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-26T16:05:10Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-client-ui-connection-status",
+    "commands": [
+      "dsh plugin --profile web add dsh-client-ui-connection-status",
+      "dsh plugin --profile web remove dsh-client-ui-connection-status"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

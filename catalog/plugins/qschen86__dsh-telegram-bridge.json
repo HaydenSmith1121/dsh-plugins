@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "qschen86/dsh-telegram-bridge",
+  "slug": "qschen86__dsh-telegram-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-telegram-bridge",
+  "title": "dsh-telegram-bridge",
+  "summary": "通过 Telegram 机器人推送会话完成通知，并支持在聊天中回复以继续推进任务。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "状态监控",
+    "效率提升",
+    "手机配对"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-17T07:07:13Z",
+    "url": "https://github.com/qschen86/dsh-telegram-bridge/releases/tag/v0.1.0"
+  },
+  "author": "qschen86",
+  "repo": "https://github.com/qschen86/dsh-telegram-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T05:19:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-telegram-bridge",
+    "commands": [
+      "dsh plugin --profile web add dsh-telegram-bridge",
+      "dsh plugin --profile web add https://github.com/qschen86/dsh-telegram-bridge/releases/download/v0.1.0/dsh-telegram-bridge-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

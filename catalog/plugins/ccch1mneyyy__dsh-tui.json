@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "ccch1mneyyy/dsh-TUI",
+  "slug": "ccch1mneyyy__dsh-tui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cc-tui",
+  "title": "dsh-cc-tui",
+  "summary": "给 DeepSeek Harness 套上 Claude Code 风格的全屏终端界面，支持流式思考过程展示、回滚操作和上下文/TPS 实时指标，让命令行交互更直观高效。",
+  "tags": [
+    "claude-code",
+    "coding-agent",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "ink",
+    "react",
+    "terminal",
+    "tui",
+    "主题",
+    "命令行工具"
+  ],
+  "version": "0.10.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.10.2",
+    "publishedAt": "2026-09-17T03:50:02Z",
+    "url": "https://github.com/ccch1mneyyy/dsh-TUI/releases/tag/v0.10.2"
+  },
+  "author": "ccch1mneyyy",
+  "repo": "https://github.com/ccch1mneyyy/dsh-TUI",
+  "homepage": "https://dshtui.com/",
+  "license": "MIT",
+  "stars": 3069,
+  "forks": 184,
+  "pushedAt": "2026-09-16T20:35:42Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ccch1mneyyy/dsh-TUI",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh @deepseek-harness-tui/dsh-tui"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

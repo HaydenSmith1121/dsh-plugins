@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "edusrez/dsh-tool-web-enhanced",
+  "slug": "edusrez__dsh-tool-web-enhanced",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tool-web-enhanced",
+  "title": "dsh-tool-web-enhanced",
+  "summary": "增强版网页搜索工具，支持话题筛选和SearXNG双结果区，搜索更精准灵活。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "searxng",
+    "web-search",
+    "语义检索",
+    "话题筛选",
+    "搜索增强"
+  ],
+  "version": "0.4.0-rc.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "edusrez",
+  "repo": "https://github.com/edusrez/dsh-tool-web-enhanced",
+  "homepage": "https://github.com/edusrez/dsh-tool-web-enhanced#readme",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T12:39:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:edusrez/dsh-tool-web-enhanced",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-tool-web-enhanced"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

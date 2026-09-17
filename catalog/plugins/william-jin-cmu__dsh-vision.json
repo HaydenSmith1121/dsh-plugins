@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "william-jin-cmu/dsh-vision",
+  "slug": "william-jin-cmu__dsh-vision",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-vision",
+  "title": "dsh-vision",
+  "summary": "给纯文本的 DeepSeek 加上眼睛，通过 OpenAI 兼容的视觉模型实现看图、OCR、读图表等能力。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "多模态"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "william-jin-cmu",
+  "repo": "https://github.com/william-jin-cmu/dsh-vision",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 33,
+  "forks": 4,
+  "pushedAt": "2026-08-13T02:26:29Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:william-jin-cmu/dsh-vision",
+    "commands": [
+      "git clone https://github.com/dsh-external/dsh-vision ~/dsh-plugins/dsh-vision"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

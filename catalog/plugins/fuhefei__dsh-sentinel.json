@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "fuhefei/dsh-sentinel",
+  "slug": "fuhefei__dsh-sentinel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sentinel",
+  "title": "dsh-sentinel",
+  "summary": "让智能体按条件自动唤醒：监控文件、命令、HTTP、进程或Webhook，触发后继续干活，支持停靠栏和全局面板。",
+  "tags": [
+    "dsh",
+    "dsh-better-sidebar",
+    "dsh-plugin",
+    "消息通知"
+  ],
+  "version": "0.11.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.11.1",
+    "publishedAt": "2026-09-07T14:05:01Z",
+    "url": "https://github.com/fuhefei/dsh-sentinel/releases/tag/v0.11.1"
+  },
+  "author": "fuhefei",
+  "repo": "https://github.com/fuhefei/dsh-sentinel",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 16,
+  "forks": 3,
+  "pushedAt": "2026-09-12T05:09:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-sentinel",
+    "commands": [
+      "dsh plugin --profile web add dsh-sentinel",
+      "dsh plugin --profile web add \"github:fuhefei/dsh-sentinel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

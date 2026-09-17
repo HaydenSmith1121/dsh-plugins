@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "caoyiwei850/dsh-ssh-ops",
+  "slug": "caoyiwei850__dsh-ssh-ops",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ssh-ops",
+  "title": "dsh-ssh-ops",
+  "summary": "在主对话里直接操作服务器 SSH，高危命令有保护，右侧还带真实终端和文件、端口、数据库管理。",
+  "tags": [
+    "dsh-plugin",
+    "命令行工具",
+    "工具集成",
+    "安全审计",
+    "文件管理",
+    "状态监控"
+  ],
+  "version": "0.3.8",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.8",
+    "publishedAt": "2026-09-16T04:17:16Z",
+    "url": "https://github.com/caoyiwei850/dsh-ssh-ops/releases/tag/v0.3.8"
+  },
+  "author": "caoyiwei850",
+  "repo": "https://github.com/caoyiwei850/dsh-ssh-ops",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 21,
+  "forks": 8,
+  "pushedAt": "2026-09-16T04:14:04Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:caoyiwei850/dsh-ssh-ops",
+    "commands": [
+      "dsh plugin --profile web add github:caoyiwei850/dsh-ssh-ops",
+      "dsh plugin --profile web add /path/to/dsh-ssh-ops-0.3.8.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

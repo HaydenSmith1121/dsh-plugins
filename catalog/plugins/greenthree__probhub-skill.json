@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "greenthree/ProbHub-skill",
+  "slug": "greenthree__probhub-skill",
+  "tier": "community",
+  "package": null,
+  "name": "ProbHub-skill",
+  "title": "ProbHub-skill",
+  "summary": "把算法竞赛出题流程自动化，从题面完善到数据构造，一键生成 PDF 和 DOMjudge 题目包。",
+  "tags": [
+    "agent",
+    "ai",
+    "competitive-programming",
+    "dsh-plugin",
+    "自动化",
+    "效率提升",
+    "工作流增强",
+    "可编辑导出"
+  ],
+  "version": "0.7.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.7.0",
+    "publishedAt": "2026-08-25T07:42:21Z",
+    "url": "https://github.com/greenthree/ProbHub-skill/releases/tag/v0.7.0"
+  },
+  "author": "greenthree",
+  "repo": "https://github.com/greenthree/ProbHub-skill",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 1,
+  "pushedAt": "2026-09-04T06:22:37Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:greenthree/ProbHub-skill",
+    "commands": [
+      "dsh plugin --profile web add github:greenthree/ProbHub-skill"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

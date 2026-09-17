@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "daha1216/dsh-better-display",
+  "slug": "daha1216__dsh-better-display",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-better-display",
+  "title": "dsh-better-display",
+  "summary": "让 DSH 对话执行时显示过程、完成后自动收起步骤，只留最终答案，还支持交互沙箱卡片。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-retrace",
+    "mcp-apps",
+    "reading-view",
+    "前端增强",
+    "可视化",
+    "效率提升",
+    "工具集成"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "daha1216",
+  "repo": "https://github.com/daha1216/dsh-better-display",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T04:44:54Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:daha1216/dsh-better-display",
+    "commands": [
+      "dsh plugin --profile web add github:daha1216/dsh-better-display"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "anysearch-team/anysearch-dsh",
+  "slug": "anysearch-team__anysearch-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "anysearch-dsh",
+  "title": "anysearch-dsh",
+  "summary": "给 DSH 加上 AnySearch 实时联网搜索和高级检索工具，让 AI 助手能查最新网页信息。",
+  "tags": [
+    "agent-tools",
+    "anysearch",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "typescript",
+    "web-search",
+    "工具集成",
+    "语义检索",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "0.1.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.5",
+    "publishedAt": "2026-09-17T15:49:32Z",
+    "url": "https://github.com/anysearch-team/anysearch-dsh/releases/tag/v0.1.5"
+  },
+  "author": "anysearch-team",
+  "repo": "https://github.com/anysearch-team/anysearch-dsh",
+  "homepage": "https://www.anysearch.com",
+  "license": "MIT",
+  "stars": 418,
+  "forks": 11,
+  "pushedAt": "2026-08-26T06:25:54Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:anysearch-team/anysearch-dsh",
+    "commands": [
+      "curl -fsSL https://raw.githubusercontent.com/anysearch-team/anysearch-dsh/refs/heads/main/docs/agent-installation.md"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

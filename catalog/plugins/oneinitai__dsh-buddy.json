@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "oneinitAI/dsh-buddy",
+  "slug": "oneinitai__dsh-buddy",
+  "tier": "community",
+  "package": null,
+  "name": "oneinitAI/dsh-buddy",
+  "title": "oneinitAI/dsh-buddy",
+  "summary": "根据对话实时构建用户画像，自动调整回答的深度、术语密度和步骤粒度，让沟通更贴合每个人。",
+  "tags": [
+    "会话管理",
+    "效率提升",
+    "AI工具"
+  ],
+  "version": "0.5.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "oneinitAI",
+  "repo": "https://github.com/oneinitAI/dsh-buddy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-25T07:47:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:oneinitAI/dsh-buddy",
+    "commands": [
+      "dsh plugin --profile <名> add github:oneinitAI/dsh-buddy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

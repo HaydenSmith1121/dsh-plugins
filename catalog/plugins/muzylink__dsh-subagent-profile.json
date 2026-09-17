@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "muzyLink/dsh-subagent-profile",
+  "slug": "muzylink__dsh-subagent-profile",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-subagent-profile",
+  "title": "dsh-subagent-profile",
+  "summary": "为子代理按任务智能选模型、调推理强度和工具范围，方案可复用，内置安全检查与成本估算，派发决策全程留痕。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "subagent",
+    "多Agent协作",
+    "模型配置",
+    "资源优化",
+    "安全审计",
+    "插件管理"
+  ],
+  "version": "0.5.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "muzyLink",
+  "repo": "https://github.com/muzyLink/dsh-subagent-profile",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-09-03T16:14:13Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-subagent-profile",
+    "commands": [
+      "dsh plugin --profile web add dsh-subagent-profile",
+      "dsh plugin --profile web add ./dsh-subagent-profile"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

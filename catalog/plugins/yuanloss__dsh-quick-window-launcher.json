@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Yuanloss/dsh-quick-window-launcher",
+  "slug": "yuanloss__dsh-quick-window-launcher",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-quick-window-launcher",
+  "title": "dsh-quick-window-launcher",
+  "summary": "把 DeepSeek Harness 网页变成独立桌面应用窗口，支持一键关闭、重启，还能通过工具快速打开网页。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "桌宠",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "0.2.3",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Yuanloss",
+  "repo": "https://github.com/Yuanloss/dsh-quick-window-launcher",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T12:46:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Yuanloss/dsh-quick-window-launcher",
+    "commands": [
+      "dsh plugin --profile web add github:Yuanloss/dsh-quick-window-launcher"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

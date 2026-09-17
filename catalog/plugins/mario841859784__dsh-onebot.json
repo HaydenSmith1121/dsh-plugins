@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "mario841859784/dsh-onebot",
+  "slug": "mario841859784__dsh-onebot",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-onebot",
+  "title": "dsh-onebot",
+  "summary": "把 DeepSeek Harness 接入 QQ，通过 OneBot 11 协议让 QQ 机器人直接对话和调用插件能力。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "模型配置",
+    "桌宠",
+    "自动化"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "mario841859784",
+  "repo": "https://github.com/mario841859784/dsh-onebot",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T14:00:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mario841859784/dsh-onebot",
+    "commands": [
+      "git clone <repo> ~/dsh-plugins/dsh-onebot",
+      "npm install --include=dev"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

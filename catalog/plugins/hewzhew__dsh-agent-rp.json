@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "hewzhew/dsh-agent-rp",
+  "slug": "hewzhew__dsh-agent-rp",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-rp",
+  "title": "dsh-agent-rp",
+  "summary": "在 DSH 里跑原生角色扮演，角色直接当 Agent 行动，还能把 SillyTavern 的角色卡、世界书和预设搬过来用。",
+  "tags": [
+    "agent",
+    "dsh",
+    "roleplay",
+    "sillytavern",
+    "AI 助手",
+    "报告生成",
+    "桥接插件",
+    "状态持久化",
+    "模型配置"
+  ],
+  "version": "0.0.0-rc.250",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "hewzhew",
+  "repo": "https://github.com/hewzhew/dsh-agent-rp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 214,
+  "forks": 12,
+  "pushedAt": "2026-09-05T16:31:18Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hewzhew/dsh-agent-rp",
+    "commands": [
+      "dsh plugin --profile web add github:hewzhew/dsh-agent-rp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

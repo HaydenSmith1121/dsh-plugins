@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "minivv/dsh-agent-skills",
+  "slug": "minivv__dsh-agent-skills",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-agent-skills",
+  "title": "dsh-agent-skills",
+  "summary": "在 DeepSeek Harness 里发现和管理 Agent Skills，让技能随取随用。",
+  "tags": [
+    "agent-skills",
+    "deepseek-harness",
+    "dsh-plugin",
+    "插件管理",
+    "工具集成",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.1.10",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "minivv",
+  "repo": "https://github.com/minivv/dsh-agent-skills",
+  "homepage": "https://weispot.vercel.app/projects/dsh-agent-skills",
+  "license": "MIT",
+  "stars": 13,
+  "forks": 1,
+  "pushedAt": "2026-09-15T06:08:39Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-agent-skills",
+    "commands": [
+      "dsh plugin --profile web add dsh-agent-skills",
+      "dsh plugin --profile web add github:minivv/dsh-agent-skills"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "csmht/dsh-weixin-assistant",
+  "slug": "csmht__dsh-weixin-assistant",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-weixin-assistant",
+  "title": "dsh-weixin-assistant",
+  "summary": "把微信变成 DSH 的智能助手入口，本地安全存凭证，聊天就能调工具、管会话，不用额外开管理台。",
+  "tags": [
+    "ai-assistant",
+    "dsh",
+    "nodejs",
+    "weixin",
+    "桌宠",
+    "会话管理",
+    "安全审计",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "csmht",
+  "repo": "https://github.com/csmht/dsh-weixin-assistant",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T14:50:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:csmht/dsh-weixin-assistant",
+    "commands": [
+      "dsh plugin --profile web add github:csmht/dsh-weixin-assistant"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

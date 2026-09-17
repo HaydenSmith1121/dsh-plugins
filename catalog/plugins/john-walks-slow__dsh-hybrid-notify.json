@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "john-walks-slow/dsh-hybrid-notify",
+  "slug": "john-walks-slow__dsh-hybrid-notify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hybrid-notify",
+  "title": "dsh-hybrid-notify",
+  "summary": "为 DeepSeek Harness 提供多通道消息通知，支持页面内提示、PWA 和浏览器通知并带声音，不错过任何重要状态。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "notifications",
+    "消息通知",
+    "前端增强",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "john-walks-slow",
+  "repo": "https://github.com/john-walks-slow/dsh-hybrid-notify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T16:27:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-hybrid-notify",
+    "commands": [
+      "dsh plugin --profile web add dsh-hybrid-notify",
+      "dsh plugin --profile web add github:john-walks-slow/dsh-hybrid-notify",
+      "git clone https://github.com/john-walks-slow/dsh-hybrid-notify.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

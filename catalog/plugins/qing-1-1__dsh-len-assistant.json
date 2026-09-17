@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "qing-1-1/dsh-len-assistant",
+  "slug": "qing-1-1__dsh-len-assistant",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-len-assistant",
+  "title": "dsh-len-assistant",
+  "summary": "把联想服务体系里的硬件诊断、备件查询、保修和网点能力，集成到 DeepSeek Harness 里直接调用。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "命令行工具",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "qing-1-1",
+  "repo": "https://github.com/qing-1-1/dsh-len-assistant",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-08T02:50:34Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:1Ecc/dsh-len-assistant",
+    "commands": [
+      "dsh plugin --profile web add github:1Ecc/dsh-len-assistant"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

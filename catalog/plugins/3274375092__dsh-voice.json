@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "3274375092/dsh-voice",
+  "slug": "3274375092__dsh-voice",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-voice",
+  "title": "dsh-voice",
+  "summary": "网页里点🎤或按快捷键就能说话，语音自动转文字发进会话，纯输入不干扰人设，任何模式都好用。",
+  "tags": [
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "dsh-plugins",
+    "多模态",
+    "命令行工具",
+    "输入法替代"
+  ],
+  "version": "0.2.6",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "3274375092",
+  "repo": "https://github.com/3274375092/dsh-voice",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-08-21T10:40:18Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@nn12138/dsh-voice",
+    "commands": [
+      "dsh plugin --profile web add @nn12138/dsh-voice",
+      "dsh plugin --profile web add sherpa-onnx-node"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

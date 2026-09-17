@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "lehhair/dsh-diff-viewer",
+  "slug": "lehhair__dsh-diff-viewer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-diff-viewer",
+  "title": "dsh-diff-viewer",
+  "summary": "把 DSH 里 write/edit 的 diff 换成 PiUI 风格网页视图，代码改动看得更清楚。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "文件差异",
+    "变更审查",
+    "主题",
+    "可视化"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-06T10:06:28Z",
+    "url": "https://github.com/lehhair/dsh-diff-viewer/releases/tag/v0.2.0"
+  },
+  "author": "lehhair",
+  "repo": "https://github.com/lehhair/dsh-diff-viewer",
+  "homepage": null,
+  "license": null,
+  "stars": 27,
+  "forks": 2,
+  "pushedAt": "2026-09-06T10:10:09Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lehhair/dsh-diff-viewer",
+    "commands": [
+      "dsh plugin --profile web add \"github:lehhair/dsh-diff-viewer\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "bill9109/dsh-conversation-share",
+  "slug": "bill9109__dsh-conversation-share",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-conversation-share",
+  "title": "dsh-conversation-share",
+  "summary": "把 DSH 对话中任意一段截图分享成图片，方便保存和转发。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "可视化",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bill9109",
+  "repo": "https://github.com/bill9109/dsh-conversation-share",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-08-26T09:58:24Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:omdsh-dev/dsh-conversation-share",
+    "commands": [
+      "dsh plugin --profile web add github:omdsh-dev/dsh-conversation-share",
+      "dsh plugin --profile web add /path/to/your/dsh-conversation-share",
+      "dsh plugin --profile web update github:omdsh-dev/dsh-conversation-share"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

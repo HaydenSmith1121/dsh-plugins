@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "yizhixiaokong/dsh-simple-restart",
+  "slug": "yizhixiaokong__dsh-simple-restart",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-simple-restart",
+  "title": "dsh-simple-restart",
+  "summary": "一键重启 DSH 服务，省去手动关闭再打开的麻烦，调试更顺手。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "快捷操作",
+    "效率提升",
+    "插件管理",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "yizhixiaokong",
+  "repo": "https://github.com/yizhixiaokong/dsh-simple-restart",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T01:30:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yizhixiaokong/dsh-simple-restart",
+    "commands": [
+      "dsh plugin --profile web add \"github:yizhixiaokong/dsh-simple-restart\"",
+      "git clone https://github.com/yizhixiaokong/dsh-simple-restart.git",
+      "dsh plugin --profile web add \"$PWD\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

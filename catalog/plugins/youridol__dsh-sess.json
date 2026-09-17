@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "youridol/dsh-sess",
+  "slug": "youridol__dsh-sess",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-sess",
+  "title": "dsh-sess",
+  "summary": "在 DSH 网页端管理会话，一键永久删除冷会话并归档整理，让工作区更清爽。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "session-management",
+    "会话管理",
+    "工作区管理",
+    "可视化",
+    "效率提升",
+    "状态监控"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "youridol",
+  "repo": "https://github.com/youridol/dsh-sess",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T05:41:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-sess",
+    "commands": [
+      "dsh plugin --profile web add dsh-sess"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

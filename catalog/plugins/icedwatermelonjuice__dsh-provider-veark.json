@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "IcedWatermelonJuice/dsh-provider-veark",
+  "slug": "icedwatermelonjuice__dsh-provider-veark",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-provider-veark",
+  "title": "dsh-provider-veark",
+  "summary": "把火山方舟 Coding Plan 接进 DeepSeek Harness，支持文本和图片对话，图片走 Files API，粘贴密钥就能用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "视觉理解",
+    "零配置"
+  ],
+  "version": "0.2.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "IcedWatermelonJuice",
+  "repo": "https://github.com/IcedWatermelonJuice/dsh-provider-veark",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-09-11T03:02:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@icedcola/dsh-provider-veark",
+    "commands": [
+      "dsh plugin --profile web approve-builds protobufjs",
+      "dsh plugin --profile web add @icedcola/dsh-provider-veark",
+      "dsh plugin --profile web add github:IcedWatermelonJuice/dsh-provider-veark"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

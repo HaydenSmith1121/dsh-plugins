@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "Anionex/dsh-pinned-sessions",
+  "slug": "anionex__dsh-pinned-sessions",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-pinned-sessions",
+  "title": "dsh-pinned-sessions",
+  "summary": "在 DeepSeek Harness 侧边栏置顶重要会话，快速访问常用对话，提升工作流效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "工作区管理",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-04T11:35:41Z",
+    "url": "https://github.com/Anionex/dsh-pinned-sessions/releases/tag/v0.1.1"
+  },
+  "author": "Anionex",
+  "repo": "https://github.com/Anionex/dsh-pinned-sessions",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-04T11:42:28Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Anionex/dsh-pinned-sessions",
+    "commands": [
+      "dsh plugin add @anionex/dsh-pinned-sessions --profile web",
+      "dsh plugin add @anionex/dsh-pinned-sessions --profile desktop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "aceice01/dsh-whale-pet",
+  "slug": "aceice01__dsh-whale-pet",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-whale-pet",
+  "title": "dsh-whale-pet",
+  "summary": "把 DeepSeek 鲸鱼娘养在桌面上，蓝发女仆会撒娇、语音互动，还能提醒你任务完成。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dsh-plugins",
+    "娱乐互动",
+    "视觉理解",
+    "消息通知"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "aceice01",
+  "repo": "https://github.com/aceice01/dsh-whale-pet",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 10,
+  "forks": 1,
+  "pushedAt": "2026-08-15T07:36:32Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aceice01/dsh-whale-pet",
+    "commands": [
+      "dsh plugin --profile web add github:aceice01/dsh-whale-pet"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

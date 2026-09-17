@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "9931666/dsh-plugin-roundtable",
+  "slug": "9931666__dsh-plugin-roundtable",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-roundtable",
+  "title": "dsh-plugin-roundtable",
+  "summary": "把 DeepSeek Harness 会话升级成可视化圆桌会议，让多个专家 AI 与你一起讨论、辩论并最终拍板。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "roundtable",
+    "多Agent协作",
+    "会话管理",
+    "可视化",
+    "桌宠",
+    "工作流增强"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-26T13:15:20Z",
+    "url": "https://github.com/9931666/dsh-plugin-roundtable/releases/tag/v0.2.0"
+  },
+  "author": "9931666",
+  "repo": "https://github.com/9931666/dsh-plugin-roundtable",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-13T08:14:29Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@huanlin/dsh-plugin-roundtable",
+    "commands": [
+      "dsh plugin --profile web add @huanlin/dsh-plugin-roundtable",
+      "git clone https://github.com/9931666/dsh-plugin-roundtable",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

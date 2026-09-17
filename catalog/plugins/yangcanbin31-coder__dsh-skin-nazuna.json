@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "yangcanbin31-coder/dsh-skin-nazuna",
+  "slug": "yangcanbin31-coder__dsh-skin-nazuna",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skin-nazuna",
+  "title": "dsh-skin-nazuna",
+  "summary": "为 DeepSeek Harness 网页界面换上《彻夜之歌》七草荠主题，毛玻璃质感，亮暗双主题随系统切换，让聊天界面更有个性。",
+  "tags": [
+    "anime",
+    "deepseek-harness",
+    "dsh",
+    "glassmorphism",
+    "skin",
+    "theme",
+    "webui",
+    "界面美化",
+    "前端增强",
+    "可视化"
+  ],
+  "version": "0.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.0.1",
+    "publishedAt": "2026-09-04T02:04:55Z",
+    "url": "https://github.com/yangcanbin31-coder/dsh-skin-nazuna/releases/tag/v0.0.1"
+  },
+  "author": "yangcanbin31-coder",
+  "repo": "https://github.com/yangcanbin31-coder/dsh-skin-nazuna",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T02:04:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yangcanbin31-coder/dsh-skin-nazuna",
+    "commands": [
+      "git clone https://github.com/yangcanbin31-coder/dsh-skin-nazuna.git",
+      "dsh plugin --profile web add <path-to-dsh-skin-nazuna>",
+      "dsh plugin --profile web add <path-to-nazuna>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

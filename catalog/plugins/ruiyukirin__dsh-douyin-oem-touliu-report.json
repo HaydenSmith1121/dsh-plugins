@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "ruiyukirin/dsh-douyin-oem-touliu-report",
+  "slug": "ruiyukirin__dsh-douyin-oem-touliu-report",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-douyin-oem-touliu-report",
+  "title": "dsh-douyin-oem-touliu-report",
+  "summary": "自动生成抖音本地推OEM投流的日报和周报，帮你省去手动汇总数据的麻烦，快速掌握投放效果。",
+  "tags": [
+    "deepseek-harness",
+    "douyin",
+    "dsh-plugin",
+    "oem",
+    "自动化",
+    "效率提升",
+    "状态监控",
+    "可视化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ruiyukirin",
+  "repo": "https://github.com/ruiyukirin/dsh-douyin-oem-touliu-report",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-29T06:53:44Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-douyin-oem-touliu-report",
+    "commands": [
+      "dsh plugin --profile web add dsh-douyin-oem-touliu-report",
+      "dsh plugin --profile web add github:ruiyukirin/dsh-douyin-oem-touliu-report"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

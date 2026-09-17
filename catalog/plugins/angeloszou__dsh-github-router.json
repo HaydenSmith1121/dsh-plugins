@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "AngelosZou/dsh-github-router",
+  "slug": "angeloszou__dsh-github-router",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-github-router",
+  "title": "dsh-github-router",
+  "summary": "让 DeepSeek Harness 项目直接读取 GitHub 上的 PR、Issue 和文件，无需额外配置。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "安全审计",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.3.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "AngelosZou",
+  "repo": "https://github.com/AngelosZou/dsh-github-router",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-08T15:15:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-github-router",
+    "commands": [
+      "dsh plugin --profile web add dsh-github-router",
+      "dsh plugin --profile web add link:<absolute-path-to-this-repo>",
+      "dsh plugin --profile web add github:<owner>/dsh-github-router"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

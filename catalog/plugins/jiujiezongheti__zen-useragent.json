@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "jiujiezongheti/zen-useragent",
+  "slug": "jiujiezongheti__zen-useragent",
+  "tier": "community",
+  "package": null,
+  "name": "zen-useragent",
+  "title": "zen-useragent",
+  "summary": "让配置好的请求头（比如 User-Agent）真正传到 pi-ai 接口，解决 OpenCode ZEN 免费模型 429 报错。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "工具集成",
+    "模型适配",
+    "桥接插件"
+  ],
+  "version": "1.0.2",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "jiujiezongheti",
+  "repo": "https://github.com/jiujiezongheti/zen-useragent",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 2,
+  "pushedAt": "2026-09-08T04:54:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jiujiezongheti/zen-useragent",
+    "commands": [
+      "npm install -g pnpm",
+      "dsh plugin --profile web add github:jiujiezongheti/zen-useragent",
+      "dsh plugin --profile web add dsh-plugin-zen-useragent"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

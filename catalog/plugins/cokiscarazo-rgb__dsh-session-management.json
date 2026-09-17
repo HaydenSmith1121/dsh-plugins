@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "cokiscarazo-rgb/dsh-session-management",
+  "slug": "cokiscarazo-rgb__dsh-session-management",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-session-management",
+  "title": "dsh-session-management",
+  "summary": "在 DSH 设置面板里集中管理聊天会话，支持归档、取消归档和彻底删除本地记录，补足官方缺失的会话管理能力。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "session-management",
+    "会话管理",
+    "归档清理",
+    "本地记录",
+    "设置面板"
+  ],
+  "version": "1.0.6",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "cokiscarazo-rgb",
+  "repo": "https://github.com/cokiscarazo-rgb/dsh-session-management",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-23T01:51:30Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-session-management",
+    "commands": [
+      "dsh plugin --profile web add dsh-session-management"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

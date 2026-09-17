@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "mjylfz/dsh-skill-mover",
+  "slug": "mjylfz__dsh-skill-mover",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skill-mover",
+  "title": "dsh-skill-mover",
+  "summary": "一键把其他 AI 编程工具的现成技能搬进 DeepSeek Harness，自动去重合并，用错还能随时回滚。",
+  "tags": [
+    "agent-skills",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "migration",
+    "plugin",
+    "skill",
+    "skill-migration",
+    "skills",
+    "插件管理",
+    "开发流程",
+    "效率提升"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.1.0",
+    "publishedAt": "2026-09-13T07:17:28Z",
+    "url": "https://github.com/mjylfz/dsh-skill-mover/releases/tag/v1.1.0"
+  },
+  "author": "mjylfz",
+  "repo": "https://github.com/mjylfz/dsh-skill-mover",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-13T07:17:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mjylfz/dsh-skill-mover",
+    "commands": [
+      "dsh plugin --profile web add github:mjylfz/dsh-skill-mover"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

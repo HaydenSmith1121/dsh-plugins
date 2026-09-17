@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "dclichang2022/dsh-green-meter",
+  "slug": "dclichang2022__dsh-green-meter",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-green-meter",
+  "title": "dsh-green-meter",
+  "summary": "实时统计 DeepSeek Harness 每次调用的能耗与碳排放，帮你算清电费和碳足迹，让 AI 更绿色。",
+  "tags": [
+    "carbon-footprint",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "energy",
+    "green-ai",
+    "monitoring",
+    "sustainability",
+    "能耗监控",
+    "碳排放",
+    "资源优化",
+    "绿色AI"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-09-10T08:16:25Z",
+    "url": "https://github.com/dclichang2022/dsh-green-meter/releases/tag/v0.1.3"
+  },
+  "author": "dclichang2022",
+  "repo": "https://github.com/dclichang2022/dsh-green-meter",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 101,
+  "forks": 0,
+  "pushedAt": "2026-08-17T07:39:50Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dclichang2022/dsh-green-meter",
+    "commands": [
+      "pnpm add dsh-green-meter dsh-client-ui-green-meter"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

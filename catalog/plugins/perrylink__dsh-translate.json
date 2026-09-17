@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "PerryLink/dsh-translate",
+  "slug": "perrylink__dsh-translate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-translate",
+  "title": "dsh-translate",
+  "summary": "一键翻译并修复多厂商参数，让 DeepSeek Harness 跨平台调用更省心。",
+  "tags": [
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "json-repair",
+    "llm-api",
+    "parameter-mapping",
+    "schema-validation",
+    "tooling",
+    "工具集成",
+    "模型适配",
+    "自动化",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.2.10",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.10",
+    "publishedAt": "2026-09-12T02:34:33Z",
+    "url": "https://github.com/PerryLink/dsh-translate/releases/tag/v0.2.10"
+  },
+  "author": "PerryLink",
+  "repo": "https://github.com/PerryLink/dsh-translate",
+  "homepage": "https://www.npmjs.com/package/dsh-translate",
+  "license": "Apache-2.0",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-09-12T09:33:12Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:PerryLink/dsh-translate",
+    "commands": [
+      "dsh plugin --profile web add github:PerryLink/dsh-translate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

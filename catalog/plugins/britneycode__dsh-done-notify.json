@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Britneycode/dsh-done-notify",
+  "slug": "britneycode__dsh-done-notify",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-done-notify",
+  "title": "dsh-done-notify",
+  "summary": "离开页面时，agent 完成任务、等你审批或提问都会弹系统通知，点击一键跳回对应会话，不再错过关键节点。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "notification",
+    "效率提升",
+    "会话管理",
+    "状态监控",
+    "消息通知"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Britneycode",
+  "repo": "https://github.com/Britneycode/dsh-done-notify",
+  "homepage": "https://www.npmjs.com/package/dsh-done-notify",
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-05T13:30:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Britneycode/dsh-done-notify",
+    "commands": [
+      "dsh plugin --profile web add github:Britneycode/dsh-done-notify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

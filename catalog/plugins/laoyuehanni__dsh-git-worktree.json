@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "LaoYueHanNi/dsh-git-worktree",
+  "slug": "laoyuehanni__dsh-git-worktree",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-git-worktree",
+  "title": "dsh-git-worktree",
+  "summary": "在 Web 界面里轻松管理 Git 分支和工作树，当前分支一目了然，切换操作更顺手。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "工作区管理",
+    "效率提升",
+    "命令行工具"
+  ],
+  "version": "0.4.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "LaoYueHanNi",
+  "repo": "https://github.com/LaoYueHanNi/dsh-git-worktree",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-09-14T14:08:51Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@laoyuehanni/dsh-git-worktree",
+    "commands": [
+      "dsh plugin --profile web add @laoyuehanni/dsh-git-worktree",
+      "dsh plugin --profile web add @laoyuehanni/dsh-git-worktree@dsh-alpha"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

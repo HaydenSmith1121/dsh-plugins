@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "oThTJx/dsh-always-apply",
+  "slug": "othtjx__dsh-always-apply",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-always-apply",
+  "title": "dsh-always-apply",
+  "summary": "让标记了 alwaysApply 的技能自动注入每次对话，无需手动加载工具，开箱即用。",
+  "tags": [
+    "dsh-plugin",
+    "零配置",
+    "自动化",
+    "工作流增强",
+    "AI 助手"
+  ],
+  "version": "0.1.0-rc.20",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "oThTJx",
+  "repo": "https://github.com/oThTJx/dsh-always-apply",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-05T01:33:18Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@firefly0621/dsh-always-apply",
+    "commands": [
+      "dsh plugin --profile web add @firefly0621/dsh-always-apply"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "bobleer/dsh-acp-for-bitfun",
+  "slug": "bobleer__dsh-acp-for-bitfun",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-acp-for-bitfun",
+  "title": "dsh-acp-for-bitfun",
+  "summary": "让 BitFun 通过 ACP 协议接入 DeepSeek Harness，实现智能体与外部工具的无缝协作。",
+  "tags": [
+    "bitfun",
+    "dsh",
+    "dsh-plugin",
+    "协议对接"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bobleer",
+  "repo": "https://github.com/bobleer/dsh-acp-for-bitfun",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 10,
+  "forks": 1,
+  "pushedAt": "2026-08-13T13:38:31Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-acp-for-bitfun",
+    "commands": [
+      "dsh plugin --profile web add dsh-acp-for-bitfun",
+      "dsh plugin --profile web add ./dsh-acp-for-bitfun"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

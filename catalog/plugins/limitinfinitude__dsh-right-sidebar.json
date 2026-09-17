@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "Limitinfinitude/DSH-Right-Sidebar",
+  "slug": "limitinfinitude__dsh-right-sidebar",
+  "tier": "community",
+  "package": null,
+  "name": "DSH-Right-Sidebar",
+  "title": "DSH-Right-Sidebar",
+  "summary": "把 Agent 生成的报告、图表、图片和文档固定在对话右侧，随时查看不用翻记录。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "工作区管理",
+    "效率提升",
+    "界面美化"
+  ],
+  "version": "0.3.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.2",
+    "publishedAt": "2026-09-11T18:09:21Z",
+    "url": "https://github.com/Limitinfinitude/DSH-Right-Sidebar/releases/tag/v0.3.2"
+  },
+  "author": "Limitinfinitude",
+  "repo": "https://github.com/Limitinfinitude/DSH-Right-Sidebar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-11T18:29:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "git clone https://github.com/Limitinfinitude/DSH-Right-Sidebar.git",
+      "npm install",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

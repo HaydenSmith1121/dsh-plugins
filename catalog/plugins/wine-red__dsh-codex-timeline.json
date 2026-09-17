@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Wine-Red/dsh-codex-timeline",
+  "slug": "wine-red__dsh-codex-timeline",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-codex-timeline",
+  "title": "dsh-codex-timeline",
+  "summary": "在 DeepSeek Harness 网页中提供 Codex 风格的对话时间线导航，并支持快速搜索历史会话内容。",
+  "tags": [
+    "conversation",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "timeline",
+    "web-ui",
+    "会话管理",
+    "语义检索",
+    "可视化",
+    "状态监控"
+  ],
+  "version": "0.6.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.0",
+    "publishedAt": "2026-09-03T17:47:34Z",
+    "url": "https://github.com/Wine-Red/dsh-codex-timeline/releases/tag/v0.6.0"
+  },
+  "author": "Wine-Red",
+  "repo": "https://github.com/Wine-Red/dsh-codex-timeline",
+  "homepage": "https://www.npmjs.com/package/dsh-codex-timeline",
+  "license": "MIT",
+  "stars": 10,
+  "forks": 0,
+  "pushedAt": "2026-09-03T17:47:24Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Wine-Red/dsh-codex-timeline",
+    "commands": [
+      "dsh plugin --profile web add github:Wine-Red/dsh-codex-timeline"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

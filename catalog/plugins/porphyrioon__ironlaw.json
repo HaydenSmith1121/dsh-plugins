@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "Porphyrioon/ironlaw",
+  "slug": "porphyrioon__ironlaw",
+  "tier": "community",
+  "package": null,
+  "name": "ironlaw",
+  "title": "ironlaw",
+  "summary": "给编码助手加一层交付纪律，用真实工程经验做证据，强制完成与修复代码任务。",
+  "tags": [
+    "coding-agent",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mcp",
+    "证据链",
+    "工作流增强",
+    "自动化",
+    "工具集成"
+  ],
+  "version": "0.1.0-alpha.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Porphyrioon",
+  "repo": "https://github.com/Porphyrioon/ironlaw",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-16T06:34:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@ironlaw/adapter-dsh",
+    "commands": [
+      "npm install --global @deepseek-ai/dsh",
+      "dsh plugin --profile web add @ironlaw/adapter-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

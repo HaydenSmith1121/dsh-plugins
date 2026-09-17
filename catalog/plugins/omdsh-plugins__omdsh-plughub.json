@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "omdsh-plugins/omdsh-plughub",
+  "slug": "omdsh-plugins__omdsh-plughub",
+  "tier": "community",
+  "package": null,
+  "name": "omdsh-plughub",
+  "title": "omdsh-plughub",
+  "summary": "在 DeepSeek Harness 设置里加一个插件市场标签页，能安装、卸载插件，还能直接配置已装插件，省去手动折腾。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "插件管理",
+    "设置面板",
+    "配置中心"
+  ],
+  "version": "0.2.7",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "omdsh-plugins",
+  "repo": "https://github.com/omdsh-plugins/omdsh-plughub",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-03T15:41:01Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@omdsh-plugins/omdsh-plughub",
+    "commands": [
+      "dsh plugin --profile web add @omdsh-plugins/omdsh-plughub",
+      "dsh plugin --profile web add github:omdsh-plugins/omdsh-plughub",
+      "dsh plugin --profile web add /path/to/omdsh-plughub"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

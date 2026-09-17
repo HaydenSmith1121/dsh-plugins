@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "crazy-L118/dsh-personalization",
+  "slug": "crazy-l118__dsh-personalization",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-personalization",
+  "title": "dsh-personalization",
+  "summary": "在 dsh 设置里教 AI 记住你的身份和偏好，一次配置，所有任务和回复都自动生效。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "personalization",
+    "会话管理",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "crazy-L118",
+  "repo": "https://github.com/crazy-L118/dsh-personalization",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-02T12:56:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-personalization@1.0.0",
+    "commands": [
+      "dsh plugin --profile web add dsh-personalization@1.0.0"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

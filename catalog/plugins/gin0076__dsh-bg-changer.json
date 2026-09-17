@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "GIN0076/dsh-bg-changer",
+  "slug": "gin0076__dsh-bg-changer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-bg-changer",
+  "title": "dsh-bg-changer",
+  "summary": "给 DSH 换背景图，能裁剪、调透明度和模糊，还能让界面半透明透出壁纸。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "wallpaper",
+    "主题",
+    "界面美化",
+    "设置面板",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "GIN0076",
+  "repo": "https://github.com/GIN0076/dsh-bg-changer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-15T16:00:52Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GIN0076/dsh-bg-changer",
+    "commands": [
+      "dsh plugin --profile web add github:GIN0076/dsh-bg-changer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

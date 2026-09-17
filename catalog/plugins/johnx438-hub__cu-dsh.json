@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "johnx438-hub/cu-dsh",
+  "slug": "johnx438-hub__cu-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "cu-dsh",
+  "title": "cu-dsh",
+  "summary": "把窗口钉在屏幕上，读取0-1000网格地图后自动执行操作，支持命令行和MCP两种使用方式。",
+  "tags": [
+    "dsh-plugin",
+    "效率提升",
+    "命令行工具",
+    "AI 助手",
+    "模型配置",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-29T06:08:51Z",
+    "url": "https://github.com/johnx438-hub/cu-dsh/releases/tag/v0.1.0"
+  },
+  "author": "johnx438-hub",
+  "repo": "https://github.com/johnx438-hub/cu-dsh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-30T15:57:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:johnx438-hub/cu-dsh",
+    "commands": [
+      "dsh plugin --profile web add github:johnx438-hub/cu-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "ericleoo/dsh-mobile",
+  "slug": "ericleoo__dsh-mobile",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-mobile",
+  "title": "dsh-mobile",
+  "summary": "让 DeepSeek Harness 网页界面在手机上更好用，聊天全宽显示、侧栏变抽屉，操作顺手不误触。",
+  "tags": [
+    "dsh-plugin",
+    "前端增强",
+    "可视化",
+    "主题",
+    "桌宠"
+  ],
+  "version": "0.1.0-rc.11",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ericleoo",
+  "repo": "https://github.com/ericleoo/dsh-mobile",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T19:00:50Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ericleoo/dsh-mobile",
+    "commands": [
+      "dsh plugin --profile web add github:ericleoo/dsh-mobile"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

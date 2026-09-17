@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "magian1127/deepseek-harness-zh_pro",
+  "slug": "magian1127__deepseek-harness-zh_pro",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-zh_pro",
+  "title": "deepseek-harness-zh_pro",
+  "summary": "给 DeepSeek Harness 做全面增强，优化界面和布局，还能注入提示词，让使用更顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "主题",
+    "效率提升",
+    "提示词注入",
+    "插件管理"
+  ],
+  "version": "0.9.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "magian1127",
+  "repo": "https://github.com/magian1127/deepseek-harness-zh_pro",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 28,
+  "forks": 0,
+  "pushedAt": "2026-09-13T06:49:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "deepseek-harness-zh_pro",
+    "commands": [
+      "dsh plugin --profile web add deepseek-harness-zh_pro",
+      "dsh plugin --profile open-design add deepseek-harness-zh_pro",
+      "dsh plugin --profile headless add deepseek-harness-zh_pro"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

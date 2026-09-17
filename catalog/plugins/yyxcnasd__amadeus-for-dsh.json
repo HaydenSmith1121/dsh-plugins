@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "yyxcnasd/amadeus-for-dsh",
+  "slug": "yyxcnasd__amadeus-for-dsh",
+  "tier": "community",
+  "package": null,
+  "name": "amadeus-for-dsh",
+  "title": "amadeus-for-dsh",
+  "summary": "在 DeepSeek Harness 里还原《命运石之门 0》的 Amadeus，用 Live2D 立绘陪你聊天，带日语语音、长期记忆，还能主动来电。",
+  "tags": [
+    "ai",
+    "ai-agents",
+    "dsh",
+    "dsh-plugin",
+    "makise-kurisu",
+    "steins-gate",
+    "AI 助手",
+    "会话管理",
+    "交互宠物",
+    "主题"
+  ],
+  "version": "2.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v2.3.0",
+    "publishedAt": "2026-09-08T15:20:27Z",
+    "url": "https://github.com/yyxcnasd/amadeus-for-dsh/releases/tag/v2.3.0"
+  },
+  "author": "yyxcnasd",
+  "repo": "https://github.com/yyxcnasd/amadeus-for-dsh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 29,
+  "forks": 2,
+  "pushedAt": "2026-09-08T15:20:04Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yyxcnasd/amadeus-for-dsh",
+    "commands": [
+      "dsh plugin --profile web add github:yyxcnasd/amadeus-for-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

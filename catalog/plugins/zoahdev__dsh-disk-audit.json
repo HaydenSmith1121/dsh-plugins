@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "zoahdev/dsh-disk-audit",
+  "slug": "zoahdev__dsh-disk-audit",
+  "tier": "community",
+  "package": null,
+  "name": "zoahdev/dsh-disk-audit",
+  "title": "zoahdev/dsh-disk-audit",
+  "summary": "扫描 dsh 数据目录占用，揪出超大文件和会话日志，给出清理建议。",
+  "tags": [
+    "cleanup",
+    "deepseek-harness",
+    "disk-usage",
+    "dsh-plugin",
+    "session-logs",
+    "storage",
+    "资源优化",
+    "状态监控",
+    "文件管理",
+    "命令行工具",
+    "数据分析"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-18T15:03:02Z",
+    "url": "https://github.com/zoahdev/dsh-disk-audit/releases/tag/v0.1.0"
+  },
+  "author": "zoahdev",
+  "repo": "https://github.com/zoahdev/dsh-disk-audit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-18T22:31:24Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-disk-audit",
+    "commands": [
+      "dsh plugin add dsh-disk-audit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

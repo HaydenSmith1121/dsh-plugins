@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "badai147/dsh-ocgo-usage",
+  "slug": "badai147__dsh-ocgo-usage",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ocgo-usage",
+  "title": "dsh-ocgo-usage",
+  "summary": "在 DeepSeek Harness 侧边栏左下角实时显示 OpenCode Go 用量，方便随时查看。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "前端增强",
+    "零配置"
+  ],
+  "version": "0.2.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "badai147",
+  "repo": "https://github.com/badai147/dsh-ocgo-usage",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-08T13:20:35Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@badai147/dsh-ocgo-usage",
+    "commands": [
+      "dsh plugin --profile web add @badai147/dsh-ocgo-usage",
+      "dsh plugin --profile web add github:badai147/dsh-ocgo-usage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

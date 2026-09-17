@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "Developerprit/dsh-new-ui",
+  "slug": "developerprit__dsh-new-ui",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-new-ui",
+  "title": "dsh-new-ui",
+  "summary": "给 DSH 换上科技蓝液态玻璃新皮肤，自动拦截冲突插件，界面颜值与流畅度大幅提升。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "主题",
+    "趣味交互",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-20T11:34:55Z",
+    "url": "https://github.com/Developerprit/dsh-new-ui/releases/tag/v0.1.0"
+  },
+  "author": "Developerprit",
+  "repo": "https://github.com/Developerprit/dsh-new-ui",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-20T11:34:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-new-ui",
+    "commands": [
+      "dsh plugin --profile web add dsh-new-ui",
+      "git clone https://github.com/123654qw/dsh-new-ui.git",
+      "dsh plugin --profile web add link:$(pwd)"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

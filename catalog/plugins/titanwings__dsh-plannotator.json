@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "titanwings/dsh-plannotator",
+  "slug": "titanwings__dsh-plannotator",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plannotator",
+  "title": "dsh-plannotator",
+  "summary": "在编码前逐条批注计划原文，把结构化反馈直接送回 Agent，让修改更精准。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plan-review",
+    "plannotator",
+    "计划审查",
+    "批注反馈"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-13T13:31:14Z",
+    "url": "https://github.com/titanwings/dsh-plannotator/releases/tag/v0.1.0"
+  },
+  "author": "titanwings",
+  "repo": "https://github.com/titanwings/dsh-plannotator",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 11,
+  "forks": 1,
+  "pushedAt": "2026-08-25T07:50:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:titanwings/dsh-plannotator",
+    "commands": [
+      "dsh plugin --profile web add github:titanwings/dsh-plannotator"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

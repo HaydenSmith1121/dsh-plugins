@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "zengrz/dsh-matrix-theme",
+  "slug": "zengrz__dsh-matrix-theme",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-matrix-theme",
+  "title": "dsh-matrix-theme",
+  "summary": "给 DeepSeek Harness 网页界面换上黑客帝国主题，绿字黑底加数字雨特效，还能在设置里一键切换。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "matrix-theme",
+    "界面美化",
+    "零配置",
+    "娱乐互动"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "zengrz",
+  "repo": "https://github.com/zengrz/dsh-matrix-theme",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-21T08:07:13Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zengrz/dsh-matrix-theme",
+    "commands": [
+      "dsh plugin --profile <name> add github:zengrz/dsh-matrix-theme"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

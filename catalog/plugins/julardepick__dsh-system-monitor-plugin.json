@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "JularDepick/dsh-system-monitor-plugin",
+  "slug": "julardepick__dsh-system-monitor-plugin",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-system-monitor-plugin",
+  "title": "dsh-system-monitor-plugin",
+  "summary": "实时监控 dsh 系统进程的资源占用情况，并用图表直观展示结果，帮你快速掌握运行状态。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "system-monitor",
+    "状态监控",
+    "效率提升",
+    "命令行工具",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-10T13:32:00Z",
+    "url": "https://github.com/JularDepick/dsh-system-monitor-plugin/releases/tag/v0.1.0"
+  },
+  "author": "JularDepick",
+  "repo": "https://github.com/JularDepick/dsh-system-monitor-plugin",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T13:37:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JularDepick/dsh-system-monitor-plugin",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-system-monitor-plugin",
+      "dsh plugin --profile <name> add dsh-system-monitor-plugin-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

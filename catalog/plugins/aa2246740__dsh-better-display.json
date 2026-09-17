@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "aa2246740/dsh-better-display",
+  "slug": "aa2246740__dsh-better-display",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-better-display",
+  "title": "dsh-better-display",
+  "summary": "给 DeepSeek Harness 换个更清爽的阅读界面，过程细节和思考实时可见，最终回答干净好读。",
+  "tags": [
+    "dsh-plugin",
+    "主题",
+    "可视化",
+    "模型轨迹",
+    "前端增强"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-16T08:17:58Z",
+    "url": "https://github.com/aa2246740/dsh-better-display/releases/tag/v0.1.1"
+  },
+  "author": "aa2246740",
+  "repo": "https://github.com/aa2246740/dsh-better-display",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 47,
+  "forks": 6,
+  "pushedAt": "2026-09-16T18:36:22Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:aa2246740/dsh-better-display",
+    "commands": [
+      "dsh plugin --profile web add github:aa2246740/dsh-better-display",
+      "dsh plugin --profile web add ./dsh-better-display",
+      "dsh plugin --profile web add ./dsh-better-display-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

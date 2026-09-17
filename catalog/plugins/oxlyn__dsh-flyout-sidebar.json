@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "oxlyn/dsh-flyout-sidebar",
+  "slug": "oxlyn__dsh-flyout-sidebar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-flyout-sidebar",
+  "title": "dsh-flyout-sidebar",
+  "summary": "为 DeepSeek Harness 添加可弹出的侧边栏，方便快速查看和操作，提升使用效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "前端增强",
+    "效率提升",
+    "可视化",
+    "会话管理"
+  ],
+  "version": "0.1.9",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "oxlyn",
+  "repo": "https://github.com/oxlyn/dsh-flyout-sidebar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T14:05:43Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-flyout-sidebar",
+    "commands": [
+      "dsh plugin --profile web add dsh-flyout-sidebar",
+      "dsh plugin --profile web add github:oxlyn/dsh-flyout-sidebar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

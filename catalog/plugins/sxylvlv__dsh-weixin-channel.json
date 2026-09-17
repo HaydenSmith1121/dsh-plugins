@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "sxylvlv/dsh-weixin-channel",
+  "slug": "sxylvlv__dsh-weixin-channel",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-weixin-channel",
+  "title": "dsh-weixin-channel",
+  "summary": "把微信变成 DSH 入口，微信里发消息就能开聊，图片文件语音视频双向互通。",
+  "tags": [
+    "bundle",
+    "deepseek-harness",
+    "dsh-plugin",
+    "ilink",
+    "wechat",
+    "weixin",
+    "桥接插件",
+    "工具集成",
+    "消息通知",
+    "文件管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-14T03:16:57Z",
+    "url": "https://github.com/sxylvlv/dsh-weixin-channel/releases/tag/v0.2.0"
+  },
+  "author": "sxylvlv",
+  "repo": "https://github.com/sxylvlv/dsh-weixin-channel",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T03:16:55Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-weixin-channel",
+    "commands": [
+      "dsh plugin --profile web add dsh-weixin-channel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "my-dsh-plugin/session-archive-manager",
+  "slug": "my-dsh-plugin__session-archive-manager",
+  "tier": "community",
+  "package": null,
+  "name": "session-archive-manager",
+  "title": "session-archive-manager",
+  "summary": "在设置里管理归档会话，支持取消归档、单个或批量删除，清理更顺手。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "会话管理",
+    "归档清理",
+    "快捷操作",
+    "设置集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "my-dsh-plugin",
+  "repo": "https://github.com/my-dsh-plugin/session-archive-manager",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-14T04:06:22Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:my-dsh-plugin/session-archive-manager",
+    "commands": [
+      "git clone https://github.com/my-dsh-plugin/session-archive-manager.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

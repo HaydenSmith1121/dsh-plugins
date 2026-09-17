@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "lhwu1/dsh-withSsh",
+  "slug": "lhwu1__dsh-withssh",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-withSsh",
+  "title": "dsh-withSsh",
+  "summary": "在 AI 对话里直连 SSH 服务器，人和 AI 都能执行命令，每步操作和日志都留痕可查。",
+  "tags": [
+    "dsh-bundle",
+    "dsh-plugin",
+    "dsh-plugins",
+    "命令行工具",
+    "可视化",
+    "数据可审计",
+    "AI 助手",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lhwu1",
+  "repo": "https://github.com/lhwu1/dsh-withSsh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-08-21T04:39:42Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lhwu1/dsh-withSsh",
+    "commands": [
+      "dsh plugin --profile web add github:lhwu1/dsh-withSsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

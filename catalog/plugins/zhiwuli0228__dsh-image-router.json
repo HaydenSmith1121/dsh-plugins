@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "zhiwuli0228/dsh-image-router",
+  "slug": "zhiwuli0228__dsh-image-router",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-image-router",
+  "title": "dsh-image-router",
+  "summary": "让 DSH 会话里的图片交给视觉模型解读，随时调用 describe_image 工具，不用切换当前模型。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "image-router",
+    "vision",
+    "视觉理解",
+    "图片问答",
+    "工具集成",
+    "模型适配",
+    "模型配置"
+  ],
+  "version": "0.4.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.4",
+    "publishedAt": "2026-09-12T17:53:45Z",
+    "url": "https://github.com/zhiwuli0228/dsh-image-router/releases/tag/v0.4.4"
+  },
+  "author": "zhiwuli0228",
+  "repo": "https://github.com/zhiwuli0228/dsh-image-router",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-12T17:57:59Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhiwuli0228/dsh-image-router",
+    "commands": [
+      "dsh plugin --profile web add dsh-image-router && dsh web"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

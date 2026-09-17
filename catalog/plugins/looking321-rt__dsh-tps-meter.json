@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "looking321-rt/dsh-tps-meter",
+  "slug": "looking321-rt__dsh-tps-meter",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-tps-meter",
+  "title": "dsh-tps-meter",
+  "summary": "在 DSH 客户端上挂个悬浮窗，实时显示会话的 tok/s 输出速度，随时掌握生成快慢。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "throughput",
+    "tok-s",
+    "tokens-per-second",
+    "usage-meter",
+    "widget",
+    "状态监控",
+    "可视化",
+    "效率提升",
+    "自动化"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-10T15:32:00Z",
+    "url": "https://github.com/looking321-rt/dsh-tps-meter/releases/tag/v0.1.2"
+  },
+  "author": "looking321-rt",
+  "repo": "https://github.com/looking321-rt/dsh-tps-meter",
+  "homepage": "https://www.npmjs.com/package/dsh-tps-meter",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T04:30:24Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:looking321-rt/dsh-tps-meter",
+    "commands": [
+      "dsh plugin --profile web add github:looking321-rt/dsh-tps-meter"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

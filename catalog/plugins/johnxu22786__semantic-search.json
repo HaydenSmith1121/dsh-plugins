@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "JohnXu22786/semantic-search",
+  "slug": "johnxu22786__semantic-search",
+  "tier": "community",
+  "package": null,
+  "name": "semantic-search",
+  "title": "semantic-search",
+  "summary": "本地代码语义搜索工具，支持智能索引与混合检索，帮你快速精准定位相关代码片段，大幅提升开发效率。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "工作流增强",
+    "效率提升",
+    "模型配置",
+    "文件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "JohnXu22786",
+  "repo": "https://github.com/JohnXu22786/semantic-search",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 2,
+  "pushedAt": "2026-09-12T15:13:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JohnXu22786/semantic-search",
+    "commands": [
+      "npm install -g dsh-semantic-search",
+      "dsh plugin --profile demo add github:JohnXu22786/semantic-search",
+      "dsh plugin --profile demo add /path/to/semantic-search"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

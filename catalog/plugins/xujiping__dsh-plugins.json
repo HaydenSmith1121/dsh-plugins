@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "xujiping/dsh-plugins",
+  "slug": "xujiping__dsh-plugins",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugins",
+  "title": "dsh-plugins",
+  "summary": "把作者自研的 DSH 插件打包成一个仓库，装一次就能拿到记忆、智能体驱动等一堆好用的插件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-memory",
+    "dsh-plugin",
+    "plugins",
+    "插件管理",
+    "集中仓库",
+    "状态持久化",
+    "多Agent协作",
+    "效率提升"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "xujiping",
+  "repo": "https://github.com/xujiping/dsh-plugins",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T11:09:07Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xujiping/dsh-plugins",
+    "commands": [
+      "dsh plugin --profile web add link:~/AiProjects/dsh-plugins/packages/dsh-agent-driver"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

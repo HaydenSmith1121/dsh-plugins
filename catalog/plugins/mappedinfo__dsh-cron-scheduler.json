@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Mappedinfo/dsh-cron-scheduler",
+  "slug": "mappedinfo__dsh-cron-scheduler",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-cron-scheduler",
+  "title": "dsh-cron-scheduler",
+  "summary": "把定时任务写成 Cron 表达式，交给系统 crontab 在后台跑，关掉网页也照常执行，Web 端管规则看结果。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "命令行工具",
+    "状态监控",
+    "工作流增强",
+    "插件管理"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Mappedinfo",
+  "repo": "https://github.com/Mappedinfo/dsh-cron-scheduler",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T08:30:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@mappedinfo/dsh-cron-scheduler",
+    "commands": [
+      "dsh plugin --profile web add @mappedinfo/dsh-cron-scheduler",
+      "dsh plugin --profile web add github:Mappedinfo/dsh-cron-scheduler",
+      "git clone https://github.com/Mappedinfo/dsh-cron-scheduler.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

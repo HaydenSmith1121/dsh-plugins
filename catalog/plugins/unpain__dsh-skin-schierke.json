@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "unpain/dsh-skin-schierke",
+  "slug": "unpain__dsh-skin-schierke",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-skin-schierke",
+  "title": "dsh-skin-schierke",
+  "summary": "把 DSH 网页界面变成一册史尔基灵界田野志，侧栏、消息、代码都化作页边批注与墨块，沉浸式魔法书体验。",
+  "tags": [
+    "anime",
+    "deepseek-harness",
+    "dsh",
+    "schierke",
+    "skin",
+    "界面皮肤",
+    "主题",
+    "魔法书风格",
+    "沉浸式体验"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-08-17T18:09:59Z",
+    "url": "https://github.com/unpain/dsh-skin-schierke/releases/tag/v0.2.0"
+  },
+  "author": "unpain",
+  "repo": "https://github.com/unpain/dsh-skin-schierke",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-17T18:09:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:unpain/dsh-skin-schierke",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/unpain/dsh-skin-schierke.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

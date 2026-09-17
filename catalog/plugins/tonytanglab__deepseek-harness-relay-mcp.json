@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "tonytanglab/deepseek-harness-relay-mcp",
+  "slug": "tonytanglab__deepseek-harness-relay-mcp",
+  "tier": "community",
+  "package": null,
+  "name": "deepseek-harness-relay-mcp",
+  "title": "deepseek-harness-relay-mcp",
+  "summary": "把耗时任务从任意 MCP 智能体交给 DeepSeek Harness 执行，并实时监控直到完成。",
+  "tags": [
+    "ai-agents",
+    "codex",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mcp",
+    "model-context-protocol",
+    "插件管理",
+    "多Agent协作",
+    "自动化",
+    "安全审计",
+    "AI 助手"
+  ],
+  "version": "0.2.17",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.17",
+    "publishedAt": "2026-09-14T06:30:18Z",
+    "url": "https://github.com/tonytanglab/deepseek-harness-relay-mcp/releases/tag/v0.2.17"
+  },
+  "author": "tonytanglab",
+  "repo": "https://github.com/tonytanglab/deepseek-harness-relay-mcp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 1,
+  "pushedAt": "2026-09-14T06:28:57Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tonytanglab/deepseek-harness-relay-mcp",
+    "commands": [
+      "dsh plugin --profile web add github:tonytanglab/deepseek-harness-relay-mcp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

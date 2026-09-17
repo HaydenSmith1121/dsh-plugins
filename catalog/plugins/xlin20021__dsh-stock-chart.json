@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "xlin20021/dsh-stock-chart",
+  "slug": "xlin20021__dsh-stock-chart",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-stock-chart",
+  "title": "dsh-stock-chart",
+  "summary": "内置股票K线图与技术指标分析，支持绘制标注，数据本地持久化，图表可复现。",
+  "tags": [
+    "dsh-plugin",
+    "tool",
+    "可视化",
+    "AI 助手",
+    "零配置",
+    "语义检索"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-29T04:59:41Z",
+    "url": "https://github.com/xlin20021/dsh-stock-chart/releases/tag/v0.1.0"
+  },
+  "author": "xlin20021",
+  "repo": "https://github.com/xlin20021/dsh-stock-chart",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-29T12:33:33Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xlin20021/dsh-stock-chart",
+    "commands": [
+      "dsh plugin --profile web add github:xlin20021/dsh-stock-chart"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

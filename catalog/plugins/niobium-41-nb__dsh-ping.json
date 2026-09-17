@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Niobium-41-nb/dsh-ping",
+  "slug": "niobium-41-nb__dsh-ping",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-ping",
+  "title": "dsh-ping",
+  "summary": "任务跑完、出错或等你确认时，用 Windows 弹窗、控制台提示和 webhook 及时提醒你。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "消息通知",
+    "状态监控",
+    "自动化",
+    "工具集成"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "Niobium-41-nb",
+  "repo": "https://github.com/Niobium-41-nb/dsh-ping",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-14T11:22:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Niobium-41-nb/dsh-ping",
+    "commands": [
+      "dsh plugin --profile web add github:Niobium-41-nb/dsh-ping"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

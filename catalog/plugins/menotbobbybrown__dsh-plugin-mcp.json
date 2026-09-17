@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "menotbobbybrown/dsh-plugin-mcp",
+  "slug": "menotbobbybrown__dsh-plugin-mcp",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-mcp",
+  "title": "dsh-plugin-mcp",
+  "summary": "将MCP工具接入DeepSeek Harness，即插即用，让模型轻松调用外部能力和数据。",
+  "tags": [
+    "ai-agents",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mcp",
+    "model-context-protocol",
+    "零配置",
+    "插件管理",
+    "模型配置",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-25T19:51:58Z",
+    "url": "https://github.com/menotbobbybrown/dsh-plugin-mcp/releases/tag/v1.0.0"
+  },
+  "author": "menotbobbybrown",
+  "repo": "https://github.com/menotbobbybrown/dsh-plugin-mcp",
+  "homepage": "https://menotbobbybrown.github.io/dsh-plugin-mcp/",
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-08T19:20:02Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:menotbobbybrown/dsh-plugin-mcp",
+    "commands": [
+      "git clone https://github.com/menotbobbybrown/dsh-plugin-mcp.git",
+      "dsh plugin --profile web add \"github:menotbobbybrown/dsh-plugin-mcp\"",
+      "dsh plugin --profile web add dsh-plugin-mcp"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

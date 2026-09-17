@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "dsh-pulse/dsh-hermes-bridge",
+  "slug": "dsh-pulse__dsh-hermes-bridge",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-hermes-bridge",
+  "title": "dsh-hermes-bridge",
+  "summary": "将微信与 DSH 智能体双向桥接，支持微信消息触发智能体，并将智能体结果推送到微信，实现零 LLM 出站推送。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "hermes-agent",
+    "wechat",
+    "消息通知",
+    "自动化",
+    "AI 助手",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "dsh-pulse",
+  "repo": "https://github.com/dsh-pulse/dsh-hermes-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-24T13:38:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@dsh-pulse/dsh-hermes-bridge",
+    "commands": [
+      "dsh plugin --profile web add @dsh-pulse/dsh-hermes-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

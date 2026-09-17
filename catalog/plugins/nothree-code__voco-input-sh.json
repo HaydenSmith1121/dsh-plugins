@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "Nothree-code/voco-input-sh",
+  "slug": "nothree-code__voco-input-sh",
+  "tier": "community",
+  "package": null,
+  "name": "voco-input-sh",
+  "title": "voco-input-sh",
+  "summary": "在 dsh 聊天输入框旁加个麦克风按钮，用本地 VocoType 离线识别语音，识别结果自动填进输入框。",
+  "tags": [
+    "asr",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "harness",
+    "plugin",
+    "speech-to-text",
+    "vocotype",
+    "voice-input",
+    "视觉理解",
+    "工具集成",
+    "效率提升",
+    "前端增强",
+    "零配置"
+  ],
+  "version": "0.2.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.2",
+    "publishedAt": "2026-09-13T13:40:50Z",
+    "url": "https://github.com/Nothree-code/voco-input-sh/releases/tag/v0.2.2"
+  },
+  "author": "Nothree-code",
+  "repo": "https://github.com/Nothree-code/voco-input-sh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-13T13:40:37Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Nothree-code/voco-input-sh",
+    "commands": [
+      "dsh plugin --profile web add github:Nothree-code/voco-input-sh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

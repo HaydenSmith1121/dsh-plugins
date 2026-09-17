@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "nikoart-liu/dsh-open-in-x",
+  "slug": "nikoart-liu__dsh-open-in-x",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-open-in-x",
+  "title": "dsh-open-in-x",
+  "summary": "在 DeepSeek Harness 网页里，一键把当前会话的工作目录用本机文件管理器、终端或编辑器打开，方便直接操作文件。",
+  "tags": [
+    "ai",
+    "dsh",
+    "dsh-plugin",
+    "工作区管理",
+    "工作流增强",
+    "模型配置",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-28T08:02:07Z",
+    "url": "https://github.com/nikoart-liu/dsh-open-in-x/releases/tag/v0.1.1"
+  },
+  "author": "nikoart-liu",
+  "repo": "https://github.com/nikoart-liu/dsh-open-in-x",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-08-28T07:51:00Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:nikoart-liu/dsh-open-in-x",
+    "commands": [
+      "dsh plugin --profile web add github:nikoart-liu/dsh-open-in-x"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

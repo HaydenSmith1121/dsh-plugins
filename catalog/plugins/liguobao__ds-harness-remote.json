@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "liguobao/ds-harness-remote",
+  "slug": "liguobao__ds-harness-remote",
+  "tier": "community",
+  "package": null,
+  "name": "ds-harness-remote",
+  "title": "ds-harness-remote",
+  "summary": "通过安全加密的P2P网络，让你从手机、电脑或网页随时远程操控你的Harness实例。",
+  "tags": [
+    "deepseek",
+    "dsh-plugin",
+    "安全连接",
+    "安全审查",
+    "多端支持",
+    "状态监控"
+  ],
+  "version": "0.4.14",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.4.14",
+    "publishedAt": "2026-09-16T15:13:48Z",
+    "url": "https://github.com/liguobao/ds-harness-remote/releases/tag/v0.4.14"
+  },
+  "author": "liguobao",
+  "repo": "https://github.com/liguobao/ds-harness-remote",
+  "homepage": "https://dsh.r2049.cn/",
+  "license": null,
+  "stars": 199,
+  "forks": 19,
+  "pushedAt": "2026-09-16T16:49:11Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "ds-harness-remote@0.4.14",
+    "commands": [
+      "dsh plugin --profile web add ds-harness-remote@0.4.14",
+      "dsh plugin --profile dsh-tui add ds-harness-remote@0.4.14"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

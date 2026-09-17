@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "therain2020/dsh-obsidian-sync",
+  "slug": "therain2020__dsh-obsidian-sync",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-obsidian-sync",
+  "title": "dsh-obsidian-sync",
+  "summary": "让 DeepSeek Harness 智能体读写本地 Obsidian 笔记，支持 Markdown，并防止路径穿越攻击。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "obsidian",
+    "AI 助手",
+    "工作区管理",
+    "安全审计",
+    "效率提升"
+  ],
+  "version": "0.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "therain2020",
+  "repo": "https://github.com/therain2020/dsh-obsidian-sync",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-08-21T14:31:40Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-bundle-obsidian-sync",
+    "commands": [
+      "dsh plugin --profile web add dsh-bundle-obsidian-sync",
+      "dsh plugin --profile web add ./dsh-bundle-obsidian-sync-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

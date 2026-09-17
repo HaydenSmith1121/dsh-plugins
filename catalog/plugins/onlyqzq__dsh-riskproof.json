@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "onlyqzq/dsh-riskproof",
+  "slug": "onlyqzq__dsh-riskproof",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-riskproof",
+  "title": "dsh-riskproof",
+  "summary": "给高风险AI工具调用加一道审批关卡，追踪数据来源，拦截危险操作，防止敏感副作用。",
+  "tags": [
+    "agent-security",
+    "dsh-plugin",
+    "provenance",
+    "tool-security",
+    "安全审计",
+    "AI 助手",
+    "状态监控",
+    "自动化"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-10T12:07:09Z",
+    "url": "https://github.com/onlyqzq/dsh-riskproof/releases/tag/v0.3.0"
+  },
+  "author": "onlyqzq",
+  "repo": "https://github.com/onlyqzq/dsh-riskproof",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-09-10T12:39:16Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:onlyqzq/dsh-riskproof",
+    "commands": [
+      "dsh plugin --profile web add github:onlyqzq/dsh-riskproof"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

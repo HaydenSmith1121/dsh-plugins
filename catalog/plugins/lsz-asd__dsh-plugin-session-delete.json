@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "lsz-asd/dsh-plugin-session-delete",
+  "slug": "lsz-asd__dsh-plugin-session-delete",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-session-delete",
+  "title": "dsh-plugin-session-delete",
+  "summary": "在 DeepSeek Harness 界面里安全彻底地删除会话，先停掉运行中的智能体再确认删除。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "快捷操作",
+    "安全审计",
+    "前端增强"
+  ],
+  "version": "0.3.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "lsz-asd",
+  "repo": "https://github.com/lsz-asd/dsh-plugin-session-delete",
+  "homepage": null,
+  "license": null,
+  "stars": 33,
+  "forks": 4,
+  "pushedAt": "2026-08-14T19:12:06Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lsz-asd/dsh-plugin-session-delete",
+    "commands": [
+      "dsh plugin --profile <profile> add file:C:/path/to/dsh-plugin-session-delete"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

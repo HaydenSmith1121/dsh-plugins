@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "limuyang2/agent-team",
+  "slug": "limuyang2__agent-team",
+  "tier": "community",
+  "package": null,
+  "name": "agent-team",
+  "title": "agent-team",
+  "summary": "让多个独立智能体带着各自的模型、技能和工具，在共享工作区里协作完成任务。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-plugins",
+    "多Agent协作",
+    "插件管理",
+    "工作区管理",
+    "任务编排"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "limuyang2",
+  "repo": "https://github.com/limuyang2/agent-team",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 35,
+  "forks": 4,
+  "pushedAt": "2026-08-26T06:43:32Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:limuyang2/agent-team",
+    "commands": [
+      "dsh plugin add --save-exact @limuyang2/dsh-agent-team@0.1.4"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

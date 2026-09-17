@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "tvrpdfe/dsh-chat-manager",
+  "slug": "tvrpdfe__dsh-chat-manager",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-chat-manager",
+  "title": "dsh-chat-manager",
+  "summary": "把 DSH 侧边栏拆成工作区和聊天区，聊天按日期自动归档，支持删除、恢复或彻底清理会话。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "会话管理",
+    "前端增强",
+    "工作区管理",
+    "效率提升"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "latestRelease": null,
+  "author": "tvrpdfe",
+  "repo": "https://github.com/tvrpdfe/dsh-chat-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-06T12:54:16Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tvrpdfe/dsh-chat-manager",
+    "commands": [
+      "git clone https://github.com/tvrpdfe/dsh-chat-manager.git",
+      "dsh plugin --profile web add \"link:$(pwd)/packages/dsh-chat-manager\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

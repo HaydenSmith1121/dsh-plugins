@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "bamboostrip/dsh-access-gate",
+  "slug": "bamboostrip__dsh-access-gate",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-access-gate",
+  "title": "dsh-access-gate",
+  "summary": "为 DeepSeek Harness 提供远程访问认证门禁，保护你的服务不被未授权使用。",
+  "tags": [
+    "dsh-plugin",
+    "安全审计",
+    "零配置",
+    "命令行工具",
+    "插件管理"
+  ],
+  "version": "0.7.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "bamboostrip",
+  "repo": "https://github.com/bamboostrip/dsh-access-gate",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-04T09:07:36Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-access-gate",
+    "commands": [
+      "dsh plugin --profile web add dsh-access-gate",
+      "dsh plugin --profile web add github:bamboostrip/dsh-access-gate",
+      "dsh plugin --profile web add link:E:/ALLCODE/project/dsh-auth-gate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

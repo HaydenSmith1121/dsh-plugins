@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "zizhongfeiyang/dsh-settings-drawer",
+  "slug": "zizhongfeiyang__dsh-settings-drawer",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-settings-drawer",
+  "title": "dsh-settings-drawer",
+  "summary": "自定义设置页左侧导航栏，勾选或取消即可即时隐藏/显示各设置栏目，管理更顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "设置导航",
+    "界面美化",
+    "即时生效",
+    "侧边栏管理"
+  ],
+  "version": "1.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.2.0",
+    "publishedAt": "2026-08-23T15:12:31Z",
+    "url": "https://github.com/zizhongfeiyang/dsh-settings-drawer/releases/tag/v1.2.0"
+  },
+  "author": "zizhongfeiyang",
+  "repo": "https://github.com/zizhongfeiyang/dsh-settings-drawer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-08-23T15:12:21Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zizhongfeiyang/dsh-settings-drawer",
+    "commands": [
+      "dsh plugin --profile web add github:zizhongfeiyang/dsh-settings-drawer",
+      "dsh plugin --profile web-desktop add github:zizhongfeiyang/dsh-settings-drawer",
+      "dsh plugin --profile web add ./dsh-settings-drawer-1.2.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

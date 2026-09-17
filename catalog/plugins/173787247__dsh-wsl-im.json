@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "173787247/dsh-wsl-im",
+  "slug": "173787247__dsh-wsl-im",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-wsl-im",
+  "title": "dsh-wsl-im",
+  "summary": "在飞书、企业微信、钉钉、QQ 里直接和 dsh 智能体聊天，把消息桥接进 WSL 里的 dsh。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "wsl",
+    "桥接插件",
+    "工具集成",
+    "消息通知",
+    "AI 助手",
+    "自动化"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-15T02:02:05Z",
+    "url": "https://github.com/173787247/dsh-wsl-im/releases/tag/v0.2.0"
+  },
+  "author": "173787247",
+  "repo": "https://github.com/173787247/dsh-wsl-im",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T16:19:52Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:173787247/dsh-wsl-im",
+    "commands": [
+      "npm i @larksuiteoapi/node-sdk",
+      "dsh plugin --profile web add github:173787247/dsh-wsl-im"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

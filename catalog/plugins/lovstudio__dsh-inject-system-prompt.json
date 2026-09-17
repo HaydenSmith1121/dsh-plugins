@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "lovstudio/dsh-inject-system-prompt",
+  "slug": "lovstudio__dsh-inject-system-prompt",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-inject-system-prompt",
+  "title": "dsh-inject-system-prompt",
+  "summary": "给 DeepSeek Harness 智能体额外注入一段系统提示词，灵活定制对话行为。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "零配置",
+    "设置面板"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-28T08:42:19Z",
+    "url": "https://github.com/lovstudio/dsh-inject-system-prompt/releases/tag/v0.1.1"
+  },
+  "author": "lovstudio",
+  "repo": "https://github.com/lovstudio/dsh-inject-system-prompt",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-04T17:18:41Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lovstudio/dsh-inject-system-prompt",
+    "commands": [
+      "git clone --depth 1 --branch dsh-v0.1.2-rc.1 https://github.com/deepseek-ai/deepseek-harness.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

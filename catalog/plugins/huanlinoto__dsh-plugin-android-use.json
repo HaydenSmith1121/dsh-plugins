@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "HuanLinOTO/dsh-plugin-android-use",
+  "slug": "huanlinoto__dsh-plugin-android-use",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-android-use",
+  "title": "dsh-plugin-android-use",
+  "summary": "让模型通过 adb 直接操控安卓手机，实现截图、点击、滑动、输入等操作，帮你完成手机上的自动化任务。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "AI 助手",
+    "命令行工具",
+    "视觉理解"
+  ],
+  "version": "0.2.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "HuanLinOTO",
+  "repo": "https://github.com/HuanLinOTO/dsh-plugin-android-use",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T11:49:25Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@huanlin/dsh-plugin-android-use",
+    "commands": [
+      "dsh plugin --profile web add link:D:\\Projects\\deepseek-harness\\dsh-plugin-android-use",
+      "dsh plugin --profile web add @huanlin/dsh-plugin-android-use"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "cdxiaodong/dsh-island",
+  "slug": "cdxiaodong__dsh-island",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-island",
+  "title": "dsh-island",
+  "summary": "把 DSH 的会话、工具调用和审批搬到 macOS 菜单栏灵动岛，点开就能实时看进度、直接允许或拒绝。",
+  "tags": [
+    "codeisland",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "状态监控",
+    "快捷操作",
+    "跨设备",
+    "桥接插件",
+    "主题"
+  ],
+  "version": "0.6.12",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.6.12",
+    "publishedAt": "2026-08-16T03:46:48Z",
+    "url": "https://github.com/cdxiaodong/dsh-island/releases/tag/v0.6.12"
+  },
+  "author": "cdxiaodong",
+  "repo": "https://github.com/cdxiaodong/dsh-island",
+  "homepage": null,
+  "license": null,
+  "stars": 9,
+  "forks": 0,
+  "pushedAt": "2026-08-17T00:03:23Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cdxiaodong/dsh-island",
+    "commands": [
+      "dsh plugin --profile <profile> add github:cdxiaodong/dsh-island"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "flymysql/dsh-memory",
+  "slug": "flymysql__dsh-memory",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-memory-vault",
+  "title": "dsh-memory-vault",
+  "summary": "跨会话记忆库，让智能体记住历史对话，随时回忆和调用，告别每次从零开始。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "memory",
+    "会话管理",
+    "上下文持久化",
+    "AI 助手"
+  ],
+  "version": "0.1.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "flymysql",
+  "repo": "https://github.com/flymysql/dsh-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-14T08:04:03Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-memory-vault",
+    "commands": [
+      "dsh plugin --profile web add dsh-memory-vault",
+      "npm install dsh-memory-vault"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

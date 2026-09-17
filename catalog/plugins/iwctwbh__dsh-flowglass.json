@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "Iwctwbh/dsh-flowglass",
+  "slug": "iwctwbh__dsh-flowglass",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-flowglass",
+  "title": "dsh-flowglass",
+  "summary": "把当前会话画成三列泳道流程图，实时看清工具调用、并行分组和子代理分支，还能逐层钻取细节。",
+  "tags": [
+    "ai-agents",
+    "cordis",
+    "dsh",
+    "dsh-better-sidebar",
+    "dsh-plugin",
+    "可视化",
+    "状态监控",
+    "多Agent协作",
+    "会话管理",
+    "模型轨迹"
+  ],
+  "version": "0.5.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.5.0",
+    "publishedAt": "2026-09-14T06:44:56Z",
+    "url": "https://github.com/Iwctwbh/dsh-flowglass/releases/tag/v0.5.0"
+  },
+  "author": "Iwctwbh",
+  "repo": "https://github.com/Iwctwbh/dsh-flowglass",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 19,
+  "forks": 1,
+  "pushedAt": "2026-09-15T08:31:16Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Iwctwbh/dsh-flowglass",
+    "commands": [
+      "dsh plugin --profile web add github:Iwctwbh/dsh-flowglass"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

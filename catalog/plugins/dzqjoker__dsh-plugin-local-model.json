@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "DZQJOKER/dsh-plugin-local-model",
+  "slug": "dzqjoker__dsh-plugin-local-model",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-plugin-local-model",
+  "title": "dsh-plugin-local-model",
+  "summary": "在设置里管理本地 GGUF 模型，首条对话自动拉起 llama.cpp，闲置 5 分钟自动卸载省资源。",
+  "tags": [
+    "dsh-plugin",
+    "模型适配",
+    "资源优化",
+    "设置面板",
+    "自动化",
+    "模型配置"
+  ],
+  "version": "0.5.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "DZQJOKER",
+  "repo": "https://github.com/DZQJOKER/dsh-plugin-local-model",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-16T08:18:17Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:DZQJOKER/dsh-plugin-local-model",
+    "commands": [
+      "dsh plugin --profile desktop add github:DZQJOKER/dsh-plugin-local-model",
+      "dsh plugin --profile desktop add D:/path/to/dsh-plugin-local-model"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

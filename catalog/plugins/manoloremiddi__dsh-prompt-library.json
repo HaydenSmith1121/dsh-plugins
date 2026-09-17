@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ManoloRemiddi/dsh-prompt-library",
+  "slug": "manoloremiddi__dsh-prompt-library",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-prompt-library",
+  "title": "dsh-prompt-library",
+  "summary": "在 DSH 设置里保存、搜索、预览和编辑常用提示词，随取随用，不用反复重写。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "manolo-dsh-plugins",
+    "效率提升",
+    "设置面板",
+    "快捷操作",
+    "内容创作"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": null,
+  "author": "ManoloRemiddi",
+  "repo": "https://github.com/ManoloRemiddi/dsh-prompt-library",
+  "homepage": "https://github.com/ManoloRemiddi/deepseek-harness-plugins",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-13T15:07:07Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ManoloRemiddi/dsh-prompt-library",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/ManoloRemiddi/dsh-prompt-library/releases/download/v0.2.1/dsh-prompt-library-0.2.1.tgz",
+      "dsh plugin --profile web remove dsh-prompt-library"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

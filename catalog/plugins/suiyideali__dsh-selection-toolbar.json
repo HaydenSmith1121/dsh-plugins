@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "suiyideali/dsh-selection-toolbar",
+  "slug": "suiyideali__dsh-selection-toolbar",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-selection-toolbar",
+  "title": "dsh-selection-toolbar",
+  "summary": "在对话中划选文本，即可快速复制、引用、翻译或让 AI 结合上下文解释总结，操作一气呵成。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "效率提升",
+    "桌宠",
+    "前端增强"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v1.1.0",
+    "publishedAt": "2026-08-28T06:04:40Z",
+    "url": "https://github.com/suiyideali/dsh-selection-toolbar/releases/tag/v1.1.0"
+  },
+  "author": "suiyideali",
+  "repo": "https://github.com/suiyideali/dsh-selection-toolbar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-08T08:34:04Z",
+  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:suiyideali/dsh-selection-toolbar",
+    "commands": [
+      "dsh plugin --profile web add github:suiyideali/dsh-selection-toolbar",
+      "dsh plugin --profile web add /path/to/dsh-selection-toolbar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}

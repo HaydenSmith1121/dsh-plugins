@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "Oliver0804/dsh-openrouter-monitor",
+  "slug": "oliver0804__dsh-openrouter-monitor",
+  "tier": "community",
+  "package": null,
+  "name": "dsh-openrouter-monitor",
+  "title": "dsh-openrouter-monitor",
+  "summary": "在编辑器下方实时显示 OpenRouter 余额、单日消费和告警阈值，并附趋势图表，帮你随时掌握 API 花费。",
+  "tags": [
+    "cordis-plugin",
+    "deepseek-harness",
+    "dsh-plugin",
+    "llm-monitoring",
+    "openrouter",
+    "状态监控",
+    "可视化",
+    "效率提升",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-27T01:52:48Z",
+    "url": "https://github.com/Oliver0804/dsh-openrouter-monitor/releases/tag/v0.1.0"
+  },
+  "author": "Oliver0804",
+  "repo": "https://github.com/Oliver0804/dsh-openrouter-monitor",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-10T15:24:08Z",
+  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-openrouter-monitor",
+    "commands": [
+      "dsh plugin --profile web add dsh-openrouter-monitor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-17T15:55:14.674Z",
+    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+  },
+  "review": null
+}
