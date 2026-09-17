@@ -65,21 +65,40 @@ jobs:
         with:
           node-version: '22.19'
 
-      - name: 单元测试
-        working-directory: plugins-src/dsh-plugins-market
-        run: node test/run.mjs
-
+      # ★ 顺序不能反：测试跑的是**打包产物**（.build/package/lib/*.js 与包内目录），
+      #   而不是源码树 —— 这样才拦得住「源码里对、装到 profile 后资源路径全错」
+      #   那一类问题（见 test/layout.test.mjs 的说明）。
+      #   所以必须先构建再测试。原先反着写，CI 每次都在测试那一步报「缺少构建产物」。
       - name: 构建（会重打 tarball）
         run: node plugins-src/dsh-plugins-market/build.mjs
+
+      - name: 单元测试（针对打包产物）
+        working-directory: plugins-src/dsh-plugins-market
+        run: node test/run.mjs
 
       - name: 产物必须已提交，且内容一致
         run: |
           set -euo pipefail
-          # build.mjs 是确定性的：同样的输入必得同样的字节。
-          # 所以只要它跑完 git 里有 diff，就说明「源码改了但没重新构建并提交」。
+          # build.mjs 是确定性的：同样的输入必得同样的字节（归档里的 mtime 是固定值，
+          # 不是 Date.now()）。所以只要它跑完 git 里有 diff，
+          # 就说明「源码改了但没重新构建并提交」。
           if ! git diff --quiet -- plugins/ ; then
             echo "::error::plugins/ 下的 tarball 与当前源码不一致 —— 请本地跑一次 node plugins-src/dsh-plugins-market/build.mjs 并提交产物。"
             git --no-pager diff --stat -- plugins/
             exit 1
           fi
           echo "产物与源码一致。"
+
+      - name: 源码树里不能混进构建产物
+        run: |
+          set -euo pipefail
+          # 构建产物一律落在 .build/ 下 —— 构建不该改动它自己的输入。
+          # 早先的版本把生成的 package.json / README.md 直接写回包根，
+          # 结果源码被自己的产物覆盖过。
+          for rel in plugins-src/dsh-plugins-market/lib plugins-src/dsh-plugins-market/catalog; do
+            if [ -e "$rel" ]; then
+              echo "::error::$rel 不该存在（那是构建产物，应当在 .build/ 下）"
+              exit 1
+            fi
+          done
+          echo "源码树干净。"
