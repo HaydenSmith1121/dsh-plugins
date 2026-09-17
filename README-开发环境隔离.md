@@ -125,6 +125,7 @@ node scripts/dev-env.mjs web
 > `profiles/web`（四件套 + `node_modules`）建出来并装好依赖，然后直接开始监听。
 > 实测：在一个全新的 `DSH_HOME` 上一条 `dsh web` 就完成了全部初始化。
 >
+> 所以 `init` 的结尾不会再提示你手动装依赖 —— 你只需要直接 `web`。
 > 想少开浏览器加 `--no-open`（会透传给 dsh）：
 
 ```bash
@@ -225,7 +226,7 @@ node scripts/dev-env.mjs doctor
 | 检查项 | 含义 |
 |---|---|
 | 隔离 home ≠ 生产 home | 两个目录不同 |
-| 隔离 profile 已初始化 | `profiles/dev/package.json` 存在 |
+| 隔离 profile 已初始化 | `~/.dsh-dev/profiles/web/package.json` 存在（profile 名固定为 `web`） |
 | 插件树独立 | 不是生产的软链 |
 | 凭据是独立副本 | 比对 inode，确认不是硬链；**新设备上还没登录过 → 提示，不算失败** |
 | 端口不同 | 默认 3090 vs 3080 |
@@ -234,8 +235,15 @@ node scripts/dev-env.mjs doctor
 
 退出码：全部通过或仅有提示 → `0`；存在 `✗` → `1`。适合直接串进 CI 或 git hook。
 
-> 刚在**新设备**上跑 `doctor`，看到「凭据 · 尚未登录」是正常的 ——
-> 首次启动隔离环境时在 GUI 里登一次，之后就是独立副本了。
+> **新设备上跑到哪一步，看到什么算正常**
+>
+> | 你刚做完 | `doctor` 会显示 | 退出码 |
+> |---|---|---|
+> | 只跑了 `init` | 3 项 `!`：profile 尚未创建、插件树待比对、凭据尚未登录 —— 都是预期中间态 | `0` |
+> | 跑过 `web` 并登录 | 全部 `✓` | `0` |
+>
+> 关键：**「profile 尚未创建」在 `init` 后是正常的** —— profile 由 dsh 首次
+> `dsh web` 自动建出。所以 `doctor` 此时会给出「下一步」提示，照着做即可。
 
 ---
 
@@ -357,7 +365,7 @@ node scripts/dev-env.mjs help                 # 完整帮助
 
 # 常用选项
 --home <path>       隔离 home（默认 ~/.dsh-dev）
---profile <name>    隔离 profile 名（默认 dev）
+--profile <name>    隔离 profile 名（必须为 web —— `dsh web` 是它的硬编码别名）
 --port <n>          隔离端口（默认 3090）
 --from <name>       出厂模板（默认 web）
 --json              机器可读输出

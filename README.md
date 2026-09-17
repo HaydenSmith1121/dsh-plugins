@@ -53,9 +53,10 @@ cd dsh-plugins
 
 ```bash
 node scripts/dev-env.mjs init     # 在 ~/.dsh-dev 建一套独立的 harness
-# 然后按提示 cd 过去跑一次 pnpm install
-node scripts/dev-env.mjs web      # 启动隔离环境（3090），生产（3080）不受影响
+node scripts/dev-env.mjs web      # 启动隔离环境（3090），依赖由首次启动自动安装
 ```
+
+> 不用手动 `pnpm install` —— 首次 `dsh web` 会自己建出 profile 并装好依赖。
 
 隔离基于 `DSH_HOME`（整个主目录独立），而不是 `--profile`
 （那只隔离插件树，凭据/设置/会话仍共享）。脚本不含任何硬编码盘符，

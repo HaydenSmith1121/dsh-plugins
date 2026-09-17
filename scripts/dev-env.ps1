@@ -7,9 +7,12 @@
 
     作用是把「日常在用的 harness」和「开发插件的 harness」分成两套：
       - 不同的 DSH_HOME（默认 ~/.dsh-dev，生产是 ~/.dsh）
-      - 不同的 profile 名（默认 dev，生产是 web）
       - 不同的端口（默认 3090，生产是 3080）
     两套可以同时跑，开发时改坏插件树也不会影响日常使用。
+
+    profile 名**两边都是 web**，不能改 —— `dsh web` 是 `--profile web` 的
+    硬编码别名，它会拒绝父级 --profile。隔离靠的是 DSH_HOME 指向另一个
+    主目录（那边也有一份 profiles/web），而不是换 profile 名。
 
     为什么逻辑不写在这里：.sh 也要做同样的事。逻辑只有一份（Node），
     三个平台行为一致，就不会「修了一个忘了另一个」。
@@ -29,7 +32,7 @@
     隔离 home 位置，默认 ~/.dsh-dev。
 
 .PARAMETER Profile
-    隔离 profile 名，默认 dev。
+    隔离 profile 名。必须为 web（`dsh web` 是它的硬编码别名），一般不用改。
 
 .PARAMETER Port
     隔离端口，默认 3090。

@@ -41,7 +41,7 @@
  *
  * 常用选项：
  *   --home <path>      隔离 home 位置（默认 ~/.dsh-dev）
- *   --profile <name>   隔离 profile 名（默认 dev）
+ *   --profile <name>   隔离 profile 名（必须为 web —— `dsh web` 是它的硬编码别名）
  *   --port <n>         隔离环境的端口（默认 3090；生产默认 3080）
  *   --from <name>      从哪个出厂模板初始化（默认 web）
  *   --json             机器可读输出
@@ -416,19 +416,16 @@ function cmdInit() {
     console.log(`  端口         ${cyan(String(devPort))}   ${dim(`(生产用 ${DEFAULT_PROD_PORT})`)}`);
     console.log('');
     console.log(`  ${bold('下一步')}`);
-    if (isShippedName && !exists(s.profileDir)) {
-      console.log(`    ${dim('1.')} 先启动一次，让 dsh 建出 ${cyan(`profiles/${devProfile}`)}：`);
-      console.log(`         ${cyan('node scripts/dev-env.mjs web')}`);
-      console.log(`    ${dim('2.')} 然后停掉，装依赖（只需一次）：`);
-      console.log(`         ${cyan(`cd ${path.join(devHome, 'profiles', devProfile)}`)}`);
-      console.log(`         ${cyan('pnpm install')}`);
-    } else {
-      console.log(`    ${dim('1.')} 装依赖（只需一次）：`);
-      console.log(`         ${cyan(`cd ${s.profileDir}`)}`);
-      console.log(`         ${cyan('pnpm install')}`);
-      console.log(`    ${dim('2.')} 启动隔离环境：`);
-      console.log(`         ${cyan('node scripts/dev-env.mjs web')}`);
-    }
+    // ★ 这里**不要**再提示「手动 pnpm install」。
+    //   `dsh web` 首次跑会自己建出 profile 四件套 + node_modules 并装好依赖
+    //   （实测：全新 DSH_HOME 上一条 `dsh web` 就完成全部初始化）——
+    //   见 cmdWeb() 里的同类注释。以前让用户手动补，是因为 profile 名
+    //   用了 dev，dsh 自动建的是 web，对不上；现在名字对齐了就不需要了。
+    console.log(`    启动隔离环境（依赖由 dsh 首次启动自动安装，无需手动 pnpm install）：`);
+    console.log(`      ${cyan('node scripts/dev-env.mjs web')}`);
+    console.log(
+      `      ${dim(`首次启动会自己建出 profiles/${devProfile} 并装依赖，稍等片刻即可。`)}`
+    );
     console.log('');
     console.log(`  ${dim(`提示：生产环境照旧用 ${cyan('dsh web')}（${DEFAULT_PROD_PORT}），互不影响。`)}`);
     console.log('');
@@ -489,9 +486,9 @@ function cmdStatus() {
     console.log(`  ${symWarn()} 隔离环境还没建，先跑： ${cyan('node scripts/dev-env.mjs init')}`);
     console.log('');
   } else if (!devSnap.nodeModulesInstalled) {
-    console.log(`  ${symWarn()} 隔离环境还没装依赖，先跑：`);
-    console.log(`    ${cyan(`cd ${devSnap.profileDir}`)}`);
-    console.log(`    ${cyan('pnpm install')}`);
+    // 不提示手动 pnpm install —— `dsh web` 首次启动会自己装（见 cmdWeb 注释）。
+    console.log(`  ${symWarn()} 隔离环境还没装依赖，启动一次即可（会自己装）：`);
+    console.log(`    ${cyan('node scripts/dev-env.mjs web')}`);
     console.log('');
   }
 
@@ -610,6 +607,11 @@ function cmdDoctor() {
   const devSnap = snapshot(devHome, devProfile);
   const checks = [];
 
+  // ★ 三态：'ok' | 'warn' | 'fail'
+  //   warn 用于「按流程走到这一步时属预期」的情况 —— 只提示，不拉低退出码。
+  //   典型：`init` 之后、`web` 之前，profile 还没被 dsh 建出来（它要等首次
+  //   `dsh web` 才自动创建），此时报 fail 会让新人以为搞砸了。
+
   checks.push([
     '隔离 home 与生产 home 不是同一个目录',
     path.resolve(devHome) !== path.resolve(prod),
@@ -617,18 +619,24 @@ function cmdDoctor() {
   ]);
   checks.push([
     '隔离 profile 已初始化',
-    devSnap.initialized,
-    devSnap.initialized ? devSnap.profileDir : '未建'
+    // profile 名固定为 web（出厂名）时，建 profile 这一步本来就交给 dsh
+    // 首次 `dsh web` 完成 —— 所以「尚未初始化」是**预期中间态**，不是失败。
+    devSnap.initialized ? true : devProfile === DEFAULT_TEMPLATE ? 'warn' : false,
+    devSnap.initialized
+      ? devSnap.profileDir
+      : devProfile === DEFAULT_TEMPLATE
+        ? '尚未创建（正常：首次 `node scripts/dev-env.mjs web` 会由 dsh 自动建出并装依赖）'
+        : '未建'
   ]);
   checks.push([
     '隔离 profile 的插件树独立（不是生产的软链）',
-    devSnap.initialized &&
-      (!exists(devSnap.profileDir) || !prodSnap.profileDir ||
-        !sameRealPath(devSnap.profileDir, prodSnap.profileDir)),
-    '独立'
+    devSnap.initialized
+      ? !exists(devSnap.profileDir) ||
+        !prodSnap.profileDir ||
+        !sameRealPath(devSnap.profileDir, prodSnap.profileDir)
+      : 'warn', // profile 还没建 → 无从比对，同上属预期中间态
+    devSnap.initialized ? '独立' : '待首次启动后再比对'
   ]);
-  // 三态：'ok' | 'warn' | 'fail'
-  // warn 用于「新设备上属预期」的情况（如凭据尚未登过），不拉低退出码。
   checks.push([
     '凭据是独立副本（非硬链）',
     !devSnap.hasCredentials
@@ -693,6 +701,11 @@ function cmdDoctor() {
     console.log(`  ${green('隔离成立。')} ${dim(`另有 ${warned} 项提示，不影响隔离。`)}`);
   } else {
     console.log(`  ${yellow(`${failed} 项未通过`)} — 见上面逐条说明。`);
+  }
+  // profile 还没建时，明确告诉下一步该干什么 —— 这正是新设备上 init→web 之间
+  // 最常出现的状态，光说「隔离成立」新人不知道还要做什么。
+  if (!devSnap.initialized && failed === 0) {
+    console.log(`  ${dim('下一步：')} ${cyan('node scripts/dev-env.mjs web')} ${dim('（首次启动会建出 profile 并装依赖）')}`);
   }
   console.log(`  ${dim(`（提示：Node 的子进程一律用 ${cyan(devHome)} 作为 DSH_HOME）`)}`);
   console.log('');

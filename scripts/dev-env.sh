@@ -18,7 +18,7 @@
 #
 # 选项（透传给 dev-env.mjs）：
 #   --home <path>      隔离 home（默认 ~/.dsh-dev）
-#   --profile <name>   隔离 profile 名（默认 dev）
+#   --profile <name>   隔离 profile 名（必须为 web —— dsh web 是它的硬编码别名）
 #   --port <n>         隔离端口（默认 3090）
 # ============================================================================
 
