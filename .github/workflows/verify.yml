@@ -31,6 +31,20 @@ jobs:
       - name: 目录与生成器一致（不联网）
         run: node scripts/sync-catalog.mjs --check
 
+      - name: ★ --check 必须是只读的（它曾经删掉过 7482 个文件）
+        run: |
+          set -euo pipefail
+          # 出过一次真事故：--check 的早退分支被写进了一个不再被调用的函数里，
+          # 入口直接走到了联网采集那条路 —— 于是这条「只读校验」拿着一个空的公开索引
+          # 缓存去推演目录，判定 7482 个配置文件是多余的，把它们删了，然后 exit 0。
+          # 断言比注释可靠：跑完校验，工作区必须一个字节都没变。
+          if ! git diff --quiet; then
+            echo "::error::--check 改动了工作区 —— 它必须是只读的。"
+            git --no-pager diff --stat
+            exit 1
+          fi
+          echo "--check 没有改动任何文件。"
+
       - name: 配置文件数量与索引对得上
         run: |
           set -euo pipefail

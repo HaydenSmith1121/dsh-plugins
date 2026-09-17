@@ -501,11 +501,120 @@ function stripTagPrefix(tag) {
 // 主流程
 // ─────────────────────────────────────────────────────────────
 
+/**
+ * `--check`：**只读磁盘**的一致性校验（CI 与提交前用）。
+ *
+ * 判据三条，全部不需要网络：
+ *   ① 每个 catalog/plugins/<slug>.json 都要能**原样往返** ——
+ *      归一化再序列化之后必须与磁盘上的字节完全相同。
+ *      对不上说明有人手工改过（字段顺序、空值写法、缺字段），
+ *      而那种改动会让每日同步把它当成「变了」，产生没意义的 diff。
+ *   ② index.json 必须恰好是这些配置文件的派生结果。
+ *   ③ 配置文件的个数必须等于索引条目数 —— 一条配置文件对应一条记录，不做去重。
+ *
+ * 它**不**检查「上游是不是发了新版」—— 那是每日任务的职责，需要网络。
+ */
+function checkOnDisk(existing) {
+  const records = [...existing.values()].sort((a, b) => (a.slug < b.slug ? -1 : 1));
+
+  // ① 逐文件往返
+  for (const rec of records) {
+    const file = path.join(REPO, PLUGINS_DIR_REL, `${rec.slug}.json`);
+    const expected = serializeRecord(rec);
+    if (fs.readFileSync(file, 'utf8') !== expected) {
+      fail(`catalog/plugins/${rec.slug}.json 的内容不是归一化后的形态`
+        + '（字段顺序 / 空值写法 / 缺字段被手工改过？重跑一次 node scripts/sync-catalog.mjs 即可修好）');
+    }
+  }
+
+  // ② 索引必须与配置文件一致
+  const onDiskIndex = readJsonSafe(path.join(REPO, INDEX_REL));
+  const expectedIndex = buildIndex(records, { generatedAt: null, sourceIndex: onDiskIndex?.sourceIndex ?? null });
+  /** generatedAt 体现的是「上游索引什么时候生成的」，不参与内容比对 */
+  const comparable = (o) => JSON.stringify({ ...o, generatedAt: null });
+  if (!onDiskIndex) fail('缺少 catalog/index.json');
+  else if (comparable(onDiskIndex) !== comparable(expectedIndex)) {
+    fail('catalog/index.json 与 catalog/plugins/*.json 的派生结果不一致（请运行 node scripts/sync-catalog.mjs）');
+  }
+
+  // ③ 文件数 == 索引条目数
+  const onDiskFiles = fs.readdirSync(path.join(REPO, PLUGINS_DIR_REL))
+    .filter((f) => f.endsWith('.json') && !f.includes('.tmp-')).length;
+  if (onDiskFiles !== records.length) fail(`catalog/plugins/ 有 ${onDiskFiles} 个文件，但读出来 ${records.length} 条记录`);
+  if (onDiskIndex && onDiskIndex.counts?.total !== records.length) {
+    fail(`index.json 记了 ${onDiskIndex.counts.total} 条，而 catalog/plugins/ 有 ${records.length} 个配置文件 —— 两者必须相等`);
+  }
+
+  if (problems.length) {
+    console.error(`\n目录校验失败：${problems.length} 项`);
+    process.exit(1);
+  }
+  console.log(`\n目录校验通过：${records.length} 个配置文件，index.json 一致，无冗余或缺失。`);
+  process.exit(0);
+}
+
+/**
+ * `--offline`：不联网，**只**用磁盘上已有的配置文件重建 index.json。
+ *
+ * 什么时候用：手工改了一个 plugin.json 的展示字段、或者只想把归一化修正落盘。
+ * 它**不会**去问上游有没有新版（那必须联网），所以别拿它当「刷新目录」。
+ */
+function rebuildIndexFromDisk(existing) {
+  const records = [...existing.values()].sort((a, b) => (a.slug < b.slug ? -1 : 1));
+
+  let written = 0;
+  for (const rec of records) {
+    const file = path.join(REPO, PLUGINS_DIR_REL, `${rec.slug}.json`);
+    const text = serializeRecord(rec);
+    if (fs.readFileSync(file, 'utf8') === text) continue;
+    writeJsonAtomic(file, null, { raw: text });
+    written += 1;
+  }
+
+  const onDiskIndex = readJsonSafe(path.join(REPO, INDEX_REL));
+  const idx = buildIndex(records, {
+    generatedAt: onDiskIndex?.generatedAt ?? null,
+    sourceIndex: onDiskIndex?.sourceIndex ?? null,
+  });
+  writeJsonAtomic(path.join(REPO, INDEX_REL), idx);
+
+  ok(`--offline：把 ${written} 个配置文件归一化后落盘（共 ${records.length} 个）`);
+  ok(`索引已重建：${idx.counts.total} 条（已验证 ${idx.counts.verified} / 已审核 ${idx.counts.reviewed} / 未审核 ${idx.counts.community}）`);
+  console.log('  （没有联网 —— 这不等于「刷新目录」，上游有没有新版要跑不带参数的那条命令）');
+  process.exit(0);
+}
+
+// ─────────────────────────────────────────────────────────────
+// 入口：先分流，再决定要不要联网
+// ─────────────────────────────────────────────────────────────
+
+/**
+ * ★ 分流必须发生在这里，而且是**先分流再干活**。
+ *
+ *   这里出过一次真事故：`--check` / `--offline` 的早退分支被写在了一个已经不再被
+ *   调用的 `main()` 里，入口直接调了联网采集那条路 —— 于是 `--check` 拿着一个空的
+ *   公开索引缓存去「推演」目录，判定 7482 个配置文件是多余的，**把它们删了**。
+ *   一条只读校验命令删掉了 7000 多个文件，而它打印的还是 exit 0。
+ *
+ *   教训有两条，都体现在下面的代码里：
+ *     ① 只读命令的「只读」必须是结构上的，不能靠一个可能被绕过的 if；
+ *     ② 校验永远不该有写盘的能力 —— checkOnDisk() 里没有任何写操作。
+ */
 async function main() {
   log('── dsh-plugins 目录同步 ──────────────────────────────');
   const existing = loadExisting();
   log(`→ 已有配置文件：${existing.size} 个`);
 
+  if (CHECK_ONLY) return checkOnDisk(existing);
+  if (OFFLINE) return rebuildIndexFromDisk(existing);
+  return collect(existing);
+}
+
+// ─────────────────────────────────────────────────────────────
+// 主流程：联网采集
+// ─────────────────────────────────────────────────────────────
+
+async function collect(existing) {
   // ① overrides（人工审核层）
   const reviewedFile = path.join(REPO, 'catalog', 'overrides', 'reviewed.json');
   const reviewedDoc = readJsonSafe(reviewedFile) ?? { plugins: [] };
@@ -593,23 +702,7 @@ async function main() {
 
   const stats = { npm: 0, githubRelease: 0, githubTag: 0, packageJson: 0, none: 0, notFound: 0, errors: [] };
 
-  if (OFFLINE) {
-    log('  （--offline：跳过网络，沿用上一轮已落盘的版本号）');
-    for (const rec of targets) {
-      const prev = existing.get(rec.slug);
-      // ★ 本地权威来源的版本号**不许被上一轮覆盖**：插件集合仓库的 manifest 与
-      //   市场插件自己的 package.json 就是它们各自版本的唯一事实来源，
-      //   而上一轮的本机记录可能还是空的（或者更旧）。只有那些靠外部解析的记录
-      //   才需要沿用上一轮的结果 —— 否则离线跑一次就会把自研插件的版本抹成 null。
-      if (!isLocallyAuthoritative(rec) && prev) {
-        rec.version = prev.version;
-        rec.versionSource = prev.versionSource;
-        rec.latestRelease = prev.latestRelease;
-        rec.versionCheckedAt = prev.versionCheckedAt;
-      }
-      if (rec.stars === null && prev?.stars != null) rec.stars = prev.stars;
-    }
-  } else {
+  {
     // ① npm：便宜且最准，能查到的先解决掉
     //
     // ★ 并发而不是串行。实测有 2000 条左右带着干净的 npm 规格，串行查一遍要十分钟
@@ -766,35 +859,8 @@ async function main() {
     process.exit(problems.length ? 1 : 0);
   }
 
-  if (CHECK_ONLY) {
-    const expected = new Map(records.map((r) => [r.slug, serializeRecord(r)]));
-    const onDisk = new Set(listRecordFiles(REPO).map((f) => path.basename(f, '.json')));
-    for (const [slug, text] of expected) {
-      const file = path.join(REPO, PLUGINS_DIR_REL, `${slug}.json`);
-      if (!fs.existsSync(file)) { fail(`缺少配置文件：catalog/plugins/${slug}.json`); continue; }
-      if (fs.readFileSync(file, 'utf8') !== text) fail(`catalog/plugins/${slug}.json 与生成结果不一致`);
-    }
-    for (const slug of onDisk) {
-      if (!expected.has(slug)) fail(`多余的配置文件（生成结果里没有）：catalog/plugins/${slug}.json`);
-    }
-    // 索引比对必须**同一种序列化方式**：早先这里拿 `{...onDisk, generatedAt: null}`
-    // 的紧凑 JSON 去比带上缩进的 `JSON.stringify(..., null, 2)`，两者永远不可能相等，
-    // 于是 --check 恒红、而真正的不一致反而被这条假警报掩盖了。
-    const expectedIndex = buildIndex(records, { generatedAt: null, sourceIndex: index.meta });
-    const onDiskIndex = readJsonSafe(path.join(REPO, INDEX_REL));
-    /** 把 generatedAt 抹掉再比 —— 它体现的是「上游索引什么时候生成的」，不参与内容比对 */
-    const comparable = (o) => JSON.stringify({ ...o, generatedAt: null });
-    if (!onDiskIndex) fail('缺少 catalog/index.json');
-    else if (comparable(onDiskIndex) !== comparable(expectedIndex)) {
-      fail('catalog/index.json 与 catalog/plugins/*.json 派生结果不一致（请运行 node scripts/sync-catalog.mjs）');
-    }
-    if (problems.length) {
-      console.error(`\n目录校验失败：${problems.length} 项`);
-      process.exit(1);
-    }
-    console.log(`\n目录校验通过：${records.length} 个配置文件，index.json 一致。`);
-    process.exit(0);
-  }
+  // `--check` 与 `--offline` 在 main() 开头就早退了（那两条路径只读磁盘，不联网），
+  // 所以走到这里的必然是联网采集，直接写盘。
 
   // ── 写盘 ──────────────────────────────────────────────────
   const dir = path.join(REPO, PLUGINS_DIR_REL);
