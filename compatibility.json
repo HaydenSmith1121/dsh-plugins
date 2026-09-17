@@ -240,8 +240,8 @@
         {
           "dir": "dsh-plugins-market",
           "package": "dsh-plugins-market",
-          "version": "0.2.0",
-          "tarball": "plugins/dsh-plugins-market/0.1.6-alpha.1/dsh-plugins-market-0.2.0.tgz",
+          "version": "0.3.0",
+          "tarball": "plugins/dsh-plugins-market/0.1.6-alpha.1/dsh-plugins-market-0.3.0.tgz",
           "files": 20,
           "origin": "self",
           "author": "HaydenSmith1121",
@@ -253,6 +253,10 @@
           "peerNote": "没有任何 dependencies / peerDependencies —— 服务器半只用 Node 内置模块（semver 判定、tar 只读访问、YAML 局部合并都是自己实现并有单测），客户端半只用 shell 基线模块表里的 react（不需要 dsh.client.external）。这是刻意的取舍：每多一个依赖就多一分 pnpm 解析失败 / ERR_PNPM_IGNORED_BUILDS / 离线不可用的风险，而这个插件存在的意义正是「别把 harness 装坏」。",
           "bootstrap": true,
           "supersedes": [
+            {
+              "version": "0.2.0",
+              "reason": "目录解耦：把「已验证」层从「只读包内目录」改成与「已审核」层同构的远程优先（远程 → 缓存 → 包内兜底），于是**插件发新版不再需要重打市场包、也不再需要给市场换版本号**。安全边界：远程目录只能追加、不能改写已发布版本的 sha256（含抹掉校验和），否则整体拒绝并退回包内。另修「刷新目录」过慢：公共索引带 ETag，目录未变时服务端答 304，传输量从 5,082,419 字节降到 0（实测往返 2.88 秒）；三层目录改为并发拉取；公共索引超时 120s → 300s（实测本机到 GitHub Pages 仅 40–180 KiB/s，120s 会让慢线路上的冷刷新必然失败）。界面去掉「体检」页签（装前兼容性闸门照旧自动执行），其「回滚到快照」与「修复 profile」搬到「已装」页。★ 版本号取 0.3.0 而不是 0.2.0：0.2.0 已由「安装全程可见」那一版发布并推送，同号不同内容会让 pnpm 跳过解包、已装的人永远收不到。"
+            },
             {
               "version": "0.1.1",
               "reason": "0.1.1 的安装在界面上是一个**黑盒**：一次 HTTP 请求里同步跑完整个 pnpm 安装，期间只有一句「正在安装…请勿关闭页面」。0.2.0 把它拆成有名字的阶段（装前体检 / 取包 / 快照 / allowBuilds / 换版 / 安装 / 三层校验 / 回滚），每一阶段有独立硬超时，界面显示当前阶段、已耗时与**预计剩余区间**（按本机历史耗时自我修正），并给出一个真正能用的「中止安装」按钮（AbortSignal 一路传到 pnpm 并杀整棵进程树，随后用快照回滚）。0.1.1 的功能没有缺失，但升级是推荐的：它同时修掉了「装很久装不上」的两个真实成因（见 notes）。"
