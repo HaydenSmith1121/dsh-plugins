@@ -88,14 +88,16 @@ dsh-plugins/
 │  │     └─ dsh-market-plugin-0.4.8.tgz
 │  ├─ dsh-workbuddy-connect/
 │  │  └─ 0.1.6-alpha.1/
-│  ├─ dsh-opencode-go/
-│  │  └─ 0.1.6-alpha.1/             # 含 13 处本地源码优化（已构建进 lib）
+│  ├─ dsh-opencode-go-plus/
+│  │  └─ 0.1.6-alpha.1/             # 自研维护分支，取代 dsh-opencode-go
 │  ├─ dsh-connect-trae/
 │  │  └─ 0.1.6-alpha.1/
 │  ├─ dsh-workbuddy-quota/
 │  │  └─ 0.1.6-alpha.1/             # 自研
-│  └─ dsh-receipt/
-│     └─ 0.1.6-alpha.1/
+│  ├─ dsh-receipt/
+│  │  └─ 0.1.6-alpha.1/
+│  └─ dsh-session-cleanup/
+│     └─ 0.1.6-alpha.1/             # 自研
 ├─ profile-config/
 │  └─ profile-bundles.yaml          # web profile 的 bundles 顺序清单
 └─ settings/
@@ -116,9 +118,10 @@ dsh-plugins/
 | 包名 | 版本 | 来源 | 原作者 | 上游仓库 | 许可 |
 |---|---|---|---|---|---|
 | `dsh-workbuddy-quota` | 0.2.0 | **本仓库自研** | HaydenSmith1121 | 本仓库 | MIT |
+| `dsh-session-cleanup` | 0.1.0 | **本仓库自研** | HaydenSmith1121 | 本仓库 | MIT |
+| `dsh-opencode-go-plus` | 0.2.0 | **本仓库自研**（派生） | HaydenSmith1121 | 本仓库，派生自 [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go) | MIT |
 | `@dsh-market/plugin` | 0.4.8 | 第三方收集 | **2BingLing** | [2BingLing/dsh-market](https://github.com/2BingLing/dsh-market) | MIT |
 | `dsh-workbuddy-connect` | 0.5.3 | 第三方收集 | corrinehu | [corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect) | MIT |
-| `dsh-opencode-go` | 0.1.2 | 第三方收集 | — | [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go) | MIT |
 | `dsh-connect-trae` | 2.0.1 | 第三方收集 | dingminhua | [dingminhua/dsh-connect-trae](https://github.com/dingminhua/dsh-connect-trae) | MIT |
 | `dsh-receipt` | 0.1.0 | 第三方收集 | — | [deronendless/dsh-receipt](https://github.com/deronendless/dsh-receipt) | MIT |
 
@@ -129,9 +132,21 @@ dsh-plugins/
 > 该包自称要求 DSH ≥ 0.1.5、Node ≥ 20。
 > ⚠️ 其 tarball 内**未附带 LICENSE 文件正文**（`package.json` 中 `license` 为 MIT）。
 
-> **关于 `dsh-opencode-go`**：本仓库这份是**在上游基础上改过 13 处源码后重新构建**的版本
-> （改动在 `src/`，已编译进 `lib/`），与上游 npm 发布版**不完全一致**。详见
-> [`README-安装说明.md` 第十节](./README-安装说明.md)。
+> **关于 `dsh-opencode-go-plus`**：这是本仓库维护的**派生包**，标在「自研」一栏是因为
+> 它的打包、修复与分发都由本仓库负责 —— 但它的代码**不是**从零写的，归属必须讲清楚：
+>
+> | 层 | 来源 |
+> |---|---|
+> | 适配器、设置 UI、协议转换模块 | [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（MIT） |
+> | 包外壳、构建、`docs/`、`examples/` | [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go)（MIT） |
+> | 本仓库的宿主侧修复 | 本仓库（MIT） |
+>
+> 基线是 `dsh-opencode-go@0.1.2`，只改宿主侧逻辑，`lib/client.js` 未动。完整归属与改动清单见
+> 包内 `THIRD_PARTY_NOTICES.md`、`docs/derivation.md`。上游版权不因派生而被吞掉。
+>
+> ⚠️ **它取代了此前的 `dsh-opencode-go@0.1.2`（含 13 处本地源码改动那一版），两者不能装进同一个
+> profile** —— 共用设置命名空间与 provider 路由，实测存在一种组合会让 `dsh web` 完全起不来。
+> 详见 [`README-安装说明.md` 第十节](./README-安装说明.md) 与包内 `docs/verification.md`。
 
 **第三方插件的版权归各自原作者所有**，本仓库仅做离线打包与索引，未修改其许可声明。
 
@@ -143,16 +158,17 @@ dsh-plugins/
 |---|---|---|---|---|
 | `plugins/dsh-market-plugin/` | `@dsh-market/plugin` | 0.4.8 | 0.1.6-alpha.1 | dsh 插件市场 |
 | `plugins/dsh-workbuddy-connect/` | `dsh-workbuddy-connect` | 0.5.3 | 0.1.6-alpha.1 | WorkBuddy 连接 |
-| `plugins/dsh-opencode-go/` | `dsh-opencode-go` | 0.1.2 | 0.1.6-alpha.1 | OpenCode Go 模型供应商（**含本地优化**） |
+| `plugins/dsh-opencode-go-plus/` | `dsh-opencode-go-plus` | 0.2.0 | 0.1.6-alpha.1 | OpenCode Go 模型供应商（**自研维护分支，取代 `dsh-opencode-go`**） |
 | `plugins/dsh-connect-trae/` | `dsh-connect-trae` | 2.0.1 | 0.1.6-alpha.1 | Trae 模型接入 |
 | `plugins/dsh-workbuddy-quota/` | `dsh-workbuddy-quota` | 0.2.0 | 0.1.6-alpha.1 | WorkBuddy 额度显示 + token 用量统计 |
 | `plugins/dsh-receipt/` | `dsh-receipt` | 0.1.0 | 0.1.6-alpha.1 | 凭证 / 收据 |
+| `plugins/dsh-session-cleanup/` | `dsh-session-cleanup` | 0.1.0 | 0.1.6-alpha.1 | 已归档会话的真实删除（**带宿主半**） |
 
 **安装顺序**（即 dsh bundle 层级顺序，见 `profile-config/profile-bundles.yaml`）：
 
 ```none
-@dsh-market/plugin → dsh-workbuddy-connect → dsh-opencode-go
-→ dsh-connect-trae → dsh-workbuddy-quota → dsh-receipt
+@dsh-market/plugin → dsh-workbuddy-connect → dsh-opencode-go-plus
+→ dsh-connect-trae → dsh-workbuddy-quota → dsh-receipt → dsh-session-cleanup
 ```
 
 ---
@@ -165,15 +181,16 @@ dsh-plugins/
 |---|---|---|---|
 | `@dsh-market/plugin` | 无 `@deepseek-ai` peer | ✓ | ✓ |
 | `dsh-workbuddy-connect` | `^0.1.5-rc.1` | ✓ | ✓（仅 peer 警告） |
-| **`dsh-opencode-go`** | **`0.1.6-alpha.1`（精确 pin）** | **✗** | **✓** |
+| **`dsh-opencode-go-plus`** | **`0.1.6-alpha.1`（精确 pin）** | **✗** | **✓** |
 | `dsh-connect-trae` | `>=0.1.5-0 <0.2.0-0` | ✓ | ✓ |
 | `dsh-workbuddy-quota` | 仅 cordis / react | ✓ | ✓ |
 | `dsh-receipt` | `cordis@4.0.1`、`dsh-session@0.1.0-rc.6`、`dsh-tools@0.1.0-rc.6` | ✓ | ✓（仅 peer 警告） |
+| `dsh-session-cleanup` | 仅 cordis / react | ✓ | ✓ |
 
 **→ 整批插件以 `0.1.6-alpha.1` 为基线。**
 
-`dsh-opencode-go` 没有任何兼容 0.1.5 的发布版本（`0.1.0` / `0.1.1` / `0.1.2` 全都要求
-alpha），所以**只能升 dsh，不能退插件**。
+`dsh-opencode-go-plus` 没有任何兼容 0.1.5 的发布版本（其基线 `0.1.0` / `0.1.1` / `0.1.2`
+全都要求 alpha），所以**只能升 dsh，不能退插件**。
 
 ### ⚠️ 两条必须记住的规矩
 
@@ -203,7 +220,7 @@ alpha），所以**只能升 dsh，不能退插件**。
 
 插件对 dsh 运行时（`@deepseek-ai/*`）的依赖有两种写法，都会导致「只适配有限版本」：
 
-- **精确 pin**（`dsh-opencode-go` 的 `0.1.6-alpha.1`）—— 换版本即崩
+- **精确 pin**（`dsh-opencode-go-plus` 的 `0.1.6-alpha.1`）—— 换版本即崩
 - **窄范围**（`dsh-workbuddy-connect` 的 `^0.1.5-rc.1`）—— 换版本可能只是警告，也可能是隐患
 
 所以同一个插件在 dsh 不同版本下往往**需要不同的构建产物**。
@@ -214,7 +231,7 @@ alpha），所以**只能升 dsh，不能退插件**。
 
 | dsh 版本 | 通道 | 状态 | 说明 |
 |---|---|---|---|
-| `0.1.6-alpha.1` | alpha | ✅ **支持**（已实测 6/6 加载成功） | 当前基线 |
+| `0.1.6-alpha.1` | alpha | ✅ **支持**（已实测 7/7 加载成功） | 当前基线 |
 | `0.1.5-rc.1` | latest | ❌ 不支持 | 内置 `dsh-llm` 缺 0.1.6 的导出，启动即失败 |
 | `0.1.5-rc.2` | next | ❌ 不支持 | 同上 |
 
@@ -256,10 +273,11 @@ alpha），所以**只能升 dsh，不能退插件**。
 |---|---|---|---|---|---|
 | `@dsh-market/plugin` | 0.4.8 | 7 | ✓ | ✓ | ✗ |
 | `dsh-workbuddy-connect` | 0.5.3 | 11 | ✓ | ✓ | ✓ |
-| `dsh-opencode-go` | 0.1.2 | 30 | ✓ | ✓ | ✓ |
+| `dsh-opencode-go-plus` | 0.2.0 | 31 | ✓ | ✓ | ✓ |
 | `dsh-connect-trae` | 2.0.1 | 12 | ✓ | ✓ | ✓ |
 | `dsh-workbuddy-quota` | 0.2.0 | 5 | ✓ | ✓ | ✗ |
 | `dsh-receipt` | 0.1.0 | 16 | ✓ | ✓ | ✓ |
+| `dsh-session-cleanup` | 0.1.0 | 6 | ✓ | ✓ | ✓ |
 
 自查命令：
 

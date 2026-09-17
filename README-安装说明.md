@@ -1,6 +1,6 @@
 # DSH 插件包 — 安装说明
 
-本仓库把 6 个 DeepSeek Harness（dsh）插件打成离线 tarball，连同 web profile 的
+本仓库把 7 个 DeepSeek Harness（dsh）插件打成离线 tarball，连同 web profile 的
 bundle 顺序与 settings 快照，做到**新机可完整复现**。
 
 > 部分插件为自研，部分收集自他人开源项目，来源与许可见
@@ -116,18 +116,19 @@ dsh --version        # 必须显示 0.1.6-alpha.1
 
 ### 版本不对会怎样：整个插件树加载失败
 
-不是「某个插件不能用」，而是 **8 层 bundle 整体加载失败、`dsh web` 完全起不来**：
+不是「某个插件不能用」，而是 **9 层 bundle 整体加载失败、`dsh web` 完全起不来**：
 
 ```none
 Error: dsh: plugin tree failed to load: failed to apply loader entry include (cordis:include):
-failed to import loader entry opencode-go (dsh-opencode-go):
+failed to import loader entry opencode-go-plus (dsh-opencode-go-plus):
 The requested module '@deepseek-ai/dsh-llm' does not provide an export named 'IMAGE_OFFLOAD_REQUIRED_CODE'
 ```
 
-**根因**：`dsh-opencode-go` 的 `peerDependencies` 把整套 `@deepseek-ai/*`
-**精确 pin 在 `0.1.6-alpha.1`**，而 `0.1.5-rc.1` 内置的 `@deepseek-ai/dsh-llm` 是
-`0.1.5-rc.2` —— 里面根本没有 `IMAGE_OFFLOAD_REQUIRED_CODE`、`offloadedImageText`、
-`projectOffloadedImages`、`requiredImageOffload` 这些导出（图片卸载是 0.1.6 才加的 API）。
+**根因**：`dsh-opencode-go-plus` 的 `peerDependencies` 把整套 `@deepseek-ai/*`
+**精确 pin 在 `0.1.6-alpha.1`**（沿用其基线，未改动），而 `0.1.5-rc.1` 内置的
+`@deepseek-ai/dsh-llm` 是 `0.1.5-rc.2` —— 里面根本没有 `IMAGE_OFFLOAD_REQUIRED_CODE`、
+`offloadedImageText`、`projectOffloadedImages`、`requiredImageOffload` 这些导出
+（图片卸载是 0.1.6 才加的 API）。
 
 ESM 的具名导入在符号不存在时是**确定性失败**，不存在「有时候能过」。
 又因为 profile 的 `pnpm-workspace.yaml` 里有 `autoInstallPeers: false`，
@@ -136,7 +137,8 @@ pnpm 不会安装 peer 依赖，插件的 `import "@deepseek-ai/dsh-llm"` 只能
 
 ### 退插件版本解决不了
 
-`dsh-opencode-go` 在 npm 上的全部发布版本要求的都是 alpha：
+`dsh-opencode-go-plus` 在 npm 上的全部上游发布版本（即它的基线 `dsh-opencode-go`）
+要求的都是 alpha：
 
 | 版本 | 要求的 `@deepseek-ai/dsh-llm` |
 |---|---|
@@ -163,10 +165,11 @@ pnpm 不会安装 peer 依赖，插件的 `import "@deepseek-ai/dsh-llm"` 只能
 |---|---|---|---|
 | `@dsh-market/plugin` | 无 `@deepseek-ai` peer | ✓ | ✓ |
 | `dsh-workbuddy-connect` | `^0.1.5-rc.1` | ✓ | ✓（仅有 peer 警告） |
-| **`dsh-opencode-go`** | **`0.1.6-alpha.1`（精确 pin）** | **✗** | **✓** |
+| **`dsh-opencode-go-plus`** | **`0.1.6-alpha.1`（精确 pin）** | **✗** | **✓** |
 | `dsh-connect-trae` | `>=0.1.5-0 <0.2.0-0` | ✓ | ✓ |
 | `dsh-workbuddy-quota` | 仅 cordis / react | ✓ | ✓ |
 | `dsh-receipt` | `cordis@4.0.1`、`dsh-session@0.1.0-rc.6`、`dsh-tools@0.1.0-rc.6` | ✓ | ✓（仅有 peer 警告） |
+| `dsh-session-cleanup` | 仅 cordis / react | ✓ | ✓ |
 
 **→ 整批插件以 `0.1.6-alpha.1` 为运行时基线。**
 
@@ -183,7 +186,7 @@ pnpm 不会安装 peer 依赖，插件的 `import "@deepseek-ai/dsh-llm"` 只能
 - **`dsh-receipt`**：精确 pin 在 `0.1.0-rc.6` 的 `dsh-session` / `dsh-tools`
   与 `0.1.6-alpha.1` 不一致，会产生 peer 警告；但这两个包在运行时仍存在，实测可加载。
 
-以上均为实测结论（6/6 插件在 `0.1.6-alpha.1` 上正常加载）。
+以上均为实测结论（7/7 插件在 `0.1.6-alpha.1` 上正常加载）。
 
 </details>
 
@@ -232,7 +235,7 @@ Copy-Item ".\settings\settings.yaml" "$env:USERPROFILE\.dsh\settings.yaml" -Forc
 
 ### 3) 预置 allowBuilds（★ 建议先做，可省一次失败）
 
-`dsh-opencode-go` 的依赖树里有两个包声明了 install 脚本，pnpm 10+ 默认拦截它们。
+`dsh-opencode-go-plus` 的依赖树里有两个包声明了 install 脚本，pnpm 10+ 默认拦截它们。
 不预先处理，安装时会撞 `ERR_PNPM_IGNORED_BUILDS` —— 而那个报错**极具欺骗性**（见第七节）。
 
 在 `~/.dsh/profiles/web/pnpm-workspace.yaml` 里加上：
@@ -259,17 +262,18 @@ allowBuilds:
 > ✅ 已实测：dsh **不会覆盖**这个文件，手写的 `allowBuilds` 能长期留存。
 > 也无需 `pnpm approve-builds`（那是交互式的，不适合脚本化）。
 
-### 4) 按顺序安装 6 个插件
+### 4) 按顺序安装 7 个插件
 
 **顺序即 bundle 层级顺序，别乱**（见 `profile-config/profile-bundles.yaml`）：
 
 ```powershell
 dsh plugin --profile web add .\plugins\dsh-market-plugin\0.1.6-alpha.1\dsh-market-plugin-0.4.8.tgz
 dsh plugin --profile web add .\plugins\dsh-workbuddy-connect\0.1.6-alpha.1\dsh-workbuddy-connect-0.5.3.tgz
-dsh plugin --profile web add .\plugins\dsh-opencode-go\0.1.6-alpha.1\dsh-opencode-go-0.1.2.tgz
+dsh plugin --profile web add .\plugins\dsh-opencode-go-plus\0.1.6-alpha.1\dsh-opencode-go-plus-0.2.0.tgz
 dsh plugin --profile web add .\plugins\dsh-connect-trae\0.1.6-alpha.1\dsh-connect-trae-2.0.1.tgz
 dsh plugin --profile web add .\plugins\dsh-workbuddy-quota\0.1.6-alpha.1\dsh-workbuddy-quota-0.2.0.tgz
 dsh plugin --profile web add .\plugins\dsh-receipt\0.1.6-alpha.1\dsh-receipt-0.1.0.tgz
+dsh plugin --profile web add .\plugins\dsh-session-cleanup\0.1.6-alpha.1\dsh-session-cleanup-0.1.0.tgz
 ```
 
 ```bash
@@ -292,7 +296,7 @@ dsh plugin --profile web add ./plugins/dsh-market-plugin/0.1.6-alpha.1/dsh-marke
 `dsh plugin add <tarball>` 生成的**不是**把包内容拷进去，而是 `file:` 形式的依赖：
 
 ```json
-"dsh-opencode-go": "file:D:/deepseek/dsh-plugins/plugins/dsh-opencode-go/0.1.6-alpha.1/dsh-opencode-go-0.1.2.tgz"
+"dsh-opencode-go-plus": "file:D:/deepseek/dsh-plugins/plugins/dsh-opencode-go-plus/0.1.6-alpha.1/dsh-opencode-go-plus-0.2.0.tgz"
 ```
 
 **后果**：这个目录**不能删除、不能移动**，否则以后任何 `pnpm install` /
@@ -315,7 +319,7 @@ grep -o 'file:[^"]*' ~/.dsh/profiles/web/package.json
 万一必须挪动仓库目录，正确做法是三步：**改完路径 → 重新 install → 跑校验**：
 
 ```bash
-# 1) 把 profile 里 6 条 file: 路径改成新位置（或直接重新 add 一遍）
+# 1) 把 profile 里 7 条 file: 路径改成新位置（或直接重新 add 一遍）
 # 2) 重跑 pnpm install 让链接指向新位置
 cd ~/.dsh/profiles/web && pnpm install
 # 3) 真实启动校验（见第六节第 ④ 步）
@@ -334,8 +338,8 @@ node scripts/verify.mjs
 | # | 查什么 | 命令 | 期望 |
 |---|---|---|---|
 | ① | **dsh 版本** | `dsh --version` | `0.1.6-alpha.1` |
-| ② | **依赖层** | `dsh plugin --profile web list` | 6 packages |
-| ③ | **装配层** | `dsh --profile web --dump-config` | 8 个 bundle，顺序正确 |
+| ② | **依赖层** | `dsh plugin --profile web list` | 7 packages |
+| ③ | **装配层** | `dsh --profile web --dump-config` | 9 个 bundle，顺序正确 |
 | ④ | **真实启动** | `dsh web --no-open --port 0` | 只有一行服务地址，无致命错误 |
 
 ### ③ 的正确写法（`grep bundles` 永远返回空）
@@ -349,17 +353,18 @@ dsh --profile web --dump-config | grep -n '^# == '
 
 **不要用 `grep bundles`** —— 会返回空，很容易误判成「配置没生效」。
 
-期望看到 8 个 bundle 头，末尾 6 个是用户插件：
+期望看到 9 个 bundle 头，末尾 7 个是用户插件：
 
 ```none
 # == @deepseek-ai/dsh-base        （这个头会重复出现多次，属正常，不是重复装配）
 # == @deepseek-ai/dsh-web-app
 # == @dsh-market/plugin          → - id: dsh-market        name: '@dsh-market/plugin'
 # == dsh-workbuddy-connect       → - id: llm-workbuddy     name: dsh-workbuddy-connect
-# == dsh-opencode-go             → - id: opencode-go       name: dsh-opencode-go
+# == dsh-opencode-go-plus        → - id: opencode-go-plus  name: dsh-opencode-go-plus
 # == dsh-connect-trae            → - id: dsh-connect-trae  name: dsh-connect-trae
 # == dsh-workbuddy-quota         → - id: workbuddy-quota   name: dsh-workbuddy-quota
 # == dsh-receipt                 → - id: receipt           name: dsh-receipt
+# == dsh-session-cleanup         → - id: session-cleanup   name: dsh-session-cleanup
 ```
 
 若某个 bundle 的 `name:` 不是包本名，说明模块 import 失败 →
@@ -418,7 +423,7 @@ dsh: pnpm failed in profile directory ...
 
 | 检查项 | 实际 |
 |---|---|
-| `node_modules/dsh-opencode-go/` | ✅ **已存在**，98 个依赖也全部链接完毕 |
+| `node_modules/dsh-opencode-go-plus/` | ✅ **已存在**，98 个依赖也全部链接完毕 |
 | `package.json` 的 `dependencies` | ✅ **已写入** |
 | `package.json` 的 `dsh.profile.bundles` | ❌ **没有追加** |
 
@@ -458,18 +463,59 @@ dsh plugin --profile web remove <包名>     # 例如: dsh plugin --profile web 
 
 ---
 
-## 十、关于 dsh-opencode-go 的本地改造
+## 十、关于 `dsh-opencode-go-plus` 的来历、改造与共存禁忌
 
-本仓库收录的 `dsh-opencode-go` 上游为
-[Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go)（MIT）。
-本仓库这份是**在上游基础上手动改了 13 处源码**后重新构建的版本
-（改动在 `src/`，已编译进 `lib/`），与上游 npm 发布版**不完全一致**。
+本仓库的 `dsh-opencode-go-plus@0.2.0` 是**派生包**，基线为上游
+[Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go)`@0.1.2`（MIT）。
+它**取代**了此前收录的 `dsh-opencode-go@0.1.2`（那一版含 13 处本地源码改动）。
 
-包里的 tarball 用的是**最新构建产物**，所以新机装上就能用，
-**不需要重新构建**，也不需要源码 / node_modules。
-
-要继续改它的源码，就不能只用 tarball —— 需要另外把源码项目目录整体拷过去。
+包里的 tarball 是**编译产物**（只有 `lib/`，没有 `src/`），所以新机装上就能用，
+**不需要重新构建**，也不需要源码 / node_modules。要继续改它的逻辑，就得另拿源码项目目录，
 当前仓库不含源码。
+
+### 这一版改了什么
+
+五处宿主侧改动，都在 `lib/index.js` 里，`lib/client.js` 与协议转换未动。
+完整归属与改动清单见包内 `THIRD_PARTY_NOTICES.md` 与 `docs/derivation.md`。
+其中最需要记住的一条：
+
+> **`ctx.llm.registerModelDiscovery()` 也是全有或全无的，而且它以「设置命名空间」为键。**
+> 本包为了旧配置能继续用，刻意沿用了基线的命名空间 `llm-opencode-go`。
+> 基线没有捕获这个重复注册，错误会从 loader 自身的 effect 里逸出 ——
+> **整棵插件树加载失败，`dsh web` 直接起不来，同 profile 其余插件一起挂**。
+
+### ★ 共存禁忌（会决定 `dsh web` 能不能起来）
+
+`dsh-opencode-go-plus` 与 `dsh-opencode-go` **不能装进同一个 profile**。
+四种组合都实测过（Windows / Node 24.14.0 / pnpm 12.4.2 / dsh 0.1.6-alpha.1）：
+
+| 安装情况 | `dsh web` | 结果 |
+|---|---|---|
+| 只有 `dsh-opencode-go-plus` | ✅ 正常 | `opencode-go` 分组 **38** 条模型 |
+| 只有 `dsh-opencode-go` | ✅ 正常 | `opencode-go` 分组 **37** 条（无 `union-alpha`） |
+| 两者共存，基线在前 | ✅ 正常 | 基线服务 37 条；plus 记一条 warn 后**主动退场** |
+| 两者共存，plus 在前 | ❌ **退出码 1** | 基线抛未捕获的 `DUPLICATE_DISCOVERY`，整树加载失败 |
+| 两者共存，基线被 patch `disabled` | ✅ 正常 | plus 服务 **38** 条 |
+
+第四行是**基线的缺陷**，本包无法阻止 —— 唯一办法就是别把两个装在一起。
+
+**所以升级路径是「先卸后装」**：
+
+```bash
+dsh plugin --profile web remove dsh-opencode-go
+dsh plugin --profile web add .\plugins\dsh-opencode-go-plus\0.1.6-alpha.1\dsh-opencode-go-plus-0.2.0.tgz
+```
+
+**怎么确认装对了：数模型数**。plus 是 **38** 条并含 `union-alpha`；基线是 37 条且没有它。
+
+> ⚠️ 走错路时**命令行不会报任何错**：`ctx.logger.warn` 只写进 harness 的内存日志
+> 环形缓冲，**不输出到终端**。所以「看起来一切正常但模型数还是 37」就是本包退场了。
+> 若要两者并存做对比，用包内 `examples/migrate-from-fork.patch.yml`
+> 把基线 `disabled` 掉（上面表格最后一行那条，同样实测过）。
+
+> **与另一类冲突区分开**：如果 `opencode-go` 路由被 `settings.yaml` 里
+> `llm-pi-ai.providers.opencode-go` 那种**静态模型表**占用，本包会**换个路由**
+> （`opencode-go-plus`）继续把目录服务出来，模型数仍是 38 —— 那是正常降级，不是退场。
 
 ---
 
@@ -481,10 +527,11 @@ dsh plugin --profile web remove <包名>     # 例如: dsh plugin --profile web 
 |---|---|---|---|---|---|
 | `@dsh-market/plugin` | 0.4.8 | 7 | ✓ | ✓ | **✗** |
 | `dsh-workbuddy-connect` | 0.5.3 | 11 | ✓ | ✓ | ✓ |
-| `dsh-opencode-go` | 0.1.2 | 30 | ✓ | ✓ | ✓ |
+| `dsh-opencode-go-plus` | 0.2.0 | 31 | ✓ | ✓ | ✓ |
 | `dsh-connect-trae` | 2.0.1 | 12 | ✓ | ✓ | ✓ |
 | `dsh-workbuddy-quota` | 0.2.0 | 5 | ✓ | ✓ | **✗** |
 | `dsh-receipt` | 0.1.0 | 16 | ✓ | ✓ | ✓ |
+| `dsh-session-cleanup` | 0.1.0 | 6 | ✓ | ✓ | ✓ |
 
 > `LICENSE` 列标注 **✗** 的两个包，其 `package.json` 里 `license` 字段均为 `MIT`，
 > 但 tarball 内未附许可文件正文。`@dsh-market/plugin` 的上游许可见

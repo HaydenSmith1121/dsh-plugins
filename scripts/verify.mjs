@@ -77,6 +77,10 @@ const dshHome = process.env.DSH_HOME || path.join(os.homedir(), '.dsh');
 const profileDir = path.join(dshHome, 'profiles', PROFILE);
 const runtime = compat.runtimes.find((r) => r.dshVersion === report.dsh.version) || null;
 const userPlugins = runtime?.plugins?.map((p) => p.package) ?? [];
+// The full expected assembly order: in-box bundles first, then user plugins in
+// the order compatibility.json lists them. Shared by steps ③ and ④ so neither
+// has to hardcode a layer count.
+const expectedBundles = compat.inBoxBundles.concat(userPlugins);
 
 console.log();
 console.log(bold('  dsh-plugins 安装后校验'));
@@ -137,7 +141,7 @@ function record(no, title, pass, detail, hint) {
 // ---------------------------------------------------------------- ③ 装配层
 let bundleOk = false;
 {
-  const expected = compat.inBoxBundles.concat(userPlugins);
+  const expected = expectedBundles;
   const r = sh(`${quoteArg(launcher)} --profile ${PROFILE} --dump-config`);
   const heads = [...r.out.matchAll(/^# == (.+)$/gm)].map((m) => m[1].trim());
   const uniq = [...new Set(heads)];
@@ -215,7 +219,7 @@ if (SKIP_BOOT) {
   if (hasUrl && hit.length === 0) {
     const url = (out.match(/dsh web:\s*(\S+)/i) || [])[1] || '';
     record(4, '真实启动', true, `${green('启动成功')}  ${dim(url.replace(/\?token=.*/, '?token=***'))}`);
-    console.log('      ' + dim('8 层 bundle 全部装配成功，所有插件模块 import 通过。'));
+    console.log('      ' + dim(`${expectedBundles.length} 层 bundle 全部装配成功，所有插件模块 import 通过。`));
     console.log();
   } else {
     const detail = hit.length

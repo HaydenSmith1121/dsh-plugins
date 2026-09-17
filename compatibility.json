@@ -37,7 +37,7 @@
       "@google/genai": false,
       "protobufjs": false
     },
-    "triggeredBy": "dsh-opencode-go",
+    "triggeredBy": "dsh-opencode-go-plus",
     "appliesFromPnpm": "10.0.0",
     "note": "这两个包都不需要真的执行构建脚本：protobufjs 的 postinstall 只打印一句提示；@google/genai 的 prepare 对 tarball 安装本就不执行。填 false 的含义是「已知并同意忽略」，不是「跳过构建」。不要改成 strictDepBuilds: false —— 那会把将来真正需要编译的原生模块也一起静默跳过。",
     "symptom": "ERR_PNPM_IGNORED_BUILDS。极具欺骗性：包已进 node_modules、dependencies 也写了，唯独 dsh.profile.bundles 没追加，表现为「装上了但 GUI 里没有」。只要 pnpm 退出码非 0，就当作这条插件没装完。"
@@ -54,7 +54,7 @@
         "os": "Windows",
         "node": "24.14.0",
         "pnpm": "12.4.2",
-        "result": "8 层 bundle 全部装配，6/6 插件加载成功，真实启动 0 致命错误"
+        "result": "9 层 bundle 全部装配，7/7 插件加载成功，真实启动 0 致命错误"
       },
       "installCommand": "npm i -g @deepseek-ai/dsh@0.1.6-alpha.1",
       "bundles": [
@@ -62,10 +62,11 @@
         "@deepseek-ai/dsh-web-app",
         "@dsh-market/plugin",
         "dsh-workbuddy-connect",
-        "dsh-opencode-go",
+        "dsh-opencode-go-plus",
         "dsh-connect-trae",
         "dsh-workbuddy-quota",
-        "dsh-receipt"
+        "dsh-receipt",
+        "dsh-session-cleanup"
       ],
       "plugins": [
         {
@@ -100,20 +101,30 @@
           "peerNote": "严格 semver 下 ^0.1.5-rc.1 不包含 0.1.6-alpha.1 —— 预发布版只有在范围里存在同 major.minor.patch 的预发布比较器时才会被纳入，而 ^0.1.5-rc.1 的上界是裸 0.2.0。但 profile 设了 autoInstallPeers: false，本来就不装 peer，所以这条只是警告。实测在 0.1.6-alpha.1 上正常加载。"
         },
         {
-          "dir": "dsh-opencode-go",
-          "package": "dsh-opencode-go",
-          "version": "0.1.2",
-          "tarball": "plugins/dsh-opencode-go/0.1.6-alpha.1/dsh-opencode-go-0.1.2.tgz",
-          "files": 30,
-          "origin": "third-party",
-          "author": null,
-          "upstream": "https://github.com/Duskriver/dsh-opencode-go",
+          "dir": "dsh-opencode-go-plus",
+          "package": "dsh-opencode-go-plus",
+          "version": "0.2.0",
+          "tarball": "plugins/dsh-opencode-go-plus/0.1.6-alpha.1/dsh-opencode-go-plus-0.2.0.tgz",
+          "files": 31,
+          "origin": "self",
+          "author": "HaydenSmith1121",
+          "upstream": "https://github.com/HaydenSmith1121/dsh-plugins",
+          "derivedFrom": {
+            "package": "dsh-opencode-go",
+            "version": "0.1.2",
+            "upstream": "https://github.com/Duskriver/dsh-opencode-go",
+            "author": null,
+            "license": "MIT",
+            "note": "本仓库在基线之上改写了 5 处宿主侧逻辑（lib/index.js 加 3 个 .d.ts 声明），以编译产物形式分发；适配器、设置 UI 与 src/conversion/* 派生自 DeepSeek Harness。上游 package.json 的 author 字段缺失，上游信息来自其 repository 字段与包内 LICENSE。归属与改动清单见包内 THIRD_PARTY_NOTICES.md 与 docs/derivation.md。"
+          },
+          "replaces": "dsh-opencode-go@0.1.2",
           "license": "MIT",
           "licenseFileInTarball": true,
-          "localModifications": "本仓库这份在上游基础上改了 13 处源码（改动在 src/，已编译进 lib/），与上游 npm 发布版不完全一致",
           "peerRuntimePin": "0.1.6-alpha.1",
           "peerVerdict": "critical",
-          "peerNote": "整套 @deepseek-ai/* 精确 pin 在 0.1.6-alpha.1，是决定整批插件运行时基线的那一个。0.1.5-rc.x 内置的 @deepseek-ai/dsh-llm 缺 IMAGE_OFFLOAD_REQUIRED_CODE / offloadedImageText / projectOffloadedImages / requiredImageOffload 导出 → ESM 具名导入确定性失败 → 整棵插件树加载失败、dsh web 完全起不来。上游 0.1.0 / 0.1.1 / 0.1.2 全部要求 alpha，没有兼容 0.1.5 的版本可选，所以只能升 dsh、不能退插件。"
+          "peerNote": "整套 @deepseek-ai/* 精确 pin 在 0.1.6-alpha.1 —— 沿用基线、未做改动，所以它仍是决定整批插件运行时基线的那一个。0.1.5-rc.x 内置的 @deepseek-ai/dsh-llm 缺 IMAGE_OFFLOAD_REQUIRED_CODE / offloadedImageText / projectOffloadedImages / requiredImageOffload 导出 → ESM 具名导入确定性失败 → 整棵插件树加载失败、dsh web 完全起不来。上游 0.1.0 / 0.1.1 / 0.1.2 全部要求 alpha，没有兼容 0.1.5 的版本可选，所以只能升 dsh、不能退插件。",
+          "coexistenceWarning": "不能与 dsh-opencode-go 装进同一个 profile —— 两者共用设置命名空间 llm-opencode-go 与 provider 路由 opencode-go，且都不肯让。四种组合均已实测（Windows / Node 24.14.0 / pnpm 12.4.2 / dsh 0.1.6-alpha.1）：① 只有本包 → dsh web 正常，服务 38 条模型；② 只有基线 → 正常，37 条（无 union-alpha）；③ 两者共存且基线在前 → 基线服务 37 条，本包检测到冲突后记一条 warn 并主动退场，dsh web 正常；④ 两者共存且本包在前 → 基线抛未捕获的 DUPLICATE_DISCOVERY，从 loader 自身的 effect 里逸出，整棵插件树加载失败、dsh web 退出码 1，同 profile 其余插件一并挂掉。④ 是基线的缺陷，本包无法阻止。升级请先 remove 基线；若要两者并存做对比，用包内 examples/migrate-from-fork.patch.yml 把基线 disabled。",
+          "notes": "上游 0.1.2 的 peerDependencies / dependencies 原样保留，files 字段沿用上游写法（lib / cordis.patch.yml / THIRD_PARTY_NOTICES.md / docs / examples），package.json 与 LICENSE、README.md 由 npm 自动附带。包内 docs/verification.md 是分发版的实测记录 —— 基线那份描述的是源码仓库，它引用的 npm run typecheck / npm test / verify:installed 在 tarball 里根本没有对应文件，跑不通。"
         },
         {
           "dir": "dsh-connect-trae",
@@ -159,6 +170,22 @@
           "peerRuntimePin": "@deepseek-ai/cordis 4.0.1, @deepseek-ai/dsh-session 0.1.0-rc.6, @deepseek-ai/dsh-tools 0.1.0-rc.6",
           "peerVerdict": "warn",
           "peerNote": "dsh-session / dsh-tools 精确 pin 在 0.1.0-rc.6，与 0.1.6-alpha.1 不一致，pnpm 会打 peer 警告；但这两个包在运行时仍存在，实测可正常加载。此前仓库文档写成「无 peer」，是错的。"
+        },
+        {
+          "dir": "dsh-session-cleanup",
+          "package": "dsh-session-cleanup",
+          "version": "0.1.0",
+          "tarball": "plugins/dsh-session-cleanup/0.1.6-alpha.1/dsh-session-cleanup-0.1.0.tgz",
+          "files": 6,
+          "origin": "self",
+          "author": "HaydenSmith1121",
+          "upstream": "https://github.com/HaydenSmith1121/dsh-plugins",
+          "license": "MIT",
+          "licenseFileInTarball": true,
+          "peerRuntimePin": "@deepseek-ai/cordis ^4.0.2, react ^18.2.0",
+          "peerVerdict": "ok",
+          "peerNote": "只约束 cordis 与 react，不对 dsh 运行时版本通道设 pin。",
+          "notes": "为设置页的「已归档会话」补上真正删除会话日志的能力（上游只有 archive / unarchive，SessionPersistence 无 delete），因此带宿主半，必须在进程启动时挂载。它通过 cordis.patch.yml 关掉官方只读页 ui-settings-unarchive-sessions，不替换、不修改任何官方包。★ 本包此前已放进 plugins/ 且已装进 web profile，却漏了四处入库登记，本次补齐。"
         }
       ]
     },
@@ -167,7 +194,7 @@
       "distTag": "latest",
       "status": "unsupported",
       "recommended": false,
-      "reason": "dsh-opencode-go 精确要求 @deepseek-ai/dsh-llm@0.1.6-alpha.1，而 0.1.5-rc.1 内置的是 0.1.5-rc.2，缺少 IMAGE_OFFLOAD_REQUIRED_CODE 等导出 → 整个插件树加载失败，dsh web 完全起不来。",
+      "reason": "dsh-opencode-go-plus 精确要求 @deepseek-ai/dsh-llm@0.1.6-alpha.1，而 0.1.5-rc.1 内置的是 0.1.5-rc.2，缺少 IMAGE_OFFLOAD_REQUIRED_CODE 等导出 → 整个插件树加载失败，dsh web 完全起不来。",
       "upgradeTo": "0.1.6-alpha.1",
       "danger": "这是 npm 的 latest 通道，也就是 npm i -g @deepseek-ai/dsh（不带版本）会装到的那一个。以后顺手跑一次不带版本的升级就会静默降级到这里，故障立刻复现且没有任何提示。"
     },
