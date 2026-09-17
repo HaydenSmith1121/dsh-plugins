@@ -58,31 +58,59 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
  * 用 `/<name>/latest` 而不是整个包文档：后者对大包是几百 KB 到几 MB，
  * 而我们只要一个 version 字段。
  *
+ * ★ 返回值刻意区分三种结果，而不是笼统的 null：
+ *
+ *     { status: 'ok', version, ... }   查到了
+ *     { status: 'not-found' }          **确定**这个包不在 npm 上（404）
+ *     { status: 'error', reason }      这次没查成（超时 / 429 / 5xx）
+ *
+ *   为什么必须区分：调用方据此决定「回退到 GitHub」还是「保留上一轮的值」。
+ *   把 429 当成 404，就会在 CI 被限流时把上千条记录的版本来源从 npm 改成 GitHub ——
+ *   实测过一次：GitHub runner 是数据中心 IP，npm 对它限流，那次运行只命中 349 条
+ *   npm（本机 1300 条），于是 1004 个文件的内容变了，而其中大部分只是「这次没查成」。
+ *
  * @param {string} name 包名（可带 @scope）
- * @returns {Promise<{version:string, publishedAt:string|null, deprecated:boolean, license:string|null, repository:string|null}|null>}
  */
-export async function resolveNpmLatest(name, { fetchImpl = fetch } = {}) {
+export async function resolveNpmLatest(name, { fetchImpl = fetch, attempts = 3 } = {}) {
   const pkg = String(name ?? '').trim();
-  if (pkg === '') return null;
-  try {
-    const res = await fetchImpl(`${NPM_REGISTRY}/${encodeURIComponent(pkg).replace(/^%40/, '@')}/latest`, {
-      headers: { accept: 'application/json', 'user-agent': 'dsh-plugins-catalog-sync' },
-      signal: AbortSignal.timeout(20_000),
-    });
-    if (!res.ok) return null;
-    const doc = await res.json();
-    if (!doc || typeof doc.version !== 'string') return null;
-    const repo = typeof doc.repository === 'string' ? doc.repository : (doc.repository?.url ?? null);
-    return {
-      version: doc.version,
-      publishedAt: doc._npmUser ? null : null,
-      deprecated: Boolean(doc.deprecated),
-      license: typeof doc.license === 'string' ? doc.license : (doc.license?.type ?? null),
-      repository: repo,
-    };
-  } catch {
-    return null;
+  if (pkg === '') return { status: 'not-found' };
+
+  const url = `${NPM_REGISTRY}/${encodeURIComponent(pkg).replace(/^%40/, '@')}/latest`;
+  let lastReason = 'unknown';
+
+  for (let i = 0; i < attempts; i += 1) {
+    try {
+      const res = await fetchImpl(url, {
+        headers: { accept: 'application/json', 'user-agent': 'dsh-plugins-catalog-sync' },
+        signal: AbortSignal.timeout(20_000),
+      });
+      // 404：包确实不在 npm 上。这是**确定**的答案 —— 不重试、也不当成故障。
+      if (res.status === 404) return { status: 'not-found' };
+      // 429 / 5xx：限流或服务端抖动，退避后重试。
+      if (res.status === 429 || res.status >= 500) {
+        lastReason = `HTTP ${res.status}`;
+        await sleep(400 * (i + 1) ** 2);
+        continue;
+      }
+      if (!res.ok) return { status: 'not-found' };
+
+      const doc = await res.json();
+      if (!doc || typeof doc.version !== 'string') return { status: 'not-found' };
+      const repo = typeof doc.repository === 'string' ? doc.repository : (doc.repository?.url ?? null);
+      return {
+        status: 'ok',
+        version: doc.version,
+        deprecated: Boolean(doc.deprecated),
+        license: typeof doc.license === 'string' ? doc.license : (doc.license?.type ?? null),
+        repository: repo,
+      };
+    } catch (err) {
+      lastReason = err?.name === 'TimeoutError' ? 'timeout' : String(err?.message ?? err);
+      await sleep(400 * (i + 1) ** 2);
+    }
   }
+
+  return { status: 'error', reason: lastReason };
 }
 
 // ─────────────────────────────────────────────────────────────

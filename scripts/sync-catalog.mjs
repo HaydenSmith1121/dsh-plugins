@@ -747,14 +747,15 @@ async function collect(existing) {
     log(`  （未选中的 ${carriedVersion} 条沿用上一轮的版本号，不会被抹空）`);
   }
 
-  const stats = { npm: 0, githubRelease: 0, githubTag: 0, packageJson: 0, none: 0, notFound: 0, errors: [] };
+  const stats = { npm: 0, githubRelease: 0, githubTag: 0, packageJson: 0, none: 0, notFound: 0, carried: 0, errors: [] };
 
   {
     // ① npm：便宜且最准，能查到的先解决掉
     //
     // ★ 并发而不是串行。实测有 2000 条左右带着干净的 npm 规格，串行查一遍要十分钟
-    //   （每条约 300ms），而 npm registry 本来就能承受并发。8 路是实测的稳妥值：
-    //   再高对 registry 不礼貌，收益也已经很小。
+    //   （每条约 300ms），而 npm registry 本来就能承受并发。
+    //   并发从 8 降到 4：GitHub runner 是数据中心 IP，npm 对这类来源限流明显，
+    //   并发越高命中率反而越低（实测 8 路只命中 349/1991，本机 1300/1991）。
     const needGithub = [];
     const npmTargets = [];
     for (const rec of targets) {
@@ -762,23 +763,48 @@ async function collect(existing) {
       if (candidate) npmTargets.push({ rec, candidate });
       else needGithub.push(rec);
     }
-    log(`  npm 待查 ${npmTargets.length} 个（并发 8），其余 ${needGithub.length} 个走 GitHub`);
+    log(`  npm 待查 ${npmTargets.length} 个（并发 4），其余 ${needGithub.length} 个走 GitHub`);
 
     let npmDone = 0;
     let npmHit = 0;
-    await mapLimit(npmTargets, 8, async ({ rec, candidate }) => {
-      const npm = await resolveNpmLatest(candidate).catch(() => null);
+    let npmCarried = 0;
+    await mapLimit(npmTargets, 4, async ({ rec, candidate }) => {
+      const npm = await resolveNpmLatest(candidate);
       npmDone += 1;
-      if (npmDone % 250 === 0) log(`    npm ${npmDone}/${npmTargets.length}（命中 ${npmHit}）`);
-      if (npm && npm.version && npmRepoMatches(npm.repository, rec.repo)) {
+      if (npmDone % 250 === 0) log(`    npm ${npmDone}/${npmTargets.length}（命中 ${npmHit}，保留上轮 ${npmCarried}）`);
+
+      if (npm.status === 'ok' && npmRepoMatches(npm.repository, rec.repo)) {
         decideVersion(rec, null, npm);
         if (npm.license && !rec.license) rec.license = npm.license;
         npmHit += 1;
-      } else {
-        needGithub.push(rec);
+        return;
       }
+
+      /**
+       * ★ 这次「没查成」（超时 / 429 / 5xx）与「确定不在 npm 上」（404）必须区别对待。
+       *
+       *   上一轮就查到了 npm 版本、这一轮却被限流 —— 如果不加区分地回退到 GitHub，
+       *   记录的版本来源会在 npm 与 GitHub 之间**来回翻**：CI 被限流的那天，
+       *   上千条记录的 version 与 versionSource 一起变（实测一次 1004 个文件），
+       *   第二天限流缓解又变回去。那既是噪音，也可能让界面上的版本号真的跳变
+       *   （npm 的 latest 与仓库的 release 并不总是同一个号）。
+       *
+       *   所以：查不成 → 保留上一轮的结论；确定没有 → 按原逻辑回退到 GitHub。
+       */
+      const prev = existing.get(rec.slug);
+      if (npm.status === 'error' && prev?.version) {
+        rec.version = prev.version;
+        rec.versionSource = prev.versionSource;
+        rec.latestRelease = prev.latestRelease;
+        rec.versionCheckedAt = prev.versionCheckedAt;
+        if (rec.stars === null) rec.stars = prev.stars;
+        npmCarried += 1;
+        stats.errors.push(`npm ${candidate}：${npm.reason}`);
+        return;
+      }
+      needGithub.push(rec);
     });
-    log(`  npm 命中 ${npmHit} 个，其余走 GitHub`);
+    log(`  npm 命中 ${npmHit} 个，保留上一轮 ${npmCarried} 个，其余走 GitHub`);
 
     // ② GitHub：一次批量查询里并排问几十个仓库
     //
@@ -824,6 +850,27 @@ async function collect(existing) {
         if (data.homepage && !rec.homepage) rec.homepage = data.homepage;
         // 仓库里真实的包名（用来把 npm 规格纠正过来）—— 只在没有干净规格时采用
         if (data.packageName && !rec.package && rec.install.method !== 'npm') rec.package = data.packageName;
+      }
+
+      /**
+       * ★ 与 npm 那一轮同一条规矩：**这一轮没拿到数据时，不要抹掉上一轮已经知道的事实。**
+       *
+       *   `!data` 有两种可能：仓库真的没了（GraphQL 明确回报 NOT_FOUND），
+       *   或者整批请求失败 / 预算用完（那时后面几百个仓库全都没有数据）。
+       *   把后者当成「什么都没有」，会让一次网络抖动把成百上千条记录的版本号清成 null ——
+       *   而 null 在界面上是「版本未知」，比一个稍微旧一点的版本号糟得多。
+       *
+       *   代价是「仓库真的被删了」这件事会被延后一轮才发现；
+       *   那个代价可以接受，而且真删了的时候上游索引通常也一起没了（记录会被移除）。
+       */
+      const prev = existing.get(rec.slug);
+      if (!data && prev?.version) {
+        rec.version = prev.version;
+        rec.versionSource = prev.versionSource;
+        rec.latestRelease = prev.latestRelease;
+        rec.versionCheckedAt = prev.versionCheckedAt;
+        stats.carried += 1;
+        continue;
       }
       decideVersion(rec, data, null);
     }
@@ -934,7 +981,9 @@ async function collect(existing) {
   ok(`索引：${idx.counts.total} 条（已验证 ${idx.counts.verified} / 已审核 ${idx.counts.reviewed} / 未审核 ${idx.counts.community}）`);
   if (!OFFLINE) {
     log(`  版本来源：npm ${stats.npm} / GitHub release ${stats.githubRelease} / tag ${stats.githubTag} / package.json ${stats.packageJson} / 取不到 ${stats.none}`);
+    if (stats.carried) log(`  本轮没查成、沿用上一轮结果的：${stats.carried}（网络抖动不该改写已知事实）`);
     if (stats.notFound) log(`  仓库已不存在或不可访问：${stats.notFound}`);
+    if (stats.errors.length) log(`  外部查询报错 ${stats.errors.length} 条（示例：${stats.errors[0].slice(0, 80)}）`);
   }
 
   if (problems.length) {

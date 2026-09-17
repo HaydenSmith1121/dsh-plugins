@@ -86,7 +86,10 @@ jobs:
           echo "本次变化的文件数：$changed"
           if [ "$changed" -gt 0 ]; then
             echo '--- 变化明细（前 50 条）---'
-            git status --porcelain -- catalog | head -50
+            # ★ 必须用 sed，不能用 `| head -50`：`set -o pipefail` 下 head 读满 50 行
+            #   就退出，git 随之收到 SIGPIPE（退出码 141），整条管道被判失败 ——
+            #   一次正常的变化统计会把整个工作流打红。sed 会把输入读完，不产生 SIGPIPE。
+            git status --porcelain -- catalog | sed -n '1,50p'
           fi
 
       - name: 提交并推送
