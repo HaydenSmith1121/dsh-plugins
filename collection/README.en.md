@@ -129,7 +129,8 @@ deleted. When upstream ships a new release, **add** a directory — do not repla
 left sidebar of the GUI → "Verified" tab → click "Install". The market reads this directory
 automatically and runs its pre-install compatibility gate.
 
-See the repository root [`README.md`](../README.md) for details.
+See the repository root [`README.md`](../README.md) for details, and
+[`docs/收录说明.md`](../docs/收录说明.md) for the collection overview (Chinese).
 
 ---
 

@@ -254,3 +254,4 @@ node scripts/build-collection.mjs --check   # 必须通过
 1. 在 PR 描述里说明动机与实际踩到的坑
 2. 同步检查 `collection/README.md` 是否仍然准确
 3. 若是收紧规则，检查存量快照是否需要补齐信息
+4. 同步检查 [`docs/收录说明.md`](../docs/收录说明.md)（面向用户的收录说明）是否需要跟着改

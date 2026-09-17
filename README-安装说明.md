@@ -18,7 +18,7 @@
 做到**新机可完整复现**。
 
 > 部分插件为自研，部分收集自他人开源项目，来源与许可见
-> [`README.md` 第三节](./README.md#三插件来源与许可)。所有第三方插件版权归原作者所有。
+> [`docs/插件清单与来源.md`](./docs/插件清单与来源.md#二插件来源与许可)。所有第三方插件版权归原作者所有。
 
 **本文件是唯一的安装文档，自包含。** 里面每一步都已经把「容易出错的地方」
 直接写成了预防措施和自检项 —— 照着走就不会遇到那些问题，出问题也能就地定位。
@@ -327,7 +327,8 @@ dsh plugin --profile web add ./plugins/dsh-market-plugin/0.1.6-alpha.1/dsh-marke
 - 成功后把声明了 `dsh.bundle` 的包追加进 `package.json` 的 `dsh.profile.bundles`
 
 > **路径里的 `0.1.6-alpha.1` 是 dsh 运行时版本，不是插件版本** ——
-> 这是本仓库的多版本目录结构，详见 [`CONTRIBUTING.md`](./CONTRIBUTING.md)。
+> 这是本仓库的多版本目录结构，详见 [`CONTRIBUTING.md`](./CONTRIBUTING.md)
+> 与 [`docs/目录结构.md`](./docs/目录结构.md)。
 
 ---
 
@@ -594,7 +595,7 @@ dsh plugin --profile web add .\plugins\dsh-opencode-go-plus\0.1.6-alpha.1\dsh-op
 
 > `LICENSE` 列标注 **✗** 的两个包，其 `package.json` 里 `license` 字段均为 `MIT`，
 > 但 tarball 内未附许可文件正文。`@dsh-market/plugin` 的上游许可见
-> [README 第二节](./README.md#二插件来源与许可)；`dsh-workbuddy-quota` 为本仓库自研。
+> [`docs/插件清单与来源.md`](./docs/插件清单与来源.md#二插件来源与许可)；`dsh-workbuddy-quota` 为本仓库自研。
 > 新入库的插件一律要求带许可文件，见 [`CONTRIBUTING.md`](./CONTRIBUTING.md)。
 
 自查命令：

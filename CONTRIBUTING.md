@@ -104,7 +104,8 @@ node scripts/verify.mjs      # 四步校验，第 ④ 步会真实启动一次
 
 **这是本仓库最看重的一条。** 我们分发别人的代码，就必须把出处写准。
 
-每个新入库的插件，**必须**在 [`README.md` 第三节](./README.md#三插件来源与许可)
+每个新入库的插件，**必须**在
+[`docs/插件清单与来源.md` 第二节](./docs/插件清单与来源.md#二插件来源与许可)
 的表格里补齐这几列：
 
 | 列 | 要求 |
@@ -227,9 +228,10 @@ cp "$tgz" "plugins/$dir/$rt/"
 - 如果该 plugin 要进 bundle 层，记得同步更新 runtime 的 `bundles` 数组
   （`inBoxBundles` + `plugins` 的包名顺序）
 
-**② `README.md` 第三节** —— 补上来源与许可那一行
+**② `docs/插件清单与来源.md` 第二节** —— 补上来源与许可那一行
 
-**③ `README.md` 第四节** —— 补上插件清单那一行
+**③ `docs/插件清单与来源.md` 第一节** —— 补上插件清单那一行
+（首页 `README.md` 的「插件清单」是精简摘要，新插件同样要在那儿加一行）
 
 **④ `profile-config/profile-bundles.yaml`** —— 若要进 web 的 bundle 层，
 在 `userBundles` / `finalBundles` 里追加（**顺序即层级顺序**）
@@ -334,7 +336,8 @@ git push origin main
 
    同时把**上一个版本**的 `recommended` 改成 `false`。
 
-5. **更新文档里的版本矩阵**（`README.md` 第五节、`README-安装说明.md` 第三节）
+5. **更新文档里的版本矩阵**（[`docs/版本兼容矩阵.md`](./docs/版本兼容矩阵.md) 第三节、
+   [`README-安装说明.md` 第三节](./README-安装说明.md#三dsh-版本为什么必须锁定-016-alpha1)）
 
 6. **如实填写 `verifiedOn`** —— 在什么机器、什么 Node/pnpm 版本上验证的，
    结果如何。**没实测过就不要写 supported**，宁可在 Issue 里讨论。
@@ -353,8 +356,7 @@ git push origin main
 - [ ] `package.json` 里有 `dsh.bundle` 声明
 - [ ] 目录结构符合 `plugins/<目录名>/<dsh 版本>/<包名>-<版本>.tgz`
 - [ ] `compatibility.json` 已更新，且 **`bundles` 顺序与 `plugins` 顺序自洽**
-- [ ] `README.md` 第三节（来源与许可）已更新
-- [ ] `README.md` 第四节（插件清单）已更新
+- [ ] `README.md` 首页的插件清单已加行；`docs/插件清单与来源.md` 第一节（清单）与第二节（来源与许可）已更新
 - [ ] `profile-config/profile-bundles.yaml` 已更新（若进 bundle 层）
 - [ ] **第三方插件已标注原作者与上游仓库**；查不到就明确写「未注明」并说明核实过程
 - [ ] **已按 [`collection/SPEC.md`](./collection/SPEC.md) 登记收录快照**（版本 / 作者 / 上游 / 许可四项齐全）
