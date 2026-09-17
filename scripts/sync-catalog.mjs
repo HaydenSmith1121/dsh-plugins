@@ -1,11 +1,20 @@
 /**
  * 插件目录的**采集与生成器** —— 市场仓库里唯一会写 catalog/ 的脚本。
  *
- *   node scripts/sync-catalog.mjs                 # 采集 + 生成（联网）
- *   node scripts/sync-catalog.mjs --check         # 只校验工作区与磁盘是否一致（CI 用，不联网）
- *   node scripts/sync-catalog.mjs --offline       # 不联网，只用已有配置文件重建 index.json
+ *   node scripts/sync-catalog.mjs                 # 采集 + 生成（联网，每日任务跑的就是它）
+ *   node scripts/sync-catalog.mjs --check         # ★ 只读校验：只读磁盘，不联网、不写盘
+ *   node scripts/sync-catalog.mjs --offline       # 不联网，只把磁盘上已有的配置归一化并重建索引
  *   node scripts/sync-catalog.mjs --only <slug>   # 只刷新一个插件（调试用）
- *   node scripts/sync-catalog.mjs --limit 200     # 只刷新前 N 个（试跑用）
+ *   node scripts/sync-catalog.mjs --limit 200     # 只解析前 N 个的版本（试跑，默认不写盘）
+ *
+ * ── 三条路径的能力边界（别混）─────────────────────────────────
+ *
+ *   --check    读 catalog/plugins/*.json → 核对「能否原样往返」「索引是不是它的派生结果」
+ *              「文件数与索引条数是否相等」。**没有任何写操作，没有任何网络调用。**
+ *              它不回答「上游是不是发了新版」—— 那需要网络，是每日任务的职责。
+ *   --offline  同样不联网，但**会写** index.json（以及归一化修正过的配置文件）。
+ *              手工改了展示字段之后用它把索引对齐；它不会删任何文件。
+ *   （无参数） 联网采集。只有这条路径会新增 / 删除配置文件。
  *
  * ── 它产出什么 ────────────────────────────────────────────────
  *
@@ -410,10 +419,20 @@ function recordFromSelf(o, { dshVersion }) {
     riskyReasons: [],
   };
   rec.install.sha256 = null; // 见上面的长注释：自引用条目不能带校验和
-  rec.sha256Note = sha256
-    ? `自引用条目：本记录指向的 tarball 就是本仓库构建出来的那个包，而本包**内含**这份目录 —— `
-      + `写进它的 sha256 会因为「tarball 内容取决于记录、记录又取决于 tarball」而永远解不出来（不动点）。`
-      + `当前产物实测 sha256 = ${sha256}，权威值见同目录的 .tgz.sha256 边车文件。`
+
+  /**
+   * ★ 这里**不能**把实测到的 hash 写进说明文字。
+   *
+   *   之前写过，结果是构建与采集永远收敛不到一起，成了一个死循环：
+   *     采集 → 说明里记下 hash H → 构建（说明文字进包）→ tarball 变了，hash 变成 H′
+   *     → 下次采集读到 H′，说明又变 → 文件变了 → 再构建 → …
+   *   每晚的定时任务都会产生一次「只有一个数字变了」的提交，而那个数字**永远是错的**
+   *   （它记的是上一个包的 hash）。校验和属于边车文件，不属于会进包的说明文字。
+   */
+  rec.sha256Note = tarballRel
+    ? '自引用条目：本记录指向的 tarball 就是本仓库构建出来的那个包，而本包**内含**这份目录 —— '
+      + '写进它的 sha256 会因为「tarball 内容取决于记录、记录又取决于 tarball」而永远解不出来（不动点）。'
+      + '实际校验和见同目录的 .tgz.sha256 边车文件（构建时写出），请不要把它抄进这段文字里。'
     : '本条目指向的 tarball 目前不在仓库里（plugins/dsh-plugins-market/<dsh版本>/ 下没有对应文件）。'
       + '先跑一次 node plugins-src/dsh-plugins-market/build.mjs 打好包。';
   rec.source = { kind: 'self', url: `${REPO_RAW_BASE}/catalog/overrides/self.json`, firstSeenAt: null, lastSyncedAt: null };
@@ -699,6 +718,34 @@ async function collect(existing) {
   if (ONLY) targets = targets.filter((r) => r.slug === slugify(ONLY) || r.id === ONLY);
   if (LIMIT > 0) targets = targets.slice(0, LIMIT);
   log(`→ 待解析：${targets.length} 个`);
+
+  /**
+   * ★ 没被选进 targets 的记录，必须**沿用上一轮已经解析出来的版本号**。
+   *
+   *   否则 `--only <slug>` / `--limit N` 会把其余记录的 version 抹成 null ——
+   *   因为那些记录是刚从数据源构造出来的，构造时不带版本号，版本号只在下面
+   *   那一轮外部解析里才填上。一次「只刷新一个插件」的调试，就能把整个目录的
+   *   版本号清空，而日志只会说「变更 7495」。
+   *
+   *   本地权威来源（集合仓库的 manifest、市场自己的 package.json）不在此列：
+   *   它们的版本号就在本次运行的输入里，比上一轮记录更准。
+   */
+  const targetSlugs = new Set(targets.map((r) => r.slug));
+  if (targetSlugs.size !== bySlug.size) {
+    let carriedVersion = 0;
+    for (const [slug, rec] of bySlug) {
+      if (targetSlugs.has(slug) || isLocallyAuthoritative(rec)) continue;
+      const prev = existing.get(slug);
+      if (!prev) continue;
+      rec.version = prev.version;
+      rec.versionSource = prev.versionSource;
+      rec.latestRelease = prev.latestRelease;
+      rec.versionCheckedAt = prev.versionCheckedAt;
+      if (rec.stars === null) rec.stars = prev.stars;
+      carriedVersion += 1;
+    }
+    log(`  （未选中的 ${carriedVersion} 条沿用上一轮的版本号，不会被抹空）`);
+  }
 
   const stats = { npm: 0, githubRelease: 0, githubTag: 0, packageJson: 0, none: 0, notFound: 0, errors: [] };
 

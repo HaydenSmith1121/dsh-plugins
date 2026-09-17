@@ -3,7 +3,7 @@
   "id": "lim12137/dsh-llm-extra-retry",
   "slug": "lim12137__dsh-llm-extra-retry",
   "tier": "community",
-  "package": null,
+  "package": "dsh-llm-extra-retry",
   "name": "dsh-llm-extra-retry",
   "title": "dsh-llm-extra-retry",
   "summary": "为 DSH 模型请求增加额外恢复策略：遇到 PI_AI_ERROR 错误时，固定等待 20 秒后自动重试一次，其他错误保持内置重试逻辑不变。",
@@ -24,10 +24,10 @@
   "repo": "https://github.com/lim12137/dsh-llm-extra-retry",
   "homepage": null,
   "license": "MIT",
-  "stars": 0,
+  "stars": 1,
   "forks": 0,
   "pushedAt": "2026-08-26T04:01:40Z",
-  "metricsCheckedAt": "2026-09-17T16:25:08.895Z",
+  "metricsCheckedAt": "2026-09-17T17:24:38.098Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -55,7 +55,7 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
   },
   "review": null
 }

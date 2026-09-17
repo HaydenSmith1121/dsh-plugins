@@ -13,7 +13,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import zlib from 'node:zlib';
-import { suite, test, assert, eq, REPO_ROOT as REPO, importBuilt } from './harness.mjs';
+import { suite, test, assert, eq, REPO_ROOT as REPO, importBuilt, ensureTestProfile } from './harness.mjs';
 
 // 针对**打包产物**测试（见 harness.mjs 顶部说明）：源码树与打包布局的相对深度不同，
 // 只测源码会漏掉 cwd / 包内资源解析错位这一类问题。
@@ -25,6 +25,13 @@ const { loadCatalogIndex, normalizeEntry } = await importBuilt('lib/catalog.js')
 // 测试针对**隔离环境**跑，绝不碰生产 profile
 const DEV_HOME = process.env.DPM_TEST_HOME ?? path.join(os.homedir(), '.dsh-dev');
 process.env.DSH_HOME = DEV_HOME;
+
+// ★ 隔离 profile 读不到就铺一份最小 fixture。
+//   闸门要在一个「已初始化的 profile」上判定，而 CI 上没有 dsh、没人替我们建它 ——
+//   不铺的话这组测试会在 CI 里恒红、开发机上恒绿，很快就会被当成噪音。
+//   已存在的 profile 一个字节都不动。
+const fixture = ensureTestProfile({ home: DEV_HOME });
+if (fixture.created) console.log(`  （隔离 profile 不存在，已铺最小 fixture：${fixture.dir}）`);
 
 const compat = readJsonSafe(path.join(REPO, 'compatibility.json'));
 // ★ preferRemote:false —— 闸门测试要的是「给定一份目录，判定是否正确」，

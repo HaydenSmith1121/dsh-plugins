@@ -130,38 +130,60 @@ test('自引用 tarball 的实际 sha256 有边车文件可查', () => {
 
 suite('installed layout / repo 探测');
 
-test('从 profile 的 file: 规格反推仓库根（正斜杠形态）', async () => {
-  // pnpm 写进 package.json 的是正斜杠（file:D:/deepseek/...），而 Windows 上 path.sep
-  // 是反斜杠。第一版用 path.sep 拼 marker，导致 indexOf 永远 -1、检测静默失败。
-  const { detectEnvironment } = await importBuilt('lib/util.js');
-  const env = detectEnvironment(process.env);
+test('★ 从 profile 的 file: 规格反推仓库根（正斜杠形态）', async () => {
+  // pnpm 写进 package.json 的是**正斜杠**（file:D:/deepseek/...），而 Windows 上
+  // path.sep 是反斜杠。第一版用 path.sep 拼 marker，于是 indexOf 永远 -1、
+  // 检测静默失败 —— 表现是「插件照常运行，只是把 tarball 又联网下了一遍」。
+  //
+  // ★ 这个用例**自己造条件**，不依赖「本机某个 profile 里恰好装过这个插件」。
+  //   否则它在 CI（没有 dsh、没有 profile）上恒红、在开发机上恒绿，
+  //   而那种测试很快就会被当成噪音忽略掉 —— 恰恰把要防的回归放走了。
+  const { ensureTestProfile, TEST_HOME } = await import('./harness.mjs');
+  ensureTestProfile({ home: TEST_HOME }); // 确保父目录存在（本用例只用它的 profiles/ 这一层）
+  const home = TEST_HOME;
 
-  // 复刻 index.js 的探测逻辑（它没有导出，这里用等价实现验证路径处理）
   const PLUGIN_PACKAGE = 'dsh-plugins-market';
-  const profilesDir = path.join(env.home, 'profiles');
-  assert(fs.existsSync(profilesDir), `测试前置：${profilesDir} 应当存在`);
+  const profileName = '__repo-detect-probe';
+  const profileDir = path.join(home, 'profiles', profileName);
+  fs.mkdirSync(profileDir, { recursive: true });
 
-  let found = null;
-  for (const name of fs.readdirSync(profilesDir)) {
-    const manifestPath = path.join(profilesDir, name, 'package.json');
-    if (!fs.existsSync(manifestPath)) continue;
-    const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
-    const spec = manifest?.dependencies?.[PLUGIN_PACKAGE];
-    if (typeof spec !== 'string') continue;
-    const m = /^(?:file|link):(.+)$/.exec(spec.trim());
-    if (!m) continue;
-    const specPath = m[1].replace(/\\/g, '/');
-    const idx = specPath.indexOf(`/plugins/${PLUGIN_PACKAGE}/`);
-    if (idx <= 0) continue;
-    const native = path.normalize(specPath.slice(0, idx));
-    // 仓库根的判定标记：自 0.4.0 起是 catalog/index.json（目录才是市场仓库的本体），
-    // compatibility.json 已经瘦身成只描述运行时矩阵，不能再当标记用。
-    if (fs.existsSync(path.join(native, 'catalog', 'index.json'))) found = native;
+  // 造一条**正斜杠**形态的 file: 规格，指向真实仓库里那个 tarball
+  const version = JSON.parse(fs.readFileSync(path.join(PKG, 'package.json'), 'utf8')).version;
+  const relSpec = `plugins/${PLUGIN_PACKAGE}/0.1.6-alpha.1/${PLUGIN_PACKAGE}-${version}.tgz`;
+  const forwardSlashSpec = `file:${REPO_ROOT.replace(/\\/g, '/')}/${relSpec}`;
+  fs.writeFileSync(
+    path.join(profileDir, 'package.json'),
+    `${JSON.stringify({ name: 'probe', private: true, dependencies: { [PLUGIN_PACKAGE]: forwardSlashSpec } }, null, 2)}\n`,
+    'utf8',
+  );
+
+  try {
+    // 复刻 index.js 的探测逻辑（它没有导出，这里用等价实现验证路径处理）
+    const profilesDir = path.join(home, 'profiles');
+    let found = null;
+    for (const name of fs.readdirSync(profilesDir)) {
+      const manifestPath = path.join(profilesDir, name, 'package.json');
+      if (!fs.existsSync(manifestPath)) continue;
+      const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+      const spec = manifest?.dependencies?.[PLUGIN_PACKAGE];
+      if (typeof spec !== 'string') continue;
+      const m = /^(?:file|link):(.+)$/.exec(spec.trim());
+      if (!m) continue;
+      const specPath = m[1].replace(/\\/g, '/');
+      const idx = specPath.indexOf(`/plugins/${PLUGIN_PACKAGE}/`);
+      if (idx <= 0) continue;
+      const native = path.normalize(specPath.slice(0, idx));
+      // 仓库根的判定标记：自 0.4.0 起是 catalog/index.json（目录才是市场仓库的本体），
+      // compatibility.json 已经瘦身成只描述运行时矩阵，不能再当标记用。
+      if (fs.existsSync(path.join(native, 'catalog', 'index.json'))) found = native;
+    }
+
+    assert(found, '应当能从 profile 规格里反推出仓库根（若为 null，说明分隔符归一化又漏了）');
+    eq(path.resolve(found), path.resolve(REPO_ROOT), '推出来的应当正好是本仓库根');
+    assert(fs.existsSync(path.join(found, 'catalog', 'index.json')), '推出来的仓库根里应当有 catalog/index.json');
+  } finally {
+    fs.rmSync(profileDir, { recursive: true, force: true });
   }
-
-  assert(found, '应当能从 profile 规格里反推出仓库根（若为 null，说明分隔符归一化又漏了）');
-  assert(fs.existsSync(path.join(found, 'catalog', 'index.json')), '推出来的仓库根里应当有 catalog/index.json');
-  assert(fs.existsSync(path.join(found, 'plugins')), '推出来的仓库根里应当有 plugins/');
 });
 
 test('生产 profile 里那份过期的 file: 依赖应当被检出（本仓库真实存在的隐患）', async () => {
