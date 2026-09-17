@@ -32,18 +32,43 @@ dsh 的路径解析优先级是：
 
 | 手段 | 隔离了什么 | 够不够 |
 |---|---|---|
-| `dsh --profile dev` | **只隔离插件树**（各自的 `profiles/<name>/node_modules`） | ✗ `.credentials.yaml`、`settings.yaml`、`sessions/` **仍然共享** |
+| `dsh --profile <name>` | **只隔离插件树**（各自的 `profiles/<name>/node_modules`） | ✗ `.credentials.yaml`、`settings.yaml`、`sessions/` **仍然共享** |
 | `DSH_HOME=<另一个目录>` | **整个主目录**：profile + 插件 + 凭据 + 设置 + 会话 | ✓ 要的是这个 |
 
 `DSH_HOME` 是 **bootstrap-only** 的：它由**进程环境变量**读取，只要在启动那个
 进程时设好就生效，不写全局。所以你的日常 `dsh web` 永远走生产，不会被带偏。
+
+### ★ 为什么隔离环境里 profile 名还是叫 `web`
+
+两个 dsh 的限制叠在一起，导致**没法**用「换个 profile 名」来隔离：
+
+1. `dsh web` 是 `--profile web` 的**硬编码别名**
+   （`lib/bin.js`：`resolveBoot(web, "web", …)`），profile 名写死是 `web`。
+2. 它还会**主动拒绝**父级的 `--profile`：
+
+   ```console
+   $ dsh --profile dev web
+   error: web takes none of parent --profile, --from-default-profile, --patch, …
+   ```
+
+3. 反过来，用 `--from-default-profile web` 去**造**一个叫 `web` 的 profile 也不行：
+
+   ```console
+   $ dsh --profile web --from-default-profile web --dump-config
+   Error: profile "web" is shipped and cannot be a custom profile target;
+          omit --from-default-profile to use it
+   ```
+
+所以本方案的隔离点是 **`DSH_HOME` 指向另一个主目录** ——
+那边也有一份 `profiles/web`，但它是**完全独立**的一份（插件、凭据、会话都分开）。
+profile 名保持 `web`，只是为了让 `dsh web` 能用。
 
 ### 两套环境的对照
 
 | | 生产（日常用） | 开发（调插件用） |
 |---|---|---|
 | `DSH_HOME` | `~/.dsh` | `~/.dsh-dev` |
-| profile | `web` | `dev` |
+| profile | `web` | `web`（同名，但在**另一个主目录**里） |
 | 端口 | 3080 | **3090** |
 | 插件树 | 完整业务插件 | 干净的 `base` + `web-app` 骨架 |
 | 凭据 / 设置 / 会话 | 自己的 | **独立副本** |
@@ -81,22 +106,13 @@ node scripts/dev-env.mjs init
 它会：
 
 - 在 `~/.dsh-dev` 建一套独立的 harness 主目录
-- 用出厂模板建一个名为 `dev` 的 profile（默认从 `web` 模板复制）
 - 把生产的 `.credentials.yaml` / `settings.yaml` **复制成独立副本**
+- profile 名为 `web`（出厂自带，**无需也没有**「从模板复制」这一步 —— 见第二节）
 
 > `~` 由 Node 的 `os.homedir()` 解析，**Windows / macOS / Linux 通吃**。
 > 要换位置用 `--home <path>`。
 
-### 3) 装依赖（只需一次）
-
-```bash
-cd ~/.dsh-dev/profiles/dev
-pnpm install
-```
-
-> 这一步不能省。省了的话插件树无法加载。
-
-### 4) 启动
+### 3) 启动（依赖会自动装）
 
 ```bash
 cd <仓库目录>
@@ -105,7 +121,17 @@ node scripts/dev-env.mjs web
 
 浏览器打开 `http://127.0.0.1:3090`。你的生产环境（3080）**完全不受影响**。
 
-### 5) 验证它真的隔离了
+> **不需要手动 `pnpm install`**。首次 `dsh web` 会自己把
+> `profiles/web`（四件套 + `node_modules`）建出来并装好依赖，然后直接开始监听。
+> 实测：在一个全新的 `DSH_HOME` 上一条 `dsh web` 就完成了全部初始化。
+>
+> 想少开浏览器加 `--no-open`（会透传给 dsh）：
+
+```bash
+node scripts/dev-env.mjs web --no-open
+```
+
+### 4) 验证它真的隔离了
 
 ```bash
 node scripts/dev-env.mjs doctor
@@ -167,13 +193,20 @@ node scripts/dev-env.mjs shell
 
 ```powershell
 $env:DSH_HOME = "~\.dsh-dev"     # PowerShell
-dsh --profile dev web --port 3090
+dsh web --port 3090
 ```
 
 ```bash
 export DSH_HOME=~/.dsh-dev       # bash / zsh
-dsh --profile dev web --port 3090
+dsh web --port 3090
 ```
+
+> ⚠️ **别写 `dsh --profile web web`**（或 `dsh --profile dev web`）——
+> 父级 `--profile` 会被 `dsh web` 拒绝（见第二节）。设好 `DSH_HOME` 后
+> 直接 `dsh web` 即可，profile 名本来就是 `web`。
+>
+> 反过来，管理插件时 `--profile` 是**合法**且必要的：
+> `dsh plugin --profile web add <pkg>`。
 
 ---
 

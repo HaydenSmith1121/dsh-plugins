@@ -78,7 +78,21 @@ const symBad = () => red('✗');
 
 // ---------------------------------------------------------------- 默认值
 const DEFAULT_DEV_HOME_NAME = '.dsh-dev';
-const DEFAULT_DEV_PROFILE = 'dev';
+/**
+ * 隔离环境里 profile **必须叫 `web`**。
+ *
+ * 原因：`dsh web` 是 `--profile web` 的**硬编码别名**
+ * （`lib/bin.js`: `program.command("web")` → `resolveBoot(web, "web", …)`），
+ * 而且 `rejectParentOptions()` 会**主动拒绝**父级的 `--profile`：
+ *
+ *     $ dsh --profile dev web
+ *     error: web takes none of parent --profile, ...
+ *
+ * 也就是说走 `dsh web` 这条路时 profile 名不可改。隔离靠的是 `DSH_HOME`
+ * 指向另一个主目录（那边 `profiles/web` 就是我们的开发环境），
+ * 而**不是**在同一个主目录里换 profile 名。
+ */
+const DEFAULT_DEV_PROFILE = 'web';
 const DEFAULT_DEV_PORT = 3090;
 const DEFAULT_PROD_PORT = 3080;
 const DEFAULT_TEMPLATE = 'web';
@@ -91,6 +105,13 @@ const MIN_NODE_MAJOR = 22;
  * 否则 `--home /x/y` 里的 `/x/y` 会被误判成命令。
  */
 const VALUE_TAKING_FLAGS = new Set(['--home', '--profile', '--port', '--from']);
+
+/**
+ * 本脚本自己的 flag 型选项 —— 不消耗值、也不透传给 dsh。
+ * 除此之外的 `--xxx` 一律视为「给 dsh 的」，原样透传
+ * （如 `web --no-open` / `web --host 0.0.0.0`）。
+ */
+const OWN_FLAGS = new Set(['--json', '--help', '-h']);
 
 // ---------------------------------------------------------------- 命令行
 const argv = process.argv.slice(2);
@@ -110,6 +131,7 @@ const command = (() => {
       if (VALUE_TAKING_FLAGS.has(a)) i++;
       continue;
     }
+    if (OWN_FLAGS.has(a)) continue; // `-h` 这类短选项不能被当成命令
     return a;
   }
   return 'status';
@@ -127,7 +149,15 @@ const positionalArgs = (() => {
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a.startsWith('--')) {
-      if (VALUE_TAKING_FLAGS.has(a)) i++; // 跳过选项的值
+      if (VALUE_TAKING_FLAGS.has(a)) {
+        i++; // 跳过本脚本自己的、吃值的选项
+        continue;
+      }
+      if (OWN_FLAGS.has(a)) continue; // 本脚本自己的 flag，不透传
+      // ★ 其余 `--xxx` 是本脚本不认识的 —— 那是**给 dsh 的**，必须透传。
+      //   典型例子：`web --no-open`、`web --host 0.0.0.0`。
+      //   以前这里一律 continue，导致 `--no-open` 被静默吞掉（浏览器照开）。
+      out.push(a);
       continue;
     }
     if (!seenCommand) {
@@ -314,11 +344,27 @@ function cmdInit() {
   const s = snapshot(devHome, devProfile);
   const steps = [];
 
+  // ★ 出厂模板名（web / 其它 shipped profile）不能被 --from-default-profile 复制，
+  //   dsh 会直接抛：
+  //     profile "web" is shipped and cannot be a custom profile target;
+  //     omit --from-default-profile to use it
+  //   好在也不用复制 —— 它是**出厂自带**的，`dsh web` 首次跑会自动建出来
+  //   （实测：DSH_HOME=新目录跑 `dsh web` 会自动建 profiles/web）。
+  //   所以这里跳过初始化，交给 dsh 自己按需创建。
+  const isShippedName = devProfile === templateName;
+
   // ★ 顺序很关键：必须**先让 dsh 自己初始化 profile**，再补别的。
   //   dsh 的 initializeProfileFromDefault 见到 profile 目录已存在就直接抛错
   //   （"profile directory ... already exists; choose an unused profile name"），
   //   所以这里绝不能预先 mkdir 那个目录 —— 反了就会初始化失败。
-  if (!s.initialized) {
+  if (s.initialized) {
+    steps.push(['profile 已存在', '保留原样（幂等）']);
+  } else if (isShippedName) {
+    steps.push([
+      `profile 用出厂名 ${devProfile}`,
+      '无需初始化 —— dsh 首次启动会自动建（隔离靠 DSH_HOME，不靠换 profile 名）'
+    ]);
+  } else {
     // `--dump-config` 只用来触发初始化；它会把整棵装配树打到 stdout，
     // 那属于噪音，这里吞掉，只保留失败时的错误输出。
     const r = spawnSync(dshCmd, [
@@ -339,8 +385,6 @@ function cmdInit() {
       return 3;
     }
     steps.push(['从出厂模板初始化 profile', `${templateName} → ${devProfile}`]);
-  } else {
-    steps.push(['profile 已存在', '保留原样（幂等）']);
   }
 
   // 2) 凭据 / 设置：复制成独立副本（★ 不是软链，避免开发改坏生产）
@@ -372,11 +416,21 @@ function cmdInit() {
     console.log(`  端口         ${cyan(String(devPort))}   ${dim(`(生产用 ${DEFAULT_PROD_PORT})`)}`);
     console.log('');
     console.log(`  ${bold('下一步')}`);
-    console.log(`    ${dim('1.')} 装依赖（只需一次）：`);
-    console.log(`         ${cyan(`cd ${s.profileDir}`)}`);
-    console.log(`         ${cyan('pnpm install')}`);
-    console.log(`    ${dim('2.')} 启动隔离环境：`);
-    console.log(`         ${cyan('node scripts/dev-env.mjs web')}`);
+    if (isShippedName && !exists(s.profileDir)) {
+      console.log(`    ${dim('1.')} 先启动一次，让 dsh 建出 ${cyan(`profiles/${devProfile}`)}：`);
+      console.log(`         ${cyan('node scripts/dev-env.mjs web')}`);
+      console.log(`    ${dim('2.')} 然后停掉，装依赖（只需一次）：`);
+      console.log(`         ${cyan(`cd ${path.join(devHome, 'profiles', devProfile)}`)}`);
+      console.log(`         ${cyan('pnpm install')}`);
+    } else {
+      console.log(`    ${dim('1.')} 装依赖（只需一次）：`);
+      console.log(`         ${cyan(`cd ${s.profileDir}`)}`);
+      console.log(`         ${cyan('pnpm install')}`);
+      console.log(`    ${dim('2.')} 启动隔离环境：`);
+      console.log(`         ${cyan('node scripts/dev-env.mjs web')}`);
+    }
+    console.log('');
+    console.log(`  ${dim(`提示：生产环境照旧用 ${cyan('dsh web')}（${DEFAULT_PROD_PORT}），互不影响。`)}`);
     console.log('');
   } else {
     console.log(JSON.stringify({ ok: true, devHome, devProfile, devPort, steps }, null, 2));
@@ -451,18 +505,12 @@ function cmdWeb() {
     return 2;
   }
   const s = snapshot(devHome, devProfile);
-  if (!s.initialized) {
-    console.error(`${symBad()} 隔离环境还没初始化，先跑： node scripts/dev-env.mjs init`);
-    return 2;
-  }
-  if (!s.nodeModulesInstalled) {
-    console.error(`${symWarn()} 隔离环境的依赖还没装，先执行：`);
-    console.error(`    cd ${s.profileDir}`);
-    console.error(`    pnpm install`);
-    console.error('');
-    console.error(`${dim('（首次使用必须做这一步，否则插件树无法加载）')}`);
-    return 2;
-  }
+
+  // ★ 不用检查「profile 是否已初始化」「node_modules 是否已装」——
+  //   `dsh web` 首次跑会**自己建 profile 并装依赖**（实测：全新 DSH_HOME 上
+  //   一条 `dsh web` 就建出 profiles/web 四件套 + node_modules 并成功监听）。
+  //   以前拦这两项是因为 profile 名用了 dev，dsh 自动建的是 web，
+  //   结果拦下来要用户手动补 —— 现在 profile 名对齐了，就不需要这一步了。
 
   console.log('');
   console.log(`  ${bold('启动隔离环境')}`);
@@ -470,9 +518,24 @@ function cmdWeb() {
   console.log(`  DSH_HOME  ${cyan(devHome)}`);
   console.log(`  profile   ${cyan(devProfile)}`);
   console.log(`  端口       ${cyan(String(devPort))}   ${dim(`(生产是 ${DEFAULT_PROD_PORT}，两者可并行)`)}`);
+  if (!s.initialized) {
+    console.log(`  ${dim('首次启动：dsh 会自己建出该 profile 并装依赖，稍等片刻。')}`);
+  }
   console.log('');
 
-  return run(dshCmd, ['--profile', devProfile, 'web', '--port', String(devPort), ...positionalArgs], {
+  // ★ 不能给 `dsh web` 传 --profile：它是 `--profile web` 的硬编码别名，
+  //   而且会主动拒绝父级 --profile（见 DEFAULT_DEV_PROFILE 处的注释）。
+  //   隔离完全靠 DSH_HOME 切主目录，profile 名保持 `web`。
+  if (devProfile !== DEFAULT_TEMPLATE) {
+    console.error(`${symBad()} 隔离环境的 profile 必须叫 ${cyan(DEFAULT_TEMPLATE)} —— 当前是 ${cyan(devProfile)}。`);
+    console.error(`    ${dim('`dsh web` 是 --profile web 的硬编码别名，无法指向别的 profile 名。')}`);
+    console.error(`    ${dim(`要改回默认：去掉 --profile 参数（或显式写 --profile ${DEFAULT_TEMPLATE}）。`)}`);
+    console.error(`    ${dim('换 profile 名请改用走 --profile 的命令，如 config / list / install。')}`);
+    console.error('');
+    return 1;
+  }
+
+  return run(dshCmd, ['web', '--port', String(devPort), ...positionalArgs], {
     DSH_HOME: devHome
   });
 }
@@ -485,8 +548,11 @@ function cmdPlugin(extraArgs) {
   }
   const s = snapshot(devHome, devProfile);
   if (!s.initialized) {
-    console.error(`${symBad()} 隔离环境还没初始化，先跑： node scripts/dev-env.mjs init`);
-    return 2;
+    // `dsh plugin` 的 help 写着 profile 会「initialized on first use」，
+    // 所以这里不硬拦，只提醒一声。
+    console.log(`${symWarn()} 隔离环境的 ${devProfile} profile 还没建，dsh 会自动初始化一个。`);
+    console.log(`${dim(`  想先用出厂模板铺好： node scripts/dev-env.mjs web  （跑一次再停掉）`)}`);
+    console.log('');
   }
   return run(dshCmd, ['plugin', '--profile', devProfile, ...extraArgs], { DSH_HOME: devHome });
 }
@@ -511,29 +577,27 @@ function cmdConfig() {
 
 /** 打印可直接 eval / dot-source 的环境变量。 */
 function cmdShell() {
-  const s = snapshot(devHome, devProfile);
+  const isWin = process.platform === 'win32';
   if (asJson) {
-    console.log(JSON.stringify({ DSH_HOME: devHome, DSH_PROFILE: devProfile, DSH_PORT: String(devPort) }, null, 2));
+    console.log(JSON.stringify({ DSH_HOME: devHome }, null, 2));
     return 0;
   }
-  const isWin = process.platform === 'win32';
   console.log('');
   console.log(`  ${bold('隔离环境变量')}`);
   console.log(`  ${'-'.repeat(72)}`);
+  console.log(`  ${dim('只需要设 DSH_HOME —— 它决定整个主目录在哪。')}`);
+  console.log('');
   console.log(`  ${dim('PowerShell（当前会话生效）：')}`);
   console.log(`    ${cyan(`$env:DSH_HOME = "${devHome}"`)}`);
-  console.log(`    ${cyan(`$env:DSH_PROFILE = "${devProfile}"`)}`);
-  console.log(`    ${cyan(`$env:DSH_PORT = "${devPort}"`)}`);
   console.log('');
   console.log(`  ${dim('bash / zsh（当前会话生效）：')}`);
   const posixHome = isWin ? devHome.replace(/\\/g, '/') : devHome;
   console.log(`    ${cyan(`export DSH_HOME="${posixHome}"`)}`);
-  console.log(`    ${cyan(`export DSH_PROFILE="${devProfile}"`)}`);
-  console.log(`    ${cyan(`export DSH_PORT="${devPort}"`)}`);
   console.log('');
-  console.log(`  ${dim('设完之后，直接用普通 dsh 命令就落在隔离环境里：')}`);
-  console.log(`    ${cyan(`dsh --profile ${devProfile} web --port ${devPort}`)}`);
+  console.log(`  ${dim('然后在仓库根目录敲：')}`);
+  console.log(`    ${cyan(`dsh web --port ${devPort}`)}`);
   console.log('');
+  console.log(`  ${dim('★ 别加 --profile —— dsh web 会拒绝父级 --profile（profile 名固定是 web）。')}`);
   console.log(`  ${dim('★ 只设当前会话，不写全局 —— 平时的 dsh web 仍走生产。')}`);
   console.log('');
   return 0;
@@ -655,8 +719,6 @@ function sameInode(a, b) {
 }
 
 function usage() {
-  // 显示用的 home：能缩成 ~ 就缩，保证帮助文本换设备后依然准确。
-  const homeDisplay = displayHome(devHome);
   console.log(`
   ${bold('dsh 开发环境隔离')} ${dim('— 把「日常 harness」与「开发插件的 harness」分开')}
 
@@ -675,22 +737,27 @@ function usage() {
 
   ${bold('选项')}
     --home <path>       隔离 home（默认 ~/${DEFAULT_DEV_HOME_NAME}）
-    --profile <name>    隔离 profile 名（默认 ${DEFAULT_DEV_PROFILE}）
+    --profile <name>    隔离 profile 名（默认 ${DEFAULT_DEV_PROFILE}；
+                        必须与 --from 同为 ${DEFAULT_TEMPLATE}，见下）
     --port <n>          隔离端口（默认 ${DEFAULT_DEV_PORT}）
     --from <name>       出厂模板（默认 ${DEFAULT_TEMPLATE}）
     --json              机器可读输出
+    其它 --xxx          原样透传给 dsh（如 web --no-open）
 
   ${bold('典型流程')}
     cd <你 clone 的 dsh-plugins 仓库根目录>   # 命令都要在仓库根跑
-    node scripts/dev-env.mjs init           # 建隔离环境
-    cd ${homeDisplay}/profiles/${devProfile}
-    pnpm install                            # 装依赖（只需一次）
+    node scripts/dev-env.mjs init           # 建隔离 home（幂等）
     node scripts/dev-env.mjs web            # 启动，默认 ${DEFAULT_DEV_PORT}
+                                            # 依赖由 dsh 首次启动自动装
 
   ${bold('说明')}
     生产环境照旧用 ${cyan('dsh web')}（端口 ${DEFAULT_PROD_PORT}）。
     本脚本只在子进程里设 DSH_HOME，不写全局环境变量，
     所以你平时的命令永远落在生产环境。
+
+    ★ profile 名必须是 ${DEFAULT_TEMPLATE}：${cyan('dsh web')} 是 ${cyan(`--profile ${DEFAULT_TEMPLATE}`)}
+      的硬编码别名，并会拒绝父级 ${cyan('--profile')}。隔离靠的是 DSH_HOME
+      指向另一个主目录，而不是换 profile 名。
 `);
 }
 
