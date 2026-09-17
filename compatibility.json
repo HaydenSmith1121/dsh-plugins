@@ -105,18 +105,25 @@
         {
           "dir": "dsh-opencode-go-plus",
           "package": "dsh-opencode-go-plus",
-          "version": "0.2.1",
-          "tarball": "plugins/dsh-opencode-go-plus/0.1.6-alpha.1/dsh-opencode-go-plus-0.2.1.tgz",
+          "version": "0.3.0",
+          "tarball": "plugins/dsh-opencode-go-plus/0.1.6-alpha.1/dsh-opencode-go-plus-0.3.0.tgz",
           "files": 31,
           "origin": "self",
           "author": "HaydenSmith1121",
           "upstream": "https://github.com/HaydenSmith1121/dsh-plugins",
-          "sha256": "2123562f683e94b7a8b63ed2b9ba092298fcedd18dac3b20a4bc2ced078fa78b",
-          "supersedes": {
-            "version": "0.2.0",
-            "sha256": "48617cf218f26db8a0a3ce66cf38209db707bb6e63b99d54911634606ab9c8d8",
-            "reason": "0.2.0 的 lib/client.js 是从上游 dsh-opencode-go 源码编译的，改名后脚本内硬编码的客户端注册 id 没跟着改（仍是 dsh-opencode-go），与 dsh 下发的启动图 entry id（dsh-opencode-go-plus）不匹配。dsh-client-modules 的 arrive() 会因 bundle loaded without registering \"<id>\" 失败并重放脚本，第二次执行撞上已注册的 @deepseek-ai/dsh-api-gateway，抛 duplicate factory registration —— 浏览器端白屏「Failed to load plugins」。服务端 lib/index.js 不受影响，插件树装配一直是正常的。"
-          },
+          "sha256": "481b8f6bbdee38dc15d2b5cc729fbe7bc25edea6ce52d0f11e69f5d66252cc37",
+          "supersedes": [
+            {
+              "version": "0.2.1",
+              "sha256": "2123562f683e94b7a8b63ed2b9ba092298fcedd18dac3b20a4bc2ced078fa78b",
+              "reason": "0.3.0 把配置入口从插件自带的「设置 → OpenCode Go」分区迁到「设置 → 模型」页里的 OpenCode Go 行：宿主半新增 registerConfigurableProviders 声明、客户端半删掉 settings.section 注册，并去掉 @deepseek-ai/dsh-client-ui-settings 这个 peer。0.2.1 的功能没有缺失，只是同一个 provider 有两个配置入口；留在 0.2.1 也能用，但侧边栏会继续多出一个分区。"
+            },
+            {
+              "version": "0.2.0",
+              "sha256": "48617cf218f26db8a0a3ce66cf38209db707bb6e63b99d54911634606ab9c8d8",
+              "reason": "0.2.0 的 lib/client.js 是从上游 dsh-opencode-go 源码编译的，改名后脚本内硬编码的客户端注册 id 没跟着改（仍是 dsh-opencode-go），与 dsh 下发的启动图 entry id（dsh-opencode-go-plus）不匹配。dsh-client-modules 的 arrive() 会因 bundle loaded without registering \"<id>\" 失败并重放脚本，第二次执行撞上已注册的 @deepseek-ai/dsh-api-gateway，抛 duplicate factory registration —— 浏览器端白屏「Failed to load plugins」。服务端 lib/index.js 不受影响，插件树装配一直是正常的。"
+            }
+          ],
           "derivedFrom": {
             "package": "dsh-opencode-go",
             "version": "0.1.2",
@@ -132,7 +139,7 @@
           "peerVerdict": "critical",
           "peerNote": "整套 @deepseek-ai/* 精确 pin 在 0.1.6-alpha.1 —— 沿用基线、未做改动，所以它仍是决定整批插件运行时基线的那一个。0.1.5-rc.x 内置的 @deepseek-ai/dsh-llm 缺 IMAGE_OFFLOAD_REQUIRED_CODE / offloadedImageText / projectOffloadedImages / requiredImageOffload 导出 → ESM 具名导入确定性失败 → 整棵插件树加载失败、dsh web 完全起不来。上游 0.1.0 / 0.1.1 / 0.1.2 全部要求 alpha，没有兼容 0.1.5 的版本可选，所以只能升 dsh、不能退插件。",
           "coexistenceWarning": "不能与 dsh-opencode-go 装进同一个 profile —— 两者共用设置命名空间 llm-opencode-go 与 provider 路由 opencode-go，且都不肯让。四种组合均已实测（Windows / Node 24.14.0 / pnpm 12.4.2 / dsh 0.1.6-alpha.1）：① 只有本包 → dsh web 正常，服务 38 条模型；② 只有基线 → 正常，37 条（无 union-alpha）；③ 两者共存且基线在前 → 基线服务 37 条，本包检测到冲突后记一条 warn 并主动退场，dsh web 正常；④ 两者共存且本包在前 → 基线抛未捕获的 DUPLICATE_DISCOVERY，从 loader 自身的 effect 里逸出，整棵插件树加载失败、dsh web 退出码 1，同 profile 其余插件一并挂掉。④ 是基线的缺陷，本包无法阻止。升级请先 remove 基线；若要两者并存做对比，用包内 examples/migrate-from-fork.patch.yml 把基线 disabled。",
-          "notes": "上游 0.1.2 的 peerDependencies / dependencies 原样保留，files 字段沿用上游写法（lib / cordis.patch.yml / THIRD_PARTY_NOTICES.md / docs / examples），package.json 与 LICENSE、README.md 由 npm 自动附带。包内 docs/verification.md 是分发版的实测记录 —— 基线那份描述的是源码仓库，它引用的 npm run typecheck / npm test / verify:installed 在 tarball 里根本没有对应文件，跑不通。"
+          "notes": "上游 0.1.2 的 peerDependencies / dependencies 原样保留（0.3.0 只去掉了一个 peer：@deepseek-ai/dsh-client-ui-settings，客户端不再读 settings scope 服务），files 字段沿用上游写法（lib / cordis.patch.yml / THIRD_PARTY_NOTICES.md / docs / examples），package.json 与 LICENSE、README.md 由 npm 自动附带。包内 docs/verification.md 是分发版的实测记录 —— 基线那份描述的是源码仓库，它引用的 npm run typecheck / npm test / verify:installed 在 tarball 里根本没有对应文件，跑不通。★ 0.3.0 的注册细节：可配置 provider 目录拒绝重复声明，而 opencode-go 已被 @deepseek-ai/dsh-llm-pi-ai 声明（它内置的 pi-ai 目录里就有同名路由，declared: false），所以本包把这一行声明在 opencode-go-plus 上 —— 若声明成 opencode-go，registerConfigurableProviders 会抛 DUPLICATE_DIRECTORY，且异常从 apply() 里逸出，其后所有语句（含路由注册与设置段安装）全部跳过，插件彻底失效：实测 listProviders() 里只剩先注册的那一个，插件自己的 route registered 日志根本不出现；换成 opencode-go-plus 后启动干净，目录里恰好新增一条 opencode-go-plus <- llm-opencode-go[]，模型页的 OpenCode Go 行随之出现（显示名 + 凭据绿点，凭据引用取本段 apiKeyEnv，即插件真正在用的那把 key）。"
         },
         {
           "dir": "dsh-connect-trae",

@@ -270,7 +270,7 @@ allowBuilds:
 ```powershell
 dsh plugin --profile web add .\plugins\dsh-market-plugin\0.1.6-alpha.1\dsh-market-plugin-0.4.8.tgz
 dsh plugin --profile web add .\plugins\dsh-workbuddy-connect\0.1.6-alpha.1\dsh-workbuddy-connect-0.5.3.tgz
-dsh plugin --profile web add .\plugins\dsh-opencode-go-plus\0.1.6-alpha.1\dsh-opencode-go-plus-0.2.1.tgz
+dsh plugin --profile web add .\plugins\dsh-opencode-go-plus\0.1.6-alpha.1\dsh-opencode-go-plus-0.3.0.tgz
 dsh plugin --profile web add .\plugins\dsh-connect-trae\0.1.6-alpha.1\dsh-connect-trae-2.0.1.tgz
 dsh plugin --profile web add .\plugins\dsh-workbuddy-quota\0.1.6-alpha.1\dsh-workbuddy-quota-0.2.0.tgz
 dsh plugin --profile web add .\plugins\dsh-receipt\0.1.6-alpha.1\dsh-receipt-0.1.0.tgz
@@ -298,7 +298,7 @@ dsh plugin --profile web add ./plugins/dsh-market-plugin/0.1.6-alpha.1/dsh-marke
 `dsh plugin add <tarball>` 生成的**不是**把包内容拷进去，而是 `file:` 形式的依赖：
 
 ```json
-"dsh-opencode-go-plus": "file:D:/deepseek/dsh-plugins/plugins/dsh-opencode-go-plus/0.1.6-alpha.1/dsh-opencode-go-plus-0.2.1.tgz"
+"dsh-opencode-go-plus": "file:D:/deepseek/dsh-plugins/plugins/dsh-opencode-go-plus/0.1.6-alpha.1/dsh-opencode-go-plus-0.3.0.tgz"
 ```
 
 **后果**：这个目录**不能删除、不能移动**，否则以后任何 `pnpm install` /
@@ -468,7 +468,7 @@ dsh plugin --profile web remove <包名>     # 例如: dsh plugin --profile web 
 
 ## 十、关于 `dsh-opencode-go-plus` 的来历、改造与共存禁忌
 
-本仓库的 `dsh-opencode-go-plus@0.2.1` 是**派生包**，基线为上游
+本仓库的 `dsh-opencode-go-plus@0.3.0` 是**派生包**，基线为上游
 [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go)`@0.1.2`（MIT）。
 它**取代**了此前收录的 `dsh-opencode-go@0.1.2`（那一版含 13 处本地源码改动）。
 
@@ -476,9 +476,26 @@ dsh plugin --profile web remove <包名>     # 例如: dsh plugin --profile web 
 **不需要重新构建**，也不需要源码 / node_modules。要继续改它的逻辑，就得另拿源码项目目录，
 当前仓库不含源码。
 
+### 0.3.0：配置入口在「设置 → 模型」里，不再有独立分区
+
+0.3.0 起，插件的 Web 配置面是 **设置 → 模型** 页里的 **OpenCode Go** 一行
+（显示名 + 凭据绿点，与 DeepSeek、火山方舟等 provider 并列）。此前那个自带的
+「设置 → OpenCode Go」侧边栏分区**已删除** —— 同一个 provider 两个配置入口，
+其中一个还管不了另一个，正是这一版要合并掉的。
+
+该行的"编辑"卡片里是通用凭据字段；`refreshMinutes`、`autoDiscover`、图片预算、
+`catalogAdditions` 这些插件专有字段仍留在 `settings.yaml` 的 `llm-opencode-go` 段，
+卡片会明确提示这一点，不做半吊子编辑。
+
+> ⚠️ **这一行登记的路由是 `opencode-go-plus`，不是 `opencode-go`**，这是刻意的：
+> 可配置 provider 目录**拒绝重复声明**，而 `opencode-go` 已经被
+> `@deepseek-ai/dsh-llm-pi-ai` 声明了（它内置的 pi-ai 目录里就有同名路由）。
+> 在插件里再声明一次会抛 `DUPLICATE_DIRECTORY`，而且异常从 `apply()` 里逸出 ——
+> 后面的路由注册、设置段安装**全都不执行**，插件彻底失效（不只是"这行不显示"）。
+
 ### 这一版改了什么
 
-五处宿主侧改动，都在 `lib/index.js` 里，`lib/client.js` 与协议转换未动。
+0.2.x 的宿主侧改动共五处，都在 `lib/index.js` 里，协议转换未动。
 完整归属与改动清单见包内 `THIRD_PARTY_NOTICES.md` 与 `docs/derivation.md`。
 其中最需要记住的一条：
 
@@ -506,7 +523,7 @@ dsh plugin --profile web remove <包名>     # 例如: dsh plugin --profile web 
 
 ```bash
 dsh plugin --profile web remove dsh-opencode-go
-dsh plugin --profile web add .\plugins\dsh-opencode-go-plus\0.1.6-alpha.1\dsh-opencode-go-plus-0.2.1.tgz
+dsh plugin --profile web add .\plugins\dsh-opencode-go-plus\0.1.6-alpha.1\dsh-opencode-go-plus-0.3.0.tgz
 ```
 
 **怎么确认装对了：数模型数**。plus 是 **38** 条并含 `union-alpha`；基线是 37 条且没有它。
@@ -530,7 +547,7 @@ dsh plugin --profile web add .\plugins\dsh-opencode-go-plus\0.1.6-alpha.1\dsh-op
 |---|---|---|---|---|---|
 | `@dsh-market/plugin` | 0.4.8 | 7 | ✓ | ✓ | **✗** |
 | `dsh-workbuddy-connect` | 0.5.3 | 11 | ✓ | ✓ | ✓ |
-| `dsh-opencode-go-plus` | 0.2.1 | 31 | ✓ | ✓ | ✓ |
+| `dsh-opencode-go-plus` | 0.3.0 | 31 | ✓ | ✓ | ✓ |
 | `dsh-connect-trae` | 2.0.1 | 12 | ✓ | ✓ | ✓ |
 | `dsh-workbuddy-quota` | 0.2.0 | 5 | ✓ | ✓ | **✗** |
 | `dsh-receipt` | 0.1.0 | 16 | ✓ | ✓ | ✓ |

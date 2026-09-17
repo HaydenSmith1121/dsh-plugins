@@ -1,10 +1,10 @@
 # DeepSeek Harness — web profile plugin manifest (exported snapshot)
 # Source machine: C:\Users\Administrator\.dsh\profiles\web\package.json
-# Exported: see ../plugins/<name>/*.tgz  (9 user-installed plugins as npm tarballs)
+# Exported: see ../plugins/<name>/*.tgz  (10 user-installed plugins as npm tarballs)
 #
 # This records the EXACT bundle layer order dsh boots. Do not reorder:
 # @deepseek-ai/dsh-base and @deepseek-ai/dsh-web-app are in-box bundles shipped
-# with the dsh CLI (not packaged here). The remaining 9 are the user plugins
+# with the dsh CLI (not packaged here). The remaining 10 are the user plugins
 # to install from ../plugins/<name>/ on the new machine.
 
 profile: web
@@ -16,17 +16,18 @@ inBoxBundles:
   - "@deepseek-ai/dsh-web-app"
 
 # User plugins — install order = top-to-bottom. The final dsh.profile.bundles
-# array must list all 11 (in-box + user) in this order:
+# array must list all 12 (in-box + user) in this order:
 userBundles:
   - "@dsh-market/plugin"          # tarball: dsh-market-plugin-0.4.8.tgz
   - "dsh-workbuddy-connect"       # tarball: dsh-workbuddy-connect-0.5.3.tgz
-  - "dsh-opencode-go-plus"        # tarball: dsh-opencode-go-plus-0.2.1.tgz  (repo-maintained fork; replaces dsh-opencode-go)
+  - "dsh-opencode-go-plus"        # tarball: dsh-opencode-go-plus-0.3.0.tgz  (repo-maintained fork; replaces dsh-opencode-go)
   - "dsh-connect-trae"            # tarball: dsh-connect-trae-2.0.1.tgz
   - "dsh-workbuddy-quota"         # tarball: dsh-workbuddy-quota-0.2.0.tgz  (self-developed, credits + token usage)
   - "dsh-receipt"                 # tarball: dsh-receipt-0.1.0.tgz
   - "dsh-session-cleanup"         # tarball: dsh-session-cleanup-0.1.2.tgz  (self-developed, real session-log deletion)
   - "dsh-ark-plans"               # tarball: dsh-ark-plans-0.1.0.tgz  (self-developed, Volcengine Ark Agent Plan + Coding Plan provider routes)
   - "dsh-memory"                  # tarball: dsh-memory-0.1.0.tgz  (self-developed, cross-session memory: auto-distil + per-agent recall section)
+  - "dsh-plugins-market"          # tarball: dsh-plugins-market-0.1.0.tgz  (self-developed, the visual plugin market + pre-install compatibility gate)
 
 # Final bundles array (in-box first, then user, in the order above):
 finalBundles:
@@ -41,3 +42,4 @@ finalBundles:
   - "dsh-session-cleanup"
   - "dsh-ark-plans"
   - "dsh-memory"
+  - "dsh-plugins-market"

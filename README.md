@@ -58,11 +58,34 @@ node scripts/dev-env.mjs web      # 启动隔离环境（3090），依赖由首�
 
 > 不用手动 `pnpm install` —— 首次 `dsh web` 会自己建出 profile 并装好依赖。
 
+**Windows 上最省事的起法**：双击仓库根目录的 **`启动-调试环境-3090.cmd`**，
+或者用任意一个薄壳入口（三者等价）：
+
+```powershell
+.\启动-调试环境-3090.cmd          # 双击 / 直接跑
+.\scripts\dev-env.ps1 web         # PowerShell
+.\scripts\dev-env.cmd web         # cmd（执行策略禁止跑 .ps1 时用这个）
+```
+
+起来后浏览器开 **`http://127.0.0.1:3090`**，日常在用的 **3080 完全不受影响**，两套可同时跑。
+关掉窗口或 Ctrl+C 即停。
+
 隔离基于 `DSH_HOME`（整个主目录独立），而不是 `--profile`
 （那只隔离插件树，凭据/设置/会话仍共享）。脚本不含任何硬编码盘符，
 **换设备 clone 后直接可用**。
 
 完整说明 + 自检 + 常见坑见 **[`README-开发环境隔离.md`](./README-开发环境隔离.md)**。
+
+> **往隔离环境装插件**（改完插件重新打包后也必须**先 remove 再 add**，原因见下）：
+>
+> ```bash
+> node scripts/dev-env.mjs install plugins/<包名>/<dsh版本>/<包名>-<版本>.tgz
+> ```
+>
+> ⚠️ 同一个 tarball 路径内容变了时，pnpm 会认为 lockfile 是新的、**跳过解包**
+> （`Lockfile is up to date, resolution step is skipped`），加 `--force` 也只重新链接、
+> 不重新解包 —— 你会一直在跑旧代码。所以更新一个**已经装过的**插件要：
+> `dsh plugin --profile web remove <包名>` → 再 `add`。
 
 ---
 
@@ -73,17 +96,26 @@ dsh-plugins/
 ├─ README.md                        # 本文件：总览 / 来源 / 兼容策略 / 贡献入口
 ├─ README-安装说明.md                # ★ 安装教程（唯一的安装文档，自包含）
 ├─ README-开发环境隔离.md            # ★ 开发插件时的环境隔离（可移植到新设备）
+├─ 启动-调试环境-3090.cmd            # ★ 双击即起隔离调试环境（3090），不影响日常的 3080
 ├─ CONTRIBUTING.md                  # ★ 插件入库规范（新插件请照此提交）
 ├─ compatibility.json               # ★ 机器可读的版本兼容矩阵，安装脚本据此判定
+├─ catalog/                         # ★ 插件市场的目录数据
+│  ├─ verified-meta.json            #   已验证层的**展示**元数据（标题 / 简介 / 标签）
+│  └─ curated.json                  #   已审核层：人工审核收录的第三方插件（含审核证据）
 ├─ scripts/
 │  ├─ preflight.mjs                 # 环境预检（只读）：检测 + 判定 + 给出行动方案
 │  ├─ install.mjs                   # 安装执行器（两平台共用同一份逻辑）
 │  ├─ verify.mjs                    # 安装后四步校验（含真实启动）
 │  ├─ dev-env.mjs                   # ★ 开发环境隔离（init/status/doctor/web/install…）
+│  ├─ market-review.mjs             # ★ 市场收录助手：探测候选包 → 产出审核草稿条目
 │  ├─ install.ps1 / install.cmd     # Windows 入口（薄壳）
 │  ├─ install.sh                    # macOS / Linux 入口（薄壳）
 │  └─ dev-env.ps1 / dev-env.cmd / dev-env.sh   # 隔离脚本的薄壳入口
+├─ plugins-src/                     # ★ 带源码的插件（本仓库第一个）
+│  └─ dsh-plugins-market/           #   可视化插件市场：src/ + build.mjs + test/ + README
 ├─ plugins/                         # 每个插件一个目录，其下按 dsh 版本分层
+│  ├─ dsh-plugins-market/
+│  │  └─ 0.1.6-alpha.1/             # 自研（本仓库自带的市场面板；源码在 plugins-src/）
 │  ├─ dsh-market-plugin/
 │  │  └─ 0.1.6-alpha.1/
 │  │     └─ dsh-market-plugin-0.4.8.tgz
@@ -124,7 +156,7 @@ dsh-plugins/
 | `dsh-session-cleanup` | 0.1.2 | **本仓库自研** | HaydenSmith1121 | 本仓库 | MIT |
 | `dsh-ark-plans` | 0.1.0 | **本仓库自研** | HaydenSmith1121 | 本仓库 | MIT |
 | `dsh-memory` | 0.1.0 | **本仓库自研** | HaydenSmith1121 | 本仓库 | MIT |
-| `dsh-opencode-go-plus` | 0.2.1 | **本仓库自研**（派生） | HaydenSmith1121 | 本仓库，派生自 [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go) | MIT |
+| `dsh-opencode-go-plus` | 0.3.0 | **本仓库自研**（派生） | HaydenSmith1121 | 本仓库，派生自 [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go) | MIT |
 | `@dsh-market/plugin` | 0.4.8 | 第三方收集 | **2BingLing** | [2BingLing/dsh-market](https://github.com/2BingLing/dsh-market) | MIT |
 | `dsh-workbuddy-connect` | 0.5.3 | 第三方收集 | corrinehu | [corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect) | MIT |
 | `dsh-connect-trae` | 2.0.1 | 第三方收集 | dingminhua | [dingminhua/dsh-connect-trae](https://github.com/dingminhua/dsh-connect-trae) | MIT |
@@ -161,9 +193,10 @@ dsh-plugins/
 
 | 目录 | 包名 | 插件版本 | 适配 dsh | 说明 |
 |---|---|---|---|---|
-| `plugins/dsh-market-plugin/` | `@dsh-market/plugin` | 0.4.8 | 0.1.6-alpha.1 | dsh 插件市场 |
+| `plugins/dsh-plugins-market/` | `dsh-plugins-market` | 0.1.0 | 0.1.6-alpha.1 | **本仓库自带的可视化插件市场**（三层目录 + 装前兼容性闸门 + 失败自动回滚；**带源码**，见 `plugins-src/`） |
+| `plugins/dsh-market-plugin/` | `@dsh-market/plugin` | 0.4.8 | 0.1.6-alpha.1 | dsh 插件市场（第三方，公共索引） |
 | `plugins/dsh-workbuddy-connect/` | `dsh-workbuddy-connect` | 0.5.3 | 0.1.6-alpha.1 | WorkBuddy 连接 |
-| `plugins/dsh-opencode-go-plus/` | `dsh-opencode-go-plus` | 0.2.1 | 0.1.6-alpha.1 | OpenCode Go 模型供应商（**自研维护分支，取代 `dsh-opencode-go`**） |
+| `plugins/dsh-opencode-go-plus/` | `dsh-opencode-go-plus` | 0.3.0 | 0.1.6-alpha.1 | OpenCode Go 模型供应商（**自研维护分支，取代 `dsh-opencode-go`**；配置入口在「设置 → 模型」页的 OpenCode Go 行） |
 | `plugins/dsh-connect-trae/` | `dsh-connect-trae` | 2.0.1 | 0.1.6-alpha.1 | Trae 模型接入 |
 | `plugins/dsh-workbuddy-quota/` | `dsh-workbuddy-quota` | 0.2.0 | 0.1.6-alpha.1 | WorkBuddy 额度显示 + token 用量统计 |
 | `plugins/dsh-receipt/` | `dsh-receipt` | 0.1.0 | 0.1.6-alpha.1 | 凭证 / 收据 |
@@ -176,10 +209,36 @@ dsh-plugins/
 ```none
 @dsh-market/plugin → dsh-workbuddy-connect → dsh-opencode-go-plus
 → dsh-connect-trae → dsh-workbuddy-quota → dsh-receipt → dsh-session-cleanup
-→ dsh-ark-plans → dsh-memory
+→ dsh-ark-plans → dsh-memory → dsh-plugins-market
 ```
 
-> `dsh-memory` 排在最后：普通宿主半插件，不参与任何 patch 覆盖，没有理由插到前面去。
+> `dsh-plugins-market` 排在最后：插件市场的面板本身不依赖别的插件，
+> 但放在最后可以让它的 patch 层在装配时最后生效，装/卸其它插件时不会互相干扰。
+> `dsh-memory` 同理排在 `dsh-ark-plans` 之后、市场之前 —— 它是普通的宿主半插件，
+> 不参与任何 patch 覆盖，没有理由插到别的前面去。
+
+### 四之一、可视化插件市场（`dsh-plugins-market`）
+
+装完重启 `dsh web` 后，左侧导航栏会出现「插件市场」图标。它的三层目录：
+
+| 层 | 来源 | 提示 | 装前检查 |
+|---|---|---|---|
+| **已验证** | 本仓库自带、已实测（9 个） | ✅ 可直接安装 | 必须全绿，有问题直接硬拦截 |
+| **已审核** | 人工审核收录（`catalog/curated.json`） | 含审核日期与 dsh 版本 | 同样要过闸门 |
+| **未审核** | 公共索引全部插件（7487 个） | ⚠️ 可能不兼容 | 远程静态探测，**必须显式确认风险** |
+
+它和第三方公共市场（`@dsh-market/plugin`）**并存、不冲突**，差别在安全模型 ——
+本插件每次安装都先过一道兼容性闸门（环境 / profile / 候选包三层），
+致命项分「已知有害（硬拦截、不可覆盖）」与「无法确认（可覆盖、需显式确认）」两档，
+安装全程事务化，失败自动回滚。完整说明见
+[`plugins-src/dsh-plugins-market/README.md`](./plugins-src/dsh-plugins-market/README.md)。
+
+**要往「已审核」层加插件**：先跑收录助手，再按提示在隔离环境真装一次并记录证据，最后填完
+`review` 字段写进 `catalog/curated.json`：
+
+```bash
+node scripts/market-review.mjs <owner/repo | npm 包名>
+```
 
 ---
 
@@ -285,7 +344,7 @@ dsh-plugins/
 |---|---|---|---|---|---|
 | `@dsh-market/plugin` | 0.4.8 | 7 | ✓ | ✓ | ✗ |
 | `dsh-workbuddy-connect` | 0.5.3 | 11 | ✓ | ✓ | ✓ |
-| `dsh-opencode-go-plus` | 0.2.1 | 31 | ✓ | ✓ | ✓ |
+| `dsh-opencode-go-plus` | 0.3.0 | 31 | ✓ | ✓ | ✓ |
 | `dsh-connect-trae` | 2.0.1 | 12 | ✓ | ✓ | ✓ |
 | `dsh-workbuddy-quota` | 0.2.0 | 5 | ✓ | ✓ | ✗ |
 | `dsh-receipt` | 0.1.0 | 16 | ✓ | ✓ | ✓ |
