@@ -1,18 +1,24 @@
-# my-dsh-plugins
+# dsh-plugins
 
-我的 DeepSeek Harness (dsh) 插件离线仓库。每个插件独立放在 `plugins/<插件名>/` 下，
-便于以后新增插件时增量添加，互不干扰。
+DeepSeek Harness（dsh）插件仓库。每个插件独立放在 `plugins/<插件名>/` 下，
+便于增量添加、互不干扰。
 
-> 私有仓库，仅限本人使用。来源机器导出于 Windows，dsh 版本 `0.1.5-rc.1`。
+**内容构成**：部分是自研插件，部分是收集整理的他人开源插件。
+所有插件均为 **MIT** 许可；第三方插件的版权归原作者所有，来源与许可见
+[二、插件来源与许可](#二插件来源与许可)。
+
+> 导出环境：Windows，dsh 版本 `0.1.5-rc.1`。仓库内含离线 tarball，可在新机上完整复现。
+> 安装遇到问题先看 **[`README-排错.md`](./README-排错.md)** —— 里面是实际踩过的坑。
 
 ---
 
 ## 一、目录结构
 
-```
-my-dsh-plugins/
-├─ README.md                       # 本文件：插件总览 + 批量安装 + 新增插件指南
-├─ README-安装说明.md               # 详细安装步骤（含逐条命令与排错）
+```none
+dsh-plugins/
+├─ README.md                       # 本文件：总览 + 来源 + 批量安装 + 新增插件指南
+├─ README-安装说明.md               # 详细安装步骤（逐条命令）
+├─ README-排错.md                   # ★ 踩坑与排错记录（出错先看这个）
 ├─ .gitignore
 ├─ plugins/                        # 每个插件一个目录
 │  ├─ dsh-market-plugin/
@@ -20,7 +26,7 @@ my-dsh-plugins/
 │  ├─ dsh-workbuddy-connect/
 │  │  └─ dsh-workbuddy-connect-0.5.3.tgz
 │  ├─ dsh-opencode-go/
-│  │  └─ dsh-opencode-go-0.1.2.tgz     # 含 13 处本地源码优化（已构建进 lib）
+│  │  └─ dsh-opencode-go-0.1.2.tgz        # 含 13 处本地源码优化（已构建进 lib）
 │  ├─ dsh-connect-trae/
 │  │  └─ dsh-connect-trae-2.0.1.tgz
 │  ├─ dsh-workbuddy-quota/
@@ -35,7 +41,29 @@ my-dsh-plugins/
 
 ---
 
-## 二、插件清单
+## 二、插件来源与许可
+
+以各插件 `package.json` 的 `author` / `repository` 字段为准：
+
+| 包名 | 版本 | 来源 | 原作者 | 上游仓库 | 许可 |
+|---|---|---|---|---|---|
+| `@dsh-market/plugin` | 0.4.8 | 本仓库自研 | — | — | MIT |
+| `dsh-workbuddy-quota` | 0.2.0 | 本仓库自研 | — | — | MIT |
+| `dsh-workbuddy-connect` | 0.5.3 | 第三方收集 | corrinehu | [corrinehu/dsh-workbuddy-connect](https://github.com/corrinehu/dsh-workbuddy-connect) | MIT |
+| `dsh-opencode-go` | 0.1.2 | 第三方收集 | — | [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go) | MIT |
+| `dsh-connect-trae` | 2.0.1 | 第三方收集 | dingminhua | [dingminhua/dsh-connect-trae](https://github.com/dingminhua/dsh-connect-trae) | MIT |
+| `dsh-receipt` | 0.1.0 | 第三方收集 | — | [deronendless/dsh-receipt](https://github.com/deronendless/dsh-receipt) | MIT |
+
+> **关于 `dsh-opencode-go`**：本仓库这份是**在上游基础上改过 13 处源码后重新构建**的版本
+> （改动在 `src/`，已编译进 `lib/`），与上游 npm 发布版**不完全一致**。详见
+> [`README-安装说明.md` 第四节](./README-安装说明.md)。
+
+**第三方插件的版权归各自原作者所有**，本仓库仅做离线打包与索引，未修改其许可声明。
+各 tarball 内的 `LICENSE` / `THIRD_PARTY_NOTICES.md` 均已保留。
+
+---
+
+## 三、插件清单
 
 | 目录 | 包名 | 版本 | tarball | 说明 |
 |---|---|---|---|---|
@@ -43,97 +71,126 @@ my-dsh-plugins/
 | `plugins/dsh-workbuddy-connect/` | `dsh-workbuddy-connect` | 0.5.3 | dsh-workbuddy-connect-0.5.3.tgz | WorkBuddy 连接 |
 | `plugins/dsh-opencode-go/` | `dsh-opencode-go` | 0.1.2 | dsh-opencode-go-0.1.2.tgz | OpenCode Go 模型供应商（**含本地优化**） |
 | `plugins/dsh-connect-trae/` | `dsh-connect-trae` | 2.0.1 | dsh-connect-trae-2.0.1.tgz | Trae 模型接入 |
-| `plugins/dsh-workbuddy-quota/` | `dsh-workbuddy-quota` | 0.2.0 | dsh-workbuddy-quota-0.2.0.tgz | WorkBuddy 额度显示 + token 用量统计（private 包） |
+| `plugins/dsh-workbuddy-quota/` | `dsh-workbuddy-quota` | 0.2.0 | dsh-workbuddy-quota-0.2.0.tgz | WorkBuddy 额度显示 + token 用量统计 |
 | `plugins/dsh-receipt/` | `dsh-receipt` | 0.1.0 | dsh-receipt-0.1.0.tgz | 凭证/收据 |
 
 **安装顺序**（即 dsh bundle 层级顺序，见 `profile-config/profile-bundles.yaml`）：
 
-```
+```none
 @dsh-market/plugin → dsh-workbuddy-connect → dsh-opencode-go
 → dsh-connect-trae → dsh-workbuddy-quota → dsh-receipt
 ```
 
 ---
 
-## 三、新机批量安装
+## 四、新机批量安装
 
-前置：新机已装 Node ≥ 22.19、pnpm、`npm i -g @deepseek-ai/dsh`（版本与来源机一致或更新）。
+前置：新机已装 Node ≥ 22.19、pnpm、`npm i -g @deepseek-ai/dsh`（版本与导出机一致或更新）。
 
-```powershell
-# clone 本仓库（私有，需 gh 登录）
-gh repo clone HaydenSmith1121/my-dsh-plugins
-cd my-dsh-plugins
+> ⚠️ **pnpm 必须装在「dsh 所在的那个 Node」上**。多 Node 环境（如 nvm / 便携版 Node 并存）
+> 极易装错位置，表现为 `dsh plugin` 报 `'pnpm' 不是内部或外部命令`。
+> 完整排查见 [`README-排错.md` 坑 1](./README-排错.md)。
 
-# 1) 还原 settings.yaml（可选）
-Copy-Item .\settings\settings.yaml "$env:USERPROFILE\.dsh\settings.yaml" -Force
+```bash
+# clone 本仓库
+gh repo clone HaydenSmith1121/dsh-plugins
+cd dsh-plugins
 
-# 2) 按顺序安装全部插件
-dsh plugin --profile web add .\plugins\dsh-market-plugin\dsh-market-plugin-0.4.8.tgz
-dsh plugin --profile web add .\plugins\dsh-workbuddy-connect\dsh-workbuddy-connect-0.5.3.tgz
-dsh plugin --profile web add .\plugins\dsh-opencode-go\dsh-opencode-go-0.1.2.tgz
-dsh plugin --profile web add .\plugins\dsh-connect-trae\dsh-connect-trae-2.0.1.tgz
-dsh plugin --profile web add .\plugins\dsh-workbuddy-quota\dsh-workbuddy-quota-0.2.0.tgz
-dsh plugin --profile web add .\plugins\dsh-receipt\dsh-receipt-0.1.0.tgz
+# 1) 还原 settings.yaml —— ★ 先 diff 再决定，不要盲目覆盖
+#    不同机器的 settings.yaml 可能不同代，直接覆盖会丢掉本机的 provider 配置。
+#    见 README-排错.md 坑 5
+diff ./settings/settings.yaml ~/.dsh/settings.yaml
+
+# 2) 按顺序安装全部插件（顺序 = bundle 层级顺序，别乱）
+dsh plugin --profile web add ./plugins/dsh-market-plugin/dsh-market-plugin-0.4.8.tgz
+dsh plugin --profile web add ./plugins/dsh-workbuddy-connect/dsh-workbuddy-connect-0.5.3.tgz
+dsh plugin --profile web add ./plugins/dsh-opencode-go/dsh-opencode-go-0.1.2.tgz
+dsh plugin --profile web add ./plugins/dsh-connect-trae/dsh-connect-trae-2.0.1.tgz
+dsh plugin --profile web add ./plugins/dsh-workbuddy-quota/dsh-workbuddy-quota-0.2.0.tgz
+dsh plugin --profile web add ./plugins/dsh-receipt/dsh-receipt-0.1.0.tgz
 
 # 3) 启动验证
-dsh web
+dsh web          # 默认 http://127.0.0.1:3080
 ```
 
-详细排错见 `README-安装说明.md`。
+> **`file:` 依赖会锚定 tarball 的绝对路径** —— 这个仓库目录不能删、不能挪，
+> 否则以后 `pnpm install` 会失败。见 [`README-排错.md` 坑 3](./README-排错.md)。
+
+安装完成后务必跑一次完整校验（三层，缺一层会漏判）：
+
+```bash
+dsh plugin --profile web list                       # ① 依赖层
+cat ~/.dsh/profiles/web/package.json                # ② 注册表层：bundles 应为 8 项
+dsh --profile web --dump-config | grep -n '^# == '  # ③ 装配层（最权威）
+```
+
+详见 [`README-排错.md` 附录 A](./README-排错.md)。
 
 ---
 
-## 四、以后怎么往仓库里加新插件
+## 五、踩坑与排错
+
+**`README-排错.md`** 记录了实际安装中撞到的全部坑，包括：
+
+| # | 坑 | 关键点 |
+|---|---|---|
+| 1 | 本机没有 pnpm | 多 Node 环境下装错位置 |
+| 2 | **`ERR_PNPM_IGNORED_BUILDS`** | 最坑：包已装好、`dependencies` 已写，**但 `bundles` 没追加** → GUI 里看不见 |
+| 3 | `file:` 依赖锚定绝对路径 | 仓库目录不能挪 |
+| 4 | `grep bundles` 永远返回空 | `--dump-config` 用 `# == <bundle>` 做头，没有 "bundles" 字面词 |
+| 5 | `settings.yaml` 盲目覆盖 | 不同代配置，会丢 provider 清单 |
+| 6 | 凭据/登录态不随包迁移 | `.credentials.yaml` 不在包内，trae 需重登 |
+
+---
+
+## 六、以后怎么往仓库里加新插件
 
 新增一个插件只需 3 步，**不会动到其他插件目录**：
 
 ### 1) 打 tarball
 
-在来源机该插件的目录下：
+在插件项目目录下：
 
-```powershell
+```bash
 # 把缓存指到工作区，避免 npm 写 AppData\Local\npm-cache 被沙箱拦
-npm pack --ignore-scripts --pack-destination <导出临时目录> `
-         --cache <导出临时目录>\.npm-cache
+npm pack --ignore-scripts --pack-destination <导出临时目录> \
+         --cache <导出临时目录>/.npm-cache
 ```
 
 得到的 tarball 文件名形如 `<包名>-<版本>.tgz`。
 
 ### 2) 放进仓库
 
-```powershell
+```bash
 # 仓库根
-$repo = "D:\data\data_harness\test\dsh-plugins-export"
+repo=~/dsh-plugins
 
 # 新建插件目录（目录名 = 包名去掉 scope 前缀，如 @dsh-market/plugin → dsh-market-plugin）
-$dir = "$repo\plugins\<新插件目录名>"
-New-Item -ItemType Directory -Force -Path $dir | Out-Null
+mkdir -p "$repo/plugins/<新插件目录名>"
 
 # 把 tarball 拷进去
-Copy-Item "<导出临时目录>\<包名>-<版本>.tgz" $dir
+cp "<导出临时目录>/<包名>-<版本>.tgz" "$repo/plugins/<新插件目录名>/"
 ```
 
 ### 3) 更新清单并提交
 
-1. 在本文件「二、插件清单」表格里加一行；
-2. 如果该插件要进 web profile 的 bundle 层，在 `profile-config/profile-bundles.yaml` 的 `userBundles` / `finalBundles` 里追加（顺序即层级顺序）；
-3. 在「三、新机批量安装」里加一条对应的 `dsh plugin add` 命令；
-4. 提交并推送：
+1. 在「三、插件清单」表格里加一行；
+2. **在「二、插件来源与许可」里补上来源**（自研 / 第三方，第三方要写上原作者与上游仓库）——
+   这部分不能漏，第三方插件的版权归原作者；
+3. 如果该插件要进 web profile 的 bundle 层，在 `profile-config/profile-bundles.yaml` 的
+   `userBundles` / `finalBundles` 里追加（顺序即层级顺序）；
+4. 在「四、新机批量安装」里加一条对应的 `dsh plugin add` 命令；
+5. 提交并推送：
 
-```powershell
-git -C $repo add -A
-git -C $repo commit -m "feat: add <新插件名> <版本>"
-# 推送（本机 git sslBackend=openssl，需带认证；用 gh token 一次性嵌入）
-$token = (gh auth token).Trim()
-git -C $repo push "https://HaydenSmith1121:$token@github.com/HaydenSmith1121/my-dsh-plugins.git" main
+```bash
+git add -A
+git commit -m "feat: add <新插件名> <版本>"
+git push origin main
 ```
-
-> 一次性推送后，token 不会留在 remote URL 里（remote 仍是干净的 HTTPS）。
-> 若嫌每次手动塞 token 麻烦，跑一次 `gh auth setup-git` 让 gh 接管 git 凭据即可。
 
 ---
 
-## 五、tarball 校验信息（来源机打包时）
+## 七、tarball 校验信息（导出机打包时）
 
 每个 tarball 均已验证含 `package.json` + `cordis.patch.yml` + `lib/`：
 
@@ -145,3 +202,14 @@ git -C $repo push "https://HaydenSmith1121:$token@github.com/HaydenSmith1121/my-
 | dsh-connect-trae | 2.0.1 | 12 | ✓ | ✓ |
 | dsh-workbuddy-quota | 0.2.0 | 5 | ✓ | ✓ |
 | dsh-receipt | 0.1.0 | 16 | ✓ | ✓ |
+
+自查命令：
+
+```bash
+for f in plugins/*/*.tgz; do
+  printf "%-60s files=%s cordis=%s lib=%s\n" "$f" \
+    "$(tar -tzf "$f" | grep -vc '/$')" \
+    "$(tar -tzf "$f" | grep -c 'cordis.patch.yml')" \
+    "$(tar -tzf "$f" | grep -c 'package/lib/')"
+done
+```
