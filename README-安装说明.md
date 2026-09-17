@@ -1,18 +1,18 @@
 # DSH 插件包 — 安装说明
 
-> ## ⚠️ 安装方式已收敛：**插件一律通过「插件市场」面板安装**
+> ## ⚠️ 安装方式：一条命令装完，不需要先 clone
 >
-> 自 2026-09 起，本仓库**只提供一种插件安装方式** —— GUI 里的插件市场面板。
-> 批量逐个装插件的做法已经取消，理由有两个：
+> 自 2026-09 起，**不需要先 `git clone` 再 `cd` 再逐条执行** —— 一条命令即可：
+> 脚本自己把仓库落地到 `~/.dsh-plugins`，再完成预检 → 判定 → 补环境 → 安装 → 校验。
 >
-> 1. **批量装是全有或全无**：中间某一个装失败（pnpm 非 0 退出），后面的就都不会进
->    `dsh.profile.bundles`，而失败点往往与你真正想要的那个插件无关；
-> 2. **市场有装前闸门**：每次安装前跑一遍兼容性检查（环境 / profile / 候选包三层），
->    致命项硬拦截，失败自动回滚。批量脚本没有这层保护。
+> 装完之后，**其余插件的推荐安装入口是 GUI 里的「插件市场」面板**：
+> 面板会在装前跑兼容性闸门（环境 / profile / 候选包三层），致命项硬拦截、失败自动回滚，
+> 这是批量脚本给不了的保护。因此也提供 `--bootstrap-only`（Windows：`-BootstrapOnly`）
+> 只装市场本身，其余插件全部在面板里按需点装。
 >
-> 所以流程变成：**先装「引导插件」= 市场本身 → 打开 GUI → 在面板里点装其余插件。**
->
-> 引导插件必须先装（鸡生蛋），安装脚本保留这一条最小路径，不再装别的。
+> 不加这个开关时脚本会把兼容矩阵里的插件一次装完 —— 批量装是**全有或全无**的：
+> 中间某一个装失败（pnpm 非 0 退出），后面的就都不会进 `dsh.profile.bundles`，
+> 而失败点往往与你真正想要的那个插件无关。
 
 本仓库把插件打成离线 tarball，连同 web profile 的 bundle 顺序与 settings 快照，
 做到**新机可完整复现**。
@@ -27,37 +27,56 @@
 
 ## 一、30 秒开始
 
-前置只有一个：**Node ≥ 22.19**（[nodejs.org](https://nodejs.org/)）。
+前置只有一个：**Node ≥ 22.19**（[nodejs.org](https://nodejs.org/)）。一条命令装完，不用 clone、不用 `cd`。
 
-```bash
-git clone https://github.com/HaydenSmith1121/dsh-plugins
-cd dsh-plugins
+### 第 1 步：一键安装
+
+**Windows（PowerShell）**
+
+```powershell
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/scripts/install.ps1).TrimStart([char]0xFEFF)))
 ```
 
-### 第 1 步：装引导插件（只有这一个用命令行装）
+**macOS / Linux**
 
-| 平台 | 命令 |
-|---|---|
-| Windows | `scripts\install.cmd` |
-| Windows（PowerShell 里） | `.\scripts\install.ps1` |
-| macOS / Linux | `./scripts/install.sh` |
+```bash
+curl -fsSL https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/scripts/install.sh | sh
+```
+
+> 仓库会被落地到 `~/.dsh-plugins`（已存在就原地更新）。这个目录**不能删、不能挪**，
+> 原因见第五节。
 
 脚本会自动做完这五件事，**每一步都先检测再决定**：
 
 1. **环境预检** —— Node 版本、dsh 是否存在及版本、pnpm 是否存在
 2. **判定** —— 你这台机器的 dsh 版本对应仓库里哪一套插件；不匹配就停下来告诉你该装哪个版本
 3. **补齐缺失环境** —— 没有 pnpm 就装（且装在 dsh 所在的那个 Node 上）；预置 `allowBuilds`
-4. **安装引导插件** —— 只装 `dsh-plugins-market`（插件市场）这一个
+4. **安装插件** —— 默认装兼容矩阵里的全部插件；加 `-BootstrapOnly` / `--bootstrap-only`
+   则只装引导插件 `dsh-plugins-market`（插件市场）这一个
 5. **四步校验** —— 版本 / 依赖层 / 装配层 / 真实启动，四层都可能出不同的问题
 
 想先看看不改动任何东西？加 `-PreflightOnly`（Windows）或 `--preflight-only`：
 
 ```powershell
-.\scripts\install.ps1 -PreflightOnly     # 只体检，不装
-.\scripts\install.ps1 -DryRun            # 只打印将要执行的命令
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/scripts/install.ps1).TrimStart([char]0xFEFF))) -PreflightOnly
 ```
 
-### 第 2 步：重启 harness，在面板里点装其余插件
+> **为什么不写成更短的 `irm ... | iex`？** 两个原因：
+> 一是脚本含中文、文件带 UTF-8 BOM，`Invoke-Expression` 直接吃 BOM 会以
+> `The assignment expression is not valid` 解析失败；
+> 二是管道进 `iex` 没法传参。
+> `[scriptblock]::Create(...)` 先去掉 BOM 再执行，两条都解决。
+> 也可以用环境变量：`$env:DSH_INSTALL_ARGS = '-BootstrapOnly'`。
+
+| 参数（PowerShell / sh） | 作用 |
+|---|---|
+| `-PreflightOnly` / `--preflight-only` | 只体检，不装 |
+| `-DryRun` / `--dry-run` | 只打印将要执行的命令 |
+| `-BootstrapOnly` / `--bootstrap-only` | 只装引导插件 `dsh-plugins-market` |
+| `-SkipVerify` / `--skip-verify` | 跳过装完的四步校验 |
+| `-Profile web` / `--profile web` | 指定 profile，默认 `web` |
+
+### 第 2 步：重启 harness，在面板里补装其余插件
 
 ```bash
 dsh web          # 默认 http://127.0.0.1:3080

@@ -17,17 +17,29 @@
 
 ---
 
-## 〇、安装方式：只有插件市场这一条路
+## 〇、安装方式：一条命令，面板补装
 
-自 2026-09 起，本仓库的插件**一律通过 GUI 里的「插件市场」面板安装**
-（`dsh-plugins-market`）。命令行只保留一条最小引导路径：装市场自己。
+本仓库提供**一键安装脚本**（`scripts/install.ps1` / `scripts/install.sh`），
+远程一条命令即可跑完，用户不需要先 clone：
+
+```powershell
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/scripts/install.ps1).TrimStart([char]0xFEFF)))
+```
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/scripts/install.sh | sh
+```
+
+默认装上兼容矩阵里的全部插件；`-BootstrapOnly` / `--bootstrap-only` 则只装引导插件
+`dsh-plugins-market`（插件市场本身），其余插件由用户在 GUI 的「插件市场」面板里点装 ——
+面板装前会跑兼容性闸门并支持失败回滚。
 
 这对贡献者有两层含义：
 
-1. **新增插件必须登记进 `compatibility.json` 的对应 runtime**，否则它不会出现在
-   市场的「已验证」层里，用户也就装不到它 —— 光把 tarball 放进 `plugins/` 是不够的。
-2. **`plugins/<包名>/<dsh 版本>/<tarball>` 是市场点装时真正读取的位置**，
-   路径写错、tarball 缺失，市场会在装前检查里直接拦住（而不是装完才发现）。
+1. **新增插件必须登记进 `compatibility.json` 的对应 runtime**，否则它既不会被脚本装到，
+   也不会出现在市场的「已验证」层里 —— 光把 tarball 放进 `plugins/` 是不够的。
+2. **`plugins/<包名>/<dsh 版本>/<tarball>` 是脚本与市场点装时真正读取的位置**，
+   路径写错、tarball 缺失，都会在装前检查里被直接拦住（而不是装完才发现）。
 
 三类目录与收录门槛：
 

@@ -10,10 +10,11 @@
  *   环境就绪     → 按 bundle 顺序逐个 add
  *
  * 用法：
- *   node scripts/install.mjs                 # 正常安装
- *   node scripts/install.mjs --dry-run       # 只打印将要执行的命令
- *   node scripts/install.mjs --force         # dsh 版本不符时也继续（危险）
- *   node scripts/install.mjs --skip-verify   # 装完不做启动校验
+ *   node scripts/install.mjs                  # 正常安装（全套装上）
+ *   node scripts/install.mjs --bootstrap-only # 只装市场本身，其余在 GUI 里点装
+ *   node scripts/install.mjs --dry-run        # 只打印将要执行的命令
+ *   node scripts/install.mjs --force          # dsh 版本不符时也继续（危险）
+ *   node scripts/install.mjs --skip-verify    # 装完不做启动校验
  * ============================================================================
  */
 
@@ -35,9 +36,25 @@ const red = (s) => paint('31', s);
 const cyan = (s) => paint('36', s);
 
 const argv = process.argv.slice(2);
-const DRY_RUN = argv.includes('--dry-run');
-const FORCE = argv.includes('--force');
-const SKIP_VERIFY = argv.includes('--skip-verify');
+
+/**
+ * 归一化参数：把 `-BootstrapOnly` / `--bootstrap-only` / `--BootstrapOnly`
+ * 这类写法统统收敛成小写短横线形式。
+ *
+ * 为什么要这样：同一个脚本会被 PowerShell、sh、cmd 三种壳调用，
+ * 各壳用户习惯不同；归一化之后，文档里写哪种写法都能用。
+ */
+const flags = new Set(
+  argv
+    .filter((a) => a.startsWith('-'))
+    .map((a) => '--' + a.replace(/^-+/, '').replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase())
+);
+const has = (name) => flags.has('--' + name);
+
+const DRY_RUN = has('dry-run');
+const FORCE = has('force');
+const SKIP_VERIFY = has('skip-verify');
+const BOOTSTRAP_ONLY = has('bootstrap-only') || has('bootstrap');
 const profileArgIdx = argv.indexOf('--profile');
 const PROFILE = profileArgIdx >= 0 && argv[profileArgIdx + 1] ? argv[profileArgIdx + 1] : null;
 
@@ -222,24 +239,25 @@ if (!allPlugins.length) {
 }
 
 /**
- * ★ 只安装「引导插件」= 插件市场本身。
+ * 默认装「全套插件」，加 --bootstrap-only 时只装引导插件（= 市场本身）。
  *
- * 本仓库自 2026-09 起，**其余插件一律通过市场面板在 GUI 里点装**，不再走批量安装。
- * 原因有两个：
- *   1) 批量装是全有或全无 —— 中间某一个装失败（pnpm 非 0），后面的就都不会进 bundles，
- *      而失败点往往与用户真正想要的那个插件无关；
- *   2) 市场在装每个插件前会跑一遍兼容性闸门并支持失败回滚，批量脚本没有这层保护。
- *
- * 市场自己必须先被装进来（鸡生蛋），所以这里保留这一条最小引导路径。
+ * 市场自己必须先被装进来（鸡生蛋），所以引导路径永远保留；只想用面板逐个点装的
+ * 用户可以用 --bootstrap-only 跳过批量安装 —— 批量装是全有或全无，中间某一个
+ * 装失败（pnpm 非 0），后面的就都不会进 bundles，而失败点往往与用户真正想要的
+ * 那个插件无关；市场在装每个插件前会跑一遍兼容性闸门并支持失败回滚。
  */
 const BOOTSTRAP_PACKAGE = 'dsh-plugins-market';
-const plugins = allPlugins.filter((p) => p.package === BOOTSTRAP_PACKAGE);
+const plugins = BOOTSTRAP_ONLY ? allPlugins.filter((p) => p.package === BOOTSTRAP_PACKAGE) : allPlugins;
 if (!plugins.length) {
   die(`兼容矩阵里找不到引导插件 ${BOOTSTRAP_PACKAGE}，无法引导。请检查 compatibility.json。`, 3);
 }
 
-const rest = allPlugins.filter((p) => p.package !== BOOTSTRAP_PACKAGE);
-console.log('  ' + dim(`  本次只安装引导插件 ${BOOTSTRAP_PACKAGE}（其余 ${rest.length} 个请装完后在 GUI 里点装）`));
+const rest = allPlugins.filter((p) => !plugins.includes(p));
+if (BOOTSTRAP_ONLY) {
+  console.log('  ' + dim(`  --bootstrap-only：本次只安装引导插件 ${BOOTSTRAP_PACKAGE}（其余 ${rest.length} 个请在 GUI 里点装）`));
+} else {
+  console.log('  ' + dim(`  本次安装 ${plugins.length} 个插件（加 --bootstrap-only 可只装市场，其余在 GUI 里点装）`));
+}
 
 let failed = [];
 for (let i = 0; i < plugins.length; i++) {
@@ -286,16 +304,20 @@ for (let i = 0; i < plugins.length; i++) {
 
 console.log();
 if (failed.length) {
-  console.log('  ' + yellow('! ') + `引导插件没装成功：${failed.join(', ')}`);
+  console.log('  ' + yellow('! ') + `${failed.length} 个插件没装成功：${failed.join(', ')}`);
   console.log('    ' + dim('提示：只要 pnpm 退出码非 0，dsh 就不会把该包写进 bundles ——'));
   console.log('    ' + dim('即使 node_modules 里已经能看到文件，也当作「没装完」。') + '\n');
 } else {
-  console.log('  ' + green('✓ ') + `引导插件 ${BOOTSTRAP_PACKAGE} 安装成功\n`);
-  console.log('  ' + bold('接下来：装其余插件请走市场面板，别再手动装。'));
-  console.log('    ' + dim('1. 重启 dsh web（新增的 bundle 是在启动时合成的）'));
-  console.log('    ' + dim('2. 左侧导航栏点「插件市场」'));
-  console.log('    ' + dim(`3. 在「已验证」页里点装需要的插件（共 ${rest.length} 个可选）`));
-  console.log('    ' + dim('市场会在每次安装前跑兼容性闸门，失败会自动回滚。') + '\n');
+  console.log('  ' + green('✓ ') + `${plugins.length} 个插件安装成功\n`);
+  if (rest.length) {
+    console.log('  ' + bold('接下来：还可以在 GUI 里按需补装其余插件。'));
+    console.log('    ' + dim('1. 重启 dsh web（新增的 bundle 是在启动时合成的）'));
+    console.log('    ' + dim('2. 左侧导航栏点「插件市场」'));
+    console.log('    ' + dim(`3. 在「已验证」页里点装需要的插件（还有 ${rest.length} 个可选）`));
+    console.log('    ' + dim('市场会在每次安装前跑兼容性闸门，失败会自动回滚。') + '\n');
+  } else {
+    console.log('  ' + dim('重启 dsh web 后，左侧导航栏即可看到「插件市场」。') + '\n');
+  }
 }
 
 // ---------------------------------------------------------------- 5. 校验

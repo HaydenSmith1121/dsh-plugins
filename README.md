@@ -61,40 +61,51 @@ DeepSeek Harness 是一个**可组合的 agent harness**：模型、工具、界
 
 ## 🚀 快速开始 · Quick Start
 
-**安装只走一条路：GUI 里的「插件市场」面板。** 自 2026-09 起不再逐个用命令行安装 ——
-面板会在装前自动跑三层兼容性闸门（环境 / profile / 候选包），致命项硬拦截、失败自动回滚，
-这是批量脚本给不了的保护。前置要求只有一个：**Node ≥ 22.19**。
+**前置要求只有一个：Node ≥ 22.19**（[nodejs.org](https://nodejs.org/)）。一条命令装完，不用 clone、不用 `cd`。
 
-**① Clone 仓库**
+**Windows（PowerShell）**
 
-```bash
-git clone https://github.com/HaydenSmith1121/dsh-plugins
-cd dsh-plugins
+```powershell
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/scripts/install.ps1).TrimStart([char]0xFEFF)))
 ```
 
-**② 装引导插件** —— 整个流程只有这一步用命令行：安装引导插件 `dsh-plugins-market`，并做四步校验。
+**macOS / Linux**
 
-| 平台 | 命令 |
+```bash
+curl -fsSL https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/scripts/install.sh | sh
+```
+
+脚本会先把仓库 clone 到 `~/.dsh-plugins`（已存在则原地更新），再自动完成：环境预检 →
+判定 dsh 版本是否匹配 → 补装 pnpm 与 `allowBuilds` → 装插件（默认全部，`-BootstrapOnly` /
+`--bootstrap-only` 只装市场）→ 四步校验（含真实启动）。
+
+装完重启 `dsh web`，左侧导航 →「插件市场」，其余插件在面板里点装。
+
+<details>
+<summary><strong>🔧 常用参数</strong>（点开）</summary>
+
+| 参数（PowerShell / sh） | 作用 |
 |---|---|
-| Windows | `scripts\install.cmd` |
-| Windows（PowerShell 里） | `.\scripts\install.ps1` |
-| macOS / Linux | `./scripts/install.sh` |
+| `-PreflightOnly` / `--preflight-only` | 只体检，不做任何改动 |
+| `-DryRun` / `--dry-run` | 只打印将要执行的命令 |
+| `-BootstrapOnly` / `--bootstrap-only` | 只装引导插件 `dsh-plugins-market` |
+| `-SkipVerify` / `--skip-verify` | 跳过装完的四步校验 |
+| `-Profile web` / `--profile web` | 指定 profile，默认 `web` |
 
-只想体检、不做任何改动：`.\scripts\install.ps1 -PreflightOnly`
+在命令末尾接参数即可，例如只体检：
 
-**③ 面板安装其余插件**
-
-```bash
-dsh web
+```powershell
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/scripts/install.ps1).TrimStart([char]0xFEFF))) -PreflightOnly
 ```
 
-左侧导航 →「插件市场」→「已验证」页签 → 选插件点「安装」→ **再重启一次**。
+> **为什么不写成更短的 `irm ... | iex`？** 脚本含中文、文件带 UTF-8 BOM，
+> `Invoke-Expression` 直接吃 BOM 会以
+> `The assignment expression is not valid` 解析失败。
+> `[scriptblock]::Create(...)` 先去掉 BOM 再执行，顺带还能正常传参。
+> 先落地成文件再跑也可以：
+> `iwr <同一地址> -OutFile $env:TEMP\dsh-install.ps1; & $env:TEMP\dsh-install.ps1`
 
-**④ 校验安装** —— 跑一次四步校验（含真实启动），确认安装无误：
-
-```bash
-node scripts/verify.mjs
-```
+</details>
 
 **遇到问题？** 常见故障按层次对号入座：
 
