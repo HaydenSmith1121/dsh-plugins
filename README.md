@@ -43,20 +43,45 @@ cd dsh-plugins
 
 ---
 
+## 一之二、要开发插件？先隔离环境
+
+如果你打算**在本机开发/调试插件**，别直接在默认的 `~/.dsh` 上做 ——
+`dsh web` 不能起两次，第二个进程会抢端口，旧页面随之断连；
+插件树改坏则整个 harness 起不来。
+
+仓库自带一套隔离脚手架，把「日常在用的 harness」和「开发插件的 harness」分成两套：
+
+```bash
+node scripts/dev-env.mjs init     # 在 ~/.dsh-dev 建一套独立的 harness
+# 然后按提示 cd 过去跑一次 pnpm install
+node scripts/dev-env.mjs web      # 启动隔离环境（3090），生产（3080）不受影响
+```
+
+隔离基于 `DSH_HOME`（整个主目录独立），而不是 `--profile`
+（那只隔离插件树，凭据/设置/会话仍共享）。脚本不含任何硬编码盘符，
+**换设备 clone 后直接可用**。
+
+完整说明 + 自检 + 常见坑见 **[`README-开发环境隔离.md`](./README-开发环境隔离.md)**。
+
+---
+
 ## 二、目录结构
 
 ```none
 dsh-plugins/
 ├─ README.md                        # 本文件：总览 / 来源 / 兼容策略 / 贡献入口
 ├─ README-安装说明.md                # ★ 安装教程（唯一的安装文档，自包含）
+├─ README-开发环境隔离.md            # ★ 开发插件时的环境隔离（可移植到新设备）
 ├─ CONTRIBUTING.md                  # ★ 插件入库规范（新插件请照此提交）
 ├─ compatibility.json               # ★ 机器可读的版本兼容矩阵，安装脚本据此判定
 ├─ scripts/
 │  ├─ preflight.mjs                 # 环境预检（只读）：检测 + 判定 + 给出行动方案
 │  ├─ install.mjs                   # 安装执行器（两平台共用同一份逻辑）
 │  ├─ verify.mjs                    # 安装后四步校验（含真实启动）
+│  ├─ dev-env.mjs                   # ★ 开发环境隔离（init/status/doctor/web/install…）
 │  ├─ install.ps1 / install.cmd     # Windows 入口（薄壳）
-│  └─ install.sh                    # macOS / Linux 入口（薄壳）
+│  ├─ install.sh                    # macOS / Linux 入口（薄壳）
+│  └─ dev-env.ps1 / dev-env.cmd / dev-env.sh   # 隔离脚本的薄壳入口
 ├─ plugins/                         # 每个插件一个目录，其下按 dsh 版本分层
 │  ├─ dsh-market-plugin/
 │  │  └─ 0.1.6-alpha.1/
