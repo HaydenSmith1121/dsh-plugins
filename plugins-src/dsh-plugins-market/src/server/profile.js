@@ -23,6 +23,8 @@ import {
   writeJsonAtomic,
   ensureDir,
   spawnCapture,
+  spawnCaptureAsync,
+  dshCommand,
   timestampSlug,
   resolveDataDir,
 } from './util.js';
@@ -138,14 +140,29 @@ export function resolveLocalSpecPath(spec, profileDir) {
  *
  * 输出里 section 头是 `# == <bundle 包名>`，被别的 bundle 打过补丁时会写成
  * `# == <包名>, patched by <另一个包>`。
+ *
+ * ★ async：这一步要起一个 dsh 进程（约 1–5 秒）。用同步实现会把事件循环堵住，
+ *   安装进度面板上的计时器会突然停住 —— 那看起来和卡死没区别。
  */
-export function composedTree(profile, env = process.env, { launcher } = {}) {
+export async function composedTree(profile, env = process.env, { launcher, signal, timeout = 120_000 } = {}) {
   const state = readProfileState(profile, env);
-  const cmd = launcher ?? 'dsh';
-  const res = spawnCapture(cmd, ['--profile', profile, '--dump-config'], {
+  // ★ 用 dshCommand() 解析出「怎么调 dsh」，而不是让 shell 去 PATH 里找 ——
+  //   harness 从 GUI / 快捷方式启动时 PATH 常和终端不同，那时 shell 找不到 dsh，
+  //   表现就是这一类「配置树读不出来 / 安装很久没反应」。
+  //
+  //   launcher 参数只在**显式传了绝对路径**时才用（那是调用方已经解析好的结果）；
+  //   传进来的是 `dsh.cmd` 这种相对名字时忽略它 —— 走 shell 跑薄壳既会触发
+  //   DEP0190，又引入引号/继承 PATH 的一整类问题，正是要避免的东西。
+  const explicit = launcher && (path.isAbsolute(launcher) || launcher.includes(path.sep) || launcher.includes('/'));
+  const dc = explicit
+    ? { command: launcher, prefixArgs: [], shell: process.platform === 'win32' }
+    : dshCommand(env);
+  const res = await spawnCaptureAsync(dc.command, [...dc.prefixArgs, '--profile', profile, '--dump-config'], {
     cwd: state.dir,
     env: { ...process.env, ...env },
-    timeout: 120_000,
+    timeout,
+    signal,
+    shell: dc.shell,
   });
   if (res.failed && !res.stdout) {
     return { ok: false, error: res.error ?? res.stderr ?? 'dump-config 失败', heads: [], bundles: [], rows: [], stderr: res.stderr, stdout: res.stdout };
@@ -302,8 +319,17 @@ export function backupProfile(profile, { label = 'manual', env = process.env, ex
  *
  * 注意：恢复 manifest 之后**必须**再跑一次 `dsh plugin --profile <p> install`，
  * 否则 node_modules 与 package.json 会不一致 —— 那本身就是一种「装坏」。
+ *
+ * ★ 两个关键修正：
+ *   1) relink 改用 spawnCaptureAsync，并且**优先用 lib/bin.js**（与 installer 一致）。
+ *      早先这里写死 `spawnCapture('dsh', …)`，依赖 PATH 上有 dsh 且能跑 .cmd 薄壳；
+ *      而安装路径本来刻意绕开了那个薄壳 —— 回滚是最不能失败的一步，却用了最脆的方式。
+ *   2) 超时从 10 分钟压到 5 分钟：回滚卡 10 分钟没有任何意义，用户需要的是
+ *      「尽快知道回滚成没成」，失败时还能照着手动命令自己修。
  */
-export function restoreProfile(backupDir, { env = process.env, relink = true } = {}) {
+export async function restoreProfile(backupDir, {
+  env = process.env, relink = true, dshDir = null, signal = null, timeout = 300_000,
+} = {}) {
   const meta = readJsonSafe(path.join(backupDir, 'backup-meta.json'));
   if (!meta?.profileDir) return { ok: false, error: `快照缺少 backup-meta.json：${backupDir}` };
 
@@ -325,12 +351,27 @@ export function restoreProfile(backupDir, { env = process.env, relink = true } =
   }
 
   if (relink) {
-    const res = spawnCapture('dsh', ['plugin', '--profile', meta.profile, 'install'], {
-      cwd: meta.profileDir,
-      env: { ...process.env, ...env },
-      timeout: 600_000,
-    });
-    results.relink = { ok: !res.failed, status: res.status, output: tail(res.stdout + res.stderr, 4000) };
+    const dc = dshCommand(env);
+    // dshDir 显式给了就优先用它（安装路径下调用方已经解析过一次，避免重复找）
+    const binJs = dshDir ? path.join(dshDir, 'lib', 'bin.js') : null;
+    const useBin = binJs && fs.existsSync(binJs);
+    const res = await spawnCaptureAsync(
+      useBin ? process.execPath : dc.command,
+      [...(useBin ? [binJs] : dc.prefixArgs), 'plugin', '--profile', meta.profile, 'install'],
+      {
+        cwd: meta.profileDir,
+        env: { ...process.env, ...env },
+        timeout,
+        signal,
+        shell: useBin ? false : dc.shell,
+      },
+    );
+    results.relink = {
+      ok: !res.failed,
+      status: res.status,
+      timedOut: res.timedOut,
+      output: tail(`${res.stdout}${res.stderr}`, 4000),
+    };
   }
 
   return { ok: true, meta, results };

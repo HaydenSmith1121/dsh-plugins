@@ -205,10 +205,20 @@ function findAll(node, pred, out = []) {
   return out;
 }
 
-/** 造一个能渲染出「有内容」的 fetch stub：status + catalog 都返回真实形状的数据 */
-function makeFetchStub(items) {
+/**
+ * 造一个能渲染出「有内容」的 fetch stub：status + catalog 都返回真实形状的数据。
+ *
+ * extra 用来注入本次用例关心的额外方法（gate / install / installProgress …）——
+ * 形如 { gate: (args) => result }，返回的 result 会被包成 { ok: true, result }。
+ */
+function makeFetchStub(items, extra = {}) {
   return async (url, init) => {
     const payload = JSON.parse(init?.body ?? '{}');
+    if (extra[payload.method]) {
+      const r = await extra[payload.method](payload.args ?? {});
+      if (r && r.__raw) return { ok: true, json: async () => r.__raw };
+      return { ok: true, json: async () => ({ ok: true, result: r }) };
+    }
     if (payload.method === 'status') {
       return { ok: true, json: async () => ({ ok: true, result: {
         market: { version: '0.1.1' },
@@ -221,6 +231,9 @@ function makeFetchStub(items) {
           .map((i) => ({ name: i.package, from: i.installState.installedVersion, to: i.installState.target })),
         userData: { liked: 0, favorited: 0, marks: {} },
         backups: [], repo: { detected: true },
+        preflight: extra.__preflight ?? { ok: true, problems: [], notices: [] },
+        // 服务端会在 status 里带当前安装任务：界面据此在标题栏给「查看进度」入口
+        job: extra.__job ?? null,
       } }) };
     }
     if (payload.method === 'catalog') {
@@ -267,8 +280,8 @@ function findPanelComponent(element) {
 }
 
 /** 渲染面板：跑一遍 effect（发请求）→ 等一拍 → 再用拿到的数据重渲一次 */
-async function renderPanel(items) {
-  const { mod, reactStub } = loadFactory(makeFetchStub(items));
+async function renderPanel(items, opts = {}) {
+  const { mod, reactStub } = loadFactory(makeFetchStub(items, opts.extra ?? {}));
   const registered = [];
   const ctx = {
     get: (n) => (n === 'layout' ? { selectPanel() {} } : undefined),
@@ -325,6 +338,70 @@ async function renderPanel(items) {
   }
   return tree;
 }
+
+/**
+ * 把「真实交互 → 重新渲染」跑起来的小驱动。
+ *
+ * ★ 为什么需要它：这次改动的核心（点安装 → 立刻出进度面板 → 能中止 → 手动命令常在）
+ *   全都发生在**交互之后**。只渲染首屏的话，这些代码一行都不会执行 ——
+ *   测试会是绿的，而功能可能整个是坏的。
+ *
+ * 用法：`const d = await openPanel(items, extra)`；点某个按钮 → `await d.settle()`。
+ */
+export async function openPanel(items, extra = {}) {
+  const { mod, reactStub } = loadFactory(makeFetchStub(items, extra));
+  const registered = [];
+  const ctx = {
+    get: (n) => (n === 'layout' ? { selectPanel() {} } : undefined),
+    effect: (fn) => { try { return fn(); } catch { return () => {}; } },
+    slots: {
+      inject: (k, cb) => { const d = cb(); return typeof d === 'function' ? d : () => {}; },
+      register: (options, component) => { registered.push({ options, component }); return () => {}; },
+      entries: () => [], entriesOfSlot: () => [], subscribe: () => () => {},
+      getVersion: () => 0, spec: () => ({ kind: 'list' }), snapshot: () => ({}), renderSlot: () => null,
+    },
+  };
+  mod.apply(ctx);
+  const registeredComp = registered.find((r) => r.options?.name === 'main').component;
+  const shell = registeredComp({ onClose: () => {} });
+  const Panel = findPanelComponent(shell);
+  if (!Panel) throw new Error('没能从注册组件里找到 Panel');
+
+  const driver = {
+    reactStub,
+    tree: null,
+    async settle(passes = 3) {
+      let prev = null;
+      for (let p = 0; p < passes; p++) {
+        reactStub.__rewind();
+        driver.tree = renderTree(Panel({ onClose: () => {} }), reactStub);
+        for (const fn of reactStub.__effects) { try { fn(); } catch { /* 忽略 */ } }
+        for (let i = 0; i < 6; i++) await Promise.resolve();
+        await new Promise((r) => setTimeout(r, 8));
+        for (let i = 0; i < 6; i++) await Promise.resolve();
+        const text = allText(driver.tree);
+        if (text === prev) break;
+        prev = text;
+      }
+      return driver.tree;
+    },
+    text() { return allText(driver.tree); },
+    buttons() { return findAll(driver.tree, (n) => n.tag === 'button'); },
+    /** 按可见文案找一个按钮并点它 */
+    async click(pred, label = '目标按钮') {
+      const b = driver.buttons().find(pred);
+      if (!b) throw new Error(`找不到${label}。现有按钮：${driver.buttons().map((x) => allText(x).trim()).join(' | ')}`);
+      assert(typeof b.props.onClick === 'function', `${label} 必须可点（有 onClick）`);
+      b.props.onClick({ target: { checked: true } });
+      await driver.settle();
+      return b;
+    },
+  };
+  await driver.settle();
+  return driver;
+}
+
+export { allText, findAll };
 
 suite('client / 市场面板渲染形状');
 

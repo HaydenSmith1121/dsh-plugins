@@ -11,6 +11,13 @@
  * 完全可追踪。不引入 WebSocket / RPC 框架，是因为本插件要处理的是本地文件
  * 系统与 pnpm，一次请求一次响应就够了。
  *
+ * ★ 唯一的例外是**安装**：它不再在一次请求里跑完，而是变成一个后台任务
+ *   （见 jobs.js）。理由是安装可能真的要好几分钟，而且必须能被中止 ——
+ *   这两件事都要求「请求」与「执行」解耦：
+ *       install        → 立刻拿回 jobId
+ *       installProgress→ 轮询阶段 / 耗时 / 预计剩余 / 实时输出
+ *       installAbort   → 真正中断（杀 pnpm 整棵进程树）
+ *
  * ★ 所有会写盘的动作都集中在 installer.js，并且都先备份。
  *   本文件只负责「取参数 → 调 → 落日志 → 回结果」。
  */
@@ -36,8 +43,13 @@ import { runGate } from './gate.js';
 import { probeEntry, clearProbeCache } from './probe.js';
 import {
   installPlugin, uninstallPlugin, repairProfile, rollbackTo, bootVerify,
-  verifyInstalled, applyAllowBuilds, tarballCacheDir,
+  verifyInstalled, applyAllowBuilds, tarballCacheDir, preflight, removeDependency,
 } from './installer.js';
+import { manualInstallPlan, writeManualScript } from './manual.js';
+import {
+  startJob, currentJob, findJob, latestJob, requestAbort, jobSnapshot, listJobs, phasePlan,
+} from './jobs.js';
+import { DEFAULT_TOTAL_TIMEOUT_MS, phasesWithTimings, readTimings } from './progress.js';
 import { appendOp, readOpTail, clearOpLog } from './oplog.js';
 
 export const name = 'dsh-plugins-market';
@@ -131,11 +143,29 @@ function profileState(ctx) {
   return readProfileState(ctx.profileName, process.env);
 }
 
-/** 装配树缓存 8 秒：装前检查里要用，连着点多个插件不必反复跑 */
-function tree(ctx, { force = false } = {}) {
+/**
+ * 装配树缓存 8 秒：装前检查里要用，连着点多个插件不必反复跑。
+ *
+ * ★ 这里包了一层「同时只跑一个 dump-config」的合流：一次页面加载会并发打进来
+ *   好几个请求（列表 + 状态 + 闸门），每个都要装配树。不合并的话会同时起
+ *   好几个 dsh 进程，白烧 CPU 还把首屏拖慢。
+ */
+let treeInflight = null;
+
+async function tree(ctx, { force = false } = {}) {
   if (force || !ctx._tree || Date.now() - ctx._treeAt > 8000) {
-    ctx._tree = composedTree(ctx.profileName, process.env, { launcher: ctx.env.dsh.launcher });
-    ctx._treeAt = Date.now();
+    if (!treeInflight) {
+      // 不传 launcher：让 composedTree 自己解析「怎么调 dsh」（优先 lib/bin.js）
+      treeInflight = composedTree(ctx.profileName, process.env)
+        .then((t) => {
+          ctx._tree = t;
+          ctx._treeAt = Date.now();
+          return t;
+        })
+        .finally(() => { treeInflight = null; });
+    }
+    // 强制刷新时也要等前一次结束，避免两次 dump-config 同时改 cordis.yml
+    return treeInflight;
   }
   return ctx._tree;
 }
@@ -250,6 +280,17 @@ function createDispatcher(ctx) {
           userData: { ...userDataStats(process.env), marks },
           backups: listProfileBackups(process.env).slice(0, 10),
           cache: readCacheMeta(),
+
+          // ── 安装任务（问题：装的时候只在页面上干等）──
+          // 让界面一打开就知道「现在有没有正在跑的安装」，而不是只有点过安装的人知道
+          job: jobSnapshot(latestJob()),
+          // ── profile 装前体检：断链 file: 依赖是「装很久装不上」的主因之一 ──
+          preflight: preflight({ profileState: state, env: ctx.env }),
+          // ── 进度模型自述：阶段表 + 本机实测耗时（界面用它渲染 ETA）──
+          progressModel: {
+            totalTimeoutMs: DEFAULT_TOTAL_TIMEOUT_MS,
+            phases: phasesWithTimings(readTimings()),
+          },
         };
       }
 
@@ -350,7 +391,7 @@ function createDispatcher(ctx) {
           probe = await probeEntry(found, { force: Boolean(args.refreshProbe) });
         }
 
-        const report = runGate(found, gctx(ctx), {
+        const report = runGate(found, await gctx(ctx), {
           acknowledgeRisk: Boolean(args.acknowledgeRisk),
           targetProfile: ctx.profileName,
           probe,
@@ -360,7 +401,10 @@ function createDispatcher(ctx) {
           canInstall: report.canInstall, blockedBy: report.blockedBy,
           counts: report.counts,
         });
-        return { ...report, installState: state, upgrade: state?.status === 'upgradable' };
+        // ★ 手动安装方案：装前就给。用户明确要求「自动安装不行时，要能停下来自己装」——
+        //   而「能不能自己装、要敲什么命令」这个问题的答案不该等到失败后才出现。
+        const manual = manualInstallPlan(found, await gctx(ctx), report.installSpec);
+        return { ...report, installState: state, upgrade: state?.status === 'upgradable', manual };
       }
 
       // ── 安装 / 卸载 / 修复 ──────────────────────────────
@@ -368,6 +412,17 @@ function createDispatcher(ctx) {
         const p = await ensurePool(ctx);
         const found = lookupEntry(p, args.id);
         if (!found) throw new Error(`目录里没有这个插件：${args.id}`);
+
+        // 已经有一个任务在跑（或排队）时不允许再开一个：
+        // 两个 pnpm 同时改同一个 profile 必然互相破坏
+        const busy = currentJob();
+        if (busy && args.force !== true) {
+          return {
+            ok: false, refused: true, busy: true,
+            job: jobSnapshot(busy),
+            message: `已经有一个安装任务在跑（${busy.pkgName ?? busy.pluginId}）。同时改同一个 profile 会互相破坏，所以这次没有开始。`,
+          };
+        }
 
         const state = p.state.get(found.id) ?? null;
         if (state?.status === 'current') {
@@ -377,7 +432,7 @@ function createDispatcher(ctx) {
         }
 
         const probe = found.tier === 'verified' ? null : await probeEntry(found);
-        const gate = runGate(found, gctx(ctx), {
+        const gate = runGate(found, await gctx(ctx), {
           acknowledgeRisk: Boolean(args.acknowledgeRisk),
           targetProfile: ctx.profileName,
           probe,
@@ -388,15 +443,124 @@ function createDispatcher(ctx) {
         }
 
         ctx.env = detectEnvironment(process.env); // 环境可能在会话期间变了
-        const result = await installPlugin({ entry: found, ctx: gctx(ctx), gate, options: {} });
-        invalidate(ctx);
-        appendOp({
-          op: state?.status === 'upgradable' ? 'upgrade' : 'install',
-          pluginId: found.id, ok: result.ok, failure: result.failure ?? null,
-          from: state?.installedVersion ?? null, to: state?.target ?? null,
-          backupDir: result.backupDir ?? null, retried: (result.steps ?? []).some((s) => s.id === 'allowbuilds-retry'),
+
+        // ★ 手动安装方案在**开始之前**就算好：无论自动安装成功还是失败，
+        //   用户都应该能立刻看到「同样的效果，我自己敲命令要怎么做」。
+        const manual = manualInstallPlan(found, await gctx(ctx), gate.installSpec);
+
+        const isUpgrade = state?.status === 'upgradable';
+        const job = startJob({
+          kind: isUpgrade ? 'upgrade' : 'install',
+          pluginId: found.id,
+          pkgName: found.package ?? found.id,
+          profile: ctx.profileName,
+          entry: { id: found.id, title: found.title, package: found.package, version: found.version },
+          manual,
+          totalTimeoutMs: clamp(args.totalTimeoutMs ?? DEFAULT_TOTAL_TIMEOUT_MS, 60_000, 60 * 60 * 1000),
+          runner: async (j) => {
+            // ★ 测试专用：模拟一个「很慢的安装」，用来验证中止链路真的能打断。
+            //   没有这个口子，快速机器上安装 300ms 就结束了，中止按钮永远来不及按 ——
+            //   而「能不能中止」恰恰是这个功能最关键、也最容易悄悄失效的一环。
+            const sim = Number(args.simulateSlowInstallSeconds);
+            if (Number.isFinite(sim) && sim > 0) {
+              const until = Math.min(sim, 600) * 1000;
+              j.phase('install');
+              await new Promise((resolve) => {
+                const t = setTimeout(resolve, until);
+                j.signal.addEventListener('abort', () => { clearTimeout(t); resolve(); }, { once: true });
+              });
+              if (j.signal.aborted) {
+                return { ok: false, aborted: true, failure: 'aborted-by-user', steps: [{ id: 'sim', label: '模拟安装', status: 'warn', detail: '被中止' }] };
+              }
+            }
+            const result = await installPlugin({ entry: found, ctx: await gctx(ctx), gate, options: {}, job: j });
+            invalidate(ctx);
+            appendOp({
+              op: isUpgrade ? 'upgrade' : 'install',
+              pluginId: found.id, ok: result.ok, failure: result.failure ?? null,
+              aborted: Boolean(result.aborted),
+              from: state?.installedVersion ?? null, to: state?.target ?? null,
+              backupDir: result.backupDir ?? null,
+              ms: (j.endedAt ?? Date.now()) - (j.startedAt ?? Date.now()),
+              timings: result.timings ?? null,
+              retried: (result.steps ?? []).some((s) => s.id === 'allowbuilds-retry'),
+            });
+            return result;
+          },
         });
-        return { ...result, gate, upgrade: state?.status === 'upgradable', fromVersion: state?.installedVersion ?? null, toVersion: state?.target ?? null };
+
+        appendOp({ op: 'install-start', pluginId: found.id, jobId: job.id, upgrade: isUpgrade, profile: ctx.profileName });
+
+        return {
+          ok: true,
+          started: true,
+          jobId: job.id,
+          job: jobSnapshot(job),
+          gate,
+          manual,
+          upgrade: isUpgrade,
+          fromVersion: state?.installedVersion ?? null,
+          toVersion: state?.target ?? null,
+          message: '安装已在后台开始。可以随时关掉这个页面 —— 任务会在服务端继续，回来还能看到进度。',
+        };
+      }
+
+      /** 安装进度：前端每 600ms 轮询一次（关掉页面再回来也能续上看） */
+      case 'installProgress': {
+        const job = args.jobId ? findJob(args.jobId) : latestJob();
+        if (!job) return { job: null, message: '还没有任何安装任务。' };
+        // 任务结束时顺手把插件池失效掉，省得用户回来看到「未安装」
+        if (job.state === 'succeeded') invalidate(ctx);
+        return { job: jobSnapshot(job) };
+      }
+
+      /** 中止安装：真正杀 pnpm 的整棵进程树，然后回滚到安装前 */
+      case 'installAbort': {
+        const job = args.jobId ? findJob(args.jobId) : currentJob();
+        if (!job) return { ok: false, error: '没有正在跑的安装任务。' };
+        const r = requestAbort(job, args.reason === 'timeout' ? 'timeout' : 'user');
+        appendOp({ op: 'install-abort', pluginId: job.pluginId, jobId: job.id, ok: r.ok });
+        return {
+          ...r,
+          job: jobSnapshot(job),
+          message: r.ok
+            ? '已发出中止请求：先结束 pnpm 进程（连同它的子进程），再用安装前的快照把 profile 还原。'
+            : r.error,
+        };
+      }
+
+      case 'jobs':
+        return { items: listJobs(), current: jobSnapshot(currentJob()) };
+
+      /** 手动安装指引：任何时候都能拿（不依赖是否有任务在跑） */
+      case 'manualCommands': {
+        const p = await ensurePool(ctx);
+        const found = lookupEntry(p, args.id);
+        if (!found) throw new Error(`目录里没有这个插件：${args.id}`);
+        const g = await gctx(ctx);
+        const probe = found.tier === 'verified' ? null : await probeEntry(found);
+        const report = runGate(found, g, { targetProfile: ctx.profileName, probe });
+        const plan = manualInstallPlan(found, g, report.installSpec);
+        if (args.save) {
+          const dir = ensureDir(path.join(resolveDataDir(), 'manual'));
+          const saved = writeManualScript(plan, { dir, format: String(args.save) });
+          return { plan, saved };
+        }
+        return { plan };
+      }
+
+      /** 一键修掉「断链的 file: 依赖」—— 它会让任何安装都变慢甚至失败 */
+      case 'removeDependency': {
+        const name = String(args.package ?? '').trim();
+        if (!name) throw new Error('缺少 package 参数');
+        const busy = currentJob();
+        if (busy) {
+          return { ok: false, busy: true, job: jobSnapshot(busy), error: '有安装任务在跑，等它结束再动 profile。' };
+        }
+        const result = await removeDependency({ ctx: await gctx(ctx), pkgName: name });
+        invalidate(ctx);
+        appendOp({ op: 'remove-dependency', package: name, ok: result.ok, failure: result.failure ?? null });
+        return result;
       }
 
       case 'uninstall': {
@@ -405,27 +569,32 @@ function createDispatcher(ctx) {
         const installed = scanInstalled(ctx.profileName, process.env).find((i) => i.name === target)
           ?? Object.entries(state.dependencies).map(([n, s]) => ({ name: n, spec: s })).find((i) => i.name === target);
         if (!installed) throw new Error(`${target} 不在这个 profile 里`);
-        const result = await uninstallPlugin({ entry: { id: target, package: target }, ctx: gctx(ctx) });
+        const result = await uninstallPlugin({ entry: { id: target, package: target }, ctx: await gctx(ctx) });
         invalidate(ctx);
         appendOp({ op: 'uninstall', pluginId: target, ok: result.ok });
         return result;
       }
 
       case 'repair': {
-        const result = await repairProfile({ ctx: gctx(ctx) });
+        const result = await repairProfile({ ctx: await gctx(ctx) });
         invalidate(ctx);
         appendOp({ op: 'repair', ok: result.ok, orphansAfter: result.orphansAfter });
         return result;
       }
 
+      case 'preflight': {
+        const state = profileState(ctx);
+        return preflight({ profileState: state, env: ctx.env });
+      }
+
       case 'verify': {
         const target = String(args.id ?? '');
         if (target) {
-          const v = verifyInstalled(target, gctx(ctx));
+          const v = await verifyInstalled(target, await gctx(ctx));
           return { ok: v.ok, layers: v.layers, bundles: v.bundles };
         }
         invalidate(ctx);
-        const t = tree(ctx, { force: true });
+        const t = await tree(ctx, { force: true });
         const state = profileState(ctx);
         const raw = scanInstalled(ctx.profileName, process.env);
         const p = pool(ctx, { recalc: true });
@@ -449,7 +618,7 @@ function createDispatcher(ctx) {
 
       /** 第四层校验：真实启动一次（默认不跑，需用户显式点）。 */
       case 'bootVerify': {
-        const r = await bootVerify(gctx(ctx), { timeoutMs: clamp(args.timeoutMs ?? 45_000, 10_000, 180_000) });
+        const r = await bootVerify(await gctx(ctx), { timeoutMs: clamp(args.timeoutMs ?? 45_000, 10_000, 180_000) });
         appendOp({ op: 'boot-verify', ok: r.ok, sawUrl: r.sawUrl, fatalHits: r.fatalHits });
         return r;
       }
@@ -458,7 +627,7 @@ function createDispatcher(ctx) {
       case 'profileCheck': {
         // 只做 profile 层检查：用一个假条目触发环境/profile 那两组检查
         const dummy = normalizeEntry({ id: '__profile__', package: '__profile__', name: '__profile__', install: {} }, 'community');
-        const report = runGate(dummy, gctx(ctx), { targetProfile: ctx.profileName });
+        const report = runGate(dummy, await gctx(ctx), { targetProfile: ctx.profileName });
         return { checks: report.checks.filter((c) => c.id.startsWith('env.') || c.id.startsWith('profile.')) };
       }
 
@@ -474,7 +643,7 @@ function createDispatcher(ctx) {
       case 'rollback': {
         const dir = String(args.dir ?? '');
         if (!dir) throw new Error('缺少快照目录');
-        const r = await rollbackTo({ backupDir: dir, ctx: gctx(ctx) });
+        const r = await rollbackTo({ backupDir: dir, ctx: await gctx(ctx) });
         invalidate(ctx);
         appendOp({ op: 'rollback', dir, ok: r.ok });
         return r;
@@ -511,13 +680,20 @@ function createDispatcher(ctx) {
   };
 }
 
-function gctx(ctx) {
+/**
+ * 给闸门 / 安装器用的上下文。
+ *
+ * ★ 必须 await：装配树是异步拿的（build 一次 dsh 进程），
+ *   而闸门是**同步**判定的（它要在一帧里把几十条检查跑完）。
+ *   所以这里先把树取好，再整包传进去 —— 闸门本身保持纯函数。
+ */
+async function gctx(ctx) {
   return {
     env: ctx.env,
     compat: ctx.compat,
     profileState: profileState(ctx),
     installed: scanInstalled(ctx.profileName, process.env),
-    tree: tree(ctx),
+    tree: await tree(ctx),
     repoRoot: ctx.repoRoot,
     repoRawBase: REPO_RAW_BASE,
   };

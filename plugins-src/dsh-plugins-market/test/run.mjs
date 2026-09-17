@@ -46,6 +46,7 @@ await import('./state.test.mjs');
 await import('./catalog-refresh.test.mjs');
 await import('./client-bundle.test.mjs');
 await import('./panel-render.test.mjs');
+await import('./install-flow.test.mjs');
 await import('./layout.test.mjs');
 
 const code = await run();
