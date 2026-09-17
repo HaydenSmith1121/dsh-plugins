@@ -3,8 +3,12 @@
 本文件记录**实际安装过程中撞到的坑**，每条含：现象 → 根因 → 修法 → 验证方式。
 比 `README-安装说明.md` 更侧重「出错了怎么办」。
 
-- 环境：Windows，dsh `0.1.5-rc.1`，pnpm `12.4.2`，Node `24.14.0`（system）
+- 环境：Windows，dsh `0.1.6-alpha.1`（**见坑 7，版本必须对上**），pnpm `12.4.2`，Node `24.14.0`（system）
 - 本记录来自一次真实的 6 插件全量还原（6/6 成功）
+
+> ⚠️ **先看坑 7。** 它会让 `dsh web` **完全起不来**（整个插件树加载失败），
+> 而且成因不在安装步骤上，而在 **dsh 版本**上 —— 装完插件直接启动就会撞。
+> 按本文档的顺序走，最容易踩的就是它。
 
 ---
 
@@ -276,10 +280,162 @@ grep -E '^[a-zA-Z][a-zA-Z0-9_.-]*:' ./settings/settings.yaml ~/.dsh/settings.yam
 
 ---
 
+## 坑 7 ★★★：dsh 版本不对 → **整个插件树加载失败，`dsh web` 完全起不来**
+
+### 现象
+
+6 个插件都装好、`dsh plugin list` 也正常，但一启动就崩：
+
+```none
+Error: dsh: plugin tree failed to load: failed to apply loader entry include (cordis:include):
+failed to import loader entry opencode-go (dsh-opencode-go):
+The requested module '@deepseek-ai/dsh-llm' does not provide an export named 'IMAGE_OFFLOAD_REQUIRED_CODE'
+
+file:///C:/Users/Administrator/.dsh/profiles/web/node_modules/dsh-opencode-go/lib/index.js:65
+import { contentHasImage, IMAGE_OFFLOAD_REQUIRED_CODE, LlmError as LlmError2, offloadedImageText,
+         projectOffloadedImages, requestImageHandleText, requiredImageOffload } from "@deepseek-ai/dsh-llm";
+```
+
+注意这不是「某个插件不能用」——**是 8 层 bundle 整体加载失败**，
+所以**所有插件全废，`dsh web` 根本起不来**。
+
+### 根因：插件的 peerDependencies 与 CLI 版本不匹配
+
+`dsh-opencode-go` 的 `peerDependencies` 把整套 `@deepseek-ai/*` **精确 pin 在 `0.1.6-alpha.1`**：
+
+```json
+"peerDependencies": {
+  "@deepseek-ai/dsh-llm": "0.1.6-alpha.1",
+  "@deepseek-ai/dsh-attachment": "0.1.6-alpha.1",
+  "@deepseek-ai/dsh-typert-protocol": "0.1.6-alpha.1",
+  ...
+}
+```
+
+而 dsh 在 npm 上的发行通道是：
+
+| dist-tag | 版本 | 说明 |
+|---|---|---|
+| `latest` | **0.1.5-rc.1** | `npm i -g @deepseek-ai/dsh` 默认装这个 |
+| `next` | 0.1.5-rc.2 | |
+| `alpha` | **0.1.6-alpha.1** | ★ 插件要求的 |
+
+`0.1.5-rc.1` 内置的 `@deepseek-ai/dsh-llm` 是 `0.1.5-rc.2`，**里面没有**
+`IMAGE_OFFLOAD_REQUIRED_CODE` / `offloadedImageText` / `projectOffloadedImages` /
+`requiredImageOffload` 这几个导出（图片卸载是 0.1.6 才加的 API）。
+
+### 为什么 peer 依赖没自动补上
+
+profile 的 `pnpm-workspace.yaml` 里有：
+
+```yaml
+autoInstallPeers: false      # ← 关键
+```
+
+pnpm 因此**不会安装 peer 依赖**，插件的 `import "@deepseek-ai/dsh-llm"`
+只能沿目录树向上找到 **CLI 内置的那份**（0.1.5-rc.2）→ 导出缺失 → 报错。
+
+### ★ 这个插件没有「兼容 0.1.5」的版本可选
+
+查过 npm 上全部发布版本：
+
+| dsh-opencode-go | 要求的 `@deepseek-ai/dsh-llm` |
+|---|---|
+| 0.1.0 | `0.1.6-alpha.1` |
+| 0.1.1 | `0.1.6-alpha.1` |
+| 0.1.2 | `0.1.6-alpha.1` |
+
+**最老的 0.1.0 也要 alpha。** 所以「回退插件版本」这条路不存在 ——
+想用这个插件，只能把 dsh 升到 `0.1.6-alpha.1`。
+
+（顺带排除一个常见误解：这**不是**本仓库「13 处本地改造」造成的，
+上游 0.1.1 / 0.1.2 的 peer 声明完全一样。）
+
+### 修法
+
+```bash
+# ★ 必须用「dsh 所在的那个 Node」的 npm（见坑 1）
+"D:/tools/nodejs/npm.cmd" install -g @deepseek-ai/dsh@0.1.6-alpha.1
+dsh --version        # 期望 0.1.6-alpha.1
+```
+
+验证内置运行时确实带上了新 API：
+
+```bash
+node -e "console.log(require('C:/Users/Administrator/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-llm/package.json').version)"
+# 期望 0.1.6-alpha.1
+grep -c IMAGE_OFFLOAD_REQUIRED_CODE \
+  "/c/Users/Administrator/AppData/Roaming/npm/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-llm/lib/index.js"
+# 期望 > 0
+```
+
+然后真实启动一次（`--dump-config` **验不出这个问题**，因为它只打配置树、不 import 模块）：
+
+```bash
+dsh web --no-open --port 0 > boot.log 2>&1 &
+sleep 30
+cat boot.log     # 期望只有 "dsh web: http://127.0.0.1:<port>/?token=..."
+                 # 若出现 plugin tree failed to load / SyntaxError / does not provide an export 就是没修好
+```
+
+### ★★ 最大的陷阱：以后会被**静默降级**
+
+`npm i -g @deepseek-ai/dsh`（**不带版本**）装的是 `latest` = `0.1.5-rc.1`。
+以后只要顺手跑一次升级，就会把 CLI 降回 0.1.5，**坑 7 立刻复现**，而且没有任何提示。
+
+→ 升级 dsh 时**必须显式带版本**，并且每次升级后重跑一次上面那条启动验证。
+
+### 六个插件的版本兼容矩阵（照 `package.json` 的 peerDependencies 实测）
+
+| 插件 | 要求的 `@deepseek-ai/dsh-llm` | 兼容 0.1.5-rc.x？ | 兼容 0.1.6-alpha.1？ |
+|---|---|---|---|
+| `@dsh-market/plugin` | 无 `@deepseek-ai` peer | ✓ | ✓ |
+| `dsh-workbuddy-connect` | `^0.1.5-rc.1` | ✓ | ✓（运行时可用） |
+| **`dsh-opencode-go`** | **`0.1.6-alpha.1`（精确 pin）** | **✗** | **✓** |
+| `dsh-connect-trae` | `>=0.1.5-0 <0.2.0-0` | ✓ | ✓（运行时可用） |
+| `dsh-workbuddy-quota` | 无 | ✓ | ✓ |
+| `dsh-receipt` | 无 | ✓ | ✓ |
+
+**结论：整批插件必须以 `0.1.6-alpha.1` 为运行时基线。**
+
+> 关于 `dsh-workbuddy-connect`（`^0.1.5-rc.1`）和 `dsh-connect-trae`
+> （`>=0.1.5-0 <0.2.0-0`）：按 semver 的预发布规则，`0.1.6-alpha.1` 严格来说
+> 不在这两个范围里，pnpm 会打 peer 警告 —— 但**这只是警告**，
+> 因为 `autoInstallPeers: false` 本来就不装 peer。实测在 0.1.6-alpha.1 上，
+> 这两个插件与 `@dsh-market/plugin`、`dsh-workbuddy-quota`、`dsh-receipt`
+> 一起正常加载（6/6，无致命错误）。
+
+### 影响面：会连带影响**使用全局 dsh 的其他程序**
+
+这台机器上 `deepseek-harness-desktop-zh`（Electron 桌面壳）的运行时解析顺序是
+`本机全局安装 → 应用内置副本 → npx`，且 `vendor/dsh/` 默认是空的 ——
+**它会优先用全局 dsh**。把它升到 alpha 后，那个应用也会跟着用 alpha，
+而它的 `docs/COMPATIBILITY.md` 是照 `0.1.5-rc.1` 验证的。
+
+隔离办法（用它自己支持的机制，不碰全局）：
+
+```bash
+cd <desktop-zh 仓库>
+# 1) 把 0.1.5-rc.1 内置进 vendor/dsh（自包含，不依赖全局安装）
+node scripts/fetch-dsh.mjs --version 0.1.5-rc.1
+
+# 2) 把运行时模式切成「仅内置」
+#    写 %APPDATA%\DeepSeek Harness Desktop\settings.json：
+#    { "runtimeMode": "bundled" }
+#    runtimeMode 合法值：auto | local | bundled | npx
+```
+
+这样 CLI 用 alpha 跑插件、桌面壳用自带的 0.1.5-rc.1，两边互不干扰。
+
+---
+
 ## 附录 A：完整校验清单（照抄即可）
 
 ```bash
 export PATH="$APPDATA/npm:$PATH"
+
+# ⓪ ★ dsh 版本（最先查！错了后面全白搭，见坑 7）
+dsh --version                              # 必须是 0.1.6-alpha.1
 
 # ① 依赖层
 dsh plugin --profile web list              # 期望 6 packages
@@ -287,18 +443,25 @@ dsh plugin --profile web list              # 期望 6 packages
 # ② 注册表层：bundles 必须 8 项且顺序正确
 cat ~/.dsh/profiles/web/package.json
 
-# ③ ★ 装配层（最权威，前两层过了它仍可能挂）
+# ③ ★ 装配层（只打配置树、**不 import 模块**，所以查不出坑 7）
 dsh --profile web --dump-config | grep -n '^# == '
 
-# ④ tarball 路径有效性
+# ④ ★ 真实启动（唯一能验证「模块能不能 import」的办法，坑 7 只有这步能查出来）
+dsh web --no-open --port 0 > boot.log 2>&1 &
+sleep 30; cat boot.log; kill %1
+#   期望：只有一行 "dsh web: http://127.0.0.1:<port>/?token=..."
+#   出现 plugin tree failed to load / SyntaxError / does not provide an export → 回坑 7
+
+# ⑤ tarball 路径有效性
 grep -o 'file:[^"]*' ~/.dsh/profiles/web/package.json
 
-# ⑤ 构建脚本审批状态
+# ⑥ 构建脚本审批状态
 cat ~/.dsh/profiles/web/pnpm-workspace.yaml    # allowBuilds 应无 "set this to true or false" 残留
 ```
 
-最后一层最容易被跳过：**① 和 ② 都过了，GUI 里依然可能没有** —— 那就是坑 2 的
-「bundles 没追加」。所以第 ③ 步必做。
+**第 ③ 和 ④ 步的分工要分清**：`--dump-config` 只看配置树组装，
+**不加载任何模块**，所以坑 7（导出缺失）在它那儿完全看不出来 —— 必须靠第 ④ 步真实启动。
+反之，第 ④ 步查不出 bundles 顺序错。**两步都要做。**
 
 ---
 

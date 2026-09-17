@@ -48,15 +48,28 @@ dsh-plugins/                         # = GitHub 仓库 HaydenSmith1121/dsh-plugi
      另一个 Node 上，`dsh plugin` 直接报 `'pnpm' 不是内部或外部命令`。
      先确认 `npm config get prefix` 指向的正是 `dsh` 所在目录（`where dsh`）再装。
      完整排查见 [`README-排错.md` 坑 1](./README-排错.md)。
-2. 已安装 **dsh CLI**：`npm i -g @deepseek-ai/dsh`
-   - 校验：`dsh --version`。
+2. 已安装 **dsh CLI，且版本必须是 `0.1.6-alpha.1`**：
+
+   ```bash
+   npm i -g @deepseek-ai/dsh@0.1.6-alpha.1
+   dsh --version        # 必须显示 0.1.6-alpha.1
+   ```
+
+   - ⚠️ **必须带版本号。** `npm i -g @deepseek-ai/dsh`（不带版本）装的是 npm 的
+     `latest` 通道 = `0.1.5-rc.1`，**这个版本不够用**：
+     `dsh-opencode-go` 的 `peerDependencies` 精确要求 `@deepseek-ai/dsh-llm@0.1.6-alpha.1`，
+     而 `0.1.5-rc.1` 内置的是 `0.1.5-rc.2`，缺少 `IMAGE_OFFLOAD_REQUIRED_CODE` 等导出
+     → **`dsh web` 会因整个插件树加载失败而完全起不来**。
+   - ⚠️ 以后跑不带版本的 `npm i -g @deepseek-ai/dsh` 会**静默降级**，故障立刻复现。
+   - 完整说明（含为什么退插件版本也解决不了）见 [`README-排错.md` 坑 7](./README-排错.md)。
 3. 把本导出包整个目录（或 zip 解压后）放到新机**持久路径**，下文记作 `<EXPORT>`。
    - ⚠️ **不要放临时目录**：`dsh plugin add` 生成的是 `file:` 绝对路径依赖，
      这个目录后续不能删、不能挪。见 [`README-排错.md` 坑 3](./README-排错.md)。
 
-> 注意：dsh CLI 的版本最好与来源机一致或更新，否则内置 bundle
-> (`@deepseek-ai/dsh-base` / `@deepseek-ai/dsh-web-app`) 接口可能对不上。
-> 来源机 dsh 版本：`0.1.5-rc.1`（见 `dsh --version`）。
+> 注意：dsh CLI 的版本**必须**是 `0.1.6-alpha.1`（不是「一致或更新」就行 ——
+> 0.1.5-rc.x 全线不够用）。版本对不上时，内置 bundle
+> (`@deepseek-ai/dsh-base` / `@deepseek-ai/dsh-web-app`) 的接口会对不上，
+> 表现为插件树整体加载失败。
 
 ---
 

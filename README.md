@@ -7,8 +7,21 @@ DeepSeek Harness（dsh）插件仓库。每个插件独立放在 `plugins/<插�
 所有插件均为 **MIT** 许可；第三方插件的版权归原作者所有，来源与许可见
 [二、插件来源与许可](#二插件来源与许可)。
 
-> 导出环境：Windows，dsh 版本 `0.1.5-rc.1`。仓库内含离线 tarball，可在新机上完整复现。
+> 导出环境：Windows。**运行时基线：dsh `0.1.6-alpha.1`**（alpha 频道 —— 见下方警告）。
+> 仓库内含离线 tarball，可在新机上完整复现。
 > 安装遇到问题先看 **[`README-排错.md`](./README-排错.md)** —— 里面是实际踩过的坑。
+
+> ⚠️ **dsh 版本必须对上，否则 `dsh web` 完全起不来。**
+> `dsh-opencode-go` 的 `peerDependencies` 把整套 `@deepseek-ai/*` 精确 pin 在
+> `0.1.6-alpha.1`，而 npm 的 `latest` 通道是 `0.1.5-rc.1` —— **默认装的那个版本不够用**。
+> 必须显式安装：
+>
+> ```bash
+> npm i -g @deepseek-ai/dsh@0.1.6-alpha.1
+> ```
+>
+> ⚠️ 以后跑**不带版本**的 `npm i -g @deepseek-ai/dsh` 会**静默降级**回 `0.1.5-rc.1`，
+> 插件立刻又炸。详见 [`README-排错.md` 坑 7](./README-排错.md)。
 
 ---
 
@@ -81,11 +94,34 @@ dsh-plugins/
 → dsh-connect-trae → dsh-workbuddy-quota → dsh-receipt
 ```
 
+### 运行时版本兼容矩阵
+
+照各包 `package.json` 的 `peerDependencies` 实测（**这是选 dsh 版本的唯一依据**）：
+
+| 插件 | 要求的 `@deepseek-ai/dsh-llm` | 0.1.5-rc.x | 0.1.6-alpha.1 |
+|---|---|---|---|
+| `@dsh-market/plugin` | 无 `@deepseek-ai` peer | ✓ | ✓ |
+| `dsh-workbuddy-connect` | `^0.1.5-rc.1` | ✓ | ✓ |
+| **`dsh-opencode-go`** | **`0.1.6-alpha.1`（精确 pin）** | **✗** | **✓** |
+| `dsh-connect-trae` | `>=0.1.5-0 <0.2.0-0` | ✓ | ✓ |
+| `dsh-workbuddy-quota` | 无 | ✓ | ✓ |
+| `dsh-receipt` | 无 | ✓ | ✓ |
+
+→ **整批插件以 `0.1.6-alpha.1` 为基线。** `dsh-opencode-go` 没有任何兼容 0.1.5 的
+发布版本（`0.1.0` / `0.1.1` / `0.1.2` 全都要求 alpha），所以只能升 dsh，不能退插件。
+
 ---
 
 ## 四、新机批量安装
 
-前置：新机已装 Node ≥ 22.19、pnpm、`npm i -g @deepseek-ai/dsh`（版本与导出机一致或更新）。
+前置：新机已装 Node ≥ 22.19、pnpm、以及 **`@deepseek-ai/dsh@0.1.6-alpha.1`**。
+
+```bash
+# ★ 必须带版本号！不带版本的 `npm i -g @deepseek-ai/dsh` 装的是 latest=0.1.5-rc.1，
+#   不够用，且以后会静默降级。
+npm i -g @deepseek-ai/dsh@0.1.6-alpha.1
+dsh --version        # 必须显示 0.1.6-alpha.1
+```
 
 > ⚠️ **pnpm 必须装在「dsh 所在的那个 Node」上**。多 Node 环境（如 nvm / 便携版 Node 并存）
 > 极易装错位置，表现为 `dsh plugin` 报 `'pnpm' 不是内部或外部命令`。
@@ -116,13 +152,22 @@ dsh web          # 默认 http://127.0.0.1:3080
 > **`file:` 依赖会锚定 tarball 的绝对路径** —— 这个仓库目录不能删、不能挪，
 > 否则以后 `pnpm install` 会失败。见 [`README-排错.md` 坑 3](./README-排错.md)。
 
-安装完成后务必跑一次完整校验（三层，缺一层会漏判）：
+安装完成后务必跑一次完整校验：
 
 ```bash
-dsh plugin --profile web list                       # ① 依赖层
-cat ~/.dsh/profiles/web/package.json                # ② 注册表层：bundles 应为 8 项
-dsh --profile web --dump-config | grep -n '^# == '  # ③ 装配层（最权威）
+dsh --version                                        # ⓪ 必须是 0.1.6-alpha.1（见坑 7）
+dsh plugin --profile web list                        # ① 依赖层：期望 6 packages
+cat ~/.dsh/profiles/web/package.json                 # ② 注册表层：bundles 应为 8 项
+
+# ③ 装配层：只打配置树，不加载模块，查不出坑 7
+dsh --profile web --dump-config | grep -n '^# == '
+
+# ④ ★ 真实启动：唯一能验证模块能否 import 的办法
+dsh web --no-open --port 0 > boot.log 2>&1 & sleep 30; cat boot.log; kill %1
 ```
+
+⚠️ **③ 和 ④ 不能互相替代**：`--dump-config` 不 import 任何模块，所以坑 7
+（导出缺失导致插件树加载失败）**只有第 ④ 步能查出来**。
 
 详见 [`README-排错.md` 附录 A](./README-排错.md)。
 
@@ -135,11 +180,12 @@ dsh --profile web --dump-config | grep -n '^# == '  # ③ 装配层（最权威�
 | # | 坑 | 关键点 |
 |---|---|---|
 | 1 | 本机没有 pnpm | 多 Node 环境下装错位置 |
-| 2 | **`ERR_PNPM_IGNORED_BUILDS`** | 最坑：包已装好、`dependencies` 已写，**但 `bundles` 没追加** → GUI 里看不见 |
-| 3 | `file:` 依赖锚定绝对路径 | 仓库目录不能挪 |
+| 2 | **`ERR_PNPM_IGNORED_BUILDS`** | 最坑的安装期问题：包已装好、`dependencies` 已写，**但 `bundles` 没追加** → GUI 里看不见 |
+| 3 | `file:` 依赖锚定绝对路径 | 仓库目录不能挪（含万一要挪的正确三步） |
 | 4 | `grep bundles` 永远返回空 | `--dump-config` 用 `# == <bundle>` 做头，没有 "bundles" 字面词 |
 | 5 | `settings.yaml` 盲目覆盖 | 不同代配置，会丢 provider 清单 |
 | 6 | 凭据/登录态不随包迁移 | `.credentials.yaml` 不在包内，trae 需重登 |
+| **7** | **dsh 版本不对 → 整个插件树加载失败** | **最严重的启动期问题**：`dsh-opencode-go` 要 `0.1.6-alpha.1`，`latest` 是 `0.1.5-rc.1` → `dsh web` 完全起不来；且不带版本的 npm 升级会静默降级 |
 
 ---
 
