@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T22:14:18.267Z",
+  "generatedAt": "2026-09-17T22:10:20.976Z",
   "sourceIndex": {
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
-    "generatedAt": "2026-09-16T22:14:18.267Z",
-    "fetchedAt": "2026-09-17T17:47:32.579Z",
-    "count": 7487
+    "generatedAt": "2026-09-17T22:10:20.976Z",
+    "fetchedAt": "2026-09-18T02:39:34.603Z",
+    "count": 7646
   },
   "counts": {
-    "total": 7497
+    "total": 7498
   },
   "note": "由 scripts/sync-catalog.mjs 从 catalog/plugins/*.json 派生，请勿手工编辑。一条配置文件对应一条记录，不做去重，不分层级。",
   "plugins": [
@@ -184671,6 +184671,36 @@
       "risky": false,
       "peerVerdict": null,
       "origin": null
+    },
+    {
+      "slug": "haydensmith1121__dsh-chat-fold",
+      "id": "HaydenSmith1121/dsh-chat-fold",
+      "package": "dsh-chat-fold",
+      "name": "dsh-chat-fold",
+      "title": "对话折叠：思考行与工具行可单独收起",
+      "summary": "每条思考行与工具行都能点标题单独收起/展开，已结束的回合自动折叠中间过程只留最终答复。官方 Chat 的紧凑折叠在「回合未结束」或「历史未全部加载」时完全不生效，本插件补上这段缺口，不改写任何官方节点。",
+      "tags": [
+        "对话折叠",
+        "界面增强",
+        "前端增强",
+        "效率提升",
+        "会话管理"
+      ],
+      "version": "0.1.0",
+      "versionSource": "package.json",
+      "stars": null,
+      "repo": "https://github.com/HaydenSmith1121/dsh-chat-fold",
+      "homepage": null,
+      "license": "MIT",
+      "author": "HaydenSmith1121",
+      "pushedAt": null,
+      "installMethod": "github",
+      "installSpec": "github:HaydenSmith1121/dsh-chat-fold",
+      "needsConfig": false,
+      "usageNeedsConfig": false,
+      "risky": false,
+      "peerVerdict": "ok",
+      "origin": "manual"
     },
     {
       "slug": "hcyinnn__dsh-tool-ssh",

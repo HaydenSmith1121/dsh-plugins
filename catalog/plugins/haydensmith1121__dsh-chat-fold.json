@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "HaydenSmith1121/dsh-chat-fold",
+  "slug": "haydensmith1121__dsh-chat-fold",
+  "package": "dsh-chat-fold",
+  "name": "dsh-chat-fold",
+  "title": "对话折叠：思考行与工具行可单独收起",
+  "summary": "每条思考行与工具行都能点标题单独收起/展开，已结束的回合自动折叠中间过程只留最终答复。官方 Chat 的紧凑折叠在「回合未结束」或「历史未全部加载」时完全不生效，本插件补上这段缺口，不改写任何官方节点。",
+  "tags": [
+    "对话折叠",
+    "界面增强",
+    "前端增强",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": null,
+  "latestRelease": null,
+  "author": "HaydenSmith1121",
+  "repo": "https://github.com/HaydenSmith1121/dsh-chat-fold",
+  "homepage": null,
+  "license": "MIT",
+  "stars": null,
+  "forks": null,
+  "pushedAt": null,
+  "metricsCheckedAt": null,
+  "origin": "manual",
+  "peerRuntimePin": "@deepseek-ai/cordis 4.0.2",
+  "peerVerdict": "ok",
+  "peerNote": "peerDependencies 只约束 @deepseek-ai/cordis 4.0.2（与基线自带的那份同版），**不对 @deepseek-ai/dsh-* 设任何 pin**，所以不存在「精确 pin 到另一个 dsh 版本 → 缺具名导出 → 整棵树挂」的失败面。宿主半不 import 任何 @deepseek-ai/* 包，客户端半一个 require 都不用（只操作 DOM），依赖面比其它界面插件更小。",
+  "coexistenceWarning": null,
+  "notes": "★ 它补的是一个**上游的真实缺口**，不是重复实现。Harness 本身已经有「回合过程折叠」，Compact 也是默认值，但那条折叠是 React 投影，生效条件是 turnClosed && !historyIncomplete —— 回合还在跑、或会话还挂着「加载更早」时，一行都不折。这两种情况恰好是正文最长的时候。\n\n副作用与注意：\n1. 纯客户端 + 空宿主半：宿主半不发布服务、不监听事件、不改写官方行、不注册任何 Slot 占用，因此不会与「替换官方渲染器」的插件抢位。唯一的副作用是它插了一小段 <style> 与若干按钮，卸载时全部移除。\n2. 无网络、无登录、无 API Key、不写全局配置、不起后台进程。\n3. 依赖官方正文行的类名与 data 属性（EvIC1a_flowItem / data-chat-flow-kind / data-chat-turn / data-chat-anchor-key）。这些是当前 dsh 版本的实现细节：上游若改名，插件会**静默不生效**，而不会报错或误伤正文（选择器匹配不到就什么都不做）。这是刻意的降级方向。\n4. 折叠状态不落盘，刷新后回到默认 —— 与官方投影的语义一致。\n5. 与其它已审核插件无已知冲突：它不争抢 provider / adapter id，也不占 Slot key。\n\n实测数据（94 行的长回合）：默认展开正文高 4616px，折叠后 263px。",
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:HaydenSmith1121/dsh-chat-fold",
+    "commands": [
+      "dsh plugin --profile web add github:HaydenSmith1121/dsh-chat-fold"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "manual",
+    "url": "https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/catalog/overrides/curated.json",
+    "firstSeenAt": null,
+    "lastSyncedAt": null
+  }
+}
