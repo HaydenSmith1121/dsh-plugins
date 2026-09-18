@@ -49,11 +49,31 @@ else bad('status 缺少 progressModel');
 // ── [2] 目录 + 闸门 + 手动命令 ──────────────────────────────
 const catalog = await rpc('catalog', { limit: 100 });
 ok(`目录可用：${catalog.total} 条`);
-const notInstalled = (catalog.items || []).find((e) => !e.installState?.installed && e.installKind === 'local-tarball');
+
+/**
+ * 找一条「本仓库托管 tarball、且本机没装」的条目。
+ *
+ * ★ 不能只翻列表第一页：目录按 star 数排序，本仓库托管的六个插件 star 都不多，
+ *   排在 7000+ 条里很靠后。以前这里在首页里 find，改成平铺列表之后就永远找不到 ——
+ *   表现是「后续用例全部跳过」，而不是报错。所以改成按名字检索。
+ */
+async function findHostedNotInstalled(exclude = null) {
+  for (const q of ['dsh-memory', 'dsh-ark-plans', 'dsh-plugins-market', 'dsh-session-cleanup']) {
+    const r = await rpc('catalog', { query: q, limit: 10 });
+    const hit = (r.items || []).find((e) => e.installMethod === 'tarball'
+      && !e.installState?.installed && e.id !== exclude);
+    if (hit) return hit;
+  }
+  return null;
+}
+
+const notInstalled = await findHostedNotInstalled();
 if (!notInstalled) {
-  bad('找不到一条「未安装 + 有 tarball」的条目，后续用例无法进行');
+  bad('找不到一条「未安装 + 本仓库托管 tarball」的条目，后续用例无法进行');
 } else {
-  info(`选中：${notInstalled.package}@${notInstalled.version}（${notInstalled.tier}）`);
+  // ★ 0.5.0：条目上不再有 tier，这里也不该再打印它
+  info(`选中：${notInstalled.package}@${notInstalled.version}（${notInstalled.installMethod}）`);
+  if (notInstalled.tier !== undefined) bad(`条目上还有 tier=${notInstalled.tier}（信任分级已移除）`);
 }
 
 const target = notInstalled;
@@ -118,8 +138,7 @@ if (target) {
     else bad(`安装后目录状态没更新：${JSON.stringify(installedState)}`);
 
     // ── [4] 中止：用一个「慢安装」把中止链路走通 ─────────────
-    const p2 = await rpc('catalog', { limit: 100 });
-    const second = (p2.items || []).find((e) => !e.installState?.installed && e.installKind === 'local-tarball' && e.id !== target.id);
+    const second = await findHostedNotInstalled(target.id);
     if (!second) {
       info('没有第二条可安装条目，跳过中止用例');
     } else {
@@ -165,5 +184,11 @@ if (failed === 0) {
 } else {
   console.error(`  ✗ 有 ${failed} 项未通过。`);
   console.error('');
-  process.exit(1);
+  /*
+   * ★ 用 exitCode 而不是 process.exit()。
+   *   Windows 上 process.exit() 会在 undici 的 fetch 连接还没关完时强拆 libuv，
+   *   实测直接以 0xC0000409 崩掉（"Assertion failed: !(handle->flags & UV_HANDLE_CLOSING)"），
+   *   把「有几项没通过」这个真实结论盖掉了。让事件循环自己排空即可。
+   */
+  process.exitCode = 1;
 }

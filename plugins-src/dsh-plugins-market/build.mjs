@@ -6,9 +6,9 @@
  * 它做四件事，全部是确定性的（同输入必得同输出）：
  *
  *   [1] 生成**包内离线兜底目录**
- *       从仓库根的 catalog/index.json 里筛出 tier=verified 的条目（也就是本仓库或
- *       插件集合仓库托管 tarball、按 dsh 版本实测过的那几条），连同每条对应的
- *       catalog/plugins/<slug>.json 一起打进包内。
+ *       从仓库根的 catalog/index.json 里筛出 `install.method === 'tarball'` 的条目
+ *       （也就是**字节由本仓库或插件集合仓库托管**的那几条 —— 离线时真的装得上），
+ *       连同每条对应的 catalog/plugins/<slug>.json 一起打进包内。
  *       ★ 完整目录（7000+ 条）**不进包**：打进包意味着每次目录变化都要重打市场包
  *         并换版本号，而那正是 0.4.0 要拆掉的东西。包内这份的作用只有一个 ——
  *         没网时市场至少还能把已验证插件列出来并装上。
@@ -145,12 +145,16 @@ log('');
 //   而那正是这一版要拆掉的东西（同一个 tarball 路径内容变了时 pnpm 会跳过解包，
 //   不换版本号已装的人根本收不到）。
 //
-//   包里只放一份**很小的离线兜底**：tier=verified 的那几条（由本仓库或
-//   插件集合仓库托管 tarball、按 dsh 版本实测过），加上市场插件自己。
-//   作用是「没网时市场至少还能把收录的插件列出来并装上」，而不是「离线目录全集」。
+//   包里只放一份**很小的离线兜底**：**本仓库托管 tarball 的那几条**
+//   （插件集合仓库里的 6 个 + 市场插件自己），也就是 `install.method === 'tarball'`
+//   的那一批。作用是「没网时市场至少还能把收录的插件列出来并装上」，
+//   而不是「离线目录全集」。
 //
-//   判据用 tier 而不是「有没有 tarball」：tier 是配置文件的权威字段，
-//   拿它筛才不会出现「包里漏了一条已验证插件」这种静默缺项。
+//   判据为什么是「有没有 tarball」：这些条目的字节由**我们自己的仓库**托管，
+//   sha256 由构建 / 采集实测得出，离线也真的装得上。公开索引来的条目装的是
+//   上游的 npm / GitHub 产物 —— 没网的时候列出来也装不了，塞进包里只是让包变大。
+//   （0.5.0 之前这条判据写的是 `tier === 'verified'`；去掉信任分级之后，
+//     分级字段没了，但**同一批条目**由「谁托管字节」这个更硬的事实筛出来。）
 
 // ─────────────────────────────────────────────────────────────
 // [0] 兜底目录必须是目录的**稳定投影**，不能是目录的副本
@@ -205,11 +209,19 @@ if (!repoIndex) {
   fail('仓库根没有 catalog/index.json —— 请先运行 node scripts/sync-catalog.mjs');
 }
 
+/**
+ * 进包的是**本仓库托管字节**的那几条：`install.method === 'tarball'`。
+ *
+ * ★ 0.5.0 之前这里写的是 `p.tier === 'verified'`。去掉信任分级之后 tier 字段没了，
+ *   但**同一批条目**由「谁托管字节」这个更硬的事实筛出来 —— 判据从
+ *   「我们给它打了个已验证的标签」变成「这个包的字节就在我们自己的仓库里」，
+ *   后者不依赖任何人的判断，也不会因为标签体系变动而漏项。
+ */
 const bundledEntries = (repoIndex?.plugins ?? [])
-  .filter((p) => p.tier === 'verified')
+  .filter((p) => p.installMethod === 'tarball')
   .map(stabilizeRecord);
 if (bundledEntries.length === 0) {
-  fail('catalog/index.json 里没有任何 tier=verified 的条目 —— 包内兜底目录会是空的，没网时市场将列不出任何插件。');
+  fail('catalog/index.json 里没有任何 installMethod=tarball 的条目 —— 包内兜底目录会是空的，没网时市场将列不出任何插件。');
 }
 
 /**
@@ -223,24 +235,22 @@ const bundledSourceIndex = repoIndex?.sourceIndex
   ? { ...repoIndex.sourceIndex, generatedAt: null, fetchedAt: null, count: null }
   : null;
 
-/** 包内 index.json：字段与仓库根那份一致，只是只留 verified 层 */
+/** 包内 index.json：字段与仓库根那份一致，只是只留「本仓库托管 tarball」的那几条 */
 const bundledIndex = {
   schemaVersion: repoIndex?.schemaVersion ?? 1,
   generatedAt: null,
   sourceIndex: bundledSourceIndex,
   counts: {
     total: bundledEntries.length,
-    verified: bundledEntries.length,
-    reviewed: 0,
-    community: 0,
   },
-  note: '包内离线兜底目录：只含 tier=verified 的条目（市场运行时会去仓库 raw 拉完整目录）。'
+  note: '包内离线兜底目录：只含 installMethod=tarball 的条目 —— 也就是字节由本仓库'
+    + '（或插件集合仓库）托管、离线也真的装得上的那几个（市场运行时会去仓库 raw 拉完整目录）。'
     + '登记性字段（时间戳 / star 数 / 上游抓取元信息）一律为 null —— 它们是目录的「查询记录」而不是「内容」，'
     + '进了包就会让每次目录刷新都改到包，详见 build.mjs 的 [0] 一节。',
   plugins: bundledEntries,
 };
 
-/** 每条 verified 插件的配置文件原文（运行时读不到远程时用它兜底） */
+/** 每条兜底条目对应的配置文件原文（运行时读不到远程时用它兜底） */
 const bundledConfigs = [];
 for (const e of bundledEntries) {
   const file = path.join(REPO, 'catalog', 'plugins', `${e.slug}.json`);
@@ -288,7 +298,7 @@ for (const e of bundledEntries) {
 // 自注册校验：市场自己必须在兜底目录里，否则用户看不到引导插件、也没法从面板里升级它
 const selfInBundle = bundledEntries.find((p) => p.package === PKG_NAME);
 if (!selfInBundle) {
-  fail(`catalog/index.json 里没有 ${PKG_NAME} 这一条（tier 必须是 verified）。`
+  fail(`catalog/index.json 里没有 ${PKG_NAME} 这一条（它的 installMethod 必须是 tarball）。`
     + '没有它，市场不会把自己列出来，用户也就无法从面板里升级引导插件。'
     + '它由 catalog/overrides/self.json 声明 —— 检查那个文件，然后重跑 scripts/sync-catalog.mjs。');
 } else if (selfInBundle.version !== srcPkg.version) {

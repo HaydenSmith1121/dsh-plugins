@@ -1,21 +1,25 @@
 /**
- * market-review.mjs —— 「已审核层」（catalog/overrides/reviewed.json）的收录助手
+ * market-review.mjs —— 第三方条目（catalog/overrides/curated.json）的核对助手
  *
  *   node scripts/market-review.mjs <owner/repo | npm 包名 | 目录里的插件 id>
- *   node scripts/market-review.mjs owner/repo --write      # 直接把草稿追加进 overrides/reviewed.json
+ *   node scripts/market-review.mjs owner/repo --write      # 直接把草稿追加进 overrides/curated.json
  *
  * 它做的事：把「该查什么」自动化成一次可复现的探测，产出一份**草稿条目**，
  * 你只需要复核结论并决定收不收 —— 而不是凭印象手写 JSON。
  *
- * ★ 它**不会**替你做判断。审核的实质是「在真机上装一次并启动成功」，
+ * ★ 它**不会**替你做判断。核对的实质是「在真机上装一次并启动成功」，
  *   脚本只能把静态事实摆出来（peer 约束、是否声明 dsh.bundle、有没有安装脚本、
  *   与本仓库基线是否兼容），最后那一步必须你自己跑、自己记。
  *
- * ★ --write 之后必须再跑一次 `node scripts/sync-catalog.mjs`：
- *   本文件只写「人的结论」，catalog/plugins/*.json 里的 tier 与 review 字段是由
- *   采集脚本从它派生出来的。不重跑的话，界面上的标签还是旧的，CI 的 --check 也会红。
+ * ★ 0.5.0 起这个文件不再对应任何「信任层级」—— 往里面加一条**不会**让插件升级成
+ *   「已审核」。它补的是**公开索引里查不到的事实**：安装规格、peer 结论、当时怎么验的。
+ *   写进去的内容会拍平进条目的 `notes`（详情页可见），不参与筛选，也不影响能不能装。
  *
- * 收录一条 reviewed 的最低要求见 catalog/overrides/reviewed.json 顶部的 _comment，
+ * ★ --write 之后必须再跑一次 `node scripts/sync-catalog.mjs`：
+ *   本文件只写「人的结论」，catalog/plugins/*.json 是由采集脚本从它派生出来的。
+ *   不重跑的话，界面上的详情还是旧的，CI 的 --check 也会红。
+ *
+ * 核对一条的最低要求见 catalog/overrides/curated.json 顶部的 _comment，
  * 以及 CONTRIBUTING.md 的「插件市场收录」一节。
  */
 
@@ -234,9 +238,10 @@ console.log(`  ${'-'.repeat(74)}`);
 console.log('  1. 在隔离环境里真装一次并启动：');
 console.log('       node scripts/dev-env.mjs install <tarball 或先 dsh plugin --profile web add <spec>>');
 console.log('       node scripts/dev-env.mjs web        # 确认 3090 起得来、面板里能看到它');
-console.log('  2. 把启动输出里的关键行、以及观察到的副作用，填进 review.evidence / review.notes');
-console.log('  3. 填 review.reviewedAt / reviewer / verdict，然后写进 catalog/overrides/reviewed.json');
-console.log('  4. 提交前跑一次：node plugins-src/dsh-plugins-market/build.mjs --check');
+console.log('  2. 把启动输出里的关键行、以及观察到的副作用，填进 evidence / notes');
+console.log('     （「装上了」不算证据：要写退出码、装配树里出现的那一行）');
+console.log('  3. 填 curatedAt 与结论（可用 / 可用但有注意事项 / 不可用），写进 catalog/overrides/curated.json');
+console.log('  4. 重新生成目录：node scripts/sync-catalog.mjs（必须）');
 console.log('');
 
 if (blockers.length > 0) {
@@ -246,19 +251,20 @@ if (blockers.length > 0) {
 }
 
 if (WRITE) {
-  const curatedPath = path.join(REPO, 'catalog', 'overrides', 'reviewed.json');
+  const curatedPath = path.join(REPO, 'catalog', 'overrides', 'curated.json');
   const curated = JSON.parse(fs.readFileSync(curatedPath, 'utf8'));
   if (curated.plugins.some((p) => p.id === draft.id || p.package === draft.package)) {
-    console.log(`  ! catalog/overrides/reviewed.json 里已经有 ${draft.id} 了，未改动。`);
+    console.log(`  ! catalog/overrides/curated.json 里已经有 ${draft.id} 了，未改动。`);
     console.log('');
     process.exit(1);
   }
   curated.plugins.push(draft);
-  curated.reviewedAt = new Date().toISOString().slice(0, 10);
+  curated.curatedAt = new Date().toISOString().slice(0, 10);
   fs.writeFileSync(curatedPath, `${JSON.stringify(curated, null, 2)}\n`, 'utf8');
-  console.log(`  ✓ 草稿已追加到 catalog/overrides/reviewed.json（还有 ★ 字段是 null，填完再审）`);
+  console.log('  ✓ 草稿已追加到 catalog/overrides/curated.json（还有 ★ 字段是 null，填完再核对）');
+  console.log('    别忘了重跑：node scripts/sync-catalog.mjs');
   console.log('');
 } else {
-  console.log('  提示：加 --write 可以把上面这份草稿直接追加进 catalog/overrides/reviewed.json。');
+  console.log('  提示：加 --write 可以把上面这份草稿直接追加进 catalog/overrides/curated.json。');
   console.log('');
 }

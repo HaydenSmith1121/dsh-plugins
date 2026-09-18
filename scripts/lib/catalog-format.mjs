@@ -32,8 +32,14 @@ import path from 'node:path';
 /** 配置文件的 schema 版本。加字段不必动它，改语义才动。 */
 export const SCHEMA_VERSION = 1;
 
-/** 三个信任层级。市场界面的标签、排序、闸门强度都按它分档。 */
-export const TIERS = ['verified', 'reviewed', 'community'];
+/**
+ * 自 0.5.0 起目录里**没有信任层级**，这份列表因此为空。
+ *
+ * 留着这个导出不是为了「以后可能还要」，而是为了**让引用它的地方编译期就报错** ——
+ * 删掉一个常量，所有还在按层级分档的代码会立刻暴露出来，而不是安静地退化成
+ * 「所有插件都算最低档」。等确认没有引用了，它会跟着一起删。
+ */
+export const TIERS = [];
 
 /** 安装方式的枚举。market 运行时会按它分派到不同的安装路径。 */
 export const INSTALL_METHODS = ['tarball', 'npm', 'github', 'skills', 'manual'];
@@ -138,13 +144,19 @@ export function looksLikeNpmName(s) {
 /**
  * 造一条**空白的**插件记录。所有字段都在这里显式列出，
  * 免得下游靠 `?.` 到处兜底、也就没人知道到底有哪些字段。
+ *
+ * ★ 自 0.5.0 起**没有 `tier` 字段**。曾经有过三个信任层级
+ *   （verified / reviewed / community），现在目录是一份平铺列表：
+ *   市场不再对插件分等级，也不再用等级决定「能不能一键装」。
+ *   理由见 README「为什么不分级」那一节 —— 一句话：
+ *   等级是**维护者的内部记账**，对用户要回答的问题（这个插件装不装得上）
+ *   给出的答案并不比「装前检查」更准，却要在界面上占三个标签、两档筛选。
  */
-export function blankRecord({ id, tier = 'community' }) {
+export function blankRecord({ id }) {
   return {
     schemaVersion: SCHEMA_VERSION,
     id,
     slug: slugify(id),
-    tier,
     package: null,
     name: null,
     title: null,
@@ -166,8 +178,7 @@ export function blankRecord({ id, tier = 'community' }) {
     metricsCheckedAt: null,
 
     // ── 兼容性事实 ────────────────────────────────────────────
-    // 只对「我们实测过」的插件（tier=verified）和人工审核过的（tier=reviewed）有意义；
-    // 采集器不会给 community 层编造这些，取不到就是 null。
+    // 由采集器为本仓库托管的插件填（实测结论）；公共索引来的条目取不到就是 null。
     origin: null,
     peerRuntimePin: null,
     peerVerdict: null,
@@ -198,8 +209,6 @@ export function blankRecord({ id, tier = 'community' }) {
       firstSeenAt: null,
       lastSyncedAt: null,
     },
-
-    review: null,
   };
 }
 
@@ -215,7 +224,7 @@ export function blankRecord({ id, tier = 'community' }) {
  */
 export function normalizeRecord(input) {
   const id = String(input?.id ?? '').trim();
-  const rec = blankRecord({ id, tier: TIERS.includes(input?.tier) ? input.tier : 'community' });
+  const rec = blankRecord({ id });
 
   const str = (v) => {
     const s = v == null ? '' : String(v).trim();
@@ -298,8 +307,8 @@ export function normalizeRecord(input) {
 
   const src = input.source ?? {};
   rec.source = {
-    // public-index  由公开索引采集而来（默认层）
-    // collection    由插件集合仓库的 manifest.json 而来（tier=verified）
+    // public-index  由公开索引采集而来
+    // collection    由插件集合仓库的 manifest.json 而来（本仓库托管 tarball）
     // self          市场插件自己（版本以本仓库 plugins-src 的 package.json 为准）
     // manual        人工写进 catalog/overrides/*.json 的条目
     kind: ['public-index', 'collection', 'self', 'manual'].includes(src.kind) ? src.kind : 'public-index',
@@ -307,8 +316,6 @@ export function normalizeRecord(input) {
     firstSeenAt: str(src.firstSeenAt),
     lastSyncedAt: str(src.lastSyncedAt),
   };
-
-  rec.review = input.review && typeof input.review === 'object' ? input.review : null;
 
   return rec;
 }
@@ -325,7 +332,6 @@ export function serializeRecord(rec) {
     schemaVersion: SCHEMA_VERSION,
     id: rec.id,
     slug: rec.slug,
-    tier: rec.tier,
     package: rec.package,
     name: rec.name,
     title: rec.title,
@@ -352,7 +358,6 @@ export function serializeRecord(rec) {
     sha256Note: rec.sha256Note,
     install: rec.install,
     source: rec.source,
-    review: rec.review,
   };
   return `${JSON.stringify(ordered, null, 2)}\n`;
 }
@@ -380,7 +385,6 @@ export function indexEntry(rec) {
   return {
     slug: rec.slug,
     id: rec.id,
-    tier: rec.tier,
     package: rec.package,
     name: rec.name,
     title: rec.title,
@@ -401,8 +405,6 @@ export function indexEntry(rec) {
     risky: rec.install.risky,
     peerVerdict: rec.peerVerdict,
     origin: rec.origin,
-    reviewed: rec.review !== null,
-    collection: rec.source.kind === 'collection',
   };
 }
 
@@ -415,31 +417,28 @@ export function indexEntry(rec) {
  *   文件派生出 7127 条索引 —— 366 个插件在界面上**根本不会出现**，而文件还在仓库里。
  *   那是很难发现的一类丢失：数量对不上，但没有任何一条报错。
  *
- *   包名相同不等于同一个插件：公开索引里一个仓库一条记录，两个仓库完全可能声明
- *   同一个包名（fork、模板、改名残留）。**跨层去重是市场运行时 mergeEntries 的职责**
- *   （它按层级保留最高的那条，并把被合并条目的 star 数补过来），不该在这里预先把
- *   记录吃掉。这样也保住了一条硬不变量：配置文件数 == 索引条目数，CI 可以直接断言。
+ *   ★ 0.5.0 去掉信任层级之后，「跨层去重」这件事连**存在的理由**都没有了 ——
+ *     以前同一个插件会同时出现在 verified 层和公共索引里，运行时得合并；
+ *     现在一个插件就是一份配置文件、一条索引记录。不变量因此更硬：
+ *     配置文件数 == 索引条目数，CI 直接断言。
  */
 export function buildIndex(records, { generatedAt, sourceIndex = null } = {}) {
-  const rank = { verified: 0, reviewed: 1, community: 2 };
-
   const plugins = records
     .map(indexEntry)
     .sort((a, b) => {
-      const d = (rank[a.tier] ?? 3) - (rank[b.tier] ?? 3);
+      const d = (b.stars ?? 0) - (a.stars ?? 0);
       if (d !== 0) return d;
-      return (b.stars ?? 0) - (a.stars ?? 0);
+      return String(a.slug).localeCompare(String(b.slug));
     });
 
-  const counts = { total: plugins.length, verified: 0, reviewed: 0, community: 0 };
-  for (const p of plugins) counts[p.tier] = (counts[p.tier] ?? 0) + 1;
+  const counts = { total: plugins.length };
 
   return {
     schemaVersion: SCHEMA_VERSION,
     generatedAt: generatedAt ?? null,
     sourceIndex,
     counts,
-    note: '由 scripts/sync-catalog.mjs 从 catalog/plugins/*.json 派生，请勿手工编辑。一条配置文件对应一条记录，不做去重。',
+    note: '由 scripts/sync-catalog.mjs 从 catalog/plugins/*.json 派生，请勿手工编辑。一条配置文件对应一条记录，不做去重，不分层级。',
     plugins,
   };
 }

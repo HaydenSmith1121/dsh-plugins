@@ -75,9 +75,6 @@ window.__ModuleLoader__.load({
 .dpm-btn-sm{padding:5px 9px;font-size:11.5px}
 .dpm-cards{display:flex;flex-direction:column;gap:10px}
 .dpm-card{border:1px solid var(--dsw-alias-border-l1,#e5e7eb);border-radius:10px;padding:12px 14px;background:var(--dsw-alias-bg-base,#fff)}
-.dpm-card[data-tier="verified"]{border-left:3px solid #16a34a}
-.dpm-card[data-tier="reviewed"]{border-left:3px solid #4d6bfe}
-.dpm-card[data-tier="community"]{border-left:3px solid #d97706}
 .dpm-card-top{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
 .dpm-card-name{font-size:13.5px;font-weight:650;word-break:break-all}
 .dpm-card-id{font-size:11.5px;color:var(--dsw-alias-label-secondary,#8a919f);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;word-break:break-all}
@@ -90,9 +87,6 @@ window.__ModuleLoader__.load({
 .dpm-flag-bad{background:#fdeaea;color:#b91c1c;border:1px solid #f5c6c6}
 .dpm-flag-info{background:var(--dsw-alias-bg-layer-1,#f3f4f6);color:var(--dsw-alias-label-secondary,#5f6670);border:1px solid var(--dsw-alias-border-l1,#e5e7eb)}
 .dpm-badge{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;padding:2px 7px;border-radius:999px;white-space:nowrap}
-.dpm-badge-verified{background:#e8f6ee;color:#15803d;border:1px solid #bfe3cd}
-.dpm-badge-reviewed{background:#eaf2fb;color:#2e4bd8;border:1px solid #c9d4f5}
-.dpm-badge-community{background:#fef7e7;color:#a97f1f;border:1px solid #f0dfae}
 .dpm-badge-neutral{background:var(--dsw-alias-bg-layer-1,#f3f4f6);color:var(--dsw-alias-label-secondary,#5f6670);border:1px solid var(--dsw-alias-border-l1,#e5e7eb)}
 .dpm-badge-bad{background:#fdeaea;color:#b91c1c;border:1px solid #f5c6c6}
 .dpm-badge-ok{background:#e8f6ee;color:#15803d;border:1px solid #bfe3cd}
@@ -119,9 +113,9 @@ window.__ModuleLoader__.load({
 .dpm-check[data-sev="info"]{border-left:3px solid #16a34a}
 .dpm-check[data-sev="skip"]{border-left:3px solid #9ca3af}
 /*
- * ── 点赞 / 收藏 ──────────────────────────────────────────────
- * 两个按钮。★ 刻意做成「描边 + 数字」而不是大色块：收藏是个人偏好，
- * 不该比「审核状态」这个安全信号更抢眼。
+ * ── 收藏 ──────────────────────────────────────────────────────
+ * 一个按钮（0.5.0 删掉了点赞）。★ 刻意做成「描边」而不是大色块：
+ * 收藏是个人偏好，不该比「装不装得上」这类安全信号更抢眼。
  * data-on 只看布尔值，颜色一律走 CSS —— 组件里不拼颜色字符串，
  * 暗色模式下才不用再判一次。
  */
@@ -129,7 +123,6 @@ window.__ModuleLoader__.load({
 .dpm-mark:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover,#f0f1f3)}
 .dpm-mark:disabled{opacity:.45;cursor:not-allowed}
 .dpm-mark[data-on]{font-weight:600}
-.dpm-mark-like[data-on]{background:#fdeaea;border-color:#f5c6c6;color:#c2410c}
 .dpm-mark-fav[data-on]{background:#fef7e7;border-color:#f0dfae;color:#a16207}
 .dpm-mark-ico{font-size:12px;line-height:1}
 /*
@@ -466,13 +459,6 @@ window.__ModuleLoader__.load({
 			return h("span", { className: "dpm-badge dpm-badge-" + (props.kind || "neutral") }, props.children);
 		};
 
-		function tierBadgeKind(tier) {
-			if (tier === "verified") return "verified";
-			if (tier === "reviewed") return "reviewed";
-			if (tier === "community") return "community";
-			return "neutral";
-		}
-
 		/*
 		 * ── 安装状态 ─────────────────────────────────────────────
 		 *
@@ -538,18 +524,17 @@ window.__ModuleLoader__.load({
 		};
 
 		/*
-		 * ── 点赞 / 收藏 ─────────────────────────────────────────────
+		 * ── 收藏 ─────────────────────────────────────────────────────
 		 *
-		 * 两个都是**本地标记**，不上传、不做排行榜。
-		 * 点赞数只统计你自己点过的，收藏同理 —— 因为本插件没有后端，
-		 * 假装有全局热度是骗人；界面上也如实写成「本机」。
+		 * 它是**本地标记**，不上传、不做排行榜 —— 因为本插件没有后端，
+		 * 假装有全局热度是骗人；界面上也如实写成「记在本机」。
 		 *
 		 * 交互上刻意做成「乐观更新」：点下去立刻变色，请求失败再回滚。
-		 * 这两个动作只是写一个本地 JSON，失败概率极低，等往返反而显得卡。
+		 * 这个动作只是写一个本地 JSON，失败概率极低，等往返反而显得卡。
 		 */
 		var MarkButton = function (props) {
 			var on = Boolean(props.on);
-			var cls = "dpm-mark dpm-mark-" + (props.kind === "like" ? "like" : "fav");
+			var cls = "dpm-mark dpm-mark-fav";
 			return h(
 				"button",
 				{
@@ -995,37 +980,25 @@ window.__ModuleLoader__.load({
 		//#region ── 条目卡片 ──────────────────────────────────────────────
 		var EntryCard = function (props) {
 			var e = props.entry || {};
-			var tier = e.tier || "community";
 			var peerVerdict = e.peerVerdict;
 			var st = stateOf(e);
 			var badge = installBadge(e);
 
 			return h(
 				"div",
-				{ className: "dpm-card", "data-tier": tier },
+				{ className: "dpm-card" },
 				h(
 					"div",
 					{ className: "dpm-card-top" },
 					h("span", { className: "dpm-card-name" }, txt(e.title, e.id)),
-					// ★ 审核状态标签：三层视图合一之后，这里就是「已审核 / 未审核」的唯一出处
-					h(Badge, { kind: tierBadgeKind(tier) }, txt(e.tierLabel, tier)),
 					e.version ? h("span", { className: "dpm-card-id" }, (e.package || e.id) + "@" + e.version) : h("span", { className: "dpm-card-id" }, txt(e.package, e.id)),
 					badge,
 					e.favorited ? h(Badge, { kind: "neutral" }, "★ 已收藏") : null,
 				),
 
-				// 层级提示 —— 这是用户最需要一眼看到的东西
-				tier === "verified"
-					? h(Flag, { kind: "ok", icon: "✓" }, "已验证 · 本仓库自带，已按当前 dsh 版本实测，可直接安装（离线 tarball）。")
-					: null,
-				tier === "reviewed"
-					? h(Flag, { kind: "ok", icon: "✓" }, "已审核 · 维护者人工审核收录"
-						+ (e.review && e.review.reviewedAt ? "（" + e.review.reviewedAt + "）" : "")
-						+ "，仍需通过装前检查。")
-					: null,
-				tier === "community"
-					? h(Flag, { kind: "risk", icon: "!" }, "未审核 · 来自公共索引，本仓库未做适配验证，可能存在不兼容或其它风险。装前检查只能做尽力而为的静态探测。")
-					: null,
+				// ★ 0.5.0 去掉了「已验证 / 已审核 / 未审核」三条横幅与卡片角标。
+				//   目录就是一份平铺列表，这里不再替用户给插件分级。
+				//   真正要说清楚的是下面这些**具体事实**：有没有新版、装没装好、peer 能不能配上。
 
 				// ★ 升级提示（问题 1）：装过、仓库里有新版
 				st.status === "upgradable"
@@ -1070,22 +1043,15 @@ window.__ModuleLoader__.load({
 						? h(Btn, { small: true, className: "dpm-btn-installed", disabled: true, title: primaryTitle(e) }, primaryLabel(e))
 						: h(Btn, {
 							small: true,
-							variant: st.status === "upgradable" ? "update" : (tier === "community" ? undefined : "primary"),
+							variant: st.status === "upgradable" ? "update" : "primary",
 							title: primaryTitle(e) || undefined,
 							onClick: function () { props.onGate(e, true); },
 						}, primaryLabel(e)),
 					h(MarkButton, {
-						kind: "like",
-						on: e.liked,
-						label: "点赞",
-						title: "点赞（只记在本机，不上传）",
-						onClick: function () { props.onMark(e, "like"); },
-					}),
-					h(MarkButton, {
 						kind: "fav",
 						on: e.favorited,
 						label: e.favorited ? "已收藏" : "收藏",
-						title: "收藏（只记在本机，可用「已收藏」筛选）",
+						title: "收藏（只记在本机，可用「我收藏的」筛选）",
 						onClick: function () { props.onMark(e, "favorite"); },
 					}),
 					e.upstream ? h(Btn, { small: true, onClick: function () { try { window.open(e.upstream, "_blank", "noopener"); } catch (err) { /* 忽略 */ } } }, "仓库") : null,
@@ -1155,8 +1121,6 @@ window.__ModuleLoader__.load({
 						{ className: "dpm-kv" },
 						h("span", { className: "dpm-kv-k" }, "插件"),
 						h("span", { className: "dpm-kv-v" }, txt(g.pluginId)),
-						h("span", { className: "dpm-kv-k" }, "层级"),
-						h("span", { className: "dpm-kv-v" }, txt(g.tierLabel, g.tier)),
 						h("span", { className: "dpm-kv-k" }, "目标 profile"),
 						h("span", { className: "dpm-kv-v" }, txt(g.targetProfile)),
 						g.installState && g.installState.installed
@@ -1235,6 +1199,13 @@ window.__ModuleLoader__.load({
 							skips.map(function (c, i) { return h(CheckItem, { key: "s" + i, check: c }); }))
 						: null,
 
+					/*
+					 * ★ 0.5.0：这条确认现在**只在装前检查发现了「可覆盖的致命项」时**才出现。
+					 *
+					 *   以前凡是社区插件都要勾一次「我确认有风险」—— 那种确认的结局是
+					 *   用户闭眼点确定，而真正该停下来看的（「这个包装上也加载不起来」）
+					 *   反而淹没在同一个对话框里。现在这句话只对应后者。
+					 */
 					g.requiresRiskAck
 						? h(
 							"label",
@@ -1244,10 +1215,7 @@ window.__ModuleLoader__.load({
 								checked: ack,
 								onChange: function (ev) { setAck(ev.target.checked); },
 							}),
-							h("span", null,
-								g.tier === "community"
-									? "我已阅读上述风险，确认在「未经本仓库审核」的情况下继续安装。若该插件与当前 dsh 版本不兼容，可能导致 harness 无法启动。"
-									: "我已阅读上述「无法确认」的项目，确认强制继续安装。"),
+							h("span", null, "我已阅读上面标红的问题，确认强制继续安装。"),
 						)
 						: null,
 				),
@@ -1464,28 +1432,22 @@ window.__ModuleLoader__.load({
 
 		//#region ── 主面板 ────────────────────────────────────────────────
 		/*
-		 * ★ 原来是三个平级页签（已验证 / 已审核 / 未审核）。
+		 * ★ 0.5.0：目录就是**一个列表**，没有层级页签、也没有层级筛选。
 		 *
-		 * 那个切分对用户没有意义：他要回答的是「这个插件装得安不安全」，
-		 * 而 verified 与 reviewed 在这一点上给出的答案**是同一个**（都过了
-		 * 本仓库的适配验证），却被拆成两个页签让人来回切。
+		 *   这里曾经并排摆过三个页签（已验证 / 已审核 / 未审核），后来收敛成一个列表
+		 *   外加一组「已审核 / 未审核」筛选 —— 但那个区分对用户要回答的问题
+		 *   （「这个插件我这儿装不装得上」）没有帮助：它只是一个维护者贴的标签，
+		 *   而真正的问题由**装前检查**当场判定。
 		 *
-		 * 现在并成一个「插件市场」列表，安全差异交给每条插件自己的**审核标签**
-		 * 承载（已验证 / 已审核 / 未审核），顶部再加一组可叠加的筛选器。
+		 *   现在顶部只剩一组与**用户自己**有关的筛选：已安装 / 可升级 / 我收藏的。
 		 */
 		var CATALOG_TAB = "market";
 
-		/** 目录页的三组筛选：审核状态（单选）、我的标记（多选）、安装状态（多选） */
-		var REVIEW_FILTERS = [
-			{ key: null, label: "全部" },
-			{ key: "reviewed", label: "已审核" },
-			{ key: "unreviewed", label: "未审核" },
-		];
-
+		/** 目录页的筛选：全部与用户自己的三种标记 */
 		var ONLY_FILTERS = [
+			{ key: null, label: "全部" },
 			{ key: "installed", label: "已安装", title: "只看已经装上的插件" },
 			{ key: "upgradable", label: "可升级", title: "只看装了、且仓库里有新版本的插件" },
-			{ key: "liked", label: "我点赞的", title: "只看你点过赞的插件（记在本机）" },
 			{ key: "favorited", label: "我收藏的", title: "只看你收藏的插件（记在本机）" },
 		];
 
@@ -1499,8 +1461,7 @@ window.__ModuleLoader__.load({
 			var [listBusy, setListBusy] = useState(false);
 
 			// 筛选状态
-			var [review, setReview] = useState(null);   // null | 'reviewed' | 'unreviewed'
-			var [only, setOnly] = useState(null);       // null | 'installed' | 'upgradable' | 'liked' | 'favorited'
+			var [only, setOnly] = useState(null);       // null | 'installed' | 'upgradable' | 'favorited'
 
 			var [drawer, setDrawer] = useState(null); // { kind, id, entry }
 			var [gate, setGate] = useState(null);
@@ -1554,11 +1515,10 @@ window.__ModuleLoader__.load({
 				}
 			}, [fail]);
 
-			var loadList = useCallback(async function (query, pageIdx, rev, onl) {
+			var loadList = useCallback(async function (query, pageIdx, onl) {
 				setListBusy(true);
 				try {
 					var args = { query: query, limit: PAGE_SIZE, offset: pageIdx * PAGE_SIZE };
-					if (rev) args.review = rev;
 					if (onl) args.only = onl;
 					var r = await api("catalog", args);
 					if (aliveRef.current) setList(r);
@@ -1572,14 +1532,14 @@ window.__ModuleLoader__.load({
 			// 首次加载
 			useEffect(function () {
 				loadStatus();
-				loadList("", 0, null, null);
+				loadList("", 0, null);
 			}, [loadStatus, loadList]);
 
 			// 筛选 / 翻页变化时重新拉列表
 			useEffect(function () {
 				if (tab !== CATALOG_TAB) return;
-				loadList(q, page, review, only);
-			}, [tab, page, review, only, loadList]); // q 由搜索按钮显式提交，不放进依赖
+				loadList(q, page, only);
+			}, [tab, page, only, loadList]); // q 由搜索按钮显式提交，不放进依赖
 
 			// 非目录页的按需加载
 			useEffect(function () {
@@ -1616,14 +1576,14 @@ window.__ModuleLoader__.load({
 									setInstallResult(r.job.result || null);
 									// 完成后刷新列表与状态：状态条里的「可更新」计数就在 status 里
 									loadStatus();
-									loadList(q, page, review, only);
+									loadList(q, page, only);
 								}
 							}
 						})
 						.catch(function () { /* 轮询失败不打扰用户，下一拍会重试 */ });
 				}, 600);
 				return function () { alive = false; clearInterval(timer); };
-			}, [job && job.id, job && job.state, loadStatus, loadList, q, page, review, only]);
+			}, [job && job.id, job && job.state, loadStatus, loadList, q, page, only]);
 
 			/**
 			 * 首次加载 / 切回市场页时，问一次服务端「现在有没有正在跑的安装任务」。
@@ -1646,19 +1606,19 @@ window.__ModuleLoader__.load({
 
 			var submitSearch = useCallback(function () {
 				setPage(0);
-				loadList(q, 0, review, only);
-			}, [q, review, only, loadList]);
+				loadList(q, 0, only);
+			}, [q, only, loadList]);
 
 			/**
-			 * 点赞 / 收藏。
+			 * 收藏（0.5.0 起只剩这一个标记动作，点赞已删除）。
 			 *
 			 * 乐观更新：先改本地那一份（列表 + 状态里的个人统计），请求回来再以
 			 * 服务端返回为准；失败就整体回滚并把错误抛给 toast。
-			 * 这两个动作只写一个本地 JSON，正常情况下一帧就回来了。
+			 * 这个动作只写一个本地 JSON，正常情况下一帧就回来了。
 			 */
 			var doMark = useCallback(async function (entry, action) {
-				var field = action === "like" ? "liked" : "favorited";
-				var next = !entry[field];
+				if (action !== "favorite") return;
+				var next = !entry.favorited;
 				var prevList = list;
 				var prevStatus = status;
 
@@ -1667,12 +1627,11 @@ window.__ModuleLoader__.load({
 					return {
 						...cur,
 						items: cur.items.map(function (it) {
-							return it.id === entry.id ? { ...it, [field]: next } : it;
+							return it.id === entry.id ? { ...it, favorited: next } : it;
 						}),
 						marks: cur.marks ? {
 							...cur.marks,
-							[action === "like" ? "liked" : "favorited"]:
-								Math.max(0, (cur.marks[action === "like" ? "liked" : "favorited"] || 0) + (next ? 1 : -1)),
+							favorited: Math.max(0, (cur.marks.favorited || 0) + (next ? 1 : -1)),
 						} : cur.marks,
 					};
 				});
@@ -1680,13 +1639,13 @@ window.__ModuleLoader__.load({
 				try {
 					var r = await api("mark", { action: action, id: entry.id, value: next });
 					if (!aliveRef.current) return;
-					// 服务端是真值来源：它可能因为「两个标记都归零」而把整条删掉
+					// 服务端是真值来源：取消收藏时它会把整条删掉
 					setList(function (cur) {
 						if (!cur) return cur;
 						return {
 							...cur,
 							items: cur.items.map(function (it) {
-								return it.id === entry.id ? { ...it, liked: r.liked, favorited: r.favorited } : it;
+								return it.id === entry.id ? { ...it, favorited: r.favorited } : it;
 							}),
 						};
 					});
@@ -1925,22 +1884,19 @@ window.__ModuleLoader__.load({
 						var counts = r.counts || {};
 						setToast(
 							"目录已刷新 · " + (srcText[r.source] || r.source || "?")
-							+ (counts.total ? " · 共 " + counts.total + " 条"
-								+ "（已验证 " + txt(counts.verified, "0")
-								+ " / 已审核 " + txt(counts.reviewed, "0")
-								+ " / 未审核 " + txt(counts.community, "0") + "）" : "")
+							+ (counts.total ? " · 共 " + counts.total + " 条" : "")
 							+ (r.upstreamGeneratedAt ? " · 上游索引生成于 " + r.upstreamGeneratedAt.slice(0, 10) : "")
 							+ (stale ? "（没取到远程目录，显示的版本可能不是最新）" : ""),
 						);
 					}
 					await loadStatus();
-					await loadList(q, page, review, only);
+					await loadList(q, page, only);
 				} catch (err) {
 					fail(err);
 				} finally {
 					if (aliveRef.current) setBusy(false);
 				}
-			}, [fail, loadStatus, loadList, q, page, review, only]);
+			}, [fail, loadStatus, loadList, q, page, only]);
 
 			var closeDrawer = useCallback(function () {
 				setDrawer(null);
@@ -1954,17 +1910,10 @@ window.__ModuleLoader__.load({
 			var profile = (status && status.profile) || {};
 			var compat = (status && status.compat) || {};
 			var catalog = (status && status.catalog) || {};
-			var merged = catalog.merged || { total: 0, reviewed: 0, unreviewed: 0 };
 			var installed = (status && status.installed) || [];
 			var upgradable = (status && status.upgradable) || [];
-			var userData = (status && status.userData) || { liked: 0, favorited: 0 };
-
-			var subParts = [];
-			if (env.dsh) subParts.push("dsh " + txt(env.dsh.version));
-			if (profile.name) subParts.push("profile " + profile.name);
-			if (env.node) subParts.push("node " + txt(env.node.version));
-			if (env.pnpm) subParts.push("pnpm " + txt(env.pnpm.version));
-			if (compat.dshVersion) subParts.push("矩阵：" + (compat.supported || []).join(" / ") || "—");
+			var userData = (status && status.userData) || { favorited: 0 };
+			var catalogCounts = catalog.counts || { total: 0 };
 
 			// ── 渲染 ──
 			var body = null;
@@ -1973,7 +1922,7 @@ window.__ModuleLoader__.load({
 				var items = (list && list.items) || [];
 				var total = list ? list.total : 0;
 				var maxPage = Math.max(0, Math.ceil(total / PAGE_SIZE) - 1);
-				var counts = (list && list.marks) || { liked: 0, favorited: 0 };
+				var counts = (list && list.marks) || { favorited: 0 };
 
 				body = h(
 					"div",
@@ -1991,35 +1940,23 @@ window.__ModuleLoader__.load({
 						}),
 						h(Btn, { onClick: submitSearch, variant: "primary" }, "搜索"),
 						h(Btn, {
-							onClick: function () { setQ(""); setPage(0); setReview(null); setOnly(null); loadList("", 0, null, null); },
+							onClick: function () { setQ(""); setPage(0); setOnly(null); loadList("", 0, null); },
 						}, "重置"),
 						listBusy ? h(Spinner, null) : null,
 						h("span", { className: "dpm-spacer" }),
 						h("span", { className: "dpm-pager-info" }, "共 " + total + " 条"),
 
 						/*
-						 * ★ 问题 4 的落点：三层视图合一，用这里的筛选 + 卡片上的审核标签区分。
-						 *   审核状态是**单选**（全部 / 已审核 / 未审核），
-						 *   其余三组是**可叠加**的开关。
+						 * ★ 筛选器只剩与**用户自己**有关的三项：已安装 / 可升级 / 我收藏的。
+						 *   原来还有一组「审核状态」（全部 / 已审核 / 未审核），
+						 *   随信任分级一起删掉了 —— 目录里已经没有这个维度。
 						 */
 						h(
 							"div",
 							{ className: "dpm-filters", style: { flexBasis: "100%", marginTop: 2 } },
-							REVIEW_FILTERS.map(function (f) {
-								return h("button", {
-									key: "rf" + String(f.key),
-									type: "button",
-									className: "dpm-filter",
-									"data-on": review === f.key ? "1" : undefined,
-									onClick: function () { setReview(f.key); setPage(0); },
-								}, f.label,
-									f.key === "reviewed" ? h("span", { className: "dpm-filter-n" }, merged.reviewed) : null,
-									f.key === "unreviewed" ? h("span", { className: "dpm-filter-n" }, merged.unreviewed) : null);
-							}),
-							h("span", { style: { width: 10 } }),
 							ONLY_FILTERS.map(function (f) {
 								return h("button", {
-									key: "of" + f.key,
+									key: "of" + String(f.key),
 									type: "button",
 									className: "dpm-filter",
 									title: f.title,
@@ -2029,11 +1966,10 @@ window.__ModuleLoader__.load({
 									f.key === "upgradable" && upgradable.length > 0
 										? h("span", { className: "dpm-filter-n" }, upgradable.length)
 										: null,
-									f.key === "liked" && counts.liked > 0 ? h("span", { className: "dpm-filter-n" }, counts.liked) : null,
 									f.key === "favorited" && counts.favorited > 0 ? h("span", { className: "dpm-filter-n" }, counts.favorited) : null);
 							}),
 							h("span", { className: "dpm-spacer" }),
-							h("span", { className: "dpm-pager-info" }, "点赞 " + txt(counts.liked, "0") + " · 收藏 " + txt(counts.favorited, "0") + "（记在本机）"),
+							h("span", { className: "dpm-pager-info" }, "收藏 " + txt(counts.favorited, "0") + "（记在本机）"),
 						),
 					),
 
@@ -2044,7 +1980,7 @@ window.__ModuleLoader__.load({
 						: null,
 					list && list.indexMeta && list.indexMeta.source === 'bundled'
 						? h(Flag, { kind: "risk", icon: "!" },
-							"正在用**包内离线目录**：它只含本仓库托管的插件（已验证层），"
+							"正在用**包内离线目录**：它只含字节由本仓库托管的那些插件，"
 							+ "完整的 7000+ 条插件列表需要联网从仓库拉取。")
 						: null,
 
@@ -2058,10 +1994,9 @@ window.__ModuleLoader__.load({
 
 					items.length === 0 && !listBusy
 						? h(Empty, null, only === "favorited" ? "还没有收藏任何插件。点插件卡片上的「收藏」即可。"
-							: only === "liked" ? "还没有点赞任何插件。点插件卡片上的「点赞」即可。"
-								: only === "upgradable" ? "没有可更新的插件 —— 装了的都是目录里的最新版本。"
-									: only === "installed" ? "还没有安装任何目录里的插件。"
-										: "没有匹配的插件。首次使用需要联网拉取公共索引，点右上方「刷新目录」。")
+							: only === "upgradable" ? "没有可更新的插件 —— 装了的都是目录里的最新版本。"
+								: only === "installed" ? "还没有安装任何目录里的插件。"
+									: "没有匹配的插件。首次使用需要联网拉取完整目录，点右上方「刷新目录」。")
 						: h("div", { className: "dpm-cards" },
 							items.map(function (e) {
 								return h(EntryCard, {
@@ -2141,7 +2076,6 @@ window.__ModuleLoader__.load({
 											onClick: function () {
 												openGate({
 													id: i.name, package: i.name, title: i.name,
-													tier: i.state === "current" ? "verified" : (i.tier || "verified"),
 													installState: { status: "upgradable", installed: true, installedVersion: i.installedVersion, target: i.targetVersion, inBundles: i.inBundles, canInstall: true, canUpgrade: true, action: "update", isLatest: false },
 												}, true);
 											},
@@ -2268,16 +2202,6 @@ window.__ModuleLoader__.load({
 							"div",
 							{ style: { minWidth: 0, flex: "1 1 260px" } },
 							h("h2", { className: "dpm-title" }, "插件市场"),
-							h("p", { className: "dpm-sub" },
-								subParts.map(function (s, i) { return h("span", { key: "s" + i }, s); })),
-							h("p", { className: "dpm-sub" },
-								h("span", null, "本仓库自带插件"),
-								h("code", null, "已验证"),
-								h("span", null, "· 可直接安装"),
-								h("span", null, "|"),
-								h("span", null, "其余"),
-								h("code", null, "未审核"),
-								h("span", null, "· 装前会提示风险")),
 						),
 						h(Btn, { disabled: busy, onClick: doRefresh }, "刷新目录"),
 						h(Btn, { onClick: function () { if (props.onClose) props.onClose(); } }, "关闭"),
@@ -2332,19 +2256,14 @@ window.__ModuleLoader__.load({
 				/*
 				 * 状态条。
 				 *
-				 * ★ 这里原来打的是三层目录的原始条数（已验证 N / 已审核 N / 未审核 N），
-				 *   但三层去重合并之后，那三个数字加起来**对不上列表条数** —— 同一个包
-				 *   会同时出现在「已验证」和公共索引里，被数两次。用户看到「共 10 条」
-				 *   而三个标签加起来是 13，只会以为界面坏了。
-				 *   所以改用合并后的口径：已审核 / 未审核 / 可更新。
+				 * ★ 0.5.0 去掉了「已验证 / 已审核 / 未审核」三个层级数字。
+				 *   目录是一份平铺列表，共多少条就写在筛选行那里（「共 N 条」）。
+				 *   这里留下的是**与层级无关、且用户真的需要**的信息：
+				 *   有几个可以更新、目录是从哪儿取的、上游索引是什么时候生成的。
 				 */
 				h(
 					"div",
 					{ className: "dpm-strip" },
-					h(Badge, { kind: "verified" }, "已验证 " + txt(merged.verified, "0")),
-					h(Badge, { kind: "reviewed" }, "已审核 " + txt(merged.reviewedTier, "0")),
-					h(Badge, { kind: "community" }, "未审核 " + txt(merged.unreviewed, "0")),
-					h("span", { className: "dpm-muted" }, "去重后共 " + txt(merged.total, "0") + " 条"),
 					upgradable.length > 0
 						? h(Badge, { kind: "update" }, "可更新 " + upgradable.length)
 						: null,
@@ -2373,11 +2292,6 @@ window.__ModuleLoader__.load({
 						: h(Badge, { kind: "neutral" }, "未识别本地仓库（tarball 将联网下载）"),
 				),
 
-				/*
-				 * ★ 页签：三个目录页签（已验证 / 已审核 / 未审核）已被**合并成一个
-				 *   「插件市场」**，安全差异由卡片上的审核标签 + 顶部筛选器承载。
-				 *   这也是用户明确要求的第 4 点。
-				 */
 				h(
 					"div",
 					{ className: "dpm-tabs" },
@@ -2385,7 +2299,7 @@ window.__ModuleLoader__.load({
 						key: "market", type: "button", className: "dpm-tab",
 						"data-on": tab === CATALOG_TAB ? "1" : undefined,
 						onClick: function () { setTab(CATALOG_TAB); setPage(0); setQ(""); },
-					}, "插件市场 " + (merged.total === undefined ? "" : merged.total)),
+					}, "插件市场 " + (catalogCounts.total || "")),
 					h("button", {
 						key: "installed", type: "button", className: "dpm-tab",
 						"data-on": tab === "installed" ? "1" : undefined,

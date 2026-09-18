@@ -2,7 +2,6 @@
   "schemaVersion": 1,
   "id": "deronendless/dsh-receipt",
   "slug": "deronendless__dsh-receipt",
-  "tier": "reviewed",
   "package": "dsh-receipt",
   "name": "dsh-receipt",
   "title": "凭证 / 收据",
@@ -51,16 +50,5 @@
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T16:36:09.187Z",
     "lastSyncedAt": "2026-09-17T17:24:38.098Z"
-  },
-  "review": {
-    "reviewedAt": "2026-09-17",
-    "dshVersion": "0.1.6-alpha.1",
-    "node": "24.14.0",
-    "pnpm": "12.4.2",
-    "reviewer": "HaydenSmith1121",
-    "verdict": "ok-with-notes",
-    "sha256": null,
-    "evidence": "★ 来源变更（2026-09 市场与插件分离）：本条原先在旧仓库的「已验证」层，字节由本仓库以离线 tarball 分发（dsh-receipt-0.1.0.tgz，sha256 a5a94f1c6eccaa361d22fcca3ea9852b3963c47b287788e6d53b884ff19948c0，24445 字节，16 个文件）。分离后改为上游 github: 规格。\n原先的收录与实测记录（取自旧仓库 compatibility.json）：在 dsh 0.1.6-alpha.1 / Node 24.14.0 / pnpm 12.4.2 上装进 profile，插件树正常装配、dsh web 正常启动；精确 pin 在更低版本（0.1.0-rc.6）这一档的判据就是用它校准的 —— 属于「只告警、不拦」。",
-    "notes": "1. 该包 package.json 有 repository 但**没有 author** 字段，包内 README 也未声明作者，故按 CONTRIBUTING.md 规范标注为「作者未注明」，不猜测。tarball 内附有 LICENSE。\n2. 它是本仓库 peer 判据的两个真实数据点之一：精确 pin 到**更低**版本时实测可用（新版本保留了它要的接口），所以闸门对「pin 更低」只告警。若按「pin 不等即致命」，本插件会被自己的闸门拦掉。\n3. 未重新实测上游默认分支当前 HEAD —— 上面记的是 0.1.0 那一版 tarball 的结论。"
   }
 }

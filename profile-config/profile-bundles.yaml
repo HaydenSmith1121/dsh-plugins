@@ -23,7 +23,7 @@ inBoxBundles:
 
 # 用户插件：装哪些由市场面板决定，这里只说明各自的层级关系与硬约束。
 #
-# 已验证层（tarball 由 dsh-plugin-collection 托管，配置文件里带 url + sha256）：
+# 字节由本仓库托管的那几条（tarball 由 dsh-plugin-collection 托管，配置文件里带 url + sha256）：
 #   dsh-ark-plans            火山方舟 Agent Plan / Coding Plan 两条 provider 车道 + 会话标题栏额度 pill
 #   dsh-excel-viewer         xlsx / xlsm / xls / csv / tsv 的只读表格预览（宿主半为空）
 #   dsh-memory               turn 结束蒸馏成笔记、下次会话按工作区召回

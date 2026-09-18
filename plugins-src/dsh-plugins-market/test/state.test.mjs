@@ -1,5 +1,5 @@
 /**
- * 已装状态判定 + 用户数据（点赞 / 收藏）的测试。
+ * 已装状态判定 + 用户数据（收藏）+ 目录筛选的测试。
  *
  * 为什么这一组值得单独写：
  *
@@ -23,8 +23,8 @@ import path from 'node:path';
 import { suite, test, assert, eq, importBuilt } from './harness.mjs';
 
 const { describeInstallState, resolveTargetVersion, installedOverview,
-  toggleUserMark, userMarks, userDataStats, readUserData } = await importBuilt('lib/state.js');
-const { mergeEntries, mergedCounts, searchCatalog, normalizeEntry, reviewStatusOf } = await importBuilt('lib/catalog.js');
+  toggleUserMark, userMarks, userDataStats, attachMarks, readUserData } = await importBuilt('lib/state.js');
+const { searchCatalog, normalizeEntry } = await importBuilt('lib/catalog.js');
 const { compareVersions } = await importBuilt('lib/util.js');
 
 // 所有会写盘的用例都打在**隔离环境**上，绝不碰生产 profile
@@ -213,34 +213,65 @@ test('installedOverview 把升级项标出来，且不在目录里的依赖也�
   }
 });
 
-suite('state / 用户数据（点赞 / 收藏）');
+suite('state / 用户数据（收藏）');
 
-test('点赞与收藏互相独立，可分别开关', () => {
+test('收藏可以开关；点赞已在 0.5.0 删除', () => {
   const saved = process.env.DSH_HOME;
   // 打到一个临时 home，避免污染隔离环境里已有的用户数据
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'dpm-state-'));
   process.env.DSH_HOME = tmp;
   try {
     const id = 'dsh-unit-test-target';
-    let r = toggleUserMark('like', id, true);
-    eq(r.liked, true);
-    eq(r.favorited, false, '点赞不该顺带收藏');
 
-    r = toggleUserMark('favorite', id, true);
-    eq(r.liked, true, '收藏不该把已有的点赞冲掉');
+    // ★ 点赞被删了：再调它就是参数错误，而不是静默写一个没人看的字段
+    let threw = false;
+    try { toggleUserMark('like', id, true); } catch { threw = true; }
+    assert(threw, 'like 动作应当被拒绝（0.5.0 已删除点赞）');
+
+    let r = toggleUserMark('favorite', id, true);
     eq(r.favorited, true);
+    eq(r.liked, undefined, '返回值里不该再有 liked');
 
     // 不给 value 就是反转
-    r = toggleUserMark('like', id);
-    eq(r.liked, false);
-    eq(r.favorited, true, '取消点赞不该影响收藏');
-
-    // 两个都归零 → 整条删掉，文件不随浏览历史膨胀
     r = toggleUserMark('favorite', id);
-    eq(r.liked, false);
     eq(r.favorited, false);
+
+    // 归零 → 整条删掉，文件不随浏览历史膨胀
     const store = readUserData(process.env);
-    eq(store.items[id], undefined, '两个标记都归零后应当把这一条删掉');
+    eq(store.items[id], undefined, '取消收藏后应当把这一条删掉');
+  } finally {
+    if (saved === undefined) delete process.env.DSH_HOME; else process.env.DSH_HOME = saved;
+    fs.rmSync(tmp, { recursive: true, force: true });
+  }
+});
+
+test('老数据里的 liked 字段不再被读，但也不会被主动删除', () => {
+  // 兼容性：升级前落盘的条目里可能有 liked: true。
+  // 我们不再展示它、也不再统计它，但**不会去改用户的数据文件** ——
+  // 主动删用户数据比留一个没用的键更糟。
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'dpm-state-'));
+  const saved = process.env.DSH_HOME;
+  process.env.DSH_HOME = tmp;
+  try {
+    const dir = path.join(tmp, 'storages', 'dsh-plugins-market');
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, 'user-data.json'), JSON.stringify({
+      schemaVersion: 1,
+      updatedAt: '2026-09-17T00:00:00.000Z',
+      items: { 'old-plugin': { liked: true, favorited: true, updatedAt: '2026-09-17T00:00:00.000Z' } },
+    }), 'utf8');
+
+    const store = readUserData(process.env);
+    eq(store.items['old-plugin'].liked, true, '文件内容原样保留');
+
+    // 只看 favorited：liked-only 的条目不该出现在「我收藏的」里
+    const marks = userMarks(process.env);
+    const entries = [{ id: 'old-plugin' }, { id: 'not-marked' }];
+    const attached = attachMarks(entries, process.env);
+    eq(attached.find((e) => e.id === 'old-plugin').favorited, true);
+    eq(attached.find((e) => e.id === 'not-marked').favorited, false);
+    eq('liked' in attached[0], false, 'attachMarks 不再往外送 liked');
+    void marks;
   } finally {
     if (saved === undefined) delete process.env.DSH_HOME; else process.env.DSH_HOME = saved;
     fs.rmSync(tmp, { recursive: true, force: true });
@@ -252,11 +283,11 @@ test('用户数据落盘在 storages 下，不污染 profile 目录', () => {
   const saved = process.env.DSH_HOME;
   process.env.DSH_HOME = tmp;
   try {
-    toggleUserMark('like', 'x', true);
+    toggleUserMark('favorite', 'x', true);
     const stats = userDataStats(process.env);
     assert(stats.file.startsWith(path.join(tmp, 'storages')), `应当落在 storages 下，实际 ${stats.file}`);
     assert(fs.existsSync(stats.file), '文件应当真的写出来了');
-    eq(stats.liked, 1);
+    eq(stats.favorited, 1);
     const raw = JSON.parse(fs.readFileSync(stats.file, 'utf8'));
     assert(raw.schemaVersion, '应当带 schemaVersion，便于以后迁移');
   } finally {
@@ -277,8 +308,8 @@ test('用户数据文件损坏时降级成空，且不吞掉用户已有数据',
     eq(store.items, {}, '坏文件应当降级成空');
 
     // 再写一次应当能正常覆盖，不抛异常
-    const r = toggleUserMark('like', 'y', true);
-    eq(r.liked, true);
+    const r = toggleUserMark('favorite', 'y', true);
+    eq(r.favorited, true);
   } finally {
     if (saved === undefined) delete process.env.DSH_HOME; else process.env.DSH_HOME = saved;
     fs.rmSync(tmp, { recursive: true, force: true });
@@ -304,98 +335,44 @@ test('非法 id 会被拒绝，不会把垃圾写进文件', () => {
   }
 });
 
-suite('catalog / 三层视图合并（问题 4）');
+suite('catalog / 平铺列表与筛选（0.5.0）');
 
-test('★ 同一个包出现在多层时只保留一条，且保留的是层级更高的那条', () => {
-  const layers = {
-    verified: [
-      normalizeEntry({ id: 'dsh-memory', package: 'dsh-memory', version: '0.1.0', title: '记忆', install: { kind: 'local-tarball', tarball: 'x.tgz' } }, 'verified'),
-    ],
-    reviewed: [],
-    community: [
-      normalizeEntry({ id: 'dsh-memory', package: 'dsh-memory', name: 'dsh-memory', stars: 42, title: '记忆（公共）' }, 'community'),
-    ],
-  };
-  const { merged, shadowed } = mergeEntries(layers);
-  eq(merged.length, 1, '★ 同一个包名只应出现一条 —— 否则用户会看到两个一模一样的插件');
-  eq(merged[0].tier, 'verified', '应当保留层级更高的那条（那是我们验证过的说法）');
-  eq(merged[0].stars, 42, '被合并条目的展示信息（star 数）应当补过来');
-  eq(shadowed.size, 1, '被合并掉的副本要留档，详情页可以如实展示');
+test('★ 0.5.0：目录里不再有信任分级，条目也不该带 tier', () => {
+  // 这一条钉住的是**删除**：以前 normalizeEntry 会给每条盖上 verified/reviewed/community
+  // 的戳，界面据此显示角标、筛选、并决定要不要强制风险确认。现在整套没了 ——
+  // 如果有人（或某个还没改完的采集路径）把 tier 塞回索引，这里会红。
+  const e = normalizeEntry({
+    id: 'x/y', package: 'y', slug: 'x__y', tier: 'verified', tierLabel: '已验证',
+    reviewStatus: { id: 'verified' }, review: { reviewedAt: '2026-01-01' },
+    install: { method: 'github', spec: 'github:x/y' },
+  });
+  eq(e.tier, undefined, '条目上不该再有 tier');
+  eq(e.tierLabel, undefined, '条目上不该再有 tierLabel');
+  eq(e.reviewStatus, undefined, '条目上不该再有 reviewStatus');
+  eq(e.review, undefined, '条目上不该再有 review（审核证据已拍平进 notes）');
+  eq(e.install.method, 'github', '但安装信息必须完好');
 });
 
-test('合并后的计数与列表条数一致（顶部数字不能对不上）', () => {
-  const layers = {
-    verified: [
-      normalizeEntry({ id: 'a', package: 'a', install: {} }, 'verified'),
-      normalizeEntry({ id: 'b', package: 'b', install: {} }, 'verified'),
-    ],
-    reviewed: [normalizeEntry({ id: 'c', package: 'c', install: {} }, 'reviewed')],
-    community: [
-      // a 在公共索引里也有副本 —— 正是真实情况（dsh-memory / @dsh-market/plugin）
-      normalizeEntry({ id: 'a', package: 'a', install: {} }, 'community'),
-      normalizeEntry({ id: 'd', package: 'd', install: {} }, 'community'),
-    ],
-  };
-  const counts = mergedCounts(layers);
-  eq(counts.total, 4, 'a / b / c / d 四条');
-  eq(counts.reviewed, 3, 'a b c 都是已审核口径（verified + reviewed）');
-  eq(counts.unreviewed, 1, '只有 d 是未审核');
-  eq(counts.reviewed + counts.unreviewed, counts.total, '两个数字必须加起来等于总数');
-});
-
-test('★ 回归：层传裸数组时不能静默丢掉整层', () => {
-  // 真实事故形态：verified/reviewed 层是 { plugins: [...] }，社区层是裸数组。
-  // 早先的实现只认 `layers.verified?.plugins`，传裸数组时静默返回空 ——
-  // 结果**整整一层凭空消失**，而列表看起来完全正常（还有社区层撑着），
-  // 只是数量对不上、层级标签全变成「未审核」。静默丢数据比抛错难查得多。
-  const asObjects = {
-    verified: [normalizeEntry({ id: 'v1', package: 'v1', install: {} }, 'verified')],
-    reviewed: [normalizeEntry({ id: 'r1', package: 'r1', install: {} }, 'reviewed')],
-    community: [normalizeEntry({ id: 'c1', package: 'c1', install: {} }, 'community')],
-  };
-  const asWrapped = {
-    verified: { plugins: [normalizeEntry({ id: 'v1', package: 'v1', install: {} }, 'verified')] },
-    reviewed: { plugins: [normalizeEntry({ id: 'r1', package: 'r1', install: {} }, 'reviewed')] },
-    community: [normalizeEntry({ id: 'c1', package: 'c1', install: {} }, 'community')],
-  };
-
-  for (const [label, layers] of [['裸数组', asObjects], ['包装对象', asWrapped]]) {
-    const counts = mergedCounts(layers);
-    eq(counts.total, 3, `${label}：三层各一条，合并后应当仍是 3 条`);
-    eq(counts.verified, 1, `${label}：已验证层不能丢`);
-    eq(counts.reviewedTier, 1, `${label}：已审核层不能丢`);
-    eq(counts.community, 1, `${label}：未审核层不能丢`);
-  }
-});
-
-test('审核状态标签：已验证与已审核都算「已审核」，未审核不是', () => {
-  eq(reviewStatusOf('verified').reviewed, true);
-  eq(reviewStatusOf('reviewed').reviewed, true);
-  eq(reviewStatusOf('community').reviewed, false);
-  eq(reviewStatusOf('verified').label, '已验证');
-  eq(reviewStatusOf('community').label, '未审核');
-});
-
-test('筛选器按审核状态与用户标记过滤', () => {
+test('筛选器只剩「我收藏的 / 已安装 / 可升级」', () => {
   const entries = [
-    { ...normalizeEntry({ id: 'a', package: 'a', install: {} }, 'verified'), },
-    { ...normalizeEntry({ id: 'b', package: 'b', install: {} }, 'community') },
+    normalizeEntry({ id: 'a', package: 'a', install: {} }),
+    normalizeEntry({ id: 'b', package: 'b', install: {} }),
   ];
-  entries[0].liked = true;
-  entries[1].favorited = true;
-  const marks = { a: { liked: true }, b: { favorited: true } };
+  const marks = { a: { favorited: true }, b: { liked: true } };
 
-  eq(searchCatalog(entries, { review: 'reviewed' }).total, 1);
-  eq(searchCatalog(entries, { review: 'unreviewed' }).total, 1);
-  eq(searchCatalog(entries, { only: 'liked', marks }).total, 1);
+  // ★ 老数据里只有 liked 的条目**不算收藏** —— 点赞功能已删除，
+  //   不能让它变相活在「我收藏的」筛选里。
   eq(searchCatalog(entries, { only: 'favorited', marks }).total, 1);
+  eq(searchCatalog(entries, { only: 'favorited', marks }).items[0].id, 'a');
+  // 旧的 only=liked 参数不再被识别（服务端已经不再传它），当作没有筛选
+  eq(searchCatalog(entries, { only: 'liked', marks }).total, 2);
   eq(searchCatalog(entries, {}).total, 2, '不带筛选时全部返回');
 });
 
 test('「可升级」筛选只看真正有新版的那几条', () => {
   const entries = [
-    normalizeEntry({ id: 'a', package: 'a', install: {} }, 'verified'),
-    normalizeEntry({ id: 'b', package: 'b', install: {} }, 'verified'),
+    normalizeEntry({ id: 'a', package: 'a', install: {} }),
+    normalizeEntry({ id: 'b', package: 'b', install: {} }),
   ];
   const installed = new Map([
     ['a', { installed: true, status: 'upgradable' }],
@@ -403,6 +380,16 @@ test('「可升级」筛选只看真正有新版的那几条', () => {
   ]);
   eq(searchCatalog(entries, { only: 'upgradable', installed }).total, 1);
   eq(searchCatalog(entries, { only: 'installed', installed }).total, 2);
+});
+
+test('无关键词时按 star 数排序（层级加权已随分级一起去掉）', () => {
+  const entries = [
+    normalizeEntry({ id: 'low', package: 'low', stars: 1, install: {} }),
+    normalizeEntry({ id: 'high', package: 'high', stars: 999, install: {} }),
+    normalizeEntry({ id: 'mid', package: 'mid', stars: 50, install: {} }),
+  ];
+  const { items } = searchCatalog(entries, {});
+  eq(items.map((e) => e.id), ['high', 'mid', 'low']);
 });
 
 suite('state / 版本比较的边界');

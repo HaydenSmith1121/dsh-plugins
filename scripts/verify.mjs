@@ -95,7 +95,7 @@ let bootstrapInCatalog = false;
 try {
   const index = JSON.parse(fs.readFileSync(path.join(REPO_ROOT, 'catalog', 'index.json'), 'utf8'));
   bootstrapInCatalog = (index.plugins ?? []).some(
-    (p) => p.tier === 'verified' && (p.package === BOOTSTRAP_PACKAGE || p.id === BOOTSTRAP_PACKAGE),
+    (p) => p.installMethod === 'tarball' && (p.package === BOOTSTRAP_PACKAGE || p.id === BOOTSTRAP_PACKAGE),
   );
 } catch {
   bootstrapInCatalog = false;

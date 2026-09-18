@@ -10,7 +10,7 @@
 |---|---|---|
 | ★★★ | **补齐新 dsh 版本的适配结论** | dsh 迭代很快，仓库最容易过时的地方就是这里。见[第五节](#add-runtime) |
 | ★★ | **修正采集结果与兼容信息** | 某个配置文件的版本 / star / 安装方法不对，或 `compatibility.json`、版本矩阵有错 |
-| ★★ | **把第三方插件收进「已审核」层** | 真机装一次、留下证据。见[第四节 B](#review-flow) |
+| ★★ | **给第三方插件补一份实测记录** | 真机装一次、留下证据。见[第四节 B](#review-flow) |
 | ★ | **改进采集脚本、市场面板与文档** | `scripts/sync-catalog.mjs`、`plugins-src/dsh-plugins-market/`、`docs/` |
 
 **没把握就先开 Issue 问，不要卡在自己猜。**
@@ -43,16 +43,22 @@ curl -fsSL https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/sc
    其余插件请提到集合仓库，见[第四节 A](#add-plugin)。
 2. **`catalog/plugins/*.json` 与 `catalog/index.json` 是生成物，不要手写**：
    `node scripts/sync-catalog.mjs` 生成，CI 的 `--check` 逐字节比对。
-3. **只有 `catalog/overrides/*.json` 需要人写**：`reviewed.json`（已审核层 + 审核证据）与
-   `self.json`（市场插件自己那一行）。
+3. **只有 `catalog/overrides/*.json` 需要人写**：`curated.json`（人工核对过的第三方条目）
+   与 `self.json`（市场插件自己那一行）。
 
-三个信任层级现在都是**每份配置文件上的一个字段** `tier`：
+**目录不分级**（0.5.0 起）—— 曾经有三个信任层级（`verified` / `reviewed` / `community`），
+现在是**一份平铺列表**，每条记录按**来源**决定优先级：
 
-| 层级 | 谁维护 | 怎么进目录 |
+| 来源 `source.kind` | 谁维护 | 怎么进目录 |
 |---|---|---|
-| **已验证** `verified` | 插件集合仓库 | 那边放 tarball + 改 `plugins/<id>/plugin.json` + `node scripts/build-manifest.mjs`；本仓库下一轮每日采集自动跟随 |
-| **已审核** `reviewed` | 维护者人工审核 | 跑 `node scripts/market-review.mjs <owner/repo>` 产出草稿 → 真机验证 → 写进 `catalog/overrides/reviewed.json` → `node scripts/sync-catalog.mjs`。见[第四节 B](#review-flow) |
-| **未审核** `community` | 公开索引自动同步 | 无需贡献；由采集脚本写入，界面上一律提示风险 |
+| `self` | 本仓库 | 市场插件自己那一行；版本与 sha256 从源码 / 构建产物反推。改 `catalog/overrides/self.json` |
+| `collection` | 插件集合仓库 | 那边放 tarball + 改 `plugins/<id>/plugin.json` + `node scripts/build-manifest.mjs`；本仓库下一轮每日采集自动跟随 |
+| `manual` | 维护者人工核对 | 跑 `node scripts/market-review.mjs <owner/repo>` 产出草稿 → 真机验证 → 写进 `catalog/overrides/curated.json` → `node scripts/sync-catalog.mjs`。见[第四节 B](#review-flow) |
+| `public-index` | 公开索引自动同步 | 无需贡献；由采集脚本写入 |
+
+> 为什么要去掉分级、以及现在怎么判断「装不装得上」，见
+> [README 的「不分级的目录」](./README.md#tiers)。一句话：装不装得上由**装前检查**当场判，
+> 不由标签预先判。
 
 ---
 
@@ -128,8 +134,8 @@ node scripts/verify.mjs      # 四步校验，第 ④ 步会真实启动一次
 | **上游仓库** `repo` | 第三方必须给出 URL；确实无法定位就写「**无法定位**」 |
 | **许可** `license` | 按 `package.json` 的 `license` 字段填；没有就写「**未声明**」 |
 
-对「已审核」层，来源与核实过程写进 `catalog/overrides/reviewed.json` 对应条目的
-`review.evidence`（记**验证时的 commit**）与 `review.notes`。
+对人工核对过的条目，来源与核实过程写进 `catalog/overrides/curated.json` 对应条目的
+`evidence`（记**验证时的 commit**）与 `notes`。
 
 ### 怎么核实来源（按可信度排序）
 
@@ -224,22 +230,25 @@ tar -tzf "$tgz" | grep -E 'node_modules|\.env'   # 应为空
 
 <a name="review-flow"></a>
 
-### B. 第三方插件 → 收进「已审核」层
+### B. 第三方插件 → 补一份实测记录
 
-**本仓库的职责就是这一条。** 收录门槛是「真机验证过 + 留下证据」，静态探测替代不了。
+**本仓库的职责就是这一条。** 门槛是「真机验证过 + 留下证据」，静态探测替代不了。
+
+> ★ 它**不会**把插件提升成什么层级 —— 分级已经没有了。补的是一份**事实记录**：
+> 干净的安装规格、peer 结论、当时怎么验的。这些东西公开索引里查不到。
 
 ```bash
 # ① 探测候选包，产出一份草稿（别凭印象手写）
 node scripts/market-review.mjs <owner/repo | npm 包名 | 插件 id>
-node scripts/market-review.mjs <owner/repo | npm 包名 | 插件 id> --write   # 直接追加进 overrides/reviewed.json
+node scripts/market-review.mjs <owner/repo | npm 包名 | 插件 id> --write   # 直接追加进 overrides/curated.json
 
 # ② 在隔离环境真机装一次并启动（DSH_HOME=~/.dsh-dev，日常 3080 不受影响）
 node scripts/dev-env.mjs install <tarball 或先 dsh plugin --profile web add <spec>>
 node scripts/dev-env.mjs web
 node scripts/dev-env.mjs doctor
 
-# ③ 复核并补全草稿：review.* 与 peer* 字段一个都不能留 null
-#    （review.reviewedAt / review.dshVersion / review.verdict 必填）
+# ③ 复核并补全草稿：notes / evidence / peer* 字段一个都不能留 null
+#    （evidence 必须写清环境与判据 —— 「装上了」不算，要写退出码与装配树里的那一行）
 
 # ④ 重新生成目录（必须！）
 node scripts/sync-catalog.mjs
@@ -248,9 +257,9 @@ node scripts/sync-catalog.mjs
 node scripts/sync-catalog.mjs --check
 ```
 
-收录一条的**最低要求（缺一不可）**、`review.verdict` 的三个取值与「本层不分发字节」的
-含义，见 [`docs/目录同步.md` §七](./docs/目录同步.md#add-reviewed) 与
-`catalog/overrides/reviewed.json` 顶部的 `_comment`。
+核对一条的**最低要求（缺一不可）**、「不分发字节」的含义与结论怎么写，
+见 [`docs/目录同步.md` §七](./docs/目录同步.md#add-reviewed) 与
+`catalog/overrides/curated.json` 顶部的 `_comment`。
 
 <a name="market-version"></a>
 
@@ -356,8 +365,8 @@ cd plugins-src/dsh-plugins-market && node test/run.mjs
 - [ ] `node scripts/sync-catalog.mjs --check` 通过
 - [ ] `catalog/plugins/*.json` 与 `catalog/index.json` **没有手工编辑痕迹**
       （字段顺序、缩进、时间戳都由脚本决定）
-- [ ] 新收录的「已审核」条目里，`review.reviewedAt` / `review.dshVersion` / `review.verdict`
-      三项已填，`review.evidence` 说清了环境、装法与验证结论
+- [ ] 新补的实测记录里 `curatedAt` 已填，`evidence` 说清了环境、装法与验证结论，
+      `notes` 写清了结论（可用 / 可用但有注意事项 / 不可用）
 - [ ] **第三方插件已标注原作者与上游仓库**；查不到就明确写「未注明」并说明核实过程
 - [ ] 该插件确实走 `github:` / npm 规格安装 —— **本仓库不再分发第三方插件的字节**
 
@@ -391,7 +400,7 @@ cd plugins-src/dsh-plugins-market && node test/run.mjs
 - 本仓库**自身的**代码与文档：MIT
 - **第三方插件的版权归各自原作者所有。** 自 0.4.0（市场与插件分离）起，本仓库
   **不再分发**第三方插件的字节，也不重新打包自研插件：目录里只记录元数据与安装方法
-- 把第三方插件收进「已审核」层**不涉及再分发**（用户从上游装），但仍请确认该插件
+- 给第三方插件补实测记录**不涉及再分发**（用户从上游装），但仍请确认该插件
   的许可允许它被这样索引与推荐；无许可声明或明确禁止分发的项目请不要提交
 - 如你是某个插件的原作者，希望本仓库移除或调整收录方式，
   请开 Issue 或直接联系，我们会立即处理

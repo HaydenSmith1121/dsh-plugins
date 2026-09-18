@@ -212,7 +212,7 @@ export function installedOverview(profile, env = process.env, entries = []) {
     // 同名的多条（公共索引里常见）取「最能说明问题」的那条
     const prev = byPackage.get(name);
     if (!prev || rankState(st) > rankState(prev)) {
-      byPackage.set(name, { ...st, entryId: entry.id, tier: entry.tier });
+      byPackage.set(name, { ...st, entryId: entry.id });
     }
   }
   return installed.map((i) => {
@@ -305,35 +305,38 @@ function normalizeKey(id) {
 }
 
 /**
- * 切换点赞 / 收藏。
+ * 切换收藏。
  *
- * @param {'like'|'favorite'} action
+ * ★ 0.5.0 删掉了点赞。它和收藏在数据形状上一模一样，区别只是「一个数字大一点好看」
+ *   —— 而这个数字**只统计你自己点过的**（本插件没有后端，没有别人的赞可看）。
+ *   一个只有自己看得见、含义又与收藏重复的按钮，纯粹是界面噪音。
+ *   收藏留着：它有实际用处（「我收藏的」筛选，找得回装过/想装的插件）。
+ *
+ * ★ 历史数据不删：老用户落盘过 `liked: true` 的条目原样留在文件里，
+ *   只是不再读它、也不再展示。主动删用户的数据文件比留着一个没用的键更糟。
+ *
+ * @param {'favorite'} action
  * @param {string} id
  * @param {boolean|undefined} desired 给定值则设为该值（幂等），不给则反转
  */
 export function toggleUserMark(action, id, desired, env = process.env) {
-  const field = action === 'like' ? 'liked' : action === 'favorite' ? 'favorited' : null;
-  if (!field) throw new Error(`未知的用户标记：${action}`);
+  if (action !== 'favorite') throw new Error(`未知的用户标记：${action}（只支持 favorite）`);
   const key = normalizeKey(id);
   if (!key) throw new Error('缺少插件 id');
 
   const store = readUserData(env);
   const prev = store.items[key] ?? {};
-  const next = desired === undefined ? !prev[field] : Boolean(desired);
+  const next = desired === undefined ? !prev.favorited : Boolean(desired);
 
-  const item = { ...prev, [field]: next };
-  // 两个标记都归零时把这一条删掉，文件不会随着浏览历史无限膨胀
-  if (!item.liked && !item.favorited) delete store.items[key];
-  else {
-    item.updatedAt = new Date().toISOString();
-    store.items[key] = item;
-  }
+  // 取消收藏时把这一条删掉（历史遗留的 liked 一并带走），文件不会随浏览历史无限膨胀
+  if (!next) delete store.items[key];
+  else store.items[key] = { ...prev, favorited: true, updatedAt: new Date().toISOString() };
 
   const saved = writeUserData(store, env);
-  return { id: key, liked: Boolean(item.liked), favorited: Boolean(item.favorited), updatedAt: saved.updatedAt };
+  return { id: key, favorited: Boolean(store.items[key]?.favorited), updatedAt: saved.updatedAt };
 }
 
-/** 汇总：{ [id]: { liked, favorited, updatedAt } } */
+/** 汇总：{ [id]: { favorited, updatedAt } } */
 export function userMarks(env = process.env) {
   return readUserData(env).items;
 }
@@ -343,7 +346,7 @@ export function attachMarks(entries, env = process.env) {
   const marks = userMarks(env);
   return entries.map((e) => {
     const m = marks[e.id] ?? null;
-    return { ...e, liked: Boolean(m?.liked), favorited: Boolean(m?.favorited) };
+    return { ...e, favorited: Boolean(m?.favorited) };
   });
 }
 
@@ -352,7 +355,6 @@ export function userDataStats(env = process.env) {
   const items = Object.values(store.items);
   return {
     file: userDataFile(env),
-    liked: items.filter((i) => i.liked).length,
     favorited: items.filter((i) => i.favorited).length,
     updatedAt: store.updatedAt,
   };

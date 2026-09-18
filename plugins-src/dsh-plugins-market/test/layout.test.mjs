@@ -29,7 +29,7 @@ test('pluginDir() 在打包布局下指向包根', async () => {
 test('包内资源在打包布局下都读得到', async () => {
   const { pluginDir } = await importBuilt('lib/util.js');
   const dir = pluginDir();
-  // 包内只放**离线兜底目录**：派生索引 + tier=verified 的逐条配置文件。
+  // 包内只放**离线兜底目录**：派生索引 + 字节由本仓库托管的那几条的逐条配置文件。
   // 完整目录（7000+ 条）不进包 —— 那会让每次目录变化都必须重打市场包。
   for (const rel of [
     'catalog/index.json',
@@ -73,10 +73,14 @@ test('包内兜底目录含本插件自己，且逐条配置齐备', async () =>
   assert(idx.available, `包内目录不可用：${idx.error}`);
 
   // 刻意不写死数字：仓库会继续加插件。
-  // 不变量是「包内兜底目录 == tier=verified 的那些」，而且市场自己必须在内。
+  // 不变量是「包内兜底目录 == 字节由本仓库托管的那几条（install.method=tarball）」，
+  // 而且市场自己必须在内。
   assert(idx.entries.length > 0, '包内兜底目录不能是空的');
   for (const p of idx.entries) {
-    eq(p.tier, 'verified', `${p.id} 出现在包内兜底目录里就必须是 verified 层`);
+    // ★ 0.5.0：判据从 `tier === 'verified'` 换成「字节由本仓库托管」。
+    //   信任分级没了，但这批条目一个都不能少 —— 它们是**离线时唯一装得上**的东西。
+    eq(p.install.method, 'tarball', `${p.id} 出现在包内兜底目录里，安装方法就必须是 tarball`);
+    eq(p.tier, undefined, `${p.id} 不该再有 tier 字段（信任分级已在 0.5.0 移除）`);
     assert(p.slug, `${p.id} 缺少 slug —— 没有它就读不到这个插件的配置文件`);
     assert(p.summary, `${p.id} 缺少展示用的简介`);
   }

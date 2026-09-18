@@ -23,11 +23,15 @@
  *
  * ── 数据从哪来（四路合并，优先级从高到低）───────────────────────
  *
- *   1. catalog/overrides/reviewed.json   人工审核过的第三方插件（带审核证据）
+ *   1. catalog/overrides/self.json      市场插件自己（唯一由本仓库托管 tarball 的插件）
  *   2. 插件集合仓库的 manifest.json       本仓库自己维护、托管 tarball 的插件
- *   3. 公开索引 plugins.json              社区插件（默认层级）
- *   4. 已有的 catalog/plugins/*.json      上一轮的结果 —— 人工审核结论、首次发现时间、
- *                                         collection 的安装信息都靠它传承，**绝不能被覆盖掉**
+ *   3. catalog/overrides/curated.json    人工核对过的第三方条目（安装规格 / peer 结论 / 实测记录）
+ *   4. 公开索引 plugins.json              其余插件
+ *
+ *   ★ 同一 slug 只保留**优先级最高**的那一条。0.5.0 之前这里按 tier 分档
+ *     （verified > reviewed > community），现在直接按来源判 —— 优先级就是上面这个顺序，
+ *     它表达的是「谁对这个插件知道得更多」，而不是「谁更可信」：
+ *     目录里已经没有信任分级这回事了（见 catalog-format.mjs 的说明）。
  *
  * ── 三条硬规矩 ────────────────────────────────────────────────
  *
@@ -35,8 +39,8 @@
  *     7000 个文件会天天全部显示为「已修改」，真正的变更就被噪音淹没了。
  *   · **拿不到就是 null**。版本号解析不出来时写 `versionSource: "none"`，
  *     而不是拿 star 数或别的东西凑一个看起来像版本的字符串。
- *   · **人工审核结论只增不减**。review 字段只能由 overrides 文件产生，
- *     采集器不会去改它，也不会因为上游改了简介就把它冲掉。
+ *   · **人工写下的东西只增不减**。curated 里的安装规格与实测记录只能由那个文件产生，
+ *     采集器不会因为上游改了简介就把它冲掉；来源这一轮缺失时，从上一轮接住而不是丢掉。
  */
 
 import fs from 'node:fs';
@@ -44,7 +48,7 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import {
-  SCHEMA_VERSION, TIERS, INSTALL_METHODS,
+  SCHEMA_VERSION, INSTALL_METHODS,
   PLUGINS_DIR_REL, INDEX_REL,
   slugify, extractCleanSpec, githubSlug, looksLikeNpmName,
   blankRecord, normalizeRecord, serializeRecord, contentEquals,
@@ -217,14 +221,14 @@ async function loadCollection() {
 // 合并：把四路输入变成一组记录
 // ─────────────────────────────────────────────────────────────
 
-/** 公开索引的一条 → 记录（tier 默认 community，可被 overrides 提升） */
+/** 公开索引的一条 → 记录（优先级最低的一路；同 slug 会被上面的来源压过） */
 function recordFromIndexEntry(p) {
   const id = String(p.id ?? p.fullName ?? p.name ?? '').trim();
   if (id === '') return null;
 
   const repo = p.fullName ? `https://github.com/${p.fullName}` : null;
   const inst = p.install ?? {};
-  const rec = blankRecord({ id, tier: 'community' });
+  const rec = blankRecord({ id });
 
   rec.package = null;
   rec.name = p.name ?? null;
@@ -267,11 +271,11 @@ function recordFromIndexEntry(p) {
   return rec;
 }
 
-/** 插件集合仓库 manifest 的一条 → 记录（tier=verified，安装方法固定是 tarball） */
+/** 插件集合仓库 manifest 的一条 → 记录（安装方法固定是 tarball） */
 function recordFromCollectionEntry(p) {
   const id = String(p.package ?? p.id ?? '').trim();
   if (id === '') return null;
-  const rec = blankRecord({ id, tier: 'verified' });
+  const rec = blankRecord({ id });
   rec.package = p.package ?? id;
   rec.name = rec.package;
   rec.title = p.title ?? rec.package;
@@ -310,11 +314,21 @@ function recordFromCollectionEntry(p) {
   return rec;
 }
 
-/** overrides/reviewed.json 的一条 → 记录（tier=reviewed，带审核证据） */
-function recordFromReviewed(o) {
+/**
+ * overrides/curated.json 的一条 → 记录。
+ *
+ * ★ 这个文件以前叫 `reviewed.json`，是「人工审核层」，条目上带 `review` 块并因此拿到
+ *   一个更高的信任层级。0.5.0 去掉信任分级之后，它换了个身份但**内容没有贬值**：
+ *   它记的是**公开索引里查不到的事实** —— 干净的安装规格、peer 约束与实测结论、
+ *   以及当时怎么验的。这些东西只能靠人装一遍才知道，扔了就只能重新踩一遍坑。
+ *
+ *   所以：`review` 块拆掉（分级语义随之消失），但里面的 `evidence` / `notes`
+ *   合并进条目的 `notes` —— 它在界面上只在**详情页**出现，不会糊在卡片上。
+ */
+function recordFromCurated(o) {
   const id = String(o.id ?? o.package ?? '').trim();
   if (id === '') return null;
-  const rec = blankRecord({ id, tier: 'reviewed' });
+  const rec = blankRecord({ id });
   rec.package = o.package ?? null;
   rec.name = o.package ?? o.name ?? null;
   rec.title = o.title ?? o.package ?? id;
@@ -334,18 +348,28 @@ function recordFromReviewed(o) {
     sha256: o.install?.sha256 ?? null,
     bytes: null,
     tarball: null,
-    dshVersion: o.review?.dshVersion ?? null,
+    dshVersion: o.install?.dshVersion ?? null,
     needsConfig: o.install?.needsConfig === true,
     usageNeedsConfig: o.install?.usageNeedsConfig === true,
     risky: o.install?.risky === true,
     riskyReasons: [],
   };
-  rec.source = { kind: 'manual', url: `${PUBLIC_INDEX_URL}`, firstSeenAt: null, lastSyncedAt: null };
-  rec.review = o.review ?? null;
+  rec.source = { kind: 'manual', url: `${REPO_RAW_BASE}/catalog/overrides/curated.json`, firstSeenAt: null, lastSyncedAt: null };
   rec.peerRuntimePin = o.peerRuntimePin ?? null;
   rec.peerVerdict = o.peerVerdict ?? null;
   rec.peerNote = o.peerNote ?? null;
+  rec.notes = mergeCuratedNotes(o);
   return rec;
+}
+
+/** 把 curated 条目里的实测记录拼成一段 notes（没有就返回原有的 notes） */
+function mergeCuratedNotes(o) {
+  const parts = [];
+  if (o.notes) parts.push(String(o.notes));
+  const ev = o.evidence ?? null;
+  if (ev) parts.push(`── 实测记录 ──\n${String(ev)}`);
+  if (o.migratedFrom) parts.push(`── 来源变更 ──\n${String(o.migratedFrom)}`);
+  return parts.length ? parts.join('\n\n') : null;
 }
 
 /** overrides/self.json 的一条 → 记录（市场插件自己；版本与 sha256 从本仓库反推） */
@@ -370,7 +394,7 @@ function recordFromSelf(o, { dshVersion }) {
     bytes = buf.length;
   }
 
-  const rec = blankRecord({ id, tier: 'verified' });
+  const rec = blankRecord({ id });
   rec.package = id;
   rec.name = id;
   rec.title = o.title ?? id;
@@ -613,7 +637,7 @@ function rebuildIndexFromDisk(existing) {
   writeJsonAtomic(path.join(REPO, INDEX_REL), idx);
 
   ok(`--offline：把 ${written} 个配置文件归一化后落盘（共 ${records.length} 个）`);
-  ok(`索引已重建：${idx.counts.total} 条（已验证 ${idx.counts.verified} / 已审核 ${idx.counts.reviewed} / 未审核 ${idx.counts.community}）`);
+  ok(`索引已重建：${idx.counts.total} 条（一份配置 = 一条记录）`);
   console.log('  （没有联网 —— 这不等于「刷新目录」，上游有没有新版要跑不带参数的那条命令）');
   process.exit(0);
 }
@@ -649,11 +673,11 @@ async function main() {
 // ─────────────────────────────────────────────────────────────
 
 async function collect(existing) {
-  // ① overrides（人工审核层）
-  const reviewedFile = path.join(REPO, 'catalog', 'overrides', 'reviewed.json');
-  const reviewedDoc = readJsonSafe(reviewedFile) ?? { plugins: [] };
-  const reviewedRecords = (reviewedDoc.plugins ?? []).map(recordFromReviewed).filter(Boolean);
-  log(`→ 人工审核层：${reviewedRecords.length} 条`);
+  // ① 人工核对过的第三方条目（安装规格 / peer 结论 / 实测记录）
+  const curatedFile = path.join(REPO, 'catalog', 'overrides', 'curated.json');
+  const curatedDoc = readJsonSafe(curatedFile) ?? { plugins: [] };
+  const curatedRecords = (curatedDoc.plugins ?? []).map(recordFromCurated).filter(Boolean);
+  log(`→ 人工核对层：${curatedRecords.length} 条`);
 
   // ①b 市场插件自己（唯一由本仓库托管 tarball 的插件）
   const selfFile = path.join(REPO, 'catalog', 'overrides', 'self.json');
@@ -677,20 +701,29 @@ async function collect(existing) {
 
   // ── 合成记录表 ────────────────────────────────────────────
   //
-  // 后写的层**不覆盖**先写的层（层级从高到低）：同一插件既被人工审核、
-  // 又出现在公开索引里时，保留审核过的那一条（带 review 证据）。
+  // 同一 slug 只保留**优先级最高**的那一条 —— 优先级表达的是「谁对这个插件知道得更多」：
+  //   市场自己（版本/sha256 从本仓库反推，最准）
+  //   > 集合仓库（托管 tarball、按 dsh 版本实测过）
+  //   > 人工核对过的第三方条目（安装规格与 peer 结论只有它有）
+  //   > 公开索引（其余全部，字段最粗）
+  //
+  // ★ 这与 0.5.0 之前的 tier 排序**结果一致**（verified > reviewed > community），
+  //   但判据换成了来源本身 —— 因为「谁更可信」这个分级已经没有意义了，
+  //   剩下的只是一个更朴素的问题：这几路数据里，哪一路对这条记录知道得更多。
   const bySlug = new Map();
-  const rank = { verified: 0, reviewed: 1, community: 2 };
+  const PRIORITY = { self: 0, collection: 1, manual: 2, 'public-index': 3 };
   const put = (rec) => {
     if (!rec) return;
     rec.slug = slugify(rec.id);
     const prev = bySlug.get(rec.slug);
-    if (!prev || (rank[rec.tier] ?? 3) < (rank[prev.tier] ?? 3)) bySlug.set(rec.slug, rec);
+    const mine = PRIORITY[rec.source?.kind] ?? 9;
+    const theirs = prev ? (PRIORITY[prev.source?.kind] ?? 9) : Infinity;
+    if (!prev || mine < theirs) bySlug.set(rec.slug, rec);
   };
   for (const r of indexRecords) put(r);
   for (const r of collectionRecords) put(r);
   for (const r of selfRecords) put(r);
-  for (const r of reviewedRecords) put(r);
+  for (const r of curatedRecords) put(r);
 
   // ── 传承上一轮的结果 ──────────────────────────────────────
   let carried = 0;
@@ -702,14 +735,28 @@ async function collect(existing) {
     rec.source.lastSyncedAt = prev.source?.lastSyncedAt ?? null;
     rec.versionCheckedAt = prev.versionCheckedAt ?? null;
     rec.metricsCheckedAt = prev.metricsCheckedAt ?? null;
-    // 人工审核结论与 collection 安装信息**只由它们各自的来源产生**，
-    // 采集器不碰。这里只在来源本轮缺失时把上一轮的结论接住，避免闪断丢证据。
-    if (rec.review === null && prev.review !== null && rec.tier !== 'community') rec.review = prev.review;
-    if (rec.tier === 'verified' && !rec.install.url && prev.install?.url) rec.install = prev.install;
-    // 上一轮找到过的 npm 包名：这一轮如果安装方法仍是 npm，沿用它的 spec
-    if (rec.install.method === 'npm' && !rec.install.spec && prev.install?.method === 'npm') {
+    /**
+     * ★ 上一轮**解析出来**的字段必须接住 —— 否则 `--only` 会把它们抹掉。
+     *
+     *   实测事故：跑 `--only dsh-plugins-market`（只想改自己那一条），结果
+     *   **6246 个**公共索引条目的 `package` 从真包名变成了 null。
+     *   原因：包名只可能来自 npm **同源校验**（公开索引里的 name 是仓库名，
+     *   跟 npm 包名没有保证关系，见 decideInstall），而 `--only` 只对选中的那一条
+     *   做解析，其余条目的解析结果本该「沿用上一轮」—— 但这里只接住了时间戳与
+     *   安装规格，没接包名。抹掉的后果是「这个插件明明有 npm 包名，界面上却显示没有」，
+     *   而且要等下一次**完整**采集才会补回来。
+     *
+     *   所以凡是「靠查询才能得到、本轮没查」的字段，都在这里按「缺了才补」接住：
+     *   只填 null，不覆盖本轮真查到的值，因此不会把上游的新事实挡在外面。
+     */
+    if (rec.package === null && prev.package) rec.package = prev.package;
+    if (rec.install.spec === null && prev.install?.spec && rec.install.method === prev.install.method) {
       rec.install.spec = prev.install.spec;
     }
+    // 人工核对过的实测记录与 collection 的安装信息**只由它们各自的来源产生**，
+    // 采集器不碰。这里只在来源本轮缺失时把上一轮的结论接住，避免闪断丢证据。
+    if (rec.notes === null && prev.notes !== null && rec.source.kind !== 'public-index') rec.notes = prev.notes;
+    if (rec.install.method === 'tarball' && !rec.install.url && prev.install?.url) rec.install = prev.install;
   }
   log(`→ 传承上一轮：${carried} 个`);
 
@@ -943,10 +990,12 @@ async function collect(existing) {
     }
   }
 
-  // 消失的条目：community 层直接删（可再生）；带人工结论的一律保留
+  // 消失的条目：来自公开索引的直接删（上游没有它了，而且它随时可再生）；
+  // 其余来源（市场自己 / 集合仓库 / 人工核对）的一律保留 —— 它们承载着别处没有的信息，
+  // 上游索引抖一下不该把它们冲掉。
   for (const [slug, prev] of existing) {
     if (bySlug.has(slug)) continue;
-    if (prev.tier === 'community' && prev.source?.kind === 'public-index') removed.push(slug);
+    if (prev.source?.kind === 'public-index') removed.push(slug);
     else bySlug.set(slug, prev);
   }
 
@@ -993,7 +1042,7 @@ async function collect(existing) {
   writeJsonAtomic(path.join(REPO, INDEX_REL), idx);
 
   ok(`写出 ${written} 个配置文件（共 ${records.length} 个）`);
-  ok(`索引：${idx.counts.total} 条（已验证 ${idx.counts.verified} / 已审核 ${idx.counts.reviewed} / 未审核 ${idx.counts.community}）`);
+  ok(`索引：${idx.counts.total} 条（一份配置 = 一条记录）`);
   if (!OFFLINE) {
     log(`  版本来源：npm ${stats.npm} / GitHub release ${stats.githubRelease} / tag ${stats.githubTag} / package.json ${stats.packageJson} / 取不到 ${stats.none}`);
     if (stats.carried) log(`  本轮没查成、沿用上一轮结果的：${stats.carried}（网络抖动不该改写已知事实）`);
@@ -1017,9 +1066,9 @@ async function collect(existing) {
  * 这两类的共同点：版本号就在本机、就在这次运行的输入里，比任何外部查询都准。
  * 拿 npm / GitHub 的结果去覆盖它们，只会把正确的东西改成错的。
  *
- * ★ 注意 `manual`（人工写进 overrides 的 reviewed 条目）**不在**这一类里。
- *   那些条目的 `version` 记的是「审核时那一版」，而面板要显示的是上游**现在**是
- *   哪一版 —— 两者不是一回事，后者靠采集刷新。审核结论本身记在 review 字段里，
+ * ★ 注意 `manual`（人工写进 overrides 的 curated 条目）**不在**这一类里。
+ *   那些条目的 `version` 记的是「人工核对时那一版」，而面板要显示的是上游**现在**是
+ *   哪一版 —— 两者不是一回事，后者靠采集刷新。核对结论本身记在 notes 与 peerNote 里，
  *   不会被版本刷新动到。
  */
 function isLocallyAuthoritative(rec) {
@@ -1062,6 +1111,6 @@ async function mapLimit(items, limit, fn) {
   await Promise.all(workers);
 }
 
-export { TIERS, SCHEMA_VERSION };
+export { SCHEMA_VERSION };
 
 await main();

@@ -5,7 +5,7 @@
  *
  * 仓库里已经有过一次真实事故 —— 服务端一切正常、四步校验全绿，
  * 但客户端半出错，结果浏览器**白屏**，CLI 侧完全查不出来。
- * 这次改动动的正是界面主体（页签合并、按钮置灰、点赞收藏），
+ * 这次改动动的正是界面主体（页签、按钮置灰、收藏、层级标签的移除），
  * 而「点开插件市场是白屏」是这类改动最典型的翻车方式。
  *
  * 这里做的事情很朴素：用 stub 的 React 把 Panel 渲染一次，然后
@@ -13,7 +13,7 @@
  *   - 它真的渲染出了内容（不是 null / 空树）
  *   - 「已是最新」的插件，它的安装按钮是 disabled 的
  *   - 「可升级」的插件，按钮文案是「更新到 x.y.z」且可点
- *   - 点赞 / 收藏按钮存在，且状态跟着 entry 走
+ *   - 收藏按钮存在，且状态跟着 entry 走
  *   - 三个目录页签已经合并成一个
  *
  * 这不是端到端渲染（没有 react-dom），但足以钉住上面每一条。
@@ -225,11 +225,11 @@ function makeFetchStub(items, extra = {}) {
         env: { dsh: { version: '0.1.6-alpha.1' }, node: { version: '24.14.0' }, pnpm: { version: '12.4.2' } },
         profile: { name: 'web', bundles: [] },
         compat: { dshVersion: '0.1.6-alpha.1', supported: ['0.1.6-alpha.1'] },
-        catalog: { merged: { total: items.length, reviewed: 1, unreviewed: 0, verified: 1, reviewedTier: 0, community: 0 }, tiers: [] },
+        catalog: { counts: { total: items.length }, index: { source: 'remote' } },
         installed: [],
         upgradable: items.filter((i) => i.installState.status === 'upgradable')
           .map((i) => ({ name: i.package, from: i.installState.installedVersion, to: i.installState.target })),
-        userData: { liked: 0, favorited: 0, marks: {} },
+        userData: { favorited: 0, marks: {} },
         backups: [], repo: { detected: true },
         preflight: extra.__preflight ?? { ok: true, problems: [], notices: [] },
         // 服务端会在 status 里带当前安装任务：界面据此在标题栏给「查看进度」入口
@@ -239,9 +239,8 @@ function makeFetchStub(items, extra = {}) {
     if (payload.method === 'catalog') {
       return { ok: true, json: async () => ({ ok: true, result: {
         total: items.length, offset: 0, limit: 24, items,
-        merged: { total: items.length, reviewed: 1, unreviewed: 0, verified: 1, reviewedTier: 0, community: 0 },
-        marks: { liked: 0, favorited: 0 },
-        tiers: [], communityMeta: {}, verifiedAvailable: true,
+        marks: { favorited: 0 },
+        indexMeta: { source: 'remote', counts: { total: items.length } },
       } }) };
     }
     return { ok: true, json: async () => ({ ok: true, result: {} }) };
@@ -250,8 +249,8 @@ function makeFetchStub(items, extra = {}) {
 
 function entryFixture(over) {
   return {
-    id: over.package ?? 'x', package: 'x', title: 'X', tier: 'verified', tierLabel: '已验证',
-    version: '1.0.0', summary: '示例', tags: [], liked: false, favorited: false,
+    id: over.package ?? 'x', package: 'x', title: 'X',
+    version: '1.0.0', summary: '示例', tags: [], favorited: false,
     installState: {
       status: 'not-installed', installed: false, installedVersion: null, target: '1.0.0',
       reason: null, inBundles: false, canInstall: true, canUpgrade: false, action: 'install', isLatest: false,
@@ -412,7 +411,7 @@ test('面板能渲染出内容（不是白屏）', async () => {
   assert(text.includes('插件市场'), `页面上应当有「插件市场」标题，实际文本片段：${text.slice(0, 200)}`);
 });
 
-test('★ 三层视图已合并：只剩一个「插件市场」页签，没有 已验证/已审核/未审核 三个页签', async () => {
+test('★ 只有一个「插件市场」页签，没有层级页签', async () => {
   const tree = await renderPanel([entryFixture({ package: 'a' })]);
   const tabs = findAll(tree, (n) => n.tag === 'button' && String(n.props?.className ?? '').includes('dpm-tab'));
   // tab 的 children 是数组（文案 + 计数），allText 展开后再 trim
@@ -489,7 +488,7 @@ test('★ 未安装的插件：按钮是「安装」且可点（不能被误置�
 
 test('★ 无法判定版本时不能置灰（不能把「算不出来」当成「已是最新」）', async () => {
   const tree = await renderPanel([entryFixture({
-    package: 'some-community-plugin', title: '社区插件', tier: 'community', tierLabel: '未审核',
+    package: 'some-community-plugin', title: '社区插件',
     installState: {
       status: 'unknown', installed: true, installedVersion: '1.2.3', target: null,
       reason: '公共索引条目拿不到「仓库里现在是哪个版本」，无法比较',
@@ -504,42 +503,50 @@ test('★ 无法判定版本时不能置灰（不能把「算不出来」当成�
   assert(typeof btn.props.onClick === 'function', '★ 无法判定版本时必须真的能点');
 });
 
-test('★ 点赞 / 收藏按钮都存在，状态跟着 entry 走（问题 3）', async () => {
+test('★ 只剩「收藏」一个标记按钮，点赞已删除（0.5.0）', async () => {
   const unmarked = await renderPanel([entryFixture({ package: 'p1', title: '插件一' })]);
   // 只有 <button> 才是真按钮：类名同时出现在按钮和它内部的图标 span 上，按类名数会翻倍
   let marks = findAll(unmarked, (n) => n.tag === 'button' && String(n.props?.className ?? '').includes('dpm-mark'));
-  eq(marks.length, 2, '每张卡片应当有「点赞」和「收藏」两个按钮');
-  eq(marks.filter((m) => m.props['data-on']).length, 0, '没点过时两个都不该是高亮态');
-  assert(allText(unmarked).includes('点赞'), '应当有「点赞」文案');
+  eq(marks.length, 1, '每张卡片应当只有「收藏」一个标记按钮');
+  eq(marks.filter((m) => m.props['data-on']).length, 0, '没收藏时不该是高亮态');
   assert(allText(unmarked).includes('收藏'), '应当有「收藏」文案');
+  eq(allText(unmarked).includes('点赞'), false, '★ 点赞按钮与文案都不该再出现');
 
-  const marked = await renderPanel([entryFixture({ package: 'p2', title: '插件二', liked: true, favorited: true })]);
+  const marked = await renderPanel([entryFixture({ package: 'p2', title: '插件二', favorited: true })]);
   marks = findAll(marked, (n) => n.tag === 'button' && String(n.props?.className ?? '').includes('dpm-mark'));
-  eq(marks.length, 2, '仍然只有两个按钮');
-  eq(marks.filter((m) => m.props['data-on']).length, 2, '点过之后两个都应当是高亮态');
+  eq(marks.length, 1, '仍然只有一个按钮');
+  eq(marks.filter((m) => m.props['data-on']).length, 1, '收藏过之后应当是点亮态');
   assert(allText(marked).includes('已收藏'), '收藏后文案应当变成「已收藏」');
 });
 
-test('★ 顶部筛选器齐全：已审核 / 未审核 / 已安装 / 可升级 / 我点赞的 / 我收藏的（问题 4）', async () => {
+test('★ 顶部筛选器只剩「全部 / 已安装 / 可升级 / 我收藏的」', async () => {
   const tree = await renderPanel([entryFixture({ package: 'a' })]);
   const filters = findAll(tree, (n) => n.tag === 'button' && String(n.props?.className ?? '').includes('dpm-filter'));
   const labels = filters.map((f) => allText(f).replace(/\s+/g, ' ').trim());
-  for (const want of ['全部', '已审核', '未审核', '已安装', '可升级', '我点赞的', '我收藏的']) {
+  for (const want of ['全部', '已安装', '可升级', '我收藏的']) {
     assert(labels.some((l) => l.includes(want)), `筛选器里应当有「${want}」，实际：${labels.join(' | ')}`);
+  }
+  // ★ 0.5.0 删掉的两组筛选：审核状态（层级没了）与「我点赞的」（点赞没了）
+  for (const gone of ['已审核', '未审核', '我点赞的', '点赞']) {
+    eq(labels.some((l) => l.includes(gone)), false, `筛选器里不该再有「${gone}」`);
   }
 });
 
-test('每条插件的审核状态标签在卡片上（已验证 / 已审核 / 未审核）', async () => {
+test('★ 卡片上不再有层级角标与层级说明横幅（0.5.0）', async () => {
   const tree = await renderPanel([
-    entryFixture({ package: 'v', title: 'V', tier: 'verified', tierLabel: '已验证' }),
-    entryFixture({ package: 'r', title: 'R', tier: 'reviewed', tierLabel: '已审核' }),
-    entryFixture({ package: 'c', title: 'C', tier: 'community', tierLabel: '未审核' }),
+    entryFixture({ package: 'v', title: 'V' }),
+    entryFixture({ package: 'c', title: 'C' }),
   ]);
+  const text = allText(tree);
+  // 三种层级标签、以及它们各自的解释横幅，一个都不该再出现
+  for (const gone of ['已验证', '已审核', '未审核']) {
+    eq(text.includes(gone), false, `卡片上不该再出现「${gone}」`);
+  }
   const badges = findAll(tree, (n) => n.props?.className && String(n.props.className).includes('dpm-badge'));
   const kinds = badges.map((b) => String(b.props.className));
-  assert(kinds.some((k) => k.includes('dpm-badge-verified')), '应当有已验证标签');
-  assert(kinds.some((k) => k.includes('dpm-badge-reviewed')), '应当有已审核标签');
-  assert(kinds.some((k) => k.includes('dpm-badge-community')), '应当有未审核标签');
+  for (const gone of ['dpm-badge-verified', 'dpm-badge-reviewed', 'dpm-badge-community']) {
+    eq(kinds.some((k) => k.includes(gone)), false, `不该再渲染 ${gone} 角标`);
+  }
 });
 
 test('★ 有可更新插件时，页面顶部给出汇总提示（问题 1 的可见性）', async () => {

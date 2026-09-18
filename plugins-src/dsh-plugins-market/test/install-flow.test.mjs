@@ -20,7 +20,7 @@ suite('client / 安装交互（进度 · 预计时间 · 中止 · 手动命令�
 function entry(over = {}) {
   return {
     id: over.package ?? 'demo', package: 'demo-plugin', title: '演示插件',
-    tier: 'verified', tierLabel: '已验证', version: '1.2.3', summary: '示例', tags: [],
+    version: '1.2.3', summary: '示例', tags: [],
     liked: false, favorited: false,
     installState: {
       status: 'not-installed', installed: false, installedVersion: null, target: '1.2.3',
@@ -33,7 +33,7 @@ function entry(over = {}) {
 /** 服务端会给的闸门结果（含手动安装方案） */
 function gateResult() {
   return {
-    pluginId: 'demo', tier: 'verified', tierLabel: '已验证', verdict: 'pass',
+    pluginId: 'demo', verdict: 'pass',
     canInstall: true, installable: true, requiresRiskAck: false, acknowledged: false,
     blockedBy: [], counts: { pass: 3, warn: 0, fatalBlocking: 0, fatalOverridable: 0, skipped: 0 },
     checks: [{ id: 'cand.tarball', title: 'tarball 存在性', severity: 'info', status: 'pass', detail: '本地 tarball 存在' }],

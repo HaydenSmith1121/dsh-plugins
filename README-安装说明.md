@@ -57,7 +57,7 @@ curl -fsSL https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/sc
 2. **判定** —— 你这台机器的 dsh 版本是否在本仓库的兼容矩阵里；不在就停下来告诉你该装哪个版本
 3. **补齐缺失环境** —— 没有 pnpm 就装（且装在 dsh 所在的那个 Node 上）；预置 `allowBuilds`
 4. **安装引导插件** —— 只装 `dsh-plugins-market`（市场面板）；
-   它的版本与 tarball 地址从目录 `catalog/index.json` 的「已验证」层读，再按
+   它的版本与 tarball 地址从目录里它自己的那条记录读（`catalog/plugins/dsh-plugins-market.json`），再按
    它自己的配置文件 `catalog/plugins/dsh-plugins-market.json` 安装
 5. **四步校验** —— 版本 / 依赖层 / 装配层 / 真实启动，四层都可能出不同的问题
 
@@ -92,18 +92,24 @@ dsh web          # 默认 http://127.0.0.1:3080
 ```
 
 1. 左侧导航栏点 **「插件市场」**
-2. 在列表里挑需要的插件（可以用顶部筛选器：`已审核 / 未审核`、`已安装 / 可升级 / 我点赞的 / 我收藏的`）
+2. 在列表里挑需要的插件（顶部筛选器：`已安装 / 可升级 / 我收藏的`）
 3. 点 **「安装」** —— 面板会先跑**装前检查**并展示逐项结论，有问题会拦下来，你不需要自己判断兼容性；
    安装全程可见进度与预计时间，可随时中止
 4. 装完**再重启一次 `dsh web`**（新增的 bundle 是在启动时合成的）
 
-每条插件都带审核标签：
+**目录不分级**（0.5.0 起）：没有「已验证 / 已审核 / 未审核」这些标签，
+装不装得上由**装前检查**当场判 —— 它看的是真实的 node / pnpm / dsh 版本、profile 现状、
+以及候选包声明了什么。你只需要看它的结论：
 
-| 标签 | 含义 | 安装包 |
+| 结论 | 含义 | 你能做什么 |
 |---|---|---|
-| **已验证** | 由插件集合仓库托管 tarball、按当前 dsh 版本实测过 | 仓库托管的离线 tarball，带 sha256 校验；装前检查必须全绿 |
-| **已审核** | 维护者人工审核过、留了证据的第三方插件 | 按各自配置声明（通常是 `github:` / npm），同样要过闸门 |
-| **未审核** | 公开索引里的插件，未经本仓库验证 | 按各自配置声明；只做远程静态探测，**必须显式确认风险** |
+| 有一项**不可覆盖的致命项** | 明确装不上（例如 peer 精确 pin 到更高版本、声明的 patch 文件不在包里） | 按钮点不动，按提示换版本或换插件 |
+| 有一项**可覆盖的致命项** | 装上去大概率也没用（例如包里没声明 `dsh.bundle`，加载不起来） | 勾一次确认才能强装 —— 这是唯一需要你确认的场合 |
+| 只有警告 / 全部通过 | 可以装 | 直接点「安装」 |
+
+> 装前检查里还有一条**字节来源**，它说的是「我们查得有多细」，不是「可不可信」：
+> 字节由本仓库托管时（下载我们自己的 tarball、`sha256` 逐字节核对、可离线安装），
+> 检查能看清它声明了什么；装的是上游产物时（npm / GitHub），只能做静态探测。
 
 > 面板每次安装都会：读**那个插件自己的配置文件**（`catalog/plugins/<slug>.json`）→
 > 按它写的 `install.method` 装 → 备份 profile → 装完校验 → 失败自动回滚。
@@ -240,7 +246,7 @@ pnpm 不会安装 peer 依赖，插件的 `import "@deepseek-ai/dsh-llm"` 只能
 
 **逐插件的 peer 约束与实测结论统一记在 [`docs/版本兼容矩阵.md`](./docs/版本兼容矩阵.md)**：
 自研 6 个插件在集合仓库（`plugins/<id>/plugin.json`），第三方插件的结论附在
-[`catalog/overrides/reviewed.json`](./catalog/overrides/reviewed.json) 的 `peerVerdict` / `review.evidence` 里
+[`catalog/overrides/curated.json`](./catalog/overrides/curated.json) 的 `peerVerdict` / `notes`（含实测记录）dence` 里
 （例：`dsh-workbuddy-connect` 的 `^0.1.5-rc.1`、`dsh-connect-trae` 的 `>=0.1.5-0 <0.2.0-0`
 按 semver 预发布规则的实际含义，以及 `@dsh-external/dsh-ads` 的 `dsh-client-locale` 警告）。
 机器可读的那份是 [`compatibility.json`](./compatibility.json)。
@@ -646,7 +652,7 @@ dsh plugin --profile web add <下载后的 dsh-opencode-go-plus-0.3.0.tgz 绝对
 |---|---|
 | 6 个自研插件的版本 / sha256 / 字节数 / 文件数 | [集合仓库 README 的「校验信息总表」](https://github.com/HaydenSmith1121/dsh-plugin-collection/blob/main/README.md) 与 [`manifest.json`](https://github.com/HaydenSmith1121/dsh-plugin-collection/blob/main/manifest.json)（派生，禁止手写） |
 | 市场插件自己的版本 / sha256 | `catalog/plugins/dsh-plugins-market.json`（版本取自源码 `package.json`，sha256 由采集脚本实测）与 `plugins/dsh-plugins-market/0.1.6-alpha.1/*.tgz.sha256` 边车文件 |
-| 第三方插件的字节完整性 | **本仓库不再分发它们的字节**。审核证据（含验证时的 commit）在 [`catalog/overrides/reviewed.json`](./catalog/overrides/reviewed.json)；装的时候由市场面板校验配置里记录的 sha256（若有） |
+| 第三方插件的字节完整性 | **本仓库不再分发它们的字节**。实测记录（含验证时的 commit）在 [`catalog/overrides/curated.json`](./catalog/overrides/curated.json)；装的时候由市场面板校验配置里记录的 sha256（若有） |
 
 **自查命令**（在集合仓库的 clone 里跑；那份 tarball 才是分发内容）：
 

@@ -70,10 +70,10 @@ test('preferRemote=false 时只用包内兜底目录，且不联网', async () =
 
 test('远程索引可用时采纳远程，并落盘缓存', async () => {
   const remote = cloneIndex();
-  remote.counts = { total: 4242, verified: 1, reviewed: 1, community: 4240 };
+  remote.counts = { total: 4242 };
   remote.plugins = [
     ...remote.plugins,
-    { slug: 'acme__dsh-remote-only', id: 'acme/dsh-remote-only', tier: 'community', package: 'dsh-remote-only', title: '远程新插件', summary: 'x', tags: [], version: '9.9.9', stars: 7, installMethod: 'github', installSpec: 'github:acme/dsh-remote-only' },
+    { slug: 'acme__dsh-remote-only', id: 'acme/dsh-remote-only', package: 'dsh-remote-only', title: '远程新插件', summary: 'x', tags: [], version: '9.9.9', stars: 7, installMethod: 'github', installSpec: 'github:acme/dsh-remote-only' },
   ];
 
   const res = await withFetch(() => jsonOk(remote, { etag: 'W/"abc"' }),
@@ -139,7 +139,7 @@ test('loadPluginConfig() 网络失败时退回缓存', async () => {
 
 test('★ 远程 404 且没有缓存时如实返回「读不到」，绝不编一份出来', async () => {
   const ghost = catalog.normalizeEntry(
-    { slug: 'nobody__dsh-ghost', id: 'nobody/dsh-ghost', tier: 'community', install: { method: 'github', spec: 'github:nobody/dsh-ghost' } },
+    { slug: 'nobody__dsh-ghost', id: 'nobody/dsh-ghost', install: { method: 'github', spec: 'github:nobody/dsh-ghost' } },
     'community',
   );
   const res = await withFetch(() => new Response('not found', { status: 404 }),
@@ -150,13 +150,13 @@ test('★ 远程 404 且没有缓存时如实返回「读不到」，绝不编�
 
 test('★ entryFromConfig() 让配置文件压过索引（安装方法以配置为准）', () => {
   const indexEntry = catalog.normalizeEntry(
-    { slug: 'acme__dsh-x', id: 'acme/dsh-x', tier: 'community', title: '索引里的标题', install: { method: 'github', spec: 'github:acme/dsh-x' } },
+    { slug: 'acme__dsh-x', id: 'acme/dsh-x', title: '索引里的标题', install: { method: 'github', spec: 'github:acme/dsh-x' } },
     'community',
   );
   const config = {
     slug: 'acme__dsh-x',
     id: 'acme/dsh-x',
-    tier: 'verified',
+    
     package: 'dsh-x',
     title: '配置里的标题',
     summary: '配置里的简介',
@@ -166,7 +166,7 @@ test('★ entryFromConfig() 让配置文件压过索引（安装方法以配置�
   };
   const merged = catalog.entryFromConfig(config, indexEntry);
   eq(merged.title, '配置里的标题', '展示字段以配置为准');
-  eq(merged.tier, 'verified', 'tier 由配置决定 —— 人工审核就是把 community 提升为 reviewed');
+  eq(merged.tier, undefined, '配置里也不再有 tier —— 信任分级已在 0.5.0 移除');
   eq(merged.install.method, 'tarball', '★ 安装方法必须来自配置文件');
   eq(merged.install.url, 'https://example.invalid/x.tgz');
   eq(merged.sha256, 'a'.repeat(64), 'tarball 的校验和要能传到闸门与安装器');
@@ -175,7 +175,7 @@ test('★ entryFromConfig() 让配置文件压过索引（安装方法以配置�
 
 test('配置文件缺字段时，展示信息回退到索引（但不回退安装方法）', () => {
   const indexEntry = catalog.normalizeEntry(
-    { slug: 'acme__dsh-y', id: 'acme/dsh-y', tier: 'community', title: '索引标题', summary: '索引简介', tags: ['t'], install: { method: 'github', spec: 'github:acme/dsh-y' } },
+    { slug: 'acme__dsh-y', id: 'acme/dsh-y', title: '索引标题', summary: '索引简介', tags: ['t'], install: { method: 'github', spec: 'github:acme/dsh-y' } },
     'community',
   );
   const merged = catalog.entryFromConfig({ slug: 'acme__dsh-y', id: 'acme/dsh-y', install: { method: 'manual' } }, indexEntry);
@@ -198,47 +198,48 @@ test('normalizeEntry() 同时认新字段（repo / method / url）与旧字段�
   eq(legacy.install.tarball, 'plugins/c/0.1.6-alpha.1/c-1.0.0.tgz');
 });
 
-test('mergeEntries() 保留层级更高的那条，并补上被合并条目的 star 数', () => {
-  const layers = {
-    verified: [catalog.normalizeEntry({ id: 'dsh-memory', package: 'dsh-memory', tier: 'verified', title: '记忆', summary: 's', tags: [], install: { method: 'tarball', url: 'u' } }, 'verified')],
-    reviewed: [],
-    community: [catalog.normalizeEntry({ id: 'x/dsh-memory', package: 'dsh-memory', title: '记忆（社区）', summary: 's', tags: [], stars: 123, install: { method: 'github', spec: 'github:x/dsh-memory' } }, 'community')],
-  };
-  const { merged } = catalog.mergeEntries(layers);
-  eq(merged.length, 1, '同一个包名必须去重');
-  eq(merged[0].tier, 'verified', '保留层级更高的那条');
-  eq(merged[0].stars, 123, '被合并条目的 star 数是上游事实，应当补过来');
+test('mergeEntries() 已被删除：目录不再跨层合并（0.5.0）', () => {
+  // 这条钉住的是**删除本身**。以前同一个插件会同时出现在 verified 层与公共索引里，
+  // 运行时必须按层级保留最高的一条并补上 star 数 —— 那套逻辑（mergeEntries /
+  // mergedCounts / dedupeKey）随信任分级一起删掉了。
+  //
+  // 留着这条断言是有价值的：如果哪天有人把 mergeEntries 加回来，
+  // 说明「一个插件可能出现在多处」这个前提又回来了，而它与
+  // 「一条配置 = 一条记录」的硬不变量是冲突的 —— 那时应该先想清楚。
+  eq(typeof catalog.mergeEntries, 'undefined', 'mergeEntries 不该再存在');
+  eq(typeof catalog.mergedCounts, 'undefined', 'mergedCounts 不该再存在');
+  eq(typeof catalog.reviewStatusOf, 'undefined', 'reviewStatusOf 不该再存在');
 });
 
-test('★ 只有**真包名**才算「同一个插件」—— 仓库名相同不能合并', () => {
+test('★ 只有**真包名**才算「同一个插件」—— 仓库名不能冒充包名', () => {
   // 公开索引按**仓库**一条记录，`name` 是仓库名，跟 npm 包名毫无关系：
   // 几十个互不相干的仓库都叫 dsh-plugins / dsh-plugin。
   // 早先 normalizeEntry 写的是 `package: p.package ?? p.name`，于是这些不同的插件
-  // 在合并去重时被算成了同一个 —— 目录 7496 条只剩 6542 条，954 条在界面上永远不出现，
+  // 被算成了同一个 —— 目录 7496 条只剩 6542 条，954 条在界面上永远不出现，
   // 而列表看起来完全正常，只是数量对不上。
-  const a = catalog.normalizeEntry({ slug: 'alice__dsh-plugins', id: 'alice/dsh-plugins', name: 'dsh-plugins', tier: 'community', title: 'A', summary: 's', tags: [] }, 'community');
-  const b = catalog.normalizeEntry({ slug: 'bob__dsh-plugins', id: 'bob/dsh-plugins', name: 'dsh-plugins', tier: 'community', title: 'B', summary: 's', tags: [] }, 'community');
+  //
+  // ★ 0.5.0 去掉了跨层合并之后，这条不变量**更硬**了：现在一条配置就是一条记录，
+  //   连「合并」这个动作都不存在，所以数量的唯一来源是配置文件数 —— CI 直接断言。
+  //   但这条判据仍然要钉住：`package: null` 才是「没有真包名」的如实写法。
+  const a = catalog.normalizeEntry({ slug: 'alice__dsh-plugins', id: 'alice/dsh-plugins', name: 'dsh-plugins', title: 'A', summary: 's', tags: [] });
+  const b = catalog.normalizeEntry({ slug: 'bob__dsh-plugins', id: 'bob/dsh-plugins', name: 'dsh-plugins', title: 'B', summary: 's', tags: [] });
 
   eq(a.package, null, '没有真包名时 package 必须是 null，而不是拿仓库名顶上');
   eq(b.package, null);
   eq(a.name, 'dsh-plugins', '仓库名仍要留着（展示与检索用）');
   eq(a.title, 'A');
-
-  const { merged } = catalog.mergeEntries({ verified: [], reviewed: [], community: [a, b] });
-  eq(merged.length, 2, '两个不同的仓库必须各占一条 —— 数量对不上是这类缺陷唯一的外在表现');
 });
 
-test('★ 目录条数不能因为去重而缩水（回归：7496 → 6542）', async () => {
+test('★ 索引条数 == 配置文件数（不等同于「去重后」）', async () => {
   const idx = await catalog.loadCatalogIndex({ preferRemote: false });
-  const { merged } = catalog.mergeEntries({
-    verified: idx.entries.filter((e) => e.tier === 'verified'),
-    reviewed: idx.entries.filter((e) => e.tier === 'reviewed'),
-    community: idx.entries.filter((e) => e.tier === 'community'),
-  });
+  const { readdirSync } = await import('node:fs');
+  const path = await import('node:path');
+  const { BUILT } = await import('./harness.mjs');
+  const files = readdirSync(path.join(BUILT, 'catalog', 'plugins')).filter((f) => f.endsWith('.json'));
   eq(
-    merged.length,
     idx.entries.length,
-    `包内兜底目录 ${idx.entries.length} 条，去重后只剩 ${merged.length} 条 —— `
-    + '说明有插件因为「看起来同名」被合并掉了。只有真包名才允许合并，仓库名不行。',
+    files.length,
+    `包内兜底目录 ${files.length} 个配置文件，索引却列了 ${idx.entries.length} 条 —— `
+    + '两者必须一一对应（0.5.0 起目录不再做任何跨层去重）。',
   );
 });

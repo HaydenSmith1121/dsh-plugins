@@ -84,8 +84,21 @@ export function runGate(entry, ctx, options = {}) {
   else if (warns.length > 0) verdict = 'warn';
   else verdict = 'pass';
 
-  const isCommunity = entry.tier === 'community';
-  const requiresRiskAck = isCommunity || verdict === 'block-overridable';
+  /**
+   * ★ 只有「可覆盖的致命项」才要求勾选确认。
+   *
+   *   0.5.0 之前这里还有一条 `entry.tier === 'community'`：凡是不在我们验证过的那两层里的
+   *   插件，装之前都必须勾一次「我知道有风险」。信任分级去掉之后这条也去掉了 ——
+   *   让用户为**每一个**社区插件点一次确认，换来的不是安全，而是「闭眼点确定」的习惯。
+   *
+   *   留下的是真正需要人做决定的场合：装前检查**当场**发现了明确的致命缺陷
+   *   （例如包里没有声明 dsh.bundle，装上也加载不起来）。那不是「我觉得它有风险」，
+   *   是「它就坏在这儿」—— 这种情况值得停下来问一句。
+   *
+   *   注意 `verdict === 'block'` 的不可覆盖项不在此列：那些直接 canInstall = false，
+   *   连确认的机会都不给。
+   */
+  const requiresRiskAck = verdict === 'block-overridable';
   const acknowledged = options.acknowledgeRisk === true;
 
   const installable = candidate.installSpec != null;
@@ -97,8 +110,6 @@ export function runGate(entry, ctx, options = {}) {
 
   return {
     pluginId: entry.id,
-    tier: entry.tier,
-    tierLabel: entry.tierLabel,
     targetProfile: options.targetProfile ?? ctx.profileState?.profile ?? null,
     verdict,
     canInstall,
@@ -524,20 +535,27 @@ function checkCandidate(entry, ctx, options) {
     }
   }
 
-  // 12) 层级固有风险
-  if (entry.tier === 'community') {
-    out.push(mk('cand.tier', '来源可信度', SEV.WARN, 'warn',
-      '这条来自公共索引，本仓库**没有**对它做过任何适配验证。上面的判定只基于对仓库源码的静态探测，'
-      + '无法覆盖实际发布产物、运行时行为与依赖闭包。', { overridable: true }));
-  } else if (entry.tier === 'reviewed') {
-    out.push(mk('cand.tier', '来源可信度', SEV.INFO, 'pass',
-      `维护者人工审核收录${entry.review?.reviewedAt ? `（${entry.review.reviewedAt}）` : ''}`
-      + (entry.review?.dshVersion ? `，审核时 dsh ${entry.review.dshVersion}` : '')));
-    out.push(mk('cand.tier-stale', '审核时效', entry.review?.dshVersion && entry.review.dshVersion !== env.dsh.version ? SEV.WARN : SEV.INFO,
-      entry.review?.dshVersion && entry.review.dshVersion !== env.dsh.version ? 'warn' : 'pass',
-      entry.review?.dshVersion && entry.review.dshVersion !== env.dsh.version
-        ? `审核是在 dsh ${entry.review.dshVersion} 上做的，当前是 ${env.dsh.version}，结论可能已经过期。`
-        : '审核结论与当前 dsh 版本一致。'));
+  /**
+   * 12) 来源说明
+   *
+   * ★ 0.5.0 之前这里是三档「来源可信度」检查（公共索引 = 警告 / 已审核 = 通过 +
+   *   时效性 / 已验证 = 通过）。信任分级去掉之后它变成了**一句事实陈述**：
+   *   这个包的字节在不在我们自己的仓库里。
+   *
+   *   为什么还留着：本地托管的那几条，闸门能逐字节检查它声明了什么、sha256 对不对得上；
+   *   其余条目只能靠对上游仓库的静态探测 —— **判定强度不一样**，用户有权知道差别。
+   *   但这只是「我们查得有多细」，不是「这个插件可不可信」，所以两条都是 info，没有警告。
+   */
+  if (entry.origin === 'self' || entry.source?.kind === 'collection') {
+    out.push(mk('cand.provenance', '字节来源', SEV.INFO, 'pass',
+      '本仓库托管它的产物：安装时下载我们自己的 tarball，sha256 逐字节核对，可离线安装。'));
+  } else if (entry.install?.method === 'tarball') {
+    out.push(mk('cand.provenance', '字节来源', SEV.INFO, 'pass',
+      '本仓库托管它的产物：安装时下载我们自己的 tarball，sha256 逐字节核对。'));
+  } else {
+    out.push(mk('cand.provenance', '字节来源', SEV.INFO, 'pass',
+      '安装的是**上游**发布的产物（npm / GitHub），本仓库不转发它的字节。'
+      + '下面的结论来自对上游仓库的静态探测：能看到它声明了什么，看不到它实际发布了什么。'));
   }
 
   return { checks: out, installSpec, manifest, probe: options.probe ?? null, alreadyInstalled: already };

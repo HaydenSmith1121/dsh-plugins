@@ -116,12 +116,14 @@ test('★ 本机装了真实的 dsh（测试前置：闸门的版本基准只能
   );
 });
 
-test('包内兜底目录（tier=verified）已生成且条目自洽', () => {
+test('包内兜底目录（本仓库托管 tarball 的那几条）已生成且条目自洽', () => {
   assert(verified.available, `包内目录不可用：${verified.error}`);
   assert(verified.entries.length > 0, '包内兜底目录不能是空的');
   for (const p of verified.entries) {
-    eq(p.tier, 'verified', `${p.id} 出现在包内兜底目录里就必须是 verified 层`);
-    eq(p.install.method, 'tarball', `${p.id} 的安装方法应当是 tarball`);
+    // ★ 0.5.0：判据从 `tier === 'verified'` 换成了「字节由本仓库托管」——
+    //   信任分级没了，但**同一批条目**必须仍然一个不少地进包。
+    eq(p.install.method, 'tarball', `${p.id} 出现在包内兜底目录里，安装方法就必须是 tarball（字节由本仓库托管）`);
+    eq(p.tier, undefined, `${p.id} 不该再有 tier 字段 —— 信任分级已在 0.5.0 移除`);
     assert(p.slug, `${p.id} 索引条目必须带 slug —— 它没有 slug 就读不到自己的配置文件`);
   }
   assert(verified.entries.some((p) => p.package === 'dsh-plugins-market'), '本插件应当把自己也列进目录');
@@ -308,29 +310,31 @@ test('没有声明 dsh.bundle → 可覆盖的致命项（装了也不会加载�
   fs.rmSync(tmp, { recursive: true, force: true });
 });
 
-suite('gate / 未审核层级与安装规格');
+suite('gate / 来源说明与安装规格');
 
-test('未审核层级一律要求显式确认风险', () => {
+test('★ 不再因为「来自公共索引」而要求勾选确认（0.5.0）', () => {
+  // 这条钉住的是 0.5.0 删掉的那条规则：以前凡是不是本仓库验证过两层的插件，
+  // 装之前都必须勾一次「我确认有风险」。那种确认的结局是用户闭眼点确定，
+  // 而真正该停下来看的（「这个包装上也加载不起来」）反而淹没在同一个对话框里。
   const entry = normalizeEntry({
     id: 'someone/cool-plugin', package: 'cool-plugin', version: '1.0.0',
     upstream: 'https://github.com/someone/cool-plugin',
-    install: { method: 'pnpm-profile', commands: ['dsh plugin --profile web add github:someone/cool-plugin'] },
-  }, 'community');
+    install: { method: 'github', spec: 'github:someone/cool-plugin' },
+  });
   const report = runGate(entry, buildCtx(), { targetProfile: compat.profile ?? 'web' });
-  eq(report.requiresRiskAck, true, '未审核层级必须要求确认');
-  eq(report.canInstall, false, '未确认前不允许安装');
-  const tier = report.checks.find((c) => c.id === 'cand.tier');
-  eq(tier?.severity, 'warn', '未审核应当是一条明确的提醒');
-  assert(/没有.*验证|未/.test(tier.detail), '提示文案要讲清楚「本仓库没验证过」');
-  const acked = runGate(entry, buildCtx(), { targetProfile: compat.profile ?? 'web', acknowledgeRisk: true });
-  eq(acked.canInstall, true, '确认后允许安装（但仍会带风险提示）');
+  eq(report.requiresRiskAck, false, '来自公共索引不再要求勾选确认');
+  eq(report.canInstall, true, '装前检查没发现致命项时应当直接可装');
+  // 但「字节不是本仓库托管的」这件事仍然要说清楚 —— 它决定判定强度
+  const prov = report.checks.find((c) => c.id === 'cand.provenance');
+  assert(prov, '应当有一条说明字节来源的检查项');
+  assert(/上游/.test(prov.detail), '要如实说明装的是上游产物，而不是本仓库转发的');
 });
 
 test('没有任何可靠安装方式的条目不可安装', () => {
   const entry = normalizeEntry({
     id: 'mystery/thing', name: 'thing',
-    install: { method: 'pnpm-profile', commands: [] },
-  }, 'community');
+    install: { method: 'manual', commands: [] },
+  });
   const report = runGate(entry, buildCtx(), { targetProfile: compat.profile ?? 'web', acknowledgeRisk: true });
   eq(report.installable, false, '没有安装规格时应判为不可安装');
   eq(report.canInstall, false, '不可安装时不能放行');

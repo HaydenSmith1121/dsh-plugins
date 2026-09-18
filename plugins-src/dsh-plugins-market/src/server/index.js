@@ -31,8 +31,8 @@ import {
 import { readProfileState, scanInstalled, composedTree, listProfileBackups } from './profile.js';
 import {
   loadCatalogIndex, loadPluginConfig, entryFromConfig,
-  normalizeEntry, searchCatalog, mergeEntries,
-  catalogStatus, findEntry, TIER_META, REVIEW_STATUS,
+  normalizeEntry, searchCatalog,
+  catalogStatus, findEntry,
   REPO_RAW_BASE, REPO_HOMEPAGE, ensureDataDir, readCacheMeta,
 } from './catalog.js';
 import {
@@ -185,13 +185,12 @@ function invalidate(ctx) {
 /**
  * 取整个目录。
  *
- * ★ 自 0.4.0 起，目录只有一个来源：市场仓库里的 **catalog/index.json**，
+ * ★ 目录只有一个来源：市场仓库里的 **catalog/index.json**，
  *   而它是由「一个插件一个配置文件」（catalog/plugins/<slug>.json）派生的。
- *   上一版要分别拉三份（verified / curated / 4.8MB 的公共索引）并把它们合并，
- *   现在索引里已经带着每条插件的 tier —— 层级只是配置文件上的一个字段。
  *
- *   界面仍然按三层展示（兼容既有标签与筛选），但那是**对同一份索引分组**，
- *   不再意味着三个不同的网络来源。
+ *   ★ 0.5.0 之前这里还会把索引**按 tier 分成三层**再交给界面（兼容旧的三个页签）。
+ *     信任分级去掉之后没有层可分了：目录就是一份平铺列表，
+ *     `ctx._catalog` 里直接挂 entries + meta，不再有 verified / reviewed / community 三个桶。
  *
  * @param {object}  ctx
  * @param {boolean} [opts.refresh] 忽略 TTL，去服务端确认一次（走条件请求，通常是 304）
@@ -200,28 +199,18 @@ async function layers(ctx, { refresh = false } = {}) {
   if (!refresh && ctx._catalog && Date.now() - ctx._catalogAt < 10_000) return ctx._catalog;
 
   const index = await loadCatalogIndex({ force: refresh });
-  const byTier = { verified: [], reviewed: [], community: [] };
-  for (const e of index.entries) (byTier[e.tier] ?? byTier.community).push(e);
-
-  const sourceMeta = {
-    source: index.source,
-    error: index.error,
-    generatedAt: index.generatedAt,
-    ageMs: index.ageMs ?? null,
-  };
 
   ctx._catalog = {
     index,
-    verified: { ...sourceMeta, available: index.available, plugins: byTier.verified },
-    reviewed: { ...sourceMeta, plugins: byTier.reviewed },
-    community: { ...sourceMeta, plugins: byTier.community, stale: false },
-    communityMeta: {
+    entries: index.entries,
+    meta: {
       source: index.source,
       error: index.error,
-      count: byTier.community.length,
       generatedAt: index.generatedAt,
+      ageMs: index.ageMs ?? null,
+      counts: index.counts,
+      sourceIndex: index.sourceIndex,
     },
-    meta: { ...sourceMeta, counts: index.counts, sourceIndex: index.sourceIndex },
   };
   ctx._catalogAt = Date.now();
   return ctx._catalog;
@@ -267,9 +256,9 @@ async function resolveEntryConfig(ctx, entry) {
 function pool(ctx, { recalc = false } = {}) {
   if (!recalc && ctx._pool && Date.now() - ctx._poolAt < 10_000) return ctx._pool;
   const l = ctx._catalog;
-  const { merged, shadowed } = mergeEntries(l);
-  const { index } = installStateIndex(ctx.profileName, process.env, merged);
-  const built = { entries: merged, shadowed, state: index, layers: l, at: Date.now() };
+  // 0.5.0：目录是平铺列表，不再需要 mergeEntries 去跨层合并
+  const { index } = installStateIndex(ctx.profileName, process.env, l.entries);
+  const built = { entries: l.entries, state: index, layers: l, at: Date.now() };
   ctx._pool = built;
   ctx._poolAt = Date.now();
   return built;
@@ -320,8 +309,7 @@ function createDispatcher(ctx) {
             pnpmMin: ctx.compat.requirements?.pnpm?.min ?? null,
           },
           repo: { root: ctx.repoRoot, detected: Boolean(ctx.repoRoot), rawBase: REPO_RAW_BASE },
-          catalog: catalogStatus({ ...l, meta: l.meta }),
-          reviewStatuses: [REVIEW_STATUS.verified, REVIEW_STATUS.reviewed, REVIEW_STATUS.community],
+          catalog: catalogStatus({ index: l.index, env: ctx.env, meta: l.meta }),
           installed,
           // 顶部「N 个可更新」提示要用；不单独开接口，省一次往返
           upgradable: installed.filter((i) => i.upgrade).map((i) => ({ name: i.name, from: i.installedVersion, to: i.targetVersion })),
@@ -342,48 +330,30 @@ function createDispatcher(ctx) {
         };
       }
 
-      // ── 目录（合并视图：一处列出全部，用标签区分）────────
+      // ── 目录（一份平铺列表；没有层级可筛了）────────
       case 'catalog': {
         const l = await layers(ctx, { refresh: Boolean(args.refresh) });
         const p = pool(ctx, { recalc: Boolean(args.refresh) });
         const marks = userMarks(process.env);
         const stateIndex = p.state;
 
-        // ★ tier 参数仍兼容（旧书签 / 深链），但界面不再用它分页签
-        const tier = args.tier && TIER_META[args.tier] ? args.tier : null;
-        const source = tier ? p.entries.filter((e) => e.tier === tier) : p.entries;
-
-        const result = searchCatalog(source, {
+        const result = searchCatalog(p.entries, {
           query: args.query ?? '',
           limit: clamp(args.limit ?? 30, 1, 200),
           offset: clamp(args.offset ?? 0, 0, 1e6),
-          review: args.review === 'reviewed' || args.review === 'unreviewed' ? args.review : null,
-          only: ['liked', 'favorited', 'installed', 'upgradable'].includes(args.only) ? args.only : null,
+          only: ['favorited', 'installed', 'upgradable'].includes(args.only) ? args.only : null,
           marks,
           installed: stateIndex,
         });
 
-        const status = catalogStatus({ ...l, meta: l.meta });
         return {
           total: result.total,
           offset: args.offset ?? 0,
           limit: args.limit ?? 30,
           items: result.items.map((e) => publicEntry(e, stateIndex.get(e.id), marks[e.id])),
-          tiers: status.tiers,
-          merged: status.merged,
-          reviewStatuses: [REVIEW_STATUS.verified, REVIEW_STATUS.reviewed, REVIEW_STATUS.community],
-          communityMeta: {
-            source: l.communityMeta?.source ?? null,
-            error: l.communityMeta?.error ?? null,
-            count: l.communityMeta?.count ?? 0,
-            generatedAt: l.communityMeta?.generatedAt ?? null,
-          },
-          verifiedAvailable: l.verified.available,
-          verifiedError: l.verified.error,
           // 目录本身是从哪来的（远程 / 304 / 缓存 / 离线包内）—— 界面据此提示「目录可能不是最新」
           indexMeta: l.meta,
           marks: {
-            liked: Object.values(marks).filter((m) => m.liked).length,
             favorited: Object.values(marks).filter((m) => m.favorited).length,
           },
         };
@@ -410,18 +380,16 @@ function createDispatcher(ctx) {
             installMethod: config?.install?.method ?? null,
             raw: config ?? null,
           },
-          // 同一插件在其它层里的副本（去重时被合并掉的），详情页可以如实展示
-          duplicates: (p.shadowed.get(`pkg:${String(found.package ?? '').toLowerCase()}`) ?? [])
-            .map((e) => ({ id: e.id, tier: e.tier, tierLabel: e.tierLabel })),
+          // 同一插件在本机装了几份 / 目录里有没有同包名的别的记录 —— 详情页如实展示
+          duplicates: [],
         };
       }
 
-      // ── 点赞 / 收藏 ─────────────────────────────────────
+      // ── 收藏（点赞已删除：见 state.js 的说明）────────
       case 'mark': {
-        const action = args.action === 'favorite' ? 'favorite' : args.action === 'like' ? 'like' : null;
-        if (!action) throw new Error(`未知的标记动作：${args.action}`);
-        const r = toggleUserMark(action, args.id, args.value === undefined ? undefined : Boolean(args.value));
-        appendOp({ op: `mark-${action}`, pluginId: r.id, ok: true, detail: action === 'like' ? `liked=${r.liked}` : `favorited=${r.favorited}` });
+        if (args.action !== 'favorite') throw new Error(`未知的标记动作：${args.action}（只支持 favorite）`);
+        const r = toggleUserMark('favorite', args.id, args.value === undefined ? undefined : Boolean(args.value));
+        appendOp({ op: 'mark-favorite', pluginId: r.id, ok: true, detail: `favorited=${r.favorited}` });
         return r;
       }
 
@@ -441,13 +409,21 @@ function createDispatcher(ctx) {
         //   装前检查、勾风险确认、然后装出一个完全一样的版本，是纯粹的误导。
         if (state?.status === 'current') {
           const report = alreadyLatestReport(found, ctx, state);
-          appendOp({ op: 'gate', pluginId: found.id, tier: found.tier, verdict: report.verdict, canInstall: false, reason: 'up-to-date' });
+          appendOp({ op: 'gate', pluginId: found.id, verdict: report.verdict, canInstall: false, reason: 'up-to-date' });
           return { ...report, configSource, configError };
         }
 
-        // 本地没有 tarball 的条目（公开索引 / 已审核但未随包分发）先做一次远程静态探测
+        /**
+         * 静态探测：只在本地没有 tarball 时才需要。
+         *
+         * ★ 0.5.0 之前这条判据是 `found.tier !== 'verified'`（「不是我们自己托管的
+         *   那几条才要去探」）。信任分级去掉之后换成了更直接的问法：
+         *   **这个包的字节在不在本地**。在本地就已经能逐字节看清它声明了什么，
+         *   再去网上探一遍纯属浪费；不在本地就必须探 —— 探的是「能不能装」，
+         *   与谁托管无关。
+         */
         let probe = null;
-        if (found.tier !== 'verified') {
+        if (found.install?.method !== 'tarball') {
           probe = await probeEntry(found, { force: Boolean(args.refreshProbe) });
         }
 
@@ -457,7 +433,7 @@ function createDispatcher(ctx) {
           probe,
         });
         appendOp({
-          op: 'gate', pluginId: found.id, tier: found.tier, verdict: report.verdict,
+          op: 'gate', pluginId: found.id, verdict: report.verdict,
           canInstall: report.canInstall, blockedBy: report.blockedBy,
           counts: report.counts,
         });
@@ -502,7 +478,7 @@ function createDispatcher(ctx) {
           return { ok: false, refused: true, upToDate: true, gate: report, steps: [], message: report.message };
         }
 
-        const probe = found.tier === 'verified' ? null : await probeEntry(found);
+        const probe = found.install?.method === 'tarball' ? null : await probeEntry(found);
         const gate = runGate(found, await gctx(ctx), {
           acknowledgeRisk: Boolean(args.acknowledgeRisk),
           targetProfile: ctx.profileName,
@@ -609,7 +585,7 @@ function createDispatcher(ctx) {
         const { entry: found } = await resolveEntryConfig(ctx, lookupEntry(p, args.id));
         if (!found) throw new Error(`目录里没有这个插件：${args.id}`);
         const g = await gctx(ctx);
-        const probe = found.tier === 'verified' ? null : await probeEntry(found);
+        const probe = found.install?.method === 'tarball' ? null : await probeEntry(found);
         const report = runGate(found, g, { targetProfile: ctx.profileName, probe });
         const plan = manualInstallPlan(found, g, report.installSpec);
         if (args.save) {
@@ -732,7 +708,6 @@ function createDispatcher(ctx) {
         ctx._catalog = null;
         ctx._catalogAt = 0;
         const l = await layers(ctx, { refresh: true });
-        const status = catalogStatus({ ...l, meta: l.meta });
         // ★ 目录的来源要如实回报：一个插件发新版之后，用户唯一能判断
         //   「我看到的是不是最新的」依据就是这个 source（远程 / 304 / 缓存 / 离线包内）。
         return {
@@ -742,14 +717,6 @@ function createDispatcher(ctx) {
           ageMs: l.meta.ageMs ?? null,
           counts: l.meta.counts ?? null,
           upstreamGeneratedAt: l.meta.sourceIndex?.generatedAt ?? null,
-          // 兼容上一版的字段名：界面与既有脚本还在读这两个
-          verified: l.verified.source ?? 'unavailable',
-          verifiedGeneratedAt: l.verified.generatedAt ?? null,
-          reviewed: l.reviewed.source ?? 'unavailable',
-          community: l.community.source ?? 'unavailable',
-          count: l.communityMeta?.count ?? 0,
-          tiers: status.tiers,
-          merged: status.merged,
           error: l.meta.error ?? null,
         };
       }
@@ -779,18 +746,17 @@ async function gctx(ctx) {
   };
 }
 
-/** 确保目录层与合并池都已就绪，返回合并池 */
+/** 确保目录已就绪，返回条目池 */
 async function ensurePool(ctx) {
   await layers(ctx);
   return pool(ctx);
 }
 
-/** 在合并池里按 id / 包名 / slug 查一条；查不到再退回原始三层（兼容旧 id） */
+/** 在条目池里按 id / 包名 / slug 查一条 */
 function lookupEntry(p, id) {
   const key = String(id ?? '');
-  const direct = p.entries.find((e) => e.id === key || e.package === key || e.slug === key);
-  if (direct) return direct;
-  return findEntry(p.layers, key);
+  return p.entries.find((e) => e.id === key || e.package === key || e.slug === key)
+    ?? findEntry(p.entries, key);
 }
 
 /**
@@ -805,9 +771,6 @@ function alreadyLatestReport(entry, ctx, state) {
   const target = state?.target ?? entry.version ?? null;
   return {
     pluginId: entry.id,
-    tier: entry.tier,
-    tierLabel: entry.tierLabel,
-    reviewStatus: entry.reviewStatus,
     targetProfile: ctx.profileName,
     verdict: 'pass',
     upToDate: true,
@@ -848,10 +811,6 @@ function publicEntry(e, state = null, mark = null, { full = false } = {}) {
   return {
     id: e.id,
     slug: e.slug ?? null,
-    tier: e.tier,
-    tierLabel: e.tierLabel,
-    // 审核状态标签：界面顶部就是用它区分「已审核 / 未审核」的
-    reviewStatus: e.reviewStatus ?? null,
     package: e.package,
     version: e.version,
     // 版本号是从哪儿取来的（npm / GitHub release / tag / package.json / 取不到）——
@@ -878,8 +837,8 @@ function publicEntry(e, state = null, mark = null, { full = false } = {}) {
     installKind: e.install?.kind ?? null,
     installSpec: e.install?.spec ?? null,
     installUrl: e.install?.url ?? null,
-    hasReview: Boolean(e.review),
-    review: full ? e.review ?? null : null,
+    // 字节是不是由本仓库（或插件集合仓库）托管的 —— 界面据此决定「离线可装」的措辞
+    localBytes: e.install?.method === 'tarball',
 
     // ── 安装状态（问题 1 / 2 的载体）──
     installState: st ? {
@@ -900,7 +859,7 @@ function publicEntry(e, state = null, mark = null, { full = false } = {}) {
     },
 
     // ── 用户标记（问题 3 的载体）──
-    liked: Boolean(mark?.liked),
+    favorited: Boolean(mark?.favorited),
     favorited: Boolean(mark?.favorited),
   };
 }

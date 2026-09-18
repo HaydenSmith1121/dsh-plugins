@@ -260,7 +260,7 @@ function resolveBootstrap() {
     return null;
   }
   const entry = (index.plugins ?? []).find(
-    (p) => p.tier === 'verified' && (p.package === BOOTSTRAP_PACKAGE || p.id === BOOTSTRAP_PACKAGE),
+    (p) => p.installMethod === 'tarball' && (p.package === BOOTSTRAP_PACKAGE || p.id === BOOTSTRAP_PACKAGE),
   );
   if (!entry) return null;
   const configPath = path.join(REPO_ROOT, 'catalog', 'plugins', `${entry.slug}.json`);
@@ -351,7 +351,7 @@ if (failed.length) {
   console.log('  ' + bold('接下来：在「插件市场」里按需点装其余插件。'));
   console.log('    ' + dim('1. 重启 dsh web（新增的 bundle 是在启动时合成的）'));
   console.log('    ' + dim('2. 左侧导航栏点「插件市场」'));
-  console.log('    ' + dim('3. 浏览 / 搜索 / 点装 —— 目录里有 7000+ 条，含本仓库收录的已验证插件'));
+  console.log('    ' + dim('3. 浏览 / 搜索 / 点装 —— 目录里有 7000+ 条，含本仓库托管的 7 个插件'));
   console.log('    ' + dim('市场会在每次安装前跑兼容性闸门，失败会自动回滚。') + '\n');
 }
 
