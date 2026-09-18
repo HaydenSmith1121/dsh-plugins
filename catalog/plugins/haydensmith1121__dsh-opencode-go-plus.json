@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "HaydenSmith1121/dsh-opencode-go-plus",
+  "slug": "haydensmith1121__dsh-opencode-go-plus",
+  "package": "dsh-opencode-go-plus",
+  "name": "dsh-opencode-go-plus",
+  "title": "OpenCode Go 模型供应商（自研维护分支）",
+  "summary": "OpenCode Go 的模型供应商适配器，本仓库维护的派生分支：修复上游改名后客户端注册 id 错配导致的白屏，并在「设置 → 模型」页给出一条 OpenCode Go 行。取代 dsh-opencode-go，两者不能同装。",
+  "tags": [
+    "模型接入",
+    "自研",
+    "运行关键"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T06:21:02.833Z",
+  "latestRelease": null,
+  "author": "HaydenSmith1121",
+  "repo": "https://github.com/HaydenSmith1121/dsh-opencode-go-plus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T05:44:12Z",
+  "metricsCheckedAt": "2026-09-18T06:21:02.833Z",
+  "origin": null,
+  "peerRuntimePin": "整套 @deepseek-ai/* 精确 pin 在 0.1.6-alpha.1（18 个 peer + 3 个 dependencies）",
+  "peerVerdict": "critical",
+  "peerNote": "整套 @deepseek-ai/* 精确 pin 在 0.1.6-alpha.1 —— 沿用上游基线、未做改动，所以它仍是决定整批插件运行时基线的那一个。0.1.5-rc.x 内置的 @deepseek-ai/dsh-llm 缺 IMAGE_OFFLOAD_REQUIRED_CODE / offloadedImageText / projectOffloadedImages / requiredImageOffload 导出 → ESM 具名导入确定性失败 → 整棵插件树加载失败、dsh web 完全起不来。上游 0.1.0 / 0.1.1 / 0.1.2 全部要求 alpha，没有兼容 0.1.5 的版本可选，所以只能升 dsh、不能退插件。★ 实测补充：pnpm peers check 会把这一大批 peer 报成 missing，与生产 profile 同一状态（harness 加载时供给），不阻塞安装与加载。",
+  "coexistenceWarning": null,
+  "notes": "★★ 安装时会撞上 ERR_PNPM_IGNORED_BUILDS，这是本包已知的、可复现的摩擦，装之前请先读这一段。\n它的依赖树里有两条未批准的构建脚本：@google/genai@1.52.0 与 protobufjs@7.6.6。pnpm 10+ 默认拦截它们，于是 pnpm 以非 0 退出、dsh 提前 return —— 结果是**插件文件已经在 node_modules 里，但 dsh.profile.bundles 没有追加**，GUI 里完全看不到它（最容易误判成「装了但没生效」而去查前端）。\n修法：dsh 会在 profile 目录的 pnpm-workspace.yaml 里写出一个 allowBuilds 占位模板（值是 'set this to true or false'），把它填成已知并同意忽略，然后**重跑同一条 dsh plugin add**（幂等，会报 Lockfile is up to date）→ 退出码 0 → dsh 这才补上 bundles 条目：\n\nallowBuilds:\n  '@google/genai': false\n  protobufjs: false\n\n填 false 的含义是「已知并同意忽略」，不是「跳过构建」：protobufjs 的 postinstall 只打印一句提示；@google/genai 的 prepare 对 tarball 安装本就不执行。★ 不要用 strictDepBuilds: false 一把梭 —— 那会把将来真正需要编译的依赖也静默跳过。\n\n★ 与 dsh-opencode-go 不能装进同一个 profile：两者共用设置命名空间 llm-opencode-go 与 provider 路由 opencode-go，且都不肯让。四种组合均已实测（dsh 0.1.6-alpha.1）：① 只有本包 → 正常，服务 38 条模型；② 只有基线 → 正常，37 条（无 union-alpha）；③ 两者共存且基线在前 → 基线服务 37 条，本包记一条 warn 后主动退场，dsh web 正常；④ 两者共存且本包在前 → 基线抛未捕获的 DUPLICATE_DISCOVERY，整棵插件树加载失败、dsh web 退出码 1。④ 是基线的缺陷，本包无法阻止 —— 升级请先 remove 基线。\n★ 0.3.0 的注册细节：可配置 provider 目录拒绝重复声明，而 opencode-go 已被 @deepseek-ai/dsh-llm-pi-ai 声明，所以本包把这一行声明在 opencode-go-plus 上 —— 若声明成 opencode-go，registerConfigurableProviders 会抛 DUPLICATE_DIRECTORY，且异常从 apply() 里逸出，其后所有语句全部跳过，插件彻底失效。\n★ 派生与许可：派生自 Duskriver/dsh-opencode-go@0.1.2，其适配器、设置 UI 与 src/conversion/* 又派生自 DeepSeek Harness。本包以**编译产物 lib/ 形式分发，源码不在仓库内**（见仓库内 docs/derivation.md）。归属见 THIRD_PARTY_NOTICES.md。\n\n── 实测记录 ──\n隔离环境：DSH_HOME=D:\\deepseek\\.tmp\\iso-verify\\dsh-opencode-go-plus（一次性目录，与生产完全分离；生产 profile 的 package.json sha256 在全部测试前后均为 840511ED...226B6F，未被改动）。dsh 0.1.6-alpha.1 / node 24.14.0 / pnpm 12.4.2。\n\n① 首次安装（**失败**，这就是上面 notes 那段摩擦的原始记录）：dsh plugin --profile web add github:HaydenSmith1121/dsh-opencode-go-plus → **exit 1**，stderr：\n   Error: ERR_PNPM_IGNORED_BUILDS\n     × adding a new package\n     ╰─▶ Ignored build scripts: @google/genai@1.52.0, protobufjs@7.6.6\n   dsh: pnpm failed in profile directory ...\\profiles\\web\n   此刻状态：node_modules/dsh-opencode-go-plus 存在且 lib/ 21 个文件齐全，但 dsh.profile.bundles 仍是 [@deepseek-ai/dsh-base, @deepseek-ai/dsh-web-app]，dump-config 树里**没有**该插件 —— 与集合仓库 README 记录的「最欺骗性的坑」完全一致。\n② 修法与复验：pnpm/dsh 在 profile 里生成的 pnpm-workspace.yaml 已带 allowBuilds 占位模板（值为 'set this to true or false'）；把 '@google/genai' 与 protobufjs 都填 false 后**重跑同一条命令** → exit 0（'Lockfile is up to date, resolution step is skipped' / 'Done in 2.7s using pnpm v12.4.2'）；dsh.profile.bundles 变成 [@deepseek-ai/dsh-base, @deepseek-ai/dsh-web-app, dsh-opencode-go-plus]。\n③ 装配：dsh --profile web --dump-config → exit 0；树里出现 '# == dsh-opencode-go-plus' / '- id: opencode-go-plus' / 'name: dsh-opencode-go-plus'；无 plugin tree failed to load / does not provide an export / Cannot find module / SyntaxError。装到的副本 version=0.3.0，lib/ 21 个文件。\n④ 字节一致性：本仓库 HEAD 的 lib/（21 个文件）与集合仓库已发布的 dsh-opencode-go-plus-0.3.0.tgz（sha256 481b8f6bbdee38dc15d2b5cc729fbe7bc25edea6ce52d0f11e69f5d66252cc37）内的 lib/ 逐文件 sha256 一致。\n⑤ 分发形态：仓库内只有编译产物（lib/ + cordis.patch.yml + docs + examples + THIRD_PARTY_NOTICES.md），没有 src/；package.json 里没有 prepare 脚本，所以 git 安装不需要构建。\n\n核对结论：ok-with-notes —— 能装能用，但**必须**先处理 allowBuilds（2026-09-18，dsh 0.1.6-alpha.1，node 24.14.0，pnpm 12.4.2，核对人 HaydenSmith1121）\n\n── 来源变更 ──\n本插件原先由 dsh-plugin-collection 托管 tarball。该仓库已停止维护并删除，tarball URL 因此失效；现改由自己的源码仓库分发（分发仓库，只含编译产物）。lib/ 的字节与集合仓库最后发布的那一份逐字节相同。",
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:HaydenSmith1121/dsh-opencode-go-plus",
+    "commands": [
+      "dsh plugin --profile web add github:HaydenSmith1121/dsh-opencode-go-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "manual",
+    "url": "https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/catalog/overrides/curated.json",
+    "firstSeenAt": "2026-09-18T06:21:02.833Z",
+    "lastSyncedAt": "2026-09-18T06:21:02.833Z"
+  }
+}

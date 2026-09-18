@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "HaydenSmith1121/dsh-memory",
+  "slug": "haydensmith1121__dsh-memory",
+  "package": "dsh-memory",
+  "name": "dsh-memory",
+  "title": "跨会话长期记忆",
+  "summary": "turn 结束自动把会话蒸馏成 markdown 笔记，下次会话按工作区自动召回为提示段。纯宿主半、零包导入，不需要额外配置。",
+  "tags": [
+    "记忆",
+    "自研",
+    "宿主半"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T06:21:02.833Z",
+  "latestRelease": null,
+  "author": "HaydenSmith1121",
+  "repo": "https://github.com/HaydenSmith1121/dsh-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T05:44:04Z",
+  "metricsCheckedAt": "2026-09-18T06:21:02.833Z",
+  "origin": null,
+  "peerRuntimePin": "@deepseek-ai/cordis ^4.0.2",
+  "peerVerdict": "ok",
+  "peerNote": "只约束 cordis，不对 dsh 运行时版本通道设 pin。宿主半 lib/index.js 不 import 任何包（只有 node: 内置模块），因此不存在 0.1.5 → 0.1.6 那类「缺具名导出 → 整棵树加载失败」的失败面 —— 本包连 ctx.get('credentials') 这类服务读取都用可选形式。版本敏感性只在它用到的 ctx 服务与事件上（systemPrompt.section / agent.ctx.inject / session/event / agent/turn-stopping / llm.stream），这些都是 0.1.6-alpha.1 的实测面。★ 实测补充：pnpm peers check 报 missing peer @deepseek-ai/cordis，与生产 profile 的同一状态一致（harness 在加载时供给），不阻塞安装与加载。",
+  "coexistenceWarning": null,
+  "notes": "turn 结束时把该轮的新对话蒸馏成 markdown 笔记写进 $DSH_HOME/memory/，每次模型请求前把「全局笔记 + 当前工作区笔记」作为作用域提示段注入。★ 触发点选 agent/turn-stopping 而不是空闲防抖 —— 它是 serial（会被 await）事件，turn 不关闭就不返回，这是 headless 一次跑完就退出时唯一可靠的落盘时机；开销用「新文本量下限 + 同会话最小间隔」两道闸门压住，普通短轮次零开销（实测：默认参数下短任务不产生任何记忆文件）。★ 召回段必须按 agent 注册（agent.ctx.inject(['systemPrompt'], …)），不能全局注册：AssembleContext 只带 scope/signal，全局段拿不到工作区；按 agent 注册还顺带随 agent 卸载。★ 只取 source.kind === 'user' 的 user/message，合成消息（召回段自身、文件变更通知、skill 正文、goal 续跑）一律不取，否则记忆会把自己的输出当新事实再总结一遍。★ 全部旋钮走 DSH_MEMORY_* 环境变量而非 config schema，代价是没有配置校验，收益是保持零包导入。★ 副作用面：唯一写入限制在 $DSH_HOME/memory/ 之内，笔记是纯文本、可手改；卸载不删已有记忆。蒸馏用默认模型路由，会在 turn 结束时产生一次额外的 llm.stream() 调用。\n\n── 实测记录 ──\n隔离环境：DSH_HOME=D:\\deepseek\\.tmp\\iso-verify\\dsh-memory（一次性目录，与生产完全分离；生产 profile 的 package.json sha256 测试前后一致）。dsh 0.1.6-alpha.1 / node 24.14.0 / pnpm 12.4.2。\n\n① 安装：dsh plugin --profile web add github:HaydenSmith1121/dsh-memory → exit 0（'Done in 4.2s using pnpm v12.4.2'）；装到的副本 version=0.1.0，lib/ 1 个文件。\n② 注册表层：dsh.profile.bundles = [@deepseek-ai/dsh-base, @deepseek-ai/dsh-web-app, dsh-memory]。\n③ 装配：dsh --profile web --dump-config → exit 0；树里出现 '# == dsh-memory' / '- id: dsh-memory' / 'name: dsh-memory'；无加载错误。\n④ 字节一致性：本仓库 HEAD 的 lib/index.js 与集合仓库已发布的 dsh-memory-0.1.0.tgz（sha256 e773678ab7b681390a6e7f643ab0c5cee87d996c9d662da6ca004b1c17e60a3e）内的 lib/index.js sha256 一致。\n⑤ 反向验证（收录时的实测）：同一个 prompt 在工作区 A 答出种进去的独有暗号、在全新目录答 UNKNOWN —— 证明召回确实来自提示段而非模型顺着问句编。\n\n核对结论：ok（2026-09-18，dsh 0.1.6-alpha.1，node 24.14.0，pnpm 12.4.2，核对人 HaydenSmith1121）\n\n── 来源变更 ──\n本插件原先由 dsh-plugin-collection 托管 tarball。该仓库已停止维护并删除，tarball URL 因此失效；现改由自己的源码仓库分发。lib/index.js 的字节与集合仓库最后发布的那一份逐字节相同。",
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:HaydenSmith1121/dsh-memory",
+    "commands": [
+      "dsh plugin --profile web add github:HaydenSmith1121/dsh-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "manual",
+    "url": "https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/catalog/overrides/curated.json",
+    "firstSeenAt": "2026-09-18T06:21:02.833Z",
+    "lastSyncedAt": "2026-09-18T06:21:02.833Z"
+  }
+}

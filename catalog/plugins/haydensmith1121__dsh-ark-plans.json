@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "HaydenSmith1121/dsh-ark-plans",
+  "slug": "haydensmith1121__dsh-ark-plans",
+  "package": "dsh-ark-plans",
+  "name": "dsh-ark-plans",
+  "title": "火山方舟 Agent Plan / Coding Plan",
+  "summary": "把火山方舟（Volcengine Ark）的 Agent Plan 与 Coding Plan 两条套餐车道接进 harness。不写协议转换，用官方 llm-pi-ai 适配器补两条 provider profile，并在会话标题栏右侧给一条额度 pill。",
+  "tags": [
+    "模型接入",
+    "自研",
+    "需配置 Key"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T06:21:02.833Z",
+  "latestRelease": null,
+  "author": "HaydenSmith1121",
+  "repo": "https://github.com/HaydenSmith1121/dsh-ark-plans",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T05:44:01Z",
+  "metricsCheckedAt": "2026-09-18T06:21:02.833Z",
+  "origin": null,
+  "peerRuntimePin": "@deepseek-ai/cordis 4.0.2, @deepseek-ai/dsh-client-ui-conversation 0.1.6-alpha.1, @deepseek-ai/dsh-credentials 0.1.6-alpha.1, @deepseek-ai/dsh-llm-pi-ai 0.1.6-alpha.1, react ^18.2.0",
+  "peerVerdict": "warn",
+  "peerNote": "peer 精确 pin 在 0.1.6-alpha.1 线上，换 dsh 版本 pnpm 会打 peer 警告。不升级为 critical 的理由：宿主半 lib/index.js 不 import 任何 dsh 包（只 import node: 内置模块，连 credentials 都只用 ctx.get('credentials') 取服务），客户端半是 factory-form CJS bundle、react 走平台 seed 表，因此不存在 0.1.5 → 0.1.6 那类「缺具名导出 → 整棵树加载失败」的失败面。★ 实测补充：pnpm peers check 会把这 5 个 peer 全报成 missing，但这不是缺陷 —— profile 用的是 autoInstallPeers: false + nodeLinker: hoisted，而这些包由 harness 在加载时供给，生产 profile 的 node_modules 里同样没有 @deepseek-ai/cordis。它不影响安装（exit 0）也不影响加载（装配树里出现该插件）。",
+  "coexistenceWarning": null,
+  "notes": "把火山方舟的 Agent Plan 与 Coding Plan 两条套餐车道接进 harness：两条车道都实现 OpenAI 兼容协议，所以本包不写协议转换，而是用 cordis.patch.yml 给官方 dormant 挂载的 llm-pi-ai 补两条 provider profile。★ patch 语义是「整段替换 config」：官方 dsh-base 挂 llm-pi-ai 时不带 config，因此不冲突；但将来若有别的 bundle 也打这行，后加载者会覆盖本包声明的 providers。★ Key 不在包内、也不进 settings.yaml：由「设置 → 模型」页写入 $DSH_HOME/.credentials.yaml 的 refs.ARK_AGENT_PLAN_API_KEY / refs.ARK_CODING_PLAN_API_KEY，按请求解析，填完无需重启。★ 模型清单是逐 id 真实探测出来的（62 个候选 → 13 个 200，其余 404 UnsupportedModel 全部剔除）：Agent Plan 车道不支持模型发现（GET /api/plan/v3/models 返回 404），清单只能内置。★ 0.2.0 的额度 pill 走控制面 OpenTOP 签名，复用 arkcli 已在本机建立的身份；没登录 arkcli 时插件照常工作，只是那条车道显示「不可用」并写明原因（expired / no-identity / not-subscribed / error 四态），模型调用完全不受影响。★ 副作用面：不写全局配置、不起后台进程；唯一网络行为是额度查询（loopback 路由 GET /plugins/dsh-ark-plans/quota）。\n\n── 实测记录 ──\n隔离环境：DSH_HOME=D:\\deepseek\\.tmp\\iso-verify\\dsh-ark-plans（一次性目录，与生产 C:\\Users\\Administrator\\.dsh 完全分离；生产 profile 的 package.json sha256 在全部测试前后均为 840511EDCC8EC499F6F16779E6FC0C908760C75E22A3DE7917F1EDA31C226B6F，未被改动）。dsh 0.1.6-alpha.1 / node 24.14.0 / pnpm 12.4.2。\n\n① 安装（本条记录的 github: 路径）：dsh plugin --profile web add github:HaydenSmith1121/dsh-ark-plans → exit 0（'Done in 5s using pnpm v12.4.2'）；装到的副本 version=0.2.0，lib/ 2 个文件。\n② 注册表层：profiles/web/package.json 的 dsh.profile.bundles = [@deepseek-ai/dsh-base, @deepseek-ai/dsh-web-app, dsh-ark-plans]。\n③ 装配：dsh --profile web --dump-config → exit 0；树里出现 '# == dsh-ark-plans' / '- id: dsh-ark-plans' / 'name: dsh-ark-plans'；无 plugin tree failed to load / does not provide an export / Cannot find module / SyntaxError。\n④ 字节一致性：本仓库 HEAD 的 lib/ 经 git archive 导出后与集合仓库已发布的 dsh-ark-plans-0.2.0.tgz（sha256 04df5a7fec08df8419b4c208c08f3d8cd6a264be87febef9bbcac0cc4806fd40）内的 lib/ 逐文件 sha256 一致。\n\n核对结论：ok（2026-09-18，dsh 0.1.6-alpha.1，node 24.14.0，pnpm 12.4.2，核对人 HaydenSmith1121）\n\n── 来源变更 ──\n本插件原先由 dsh-plugin-collection 托管 tarball（install.method=tarball，URL 指向集合仓库）。该仓库已停止维护并删除，tarball URL 因此失效；现改由自己的源码仓库分发，本条目的 github: 规格就是替代它的安装路径。lib/ 的字节与集合仓库最后发布的那一份逐字节相同。",
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:HaydenSmith1121/dsh-ark-plans",
+    "commands": [
+      "dsh plugin --profile web add github:HaydenSmith1121/dsh-ark-plans"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "manual",
+    "url": "https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/catalog/overrides/curated.json",
+    "firstSeenAt": "2026-09-18T06:21:02.833Z",
+    "lastSyncedAt": "2026-09-18T06:21:02.833Z"
+  }
+}

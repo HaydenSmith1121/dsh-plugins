@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "HaydenSmith1121/dsh-connect-trae-plus",
+  "slug": "haydensmith1121__dsh-connect-trae-plus",
+  "package": "dsh-connect-trae",
+  "name": "dsh-connect-trae",
+  "title": "Trae 模型接入（加固分支）",
+  "summary": "把本机已登录的 Trae 模型（国内版 / 国际版双 provider）接进 Harness。本包是上游 dingminhua/dsh-connect-trae v2.0.4 的加固分支：插件自身启动失败时不再牵连整个 Harness。",
+  "tags": [
+    "模型接入",
+    "第三方",
+    "需登录",
+    "加固分支"
+  ],
+  "version": "2.0.4-dsh.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T06:21:02.833Z",
+  "latestRelease": null,
+  "author": "dingminhua（上游）· HaydenSmith1121（本分支维护）",
+  "repo": "https://github.com/HaydenSmith1121/dsh-connect-trae-plus",
+  "homepage": "https://github.com/dingminhua/dsh-connect-trae",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T05:54:41Z",
+  "metricsCheckedAt": "2026-09-18T06:21:02.833Z",
+  "origin": null,
+  "peerRuntimePin": "@deepseek-ai/dsh-* >=0.1.5-0 <0.2.0-0（9 个）, @deepseek-ai/cordis ^4.0.1-rc.1, @deepseek-ai/schemastery ^3.18.1-rc.1, @earendil-works/pi-ai >=0.85.1, react ^18.2.0",
+  "peerVerdict": "warn",
+  "peerNote": "★ 实测修正：集合仓库原先给这个包的结论是 ok，理由写的是「0.1.6-alpha.1 满足 >=0.1.5-0 <0.2.0-0」—— 这个理由不成立。用 node-semver 实测：\n\n  >=0.1.5-0 <0.2.0-0   →  0.1.6-alpha.1 = NO(不满足) | 0.1.5-rc.1 = OK | 0.1.5 = OK | 0.1.6 = OK\n\n根因是 node-semver 的预发布规则：一个预发布版本只有当范围里**某个比较符的 major.minor.patch 元组与它相同、且自身带预发布标签**时才可能被放行。0.1.6-alpha.1 的元组是 0.1.6，而这个范围里没有 0.1.6 元组的比较符，所以被静默排除。这正是 awesome-dsh-plugin 的 contributing.md 专门警告的那一类写法。\n\n但**后果不是致命**，所以记为 warn 而不是 critical：profile 用 autoInstallPeers: false + nodeLinker: hoisted，pnpm 只打一条 'Issues with peer dependencies found' 就继续，实测装得上（exit 0）也加载得起来（装配树里出现该插件，无加载错误）。也就是说这条范围的语义是错的，但在这台 harness 上不会把树弄挂。\n\n★ 修法（尚未改，留给上游/后续版本）：在 0.1.6 元组上带一个预发布比较符即可，实测：\n  >=0.1.5-0 <0.2.0-0 || >=0.1.6-alpha.1 <0.2.0-0   →  0.1.6-alpha.1 OK, 0.1.5-rc.1 OK, 0.1.5 OK\n注意 contributing.md 里那个「正确示例」>=0.0.1-rc.1 <0.1.0 || >=0.1.0-rc.1 <0.2.0-0 实测对 0.1.6-alpha.1 **也是 NO** —— 它只覆盖 0.1.0 元组，照抄不够。",
+  "coexistenceWarning": null,
+  "notes": "把本机已登录的 Trae 账号（国内版与国际版）接进 Harness 当模型供应商 —— 国内版注册为 trae，国际版注册为 trae-global，两者可同时使用；另带只读的用量/积分概览与模型管理卡片。\n\n★ 这是第三方插件的加固分支，不是本仓库自研。上游：dingminhua/dsh-connect-trae v2.0.4（MIT，commit 9c7c113）。Trae 协议、凭据处理、区域拆分、模型目录、设置卡片全部保留上游实现。\n\n★ 上游的缺陷（本分支只修这一件事）：上游把两个 provider 的注册、模型目录发现、可配置 provider 目录、teardown 注册全放进同一条 Promise.all(...).then(...) 链，且该链中的失败没有被观察。实测后果：回环 shim 绑不上时（Trae 未安装 / 未登录 / 端口不可用）shim.ready 拒绝 → then 体完全不执行 → 两个 provider 一起静默消失，Harness 里一个 Trae 模型都没有，日志只有一句不提区域、不提原因的 'loopback shim failed; providers not registered'。潜在后果：该链里任何其它抛出（HMR 重载后 ctx.effect 落在已消失的 fiber 上等）会留下未观察的拒绝 → DSH 的 fail-loud 处理器 → fatal load failure → exit 1。一个第三方模型 provider 确实足以让整个 Harness 起不来。\n\n★ 改法：TraeShim 新增 listening / whenListening(timeoutMs) / reason() 三个不抛异常、不挂起的就绪访问器（失败只是一个可降级的 false，并带出真实原因）；createTraeAdapter 改为接收已解析的 baseUrl / apiKey 字符串；每个区域各自 try/catch 注册，一区失败只降级该区并报出区域名；目录注册单独兜底；teardown 改在 apply 中同步注册并加守卫；启动 seed 与最终 boot() 各自兜底 —— 任何路径都不再产生未捕获拒绝。改动仅 src/shim.ts、src/adapter.ts、src/index.ts 三个文件；测试 243 例全绿（上游 236 例全部保留 + 7 例回归）。\n\n★ ⛔ 绝不可与上游 dsh-connect-trae 同时安装：同一个包名（dsh-connect-trae）、同一个 provider 路由（trae / trae-global）、同一个设置命名空间（trae）。从上游切换过来先 remove 再 add。\n\n★ 登录态不随包迁移：换机器要重新登录；Token 不写入 DSH 设置。\n\n★ 本分支不打算长期分叉：上游若采纳等效修复，直接装上游包即可。\n\n★ 副作用面：需要本机已登录 Trae；注册 provider 与设置卡片；不写全局凭据。\n\n── 实测记录 ──\n隔离环境：DSH_HOME=D:\\deepseek\\.tmp\\iso-verify\\dsh-connect-trae-plus（一次性目录，与生产 C:\\Users\\Administrator\\.dsh 完全分离；生产 profile 的 package.json sha256 在全部测试前后均为 840511EDCC8EC499F6F16779E6FC0C908760C75E22A3DE7917F1EDA31C226B6F，未被改动）。dsh 0.1.6-alpha.1 / node 24.14.0 / pnpm 12.4.2。\n\n① 前置修复：本仓库原先**没有提交 lib/**（.gitignore 里写着 lib/），而 package.json 的 main 指向 lib/index.js —— 也就是说这个源码仓直接 github: 安装会缺入口文件。commit 2b1af9d 把 lib/ 从 .gitignore 移除并提交构建产物。\n② 字节核对（两道）：\n   · lib/ 三个文件（client.js / index.d.ts / index.js）与集合仓库已发布的 dsh-connect-trae-2.0.4-dsh.1.tgz（sha256 b1ea399aa94689b3ad3524c654b8e336f7e66f56da8bf2d7de1998536fcbbffa）内的 lib/ 逐文件 sha256 一致；\n   · 并且 pnpm run build（tsdown v0.22.14）从本仓库 src/ 重新构建后**仍是同一批字节** —— 构建可复现，exit 0，3.6s。\n③ 安装（本条记录的 github: 路径）：dsh plugin --profile web add github:HaydenSmith1121/dsh-connect-trae-plus → exit 0（'Done in 18.7s using pnpm v12.4.2'；一条 'Issues with peer dependencies found' 警告，原因见 peerNote）。\n④ 装到的副本：包名 dsh-connect-trae（与上游同名），version=2.0.4-dsh.1，lib/ 3 个文件齐全。\n⑤ 注册表层：dsh.profile.bundles = [@deepseek-ai/dsh-base, @deepseek-ai/dsh-web-app, dsh-connect-trae]。\n⑥ 装配：dsh --profile web --dump-config → exit 0；树里出现 '# == dsh-connect-trae' / '- id: dsh-connect-trae' / 'name: dsh-connect-trae'；无 plugin tree failed to load / does not provide an export / Cannot find module / SyntaxError。\n⑦ peer 语义实测：node-semver 对 4 组范围 × 4 个版本做过逐一验证，结果见 peerNote（含 contributing.md「正确示例」也不覆盖 0.1.6 的发现）。\n\n核对结论：ok-with-notes —— 装得上、加载得起来，但 peer 范围有一处需要后续修正（2026-09-18，dsh 0.1.6-alpha.1，node 24.14.0，pnpm 12.4.2，核对人 HaydenSmith1121）\n\n── 来源变更 ──\n本插件原先由 dsh-plugin-collection 托管 tarball；那个条目虽然已经把 repo 指向 dsh-connect-trae-plus，但 install 仍是 method=tarball、URL 指向集合仓库 —— 集合仓库一删就会 404。现改为 github: 规格，并为此把 lib/ 提交进源码仓（见 evidence 第①②条）。",
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:HaydenSmith1121/dsh-connect-trae-plus",
+    "commands": [
+      "dsh plugin --profile web add github:HaydenSmith1121/dsh-connect-trae-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "manual",
+    "url": "https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/catalog/overrides/curated.json",
+    "firstSeenAt": "2026-09-18T06:21:02.833Z",
+    "lastSyncedAt": "2026-09-18T06:21:02.833Z"
+  }
+}
