@@ -219,7 +219,8 @@ catalog/
 > 在界面上的详情页可见 —— 但它们**不再构成一个层级**，不参与筛选、不影响能不能装。
 
 **本仓库不再随仓库分发任何第三方或自研插件的字节**：第三方插件按各自配置里的 `github:` / npm 规格
-从上游安装，自研插件的 tarball 在集合仓库里。原先随本仓库打包的四个第三方插件
+从上游安装，自研插件现在也走 `github:HaydenSmith1121/<仓库名>` —— 托管它们 tarball 的那个
+集合仓库已于 2026-09-18 退役。原先随本仓库打包的四个第三方插件
 （`@dsh-market/plugin`、`dsh-workbuddy-connect`、`dsh-connect-trae`、`dsh-receipt`）的 tarball 已全部删除，
 它们**是否出现在市场里取决于能不能采到干净的上游规格** —— 例如 `dsh-workbuddy-connect` 与
 `dsh-connect-trae` 现在解析为 npm 规格；采不到规格的就不在目录里，市场不会假装能装一个

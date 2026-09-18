@@ -263,8 +263,8 @@ pnpm 不会安装 peer 依赖，插件的 `import "@deepseek-ai/dsh-llm"` 只能
 ### 版本兼容矩阵
 
 **逐插件的 peer 约束与实测结论统一记在 [`docs/版本兼容矩阵.md`](./docs/版本兼容矩阵.md)**：
-自研 6 个插件在集合仓库（`plugins/<id>/plugin.json`），第三方插件的结论附在
-[`catalog/overrides/curated.json`](./catalog/overrides/curated.json) 的 `peerVerdict` / `notes`（含实测记录）dence` 里
+自研 6 个与第三方插件的结论都写在
+[`catalog/overrides/curated.json`](./catalog/overrides/curated.json) 的 `peerVerdict` / `peerNote` / `evidence` 里
 （例：`dsh-workbuddy-connect` 的 `^0.1.5-rc.1`、`dsh-connect-trae` 的 `>=0.1.5-0 <0.2.0-0`
 按 semver 预发布规则的实际含义，以及 `@dsh-external/dsh-ads` 的 `dsh-client-locale` 警告）。
 机器可读的那份是 [`compatibility.json`](./compatibility.json)。

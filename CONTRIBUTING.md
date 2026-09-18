@@ -1,8 +1,8 @@
 # 贡献指南
 
 本仓库是 **dsh 插件的市场**：目录（`catalog/`）、安装入口（市场面板插件 + 引导脚本）、
-以及让目录保持新鲜的每日采集。**插件的字节在另一个仓库** ——
-[`HaydenSmith1121/dsh-plugin-collection`](https://github.com/HaydenSmith1121/dsh-plugin-collection)。
+以及让目录保持新鲜的每日采集。**插件的字节在每个插件自己的源码仓库里** ——
+原先的中心化仓库 [`HaydenSmith1121/dsh-plugin-collection`](https://github.com/HaydenSmith1121/dsh-plugin-collection) 已于 2026-09-18 退役，
 
 因此这里的「贡献」比一般开源项目宽得多 —— **你不需要从零写一个插件也能帮上忙。**
 
@@ -207,22 +207,27 @@ snapshots/<id>/<插件版本>/<包名>-<版本>.tgz    # 那一层是插件版�
 
 ## 四、新增 / 更新插件
 
-### A. 自研插件（在集合仓库做）
+### A. 自研插件（在**各插件自己的仓库**做）
 
-**本仓库不用动。** 那边的流程（详见集合仓库
-[`README.md`](https://github.com/HaydenSmith1121/dsh-plugin-collection/blob/main/README.md)
-与 [`docs/收录规范.md`](https://github.com/HaydenSmith1121/dsh-plugin-collection/blob/main/docs/收录规范.md)）：
+**本仓库不用动。** 自 2026-09-18 起，6 个自研插件各自一个源码仓库
+（安装规格 `github:HaydenSmith1121/<仓库名>`），原来那个中心化的集合仓库已经退役 ——
+它的 tarball 路径、`plugin.json`、快照那套流程**不再适用**。那边的流程是：
 
-1. 打包，并把 tarball 放到 `plugins/<id>/<dsh 版本>/` —— **绝不覆盖已发布的字节**
-2. 改 `plugins/<id>/plugin.json`：`versions[]` 追加一条（版本 / dsh 版本 / tarball / sha256 /
-   bytes / files / status / verifiedAt），上一条改成 `superseded` 并写清原因；
-   顶层字段同步到最新那条
-3. 新增一套快照 `snapshots/<id>/<插件版本>/`
-4. `node scripts/build-manifest.mjs`（sha256 对不上会直接报错）
-5. 提交。**本仓库下一轮每日采集会自动把版本与 sha256 跟过来**；想立刻生效就在本仓库跑一次
+1. 改 `src/` → 重新 build → **提交 `lib/`**。`lib/` 必须进仓库：`github:` 安装走的是
+   pnpm 的 git 依赖，装到的副本直接加载 `lib/`；而 pnpm 10+ 会以
+   `ERR_PNPM_GIT_DEP_PREPARE_NOT_ALLOWED` 拦下 git 依赖的构建脚本 ——
+   「装上再构建」这条路不通
+2. `package.json` 里**不要有 `prepare`**（同上），并且 `main` 指向的入口必须真的在仓库里
+3. `repository` 指回本仓库自己；打 tag / 发 release 都可以，市场不依赖它
+4. 提交。**本仓库下一轮每日采集会自动把版本跟过来**；想立刻生效就在本仓库跑一次
    `node scripts/sync-catalog.mjs`（或等 02:00 的定时任务）
 
-打包后先自查：
+> 想给市场一条确定的手动装法，就把说明写进**那个插件自己仓库的 README** ——
+> 市场条目里的 `github:` 规格与本仓库的 [`README-安装说明.md`](./README-安装说明.md)
+> 都指向那里。
+
+（原先集合仓库那份收录规范里的打包自查清单，仍然适用于**你自己打包**的场合 ——
+比如要把预构建 tarball 挂到 GitHub Release 时：）
 
 ```bash
 tgz=<临时目录>/<包名>-<版本>.tgz
