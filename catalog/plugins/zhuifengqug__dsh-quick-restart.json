@@ -5,14 +5,11 @@
   "package": "dsh-quick-restart",
   "name": "dsh-quick-restart",
   "title": "dsh-quick-restart",
-  "summary": "在侧边栏加个一键重启按钮，点一下就能快速重载 DeepSeek Harness 服务，不用手动敲命令了。",
+  "summary": "为 DeepSeek Harness 提供快速重启命令的插件",
   "tags": [
     "dsh",
     "dsh-plugin",
-    "restart",
-    "效率提升",
-    "工作流增强",
-    "零配置"
+    "restart"
   ],
   "version": "0.2.1",
   "versionSource": "github-tag",
@@ -37,7 +34,6 @@
     "method": "github",
     "spec": "github:zhuifengqug/dsh-quick-restart",
     "commands": [
-      "dsh plugin --profile web add D:/dsh/dsh-quick-restart",
       "dsh plugin --profile web add github:zhuifengqug/dsh-quick-restart"
     ],
     "url": null,
@@ -54,6 +50,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

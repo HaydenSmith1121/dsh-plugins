@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "ciceroyang/dsh-followup-actions",
+  "slug": "ciceroyang__dsh-followup-actions",
+  "package": "dsh-followup-actions",
+  "name": "dsh-followup-actions",
+  "title": "dsh-followup-actions",
+  "summary": "DeepSeek Harness 追问快捷键：回答下面多一排按钮（翻译、说人话、缩成三句、找漏洞…），点一下就填好追问，给不知道怎么接着问的人用。",
+  "tags": [
+    "agent",
+    "deepseek-harness",
+    "dsh-plugin",
+    "followup",
+    "prompt"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-17T14:14:22Z",
+    "url": "https://github.com/ciceroyang/dsh-followup-actions/releases/tag/v0.1.1"
+  },
+  "author": "ciceroyang",
+  "repo": "https://github.com/ciceroyang/dsh-followup-actions",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T14:14:16Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ciceroyang/dsh-followup-actions",
+    "commands": [
+      "dsh plugin --profile web add github:ciceroyang/dsh-followup-actions"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

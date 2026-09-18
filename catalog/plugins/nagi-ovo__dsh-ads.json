@@ -28,7 +28,7 @@
   "peerVerdict": "warn",
   "peerNote": "4 个 peer 里 3 个满足：cordis ^4.0.1（本机 4.0.2）、schemastery ^3.18.1（本机 3.18.2）、react ^18.2.0。只有 @deepseek-ai/dsh-client-locale ^0.1.0-rc.6 按 npm 的预发布匹配规则不包含 0.1.6-alpha.1 —— 这是预发布版本的比较语义所致，不是插件真的不兼容：本机该包在位且客户端半在 0.1.6-alpha.1 上服务端装配与启动均无碍。加上 profile 的 autoInstallPeers: false 本就不装 peer，后果只是 pnpm 警告。属本仓库既有判据里的 warn 档，已在真机启动确认。",
   "coexistenceWarning": null,
-  "notes": null,
+  "notes": "1. 它是**带客户端半**的插件（dsh.client.platform=web，inject 声明 @deepseek-ai/dsh-client-runtime 与 dsh-client-locale），包名带 @dsh-external scope 且 package.json 标了 private: true —— private 只挡 npm publish，不影响 dsh plugin add（本地 tarball 与 github: 均可装，本地 tarball 安装路径本次亦已实测）。\n2. 本次验证覆盖的是「装得进、服务端装配得出、启动无致命错误」；**客户端半没有在浏览器里点开确认**（CLI 侧查不出客户端注册 id 写错这类白屏问题，本仓库为此有专门的 headless 客户端 bundle 测试，但那是给自研插件用的，不适用于外部包）。它的 lib/client.js 体积不小（仓库内约 7 MB，内联了美术资产），首次加载页面的开销值得预期。\n3. 无运行时依赖、无安装期脚本、不写全局配置、不起后台进程、不需要登录或 API Key。\n4. 纯娱乐性质，但广告层是**注入到页面里的真实 DOM**，与其它界面类插件（例如同批验证的 dsh-web 全家桶）同时在装时会各自往页面插东西，观感上可能互相打架 —— 这属于预期行为，不是装配故障。\n5. 许可 BSD-3-Clause，与其它插件不冲突。\n\n── 实测记录 ──\n隔离环境：DSH_HOME=D:\\deepseek\\_review-2026Q3\\home（一次性目录，与生产 ~/.dsh 完全分离）。\n来源：默认分支 main，HEAD=8eef607d2ab15737ec93233094d77aff7e5e8da3。\n装法：本机沙箱禁止 git 内部管道（git ls-remote 报 'cannot create standard input pipe for remote-https: Permission denied'），故把该 commit 的仓库取到本地后以 dsh plugin add <本地目录> 安装（pnpm 记为 link:）。该包**没有任何运行时 dependencies**（只有 peerDependencies 与 devDependencies），且 package.json 没有 files 字段（github: 打包会含 lib/、src/、assets/、contrib/ 与 cordis.patch.yml），两种方式的内容一致；根 cordis.patch.yml 为 2 行 insert（id: dsh-ads / name: @dsh-external/dsh-ads）。\n① 安装：exit 0，'Done in 43ms using pnpm v12.4.2'，'dependencies: + @dsh-external/dsh-ads'。\n② 依赖层：dsh plugin --profile web list → @dsh-external/dsh-ads@link:... 在列。\n③ 注册表层：dsh.profile.bundles 追加 '@dsh-external/dsh-ads'（按包名登记，不是目录名）。\n④ 装配层：dsh --profile web --dump-config → '# == @dsh-external/dsh-ads'，条目为 id: dsh-ads / name: '@dsh-external/dsh-ads'，与声明的 patch 一致。\n⑤ 真实启动：dsh web --no-open --port 3202 → 仅一行 'dsh web: http://127.0.0.1:3202/?token=...'，无 plugin tree failed to load / does not provide an export / SyntaxError / Cannot find module；端口在监听。\n⑥ 共存回归：与 dsh-web、api-relay-audit 同装一个 profile 后再启动（--port 3204）仍然干净。\n\n核对结论：ok-with-notes（2026-09-17，dsh 0.1.6-alpha.1，node 24.14.0，pnpm 12.4.2，核对人 HaydenSmith1121）",
   "sha256Note": null,
   "install": {
     "method": "github",
@@ -40,7 +40,7 @@
     "sha256": null,
     "bytes": null,
     "tarball": null,
-    "dshVersion": "0.1.6-alpha.1",
+    "dshVersion": null,
     "needsConfig": false,
     "usageNeedsConfig": false,
     "risky": false,
@@ -48,8 +48,8 @@
   },
   "source": {
     "kind": "manual",
-    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "url": "https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/catalog/overrides/curated.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "JeremyWangCY/win-pilot",
+  "slug": "jeremywangcy__win-pilot",
+  "package": "win-pilot",
+  "name": "win-pilot",
+  "title": "win-pilot",
+  "summary": "Agent-neutral Windows Computer Use plugin with MCP, CLI, skills, and native host adapters",
+  "tags": [
+    "automation",
+    "computer-use",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mcp",
+    "windows"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-09-17T10:04:11Z",
+    "url": "https://github.com/JeremyWangCY/win-pilot/releases/tag/v0.1.3"
+  },
+  "author": "JeremyWangCY",
+  "repo": "https://github.com/JeremyWangCY/win-pilot",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T09:46:12Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JeremyWangCY/win-pilot",
+    "commands": [
+      "dsh plugin --profile web add github:JeremyWangCY/win-pilot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

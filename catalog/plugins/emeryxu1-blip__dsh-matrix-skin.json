@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "emeryxu1-blip/dsh-matrix-skin",
+  "slug": "emeryxu1-blip__dsh-matrix-skin",
+  "package": "dsh-matrix-skin",
+  "name": "dsh-matrix-skin",
+  "title": "dsh-matrix-skin",
+  "summary": "给 DeepSeek Harness 网页换上黑客风黑色终端皮肤，带实时代码雨特效，还能清晰展示模型推理过程。",
+  "tags": [
+    "ai-agents",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-skin",
+    "hacker-theme",
+    "matrix",
+    "matrix-rain",
+    "reasoning",
+    "skin",
+    "theme",
+    "web-ui",
+    "可视化",
+    "工作流增强",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-27T12:32:30Z",
+    "url": "https://github.com/emeryxu1-blip/dsh-matrix-skin/releases/tag/v0.1.1"
+  },
+  "author": "emeryxu1-blip",
+  "repo": "https://github.com/emeryxu1-blip/dsh-matrix-skin",
+  "homepage": "https://github.com/emeryxu1-blip/dsh-matrix-skin#readme",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-17T08:17:19Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:emeryxu1-blip/dsh-matrix-skin",
+    "commands": [
+      "dsh plugin --profile web add -w github:emeryxu1-blip/dsh-matrix-skin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

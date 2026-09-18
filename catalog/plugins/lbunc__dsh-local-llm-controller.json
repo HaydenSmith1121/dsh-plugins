@@ -5,18 +5,14 @@
   "package": null,
   "name": "dsh-local-llm-controller",
   "title": "dsh-local-llm-controller",
-  "summary": "在设置页一键启停本地llama.cpp模型，让大模型直接接入DSH会话，装完即用。",
+  "summary": "为DSH接入本地大模型能力：在「设置→插件」页一键启停本地 llama.cpp 大模型（双槽x双模态x双预设），卡片内配置、一条命令安装、自动注册，装完即用| Enable local large model capabilities for DSH: One-click start/stop for local llama.cpp models (dual‑slot × dual‑modal × dual‑preset) right in Settings → Plugins; configure within the card, install with a single command, automatically register, and ready to use ",
   "tags": [
     "cordis",
     "dsh-plugin",
     "llama-cpp",
     "llama-server",
     "local-llm",
-    "qwen",
-    "零配置",
-    "模型适配",
-    "插件管理",
-    "效率提升"
+    "qwen"
   ],
   "version": "2.0.4",
   "versionSource": "npm",
@@ -28,8 +24,8 @@
   "license": "MIT",
   "stars": 4,
   "forks": 0,
-  "pushedAt": "2026-09-12T20:08:33Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-17T18:43:47Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -58,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

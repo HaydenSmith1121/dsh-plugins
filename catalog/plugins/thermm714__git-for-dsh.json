@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "theRMM714/git-for-dsh",
+  "slug": "thermm714__git-for-dsh",
+  "package": "git-for-dsh",
+  "name": "git-for-dsh",
+  "title": "git-for-dsh",
+  "summary": "deepseek harness的git工具",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin"
+  ],
+  "version": "0.0.6",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "theRMM714",
+  "repo": "https://github.com/theRMM714/git-for-dsh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-16T19:52:31Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:theRMM714/git-for-dsh",
+    "commands": [
+      "dsh plugin --profile <profile> add git-for-dsh",
+      "dsh plugin --profile <profile> add github:theRMM714/git-for-dsh",
+      "dsh plugin --profile <profile> add /path/to/git-for-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

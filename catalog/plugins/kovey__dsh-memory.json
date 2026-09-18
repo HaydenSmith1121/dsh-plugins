@@ -5,16 +5,11 @@
   "package": "dsh-memory",
   "name": "dsh-memory",
   "title": "dsh-memory",
-  "summary": "给 dsh 加上分层记忆：项目与全局记忆分开存，任务前自动召回、任务后持续学习。",
+  "summary": "Layered memory plugin for DeepSeek Harness: strictly separated project/global memory, host-driven recall before tasks and continuous learning after them.",
   "tags": [
     "agentic-ai",
     "dsh-plugin",
-    "memory",
-    "AI 助手",
-    "工作流增强",
-    "语义检索",
-    "会话管理",
-    "自动化"
+    "memory"
   ],
   "version": "0.1.0",
   "versionSource": "github-tag",
@@ -55,6 +50,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

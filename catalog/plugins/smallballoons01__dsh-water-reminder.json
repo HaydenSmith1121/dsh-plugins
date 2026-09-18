@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Smallballoons01/dsh-water-reminder",
+  "slug": "smallballoons01__dsh-water-reminder",
+  "package": "@dsh-plugin/water-reminder",
+  "name": "dsh-water-reminder",
+  "title": "dsh-water-reminder",
+  "summary": "Hydration reminder plugin for DeepSeek Harness — a randomized 40-60 minute nudge delivered as a native OS notification, an in-conversation agent nudge, and a sidebar countdown panel. Zero runtime dependencies.",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "health",
+    "hydration",
+    "javascript",
+    "reminder"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "Smallballoons01",
+  "repo": "https://github.com/Smallballoons01/dsh-water-reminder",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-17T03:30:27Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Smallballoons01/dsh-water-reminder",
+    "commands": [
+      "dsh plugin --profile web add link:/path/to/water_reminder",
+      "git clone https://github.com/deepseek-ai/deepseek-harness"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

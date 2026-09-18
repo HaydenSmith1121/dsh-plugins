@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "EmotionG/dsh-prompt-optimizer",
+  "slug": "emotiong__dsh-prompt-optimizer",
+  "package": "dsh-prompt-optimizer",
+  "name": "dsh-prompt-optimizer",
+  "title": "dsh-prompt-optimizer",
+  "summary": "优化提示词",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "EmotionG",
+  "repo": "https://github.com/EmotionG/dsh-prompt-optimizer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T01:28:32Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:EmotionG/dsh-prompt-optimizer",
+    "commands": [
+      "dsh plugin --profile web add github:EmotionG/dsh-prompt-optimizer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

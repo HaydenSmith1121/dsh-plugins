@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "lsl1931/dsh-session-namer",
+  "slug": "lsl1931__dsh-session-namer",
+  "package": "dsh-session-namer",
+  "name": "dsh-session-namer",
+  "title": "dsh-session-namer",
+  "summary": "DSH Web 插件：会话标题栏一键「总结命名」，用该会话当前的模型总结整段对话并改写标题",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "session-title"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "lsl1931",
+  "repo": "https://github.com/lsl1931/dsh-session-namer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T17:07:36Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lsl1931/dsh-session-namer",
+    "commands": [
+      "dsh plugin --profile web add github:lsl1931/dsh-session-namer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

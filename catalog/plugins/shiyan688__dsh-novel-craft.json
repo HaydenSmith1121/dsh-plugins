@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-novel-craft",
   "title": "dsh-novel-craft",
-  "summary": "把候选稿摊成连续正文，你只点👍👎，它把偏好压成写作规律喂给模型，越写越像你。",
+  "summary": "禁AI腔清单能让模型不像 AI，这个工作台让它像你：标好/坏段落 → 压成写作规律（只有规律进写稿上下文）→ 开新章（方向/候选/选段/合并定稿）→ 批注式微调（只改你标过的段，逐字核对）→ 张力曲线与账目体检。dsh 插件，775 条断言。",
   "tags": [
     "chinese",
     "cordis",
@@ -16,12 +16,7 @@
     "novel",
     "plugin",
     "taste-calibration",
-    "writing",
-    "报告生成",
-    "AI 助手",
-    "工作流增强",
-    "模型配置",
-    "状态持久化"
+    "writing"
   ],
   "version": "0.2.2",
   "versionSource": "npm",
@@ -31,10 +26,10 @@
   "repo": "https://github.com/shiyan688/dsh-novel-craft",
   "homepage": "https://www.npmjs.com/package/dsh-novel-craft",
   "license": "MIT",
-  "stars": 0,
+  "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-16T15:03:51Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-17T09:31:21Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -47,7 +42,7 @@
     "spec": "dsh-novel-craft",
     "commands": [
       "dsh plugin --profile web add dsh-novel-craft",
-      "dsh plugin --profile web add github:shiyan688/dsh-novel-craft"
+      "npm install"
     ],
     "url": null,
     "sha256": null,
@@ -63,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

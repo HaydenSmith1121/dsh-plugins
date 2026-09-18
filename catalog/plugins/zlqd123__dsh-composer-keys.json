@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "zlqd123/dsh-composer-keys",
+  "slug": "zlqd123__dsh-composer-keys",
+  "package": "dsh-composer-keys",
+  "name": "dsh-composer-keys",
+  "title": "dsh-composer-keys",
+  "summary": "为 DeepSeek Harness Web 聊天输入框自定义「发送」与「换行」键位：任意组合键自由分配、双预设一键切换、用户设置文档持久化、深浅色主题自适应。AI 生成的社区插件（AI-generated）。",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-17T06:11:10Z",
+    "url": "https://github.com/zlqd123/dsh-composer-keys/releases/tag/v0.1.1"
+  },
+  "author": "zlqd123",
+  "repo": "https://github.com/zlqd123/dsh-composer-keys",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T06:45:54Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zlqd123/dsh-composer-keys",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-composer-keys",
+      "dsh plugin --profile web remove dsh-composer-keys"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

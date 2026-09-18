@@ -5,18 +5,13 @@
   "package": "dsh-api-key-pool",
   "name": "dsh-api-key-pool",
   "title": "dsh-api-key-pool",
-  "summary": "自动轮换多个 API Key，遇限流或失效自动切换，带冷却恢复和可视化面板，省心省力。",
+  "summary": "API Key rotation pool for DeepSeek Harness: multi-key round-robin, failover on 401/403/429, cooldown & recovery, Web UI management panel",
   "tags": [
     "api-key",
     "api-key-rotation",
     "deepseek-harness",
     "dsh",
-    "dsh-plugin",
-    "API Key 管理",
-    "自动轮换",
-    "故障转移",
-    "冷却恢复",
-    "Web 管理面板"
+    "dsh-plugin"
   ],
   "version": "0.3.0",
   "versionSource": "package.json",
@@ -26,10 +21,10 @@
   "repo": "https://github.com/xiaozhe7772222/dsh-api-key-pool",
   "homepage": null,
   "license": "MIT",
-  "stars": 7,
+  "stars": 6,
   "forks": 2,
   "pushedAt": "2026-08-17T09:44:48Z",
-  "metricsCheckedAt": "2026-09-17T17:24:38.098Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -57,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

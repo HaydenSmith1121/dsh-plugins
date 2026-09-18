@@ -21,8 +21,8 @@
     "前端增强"
   ],
   "version": "0.3.1",
-  "versionSource": "github-tag",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
   "latestRelease": null,
   "author": "duanyunlun",
   "repo": "https://github.com/duanyunlun/dsh-session-actions",
@@ -40,10 +40,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:duanyunlun/dsh-session-actions",
+    "method": "npm",
+    "spec": "dsh-session-actions",
     "commands": [
-      "npm install dsh-session-actions"
+      "dsh plugin --profile desktop add dsh-session-actions"
     ],
     "url": null,
     "sha256": null,
@@ -59,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

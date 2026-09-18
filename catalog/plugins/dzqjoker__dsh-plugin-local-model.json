@@ -5,14 +5,9 @@
   "package": "dsh-plugin-local-model",
   "name": "dsh-plugin-local-model",
   "title": "dsh-plugin-local-model",
-  "summary": "在设置里管理本地 GGUF 模型，首条对话自动拉起 llama.cpp，闲置 5 分钟自动卸载省资源。",
+  "summary": "\"DeepSeek Harness 本地模型插件：设置里独立的「本地模型」页，首条对话自动拉起 llama.cpp，空闲 5 分钟自动卸载释放资源。\"",
   "tags": [
-    "dsh-plugin",
-    "模型适配",
-    "资源优化",
-    "设置面板",
-    "自动化",
-    "模型配置"
+    "dsh-plugin"
   ],
   "version": "0.5.2",
   "versionSource": "package.json",
@@ -54,6 +49,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

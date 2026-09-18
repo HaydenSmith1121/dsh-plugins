@@ -26,16 +26,16 @@
   "repo": "https://github.com/zhu1090093659/dsh-web",
   "homepage": "https://dsh-market.com",
   "license": "Apache-2.0",
-  "stars": 7691,
-  "forks": 520,
-  "pushedAt": "2026-09-17T16:43:49Z",
-  "metricsCheckedAt": "2026-09-17T21:00:54.416Z",
+  "stars": 7747,
+  "forks": 523,
+  "pushedAt": "2026-09-18T16:30:59Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": "ok",
   "peerNote": "根包**没有** peerDependencies，不对 @deepseek-ai/* 设任何约束，所以不存在「精确 pin 到另一个 dsh 版本 → 缺具名导出 → 整棵树挂」的失败面。真正被加载的载荷 @linxin666/dsh-web-all@0.3.23 声明的是 dsh.engines: >=0.1.5-rc.1，本仓库基线 0.1.6-alpha.1 在其范围内。落库的 install.risky 写 true 而不是照抄公共索引的 false：它的依赖闭包里有 4 个包带构建脚本（见 review.notes），这正是本仓库文档里那个极具欺骗性的 ERR_PNPM_IGNORED_BUILDS 场景。",
   "coexistenceWarning": null,
-  "notes": null,
+  "notes": "★ 它是一个**两层结构**，这点从根 package.json 看不出来：根包只打包 2 个文件，真正的载荷是 npm 上的 @linxin666/dsh-web-all@0.3.23（再带 19 个 @linxin666/* 与 dsh-better-sidebar 子包）。\n\n副作用与注意：\n1. 安装体积大：依赖闭包 208 个包、约 100 MB 下载量，实测 5m22s（本机走代理，网速偏慢）；上游仓库本身 .git 达 722 MB，走 github: 规格时 pnpm 需要完整克隆，首次安装会明显偏慢。\n2. 装前必须先处理 allowBuilds：首次 dsh plugin add 以 ERR_PNPM_IGNORED_BUILDS 退出（cloudflared@0.7.3、cpu-features@0.0.10、node-pty@1.1.0、ssh2@1.17.0）。此时包已进 node_modules、dependencies 也已写入，**唯独 dsh.profile.bundles 没追加** —— 表现是「装上了但 GUI 里没有」。按本仓库 README 第七节的既有流程把四个键写成 allowBuilds: false 后重跑同一条命令即 exit 0。\n3. 填 false 的功能代价要讲清楚：node-pty 自带 prebuilds、ssh2 的 cpu-features 只是可选加速，这两个不受影响；但 **cloudflared 的 postinstall 负责下载 cloudflared 二进制**，拒绝执行后「远程访问隧道」这条功能拿不到二进制，属于装了但该功能不可用。想要完整功能就得允许 cloudflared 跑构建脚本（等于放行第三方下载行为），本仓库按最低信任原则默认不放行。\n4. 其余界面插件（看板 / Git 图谱 / 皮肤 / 插件管理器）本身不需要额外配置，也不写全局配置、不起后台进程、不要求登录。\n5. 客户端半只做了「装进去 + 服务端装配成功 + 启动无致命错误」的验证；浏览器里逐个面板点开属于本次审核范围之外，未逐项点验。\n6. 它不是 dsh-opencode-go 那类会争抢 provider 路由的插件，与已审核的另两条（dsh-ads / dsh-api-relay-audit）实测可共存。\n\n── 实测记录 ──\n隔离环境：DSH_HOME=D:\\deepseek\\_review-2026Q3\\home（一次性目录，与生产 ~/.dsh 完全分离，doctor 校验通过）。\n装法：该仓库默认分支是 **dev**（不是 main），HEAD=cd13fc13c5439f2ee634764f194a1ff008a954cd；因本机沙箱禁止 git 建立内部管道（git ls-remote 报 'cannot create standard input pipe for remote-https: Permission denied'），改用等价复现：按根 package.json 的 files 字段（只含 package.json 与 packages/dsh-web-all/cordis.patch.yml）从 raw.githubusercontent 取这两个文件打成 tarball，再 dsh plugin add —— 依赖 @linxin666/dsh-web-all@0.3.23 仍从 npm registry 真实解析、真实安装 208 个包，与 github: 安装的功能等价。\n① 安装：exit 0，'Done in 5m 22.5s using pnpm v12.4.2'，'Packages: +208'（react-icons 22.76MB、mermaid 17.79MB、node-pty 15.46MB 等）。\n② 依赖层：dsh plugin --profile web list → '2 packages'（dsh-web@0.1.1 + dsh-plugins-market@0.1.0）。\n③ 注册表层：dsh.profile.bundles 追加 'dsh-web'。\n④ 装配层：dsh --profile web --dump-config → '# == dsh-web' 展开为 20 行 loader 条目（web-ui-compat / settings / plugin-manager / community-plugins / market / task-board / git-graph / remote-web-ui / pet / ssh / describe-image / liangshen / skill-explorer / doctor / usage / session-archive / model-capabilities / preset-center / skin-center / i18n / better-sidebar），其中 ssh、describe-image、liangshen、skill-explorer、doctor 按设计带 disabled: true（opt-in）。\n⑤ 真实启动：dsh web --no-open --port 3203 → 仅一行 'dsh web: http://127.0.0.1:3203/?token=...'，无 plugin tree failed to load / does not provide an export / SyntaxError / Cannot find module；端口在监听。仅有两行无害 Node 警告（SQLite 实验特性、DEP0190）。\n⑥ 共存回归：与 dsh-ads、api-relay-audit 同装一个 profile 后再启动（--port 3204）仍然干净。\n\n核对结论：ok-with-notes（2026-09-17，dsh 0.1.6-alpha.1，node 24.14.0，pnpm 12.4.2，核对人 HaydenSmith1121）",
   "sha256Note": null,
   "install": {
     "method": "github",
@@ -47,7 +47,7 @@
     "sha256": null,
     "bytes": null,
     "tarball": null,
-    "dshVersion": "0.1.6-alpha.1",
+    "dshVersion": null,
     "needsConfig": false,
     "usageNeedsConfig": false,
     "risky": true,
@@ -55,8 +55,8 @@
   },
   "source": {
     "kind": "manual",
-    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "url": "https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/catalog/overrides/curated.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T21:00:54.416Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

@@ -5,7 +5,7 @@
   "package": "dsh-opencode-session-header",
   "name": "dsh-opencode-session-header",
   "title": "dsh-opencode-session-header",
-  "summary": "为 OpenCode Go 会话注入专属请求头，解决 400 报错，且不影响其他服务商。",
+  "summary": "Per-conversation x-opencode-session injection for OpenCode Go in DeepSeek Harness - fixes 400 MissingSessionID without breaking other providers",
   "tags": [
     "coding-agent",
     "deepseek",
@@ -18,12 +18,7 @@
     "opencode-go",
     "opencode-zen",
     "prompt-caching",
-    "x-opencode-session",
-    "工具集成",
-    "会话管理",
-    "AI 助手",
-    "工作流增强",
-    "零配置"
+    "x-opencode-session"
   ],
   "version": "0.1.0",
   "versionSource": "github-tag",
@@ -64,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

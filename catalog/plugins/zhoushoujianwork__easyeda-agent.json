@@ -5,7 +5,7 @@
   "package": "easyeda-agent-dsh",
   "name": "easyeda-agent",
   "title": "easyeda-agent",
-  "summary": "让 AI 直接操作嘉立创EDA专业版，自动画原理图、布PCB、跑DRC检查。",
+  "summary": "EasyEDA Pro automation: Go daemon + in-app connector + agent skill + stdio MCP server for typed schematic/PCB actions, workflow gates, and DRC.",
   "tags": [
     "agent-skill",
     "ai-agent",
@@ -22,11 +22,7 @@
     "mcp-server",
     "pcb",
     "pcb-design",
-    "schematic",
-    "工具集成",
-    "自动化",
-    "AI工具",
-    "工作流增强"
+    "schematic"
   ],
   "version": "1.5.1",
   "versionSource": "github-release",
@@ -40,10 +36,10 @@
   "repo": "https://github.com/zhoushoujianwork/easyeda-agent",
   "homepage": "https://jlc-ext.com/item/zhoushoujian/easyeda-agent-connector",
   "license": "NOASSERTION",
-  "stars": 461,
-  "forks": 60,
+  "stars": 465,
+  "forks": 61,
   "pushedAt": "2026-09-17T16:59:08Z",
-  "metricsCheckedAt": "2026-09-17T17:24:38.098Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -55,17 +51,15 @@
     "method": "github",
     "spec": "github:zhoushoujianwork/easyeda-agent",
     "commands": [
-      "curl -fsSL https://raw.githubusercontent.com/zhoushoujianwork/easyeda-agent/main/install.sh | bash",
-      "curl -fsSL .../install.sh | EASYEDA_INSTALL_SKILLS=codex,agents,claude bash",
-      "curl -fsSL .../install.sh | EASYEDA_INSTALL_SKILLS=none bash"
+      "curl -fsSL https://raw.githubusercontent.com/zhoushoujianwork/easyeda-agent/main/install.sh | bash"
     ],
     "url": null,
     "sha256": null,
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": true,
-    "usageNeedsConfig": true,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
     "risky": true,
     "riskyReasons": [
       "含远程脚本下载执行（curl/wget 管道 shell）"
@@ -75,6 +69,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

@@ -5,12 +5,9 @@
   "package": "dsh-harmonyos",
   "name": "dsh-harmonyos",
   "title": "dsh-harmonyos",
-  "summary": "让官方 dsh 在鸿蒙 PC 上完整跑起来，解决 musl arm64 和受限存储的适配问题。",
+  "summary": "dsh-harmonyos",
   "tags": [
-    "dsh-plugin",
-    "模型适配",
-    "资源优化",
-    "工具集成"
+    "dsh-plugin"
   ],
   "version": "0.1.0",
   "versionSource": "github-tag",
@@ -46,13 +43,15 @@
     "dshVersion": null,
     "needsConfig": true,
     "usageNeedsConfig": true,
-    "risky": false,
-    "riskyReasons": []
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
   },
   "source": {
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

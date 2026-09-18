@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "flg1217/dsh-continue",
+  "slug": "flg1217__dsh-continue",
+  "package": "dsh-continue",
+  "name": "dsh-continue",
+  "title": "dsh-continue",
+  "summary": "dsh 输入栏一键「继续」「讲人话」快捷按钮插件 —— 代替程序员重复的体力活",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-17T06:50:02Z",
+    "url": "https://github.com/flg1217/dsh-continue/releases/tag/v0.1.0"
+  },
+  "author": "flg1217",
+  "repo": "https://github.com/flg1217/dsh-continue",
+  "homepage": "https://github.com/flg1217/dsh-continue",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-17T08:21:39Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:flg1217/dsh-continue",
+    "commands": [
+      "git clone https://github.com/flg1217/dsh-continue.git",
+      "dsh plugin --profile web add <dsh-continue 目录>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

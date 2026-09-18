@@ -23,16 +23,16 @@
   "repo": "https://github.com/corrinehu/dsh-workbuddy-connect",
   "homepage": null,
   "license": "MIT",
-  "stars": 122,
-  "forks": 21,
+  "stars": 130,
+  "forks": 23,
   "pushedAt": "2026-09-17T08:05:45Z",
-  "metricsCheckedAt": "2026-09-17T17:59:51.975Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": "^0.1.5-rc.1",
   "peerVerdict": "warn",
   "peerNote": "严格 semver 下 ^0.1.5-rc.1 不包含 0.1.6-alpha.1 —— 预发布版只有在范围里存在同 major.minor.patch 的预发布比较器时才会被纳入，而 ^0.1.5-rc.1 的上界是裸 0.2.0。但 profile 设了 autoInstallPeers: false，本来就不装 peer，所以这条只是警告。实测在 0.1.6-alpha.1 上正常加载。",
   "coexistenceWarning": null,
-  "notes": null,
+  "notes": "1. **依赖登录态**：它连的是 WorkBuddy 桌面端，凭据与登录态不随包迁移 —— 新机器装完必须在本机先登录一次，否则额度/模型都取不到。\n2. 它的额度查询路由（/plugins/dsh-workbuddy-connect/status）是 dsh-plugin-collection 里 dsh-workbuddy-quota 那个额度 pill 的数据来源：**没装本插件时，那个 pill 会显示「积分不可用」**，而 token 用量页不受影响。\n3. 未重新实测上游默认分支当前 HEAD —— 上面记的是 0.5.3 那一版 tarball 的结论，而 github: 规格拿的是默认分支的当前内容。要重新给结论就得在隔离环境里再装一次。\n\n── 实测记录 ──\n★ 来源变更（2026-09 市场与插件分离）：本条原先在旧仓库的「已验证」层，字节由本仓库以离线 tarball 分发（dsh-workbuddy-connect-0.5.3.tgz，sha256 445ca4b5825bd9649ed99548dd4948a8610760d360e793b3e8a06ff43c3ab6b0，98462 字节，11 个文件）。分离后改为上游 github: 规格。\n原先的收录与实测记录（取自旧仓库 compatibility.json）：在 dsh 0.1.6-alpha.1 / Node 24.14.0 / pnpm 12.4.2 上装进 profile，插件树正常装配、dsh web 正常启动；peer 声明 ^0.1.5-rc.1 在严格 semver 下不含本机版本，但 autoInstallPeers: false，peer 不参与安装，实测加载正常（即 peerVerdict: warn 的来源）。\n\n核对结论：ok-with-notes（2026-09-17，dsh 0.1.6-alpha.1，node 24.14.0，pnpm 12.4.2，核对人 HaydenSmith1121）",
   "sha256Note": null,
   "install": {
     "method": "github",
@@ -44,7 +44,7 @@
     "sha256": null,
     "bytes": null,
     "tarball": null,
-    "dshVersion": "0.1.6-alpha.1",
+    "dshVersion": null,
     "needsConfig": true,
     "usageNeedsConfig": true,
     "risky": false,
@@ -52,8 +52,8 @@
   },
   "source": {
     "kind": "manual",
-    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "url": "https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/catalog/overrides/curated.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:59:51.975Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

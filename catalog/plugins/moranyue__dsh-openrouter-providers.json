@@ -5,15 +5,11 @@
   "package": "dsh-openrouter-providers",
   "name": "dsh-openrouter-providers",
   "title": "dsh-openrouter-providers",
-  "summary": "在插件配置里填好 OpenRouter 提供商列表和量化限制，自动注入路由参数，让模型请求更精准。",
+  "summary": "DSH 插件：设置页配置 OpenRouter 提供商列表，注入 provider.only / provider.order 路由参数；状态持久化",
   "tags": [
     "dsh-plugin",
     "dsh-plugin-market",
-    "dsh-plugins",
-    "模型配置",
-    "工具集成",
-    "零配置",
-    "资源优化"
+    "dsh-plugins"
   ],
   "version": "1.0.11",
   "versionSource": "github-release",
@@ -50,7 +46,7 @@
     "tarball": null,
     "dshVersion": null,
     "needsConfig": true,
-    "usageNeedsConfig": false,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -58,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

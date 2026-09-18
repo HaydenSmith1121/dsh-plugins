@@ -5,7 +5,7 @@
   "package": "@dsh-external/dsh-web-search-openai",
   "name": "dsh-web-search-openai",
   "title": "dsh-web-search-openai",
-  "summary": "把 OpenAI 的网页搜索能力接入 dsh，搜索、出题、带引用，即插即用。",
+  "summary": "OpenAI Responses API web search provider for dsh (web_search tool) + Web settings card. Hot-pluggable plugin.",
   "tags": [
     "deepseek-harness",
     "dsh",
@@ -14,11 +14,7 @@
     "openai",
     "plugin",
     "responses-api",
-    "web-search",
-    "零配置",
-    "模型配置",
-    "效率提升",
-    "语义检索"
+    "web-search"
   ],
   "version": "0.1.0",
   "versionSource": "github-tag",
@@ -51,7 +47,7 @@
     "tarball": null,
     "dshVersion": null,
     "needsConfig": true,
-    "usageNeedsConfig": false,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -59,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

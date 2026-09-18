@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "BOWLUNA/dsh-sillytavern",
+  "slug": "bowluna__dsh-sillytavern",
+  "package": "dsh-sillytavern-workspace",
+  "name": "dsh-sillytavern",
+  "title": "dsh-sillytavern",
+  "summary": "DSH 的 SillyTavern 角色卡集成（非官方）：导入角色卡与世界书｜Unofficial SillyTavern character-card integration for DeepSeek Harness",
+  "tags": [
+    "character-card",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "roleplay",
+    "sillytavern"
+  ],
+  "version": "0.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "BOWLUNA",
+  "repo": "https://github.com/BOWLUNA/dsh-sillytavern",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T15:15:29Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:BOWLUNA/dsh-sillytavern",
+    "commands": [
+      "dsh plugin --profile web add github:BOWLUNA/dsh-sillytavern"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

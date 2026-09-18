@@ -5,15 +5,11 @@
   "package": "dsh-skill-preferences",
   "name": "dsh-skill-preferences",
   "title": "dsh-skill-preferences",
-  "summary": "在设置里随时开关已装的 DSH skill，避免误触发，不用改源码。",
+  "summary": "一个可以管理DSH上安装的skill的插件，可以动态开关skill来防止误触发",
   "tags": [
     "dsh",
     "dsh-plugin",
-    "dsh-skill",
-    "插件管理",
-    "设置面板",
-    "快捷操作",
-    "效率提升"
+    "dsh-skill"
   ],
   "version": "0.2.2",
   "versionSource": "github-tag",
@@ -35,10 +31,11 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:zc679087/dsh-skill-preferences",
+    "method": "npm",
+    "spec": "dsh-skill-preferences@0.2.2",
     "commands": [
-      "pnpm add dsh-skill-preferences"
+      "dsh plugin --profile web add dsh-skill-preferences@0.2.2",
+      "dsh plugin --profile web add /absolute/path/dsh-skill-preferences-0.2.2.tgz"
     ],
     "url": null,
     "sha256": null,
@@ -54,6 +51,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

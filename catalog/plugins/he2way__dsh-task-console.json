@@ -7,16 +7,20 @@
   "title": "dsh-task-console",
   "summary": "在页面背面挂一个悬浮玻璃任务台，实时看后台任务、子智能体和当前会话概览，卡片还能拖着走。",
   "tags": [
+    "canvas",
+    "deepseek-harness",
+    "dsh",
     "dsh-plugin",
+    "task-board",
     "状态监控",
     "会话管理",
     "多Agent协作",
     "可视化",
     "主题"
   ],
-  "version": "0.22.0",
+  "version": "0.24.0",
   "versionSource": "npm",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
   "latestRelease": null,
   "author": "He2way",
   "repo": "https://github.com/He2way/dsh-task-console",
@@ -24,8 +28,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-16T13:22:19Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-17T11:43:07Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -38,6 +42,7 @@
     "spec": "dsh-task-console",
     "commands": [
       "dsh plugin --profile web add dsh-task-console",
+      "dsh plugin --profile web add https://github.com/He2way/dsh-task-console/releases/latest/download/dsh-task-console.tgz",
       "dsh plugin --profile web add git+https://github.com/He2way/dsh-task-console.git"
     ],
     "url": null,
@@ -54,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

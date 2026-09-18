@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "mugnimaestra/dsh-browser-use",
+  "slug": "mugnimaestra__dsh-browser-use",
+  "package": "dsh-browser-use",
+  "name": "dsh-browser-use",
+  "title": "dsh-browser-use",
+  "summary": "DeepSeek Harness Agent Preset bridge for Open Browser Use WebMCP",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "open-browser-use",
+    "webmcp"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-17T02:47:08Z",
+    "url": "https://github.com/mugnimaestra/dsh-browser-use/releases/tag/v0.1.0"
+  },
+  "author": "mugnimaestra",
+  "repo": "https://github.com/mugnimaestra/dsh-browser-use",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T02:47:07Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mugnimaestra/dsh-browser-use",
+    "commands": [
+      "dsh plugin --profile web add github:mugnimaestra/dsh-browser-use",
+      "dsh plugin --profile web add ./dsh-browser-use"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

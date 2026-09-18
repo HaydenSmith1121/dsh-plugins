@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Yu1Ko/dsh-reasoning-support",
+  "slug": "yu1ko__dsh-reasoning-support",
+  "package": "dsh-reasoning-support",
+  "name": "dsh-reasoning-support",
+  "title": "dsh-reasoning-support",
+  "summary": "DSV4.1 reasoning support for DeepSeek Harness: lean analysis, images and attachments, and bounded acceptance/repair loops that aim to retain minimal-mode reasoning in a full agent.",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-v4",
+    "dsh-plugin",
+    "dsh-plugins"
+  ],
+  "version": "0.2.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.2.2",
+    "publishedAt": "2026-09-18T12:09:33Z",
+    "url": "https://github.com/Yu1Ko/dsh-reasoning-support/releases/tag/v0.2.2"
+  },
+  "author": "Yu1Ko",
+  "repo": "https://github.com/Yu1Ko/dsh-reasoning-support",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-18T12:09:32Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Yu1Ko/dsh-reasoning-support",
+    "commands": [
+      "dsh plugin --profile <profile-name> add dsh-reasoning-support"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

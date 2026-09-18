@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ExElectron/dsh-tool-hongtou",
   "slug": "exelectron__dsh-tool-hongtou",
-  "package": null,
+  "package": "dsh-tool-hongtou",
   "name": "dsh-tool-hongtou",
   "title": "dsh-tool-hongtou",
   "summary": "一句话输入事由，自动生成格式标准的红头公文，提纲交给 AI、排版交给模板，省心又规范。",
@@ -16,8 +16,8 @@
     "效率提升"
   ],
   "version": "0.2.0",
-  "versionSource": "npm",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
   "latestRelease": null,
   "author": "ExElectron",
   "repo": "https://github.com/ExElectron/dsh-tool-hongtou",
@@ -25,8 +25,8 @@
   "license": "MIT",
   "stars": 27,
   "forks": 6,
-  "pushedAt": "2026-08-24T19:09:28Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-17T14:13:20Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -35,10 +35,9 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "dsh-tool-hongtou",
+    "method": "github",
+    "spec": "github:ExElectron/dsh-tool-hongtou",
     "commands": [
-      "dsh plugin --profile web add dsh-tool-hongtou",
       "dsh plugin --profile web add github:ExElectron/dsh-tool-hongtou"
     ],
     "url": null,
@@ -55,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "a981008/dsh-switch",
+  "slug": "a981008__dsh-switch",
+  "package": "dsh-switch",
+  "name": "dsh-switch",
+  "title": "dsh-switch",
+  "summary": "CC Switch bridge for DeepSeek Harness: mirrors cc-switch providers and models into DSH, and shows each provider quota or balance.",
+  "tags": [
+    "cc-switch",
+    "deepseek-harness",
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "a981008",
+  "repo": "https://github.com/a981008/dsh-switch",
+  "homepage": "https://github.com/a981008/dsh-switch",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T10:58:38Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:a981008/dsh-switch",
+    "commands": [
+      "dsh plugin --profile desktop add link:/path/to/dsh-switch",
+      "dsh plugin --profile desktop add github:a981008/dsh-switch",
+      "dsh plugin --profile desktop remove dsh-switch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

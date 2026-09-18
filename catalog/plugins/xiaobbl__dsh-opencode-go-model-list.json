@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaobbl/dsh-opencode-go-model-list",
+  "slug": "xiaobbl__dsh-opencode-go-model-list",
+  "package": "dsh-opencode-go-model-list",
+  "name": "dsh-opencode-go-model-list",
+  "title": "dsh-opencode-go-model-list",
+  "summary": "修复dsh上opencode go模型列表问题",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-17T03:21:21Z",
+    "url": "https://github.com/xiaobbl/dsh-opencode-go-model-list/releases/tag/v0.1.0"
+  },
+  "author": "xiaobbl",
+  "repo": "https://github.com/xiaobbl/dsh-opencode-go-model-list",
+  "homepage": "https://www.npmjs.com/package/dsh-opencode-go-model-list",
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-18T06:21:58Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiaobbl/dsh-opencode-go-model-list",
+    "commands": [
+      "dsh plugin --profile web add github:xiaobbl/dsh-opencode-go-model-list"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

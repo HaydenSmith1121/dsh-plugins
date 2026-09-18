@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "qiqibabyy/dsh-pet-desktop",
+  "slug": "qiqibabyy__dsh-pet-desktop",
+  "package": null,
+  "name": "dsh-pet-desktop",
+  "title": "dsh-pet-desktop",
+  "summary": "A self-contained desktop pet plugin for DeepSeek Harness — Codex-style animated pets with affinity, activity bubbles, snap-to-edge dragging and smart click-through. No web pet required.",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "qiqibabyy",
+  "repo": "https://github.com/qiqibabyy/dsh-pet-desktop",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T14:22:03Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@qiqibabyy/dsh-pet-desktop",
+    "commands": [
+      "dsh plugin --profile web add @qiqibabyy/dsh-pet-desktop",
+      "dsh plugin --profile web add link:../dsh-pet-desktop",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

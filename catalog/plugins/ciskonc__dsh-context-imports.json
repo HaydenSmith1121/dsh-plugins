@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ciskonc/dsh-context-imports",
+  "slug": "ciskonc__dsh-context-imports",
+  "package": null,
+  "name": "dsh-context-imports",
+  "title": "dsh-context-imports",
+  "summary": "Claude Code-style @path imports for DeepSeek Harness: expands @imports in AGENTS.md/CLAUDE.md and injects referenced files into context at session start",
+  "tags": [
+    "agents-md",
+    "claude-md",
+    "context-injection",
+    "deepseek-harness",
+    "dsh-plugin",
+    "llm-memory"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "ciskonc",
+  "repo": "https://github.com/ciskonc/dsh-context-imports",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T16:36:23Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-context-imports",
+    "commands": [
+      "dsh plugin --profile web add dsh-context-imports",
+      "git clone https://github.com/ciskonc/dsh-context-imports.git",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

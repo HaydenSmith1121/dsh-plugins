@@ -31,10 +31,10 @@
   "repo": "https://github.com/HakureiMonika/dsh-sandbox-escalation-fix",
   "homepage": null,
   "license": "MIT",
-  "stars": 55,
+  "stars": 56,
   "forks": 9,
   "pushedAt": "2026-09-17T17:30:04Z",
-  "metricsCheckedAt": "2026-09-17T17:59:51.975Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -44,11 +44,11 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "dsh-sandbox-escalation-fix@next",
+    "spec": "dsh-sandbox-escalation-fix@latest",
     "commands": [
-      "dsh plugin --profile web add dsh-sandbox-escalation-fix@next",
-      "dsh plugin --profile headless add dsh-sandbox-escalation-fix@next",
-      "dsh plugin --profile web add dsh-sandbox-escalation-fix@0.1.6-alpha1-win-linux"
+      "dsh plugin --profile web add dsh-sandbox-escalation-fix@latest",
+      "dsh plugin --profile headless add dsh-sandbox-escalation-fix@latest",
+      "dsh plugin --profile web add dsh-sandbox-escalation-fix@0.1.6-alpha2-win-linux"
     ],
     "url": null,
     "sha256": null,
@@ -64,6 +64,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:59:51.975Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

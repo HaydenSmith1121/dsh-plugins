@@ -22,18 +22,18 @@
     "工具集成",
     "零配置"
   ],
-  "version": "0.6.1",
+  "version": "0.7.3",
   "versionSource": "npm",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
   "latestRelease": null,
   "author": "webkubor",
   "repo": "https://github.com/webkubor/dsh-llm-hub",
   "homepage": null,
   "license": "MIT",
-  "stars": 3,
-  "forks": 0,
-  "pushedAt": "2026-09-16T11:59:41Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-09-17T13:55:16Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -43,9 +43,9 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "dsh-llm-hub",
+    "spec": "@dsh-plugins/dsh-llm-hub",
     "commands": [
-      "dsh plugin --profile web add dsh-llm-hub"
+      "dsh plugin --profile web add @dsh-plugins/dsh-llm-hub"
     ],
     "url": null,
     "sha256": null,
@@ -61,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

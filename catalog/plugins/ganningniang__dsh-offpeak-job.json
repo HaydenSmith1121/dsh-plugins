@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "ganningniang/dsh-offpeak-job",
+  "slug": "ganningniang__dsh-offpeak-job",
+  "package": "dsh-offpeak-job",
+  "name": "dsh-offpeak-job",
+  "title": "dsh-offpeak-job",
+  "summary": "DeepSeek Harness 的谷时调度插件——把任务留到谷时再运行。",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "ganningniang",
+  "repo": "https://github.com/ganningniang/dsh-offpeak-job",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T09:19:25Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ganningniang/dsh-offpeak-job",
+    "commands": [
+      "dsh plugin --profile web add \"https://github.com/ganningniang/dsh-offpeak-job/releases/latest/download/dsh-offpeak-job.tgz\"",
+      "git clone https://github.com/ganningniang/dsh-offpeak-job.git",
+      "npm install && npm run build"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

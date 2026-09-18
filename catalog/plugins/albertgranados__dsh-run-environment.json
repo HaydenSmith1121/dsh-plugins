@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "albertgranados/dsh-run-environment",
+  "slug": "albertgranados__dsh-run-environment",
+  "package": "dsh-run-environment",
+  "name": "dsh-run-environment",
+  "title": "dsh-run-environment",
+  "summary": "DeepSeek Harness plugin: run the project you have open, from the harness you are already in. Detects how a workspace is meant to be run (Node.js today, adapters for more) and runs it from the Session header.",
+  "tags": [
+    "deepseek-harness",
+    "developer-tools",
+    "dsh-plugin",
+    "npm-scripts",
+    "task-runner"
+  ],
+  "version": "0.8.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.8.2",
+    "publishedAt": "2026-09-18T09:57:14Z",
+    "url": "https://github.com/albertgranados/dsh-run-environment/releases/tag/v0.8.2"
+  },
+  "author": "albertgranados",
+  "repo": "https://github.com/albertgranados/dsh-run-environment",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T09:57:13Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:albertgranados/dsh-run-environment",
+    "commands": [
+      "dsh plugin --profile web add github:albertgranados/dsh-run-environment",
+      "dsh plugin --profile web add \"file:$PWD\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

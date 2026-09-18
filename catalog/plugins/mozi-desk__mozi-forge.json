@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "mozi-desk/mozi-forge",
+  "slug": "mozi-desk__mozi-forge",
+  "package": "@mozi-forge/workspace",
+  "name": "mozi-forge",
+  "title": "mozi-forge",
+  "summary": "A foundation for self-evolving AI agents, built on DeepSeek Harness.",
+  "tags": [
+    "agentic-ai",
+    "agents",
+    "ai",
+    "ai-agents",
+    "deepseek-harness",
+    "dsh-plugin",
+    "rsi",
+    "self-evolving-agents"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "mozi-desk",
+  "repo": "https://github.com/mozi-desk/mozi-forge",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 5,
+  "forks": 1,
+  "pushedAt": "2026-09-17T10:30:09Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mozi-desk/mozi-forge",
+    "commands": [
+      "dsh plugin --profile web add github:mozi-desk/mozi-forge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

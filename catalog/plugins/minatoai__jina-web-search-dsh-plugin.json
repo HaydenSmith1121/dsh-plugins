@@ -5,19 +5,14 @@
   "package": "dsh-jina",
   "name": "jina-web-search-dsh-plugin",
   "title": "jina-web-search-dsh-plugin",
-  "summary": "把 Jina AI 的搜索、阅读、截图、嵌入等 12 种模型工具装进 DeepSeek Harness，网页设置里还能直接配 API 密钥并查余额。",
+  "summary": "Jina AI tools for DeepSeek Harness: 12 model tools (web / arXiv / SSRN search, read, screenshot, embeddings, rerank, classify, PDF, primer) plus a settings-page API key card with live balance check.",
   "tags": [
     "agent",
     "dsh-plugin",
     "jina",
     "jina-search",
     "llm-tools",
-    "search",
-    "模型配置",
-    "插件管理",
-    "设置面板",
-    "可视化",
-    "效率提升"
+    "search"
   ],
   "version": "0.7.1",
   "versionSource": "package.json",
@@ -28,9 +23,9 @@
   "homepage": null,
   "license": "MIT",
   "stars": 1,
-  "forks": 1,
-  "pushedAt": "2026-09-17T19:53:19Z",
-  "metricsCheckedAt": "2026-09-17T21:00:54.416Z",
+  "forks": 0,
+  "pushedAt": "2026-09-17T21:27:09Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -59,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T21:00:54.416Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

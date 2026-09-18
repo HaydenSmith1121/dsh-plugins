@@ -5,23 +5,14 @@
   "package": "dsh-plugin-hub",
   "name": "dsh-plugin-hub",
   "title": "dsh-plugin-hub",
-  "summary": "把 DSH 网页端的实用插件打包在一起，任务通知、用量查看、局域网代理、MCP 管理一站搞定。",
+  "summary": "DSH (DeepSeek Harness) web GUI plugin collection — task notifications, provider usage, LAN proxy, MCP manager, file-preview redirect, isolated browser verification. Targets dsh 0.1.5-rc.1 (rc only, no alpha). Install: dsh plugin --profile web add @wingsky-1/dsh-plugins-all",
   "tags": [
-    "dsh-plugin",
-    "插件管理",
-    "集中仓库",
-    "工具集成",
-    "状态监控",
-    "效率提升"
+    "dsh-plugin"
   ],
   "version": "0.2.4",
-  "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
-  "latestRelease": {
-    "tag": "v0.2.4",
-    "publishedAt": "2026-09-14T05:49:26Z",
-    "url": "https://github.com/wingsky-1/dsh-plugin-hub/releases/tag/v0.2.4"
-  },
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
   "author": "wingsky-1",
   "repo": "https://github.com/wingsky-1/dsh-plugin-hub",
   "homepage": null,
@@ -38,12 +29,12 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:wingsky-1/dsh-plugin-hub",
+    "method": "npm",
+    "spec": "@wingsky-1/dsh-plugins-all",
     "commands": [
-      "dsh plugin --profile web remove @wingsky-1/dsh-skill-explorer",
-      "dsh plugin --profile web remove @wingsky-1/dsh-idle-archive",
-      "dsh plugin --profile web remove @wingsky-1/dsh-subagent-model-inherit"
+      "dsh plugin --profile web add @wingsky-1/dsh-plugins-all",
+      "dsh plugin --profile web add @wingsky-1/dsh-notifier",
+      "dsh plugin --profile web add @wingsky-1/dsh-lan-proxy"
     ],
     "url": null,
     "sha256": null,
@@ -59,6 +50,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

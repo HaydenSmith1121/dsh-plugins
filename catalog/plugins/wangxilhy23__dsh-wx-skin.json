@@ -5,14 +5,10 @@
   "package": null,
   "name": "dsh-wx-skin",
   "title": "dsh-wx-skin",
-  "summary": "给 DSH 界面换上本地图片当磨砂背景，还能调模糊、暗化，明暗主题自动适配。",
+  "summary": "deepseek harness 皮肤插件。支持选择本地目录下的图片作为背景设置",
   "tags": [
     "dsh-plugin",
-    "dsh-plugins",
-    "界面美化",
-    "前端增强",
-    "设置面板",
-    "可视化"
+    "dsh-plugins"
   ],
   "version": "0.1.5",
   "versionSource": "github-release",
@@ -26,10 +22,10 @@
   "repo": "https://github.com/wangxilhy23/dsh-wx-skin",
   "homepage": null,
   "license": "MIT",
-  "stars": 4,
+  "stars": 3,
   "forks": 0,
   "pushedAt": "2026-09-17T04:34:34Z",
-  "metricsCheckedAt": "2026-09-17T17:24:38.098Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -39,9 +35,9 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "dsh-wx-skin@0.1.3",
+    "spec": "dsh-wx-skin@0.1.5",
     "commands": [
-      "dsh plugin --profile web add dsh-wx-skin@0.1.3",
+      "dsh plugin --profile web add dsh-wx-skin@0.1.5",
       "git clone <本仓库地址>",
       "npm install"
     ],
@@ -59,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

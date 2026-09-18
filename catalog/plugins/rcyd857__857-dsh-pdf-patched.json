@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "RCYD857/857-dsh-pdf-patched",
+  "slug": "rcyd857__857-dsh-pdf-patched",
+  "package": "@RCYD857/dsh-pdf-patched",
+  "name": "857-dsh-pdf-patched",
+  "title": "857-dsh-pdf-patched",
+  "summary": "",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "RCYD857",
+  "repo": "https://github.com/RCYD857/857-dsh-pdf-patched",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T02:52:40Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:RCYD857/857-dsh-pdf-patched",
+    "commands": [
+      "dsh plugin --profile web add github:RCYD857/857-dsh-pdf-patched",
+      "dsh plugin --profile web add link:<path-to-repo>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

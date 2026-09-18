@@ -5,7 +5,7 @@
   "package": "codebuddy-first-bridge",
   "name": "codebuddy-bridge",
   "title": "codebuddy-bridge",
-  "summary": "让 DSH 把编码、构建、调试这些活儿优先交给本机 codebuddy CLI 干，还能看状态灯和 token 用量。",
+  "summary": "codebuddy-first bridge for DeepSeek Harness (DSH): dispatch real work to the local codebuddy CLI first in every mode, with fallback dialog, live status light, token usage accounting, and a zero-dependency MCP server",
   "tags": [
     "agent",
     "claude-code",
@@ -13,20 +13,15 @@
     "cordis",
     "deepseek-harness",
     "dsh",
-    "mcp",
-    "命令行工具",
-    "工具集成",
-    "状态监控",
-    "工作流增强",
-    "效率提升"
+    "mcp"
   ],
-  "version": "1.1.11",
+  "version": "1.1.12",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-17T17:59:51.975Z",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
   "latestRelease": {
-    "tag": "v1.1.11",
-    "publishedAt": "2026-09-17T17:20:53Z",
-    "url": "https://github.com/new-256/codebuddy-bridge/releases/tag/v1.1.11"
+    "tag": "v1.1.12",
+    "publishedAt": "2026-09-18T18:12:49Z",
+    "url": "https://github.com/new-256/codebuddy-bridge/releases/tag/v1.1.12"
   },
   "author": "new-256",
   "repo": "https://github.com/new-256/codebuddy-bridge",
@@ -34,8 +29,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-17T17:20:38Z",
-  "metricsCheckedAt": "2026-09-17T17:59:51.975Z",
+  "pushedAt": "2026-09-18T18:24:55Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -63,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:59:51.975Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

@@ -5,17 +5,14 @@
   "package": "dsh-session-viz",
   "name": "dsh-session-viz",
   "title": "dsh-session-viz",
-  "summary": "自动解析DSH会话日志，用摘要、执行脉络和事件树三层视图，轻松回溯对话细节与调试问题。",
+  "summary": "DSH (DeepSeek Harness) 会话日志可视化插件：三层渐进式查看器（摘要卡片 / 执行故事线 / 技术事件树），随 harness 启动",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "jsonl",
     "plugin",
-    "visualization",
-    "会话管理",
-    "工作流增强",
-    "效率提升"
+    "visualization"
   ],
   "version": "1.1.0",
   "versionSource": "package.json",
@@ -57,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

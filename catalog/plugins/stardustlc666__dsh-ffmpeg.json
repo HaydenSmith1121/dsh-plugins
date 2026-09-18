@@ -5,20 +5,16 @@
   "package": null,
   "name": "dsh-ffmpeg",
   "title": "dsh-ffmpeg",
-  "summary": "让 DeepSeek Harness 智能体直接剪视频：探测、剪辑、拼接、转码、加字幕、抽帧、做 GIF，一条命令全搞定。",
+  "summary": "DSH 视频处理工具插件：ffmpeg_probe/cut/concat/encode/subtitle/extract/gif/frames/adjust/health 十工具（探测摘要、批量抽帧、GIF、变速/音量/静音/旋转调整），进程走官方 subprocess 服务，超时树级终止、环境变量路径回退与多视频流探测，零运行时依赖（ffmpeg 本体除外）。",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
     "ffmpeg",
-    "video",
-    "视频处理",
-    "剪辑转码",
-    "字幕生成",
-    "GIF制作"
+    "video"
   ],
-  "version": "0.4.2",
+  "version": "0.4.3",
   "versionSource": "npm",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
   "latestRelease": null,
   "author": "STARDUSTLC666",
   "repo": "https://github.com/STARDUSTLC666/dsh-ffmpeg",
@@ -26,8 +22,8 @@
   "license": "MIT",
   "stars": 4,
   "forks": 1,
-  "pushedAt": "2026-09-13T03:05:51Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-17T16:51:31Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -55,6 +51,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

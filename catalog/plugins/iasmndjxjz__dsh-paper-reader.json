@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "iasmndjxjz/dsh-paper-reader",
+  "slug": "iasmndjxjz__dsh-paper-reader",
+  "package": "dsh-paper-reader",
+  "name": "dsh-paper-reader",
+  "title": "dsh-paper-reader",
+  "summary": "DSHA 论文阅读器插件：三栏阅读（左目录/中黑底论文/右实时 Agent 对话）+ 右栏停靠模式 + pdf.js 渲染与文字抽取",
+  "tags": [
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsha",
+    "paper-reader",
+    "pdfjs"
+  ],
+  "version": "0.4.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.4.2",
+    "publishedAt": "2026-09-18T14:57:58Z",
+    "url": "https://github.com/iasmndjxjz/dsh-paper-reader/releases/tag/v0.4.2"
+  },
+  "author": "iasmndjxjz",
+  "repo": "https://github.com/iasmndjxjz/dsh-paper-reader",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-18T14:57:14Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:iasmndjxjz/dsh-paper-reader",
+    "commands": [
+      "dsh plugin --profile web add github:iasmndjxjz/dsh-paper-reader"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

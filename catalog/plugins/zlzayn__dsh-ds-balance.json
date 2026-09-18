@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "zlZayn/dsh-ds-balance",
+  "slug": "zlzayn__dsh-ds-balance",
+  "package": null,
+  "name": "dsh-ds-balance",
+  "title": "dsh-ds-balance",
+  "summary": "DSH 插件：在左侧栏底部显示 DeepSeek 账户余额（原生 UI），设置页提供连接、展示币种、预警阈值与刷新节奏的配置卡片。（原生嵌入“设置-插件-插件配置”）",
+  "tags": [
+    "agent-harness",
+    "ai",
+    "ai-agent",
+    "balance",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "monitoring",
+    "observability",
+    "plugin",
+    "sidebar",
+    "typescript"
+  ],
+  "version": "1.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "zlZayn",
+  "repo": "https://github.com/zlZayn/dsh-ds-balance",
+  "homepage": "https://zl-vertex.feishu.cn/wiki/I9S8w8vwuim3swkPwlxcDudxnHb",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T16:01:35Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-ds-balance",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh@alpha",
+      "dsh plugin --profile web add dsh-ds-balance",
+      "git clone https://github.com/zlZayn/dsh-ds-balance.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

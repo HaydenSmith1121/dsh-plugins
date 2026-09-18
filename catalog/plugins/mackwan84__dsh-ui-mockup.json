@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-ui-mockup",
   "title": "dsh-ui-mockup",
-  "summary": "用阿里通义和火山引擎生成 UI 线框图和高保真原型，让设计稿秒出。",
+  "summary": "DSH plugin for generating UI wireframes and high-fidelity mockups with DashScope Qwen/Wan and Volcengine Seedream.",
   "tags": [
     "ai-design",
     "dashscope",
@@ -18,11 +18,7 @@
     "typescript",
     "ui-mockup",
     "volcengine",
-    "wireframe",
-    "可视化",
-    "效率提升",
-    "AI 助手",
-    "自动化"
+    "wireframe"
   ],
   "version": "0.3.0",
   "versionSource": "github-release",
@@ -49,9 +45,9 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "@mackwan84/dsh-ui-mockup-bundle@0.2.0",
+    "spec": "@mackwan84/dsh-ui-mockup-bundle@0.3.0",
     "commands": [
-      "dsh plugin --profile web add @mackwan84/dsh-ui-mockup-bundle@0.2.0",
+      "dsh plugin --profile web add @mackwan84/dsh-ui-mockup-bundle@0.3.0",
       "dsh plugin --profile web add /path/to/dsh-ui-mockup/bundle/ui-mockup"
     ],
     "url": null,
@@ -68,6 +64,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

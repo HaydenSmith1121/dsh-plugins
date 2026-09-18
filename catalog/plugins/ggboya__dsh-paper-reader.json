@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "GGboya/dsh-paper-reader",
+  "slug": "ggboya__dsh-paper-reader",
+  "package": null,
+  "name": "dsh-paper-reader",
+  "title": "dsh-paper-reader",
+  "summary": "DeepSeek Harness (dsh) 插件:论文伴读工作台 —— PDF 转录 / 检索 / 流式问答 + 内置阅读器页面。",
+  "tags": [
+    "agent",
+    "deepseek-harness",
+    "dsh-plugin",
+    "paper-reader",
+    "pdf"
+  ],
+  "version": "0.2.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "GGboya",
+  "repo": "https://github.com/GGboya/dsh-paper-reader",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T17:55:19Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@ggboy123/dsh-paper-reader",
+    "commands": [
+      "dsh plugin --profile web add @ggboy123/dsh-paper-reader",
+      "git clone https://github.com/GGboya/dsh-paper-reader",
+      "dsh plugin --profile web add ./dsh-paper-reader"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

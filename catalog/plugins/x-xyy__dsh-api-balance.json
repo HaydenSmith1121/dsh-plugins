@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "X-Xyy/dsh-api-balance",
+  "slug": "x-xyy__dsh-api-balance",
+  "package": "dsh-api-balance",
+  "name": "dsh-api-balance",
+  "title": "dsh-api-balance",
+  "summary": "Live DeepSeek API balance and per-session token usage in the conversation header.",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "X-Xyy",
+  "repo": "https://github.com/X-Xyy/dsh-api-balance",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T10:06:49Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:X-Xyy/dsh-api-balance",
+    "commands": [
+      "dsh plugin --profile web add github:X-Xyy/dsh-api-balance"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

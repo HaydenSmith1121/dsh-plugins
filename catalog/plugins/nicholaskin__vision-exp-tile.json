@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "Nicholaskin/vision-exp-tile",
+  "slug": "nicholaskin__vision-exp-tile",
+  "package": "vision-exp-tile",
+  "name": "Nicholaskin/vision-exp-tile",
+  "title": "Nicholaskin/vision-exp-tile",
+  "summary": "Large-image recognition for vision-exp models: lossless 800×800 tile recognition (smart/pipeline/full), local OCR with preprocessing & handwriting routing, optional multi-vendor GPU (DirectML/CUDA/OpenVINO) with auto CPU fallback.",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "image-tile",
+    "large-image",
+    "ocr",
+    "vision"
+  ],
+  "version": "0.4.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.4.3",
+    "publishedAt": "2026-09-10T13:15:06Z",
+    "url": "https://github.com/Nicholaskin/vision-exp-tile/releases/tag/v0.4.3"
+  },
+  "author": "Nicholaskin",
+  "repo": "https://github.com/Nicholaskin/vision-exp-tile",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-11T06:36:28Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Nicholaskin/vision-exp-tile",
+    "commands": [
+      "dsh plugin --profile web add github:Nicholaskin/vision-exp-tile"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "ZFXing-lite/dsh-auto-continue",
+  "slug": "zfxing-lite__dsh-auto-continue",
+  "package": "dsh-auto-continue",
+  "name": "dsh-auto-continue",
+  "title": "dsh-auto-continue",
+  "summary": "DeepSeek Harness plugin: auto-send 继续 when a turn is interrupted by an exhausted model retry, provider error, or truncated output. Adds 开启/关闭 switches to the composer + menu.",
+  "tags": [
+    "auto-continue",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "resilience"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "ZFXing-lite",
+  "repo": "https://github.com/ZFXing-lite/dsh-auto-continue",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T05:44:51Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ZFXing-lite/dsh-auto-continue",
+    "commands": [
+      "dsh plugin --profile web add /root/普通目录/dsh-auto-continue"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

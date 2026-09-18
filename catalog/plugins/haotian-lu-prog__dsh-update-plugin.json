@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "haotian-lu-prog/dsh-update-plugin",
+  "slug": "haotian-lu-prog__dsh-update-plugin",
+  "package": null,
+  "name": "dsh-update-plugin",
+  "title": "dsh-update-plugin",
+  "summary": "One-command DSH updater: CLI, bundles and all profile plugins — plus a dsh-plugin for Settings → General, with backups and rollback.",
+  "tags": [
+    "bash",
+    "cli",
+    "cordis",
+    "cordis-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-web-plugin",
+    "homebrew",
+    "plugin-manager",
+    "shell-script",
+    "updater"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "plugin-v0.3.1",
+    "publishedAt": "2026-09-17T07:53:28Z",
+    "url": "https://github.com/haotian-lu-prog/dsh-update-plugin/releases/tag/plugin-v0.3.1"
+  },
+  "author": "haotian-lu-prog",
+  "repo": "https://github.com/haotian-lu-prog/dsh-update-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T13:56:30Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:haotian-lu-prog/dsh-update-plugin",
+    "commands": [
+      "curl -fsSL https://github.com/haotian-lu-prog/dsh-update-plugin/releases/latest/download/install.sh | bash",
+      "curl -fsSL https://raw.githubusercontent.com/haotian-lu-prog/dsh-update-plugin/refs/heads/main/install.sh | bash",
+      "brew install dsh-update-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

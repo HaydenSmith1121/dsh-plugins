@@ -5,21 +5,17 @@
   "package": null,
   "name": "dsh-suite",
   "title": "dsh-suite",
-  "summary": "一条命令装入 18 个 DSH 插件，覆盖办公、媒体、DevOps 等场景，省去逐个安装的麻烦。",
+  "summary": "DeepSeek Harness 插件全家桶：18 个组件覆盖邮件、日历、媒体创作、开发运维、消息通知与极简 PTC；通过 npm 一条命令安装，提供组合配置与整套兼容性验证脚本。",
   "tags": [
     "bundle",
     "deepseek-harness",
     "dsh-plugin",
     "plugin-suite",
-    "toolkit",
-    "插件管理",
-    "零配置",
-    "模型配置",
-    "效率提升"
+    "toolkit"
   ],
-  "version": "0.1.3",
+  "version": "0.1.4",
   "versionSource": "npm",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
   "latestRelease": null,
   "author": "STARDUSTLC666",
   "repo": "https://github.com/STARDUSTLC666/dsh-suite",
@@ -27,8 +23,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-08T11:09:36Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-17T16:53:03Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -41,7 +37,8 @@
     "spec": "@stardustlc/dsh-suite",
     "commands": [
       "dsh plugin --profile web add @stardustlc/dsh-suite",
-      "dsh plugin --profile web add github:STARDUSTLC666/dsh-suite github:STARDUSTLC666/dsh-calendar github:STARDUSTLC666/dsh-cite github:STARDUSTLC666/dsh-code-security github:STARDUSTLC666/dsh-codex-port github:STARDUSTLC666/dsh-dingtalk github:STARDUSTLC666/dsh-docker github:STARDUSTLC666/dsh-dream github:STARDUSTLC666/dsh-email github:STARDUSTLC666/dsh-ffmpeg github:STARDUSTLC666/dsh-flakefinder github:STARDUSTLC666/dsh-hyperframes github:STARDUSTLC666/dsh-minimal-ptc github:STARDUSTLC666/dsh-ppt github:STARDUSTLC666/dsh-remotion github:STARDUSTLC666/dsh-rss github:STARDUSTLC666/dsh-slack github:STARDUSTLC666/dsh-sql github:STARDUSTLC666/dsh-voice"
+      "dsh plugin --profile web add github:STARDUSTLC666/dsh-suite",
+      "dsh plugin --profile web remove @stardustlc/dsh-docker @stardustlc/dsh-dream dsh-calendar dsh-cite dsh-code-security dsh-codex-port dsh-dingtalk dsh-email dsh-ffmpeg dsh-flakefinder dsh-hyperframes dsh-minimal-ptc dsh-ppt dsh-remotion dsh-rss dsh-slack dsh-sql dsh-voice"
     ],
     "url": null,
     "sha256": null,
@@ -57,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

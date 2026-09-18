@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "ciceroyang/dsh-privacy-guard",
+  "slug": "ciceroyang__dsh-privacy-guard",
+  "package": "dsh-privacy-guard",
+  "name": "dsh-privacy-guard",
+  "title": "dsh-privacy-guard",
+  "summary": "DeepSeek Harness 发送前隐私检查：在你把手机号、身份证号、银行卡号或 API 密钥发给模型之前提醒你，并支持一键打码。",
+  "tags": [
+    "agent",
+    "deepseek-harness",
+    "dsh-plugin",
+    "pii",
+    "privacy",
+    "security"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-17T14:13:55Z",
+    "url": "https://github.com/ciceroyang/dsh-privacy-guard/releases/tag/v0.1.1"
+  },
+  "author": "ciceroyang",
+  "repo": "https://github.com/ciceroyang/dsh-privacy-guard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T14:13:45Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ciceroyang/dsh-privacy-guard",
+    "commands": [
+      "dsh plugin --profile web add github:ciceroyang/dsh-privacy-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

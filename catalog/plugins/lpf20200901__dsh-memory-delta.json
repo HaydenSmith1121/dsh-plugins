@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "lpf20200901/dsh-memory-delta",
+  "slug": "lpf20200901__dsh-memory-delta",
+  "package": "dsh-memory-delta",
+  "name": "dsh-memory-delta",
+  "title": "dsh-memory-delta",
+  "summary": "给 AI 编码助手的跨会话长期记忆：自动注入、只推变化。DSH 插件 + 零依赖 CLI。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "memory"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-18T05:26:37Z",
+    "url": "https://github.com/lpf20200901/dsh-memory-delta/releases/tag/v1.0.0"
+  },
+  "author": "lpf20200901",
+  "repo": "https://github.com/lpf20200901/dsh-memory-delta",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T05:17:15Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lpf20200901/dsh-memory-delta",
+    "commands": [
+      "dsh plugin --profile web add github:lpf20200901/dsh-memory-delta"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

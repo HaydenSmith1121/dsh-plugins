@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "loyalchiiina/dsh-archive-manager-favorites-patch",
+  "slug": "loyalchiiina__dsh-archive-manager-favorites-patch",
+  "package": "dsh-archive-manager-plus",
+  "name": "dsh-archive-manager-favorites-patch",
+  "title": "dsh-archive-manager-favorites-patch",
+  "summary": "Archived-sessions plugin for DSH — enhanced build by loyalchiiina: favorites, pinning, turns sort, idle auto-archive, bulk delete. Installable package (lib/ + README + NOTICE); based on MichengAI's upstream dsh-archive-manager v0.1.40 (Apache-2.0).",
+  "tags": [
+    "archive-manager",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin-patch"
+  ],
+  "version": "0.1.40-plus.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "loyalchiiina",
+  "repo": "https://github.com/loyalchiiina/dsh-archive-manager-favorites-patch",
+  "homepage": "https://github.com/loyalchiiina/dsh-archive-manager-favorites-patch",
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T13:37:13Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:loyalchiiina/dsh-archive-manager-favorites-patch",
+    "commands": [
+      "dsh plugin --profile web add github:loyalchiiina/dsh-archive-manager-favorites-patch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

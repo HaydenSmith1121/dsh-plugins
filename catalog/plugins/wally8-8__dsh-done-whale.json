@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "wally8-8/dsh-done-whale",
   "slug": "wally8-8__dsh-done-whale",
-  "package": null,
+  "package": "dsh-done-whale",
   "name": "dsh-done-whale",
   "title": "dsh-done-whale",
   "summary": "标签页鲸鱼图标变身状态灯：会话完成变绿，需处理变琥珀，忙时瞄一眼就知道。",
@@ -30,10 +30,10 @@
   "repo": "https://github.com/wally8-8/dsh-done-whale",
   "homepage": null,
   "license": "MIT",
-  "stars": 9,
+  "stars": 8,
   "forks": 2,
   "pushedAt": "2026-09-16T22:29:46Z",
-  "metricsCheckedAt": "2026-09-17T17:24:38.098Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -42,10 +42,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "dsh-done-whale",
+    "method": "github",
+    "spec": "github:wally8-8/dsh-done-whale",
     "commands": [
-      "dsh plugin --profile web add dsh-done-whale"
+      "dsh plugin --profile web add -w github:wally8-8/dsh-done-whale"
     ],
     "url": null,
     "sha256": null,
@@ -61,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

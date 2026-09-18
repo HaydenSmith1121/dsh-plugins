@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "snail30xx/dsh-graph-runtime",
+  "slug": "snail30xx__dsh-graph-runtime",
+  "package": "dsh-graph-runtime",
+  "name": "dsh-graph-runtime",
+  "title": "dsh-graph-runtime",
+  "summary": "Graph runtime capabilities for the DeepSeek Harness: register LangGraph compiled graphs as DSH tools, plus a graph-driven routing agent.",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "langgraph"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "snail30xx",
+  "repo": "https://github.com/snail30xx/dsh-graph-runtime",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-17T09:36:08Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:snail30xx/dsh-graph-runtime",
+    "commands": [
+      "npm install dsh-graph-runtime",
+      "npm install file:../dsh-graph-runtime"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

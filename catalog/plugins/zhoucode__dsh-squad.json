@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "zhouCode/dsh-squad",
+  "slug": "zhoucode__dsh-squad",
+  "package": "dsh-squad",
+  "name": "dsh-squad",
+  "title": "dsh-squad",
+  "summary": "让分布在不同设备与网络中的个人 Agent，在各自的工作区与权限边界内组成可持久委派的团队。 DSH-native delegation for personal Agents across devices and networks, without giving up local workspaces, credentials, or control.",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.9.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.9.2",
+    "publishedAt": "2026-09-17T10:37:24Z",
+    "url": "https://github.com/zhouCode/dsh-squad/releases/tag/v0.9.2"
+  },
+  "author": "zhouCode",
+  "repo": "https://github.com/zhouCode/dsh-squad",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-17T10:36:17Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhouCode/dsh-squad",
+    "commands": [
+      "dsh plugin --profile web add ./artifacts/dsh-squad-plugin-0.9.2.tgz --offline",
+      "dsh plugin --profile web remove @dsh-squad/plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

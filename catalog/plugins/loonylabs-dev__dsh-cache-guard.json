@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "loonylabs-dev/dsh-cache-guard",
+  "slug": "loonylabs-dev__dsh-cache-guard",
+  "package": "dsh-cache-guard",
+  "name": "dsh-cache-guard",
+  "title": "dsh-cache-guard",
+  "summary": "DSH plugin that prices an automatic context rewrite before it lands and asks first — the cold re-read, in k tokens.",
+  "tags": [
+    "compaction",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "prefix-cache"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "loonylabs-dev",
+  "repo": "https://github.com/loonylabs-dev/dsh-cache-guard",
+  "homepage": "https://www.npmjs.com/package/dsh-cache-guard",
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T17:29:34Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:loonylabs-dev/dsh-cache-guard",
+    "commands": [
+      "dsh plugin --profile web add file:C:/path/to/plugins/dsh-cache-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

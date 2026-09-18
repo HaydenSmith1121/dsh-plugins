@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "cyanseek/dsh-tool-chaos",
   "slug": "cyanseek__dsh-tool-chaos",
-  "package": null,
+  "package": "dsh-tool-chaos",
   "name": "dsh-tool-chaos",
   "title": "dsh-tool-chaos",
   "summary": "给 DSH 工具注入可控故障，自动跑韧性测试，提前发现工具链的坑。",
@@ -20,13 +20,13 @@
     "resilience-testing",
     "tool-pipeline",
     "自动化",
-    "安全审计",
+    "安全审查",
     "状态监控",
     "工具集成"
   ],
-  "version": null,
-  "versionSource": "none",
-  "versionCheckedAt": "2026-09-17T15:55:14.674Z",
+  "version": "0.1.0-next.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
   "latestRelease": null,
   "author": "cyanseek",
   "repo": "https://github.com/cyanseek/dsh-tool-chaos",
@@ -64,6 +64,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

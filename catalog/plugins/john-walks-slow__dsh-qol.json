@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "john-walks-slow/dsh-qol",
+  "slug": "john-walks-slow__dsh-qol",
+  "package": null,
+  "name": "dsh-qol",
+  "title": "dsh-qol",
+  "summary": "Mobile-first QoL for the DeepSeek Harness web GUI: Chrome-style session tab bar, swipeable fullscreen sidebar, keyboard/IME/touch adaptations and a rewritten settings page — 13 toggles under Settings → QoL.",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "mobile",
+    "ui"
+  ],
+  "version": "1.0.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "john-walks-slow",
+  "repo": "https://github.com/john-walks-slow/dsh-qol",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T17:24:43Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-qol",
+    "commands": [
+      "dsh plugin --profile web add dsh-qol"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

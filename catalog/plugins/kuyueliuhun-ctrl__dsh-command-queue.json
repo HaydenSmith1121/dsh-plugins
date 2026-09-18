@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "kuyueliuhun-ctrl/dsh-command-queue",
+  "slug": "kuyueliuhun-ctrl__dsh-command-queue",
+  "package": "dsh-command-queue",
+  "name": "dsh-command-queue",
+  "title": "dsh-command-queue",
+  "summary": "DSH 插件：让 /compact 等斜杠命令在 agent 忙碌时进入命令队列，空闲后自动执行 | Queue slash commands until the agent is idle",
+  "tags": [
+    "agent",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "slash-commands"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-17T17:07:33Z",
+    "url": "https://github.com/kuyueliuhun-ctrl/dsh-command-queue/releases/tag/v0.2.0"
+  },
+  "author": "kuyueliuhun-ctrl",
+  "repo": "https://github.com/kuyueliuhun-ctrl/dsh-command-queue",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T17:59:33Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kuyueliuhun-ctrl/dsh-command-queue",
+    "commands": [
+      "npm install github:kuyueliuhun-ctrl/dsh-command-queue"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

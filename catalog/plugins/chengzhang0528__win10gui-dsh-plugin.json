@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "chengzhang0528/win10GUI-dsh-plugin",
+  "slug": "chengzhang0528__win10gui-dsh-plugin",
+  "package": "dsh-plugin-deskpilot",
+  "name": "win10GUI-dsh-plugin",
+  "title": "win10GUI-dsh-plugin",
+  "summary": "",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "desktop-automation",
+    "dsh-plugin",
+    "windows"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "chengzhang0528",
+  "repo": "https://github.com/chengzhang0528/win10GUI-dsh-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T08:00:50Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chengzhang0528/win10GUI-dsh-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:chengzhang0528/win10GUI-dsh-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

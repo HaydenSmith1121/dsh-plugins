@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "appthin/dsh-mcp-manager-plus",
+  "slug": "appthin__dsh-mcp-manager-plus",
+  "package": null,
+  "name": "dsh-mcp-manager-plus",
+  "title": "dsh-mcp-manager-plus",
+  "summary": "MCP 服务器管理插件：在 DeepSeek Harness 设置界面的左侧边栏新增「MCP 管理」页面。MCP Server Management Plugin: A new \"MCP Management\" page has been added to the left sidebar of the DeepSeek Harness settings interface, allowing you to directly view, enable/disable, edit, restart, delete, and add MCP servers.",
+  "tags": [
+    "dsh-mcp-manager",
+    "dsh-plugin",
+    "dsh-plugins"
+  ],
+  "version": "0.4.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "appthin",
+  "repo": "https://github.com/appthin/dsh-mcp-manager-plus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-17T02:17:08Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-mcp-manager-plus",
+    "commands": [
+      "dsh plugin --profile web add dsh-mcp-manager-plus",
+      "dsh plugin --profile web add https://github.com/appthin/dsh-mcp-manager-plus.git",
+      "dsh plugin --profile web add <clone 下来的本仓库目录>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

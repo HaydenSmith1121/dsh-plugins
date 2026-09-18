@@ -5,7 +5,7 @@
   "package": "dsh-live-token-stats",
   "name": "dsh-live-token-stats",
   "title": "dsh-live-token-stats",
-  "summary": "实时显示 Token 消耗和统计，帮你一眼看出 DeepSeek 是深度思考还是卡死溺水，避免白等。",
+  "summary": "DSH Web 插件：基于 DeepSeek 官方 BPE 分词表，在 composer 下方实时渲染 token 状态带，显示流式 TPS、输出 token 与首字延迟，并对比上次 step 的估算与实际偏差；纯插件自包含，不改 DSH 源码",
   "tags": [
     "ai-tool",
     "deepseek",
@@ -13,10 +13,7 @@
     "dsh-plugin",
     "llama-tokenizer",
     "token-counter",
-    "token-usage",
-    "状态监控",
-    "可视化",
-    "效率提升"
+    "token-usage"
   ],
   "version": "0.4.4",
   "versionSource": "github-release",
@@ -30,10 +27,10 @@
   "repo": "https://github.com/better-er/dsh-live-token-stats",
   "homepage": null,
   "license": "MIT",
-  "stars": 5,
+  "stars": 4,
   "forks": 1,
   "pushedAt": "2026-09-16T22:28:48Z",
-  "metricsCheckedAt": "2026-09-17T17:24:38.098Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -61,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

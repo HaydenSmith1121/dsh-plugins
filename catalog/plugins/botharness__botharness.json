@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "BotHarness/BotHarness",
+  "slug": "botharness__botharness",
+  "package": "botharness",
+  "name": "BotHarness",
+  "title": "BotHarness",
+  "summary": "",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "BotHarness",
+  "repo": "https://github.com/BotHarness/BotHarness",
+  "homepage": "https://botharness.ai",
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T17:11:49Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:BotHarness/BotHarness",
+    "commands": [
+      "dsh plugin --profile web add github:BotHarness/BotHarness"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

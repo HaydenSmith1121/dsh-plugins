@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "zhengjy01/dsh-wechat-clawbot",
+  "slug": "zhengjy01__dsh-wechat-clawbot",
+  "package": "dsh-wechat-clawbot",
+  "name": "dsh-wechat-clawbot",
+  "title": "dsh-wechat-clawbot",
+  "summary": "DSH plugin: WeChat floating-ball bridge (QR login, message relay to agent) — maintained fork of lubaiUwU/DSH-WeChatClawBot with context_token + login-loop fixes",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "wechat"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-17T14:01:25Z",
+    "url": "https://github.com/zhengjy01/dsh-wechat-clawbot/releases/tag/v0.2.0"
+  },
+  "author": "zhengjy01",
+  "repo": "https://github.com/zhengjy01/dsh-wechat-clawbot",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T14:00:51Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhengjy01/dsh-wechat-clawbot",
+    "commands": [
+      "dsh plugin --profile <profile> add github:zhengjy01/dsh-wechat-clawbot",
+      "git clone https://github.com/zhengjy01/dsh-wechat-clawbot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

@@ -18,13 +18,9 @@
     "零配置"
   ],
   "version": "0.1.1",
-  "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
-  "latestRelease": {
-    "tag": "v0.1.1",
-    "publishedAt": "2026-09-17T10:50:15Z",
-    "url": "https://github.com/lzbaclz/dsh-selection-ask/releases/tag/v0.1.1"
-  },
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
   "author": "lzbaclz",
   "repo": "https://github.com/lzbaclz/dsh-selection-ask",
   "homepage": null,
@@ -41,12 +37,12 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:lzbaclz/dsh-selection-ask",
+    "method": "npm",
+    "spec": "dsh-selection-ask",
     "commands": [
+      "dsh plugin --profile web add dsh-selection-ask",
       "dsh plugin --profile web add github:lzbaclz/dsh-selection-ask",
-      "git clone https://github.com/lzbaclz/dsh-selection-ask.git",
-      "dsh plugin --profile web add link:/absolute/path/to/dsh-selection-ask"
+      "git clone https://github.com/lzbaclz/dsh-selection-ask.git"
     ],
     "url": null,
     "sha256": null,
@@ -62,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:59:51.975Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

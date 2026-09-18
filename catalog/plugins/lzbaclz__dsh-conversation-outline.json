@@ -17,14 +17,10 @@
     "悬停预览",
     "消息定位"
   ],
-  "version": "0.2.0",
-  "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
-  "latestRelease": {
-    "tag": "v0.2.0",
-    "publishedAt": "2026-09-17T10:50:12Z",
-    "url": "https://github.com/lzbaclz/dsh-conversation-outline/releases/tag/v0.2.0"
-  },
+  "version": "0.2.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
   "author": "lzbaclz",
   "repo": "https://github.com/lzbaclz/dsh-conversation-outline",
   "homepage": null,
@@ -41,11 +37,11 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:lzbaclz/dsh-conversation-outline",
+    "method": "npm",
+    "spec": "@chestnut23/dsh-conversation-outline",
     "commands": [
+      "dsh plugin --profile web add @chestnut23/dsh-conversation-outline",
       "dsh plugin --profile web add github:lzbaclz/dsh-conversation-outline",
-      "dsh plugin --profile web add dsh-conversation-outline",
       "git clone https://github.com/lzbaclz/dsh-conversation-outline.git"
     ],
     "url": null,
@@ -62,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:59:51.975Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

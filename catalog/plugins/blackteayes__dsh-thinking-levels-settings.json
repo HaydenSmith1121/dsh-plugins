@@ -5,21 +5,18 @@
   "package": "dsh-thinking-levels-settings",
   "name": "dsh-thinking-levels-settings",
   "title": "dsh-thinking-levels-settings",
-  "summary": "为DSH Web新增思考级别设置页，可针对自定义llm-pi-ai提供商的每个模型单独调整推理强度。",
+  "summary": "Per-model thinking-level settings page for custom DSH llm-pi-ai providers (official dsh client-plugin form)",
   "tags": [
     "deepseek-harness",
     "dsh",
-    "dsh-plugin",
-    "模型适配",
-    "模型配置",
-    "前端增强"
+    "dsh-plugin"
   ],
   "version": "3.0.0",
   "versionSource": "github-release",
   "versionCheckedAt": "2026-09-17T16:23:45.415Z",
   "latestRelease": {
     "tag": "v3.0.0",
-    "publishedAt": "2026-09-17T08:10:00Z",
+    "publishedAt": "2026-09-18T01:50:37Z",
     "url": "https://github.com/blackteaYES/dsh-thinking-levels-settings/releases/tag/v3.0.0"
   },
   "author": "blackteaYES",
@@ -28,8 +25,8 @@
   "license": "MIT",
   "stars": 3,
   "forks": 0,
-  "pushedAt": "2026-09-17T08:23:15Z",
-  "metricsCheckedAt": "2026-09-17T17:24:38.098Z",
+  "pushedAt": "2026-09-18T01:50:10Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -43,7 +40,7 @@
     "commands": [
       "npm install --global pnpm",
       "dsh plugin --profile web add github:blackteaYES/dsh-thinking-levels-settings",
-      "dsh plugin --profile web add https://github.com/blackteaYES/dsh-thinking-levels-settings/releases/download/v2.2.0/dsh-thinking-levels-settings-2.2.0.tgz"
+      "dsh plugin --profile web add https://github.com/blackteaYES/dsh-thinking-levels-settings/releases/download/v3.0.0/dsh-thinking-levels-settings-3.0.0.tgz"
     ],
     "url": null,
     "sha256": null,
@@ -52,13 +49,15 @@
     "dshVersion": null,
     "needsConfig": false,
     "usageNeedsConfig": false,
-    "risky": false,
-    "riskyReasons": []
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
   },
   "source": {
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

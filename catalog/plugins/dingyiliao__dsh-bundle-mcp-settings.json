@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "dingyiliao/dsh-bundle-mcp-settings",
+  "slug": "dingyiliao__dsh-bundle-mcp-settings",
+  "package": "@dingyiliao/dsh-mcp-settings",
+  "name": "dsh-bundle-mcp-settings",
+  "title": "dsh-bundle-mcp-settings",
+  "summary": "Installable DSH bundle for managing MCP servers from Settings",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-bundle",
+    "mcp"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "dingyiliao",
+  "repo": "https://github.com/dingyiliao/dsh-bundle-mcp-settings",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T05:40:14Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dingyiliao/dsh-bundle-mcp-settings",
+    "commands": [
+      "dsh plugin --profile web add github:dingyiliao/dsh-bundle-mcp-settings"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

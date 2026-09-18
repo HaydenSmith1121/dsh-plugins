@@ -15,22 +15,22 @@
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
-  "versionCheckedAt": null,
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
   "latestRelease": null,
   "author": "HaydenSmith1121",
   "repo": "https://github.com/HaydenSmith1121/dsh-chat-fold",
   "homepage": null,
   "license": "MIT",
-  "stars": null,
-  "forks": null,
-  "pushedAt": null,
-  "metricsCheckedAt": null,
-  "origin": "manual",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T03:22:06Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
   "peerRuntimePin": "@deepseek-ai/cordis 4.0.2",
   "peerVerdict": "ok",
   "peerNote": "peerDependencies 只约束 @deepseek-ai/cordis 4.0.2（与基线自带的那份同版），**不对 @deepseek-ai/dsh-* 设任何 pin**，所以不存在「精确 pin 到另一个 dsh 版本 → 缺具名导出 → 整棵树挂」的失败面。宿主半不 import 任何 @deepseek-ai/* 包，客户端半一个 require 都不用（只操作 DOM），依赖面比其它界面插件更小。",
   "coexistenceWarning": null,
-  "notes": "★ 它补的是一个**上游的真实缺口**，不是重复实现。Harness 本身已经有「回合过程折叠」，Compact 也是默认值，但那条折叠是 React 投影，生效条件是 turnClosed && !historyIncomplete —— 回合还在跑、或会话还挂着「加载更早」时，一行都不折。这两种情况恰好是正文最长的时候。\n\n副作用与注意：\n1. 纯客户端 + 空宿主半：宿主半不发布服务、不监听事件、不改写官方行、不注册任何 Slot 占用，因此不会与「替换官方渲染器」的插件抢位。唯一的副作用是它插了一小段 <style> 与若干按钮，卸载时全部移除。\n2. 无网络、无登录、无 API Key、不写全局配置、不起后台进程。\n3. 依赖官方正文行的类名与 data 属性（EvIC1a_flowItem / data-chat-flow-kind / data-chat-turn / data-chat-anchor-key）。这些是当前 dsh 版本的实现细节：上游若改名，插件会**静默不生效**，而不会报错或误伤正文（选择器匹配不到就什么都不做）。这是刻意的降级方向。\n4. 折叠状态不落盘，刷新后回到默认 —— 与官方投影的语义一致。\n5. 与其它已审核插件无已知冲突：它不争抢 provider / adapter id，也不占 Slot key。\n\n实测数据（94 行的长回合）：默认展开正文高 4616px，折叠后 263px。",
+  "notes": "★ 它补的是一个**上游的真实缺口**，不是重复实现。Harness 本身已经有「回合过程折叠」，Compact 也是默认值，但那条折叠是 React 投影，生效条件是 turnClosed && !historyIncomplete —— 回合还在跑、或会话还挂着「加载更早」时，一行都不折。这两种情况恰好是正文最长的时候。\n\n副作用与注意：\n1. 纯客户端 + 空宿主半：宿主半不发布服务、不监听事件、不改写官方行、不注册任何 Slot 占用，因此不会与「替换官方渲染器」的插件抢位。唯一的副作用是它插了一小段 <style> 与若干按钮，卸载时全部移除。\n2. 无网络、无登录、无 API Key、不写全局配置、不起后台进程。\n3. 依赖官方正文行的类名与 data 属性（EvIC1a_flowItem / data-chat-flow-kind / data-chat-turn / data-chat-anchor-key）。这些是当前 dsh 版本的实现细节：上游若改名，插件会**静默不生效**，而不会报错或误伤正文（选择器匹配不到就什么都不做）。这是刻意的降级方向。\n4. 折叠状态不落盘，刷新后回到默认 —— 与官方投影的语义一致。\n5. 与其它已审核插件无已知冲突：它不争抢 provider / adapter id，也不占 Slot key。\n\n实测数据（94 行的长回合）：默认展开正文高 4616px，折叠后 263px。\n\n── 实测记录 ──\n隔离环境：DSH_HOME=C:\\Users\\Administrator\\.dsh-dev（与生产 ~/.dsh 完全分离；生产侧 profile 装配树全程未变，3080 服务进程 PID 未重启）。\n\n装法（两条都验过）：\n① node scripts/dev-env.mjs install <本仓库 0.1.6-alpha.1/dsh-chat-fold-0.1.0.tgz> → exit 0，dsh.profile.bundles 追加 dsh-chat-fold。\n② pnpm 对同名同版本的 tarball 会命中内容寻址缓存、装回旧字节（本次开发中真实踩到：装完仍是上一版 14404 字节，源码已是 16284）。判据是比对安装副本与源文件的字节数，不能只看「装完了」。\n\n① 注册表层：profiles/web/package.json 的 dsh.profile.bundles = [dsh-base, dsh-web-app, dsh-chat-fold]。\n② 真实启动：node scripts/dev-env.mjs web → 仅一行 'dsh web: http://127.0.0.1:3090/?token=...'，无 plugin tree failed to load / SyntaxError / loaded without registering；端口在监听。\n③ 客户端加载：页面里 document.querySelectorAll('[data-chatfold-owned]').length = 91 —— 插件确实材料化并接管了 91 行。\n④ 折叠生效：正文 scrollHeight 4616px → 263px（同一份 94 行会话）。\n⑤ 单行开关独立：点某一行自己的开关，只展开那一行（263 → 304），其余 90 行仍收起。\n⑥ 轮级开关：点「展开本轮过程」→ 折叠数 0/91、7208px；再点「折叠本轮过程」→ 91/91、263px；按钮文案随真实状态正确翻转。\n⑦ 最终答复不被折：本轮最后一条有内容的 assistant-step 为 hidden=false / owned=false。\n⑧ **卸载可逆**：从 bundles 移除后重开页面，owned/bars/toggles/styles 全为 0 —— 正文回到原样，零残余。\n⑨ CI：.github/workflows/check.yml 在本仓库执行（语法 + 客户端注册契约 + 打包内容），run 35300221831 success。\n\n核对结论：ok（2026-09-18，dsh 0.1.6-alpha.1，node 24.14.0，pnpm 12.4.2，核对人 HaydenSmith1121）",
   "sha256Note": null,
   "install": {
     "method": "github",
@@ -52,6 +52,6 @@
     "kind": "manual",
     "url": "https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/catalog/overrides/curated.json",
     "firstSeenAt": null,
-    "lastSyncedAt": null
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

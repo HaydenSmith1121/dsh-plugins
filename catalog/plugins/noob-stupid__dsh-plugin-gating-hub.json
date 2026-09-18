@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "id": "Noob-stupid/dsh-plugin-hub",
-  "slug": "noob-stupid__dsh-plugin-hub",
+  "id": "Noob-stupid/dsh-plugin-gating-hub",
+  "slug": "noob-stupid__dsh-plugin-gating-hub",
   "package": null,
   "name": "dsh-plugin-hub",
   "title": "dsh-plugin-hub",
-  "summary": "在 DSH Web UI 里直接管理插件，还能逛 GitHub 插件市场一键装新插件。",
+  "summary": "A plugin manager and GitHub dsh-plugin marketplace for the DSH Web UI.",
   "tags": [
     "agent",
     "ai-empower",
@@ -21,24 +21,24 @@
     "open-source",
     "plugin-console",
     "plugin-manager",
-    "plugin-market",
-    "插件管理",
-    "插件开发",
-    "工具集成",
-    "前端增强"
+    "plugin-market"
   ],
   "version": "0.3.47",
-  "versionSource": "npm",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
-  "latestRelease": null,
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.3.47",
+    "publishedAt": "2026-09-17T14:20:42Z",
+    "url": "https://github.com/Noob-stupid/dsh-plugin-gating-hub/releases/tag/v0.3.47"
+  },
   "author": "Noob-stupid",
-  "repo": "https://github.com/Noob-stupid/dsh-plugin-hub",
+  "repo": "https://github.com/Noob-stupid/dsh-plugin-gating-hub",
   "homepage": "https://github.com/Noob-stupid/dsh-plugin-hub/tree/main/docs",
   "license": "MIT",
-  "stars": 86,
+  "stars": 85,
   "forks": 8,
-  "pushedAt": "2026-09-16T20:31:39Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-18T20:03:42Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -66,7 +66,7 @@
   "source": {
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
-    "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

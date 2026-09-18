@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "2025Bigeye/dsh-nanobot-subagent-link",
+  "slug": "2025bigeye__dsh-nanobot-subagent-link",
+  "package": null,
+  "name": "dsh-nanobot-subagent-link",
+  "title": "dsh-nanobot-subagent-link",
+  "summary": "Connect Nanobot instances to DeepSeek Harness,enabling DSH to operate NanoBot as a Sub-Agent",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "2025Bigeye",
+  "repo": "https://github.com/2025Bigeye/dsh-nanobot-subagent-link",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T13:32:21Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-tool-nanobot",
+    "commands": [
+      "dsh plugin --profile web add dsh-tool-nanobot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "john-walks-slow/dsh-set-model",
+  "slug": "john-walks-slow__dsh-set-model",
+  "package": null,
+  "name": "dsh-set-model",
+  "title": "dsh-set-model",
+  "summary": "Per-agent model switching for DeepSeek Harness: set_model / list_models agent tools with provider whitelist and token-budget guardrails, plus plan-mode model staging and cache-safe active-model context.",
+  "tags": [
+    "ai-agent",
+    "deepseek-harness",
+    "dsh-plugin",
+    "llm",
+    "model-switching"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "john-walks-slow",
+  "repo": "https://github.com/john-walks-slow/dsh-set-model",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T17:24:39Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-set-model",
+    "commands": [
+      "dsh plugin --profile web add dsh-set-model"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

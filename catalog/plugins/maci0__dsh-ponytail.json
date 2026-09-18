@@ -5,17 +5,13 @@
   "package": "dsh-ponytail",
   "name": "dsh-ponytail",
   "title": "dsh-ponytail",
-  "summary": "让 AI 变身懒散资深程序员，只写最少代码，专治过度设计。",
+  "summary": "Ponytail (lazy senior dev mode) for DeepSeek Harness: six skills, an always-on anti-over-engineering ruleset, and a Plugin configuration card.",
   "tags": [
     "ai-agent",
     "deepseek-harness",
     "dsh-plugin",
     "ponytail",
-    "yagni",
-    "效率提升",
-    "AI 助手",
-    "工作流增强",
-    "零配置"
+    "yagni"
   ],
   "version": "0.9.1",
   "versionSource": "github-release",
@@ -44,7 +40,7 @@
     "method": "github",
     "spec": "github:maci0/dsh-ponytail",
     "commands": [
-      "dsh plugin --profile web add /path/to/dsh-ponytail"
+      "dsh plugin --profile web add github:maci0/dsh-ponytail"
     ],
     "url": null,
     "sha256": null,
@@ -60,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

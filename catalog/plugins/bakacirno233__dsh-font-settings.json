@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "BakaCirno233/dsh-font-settings",
+  "slug": "bakacirno233__dsh-font-settings",
+  "package": "dsh-font-settings",
+  "name": "dsh-font-settings",
+  "title": "dsh-font-settings",
+  "summary": "DSH font settings plugin for DeepSeek Harness Desktop",
+  "tags": [
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh-plugin",
+    "dsh-plugins"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "BakaCirno233",
+  "repo": "https://github.com/BakaCirno233/dsh-font-settings",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T06:53:35Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:BakaCirno233/dsh-font-settings",
+    "commands": [
+      "dsh plugin --profile chat add github:BakaCirno233/dsh-font-settings",
+      "git clone https://github.com/BakaCirno233/dsh-font-settings.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

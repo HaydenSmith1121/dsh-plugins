@@ -24,9 +24,9 @@
     "工作流增强",
     "AI 助手"
   ],
-  "version": "1.3.33",
-  "versionSource": "package.json",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "version": "1.3.34",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
   "latestRelease": null,
   "author": "yangdcm",
   "repo": "https://github.com/yangdcm/dsh-expert-team",
@@ -44,10 +44,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:yangdcm/dsh-expert-team",
+    "method": "npm",
+    "spec": "@yangdcm/dsh-expert-team",
     "commands": [
-      "dsh plugin --profile web add github:yangdcm/dsh-expert-team"
+      "dsh plugin --profile web add @yangdcm/dsh-expert-team"
     ],
     "url": null,
     "sha256": null,
@@ -63,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

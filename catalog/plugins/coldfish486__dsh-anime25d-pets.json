@@ -5,16 +5,11 @@
   "package": "dsh-anime25d-pets",
   "name": "dsh-anime25d-pets",
   "title": "dsh-anime25d-pets",
-  "summary": "上传一张干净背景的角色图，自动生成带物理发丝和表情动画的桌宠，还能镜像你的状态。",
+  "summary": "借助see-through，只凭一张干净背景的图像，即可获得带自动装配、发丝物理、表情动画和状态镜像的桌宠",
   "tags": [
     "dsh",
     "dsh-pet",
-    "dsh-plugin",
-    "零配置",
-    "自动化",
-    "视觉理解",
-    "桌宠",
-    "工作流增强"
+    "dsh-plugin"
   ],
   "version": "0.2.5",
   "versionSource": "github-release",
@@ -43,7 +38,9 @@
     "method": "github",
     "spec": "github:coldfish486/dsh-anime25d-pets",
     "commands": [
-      "dsh plugin --profile web add github:coldfish486/dsh-anime25d-pets"
+      "dsh plugin --profile web add github:coldfish486/dsh-anime25d-pets",
+      "git clone https://github.com/coldfish486/dsh-anime25d-pets.git",
+      "dsh plugin --profile web add /path/to/dsh-anime25d-pets"
     ],
     "url": null,
     "sha256": null,
@@ -59,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

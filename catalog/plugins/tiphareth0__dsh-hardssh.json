@@ -5,30 +5,26 @@
   "package": null,
   "name": "dsh-hardssh",
   "title": "dsh-hardssh",
-  "summary": "把本地 DSH 插件工作流搬到远程服务器上跑，轻松调度多台机器，提升执行效率。",
+  "summary": "Run your work with existing DSH plugins on remote servers, across any number of machines",
   "tags": [
     "dsh-plugin",
     "dsh-plugin-market",
     "dsh-plugins",
     "remote-ssh",
-    "remote-work",
-    "安全审计",
-    "命令行工具",
-    "工作流增强",
-    "效率提升"
+    "remote-work"
   ],
-  "version": "0.2.6-alpha",
-  "versionSource": "npm",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "version": "0.1.2-alpha",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
   "latestRelease": null,
   "author": "tiphareth0",
   "repo": "https://github.com/tiphareth0/dsh-hardssh",
   "homepage": null,
   "license": "BSD-3-Clause",
-  "stars": 2,
+  "stars": 3,
   "forks": 0,
-  "pushedAt": "2026-09-14T05:09:27Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-17T17:16:06Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -38,11 +34,11 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "@tiphareth/dsh-hardssh",
+    "spec": "@tiphareth/dsh-hardssh@0.2.6-alpha",
     "commands": [
+      "dsh plugin --profile web add @tiphareth/dsh-hardssh@0.2.6-alpha",
       "dsh plugin --profile web add @tiphareth/dsh-hardssh",
-      "dsh plugin --profile web add link:</path/to/dsh-hardssh>/packages/dsh-hardssh",
-      "dsh plugin --profile web add </path/to/dsh-hardssh>/dist/tiphareth-dsh-hardssh-0.2.4.tgz"
+      "dsh plugin --profile web add link:</path/to/dsh-hardssh>/packages/dsh-hardssh"
     ],
     "url": null,
     "sha256": null,
@@ -58,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

@@ -5,31 +5,30 @@
   "package": "dsh-sync-plugin",
   "name": "dsh-sync-plugin",
   "title": "dsh-sync-plugin",
-  "summary": "把会话、设置和工作区通过你的私有 GitHub 仓库在多台电脑间自动同步，换设备也不丢数据。",
+  "summary": "DeepSeek Harness 双向同步插件：通过私有GitHub仓库在电脑间同步会话/附件/工作区/设置",
   "tags": [
     "backup",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "sync",
-    "跨设备",
-    "会话管理",
-    "设置面板",
-    "工作区管理",
-    "集中仓库"
+    "sync"
   ],
-  "version": "0.3.4",
-  "versionSource": "github-tag",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
-  "latestRelease": null,
+  "version": "0.12.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.12.4",
+    "publishedAt": "2026-09-18T12:27:29Z",
+    "url": "https://github.com/dpskk2/dsh-sync-plugin/releases/tag/v0.12.4"
+  },
   "author": "dpskk2",
   "repo": "https://github.com/dpskk2/dsh-sync-plugin",
   "homepage": null,
   "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-17T00:12:18Z",
-  "metricsCheckedAt": "2026-09-17T17:24:38.098Z",
+  "pushedAt": "2026-09-18T12:26:15Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -57,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

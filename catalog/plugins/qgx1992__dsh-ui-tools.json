@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "qgx1992/dsh-ui-tools",
+  "slug": "qgx1992__dsh-ui-tools",
+  "package": "dsh-ui-tools",
+  "name": "dsh-ui-tools",
+  "title": "dsh-ui-tools",
+  "summary": "DSH web 插件：模型选择双按钮（供应商+模型两级联动，含推理等级调节）+ 侧边栏工作区折叠/展开",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.4.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.4.5",
+    "publishedAt": "2026-09-17T10:59:10Z",
+    "url": "https://github.com/qgx1992/dsh-ui-tools/releases/tag/v0.4.5"
+  },
+  "author": "qgx1992",
+  "repo": "https://github.com/qgx1992/dsh-ui-tools",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T10:59:01Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qgx1992/dsh-ui-tools",
+    "commands": [
+      "dsh plugin --profile web add github:qgx1992/dsh-ui-tools"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

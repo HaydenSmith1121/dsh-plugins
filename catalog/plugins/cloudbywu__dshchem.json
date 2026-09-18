@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "cloudbywu/dshchem",
+  "slug": "cloudbywu__dshchem",
+  "package": null,
+  "name": "dshchem",
+  "title": "dshchem",
+  "summary": "DSH (DeepSeek Harness) 化学科研 Agent 预设与插件：24 个 chem_* 工具，RDKit / ASE / xtb / AutoDock Vina / admet_ai 后端",
+  "tags": [
+    "ai-agent",
+    "cheminformatics",
+    "deepseek-harness",
+    "dsh-plugin",
+    "rdkit"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "cloudbywu",
+  "repo": "https://github.com/cloudbywu/dshchem",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-17T13:48:57Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:cloudbywu/dshchem",
+    "commands": [
+      "dsh plugin --profile web add github:cloudbywu/dshchem"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

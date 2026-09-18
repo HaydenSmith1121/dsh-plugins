@@ -13,14 +13,10 @@
     "前端增强",
     "可视化"
   ],
-  "version": "2.0.88",
-  "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
-  "latestRelease": {
-    "tag": "v2.0.88",
-    "publishedAt": "2026-09-16T07:04:05Z",
-    "url": "https://github.com/Lichtspur/deepseek-style-theme/releases/tag/v2.0.88"
-  },
+  "version": "2.0.89",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
   "author": "Lichtspur",
   "repo": "https://github.com/Lichtspur/deepseek-style-theme",
   "homepage": null,
@@ -37,12 +33,12 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:Lichtspur/deepseek-style-theme",
+    "method": "npm",
+    "spec": "dsh-deepseek-style-theme",
     "commands": [
+      "dsh plugin --profile web add dsh-deepseek-style-theme",
       "dsh plugin --profile web add file:D:\\plugins\\dsh-deepseek-style-theme",
-      "dsh plugin --profile web add github:Lichtspur/deepseek-style-theme",
-      "dsh plugin --profile web add ./releases/dsh-deepseek-style-theme-1.43.1.tgz"
+      "dsh plugin --profile web add github:Lichtspur/deepseek-style-theme"
     ],
     "url": null,
     "sha256": null,
@@ -58,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

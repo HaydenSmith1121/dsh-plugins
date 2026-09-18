@@ -5,18 +5,14 @@
   "package": null,
   "name": "dsh-skill-mcp-panel",
   "title": "dsh-skill-mcp-panel",
-  "summary": "在 DSH 的 Web 设置页里集中管理技能和 MCP，还附带 dsh-panel 命令行工具。",
+  "summary": "DSH Web UI plugin: skill and MCP management（Web界面的skill/MCP管理工具）",
   "tags": [
     "deepseek",
     "dsh",
     "dsh-plugin",
     "mcp",
     "plugin",
-    "skills",
-    "设置面板",
-    "插件管理",
-    "工具集成",
-    "命令行工具"
+    "skills"
   ],
   "version": "2.0.5",
   "versionSource": "npm",
@@ -26,10 +22,10 @@
   "repo": "https://github.com/Fishquito7/dsh-skill-mcp-panel",
   "homepage": null,
   "license": "MIT",
-  "stars": 131,
+  "stars": 132,
   "forks": 16,
-  "pushedAt": "2026-09-15T17:59:22Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-17T16:39:34Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -41,7 +37,7 @@
     "method": "npm",
     "spec": "dsh-skill-mcp-panel",
     "commands": [
-      "dsh plugin --profile web add https://github.com/Fishquito7/dsh-skill-mcp-panel/releases/download/v2.0.4/dsh-skill-mcp-panel-2.0.4.tgz",
+      "dsh plugin --profile web add https://github.com/Fishquito7/dsh-skill-mcp-panel/releases/download/v2.0.5/dsh-skill-mcp-panel-2.0.5.tgz",
       "dsh plugin --profile web add dsh-skill-mcp-panel",
       "dsh plugin --profile web add github:Fishquito7/dsh-skill-mcp-panel"
     ],
@@ -59,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

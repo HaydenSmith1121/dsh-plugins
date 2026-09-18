@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "BOWLUNA/dsh-agent-group",
+  "slug": "bowluna__dsh-agent-group",
+  "package": "dsh-agent-group-workspace",
+  "name": "dsh-agent-group",
+  "title": "dsh-agent-group",
+  "summary": "DSH 多智能体群聊插件：多个角色在同一会话里各自独立人设地对话｜Multi-agent group chat plugin for DeepSeek Harness",
+  "tags": [
+    "agents",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "group-chat",
+    "multi-agent"
+  ],
+  "version": "0.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "BOWLUNA",
+  "repo": "https://github.com/BOWLUNA/dsh-agent-group",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T15:15:24Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:BOWLUNA/dsh-agent-group",
+    "commands": [
+      "dsh plugin --profile web add github:BOWLUNA/dsh-agent-group"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

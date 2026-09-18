@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "xiaoso456/dsh-tool-plus",
   "slug": "xiaoso456__dsh-tool-plus",
-  "package": null,
+  "package": "@xiaoso/dsh-tool-plus",
   "name": "dsh-tool-plus",
   "title": "dsh-tool-plus",
   "summary": "给 DeepSeek Harness 的基础工具全面升级：bash 常驻、读写编辑更稳、搜索双引擎、图片直接看，装一个就够。",
@@ -22,17 +22,21 @@
     "视觉理解"
   ],
   "version": "0.1.8",
-  "versionSource": "npm",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
-  "latestRelease": null,
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "tool-plus-v0.1.8",
+    "publishedAt": "2026-09-17T08:49:52Z",
+    "url": "https://github.com/xiaoso456/dsh-tool-plus/releases/tag/tool-plus-v0.1.8"
+  },
   "author": "xiaoso456",
   "repo": "https://github.com/xiaoso456/dsh-tool-plus",
   "homepage": null,
   "license": "MIT",
   "stars": 5,
   "forks": 0,
-  "pushedAt": "2026-09-15T11:14:48Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-17T09:44:16Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -41,11 +45,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "@xiaoso/dsh-tool-plus",
+    "method": "github",
+    "spec": "github:xiaoso456/dsh-tool-plus",
     "commands": [
-      "dsh plugin --profile web add @xiaoso/dsh-tool-plus",
-      "dsh plugin --profile web add github:xiaoso456/dsh-tool-plus",
+      "dsh plugin --profile web add --allow-build=@xiaoso/dsh-tool-plus @xiaoso/dsh-tool-plus",
       "dsh plugin --profile web add link:<本仓库路径>"
     ],
     "url": null,
@@ -62,6 +65,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

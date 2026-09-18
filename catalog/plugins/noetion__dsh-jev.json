@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "noetion/dsh-jev",
+  "slug": "noetion__dsh-jev",
+  "package": "dsh-jev",
+  "name": "dsh-jev",
+  "title": "dsh-jev",
+  "summary": "DSH bundle that registers jev_ask for TypeSafe Jev noul, choice, and score answers.",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "jev",
+    "typesafe"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "noetion",
+  "repo": "https://github.com/noetion/dsh-jev",
+  "homepage": "https://github.com/noetion/dsh-jev",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-18T00:05:54Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:noetion/dsh-jev",
+    "commands": [
+      "dsh plugin --profile web add github:noetion/dsh-jev"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "MJorgin/dsh-agent-conductor",
+  "slug": "mjorgin__dsh-agent-conductor",
+  "package": "dsh-agent-conductor",
+  "name": "dsh-agent-conductor",
+  "title": "dsh-agent-conductor",
+  "summary": "让 DeepSeek Harness 在会话中直接调度 11 种外部智能体 CLI，无需切换工具，即插即用，效率翻倍。",
+  "tags": [
+    "agent",
+    "claude-code",
+    "codex",
+    "deepseek-harness",
+    "dsh-plugin",
+    "multica",
+    "task-board",
+    "多Agent协作",
+    "工具集成",
+    "零配置",
+    "工作流增强",
+    "效率提升"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-01T11:27:10Z",
+    "url": "https://github.com/MJorgin/dsh-agent-conductor/releases/tag/v0.3.0"
+  },
+  "author": "MJorgin",
+  "repo": "https://github.com/MJorgin/dsh-agent-conductor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 1,
+  "pushedAt": "2026-09-17T08:07:54Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MJorgin/dsh-agent-conductor",
+    "commands": [
+      "npm i -g @openai/codex",
+      "npm i -g @anthropic-ai/claude-code",
+      "npm i -g opencode-ai"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

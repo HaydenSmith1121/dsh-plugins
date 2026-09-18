@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "zemanzhang809/dsh-stt-plugin",
+  "slug": "zemanzhang809__dsh-stt-plugin",
+  "package": "dsh-stt-plugin",
+  "name": "dsh-stt-plugin",
+  "title": "dsh-stt-plugin",
+  "summary": "A speech-to-text (voice input) plugin for DeepSeek Harness. ",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "zemanzhang809",
+  "repo": "https://github.com/zemanzhang809/dsh-stt-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-18T16:41:06Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zemanzhang809/dsh-stt-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:zemanzhang809/dsh-stt-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

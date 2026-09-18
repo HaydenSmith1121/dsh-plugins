@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "id": "rhczz/dsh-plugin-ui-font-family",
   "slug": "rhczz__dsh-plugin-ui-font-family",
-  "package": null,
+  "package": "dsh-plugin-ui-font-family",
   "name": "dsh-plugin-ui-font-family",
   "title": "dsh-plugin-ui-font-family",
-  "summary": "给 DeepSeek Harness 网页界面换个字体，看代码更顺眼，界面也更合你口味。",
+  "summary": "给 DeepSeek Harness 的 Web 界面换字体。 Change the font for the DeepSeek Harness web interface.",
   "tags": [
     "cordis",
     "deepseek",
@@ -14,24 +14,24 @@
     "dsh-plugin",
     "font-family",
     "fonts",
-    "typescript",
-    "主题",
-    "前端增强",
-    "界面美化",
-    "零配置"
+    "typescript"
   ],
   "version": "0.4.0",
-  "versionSource": "npm",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
-  "latestRelease": null,
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-17T08:52:18Z",
+    "url": "https://github.com/rhczz/dsh-plugin-ui-font-family/releases/tag/v0.4.0"
+  },
   "author": "rhczz",
   "repo": "https://github.com/rhczz/dsh-plugin-ui-font-family",
   "homepage": "https://www.npmjs.com/package/dsh-plugin-ui-font-family",
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-16T09:52:07Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-17T09:00:30Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -40,11 +40,9 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "dsh-plugin-ui-font-family",
+    "method": "github",
+    "spec": "github:rhczz/dsh-plugin-ui-font-family",
     "commands": [
-      "dsh plugin --profile web add dsh-plugin-ui-font-family",
-      "dsh plugin --profile web add dsh-plugin-ui-font-family@0.3.0",
       "dsh plugin --profile web add github:rhczz/dsh-plugin-ui-font-family"
     ],
     "url": null,
@@ -61,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

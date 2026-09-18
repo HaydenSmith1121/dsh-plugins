@@ -5,15 +5,11 @@
   "package": null,
   "name": "dsh-clear-tool-results",
   "title": "dsh-clear-tool-results",
-  "summary": "每轮对话后自动归档工具结果并清理上下文，省 Token，模型可随时按需读取历史记录。",
+  "summary": "DSH 宿主插件：每轮对话结束后，把该轮的原始工具结果归档（tool result）到会话目录（tool-result-logs），并从上下文中清除，减少 Token 消耗；模型可用 read_tool_result_log 工具按轮次或时间自主读取归档数据。",
   "tags": [
     "clear-tool-result",
     "dsh",
-    "dsh-plugin",
-    "效率提升",
-    "会话管理",
-    "语义检索",
-    "插件管理"
+    "dsh-plugin"
   ],
   "version": "0.7.0",
   "versionSource": "npm",
@@ -25,8 +21,8 @@
   "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-14T08:48:06Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-17T03:53:33Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -54,6 +50,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

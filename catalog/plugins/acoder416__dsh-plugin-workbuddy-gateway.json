@@ -5,18 +5,13 @@
   "package": "dsh-plugin-workbuddy-gateway",
   "name": "dsh-plugin-workbuddy-gateway",
   "title": "dsh-plugin-workbuddy-gateway",
-  "summary": "把 WorkBuddy 订阅额度接进 DSH 当模型用，本地网关自动托管，设置页里就能管。",
+  "summary": "Use a WorkBuddy subscription as a model provider in DSH: supervises the local OpenAI-compatible gateway and manages it from the settings page.",
   "tags": [
     "codebuddy",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "workbuddy",
-    "模型适配",
-    "模型配置",
-    "工具集成",
-    "设置面板",
-    "桥接插件"
+    "workbuddy"
   ],
   "version": "0.2.2",
   "versionSource": "github-release",
@@ -45,7 +40,7 @@
     "method": "github",
     "spec": "github:Acoder416/dsh-plugin-workbuddy-gateway",
     "commands": [
-      "dsh plugin --profile web add github:Acoder416/dsh-plugin-workbuddy-gateway"
+      "dsh plugin --profile web add \"github:Acoder416/dsh-plugin-workbuddy-gateway"
     ],
     "url": null,
     "sha256": null,
@@ -61,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }

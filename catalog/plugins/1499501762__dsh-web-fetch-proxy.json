@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "1499501762/dsh-web-fetch-proxy",
+  "slug": "1499501762__dsh-web-fetch-proxy",
+  "package": "dsh-web-fetch-proxy",
+  "name": "dsh-web-fetch-proxy",
+  "title": "dsh-web-fetch-proxy",
+  "summary": "DSH plugin: route the built-in web_fetch through a local proxy so TUN fake-ip addresses stop tripping the SSRF guard.",
+  "tags": [
+    "clash",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "fake-ip",
+    "mihomo",
+    "proxy",
+    "web-fetch"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "1499501762",
+  "repo": "https://github.com/1499501762/dsh-web-fetch-proxy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T08:43:11Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:1499501762/dsh-web-fetch-proxy",
+    "commands": [
+      "git clone https://github.com/1499501762/dsh-web-fetch-proxy.git",
+      "dsh plugin --profile web add link:<仓库绝对路径>",
+      "dsh plugin --profile web add github:1499501762/dsh-web-fetch-proxy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

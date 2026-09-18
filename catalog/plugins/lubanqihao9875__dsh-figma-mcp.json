@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "lubanqihao9875/dsh-figma-mcp",
+  "slug": "lubanqihao9875__dsh-figma-mcp",
+  "package": "dsh-figma-mcp",
+  "name": "dsh-figma-mcp",
+  "title": "dsh-figma-mcp",
+  "summary": "DSH 的 Figma MCP 一键连接插件",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "figma",
+    "mcp",
+    "oauth"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "lubanqihao9875",
+  "repo": "https://github.com/lubanqihao9875/dsh-figma-mcp",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T15:39:19Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lubanqihao9875/dsh-figma-mcp",
+    "commands": [
+      "dsh plugin --profile web add link:$(pwd)",
+      "dsh plugin --profile web add link:\"$PWD\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

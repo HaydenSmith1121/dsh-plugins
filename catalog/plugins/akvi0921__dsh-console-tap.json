@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "akvi0921/dsh-console-tap",
+  "slug": "akvi0921__dsh-console-tap",
+  "package": "@local/dsh-console-tap-ui",
+  "name": "dsh-console-tap",
+  "title": "dsh-console-tap",
+  "summary": "【已停止维护/归档】旧版控制台显形插件 → 新插件见 akvi0921/dsh-build-progress",
+  "tags": [
+    "console",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "observability",
+    "plugin",
+    "terminal"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "latestRelease": null,
+  "author": "akvi0921",
+  "repo": "https://github.com/akvi0921/dsh-console-tap",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-17T15:55:26Z",
+  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:akvi0921/dsh-console-tap",
+    "commands": [
+      "dsh plugin --profile web add github:akvi0921/dsh-console-tap"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-18T20:26:43.633Z",
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+  }
+}

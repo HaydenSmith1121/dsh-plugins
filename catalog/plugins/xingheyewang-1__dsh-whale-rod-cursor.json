@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "xingheyewang-1/dsh-whale-rod-cursor",
   "slug": "xingheyewang-1__dsh-whale-rod-cursor",
-  "package": null,
+  "package": "dsh-whale-rod-cursor",
   "name": "dsh-whale-rod-cursor",
   "title": "dsh-whale-rod-cursor",
   "summary": "给 DSH Web 加个鱼竿光标，弹性绳吊着 Q 版鲸鱼娘，随鼠标甩飞回弹，还会演小剧场。",
@@ -43,10 +43,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "dsh-whale-rod-cursor",
+    "method": "github",
+    "spec": "github:xingheyewang-1/dsh-whale-rod-cursor",
     "commands": [
-      "dsh plugin --profile web add dsh-whale-rod-cursor",
+      "dsh plugin --profile web add github:xingheyewang-1/dsh-whale-rod-cursor",
       "dsh plugin --profile web add git+https://github.com/xingheyewang-1/dsh-whale-rod-cursor.git"
     ],
     "url": null,
@@ -63,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T17:24:38.098Z"
+    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
   }
 }
