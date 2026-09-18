@@ -3,12 +3,14 @@
  *
  *   node test/iso-api.mjs <token>
  *
- * 覆盖这次改动的四条验收线：
+ * 覆盖这次改动的验收线：
  *   1. status 里带 job / preflight / progressModel
- *   2. install 立刻返回 jobId（不再是一次请求跑到底）
- *   3. installProgress 能报出阶段、已耗时、预计剩余
- *   4. installAbort 能真的中断，并且终态是 cancelled
- *   5. manualCommands 给得出可执行的命令（含快照 sha256）
+ *   2. installPlan 一次回三样：安装状态、自动规格、手动方案 + 已知事实
+ *   3. ★ 所有条目都可装：没有任何条目被判成「不能装」
+ *   4. install 立刻返回 jobId（不再是一次请求跑到底），且快照带安装方式
+ *   5. installProgress 能报出阶段、已耗时、预计剩余
+ *   6. installAbort 能真的中断，并且终态是 cancelled
+ *   7. 已是最新的插件也能重装（不再被拒）
  */
 
 const TOKEN = process.argv[2] ?? '';
@@ -46,14 +48,14 @@ else bad('status 缺少 preflight 字段');
 if (status.progressModel?.phases?.length >= 6) ok(`status 里带进度模型（${status.progressModel.phases.length} 个阶段，总超时 ${Math.round(status.progressModel.totalTimeoutMs / 1000)}s）`);
 else bad('status 缺少 progressModel');
 
-// ── [2] 目录 + 闸门 + 手动命令 ──────────────────────────────
+// ── [2] 目录 + 安装方案 + 手动命令 ──────────────────────────
 const catalog = await rpc('catalog', { limit: 100 });
 ok(`目录可用：${catalog.total} 条`);
 
 /**
  * 找一条「本仓库托管 tarball、且本机没装」的条目。
  *
- * ★ 不能只翻列表第一页：目录按 star 数排序，本仓库托管的六个插件 star 都不多，
+ * ★ 不能只翻列表第一页：目录按 star 数排序，本仓库托管的七个插件 star 都不多，
  *   排在 7000+ 条里很靠后。以前这里在首页里 find，改成平铺列表之后就永远找不到 ——
  *   表现是「后续用例全部跳过」，而不是报错。所以改成按名字检索。
  */
@@ -78,27 +80,57 @@ if (!notInstalled) {
 
 const target = notInstalled;
 if (target) {
-  const gate = await rpc('gate', { id: target.id });
-  if (gate.manual?.steps?.length) ok(`gate 里带手动安装方案（${gate.manual.steps.length} 步）`);
-  else bad('gate 没有返回 manual');
+  const plan = await rpc('installPlan', { id: target.id });
+  if (plan.manual?.steps?.length) ok(`installPlan 里带手动安装方案（${plan.manual.steps.length} 步）`);
+  else bad('installPlan 没有返回 manual');
 
-  const plan = gate.manual;
-  const addStep = plan.steps.find((s) => s.id === 'add');
+  // ★ 装前检查整体删除：结果里不该再有任何放行判决字段
+  for (const gone of ['verdict', 'canInstall', 'blockedBy', 'checks', 'requiresRiskAck', 'installable', 'upToDate']) {
+    if (plan[gone] !== undefined) bad(`installPlan 里还有 ${gone} —— 装前检查的判决字段应当已删除`);
+  }
+  ok('installPlan 里没有任何放行判决字段（verdict / canInstall / blockedBy / checks…）');
+
+  if (plan.auto?.available) {
+    ok(`自动安装可用：${plan.auto.kind} → ${String(plan.auto.spec).slice(0, 80)}（来源 ${plan.auto.source}）`);
+  } else {
+    info(`该条目没有自动安装路径：${plan.auto?.reason}`);
+  }
+  if (Array.isArray(plan.notes)) ok(`installPlan 里带 ${plan.notes.length} 条装前提示（事实，不是判决）`);
+  else bad('installPlan 缺少 notes 数组');
+
+  const addStep = plan.manual.steps.find((s) => s.id === 'add');
   const cmd = addStep?.commands?.[0]?.text ?? '';
-  if (/add /.test(cmd) && /\.tgz/.test(cmd)) ok(`手动安装命令：${cmd.slice(0, 100)}${cmd.length > 100 ? '…' : ''}`);
-  else bad(`手动安装命令不完整：${JSON.stringify(cmd)}`);
-  if (plan.sha256) ok(`带 sha256 校验：${plan.sha256.slice(0, 16)}…（来源 ${plan.sha256Source}）`);
-  else bad('手动方案没有 sha256');
+  /*
+   * ★ 手动命令的形态取决于这条路是什么：tarball 给 .tgz 路径，npm / github 直接给包名。
+   *   以前这里只认 .tgz，于是「合法的 npm / github 装法」会被报成「命令不完整」——
+   *   断言太窄会把正确的东西判红。
+   */
+  if (/add \S/.test(cmd) && /(\.tgz|github:|add @?[\w./-]+$)/.test(cmd)) {
+    ok(`手动安装命令：${cmd.slice(0, 100)}${cmd.length > 100 ? '…' : ''}`);
+  } else {
+    bad(`手动安装命令不完整：${JSON.stringify(cmd)}`);
+  }
+
+  // sha256 只有「仓库托管的 tarball」才有 —— npm / github 那条路由 pnpm 自己解析版本，
+  // 本来就没有校验和可给。断言必须跟着「是哪条路」走，而不是一刀切。
+  const isTarball = Boolean(plan.manual.tarball && /\.tgz/.test(cmd));
+  if (!isTarball) {
+    info('这条路不是托管的 tarball，没有 sha256 可校验（正常）');
+  } else if (plan.manual.sha256) {
+    ok(`带 sha256 校验：${plan.manual.sha256.slice(0, 16)}…（来源 ${plan.manual.sha256Source}）`);
+  } else {
+    bad('tarball 路线的手动方案没有 sha256');
+  }
 
   const manual = await rpc('manualCommands', { id: target.id });
   if (manual.plan?.text && /dsh plugin --profile/.test(manual.plan.text)) ok('manualCommands 返回可直接粘贴的纯文本方案');
   else bad('manualCommands 返回内容不完整');
 
   // ── [3] 安装：必须立刻返回 jobId ──────────────────────────
-  if (gate.canInstall) {
+  if (plan.auto?.available) {
     // 真跑一次：验证「请求立刻返回 + 终态正确 + 三层校验通过」
     const t0 = Date.now();
-    const start = await rpc('install', { id: target.id, acknowledgeRisk: true, simulateSlowInstallSeconds: 3 });
+    const start = await rpc('install', { id: target.id, simulateSlowInstallSeconds: 3 });
     const tookMs = Date.now() - t0;
     if (start.jobId && tookMs < 8000) ok(`install 立刻返回 jobId=${start.jobId}（${tookMs}ms，不再阻塞请求）`);
     else bad(`install 没有立刻返回 jobId（${tookMs}ms）: ${JSON.stringify(start).slice(0, 200)}`);
@@ -106,6 +138,7 @@ if (target) {
     let sawRunning = false;
     let sawEta = false;
     let sawPhase = false;
+    let sawAuto = false;
     let last = null;
     const deadline = Date.now() + 120_000;
     while (Date.now() < deadline) {
@@ -115,6 +148,8 @@ if (target) {
         sawRunning = true;
         if (p.eta?.text) sawEta = true;
         if (p.currentPhase) sawPhase = true;
+        // ★ 自动安装在界面上不显示命令窗口 —— 那快照就必须带着「用什么方式装」
+        if (p.auto?.spec && p.entry?.package) sawAuto = true;
       } else {
         break;
       }
@@ -126,6 +161,8 @@ if (target) {
     else bad('进度里没有阶段名');
     if (sawEta) ok(`进度里有预计剩余：${last?.eta?.text}`);
     else bad('进度里没有预计剩余');
+    if (sawAuto) ok(`快照带安装方式与目标条目（${last?.entry?.package}@${last?.entry?.version} ← ${last?.auto?.kind}）`);
+    else bad('快照缺少 auto / entry 字段 —— 自动安装时用户就没有任何观察点');
     if (last?.state === 'succeeded') ok(`真安装成功（用时 ${last.elapsedMs}ms）`);
     else bad(`真安装没有成功：${last?.state} / ${JSON.stringify(last?.result?.failure)}`);
     if (last?.allPhases?.length >= 6) ok(`终态快照仍带阶段清单（${last.allPhases.length} 个）`);
@@ -137,12 +174,38 @@ if (target) {
     if (installedState?.installed) ok(`安装后目录状态已更新：${installedState.status} ${installedState.installedVersion}`);
     else bad(`安装后目录状态没更新：${JSON.stringify(installedState)}`);
 
+    // ── [3b] ★ 已是最新也能重装（0.6.0：不再拒绝）───────────
+    //
+    // ★ 这一步的前提是「上一跑真的装上了」—— 只有那时状态才会是 current，
+    //   服务端才会在响应里带 reinstall 标记。装失败时它不该被算成「重装被拒」，
+    //   否则一条安装失败会顺带把三条断言一起染红，报出来的原因还指错地方。
+    if (last?.state !== 'succeeded') {
+      info('上一跑没装上，跳过「已是最新也能重装」用例（失败的账记在上面那条，不重复记）');
+    } else {
+      const again = await rpc('install', { id: target.id, simulateSlowInstallSeconds: 2 });
+      if (again.jobId) ok(`★ 已是最新的插件照样能重装（jobId=${again.jobId}）—— 不再被拒`);
+      else bad(`重装被拒了：${JSON.stringify(again).slice(0, 200)}`);
+      if (again.reinstall === true) ok('响应里带 reinstall 标记（界面据此把文案换成「重新安装」）');
+      else bad('响应里缺少 reinstall 标记');
+      if (again.jobId) {
+        const dl = Date.now() + 90_000;
+        let fin = null;
+        while (Date.now() < dl) {
+          fin = (await rpc('installProgress', { jobId: again.jobId })).job;
+          if (fin.state !== 'running' && fin.state !== 'queued') break;
+          await new Promise((r) => setTimeout(r, 400));
+        }
+        if (fin?.state === 'succeeded') ok('重装成功');
+        else bad(`重装没有成功：${fin?.state} / ${JSON.stringify(fin?.result?.failure)}`);
+      }
+    }
+
     // ── [4] 中止：用一个「慢安装」把中止链路走通 ─────────────
     const second = await findHostedNotInstalled(target.id);
     if (!second) {
       info('没有第二条可安装条目，跳过中止用例');
     } else {
-      const s2 = await rpc('install', { id: second.id, acknowledgeRisk: true, simulateSlowInstallSeconds: 30 });
+      const s2 = await rpc('install', { id: second.id, simulateSlowInstallSeconds: 30 });
       let abortRes = null;
       let final = null;
       for (let i = 0; i < 40; i++) {
@@ -168,11 +231,22 @@ if (target) {
       else bad(`中止后 profile 不干净：orphans=${JSON.stringify(v.orphans)}`);
     }
   } else {
-    info('闸门未放行，跳过安装/中止用例');
+    info('该条目没有自动安装路径，跳过安装/中止用例（这不是「不能装」，是「没有可跑的命令」）');
   }
 }
 
-// ── [5] preflight RPC ───────────────────────────────────────
+// ── [5] profile 体检 RPC（诊断，不参与放行）─────────────────
+const health = await rpc('profileCheck');
+if (Array.isArray(health.checks) && health.checks.length > 0) {
+  ok(`profileCheck 可用（${health.checks.length} 条结论，其中致命 ${health.checks.filter((c) => c.status === 'fail' && c.severity === 'fatal').length} 条）`);
+  for (const c of health.checks) {
+    if (c.canInstall !== undefined || c.verdict !== undefined) bad(`体检结论里混进了放行字段：${c.id}`);
+  }
+} else {
+  bad('profileCheck 返回异常');
+}
+
+// ── [6] preflight RPC ───────────────────────────────────────
 const pf = await rpc('preflight');
 if (pf && typeof pf.ok === 'boolean') ok(`preflight RPC 可用（ok=${pf.ok}，问题 ${pf.problems?.length ?? 0} 个，提示 ${pf.notices?.length ?? 0} 条）`);
 else bad('preflight RPC 返回异常');

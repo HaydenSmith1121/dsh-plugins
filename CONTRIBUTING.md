@@ -34,8 +34,9 @@ curl -fsSL https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/sc
 ```
 
 **脚本只装一个插件：引导插件 `dsh-plugins-market`（市场面板本身）。**
-「一键装全套」这条路自 0.4.0 起已经没有了 —— 插件的字节不在本仓库，装哪个插件是市场面板的职责
-（装前跑兼容闸门、失败自动回滚）。`-BootstrapOnly` / `--bootstrap-only` 仍然接受，含义与默认行为一致。
+「一键装全套」这条路自 0.4.0 起已经没有了 —— 插件的字节不在本仓库，装哪个插件、怎么装
+是市场面板的职责（自动安装失败自动回滚，手动安装随时可选）。
+`-BootstrapOnly` / `--bootstrap-only` 仍然接受，含义与默认行为一致。
 
 由此有三条规矩：
 
@@ -56,9 +57,9 @@ curl -fsSL https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/sc
 | `manual` | 维护者人工核对 | 跑 `node scripts/market-review.mjs <owner/repo>` 产出草稿 → 真机验证 → 写进 `catalog/overrides/curated.json` → `node scripts/sync-catalog.mjs`。见[第四节 B](#review-flow) |
 | `public-index` | 公开索引自动同步 | 无需贡献；由采集脚本写入 |
 
-> 为什么要去掉分级、以及现在怎么判断「装不装得上」，见
-> [README 的「不分级的目录」](./README.md#tiers)。一句话：装不装得上由**装前检查**当场判，
-> 不由标签预先判。
+> 为什么要去掉分级、以及现在怎么决定「装不装」，见
+> [README 的「不分级的目录」](./README.md#tiers)。一句话：市场不判定任何插件能不能装
+> （0.6.0 起所有插件都可装），它只把知道的事实列出来，自动还是手动由用户在安装方案页自己选。
 
 ---
 
@@ -67,8 +68,10 @@ curl -fsSL https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/sc
 ## 一、插件的准入要求
 
 以下 4 条适用于**任何要进目录的插件**。每一条都对应一个实际踩过的坑。
-其中第 1、2、4 条同时是市场装前闸门的**静态检查项**（声明了 `dsh.bundle.patch` 却没有那个文件
-是硬拦截）；第 3 条闸门代替不了 —— **它不启动 harness**，真实启动只能在真机上跑。
+其中第 1、2、4 条也是市场静态探测会列出来的**事实**（没声明 `dsh.bundle.patch`、声明了
+patch 却没有那个文件、peer 精确 pin 到比本机更新的版本……）—— 但它们是安装前的提示，
+不拦安装：0.6.0 起市场不判定任何插件能不能装。静态探测也代替不了第 3 条 ——
+**它不启动 harness**，真实启动只能在真机上跑。
 
 ### 1. 包内必须声明 `dsh.bundle`
 
@@ -78,7 +81,8 @@ curl -fsSL https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/sc
 
 这是 dsh 识别插件的依据。没有它，`dsh plugin add` 会装进 `node_modules`
 但**不会把包追加进 `dsh.profile.bundles`** —— 表现就是「装上了但 GUI 里没有」。
-同时 `cordis.patch.yml` 文件必须真实存在并被打进 tarball（声明了却没有这个文件，是**致命项**）。
+同时 `cordis.patch.yml` 文件必须真实存在并被打进 tarball（声明了却没有这个文件，装上后启动会失败；
+市场会在安装前把这条列成提示，但不拦你）。
 
 ### 2. 必须说明适配的 dsh 版本范围
 
@@ -317,7 +321,7 @@ cd plugins-src/dsh-plugins-market && node test/run.mjs
      （或软链接），并更新对应 `plugin.json`
    - **需要重新构建** → 拿到插件源码，按新版 dsh 的 peer 要求重新构建、重新打包，
      放进新的版本目录
-   - **某个插件确实无法适配**（上游没有对应版本） → 明确记下来，让预检与闸门能给出清楚的提示，
+   - **某个插件确实无法适配**（上游没有对应版本） → 明确记下来，让预检与安装前的提示把话说明白，
      而不是让用户装上一个会崩的组合
 
 4. **在本仓库 `compatibility.json` 里新增 runtime 条目**（注意：**这里已经不再有

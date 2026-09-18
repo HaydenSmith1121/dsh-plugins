@@ -242,8 +242,8 @@ const runtime = compat.runtimes.find((r) => r.dshVersion === report.dsh.version)
  *   · 其余自研插件在 HaydenSmith1121/dsh-plugin-collection 里；
  *   · 第三方插件不再随任何仓库分发，市场按各自的上游安装方式去装。
  *
- * 所以「一键装全套」这件事本身没有了 —— 装插件是市场面板的职责（它会在装每个
- * 插件前跑兼容闸门、失败自动回滚）。引导脚本只负责把市场这个入口装上。
+ * 所以「一键装全套」这件事本身没有了 —— 装插件是市场面板的职责（自动或手动由用户选，
+ * 失败自动回滚）。引导脚本只负责把市场这个入口装上。
  *
  * 市场自己的版本与 tarball 从目录里读（catalog/index.json 的 verified 层），
  * 不再从 compatibility.json 的 plugins 数组里找 —— 那个数组已经不存在了。
@@ -293,7 +293,7 @@ if (BOOTSTRAP_ONLY) {
   console.log('  ' + dim(`  --bootstrap-only：只装引导插件 ${BOOTSTRAP_PACKAGE}`));
 } else {
   console.log('  ' + dim('  只装引导插件（市场面板）—— 其余插件请在装好之后的「插件市场」里点装：'));
-  console.log('  ' + dim('  装每个插件前会跑一遍兼容性闸门，失败自动回滚，比批量装安全得多。'));
+  console.log('  ' + dim('  那边会给你自动 / 手动两条路，安装前备份 profile、失败自动回滚。'));
 }
 
 let failed = [];
@@ -351,8 +351,8 @@ if (failed.length) {
   console.log('  ' + bold('接下来：在「插件市场」里按需点装其余插件。'));
   console.log('    ' + dim('1. 重启 dsh web（新增的 bundle 是在启动时合成的）'));
   console.log('    ' + dim('2. 左侧导航栏点「插件市场」'));
-  console.log('    ' + dim('3. 浏览 / 搜索 / 点装 —— 目录里有 7000+ 条，含本仓库托管的 7 个插件'));
-  console.log('    ' + dim('市场会在每次安装前跑兼容性闸门，失败会自动回滚。') + '\n');
+  console.log('    ' + dim('3. 浏览 / 搜索 / 点装 —— 目录里有 7600+ 条，含本仓库托管的 9 个插件'));
+  console.log('    ' + dim('每次安装都可以选自动或手动，市场会先备份 profile、失败自动回滚。') + '\n');
 }
 
 // ---------------------------------------------------------------- 5. 校验

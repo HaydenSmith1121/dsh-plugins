@@ -291,12 +291,14 @@ test('生产 profile 里那份过期的 file: 依赖应当被检出（本仓库�
   //   生产 profile 指向 dsh-session-cleanup-0.1.1.tgz（仓库里已删）
   //   隔离 profile 曾指向 dsh-session-cleanup-0.1.0.tgz（仓库里已删）
   // 只要引用还在，之后**任何** pnpm install / dsh plugin 操作都会失败。
-  // 闸门必须能把它检出来并硬拦（overridable: false）。
-  const { runGate } = await importBuilt('lib/gate.js');
+  //
+  // ★ 0.6.0：检出的后果从「硬拦安装」变成了「装前体检如实报出 + 给可点的修复项」。
+  //   事实没变（装什么都带上会失败），但市场不再据此禁止安装 ——
+  //   这一条断言现在钉住的是「诊断仍然检得出来」，而不是「它拦得住」。
+  const { checkProfile } = await importBuilt('lib/diagnose.js');
   const { readJsonSafe } = await importBuilt('lib/util.js');
   const { readProfileState, scanInstalled, composedTree, resolveLocalSpecPath } = await importBuilt('lib/profile.js');
   const { detectEnvironment } = await importBuilt('lib/util.js');
-  const { normalizeEntry } = await importBuilt('lib/catalog.js');
 
   const prodHome = path.join(process.env.USERPROFILE ?? '', '.dsh');
   const prodProfile = path.join(prodHome, 'profiles', 'web', 'package.json');
@@ -314,7 +316,7 @@ test('生产 profile 里那份过期的 file: 依赖应当被检出（本仓库�
     return;
   }
 
-  // 有悬空依赖时：闸门必须硬拦，且不可覆盖
+  // 有悬空依赖时：体检必须报出来，且不可自动修复（只能靠重装 / 移除那个依赖）
   const saved = process.env.DSH_HOME;
   process.env.DSH_HOME = prodHome;
   try {
@@ -330,16 +332,12 @@ test('生产 profile 里那份过期的 file: 依赖应当被检出（本仓库�
       repoRawBase: 'https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main',
     };
     ctx.compat = { ...ctx.compat, available: true, runtimes: ctx.compat.runtimes ?? [], inBoxBundles: ctx.compat.inBoxBundles ?? [] };
-    const entry = normalizeEntry({ id: 'dsh-ark-plans', package: 'dsh-ark-plans', version: '0.1.0', install: {} }, 'community');
-    const report = runGate(entry, ctx, { acknowledgeRisk: true });
-    const check = report.checks.find((c) => c.id === 'profile.file-specs');
+    const check = checkProfile(ctx).find((c) => c.id === 'profile.file-specs');
     eq(check?.status, 'fail', '应当检出悬空的 file: 依赖');
-    eq(check?.overridable, false, '这一项必须不可覆盖');
-    eq(report.canInstall, false, '存在悬空依赖时必须拦住安装');
-    assert(
-      report.blockedBy.includes('profile.file-specs'),
-      `blockedBy 应当含 profile.file-specs，实际：${report.blockedBy.join(',')}`,
-    );
+    eq(check?.repairable, undefined, '这一项不该是可自动修复的 —— 它需要重装或移除那个依赖');
+    assert(/任何/.test(check.detail), '要说清后果：只要引用还在，之后任何安装都会失败');
+    assert(check.detail.includes(dangling[0].local) || check.detail.includes(dangling[0].name),
+      `详情里要点出具体是哪个依赖悬空了：${check.detail}`);
   } finally {
     if (saved === undefined) delete process.env.DSH_HOME; else process.env.DSH_HOME = saved;
   }

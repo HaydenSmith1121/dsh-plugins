@@ -53,7 +53,7 @@ export function newJobId() {
  *
  * @param {(job)=>Promise<any>} runner 执行体；返回值写进 job.result
  */
-export function startJob({ kind, pluginId, pkgName, profile, entry, manual, runner, totalTimeoutMs = DEFAULT_TOTAL_TIMEOUT_MS }) {
+export function startJob({ kind, pluginId, pkgName, profile, entry, manual, auto = null, reinstall = false, runner, totalTimeoutMs = DEFAULT_TOTAL_TIMEOUT_MS }) {
   // ★ 排队判据必须是「前一个任务还没结束」，而不是「running 变量非空」——
   //   上一个任务结束时 begin() 是异步收尾的，那一瞬间 running 还是 null，
   //   用它判断会让第二个任务直接开跑，两个 pnpm 同时改一个 profile。
@@ -68,6 +68,8 @@ export function startJob({ kind, pluginId, pkgName, profile, entry, manual, runn
     profile,
     entry,
     manual,
+    auto,
+    reinstall,
     state: busyAhead ? 'queued' : 'running',
     queuePosition: busyAhead ? 1 : 0,
     queuedAt: Date.now(),

@@ -462,13 +462,27 @@ export function catalogStatus({ index, env, meta }) {
 /**
  * 查找单条：先精确 id，再包名，最后 slug。
  *
+ * ★ 三个判据必须**分三轮**查，不能平铺成一个 `find(e => e.id === id || e.package === id
+ *   || e.slug === id)`。函数注释一直写的是「先 id、再包名、最后 slug」，但实现曾经
+ *   把三者塞进了同一个谓词里 —— 那时起作用的其实只剩**数组顺序**，而不是判据强弱。
+ *
+ *   实测踩到的事故：想装本仓库收录的 `dsh-memory`（id / slug / package 三者同名，
+ *   字节由集合仓库托管），解析结果却是 `github:Starry0214/dsh-memory` ——
+ *   因为公共索引里另有一条记录**只是包名**恰好也叫 dsh-memory，而它在数组里排得更前，
+ *   平铺的谓词就先命中了它。用户点的是 A，市场去装 B，这是最不该发生的一类错误。
+ *
  * ★ 参数从「按层级分组的 layers」变成了一个**平铺数组** —— 目录不再分层，
  *   所以这里也不需要按 tier 顺序去找了。（0.5.0 之前这个函数会依次翻
  *   verified / reviewed / community 三层，取第一条命中的。）
  */
 export function findEntry(entries, id) {
   const list = Array.isArray(entries) ? entries : [];
-  return list.find((e) => e.id === id || e.package === id || e.slug === id) ?? null;
+  const key = String(id ?? '');
+  if (!key) return null;
+  return list.find((e) => e.id === key)
+    ?? list.find((e) => e.package === key)
+    ?? list.find((e) => e.slug === key)
+    ?? null;
 }
 
 export function ensureDataDir() {

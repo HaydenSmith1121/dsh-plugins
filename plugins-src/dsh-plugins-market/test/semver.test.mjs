@@ -57,17 +57,23 @@ test('★ dsh-connect-trae 的 >=0.1.5-0 <0.2.0-0 按 npm 语义**不**包含 0.
   eq(satisfies('0.1.9-alpha.1', '>=0.1.5-0 <0.2.0-0'), false, '元组不同，依然不匹配');
 });
 
-test('★ 闸门据此把「范围不匹配」降级为告警，不能拦掉已知可用的插件', () => {
-  // 这条是上面那条结论的**产品后果**：如果范围不匹配算致命，
-  // 仓库自带的 dsh-connect-trae 就会被自己拦掉 —— 那是更严重的错误。
-  // 具体行为在 gate.test.mjs 里断言，这里只钉住语义分档。
+test('★ 精确 pin 与范围声明的分档（决定要不要给用户提一句）', () => {
+  /*
+   * 这条是上面那条结论的**产品后果**：范围不匹配不能当成「这个包装不上」——
+   * 仓库自带的 dsh-connect-trae 就是范围声明，把它判成不能装是更严重的错误。
+   *
+   * ★ 0.6.0 起这个分档不再用于「拦不拦」，只用于「提不提示」：
+   *   `installNotes()` 只对**精确 pin 且高于本机**的情况给一句提示，
+   *   范围声明一律不提（semver 上本来就允许漂移）。
+   *   具体断言在 spec.test.mjs 的「装前提示」那一组。
+   */
   const exactPinMismatch = '0.1.5-rc.1';
   const rangeMismatch = '>=0.1.5-0 <0.2.0-0';
   eq(satisfies('0.1.6-alpha.1', exactPinMismatch), false, '精确 pin：不匹配');
   eq(satisfies('0.1.6-alpha.1', rangeMismatch), false, '范围：也不匹配');
   assert(
     /^\d+\.\d+\.\d+/.test(exactPinMismatch) && !/[<>=^~*|\s]/.test(exactPinMismatch),
-    '精确 pin 的判别方式（无范围运算符）',
+    '精确 pin 的判别方式（无范围运算符）—— spec.js 的 peerPins() 用的正是这条判据',
   );
 });
 

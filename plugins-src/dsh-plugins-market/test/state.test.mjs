@@ -24,7 +24,7 @@ import { suite, test, assert, eq, importBuilt } from './harness.mjs';
 
 const { describeInstallState, resolveTargetVersion, installedOverview,
   toggleUserMark, userMarks, userDataStats, attachMarks, readUserData } = await importBuilt('lib/state.js');
-const { searchCatalog, normalizeEntry } = await importBuilt('lib/catalog.js');
+const { searchCatalog, normalizeEntry, findEntry } = await importBuilt('lib/catalog.js');
 const { compareVersions } = await importBuilt('lib/util.js');
 
 // 所有会写盘的用例都打在**隔离环境**上，绝不碰生产 profile
@@ -101,15 +101,27 @@ test('没装 → not-installed，可以装', () => {
   eq(st.isLatest, false);
 });
 
-test('★ 装了同一版本 → current，canInstall=false（这就是「按钮置灰」的依据）', () => {
+test('★ 装了同一版本 → current，但**依然可装**（0.6.0：重装是正当需求）', () => {
+  /*
+   * ★ 这条断言在 0.6.0 反了过来。
+   *
+   *   以前是 `canInstall: false` + `action: 'current'`，用来把安装按钮置灰 ——
+   *   那等于替用户判定「你没有理由重装」。但重装的理由很实在：装坏了要修、
+   *   想换一种安装方式、或者只是想确认某条命令能不能跑通。
+   *   市场不再拦任何插件，所以这一档也放开，`action` 是 `reinstall`。
+   *
+   *   `isLatest` 仍然是 true —— 那是**事实**（目录里这一版就是本机装的那一版），
+   *   界面据它把文案换成「重新安装」，只是不再据它禁用按钮。
+   */
   const st = describeInstallState(
     entry('p', { spec: 'file:/r/p-1.0.0.tgz' }),
     inst('p', '1.0.0', 'file:/r/p-1.0.0.tgz'),
   );
   eq(st.status, 'current');
-  eq(st.isLatest, true);
-  eq(st.canInstall, false, '★ 已是最新时必须禁止安装 —— 否则点下去是空转');
-  eq(st.action, 'current');
+  eq(st.isLatest, true, '「已是最新」仍然是事实 —— 界面据此把文案换成「重新安装」');
+  eq(st.canInstall, true, '★ 已是最新也必须可装，否则就是替用户决定「你没有理由重装」');
+  eq(st.canUpgrade, false, '同一版本没有「升级」这回事');
+  eq(st.action, 'reinstall');
   eq(st.installedVersion, '1.0.0');
   eq(st.target, '1.0.0');
 });
@@ -336,6 +348,42 @@ test('非法 id 会被拒绝，不会把垃圾写进文件', () => {
 });
 
 suite('catalog / 平铺列表与筛选（0.5.0）');
+
+test('★ findEntry：id 优先于「包名恰好相同」的另一条（点 A 不能装成 B）', () => {
+  /*
+   * 这条对应一次实测事故。目录里同时存在两条记录：
+   *
+   *   · dsh-memory                      ← 本仓库收录的，字节由集合仓库托管（tarball）
+   *   · Starry0214/dsh-memory           ← 公共索引里的第三方仓库，包名也叫 dsh-memory
+   *
+   * 后者在数组里排得更前。原来的实现把三个判据平铺成一个谓词
+   * （`e.id === id || e.package === id || e.slug === id`），于是「按 id 精确查」
+   * 反而被「按包名命中」抢先 —— installPlan 返回的是 github:Starry0214/dsh-memory。
+   * 用户点的是 A，市场去装 B，这是最不该发生的一类错误。
+   *
+   * 修法是分轮查：id 一轮、包名一轮、slug 一轮。这条测试就钉住这个顺序。
+   */
+  const thirdParty = normalizeEntry({
+    id: 'Starry0214/dsh-memory', package: 'dsh-memory', slug: 'starry0214__dsh-memory',
+    install: { method: 'github', spec: 'github:Starry0214/dsh-memory' },
+  });
+  const curated = normalizeEntry({
+    id: 'dsh-memory', package: 'dsh-memory', slug: 'dsh-memory',
+    install: { method: 'tarball', url: 'https://example.test/dsh-memory-0.1.0.tgz' },
+  });
+  // 故意把「包名相同」的那条放在前面 —— 平铺谓词会在这里翻车
+  const entries = [thirdParty, curated];
+
+  eq(findEntry(entries, 'dsh-memory').id, 'dsh-memory', '★ 精确 id 必须赢过「包名相同」的第三方记录');
+  eq(findEntry(entries, 'dsh-memory').slug, 'dsh-memory');
+  eq(findEntry(entries, 'Starry0214/dsh-memory').id, 'Starry0214/dsh-memory', '精确 id 依旧可查');
+  eq(findEntry(entries, 'starry0214__dsh-memory').id, 'Starry0214/dsh-memory', '退一步按 slug 也能查到');
+  // 只给包名（界面从不这么传，但接口允许）时，按数组顺序取第一条 —— 这是有意的兜底
+  eq(findEntry(entries, 'dsh-memory').package, 'dsh-memory');
+  eq(findEntry(entries, '不存在的'), null, '查不到就是 null，不能瞎猜一条');
+  eq(findEntry(entries, ''), null, '空 id 直接返回 null');
+  eq(findEntry(null, 'x'), null, '空表不炸');
+});
 
 test('★ 0.5.0：目录里不再有信任分级，条目也不该带 tier', () => {
   // 这一条钉住的是**删除**：以前 normalizeEntry 会给每条盖上 verified/reviewed/community

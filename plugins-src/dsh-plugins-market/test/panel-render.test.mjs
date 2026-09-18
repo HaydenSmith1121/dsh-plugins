@@ -208,8 +208,8 @@ function findAll(node, pred, out = []) {
 /**
  * 造一个能渲染出「有内容」的 fetch stub：status + catalog 都返回真实形状的数据。
  *
- * extra 用来注入本次用例关心的额外方法（gate / install / installProgress …）——
- * 形如 { gate: (args) => result }，返回的 result 会被包成 { ok: true, result }。
+ * extra 用来注入本次用例关心的额外方法（installPlan / install / installProgress …）——
+ * 形如 { installPlan: (args) => result }，返回的 result 会被包成 { ok: true, result }。
  */
 function makeFetchStub(items, extra = {}) {
   return async (url, init) => {
@@ -421,30 +421,35 @@ test('★ 只有一个「插件市场」页签，没有层级页签', async () =
     assert(!labels.some((l) => l.startsWith(gone)), `不应再有独立的「${gone}」页签，实际：${labels.join(' | ')}`);
   }
   // 页签应当只剩 插件市场 / 已装 / 日志 —— 「体检」已按用户要求移除。
-  // ★ 去掉的是**页面**：装前兼容性闸门照旧每次安装自动执行，这条断言不影响它。
+  // ★ 去掉的是**页面**：环境与 profile 诊断仍在「已装」页的按钮后面，「体检」不再是页签。
   eq(labels.length, 3, `页签数量应当收敛到 3 个（体检页已移除），实际：${labels.join(' | ')}`);
   assert(!labels.some((l) => l.startsWith('体检')), `「体检」页签应当已移除，实际：${labels.join(' | ')}`);
 });
 
-test('★ 已是最新的插件：安装按钮 disabled，文案是「已安装」（问题 2）', async () => {
+test('★ 已是最新的插件：按钮是「重新安装」且可点（0.6.0 —— 不再禁止重装）', async () => {
   const tree = await renderPanel([entryFixture({
     package: 'dsh-receipt', title: '凭证', version: '0.1.0',
     installState: {
       status: 'current', installed: true, installedVersion: '0.1.0', target: '0.1.0',
-      reason: null, inBundles: true, canInstall: false, canUpgrade: false, action: 'current', isLatest: true,
+      reason: null, inBundles: true, canInstall: true, canUpgrade: false, action: 'reinstall', isLatest: true,
     },
   })]);
   const buttons = findAll(tree, (n) => n.tag === 'button');
   /*
-   * ★ 不能用「文案是已安装」来定位 —— 顶部筛选器里也有一个叫「已安装」的 chip，
-   *   find() 会先撞上它，于是断言看的是筛选器而不是卡片按钮。
-   *   按样式类定位才唯一：置灰的安装按钮带 dpm-btn-installed。
+   * ★ 不能用「文案是重新安装」以外的宽松匹配 —— 顶部筛选器里也有一个叫「已安装」的 chip。
+   *   这里直接按文案找：卡片上那个是唯一一个「重新安装」。
+   *
+   * ★ 这条测试在 0.6.0 反了过来。以前它断言的是「已是最新 → 按钮置灰、文案已安装」，
+   *   那正是用户明确要求去掉的行为：装坏了要修、想换一种装法、想验证命令能不能跑通，
+   *   都是正当的重装理由，市场不该替用户判定「你没有理由重装」。
    */
-  const installBtn = buttons.find((b) => String(b.props.className ?? '').includes('dpm-btn-installed'));
-  assert(installBtn, `应当有一个置灰的安装按钮。按钮：${buttons.map((b) => allText(b).trim()).join(' | ')}`);
-  eq(allText(installBtn).trim(), '已安装', '置灰按钮的文案应当是「已安装」');
-  assert(installBtn.props.disabled === true, '★ 已是最新时安装按钮必须 disabled —— 这是问题 2 的核心');
-  assert(!installBtn.props.onClick, '禁用按钮不该还挂着 onClick');
+  const installBtn = buttons.find((b) => allText(b).trim() === '重新安装');
+  assert(installBtn, `应当有一个「重新安装」按钮。按钮：${buttons.map((b) => allText(b).trim()).join(' | ')}`);
+  assert(installBtn.props.disabled !== true, '★ 已是最新时按钮必须可点 —— 重装是正当需求');
+  assert(typeof installBtn.props.onClick === 'function', '必须真的能点（有 onClick）');
+  // 置灰类彻底下线：它的存在本身就意味着「又有一个态被禁掉了」
+  assert(!buttons.some((b) => String(b.props.className ?? '').includes('dpm-btn-installed')),
+    '不该再有任何 dpm-btn-installed 置灰按钮');
 });
 
 test('★ 可升级的插件：按钮文案是「更新到 x.y.z」且可点（问题 1）', async () => {
@@ -573,7 +578,7 @@ test('★ 回归：每个用到的按钮 variant 都必须真的有对应样式�
   const tree = await renderPanel([
     entryFixture({
       package: 'c1', title: '最新的',
-      installState: { status: 'current', installed: true, installedVersion: '1.0.0', target: '1.0.0', inBundles: true, canInstall: false, canUpgrade: false, action: 'current', isLatest: true, reason: null },
+      installState: { status: 'current', installed: true, installedVersion: '1.0.0', target: '1.0.0', inBundles: true, canInstall: true, canUpgrade: false, action: 'reinstall', isLatest: true, reason: null },
     }),
     entryFixture({
       package: 'c2', title: '可升级的',
@@ -588,6 +593,9 @@ test('★ 回归：每个用到的按钮 variant 都必须真的有对应样式�
   const classes = buttons.map((b) => String(b.props.className ?? ''));
 
   assert(classes.some((c) => c.includes('dpm-btn-update')), `更新按钮必须带 dpm-btn-update 样式类。实际类名：${classes.join(' | ')}`);
-  assert(classes.some((c) => c.includes('dpm-btn-installed')), '置灰按钮必须带 dpm-btn-installed');
   assert(classes.some((c) => c.includes('dpm-btn-primary')), '普通安装按钮必须带 dpm-btn-primary');
+  // ★ 0.6.0：不再有「已安装即置灰」这个态，dpm-btn-installed 随之下线。
+  //   这条反向断言钉住它不会被谁悄悄加回来 —— 加回来就意味着又开始拦插件了。
+  assert(!classes.some((c) => c.includes('dpm-btn-installed')),
+    '不该再有置灰的「已安装」按钮类 —— 重装是正当需求（0.6.0）');
 });

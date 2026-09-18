@@ -3,7 +3,7 @@
  *
  *   node test/smoke-server.mjs
  *
- * 为什么需要它：本插件的服务器半有 11 个模块互相 import，任何一个拼错导出名
+ * 为什么需要它：本插件的服务器半有 12 个模块互相 import，任何一个拼错导出名
  * 都会让整棵插件树加载失败（而且报错发生在 harness 启动时，离改动现场很远）。
  * 这个脚本在打包前就把这类问题拦下来 —— build.mjs 的 --check 只做静态自检，
  * 抓不到跨模块的导出名错误。
@@ -24,7 +24,7 @@ console.log('  dsh-plugins-market 服务器半冒烟自检');
 console.log(`  ${'-'.repeat(72)}`);
 
 // ── [1] 全部模块可 import ──────────────────────────────────
-const modules = ['util.js', 'progress.js', 'profile.js', 'installer.js', 'jobs.js', 'manual.js', 'catalog.js', 'gate.js', 'state.js', 'probe.js', 'oplog.js', 'index.js'];
+const modules = ['util.js', 'progress.js', 'profile.js', 'installer.js', 'jobs.js', 'manual.js', 'catalog.js', 'spec.js', 'diagnose.js', 'state.js', 'probe.js', 'oplog.js', 'index.js'];
 const loaded = {};
 for (const m of modules) {
   try {
@@ -173,6 +173,24 @@ if (loaded['jobs.js']) {
   const snap = J.jobSnapshot(jobA);
   if (snap.canAbort && snap.allPhases?.length >= 6) ok('任务快照含可中止标志与阶段表');
   else bad('任务快照不完整');
+
+  // ★ 进度页要靠快照里的这几个字段说清「正在用什么方式装」——
+  //   自动安装时用户看不到命令窗口，这些字段就是他唯一的观察点。
+  //   关掉页面再回来时它们必须还在（不能只留在发起请求的那一次响应里）。
+  const jobW = J.startJob({
+    kind: 'install', pluginId: 'w', pkgName: 'w@pkg', profile: 'web',
+    entry: { id: 'w', title: 'W', package: 'w-pkg', version: '1.2.3' },
+    auto: { kind: 'local-tarball', spec: '/tmp/w-1.2.3.tgz', source: 'repo', needsDownload: false },
+    reinstall: true,
+    runner: async () => ({ ok: true }),
+  });
+  const snapW = J.jobSnapshot(jobW);
+  if (snapW.auto?.spec === '/tmp/w-1.2.3.tgz' && snapW.entry?.version === '1.2.3' && snapW.reinstall === true) {
+    ok('任务快照带上了安装方式 / 目标条目 / 是否重装');
+  } else {
+    bad(`快照缺少安装方式字段：auto=${JSON.stringify(snapW.auto)} entry=${JSON.stringify(snapW.entry)} reinstall=${snapW.reinstall}`);
+  }
+  await jobW.done;
 
   await jobA.done;
   await jobB.done;

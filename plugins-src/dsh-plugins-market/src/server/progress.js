@@ -35,7 +35,7 @@ export const DEFAULT_TOTAL_TIMEOUT_MS = 15 * 60 * 1000;
  */
 export const PHASES = [
   {
-    id: 'preflight', label: '装前检查（profile 完整性）', weight: 3, est: 1_500, timeout: 60_000, silence: 60_000,
+    id: 'preflight', label: 'profile 完整性体检', weight: 3, est: 1_500, timeout: 60_000, silence: 60_000,
   },
   {
     id: 'fetch', label: '取安装包', weight: 8, est: 4_000, timeout: 180_000, silence: 90_000,
@@ -189,6 +189,12 @@ export function progressSnapshot(job, { timings = null } = {}) {
     canAbort: job.state === 'queued' || job.state === 'running',
     abortRequestedAt: job.abortRequestedAt ?? null,
     manual: job.manual ?? null,
+    // ★ 进度页要靠这几个字段说清「正在用什么方式装」：自动安装时用户看不到命令，
+    //   所以方式、规格、来源必须由快照带过去 —— 不能只留在发起请求的那一次响应里
+    //   （关掉页面再回来时，那次响应早就没了）。
+    auto: job.auto ?? null,
+    entry: job.entry ?? null,
+    reinstall: Boolean(job.reinstall),
     result: job.result ?? null,
     error: job.error ?? null,
     terminal: isTerminal(job),

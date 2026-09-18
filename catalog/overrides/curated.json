@@ -251,35 +251,6 @@
       "curatedAt": "2026-09-17"
     },
     {
-      "id": "dsh-usage-stats",
-      "package": "dsh-usage-stats",
-      "version": "0.3.1",
-      "title": "Token 用量统计（删会话不丢账）",
-      "summary": "在设置里按天 / 供应商 / 模型统计这台 harness 的 token 用量，并把每个会话的用量备份成一份只增不减的台账 —— 删除会话不再连带删掉它的用量。",
-      "tags": [
-        "用量统计",
-        "界面增强",
-        "会话管理"
-      ],
-      "author": "HaydenSmith1121",
-      "upstream": "https://github.com/HaydenSmith1121/dsh-usage-stats",
-      "homepage": null,
-      "license": "MIT",
-      "install": {
-        "kind": "github",
-        "spec": "github:HaydenSmith1121/dsh-usage-stats",
-        "needsConfig": false,
-        "usageNeedsConfig": false,
-        "risky": false
-      },
-      "peerRuntimePin": "@deepseek-ai/cordis ^4.0.2, react ^18.2.0",
-      "peerVerdict": "ok",
-      "peerNote": "只约束 @deepseek-ai/cordis ^4.0.2 与 react ^18.2.0，**不对 @deepseek-ai/dsh-* 设任何 pin**，所以不存在「精确 pin 到另一个 dsh 版本 → 缺具名导出 → 整棵树挂」的失败面。宿主半只 import node: 内置模块（zlib / fs / path / os），一个 @deepseek-ai/* 都不 import；客户端半只 require('react')，只 inject 官方客户端半 dsh-client-locale 与 dsh-client-ui-settings。用到的宿主面只有 ctx.inject(['webServer']) + webServer.register({kind:'exact'})，两者都是 0.1.6-alpha.1 实测面。",
-      "notes": "★ 本插件是 dsh-workbuddy-quota@0.2.0 的继任者（改名 + 只保留用量统计），修掉的是它的**结构性缺陷**：0.2.0 每次都现场折叠 $DSH_HOME/sessions/ 下的会话日志，而会话日志会被删掉（dsh-session-cleanup 就是 rm -rf 会话目录）—— 日志一没，那部分历史用量就从统计里消失，用户清理一次侧边栏、数字就下降一次。0.3.0 在折叠之外加了一份**折叠结果的备份**：每次扫描把每个会话的用量按 (天, 供应商, 模型) 写进 $DSH_HOME/storages/dsh-usage-stats/usage-ledger.json，规则只有两条 —— **只增不减**（同一会话同一格子取「台账记录的」与「日志现在说的」中较大的一份，日志被压缩 / 截断也降不下来）、**从不删除**（没有淘汰 / TTL / 上限）。报告 = 在场日志的折叠 ⊕ 台账里已消失会话的用量。\n\n副作用与注意：\n1. 折叠算法**逐字复刻** 0.2.0（也就是 DSH 自己的 tokenUsage 投影：同步骤内最后一条样本胜出、重试开新槽、assistant/message 与 assistant/attempt 都带 usage），数字口径与框架一致；改名与重构没有动用户的数字（见 evidence 的逐字节比对）。\n2. 后台每 30 秒巡检一次（按 mtime+size 记忆化，未变过的日志不重读），所以不需要有人打开设置页也会记账；定时器 unref()，不会拖住进程退出。\n3. 失败面全部 fail-soft 且必须显式报出：台账读不了 → 挪成 .corrupt.json 后重建并在页面说明「重建前的保留量不再计入」；台账写不了 → 页面直接给出台账路径与原因，并明说「删除会话会同时删掉它的用量」；会话根目录读不到 → 数字全部来自备份，但不谎报成「已删除」（单独报 unverifiedSessions）。\n4. 唯一写入是那份台账；不持有凭据、不联系 provider、不改模型路由。卸载不删台账（用量记录由用户决定去留）。\n5. **与 dsh-workbuddy-quota 不要同时装**：两者都注册 Token 用量设置分区（seat id 不同，order 都是 40），同装会出现两页。旧包唯一不可替代的是 WorkBuddy 额度 pill（数据来自第三方 dsh-workbuddy-connect 的状态路由），本包刻意没有搬它。\n6. 已知统计边界：删除前 ≤30 秒的用量在极端情况下可能来不及入账（窗口 = 巡检间隔）；台账启用之前就被删掉的会话救不回来；session/title-llm-request 花 token 但不记 usage 样本（DSH 自己的投影有同样盲点）；fork 继承的前缀不重复计费。\n7. 0.3.1 是纯打包修正：去掉 package.json 的 prepare —— 有它的话 pnpm 10+ 会以 ERR_PNPM_GIT_DEP_PREPARE_NOT_ALLOWED 拦下 github: 安装，逼每个用户手改 profile 的 pnpm-workspace.yaml；lib/ 是提交进仓库的，git 安装本来就不需要构建。lib/ 与 src/ 在 0.3.0 → 0.3.1 之间逐字节未变。\n8. 来源变更：本插件一度收录在 dsh-plugin-collection（tarball 托管的 0.3.0），随后**改由自己的源码仓库分发**，集合仓库里那一份已移除 —— 那条 tarball URL 因此不再可用，本条目的 github: 规格就是替代它的安装路径。",
-      "evidence": "隔离环境：DSH_HOME=D:\\deepseek\\.tmp\\usage-stats-iso\\home（一次性目录，与生产 C:\\Users\\Administrator\\.dsh 完全分离；生产 3080 服务进程全程未重启、未安装、未改配置，只被**只读**扫描过会话日志）。dsh 0.1.6-alpha.1 / node 24.14.0 / pnpm 12.4.2。\n\n① 折叠一致性（与**真实的上一个发布产物**比对）：参考实现不是重写的，而是从 dsh-workbuddy-quota-0.2.0.tgz（sha256 744a39879202782bdbca4d8235094949b73accf7c2f0153841872aed2d2388f8）里机器提取的 lib/index.js。node scripts/verify-fold.mjs --reference <解包目录> --sessions C:\\Users\\Administrator\\.dsh\\sessions → **真实会话日志 35/35 逐字节一致（24045 KiB）**，整根目录合并结果一致；另含 11 条折叠规则用例 + 4 组合成日志（单帧 / 三帧 / fork 前缀 / 无表头）。\n② 删除会话（缺陷回归，真机）：隔离实例里放 7 个真实会话日志（1.5 MiB，复制而来）。删除一个会话目录、越过 15s 报告 TTL 再取一次 → 读到的日志 6 → 5，而**总 tokens 不变（14,069,358）**，模型调用次数不变（189），已删除会话保留 1 → 2 个（11,061,687 tokens）。对照：只折叠仍在磁盘上的日志（0.2.0 的口径）此刻只剩 **3,007,671**（−78%）。\n③ 离线套件（源码仓库 `npm test`，5 个套件）：构建一致性 9/9 文件、折叠一致 28/28、删除保留 45/45（删除 / 重启 / 追加 / 日志缩水 / 台账损坏 / 台账不可写 / 根目录不可读 / 同名 id 重现 / 后台巡检 / 确定性）、宿主路由 18/18、客户端渲染 33/33。\n④ 客户端半真的被应用加载：应用外壳的预加载清单里出现 dsh-usage-stats/client.js，carrier 提供该模块 HTTP 200（23635 字节）；设置页在 Edge 里实测渲染正常（脚注写出「覆盖 6 个会话日志 · 已删会话从备份保留 2 个（11,061,687 tokens）· 更新于 …」与「删除会话不会丢用量」），浏览器 console 无来自本插件的错误。\n⑤ 安装规格（本条记录的 github: 路径）：DSH_HOME=<隔离主目录> dsh plugin --profile web add github:HaydenSmith1121/dsh-usage-stats → exit 0（'Done in 7.9s using pnpm v12.4.2'）；装到的副本 version=0.3.1、lib/ 9 个文件齐全；dsh --profile web --dump-config → exit 0，树里出现 '# == dsh-usage-stats'，无 plugin tree failed to load / does not provide an export / Cannot find module。0.3.0 走同一条命令会以 ERR_PNPM_GIT_DEP_PREPARE_NOT_ALLOWED 失败（原因与修法见 notes 第 7 条）—— 这正是本条记 0.3.1 而不是 0.3.0 的原因。\n⑥ 生产侧：本机已把依赖改成本地固定副本 D:\\deepseek\\.dsh-local-artifacts\\dsh-usage-stats-0.3.1.tgz，因此重装 / 升级不依赖任何中间产物仓库；旧包 dsh-workbuddy-quota 已从生产 profile 卸载。\n\n核对结论：ok（2026-09-18，dsh 0.1.6-alpha.1，node 24.14.0，pnpm 12.4.2，核对人 HaydenSmith1121）",
-      "curatedAt": "2026-09-18"
-    },
-    {
       "id": "HaydenSmith1121/dsh-chat-fold",
       "package": "dsh-chat-fold",
       "version": "0.1.0",

@@ -3,18 +3,19 @@
  *
  * 为什么要单独一组：
  *
- * 0.2.0 的全部价值都在**交互之后**：点安装 → 立刻出现进度面板（阶段 / 已耗时 /
- * 预计剩余）→ 可以按「中止安装」→ 手动安装命令始终挂在下面。
- * 只做首屏渲染测试的话，这些代码一行都不会执行 —— 测试全绿，功能却可能是坏的。
+ * 全部价值都在**交互之后**：点安装 → 选自动还是手动 → 自动那条路立刻出现
+ * 进度面板（阶段 / 已耗时 / 预计剩余）→ 可以按「中止安装」→ 手动安装命令
+ * 始终挂在下面。只做首屏渲染测试的话，这些代码一行都不会执行 ——
+ * 测试全绿，功能却可能是坏的。
  *
  * 这里用 panel-render.test.mjs 里的同一个 stub 驱动（stub React + fetch），
- * 按真实路径点击：卡片「安装」→ 装前检查抽屉 → 「开始安装」→ 任务面板。
+ * 按真实路径点击：卡片「安装」→ 安装方案抽屉（选方式）→「开始安装」→ 任务面板。
  */
 
 import { suite, test, assert } from './harness.mjs';
 import { openPanel, allText, findAll } from './panel-render.test.mjs';
 
-suite('client / 安装交互（进度 · 预计时间 · 中止 · 手动命令）');
+suite('client / 安装交互（选方式 · 进度 · 预计时间 · 中止 · 手动命令）');
 
 /** 一条可安装的假插件 */
 function entry(over = {}) {
@@ -30,30 +31,44 @@ function entry(over = {}) {
   };
 }
 
-/** 服务端会给的闸门结果（含手动安装方案） */
-function gateResult() {
+/** 服务端会给的手动安装方案 */
+function manualPlan() {
   return {
-    pluginId: 'demo', verdict: 'pass',
-    canInstall: true, installable: true, requiresRiskAck: false, acknowledged: false,
-    blockedBy: [], counts: { pass: 3, warn: 0, fatalBlocking: 0, fatalOverridable: 0, skipped: 0 },
-    checks: [{ id: 'cand.tarball', title: 'tarball 存在性', severity: 'info', status: 'pass', detail: '本地 tarball 存在' }],
-    installSpec: { kind: 'local-tarball', spec: 'D:/repo/demo.tgz', resolvedPath: 'D:/repo/demo.tgz' },
-    installState: null, upgrade: false,
-    manual: {
-      available: true, package: 'demo-plugin', version: '1.2.3', profile: 'web',
-      tarball: 'D:/repo/plugins/demo/demo-plugin-1.2.3.tgz',
-      tarballUrl: 'https://example.test/demo-plugin-1.2.3.tgz',
-      tarballSource: 'repo', tarballSourceText: '仓库里的快照 tarball（离线可用）',
-      sha256: 'a'.repeat(64), sha256Source: 'catalog',
-      steps: [
-        { id: 'locate', title: '1) 确认安装包在本地（无需下载）', why: '已经在本地了', commands: [{ shell: 'powershell', text: 'Test-Path D:/repo/demo.tgz' }] },
-        { id: 'add', title: '2) 安装', why: '这就是自动化内部执行的那条命令。', commands: [{ shell: 'any', text: 'dsh plugin --profile web add D:/repo/demo.tgz' }], tips: ['成功判据是退出码 0'] },
-        { id: 'confirm', title: '3) 确认装上了（三层校验）', why: '三层都过才算真的装好。', commands: [{ shell: 'any', text: 'dsh plugin --profile web list' }] },
-        { id: 'restart', title: '4) 重启 dsh web', why: 'bundle 在启动时合成。', commands: [{ shell: 'any', text: 'dsh web' }] },
-      ],
-      recovery: [{ id: 'allowbuilds', title: '撞上 ERR_PNPM_IGNORED_BUILDS', why: 'pnpm 10+ 默认不批准构建脚本。', commands: [{ shell: 'any', text: '# 改 allowBuilds' }] }],
-      notes: [], text: '# demo-plugin 手动安装\ndsh plugin --profile web add D:/repo/demo.tgz',
+    available: true, package: 'demo-plugin', version: '1.2.3', profile: 'web',
+    tarball: 'D:/repo/plugins/demo/demo-plugin-1.2.3.tgz',
+    tarballUrl: 'https://example.test/demo-plugin-1.2.3.tgz',
+    tarballSource: 'repo', tarballSourceText: '仓库里的快照 tarball（离线可用）',
+    sha256: 'a'.repeat(64), sha256Source: 'catalog',
+    steps: [
+      { id: 'locate', title: '1) 确认安装包在本地（无需下载）', why: '已经在本地了', commands: [{ shell: 'powershell', text: 'Test-Path D:/repo/demo.tgz' }] },
+      { id: 'add', title: '2) 安装', why: '这就是自动化执行的那条命令。', commands: [{ shell: 'any', text: 'dsh plugin --profile web add D:/repo/demo.tgz' }], tips: ['成功判据是退出码 0'] },
+      { id: 'confirm', title: '3) 确认装上了（三层校验）', why: '三层都过才算真的装好。', commands: [{ shell: 'any', text: 'dsh plugin --profile web list' }] },
+      { id: 'restart', title: '4) 重启 dsh web', why: 'bundle 在启动时合成。', commands: [{ shell: 'any', text: 'dsh web' }] },
+    ],
+    recovery: [{ id: 'allowbuilds', title: '撞上 ERR_PNPM_IGNORED_BUILDS', why: 'pnpm 10+ 默认不批准构建脚本。', commands: [{ shell: 'any', text: '# 改 allowBuilds' }] }],
+    notes: [], text: '# demo-plugin 手动安装\ndsh plugin --profile web add D:/repo/demo.tgz',
+  };
+}
+
+/**
+ * 服务端会给的安装方案（installPlan）。
+ *
+ * ★ 0.6.0 起一次请求就回三样东西：这个插件是什么状态、自动那条路的规格、
+ *   手动那条路的完整命令。两条路都要能在**按下任何按钮之前**看完。
+ */
+function planResult(over = {}) {
+  return {
+    pluginId: 'demo', title: '演示插件', package: 'demo-plugin', version: '1.2.3',
+    targetProfile: 'web', upstream: 'https://github.com/o/demo',
+    needsConfig: false, installState: null, upgrade: false, alreadyLatest: false,
+    auto: {
+      available: true, kind: 'local-tarball', spec: 'D:/repo/demo.tgz',
+      source: 'repo', needsDownload: false, sha256: null,
     },
+    manual: manualPlan(),
+    notes: [],
+    configSource: 'remote', configError: null,
+    ...over,
   };
 }
 
@@ -61,11 +76,14 @@ function gateResult() {
 function runningJob(over = {}) {
   return {
     id: 'job-1', kind: 'install', pluginId: 'demo', pkgName: 'demo-plugin', profile: 'web',
+    entry: { id: 'demo', title: '演示插件', package: 'demo-plugin', version: '1.2.3' },
+    auto: { kind: 'local-tarball', spec: 'D:/repo/demo.tgz', source: 'repo', needsDownload: false },
+    reinstall: false,
     state: 'running', startedAt: Date.now() - 12_000, endedAt: null, elapsedMs: 12_000,
     currentPhase: 'install', currentPhaseLabel: '执行安装（pnpm 解析依赖并解包，通常最慢）',
     currentPhaseElapsedMs: 9_000,
     allPhases: [
-      { id: 'preflight', label: '装前检查', state: 'ok', ms: 900 },
+      { id: 'preflight', label: 'profile 完整性体检', state: 'ok', ms: 900 },
       { id: 'fetch', label: '取安装包', state: 'ok', ms: 200 },
       { id: 'backup', label: '给 profile 拍快照', state: 'ok', ms: 300 },
       { id: 'allowbuilds', label: '预置 allowBuilds', state: 'ok', ms: 20 },
@@ -75,56 +93,154 @@ function runningJob(over = {}) {
     steps: [], staleness: null, pnpmTail: ['Progress: resolved 42, reused 30', 'Packages: +3'],
     canAbort: true, abortRequestedAt: null, terminal: false, result: null, error: null,
     eta: { lowMs: 40_000, highMs: 110_000, text: '预计还需 40 秒 – 1 分 50 秒' },
-    manual: gateResult().manual,
+    manual: manualPlan(),
     ...over,
   };
 }
 
 /**
+ * 在安装抽屉（InstallView）里吗？
+ *
+ * ★ 不能用「文本里含 dpm-prog」判断 —— `d.text()` 给的是**文本内容**，不含类名。
+ *   也不能只看「中止安装」：终态（失败 / 完成）没有那个按钮。
+ *   可靠判据是 InstallView 独有的底部按钮，加上几个终态文案。
+ */
+function inInstallDrawer(d) {
+  if (d.buttons().some((b) => ['完成', '刷新状态', '中止安装', '正在中止…'].includes(allText(b).trim()))) return true;
+  return /安装未完成|更新未完成|安装成功|更新成功|已中止安装|安装超时/.test(d.text());
+}
+
+/**
  * 把「点安装」这条路走完，停在安装抽屉上。
  *
- * ★ 只需要点一次：卡片上的「安装」会先开装前检查抽屉、紧接着（闸门已缓存）
- *   直接进安装抽屉。测试里不必去点那个一闪而过的「开始安装」——
- *   真实用户看到的也是这个结果：点一下，安装就开始了。
+ * ★ 两步：卡片「安装」→ 安装方案抽屉（默认选中「自动安装」）→「开始安装」。
+ *   第一次点击只开方案页 —— 这正是新设计要的效果：**先让用户看见两条路**，
+ *   而不是点一下就闷头开跑。
  *
- * ★ 为什么要重试：点击触发的是一条**异步**链（gate 请求 → install 请求 →
- *   切抽屉），而测试的 settle() 只推进有限的几拍。重试几次并检查是否真的
- *   进了安装视图，比赌「刚好跑完」稳得多 —— 否则用例会随机器快慢时绿时红。
+ * ★ 为什么要重试：点击触发的是一条**异步**链（installPlan 请求 → 渲染 →
+ *   install 请求 → 切抽屉），而测试的 settle() 只推进有限的几拍。重试几次
+ *   并检查是否真的进了安装视图，比赌「刚好跑完」稳得多。
  */
 async function driveToInstallDrawer(jobSnapshot) {
-  const manual = jobSnapshot.manual ?? gateResult().manual;
+  const manual = jobSnapshot.manual ?? manualPlan();
   const extra = {
-    gate: () => gateResult(),
+    installPlan: () => planResult(),
     install: () => ({ ok: true, started: true, jobId: jobSnapshot.id, job: jobSnapshot, manual }),
     installProgress: () => ({ job: jobSnapshot }),
   };
   const d = await openPanel([entry()], extra);
-  for (let attempt = 0; attempt < 4; attempt++) {
-    // 「安装」在卡片上，或者已经在装前检查抽屉里（那时按钮叫「开始安装」）
-    const btn = d.buttons().find((b) => ['安装', '开始安装'].includes(allText(b).trim()) && b.props.disabled !== true);
-    if (btn) {
-      btn.props.onClick({ target: { checked: true } });
-      await d.settle(4);
-    }
-    const text = d.text();
-    if (text.includes('中止安装') || text.includes('正在中止') || text.includes('手动安装')) return d;
-    // 兜底：去按闸门抽屉里的「开始安装」（卡片那一下只开了检查抽屉的情况）
-    const gateBtn = d.buttons().find((b) => ['开始安装', '开始更新'].includes(allText(b).trim()));
-    if (gateBtn && gateBtn.props.disabled !== true) {
-      gateBtn.props.onClick({ target: { checked: true } });
-      await d.settle(4);
-    }
-    const text2 = d.text();
-    if (text2.includes('中止安装') || text2.includes('正在中止') || text2.includes('手动安装')) return d;
+  for (let attempt = 0; attempt < 6; attempt++) {
+    if (inInstallDrawer(d)) return d;
+    // 卡片上的「安装」：开方案抽屉
+    const card = d.buttons().find((b) => allText(b).trim() === '安装' && b.props.disabled !== true);
+    if (card) { card.props.onClick({ target: { checked: true } }); await d.settle(4); }
+    // 方案抽屉里的「开始安装」：真的开跑
+    const start = d.buttons().find((b) => ['开始安装', '开始更新', '重新安装'].includes(allText(b).trim()) && b.props.disabled !== true);
+    if (start) { start.props.onClick({ target: { checked: true } }); await d.settle(4); }
+    if (inInstallDrawer(d)) return d;
   }
   throw new Error(`没能进入安装抽屉。当前按钮：${d.buttons().map((b) => allText(b).trim()).join(' | ')}`);
 }
+
+/** 只走到安装方案抽屉（不进安装）—— 用来测「选方式」这一屏 */
+async function driveToPlanDrawer(plan, oneEntry = entry()) {
+  const d = await openPanel([oneEntry], { installPlan: () => plan });
+  for (let attempt = 0; attempt < 4; attempt++) {
+    const card = d.buttons().find((b) => allText(b).trim() === '安装' && b.props.disabled !== true);
+    if (card) { card.props.onClick({ target: { checked: true } }); await d.settle(4); }
+    if (d.text().includes('选择安装方式')) return d;
+  }
+  throw new Error(`没能进入安装方案抽屉。当前文本：${d.text().slice(0, 400)}`);
+}
+
+// ─────────────────────────────────────────────────────────────
+// ★ 选方式：自动 / 手动都摆在最上面
+// ─────────────────────────────────────────────────────────────
+
+test('★ 安装方案页同时给出「自动安装」和「手动安装」两条路（不再有装前检查）', async () => {
+  const d = await driveToPlanDrawer(planResult());
+  const text = d.text();
+  assert(text.includes('选择安装方式'), `应当有方式选择区，实际：${text.slice(0, 400)}`);
+  assert(text.includes('自动安装'), '应当有「自动安装」这张卡');
+  assert(text.includes('手动安装'), '应当有「手动安装」这张卡');
+  // ★ 装前检查整体删除：页面、抽屉、结论词一个都不该再有
+  assert(!text.includes('装前检查'), `不该再出现「装前检查」，实际：${text.slice(0, 400)}`);
+  assert(!/已硬拦截|已被拦截|不能安装|无法确认/.test(text), `不该再出现任何放行判决措辞：${text.slice(0, 400)}`);
+});
+
+test('★ 自动安装能跑时默认选中它，并说清「命令窗口不会弹出来」', async () => {
+  const d = await driveToPlanDrawer(planResult());
+  const text = d.text();
+  assert(text.includes('已选择'), '应当标出当前选中的方式');
+  assert(/不会弹出命令窗口|不会弹出/.test(text),
+    `自动安装的卖点就是命令不出现在界面上，必须说清，实际：${text.slice(0, 500)}`);
+  // 规格与来源要如实展示 —— 命令看不见，那至少让它可读
+  assert(text.includes('D:/repo/demo.tgz'), '应当展示将要执行的安装规格');
+  assert(text.includes('本机仓库里的离线包') || text.includes('仓库'), '应当如实标注规格来源');
+});
+
+test('★ 自动不可用时：说清是「没有可跑的命令」，而不是「不让你装」', async () => {
+  const d = await driveToPlanDrawer(planResult({
+    auto: { available: false, reason: '目录里没有为它记录可自动执行的安装方式，所以只能按上游说明手动装。' },
+  }));
+  const text = d.text();
+  assert(text.includes('没有可自动执行的安装方式'), `应当说明原因，实际：${text.slice(0, 500)}`);
+  // ★ 落到手动那条路，并且命令**直接铺出来**（不是藏在折叠里）
+  assert(text.includes('dsh plugin --profile web add D:/repo/demo.tgz'),
+    `自动不可用时应当直接把手动命令铺出来，实际：${text.slice(0, 600)}`);
+  const btn = d.buttons().find((b) => allText(b).trim() === '复制全部命令');
+  assert(btn, `自动不可用时主按钮应当是「复制全部命令」。现有：${d.buttons().map((b) => allText(b).trim()).join(' | ')}`);
+});
+
+test('★ 切到手动安装：主按钮变成「复制全部命令」，不再有安装按钮', async () => {
+  const d = await driveToPlanDrawer(planResult());
+  const manualCard = d.buttons().find((b) => allText(b).includes('手动安装') && String(b.props.className ?? '').includes('dpm-method'));
+  assert(manualCard, `应当有一张「手动安装」方式卡。现有：${d.buttons().map((b) => allText(b).trim()).join(' | ')}`);
+  manualCard.props.onClick();
+  await d.settle(3);
+  const text = d.text();
+  assert(text.includes('复制全部命令'), '切到手动后主按钮应当是「复制全部命令」');
+  assert(!d.buttons().some((b) => allText(b).trim() === '开始安装'),
+    '切到手动后不该还留着「开始安装」—— 手动那条路市场不执行任何命令');
+  assert(text.includes('Test-Path') || text.includes('dsh plugin --profile web add'),
+    '手动那条路要把命令铺出来');
+});
+
+test('★ 装前提示以「事实」形式列出（是提示，不是判决）', async () => {
+  const d = await driveToPlanDrawer(planResult({
+    notes: [
+      { id: 'no-bundle', text: '这个包的 package.json 没有声明 dsh.bundle.patch，dsh 会把它当普通依赖装进 node_modules，但不会写进 dsh.profile.bundles。' },
+      { id: 'needs-config', text: '装完需要配置（例如 API Key / Token）才能用。' },
+    ],
+  }));
+  const text = d.text();
+  assert(text.includes('装之前你可能想知道'), `提示区应当有标题，实际：${text.slice(0, 500)}`);
+  assert(text.includes('dsh.profile.bundles'), '应当把事实原文列出来');
+  // ★ 关键：有提示也不影响两条路可选 —— 自动那条路照样是选中的
+  assert(text.includes('已选择'), '有提示时仍然要能正常选方式和安装');
+  const start = d.buttons().find((b) => allText(b).trim() === '开始安装');
+  assert(start && start.props.disabled !== true, '★ 有提示不该禁用安装按钮 —— 提示不是拦截');
+});
+
+// ─────────────────────────────────────────────────────────────
+// 自动那条路：进度 / 预计时间 / 中止
+// ─────────────────────────────────────────────────────────────
 
 test('★ 点安装后立刻进入进度视图，而不是只有一句「正在安装」', async () => {
   const d = await driveToInstallDrawer(runningJob());
   const text = d.text();
   assert(text.includes('已用'), `进度面板应当显示已耗时，实际片段：${text.slice(0, 400)}`);
   assert(text.includes('本步已用') || text.includes('预计还需'), '进度面板应当有时间信息');
+});
+
+test('★ 进度页说清「正在装什么、用什么方式装」（自动安装的唯一观察点）', async () => {
+  const d = await driveToInstallDrawer(runningJob());
+  const text = d.text();
+  assert(text.includes('demo-plugin'), `进度页应当写明正在装哪个包，实际：${text.slice(0, 400)}`);
+  assert(text.includes('1.2.3'), '应当写明目标版本');
+  assert(text.includes('自动安装'), '应当标明这是自动安装');
+  assert(text.includes('D:/repo/demo.tgz'), '命令看不到，那就必须让规格可读');
+  assert(text.includes('local-tarball'), '应当标明安装规格的类型');
 });
 
 test('★ 进度里有「预计还需」的区间（用户要求的预计时间）', async () => {
@@ -207,21 +323,23 @@ test('★ 手动命令逐条可复制（每条命令一个复制按钮）', asyn
 });
 
 test('★ 手动方案可按 shell 切换（PowerShell 命令行里不该混进 bash 语法）', async () => {
-  const manual = gateResult().manual;
+  const manual = manualPlan();
   manual.steps[0].commands = [
     { shell: 'powershell', text: 'Test-Path D:/repo/demo.tgz' },
     { shell: 'bash', text: 'ls -l /repo/demo.tgz' },
   ];
   const job = runningJob({ manual });
   const extra = {
-    gate: () => ({ ...gateResult(), manual }),
+    installPlan: () => planResult({ manual }),
     install: () => ({ ok: true, jobId: 'job-1', job, manual }),
     installProgress: () => ({ job }),
   };
   const d = await openPanel([entry()], extra);
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 6; i++) {
     const b = d.buttons().find((x) => allText(x).trim() === '安装' && x.props.disabled !== true);
     if (b) { b.props.onClick({ target: { checked: true } }); await d.settle(4); }
+    const s = d.buttons().find((x) => allText(x).trim() === '开始安装' && x.props.disabled !== true);
+    if (s) { s.props.onClick({ target: { checked: true } }); await d.settle(4); }
     if (d.text().includes('PowerShell') || d.text().includes('bash')) break;
   }
   const text = d.text();
@@ -255,6 +373,10 @@ test('★ 取消（中止）后的文案不叫「失败」，并说明 profile �
   assert(!text.includes('安装未完成'), '中止不该被说成失败');
   assert(text.includes('还原') || text.includes('回滚'), '应当说明 profile 已回到安装前');
 });
+
+// ─────────────────────────────────────────────────────────────
+// 既有能力不能因为这次改动消失
+// ─────────────────────────────────────────────────────────────
 
 test('★ profile 体检有问题时，顶部横幅给出可点的修复入口（而不是让人干等）', async () => {
   const pf = {

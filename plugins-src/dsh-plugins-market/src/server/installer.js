@@ -3,7 +3,7 @@
  *
  * 一次安装就是一次事务：
  *
- *   [0] 复核闸门（必须 canInstall）
+ *   [0] 校验安装规格（spec.js 给的；为空就没有可跑的命令）
  *   [0.5] profile 装前体检（断链 file: 依赖、profile 损坏）—— 见 preflight()
  *   [1] 拿到 tarball（本地仓库优先；没有就联网下载并校验 sha256）
  *   [2] 备份 profile 的 5 个状态文件
@@ -37,9 +37,8 @@ import {
   readProfileState, scanInstalled, composedTree, backupProfile, restoreProfile, tail,
   resolveLocalSpecPath,
 } from './profile.js';
-
-/** 构建脚本放行名单：pnpm 10+ 不批准这些就会让 add 以非 0 退出 */
-const KNOWN_ALLOW_BUILDS = { '@google/genai': false, protobufjs: false };
+// 放行名单只有一份，在 spec.js —— 那里同时也是「装前提示」用的同一份事实
+import { KNOWN_ALLOW_BUILDS } from './spec.js';
 
 /**
  * 各阶段的硬上限。
@@ -466,17 +465,23 @@ export async function materializeSpec(installSpec, entry) {
 // ─────────────────────────────────────────────────────────────
 
 /**
- * 执行一次安装。**调用方必须已经跑过 runGate 并确认 gate.canInstall === true。**
+ * 执行一次安装。
+ *
+ * ★ 0.6.0 起这里**不再复核任何闸门** —— 装前检查已经整体删除。
+ *   调用方（index.js 的 `install`）在调用前已经把两件事办完了：
+ *     · 解析出 `spec`（能自动执行的安装规格）；为空就不该走到这里
+ *     · 让用户选好了「自动安装」，不然用户在界面点的是手动那条路
+ *   所以本函数只需要关心一件事：把这条命令安全地跑完，失败就回滚。
  *
  * @param {object}   o
  * @param {object}   o.entry    目录条目
  * @param {object}   o.ctx      gctx()
- * @param {object}   o.gate     runGate() 的结果
+ * @param {object}   o.spec     resolveInstallSpec() 的结果（spec.js）
  * @param {object}   [o.job]    进度上下文：{ phase(id), note(text), signal, noteOutput(chunk) }
  *                              —— 给了就上报阶段，没给就当纯函数用（测试里很需要）
  * @returns {object} 结构化结果：steps[] 记录了每一步，failure 时含 rollback 结果
  */
-export async function installPlugin({ entry, ctx, gate, options = {}, job = null }) {
+export async function installPlugin({ entry, ctx, spec, options = {}, job = null }) {
   const profile = ctx.profileState.profile;
   const pkgName = entry.package ?? entry.id;
   const steps = [];
@@ -508,9 +513,13 @@ export async function installPlugin({ entry, ctx, gate, options = {}, job = null
     }
   };
 
-  if (!gate?.canInstall) {
-    log('gate', '装前检查', 'fail', '闸门未放行，安装中止。');
-    return { ok: false, steps, failure: 'gate-blocked', gate, timings };
+  /**
+   * ★ 没有安装规格就没有可跑的命令。这不是「不让装」，是「没得跑」——
+   *   界面在这种情况下只会给手动那条路，正常不会走到这里。
+   */
+  if (!spec?.spec) {
+    log('spec', '安装规格', 'fail', '没有可自动执行的安装规格，这次自动安装无法开始。');
+    return { ok: false, steps, failure: 'no-spec', timings };
   }
 
   const cancelled = () => aborted(job);
@@ -530,7 +539,7 @@ export async function installPlugin({ entry, ctx, gate, options = {}, job = null
 
   // ── [1] 取 tarball ──────────────────────────────────────
   if (cancelled()) return { ok: false, steps, failure: 'aborted-by-user', timings };
-  const mat = await timePhase('fetch', async () => materializeSpec(gate.installSpec, entry, { signal: job?.signal ?? null }));
+  const mat = await timePhase('fetch', async () => materializeSpec(spec, entry, { signal: job?.signal ?? null }));
   if (!mat.ok) {
     log('fetch', '获取安装包', mat.canceled || /abort/i.test(String(mat.error)) ? 'warn' : 'fail', mat.error);
     return { ok: false, steps, failure: mat.canceled ? 'aborted-by-user' : 'fetch', timings };

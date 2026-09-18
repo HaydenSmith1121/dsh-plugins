@@ -6,20 +6,20 @@
   <a href="https://github.com/deepseek-ai/deepseek-harness"><img src="https://img.shields.io/badge/Upstream-DeepSeek_Harness-4D6BFE?style=flat-square" alt="Upstream: DeepSeek Harness"></a>
   <a href="#license"><img src="https://img.shields.io/badge/License-MIT-2EA44F?style=flat-square" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/Baseline-dsh_0.1.6--alpha.1-8B5CF6?style=flat-square" alt="Runtime baseline: dsh 0.1.6-alpha.1">
-  <img src="https://img.shields.io/badge/Plugins-7494-0EA5E9?style=flat-square" alt="7,494 catalogued plugins">
+  <img src="https://img.shields.io/badge/Plugins-7658-0EA5E9?style=flat-square" alt="7,658 catalogued plugins">
   <img src="https://img.shields.io/badge/Sync-daily_(GitHub_Actions)-2088FF?style=flat-square" alt="Catalog refreshed daily by GitHub Actions">
 </p>
 
 <p align="center">
-  <strong>本仓库只有市场，插件在另一个仓库</strong> —— 目录（一个插件一个配置文件） · 装前兼容闸门 · 每日自动刷新<br>
-  <sub>Marketplace only: a one-file-per-plugin catalog, pre-install compatibility gates, refreshed every day.</sub>
+  <strong>本仓库只有市场，插件在另一个仓库</strong> —— 目录（一个插件一个配置文件） · 自动/手动两条安装路径 · 每日自动刷新<br>
+  <sub>Marketplace only: a one-file-per-plugin catalog, install-it-your-way (automatic or manual), refreshed every day.</sub>
 </p>
 
 <p align="center">
   <a href="#what">🧭 两个仓库</a> ·
   <a href="#quickstart">🚀 快速开始</a> ·
   <a href="#catalog">🗂️ 目录与安装</a> ·
-  <a href="#tiers">🧭 不分级的目录</a> ·
+  <a href="#tiers">🧭 谁来决定装不装</a> ·
   <a href="#sync">🔄 每日刷新</a> ·
   <a href="#docs">🗺️ 文档地图</a> ·
   <a href="#contributing">🤝 贡献</a> ·
@@ -73,7 +73,8 @@ curl -fsSL https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/sc
 `dsh-plugins-market` → 四步校验（含真实启动）**。
 
 > ★ **引导脚本现在只装市场插件这一个**。「一键装全套」这条路已经没有了 ——
-> 插件市场与插件本体分离之后，装哪个插件是市场面板的职责（装前跑兼容闸门、失败自动回滚）；
+> 插件市场与插件本体分离之后，装哪个插件、怎么装是市场面板的职责（自动或手动由你选，
+> 失败自动回滚）；
 > 脚本只负责把入口装上。`-BootstrapOnly` / `--bootstrap-only` 仍然接受，含义与默认行为一致，
 > 保留它是为了兼容旧命令与显式表达意图。
 
@@ -145,8 +146,9 @@ catalog/
 |---|---|
 | 1 | 列表页读 `catalog/index.json`（派生索引，只用于**展示**：标题 / 版本 / star / 安装方式的标签） |
 | 2 | 点「安装」时，**按需拉取那一个插件的 `catalog/plugins/<slug>.json`**（远程 → 本地缓存 → 包内兜底） |
-| 3 | 按配置文件里的 `install.method` 分派到对应安装路径，并跑装前兼容闸门 |
-| 4 | —— 前提是配置文件**读得到**。读不到就**拒绝安装**（`configUnavailable`），绝不拿索引字段猜一个方法 |
+| 3 | 按配置文件里的 `install.method` 解析出**自动安装规格**，同时算出一份**手动安装方案**（两条路的命令都从这里来） |
+| 4 | 你在安装方案页选一条路：**自动**（市场在服务端执行，界面不弹命令窗口，有进度/预计剩余/可中止）或**手动**（命令给你，自己敲）。安装前自动备份 profile，失败自动回滚 |
+| 5 | —— 前提是配置文件**读得到**。读不到就**拒绝安装**（`configUnavailable`），绝不拿索引字段猜一个方法；此时页面仍然把手动说明摆出来 |
 
 > **为什么这条约定值得单独写一遍**：按索引猜出来的方法会把「装什么」从「配置说了算」变成
 > 「代码猜的」，而那种错非常安静 —— 装是装上了。所以市场宁可停下来，并同时给出一份
@@ -163,7 +165,9 @@ catalog/
 | `manual` | 没有可靠的一键方式 | 只给说明与命令 |
 
 > 采集器会做**自洽性检查**：声明了 `github` 却没有 `github:` 规格、声明了 `npm` 却不是合法包名、
-> 声明了 `tarball` 却没有 `url` —— 一律降级成 `manual`，让闸门去拦，而不是让 pnpm 报一个看不懂的错。
+> 声明了 `tarball` 却没有 `url` —— 一律降级成 `manual`（只有说明、没有可执行命令），
+> 而不是让 pnpm 去报一个看不懂的错。注意这条降级**只影响自动那条路**：
+> 页面会说明「为什么没有自动方式」并把手动方案原样列出来 —— **不是禁止安装**。
 
 ### 字段与格式
 
@@ -174,26 +178,35 @@ catalog/
 
 <a name="tiers"></a>
 
-## 🧭 不分级的目录 · No Tiers
+## 🧭 谁来决定装不装 · You Do
 
-> **0.5.0 去掉了信任分级。** 目录是一份**平铺列表**：有多少插件就是多少条，
-> 没有「已验证 / 已审核 / 未审核」三个标签，也没有对应的页签与筛选。
+> **0.5.0 去掉了信任分级**（`verified` / `reviewed` / `community`），
+> **0.6.0 去掉了装前检查（闸门）**。目录是一份**平铺列表**：有多少插件就是多少条，
+> 没有层级标签、没有对应的页签与筛选，也没有「能不能装」的判决。
 
-**为什么去掉**：那一套回答的是「维护者该不该为这个插件背书」，而用户真正要回答的问题只有一个 ——
-**这个插件我这儿装不装得上**。那个问题由**装前检查**当场判定：它看的是真实的
-node / pnpm / dsh 版本、profile 现状、候选包声明了什么，比一个维护者贴的标签准得多，
-也不会过期。少一层需要维护、需要解释、还会悄悄失效的分类。
+**为什么去掉分级**：那一套回答的是「维护者该不该为这个插件背书」，而用户真正要回答的问题
+只有一个 —— **这个插件我这儿装不装得上**。而「装不装得上」这件事，一个维护者贴的标签
+既答不准，也会过期。
 
-连带去掉的还有两件：
+**为什么连装前检查也去掉了**：静态检查看不到真实发布产物、看不到运行时行为、也看不到依赖
+闭包 —— 它给出的「不安全」结论必然带着猜测，而这个结论在界面上会被读成「装不了」，
+于是本来能用的插件被挡在门外。0.6.0 之后市场不再产出这类判决，只做两件事：
+
+| 市场做的 | 用户做的 |
+|---|---|
+| 把**自动**那条路的规格解析出来（`kind` / `spec` / 来源如实标注） | 选自动，还是手动 |
+| 把**手动**那条路的完整命令摆出来（下载 + sha256 + add + 校验 + 重启） | 决定要不要装、什么时候装 |
+| 把知道的**事实**列出来（没声明 `dsh.bundle`、peer pin 到更新的版本、与已装的冲突、需要配置……） | 看完之后决定继续还是算了 |
+
+连带去掉的还有一件：
 
 | 去掉的 | 为什么 |
 |---|---|
-| **装未审核插件时的强制风险确认** | 让用户为**每一个**社区插件点一次「我知道有风险」，换来的不是安全，而是闭眼点确定的习惯。**保留**的是另一种确认：装前检查当场发现了明确的致命缺陷（例如包里没声明 `dsh.bundle`，装上也加载不起来）时，仍然会停下来问一句 |
 | **点赞** | 它和收藏在数据形状上一模一样，区别只是「一个数字大一点好看」—— 而这个数字**只统计你自己点过的**（本插件没有后端）。含义与收藏重复，纯粹是界面噪音。收藏留着 |
 
-**留下来的事实仍然要说清楚**：装前检查里有一条「字节来源」，明确区分两种情形 ——
-字节由**本仓库托管**（下载我们自己的 tarball、`sha256` 逐字节核对、可离线安装），
-还是安装**上游**发布的产物（npm / GitHub，本仓库不转发它的字节，只能做静态探测）。
+**留下来的事实仍然要说清楚**：字节由**本仓库托管**时（下载我们自己的 tarball、
+`sha256` 逐字节核对、可离线安装），与安装**上游**发布的产物时（npm / GitHub，
+本仓库不转发它的字节、只能做静态探测）是两种不同的确定性。
 这是「我们查得有多细」，不是「这个插件可不可信」。
 
 > 目录里仍有一批条目带着**人工核对过的实测记录**（安装规格、peer 约束与结论、

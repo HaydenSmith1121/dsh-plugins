@@ -5,17 +5,17 @@
   "package": "dsh-plugins-market",
   "name": "dsh-plugins-market",
   "title": "dsh-plugins 可视化插件市场",
-  "summary": "本仓库自带的市场面板：读取仓库里「一个插件一个配置文件」的目录（catalog/plugins/*.json），装了新版本会提示升级、已是最新则禁用安装，支持本地收藏。带装前兼容性闸门与失败自动回滚的一键安装；安装全程可见进度与预计时间、可随时中止，并始终给出手动安装命令。",
+  "summary": "本仓库自带的市场面板：读取仓库里「一个插件一个配置文件」的目录（catalog/plugins/*.json）。★ 不拦任何插件 —— 所有条目都可装，安装方式由你选：自动安装（市场在服务端执行命令，界面上不弹命令窗口，用进度页展示阶段/耗时/预计剩余，可随时中止）或手动安装（把命令给你，自己执行）。失败自动回滚，两种方式随时可切换。",
   "tags": [
     "插件市场",
     "自研",
     "UI 面板",
-    "安全闸门",
+    "自动/手动安装",
     "引导插件"
   ],
-  "version": "0.5.0",
+  "version": "0.6.0",
   "versionSource": "package.json",
-  "versionCheckedAt": "2026-09-18T01:20:00.000Z",
+  "versionCheckedAt": "2026-09-18T02:57:11.383Z",
   "latestRelease": null,
   "author": "HaydenSmith1121",
   "repo": "https://github.com/HaydenSmith1121/dsh-plugins",
@@ -30,16 +30,16 @@
   "peerVerdict": "ok",
   "peerNote": "没有任何 dependencies / peerDependencies —— 服务器半只用 Node 内置模块（semver 判定、tar 只读访问、YAML 局部合并都是自己实现并有单测），客户端半只用 shell 基线模块表里的 react（不需要 dsh.client.external）。这是刻意的取舍：每多一个依赖就多一分 pnpm 解析失败 / ERR_PNPM_IGNORED_BUILDS / 离线不可用的风险，而这个插件存在的意义正是「别把 harness 装坏」。",
   "coexistenceWarning": null,
-  "notes": "引导插件：本仓库自 2026-09 起插件一律通过它的市场面板安装，scripts/install.* 只装这一个。★ 0.4.0 是「市场与插件分离」这一版：目录从「几个大 JSON（verified.json / curated.json / 22MB 公共索引）」改成「一个插件一个配置文件」（catalog/plugins/<slug>.json）+ 一份派生索引（catalog/index.json）；装任何插件之前**必须先把这个插件自己的配置文件读下来**，再按它写的 install.method 去装，读不到就不装（而不是拿索引字段猜一个方法）。自研插件的 tarball 全部搬到 dsh-plugin-collection 仓库，市场这边不再随仓库分发任何第三方或自研的插件字节。目录的刷新改由 GitHub Actions 每日定时任务完成。★ 0.5.0 去掉三件事：三个信任层级（verified / reviewed / community）、装未审核插件时的强制风险确认、点赞按钮。目录从此是一份**平铺列表** —— 装不装得上由装前检查当场判（它看的是真实的 node / pnpm / dsh 版本与候选包声明），而不是由维护者贴的标签预先判；收藏保留。离线兜底目录的挑选判据也随之从「tier=verified」换成「字节由本仓库托管」（install.method=tarball），同一批 7 个插件。",
+  "notes": "引导插件：本仓库自 2026-09 起插件一律通过它的市场面板安装，scripts/install.* 只装这一个。★ 0.4.0 是「市场与插件分离」这一版：目录从「几个大 JSON（verified.json / curated.json / 22MB 公共索引）」改成「一个插件一个配置文件」（catalog/plugins/<slug>.json）+ 一份派生索引（catalog/index.json）；装任何插件之前**必须先把这个插件自己的配置文件读下来**，再按它写的 install.method 去装，读不到就不装（而不是拿索引字段猜一个方法）。★ 0.5.0 删掉了信任分级（已验证 / 已审核 / 未审核）与点赞。★ 0.6.0 删掉了装前检查（gate）：市场不再判定任何插件「能不能装」，只回答「怎么装」——自动还是手动由用户选；我们知道的**事实**（没声明 dsh.bundle、peer pin 到更新的版本、与已装的冲突…）以提示形式列出，不再作为拦截理由。自研插件的 tarball 全部搬到 dsh-plugin-collection 仓库，市场这边不再随仓库分发任何第三方或自研的插件字节。目录的刷新改由 GitHub Actions 每日定时任务完成。",
   "sha256Note": "自引用条目：本记录指向的 tarball 就是本仓库构建出来的那个包，而本包**内含**这份目录 —— 写进它的 sha256 会因为「tarball 内容取决于记录、记录又取决于 tarball」而永远解不出来（不动点）。本条的 install.sha256 与 install.bytes 都因此留空（大小是同一个方程）。实际校验和见同目录的 .tgz.sha256 边车文件（构建时写出），请不要把它、也不要把它的大小抄进这段文字里。",
   "install": {
     "method": "tarball",
     "spec": null,
     "commands": [],
-    "url": "https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/plugins/dsh-plugins-market/0.1.6-alpha.1/dsh-plugins-market-0.5.0.tgz",
+    "url": "https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/plugins/dsh-plugins-market/0.1.6-alpha.1/dsh-plugins-market-0.6.0.tgz",
     "sha256": null,
     "bytes": null,
-    "tarball": "plugins/dsh-plugins-market/0.1.6-alpha.1/dsh-plugins-market-0.5.0.tgz",
+    "tarball": "plugins/dsh-plugins-market/0.1.6-alpha.1/dsh-plugins-market-0.6.0.tgz",
     "dshVersion": "0.1.6-alpha.1",
     "needsConfig": false,
     "usageNeedsConfig": false,
@@ -50,6 +50,6 @@
     "kind": "self",
     "url": "https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/catalog/overrides/self.json",
     "firstSeenAt": "2026-09-17T16:25:08.895Z",
-    "lastSyncedAt": "2026-09-18T01:20:00.000Z"
+    "lastSyncedAt": "2026-09-18T02:57:11.383Z"
   }
 }

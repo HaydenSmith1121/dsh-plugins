@@ -28,7 +28,10 @@ import {
   detectEnvironment, resolveDshHome, readJsonSafe, resolveDataDir,
   pluginDir, ensureDir,
 } from './util.js';
-import { readProfileState, scanInstalled, composedTree, listProfileBackups } from './profile.js';
+import {
+  readProfileState, scanInstalled, composedTree, listProfileBackups,
+  resolveRuntimePackageVersion,
+} from './profile.js';
 import {
   loadCatalogIndex, loadPluginConfig, entryFromConfig,
   normalizeEntry, searchCatalog,
@@ -39,7 +42,8 @@ import {
   installStateIndex, installedOverview,
   toggleUserMark, userMarks, userDataStats,
 } from './state.js';
-import { runGate } from './gate.js';
+import { checkEnvironment, checkProfile } from './diagnose.js';
+import { resolveInstallSpec, explainNoAutoInstall, installNotes } from './spec.js';
 import { probeEntry, clearProbeCache } from './probe.js';
 import {
   installPlugin, uninstallPlugin, repairProfile, rollbackTo, bootVerify,
@@ -360,11 +364,11 @@ function createDispatcher(ctx) {
       }
 
       case 'entry': {
-        const l = await layers(ctx);
-        const p = pool(ctx);
+        const p = await ensurePool(ctx);
         const id = String(args.id ?? '');
-        const foundIndex = p.entries.find((e) => e.id === id || e.package === id || e.slug === id)
-          ?? findEntry(l, id);
+        // ★ 走同一个 lookupEntry —— 三处入口（详情页 / 安装方案 / 安装）必须
+        //   用同一条解析规则，否则「详情页显示的是 A、点安装装的是 B」。
+        const foundIndex = lookupEntry(p, id);
         if (!foundIndex) throw new Error(`目录里没有这个插件：${args.id}`);
         // 详情页给的是**配置文件里的**权威内容，不是索引里的展示摘要
         const { entry: found, config, source: configSource, error: configError } = await resolveEntryConfig(ctx, foundIndex);
@@ -397,50 +401,68 @@ function createDispatcher(ctx) {
         return { items: userMarks(process.env), stats: userDataStats(process.env) };
       }
 
-      // ── 装前检查 ────────────────────────────────────────
-      case 'gate': {
+      /**
+       * ── 安装方案 ────────────────────────────────────────
+       *
+       * ★ 这里以前是 `gate`（装前检查）：它算一个 verdict，并把「不让装」作为结果之一。
+       *   0.6.0 之后它只回答一个问题 —— **这个插件怎么装**：
+       *
+       *     auto    市场替你跑（命令不出现在界面上）
+       *     manual  给你命令，你自己跑
+       *
+       *   两个都不可用的情况只有一种：配置文件里没有干净的安装规格
+       *   （method=manual / skills），此时 `auto.available === false`，
+       *   页面会说明原因并把上游给的说明原样列出来 —— 仍然不禁止你装。
+       *
+       *   `notes` 是我们知道的**事实**（没声明 dsh.bundle、与已装的冲突、需要配置…），
+       *   供你决定要不要继续；它们不改变能不能装，也不改变用哪条路装。
+       */
+      case 'installPlan': {
         const p = await ensurePool(ctx);
         const { entry: found, source: configSource, error: configError } = await resolveEntryConfig(ctx, lookupEntry(p, args.id));
         if (!found) throw new Error(`目录里没有这个插件：${args.id}`);
 
         const state = p.state.get(found.id) ?? null;
-        // ★ 已经是最新版本时闸门直接短路。
-        //   这不是省事，而是**必须**：让用户对着一个「已是最新」的插件点开
-        //   装前检查、勾风险确认、然后装出一个完全一样的版本，是纯粹的误导。
-        if (state?.status === 'current') {
-          const report = alreadyLatestReport(found, ctx, state);
-          appendOp({ op: 'gate', pluginId: found.id, verdict: report.verdict, canInstall: false, reason: 'up-to-date' });
-          return { ...report, configSource, configError };
-        }
+        const g = await gctx(ctx);
+        const probe = found.install?.method === 'tarball'
+          ? null
+          : await probeEntry(found, { force: Boolean(args.refreshProbe) });
 
-        /**
-         * 静态探测：只在本地没有 tarball 时才需要。
-         *
-         * ★ 0.5.0 之前这条判据是 `found.tier !== 'verified'`（「不是我们自己托管的
-         *   那几条才要去探」）。信任分级去掉之后换成了更直接的问法：
-         *   **这个包的字节在不在本地**。在本地就已经能逐字节看清它声明了什么，
-         *   再去网上探一遍纯属浪费；不在本地就必须探 —— 探的是「能不能装」，
-         *   与谁托管无关。
-         */
-        let probe = null;
-        if (found.install?.method !== 'tarball') {
-          probe = await probeEntry(found, { force: Boolean(args.refreshProbe) });
-        }
-
-        const report = runGate(found, await gctx(ctx), {
-          acknowledgeRisk: Boolean(args.acknowledgeRisk),
-          targetProfile: ctx.profileName,
+        const spec = resolveInstallSpec(found, g, probe);
+        const manual = manualInstallPlan(found, g, spec);
+        const notes = installNotes(found, {
           probe,
+          installed: g.installed,
+          runtimeVersions: g.runtimeVersions,
         });
-        appendOp({
-          op: 'gate', pluginId: found.id, verdict: report.verdict,
-          canInstall: report.canInstall, blockedBy: report.blockedBy,
-          counts: report.counts,
-        });
-        // ★ 手动安装方案：装前就给。用户明确要求「自动安装不行时，要能停下来自己装」——
-        //   而「能不能自己装、要敲什么命令」这个问题的答案不该等到失败后才出现。
-        const manual = manualInstallPlan(found, await gctx(ctx), report.installSpec);
-        return { ...report, installState: state, upgrade: state?.status === 'upgradable', manual, configSource, configError };
+
+        return {
+          pluginId: found.id,
+          title: found.title,
+          package: found.package,
+          version: found.version,
+          targetProfile: ctx.profileName,
+          upstream: found.upstream ?? null,
+          needsConfig: found.install?.needsConfig === true,
+          installState: state,
+          upgrade: state?.status === 'upgradable',
+          alreadyLatest: state?.status === 'current',
+          auto: spec
+            ? {
+              available: true,
+              kind: spec.kind,
+              spec: spec.spec,
+              // 规格是从哪儿来的：配置文件 / 从仓库地址推导 / 探测确认过 —— 如实标注
+              source: spec.source,
+              needsDownload: Boolean(spec.needsDownload),
+              sha256: spec.sha256 ?? null,
+            }
+            : { available: false, reason: explainNoAutoInstall(found) },
+          manual,
+          notes,
+          configSource,
+          configError,
+        };
       }
 
       // ── 安装 / 卸载 / 修复 ──────────────────────────────
@@ -472,28 +494,38 @@ function createDispatcher(ctx) {
         }
 
         const state = p.state.get(found.id) ?? null;
-        if (state?.status === 'current') {
-          const report = alreadyLatestReport(found, ctx, state);
-          appendOp({ op: 'install-refused', pluginId: found.id, verdict: report.verdict, reason: 'up-to-date' });
-          return { ok: false, refused: true, upToDate: true, gate: report, steps: [], message: report.message };
-        }
+        /**
+         * ★ 「已是最新版」不再是一次拒绝。
+         *
+         *   以前这里会直接返回 refused —— 但那等于替用户做了「你没有理由重装」的判断。
+         *   重装是正当需求：装坏了要修、想换安装方式、想确认某条命令能不能跑通。
+         *   所以现在它只是一条 `reinstall` 标记，界面把按钮文案换成「重新安装」，
+         *   安装照跑（profile 一样先备份、失败一样回滚）。
+         */
+        const isReinstall = state?.status === 'current';
 
         const probe = found.install?.method === 'tarball' ? null : await probeEntry(found);
-        const gate = runGate(found, await gctx(ctx), {
-          acknowledgeRisk: Boolean(args.acknowledgeRisk),
-          targetProfile: ctx.profileName,
-          probe,
-        });
-        if (!gate.canInstall) {
-          appendOp({ op: 'install-refused', pluginId: found.id, verdict: gate.verdict, blockedBy: gate.blockedBy });
-          return { ok: false, refused: true, gate, steps: [], message: '装前检查未通过，已中止安装（没有改动任何文件）。' };
+        const spec = resolveInstallSpec(found, await gctx(ctx), probe);
+
+        /**
+         * ★ 唯一还会「不开始」的情况：没有可自动执行的安装规格。
+         *   这不是风险判断，是能力判断 —— 我们没有一条能跑的命令可以执行。
+         *   页面在用户点「自动安装」之前就会把这种情况说清楚（`auto.available === false`），
+         *   并把手动安装的命令摆在旁边。
+         */
+        if (!spec) {
+          appendOp({ op: 'install-refused', pluginId: found.id, reason: 'no-auto-spec' });
+          return {
+            ok: false, refused: true, noAutoSpec: true, steps: [],
+            message: explainNoAutoInstall(found) + '请改用「手动安装」。',
+          };
         }
 
         ctx.env = detectEnvironment(process.env); // 环境可能在会话期间变了
 
         // ★ 手动安装方案在**开始之前**就算好：无论自动安装成功还是失败，
         //   用户都应该能立刻看到「同样的效果，我自己敲命令要怎么做」。
-        const manual = manualInstallPlan(found, await gctx(ctx), gate.installSpec);
+        const manual = manualInstallPlan(found, await gctx(ctx), spec);
 
         const isUpgrade = state?.status === 'upgradable';
         const job = startJob({
@@ -502,6 +534,10 @@ function createDispatcher(ctx) {
           pkgName: found.package ?? found.id,
           profile: ctx.profileName,
           entry: { id: found.id, title: found.title, package: found.package, version: found.version },
+          // ★ 进度页要把「正在用什么方式装」写在最上面：用户选了自动安装之后
+          //   界面上看不到命令，那就必须让他知道市场到底在跑哪条路
+          auto: { kind: spec.kind, spec: spec.spec, source: spec.source, needsDownload: Boolean(spec.needsDownload) },
+          reinstall: isReinstall,
           manual,
           totalTimeoutMs: clamp(args.totalTimeoutMs ?? DEFAULT_TOTAL_TIMEOUT_MS, 60_000, 60 * 60 * 1000),
           runner: async (j) => {
@@ -520,7 +556,7 @@ function createDispatcher(ctx) {
                 return { ok: false, aborted: true, failure: 'aborted-by-user', steps: [{ id: 'sim', label: '模拟安装', status: 'warn', detail: '被中止' }] };
               }
             }
-            const result = await installPlugin({ entry: found, ctx: await gctx(ctx), gate, options: {}, job: j });
+            const result = await installPlugin({ entry: found, ctx: await gctx(ctx), spec, options: {}, job: j });
             invalidate(ctx);
             appendOp({
               op: isUpgrade ? 'upgrade' : 'install',
@@ -543,9 +579,11 @@ function createDispatcher(ctx) {
           started: true,
           jobId: job.id,
           job: jobSnapshot(job),
-          gate,
+          // 自动安装已经在跑，但手动方案照样回给前端 —— 页面要能一直把两条路都摆着
+          auto: { kind: spec.kind, spec: spec.spec, source: spec.source },
           manual,
           upgrade: isUpgrade,
+          reinstall: isReinstall,
           fromVersion: state?.installedVersion ?? null,
           toVersion: state?.target ?? null,
           message: '安装已在后台开始。可以随时关掉这个页面 —— 任务会在服务端继续，回来还能看到进度。',
@@ -579,15 +617,20 @@ function createDispatcher(ctx) {
       case 'jobs':
         return { items: listJobs(), current: jobSnapshot(currentJob()) };
 
-      /** 手动安装指引：任何时候都能拿（不依赖是否有任务在跑） */
+      /**
+       * 手动安装指引：任何时候都能拿（不依赖是否有任务在跑、也不依赖能不能自动装）
+       *
+       * ★ 手动这条路是**永远铺着**的：即使自动安装能跑、正在跑，用户也可以选择自己敲命令。
+       *   所以这里不查任何 verdict，只把安装规格翻译成人能照抄的命令。
+       */
       case 'manualCommands': {
         const p = await ensurePool(ctx);
         const { entry: found } = await resolveEntryConfig(ctx, lookupEntry(p, args.id));
         if (!found) throw new Error(`目录里没有这个插件：${args.id}`);
         const g = await gctx(ctx);
         const probe = found.install?.method === 'tarball' ? null : await probeEntry(found);
-        const report = runGate(found, g, { targetProfile: ctx.profileName, probe });
-        const plan = manualInstallPlan(found, g, report.installSpec);
+        // spec 可能为 null（method=manual / skills）—— manualInstallPlan 会退回上游说明
+        const plan = manualInstallPlan(found, g, resolveInstallSpec(found, g, probe));
         if (args.save) {
           const dir = ensureDir(path.join(resolveDataDir(), 'manual'));
           const saved = writeManualScript(plan, { dir, format: String(args.save) });
@@ -671,11 +714,16 @@ function createDispatcher(ctx) {
       }
 
       // ── profile 工具 ────────────────────────────────────
+      /**
+       * profile 体检。
+       *
+       * ★ 这一组检查与「某个插件能不能装」无关 —— 它描述的是**这台机器和这个 profile 的
+       *   健康状况**（node/pnpm 版本、profile 配置、断链的 file: 依赖、allowBuilds…）。
+       *   所以装前检查被删掉之后，它照样留着：用户在「已安装」页看的正是这些。
+       */
       case 'profileCheck': {
-        // 只做 profile 层检查：用一个假条目触发环境/profile 那两组检查
-        const dummy = normalizeEntry({ id: '__profile__', package: '__profile__', name: '__profile__', install: {} }, 'community');
-        const report = runGate(dummy, await gctx(ctx), { targetProfile: ctx.profileName });
-        return { checks: report.checks.filter((c) => c.id.startsWith('env.') || c.id.startsWith('profile.')) };
+        const g = await gctx(ctx);
+        return { checks: [...checkEnvironment(g), ...checkProfile(g)] };
       }
 
       case 'fixAllowBuilds': {
@@ -728,21 +776,33 @@ function createDispatcher(ctx) {
 }
 
 /**
- * 给闸门 / 安装器用的上下文。
+ * 给安装器 / 规格解析（spec.js）用的上下文。
  *
- * ★ 必须 await：装配树是异步拿的（build 一次 dsh 进程），
- *   而闸门是**同步**判定的（它要在一帧里把几十条检查跑完）。
- *   所以这里先把树取好，再整包传进去 —— 闸门本身保持纯函数。
+ * ★ 必须 await：装配树是异步拿的（build 一次 dsh 进程）。
+ *   解析安装规格本身是同步的 —— 它只读上下文 + 已探测好的 probe 结果，
+ *   保持纯函数才好测，也才不会在界面点一下的时候卡住。
  */
 async function gctx(ctx) {
+  const env = ctx.env;
   return {
-    env: ctx.env,
+    env,
     compat: ctx.compat,
     profileState: profileState(ctx),
     installed: scanInstalled(ctx.profileName, process.env),
     tree: await tree(ctx),
     repoRoot: ctx.repoRoot,
     repoRawBase: REPO_RAW_BASE,
+    /**
+     * 本机运行时的包版本表 —— 用来把「这个插件 peer-pin 了某个本机没装的版本」
+     * 如实说成一句提示（见 spec.js 的 installNotes ③）。
+     * 这几个包名是 dsh 内置的运行时接口，插件的 peerDependencies 只会 pin 它们。
+     */
+    runtimeVersions: {
+      '@deepseek-ai/dsh-llm': resolveRuntimePackageVersion('@deepseek-ai/dsh-llm', { dshDir: env?.dsh?.dir, env: process.env }).version ?? null,
+      '@deepseek-ai/dsh-session': resolveRuntimePackageVersion('@deepseek-ai/dsh-session', { dshDir: env?.dsh?.dir, env: process.env }).version ?? null,
+      '@deepseek-ai/dsh-tools': resolveRuntimePackageVersion('@deepseek-ai/dsh-tools', { dshDir: env?.dsh?.dir, env: process.env }).version ?? null,
+      cordis: resolveRuntimePackageVersion('cordis', { dshDir: env?.dsh?.dir, env: process.env }).version ?? null,
+    },
   };
 }
 
@@ -752,55 +812,25 @@ async function ensurePool(ctx) {
   return pool(ctx);
 }
 
-/** 在条目池里按 id / 包名 / slug 查一条 */
+/**
+ * 在条目池里按 id / 包名 / slug 查一条。
+ *
+ * ★ 解析规则只有一条，就是 `findEntry`（id → 包名 → slug，分轮查）。
+ *   这里以前自己又写了一遍平铺谓词，于是同一个 id 在「列表 → 详情 → 安装」
+ *   三条入口上可能解析到**不同的记录**（实测过：点 dsh-memory 会去装
+ *   github:Starry0214/dsh-memory）。规则重复实现一次，就多一个走样的机会。
+ */
 function lookupEntry(p, id) {
-  const key = String(id ?? '');
-  return p.entries.find((e) => e.id === key || e.package === key || e.slug === key)
-    ?? findEntry(p.entries, key);
+  return findEntry(p.entries ?? [], String(id ?? ''));
 }
 
 /**
- * 「已经是最新版本」时的闸门结果。
+ * 「已经是最新版本」不再需要任何闸门结果 —— 造这份报告的函数已经删掉了。
  *
- * 形状与 runGate() 的返回值保持一致（界面里是同一套渲染），但：
- *   - canInstall 恒为 false —— 这是本函数存在的意义
- *   - 只给一条 pass 检查项，不跑环境 / profile / 候选包那三组
- *     （跑了也没意义：反正不会装）
+ * ★ 它以前的任务是伪造一份 canInstall 恒为 false 的报告，好让界面渲染出「不能装」。
+ *   0.6.0 之后「已是最新版」只是 installState 里的一个事实（`status === 'current'`），
+ *   界面据它把按钮置灰即可，不必再借 verdict 转达。
  */
-function alreadyLatestReport(entry, ctx, state) {
-  const target = state?.target ?? entry.version ?? null;
-  return {
-    pluginId: entry.id,
-    targetProfile: ctx.profileName,
-    verdict: 'pass',
-    upToDate: true,
-    canInstall: false,
-    installable: false,
-    requiresRiskAck: false,
-    acknowledged: false,
-    blockedBy: [],
-    overridableBy: [],
-    counts: { pass: 1, warn: 0, fatalBlocking: 0, fatalOverridable: 0, skipped: 0 },
-    checks: [{
-      id: 'cand.up-to-date',
-      title: '已是最新版本',
-      severity: 'info',
-      status: 'pass',
-      detail: `${entry.package ?? entry.id} 已经装的是 ${state?.installedVersion ?? target}`
-        + `，与目录里的版本一致，没有需要更新的内容。`,
-      hint: '目录里出现更新的版本时，这里的按钮会变成「更新到 x.y.z」。',
-    }],
-    installSpec: null,
-    manifest: null,
-    probe: null,
-    alreadyInstalled: state ?? null,
-    installState: state,
-    upgrade: false,
-    message: `${entry.package ?? entry.id} 已是最新版本（${state?.installedVersion ?? target}），无需安装。`,
-    durationMs: 0,
-    ranAt: new Date().toISOString(),
-  };
-}
 
 // ─────────────────────────────────────────────────────────────
 // 出参瘦身（列表页不需要把 notes 全文传过去）

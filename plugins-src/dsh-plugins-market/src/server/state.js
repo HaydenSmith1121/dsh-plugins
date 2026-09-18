@@ -160,9 +160,17 @@ export function describeInstallState(entry, inst) {
       ...base,
       status: 'current',
       reason: null,
-      canInstall: false, // ★ 已经是这一版了，安装按钮置灰
+      /**
+       * ★ 0.6.0：这里从 false 改成了 true。
+       *
+       *   以前它表示「安装按钮置灰」—— 那是把「你没有理由重装」当成了结论。
+       *   但重装是正当需求：装坏了要修、想换一种安装方式、或者只是想确认
+       *   某条命令能不能跑通。市场不再替用户决定这件事，所以 `current`
+       *   依然可装，`action` 就是 `reinstall`。
+       */
+      canInstall: true,
       canUpgrade: false,
-      action: 'current',
+      action: 'reinstall',
       isLatest: true,
     };
   }

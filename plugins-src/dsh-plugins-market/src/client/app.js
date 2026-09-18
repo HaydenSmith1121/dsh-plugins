@@ -102,9 +102,25 @@ window.__ModuleLoader__.load({
 .dpm-verdict{border-radius:9px;padding:11px 13px;font-size:13px;font-weight:600;display:flex;gap:9px;align-items:flex-start;margin-bottom:14px}
 .dpm-verdict-pass{background:#e8f6ee;color:#15803d;border:1px solid #bfe3cd}
 .dpm-verdict-warn{background:#fef7e7;color:#a97f1f;border:1px solid #f0dfae}
-.dpm-verdict-blockover{background:#fef3e2;color:#b45309;border:1px solid #f0d9a8}
 .dpm-verdict-block{background:#fdeaea;color:#b91c1c;border:1px solid #f5c6c6}
 .dpm-verdict-sub{display:block;font-weight:400;font-size:12px;margin-top:3px;opacity:.92}
+/* 安装方式选择：两张卡并排，选中的那张有明显的边框和底色 */
+.dpm-method-head{font-size:12px;font-weight:700;letter-spacing:.02em;color:#4b5563;margin:16px 0 8px}
+.dpm-methods{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+.dpm-method{position:relative;text-align:left;display:flex;flex-direction:column;gap:5px;padding:13px 14px;border-radius:10px;border:1px solid #d8dde3;background:#fff;cursor:pointer;font:inherit;color:#1f2937;transition:border-color .12s,box-shadow .12s,background .12s}
+.dpm-method:hover:not(:disabled){border-color:#9aa4b2}
+.dpm-method[data-on]{border-color:#2f6fd0;background:#f4f8ff;box-shadow:0 0 0 2px rgba(47,111,208,.14)}
+.dpm-method:disabled{cursor:not-allowed;opacity:.55;background:#f6f7f9}
+.dpm-method-ico{font-size:17px;line-height:1}
+.dpm-method-t{font-size:13.5px;font-weight:700}
+.dpm-method-d{font-size:12px;line-height:1.5;color:#5b6472}
+.dpm-method-on{position:absolute;top:9px;right:10px;font-size:11px;font-weight:700;color:#2f6fd0}
+/* 自动安装的规格框 / 手动安装的提示条 */
+.dpm-plan-box{margin-top:12px;padding:12px 13px;border-radius:10px;background:#f7f9fc;border:1px solid #e2e7ee}
+.dpm-plan-box .dpm-kv{margin-bottom:8px}
+.dpm-note{display:flex;gap:7px;align-items:flex-start;font-size:12.5px;line-height:1.6;color:#3f4855;padding:6px 0;border-bottom:1px dashed #e6e9ee}
+.dpm-note:last-child{border-bottom:none}
+.dpm-note-ico{flex:0 0 auto;color:#8b95a3}
 .dpm-group{margin:14px 0}
 .dpm-group-h{font-size:12px;font-weight:650;margin:0 0 7px;display:flex;gap:7px;align-items:center;cursor:pointer;user-select:none}
 .dpm-check{border:1px solid var(--dsw-alias-border-l1,#e5e7eb);border-radius:8px;padding:9px 11px;margin-bottom:7px;background:var(--dsw-alias-bg-base,#fff)}
@@ -133,7 +149,7 @@ window.__ModuleLoader__.load({
 .dpm-badge-update{background:#eaf2fb;color:#2e4bd8;border:1px solid #c9d4f5}
 .dpm-badge-current{background:#e8f6ee;color:#15803d;border:1px solid #bfe3cd}
 /* 已经装过、但没有新版时，「安装」按钮置灰 —— 灰底灰字，明确不可点 */
-.dpm-btn-installed:disabled{background:var(--dsw-alias-bg-layer-1,#f3f4f6);border-color:var(--dsw-alias-border-l1,#e5e7eb);color:var(--dsw-alias-label-secondary,#8a919f);opacity:1}
+/* ★ .dpm-btn-installed 随「已安装即置灰」一起删掉了：重装是正当需求，不再有置灰态 */
 .dpm-btn-update{background:var(--dpm-brand,#4d6bfe);border-color:var(--dpm-brand,#4d6bfe);color:#fff;font-weight:600}
 .dpm-btn-update:hover:not(:disabled){background:var(--dpm-brand-strong,#2e4bd8);border-color:var(--dpm-brand-strong,#2e4bd8)}
 /*
@@ -166,8 +182,7 @@ window.__ModuleLoader__.load({
 .dpm-step-d{font-size:12px;color:var(--dsw-alias-label-secondary,#5f6670);white-space:pre-wrap;margin-top:2px}
 .dpm-pre{margin:7px 0 0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;line-height:1.5;white-space:pre-wrap;word-break:break-all;background:var(--dsw-alias-bg-layer-1,#f6f7f9);border:1px solid var(--dsw-alias-border-l1,#eceef1);border-radius:7px;padding:8px 10px;max-height:260px;overflow:auto}
 .dpm-split{display:flex;gap:9px;align-items:center;font-size:12px;margin:9px 0;flex-wrap:wrap}
-.dpm-ack{display:flex;gap:8px;align-items:flex-start;font-size:12px;padding:9px 11px;border-radius:8px;background:#fef7e7;border:1px solid #f0dfae;color:#7c5a12;cursor:pointer;margin-top:4px}
-.dpm-ack input{margin-top:2px;flex:0 0 auto}
+/* ★ .dpm-ack（「我确认有风险」勾选框）随装前检查一起删掉了：市场不再要求任何风险确认 */
 .dpm-row{display:flex;gap:9px;align-items:center;flex-wrap:wrap;border:1px solid var(--dsw-alias-border-l1,#e5e7eb);border-radius:8px;padding:9px 11px;margin-bottom:7px}
 .dpm-row-name{font-size:12.5px;font-weight:600;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;word-break:break-all}
 .dpm-toast{flex:0 0 auto;margin:0 18px 12px;padding:9px 12px;border-radius:8px;background:#fdeaea;border:1px solid #f5c6c6;color:#b91c1c;font-size:12px;display:flex;gap:9px;align-items:flex-start}
@@ -188,6 +203,12 @@ window.__ModuleLoader__.load({
 .dpm-prog[data-s=failed]{border-color:#f0c2c2;background:#fdf4f4}
 .dpm-prog[data-s=cancelled],.dpm-prog[data-s=timeout]{border-color:#f0dfae;background:#fefaf0}
 .dpm-prog-head{display:flex;gap:9px;align-items:center;font-size:12.5px;font-weight:600;margin-bottom:9px}
+/* 正在装的是什么 / 用什么方式装 —— 自动安装看不到命令窗口，这两行就是「可观察性」*/
+.dpm-prog-what{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13px;font-weight:700;margin-bottom:7px}
+.dpm-prog-pkg{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.dpm-prog-ver{font-size:12px;font-weight:600;color:var(--dsw-alias-label-secondary,#6b7280)}
+.dpm-prog-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:11px;color:var(--dsw-alias-label-secondary,#8a919f);margin-bottom:9px;padding-bottom:9px;border-bottom:1px dashed var(--dsw-alias-border-l1,#e5e7eb)}
+.dpm-prog-meta .dpm-mono{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:11px}
 .dpm-prog-ico{font-size:13px}
 .dpm-prog-title{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .dpm-prog-eta{font-weight:600;color:var(--dpm-brand,#4d6bfe);white-space:nowrap;font-size:12px}
@@ -243,7 +264,7 @@ window.__ModuleLoader__.load({
   .dpm-filter[data-on]{background:var(--dpm-brand,#4d6bfe);border-color:var(--dpm-brand,#4d6bfe);color:#fff}
   .dpm-badge-update{background:#20293d;color:#8fb0f5;border-color:#33415e}
   .dpm-badge-current{background:#1e2f24;color:#7fd39b;border-color:#2f4a38}
-  .dpm-btn-installed:disabled{background:#2b2d31;border-color:#3a3d42;color:#7d828c}
+  /* ★ 对应浅色主题里的 .dpm-btn-installed，已随置灰态一起删除 */
   .dpm-prog{background:#232427;border-color:#34363a}
   .dpm-prog[data-s=succeeded]{background:#1e2f24;border-color:#2f4a38}
   .dpm-prog[data-s=failed]{background:#2f2020;border-color:#4a2f2f}
@@ -367,30 +388,36 @@ window.__ModuleLoader__.load({
 			}
 		}
 
-		/** 检查项归类：致命硬拦截 / 无法确认可覆盖 / 提醒 / 通过 / 跳过 */
+		/**
+		 * 检查项归类。
+		 *
+		 * ★ 0.6.0 起这里只剩两种用途：**profile 体检**（「已装」页）与装前体检的
+		 *   问题清单 —— 都是**诊断**，不再参与任何「放行 / 拦截」判定。
+		 *   以前那个多出来的 "overridable" 档（默认拦截但可覆盖）随装前检查一起删了。
+		 */
 		function classifyCheck(c) {
 			if (!c) return "skip";
 			if (c.status === "pass") return "pass";
 			if (c.status === "skip") return "skip";
-			if (c.status === "fail" && c.severity === "fatal") return c.overridable ? "overridable" : "fatal";
+			if (c.status === "fail" && c.severity === "fatal") return "fatal";
 			if (c.status === "warn" || (c.status === "fail" && c.severity === "warn")) return "warn";
-			if (c.status === "fail") return "overridable";
+			if (c.status === "fail") return "fatal";
 			return "skip";
 		}
 
-		function verdictInfo(v) {
-			switch (v) {
-				case "pass":
-					return { cls: "pass", ico: "✓", title: "检查全部通过", sub: "没发现会让 harness 起不来的问题。" };
-				case "warn":
-					return { cls: "warn", ico: "!", title: "有提醒项，可以继续", sub: "下面列出的都是已知的软风险，不影响启动。" };
-				case "block-overridable":
-					return { cls: "blockover", ico: "!", title: "有无法确认的项目，默认已拦截", sub: "不是「确认它不安全」，而是「无法确认它安全」。勾选确认后可以强制继续。" };
-				case "block":
-					return { cls: "block", ico: "✗", title: "已硬拦截", sub: "有确定会导致 dsh 无法启动的问题，这一项不提供覆盖入口。" };
-				default:
-					return { cls: "warn", ico: "?", title: "未知结论", sub: "" };
-			}
+		/** 安装规格的来源：这份「怎么装」是从哪儿来的 —— 如实标注，别让人以为是探测确认过的 */
+		var SPEC_SOURCE_TEXT = {
+			config: "插件自己的配置文件",
+			"config-command": "插件自己的配置文件（采集来的安装命令）",
+			"derived-github": "从仓库地址推导（pnpm 直接解析该仓库）",
+			"probed-npm": "探测确认 npm 上有这个包",
+			local: "本地指定的安装包",
+			repo: "本机仓库里的离线包",
+			remote: "仓库托管的离线包（需要下载）",
+		};
+
+		function specSourceText(s) {
+			return SPEC_SOURCE_TEXT[s] || txt(s, "配置文件");
 		}
 
 		function stepIcon(s) {
@@ -401,7 +428,7 @@ window.__ModuleLoader__.load({
 		}
 
 		var FAILURE_TEXT = {
-			"gate-blocked": "装前检查没有放行，安装未开始。",
+			"no-spec": "没有可自动执行的安装方式 —— 请用下面的手动安装命令。",
 			"fetch": "没能拿到安装包（本地没有、下载也失败）。",
 			"backup": "备份 profile 失败 —— 出于安全考虑没有继续动任何东西。",
 			"preflight": "装前体检发现 profile 有问题（见下方清单）—— 这些问题会让安装变慢甚至必然失败，所以这次没有开始。",
@@ -479,19 +506,27 @@ window.__ModuleLoader__.load({
 			return (entry && entry.installState) || { status: "not-installed", installed: false, canInstall: true, action: "install" };
 		}
 
-		/** 主按钮文案：没装 → 安装；有新版 → 更新到 x.y.z；已最新 → 已安装 */
+		/** 主按钮文案：没装 → 安装；有新版 → 更新到 x.y.z；已最新 → 重新安装 */
 		function primaryLabel(entry) {
 			var st = stateOf(entry);
 			if (st.status === "upgradable") return "更新到 " + txt(st.target, "新版本");
-			if (st.status === "current") return "已安装";
+			if (st.status === "current") return "重新安装";
 			if (st.installed) return "重新安装";
 			return "安装";
 		}
 
-		/** 主按钮是否禁用 —— 问题 2 的核心：已经装了最新版就不该还能点 */
+		/**
+		 * 主按钮是否禁用。
+		 *
+		 * ★ 0.6.0 起这个函数**恒为 false**：市场不再拦任何插件，所有插件都可装。
+		 *   保留成函数而不是删掉，是因为「按钮能不能点」这件事在结构上仍然属于
+		 *   卡片自己的状态判断 —— 将来若真有「点了也没意义」的情形（例如任务在跑
+		 *   时的并发保护），入口在这里，而不是散在 JSX 里。
+		 *   「已是最新版」**不再**是这种情形：重装是正当需求，文案是「重新安装」。
+		 */
 		function primaryDisabled(entry) {
 			var st = stateOf(entry);
-			if (st.status === "current") return true;
+			if (st.status === "current") return false;
 			// 「装了但没挂载」是坏状态，这时候必须允许重装，不能置灰
 			if (st.installed && !st.inBundles) return false;
 			return false;
@@ -500,7 +535,7 @@ window.__ModuleLoader__.load({
 		function primaryTitle(entry) {
 			var st = stateOf(entry);
 			if (st.status === "current") {
-				return "已经装的是 " + txt(st.installedVersion) + "，与目录里的版本一致 —— 无需安装。目录里出现新版本时这里会变成「更新」。";
+				return "已经装的是 " + txt(st.installedVersion) + "，与目录里的版本一致。点进去可以选择重新安装（装坏了要修、想换一种装法、或者只想确认命令能跑通）。";
 			}
 			if (st.status === "upgradable") {
 				return "已装 " + txt(st.installedVersion) + "，目录里是 " + txt(st.target) + "。更新会先移除旧版本再装新版本（会自动备份，失败自动回滚）。";
@@ -582,10 +617,17 @@ window.__ModuleLoader__.load({
 			);
 		};
 
+		/**
+		 * 一条诊断结论。
+		 *
+		 * ★ 0.6.0 起它只出现在**体检**里（profile 体检、装前体检的问题清单）——
+		 *   是「这台机器哪儿不对」，不是「这个插件能不能装」。
+		 *   所以文案里不再有「拦截 / 覆盖」这类放行词汇。
+		 */
 		var CheckItem = function (props) {
 			var c = props.check || {};
 			var kind = classifyCheck(c);
-			var sev = kind === "fatal" ? "fatal" : kind === "warn" || kind === "overridable" ? "warn" : kind === "pass" ? "info" : "skip";
+			var sev = kind === "fatal" ? "fatal" : kind === "warn" ? "warn" : kind === "pass" ? "info" : "skip";
 			return h(
 				"div",
 				{ className: "dpm-check", "data-sev": sev },
@@ -594,11 +636,10 @@ window.__ModuleLoader__.load({
 					{ className: "dpm-check-top" },
 					h("span", { className: "dpm-check-t" }, txt(c.title, c.id)),
 					h(Badge, { kind: kind === "fatal" ? "bad" : kind === "pass" ? "ok" : "neutral" },
-						kind === "fatal" ? "致命 · 不可覆盖"
-							: kind === "overridable" ? "无法确认 · 可覆盖"
+						kind === "fatal" ? "有问题"
 							: kind === "warn" ? "提醒"
-							: kind === "pass" ? "通过"
-							: "跳过"),
+								: kind === "pass" ? "通过"
+									: "跳过"),
 					c.id ? h("span", { className: "dpm-card-id" }, c.id) : null,
 				),
 				c.detail ? h("p", { className: "dpm-check-d" }, c.detail) : null,
@@ -846,6 +887,11 @@ window.__ModuleLoader__.load({
 		 *   1. **现在在哪一步** —— 阶段名 + 已耗时
 		 *   2. **还要多久** —— 预计剩余（区间，不是假精确值）
 		 *   3. **怎么退出** —— 中止按钮，永远可见（排队中也能中止）
+		 *
+		 * ★ 0.6.0 补上第四个：**正在装的是什么、用什么方式装**。
+		 *   自动安装的整个卖点就是「命令窗口不会弹出来」—— 那市场就必须自己
+		 *   把这件事说清楚，否则用户面对的就是一段无法观察的黑盒等待。
+		 *   包名、版本、方式、规格全部由任务快照带过来（关掉页面再回来也还在）。
 		 */
 		var ProgressPanel = function (props) {
 			var job = props.job;
@@ -863,7 +909,31 @@ window.__ModuleLoader__.load({
 			var running = job.state === "queued" || job.state === "running";
 			if (job.state === "succeeded") pct = 100;
 
+			var entry = job.entry || {};
+			var auto = job.auto || null;
+
 			return h("div", { className: "dpm-prog", "data-s": job.state },
+				// ① 正在装什么 —— 一行标题，别让人回头翻卡片
+				h("div", { className: "dpm-prog-what" },
+					h("span", { className: "dpm-prog-pkg" }, txt(entry.package || job.pkgName || job.pluginId, "插件")),
+					entry.version ? h("span", { className: "dpm-prog-ver" }, "@" + txt(entry.version)) : null,
+					job.kind === "upgrade" ? h(Badge, { kind: "update" }, "更新") : null,
+					job.reinstall ? h(Badge, { kind: "neutral" }, "重新安装") : null,
+					h("span", { className: "dpm-spacer" }),
+					h(Badge, { kind: "neutral" }, "自动安装"),
+				),
+
+				// ② 方式 / 规格 / profile：自动安装在界面上不显示命令窗口，
+				//    所以这条命令本身必须能被看见（不是日志，是「市场替你跑了什么」）
+				auto
+					? h("div", { className: "dpm-prog-meta" },
+						h("span", null, "方式 " + txt(auto.kind)),
+						h("span", { className: "dpm-mono", title: txt(auto.spec) }, txt(auto.spec)),
+						auto.needsDownload ? h("span", null, "需要先下载安装包") : null,
+						job.profile ? h("span", null, "profile " + txt(job.profile)) : null,
+					)
+					: null,
+
 				h("div", { className: "dpm-prog-head" },
 					running ? h(Spinner, null) : h("span", { className: "dpm-prog-ico" },
 						job.state === "succeeded" ? "✓" : job.state === "cancelled" ? "■" : job.state === "timeout" ? "⏱" : "✗"),
@@ -1032,21 +1102,23 @@ window.__ModuleLoader__.load({
 				h(
 					"div",
 					{ className: "dpm-card-act" },
-					h(Btn, { small: true, onClick: function () { props.onGate(e, false); } }, "装前检查"),
 					/*
-					 * ★ 问题 1 + 2 的落点。
-					 *   - 已是最新 → 按钮置灰，文案「已安装」，title 里说明原因
-					 *   - 有新版   → 蓝色「更新到 x.y.z」，点了走同一条闸门 → 安装流程
-					 *   - 没装     → 原来的「安装」
+					 * ★ 卡片上只剩一个安装入口。
+					 *
+					 *   以前这里是两个按钮：「装前检查」+「安装」—— 前者先给人一份
+					 *   判定，后者才真的装。0.6.0 把装前检查删掉之后，那个按钮就没有
+					 *   存在的理由了：点「安装」直接进安装方案页，**在里面选**
+					 *   自动还是手动。一个入口，两条路，不再有中间那个判决。
+					 *
+					 *   「已是最新版」也不再置灰 —— 重装是正当需求（修坏了、
+					 *   换装法、验证命令），文案变成「重新安装」。
 					 */
-					st.status === "current"
-						? h(Btn, { small: true, className: "dpm-btn-installed", disabled: true, title: primaryTitle(e) }, primaryLabel(e))
-						: h(Btn, {
-							small: true,
-							variant: st.status === "upgradable" ? "update" : "primary",
-							title: primaryTitle(e) || undefined,
-							onClick: function () { props.onGate(e, true); },
-						}, primaryLabel(e)),
+					h(Btn, {
+						small: true,
+						variant: st.status === "upgradable" ? "update" : "primary",
+						title: primaryTitle(e) || undefined,
+						onClick: function () { props.onInstall(e, true); },
+					}, primaryLabel(e)),
 					h(MarkButton, {
 						kind: "fav",
 						on: e.favorited,
@@ -1060,29 +1132,74 @@ window.__ModuleLoader__.load({
 		};
 		//#endregion
 
-		//#region ── 装前检查抽屉 ──────────────────────────────────────────
-		var GateDrawer = function (props) {
-			var g = props.gate;
-			var [ack, setAck] = useState(false);
-			var [showPass, setShowPass] = useState(false);
+		//#region ── 安装方案抽屉（选自动 / 手动）────────────────────────
+		/**
+		 * 安装方案抽屉。
+		 *
+		 * ★ 这里以前是「装前检查」：它先给一个 verdict，然后按钮可能被禁掉。
+		 *   0.6.0 把它换成了**一个选择**而不是一个判决 —— 市场不再拦任何插件，
+		 *   它只回答「怎么装」：
+		 *
+		 *     自动安装   市场替你执行命令，界面上不会出现命令窗口，
+		 *                安装过程用进度页展示（见 ProgressPanel）
+		 *     手动安装   把命令给你，你自己执行 —— 节奏完全由你控制
+		 *
+		 *   两条路**同时摆在最上面**，谁都不藏在折叠里。原因很直接：用户点进
+		 *   「安装」是想装东西，不是想看一份体检报告；而「不给命令」和「不给按钮」
+		 *   都会让他卡在原地。
+		 *
+		 *   `notes` 是我们知道的**事实**（没声明 dsh.bundle、与已装的冲突、
+		 *   需要配置…）—— 它们以提示的形式列在最后，不改变任何按钮的可用性。
+		 */
+		var InstallPlanDrawer = function (props) {
+			var plan = props.plan;
+			/**
+			 * 选中哪条路。
+			 *
+			 * ★ 这里**刻意不用 useEffect 去「同步」默认值**。
+			 *
+			 *   用 effect 写（`useEffect(() => setMethod(default), [plan.pluginId])`）
+			 *   看着直观，但它是「先渲染错的、再纠正」——中间那一帧是真的会画出来的，
+			 *   而且把「默认值是什么」这件事从一个纯函数变成了时序问题。
+			 *   这里改成在渲染期直接推导：记住用户选的是哪个插件的哪条路，
+			 *   换插件时那条记忆自然失效，于是回落到默认值。没有 effect、没有中间帧。
+			 */
+			var [choice, setChoice] = useState(null); // { forId, method }
+			var planId = plan ? plan.pluginId : null;
+			var chosen = choice && choice.forId === planId ? choice.method : null;
 
-			useEffect(function () { setAck(false); }, [g && g.pluginId]);
-
-			if (!g) {
+			if (!plan) {
 				return h(
 					"div",
 					{ className: "dpm-drawer-body" },
-					h("div", { className: "dpm-split" }, h(Spinner, null), h("span", null, "正在做装前检查…（会依次核对 Node / dsh / pnpm、profile 状态、以及这个包本身的静态信息）")),
+					h("div", { className: "dpm-split" }, h(Spinner, null),
+						h("span", null, "正在生成安装方案…（读取这个插件的配置文件、解析出可执行的安装规格）")),
 				);
 			}
 
-			var vi = verdictInfo(g.verdict);
-			var checks = g.checks || [];
-			var fatal = checks.filter(function (c) { return classifyCheck(c) === "fatal"; });
-			var overridable = checks.filter(function (c) { return classifyCheck(c) === "overridable"; });
-			var warns = checks.filter(function (c) { return classifyCheck(c) === "warn"; });
-			var passes = checks.filter(function (c) { return classifyCheck(c) === "pass"; });
-			var skips = checks.filter(function (c) { return classifyCheck(c) === "skip"; });
+			var auto = plan.auto || { available: false, reason: "没有可自动执行的安装方式。" };
+			var active = chosen || (auto.available ? "auto" : "manual");
+			var st = plan.installState || null;
+			var reinstall = Boolean(plan.alreadyLatest);
+			var pick = function (m) { setChoice({ forId: planId, method: m }); };
+
+			/** 一张方式卡：两种方式用同一个组件渲染，避免它们长得不一样 */
+			var MethodCard = function (p) {
+				var on = active === p.value;
+				return h("button", {
+					type: "button",
+					className: "dpm-method",
+					"data-on": on ? "1" : undefined,
+					"data-off": p.value === "auto" && !auto.available ? "1" : undefined,
+					disabled: p.disabled,
+					onClick: function () { if (!p.disabled) pick(p.value); },
+				},
+					h("span", { className: "dpm-method-ico" }, p.ico),
+					h("span", { className: "dpm-method-t" }, p.title),
+					h("span", { className: "dpm-method-d" }, p.desc),
+					on ? h("span", { className: "dpm-method-on" }, "已选择") : null,
+				);
+			};
 
 			return h(
 				"div",
@@ -1090,161 +1207,136 @@ window.__ModuleLoader__.load({
 				h(
 					"div",
 					{ className: "dpm-drawer-body" },
-					/*
-					 * 「已是最新」是个**结论**，不是一条检查项 —— 用和判定同级的
-					 * 大色块说清楚，别让人在检查列表里找。
-					 */
-					g.upToDate
-						? h("div", { className: "dpm-verdict dpm-verdict-pass" },
-							h("span", null, "✓"),
-							h("span", null, "已是最新版本，无需安装",
-								h("span", { className: "dpm-verdict-sub" },
-									"已经装的是 " + txt(g.installState && g.installState.installedVersion)
-									+ "，与目录里的版本一致。目录里出现更新的版本时，按钮会变成「更新到 x.y.z」。")))
-						: h(
-							"div",
-							{ className: "dpm-verdict dpm-verdict-" + vi.cls },
-							h("span", null, vi.ico),
-							h("span", null, vi.title, h("span", { className: "dpm-verdict-sub" }, vi.sub)),
-						),
 
-					// 更新场景：把「从哪一版到哪一版」摆在最上面，别让人以为是在重装
-					g.upgrade
-						? h(Flag, { kind: "info", icon: "↑" },
-							"这是一次**更新**：" + txt(g.installState && g.installState.installedVersion)
-							+ " → " + txt(g.installState && g.installState.target)
-							+ "。会先移除旧版本再装新版本；安装前自动备份 profile，任何一步失败都会自动回滚。")
-						: null,
-
+					// ── 这个插件是什么、现在处于什么状态 ──────────────
 					h(
 						"div",
 						{ className: "dpm-kv" },
 						h("span", { className: "dpm-kv-k" }, "插件"),
-						h("span", { className: "dpm-kv-v" }, txt(g.pluginId)),
+						h("span", { className: "dpm-kv-v" }, txt(plan.package || plan.pluginId)),
+						h("span", { className: "dpm-kv-k" }, "目录里的版本"),
+						h("span", { className: "dpm-kv-v" }, txt(plan.version)),
 						h("span", { className: "dpm-kv-k" }, "目标 profile"),
-						h("span", { className: "dpm-kv-v" }, txt(g.targetProfile)),
-						g.installState && g.installState.installed
-							? h("span", { className: "dpm-kv-k" }, "当前已装")
+						h("span", { className: "dpm-kv-v" }, txt(props.profile, "—")),
+						plan.upstream
+							? h("span", { className: "dpm-kv-k" }, "仓库")
 							: null,
-						g.installState && g.installState.installed
-							? h("span", { className: "dpm-kv-v" }, txt(g.installState.installedVersion))
+						plan.upstream
+							? h("span", { className: "dpm-kv-v" }, h("a", {
+								href: plan.upstream, target: "_blank", rel: "noopener noreferrer",
+								style: { color: "inherit" },
+							}, txt(plan.upstream)))
 							: null,
-						g.installState && g.installState.target
-							? h("span", { className: "dpm-kv-k" }, "目录里的版本")
-							: null,
-						g.installState && g.installState.target
-							? h("span", { className: "dpm-kv-v" }, txt(g.installState.target))
-							: null,
-						h("span", { className: "dpm-kv-k" }, "安装规格"),
-						h("span", { className: "dpm-kv-v" },
-							g.installSpec
-								? txt(g.installSpec.kind) + " → " + txt(g.installSpec.resolvedPath || g.installSpec.spec)
-								: "（没有可用的安装方式）"),
-						g.installSpec && g.installSpec.needsDownload
-							? h("span", { className: "dpm-kv-k" }, "需要下载")
-							: null,
-						g.installSpec && g.installSpec.needsDownload
-							? h("span", { className: "dpm-kv-v" }, txt(g.installSpec.downloadUrl))
-							: null,
-						h("span", { className: "dpm-kv-k" }, "耗时"),
-						h("span", { className: "dpm-kv-v" }, txt(g.durationMs, "0") + " ms"),
+						st && st.installed ? h("span", { className: "dpm-kv-k" }, "当前已装") : null,
+						st && st.installed ? h("span", { className: "dpm-kv-v" }, txt(st.installedVersion)) : null,
 					),
 
-					g.manifest
-						? h(
-							"div",
-							{ className: "dpm-kv" },
-							h("span", { className: "dpm-kv-k" }, "包清单"),
-							h("span", { className: "dpm-kv-v" }, txt(g.manifest.name) + "@" + txt(g.manifest.version)),
-							g.manifest.dsh && g.manifest.dsh.bundle && g.manifest.dsh.bundle.patch
-								? h("span", { className: "dpm-kv-k" }, "bundle patch")
-								: null,
-							g.manifest.dsh && g.manifest.dsh.bundle && g.manifest.dsh.bundle.patch
-								? h("span", { className: "dpm-kv-v" }, g.manifest.dsh.bundle.patch)
-								: null,
-						)
+					plan.upgrade
+						? h(Flag, { kind: "info", icon: "↑" },
+							"这是一次**更新**：" + txt(st && st.installedVersion) + " → " + txt(st && st.target)
+							+ "。会先移除旧版本再装新版本；安装前自动备份 profile，任何一步失败都会自动回滚。")
+						: null,
+					reinstall
+						? h(Flag, { kind: "info", icon: "↻" },
+							"已经装的是同一版本（" + txt(st && st.installedVersion) + "）。再装一次是**重新安装** —— "
+							+ "装坏了要修、想换一种装法、或者只是想确认命令能跑通时都该走这条路。profile 一样先备份、失败一样回滚。")
 						: null,
 
-					g.probe
-						? h(
-							"div",
-							{ className: "dpm-kv" },
-							h("span", { className: "dpm-kv-k" }, "远程探测"),
-							h("span", { className: "dpm-kv-v" }, g.probe.available ? txt(g.probe.source) : ("失败：" + txt(g.probe.error))),
-							g.probe.monorepoHint ? h("span", { className: "dpm-kv-k" }, "提示") : null,
-							g.probe.monorepoHint ? h("span", { className: "dpm-kv-v" }, "仓库根 package.json 未声明 dsh.bundle，且看起来是 monorepo —— 插件可能在子目录里。") : null,
-						)
-						: null,
+					// ── 核心：选哪条路 ───────────────────────────────
+					h("div", { className: "dpm-method-head" }, "选择安装方式"),
+					h("div", { className: "dpm-methods" },
+						h(MethodCard, {
+							value: "auto",
+							ico: "⚡",
+							title: "自动安装",
+							desc: auto.available
+								? "市场替你执行安装命令，界面上不会弹出命令窗口，安装过程用进度页展示。"
+								: "这个条目没有可自动执行的安装方式，请看右边的手动安装。",
+							disabled: !auto.available,
+						}),
+						h(MethodCard, {
+							value: "manual",
+							ico: "⌨",
+							title: "手动安装",
+							desc: "把安装命令给你，你自己在终端里执行，节奏完全由你控制。",
+						}),
+					),
 
-					fatal.length > 0
-						? h(Fold, { title: "致命 · 已硬拦截（不可覆盖）", count: fatal.length },
-							fatal.map(function (c, i) { return h(CheckItem, { key: "f" + i, check: c }); }))
-						: null,
-					overridable.length > 0
-						? h(Fold, { title: "无法确认 · 默认拦截但可覆盖", count: overridable.length },
-							overridable.map(function (c, i) { return h(CheckItem, { key: "o" + i, check: c }); }))
-						: null,
-					warns.length > 0
-						? h(Fold, { title: "提醒 · 可以继续", count: warns.length },
-							warns.map(function (c, i) { return h(CheckItem, { key: "w" + i, check: c }); }))
-						: null,
-					passes.length > 0
-						? h(Fold, { title: "通过", count: passes.length, defaultOpen: showPass },
-							h("div", null,
-								h(Btn, { small: true, onClick: function () { setShowPass(!showPass); } }, showPass ? "收起" : "展开"),
-								passes.map(function (c, i) { return h(CheckItem, { key: "p" + i, check: c }); })))
-						: null,
-					skips.length > 0
-						? h(Fold, { title: "跳过 / 无法判定", count: skips.length, defaultOpen: false },
-							skips.map(function (c, i) { return h(CheckItem, { key: "s" + i, check: c }); }))
-						: null,
-
-					/*
-					 * ★ 0.5.0：这条确认现在**只在装前检查发现了「可覆盖的致命项」时**才出现。
+					/**
+					 * ★ 自动那条路不可用时，**原因永远显示**（不管当前选的是哪条路）。
 					 *
-					 *   以前凡是社区插件都要勾一次「我确认有风险」—— 那种确认的结局是
-					 *   用户闭眼点确定，而真正该停下来看的（「这个包装上也加载不起来」）
-					 *   反而淹没在同一个对话框里。现在这句话只对应后者。
+					 *   以前这句只在「选中自动」时才渲染，于是默认落到手动之后，用户
+					 *   只看得到命令，看不到「为什么没有自动」——他会以为是自己没找到按钮。
 					 */
-					g.requiresRiskAck
-						? h(
-							"label",
-							{ className: "dpm-ack" },
-							h("input", {
-								type: "checkbox",
-								checked: ack,
-								onChange: function (ev) { setAck(ev.target.checked); },
-							}),
-							h("span", null, "我已阅读上面标红的问题，确认强制继续安装。"),
+					!auto.available
+						? h("div", { style: { marginTop: 10 } }, h(Flag, { kind: "info", icon: "i" }, auto.reason))
+						: null,
+
+					// ── 自动那条路的细节 ─────────────────────────────
+					active === "auto" && auto.available
+						? h("div", { className: "dpm-plan-box" },
+							h("div", { className: "dpm-kv" },
+								h("span", { className: "dpm-kv-k" }, "方式"),
+								h("span", { className: "dpm-kv-v" }, txt(auto.kind)),
+								h("span", { className: "dpm-kv-k" }, "规格"),
+								h("span", { className: "dpm-kv-v dpm-mono" }, txt(auto.spec)),
+								h("span", { className: "dpm-kv-k" }, "来源"),
+								h("span", { className: "dpm-kv-v" }, specSourceText(auto.source)),
+								auto.needsDownload ? h("span", { className: "dpm-kv-k" }, "需要下载") : null,
+								auto.needsDownload ? h("span", { className: "dpm-kv-v" }, "是，安装时会先下载安装包再校验") : null,
+								auto.sha256 ? h("span", { className: "dpm-kv-k" }, "sha256") : null,
+								auto.sha256 ? h("span", { className: "dpm-kv-v dpm-mono" }, auto.sha256) : null,
+							),
+							h("div", { className: "dpm-muted" },
+								"点「开始安装」之后，市场会在服务端跑这条命令：命令窗口不会弹出来，"
+								+ "你在下面这个页面能看到阶段、耗时、预计剩余和实时输出，也可以随时中止。"
+								+ "关掉这个页面任务不会停，回来还能接着看。"),
 						)
+						: null,
+
+					// ── 手动那条路：命令直接铺在这里 ─────────────────
+					active === "manual"
+						? h("div", { style: { marginTop: 12 } }, h(ManualPanel, { plan: props.manual }))
+						: null,
+
+					// ── 我们知道的事实（提示，不是判决）───────────────
+					(plan.notes || []).length > 0
+						? h(Fold, { title: "装之前你可能想知道", count: plan.notes.length, defaultOpen: true },
+							plan.notes.map(function (n, i) {
+								return h("div", { key: n.id || i, className: "dpm-note" },
+									h("span", { className: "dpm-note-ico" }, "·"),
+									h("span", null, txt(n.text)));
+							}))
+						: null,
+
+					plan.configError
+						? h(Flag, { kind: "warn", icon: "!" },
+							"读这个插件的配置文件时出了问题：" + txt(plan.configError)
+							+ "。下面展示的安装方案来自目录索引，可能与配置文件不一致。")
 						: null,
 				),
 
 				h(
 					"div",
 					{ className: "dpm-drawer-foot" },
-					/*
-					 * 主按钮。
-					 * ★ 「已是最新」时**不渲染**安装按钮，只留「关闭」——
-					 *   渲染一个禁用的按钮会让人反复怀疑「是不是哪里没满足」，
-					 *   而这里根本没有可做的事。
-					 */
-					g.upToDate
-						? h(Btn, { variant: "primary", onClick: props.onClose }, "好，知道了")
+					active === "auto" && auto.available
+						? h(Btn, {
+							variant: plan.upgrade ? "update" : "primary",
+							disabled: Boolean(props.busy),
+							onClick: function () { props.onAutoInstall(plan); },
+						}, props.busy ? "正在启动…" : (plan.upgrade ? "开始更新" : reinstall ? "重新安装" : "开始安装"))
 						: h(Btn, {
-							variant: g.upgrade ? "update" : "primary",
-							disabled: !g.canInstall || (g.requiresRiskAck && !ack) || props.busy,
-							onClick: function () { props.onInstall(g, ack); },
-						}, props.busy
-							? (g.upgrade ? "更新中…" : "安装中…")
-							: (g.upgrade ? "开始更新" : "开始安装")),
-					h(Btn, { onClick: props.onClose, disabled: props.busy }, "取消"),
+							variant: "primary",
+							onClick: function () { props.onCopyManual(plan); },
+						}, "复制全部命令"),
+					h(Btn, { onClick: props.onClose, disabled: Boolean(props.busy) }, "取消"),
 					h("span", { className: "dpm-spacer" }),
 					h("span", { className: "dpm-muted" },
-						g.upToDate ? "已经是最新版本，无需操作"
-							: g.canInstall
-								? (g.requiresRiskAck ? "需要先勾选确认" : (g.upgrade ? "可以更新" : "可以安装"))
-								: (g.installable ? "已被拦截，不能安装" : "没有可用的安装方式")),
+						active === "auto"
+							? (auto.available
+								? (plan.upgrade ? "会自动先移除旧版本" : "会自动备份 profile，失败自动回滚")
+								: "这条插件没有可自动执行的安装方式，请用手动安装")
+							: "命令在上方，复制后在终端里执行即可"),
 				),
 			);
 		};
@@ -1307,7 +1399,7 @@ window.__ModuleLoader__.load({
 						? (job.state === "succeeded"
 							? h("div", { className: "dpm-verdict dpm-verdict-pass" },
 								h("span", null, "✓"),
-								h("span", null, job.kind === "upgrade" ? "更新成功" : "安装成功",
+								h("span", null, job.kind === "upgrade" ? "更新成功" : job.reinstall ? "重新安装成功" : "安装成功",
 									h("span", { className: "dpm-verdict-sub" },
 										"用时 " + dur(job.elapsedMs) + "。"
 										+ ((r && r.restartHint) || "重启 dsh web 后生效。"))))
@@ -1316,15 +1408,13 @@ window.__ModuleLoader__.load({
 								h("span", null,
 									aborted ? "已中止安装"
 										: timedOut ? "安装超时，已中止"
-											: (r && r.upToDate ? "无需安装" : (job.kind === "upgrade" ? "更新未完成" : "安装未完成")),
+											: (job.kind === "upgrade" ? "更新未完成" : "安装未完成"),
 									h("span", { className: "dpm-verdict-sub" },
 										aborted
 											? "这是你要的结果：安装已经停下，profile 已还原到安装前的状态。下面有手动安装命令，节奏完全由你控制。"
 											: timedOut
 												? "超过时限仍未结束，已强制中止并回滚。常见原因是网络慢、依赖树大，或者 profile 里有断链的本地依赖 —— 下面两条路都能走：重试，或者手动装。"
-												: r && r.upToDate
-													? (r.message || "已经装的是最新版本。")
-													: (FAILURE_TEXT[(r && r.failure) || (job && job.failure)] || ("失败于阶段：" + txt((r && r.failure) || (job && job.failure))) + "。")),
+												: (FAILURE_TEXT[(r && r.failure) || (job && job.failure)] || ("失败于阶段：" + txt((r && r.failure) || (job && job.failure))) + "。")),
 								)))
 						: null,
 
@@ -1367,7 +1457,7 @@ window.__ModuleLoader__.load({
 					h("span", { className: "dpm-muted" },
 						running
 							? "可以关掉这个页面 —— 任务在服务端继续跑，回来还能看到进度。"
-							: "手动安装命令就是自动化内部执行的那条命令。"),
+							: "下面那份手动命令，就是刚才自动化执行的那条。"),
 				),
 			);
 		};
@@ -1436,9 +1526,10 @@ window.__ModuleLoader__.load({
 		 *
 		 *   这里曾经并排摆过三个页签（已验证 / 已审核 / 未审核），后来收敛成一个列表
 		 *   外加一组「已审核 / 未审核」筛选 —— 但那个区分对用户要回答的问题
-		 *   （「这个插件我这儿装不装得上」）没有帮助：它只是一个维护者贴的标签，
-		 *   而真正的问题由**装前检查**当场判定。
+		 *   （「这个插件我这儿装不装得上」）没有帮助：它只是一个维护者贴的标签。
 		 *
+		 *   0.6.0 把最后那点评判也拿掉了：**市场不再判定任何插件能不能装**，
+		 *   所有插件都可装，用户要选的只是「自动装还是手动装」。
 		 *   现在顶部只剩一组与**用户自己**有关的筛选：已安装 / 可升级 / 我收藏的。
 		 */
 		var CATALOG_TAB = "market";
@@ -1464,7 +1555,7 @@ window.__ModuleLoader__.load({
 			var [only, setOnly] = useState(null);       // null | 'installed' | 'upgradable' | 'favorited'
 
 			var [drawer, setDrawer] = useState(null); // { kind, id, entry }
-			var [gate, setGate] = useState(null);
+			var [plan, setPlan] = useState(null);      // installPlan 的结果：自动规格 + 手动方案 + 已知事实
 			var [installResult, setInstallResult] = useState(null);
 			var [verifyResult, setVerifyResult] = useState(null);
 			var [busy, setBusy] = useState(false);
@@ -1655,18 +1746,19 @@ window.__ModuleLoader__.load({
 				}
 			}, [list, status, fail]);
 
-			var openGate = useCallback(async function (entry, forInstall) {
+			var openPlan = useCallback(async function (entry, forInstall) {
 				setToast(null);
 				setInstallResult(null);
-				setGate(null);
+				setPlan(null);
 				setManual(null);
-				setDrawer({ kind: "gate", id: entry.id, entry: entry, forInstall: !!forInstall });
+				setDrawer({ kind: "plan", id: entry.id, entry: entry, forInstall: !!forInstall });
 				setBusy(true);
 				try {
-					var r = await api("gate", { id: entry.id });
-					if (aliveRef.current) setGate(r);
-					// 手动方案随闸门一起回来：用户在按下「开始安装」之前就能看到
-					// 「如果它卡住，我自己该怎么装」
+					// ★ 一次请求同时拿回三样东西：这个插件是什么状态、自动那条路的规格、
+					//   以及手动那条路的完整命令。两条路都要能在**按下任何按钮之前**看完 ——
+					//   让用户先选，而不是先点再发现问题。
+					var r = await api("installPlan", { id: entry.id });
+					if (aliveRef.current) setPlan(r);
 					if (r && r.manual && aliveRef.current) setManual(r.manual);
 				} catch (err) {
 					fail(err);
@@ -1676,22 +1768,34 @@ window.__ModuleLoader__.load({
 				}
 			}, [fail]);
 
+			/** 手动那条路上的「复制全部命令」—— 纯本地动作，不碰服务端 */
+			var doCopyManual = useCallback(function (plan) {
+				var p = (plan && plan.id) ? plan : (plan && plan.pluginId) || {};
+				var text = (manual && manual.text) || "";
+				if (!text) {
+					setToast({ kind: "warn", text: "手动方案还没生成出来，稍等一下再点。" });
+					return;
+				}
+				copyText(text);
+				setToast({ kind: "info", text: "已复制 " + txt(p.package || (manual && manual.package) || "", "安装") + " 的手动安装命令，粘到终端里执行即可。" });
+			}, [manual]);
+
 			/**
-			 * 开始安装。
+			 * 开始安装（自动那条路）。
 			 *
 			 * ★ 与旧版的关键差别：这里**不等**安装跑完。请求只负责「把任务排上去」，
 			 *   几百毫秒就返回一个 jobId；进度、耗时、预计剩余、以及中止能力，
 			 *   全部走任务快照。这样即使 pnpm 要跑五分钟，界面也是活的。
 			 */
-			var doInstall = useCallback(async function (g, ack) {
+			var doInstall = useCallback(async function (plan) {
 				setBusy(true);
 				setAbortArmed(false);
 				setInstallResult(null);
 				setJob(null);
-				setManual(g && g.manual ? g.manual : manual);
-				setDrawer({ kind: "install", id: g.pluginId, entry: drawer && drawer.entry });
+				setManual(plan && plan.manual ? plan.manual : manual);
+				setDrawer({ kind: "install", id: plan.pluginId, entry: drawer && drawer.entry });
 				try {
-					var r = await api("install", { id: g.pluginId, acknowledgeRisk: !!ack });
+					var r = await api("install", { id: plan.pluginId });
 					if (!aliveRef.current) return;
 
 					if (r && r.busy) {
@@ -1900,7 +2004,6 @@ window.__ModuleLoader__.load({
 
 			var closeDrawer = useCallback(function () {
 				setDrawer(null);
-				setGate(null);
 				setInstallResult(null);
 				setVerifyResult(null);
 			}, []);
@@ -2002,7 +2105,7 @@ window.__ModuleLoader__.load({
 								return h(EntryCard, {
 									key: e.id,
 									entry: e,
-									onGate: openGate,
+									onInstall: openPlan,
 									onMark: doMark,
 								});
 							})),
@@ -2026,8 +2129,16 @@ window.__ModuleLoader__.load({
 					h("div", { className: "dpm-toolbar" },
 						h(Btn, { onClick: loadStatus }, "刷新"),
 						h(Btn, { onClick: function () { doVerify(null); } }, "校验三层"),
-						// ★ 「体检」页签已按用户要求去掉，但「修复」这个能力不能跟着消失：
-						//   它是「装了但没挂载」那类静默残局的唯一出路。搬成一个按钮。
+						/**
+						 * ★ 「体检」原先是一个独立页签，被删掉之后它只剩这个按钮 ——
+						 *   而结果一直没人渲染（health 被 set 了却从不显示）。
+						 *   0.6.0 把它接回页面上：这组结论描述的是**这台机器 / 这个 profile**
+						 *   的健康状况（Node、pnpm、断链的 file: 依赖、allowBuilds…），
+						 *   与装哪个插件无关，但会让**任何**安装失败。
+						 */
+						h(Btn, { disabled: busy, onClick: function () { setHealth(null); doProfileCheck(); } }, "体检"),
+						// ★ 「修复」这个能力不能跟着页签消失：
+						//   它是「装了但没挂载」那类静默残局的唯一出路。
 						h(Btn, {
 							disabled: busy,
 							title: "检查 profile 并修复可自动修复的问题（allowBuilds 占位符、依赖未挂载等）。修复前会自动拍快照。",
@@ -2074,7 +2185,7 @@ window.__ModuleLoader__.load({
 											small: true, variant: "update", disabled: busy,
 											title: "更新到 " + txt(i.targetVersion) + "（会先移除旧版本再装，自动备份、失败自动回滚）",
 											onClick: function () {
-												openGate({
+												openPlan({
 													id: i.name, package: i.name, title: i.name,
 													installState: { status: "upgradable", installed: true, installedVersion: i.installedVersion, target: i.targetVersion, inBundles: i.inBundles, canInstall: true, canUpgrade: true, action: "update", isLatest: false },
 												}, true);
@@ -2090,6 +2201,21 @@ window.__ModuleLoader__.load({
 									h(Flag, { kind: "bad", icon: "!" }, "有依赖「装了但没挂载」—— 这是 pnpm 以非 0 退出时 dsh 不会把包写进 bundles 造成的静默残局，GUI 里看不到它。点上方「修复 profile」可以让 dsh 重新对齐。"))
 								: null,
 						),
+
+					// 体检结果（环境层 + profile 层）。只读诊断，与「装不装得上某个插件」无关。
+					health
+						? h("div", { style: { marginTop: 16 } },
+							h(Fold, {
+								title: "体检结果 · 环境与 profile",
+								count: ((health && health.checks) || []).length,
+								defaultOpen: true,
+							},
+								((health && health.checks) || []).length === 0
+									? h("div", { className: "dpm-muted" }, "没有检查项。")
+									: ((health && health.checks) || []).map(function (c, i) {
+										return h(CheckItem, { key: c.id || i, check: c });
+									})))
+						: null,
 
 					/*
 					 * ★ 「回滚到快照」原在「体检」页。用户要求去掉那个页签，但它承载的
@@ -2174,8 +2300,16 @@ window.__ModuleLoader__.load({
 			}
 
 			var drawerContent = null;
-			if (drawer && drawer.kind === "gate") {
-				drawerContent = h(GateDrawer, { gate: gate, busy: busy, onClose: closeDrawer, onInstall: doInstall });
+			if (drawer && drawer.kind === "plan") {
+				drawerContent = h(InstallPlanDrawer, {
+					plan: plan,
+					manual: manual,
+					profile: plan && plan.targetProfile,
+					busy: busy,
+					onClose: closeDrawer,
+					onAutoInstall: doInstall,
+					onCopyManual: doCopyManual,
+				});
 			} else if (drawer && drawer.kind === "install") {
 				drawerContent = h(InstallView, {
 					result: installResult,
@@ -2336,12 +2470,13 @@ window.__ModuleLoader__.load({
 							"div",
 							{ className: "dpm-drawer-head" },
 							h("h3", { className: "dpm-drawer-title" },
-								drawer.kind === "gate" ? "装前检查 · " + txt(drawer.entry && (drawer.entry.title || drawer.entry.id))
+								drawer.kind === "plan" ? "安装 · " + txt(drawer.entry && (drawer.entry.title || drawer.entry.id))
 									: drawer.kind === "install" ? (job ? "安装进度 · " : "安装 · ") + txt(drawer.entry && (drawer.entry.title || drawer.entry.id))
 										: "校验 · " + txt(drawer.id, "profile")),
 							h("span", { className: "dpm-spacer" }),
-							drawer.kind === "gate" && gate
-								? h(Badge, { kind: gate.verdict === "pass" ? "ok" : gate.verdict === "warn" ? "neutral" : "bad" }, txt(gate.verdict))
+							drawer.kind === "plan" && plan
+								? h(Badge, { kind: plan.auto && plan.auto.available ? "ok" : "neutral" },
+									plan.auto && plan.auto.available ? "可自动安装" : "需手动安装")
 								: null,
 							// 抽屉标题上的「回到安装进度」：关掉抽屉后任务还在跑，
 							// 用户得有个明显入口回去看
