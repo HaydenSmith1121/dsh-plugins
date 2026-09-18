@@ -34,15 +34,20 @@
 
 **`dsh-plugins`（本仓库）是市场，不是插件仓库。** 它只做三件事：维护**目录**、
 提供**安装入口**（市场面板插件 `dsh-plugins-market` + 引导脚本）、把目录**每天刷新一遍**。
-插件的字节、版本与源码都在另一个仓库。
+插件的字节与源码在**每个插件自己的仓库**里。
 
-| | **本仓库** `HaydenSmith1121/dsh-plugins` | **插件集合仓库** `HaydenSmith1121/dsh-plugin-collection` |
+| | **本仓库** `HaydenSmith1121/dsh-plugins` | **每个插件自己的源码仓库** |
 |---|---|---|
-| **是什么** | 市场：目录 + 面板 + 引导脚本 | 插件本体：tarball + 源码 + 快照 |
-| **里面有什么** | `catalog/plugins/<slug>.json`（**一个插件一个配置文件**）、`catalog/index.json`、`compatibility.json`、`scripts/sync-catalog.mjs`、市场插件 `plugins-src/dsh-plugins-market/` | `plugins/<id>/plugin.json`（每个插件的事实来源）、`plugins/<id>/<dsh 版本>/<包名>-<版本>.tgz`、`snapshots/<id>/<版本>/`、`src/<id>/`（仅两个插件带源码）、`manifest.json`（派生，由 `scripts/build-manifest.mjs` 生成） |
-| **发新版要改什么** | 什么都不用改 —— 目录由每日任务从公开索引与集合仓库**采集**而来 | 放新 tarball → 改那一个 `plugin.json` → 跑 `build-manifest.mjs` |
-| **谁读它** | 市场面板（列表读 `catalog/index.json`，安装读单条配置文件）、`scripts/install.*` | 本仓库的采集脚本（读 `manifest.json`）、想手动装插件的人 |
-| **分不分发插件字节** | **不分发**。唯一由本仓库托管的产物是市场插件自己那一个 tarball | 分发自研插件的 tarball |
+| **是什么** | 市场：目录 + 面板 + 引导脚本 | 插件本体：`lib/`（构建产物，已提交）+ 源码 + 文档 |
+| **里面有什么** | `catalog/plugins/<slug>.json`（**一个插件一个配置文件**）、`catalog/index.json`、`compatibility.json`、`scripts/sync-catalog.mjs`、市场插件 `plugins-src/dsh-plugins-market/` | 各自的 `src/`、`lib/`、`cordis.patch.yml`、`docs/`、`README.md` |
+| **发新版要改什么** | 什么都不用改 —— 目录由每日任务从公开索引与各插件仓库**采集**而来 | 改 `src/` → 重新 build → 提交 `lib/` → 发版 |
+| **谁读它** | 市场面板（列表读 `catalog/index.json`，安装读单条配置文件）、`scripts/install.*` | pnpm（`github:` 安装直接从仓库取 `lib/`）、想审计源码的人 |
+| **分不分发插件字节** | **不分发**。唯一由本仓库托管的产物是市场插件自己那一个 tarball | 分发自己那份 `lib/`（git 依赖，没有 tarball） |
+
+> ★ **`dsh-plugin-collection`（插件集合仓库）已于 2026-09-18 退役。** 自研插件不再有
+> 中心化的 tarball 仓库 —— 6 个插件各自一个源码仓库，安装规格统一是
+> `github:HaydenSmith1121/<仓库名>`；那个仓库现在只剩一份退役说明。
+> 逐插件的仓库地址见 [`README-安装说明.md` 第一节](./README-安装说明.md)。
 
 > **一句话**：装插件 = **先读那个插件自己的配置文件，再按它写的 `install.method` 去装**。
 > 索引只负责让你**看到**有哪些插件；读不到配置文件就**不装**，而不是拿索引里的字段猜一个方法
@@ -306,7 +311,7 @@ catalog/
 | **兼容** | 每个 dsh 版本支持到什么程度 | [`docs/版本兼容矩阵.md`](./docs/版本兼容矩阵.md) |
 | | 兼容策略、注意事项、踩过的坑 | [`docs/注意事项.md`](./docs/注意事项.md) |
 | | 机器可读的运行时矩阵 | [`compatibility.json`](./compatibility.json) |
-| **插件本体** | 插件清单 / 版本 / sha256 / 安装说明 | [dsh-plugin-collection](https://github.com/HaydenSmith1121/dsh-plugin-collection) |
+| **插件本体** | 插件清单 / 版本 / 安装说明 | **各插件自己的源码仓库** —— 地址见 [`README-安装说明.md` 第一节](./README-安装说明.md) 的表 |
 | **贡献** | 怎么贡献、收录规范、PR 检查清单 | [`CONTRIBUTING.md`](./CONTRIBUTING.md) |
 
 ---

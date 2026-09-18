@@ -11,19 +11,34 @@
 > 或**手动安装**（命令给你，自己敲）；两条路都先备份 profile、失败自动回滚。
 >
 > ★ **自 0.4.0（市场与插件分离）起，脚本只装一个插件：引导插件 `dsh-plugins-market`。**
-> 插件的字节已经不在本仓库：自研插件在
-> [dsh-plugin-collection](https://github.com/HaydenSmith1121/dsh-plugin-collection)，
+> 插件的字节已经不在本仓库：自研插件**各自在自己的源码仓库**里（见下表），
 > 第三方插件按各自配置里记录的 `github:` / npm 规格从上游安装。
 > 所以「一键装全套」这件事本身没有了，`-BootstrapOnly` / `--bootstrap-only` 仍然接受，
 > 含义与默认行为一致（保留是为了兼容旧命令与显式表达意图）。
+>
+> ★ **`dsh-plugin-collection`（插件集合仓库）已于 2026-09-18 退役。**
+> 它此前托管 6 个自研插件的 tarball；现在一个插件一个源码仓库，安装规格统一是
+> `github:HaydenSmith1121/<仓库名>`。`lib/` 已提交进各仓库，所以 **git 安装不需要本地构建**：
+>
+> | 插件 | 源码仓库 | 安装 |
+> |---|---|---|
+> | `dsh-ark-plans` | [dsh-ark-plans](https://github.com/HaydenSmith1121/dsh-ark-plans) | `dsh plugin --profile web add github:HaydenSmith1121/dsh-ark-plans` |
+> | `dsh-memory` | [dsh-memory](https://github.com/HaydenSmith1121/dsh-memory) | `dsh plugin --profile web add github:HaydenSmith1121/dsh-memory` |
+> | `dsh-excel-viewer` | [dsh-excel-viewer](https://github.com/HaydenSmith1121/dsh-excel-viewer) | `dsh plugin --profile web add github:HaydenSmith1121/dsh-excel-viewer` |
+> | `dsh-session-cleanup` | [dsh-session-cleanup](https://github.com/HaydenSmith1121/dsh-session-cleanup) | `dsh plugin --profile web add github:HaydenSmith1121/dsh-session-cleanup` |
+> | `dsh-opencode-go-plus` | [dsh-opencode-go-plus](https://github.com/HaydenSmith1121/dsh-opencode-go-plus) | `dsh plugin --profile web add github:HaydenSmith1121/dsh-opencode-go-plus` |
+> | `dsh-connect-trae` | [dsh-connect-trae-plus](https://github.com/HaydenSmith1121/dsh-connect-trae-plus) | `dsh plugin --profile web add github:HaydenSmith1121/dsh-connect-trae-plus` |
+>
+> ⚠️ `dsh-opencode-go-plus` 首装会撞 `ERR_PNPM_IGNORED_BUILDS`（依赖树里两条未批准的
+> 构建脚本，表现是「文件都装了、GUI 里看不到」），修法写在
+> [该仓库的 README](https://github.com/HaydenSmith1121/dsh-opencode-go-plus#readme) 里。
 
 **本文件是唯一的安装文档，自包含。** 里面每一步都已经把「容易出错的地方」
 直接写成了预防措施和自检项 —— 照着走就不会遇到那些问题，出问题也能就地定位。
 
-> 逐插件的版本 / sha256 / 安装与配置说明在**集合仓库**：
-> [`dsh-plugin-collection` 的 README](https://github.com/HaydenSmith1121/dsh-plugin-collection/blob/main/README.md)
-> 与 [`manifest.json`](https://github.com/HaydenSmith1121/dsh-plugin-collection/blob/main/manifest.json)。
-> 本仓库里插件的**目录数据**（版本 / 收藏量 / 安装方式 / 信任层级）见
+> 逐插件的版本 / 安装与配置说明：**每个插件自己的源码仓库**（见上表），
+> 或本仓库[市场目录](./catalog/plugins)里那一份配置。
+> 本仓库里插件的**目录数据**（版本 / 收藏量 / 安装方式）见
 > [`docs/插件清单与来源.md`](./docs/插件清单与来源.md)。
 > 所有第三方插件版权归原作者所有。
 
@@ -350,18 +365,20 @@ dsh plugin --profile web add /tmp/dsh-plugins-market.tgz
 - 在 `~/.dsh/profiles/web` 跑 `pnpm add <tarball>`
 - 成功后把声明了 `dsh.bundle` 的包追加进 `package.json` 的 `dsh.profile.bundles`
 
-**其余插件有两种手动装法**（都不经过本仓库的 `plugins/`）：
+**其余插件的手动装法**（都不经过本仓库的 `plugins/`）：
 
 ```bash
-# ① 自研插件：下载集合仓库的 tarball → 校验 sha256 → add
-#    地址与 sha256 见 https://github.com/HaydenSmith1121/dsh-plugin-collection 的 README/manifest.json
-curl -fL -o /tmp/dsh-memory-0.1.0.tgz https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugin-collection/main/plugins/dsh-memory/0.1.6-alpha.1/dsh-memory-0.1.0.tgz
-sha256sum /tmp/dsh-memory-0.1.0.tgz        # 与 manifest.json 里的值比对
-dsh plugin --profile web add /tmp/dsh-memory-0.1.0.tgz
+# ① 自研插件：直接装它自己的源码仓库（pnpm 的 git 依赖，不需要下载 tarball）
+dsh plugin --profile web add github:HaydenSmith1121/dsh-memory
 
 # ② 第三方插件：按它配置里记录的安装方式装（github: 或 npm）
 dsh plugin --profile web add github:Nagi-ovo/dsh-ads
 ```
+
+> ★ **自研插件的装法在 2026-09-18 变过一次。** 原先是从**插件集合仓库**下 tarball
+> （`curl` + `sha256sum` + `add`）—— 那条路已随 `dsh-plugin-collection` 退役一起消失，
+> 那个仓库现在没有 tarball 了。现在统一走 `github:` 规格、一个插件一个仓库，
+> 也就不再有「集合仓库的 tarball 校验表」这回事（见附录）。
 
 > **路径里的 `0.1.6-alpha.1` 是 dsh 运行时版本，不是插件版本** ——
 > 这套多版本目录约定见 [`CONTRIBUTING.md` 第三节](./CONTRIBUTING.md#naming)
@@ -575,13 +592,21 @@ dsh plugin --profile web remove <包名>     # 例如: dsh plugin --profile web 
 `dsh-opencode-go-plus@0.3.0` 是**派生包**，基线为上游
 [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go)`@0.1.2`（MIT）。
 它**取代**了此前收录的 `dsh-opencode-go@0.1.2`（那一版含 13 处本地源码改动）。
-自 0.4.0 起它的 tarball 与源码在**插件集合仓库**：
-下载地址与 sha256 见
-[集合仓库 README](https://github.com/HaydenSmith1121/dsh-plugin-collection/blob/main/README.md)。
+它在自己的源码仓库 [HaydenSmith1121/dsh-opencode-go-plus](https://github.com/HaydenSmith1121/dsh-opencode-go-plus)：
 
-包里的 tarball 是**编译产物**（只有 `lib/`，没有 `src/`），所以新机装上就能用，
-**不需要重新构建**，也不需要源码 / node_modules（集合仓库的 `src/dsh-opencode-go-plus/`
-只是源码留档）。
+```bash
+dsh plugin --profile web add github:HaydenSmith1121/dsh-opencode-go-plus
+```
+
+★ 那是一个**分发仓库**：只含编译产物（`lib/` + `cordis.patch.yml` + `docs/` + `examples/` +
+`THIRD_PARTY_NOTICES.md`），**没有 `src/`** —— 所以新机装上就能用，不需要重新构建，
+也不需要源码 / node_modules。派生关系与改动清单见仓库内 `docs/derivation.md`。
+
+⚠️ **首装会撞 `ERR_PNPM_IGNORED_BUILDS`**：依赖树里 `@google/genai` 与 `protobufjs`
+两条构建脚本未获批准，pnpm 10+ 因此以非 0 退出 —— 表现是「文件都在 `node_modules` 里了，
+但 `dsh.profile.bundles` 没有追加，GUI 里看不到它」。修法：把 profile 目录下
+`pnpm-workspace.yaml` 里 pnpm 写出的 `allowBuilds` 占位模板填成 `false`，再**重跑同一条命令**
+（幂等，会报 `Lockfile is up to date`）—— 退出码 0 之后 bundles 才会补上。
 
 ### 0.3.0：配置入口在「设置 → 模型」里，不再有独立分区
 
@@ -650,15 +675,18 @@ dsh plugin --profile web add <下载后的 dsh-opencode-go-plus-0.3.0.tgz 绝对
 
 ## 附录：tarball 校验信息去哪了
 
-**搬去插件集合仓库了。** 本仓库自 0.4.0 起只托管**市场插件自己**一个 tarball：
+**自 2026-09-18 起：没有「自研插件的 tarball 校验表」这回事了。**
+`dsh-plugin-collection` 退役后，自研插件由**各自的源码仓库**以 git 依赖分发 ——
+`github:` 安装拿到的是仓库里的 `lib/`，没有 tarball，也就没有配套的 sha256 清单。
+本仓库自 0.4.0 起只托管**市场插件自己**一个 tarball：
 
 | 内容 | 去哪看 |
 |---|---|
-| 6 个自研插件的版本 / sha256 / 字节数 / 文件数 | [集合仓库 README 的「校验信息总表」](https://github.com/HaydenSmith1121/dsh-plugin-collection/blob/main/README.md) 与 [`manifest.json`](https://github.com/HaydenSmith1121/dsh-plugin-collection/blob/main/manifest.json)（派生，禁止手写） |
+| 6 个自研插件的版本 | 各自源码仓库的 `package.json`；市场侧见 [`catalog/plugins/`](./catalog/plugins) |
 | 市场插件自己的版本 / sha256 | `catalog/plugins/dsh-plugins-market.json`（版本取自源码 `package.json`，sha256 由采集脚本实测）与 `plugins/dsh-plugins-market/0.1.6-alpha.1/*.tgz.sha256` 边车文件 |
 | 第三方插件的字节完整性 | **本仓库不再分发它们的字节**。实测记录（含验证时的 commit）在 [`catalog/overrides/curated.json`](./catalog/overrides/curated.json)；装的时候由市场面板校验配置里记录的 sha256（若有） |
 
-**自查命令**（在集合仓库的 clone 里跑；那份 tarball 才是分发内容）：
+**自查命令**（核对本仓库里那唯一一个 tarball 的内容构成）：
 
 ```bash
 for f in plugins/*/*/*.tgz; do
@@ -670,6 +698,7 @@ for f in plugins/*/*/*.tgz; do
 done
 ```
 
-> `LICENSE` 列标注缺的两个包（`dsh-memory`、`dsh-workbuddy-quota`），其 `package.json` 里
-> `license` 字段均为 `MIT`，但 tarball 内未附许可文件正文 —— 集合仓库那边**如实记录、不做补写**。
+> 上面 `LICENSE` 一列曾经标出两个缺许可文件正文的包（`dsh-memory` 与
+> `dsh-workbuddy-quota`）—— 前者现在的仓库里带 `LICENSE`，后者已随集合仓库退役下线
+> （用量统计由 [`dsh-usage-stats`](https://github.com/HaydenSmith1121/dsh-usage-stats) 接手）。
 > 新入库的插件一律要求带许可文件，见 [`CONTRIBUTING.md`](./CONTRIBUTING.md#requirements)。

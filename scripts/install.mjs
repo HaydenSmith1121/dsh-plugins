@@ -239,7 +239,7 @@ const runtime = compat.runtimes.find((r) => r.dshVersion === report.dsh.version)
  *
  * ★ 自 0.4.0 起插件市场与插件本体是分离的：
  *   · 本仓库（dsh-plugins）只托管**市场插件自己**的那一个 tarball；
- *   · 其余自研插件在 HaydenSmith1121/dsh-plugin-collection 里；
+ *   · 其余自研插件在**各自的**源码仓库里（安装规格 github:HaydenSmith1121/<仓库名>）；
  *   · 第三方插件不再随任何仓库分发，市场按各自的上游安装方式去装。
  *
  * 所以「一键装全套」这件事本身没有了 —— 装插件是市场面板的职责（自动或手动由用户选，

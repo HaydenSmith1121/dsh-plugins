@@ -10,7 +10,8 @@
     "    catalog/index.json             由上面派生的索引（列表页用）",
     "  两者都由 scripts/sync-catalog.mjs 生成，不要手写。",
     "",
-    "  自研插件的产物与源码在另一个仓库：HaydenSmith1121/dsh-plugin-collection。",
+    "  自研插件的产物与源码在**各自的**源码仓库里（安装规格 github:HaydenSmith1121/<仓库名>）；",
+    "  原先的中心化 tarball 仓库 dsh-plugin-collection 已于 2026-09-18 退役。",
     "",
     "人工维护的部分：requirements（环境下限）、distTags（npm 通道现状）、",
     "runtimes（每个 dsh 版本 supported / unsupported 的结论与理由）、inBoxBundles、allowBuilds。"
