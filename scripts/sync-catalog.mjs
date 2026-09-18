@@ -694,6 +694,28 @@ async function collect(existing) {
   const collectionRecords = (collection.doc?.plugins ?? []).map(recordFromCollectionEntry).filter(Boolean);
   log(`→ 插件集合层：${collectionRecords.length} 条`);
 
+  /**
+   * ★ 集合仓库里「展示地址」与「真实源码仓」不是同一个的条目。
+   *
+   *   默认它们相同：自研插件的 repo 就是集合仓库本身，所以下面那一轮**整条跳过**
+   *   collection（否则 6 个插件会显示同一个 star 数 —— 那是个假事实）。
+   *   但第三方插件的加固分支有自己的源码仓：用户在市场上点开的是它，
+   *   指标也该从它来。所以集合仓库的 plugin.json 可以显式给一个 `githubRepo`，
+   *   给了就按它查 star / fork / pushedAt。
+   *
+   *   用一张旁表而不是往记录对象上挂字段：记录的形状是 catalog-format 的
+   *   归一化契约，多一个字段就会让 contentEquals 判成「内容变了」，
+   *   每日同步因此产生噪音 diff（这正是本脚本最在意的那类问题）。
+   *   注意这里**只影响指标**：版本号仍然由集合仓库的 manifest 决定，不查外部。
+   */
+  const metricsRepoOf = new Map();
+  const collectionDoc = collection.doc?.plugins ?? [];
+  for (const entry of collectionDoc) {
+    const id = String(entry.package ?? entry.id ?? '').trim();
+    if (id === '' || typeof entry.githubRepo !== 'string' || entry.githubRepo.trim() === '') continue;
+    metricsRepoOf.set(slugify(id), entry.githubRepo.trim());
+  }
+
   // ③ 公开索引
   const index = await loadPublicIndex();
   const indexRecords = index.plugins.map(recordFromIndexEntry).filter(Boolean);
@@ -870,13 +892,15 @@ async function collect(existing) {
 
     // ② GitHub：一次批量查询里并排问几十个仓库
     //
-    // ★ 自研插件（source.kind === 'collection'）不查：它们的 repo 指向的是插件集合
+    // ★ 自研插件（source.kind === 'collection'）默认不查：它们的 repo 指向的是插件集合
     //   仓库本身，查出来会让 6 个插件显示同一个 star 数 —— 那是个假事实。
     //   自研插件的版本以集合仓库的 manifest.json 为准，本来就不需要外部确认。
+    //   例外：集合仓库给这条显式写了 githubRepo（有独立源码仓的 fork），
+    //   那就按源码仓查 —— 指标是展示用的，与版本号无关，见上面 metricsRepoOf 的说明。
     const slugToRepo = new Map();
     for (const rec of needGithub) {
-      if (rec.source?.kind === 'collection') continue;
-      const slug = githubSlug(rec.repo);
+      if (rec.source?.kind === 'collection' && !metricsRepoOf.has(rec.slug)) continue;
+      const slug = githubSlug(metricsRepoOf.get(rec.slug) ?? rec.repo);
       if (slug) slugToRepo.set(slug, rec);
     }
     const token = githubTokenFromEnv();
@@ -898,7 +922,20 @@ async function collect(existing) {
       //   package.json）**不走外部解析**。它们被塞进 needGithub 只是因为 npm 那
       //   一轮没有处理它们；真拿 GitHub 的 release/tag 去覆盖，会把集合仓库里
       //   写明的版本号换成一个对不上的数字 —— 或者在没有 release 时直接抹成 null。
-      if (isLocallyAuthoritative(rec)) continue;
+      if (isLocallyAuthoritative(rec)) {
+        // 版本不动，但显式指定了源码仓的条目仍然取它的展示指标
+        // （star / fork / pushedAt）。拿不到就保持 null，不编造。
+        const metricsSlug = metricsRepoOf.get(rec.slug);
+        if (metricsSlug) {
+          const metrics = gh.results.get(metricsSlug) ?? null;
+          if (metrics) {
+            if (metrics.stars !== null) rec.stars = metrics.stars;
+            if (metrics.forks !== null) rec.forks = metrics.forks;
+            if (metrics.pushedAt) rec.pushedAt = metrics.pushedAt;
+          }
+        }
+        continue;
+      }
 
       const slug = githubSlug(rec.repo);
       const data = slug ? gh.results.get(slug) ?? null : null;
