@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "JJTovo/dsh-hunyuan-3d",
+  "slug": "jjtovo__dsh-hunyuan-3d",
+  "package": "dsh-hunyuan-3d",
+  "name": "dsh-hunyuan-3d",
+  "title": "dsh-hunyuan-3d",
+  "summary": "Tencent Cloud Hunyuan 3D (ai3d / HunyuanTo3D) modeling tools for dsh: text-to-3D and image-to-3D job submission, result polling, and on-disk asset download so other tools can consume a real file path.",
+  "tags": [
+    "ai3d",
+    "dsh",
+    "dsh-plugin",
+    "hunyuan3d",
+    "image-to-3d",
+    "tencent-cloud",
+    "text-to-3d"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "JJTovo",
+  "repo": "https://github.com/JJTovo/dsh-hunyuan-3d",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T17:31:52Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:JJTovo/dsh-hunyuan-3d",
+    "commands": [
+      "git clone git@github.com:JJTovo/dsh-hunyuan-3d.git",
+      "pnpm add \"github:JJTovo/dsh-hunyuan-3d\"",
+      "pnpm add \"file:/absolute/path/to/dsh-hunyuan-3d\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "Jiangsubei/dsh-qqbot-bridge",
+  "slug": "jiangsubei__dsh-qqbot-bridge",
+  "package": null,
+  "name": "dsh-qqbot-bridge",
+  "title": "dsh-qqbot-bridge",
+  "summary": "DeepSeek Harness × QQ 官方机器人插件 —— 用 **QQ 单聊**远程控制 DSH 里已有的所有工作区会话：流式输出、Markdown 渲染、文件收发、命令系统。",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "Jiangsubei",
+  "repo": "https://github.com/Jiangsubei/dsh-qqbot-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T18:20:38Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-qqbot-bridge",
+    "commands": [
+      "dsh plugin --profile web add dsh-qqbot-bridge",
+      "dsh plugin add dsh-qqbot-bridge",
+      "git clone https://github.com/Jiangsubei/dsh-qqbot-bridge.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

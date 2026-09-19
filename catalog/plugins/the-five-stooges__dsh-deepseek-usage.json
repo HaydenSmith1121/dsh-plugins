@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "The-five-stooges/dsh-deepseek-usage",
+  "slug": "the-five-stooges__dsh-deepseek-usage",
+  "package": "dsh-deepseek-usage",
+  "name": "dsh-deepseek-usage",
+  "title": "dsh-deepseek-usage",
+  "summary": "DSH plugin: DeepSeek balance row in the sidebar footer plus a popover with locally estimated usage charts and a per-model cost table",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-18T05:36:26Z",
+    "url": "https://github.com/The-five-stooges/dsh-deepseek-usage/releases/tag/v0.1.0"
+  },
+  "author": "The-five-stooges",
+  "repo": "https://github.com/The-five-stooges/dsh-deepseek-usage",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T05:42:51Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:The-five-stooges/dsh-deepseek-usage",
+    "commands": [
+      "dsh plugin add github:The-five-stooges/dsh-deepseek-usage",
+      "dsh plugin add https://github.com/The-five-stooges/dsh-deepseek-usage/releases/latest/download/dsh-deepseek-usage.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

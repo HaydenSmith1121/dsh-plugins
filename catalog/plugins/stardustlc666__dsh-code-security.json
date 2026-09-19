@@ -5,17 +5,13 @@
   "package": null,
   "name": "dsh-code-security",
   "title": "dsh-code-security",
-  "summary": "给 AI 代码审查加一道安全锁：自动扫描密钥泄露、漏洞规则和变更差异，还能导出 SARIF 报告，零依赖即插即用。",
+  "summary": "DSH 代码安全审查插件：40+ 确定性规则与密钥熵检测，支持 git diff/staged 审查、SARIF 导出、基线接受与 SBOM-lite。",
   "tags": [
     "code-review",
     "code-security",
     "dsh-plugin",
     "sast",
-    "security",
-    "工作流增强",
-    "安全审查",
-    "自动化",
-    "命令行工具"
+    "security"
   ],
   "version": "0.3.3",
   "versionSource": "npm",
@@ -25,10 +21,10 @@
   "repo": "https://github.com/STARDUSTLC666/dsh-code-security",
   "homepage": null,
   "license": "MIT",
-  "stars": 2,
+  "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-13T03:05:39Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-18T16:21:40Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -56,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

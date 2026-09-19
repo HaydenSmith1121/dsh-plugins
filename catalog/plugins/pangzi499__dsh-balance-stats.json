@@ -5,15 +5,12 @@
   "package": "dsh-balance-stats",
   "name": "dsh-balance-stats",
   "title": "dsh-balance-stats",
-  "summary": "直接在聊天栏下方显示余额、单次对话花费和Token用量，让你随时摸清AI消费账单。",
+  "summary": "Balance, session cost, token usage, and invoice summaries for DeepSeek Harness Web.",
   "tags": [
     "cost-tracking",
     "deepseek",
     "deepseek-harness",
-    "dsh-plugin",
-    "状态监控",
-    "效率提升",
-    "零配置"
+    "dsh-plugin"
   ],
   "version": "0.3.2",
   "versionSource": "github-release",
@@ -51,13 +48,15 @@
     "dshVersion": null,
     "needsConfig": true,
     "usageNeedsConfig": true,
-    "risky": false,
-    "riskyReasons": []
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
   },
   "source": {
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

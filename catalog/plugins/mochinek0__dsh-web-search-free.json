@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "MochiNek0/dsh-web-search-free",
+  "slug": "mochinek0__dsh-web-search-free",
+  "package": null,
+  "name": "dsh-web-search-free",
+  "title": "dsh-web-search-free",
+  "summary": "面向 DeepSeek Harness 的免费 Web Search 插件，支持 Tavily、Exa、Brave 等九个引擎按可配置顺序自动 fallback",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "web-search"
+  ],
+  "version": "1.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "MochiNek0",
+  "repo": "https://github.com/MochiNek0/dsh-web-search-free",
+  "homepage": "https://www.npmjs.com/package/dsh-web-search-free",
+  "license": "MIT",
+  "stars": 7,
+  "forks": 1,
+  "pushedAt": "2026-09-18T06:09:13Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-web-search-free",
+    "commands": [
+      "dsh plugin --profile web add dsh-web-search-free"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

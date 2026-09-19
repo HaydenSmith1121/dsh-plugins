@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "loulangogogo/dsh-plugins-loulan",
+  "slug": "loulangogogo__dsh-plugins-loulan",
+  "package": "dsh-plugins-loulan",
+  "name": "dsh-plugins-loulan",
+  "title": "dsh-plugins-loulan",
+  "summary": "Plugin collection for DeepSeek Harness (DSH): auto-mounts MCP servers from .mcp.json (with a Web \"MCP\" tab) and injects global and project rule files into sessions. TypeScript + pnpm monorepo.",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mcp",
+    "rules"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "loulangogogo",
+  "repo": "https://github.com/loulangogogo/dsh-plugins-loulan",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T14:55:14Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:loulangogogo/dsh-plugins-loulan",
+    "commands": [
+      "dsh plugin --profile web add github:loulangogogo/dsh-plugins-loulan"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

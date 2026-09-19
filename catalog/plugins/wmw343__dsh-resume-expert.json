@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "wmw343/dsh-resume-expert",
+  "slug": "wmw343__dsh-resume-expert",
+  "package": "dsh-resume-expert",
+  "name": "dsh-resume-expert",
+  "title": "dsh-resume-expert",
+  "summary": "引导式简历生成插件：对话式四阶段 + A4 PDF 直出，双宿主验证",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-18T09:07:00Z",
+    "url": "https://github.com/wmw343/dsh-resume-expert/releases/tag/v1.0.0"
+  },
+  "author": "wmw343",
+  "repo": "https://github.com/wmw343/dsh-resume-expert",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-18T19:07:08Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wmw343/dsh-resume-expert",
+    "commands": [
+      "dsh plugin --profile web add github:wmw343/dsh-resume-expert"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

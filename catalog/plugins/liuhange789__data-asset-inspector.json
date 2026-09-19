@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "liuhange789/data-asset-inspector",
+  "slug": "liuhange789__data-asset-inspector",
+  "package": null,
+  "name": "data-asset-inspector",
+  "title": "data-asset-inspector",
+  "summary": "Data Asset Inspector Plugin Suite - full-chain data asset registration toolkit for DeepSeek Harness (DSH)",
+  "tags": [
+    "data-asset",
+    "deepseek-harness",
+    "dsh-plugin",
+    "shujintong"
+  ],
+  "version": "2.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v2.0.0",
+    "publishedAt": "2026-08-22T03:34:45Z",
+    "url": "https://github.com/liuhange789/data-asset-inspector/releases/tag/v2.0.0"
+  },
+  "author": "liuhange789",
+  "repo": "https://github.com/liuhange789/data-asset-inspector",
+  "homepage": "https://www.npmjs.com/package/@liuhange/dsh-data-asset-shared",
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T01:49:09Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@liuhange/dsh-data-asset-shared",
+    "commands": [
+      "dsh plugin --profile web add @liuhange/dsh-data-asset-shared",
+      "dsh plugin --profile web add @liuhange/dsh-data-asset-inventory-scan",
+      "dsh plugin --profile web add @liuhange/dsh-data-asset-quality-score"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

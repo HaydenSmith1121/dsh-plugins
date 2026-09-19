@@ -5,17 +5,12 @@
   "package": "dsh-cost-pill",
   "name": "dsh-cost-pill",
   "title": "dsh-cost-pill",
-  "summary": "在输入框统计行加一枚官方同款胶囊，实时显示本会话费用、余额和缓存命中，点开看明细。",
+  "summary": "DSH web plugin: session API cost + account balance, as a pill merged into the official composer stats row (费用 · 余额 · 缓存命中).",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "token-usage",
-    "状态监控",
-    "可视化",
-    "主题",
-    "效率提升",
-    "工具集成"
+    "token-usage"
   ],
   "version": "0.1.1",
   "versionSource": "package.json",
@@ -48,7 +43,7 @@
     "tarball": null,
     "dshVersion": null,
     "needsConfig": true,
-    "usageNeedsConfig": false,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -56,6 +51,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

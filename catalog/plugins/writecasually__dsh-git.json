@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "writeCasually/dsh-git",
+  "slug": "writecasually__dsh-git",
+  "package": null,
+  "name": "dsh-git",
+  "title": "dsh-git",
+  "summary": "DeepSeek Harness Git plugin — visual git status, diff, commit & file preview in the DSH web UI",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "git",
+    "plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "writeCasually",
+  "repo": "https://github.com/writeCasually/dsh-git",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-18T13:03:14Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-git",
+    "commands": [
+      "dsh plugin --profile web add dsh-git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

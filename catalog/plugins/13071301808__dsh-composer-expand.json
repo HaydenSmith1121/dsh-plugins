@@ -5,16 +5,12 @@
   "package": null,
   "name": "dsh-composer-expand",
   "title": "dsh-composer-expand",
-  "summary": "给 DeepSeek Harness 的输入框加个展开/收起按钮，一键切换高视图，长草稿写起来更舒服。",
+  "summary": "Composer expand/collapse toggle for DeepSeek Harness (dsh): a ⬆/⬇ button in the composer tool row grows the input to a tall 70vh writing view for long drafts.",
   "tags": [
     "composer",
     "deepseek-harness",
     "dsh",
-    "dsh-plugin",
-    "输入框增强",
-    "编辑体验",
-    "主题",
-    "写作辅助"
+    "dsh-plugin"
   ],
   "version": "0.1.4",
   "versionSource": "npm",
@@ -24,10 +20,10 @@
   "repo": "https://github.com/13071301808/dsh-composer-expand",
   "homepage": "https://github.com/13071301808/dsh-composer-expand",
   "license": "MIT",
-  "stars": 5,
+  "stars": 6,
   "forks": 0,
   "pushedAt": "2026-09-05T07:29:11Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -49,13 +45,15 @@
     "dshVersion": null,
     "needsConfig": false,
     "usageNeedsConfig": false,
-    "risky": false,
-    "riskyReasons": []
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
   },
   "source": {
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

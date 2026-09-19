@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "AristotleAsborg/repo-autopilot-plugin",
+  "slug": "aristotleasborg__repo-autopilot-plugin",
+  "package": "repo-autopilot-plugin",
+  "name": "repo-autopilot-plugin",
+  "title": "repo-autopilot-plugin",
+  "summary": "把 repo-autopilot 的只读检查注册成 DeepSeek Harness 工具｜doctor / drill / acceptance / compare｜只读、零凭证、零写入",
+  "tags": [
+    "automation",
+    "cordis-plugin",
+    "deepseek-harness",
+    "dsh-plugin",
+    "repo-autopilot"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "AristotleAsborg",
+  "repo": "https://github.com/AristotleAsborg/repo-autopilot-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T13:27:51Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AristotleAsborg/repo-autopilot-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:AristotleAsborg/repo-autopilot-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

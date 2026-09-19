@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "huangziyuan-general/dsh-novel-forge",
+  "slug": "huangziyuan-general__dsh-novel-forge",
+  "package": "dsh-novel-forge",
+  "name": "dsh-novel-forge",
+  "title": "dsh-novel-forge",
+  "summary": "DSH 小说锻炉：把 AI 长篇写作通病变成代码强制的硬约束（事实账本/上下文包/阶段门禁/零费用去AI味扫描/确定性审计/提案制修订）。Novel-writing guardrails plugin for DeepSeek Harness (DSH).",
+  "tags": [
+    "dsh-plugin",
+    "novel-writing"
+  ],
+  "version": "0.13.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v0.13.5",
+    "publishedAt": "2026-09-19T13:20:25Z",
+    "url": "https://github.com/huangziyuan-general/dsh-novel-forge/releases/tag/v0.13.5"
+  },
+  "author": "huangziyuan-general",
+  "repo": "https://github.com/huangziyuan-general/dsh-novel-forge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-09-19T16:11:33Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:huangziyuan-general/dsh-novel-forge",
+    "commands": [
+      "dsh plugin --profile web add github:huangziyuan-general/dsh-novel-forge",
+      "dsh plugin --profile web add npm:dsh-novel-forge",
+      "dsh plugin --profile web add link:/path/to/dsh-novel-forge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

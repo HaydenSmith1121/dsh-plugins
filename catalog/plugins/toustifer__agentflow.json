@@ -14,17 +14,13 @@
     "工具集成"
   ],
   "version": "0.2.9",
-  "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
-  "latestRelease": {
-    "tag": "v0.2.9",
-    "publishedAt": "2026-09-16T00:49:34Z",
-    "url": "https://github.com/toustifer/agentflow/releases/tag/v0.2.9"
-  },
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
   "author": "toustifer",
   "repo": "https://github.com/toustifer/agentflow",
   "homepage": null,
-  "license": null,
+  "license": "MIT",
   "stars": 3,
   "forks": 0,
   "pushedAt": "2026-09-18T18:31:21Z",
@@ -37,10 +33,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:toustifer/agentflow",
+    "method": "npm",
+    "spec": "@stifer/dsh-agentflow",
     "commands": [
-      "dsh plugin --profile web add github:toustifer/agentflow"
+      "dsh plugin --profile web add @stifer/dsh-agentflow"
     ],
     "url": null,
     "sha256": null,
@@ -56,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

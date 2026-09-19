@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-agent-orchestrator",
+  "slug": "goodandready__dsh-agent-orchestrator",
+  "package": "@goodandready/dsh-agent-orchestrator",
+  "name": "dsh-agent-orchestrator",
+  "title": "dsh-agent-orchestrator",
+  "summary": "Multi-agent task decomposition, DAG workflow orchestration, and prompt caching optimizer for DeepSeek Harness",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin"
+  ],
+  "version": "0.1.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v0.1.6",
+    "publishedAt": "2026-09-18T20:48:58Z",
+    "url": "https://github.com/GooDAnDReaDY/dsh-agent-orchestrator/releases/tag/v0.1.6"
+  },
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-agent-orchestrator",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T20:48:38Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooDAnDReaDY/dsh-agent-orchestrator",
+    "commands": [
+      "dsh plugin --profile web add github:GooDAnDReaDY/dsh-agent-orchestrator"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

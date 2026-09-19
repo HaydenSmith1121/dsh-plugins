@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-vault-meta",
+  "slug": "jonah791__dsh-vault-meta",
+  "package": "dsh-vault-meta",
+  "name": "dsh-vault-meta",
+  "title": "dsh-vault-meta",
+  "summary": "凭据库只读元数据工具：列出 vault 条目与字段名（**只碰非密元数据**，绝不读取或回显任何明文/密文）——把「我有什么凭据」变成一条工具调用，不再手打 PowerShell",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-vault-meta",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T12:50:08Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-vault-meta",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-vault-meta"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

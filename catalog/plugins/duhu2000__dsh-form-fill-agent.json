@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-form-fill-agent",
   "title": "dsh-form-fill-agent",
-  "summary": "用企查查数据自动填 Excel 表格，填前可预览、确认后导出新副本。",
+  "summary": "AI form filling and spreadsheet autofill for XLSX in DeepSeek Harness, using authorized Qichacha MCP facts with cell previews, user confirmation and export to a new copy.",
   "tags": [
     "ai-agent",
     "dsh-plugin",
@@ -13,11 +13,7 @@
     "form-filling",
     "qcc",
     "spreadsheet-autofill",
-    "xlsx",
-    "自动化",
-    "工具集成",
-    "效率提升",
-    "文件管理"
+    "xlsx"
   ],
   "version": "0.2.32",
   "versionSource": "github-release",
@@ -44,9 +40,9 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "dsh-form-fill-agent@0.2.30",
+    "spec": "dsh-form-fill-agent@0.2.32",
     "commands": [
-      "dsh plugin --profile web add dsh-form-fill-agent@0.2.30"
+      "dsh plugin --profile web add dsh-form-fill-agent@0.2.32"
     ],
     "url": null,
     "sha256": null,
@@ -62,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

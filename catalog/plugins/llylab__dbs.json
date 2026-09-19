@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "LLYlab/DBS",
+  "slug": "llylab__dbs",
+  "package": "dsh-bgm-service",
+  "name": "DBS",
+  "title": "DBS",
+  "summary": "DBS (DSH BGM service) — 独立于 DET 的 DeepSeek Harness 音乐播放器插件：本地音乐库 + 浮动播放器 + AI 依任务控制播放。A standalone DSH BGM player plugin: local music library, floating player, AI-driven playback.",
+  "tags": [
+    "audio",
+    "bgm",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "music",
+    "player",
+    "plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-18T03:35:05Z",
+    "url": "https://github.com/LLYlab/DBS/releases/tag/v0.1.0"
+  },
+  "author": "LLYlab",
+  "repo": "https://github.com/LLYlab/DBS",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T03:35:02Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LLYlab/DBS",
+    "commands": [
+      "dsh plugin --profile web add github:LLYlab/DBS"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

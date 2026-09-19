@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "yjh051108/dsh-engram-relay",
+  "slug": "yjh051108__dsh-engram-relay",
+  "package": "@dsh-external/dsh-engram-relay",
+  "name": "dsh-engram-relay",
+  "title": "dsh-engram-relay",
+  "summary": "dsh-engram-relay 公开镜像（上游：dsh-external/dsh-engram-relay）：跨会话分层记忆 + 哈希×语义×因果超稀疏唤醒，13 个 engram_* 工具，BSD-3-Clause",
+  "tags": [
+    "causal-graph",
+    "dsh-plugin",
+    "engram",
+    "marisa-plugin",
+    "memory"
+  ],
+  "version": "0.4.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v0.4.3",
+    "publishedAt": "2026-09-19T00:24:07Z",
+    "url": "https://github.com/yjh051108/dsh-engram-relay/releases/tag/v0.4.3"
+  },
+  "author": "yjh051108",
+  "repo": "https://github.com/yjh051108/dsh-engram-relay",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 3,
+  "forks": 2,
+  "pushedAt": "2026-09-19T00:24:07Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "git clone https://github.com/yjh051108/dsh-engram-relay.git fengshi",
+      "npm install --legacy-peer-deps",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

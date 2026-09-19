@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ShanWuYinShe/dsh-plugins",
+  "slug": "shanwuyinshe__dsh-plugins",
+  "package": null,
+  "name": "dsh-plugins",
+  "title": "dsh-plugins",
+  "summary": "deepseek harness plugin set",
+  "tags": [
+    "deepseek-harness-allow-extra-dir",
+    "deepseek-harness-plugin",
+    "deepseek-harness-vision",
+    "dsh-allow-extra-dir",
+    "dsh-plugin",
+    "dsh-vision"
+  ],
+  "version": "0.3.18-alpha.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "dsh-any-connect-v0.3.18-alpha.7",
+    "publishedAt": "2026-09-19T15:16:21Z",
+    "url": "https://github.com/ShanWuYinShe/dsh-plugins/releases/tag/dsh-any-connect-v0.3.18-alpha.7"
+  },
+  "author": "ShanWuYinShe",
+  "repo": "https://github.com/ShanWuYinShe/dsh-plugins",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T18:17:26Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@chaoset/sandbox-extra-roots",
+    "commands": [
+      "dsh plugin --profile web add @chaoset/sandbox-extra-roots",
+      "dsh plugin --profile web add @chaoset/session-archive",
+      "dsh plugin --profile web add @chaoset/dsh-any-connect"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

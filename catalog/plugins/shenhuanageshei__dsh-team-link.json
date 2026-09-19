@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "shenhuanageshei/dsh-team-link",
+  "slug": "shenhuanageshei__dsh-team-link",
+  "package": "dsh-team-link",
+  "name": "dsh-team-link",
+  "title": "dsh-team-link",
+  "summary": "Session deep links + full session export (markdown/JSON) + approved cross-session messaging with pairing for DeepSeek Harness (dsh).",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin"
+  ],
+  "version": "0.3.7",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "shenhuanageshei",
+  "repo": "https://github.com/shenhuanageshei/dsh-team-link",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T15:53:12Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shenhuanageshei/dsh-team-link",
+    "commands": [
+      "dsh plugin --profile web add github:shenhuanageshei/dsh-team-link"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

@@ -5,7 +5,7 @@
   "package": "dsh-archive-manager-plus",
   "name": "dsh-archive-manager-favorites-patch",
   "title": "dsh-archive-manager-favorites-patch",
-  "summary": "Archived-sessions plugin for DSH — enhanced build by loyalchiiina: favorites, pinning, turns sort, idle auto-archive, bulk delete. Installable package (lib/ + README + NOTICE); based on MichengAI's upstream dsh-archive-manager v0.1.40 (Apache-2.0).",
+  "summary": "Enhanced DSH archive manager: favorites filter & prune, one-click delete unfavorited, pinning, time & turns sorting, idle-days one-click archive (progress & undo), fast bulk delete with progress & fallback, copy ID/path, reworked layout. Based on MichengAI v0.1.40 (Apache-2.0). 归档会话增强版：收藏/置顶/时间·轮次排序/闲置一键归档/快速批量删除/复制 ID·路径。",
   "tags": [
     "archive-manager",
     "deepseek-harness",
@@ -13,9 +13,9 @@
     "dsh-plugin",
     "plugin-patch"
   ],
-  "version": "0.1.40-plus.1",
+  "version": "0.1.40",
   "versionSource": "package.json",
-  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
   "latestRelease": null,
   "author": "loyalchiiina",
   "repo": "https://github.com/loyalchiiina/dsh-archive-manager-favorites-patch",
@@ -23,8 +23,8 @@
   "license": "Apache-2.0",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-18T13:37:13Z",
-  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "pushedAt": "2026-09-19T17:40:01Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -52,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

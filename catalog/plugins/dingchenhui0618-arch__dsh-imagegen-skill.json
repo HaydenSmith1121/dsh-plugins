@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "dingchenhui0618-arch/dsh-imagegen-skill",
+  "slug": "dingchenhui0618-arch__dsh-imagegen-skill",
+  "package": "dsh-imagegen-skill",
+  "name": "dsh-imagegen-skill",
+  "title": "dsh-imagegen-skill",
+  "summary": "Bundled imagegen skill for DeepSeek Harness: generate or edit raster images from the agent through any OpenAI-compatible GPT Image endpoint.",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "gpt-image",
+    "image-generation",
+    "skill"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "dingchenhui0618-arch",
+  "repo": "https://github.com/dingchenhui0618-arch/dsh-imagegen-skill",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T01:38:30Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dingchenhui0618-arch/dsh-imagegen-skill",
+    "commands": [
+      "dsh plugin --profile web add D:\\Projects\\dsh-imagegen-skill",
+      "dsh plugin --profile web list"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

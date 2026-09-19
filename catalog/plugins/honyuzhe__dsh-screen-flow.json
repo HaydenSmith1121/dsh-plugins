@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "HONYUZHE/dsh-screen-flow",
+  "slug": "honyuzhe__dsh-screen-flow",
+  "package": "dsh-screen-flow",
+  "name": "dsh-screen-flow",
+  "title": "dsh-screen-flow",
+  "summary": "DSH/DSHA 插件：把「等界面 → 操作 → 再等」合成一次工具调用。条件等待（等文字出现/消失、等画面稳定）+ 声明式步骤流，失败即停并附上当时屏幕。",
+  "tags": [
+    "accessibility",
+    "agent",
+    "android",
+    "automation",
+    "cordis-plugin",
+    "deepseek-harness",
+    "dsh",
+    "dsha",
+    "llm-tools",
+    "ui-flow"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "HONYUZHE",
+  "repo": "https://github.com/HONYUZHE/dsh-screen-flow",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T10:01:44Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:HONYUZHE/dsh-screen-flow",
+    "commands": [
+      "git clone https://github.com/HONYUZHE/dsh-screen-flow.git /root/dsha-screen-flow"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

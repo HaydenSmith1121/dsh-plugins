@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "seolhw/dsh-guild",
+  "slug": "seolhw__dsh-guild",
+  "package": "dsh-guild",
+  "name": "dsh-guild",
+  "title": "dsh-guild",
+  "summary": "把「社区」装进 DSH：一个类 Discord 的社区插件 —— 在 DeepSeek Harness 面板内实时聊天、@ 提醒、贴图传文件、管理成员与权限。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-guild",
+    "dsh-plugin"
+  ],
+  "version": "0.0.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "seolhw",
+  "repo": "https://github.com/seolhw/dsh-guild",
+  "homepage": "https://dsh-guild-docs.huiwang.fun",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-19T19:34:47Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:seolhw/dsh-guild",
+    "commands": [
+      "dsh plugin --profile web add github:seolhw/dsh-guild"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

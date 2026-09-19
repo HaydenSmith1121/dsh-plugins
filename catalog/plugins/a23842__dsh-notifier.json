@@ -5,12 +5,9 @@
   "package": null,
   "name": "dsh-notifier",
   "title": "dsh-notifier",
-  "summary": "给 DeepSeek Harness 加多渠道通知，任务跑完或出错时自动推送到企业微信、邮件等，随时掌握运行状态。",
+  "summary": "",
   "tags": [
-    "dsh-plugin",
-    "状态监控",
-    "效率提升",
-    "模型适配"
+    "dsh-plugin"
   ],
   "version": "0.2.0",
   "versionSource": "github-tag",
@@ -42,8 +39,8 @@
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -51,6 +48,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

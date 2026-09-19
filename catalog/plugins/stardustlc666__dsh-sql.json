@@ -5,17 +5,13 @@
   "package": null,
   "name": "dsh-sql",
   "title": "dsh-sql",
-  "summary": "让 DeepSeek Harness 智能体直接查库：支持 SQLite/MySQL/PostgreSQL，只读查询、写操作审批、表结构探查，安全又省心。",
+  "summary": "DSH 数据库插件：SQLite / MySQL / PostgreSQL 查询与管理，只读模式、写操作审批与流式行数钳制。",
   "tags": [
     "database",
     "deepseek-harness",
     "dsh-plugin",
     "sql",
-    "sqlite",
-    "模型配置",
-    "安全审查",
-    "效率提升",
-    "AI 助手"
+    "sqlite"
   ],
   "version": "0.4.3",
   "versionSource": "npm",
@@ -25,10 +21,10 @@
   "repo": "https://github.com/STARDUSTLC666/dsh-sql",
   "homepage": null,
   "license": "MIT",
-  "stars": 7,
-  "forks": 2,
-  "pushedAt": "2026-09-12T10:15:52Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "stars": 8,
+  "forks": 3,
+  "pushedAt": "2026-09-18T16:24:38Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -56,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

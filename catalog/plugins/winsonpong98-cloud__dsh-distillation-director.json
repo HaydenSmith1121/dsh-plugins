@@ -7,11 +7,16 @@
   "title": "dsh-distillation-director",
   "summary": "把一本书蒸馏成一组可执行的 Agent 技能，三道闸门把关，只判态不打分，零红灯才放行。",
   "tags": [
+    "agent-skill",
     "agent-skills",
+    "anti-pitfall",
+    "book-distillation",
     "deepseek-harness",
     "distillation",
     "dsh-plugin",
     "knowledge-distillation",
+    "prompt-engineering",
+    "skill-generator",
     "报告生成",
     "自动化",
     "工作流增强",
@@ -42,12 +47,12 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:winsonpong98-cloud/dsh-distillation-director",
+    "method": "npm",
+    "spec": "dsh-distillation-director",
     "commands": [
-      "dsh plugin add <你下载到的 dsh-distillation-director-v4.6.5.tgz 路径>",
-      "dsh plugin --profile web add github:winsonpong98-cloud/dsh-distillation-director",
-      "dsh plugin add dsh-distillation-director"
+      "dsh plugin add dsh-distillation-director",
+      "dsh plugin add https://github.com/winsonpong98-cloud/dsh-distillation-director/releases/latest/download/dsh-distillation-director.tgz",
+      "dsh plugin add https://github.com/winsonpong98-cloud/dsh-distillation-director/releases/download/v4.9.3/dsh-distillation-director-4.9.3.tgz"
     ],
     "url": null,
     "sha256": null,
@@ -63,6 +68,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

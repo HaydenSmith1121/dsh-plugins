@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "zekcjshe/LearnForge-skill",
+  "slug": "zekcjshe__learnforge-skill",
+  "package": null,
+  "name": "LearnForge-skill",
+  "title": "LearnForge-skill",
+  "summary": "一个 AI Agent 技能，把 B 站长视频、公开课和录播重构为结构化 Obsidian 笔记。面向 408、大学专业课、算法与硬核技术学习，支持跨视频体系构建和长视频精读，自动提炼推导、比喻、易错点与自测题。内置防幻觉校验，兼容 Claude Code、Cursor 等，输出标准 Markdown，无需 Obsidian 也能用。",
+  "tags": [
+    "ai-agents",
+    "bilibili",
+    "claude-code",
+    "dsh",
+    "learning-tool",
+    "learning-tools",
+    "obsidian",
+    "skills",
+    "whisper"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "zekcjshe",
+  "repo": "https://github.com/zekcjshe/LearnForge-skill",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-19T03:19:45Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zekcjshe/LearnForge-skill",
+    "commands": [
+      "dsh plugin --profile web add github:zekcjshe/LearnForge-skill"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

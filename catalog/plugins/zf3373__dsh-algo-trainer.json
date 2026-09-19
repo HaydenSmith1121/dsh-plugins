@@ -5,15 +5,12 @@
   "package": null,
   "name": "dsh-algo-trainer",
   "title": "dsh-algo-trainer",
-  "summary": "把 ICPC 刷题、弱项分析、训练计划、间隔复习和模板库打包成 AI 工具，让 agent 直接帮你安排和跟进算法训练全流程。",
+  "summary": "ICPC competitive programming training plugin for DeepSeek Harness — sync, analysis, plans, reviews, templates",
   "tags": [
     "competitive-programming",
     "deepseek-harness",
     "dsh-plugin",
-    "icpc",
-    "效率提升",
-    "工作流增强",
-    "模型适配"
+    "icpc"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -46,8 +43,8 @@
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -55,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

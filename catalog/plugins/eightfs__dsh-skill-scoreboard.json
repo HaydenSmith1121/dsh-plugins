@@ -5,14 +5,9 @@
   "package": "dsh-skill-scoreboard",
   "name": "dsh-skill-scoreboard",
   "title": "dsh-skill-scoreboard",
-  "summary": "自动统计每个会话里 skill 的加载次数，不用手动记账，打开设置面板就能看记分板。",
+  "summary": "DSH skill 使用记分板：监听 tools/result，按会话去重自动累计 skill 加载次数。",
   "tags": [
-    "dsh-plugin",
-    "状态监控",
-    "自动化",
-    "设置面板",
-    "会话管理",
-    "效率提升"
+    "dsh-plugin"
   ],
   "version": "1.0.4",
   "versionSource": "github-release",
@@ -28,8 +23,8 @@
   "license": null,
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-18T10:38:40Z",
-  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "pushedAt": "2026-09-19T13:10:47Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -57,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

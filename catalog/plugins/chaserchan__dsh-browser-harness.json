@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "chaserchan/dsh-browser-harness",
+  "slug": "chaserchan__dsh-browser-harness",
+  "package": null,
+  "name": "dsh-browser-harness",
+  "title": "dsh-browser-harness",
+  "summary": "DSH plugin: drive a real Chrome from your dsh agent via the browser-use Browser Harness (local, no API key).",
+  "tags": [
+    "browser-automation",
+    "cdp",
+    "chrome",
+    "deepseek-harness",
+    "dsh-plugin"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "chaserchan",
+  "repo": "https://github.com/chaserchan/dsh-browser-harness",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T14:17:12Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-browser-harness",
+    "commands": [
+      "uv tool install browser-use",
+      "uv tool install browser-harness",
+      "dsh plugin --profile web add dsh-browser-harness"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-deepseek-quota-bar",
   "title": "dsh-deepseek-quota-bar",
-  "summary": "在 DeepSeek Harness 网页界面右下角显示 API 余额血条，直观展示本月额度、今日花费和会话成本，可拖拽折叠。",
+  "summary": "DeepSeek API quota blood-bar widget for the DSH web GUI: remaining balance vs month-opening, today/month spend, session cost. Draggable & collapsible.",
   "tags": [
     "balance",
     "deepseek",
@@ -14,11 +14,7 @@
     "dsh-plugin",
     "plugin",
     "quota",
-    "usage",
-    "主题",
-    "资源优化",
-    "会话管理",
-    "零配置"
+    "usage"
   ],
   "version": "0.6.1",
   "versionSource": "npm",
@@ -30,8 +26,8 @@
   "license": "MIT",
   "stars": 4,
   "forks": 0,
-  "pushedAt": "2026-08-24T04:37:46Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-18T12:22:41Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -53,7 +49,7 @@
     "tarball": null,
     "dshVersion": null,
     "needsConfig": true,
-    "usageNeedsConfig": false,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -61,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "afterrealism/dsh-session-ctxmenu",
+  "slug": "afterrealism__dsh-session-ctxmenu",
+  "package": "dsh-session-ctxmenu",
+  "name": "dsh-session-ctxmenu",
+  "title": "dsh-session-ctxmenu",
+  "summary": "DSH plugin: right-click a session/project row in the sidebar to open its Rename/Fork/Archive menu",
+  "tags": [
+    "context-menu",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "afterrealism",
+  "repo": "https://github.com/afterrealism/dsh-session-ctxmenu",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-18T02:24:19Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:afterrealism/dsh-session-ctxmenu",
+    "commands": [
+      "dsh plugin --profile web add github:afterrealism/dsh-session-ctxmenu"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

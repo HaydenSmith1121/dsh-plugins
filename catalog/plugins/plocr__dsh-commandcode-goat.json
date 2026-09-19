@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Plocr/dsh-commandcode-goat",
+  "slug": "plocr__dsh-commandcode-goat",
+  "package": "dsh-commandcode-goat",
+  "name": "dsh-commandcode-goat",
+  "title": "dsh-commandcode-goat",
+  "summary": "DeepSeek Harness (dsh) plugin: publishes a Command Code subscription (GOAT / Pro / Max) as llm-pi-ai provider routes, with account usage and web search on the same credential.",
+  "tags": [
+    "ai-agents",
+    "commandcode",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm-pi-ai",
+    "llm-provider"
+  ],
+  "version": "0.4.8",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "Plocr",
+  "repo": "https://github.com/Plocr/dsh-commandcode-goat",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T22:48:35Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Plocr/dsh-commandcode-goat",
+    "commands": [
+      "dsh plugin --profile web add link:<本仓库根目录>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

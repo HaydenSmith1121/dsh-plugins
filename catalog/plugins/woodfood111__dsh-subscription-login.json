@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "woodfood111/dsh-subscription-login",
+  "slug": "woodfood111__dsh-subscription-login",
+  "package": null,
+  "name": "dsh-subscription-login",
+  "title": "dsh-subscription-login",
+  "summary": "Subscription sign-in console for DeepSeek Harness: one settings page for every OAuth sign-in the harness can offer, read from the authorization seam instead of hardcoded providers.",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "oauth"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "woodfood111",
+  "repo": "https://github.com/woodfood111/dsh-subscription-login",
+  "homepage": "https://github.com/woodfood111/dsh-subscription-login",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T14:57:33Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-subscription-login",
+    "commands": [
+      "dsh plugin --profile web add dsh-subscription-login"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

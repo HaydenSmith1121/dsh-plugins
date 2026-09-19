@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "athif23/dsh-shell-select",
+  "slug": "athif23__dsh-shell-select",
+  "package": null,
+  "name": "dsh-shell-select",
+  "title": "dsh-shell-select",
+  "summary": "DeepSeek Harness plugin: one model-facing shell tool whose shell (PowerShell, cmd, Git Bash, WSL, bash, zsh, fish, sh) is a user setting, with a Web settings card and a fail-closed refusal when the sandbox cannot confine it.",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "powershell",
+    "sandbox",
+    "shell"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "athif23",
+  "repo": "https://github.com/athif23/dsh-shell-select",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T13:25:50Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-shell-select",
+    "commands": [
+      "dsh plugin --profile web add dsh-shell-select",
+      "git clone https://github.com/athif23/dsh-shell-select",
+      "dsh plugin --profile web add link:/absolute/path/to/dsh-shell-select"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

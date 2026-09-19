@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "DWJZ/dsh-restart",
+  "slug": "dwjz__dsh-restart",
+  "package": "dsh-restart",
+  "name": "dsh-restart",
+  "title": "dsh-restart",
+  "summary": "",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-18T05:07:48Z",
+    "url": "https://github.com/DWJZ/dsh-restart/releases/tag/v0.1.0"
+  },
+  "author": "DWJZ",
+  "repo": "https://github.com/DWJZ/dsh-restart",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T05:10:34Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:DWJZ/dsh-restart",
+    "commands": [
+      "dsh plugin --profile web add github:DWJZ/dsh-restart",
+      "dsh plugin --profile web add link:/path/to/dsh-restart"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

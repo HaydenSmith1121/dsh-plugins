@@ -52,10 +52,12 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:dushaobindoudou/dsh-refine",
+    "method": "npm",
+    "spec": "dsh-refine",
     "commands": [
-      "dsh plugin --profile web add github:dushaobindoudou/dsh-refine"
+      "dsh plugin --profile web add dsh-refine",
+      "pnpm add link:/path/to/dsh-refine",
+      "dsh plugin --profile web install"
     ],
     "url": null,
     "sha256": null,
@@ -71,6 +73,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

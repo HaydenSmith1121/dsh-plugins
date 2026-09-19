@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-earn-radar",
+  "slug": "jonah791__dsh-earn-radar",
+  "package": "dsh-earn-radar",
+  "name": "dsh-earn-radar",
+  "title": "dsh-earn-radar",
+  "summary": "机会雷达：把「我能在哪里赚到钱」做成可成长的仪器——平台是数据（加一个平台=加一条记录），探针是声明式 spec（加一条 URL+过滤=加一个字段），判定内核可离线单测。纯 HTTP 经 Clash 显式代理，fail-closed。",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-earn-radar",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T12:49:46Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-earn-radar",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-earn-radar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

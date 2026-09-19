@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "xilec/deepseek-peaks",
+  "slug": "xilec__deepseek-peaks",
+  "package": "deepseek-peaks",
+  "name": "deepseek-peaks",
+  "title": "deepseek-peaks",
+  "summary": "DeepSeek peak-pricing indicator for the DSH session UI",
+  "tags": [
+    "cordis",
+    "deepseek",
+    "dsh",
+    "nix"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "xilec",
+  "repo": "https://github.com/xilec/deepseek-peaks",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T03:36:31Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xilec/deepseek-peaks",
+    "commands": [
+      "dsh plugin --profile web add github:xilec/deepseek-peaks"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

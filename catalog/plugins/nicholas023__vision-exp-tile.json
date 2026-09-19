@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "Nicholas023/vision-exp-tile",
+  "slug": "nicholas023__vision-exp-tile",
+  "package": "vision-exp-tile",
+  "name": "vision-exp-tile",
+  "title": "vision-exp-tile",
+  "summary": "DSH 插件：大图切 800×800 无损小块 + 坐标标注 + 分块聚合逻辑，直连 deepseek-v4-flash-vision-exp 识别；仅用纯官方 DSH 功能，零依赖第三方插件，不统计 token/费用。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "document-ocr",
+    "dsh-plugin",
+    "image-recognition",
+    "large-image",
+    "ocr",
+    "vision"
+  ],
+  "version": "0.4.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v0.4.2",
+    "publishedAt": "2026-08-24T08:24:26Z",
+    "url": "https://github.com/Nicholas023/vision-exp-tile/releases/tag/v0.4.2"
+  },
+  "author": "Nicholas023",
+  "repo": "https://github.com/Nicholas023/vision-exp-tile",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 12,
+  "forks": 0,
+  "pushedAt": "2026-08-24T08:24:06Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Nicholas023/vision-exp-tile",
+    "commands": [
+      "dsh plugin --profile web add github:Nicholas023/vision-exp-tile"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

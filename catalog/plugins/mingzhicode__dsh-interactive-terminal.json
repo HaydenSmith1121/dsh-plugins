@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "mingzhicode/dsh-interactive-terminal",
+  "slug": "mingzhicode__dsh-interactive-terminal",
+  "package": null,
+  "name": "dsh-interactive-terminal",
+  "title": "dsh-interactive-terminal",
+  "summary": "Persistent Bash terminals for DeepSeek Harness, letting humans take over and continue model-started sessions through an xterm.js UI.",
+  "tags": [
+    "agent-terminal",
+    "agents",
+    "dsh",
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "mingzhicode",
+  "repo": "https://github.com/mingzhicode/dsh-interactive-terminal",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T09:41:00Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-interactive-terminal@0.1.0",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh@0.1.0-rc.8 pnpm@10.18.3",
+      "dsh plugin --profile web add dsh-interactive-terminal@0.1.0",
+      "dsh plugin --profile web add ./dsh-interactive-terminal-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

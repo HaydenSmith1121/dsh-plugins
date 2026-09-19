@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "qilin-zhu/dsh-model-relay",
+  "slug": "qilin-zhu__dsh-model-relay",
+  "package": null,
+  "name": "dsh-model-relay",
+  "title": "dsh-model-relay",
+  "summary": "把deepseek harness里已经配好的模型中转出去，让其他项目可以使用。",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "qilin-zhu",
+  "repo": "https://github.com/qilin-zhu/dsh-model-relay",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T05:45:53Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-model-relay",
+    "commands": [
+      "dsh plugin --profile web add dsh-model-relay",
+      "dsh plugin --profile web add /绝对路径/dsh-model-relay"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

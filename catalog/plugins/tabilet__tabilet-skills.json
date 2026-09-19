@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "tabilet/tabilet-skills",
+  "slug": "tabilet__tabilet-skills",
+  "package": "tabilet-skills",
+  "name": "tabilet-skills",
+  "title": "tabilet-skills",
+  "summary": "Agentic Engineering Harness for Small to Large Projects",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "2.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v2.0.0",
+    "publishedAt": "2026-09-18T21:44:58Z",
+    "url": "https://github.com/tabilet/tabilet-skills/releases/tag/v2.0.0"
+  },
+  "author": "tabilet",
+  "repo": "https://github.com/tabilet/tabilet-skills",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T02:51:19Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tabilet/tabilet-skills",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/tabilet/tabilet-skills/releases/download/v1.5.0/tabilet-skills-1.5.0.tgz --ignore-scripts",
+      "dsh plugin --profile headless add https://github.com/tabilet/tabilet-skills/releases/download/v1.5.0/tabilet-skills-1.5.0.tgz --ignore-scripts"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Mhmd7-7/dsh-rtl-chat-box",
+  "slug": "mhmd7-7__dsh-rtl-chat-box",
+  "package": "dsh-rtl-chat-box",
+  "name": "dsh-rtl-chat-box",
+  "title": "dsh-rtl-chat-box",
+  "summary": "Adds an RTL chat box direction control to the dsh web GUI.",
+  "tags": [
+    "arabic",
+    "bidi",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "i18n",
+    "rtl"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "Mhmd7-7",
+  "repo": "https://github.com/Mhmd7-7/dsh-rtl-chat-box",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T06:20:13Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Mhmd7-7/dsh-rtl-chat-box",
+    "commands": [
+      "dsh plugin --profile web add \"github:Mhmd7-7/dsh-rtl-chat-box\"",
+      "dsh plugin --profile web add \"C:\\path\\to\\dsh-rtl-chat-box\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

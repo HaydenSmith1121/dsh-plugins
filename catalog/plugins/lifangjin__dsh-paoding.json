@@ -5,23 +5,14 @@
   "package": "dsh-paoding",
   "name": "dsh-paoding",
   "title": "dsh-paoding",
-  "summary": "把 DSH 拆成一支分工明确、按需加载的 agent 小团队，让每个角色只带自己该用的工具。",
+  "summary": "庖丁解牛，游刃有余 —— 把 DSH 编排成角色分工、按需加载的 agent preset。",
   "tags": [
-    "dsh-plugin",
-    "多智能体协作",
-    "工作流增强",
-    "资源优化",
-    "脚手架",
-    "效率提升"
+    "dsh-plugin"
   ],
-  "version": "0.3.0",
-  "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
-  "latestRelease": {
-    "tag": "v0.3.0",
-    "publishedAt": "2026-09-18T15:24:27Z",
-    "url": "https://github.com/lifangjin/dsh-paoding/releases/tag/v0.3.0"
-  },
+  "version": "0.3.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
   "author": "lifangjin",
   "repo": "https://github.com/lifangjin/dsh-paoding",
   "homepage": null,
@@ -38,10 +29,12 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:lifangjin/dsh-paoding",
+    "method": "npm",
+    "spec": "dsh-paoding",
     "commands": [
-      "git clone https://github.com/lifangjin/dsh-paoding.git dsh-paoding"
+      "dsh plugin --profile web add dsh-paoding",
+      "dsh plugin --profile web remove dsh-paoding",
+      "git clone https://github.com/lifangjin/dsh-paoding.git"
     ],
     "url": null,
     "sha256": null,
@@ -57,6 +50,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

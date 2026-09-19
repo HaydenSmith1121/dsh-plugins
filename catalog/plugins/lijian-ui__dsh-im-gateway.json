@@ -5,18 +5,14 @@
   "package": null,
   "name": "dsh-im-gateway",
   "title": "dsh-im-gateway",
-  "summary": "为 DeepSeek Harness 接入钉钉、QQ、个人微信，扫码绑定即可实时对话，支持流式回复。",
+  "summary": "为 DeepSeek Harness 提供多 IM 通道接入的网关插件：钉钉 / QQ / 个人微信，支持扫码绑定与流式回复。",
   "tags": [
     "deepseek",
     "deepseek-harness",
     "desktop-app",
     "dsh",
     "dsh-plugin",
-    "im-gateway",
-    "IM网关",
-    "模型配置",
-    "扫码绑定",
-    "流式回复"
+    "im-gateway"
   ],
   "version": "0.2.3",
   "versionSource": "npm",
@@ -26,10 +22,10 @@
   "repo": "https://github.com/lijian-ui/dsh-im-gateway",
   "homepage": null,
   "license": "MIT",
-  "stars": 5,
+  "stars": 6,
   "forks": 3,
   "pushedAt": "2026-08-26T10:10:37Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -59,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

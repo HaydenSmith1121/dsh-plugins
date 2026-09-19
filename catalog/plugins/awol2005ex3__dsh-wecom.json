@@ -5,14 +5,9 @@
   "package": "dsh-plugin-wecom",
   "name": "dsh-wecom",
   "title": "dsh-wecom",
-  "summary": "把企业微信智能机器人接到 DSH Agent，长连接收发消息、自动去重、支持流式回复和媒体下载。",
+  "summary": "DeepSeek Harness (dsh) plugin: WeCom (WeChat Work) smart-robot integration over the long-connection (WebSocket) API. Per-session agents, idempotent msgid dedup, stream/markdown replies, media download/upload, whitelist, welcome/feedback events.",
   "tags": [
-    "dsh-plugin",
-    "工具集成",
-    "消息通知",
-    "模型适配",
-    "会话管理",
-    "AI 助手"
+    "dsh-plugin"
   ],
   "version": "0.1.2-rc.1",
   "versionSource": "package.json",
@@ -53,6 +48,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

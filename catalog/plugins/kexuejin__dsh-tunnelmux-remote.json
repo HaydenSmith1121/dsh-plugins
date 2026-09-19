@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "kexuejin/dsh-tunnelmux-remote",
+  "slug": "kexuejin__dsh-tunnelmux-remote",
+  "package": "dsh-tunnelmux-remote",
+  "name": "dsh-tunnelmux-remote",
+  "title": "dsh-tunnelmux-remote",
+  "summary": "Mobile remote control for the DeepSeek Harness web GUI with TunnelMux as the tunnel backend: scan-to-pair QR, one-time tokens, revocable device sessions, mobile /m page.",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "kexuejin",
+  "repo": "https://github.com/kexuejin/dsh-tunnelmux-remote",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T02:40:07Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kexuejin/dsh-tunnelmux-remote",
+    "commands": [
+      "dsh plugin add github:kexuejin/dsh-tunnelmux-remote"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

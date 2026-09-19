@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "jiawei322/dsh-pi-catalog-sync",
+  "slug": "jiawei322__dsh-pi-catalog-sync",
+  "package": "dsh-pi-catalog-sync",
+  "name": "dsh-pi-catalog-sync",
+  "title": "dsh-pi-catalog-sync",
+  "summary": "Sync the pi.dev model catalog into DeepSeek Harness (dsh) llm-pi-ai provider routes through the official settings seam — no source patch — including mixed-protocol routes like OpenRouter, where new models land on a companion route while the built-in route stays untouched.",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "model-catalog",
+    "openrouter",
+    "pi-ai",
+    "pi-dev",
+    "settings-seam"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "jiawei322",
+  "repo": "https://github.com/jiawei322/dsh-pi-catalog-sync",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T08:30:10Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jiawei322/dsh-pi-catalog-sync",
+    "commands": [
+      "dsh plugin --profile web add github:jiawei322/dsh-pi-catalog-sync"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

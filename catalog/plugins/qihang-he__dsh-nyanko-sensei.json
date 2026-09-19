@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "Qihang-He/dsh-nyanko-sensei",
+  "slug": "qihang-he__dsh-nyanko-sensei",
+  "package": "dsh-nyanko-sensei",
+  "name": "dsh-nyanko-sensei",
+  "title": "dsh-nyanko-sensei",
+  "summary": "Nyanko-sensei desktop pet plugin for DeepSeek Harness Web: a round calico cat that idles, naps, wanders, reacts to clicks with a voice line, and follows agent activity. DSH 桌宠插件：娘口三三／猫咪老师。",
+  "tags": [
+    "deepseek-harness",
+    "desktop-pet",
+    "dsh",
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "Qihang-He",
+  "repo": "https://github.com/Qihang-He/dsh-nyanko-sensei",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T14:37:22Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Qihang-He/dsh-nyanko-sensei",
+    "commands": [
+      "dsh plugin --profile web add github:Qihang-He/dsh-nyanko-sensei",
+      "git clone https://github.com/Qihang-He/dsh-nyanko-sensei.git",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

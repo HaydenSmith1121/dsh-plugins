@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Jisakuna/Whale-QwQ",
+  "slug": "jisakuna__whale-qwq",
+  "package": null,
+  "name": "Whale-QwQ",
+  "title": "Whale-QwQ",
+  "summary": "A theme plugin for deepseek harness",
+  "tags": [
+    "dsh-plugin",
+    "javascript",
+    "typescript",
+    "ui-design"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-18T01:58:58Z",
+    "url": "https://github.com/Jisakuna/Whale-QwQ/releases/tag/v0.1.0"
+  },
+  "author": "Jisakuna",
+  "repo": "https://github.com/Jisakuna/Whale-QwQ",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T12:24:47Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Jisakuna/Whale-QwQ",
+    "commands": [
+      "dsh plugin --profile web add <pack>/whale-qwq",
+      "dsh plugin --profile web add <pack>/dsh-custom-bg",
+      "dsh plugin --profile web add <pack>/dsh-maid-whale-pet"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

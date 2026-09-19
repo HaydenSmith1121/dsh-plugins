@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "anthonyyu-verkada/dsh-mcp-client-plus",
+  "slug": "anthonyyu-verkada__dsh-mcp-client-plus",
+  "package": "dsh-mcp-client-plus",
+  "name": "dsh-mcp-client-plus",
+  "title": "dsh-mcp-client-plus",
+  "summary": "DeepSeek Harness MCP client bridge with OAuth 2.1, bounded connect/discovery timeouts, environment-indirected secrets, optional indefinite reconnection, and a mcp_status diagnostic tool",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "mcp"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "anthonyyu-verkada",
+  "repo": "https://github.com/anthonyyu-verkada/dsh-mcp-client-plus",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T20:45:06Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:anthonyyu-verkada/dsh-mcp-client-plus",
+    "commands": [
+      "dsh plugin --profile web add github:anthonyyu-verkada/dsh-mcp-client-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

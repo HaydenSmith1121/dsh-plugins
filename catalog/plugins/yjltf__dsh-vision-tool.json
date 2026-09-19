@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "YJLTF/dsh-vision-tool",
+  "slug": "yjltf__dsh-vision-tool",
+  "package": "dsh-vision-tool",
+  "name": "dsh-vision-tool",
+  "title": "dsh-vision-tool",
+  "summary": "一个 DeepSeek Harness 插件：为纯文本主模型补上识图能力。它把图片理解委托给你配置的一个小参数多模态模型，再把结果以文本形式交还给主模型；当活跃模型自身支持图片输入时，插件完全退避，原生多模态体验不受任何影响。",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "YJLTF",
+  "repo": "https://github.com/YJLTF/dsh-vision-tool",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-18T04:25:30Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:YJLTF/dsh-vision-tool",
+    "commands": [
+      "dsh plugin --profile <profile> add github:YJLTF/dsh-vision-tool"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

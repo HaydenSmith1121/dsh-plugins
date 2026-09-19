@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "neufagents/dsh-healthcheck",
+  "slug": "neufagents__dsh-healthcheck",
+  "package": "dsh-healthcheck",
+  "name": "dsh-healthcheck",
+  "title": "dsh-healthcheck",
+  "summary": "Runtime health check for DeepSeek Harness: session-library scan + crash-tail inspection. Read-only.",
+  "tags": [
+    "deepseek-harness",
+    "developer-tools",
+    "dsh",
+    "dsh-plugin",
+    "healthcheck"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-18T12:10:41Z",
+    "url": "https://github.com/neufagents/dsh-healthcheck/releases/tag/v0.1.1"
+  },
+  "author": "neufagents",
+  "repo": "https://github.com/neufagents/dsh-healthcheck",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T12:10:34Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:neufagents/dsh-healthcheck",
+    "commands": [
+      "dsh plugin --profile web add github:neufagents/dsh-healthcheck",
+      "npm i"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

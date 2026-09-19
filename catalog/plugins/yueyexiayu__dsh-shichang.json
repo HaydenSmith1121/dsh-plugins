@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "yueyexiayu/dsh-shichang",
+  "slug": "yueyexiayu__dsh-shichang",
+  "package": "shichang",
+  "name": "dsh-shichang",
+  "title": "dsh-shichang",
+  "summary": "DeepSeek Harness desktop read-only plugin catalog",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "yueyexiayu",
+  "repo": "https://github.com/yueyexiayu/dsh-shichang",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T05:49:28Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yueyexiayu/dsh-shichang",
+    "commands": [
+      "dsh plugin --profile web add github:yueyexiayu/dsh-shichang"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

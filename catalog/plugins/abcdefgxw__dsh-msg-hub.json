@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-msg-hub",
   "title": "dsh-msg-hub",
-  "summary": "把微信、QQ、飞书接入 DeepSeek Harness，既能收消息也能主动推送，让 AI 助手直接聊进你的 IM 里。",
+  "summary": "dsh IM 渠道桥：微信/QQ/飞书接入 + 主动推送 | IM channel bridge for dsh: WeChat/QQ/Feishu with proactive push",
   "tags": [
     "bot",
     "bridge",
@@ -22,11 +22,7 @@
     "qq",
     "qq-bot",
     "qqbot",
-    "wechat",
-    "IM桥接",
-    "消息通知",
-    "模型适配",
-    "AI 助手"
+    "wechat"
   ],
   "version": "0.1.11",
   "versionSource": "npm",
@@ -36,10 +32,10 @@
   "repo": "https://github.com/AbcdefgXW/dsh-msg-hub",
   "homepage": null,
   "license": "MIT",
-  "stars": 5,
+  "stars": 4,
   "forks": 1,
-  "pushedAt": "2026-09-04T16:40:11Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-18T18:01:05Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -60,8 +56,8 @@
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -69,6 +65,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

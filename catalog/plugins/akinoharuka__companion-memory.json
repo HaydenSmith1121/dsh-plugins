@@ -5,15 +5,11 @@
   "package": "companion-memory-workspace",
   "name": "companion-memory",
   "title": "companion-memory",
-  "summary": "给 AI 伴侣装上长期记忆，该记的记住、该说的才说，让用户画像慢慢长大。",
+  "summary": "Native scoped Riko memory plugin for DeepSeek Harness",
   "tags": [
     "dsh",
     "dsh-plugin",
-    "memory",
-    "AI 助手",
-    "语义检索",
-    "会话管理",
-    "安全审查"
+    "memory"
   ],
   "version": "0.1.6-alpha.2",
   "versionSource": "package.json",
@@ -25,8 +21,8 @@
   "license": null,
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-18T13:40:37Z",
-  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "pushedAt": "2026-09-19T16:27:47Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -38,15 +34,15 @@
     "method": "github",
     "spec": "github:AkinoHaruka/companion-memory",
     "commands": [
-      "dsh plugin --profile web add github:AkinoHaruka/companion-memory"
+      "dsh plugin --profile web add /absolute/path/to/packages/bundle/riko-memory"
     ],
     "url": null,
     "sha256": null,
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -54,6 +50,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

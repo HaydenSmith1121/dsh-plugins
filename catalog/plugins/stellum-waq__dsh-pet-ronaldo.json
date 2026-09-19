@@ -5,7 +5,7 @@
   "package": "dsh-ronaldo-pet",
   "name": "dsh-pet-ronaldo",
   "title": "dsh-pet-ronaldo",
-  "summary": "C罗桌宠插件，在界面右下角陪你干活，随AI状态切换动画，任务完成时SIU庆祝并播放提示音，支持自定义贴图。",
+  "summary": "C罗桌宠 · DeepSeek Harness 桌面宠物插件：葡萄牙 7 号 chibi 吉祥物，随 Agent 状态切换动画，对话完成 SIU 庆祝 + 提示音，支持导入自定义 spritesheet 统一管理",
   "tags": [
     "bundle",
     "cordis",
@@ -17,12 +17,7 @@
     "plugin",
     "ronaldo",
     "spritesheet",
-    "web-ui",
-    "桌宠",
-    "消息通知",
-    "可视化",
-    "前端增强",
-    "插件管理"
+    "web-ui"
   ],
   "version": "1.1.0",
   "versionSource": "github-tag",
@@ -47,9 +42,7 @@
     "method": "github",
     "spec": "github:Stellum-Waq/dsh-pet-ronaldo",
     "commands": [
-      "dsh plugin --profile web add github:Stellum-Waq/dsh-pet-ronaldo",
-      "dsh plugin --profile web remove dsh-ronaldo-pet",
-      "dsh plugin --profile web add D:\\代码\\桌宠\\dsh-ronaldo-pet"
+      "dsh plugin --profile web add github:Stellum-Waq/dsh-pet-ronaldo"
     ],
     "url": null,
     "sha256": null,
@@ -65,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

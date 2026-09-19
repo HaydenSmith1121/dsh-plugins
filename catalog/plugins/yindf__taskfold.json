@@ -41,10 +41,10 @@
   "repo": "https://github.com/yindf/taskfold",
   "homepage": "https://www.npmjs.com/package/dsh-taskfold",
   "license": "MIT",
-  "stars": 5,
+  "stars": 6,
   "forks": 0,
   "pushedAt": "2026-09-18T09:52:08Z",
-  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -56,7 +56,8 @@
     "method": "github",
     "spec": "github:yindf/taskfold",
     "commands": [
-      "dsh plugin --profile <your-profile> add dsh-taskfold"
+      "dsh plugin --profile web add github:yindf/taskfold",
+      "dsh plugin --profile web add \"github:yindf/taskfold"
     ],
     "url": null,
     "sha256": null,
@@ -72,6 +73,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

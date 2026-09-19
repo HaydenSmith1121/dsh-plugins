@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "afterrealism/dsh-conn-dot",
+  "slug": "afterrealism__dsh-conn-dot",
+  "package": "dsh-conn-dot",
+  "name": "dsh-conn-dot",
+  "title": "dsh-conn-dot",
+  "summary": "DSH plugin: green/red connection dot beside the sidebar brand showing WebSocket + liveness-probe health of dsh web",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "status-indicator"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "afterrealism",
+  "repo": "https://github.com/afterrealism/dsh-conn-dot",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-18T02:24:23Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:afterrealism/dsh-conn-dot",
+    "commands": [
+      "dsh plugin --profile web add file:/absolute/path/dsh-conn-dot-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

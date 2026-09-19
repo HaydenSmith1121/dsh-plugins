@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "asxiuxiu/dsh-quick-open",
+  "slug": "asxiuxiu__dsh-quick-open",
+  "package": "dsh-quick-open",
+  "name": "dsh-quick-open",
+  "title": "dsh-quick-open",
+  "summary": "DSH Web GUI plugin: VSCode-style Ctrl+P quick open — indexed workspace file search, sidebar editor open, conversation reference insert",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "asxiuxiu",
+  "repo": "https://github.com/asxiuxiu/dsh-quick-open",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T10:32:38Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:asxiuxiu/dsh-quick-open",
+    "commands": [
+      "dsh plugin --profile web add github:asxiuxiu/dsh-quick-open",
+      "dsh plugin --profile web add dsh-quick-open",
+      "dsh plugin --profile web add link:D:/dev/dsh-quick-open"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

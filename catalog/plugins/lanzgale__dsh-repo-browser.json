@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "Lanzgale/dsh-repo-browser",
+  "slug": "lanzgale__dsh-repo-browser",
+  "package": null,
+  "name": "dsh-repo-browser",
+  "title": "dsh-repo-browser",
+  "summary": "Repository Browser plugin for DeepSeek Harness — right-side GitHub repo list (stars / forks / topics / last push) with local grouping folders and quick actions (move to group / make private / archive); auto-hides on the new-session page",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "Lanzgale",
+  "repo": "https://github.com/Lanzgale/dsh-repo-browser",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T10:17:30Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-repo-browser",
+    "commands": [
+      "dsh plugin --profile web add dsh-repo-browser"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

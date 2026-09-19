@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "jackchen13755/dsh-source-control",
+  "slug": "jackchen13755__dsh-source-control",
+  "package": "dsh-source-control",
+  "name": "dsh-source-control",
+  "title": "dsh-source-control",
+  "summary": "VS Code 式源代码管理面板（DSH 原生右侧栏标签）：改动/暂存/提交/diff/分支切换与合并/抓取拉取推送/冲突清单/Git worktree，适配 DSH 0.1.6",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "git",
+    "sidebar",
+    "source-control",
+    "worktree"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "jackchen13755",
+  "repo": "https://github.com/jackchen13755/dsh-source-control",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T05:19:39Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jackchen13755/dsh-source-control",
+    "commands": [
+      "dsh plugin --profile web add github:jackchen13755/dsh-source-control",
+      "dsh plugin --profile web add link:/path/to/dsh-source-control"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

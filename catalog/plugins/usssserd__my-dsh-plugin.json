@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "usssserd/my-dsh-plugin",
+  "slug": "usssserd__my-dsh-plugin",
+  "package": "my-dsh-plugin",
+  "name": "my-dsh-plugin",
+  "title": "my-dsh-plugin",
+  "summary": "DSH插件test",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "usssserd",
+  "repo": "https://github.com/usssserd/my-dsh-plugin",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T07:42:28Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:usssserd/my-dsh-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:usssserd/my-dsh-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

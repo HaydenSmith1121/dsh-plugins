@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "wzn16/dsh-fs-allowlist",
+  "slug": "wzn16__dsh-fs-allowlist",
+  "package": "dsh-fs-allowlist",
+  "name": "dsh-fs-allowlist",
+  "title": "dsh-fs-allowlist",
+  "summary": "",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-18T06:27:37Z",
+    "url": "https://github.com/wzn16/dsh-fs-allowlist/releases/tag/v0.3.0"
+  },
+  "author": "wzn16",
+  "repo": "https://github.com/wzn16/dsh-fs-allowlist",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T07:10:44Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wzn16/dsh-fs-allowlist",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-fs-allowlist",
+      "dsh plugin --profile web add \"github:wzn16/dsh-fs-allowlist"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

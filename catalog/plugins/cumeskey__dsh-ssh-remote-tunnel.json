@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "Cumeskey/dsh-ssh-remote-tunnel",
+  "slug": "cumeskey__dsh-ssh-remote-tunnel",
+  "package": null,
+  "name": "dsh-ssh-remote-tunnel",
+  "title": "dsh-ssh-remote-tunnel",
+  "summary": "",
+  "tags": [
+    "dsh-plugin",
+    "ssh-tunnel",
+    "vllm"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "Cumeskey",
+  "repo": "https://github.com/Cumeskey/dsh-ssh-remote-tunnel",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T06:47:22Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-ssh-remote-tunnel",
+    "commands": [
+      "dsh plugin --profile web add dsh-ssh-remote-tunnel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

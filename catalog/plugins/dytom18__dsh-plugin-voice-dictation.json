@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "dytom18/dsh-plugin-voice-dictation",
+  "slug": "dytom18__dsh-plugin-voice-dictation",
+  "package": "dsh-plugin-voice-dictation",
+  "name": "dsh-plugin-voice-dictation",
+  "title": "dsh-plugin-voice-dictation",
+  "summary": "说话即任务：给 DSH Web GUI 加语音听写，说完自动发送给 Agent（纯前端，无需 API Key）",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dictation",
+    "dsh",
+    "dsh-plugin",
+    "speech-to-text",
+    "voice-input"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "dytom18",
+  "repo": "https://github.com/dytom18/dsh-plugin-voice-dictation",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T12:22:15Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dytom18/dsh-plugin-voice-dictation",
+    "commands": [
+      "dsh plugin --profile web add github:dytom18/dsh-plugin-voice-dictation",
+      "git clone https://github.com/dytom18/dsh-plugin-voice-dictation.git",
+      "dsh plugin --profile web add ./dsh-plugin-voice-dictation"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

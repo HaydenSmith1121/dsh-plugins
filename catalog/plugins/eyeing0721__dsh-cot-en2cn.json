@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "Eyeing0721/dsh-cot-en2cn",
+  "slug": "eyeing0721__dsh-cot-en2cn",
+  "package": "dsh-cot-en2cn",
+  "name": "dsh-cot-en2cn",
+  "title": "dsh-cot-en2cn",
+  "summary": "DSH Web 插件：展开英文思考块即时呈现中文译文，不改动任何会话原文。",
+  "tags": [
+    "chain-of-thought",
+    "chinese",
+    "cot",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "reasoning",
+    "translation",
+    "web-ui"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-18T16:34:27Z",
+    "url": "https://github.com/Eyeing0721/dsh-cot-en2cn/releases/tag/v0.1.0"
+  },
+  "author": "Eyeing0721",
+  "repo": "https://github.com/Eyeing0721/dsh-cot-en2cn",
+  "homepage": "https://github.com/Eyeing0721/dsh-cot-en2cn",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-18T16:34:20Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Eyeing0721/dsh-cot-en2cn",
+    "commands": [
+      "dsh plugin --profile web add github:Eyeing0721/dsh-cot-en2cn"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

@@ -5,19 +5,14 @@
   "package": "dsh-reading-pad",
   "name": "dsh-reading-pad",
   "title": "dsh-reading-pad",
-  "summary": "把模型排好版的 Markdown 变成沉浸式只读阅读面板，护眼主题、进度条、章节浏览一应俱全。",
+  "summary": "Immersive read-only reading panel for DeepSeek Harness: model delivers pre-formatted Markdown via reading_pad_send; 3 low-blue-light themes, 30em measure, progress bar, chapter browsing. better-sidebar tab plugin. Apache-2.0.",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-better-sidebar",
     "dsh-plugin",
     "reading",
-    "reading-pad",
-    "内容创作",
-    "界面美化",
-    "主题",
-    "可视化",
-    "效率提升"
+    "reading-pad"
   ],
   "version": "0.1.0",
   "versionSource": "github-release",
@@ -33,8 +28,8 @@
   "license": "Apache-2.0",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-18T15:42:58Z",
-  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "pushedAt": "2026-09-19T15:03:42Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -43,9 +38,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:shengyvself/dsh-reading-pad",
+    "method": "npm",
+    "spec": "dsh-reading-pad",
     "commands": [
+      "dsh plugin --profile web add dsh-reading-pad",
       "dsh plugin --profile web add github:shengyvself/dsh-reading-pad"
     ],
     "url": null,
@@ -62,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

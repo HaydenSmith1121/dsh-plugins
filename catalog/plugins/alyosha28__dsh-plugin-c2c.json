@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "Alyosha28/dsh-plugin-c2c",
+  "slug": "alyosha28__dsh-plugin-c2c",
+  "package": "dsh-plugin-c2c",
+  "name": "dsh-plugin-c2c",
+  "title": "dsh-plugin-c2c",
+  "summary": "Cache-to-Cache (C2C) for DeepSeek Harness: two local LLMs that share a KV-cache instead of exchanging text, exposed as c2c_* agent tools",
+  "tags": [
+    "cache-to-cache",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "kv-cache"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "Alyosha28",
+  "repo": "https://github.com/Alyosha28/dsh-plugin-c2c",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T18:11:07Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Alyosha28/dsh-plugin-c2c",
+    "commands": [
+      "dsh plugin --profile web add Alyosha28/dsh-plugin-c2c"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

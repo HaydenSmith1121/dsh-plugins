@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "elmersky/dsh-plugin-trellis-workflow",
+  "slug": "elmersky__dsh-plugin-trellis-workflow",
+  "package": "dsh-plugin-trellis-workflow",
+  "name": "dsh-plugin-trellis-workflow",
+  "title": "dsh-plugin-trellis-workflow",
+  "summary": "Trellis workflow enforcement for the DeepSeek Harness: per-turn workflow state injection and a trellis-start entry gate, replacing the session-start and user-prompt hooks dsh does not ship.",
+  "tags": [
+    "cordis",
+    "cordis-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "trellis",
+    "workflow"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-18T10:31:10Z",
+    "url": "https://github.com/elmersky/dsh-plugin-trellis-workflow/releases/tag/v0.1.2"
+  },
+  "author": "elmersky",
+  "repo": "https://github.com/elmersky/dsh-plugin-trellis-workflow",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T10:31:10Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:elmersky/dsh-plugin-trellis-workflow",
+    "commands": [
+      "dsh plugin --profile <profile> add dsh-plugin-trellis-workflow"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

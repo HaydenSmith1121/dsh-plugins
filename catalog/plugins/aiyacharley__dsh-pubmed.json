@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "aiyacharley/dsh-pubmed",
+  "slug": "aiyacharley__dsh-pubmed",
+  "package": null,
+  "name": "dsh-pubmed",
+  "title": "dsh-pubmed",
+  "summary": "DSH plugin for DeepSeek Harness: 25 model tools spanning PubMed, Europe PMC, PubTator3 & Semantic Scholar — entity-aware search, cross-source unified search, metadata, full text, citations, MeSH & ID tools, citation counts & recommendations — plus a personal literature knowledge graph with an AI-powered PubTator3 concept layer.",
+  "tags": [
+    "bioinformatics",
+    "dsh-plugin",
+    "knowledge-graph",
+    "literature-search",
+    "pubmed",
+    "pubtator3",
+    "text-mining"
+  ],
+  "version": "0.4.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v0.4.3",
+    "publishedAt": "2026-09-18T11:06:58Z",
+    "url": "https://github.com/aiyacharley/dsh-pubmed/releases/tag/v0.4.3"
+  },
+  "author": "aiyacharley",
+  "repo": "https://github.com/aiyacharley/dsh-pubmed",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-18T11:06:25Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-pubmed@latest",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh",
+      "dsh plugin --profile web add dsh-pubmed@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

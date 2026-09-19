@@ -5,16 +5,12 @@
   "package": null,
   "name": "dsh-codex-port",
   "title": "dsh-codex-port",
-  "summary": "一键把 Codex 官方插件全家桶（186+ 插件、583+ 技能）批量移植成 DSH 技能，自动转换格式、幂等跳过，实测 577 个零失败。",
+  "summary": "DSH 技能移植插件：把 Codex 官方技能一键移植为 DSH 技能，frontmatter 自动转换、名称清洗、幂等跳过。",
   "tags": [
     "codex",
     "deepseek-harness",
     "dsh-plugin",
-    "skills",
-    "技能移植",
-    "Codex兼容",
-    "批量导入",
-    "格式转换"
+    "skills"
   ],
   "version": "0.2.2",
   "versionSource": "npm",
@@ -24,10 +20,10 @@
   "repo": "https://github.com/STARDUSTLC666/dsh-codex-port",
   "homepage": null,
   "license": "MIT",
-  "stars": 8,
+  "stars": 9,
   "forks": 0,
-  "pushedAt": "2026-09-12T10:14:22Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-18T16:21:54Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -55,6 +51,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

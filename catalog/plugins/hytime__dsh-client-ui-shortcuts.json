@@ -5,18 +5,14 @@
   "package": null,
   "name": "dsh-client-ui-shortcuts",
   "title": "dsh-client-ui-shortcuts",
-  "summary": "为 DeepSeek Harness 网页客户端提供按配置文件区分的键盘快捷键，提升操作效率。",
+  "summary": "Profile-aware keyboard shortcuts for the DeepSeek Harness Web Client",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "keyboard-shortcuts",
     "react",
-    "typescript",
-    "效率提升",
-    "会话管理",
-    "零配置",
-    "工作流增强"
+    "typescript"
   ],
   "version": "0.1.22",
   "versionSource": "github-release",
@@ -43,9 +39,9 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "@hytime/dsh-client-ui-shortcuts@0.1.21",
+    "spec": "@hytime/dsh-client-ui-shortcuts@0.1.22",
     "commands": [
-      "dsh plugin --profile web add @hytime/dsh-client-ui-shortcuts@0.1.21",
+      "dsh plugin --profile web add @hytime/dsh-client-ui-shortcuts@0.1.22",
       "dsh plugin --profile web add github:hytime/dsh-client-ui-shortcuts"
     ],
     "url": null,
@@ -62,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

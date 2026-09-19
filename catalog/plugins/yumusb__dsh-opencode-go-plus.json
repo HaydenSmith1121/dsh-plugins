@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "yumusb/dsh-opencode-go-plus",
+  "slug": "yumusb__dsh-opencode-go-plus",
+  "package": "dsh-opencode-go-plus",
+  "name": "dsh-opencode-go-plus",
+  "title": "dsh-opencode-go-plus",
+  "summary": "",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "opencode",
+    "opencode-go"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "yumusb",
+  "repo": "https://github.com/yumusb/dsh-opencode-go-plus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T07:59:25Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yumusb/dsh-opencode-go-plus",
+    "commands": [
+      "dsh plugin --profile web add github:yumusb/dsh-opencode-go-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

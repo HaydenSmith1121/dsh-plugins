@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "rebornace/dsh-tracescope",
+  "slug": "rebornace__dsh-tracescope",
+  "package": null,
+  "name": "dsh-tracescope",
+  "title": "dsh-tracescope",
+  "summary": "基于 Git 代码差异智能缩减手工测试范围，支持 Web / 移动端操作录制与崩溃日志采集，依托 DSH AI 自动生成可复现缺陷流程，实现变更驱动的手工测试闭环提效插件。A DSH native test assistant plugin. It intelligently narrows manual test scope via Git diff, records web & mobile operation tracks and crash logs, and generates reproducible bug steps through AI analysis to close manual testing workflow efficiently.",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "mcp",
+    "testing",
+    "tracescope"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "rebornace",
+  "repo": "https://github.com/rebornace/dsh-tracescope",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-18T14:26:23Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@rebornace/dsh-tracescope",
+    "commands": [
+      "dsh plugin --profile web add @rebornace/dsh-tracescope",
+      "dsh plugin --profile desktop add @rebornace/dsh-tracescope"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

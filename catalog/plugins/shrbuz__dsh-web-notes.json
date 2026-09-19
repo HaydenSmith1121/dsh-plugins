@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "Shrbuz/dsh-web-notes",
+  "slug": "shrbuz__dsh-web-notes",
+  "package": null,
+  "name": "dsh-web-notes",
+  "title": "dsh-web-notes",
+  "summary": "Floating notes for the dsh web GUI: keep commands, credentials and snippets at hand, insert any note into the composer, save any selection as a note",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "notebook",
+    "notes"
+  ],
+  "version": "0.7.8",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "Shrbuz",
+  "repo": "https://github.com/Shrbuz/dsh-web-notes",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-09-18T13:03:45Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-web-notes",
+    "commands": [
+      "dsh plugin --profile web add dsh-web-notes",
+      "dsh plugin --profile web add dsh-web-notes --registry https://registry.npmjs.org/",
+      "dsh plugin --profile web add link:/path/to/dsh-web-notes"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "VDERR/echocat-skill-panel-3.0",
+  "slug": "vderr__echocat-skill-panel-3.0",
+  "package": "echocat-skill-panel-3.0",
+  "name": "echocat-skill-panel-3.0",
+  "title": "echocat-skill-panel-3.0",
+  "summary": "DSH 技能调用审计 + 应用内 skill 管理器",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin"
+  ],
+  "version": "3.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v3.0.0",
+    "publishedAt": "2026-09-18T00:20:14Z",
+    "url": "https://github.com/VDERR/echocat-skill-panel-3.0/releases/tag/v3.0.0"
+  },
+  "author": "VDERR",
+  "repo": "https://github.com/VDERR/echocat-skill-panel-3.0",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 190,
+  "forks": 6,
+  "pushedAt": "2026-09-18T01:45:33Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:VDERR/echocat-skill-panel-3.0",
+    "commands": [
+      "dsh plugin --profile web add github:VDERR/echocat-skill-panel-3.0"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

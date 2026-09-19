@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-identity-ops",
+  "slug": "jonah791__dsh-identity-ops",
+  "package": "dsh-identity-ops",
+  "name": "dsh-identity-ops",
+  "title": "dsh-identity-ops",
+  "summary": "数字身份运维工具：邮箱（列/读/取码/取链）+ 站点知识注册表（可成长——新站点是加记录，不是加脚本）。纯 HTTP 经 Clash 显式代理，fail-closed。",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-identity-ops",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T12:49:58Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-identity-ops",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-identity-ops"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

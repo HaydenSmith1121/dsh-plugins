@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "lanqi677/dsh-learning-mode",
+  "slug": "lanqi677__dsh-learning-mode",
+  "package": null,
+  "name": "dsh-learning-mode",
+  "title": "dsh-learning-mode",
+  "summary": "AI 维护的、可无限下钻的学习树 + 自动摘要 + 复习视图（DSH / DeepSeek Harness 插件）｜ An AI-maintained learning tree for DSH: auto summaries, review view, never lose your place while studying.",
+  "tags": [
+    "agent-plugin",
+    "ai-agents",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "i18n",
+    "javascript",
+    "knowledge-tree",
+    "learning",
+    "learning-tree"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-18T12:42:52Z",
+    "url": "https://github.com/lanqi677/dsh-learning-mode/releases/tag/v0.3.0"
+  },
+  "author": "lanqi677",
+  "repo": "https://github.com/lanqi677/dsh-learning-mode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-18T12:42:52Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lanqi677/dsh-learning-mode",
+    "commands": [
+      "dsh plugin --profile web add github:lanqi677/dsh-learning-mode"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "jackchen13755/dsh-file-tree",
+  "slug": "jackchen13755__dsh-file-tree",
+  "package": "dsh-file-tree",
+  "name": "dsh-file-tree",
+  "title": "dsh-file-tree",
+  "summary": "DSH 原生右侧栏文件面板：工作区文件树 + 官方预览（着色）+ 一键 @文件 引用到输入框，适配 DSH 0.1.6",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "file-tree",
+    "files",
+    "preview",
+    "sidebar",
+    "syntax-highlighting"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "jackchen13755",
+  "repo": "https://github.com/jackchen13755/dsh-file-tree",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T08:03:03Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jackchen13755/dsh-file-tree",
+    "commands": [
+      "dsh plugin --profile web add github:jackchen13755/dsh-file-tree",
+      "dsh plugin --profile web add link:/path/to/dsh-file-tree"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

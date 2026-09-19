@@ -5,17 +5,13 @@
   "package": null,
   "name": "dsh-slack",
   "title": "dsh-slack",
-  "summary": "让 DeepSeek Harness 智能体直接接入 Slack，双向收发消息、查看频道、回复线程，无需公网回调。",
+  "summary": "DSH Slack 插件：通知与桥接，Socket Mode 双向消息（收件箱 + 线程回复）。",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
     "notification",
     "slack",
-    "socket-mode",
-    "多智能体协作",
-    "会话管理",
-    "零配置",
-    "效率提升"
+    "socket-mode"
   ],
   "version": "0.3.1",
   "versionSource": "npm",
@@ -27,8 +23,8 @@
   "license": "MIT",
   "stars": 3,
   "forks": 0,
-  "pushedAt": "2026-09-12T10:15:44Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-18T16:24:24Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -56,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

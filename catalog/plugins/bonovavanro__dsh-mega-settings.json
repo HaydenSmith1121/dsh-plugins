@@ -5,14 +5,10 @@
   "package": null,
   "name": "dsh-mega-settings",
   "title": "dsh-mega-settings",
-  "summary": "把散落插件的设置入口统一收进一处，按你的习惯分组管理，告别到处翻设置。",
+  "summary": "dsh设置面板增强、mega 系列插件的统一设置收纳宿主、提供多项dsh优化设置",
   "tags": [
     "dsh-plugin",
-    "dsh-plugins",
-    "设置面板",
-    "插件管理",
-    "效率提升",
-    "工作区管理"
+    "dsh-plugins"
   ],
   "version": "0.1.1",
   "versionSource": "github-tag",
@@ -35,11 +31,11 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "dsh-mega-settings@0.1.5-rc.2-update.1",
+    "spec": "dsh-mega-settings@0.1.5-rc.2-update.2",
     "commands": [
-      "dsh plugin --profile web add dsh-mega-settings@0.1.5-rc.2-update.1",
+      "dsh plugin --profile web add dsh-mega-settings@0.1.5-rc.2-update.2",
       "dsh plugin --profile web add github:BonovaVanro/dsh-mega-settings",
-      "dsh plugin --profile web add dsh-mega-settings-0.1.5-rc.2-update.1.tgz"
+      "dsh plugin --profile web add dsh-mega-settings-0.1.5-rc.2-update.2.tgz"
     ],
     "url": null,
     "sha256": null,
@@ -55,6 +51,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

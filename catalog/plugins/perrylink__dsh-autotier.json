@@ -22,13 +22,9 @@
     "效率提升"
   ],
   "version": "0.2.3",
-  "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
-  "latestRelease": {
-    "tag": "v0.2.3",
-    "publishedAt": "2026-09-12T02:23:12Z",
-    "url": "https://github.com/PerryLink/dsh-autotier/releases/tag/v0.2.3"
-  },
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
   "author": "PerryLink",
   "repo": "https://github.com/PerryLink/dsh-autotier",
   "homepage": "https://www.npmjs.com/package/dsh-autotier",
@@ -45,9 +41,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:PerryLink/dsh-autotier",
+    "method": "npm",
+    "spec": "dsh-autotier",
     "commands": [
+      "dsh plugin --profile web add dsh-autotier",
       "npm i -g dsh1024"
     ],
     "url": null,
@@ -66,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

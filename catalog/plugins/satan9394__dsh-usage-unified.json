@@ -5,7 +5,7 @@
   "package": "dsh-usage-unified",
   "name": "dsh-usage-unified",
   "title": "dsh-usage-unified",
-  "summary": "统计全机 DSH 的 token 用量，看趋势、按模型拆分、查调用明细，还能导出 CSV/JSON。",
+  "summary": "Machine-wide DeepSeek Harness (dsh) usage statistics: trends, a custom date range that governs every panel, one merged model panel (share + four-bucket split + calls + cost), a session ranking with call drill-down, CSV/JSON export and an optional local cost estimate. 全机 DSH 用量统计：趋势 / 自定义区间（贯穿所有面板）/ 合并模型面板 / 会话排行下钻 / 调用明细 / 导出 / 可选成本估算。",
   "tags": [
     "analytics",
     "dashboard",
@@ -16,19 +16,15 @@
     "dsh-plugin",
     "token-usage",
     "typescript",
-    "usage-statistics",
-    "状态监控",
-    "可视化",
-    "成本控制",
-    "报告生成"
+    "usage-statistics"
   ],
-  "version": "0.4.2",
+  "version": "0.5.0",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
   "latestRelease": {
-    "tag": "v0.4.2",
-    "publishedAt": "2026-09-18T17:58:00Z",
-    "url": "https://github.com/satan9394/dsh-usage-unified/releases/tag/v0.4.2"
+    "tag": "v0.5.0",
+    "publishedAt": "2026-09-19T08:28:16Z",
+    "url": "https://github.com/satan9394/dsh-usage-unified/releases/tag/v0.5.0"
   },
   "author": "satan9394",
   "repo": "https://github.com/satan9394/dsh-usage-unified",
@@ -36,8 +32,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-18T17:58:00Z",
-  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "pushedAt": "2026-09-19T11:46:39Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -65,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

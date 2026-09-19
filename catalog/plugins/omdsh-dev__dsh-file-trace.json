@@ -40,10 +40,10 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "@dsh-external/dsh-file-trace@github:lhh010/dsh-file-trace",
+    "spec": "@dsh-external/dsh-file-trace@github:omdsh-dev/dsh-file-trace",
     "commands": [
-      "dsh plugin --profile web add '@dsh-external/dsh-file-trace@github:lhh010/dsh-file-trace",
-      "git clone https://github.com/lhh010/dsh-file-trace.git",
+      "dsh plugin --profile web add '@dsh-external/dsh-file-trace@github:omdsh-dev/dsh-file-trace",
+      "git clone https://github.com/omdsh-dev/dsh-file-trace.git",
       "dsh plugin --profile web add link:/path/to/dsh-file-trace"
     ],
     "url": null,
@@ -60,6 +60,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

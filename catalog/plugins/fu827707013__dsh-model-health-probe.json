@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "fu827707013/dsh-model-health-probe",
+  "slug": "fu827707013__dsh-model-health-probe",
+  "package": "dsh-model-health-probe",
+  "name": "dsh-model-health-probe",
+  "title": "dsh-model-health-probe",
+  "summary": "DSH 模型健康检查：会话视图页签，选定供应商/协议/模型/路由后手动发真实裸 HTTP 请求，一屏看耗时、TTFT、状态、token 与三层诊断链。",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.3.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v0.3.4",
+    "publishedAt": "2026-09-18T09:04:22Z",
+    "url": "https://github.com/fu827707013/dsh-model-health-probe/releases/tag/v0.3.4"
+  },
+  "author": "fu827707013",
+  "repo": "https://github.com/fu827707013/dsh-model-health-probe",
+  "homepage": "https://www.npmjs.com/package/dsh-model-health-probe",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T09:03:40Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:fu827707013/dsh-model-health-probe",
+    "commands": [
+      "dsh plugin --profile web add github:fu827707013/dsh-model-health-probe"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

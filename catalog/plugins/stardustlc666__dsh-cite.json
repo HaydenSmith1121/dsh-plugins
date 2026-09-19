@@ -5,18 +5,14 @@
   "package": null,
   "name": "dsh-cite",
   "title": "dsh-cite",
-  "summary": "为 DeepSeek Harness 智能体提供参考文献工具，支持 DOI 查询、题录检索、多格式引用格式化与批量校验。",
+  "summary": "DSH 参考文献插件：Crossref 元数据查询（DOI 精确解析）与 GB/T 7714 / APA / MLA / Chicago 格式化，含去重校验与自检。",
   "tags": [
     "bibtex",
     "citation",
     "crossref",
     "deepseek-harness",
     "doi",
-    "dsh-plugin",
-    "AI 助手",
-    "效率提升",
-    "模型配置",
-    "命令行工具"
+    "dsh-plugin"
   ],
   "version": "0.3.3",
   "versionSource": "npm",
@@ -26,10 +22,10 @@
   "repo": "https://github.com/STARDUSTLC666/dsh-cite",
   "homepage": null,
   "license": "MIT",
-  "stars": 3,
+  "stars": 2,
   "forks": 0,
-  "pushedAt": "2026-09-12T10:27:43Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-18T16:21:26Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -57,6 +53,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }

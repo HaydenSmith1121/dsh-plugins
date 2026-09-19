@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "tianyaojiudi-prog/dsh-djy-xttsc",
+  "slug": "tianyaojiudi-prog__dsh-djy-xttsc",
+  "package": "dsh-djy-xttsc",
+  "name": "dsh-djy-xttsc",
+  "title": "dsh-djy-xttsc",
+  "summary": "DSH(DeepSeek Harness) 插件：把一段可在设置页随时改写的文字，作为全局系统提示词段注入到所有会话，含子代理与工作流内部子代理；文本与开关即时生效，无需重启。",
+  "tags": [
+    "agent",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "prompt-injection",
+    "system-prompt"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "tianyaojiudi-prog",
+  "repo": "https://github.com/tianyaojiudi-prog/dsh-djy-xttsc",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-18T02:52:43Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:tianyaojiudi-prog/dsh-djy-xttsc",
+    "commands": [
+      "dsh plugin --profile web add github:tianyaojiudi-prog/dsh-djy-xttsc"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "zhouqj001/dsh-cic",
+  "slug": "zhouqj001__dsh-cic",
+  "package": "dsh-cic",
+  "name": "dsh-cic",
+  "title": "dsh-cic",
+  "summary": "dsh 代码审查插件：AI 审查 + 业务链路显形——不只查代码质量，更验证业务逻辑跑得对不对。50+ 语言调用图、零 token 确定性工程层、Web 三页签审查面板。",
+  "tags": [],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "zhouqj001",
+  "repo": "https://github.com/zhouqj001/dsh-cic",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T11:22:11Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhouqj001/dsh-cic",
+    "commands": [
+      "git clone <repo-url> dsh-cic",
+      "dsh plugin --profile web add link:."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

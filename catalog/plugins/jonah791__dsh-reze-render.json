@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-reze-render",
+  "slug": "jonah791__dsh-reze-render",
+  "package": null,
+  "name": "dsh-reze-render",
+  "title": "dsh-reze-render",
+  "summary": "用 reze-engine 离线出 MMD 视频的 DSH 插件：reze_status / reze_preview / reze_render（无头 WebGPU 逐帧渲染 + ffmpeg 编码 + 判据现算）",
+  "tags": [
+    "dsh-plugin",
+    "mmd",
+    "reze-engine",
+    "webgpu"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-reze-render",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T02:32:27Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-reze-render",
+    "commands": [
+      "dsh plugin --profile web add link:<path>/dsh-reze-render",
+      "npm i reze-engine@0.56.11 esbuild && echo 'export * from \"reze-engine\"' > entry.js"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

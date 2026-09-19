@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "yukitakasama/dsh-context-lens",
+  "slug": "yukitakasama__dsh-context-lens",
+  "package": null,
+  "name": "dsh-context-lens",
+  "title": "dsh-context-lens",
+  "summary": "Single-session context anatomy for the DSH Web GUI: attribution, headroom planning, and a context x trajectory timeline — not another usage ledger.",
+  "tags": [
+    "context-window",
+    "dsh",
+    "dsh-plugin"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-18T11:30:33Z",
+    "url": "https://github.com/yukitakasama/dsh-context-lens/releases/tag/v0.1.1"
+  },
+  "author": "yukitakasama",
+  "repo": "https://github.com/yukitakasama/dsh-context-lens",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-19T08:40:21Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-context-lens",
+    "commands": [
+      "dsh plugin --profile web add dsh-context-lens",
+      "dsh plugin --profile web add ./dsh-context-lens-0.1.0.tgz",
+      "dsh plugin --profile web add github:yukitakasama/dsh-context-lens"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

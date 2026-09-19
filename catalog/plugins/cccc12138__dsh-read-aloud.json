@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "cccc12138/dsh-read-aloud",
+  "slug": "cccc12138__dsh-read-aloud",
+  "package": null,
+  "name": "dsh-read-aloud",
+  "title": "dsh-read-aloud",
+  "summary": "A speaker button beside the Like button: read any DeepSeek Harness reply aloud with the browser's own speech engine. · 在点赞旁加一个小喇叭，朗读 DSH 的回复。",
+  "tags": [
+    "accessibility",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "tts"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "cccc12138",
+  "repo": "https://github.com/cccc12138/dsh-read-aloud",
+  "homepage": "https://github.com/cccc12138/dsh-read-aloud",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T06:55:01Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-read-aloud",
+    "commands": [
+      "dsh plugin --profile web add dsh-read-aloud"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

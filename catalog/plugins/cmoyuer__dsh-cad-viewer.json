@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "CMoyuer/dsh-cad-viewer",
+  "slug": "cmoyuer__dsh-cad-viewer",
+  "package": null,
+  "name": "dsh-cad-viewer",
+  "title": "dsh-cad-viewer",
+  "summary": "用于Deepseek Harness的CAD设计插件",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "CMoyuer",
+  "repo": "https://github.com/CMoyuer/dsh-cad-viewer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T03:19:02Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-cad-viewer",
+    "commands": [
+      "dsh plugin --profile web add dsh-cad-viewer",
+      "dsh plugin --profile web add github:CMoyuer/dsh-cad-viewer",
+      "git clone https://github.com/CMoyuer/dsh-cad-viewer.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

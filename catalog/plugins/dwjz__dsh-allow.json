@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "DWJZ/dsh-allow",
+  "slug": "dwjz__dsh-allow",
+  "package": "dsh-allow",
+  "name": "dsh-allow",
+  "title": "dsh-allow",
+  "summary": "DeepSeek Harness 权限记忆插件：把某类命令加进允许列表，之后同类命令不再询问。 / Remember sandbox-escalation approvals so the same command prefix stops asking.",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "latestRelease": null,
+  "author": "DWJZ",
+  "repo": "https://github.com/DWJZ/dsh-allow",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-18T23:38:33Z",
+  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:DWJZ/dsh-allow",
+    "commands": [
+      "dsh plugin --profile web add github:DWJZ/dsh-allow"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-19T20:12:00.176Z",
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+  }
+}

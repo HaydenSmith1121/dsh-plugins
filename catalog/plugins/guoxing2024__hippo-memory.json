@@ -5,7 +5,7 @@
   "package": "hippo-memory-core",
   "name": "hippo-memory",
   "title": "hippo-memory",
-  "summary": "给AI智能体装上类海马体的长期记忆，长对话不再忘事，本地SQLite存储，零外部依赖。",
+  "summary": "Hippocampus-inspired long-term memory for AI agents: engine (hippo-memory-core) + DSH plugin (dsh-hippo-memory). SQLite-local, zero external services.",
   "tags": [
     "ai-agent",
     "anti-hallucination",
@@ -18,10 +18,7 @@
     "memory",
     "plugin",
     "rag",
-    "sqlite",
-    "会话管理",
-    "语义检索",
-    "AI 助手"
+    "sqlite"
   ],
   "version": "0.2.2",
   "versionSource": "github-release",
@@ -50,14 +47,14 @@
     "method": "github",
     "spec": "github:guoxing2024/hippo-memory",
     "commands": [
-      "npm install"
+      "dsh plugin --profile web add github:guoxing2024/hippo-memory"
     ],
     "url": null,
     "sha256": null,
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
+    "needsConfig": true,
     "usageNeedsConfig": false,
     "risky": false,
     "riskyReasons": []
@@ -66,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
   }
 }
