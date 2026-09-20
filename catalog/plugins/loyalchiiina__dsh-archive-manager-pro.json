@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "loyalchiiina/dsh-archive-manager-pro",
+  "slug": "loyalchiiina__dsh-archive-manager-pro",
+  "package": "dsh-archive-manager-pro",
+  "name": "dsh-archive-manager-pro",
+  "title": "dsh-archive-manager-pro",
+  "summary": "Enhanced DSH archive manager: favorites filter & prune, one-click delete unfavorited, pinning, time & turns sorting, idle-days one-click archive (progress & undo), fast bulk delete with progress & fallback, copy ID/path, reworked layout. Based on MichengAI v0.1.40 (Apache-2.0). 归档会话增强版：收藏/置顶/时间·轮次排序/闲置一键归档/快速批量删除/复制 ID·路径。",
+  "tags": [
+    "archive-manager",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin-patch"
+  ],
+  "version": "0.1.40",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "loyalchiiina",
+  "repo": "https://github.com/loyalchiiina/dsh-archive-manager-pro",
+  "homepage": "https://github.com/loyalchiiina/dsh-archive-manager-favorites-patch",
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T17:40:01Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:loyalchiiina/dsh-archive-manager-pro",
+    "commands": [
+      "dsh plugin --profile web add github:loyalchiiina/dsh-archive-manager-pro"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

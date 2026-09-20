@@ -5,14 +5,9 @@
   "package": "dsh-embedded-codex",
   "name": "dsh-embedded-codex",
   "title": "dsh-embedded-codex",
-  "summary": "在 DeepSeek Harness 里直接跑 Codex 官方 Agent，让会话拥有代码执行和自动操作能力。",
+  "summary": "",
   "tags": [
-    "dsh-plugin",
-    "多Agent协作",
-    "工具集成",
-    "自动化",
-    "模型配置",
-    "插件管理"
+    "dsh-plugin"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -45,7 +40,7 @@
     "tarball": null,
     "dshVersion": null,
     "needsConfig": true,
-    "usageNeedsConfig": false,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -53,6 +48,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "loopx-project/loopx",
+  "slug": "loopx-project__loopx",
+  "package": "loopx-repository",
+  "name": "loopx",
+  "title": "loopx",
+  "summary": "Long-horizon agent control plane for durable, governed work across Codex, Claude Code, and other harnesses.",
+  "tags": [
+    "agent-control-plane",
+    "agent-harness",
+    "agent-ops",
+    "ai-agents",
+    "codex",
+    "dsh-plugin",
+    "long-horizon",
+    "long-horizon-agents",
+    "loop-engineering",
+    "loopx",
+    "workflow-automation"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": {
+    "tag": "v1.1.0",
+    "publishedAt": "2026-09-19T17:06:32Z",
+    "url": "https://github.com/loopx-project/loopx/releases/tag/v1.1.0"
+  },
+  "author": "loopx-project",
+  "repo": "https://github.com/loopx-project/loopx",
+  "homepage": "https://loopx-project.github.io/loopx/",
+  "license": "Apache-2.0",
+  "stars": 5906,
+  "forks": 561,
+  "pushedAt": "2026-09-20T20:12:57Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:loopx-project/loopx",
+    "commands": [
+      "dsh plugin --profile web add github:loopx-project/loopx"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

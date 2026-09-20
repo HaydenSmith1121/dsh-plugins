@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "ChaoJie0/dsh-tm-guard",
+  "slug": "chaojie0__dsh-tm-guard",
+  "package": null,
+  "name": "dsh-tm-guard",
+  "title": "dsh-tm-guard",
+  "summary": "Zero-intervention permission gate for DSH agents on macOS: rollback-able local writes auto-allowed, network/installs/sensitive reads blocked and audited.",
+  "tags": [
+    "backup",
+    "cordis",
+    "dsh",
+    "dsh-plugin",
+    "macos"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "ChaoJie0",
+  "repo": "https://github.com/ChaoJie0/dsh-tm-guard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T07:49:41Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-tm-guard",
+    "commands": [
+      "dsh plugin --profile web add dsh-tm-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

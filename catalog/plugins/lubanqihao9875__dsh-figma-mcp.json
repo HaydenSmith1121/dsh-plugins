@@ -14,8 +14,8 @@
     "oauth"
   ],
   "version": "0.1.0",
-  "versionSource": "package.json",
-  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
   "latestRelease": null,
   "author": "lubanqihao9875",
   "repo": "https://github.com/lubanqihao9875/dsh-figma-mcp",
@@ -33,11 +33,12 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:lubanqihao9875/dsh-figma-mcp",
+    "method": "npm",
+    "spec": "dsh-figma-mcp",
     "commands": [
-      "dsh plugin --profile web add link:$(pwd)",
-      "dsh plugin --profile web add link:\"$PWD\""
+      "dsh plugin --profile web add dsh-figma-mcp",
+      "dsh plugin --profile web add github:lubanqihao9875/dsh-figma-mcp",
+      "git clone https://github.com/lubanqihao9875/dsh-figma-mcp.git"
     ],
     "url": null,
     "sha256": null,
@@ -53,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

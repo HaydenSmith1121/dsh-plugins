@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "ZZJQ678/dsh-model-picker",
+  "slug": "zzjq678__dsh-model-picker",
+  "package": "dsh-model-picker",
+  "name": "dsh-model-picker",
+  "title": "dsh-model-picker",
+  "summary": "按渠道商（Provider）分组、可折叠的 DSH 模型选择器：替换聊天输入框右下角原生选择器。仅在 DSH 桌面版实测通过，Web 版未测试。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "ui"
+  ],
+  "version": "0.4.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "ZZJQ678",
+  "repo": "https://github.com/ZZJQ678/dsh-model-picker",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T09:20:22Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ZZJQ678/dsh-model-picker",
+    "commands": [
+      "dsh plugin --profile web add github:ZZJQ678/dsh-model-picker"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

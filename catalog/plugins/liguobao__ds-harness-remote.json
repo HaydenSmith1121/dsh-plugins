@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "liguobao/ds-harness-remote",
   "slug": "liguobao__ds-harness-remote",
-  "package": null,
+  "package": "ds-harness-remote",
   "name": "ds-harness-remote",
   "title": "ds-harness-remote",
   "summary": "通过安全加密的P2P网络，让你从手机、电脑或网页随时远程操控你的Harness实例。",
@@ -14,22 +14,22 @@
     "多端支持",
     "状态监控"
   ],
-  "version": "0.4.14",
+  "version": "0.4.16",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
   "latestRelease": {
-    "tag": "v0.4.14",
-    "publishedAt": "2026-09-16T15:13:48Z",
-    "url": "https://github.com/liguobao/ds-harness-remote/releases/tag/v0.4.14"
+    "tag": "v0.4.16",
+    "publishedAt": "2026-09-20T16:25:05Z",
+    "url": "https://github.com/liguobao/ds-harness-remote/releases/tag/v0.4.16"
   },
   "author": "liguobao",
   "repo": "https://github.com/liguobao/ds-harness-remote",
   "homepage": "https://dsh.r2049.cn/",
   "license": null,
-  "stars": 207,
+  "stars": 210,
   "forks": 20,
-  "pushedAt": "2026-09-19T15:22:52Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "pushedAt": "2026-09-20T17:44:37Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -38,11 +38,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "ds-harness-remote@0.4.14",
+    "method": "github",
+    "spec": "github:liguobao/ds-harness-remote",
     "commands": [
-      "dsh plugin --profile web add ds-harness-remote@0.4.14",
-      "dsh plugin --profile dsh-tui add ds-harness-remote@0.4.14"
+      "curl -fsSL https://dsh.r2049.cn/app/install.sh | bash"
     ],
     "url": null,
     "sha256": null,
@@ -51,13 +50,15 @@
     "dshVersion": null,
     "needsConfig": false,
     "usageNeedsConfig": false,
-    "risky": false,
-    "riskyReasons": []
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
   },
   "source": {
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

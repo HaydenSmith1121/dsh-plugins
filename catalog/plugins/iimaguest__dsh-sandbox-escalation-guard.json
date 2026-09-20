@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "iimaguest/dsh-sandbox-escalation-guard",
+  "slug": "iimaguest__dsh-sandbox-escalation-guard",
+  "package": "dsh-sandbox-escalation-guard",
+  "name": "dsh-sandbox-escalation-guard",
+  "title": "dsh-sandbox-escalation-guard",
+  "summary": "DeepSeek Harness plugin: stops the sandbox escalation fields being advertised to a model when the calling session cannot grant them, fixing the retry loop known models fall into at danger-full-access.",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "sandbox"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "iimaguest",
+  "repo": "https://github.com/iimaguest/dsh-sandbox-escalation-guard",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T03:50:14Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:iimaguest/dsh-sandbox-escalation-guard",
+    "commands": [
+      "dsh plugin --profile web add github:iimaguest/dsh-sandbox-escalation-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

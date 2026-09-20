@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "huxin7735-collab/dsh-maintainer-doc-guard",
+  "slug": "huxin7735-collab__dsh-maintainer-doc-guard",
+  "package": "dsh-maintainer-doc-guard",
+  "name": "dsh-maintainer-doc-guard",
+  "title": "dsh-maintainer-doc-guard",
+  "summary": "Keeps a long agent turn answerable to the user's actual request: a standing maintainer-document reminder, two pre-execute gates, an objective anchor quoting your latest instruction, and a nudge stage that corrects before it blocks.",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.5.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "huxin7735-collab",
+  "repo": "https://github.com/huxin7735-collab/dsh-maintainer-doc-guard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T16:09:44Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:huxin7735-collab/dsh-maintainer-doc-guard",
+    "commands": [
+      "dsh plugin --profile web add github:huxin7735-collab/dsh-maintainer-doc-guard",
+      "git clone https://github.com/huxin7735-collab/dsh-maintainer-doc-guard.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

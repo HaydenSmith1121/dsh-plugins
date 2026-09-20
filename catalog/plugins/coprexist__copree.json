@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Coprexist/Copree",
+  "slug": "coprexist__copree",
+  "package": null,
+  "name": "Copree",
+  "title": "Copree",
+  "summary": "AIsChat 是一个开源 AI 群聊框架：让 AI 拥有自己的状态、记忆与生命节奏——不只是工具，是陪伴。群视界（Group World）让每个群聊绑定一个活的世界（网页 + 世界 AI + 代码 + 时间），并支持 DSH 工作区镜像双向同步。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin"
+  ],
+  "version": "0.3.5",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": {
+    "tag": "v0.3.5",
+    "publishedAt": "2026-08-13T15:13:02Z",
+    "url": "https://github.com/Coprexist/Copree/releases/tag/v0.3.5"
+  },
+  "author": "Coprexist",
+  "repo": "https://github.com/Coprexist/Copree",
+  "homepage": "https://coprexist.github.io/Copree/",
+  "license": "MIT",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-09-19T03:26:56Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Coprexist/Copree",
+    "commands": [
+      "git clone https://github.com/Coprexist/Copree.git && cd Copree"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

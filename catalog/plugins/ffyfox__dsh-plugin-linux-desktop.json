@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "ffyfox/dsh-plugin-linux-desktop",
+  "slug": "ffyfox__dsh-plugin-linux-desktop",
+  "package": null,
+  "name": "dsh-plugin-linux-desktop",
+  "title": "dsh-plugin-linux-desktop",
+  "summary": "DeepSeek Harness 的 Linux 原生桌面集成：XDG 桌面入口、纯净无边框独立窗口、关窗自动停服务。Native Linux desktop integration for DSH.",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "kde",
+    "linux",
+    "wayland"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "ffyfox",
+  "repo": "https://github.com/ffyfox/dsh-plugin-linux-desktop",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T21:17:39Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-linux-desktop",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-linux-desktop",
+      "dsh plugin --profile web add github:<你的用户名>/dsh-plugin-linux-desktop",
+      "dsh plugin --profile web add /path/to/dsh-plugin-linux-desktop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

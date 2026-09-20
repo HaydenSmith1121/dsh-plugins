@@ -19,13 +19,9 @@
     "自动化"
   ],
   "version": "0.1.2",
-  "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
-  "latestRelease": {
-    "tag": "v0.1.2",
-    "publishedAt": "2026-08-28T13:15:54Z",
-    "url": "https://github.com/fantasyce/dsh-typelens/releases/tag/v0.1.2"
-  },
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
   "author": "fantasyce",
   "repo": "https://github.com/fantasyce/dsh-typelens",
   "homepage": "https://fantasyce.github.io/dsh-typelens/",
@@ -42,12 +38,11 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:fantasyce/dsh-typelens",
+    "method": "npm",
+    "spec": "dsh-typelens",
     "commands": [
-      "dsh plugin --profile web add https://github.com/fantasyce/dsh-typelens/releases/download/v0.1.1/dsh-typelens-0.1.1.tgz",
-      "dsh plugin --profile headless add https://github.com/fantasyce/dsh-typelens/releases/download/v0.1.1/dsh-typelens-0.1.1.tgz",
-      "dsh plugin --profile web remove dsh-typelens"
+      "dsh plugin --profile web add dsh-typelens",
+      "dsh plugin --profile headless add dsh-typelens"
     ],
     "url": null,
     "sha256": null,
@@ -63,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

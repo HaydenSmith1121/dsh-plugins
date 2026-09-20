@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "karottc/dsh-plugin-workspace-sorted",
+  "slug": "karottc__dsh-plugin-workspace-sorted",
+  "package": "dsh-plugin-workspace-sorted",
+  "name": "dsh-plugin-workspace-sorted",
+  "title": "dsh-plugin-workspace-sorted",
+  "summary": "让 DeepSeek Harness 的 **工作区（Workspace）** 按「最近使用」排序的宿主（Host）插件。  侧边栏自带的「排序方式：手动排序 / 最近更新」只作用于**会话**；工作区分组的顺序永远是 Host 注册表的持久顺序。本插件让最近有活动的那个工作区排到最前面。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "karottc",
+  "repo": "https://github.com/karottc/dsh-plugin-workspace-sorted",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-19T13:21:44Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:karottc/dsh-plugin-workspace-sorted",
+    "commands": [
+      "git clone <repo-url> dsh-plugin-workspace-sorted",
+      "dsh plugin --profile web add link:.",
+      "dsh plugin --profile web add github:<owner>/<repo>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

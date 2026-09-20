@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-voice-call",
   "title": "dsh-voice-call",
-  "summary": "给 DeepSeek Harness 智能体装上专属声音，它能主动给你打电话，支持接听/拒接/稍后，本地离线语音合成与识别，中文方言也能聊。",
+  "summary": "Give a DeepSeek Harness agent a voice it owns — offer_call rings the human (接听/拒接/稍后); local-first TTS/STT via CrispASR + Qwen3-TTS (9 voices, 2 CN dialects). DSH 0.1.2-rc.1 compatible. Fork of dsh-voice.",
   "tags": [
     "ai-agent",
     "crispasr",
@@ -20,12 +20,7 @@
     "text-to-speech",
     "tts",
     "voice",
-    "voice-call",
-    "视觉理解",
-    "桌宠",
-    "离线",
-    "模型配置",
-    "效率提升"
+    "voice-call"
   ],
   "version": "0.3.0",
   "versionSource": "npm",
@@ -35,10 +30,10 @@
   "repo": "https://github.com/PandaPolo/dsh-voice-call",
   "homepage": "https://www.npmjs.com/package/dsh-voice-call",
   "license": "MIT",
-  "stars": 3,
+  "stars": 2,
   "forks": 0,
-  "pushedAt": "2026-09-05T07:27:46Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-19T04:55:11Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -58,15 +53,17 @@
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
-    "risky": false,
-    "riskyReasons": []
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
   },
   "source": {
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

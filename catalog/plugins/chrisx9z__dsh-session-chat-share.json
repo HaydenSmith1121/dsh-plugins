@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "chrisx9z/dsh-session-chat-share",
+  "slug": "chrisx9z__dsh-session-chat-share",
+  "package": null,
+  "name": "dsh-session-chat-share",
+  "title": "dsh-session-chat-share",
+  "summary": "",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "1.4.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": {
+    "tag": "v1.4.4",
+    "publishedAt": "2026-09-19T18:42:16Z",
+    "url": "https://github.com/chrisx9z/dsh-session-chat-share/releases/tag/v1.4.4"
+  },
+  "author": "chrisx9z",
+  "repo": "https://github.com/chrisx9z/dsh-session-chat-share",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-19T18:42:02Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-session-chat-share",
+    "commands": [
+      "dsh plugin --profile demo add dsh-session-chat-share",
+      "dsh plugin --profile demo add github:chrisx9z/dsh-session-chat-share"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

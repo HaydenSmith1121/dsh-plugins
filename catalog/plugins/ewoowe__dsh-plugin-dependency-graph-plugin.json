@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "ewoowe/dsh-plugin-dependency-graph-plugin",
+  "slug": "ewoowe__dsh-plugin-dependency-graph-plugin",
+  "package": "dsh-plugin-dependency-graph",
+  "name": "dsh-plugin-dependency-graph-plugin",
+  "title": "dsh-plugin-dependency-graph-plugin",
+  "summary": "Plugin dependency graph for DeepSeek Harness: which plugin provides the services every other plugin injects, read from the live Cordis runtime.",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "ewoowe",
+  "repo": "https://github.com/ewoowe/dsh-plugin-dependency-graph-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T12:31:23Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ewoowe/dsh-plugin-dependency-graph-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:ewoowe/dsh-plugin-dependency-graph-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

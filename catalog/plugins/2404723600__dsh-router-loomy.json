@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "2404723600/dsh-router-loomy",
+  "slug": "2404723600__dsh-router-loomy",
+  "package": "dsh-router-loomy",
+  "name": "dsh-router-loomy",
+  "title": "dsh-router-loomy",
+  "summary": "DSH plugin: Loomy (iFlyTek) OpenAI-compatible supplier for dsh-router",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-19T06:17:09Z",
+    "url": "https://github.com/2404723600/dsh-router-loomy/releases/tag/v0.1.0"
+  },
+  "author": "2404723600",
+  "repo": "https://github.com/2404723600/dsh-router-loomy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T08:27:48Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:2404723600/dsh-router-loomy",
+    "commands": [
+      "dsh plugin --profile web add github:2404723600/dsh-router-loomy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "isayrhythm/dsh-plugin-repo-snapshot",
+  "slug": "isayrhythm__dsh-plugin-repo-snapshot",
+  "package": null,
+  "name": "dsh-plugin-repo-snapshot",
+  "title": "dsh-plugin-repo-snapshot",
+  "summary": "DeepSeek Harness plugin: encrypted workspace repo snapshots (including .git) backed up to your own local folder or Aliyun OSS, with a built-in settings page.",
+  "tags": [
+    "aliyun",
+    "backup",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "encryption",
+    "oss",
+    "snapshot"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "isayrhythm",
+  "repo": "https://github.com/isayrhythm/dsh-plugin-repo-snapshot",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T11:13:31Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-repo-snapshot",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-repo-snapshot",
+      "pnpm add link:/path/to/dsh-plugin-repo-snapshot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "EPCN-fla/dsh-vscode-bridge",
+  "slug": "epcn-fla__dsh-vscode-bridge",
+  "package": "dsh-vscode-bridge",
+  "name": "dsh-vscode-bridge",
+  "title": "dsh-vscode-bridge",
+  "summary": "Cordis plugin bridging the dsh-vscode extension to native DSH services (workspace grouping, session titles, archive, agent presets, permission presets) over a token-authenticated local JSON-RPC socket.",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "EPCN-fla",
+  "repo": "https://github.com/EPCN-fla/dsh-vscode-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T05:47:26Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:EPCN-fla/dsh-vscode-bridge",
+    "commands": [
+      "dsh plugin --profile web add github:EPCN-fla/dsh-vscode-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

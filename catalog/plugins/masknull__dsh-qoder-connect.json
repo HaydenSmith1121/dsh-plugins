@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "masknull/dsh-qoder-connect",
+  "slug": "masknull__dsh-qoder-connect",
+  "package": "dsh-qoder-connect",
+  "name": "dsh-qoder-connect",
+  "title": "dsh-qoder-connect",
+  "summary": "将 Qoder（国内版 / 国际版）的模型以个人访问令牌（PAT）接入 DeepSeek Harness —— 双变体独立配置、侧栏额度展示、上下文窗口一键切换。|Qoder CN & international models for DeepSeek Harness via PAT. 支持 DSH 0.1.5-rc.1+。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "qoder",
+    "qoder-cn"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-20T16:08:43Z",
+    "url": "https://github.com/masknull/dsh-qoder-connect/releases/tag/v0.1.2"
+  },
+  "author": "masknull",
+  "repo": "https://github.com/masknull/dsh-qoder-connect",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 1,
+  "pushedAt": "2026-09-20T16:08:35Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:masknull/dsh-qoder-connect",
+    "commands": [
+      "dsh plugin --profile web add github:masknull/dsh-qoder-connect",
+      "dsh plugin --profile web add dsh-qoder-connect"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

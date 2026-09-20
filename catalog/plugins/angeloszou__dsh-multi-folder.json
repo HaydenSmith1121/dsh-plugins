@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "AngelosZou/dsh-multi-folder",
+  "slug": "angeloszou__dsh-multi-folder",
+  "package": null,
+  "name": "dsh-multi-folder",
+  "title": "dsh-multi-folder",
+  "summary": "在 DeepSeek Harness 项目中同时管理源码、测试和文档多个工作目录，无需切换主工作区。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "工具集成",
+    "工作区管理",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "0.2.4",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "AngelosZou",
+  "repo": "https://github.com/AngelosZou/dsh-multi-folder",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 9,
+  "forks": 1,
+  "pushedAt": "2026-09-19T07:44:52Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-multi-folder",
+    "commands": [
+      "dsh plugin --profile web add dsh-multi-folder"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

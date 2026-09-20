@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "MoseeVision/dsh-quick-archive",
+  "slug": "moseevision__dsh-quick-archive",
+  "package": "dsh-quick-archive",
+  "name": "dsh-quick-archive",
+  "title": "dsh-quick-archive",
+  "summary": "DSH plugin: one-click archive button on every sidebar session row, beside the session menu / 侧边栏会话行的一键归档按钮",
+  "tags": [
+    "archive",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "sidebar",
+    "ui"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-19T13:19:08Z",
+    "url": "https://github.com/MoseeVision/dsh-quick-archive/releases/tag/v1.0.0"
+  },
+  "author": "MoseeVision",
+  "repo": "https://github.com/MoseeVision/dsh-quick-archive",
+  "homepage": "https://github.com/250569103/dsh-quick-archive#readme",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T13:38:15Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MoseeVision/dsh-quick-archive",
+    "commands": [
+      "dsh plugin --profile web add github:MoseeVision/dsh-quick-archive",
+      "dsh plugin --profile web add https://github.com/MoseeVision/dsh-quick-archive/releases/latest/download/dsh-quick-archive.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

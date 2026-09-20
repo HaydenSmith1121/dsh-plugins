@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "dataelement/dsh-desktop",
+  "slug": "dataelement__dsh-desktop",
+  "package": "dsh-desktop",
+  "name": "dsh-desktop",
+  "title": "dsh-desktop",
+  "summary": "DSHDesktop：DeepSeek Harness Desktop / DeepSeek Harness 桌面版",
+  "tags": [
+    "agent",
+    "apps",
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-desktop",
+    "desktop",
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dshdesktop",
+    "harness"
+  ],
+  "version": "0.9.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": {
+    "tag": "v0.9.1",
+    "publishedAt": "2026-09-20T14:44:09Z",
+    "url": "https://github.com/dataelement/dsh-desktop/releases/tag/v0.9.1"
+  },
+  "author": "dataelement",
+  "repo": "https://github.com/dataelement/dsh-desktop",
+  "homepage": "https://dshdesktop.com",
+  "license": "MIT",
+  "stars": 7999,
+  "forks": 338,
+  "pushedAt": "2026-09-20T13:53:04Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:dataelement/dsh-desktop",
+    "commands": [
+      "dsh plugin --profile web add github:dataelement/dsh-desktop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

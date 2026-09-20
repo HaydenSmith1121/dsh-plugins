@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "mustakimabdullah25-tech/dsh-screen-translator",
+  "slug": "mustakimabdullah25-tech__dsh-screen-translator",
+  "package": "dsh-screen-translator",
+  "name": "dsh-screen-translator",
+  "title": "dsh-screen-translator",
+  "summary": "Universal on-screen translator for DeepSeek Harness Web UI: translates UI text, attributes, Shadow DOM, and iframes across 45+ languages.",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "i18n",
+    "screen-translator",
+    "translator",
+    "ui"
+  ],
+  "version": "3.0.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "mustakimabdullah25-tech",
+  "repo": "https://github.com/mustakimabdullah25-tech/dsh-screen-translator",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-19T13:59:08Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mustakimabdullah25-tech/dsh-screen-translator",
+    "commands": [
+      "dsh plugin add mustakimabdullah25-tech/dsh-screen-translator",
+      "git clone https://github.com/mustakimabdullah25-tech/dsh-screen-translator.git",
+      "dsh plugin add ./plugins/dsh-screen-translator"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

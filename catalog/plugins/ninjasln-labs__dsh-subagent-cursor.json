@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-subagent-cursor",
   "title": "dsh-subagent-cursor",
-  "summary": "把 Cursor 当子代理用，本地跑一次 SDK 就能拿到摘要结果，支持无人值守批量处理。",
+  "summary": "DeepSeek Harness 插件：Cursor-as-subagent 提供方——一次本地 @cursor/sdk one-shot 运行、摘要优先结果、可无人值守的 Profile Bundle",
   "tags": [
     "ai-coding",
     "cursor",
@@ -14,11 +14,7 @@
     "delegation",
     "dsh-plugin",
     "llm",
-    "subagent",
-    "多Agent协作",
-    "效率提升",
-    "AI 助手",
-    "安全审计"
+    "subagent"
   ],
   "version": "0.1.1",
   "versionSource": "npm",
@@ -30,8 +26,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-05T18:40:14Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-19T12:13:25Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -51,7 +47,7 @@
     "tarball": null,
     "dshVersion": null,
     "needsConfig": true,
-    "usageNeedsConfig": false,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -59,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

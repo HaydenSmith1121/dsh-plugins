@@ -5,7 +5,7 @@
   "package": "dsh-approval-chime",
   "name": "dsh-approval-chime",
   "title": "dsh-approval-chime",
-  "summary": "宿主向你申请权限时响一声提示音，音色音量可调，还能导入本地音频。",
+  "summary": "DSH 审批提示音插件：申请权限时响一声，音色、音量、开关在「设置 → 通知提醒」里调。",
   "tags": [
     "audio",
     "chime",
@@ -15,11 +15,7 @@
     "dsh-plugin",
     "notification",
     "plugin",
-    "web-audio",
-    "设置面板",
-    "状态监控",
-    "快捷操作",
-    "消息通知"
+    "web-audio"
   ],
   "version": "0.2.0",
   "versionSource": "package.json",
@@ -44,7 +40,9 @@
     "method": "github",
     "spec": "github:Cloudto1/dsh-approval-chime",
     "commands": [
-      "dsh plugin --profile web add github:Cloudto1/dsh-approval-chime"
+      "dsh plugin add https://codeload.github.com/Cloudto1/dsh-approval-chime/tar.gz/refs/heads/main",
+      "dsh plugin add github:Cloudto1/dsh-approval-chime",
+      "dsh plugin --profile web add <上面任一条 spec>"
     ],
     "url": null,
     "sha256": null,
@@ -60,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

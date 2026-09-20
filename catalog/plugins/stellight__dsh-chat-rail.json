@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "Stellight/dsh-chat-rail",
+  "slug": "stellight__dsh-chat-rail",
+  "package": "dsh-chat-rail",
+  "name": "dsh-chat-rail",
+  "title": "dsh-chat-rail",
+  "summary": "DeepSeek Harness 中文插件：对话区右缘的网页版风格导航竖线——每条人类消息一根短横线，靠近展开可跳转的消息列表，并支持回溯更早的历史",
+  "tags": [
+    "chat-ui",
+    "cordis-plugin",
+    "deepseek-harness",
+    "dsh-plugin"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "Stellight",
+  "repo": "https://github.com/Stellight/dsh-chat-rail",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T03:26:37Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Stellight/dsh-chat-rail",
+    "commands": [
+      "dsh plugin --profile web add github:Stellight/dsh-chat-rail"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

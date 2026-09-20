@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Gan332/dsh-typography",
+  "slug": "gan332__dsh-typography",
+  "package": "dsh-typography",
+  "name": "dsh-typography",
+  "title": "dsh-typography",
+  "summary": "Typography plugin for DeepSeek Harness - independent interface & code fonts, online presets, zero-conversion local font library (woff2/ttf/otf)",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "fonts",
+    "typography"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-09-19T01:03:59Z",
+    "url": "https://github.com/Gan332/dsh-typography/releases/tag/v0.1.3"
+  },
+  "author": "Gan332",
+  "repo": "https://github.com/Gan332/dsh-typography",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T01:02:46Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Gan332/dsh-typography",
+    "commands": [
+      "dsh plugin --profile desktop add github:Gan332/dsh-typography",
+      "dsh plugin --profile web add -w /path/to/dsh-typography"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

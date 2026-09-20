@@ -5,17 +5,12 @@
   "package": "dsh-squeeze-command",
   "name": "dsh-squeeze-command",
   "title": "dsh-squeeze-command",
-  "summary": "手动按预算压缩对话历史，让模型自己选重点，用便宜模型写摘要，省下长会话的Token开销。",
+  "summary": "Manual budget-targeted context compression for DeepSeek Harness: the conversation model picks ranges, a cheap flash-tier route writes the summaries.",
   "tags": [
     "context-compression",
     "deepseek-harness",
     "dsh",
-    "dsh-plugin",
-    "会话管理",
-    "状态监控",
-    "资源优化",
-    "效率提升",
-    "模型配置"
+    "dsh-plugin"
   ],
   "version": "0.1.1",
   "versionSource": "github-release",
@@ -60,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

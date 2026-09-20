@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "appthin/dsh-skills-manager-plus",
+  "slug": "appthin__dsh-skills-manager-plus",
+  "package": "dsh-skills-manager-plus",
+  "name": "dsh-skills-manager-plus",
+  "title": "dsh-skills-manager-plus",
+  "summary": "在 DeepSeek Harness 设置界面的左侧边栏新增「技能与命令」页面， 可直接查看、启用/停用、编辑、删除与添加技能，还能把常用的提示词保存为命令， 在输入框输入 `/` 即可快速调用。Adds a *Skills & Commands* page to the left sidebar of the Settings screen, where you can view, enable/disable, edit, delete and add skills, and save frequent prompts as `/commands` that you invoke by typing `/`.",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-19T01:35:06Z",
+    "url": "https://github.com/appthin/dsh-skills-manager-plus/releases/tag/v0.1.1"
+  },
+  "author": "appthin",
+  "repo": "https://github.com/appthin/dsh-skills-manager-plus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-19T01:34:56Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:appthin/dsh-skills-manager-plus",
+    "commands": [
+      "dsh plugin --profile web add <本仓库目录>",
+      "dsh plugin --profile web ls",
+      "dsh plugin --profile web remove dsh-skills-manager-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "hj01857655/dsh-theme-studio",
+  "slug": "hj01857655__dsh-theme-studio",
+  "package": null,
+  "name": "dsh-theme-studio",
+  "title": "dsh-theme-studio",
+  "summary": "dsh plugin: customize UI theme with presets, accent colors, density, radius, fonts, and custom CSS",
+  "tags": [
+    "appearance",
+    "customization",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "theme"
+  ],
+  "version": "0.6.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "hj01857655",
+  "repo": "https://github.com/hj01857655/dsh-theme-studio",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T13:00:48Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-theme-studio",
+    "commands": [
+      "dsh plugin add dsh-theme-studio",
+      "git clone https://github.com/hj01857655/dsh-theme-studio.git",
+      "npm install && npm run build"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

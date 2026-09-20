@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "Pingze-github/dsh-cost-audit",
+  "slug": "pingze-github__dsh-cost-audit",
+  "package": "dsh-cost-audit",
+  "name": "dsh-cost-audit",
+  "title": "dsh-cost-audit",
+  "summary": "",
+  "tags": [
+    "cost-optimization",
+    "deepseek-harness",
+    "dsh-cost-audit",
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "Pingze-github",
+  "repo": "https://github.com/Pingze-github/dsh-cost-audit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T17:40:47Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Pingze-github/dsh-cost-audit",
+    "commands": [
+      "dsh plugin --profile web add github:Pingze-github/dsh-cost-audit",
+      "dsh plugin --profile web add link:/path/to/dsh-cost-audit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

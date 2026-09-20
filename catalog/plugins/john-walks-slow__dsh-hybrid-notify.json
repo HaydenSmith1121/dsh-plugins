@@ -5,15 +5,11 @@
   "package": null,
   "name": "dsh-hybrid-notify",
   "title": "dsh-hybrid-notify",
-  "summary": "为 DeepSeek Harness 提供多通道消息通知，支持页面内提示、PWA 和浏览器通知并带声音，不错过任何重要状态。",
+  "summary": "Multi-channel notification plugin for DeepSeek Harness — in-page toast, PWA, and browser notifications with sound",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
-    "notifications",
-    "消息通知",
-    "前端增强",
-    "效率提升",
-    "状态监控"
+    "notifications"
   ],
   "version": "0.1.0",
   "versionSource": "npm",
@@ -25,8 +21,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-08T16:27:07Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-19T11:23:19Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -38,9 +34,7 @@
     "method": "npm",
     "spec": "dsh-hybrid-notify",
     "commands": [
-      "dsh plugin --profile web add dsh-hybrid-notify",
-      "dsh plugin --profile web add github:john-walks-slow/dsh-hybrid-notify",
-      "git clone https://github.com/john-walks-slow/dsh-hybrid-notify.git"
+      "dsh plugin --profile web add dsh-hybrid-notify"
     ],
     "url": null,
     "sha256": null,
@@ -56,6 +50,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

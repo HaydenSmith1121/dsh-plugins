@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "BaiZhi967/dsh-plugin-zcode-import",
+  "slug": "baizhi967__dsh-plugin-zcode-import",
+  "package": "dsh-plugin-zcode-import",
+  "name": "dsh-plugin-zcode-import",
+  "title": "dsh-plugin-zcode-import",
+  "summary": "DSH 会话导入插件：按工作区浏览本地 ZCode 的会话，勾选或整工作区导入 DeepSeek Harness · Import local ZCode conversations into DeepSeek Harness",
+  "tags": [
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "session-import",
+    "zcode"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "BaiZhi967",
+  "repo": "https://github.com/BaiZhi967/dsh-plugin-zcode-import",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-19T05:53:02Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:BaiZhi967/dsh-plugin-zcode-import",
+    "commands": [
+      "dsh plugin --profile web add github:BaiZhi967/dsh-plugin-zcode-import",
+      "git clone https://github.com/BaiZhi967/dsh-plugin-zcode-import.git",
+      "dsh plugin --profile web add ../dsh-plugin-zcode-import"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

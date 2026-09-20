@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "KHG420/git-worktree",
+  "slug": "khg420__git-worktree",
+  "package": "dsh-git-worktree",
+  "name": "git-worktree",
+  "title": "git-worktree",
+  "summary": "DeepSeek Harness plugin: one click binds each conversation to its own isolated git worktree + branch, so parallel agents work on one repo without interference — every project's worktrees auto-managed in the sidebar workspace tree, backed by 9 git tools.",
+  "tags": [
+    "ai-agent",
+    "ai-agents",
+    "credis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "typescript",
+    "vibe-coding",
+    "vibe-coding-tool"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "KHG420",
+  "repo": "https://github.com/KHG420/git-worktree",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-19T08:09:18Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:KHG420/git-worktree",
+    "commands": [
+      "dsh plugin --profile web add /path/to/dsh-git-worktree"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

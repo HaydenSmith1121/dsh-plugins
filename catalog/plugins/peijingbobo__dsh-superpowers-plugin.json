@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "PeiJingbobo/dsh-superpowers-plugin",
+  "slug": "peijingbobo__dsh-superpowers-plugin",
+  "package": "dsh-superpowers-plugin",
+  "name": "dsh-superpowers-plugin",
+  "title": "dsh-superpowers-plugin",
+  "summary": "",
+  "tags": [
+    "agent",
+    "ai",
+    "coding",
+    "dsh",
+    "dsh-plugin",
+    "skill",
+    "superpowers",
+    "vibe"
+  ],
+  "version": "6.4.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": {
+    "tag": "v6.4.1",
+    "publishedAt": "2026-09-19T04:45:19Z",
+    "url": "https://github.com/PeiJingbobo/dsh-superpowers-plugin/releases/tag/v6.4.1"
+  },
+  "author": "PeiJingbobo",
+  "repo": "https://github.com/PeiJingbobo/dsh-superpowers-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T04:45:19Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:PeiJingbobo/dsh-superpowers-plugin",
+    "commands": [
+      "dsh plugin add github:PeiJingbobo/dsh-superpowers-plugin",
+      "dsh plugin add ./dsh-superpowers-plugin-*.tgz",
+      "dsh plugin add /path/to/dsh-superpowers-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

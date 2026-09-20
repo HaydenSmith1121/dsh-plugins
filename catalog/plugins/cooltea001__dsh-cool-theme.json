@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "CoolTea001/dsh-cool-theme",
+  "slug": "cooltea001__dsh-cool-theme",
+  "package": null,
+  "name": "dsh-cool-theme",
+  "title": "dsh-cool-theme",
+  "summary": "DeepSeek Harness theme plugin — supports Dark / Light / System appearance switching, ships 34 preset themes, and supports creating, sharing, and importing custom themes.",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins"
+  ],
+  "version": "0.6.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "CoolTea001",
+  "repo": "https://github.com/CoolTea001/dsh-cool-theme",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-19T11:33:24Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-cool-theme",
+    "commands": [
+      "dsh plugin --profile web add dsh-cool-theme",
+      "dsh plugin --profile desktop add dsh-cool-theme",
+      "dsh plugin --profile <your-profile> remove dsh-cool-theme"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

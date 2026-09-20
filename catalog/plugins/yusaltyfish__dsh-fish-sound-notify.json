@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "YUsaltyfish/dsh-fish-sound-notify",
+  "slug": "yusaltyfish__dsh-fish-sound-notify",
+  "package": "dsh-fish-sound-notify",
+  "name": "dsh-fish-sound-notify",
+  "title": "dsh-fish-sound-notify",
+  "summary": "DSH bundle: a Windows system sound when the agent asks a question /a turn ends/a permission request",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "YUsaltyfish",
+  "repo": "https://github.com/YUsaltyfish/dsh-fish-sound-notify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T08:30:42Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:YUsaltyfish/dsh-fish-sound-notify",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-fish-sound-notify-0.2.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

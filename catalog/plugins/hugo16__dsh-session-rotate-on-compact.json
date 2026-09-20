@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "Hugo16/dsh-session-rotate-on-compact",
+  "slug": "hugo16__dsh-session-rotate-on-compact",
+  "package": "dsh-session-rotate-on-compact",
+  "name": "dsh-session-rotate-on-compact",
+  "title": "dsh-session-rotate-on-compact",
+  "summary": "用于 DSH 的会话轮换插件。  当 DSH 完成一次自动或手动 Compact 后，插件会生成新的 Session ID，让代理 API 将下一次请求识别为新会话，从而触发账号轮询。",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "Hugo16",
+  "repo": "https://github.com/Hugo16/dsh-session-rotate-on-compact",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T16:55:21Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Hugo16/dsh-session-rotate-on-compact",
+    "commands": [
+      "dsh plugin --profile web add github:Hugo16/dsh-session-rotate-on-compact"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

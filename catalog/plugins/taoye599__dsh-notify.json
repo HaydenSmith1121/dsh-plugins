@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "TaoYe599/dsh-notify",
+  "slug": "taoye599__dsh-notify",
+  "package": "dsh-notify",
+  "name": "dsh-notify",
+  "title": "dsh-notify",
+  "summary": "Task completion and needs-you notifications for DeepSeek Harness — web notification while the page is open, native Windows toast when the browser is closed. · DSH 任务完成/待回复通知：页面开着弹网页通知，浏览器关掉由 Host 弹原生通知。",
+  "tags": [
+    "cordis",
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "notification"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-19T14:19:52Z",
+    "url": "https://github.com/TaoYe599/dsh-notify/releases/tag/v0.1.0"
+  },
+  "author": "TaoYe599",
+  "repo": "https://github.com/TaoYe599/dsh-notify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T14:19:52Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TaoYe599/dsh-notify",
+    "commands": [
+      "dsh plugin --profile web add github:TaoYe599/dsh-notify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "ChuanTianML/dsh-chat-tidy",
+  "slug": "chuantianml__dsh-chat-tidy",
+  "package": null,
+  "name": "dsh-chat-tidy",
+  "title": "dsh-chat-tidy",
+  "summary": "Restrained chat typography and layout for DeepSeek Harness Web",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "typography",
+    "web-ui"
+  ],
+  "version": "0.4.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "ChuanTianML",
+  "repo": "https://github.com/ChuanTianML/dsh-chat-tidy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 0,
+  "pushedAt": "2026-09-19T15:26:44Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-chat-tidy",
+    "commands": [
+      "dsh plugin --profile web add dsh-chat-tidy",
+      "dsh plugin --profile web add github:ChuanTianML/dsh-chat-tidy",
+      "dsh plugin --profile web add -w /absolute/path/to/dsh-chat-tidy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

@@ -9,10 +9,16 @@
   "tags": [
     "agent-skill",
     "agent-skills",
+    "agent-skills-standard",
+    "ai-agents",
+    "claude-code",
+    "codex",
+    "cordis",
     "deepseek",
     "deepseek-harness",
     "deepseek-harness-plugin",
     "deepseek-harness-plugin-dev",
+    "developer-tools",
     "dsh",
     "dsh-plugin",
     "plugin-development",
@@ -43,6 +49,7 @@
     "method": "github",
     "spec": "github:green-dalii/dsh-plugin-dev-skill",
     "commands": [
+      "git clone https://github.com/green-dalii/dsh-plugin-dev-skill.git ~/src/dsh-plugin-dev-skill",
       "git clone https://github.com/green-dalii/dsh-plugin-dev-skill.git ~/.claude/skills/dsh-plugin-dev-skill"
     ],
     "url": null,
@@ -59,6 +66,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

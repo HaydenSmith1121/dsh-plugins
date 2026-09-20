@@ -45,7 +45,9 @@
     "method": "github",
     "spec": "github:Jovan1666/dsh-commandcode-quota",
     "commands": [
-      "dsh plugin --profile web add github:Jovan1666/dsh-commandcode-quota"
+      "dsh plugin --profile web add github:Jovan1666/dsh-commandcode-quota",
+      "git clone https://github.com/Jovan1666/dsh-commandcode-quota",
+      "dsh plugin --profile web add ./dsh-commandcode-quota"
     ],
     "url": null,
     "sha256": null,
@@ -61,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

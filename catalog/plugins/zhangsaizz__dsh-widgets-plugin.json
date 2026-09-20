@@ -5,13 +5,9 @@
   "package": "dsh-widgets-plugin",
   "name": "dsh-widgets-plugin",
   "title": "dsh-widgets-plugin",
-  "summary": "为 DeepSeek Harness 提供可拖动、缩放、折叠的浮动小组件，方便自定义你的工作台。",
+  "summary": "支持 deepseek-harness 各类小组件",
   "tags": [
-    "dsh-plugin",
-    "小组件",
-    "界面美化",
-    "可配置",
-    "浮动挂件"
+    "dsh-plugin"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -45,7 +41,7 @@
     "tarball": null,
     "dshVersion": null,
     "needsConfig": true,
-    "usageNeedsConfig": false,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -53,6 +49,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "CharlesXu-HQ/dsh-dream-rsi",
+  "slug": "charlesxu-hq__dsh-dream-rsi",
+  "package": "dsh-dream-rsi",
+  "name": "dsh-dream-rsi",
+  "title": "dsh-dream-rsi",
+  "summary": "Experimental replay-based exploration-policy plugin for DeepSeek Harness",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "CharlesXu-HQ",
+  "repo": "https://github.com/CharlesXu-HQ/dsh-dream-rsi",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T04:24:56Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "git clone https://github.com/CharlesXu-HQ/dsh-dream-rsi.git",
+      "npm install",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

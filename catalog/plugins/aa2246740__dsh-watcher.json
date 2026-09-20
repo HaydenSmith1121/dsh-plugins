@@ -41,12 +41,12 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:aa2246740/dsh-watcher",
+    "method": "npm",
+    "spec": "dsh-watcher@0.4.4",
     "commands": [
-      "dsh plugin --profile web add github:aa2246740/dsh-watcher",
-      "git clone https://github.com/aa2246740/dsh-watcher.git",
-      "dsh plugin --profile web add ./dsh-watcher"
+      "dsh plugin --profile web add dsh-watcher@0.4.4",
+      "dsh plugin --profile web add dsh-watcher",
+      "dsh plugin --profile web add github:aa2246740/dsh-watcher"
     ],
     "url": null,
     "sha256": null,
@@ -62,6 +62,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

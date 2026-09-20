@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "buberlo/dsh-jev",
+  "slug": "buberlo__dsh-jev",
+  "package": "dsh-jev-workspace",
+  "name": "dsh-jev",
+  "title": "dsh-jev",
+  "summary": "Jev-powered decision layer for DeepSeek Harness",
+  "tags": [
+    "agent-harness",
+    "dsh-plugin",
+    "jev",
+    "typesafe-ai",
+    "typescript"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "buberlo",
+  "repo": "https://github.com/buberlo/dsh-jev",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-09-20T12:26:54Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:buberlo/dsh-jev",
+    "commands": [
+      "dsh plugin --profile <name> add @buberlo/dsh-jev",
+      "dsh plugin --profile <name> add ./packs/buberlo-dsh-jev-0.1.1.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

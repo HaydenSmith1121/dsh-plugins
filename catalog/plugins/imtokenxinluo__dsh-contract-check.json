@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "imtokenxinluo/dsh-contract-check",
+  "slug": "imtokenxinluo__dsh-contract-check",
+  "package": "dsh-contract-check",
+  "name": "dsh-contract-check",
+  "title": "dsh-contract-check",
+  "summary": "Zero-token contract check for DSH plugins — verifies output.render() / session-event vocabulary, warn-only. 无耗检查：DSH 插件契约体检，零 token 成本，只告警不拦截。",
+  "tags": [
+    "contract-check",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin-audit"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "imtokenxinluo",
+  "repo": "https://github.com/imtokenxinluo/dsh-contract-check",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T14:39:46Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:imtokenxinluo/dsh-contract-check",
+    "commands": [
+      "dsh plugin --profile web add github:imtokenxinluo/dsh-contract-check"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

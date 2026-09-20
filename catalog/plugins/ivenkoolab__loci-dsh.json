@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "IvenKooLab/loci-dsh",
+  "slug": "ivenkoolab__loci-dsh",
+  "package": "loci-dsh",
+  "name": "loci-dsh",
+  "title": "loci-dsh",
+  "summary": "🧠 loci second brain as a DeepSeek Harness (dsh) web plugin — search / ask / remember your local knowledge base from the sidebar",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "knowledge-base",
+    "loci",
+    "rag",
+    "react",
+    "second-brain",
+    "sidebar",
+    "typescript"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-19T12:55:31Z",
+    "url": "https://github.com/IvenKooLab/loci-dsh/releases/tag/v0.1.1"
+  },
+  "author": "IvenKooLab",
+  "repo": "https://github.com/IvenKooLab/loci-dsh",
+  "homepage": "https://github.com/IvenKooLab/loci-dsh#readme",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T12:57:51Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:IvenKooLab/loci-dsh",
+    "commands": [
+      "dsh plugin --profile web add github:IvenKooLab/loci-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

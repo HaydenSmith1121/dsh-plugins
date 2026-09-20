@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "ShenpingDD/wooden-fish-dsh",
+  "slug": "shenpingdd__wooden-fish-dsh",
+  "package": "wooden-fish-dsh",
+  "name": "wooden-fish-dsh",
+  "title": "wooden-fish-dsh",
+  "summary": "🪵 电子木鱼桌宠 — A clickable wooden-fish desktop pet for the DeepSeek Harness web GUI. Click to knock; per-day counts with trends in settings.",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "1.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "ShenpingDD",
+  "repo": "https://github.com/ShenpingDD/wooden-fish-dsh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T04:22:34Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ShenpingDD/wooden-fish-dsh",
+    "commands": [
+      "dsh plugin --profile web add --config.minimumReleaseAge=0 -w <this-repo-path>",
+      "dsh plugin --profile web add --config.minimumReleaseAge=0 -w github:<owner>/wooden-fish-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

@@ -5,14 +5,9 @@
   "package": "dsh-ssh-ops",
   "name": "dsh-ssh-ops",
   "title": "dsh-ssh-ops",
-  "summary": "在主对话里直接操作服务器 SSH，高危命令有保护，右侧还带真实终端和文件、端口、数据库管理。",
+  "summary": "DeepSeek Harness SSH 运维插件：主对话驱动 SSH，带高危命令保护与右侧终端。",
   "tags": [
-    "dsh-plugin",
-    "命令行工具",
-    "工具集成",
-    "安全审计",
-    "文件管理",
-    "状态监控"
+    "dsh-plugin"
   ],
   "version": "0.3.11",
   "versionSource": "github-release",
@@ -26,10 +21,10 @@
   "repo": "https://github.com/caoyiwei850/dsh-ssh-ops",
   "homepage": null,
   "license": "MIT",
-  "stars": 20,
-  "forks": 9,
+  "stars": 21,
+  "forks": 10,
   "pushedAt": "2026-09-18T17:44:03Z",
-  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -58,6 +53,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

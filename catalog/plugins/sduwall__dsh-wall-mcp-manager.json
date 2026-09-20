@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "sduwall/dsh-wall-mcp-manager",
+  "slug": "sduwall__dsh-wall-mcp-manager",
+  "package": "@sduwall/dsh-wall-mcp-manager",
+  "name": "dsh-wall-mcp-manager",
+  "title": "dsh-wall-mcp-manager",
+  "summary": "DSH 插件：集中管理 MCP 服务配置，并展示各 MCP 的工具清单、参数与返回契约",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "sduwall",
+  "repo": "https://github.com/sduwall/dsh-wall-mcp-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T06:58:44Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sduwall/dsh-wall-mcp-manager",
+    "commands": [
+      "dsh plugin --profile <profile> add @sduwall/dsh-wall-mcp-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

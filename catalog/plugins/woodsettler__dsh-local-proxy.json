@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "WoodSettler/dsh-local-proxy",
+  "slug": "woodsettler__dsh-local-proxy",
+  "package": null,
+  "name": "dsh-local-proxy",
+  "title": "dsh-local-proxy",
+  "summary": "DSH plugin: discover this machine's HTTP proxy (explicit .env value, else the Windows system proxy) and make DeepSeek Harness use it - for the agent's in-process fetches and for every child process it spawns.",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "http-proxy",
+    "proxy",
+    "windows"
+  ],
+  "version": "1.0.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "WoodSettler",
+  "repo": "https://github.com/WoodSettler/dsh-local-proxy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T16:45:33Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-local-proxy",
+    "commands": [
+      "dsh plugin --profile desktop add github:<owner>/<repo>",
+      "dsh plugin --profile desktop add dsh-local-proxy",
+      "dsh plugin --profile desktop add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

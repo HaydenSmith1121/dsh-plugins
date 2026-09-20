@@ -5,7 +5,7 @@
   "package": "dsh-web-search-thirdparty",
   "name": "dsh-web-search-thirdparty",
   "title": "dsh-web-search-thirdparty",
-  "summary": "支持自由配置多种第三方搜索引擎，自动抓取网页全文，让模型真正能搜能读。",
+  "summary": "A configurable third-party web-search plugin for DSH (DeepSeek Harness)/一个用于DSH（DeepSeek Harness）的可配置第三方网络搜索插件",
   "tags": [
     "deepseek",
     "dsh",
@@ -13,10 +13,7 @@
     "search",
     "searxng",
     "tavily",
-    "web-search",
-    "网络搜索",
-    "全文抓取",
-    "会话管理"
+    "web-search"
   ],
   "version": "0.4.0",
   "versionSource": "github-release",
@@ -46,7 +43,8 @@
     "spec": "github:sunx16963-design/dsh-web-search-thirdparty",
     "commands": [
       "git clone https://github.com/sunx16963-design/dsh-web-search-thirdparty.git",
-      "npm install"
+      "npm install",
+      "npm i --legacy-peer-deps @deepseek-ai/cordis@4 @deepseek-ai/dsh-web@0.1.5-rc.2 \\"
     ],
     "url": null,
     "sha256": null,
@@ -54,7 +52,7 @@
     "tarball": null,
     "dshVersion": null,
     "needsConfig": true,
-    "usageNeedsConfig": false,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -62,6 +60,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "wupup/dsh-custom-style",
+  "slug": "wupup__dsh-custom-style",
+  "package": "dsh-custom-style",
+  "name": "dsh-custom-style",
+  "title": "dsh-custom-style",
+  "summary": "dsh web custom style plugin",
+  "tags": [
+    "custom-css",
+    "deepseek-harness",
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "wupup",
+  "repo": "https://github.com/wupup/dsh-custom-style",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T06:14:40Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wupup/dsh-custom-style",
+    "commands": [
+      "dsh plugin --profile web add github:wupup/dsh-custom-style"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

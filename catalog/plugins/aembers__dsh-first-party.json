@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "AEmbers/dsh-first-party",
+  "slug": "aembers__dsh-first-party",
+  "package": "dsh-first-party",
+  "name": "dsh-first-party",
+  "title": "dsh-first-party",
+  "summary": "第一方 DSH 插件集合：用可控、可验证的自研实现替换高开销第三方 bundle。首个包 recall-lite 把启动期 eager 预热改为按需初始化。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "electron",
+    "plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "AEmbers",
+  "repo": "https://github.com/AEmbers/dsh-first-party",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T03:30:58Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AEmbers/dsh-first-party",
+    "commands": [
+      "dsh plugin --profile desktop add \"github:AEmbers/dsh-first-party"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

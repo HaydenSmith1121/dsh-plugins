@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-cost-meter",
   "title": "dsh-cost-meter",
-  "summary": "实时统计 DeepSeek Harness 会话费用，支持当日汇总、历史记录和官方价格同步，帮你轻松掌控预算。",
+  "summary": "Per-session and daily API cost, budget with usage %, official balance, history dashboard, and one-click official price sync with peak/off-peak pricing.",
   "tags": [
     "cost-tracking",
     "deepseek",
@@ -17,9 +17,7 @@
     "harness",
     "llm",
     "plugins",
-    "token-usage",
-    "状态监控",
-    "数据分析"
+    "token-usage"
   ],
   "version": "1.7.30",
   "versionSource": "npm",
@@ -29,10 +27,10 @@
   "repo": "https://github.com/Han-1413141/dsh-cost-meter",
   "homepage": null,
   "license": "MIT",
-  "stars": 312,
-  "forks": 30,
+  "stars": 313,
+  "forks": 31,
   "pushedAt": "2026-09-18T12:48:58Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -60,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

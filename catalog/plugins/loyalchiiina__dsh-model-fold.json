@@ -5,16 +5,12 @@
   "package": "dsh-model-fold",
   "name": "dsh-model-fold",
   "title": "dsh-model-fold",
-  "summary": "把模型选择菜单按来源分组，先列服务商，再滑出侧栏或折叠展开各自的模型，找模型更快。",
+  "summary": "DSH plugin: model picker grouped by provider — sources listed first, click a source to open its models in a slide-in side panel (or inline fold), double-click a source to switch modes, current-model badge, theme-aware, DOM-only enhancement, zero network requests. 模型选择菜单按来源分组：来源列表+右侧滑出面板/行内折叠双模式+双击切换+当前选中徽标，纯 DOM 增强零网络请求的 DSH 插件。",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
     "model-selection",
-    "ui",
-    "模型适配",
-    "快捷操作",
-    "主题",
-    "效率提升"
+    "ui"
   ],
   "version": "0.4.0",
   "versionSource": "package.json",
@@ -55,6 +51,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

@@ -5,15 +5,11 @@
   "package": null,
   "name": "dsh-sandbox-allowlist",
   "title": "dsh-sandbox-allowlist",
-  "summary": "给 DSH 沙箱加几个可信目录，工作区外也能直接读写，不用反复审批、不用关沙箱。",
+  "summary": "为 DSH 默认沙箱增加可配置的「沙箱授权目录」，允许工作区外的受信修改。",
   "tags": [
     "dsh",
     "dsh-plugin",
-    "dsh-plugins",
-    "工作区管理",
-    "文件管理",
-    "安全审查",
-    "效率提升"
+    "dsh-plugins"
   ],
   "version": "0.1.0",
   "versionSource": "npm",
@@ -25,8 +21,8 @@
   "license": "MIT",
   "stars": 6,
   "forks": 1,
-  "pushedAt": "2026-09-07T01:31:26Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-19T04:27:30Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -55,6 +51,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

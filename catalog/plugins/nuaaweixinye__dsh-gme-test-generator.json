@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "nuaaweixinye/dsh-gme-test-generator",
+  "slug": "nuaaweixinye__dsh-gme-test-generator",
+  "package": null,
+  "name": "dsh-gme-test-generator",
+  "title": "dsh-gme-test-generator",
+  "summary": "GME Test Generator workflow tools for DeepSeek Harness (dsh): pick interfaces, generate and repair tests through a local Python backend, poll progress, and decide with consent.",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "nuaaweixinye",
+  "repo": "https://github.com/nuaaweixinye/dsh-gme-test-generator",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T08:48:49Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-gme-test-generator",
+    "commands": [
+      "dsh plugin --profile web add dsh-gme-test-generator"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

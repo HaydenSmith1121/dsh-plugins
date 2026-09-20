@@ -25,10 +25,10 @@
   "repo": "https://github.com/aa2246740/dsh-better-display",
   "homepage": null,
   "license": "NOASSERTION",
-  "stars": 63,
+  "stars": 65,
   "forks": 9,
   "pushedAt": "2026-09-19T16:37:15Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -37,12 +37,12 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:aa2246740/dsh-better-display",
+    "method": "npm",
+    "spec": "dsh-better-display@0.2.1",
     "commands": [
-      "dsh plugin --profile web add github:aa2246740/dsh-better-display",
-      "dsh plugin --profile web add ./dsh-better-display",
-      "dsh plugin --profile web add ./dsh-better-display-0.1.1.tgz"
+      "dsh plugin --profile web add dsh-better-display@0.2.1",
+      "dsh plugin --profile web add dsh-better-display",
+      "dsh plugin --profile web add github:aa2246740/dsh-better-display"
     ],
     "url": null,
     "sha256": null,
@@ -58,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

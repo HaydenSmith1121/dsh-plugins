@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "ArtlexYoung/dsh-super-code",
+  "slug": "artlexyoung__dsh-super-code",
+  "package": null,
+  "name": "dsh-super-code",
+  "title": "dsh-super-code",
+  "summary": "面向 DeepSeek Harness 的场景化 Agent 预设，覆盖单人交付、团队委派、方案调研和优化实验。Scenario-focused DeepSeek Harness agent presets for solo delivery, team delegation, evidence-based research, and optimization experiments.",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.0.3",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "ArtlexYoung",
+  "repo": "https://github.com/ArtlexYoung/dsh-super-code",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-19T07:13:55Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-super-agent",
+    "commands": [
+      "dsh plugin --profile web add dsh-super-agent"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

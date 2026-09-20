@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "senyayume/dsh-edit-diff",
+  "slug": "senyayume__dsh-edit-diff",
+  "package": "dsh-edit-diff",
+  "name": "dsh-edit-diff",
+  "title": "dsh-edit-diff",
+  "summary": "DSH 插件：在文件变更工具卡片上重绘行级 diff（相同行只渲染一次 + 行内字符高亮），覆盖 run_code(PTC) 与 str_replace_editor，轮末给出改动汇总卡，并可在资源管理器中定位或复制路径。",
+  "tags": [
+    "deepseek-harness",
+    "diff",
+    "dsh",
+    "dsh-plugin"
+  ],
+  "version": "0.4.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "senyayume",
+  "repo": "https://github.com/senyayume/dsh-edit-diff",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T13:48:58Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:senyayume/dsh-edit-diff",
+    "commands": [
+      "dsh plugin add github:senyayume/dsh-edit-diff --profile desktop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

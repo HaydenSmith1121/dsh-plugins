@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "OzzyDeng-JunDeng/dsh-keyless-search",
+  "slug": "ozzydeng-jundeng__dsh-keyless-search",
+  "package": "dsh-keyless-search",
+  "name": "dsh-keyless-search",
+  "title": "dsh-keyless-search",
+  "summary": "Keyless web search for the DeepSeek Harness web_search tool — Tavily and Firecrawl no-key access, no account or configuration.",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "web-search"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "OzzyDeng-JunDeng",
+  "repo": "https://github.com/OzzyDeng-JunDeng/dsh-keyless-search",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T15:33:24Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:OzzyDeng-JunDeng/dsh-keyless-search",
+    "commands": [
+      "dsh plugin --profile <your-profile> add dsh-keyless-search",
+      "dsh plugin --profile <your-profile> remove dsh-keyless-search"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

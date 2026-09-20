@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "moonbowterfly/dsh-bio-gem",
+  "slug": "moonbowterfly__dsh-bio-gem",
+  "package": "@dsh-bio/dsh-bio-gem",
+  "name": "dsh-bio-gem",
+  "title": "dsh-bio-gem",
+  "summary": "基因组尺度代谢模型（GEM）构建插件：全基因组(蛋白FASTA)→自动构建+验证+补洞+报告(SBML+模型卡)；dsh-bio-genie 生态域插件 | Genome-scale metabolic model builder for dsh (DeepSeek Harness)",
+  "tags": [
+    "bioinformatics",
+    "cobra",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "metabolic-model",
+    "sbml"
+  ],
+  "version": "0.1.12",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": {
+    "tag": "v0.1.12",
+    "publishedAt": "2026-09-19T16:22:41Z",
+    "url": "https://github.com/moonbowterfly/dsh-bio-gem/releases/tag/v0.1.12"
+  },
+  "author": "moonbowterfly",
+  "repo": "https://github.com/moonbowterfly/dsh-bio-gem",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T19:32:02Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:moonbowterfly/dsh-bio-gem",
+    "commands": [
+      "dsh plugin --profile web add github:moonbowterfly/dsh-bio-gem"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

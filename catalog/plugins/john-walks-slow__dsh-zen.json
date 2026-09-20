@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "john-walks-slow/dsh-zen",
+  "slug": "john-walks-slow__dsh-zen",
+  "package": "@johnnren/dsh-zen",
+  "name": "dsh-zen",
+  "title": "dsh-zen",
+  "summary": "Zen Mode view tab + foreground time tracker for DeepSeek Harness — a calm minimal surface while your agent works, with daily/weekly zen scores. Pure frontend, zero permissions.",
+  "tags": [
+    "ai-agent",
+    "deepseek-harness",
+    "dsh-plugin",
+    "focus",
+    "zen"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "john-walks-slow",
+  "repo": "https://github.com/john-walks-slow/dsh-zen",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T11:26:38Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:john-walks-slow/dsh-zen",
+    "commands": [
+      "dsh plugin --profile web add github:john-walks-slow/dsh-zen",
+      "dsh plugin --profile web add @johnnren/dsh-zen"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

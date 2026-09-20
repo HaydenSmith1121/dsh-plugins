@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "ireza7/dsh-persian-rtl",
+  "slug": "ireza7__dsh-persian-rtl",
+  "package": "dsh-persian-rtl",
+  "name": "dsh-persian-rtl",
+  "title": "dsh-persian-rtl",
+  "summary": "Persian (Farsi) RTL fix for DeepSeek Harness: automatic per-paragraph direction for assistant answers, thinking cells, tool cells and question boxes",
+  "tags": [
+    "arabic",
+    "deepseek-harness",
+    "dsh-plugin",
+    "farsi",
+    "hebrew",
+    "persian",
+    "rtl"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "ireza7",
+  "repo": "https://github.com/ireza7/dsh-persian-rtl",
+  "homepage": "https://github.com/deepseek-ai/deepseek-harness",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-19T19:46:52Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ireza7/dsh-persian-rtl",
+    "commands": [
+      "dsh plugin --profile web add github:ireza7/dsh-persian-rtl"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

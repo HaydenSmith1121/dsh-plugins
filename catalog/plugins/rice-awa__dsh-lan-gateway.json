@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-lan-gateway",
   "title": "dsh-lan-gateway",
-  "summary": "把 DeepSeek Harness 的网页界面安全地开放到局域网或公网，带密码保护和可选 TLS 加密，方便随时随地访问。",
+  "summary": "把 DeepSeek Harness 的 Web GUI 安全地开放到局域网或公网，自带密码鉴权，支持可选的TLS。Securely expose DeepSeek Harness's Web GUI to your local network or the public internet, with built-in password authentication and TLS support.",
   "tags": [
     "deepseek-harness",
     "deepseek-harness-plugins",
@@ -13,10 +13,7 @@
     "dsh-plugin",
     "gateway",
     "nodejs",
-    "plugin-discovery",
-    "安全审计",
-    "局域网转发",
-    "TLS加密"
+    "plugin-discovery"
   ],
   "version": "0.5.5",
   "versionSource": "npm",
@@ -26,10 +23,10 @@
   "repo": "https://github.com/rice-awa/dsh-lan-gateway",
   "homepage": null,
   "license": "MIT",
-  "stars": 4,
+  "stars": 5,
   "forks": 1,
-  "pushedAt": "2026-09-13T07:46:56Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-19T08:44:33Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -59,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

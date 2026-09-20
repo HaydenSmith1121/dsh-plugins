@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Loping151/dsh-vibeos",
+  "slug": "loping151__dsh-vibeos",
+  "package": "dsh-vibeos",
+  "name": "dsh-vibeos",
+  "title": "dsh-vibeos",
+  "summary": "VibeOS inside DeepSeek Harness: the whole web UI becomes a virtual desktop whose app windows are HTML the model writes as you use them.",
+  "tags": [
+    "ai-desktop",
+    "cordis-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "generative-ui",
+    "vibeos",
+    "virtual-os"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "Loping151",
+  "repo": "https://github.com/Loping151/dsh-vibeos",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-08-18T19:59:03Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Loping151/dsh-vibeos",
+    "commands": [
+      "git clone https://github.com/Loping151/dsh-vibeos.git && cd dsh-vibeos",
+      "dsh plugin --profile web add file:."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

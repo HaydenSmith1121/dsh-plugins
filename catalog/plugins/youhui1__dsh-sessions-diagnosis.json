@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "YouHui1/dsh-sessions-diagnosis",
+  "slug": "youhui1__dsh-sessions-diagnosis",
+  "package": "dsh-sessions-diagnosis",
+  "name": "dsh-sessions-diagnosis",
+  "title": "dsh-sessions-diagnosis",
+  "summary": "Diagnose and repair DSH sessions that stopped opening after a harness upgrade — from the CLI, from an agent tool, or from a dashboard in the DSH web UI.",
+  "tags": [
+    "ai-coding",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "diagnostics",
+    "dsh-plugin",
+    "sessions"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "YouHui1",
+  "repo": "https://github.com/YouHui1/dsh-sessions-diagnosis",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T15:46:43Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "git clone https://github.com/YouHui1/dsh-sessions-diagnosis.git",
+      "dsh plugin --profile web add .",
+      "dsh plugin --profile web add github:YouHui1/dsh-sessions-diagnosis"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

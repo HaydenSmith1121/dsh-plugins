@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "1622352030/ansys-agent-bridge",
+  "slug": "1622352030__ansys-agent-bridge",
+  "package": null,
+  "name": "ansys-agent-bridge",
+  "title": "ansys-agent-bridge",
+  "summary": "MCP server driving Ansys SpaceClaim headlessly through PyAnsys Geometry, plus a DSH plugin bundle. Guards the operations that report success without changing geometry.",
+  "tags": [
+    "ansys",
+    "cad",
+    "cfd",
+    "dsh-plugin",
+    "mcp",
+    "pyansys",
+    "spaceclaim"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "1622352030",
+  "repo": "https://github.com/1622352030/ansys-agent-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T10:56:00Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "ansys-agent-bridge",
+    "commands": [
+      "dsh plugin --profile web add ansys-agent-bridge",
+      "dsh plugin --profile web remove ansys-agent-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

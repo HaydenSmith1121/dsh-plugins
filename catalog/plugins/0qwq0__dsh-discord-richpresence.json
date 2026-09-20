@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "0QwQ0/dsh-discord-richpresence",
+  "slug": "0qwq0__dsh-discord-richpresence",
+  "package": "dsh-discord-richpresence",
+  "name": "dsh-discord-richpresence",
+  "title": "dsh-discord-richpresence",
+  "summary": "dsh-plugin: push vague, user-configurable DSH interaction states to local Discord as Rich Presence",
+  "tags": [
+    "dsh-plugin"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": {
+    "tag": "v0.3.1",
+    "publishedAt": "2026-09-19T14:05:45Z",
+    "url": "https://github.com/0QwQ0/dsh-discord-richpresence/releases/tag/v0.3.1"
+  },
+  "author": "0QwQ0",
+  "repo": "https://github.com/0QwQ0/dsh-discord-richpresence",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-19T14:05:45Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:0QwQ0/dsh-discord-richpresence",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/0QwQ0/dsh-discord-richpresence/releases/latest/download/dsh-discord-richpresence.tgz",
+      "dsh plugin --profile web add link:/absolute/path/to/dsh-discord-richpresence"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "lengmoXXL/dsh-git",
+  "slug": "lengmoxxl__dsh-git",
+  "package": "@lengmoxxl/dsh-git",
+  "name": "dsh-git",
+  "title": "dsh-git",
+  "summary": "A read-only git browser for the DeepSeek Harness Web GUI: a right-sidebar page with the session's working-tree changes and commit history, and the diff a click opens beside them. The host half reads the repository through ctx.fs and ctx.subprocess, so a routed (remote) execution world works unchanged.",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin"
+  ],
+  "version": "0.2.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "lengmoXXL",
+  "repo": "https://github.com/lengmoXXL/dsh-git",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T03:26:05Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lengmoXXL/dsh-git",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/lengmoXXL/dsh-git/releases/latest/download/dsh-git.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

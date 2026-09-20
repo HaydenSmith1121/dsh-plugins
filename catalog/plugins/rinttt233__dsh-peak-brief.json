@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "rinttt233/dsh-peak-brief",
+  "slug": "rinttt233__dsh-peak-brief",
+  "package": "dsh-peak-brief",
+  "name": "dsh-peak-brief",
+  "title": "dsh-peak-brief",
+  "summary": "DSH（DeepSeek Harness）峰谷调度插件：高峰前 N 分钟自动生成仅供 AI 恢复用的简报并停自动续跑，高峰硬挡模型请求（带一键逃生），闲时自动注入简报继续任务。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "peak-hours"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "rinttt233",
+  "repo": "https://github.com/rinttt233/dsh-peak-brief",
+  "homepage": "https://github.com/rinttt233/dsh-peak-brief#readme",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T14:27:27Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:rinttt233/dsh-peak-brief",
+    "commands": [
+      "dsh plugin --profile web add github:rinttt233/dsh-peak-brief"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

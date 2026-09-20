@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "slow-stack/dsh-mneme",
+  "slug": "slow-stack__dsh-mneme",
+  "package": null,
+  "name": "dsh-mneme",
+  "title": "dsh-mneme",
+  "summary": "Cross-session memory for DeepSeek Harness: SQLite + human-editable Markdown mirror, autoDream consolidation, six memory tools, and fully-offline semantic search (local embedding / rerank / clustering), 198 tests.",
+  "tags": [
+    "agent-memory",
+    "agent-memory-system",
+    "autodream",
+    "context-management",
+    "context-management-system",
+    "deepseek-harness",
+    "dsh-better-sidebar",
+    "dsh-plugin",
+    "heat-memory",
+    "knowledge-management",
+    "llm-memory",
+    "memory-consolidation",
+    "memory-evolution",
+    "persistent-memory",
+    "semantic-search",
+    "vector-search"
+  ],
+  "version": "0.8.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": {
+    "tag": "v0.8.4",
+    "publishedAt": "2026-09-19T04:59:14Z",
+    "url": "https://github.com/slow-stack/dsh-mneme/releases/tag/v0.8.4"
+  },
+  "author": "slow-stack",
+  "repo": "https://github.com/slow-stack/dsh-mneme",
+  "homepage": "https://www.npmjs.com/package/@modusensus/dsh-mneme",
+  "license": "MIT",
+  "stars": 113,
+  "forks": 15,
+  "pushedAt": "2026-09-20T07:55:10Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@modusensus/dsh-mneme",
+    "commands": [
+      "dsh plugin --profile web add @modusensus/dsh-mneme"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ChuanTianML/prompt-for-me",
+  "slug": "chuantianml__prompt-for-me",
+  "package": "dsh-prompt-for-me",
+  "name": "prompt-for-me",
+  "title": "prompt-for-me",
+  "summary": "Automatic ghost suggestions and one-click next-message drafting for the DeepSeek Harness composer.",
+  "tags": [
+    "ai-coding",
+    "deepseek-harness",
+    "developer-tools",
+    "dsh-plugin",
+    "productivity",
+    "prompt-engineering"
+  ],
+  "version": "0.6.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": {
+    "tag": "v0.6.1",
+    "publishedAt": "2026-09-19T14:25:13Z",
+    "url": "https://github.com/ChuanTianML/prompt-for-me/releases/tag/v0.6.1"
+  },
+  "author": "ChuanTianML",
+  "repo": "https://github.com/ChuanTianML/prompt-for-me",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-19T15:09:05Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ChuanTianML/prompt-for-me",
+    "commands": [
+      "dsh plugin --profile web add https://github.com/ChuanTianML/prompt-for-me/releases/download/v0.6.1/dsh-prompt-for-me-0.6.1.tgz",
+      "dsh plugin --profile web add github:ChuanTianML/prompt-for-me",
+      "dsh plugin --profile web update dsh-prompt-for-me"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

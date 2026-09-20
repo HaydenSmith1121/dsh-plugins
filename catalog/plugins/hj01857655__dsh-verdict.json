@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "hj01857655/dsh-verdict",
   "slug": "hj01857655__dsh-verdict",
-  "package": null,
+  "package": "dsh-verdict",
   "name": "dsh-verdict",
   "title": "dsh-verdict",
   "summary": "Measure whether a change to your dsh setup actually helped: register repeatable cases, run them, diff before/after. DeepSeek Harness plugin.",
@@ -15,8 +15,8 @@
     "regression"
   ],
   "version": "0.5.1",
-  "versionSource": "npm",
-  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
   "latestRelease": null,
   "author": "hj01857655",
   "repo": "https://github.com/hj01857655/dsh-verdict",
@@ -24,8 +24,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-18T18:31:06Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "pushedAt": "2026-09-19T07:05:38Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -34,10 +34,12 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "dsh-verdict",
+    "method": "github",
+    "spec": "github:hj01857655/dsh-verdict",
     "commands": [
-      "dsh plugin add dsh-verdict"
+      "dsh plugin add dsh-verdict --profile web",
+      "dsh plugin add dsh-verdict@0.1.0 --profile web",
+      "dsh plugin add link:/path/to/dsh-verdict --profile web"
     ],
     "url": null,
     "sha256": null,
@@ -53,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

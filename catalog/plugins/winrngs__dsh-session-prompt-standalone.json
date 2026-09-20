@@ -5,13 +5,9 @@
   "package": "@dsh-external/dsh-session-prompt",
   "name": "dsh-session-prompt-standalone",
   "title": "dsh-session-prompt-standalone",
-  "summary": "给每个会话固定注入一段自定义 system prompt，长对话压缩也不会丢，让 AI 始终记住你的设定。",
+  "summary": "dsh的提示词注入",
   "tags": [
-    "dsh-plugin",
-    "会话管理",
-    "模型适配",
-    "AI 助手",
-    "提示词注入"
+    "dsh-plugin"
   ],
   "version": "0.1.0",
   "versionSource": "github-tag",
@@ -36,9 +32,9 @@
     "method": "github",
     "spec": "github:WinRNGS/dsh-session-prompt-standalone",
     "commands": [
-      "git clone https://github.com/WinRNGS/dsh-session-prompt-standalone.git dsh-session-prompt",
-      "dsh plugin --profile web add \"$(pwd)/dsh-session-prompt\"",
-      "git clone -b v0.2 https://github.com/WinRNGS/dsh-session-prompt-standalone.git dsh-session-prompt"
+      "dsh plugin --profile web add \"github:WinRNGS/dsh-session-prompt-standalone",
+      "dsh plugin --profile web add .",
+      "dsh plugin --profile web add ./dsh-external-dsh-session-prompt-0.4.0.tgz"
     ],
     "url": null,
     "sha256": null,
@@ -54,6 +50,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

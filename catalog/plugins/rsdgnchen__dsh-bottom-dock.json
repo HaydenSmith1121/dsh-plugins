@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "rsdgnchen/dsh-bottom-dock",
+  "slug": "rsdgnchen__dsh-bottom-dock",
+  "package": "@rsdgnchen/dsh-bottom-dock",
+  "name": "dsh-bottom-dock",
+  "title": "dsh-bottom-dock",
+  "summary": "DSH Web 插件：把官方右侧栏 dock（终端/文件树/文档预览）整体搬到底部，仿 iOS 上滑横杠唤出、可拖拽调高。不改官方代码，只用官方 data-* 钩子重定位；探测不到官方结构时完全惰性。",
+  "tags": [
+    "bottom-panel",
+    "deepseek-harness",
+    "dock",
+    "dsh",
+    "dsh-plugin"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "rsdgnchen",
+  "repo": "https://github.com/rsdgnchen/dsh-bottom-dock",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T14:42:32Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:rsdgnchen/dsh-bottom-dock",
+    "commands": [
+      "dsh plugin --profile web add github:rsdgnchen/dsh-bottom-dock",
+      "dsh plugin --profile web add file:$HOME/dsh/plugins/dsh-bottom-dock"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

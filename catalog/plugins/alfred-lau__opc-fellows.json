@@ -15,6 +15,7 @@
     "electron",
     "indie-hacker",
     "local-first",
+    "macos",
     "one-person-company",
     "typescript",
     "workbench",
@@ -24,13 +25,13 @@
     "自动化",
     "效率提升"
   ],
-  "version": "0.7.3",
+  "version": "0.8.0",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
   "latestRelease": {
-    "tag": "v0.7.3",
-    "publishedAt": "2026-09-15T15:28:28Z",
-    "url": "https://github.com/Alfred-Lau/OPC-Fellows/releases/tag/v0.7.3"
+    "tag": "v0.8.0",
+    "publishedAt": "2026-09-20T02:44:20Z",
+    "url": "https://github.com/Alfred-Lau/OPC-Fellows/releases/tag/v0.8.0"
   },
   "author": "Alfred-Lau",
   "repo": "https://github.com/Alfred-Lau/OPC-Fellows",
@@ -38,8 +39,8 @@
   "license": "MIT",
   "stars": 3,
   "forks": 0,
-  "pushedAt": "2026-09-19T14:13:53Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "pushedAt": "2026-09-20T12:41:23Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -51,7 +52,7 @@
     "method": "github",
     "spec": "github:Alfred-Lau/OPC-Fellows",
     "commands": [
-      "dsh plugin --profile web add github:Alfred-Lau/OPC-Fellows"
+      "git clone git@github.com:Alfred-Lau/OPC-Fellows.git"
     ],
     "url": null,
     "sha256": null,
@@ -67,6 +68,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
   }
 }

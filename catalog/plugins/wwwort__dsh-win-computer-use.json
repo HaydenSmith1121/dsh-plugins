@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "wwwort/dsh-win-computer-use",
+  "slug": "wwwort__dsh-win-computer-use",
+  "package": "dsh-win-computer-use",
+  "name": "dsh-win-computer-use",
+  "title": "dsh-win-computer-use",
+  "summary": "Windows-native computer use for DeepSeek Harness: one batch tool runs a whole find/click/type/wait/screenshot sequence in a single model round trip, and drives windows without taking your focus or pointer.",
+  "tags": [
+    "computer-use",
+    "deepseek",
+    "desktop-automation",
+    "dsh-plugin",
+    "ui-automation",
+    "windows"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-19T12:56:58Z",
+    "url": "https://github.com/wwwort/dsh-win-computer-use/releases/tag/v0.1.1"
+  },
+  "author": "wwwort",
+  "repo": "https://github.com/wwwort/dsh-win-computer-use",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T12:56:54Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wwwort/dsh-win-computer-use",
+    "commands": [
+      "dsh plugin --profile web add github:wwwort/dsh-win-computer-use"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "YuMS/dsh-duet",
+  "slug": "yums__dsh-duet",
+  "package": null,
+  "name": "dsh-duet",
+  "title": "dsh-duet",
+  "summary": "",
+  "tags": [
+    "dsh-plugin",
+    "voice-assistant"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "YuMS",
+  "repo": "https://github.com/YuMS/dsh-duet",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T08:59:38Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-duet",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh",
+      "dsh plugin --profile web add dsh-duet"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}

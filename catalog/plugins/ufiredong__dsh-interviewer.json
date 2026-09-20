@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ufiredong/dsh-interviewer",
+  "slug": "ufiredong__dsh-interviewer",
+  "package": "dsh-interviewer",
+  "name": "dsh-interviewer",
+  "title": "dsh-interviewer",
+  "summary": "DSH 模拟面试面板 + 技能：真实模型当面试官，读简历层层追问、按证据打分并推导薪资区间。面试官是考官，不是助教。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "interview",
+    "mock-interview",
+    "skill"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "latestRelease": null,
+  "author": "ufiredong",
+  "repo": "https://github.com/ufiredong/dsh-interviewer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-19T20:14:09Z",
+  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ufiredong/dsh-interviewer",
+    "commands": [
+      "dsh plugin --profile web add github:ufiredong/dsh-interviewer",
+      "dsh plugin --profile web remove dsh-interviewer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-20T20:34:57.047Z",
+    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+  }
+}
