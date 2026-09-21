@@ -5,7 +5,7 @@
   "package": "@ddtcorex/dsh-maestro-memory",
   "name": "dsh-maestro-memory",
   "title": "dsh-maestro-memory",
-  "summary": "DSH plugin for durable, cross-session memory & todos — five tracks (global/user/project/key/daily), confirmation-gated writes, Git-backed sync, in-place adoption of ~/.dsh/memories.",
+  "summary": "给 AI 装上跨会话的长期记忆和待办，越用越懂你，还能用 Git 同步。",
   "tags": [
     "ai-agents",
     "cordis",
@@ -13,7 +13,12 @@
     "dsh",
     "dsh-plugin",
     "memory",
-    "todos"
+    "todos",
+    "状态持久化",
+    "会话管理",
+    "工作流增强",
+    "工具集成",
+    "跨设备"
   ],
   "version": "2.1.0",
   "versionSource": "github-release",
@@ -29,8 +34,8 @@
   "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-18T06:24:26Z",
-  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "pushedAt": "2026-09-21T14:17:48Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -58,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

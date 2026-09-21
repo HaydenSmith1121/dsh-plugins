@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "yzsnstotz/hanamesh-plugin-app-host",
+  "slug": "yzsnstotz__hanamesh-plugin-app-host",
+  "package": "@hanamesh/dsh-app-host",
+  "name": "hanamesh-plugin-app-host",
+  "title": "hanamesh-plugin-app-host",
+  "summary": "给 HanaMesh 应用库装上安装管家，一键装应用、补运行时、卸载，失败还能看原因重试。",
+  "tags": [
+    "dsh-plugin",
+    "hanamesh",
+    "插件管理",
+    "工具集成",
+    "状态监控",
+    "自动化"
+  ],
+  "version": "0.1.0-rc.2",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "yzsnstotz",
+  "repo": "https://github.com/yzsnstotz/hanamesh-plugin-app-host",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T13:35:44Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yzsnstotz/hanamesh-plugin-app-host",
+    "commands": [
+      "dsh plugin --profile web add github:yzsnstotz/hanamesh-plugin-app-host"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

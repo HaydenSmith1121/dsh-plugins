@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Srien11/dsh-sidecar",
+  "slug": "srien11__dsh-sidecar",
+  "package": "dsh-sidecar",
+  "name": "dsh-sidecar",
+  "title": "dsh-sidecar",
+  "summary": "选中回答片段就能在旁边追问，不打断主对话，追问自动保存随时接着聊。",
+  "tags": [
+    "conversation-branching",
+    "deepseek-harness",
+    "dsh-plugin",
+    "sidecar",
+    "会话管理",
+    "状态持久化",
+    "效率提升",
+    "快捷操作"
+  ],
+  "version": "0.1.0-beta.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "Srien11",
+  "repo": "https://github.com/Srien11/dsh-sidecar",
+  "homepage": "https://github.com/Srien11/dsh-sidecar",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T07:13:02Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Srien11/dsh-sidecar",
+    "commands": [
+      "dsh plugin --profile web add github:Srien11/dsh-sidecar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

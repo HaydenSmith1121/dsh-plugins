@@ -5,11 +5,15 @@
   "package": "dsh-opencode-compat",
   "name": "dsh-opencode-compat",
   "title": "dsh-opencode-compat",
-  "summary": "Standalone OpenCode Zen compatibility bundle for DeepSeek Harness: session headers and Muse reasoning replay",
+  "summary": "让 DSH 直连 OpenCode Zen 时自动补齐会话头和 Muse 推理回传，不用改 node_modules。",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
-    "opencode"
+    "opencode",
+    "桥接插件",
+    "模型配置",
+    "会话管理",
+    "零配置"
   ],
   "version": "0.1.1",
   "versionSource": "github-release",
@@ -54,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

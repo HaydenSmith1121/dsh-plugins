@@ -5,7 +5,7 @@
   "package": "dsh-memory-lite",
   "name": "dsh-memory-lite",
   "title": "dsh-memory-lite",
-  "summary": "给 agent 的按需记忆库：会话日志提炼成分层 markdown 记忆，mem_query 只回命中片段（约 700 字符，而不是上万字符）。零依赖、不每轮注入、条条可溯源。既是 DSH 插件，也是独立 CLI。",
+  "summary": "给 agent 按需查记忆，只回命中片段，省 92% token，零依赖可溯源。",
   "tags": [
     "agent-memory",
     "ai-agent",
@@ -19,7 +19,12 @@
     "markdown",
     "memory",
     "nodejs",
-    "token-efficiency"
+    "token-efficiency",
+    "效率提升",
+    "资源优化",
+    "命令行工具",
+    "状态持久化",
+    "AI 助手"
   ],
   "version": "0.2.0",
   "versionSource": "package.json",
@@ -61,6 +66,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -5,13 +5,18 @@
   "package": "dsh-api-key-pool",
   "name": "dsh-api-key-pool",
   "title": "dsh-api-key-pool",
-  "summary": "API Key rotation pool for DeepSeek Harness: multi-key round-robin, failover on 401/403/429, cooldown & recovery, Web UI management panel",
+  "summary": "给 DSH 配多个 API Key 自动轮换，遇到限流或失效自动切换，还能在网页面板里管理。",
   "tags": [
     "api-key",
     "api-key-rotation",
     "deepseek-harness",
     "dsh",
-    "dsh-plugin"
+    "dsh-plugin",
+    "模型适配",
+    "资源优化",
+    "状态监控",
+    "设置面板",
+    "自动化"
   ],
   "version": "0.3.0",
   "versionSource": "package.json",
@@ -52,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

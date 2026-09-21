@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Lbryany/dsh-codebuddy",
+  "slug": "lbryany__dsh-codebuddy",
+  "package": "@lbryany/dsh-codebuddy",
+  "name": "dsh-codebuddy",
+  "title": "dsh-codebuddy",
+  "summary": "给 DeepSeek Harness 加上 CodeBuddy 登录，动态拉取模型并可选推理等级。",
+  "tags": [
+    "codebuddy",
+    "deepseek-harness",
+    "dsh-plugin",
+    "模型适配",
+    "模型配置",
+    "工具集成",
+    "快捷操作"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-08-14T01:32:55Z",
+    "url": "https://github.com/Lbryany/dsh-codebuddy/releases/tag/v0.1.1"
+  },
+  "author": "Lbryany",
+  "repo": "https://github.com/Lbryany/dsh-codebuddy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-20T03:19:36Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Lbryany/dsh-codebuddy",
+    "commands": [
+      "dsh plugin --profile web add github:Lbryany/dsh-codebuddy"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

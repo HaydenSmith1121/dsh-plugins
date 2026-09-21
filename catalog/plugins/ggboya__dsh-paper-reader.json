@@ -5,26 +5,30 @@
   "package": null,
   "name": "dsh-paper-reader",
   "title": "dsh-paper-reader",
-  "summary": "DeepSeek Harness (dsh) 插件:论文伴读工作台 —— PDF 转录 / 检索 / 流式问答 + 内置阅读器页面。",
+  "summary": "把论文 PDF 变成能对话的伴读工作台，转录、检索、流式问答加内置阅读器一站搞定。",
   "tags": [
     "agent",
     "deepseek-harness",
     "dsh-plugin",
     "paper-reader",
-    "pdf"
+    "pdf",
+    "语义检索",
+    "AI 助手",
+    "文件管理",
+    "工具集成"
   ],
-  "version": "0.2.1",
+  "version": "1.0.0",
   "versionSource": "npm",
-  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
   "latestRelease": null,
   "author": "GGboya",
   "repo": "https://github.com/GGboya/dsh-paper-reader",
   "homepage": null,
-  "license": null,
+  "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-18T09:37:42Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "pushedAt": "2026-09-20T13:31:51Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -36,9 +40,7 @@
     "method": "npm",
     "spec": "@ggboy123/dsh-paper-reader",
     "commands": [
-      "dsh plugin --profile web add @ggboy123/dsh-paper-reader",
-      "git clone https://github.com/GGboya/dsh-paper-reader",
-      "dsh plugin --profile web add ./dsh-paper-reader"
+      "dsh plugin --profile web add @ggboy123/dsh-paper-reader"
     ],
     "url": null,
     "sha256": null,
@@ -54,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

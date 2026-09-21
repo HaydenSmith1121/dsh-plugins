@@ -5,9 +5,13 @@
   "package": "dsh-brake",
   "name": "dsh-brake",
   "title": "dsh-brake",
-  "summary": "DSH 死循环刹车器：检测 agent 会话中的方法循环（同类工具高频调用），注入警告或拒绝执行",
+  "summary": "盯住 agent 反复调用同类工具的死循环，及时警告或直接拦下，省时省 token。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "状态监控",
+    "会话管理",
+    "资源优化",
+    "自动化"
   ],
   "version": "0.2.0",
   "versionSource": "package.json",
@@ -48,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

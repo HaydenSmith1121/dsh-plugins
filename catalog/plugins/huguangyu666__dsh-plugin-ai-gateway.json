@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "huguangyu666/dsh-plugin-ai-gateway",
+  "slug": "huguangyu666__dsh-plugin-ai-gateway",
+  "package": null,
+  "name": "dsh-plugin-ai-gateway",
+  "title": "dsh-plugin-ai-gateway",
+  "summary": "把 Google Antigravity 和 OpenAI Codex 聚合成一个本地网关，多账号自动轮换、额度看板一目了然，还能故障转移。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "AI 助手",
+    "模型配置",
+    "状态监控",
+    "资源优化",
+    "集中仓库"
+  ],
+  "version": "0.2.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "huguangyu666",
+  "repo": "https://github.com/huguangyu666/dsh-plugin-ai-gateway",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T05:27:05Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-ai-gateway",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-ai-gateway"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

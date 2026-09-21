@@ -5,11 +5,14 @@
   "package": "dsh-graph-runtime",
   "name": "dsh-graph-runtime",
   "title": "dsh-graph-runtime",
-  "summary": "Graph runtime capabilities for the DeepSeek Harness: register LangGraph compiled graphs as DSH tools, plus a graph-driven routing agent.",
+  "summary": "把 LangGraph 编译好的图注册成 DSH 工具，还能用图驱动的方式自动调度 Agent 干活。",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
-    "langgraph"
+    "langgraph",
+    "工具集成",
+    "工作流增强",
+    "多Agent协作"
   ],
   "version": "0.2.0",
   "versionSource": "package.json",
@@ -51,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

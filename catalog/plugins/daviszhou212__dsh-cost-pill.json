@@ -5,16 +5,20 @@
   "package": "dsh-cost-pill",
   "name": "dsh-cost-pill",
   "title": "dsh-cost-pill",
-  "summary": "DSH web plugin: session API cost + account balance, as a pill merged into the official composer stats row (费用 · 余额 · 缓存命中).",
+  "summary": "在输入框统计行里加一枚费用胶囊，实时看本会话 API 花费、账户余额和缓存命中，点开还有明细。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "token-usage"
+    "token-usage",
+    "状态监控",
+    "前端增强",
+    "主题",
+    "效率提升"
   ],
-  "version": "0.1.1",
+  "version": "0.1.3",
   "versionSource": "package.json",
-  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
   "latestRelease": null,
   "author": "Daviszhou212",
   "repo": "https://github.com/Daviszhou212/dsh-cost-pill",
@@ -22,8 +26,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-18T13:36:10Z",
-  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "pushedAt": "2026-09-21T15:32:30Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -51,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

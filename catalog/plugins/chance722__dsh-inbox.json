@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Chance722/dsh-inbox",
+  "slug": "chance722__dsh-inbox",
+  "package": "@chance722/dsh-inbox",
+  "name": "dsh-inbox",
+  "title": "dsh-inbox",
+  "summary": "把随手复制的链接、图片、文本和账密自动分类存进本地仓库，对话里随时搜回来。",
+  "tags": [
+    "clipboard",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "inbox",
+    "集中仓库",
+    "快捷操作",
+    "语义检索",
+    "效率提升",
+    "文件管理"
+  ],
+  "version": "0.2.8",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "Chance722",
+  "repo": "https://github.com/Chance722/dsh-inbox",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-21T14:56:31Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Chance722/dsh-inbox",
+    "commands": [
+      "dsh plugin --profile web add github:Chance722/dsh-inbox"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

@@ -5,7 +5,7 @@
   "package": "dsh-plugin-zcode-import",
   "name": "dsh-plugin-zcode-import",
   "title": "dsh-plugin-zcode-import",
-  "summary": "DSH 会话导入插件：按工作区浏览本地 ZCode 的会话，勾选或整工作区导入 DeepSeek Harness · Import local ZCode conversations into DeepSeek Harness",
+  "summary": "把本地 ZCode 的会话按工作区浏览并一键导入 DeepSeek Harness，历史对话不丢失。",
   "tags": [
     "cordis",
     "deepseek",
@@ -13,7 +13,11 @@
     "dsh",
     "dsh-plugin",
     "session-import",
-    "zcode"
+    "zcode",
+    "会话管理",
+    "工作区管理",
+    "工具集成",
+    "状态持久化"
   ],
   "version": "1.0.0",
   "versionSource": "package.json",
@@ -56,6 +60,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

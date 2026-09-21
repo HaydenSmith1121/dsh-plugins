@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "FeatherHunter/ilife",
+  "slug": "featherhunter__ilife",
+  "package": null,
+  "name": "ilife",
+  "title": "ilife",
+  "summary": "一个仓库装齐七件居家生活小工具，按需单装，装哪个 DSH 就多哪项生活能力。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "插件管理",
+    "命令行工具",
+    "效率提升",
+    "设置面板"
+  ],
+  "version": "0.3.6",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "FeatherHunter",
+  "repo": "https://github.com/FeatherHunter/ilife",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 0,
+  "pushedAt": "2026-09-20T12:57:18Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-life-pack",
+    "commands": [
+      "dsh plugin add dsh-life-pack",
+      "dsh plugin add dsh-life-pack dsh-calorie",
+      "dsh plugin add dsh-life-pack dsh-chef"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

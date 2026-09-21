@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "bbaz123/dsh-confirmation-resolution",
+  "slug": "bbaz123__dsh-confirmation-resolution",
+  "package": "dsh-plugin-confirmation-resolution",
+  "name": "dsh-confirmation-resolution",
+  "title": "dsh-confirmation-resolution",
+  "summary": "任务完成后自动判断待确认事项，该改就改、该问才问，避免机械照做或反复追问。",
+  "tags": [
+    "agent-plugins",
+    "confirmation-resolution",
+    "cordis",
+    "cordis-plugin",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "system-prompt",
+    "工作流增强",
+    "AI 助手",
+    "自动化"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "bbaz123",
+  "repo": "https://github.com/bbaz123/dsh-confirmation-resolution",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T14:20:25Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bbaz123/dsh-confirmation-resolution",
+    "commands": [
+      "dsh plugin --profile web add github:bbaz123/dsh-confirmation-resolution"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

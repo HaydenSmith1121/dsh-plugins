@@ -5,13 +5,17 @@
   "package": null,
   "name": "dsh-set-model",
   "title": "dsh-set-model",
-  "summary": "Per-agent model switching for DeepSeek Harness: set_model / list_models agent tools with provider whitelist and token-budget guardrails, plus plan-mode model staging and cache-safe active-model context.",
+  "summary": "让每个 Agent 自己切换模型和思考深度，带白名单和预算保护，还能预演计划模式。",
   "tags": [
     "ai-agent",
     "deepseek-harness",
     "dsh-plugin",
     "llm",
-    "model-switching"
+    "model-switching",
+    "模型适配",
+    "多Agent协作",
+    "自动化",
+    "资源优化"
   ],
   "version": "0.1.0",
   "versionSource": "npm",
@@ -52,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

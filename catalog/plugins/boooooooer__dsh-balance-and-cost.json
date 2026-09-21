@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "boooooooer/dsh-balance-and-cost",
+  "slug": "boooooooer__dsh-balance-and-cost",
+  "package": "dsh-balance-and-cost",
+  "name": "dsh-balance-and-cost",
+  "title": "dsh-balance-and-cost",
+  "summary": "实时显示 DeepSeek 账户余额和模型消耗量，按会话统计 token 费用，区分高峰/空闲定价。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "Token监控",
+    "会话管理",
+    "定价参考"
+  ],
+  "version": "0.3.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "boooooooer",
+  "repo": "https://github.com/boooooooer/dsh-balance-and-cost",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-20T07:52:21Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:boooooooer/dsh-balance-and-cost",
+    "commands": [
+      "dsh plugin --profile web add github:boooooooer/dsh-balance-and-cost",
+      "dsh plugin --profile web add ./dsh-balance-and-cost"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "yzsnstotz/hanamesh-usage",
+  "slug": "yzsnstotz__hanamesh-usage",
+  "package": "hanamesh-usage",
+  "name": "hanamesh-usage",
+  "title": "hanamesh-usage",
+  "summary": "给 HanaMesh MOD-11 加活动统计，实时看用量和运行状态，方便排查和调优。",
+  "tags": [
+    "dsh-plugin",
+    "hanamesh",
+    "状态监控",
+    "效率提升",
+    "工具集成",
+    "插件管理"
+  ],
+  "version": "0.1.0-rc.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "yzsnstotz",
+  "repo": "https://github.com/yzsnstotz/hanamesh-usage",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T12:21:15Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yzsnstotz/hanamesh-usage",
+    "commands": [
+      "dsh plugin --profile web add github:yzsnstotz/hanamesh-usage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

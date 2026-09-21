@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "jacket-sikaha/dsh-market-gist-autosync",
+  "slug": "jacket-sikaha__dsh-market-gist-autosync",
+  "package": null,
+  "name": "dsh-market-gist-autosync",
+  "title": "dsh-market-gist-autosync",
+  "summary": "把 DSH 配置定时打包备份到 GitHub Gist，换设备也能随时找回。",
+  "tags": [
+    "dedeepseek-harness",
+    "dsh-plugin",
+    "自动化",
+    "状态持久化",
+    "跨设备",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "jacket-sikaha",
+  "repo": "https://github.com/jacket-sikaha/dsh-market-gist-autosync",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-21T19:39:25Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-market-gist-autosync",
+    "commands": [
+      "dsh plugin --profile desktop add dsh-market-gist-autosync"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

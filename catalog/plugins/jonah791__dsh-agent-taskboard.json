@@ -5,14 +5,14 @@
   "package": "dsh-agent-taskboard",
   "name": "dsh-agent-taskboard",
   "title": "dsh-agent-taskboard",
-  "summary": "让主人或任意 agent 把任务丢进异步队列，宿主 agent 空闲时自己领取完成，不打断当前会话。",
+  "summary": "让主人和各个 agent 都能发布任务，宿主 agent 空闲时自动领取完成，不打断当前会话。",
   "tags": [
     "dsh-plugin",
-    "多智能体协作",
+    "工作流增强",
+    "多Agent协作",
     "自动化",
-    "消息通知",
-    "状态监控",
-    "效率提升"
+    "状态持久化",
+    "消息通知"
   ],
   "version": "0.1.1",
   "versionSource": "github-release",
@@ -57,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

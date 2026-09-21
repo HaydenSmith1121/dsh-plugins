@@ -5,13 +5,17 @@
   "package": "dsh-cache-guard",
   "name": "dsh-cache-guard",
   "title": "dsh-cache-guard",
-  "summary": "DSH plugin that prices an automatic context rewrite before it lands and asks first — the cold re-read, in k tokens.",
+  "summary": "自动改写上下文前先算清代价，默认问你一句再动手，避免缓存失效白花钱。",
   "tags": [
     "compaction",
     "cordis",
     "deepseek-harness",
     "dsh-plugin",
-    "prefix-cache"
+    "prefix-cache",
+    "资源优化",
+    "会话管理",
+    "安全审计",
+    "模型适配"
   ],
   "version": "0.2.0",
   "versionSource": "github-tag",
@@ -52,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "QuanhuZeYu/dsh-compaction-zh",
+  "slug": "quanhuzeyu__dsh-compaction-zh",
+  "package": "dsh-compaction-zh",
+  "name": "dsh-compaction-zh",
+  "title": "dsh-compaction-zh",
+  "summary": "把 DeepSeek Harness 的压缩检查点指令变成中文，不改源码，热挂载即用。",
+  "tags": [
+    "chinese",
+    "compaction",
+    "cordis-plugin",
+    "deepseek-harness",
+    "dsh",
+    "模型配置",
+    "插件管理",
+    "零配置",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "QuanhuZeYu",
+  "repo": "https://github.com/QuanhuZeYu/dsh-compaction-zh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T09:46:12Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:QuanhuZeYu/dsh-compaction-zh",
+    "commands": [
+      "dsh plugin --profile web add github:QuanhuZeYu/dsh-compaction-zh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

@@ -5,10 +5,15 @@
   "package": "dsh-forge",
   "name": "dsh-forge",
   "title": "dsh-forge",
-  "summary": "把 DeepSeek Harness 做成一个真正的桌面应用：Electron 主进程内嵌 Cordis Host（与官方 Web 版同内核、零移植）， 渲染进程加载官方 Web UI 发行物（file:///自定义协议 + IPC 桥接，不开放 HTTP 端口）， 所有桌面原生能力（托盘、全局热键、系统通知、剪贴板、开机自启、协议唤起、多窗口）以 host 插件 形态注入运行时， 与官方「一切皆插件」的架构同构——不是给网页套壳，而是把桌面能力变成可装配、可卸载、可审查的插件树。  AI 驱动开发声明",
+  "summary": "把 DeepSeek Harness 变成真正的桌面应用，托盘、热键、通知等原生能力全都有。",
   "tags": [
     "dsh",
-    "dsh-plugin"
+    "dsh-plugin",
+    "工具集成",
+    "快捷操作",
+    "消息通知",
+    "主题",
+    "效率提升"
   ],
   "version": "0.1.1",
   "versionSource": "github-release",
@@ -53,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

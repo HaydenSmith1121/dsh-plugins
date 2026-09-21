@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-voice-call",
   "title": "dsh-voice-call",
-  "summary": "Give a DeepSeek Harness agent a voice it owns — offer_call rings the human (接听/拒接/稍后); local-first TTS/STT via CrispASR + Qwen3-TTS (9 voices, 2 CN dialects). DSH 0.1.2-rc.1 compatible. Fork of dsh-voice.",
+  "summary": "让 Agent 主动打电话给你，本地跑语音合成与识别，支持接听、拒接、稍后再说。",
   "tags": [
     "ai-agent",
     "crispasr",
@@ -20,7 +20,12 @@
     "text-to-speech",
     "tts",
     "voice",
-    "voice-call"
+    "voice-call",
+    "消息通知",
+    "视觉理解",
+    "AI 助手",
+    "工具集成",
+    "语音通话"
   ],
   "version": "0.3.0",
   "versionSource": "npm",
@@ -64,6 +69,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

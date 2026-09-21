@@ -5,9 +5,14 @@
   "package": "dsh-plugin-hub",
   "name": "dsh-plugin-hub",
   "title": "dsh-plugin-hub",
-  "summary": "DSH (DeepSeek Harness) web GUI plugin collection — task notifications, provider usage, LAN proxy, MCP manager, file-preview redirect, isolated browser verification. Targets dsh 0.1.5-rc.1 (rc only, no alpha). Install: dsh plugin --profile web add @wingsky-1/dsh-plugins-all",
+  "summary": "把任务通知、用量查看、局域网代理、MCP 管理、文件预览跳转和隔离浏览器验证打包成一套 DSH 网页插件合集。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "插件管理",
+    "消息通知",
+    "工具集成",
+    "浏览器隔离",
+    "状态监控"
   ],
   "version": "0.2.5",
   "versionSource": "npm",
@@ -17,10 +22,10 @@
   "repo": "https://github.com/wingsky-1/dsh-plugin-hub",
   "homepage": null,
   "license": "MIT",
-  "stars": 18,
+  "stars": 19,
   "forks": 7,
-  "pushedAt": "2026-09-19T20:02:10Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-20T15:39:48Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -50,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

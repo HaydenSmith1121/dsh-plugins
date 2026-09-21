@@ -5,13 +5,17 @@
   "package": null,
   "name": "dsh-tm-guard",
   "title": "dsh-tm-guard",
-  "summary": "Zero-intervention permission gate for DSH agents on macOS: rollback-able local writes auto-allowed, network/installs/sensitive reads blocked and audited.",
+  "summary": "macOS 上给 DSH 智能体当权限守门员，本地可回滚的写入自动放行，联网、装软件和敏感读取一律拦截并留痕。",
   "tags": [
     "backup",
     "cordis",
     "dsh",
     "dsh-plugin",
-    "macos"
+    "macos",
+    "零配置",
+    "安全审计",
+    "自动化",
+    "文件管理"
   ],
   "version": "0.1.1",
   "versionSource": "npm",
@@ -23,8 +27,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-19T07:49:41Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-20T08:17:09Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -52,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

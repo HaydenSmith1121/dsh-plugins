@@ -5,9 +5,13 @@
   "package": null,
   "name": "dsh-session-title-pattern",
   "title": "dsh-session-title-pattern",
-  "summary": "自动管理 dsh 会话标题，统一成「日期｜类型｜主题」的格式：类型与主题由模型对整段对话总结。",
+  "summary": "自动把 dsh 会话标题整理成「日期｜类型｜主题」，还能把暂时不用的会话收起来，侧边栏一眼看清。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "会话管理",
+    "自动化",
+    "效率提升",
+    "主题"
   ],
   "version": "0.7.5",
   "versionSource": "npm",
@@ -19,8 +23,8 @@
   "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-17T02:43:12Z",
-  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "pushedAt": "2026-09-20T14:50:00Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -48,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

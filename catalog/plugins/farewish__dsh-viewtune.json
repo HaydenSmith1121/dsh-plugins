@@ -5,9 +5,13 @@
   "package": "dsh-viewtune",
   "name": "dsh-viewtune",
   "title": "dsh-viewtune",
-  "summary": "DeepSeek Harness 的阅读页签插件：一轮对话进行时能看到思考、工具与进度，结束后自动折叠过程、只留最终回答。",
+  "summary": "给 DeepSeek Harness 加个阅读页签，对话进行时能看思考和工具进度，结束后自动折叠只留答案。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "主题",
+    "状态监控",
+    "效率提升",
+    "前端增强"
   ],
   "version": "0.3.0-relayout.14",
   "versionSource": "github-release",
@@ -38,7 +42,7 @@
     "commands": [
       "dsh plugin --profile web add github:Farewish/dsh-viewtune",
       "dsh plugin --profile web add ./dsh-viewtune",
-      "dsh plugin --profile web add ./dsh-viewtune-0.3.0-relayout.13.tgz"
+      "dsh plugin --profile web add ./dsh-viewtune-0.3.0-relayout.14.tgz"
     ],
     "url": null,
     "sha256": null,
@@ -54,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

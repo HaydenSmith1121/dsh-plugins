@@ -5,13 +5,18 @@
   "package": "dsh-healthcheck",
   "name": "dsh-healthcheck",
   "title": "dsh-healthcheck",
-  "summary": "Runtime health check for DeepSeek Harness: session-library scan + crash-tail inspection. Read-only.",
+  "summary": "只读零配置的运行时体检插件，扫描会话库并检查崩溃日志，帮你揪出拖垮长任务的隐患。",
   "tags": [
     "deepseek-harness",
     "developer-tools",
     "dsh",
     "dsh-plugin",
-    "healthcheck"
+    "healthcheck",
+    "状态监控",
+    "零配置",
+    "会话管理",
+    "安全审计",
+    "命令行工具"
   ],
   "version": "0.1.1",
   "versionSource": "github-release",
@@ -57,6 +62,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

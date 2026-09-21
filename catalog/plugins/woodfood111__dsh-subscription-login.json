@@ -5,13 +5,17 @@
   "package": null,
   "name": "dsh-subscription-login",
   "title": "dsh-subscription-login",
-  "summary": "Subscription sign-in console for DeepSeek Harness: one settings page for every OAuth sign-in the harness can offer, read from the authorization seam instead of hardcoded providers.",
+  "summary": "一个设置页统一管理 ChatGPT、Claude、Copilot 等订阅账号的 OAuth 登录，不用再逐个配置。",
   "tags": [
     "deepseek",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "oauth"
+    "oauth",
+    "设置面板",
+    "模型适配",
+    "工具集成",
+    "AI 助手"
   ],
   "version": "0.1.1",
   "versionSource": "npm",
@@ -21,10 +25,10 @@
   "repo": "https://github.com/woodfood111/dsh-subscription-login",
   "homepage": "https://github.com/woodfood111/dsh-subscription-login",
   "license": "MIT",
-  "stars": 0,
+  "stars": 1,
   "forks": 0,
   "pushedAt": "2026-09-18T14:57:33Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -52,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

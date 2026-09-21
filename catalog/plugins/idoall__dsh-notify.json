@@ -42,12 +42,12 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:idoall/dsh-notify",
+    "method": "npm",
+    "spec": "@idoall/dsh-notify@latest",
     "commands": [
+      "dsh plugin --profile web add @idoall/dsh-notify@latest",
       "dsh plugin --profile web add \"github:idoall/dsh-notify\"",
-      "git clone https://github.com/idoall/dsh-notify.git",
-      "npm install"
+      "git clone https://github.com/idoall/dsh-notify.git"
     ],
     "url": null,
     "sha256": null,
@@ -63,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

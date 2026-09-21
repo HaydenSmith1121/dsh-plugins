@@ -5,7 +5,7 @@
   "package": "dsh-cache-safe-tool-result",
   "name": "dsh-cache-safe-tool-result",
   "title": "dsh-cache-safe-tool-result",
-  "summary": "让工具结果在进入会话前就截断好，避免改动已发出的请求，保住提示词缓存不失效。",
+  "summary": "在工具结果进入会话前先截断，避免改写已发出的内容，保住提示词缓存不失效。",
   "tags": [
     "compaction",
     "cordis",
@@ -16,9 +16,9 @@
     "prompt-cache",
     "tool-result",
     "资源优化",
-    "成本控制",
-    "工具集成",
-    "状态监控"
+    "会话管理",
+    "效率提升",
+    "工具集成"
   ],
   "version": "1.0.0",
   "versionSource": "github-tag",
@@ -61,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

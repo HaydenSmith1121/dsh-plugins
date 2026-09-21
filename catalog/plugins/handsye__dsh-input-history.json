@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "HandsYe/dsh-input-history",
+  "slug": "handsye__dsh-input-history",
+  "package": "dsh-input-history",
+  "name": "dsh-input-history",
+  "title": "dsh-input-history",
+  "summary": "给 DSH 输入框加上历史记录，按上下方向键就能翻出以前发过的内容，没发完的草稿也不会丢。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "input-history",
+    "keyboard-navigation",
+    "localstorage",
+    "prompt-history",
+    "快捷操作",
+    "效率提升",
+    "状态持久化",
+    "前端增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "HandsYe",
+  "repo": "https://github.com/HandsYe/dsh-input-history",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T06:50:45Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:HandsYe/dsh-input-history",
+    "commands": [
+      "dsh plugin --profile web add github:HandsYe/dsh-input-history"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

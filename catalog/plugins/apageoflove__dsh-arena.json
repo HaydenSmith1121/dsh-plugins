@@ -5,7 +5,7 @@
   "package": "dsh-arena",
   "name": "DSH-arena",
   "title": "DSH-arena",
-  "summary": "DeepSeek Harness 插件：同一个任务下对比多个模型配置，跑完给出 Pareto 排名和实验报告",
+  "summary": "同一个任务跑多个模型配置，自动筛选排名并生成实验报告，还带网页实验台。",
   "tags": [
     "ai-agent",
     "arena",
@@ -21,7 +21,12 @@
     "llm",
     "local-first",
     "plugin",
-    "typescript"
+    "typescript",
+    "模型适配",
+    "内容创作",
+    "自动化",
+    "可视化",
+    "效率提升"
   ],
   "version": "0.2.1",
   "versionSource": "package.json",
@@ -62,6 +67,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

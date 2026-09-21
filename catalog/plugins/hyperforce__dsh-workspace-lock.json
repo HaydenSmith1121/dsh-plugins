@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "HyperForce/dsh-workspace-lock",
+  "slug": "hyperforce__dsh-workspace-lock",
+  "package": "dsh-workspace-lock",
+  "name": "dsh-workspace-lock",
+  "title": "dsh-workspace-lock",
+  "summary": "给 DSH 工作区加密码锁，右键一键锁定，会话和聊天区自动隐藏，管理员可设主密码。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "工作区管理",
+    "安全审计",
+    "快捷操作",
+    "会话管理",
+    "前端增强"
+  ],
+  "version": "0.3.6",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "HyperForce",
+  "repo": "https://github.com/HyperForce/dsh-workspace-lock",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T06:57:44Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:HyperForce/dsh-workspace-lock",
+    "commands": [
+      "dsh plugin --profile web add link:/path/to/this/repo",
+      "dsh plugin --profile web remove dsh-workspace-lock"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

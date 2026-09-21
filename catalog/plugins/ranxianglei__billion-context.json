@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ranxianglei/billion-context",
+  "slug": "ranxianglei__billion-context",
+  "package": "billion-context",
+  "name": "billion-context",
+  "title": "billion-context",
+  "summary": "给所有 AI 编程助手用的上下文压缩代理，改个 base URL 就能把 10 万 token 上下文压到够用。",
+  "tags": [
+    "dsh-plugin",
+    "资源优化",
+    "模型配置",
+    "零配置",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "0.1.134",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": {
+    "tag": "v0.1.134",
+    "publishedAt": "2026-09-21T10:17:40Z",
+    "url": "https://github.com/ranxianglei/billion-context/releases/tag/v0.1.134"
+  },
+  "author": "ranxianglei",
+  "repo": "https://github.com/ranxianglei/billion-context",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 233,
+  "forks": 28,
+  "pushedAt": "2026-09-21T16:39:55Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ranxianglei/billion-context",
+    "commands": [
+      "npm install -g billion-context"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

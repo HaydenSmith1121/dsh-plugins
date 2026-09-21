@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-grok-provider",
   "title": "dsh-grok-provider",
-  "summary": "DeepSeek Harness 的社区 Grok Build Provider：官方 CLI 浏览器 OAuth、动态模型、流式工具调用与额度面板。Community Grok Build provider with official CLI OAuth, dynamic models, streaming tools, and a quota dashboard.",
+  "summary": "让 DeepSeek Harness 直接调用你已登录的 Grok 账号，支持流式推理、图片输入和工具调用。",
   "tags": [
     "ai-tools",
     "browser-oauth",
@@ -26,7 +26,11 @@
     "plugin",
     "streaming",
     "windows",
-    "xai"
+    "xai",
+    "模型配置",
+    "工具集成",
+    "视觉理解",
+    "模型适配"
   ],
   "version": "1.0.6",
   "versionSource": "github-release",
@@ -71,6 +75,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

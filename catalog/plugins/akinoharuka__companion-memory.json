@@ -5,11 +5,15 @@
   "package": "companion-memory-workspace",
   "name": "companion-memory",
   "title": "companion-memory",
-  "summary": "Native scoped Riko memory plugin for DeepSeek Harness",
+  "summary": "给 DeepSeek Harness 加上原生记忆能力，按预设隔离作用域，让 AI 记住上下文不串味。",
   "tags": [
     "dsh",
     "dsh-plugin",
-    "memory"
+    "memory",
+    "状态持久化",
+    "会话管理",
+    "AI 助手",
+    "插件管理"
   ],
   "version": "0.1.6-alpha.2",
   "versionSource": "package.json",
@@ -21,8 +25,8 @@
   "license": null,
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-20T15:09:36Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-21T01:39:19Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -50,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

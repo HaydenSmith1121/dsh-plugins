@@ -5,13 +5,18 @@
   "package": "@zhaolianghz/dsh-turnscope",
   "name": "dsh-turnscope",
   "title": "dsh-turnscope",
-  "summary": "Per-turn file diffs, deterministic safety warnings, and preview-first safe rewind for DeepSeek Harness coding sessions.",
+  "summary": "看清 AI 每一轮改了哪些文件，提前预警风险，还能安全回退重试不丢好代码。",
   "tags": [
     "agent-observability",
     "deepseek-harness",
     "dsh",
     "dsh-bundle",
-    "dsh-plugin"
+    "dsh-plugin",
+    "安全审计",
+    "状态监控",
+    "工作区管理",
+    "文件管理",
+    "会话管理"
   ],
   "version": "0.1.5",
   "versionSource": "github-release",
@@ -56,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

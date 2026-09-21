@@ -5,7 +5,7 @@
   "package": "dsh-djy-xttsc",
   "name": "dsh-djy-xttsc",
   "title": "dsh-djy-xttsc",
-  "summary": "DSH(DeepSeek Harness) 插件：把一段可在设置页随时改写的文字，作为全局系统提示词段注入到所有会话，含子代理与工作流内部子代理；文本与开关即时生效，无需重启。",
+  "summary": "在设置页写一段全局提示词，所有会话和子代理都自动带上，改完立刻生效不用重启。",
   "tags": [
     "agent",
     "cordis",
@@ -15,7 +15,11 @@
     "dsh-plugin",
     "plugin",
     "prompt-injection",
-    "system-prompt"
+    "system-prompt",
+    "模型适配",
+    "设置面板",
+    "多Agent协作",
+    "效率提升"
   ],
   "version": "1.0.0",
   "versionSource": "package.json",
@@ -56,6 +60,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -5,11 +5,15 @@
   "package": "@goodandready/dsh-agent-orchestrator",
   "name": "dsh-agent-orchestrator",
   "title": "dsh-agent-orchestrator",
-  "summary": "Multi-agent task decomposition, DAG workflow orchestration, and prompt caching optimizer for DeepSeek Harness",
+  "summary": "把复杂任务拆给多个 Agent 并行处理，用 DAG 编排流程并优化提示缓存，让协作更高效。",
   "tags": [
     "deepseek-harness",
     "dsh",
-    "dsh-plugin"
+    "dsh-plugin",
+    "多Agent协作",
+    "工作流增强",
+    "效率提升",
+    "资源优化"
   ],
   "version": "0.1.9",
   "versionSource": "github-release",
@@ -23,10 +27,10 @@
   "repo": "https://github.com/GooDAnDReaDY/dsh-agent-orchestrator",
   "homepage": null,
   "license": "MIT",
-  "stars": 0,
+  "stars": 1,
   "forks": 0,
   "pushedAt": "2026-09-19T22:38:17Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -54,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

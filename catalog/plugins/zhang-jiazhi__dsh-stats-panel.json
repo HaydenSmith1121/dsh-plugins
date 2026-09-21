@@ -5,7 +5,7 @@
   "package": "@linxin666/dsh-stats-panel",
   "name": "dsh-stats-panel",
   "title": "dsh-stats-panel",
-  "summary": "在会话顶部查看 Token 用量统计面板，按模型/渠道聚合，实时监控余额配额与费用估算。",
+  "summary": "在会话顶部加个 Token 统计页，看用量、缓存命中、渠道余额和费用估算。",
   "tags": [
     "dashboard",
     "deepseek-harness",
@@ -14,9 +14,11 @@
     "llm-usage",
     "token-stats",
     "token-usage",
-    "资源优化",
     "状态监控",
-    "可视化"
+    "可视化",
+    "资源优化",
+    "内容创作",
+    "效率提升"
   ],
   "version": "0.5.0",
   "versionSource": "github-release",
@@ -52,8 +54,8 @@
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -61,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

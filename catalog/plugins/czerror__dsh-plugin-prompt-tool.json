@@ -5,13 +5,18 @@
   "package": null,
   "name": "dsh-plugin-prompt-tool",
   "title": "dsh-plugin-prompt-tool",
-  "summary": "DSH 插件：简体中文行为规范三层注入（常驻层 + prompt 技能 + anchored preset 锚定注入）+ Web UI 编辑 prompt.md",
+  "summary": "把提示词按常驻、技能、锚定三层注入 DSH，还能在网页里直接编辑 prompt.md。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "prompt-engineering",
-    "sillytavern"
+    "sillytavern",
+    "模型适配",
+    "设置面板",
+    "AI 助手",
+    "工作流增强",
+    "前端增强"
   ],
   "version": "0.7.2",
   "versionSource": "npm",
@@ -23,8 +28,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-18T18:58:08Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-20T12:17:05Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -53,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

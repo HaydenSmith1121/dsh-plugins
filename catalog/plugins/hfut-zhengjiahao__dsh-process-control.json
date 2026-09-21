@@ -5,12 +5,16 @@
   "package": "dsh-process-control",
   "name": "dsh-process-control",
   "title": "dsh-process-control",
-  "summary": "Local-only stop and restart controls for DeepSeek Harness (DSH) — a sidebar plugin with loopback-only process routes",
+  "summary": "在侧边栏一键重启或终止本地 DSH 服务，仅限本机访问，方便调试和日常维护。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "plugin"
+    "plugin",
+    "快捷操作",
+    "状态监控",
+    "插件管理",
+    "安全审计"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -51,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -5,11 +5,16 @@
   "package": "dsh-cc-ecosystem",
   "name": "dsh-cc-ecosystem",
   "title": "dsh-cc-ecosystem",
-  "summary": "让 DeepSeek Harness 用上 Claude Code 全家桶:技能、命令、规则、权限、子代理、hooks—— .claude/ 资产原样加载",
+  "summary": "让 DSH 直接加载 Claude Code 的 .claude/ 资产，技能、命令、规则、子代理、hooks 全都能用。",
   "tags": [
     "claude-code",
     "dsh-plugin",
-    "dsh-plugins"
+    "dsh-plugins",
+    "桥接插件",
+    "工具集成",
+    "多Agent协作",
+    "工作流增强",
+    "零配置"
   ],
   "version": "0.2.1",
   "versionSource": "github-release",
@@ -23,10 +28,10 @@
   "repo": "https://github.com/Bcy2020/dsh-cc-ecosystem",
   "homepage": null,
   "license": null,
-  "stars": 5,
+  "stars": 6,
   "forks": 1,
   "pushedAt": "2026-09-19T09:11:51Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -54,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -5,12 +5,16 @@
   "package": "dsh-sandbox-escalation-guard",
   "name": "dsh-sandbox-escalation-guard",
   "title": "dsh-sandbox-escalation-guard",
-  "summary": "DeepSeek Harness plugin: stops the sandbox escalation fields being advertised to a model when the calling session cannot grant them, fixing the retry loop known models fall into at danger-full-access.",
+  "summary": "会话无权授予沙箱升级权限时，自动屏蔽相关字段，避免模型陷入重试死循环。",
   "tags": [
     "cordis",
     "deepseek-harness",
     "dsh-plugin",
-    "sandbox"
+    "sandbox",
+    "模型配置",
+    "安全审计",
+    "会话管理",
+    "零配置"
   ],
   "version": "1.0.0",
   "versionSource": "package.json",
@@ -20,10 +24,10 @@
   "repo": "https://github.com/iimaguest/dsh-sandbox-escalation-guard",
   "homepage": null,
   "license": "Apache-2.0",
-  "stars": 0,
+  "stars": 1,
   "forks": 0,
   "pushedAt": "2026-09-19T03:50:14Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -51,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

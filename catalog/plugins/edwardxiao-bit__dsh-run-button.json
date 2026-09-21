@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "EdwardXiao-bit/dsh-run-button",
+  "slug": "edwardxiao-bit__dsh-run-button",
+  "package": "dsh-run-button",
+  "name": "dsh-run-button",
+  "title": "dsh-run-button",
+  "summary": "给 DSH 回复里的命令行代码块加个「运行」按钮，一键在宿主机执行并实时看输出。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "命令行工具",
+    "快捷操作",
+    "效率提升",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-20T15:22:36Z",
+    "url": "https://github.com/EdwardXiao-bit/dsh-run-button/releases/tag/v0.1.0"
+  },
+  "author": "EdwardXiao-bit",
+  "repo": "https://github.com/EdwardXiao-bit/dsh-run-button",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T16:31:45Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:EdwardXiao-bit/dsh-run-button",
+    "commands": [
+      "dsh plugin --profile web add github:EdwardXiao-bit/dsh-run-button"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

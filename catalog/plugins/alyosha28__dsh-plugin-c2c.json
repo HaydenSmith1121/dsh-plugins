@@ -5,13 +5,17 @@
   "package": "dsh-plugin-c2c",
   "name": "dsh-plugin-c2c",
   "title": "dsh-plugin-c2c",
-  "summary": "Cache-to-Cache (C2C) for DeepSeek Harness: two local LLMs that share a KV-cache instead of exchanging text, exposed as c2c_* agent tools",
+  "summary": "让两个本地大模型直接共享 KV 缓存来传信息，不再互发文本，跑得更快更省。",
   "tags": [
     "cache-to-cache",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "kv-cache"
+    "kv-cache",
+    "多Agent协作",
+    "效率提升",
+    "资源优化",
+    "模型配置"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -52,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "kolawong/fast-compaction-dsh",
+  "slug": "kolawong__fast-compaction-dsh",
+  "package": "fast-compaction-dsh",
+  "name": "fast-compaction-dsh",
+  "title": "fast-compaction-dsh",
+  "summary": "用快速保留/截断/丢弃判断替代有损摘要，压缩上下文时保留内容原样不丢信息。",
+  "tags": [
+    "compaction",
+    "context-management",
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "jev",
+    "llm",
+    "会话管理",
+    "资源优化",
+    "效率提升",
+    "模型配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "kolawong",
+  "repo": "https://github.com/kolawong/fast-compaction-dsh",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-20T17:36:29Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kolawong/fast-compaction-dsh",
+    "commands": [
+      "dsh plugin --profile web add github:kolawong/fast-compaction-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

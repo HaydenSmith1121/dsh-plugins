@@ -5,13 +5,18 @@
   "package": "@dsh-external/dsh-engram-relay",
   "name": "dsh-engram-relay",
   "title": "dsh-engram-relay",
-  "summary": "dsh-engram-relay 公开镜像（上游：dsh-external/dsh-engram-relay）：跨会话分层记忆 + 哈希×语义×因果超稀疏唤醒，13 个 engram_* 工具，BSD-3-Clause",
+  "summary": "给 DSH 的 agent 装个外置大脑，跨会话记住事、自动补知识，不硬答还能当场学。",
   "tags": [
     "causal-graph",
     "dsh-plugin",
     "engram",
     "marisa-plugin",
-    "memory"
+    "memory",
+    "状态持久化",
+    "语义检索",
+    "多Agent协作",
+    "自动化",
+    "AI 助手"
   ],
   "version": "0.4.3",
   "versionSource": "github-release",
@@ -58,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

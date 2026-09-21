@@ -5,14 +5,21 @@
   "package": null,
   "name": "dsh-privacy-guard",
   "title": "dsh-privacy-guard",
-  "summary": "DSH Web 隐私脱敏守护插件：状态监控看板、出网泄密探测沙箱与网关路由管理（配合 Privacy Gateway）",
+  "summary": "给本地凭据脱敏网关配个控制面板，看状态、查审计、管密钥、设白名单，防止密钥外泄。",
   "tags": [
     "cordis",
+    "cordis-plugin",
+    "deepseek",
     "deepseek-harness",
     "dlp",
+    "dsh",
     "dsh-plugin",
     "privacy",
-    "security"
+    "security",
+    "安全审计",
+    "状态监控",
+    "设置面板",
+    "插件管理"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -20,12 +27,12 @@
   "latestRelease": null,
   "author": "amwangfan",
   "repo": "https://github.com/amwangfan/dsh-privacy-guard",
-  "homepage": null,
+  "homepage": "https://awesome-dsh-plugin.com/p/amwangfan/dsh-privacy-guard/",
   "license": "NOASSERTION",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-17T16:46:19Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "pushedAt": "2026-09-20T11:02:44Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -54,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

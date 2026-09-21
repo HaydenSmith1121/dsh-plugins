@@ -5,7 +5,7 @@
   "package": "dsh-commandcode-goat",
   "name": "dsh-commandcode-goat",
   "title": "dsh-commandcode-goat",
-  "summary": "DeepSeek Harness (dsh) plugin: publishes a Command Code subscription (GOAT / Pro / Max) as llm-pi-ai provider routes, with account usage and web search on the same credential.",
+  "summary": "把 Command Code 订阅接成 DSH 模型供应商，用量查询和联网搜索共用一把密钥。",
   "tags": [
     "ai-agents",
     "commandcode",
@@ -14,7 +14,11 @@
     "dsh",
     "dsh-plugin",
     "llm-pi-ai",
-    "llm-provider"
+    "llm-provider",
+    "模型配置",
+    "工具集成",
+    "模型适配",
+    "状态监控"
   ],
   "version": "0.4.8",
   "versionSource": "package.json",
@@ -55,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

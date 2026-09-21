@@ -5,18 +5,18 @@
   "package": null,
   "name": "dsh-failure-capsule",
   "title": "dsh-failure-capsule",
-  "summary": "把失败的智能体会话打包成脱敏的本地证据包，方便事后排查和复盘。",
+  "summary": "把失败的 Agent 会话整理成脱敏可审阅的证据 ZIP，本地保存方便排查复盘",
   "tags": [
     "debugging",
     "deepseek-harness",
     "dsh-plugin",
     "incident-response",
     "observability",
-    "数据脱敏",
-    "会话管理",
     "状态监控",
-    "自动化",
-    "零配置"
+    "安全审计",
+    "内容创作",
+    "会话管理",
+    "命令行工具"
   ],
   "version": "0.2.4",
   "versionSource": "npm",
@@ -26,10 +26,10 @@
   "repo": "https://github.com/YiHarvest/dsh-failure-capsule",
   "homepage": "https://www.npmjs.com/package/dsh-failure-capsule",
   "license": "MIT",
-  "stars": 6,
+  "stars": 7,
   "forks": 0,
-  "pushedAt": "2026-09-15T03:56:41Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-20T07:16:57Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -59,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

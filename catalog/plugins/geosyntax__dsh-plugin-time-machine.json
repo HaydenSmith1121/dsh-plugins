@@ -5,7 +5,7 @@
   "package": "dsh-plugin-time-machine",
   "name": "dsh-plugin-time-machine",
   "title": "dsh-plugin-time-machine",
-  "summary": "Community DSH plugin for coordinated session/workspace checkpoints, safe rewind, DAG forks, and failure reflection.",
+  "summary": "给 DSH 会话加个时光机，能回滚工作区、分叉试错，失败的分支也能留着复盘。",
   "tags": [
     "ai-agents",
     "checkpoint",
@@ -18,7 +18,12 @@
     "rollback",
     "session-management",
     "time-travel",
-    "typescript"
+    "typescript",
+    "会话管理",
+    "工作区管理",
+    "状态持久化",
+    "工作流增强",
+    "效率提升"
   ],
   "version": "0.2.0",
   "versionSource": "package.json",
@@ -59,6 +64,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -5,7 +5,7 @@
   "package": "dsh-approve-for-me",
   "name": "dsh-auto-review",
   "title": "dsh-auto-review",
-  "summary": "给 DeepSeek Harness 加一档自动审批：安全操作免打扰，危险操作当场拒，拿不准的才来问你。",
+  "summary": "自动帮你审批 Codex 风格的请求，省去手动确认，让 DeepSeek Harness 跑得更顺。",
   "tags": [
     "auto-review",
     "deepseek-harness",
@@ -13,10 +13,9 @@
     "dsh-plugin",
     "oauth",
     "typescript",
-    "安全审查",
-    "插件管理",
     "自动化",
     "效率提升",
+    "安全审计",
     "AI 助手"
   ],
   "version": "0.3.0",
@@ -46,17 +45,15 @@
     "method": "github",
     "spec": "github:aa2246740/dsh-auto-review",
     "commands": [
-      "dsh plugin --profile web add github:aa2246740/dsh-auto-review",
-      "git clone https://github.com/aa2246740/dsh-auto-review.git",
-      "dsh plugin --profile web add ./dsh-auto-review"
+      "dsh plugin --profile web add github:aa2246740/dsh-auto-review"
     ],
     "url": null,
     "sha256": null,
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": true,
-    "usageNeedsConfig": true,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
     "risky": false,
     "riskyReasons": []
   },
@@ -64,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

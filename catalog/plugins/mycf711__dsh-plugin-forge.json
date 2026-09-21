@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "MYCF711/dsh-plugin-forge",
+  "slug": "mycf711__dsh-plugin-forge",
+  "package": "dsh-plugin-forge",
+  "name": "dsh-plugin-forge",
+  "title": "dsh-plugin-forge",
+  "summary": "一支专家 Agent 团队帮你从零打造 dsh 插件，一路做到能发布。",
+  "tags": [
+    "agent-team",
+    "deepseek-harness",
+    "dsh-plugin",
+    "多Agent协作",
+    "插件管理",
+    "自动化",
+    "AI 助手"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-20T04:11:27Z",
+    "url": "https://github.com/MYCF711/dsh-plugin-forge/releases/tag/v0.2.0"
+  },
+  "author": "MYCF711",
+  "repo": "https://github.com/MYCF711/dsh-plugin-forge",
+  "homepage": null,
+  "license": "GPL-3.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T05:52:44Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MYCF711/dsh-plugin-forge",
+    "commands": [
+      "dsh plugin --profile <你的profile> add github:MYCF711/dsh-plugin-forge",
+      "dsh plugin --profile <你的profile> add <tgz 路径>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "DaiYuhangSustc/dsh-cae-plugin",
+  "slug": "daiyuhangsustc__dsh-cae-plugin",
+  "package": "dsh-cae",
+  "name": "dsh-cae-plugin",
+  "title": "dsh-cae-plugin",
+  "summary": "一句话描述需求，自动完成建模、网格、求解和后处理的CAE仿真流程，支持结构分析和流体仿真。",
+  "tags": [
+    "cae",
+    "cfd",
+    "dsh-plugin",
+    "工作流增强",
+    "效率提升",
+    "工具集成",
+    "内容创作"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "DaiYuhangSustc",
+  "repo": "https://github.com/DaiYuhangSustc/dsh-cae-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-20T05:31:35Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:DaiYuhangSustc/dsh-cae-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:DaiYuhangSustc/dsh-cae-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

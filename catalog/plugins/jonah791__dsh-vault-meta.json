@@ -5,9 +5,13 @@
   "package": "dsh-vault-meta",
   "name": "dsh-vault-meta",
   "title": "dsh-vault-meta",
-  "summary": "凭据库只读元数据工具：列出 vault 条目与字段名（**只碰非密元数据**，绝不读取或回显任何明文/密文）——把「我有什么凭据」变成一条工具调用，不再手打 PowerShell",
+  "summary": "一条命令列出凭据库里有哪些站点和字段，只读非密元数据，不碰任何口令私钥。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "安全审计",
+    "命令行工具",
+    "效率提升",
+    "工具集成"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -48,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "haimuhaimu/dsh-image-gen",
+  "slug": "haimuhaimu__dsh-image-gen",
+  "package": "dsh-image-gen",
+  "name": "dsh-image-gen",
+  "title": "dsh-image-gen",
+  "summary": "给 DSH 智能体加上画图能力，输入文字描述就能生成图片，并自动弹出显示，还能作为对话附件供后续使用。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "自动化",
+    "零配置",
+    "会话管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "haimuhaimu",
+  "repo": "https://github.com/haimuhaimu/dsh-image-gen",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T07:59:53Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:haimuhaimu/dsh-image-gen",
+    "commands": [
+      "dsh plugin --profile <name> add github:haimuhaimu/dsh-image-gen",
+      "dsh plugin --profile <name> add ./image-gen"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

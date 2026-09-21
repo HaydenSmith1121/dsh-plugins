@@ -5,12 +5,16 @@
   "package": "dsh-reze-render",
   "name": "dsh-reze-render",
   "title": "dsh-reze-render",
-  "summary": "用 reze-engine 离线出 MMD 视频的 DSH 插件：reze_status / reze_preview / reze_render（无头 WebGPU 逐帧渲染 + ffmpeg 编码 + 判据现算）",
+  "summary": "一个工具调用就能离线渲染出 MMD 视频，直接拿回成品和判据。",
   "tags": [
     "dsh-plugin",
     "mmd",
     "reze-engine",
-    "webgpu"
+    "webgpu",
+    "视频",
+    "工具集成",
+    "自动化",
+    "报告生成"
   ],
   "version": "0.1.1",
   "versionSource": "package.json",
@@ -52,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

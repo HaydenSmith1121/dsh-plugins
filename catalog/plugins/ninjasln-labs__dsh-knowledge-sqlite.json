@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-knowledge-sqlite",
   "title": "dsh-knowledge-sqlite",
-  "summary": "DeepSeek Harness 跨会话知识插件：ctx.knowledge 服务 + knowledge_* 工具，SQLite FTS5 trigram 中文子串检索 + L1 查询扩展（V1.11 契约）",
+  "summary": "给 DeepSeek Harness 加个跨会话知识库，用 SQLite 全文检索中文，随时存随时查。",
   "tags": [
     "ai-coding",
     "chinese-search",
@@ -20,7 +20,12 @@
     "llm",
     "query-expansion",
     "sqlite",
-    "trigram"
+    "trigram",
+    "语义检索",
+    "状态持久化",
+    "工具集成",
+    "会话管理",
+    "零配置"
   ],
   "version": "0.1.9",
   "versionSource": "npm",
@@ -61,6 +66,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

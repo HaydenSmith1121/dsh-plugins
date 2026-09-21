@@ -5,31 +5,36 @@
   "package": "dsh-qoder-connect",
   "name": "dsh-qoder-connect",
   "title": "dsh-qoder-connect",
-  "summary": "将 Qoder（国内版 / 国际版）的模型以个人访问令牌（PAT）接入 DeepSeek Harness —— 双变体独立配置、侧栏额度展示、上下文窗口一键切换。|Qoder CN & international models for DeepSeek Harness via PAT. 支持 DSH 0.1.5-rc.1+。",
+  "summary": "用 PAT 把 Qoder 国内版和国际版模型接进 DSH，双版本独立配置，侧栏看额度，一键切上下文窗口。",
   "tags": [
     "deepseek",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "qoder",
-    "qoder-cn"
+    "qoder-cn",
+    "模型配置",
+    "模型适配",
+    "工具集成",
+    "状态监控",
+    "桥接插件"
   ],
-  "version": "0.1.2",
+  "version": "0.1.5",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
   "latestRelease": {
-    "tag": "v0.1.2",
-    "publishedAt": "2026-09-20T16:08:43Z",
-    "url": "https://github.com/masknull/dsh-qoder-connect/releases/tag/v0.1.2"
+    "tag": "v0.1.5",
+    "publishedAt": "2026-09-21T17:05:26Z",
+    "url": "https://github.com/masknull/dsh-qoder-connect/releases/tag/v0.1.5"
   },
   "author": "masknull",
   "repo": "https://github.com/masknull/dsh-qoder-connect",
   "homepage": null,
   "license": "MIT",
-  "stars": 3,
-  "forks": 1,
-  "pushedAt": "2026-09-20T16:08:35Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "stars": 6,
+  "forks": 2,
+  "pushedAt": "2026-09-21T17:05:02Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -58,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

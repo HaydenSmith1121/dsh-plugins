@@ -5,17 +5,22 @@
   "package": "dsh-ssh-ops",
   "name": "dsh-ssh-ops",
   "title": "dsh-ssh-ops",
-  "summary": "DeepSeek Harness SSH 运维插件：主对话驱动 SSH，带高危命令保护与右侧终端。",
+  "summary": "在主对话里直接操作服务器，右侧保留真实终端，还能管文件、转发端口和数据库。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "命令行工具",
+    "工具集成",
+    "文件管理",
+    "效率提升",
+    "安全审计"
   ],
-  "version": "0.3.11",
+  "version": "0.3.12",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
   "latestRelease": {
-    "tag": "v0.3.11",
-    "publishedAt": "2026-09-18T17:37:27Z",
-    "url": "https://github.com/caoyiwei850/dsh-ssh-ops/releases/tag/v0.3.11"
+    "tag": "v0.3.12",
+    "publishedAt": "2026-09-21T02:04:13Z",
+    "url": "https://github.com/caoyiwei850/dsh-ssh-ops/releases/tag/v0.3.12"
   },
   "author": "caoyiwei850",
   "repo": "https://github.com/caoyiwei850/dsh-ssh-ops",
@@ -23,8 +28,8 @@
   "license": "MIT",
   "stars": 21,
   "forks": 10,
-  "pushedAt": "2026-09-18T17:44:03Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-21T02:03:11Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -53,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

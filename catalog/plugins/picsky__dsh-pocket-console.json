@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-pocket-console",
   "title": "dsh-pocket-console",
-  "summary": "Don't hand over the whole machine, just the decision blocking it: an unattended DeepSeek Harness (DSH) run's tool-call approvals and ask_user_question prompts reach your phone as Feishu cards — desktop first, outbound only.",
+  "summary": "出门在外也能用飞书卡片审批 DSH 的工具调用和提问，任务不再卡住。",
   "tags": [
     "approval",
     "ask-user-question",
@@ -26,11 +26,15 @@
     "permissions",
     "plugin",
     "qr-code",
-    "remote-approval"
+    "remote-approval",
+    "消息通知",
+    "跨设备",
+    "安全审计",
+    "快捷操作"
   ],
-  "version": "0.8.1",
+  "version": "0.9.1",
   "versionSource": "npm",
-  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
   "latestRelease": null,
   "author": "picsky",
   "repo": "https://github.com/picsky/dsh-pocket-console",
@@ -38,8 +42,8 @@
   "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-18T07:45:43Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "pushedAt": "2026-09-20T15:18:42Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -52,7 +56,7 @@
     "spec": "dsh-pocket-console",
     "commands": [
       "dsh plugin --profile web add dsh-pocket-console",
-      "dsh plugin --profile web add ./dsh-pocket-console-<version>.tgz"
+      "dsh plugin --profile web remove dsh-pocket-console"
     ],
     "url": null,
     "sha256": null,
@@ -68,6 +72,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

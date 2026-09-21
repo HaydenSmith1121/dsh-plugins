@@ -5,9 +5,13 @@
   "package": "@flg1217/dsh-quick-commands",
   "name": "dsh-quick-commands",
   "title": "dsh-quick-commands",
-  "summary": "User-defined slash commands for DeepSeek Harness: configure quick commands (name + prompt) in the settings panel; /name inserts a chip that expands to the prompt on send.",
+  "summary": "在设置面板自定义斜杠命令，输入 /名称 即插入占位符，发送时自动展开成完整提示词。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "快捷操作",
+    "效率提升",
+    "设置面板",
+    "命令行工具"
   ],
   "version": "0.1.0",
   "versionSource": "github-tag",
@@ -19,8 +23,8 @@
   "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-17T09:34:14Z",
-  "metricsCheckedAt": "2026-09-17T17:24:38.098Z",
+  "pushedAt": "2026-09-21T08:10:20Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -50,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -5,9 +5,13 @@
   "package": null,
   "name": "dsh-nanobot-subagent-link",
   "title": "dsh-nanobot-subagent-link",
-  "summary": "Connect Nanobot instances to DeepSeek Harness,enabling DSH to operate NanoBot as a Sub-Agent",
+  "summary": "把本地 Nanobot 智能体接入 DSH，让它作为子智能体帮你干活。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "桥接插件",
+    "多Agent协作",
+    "工具集成",
+    "AI 助手"
   ],
   "version": "0.4.0",
   "versionSource": "github-tag",
@@ -19,8 +23,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-17T13:32:21Z",
-  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "pushedAt": "2026-09-20T14:40:10Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -48,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

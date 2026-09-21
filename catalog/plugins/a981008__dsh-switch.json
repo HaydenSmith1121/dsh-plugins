@@ -5,11 +5,16 @@
   "package": "dsh-switch",
   "name": "dsh-switch",
   "title": "dsh-switch",
-  "summary": "CC Switch bridge for DeepSeek Harness: mirrors cc-switch providers and models into DSH, and shows each provider quota or balance.",
+  "summary": "把 cc-switch 里的服务商和模型同步进 DSH，还能直接看每个服务商的额度余额。",
   "tags": [
     "cc-switch",
     "deepseek-harness",
-    "dsh-plugin"
+    "dsh-plugin",
+    "桥接插件",
+    "模型适配",
+    "状态监控",
+    "工具集成",
+    "自动化"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -52,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

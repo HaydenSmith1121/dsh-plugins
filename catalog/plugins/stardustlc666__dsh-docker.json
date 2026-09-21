@@ -5,12 +5,17 @@
   "package": null,
   "name": "dsh-docker",
   "title": "dsh-docker",
-  "summary": "DSH 容器与镜像管理插件：走官方 subprocess 服务，argv 无 shell 注入，exec 与破坏性操作默认审批。",
+  "summary": "让 AI 助手直接管 Docker 容器和镜像，看日志、进容器执行命令、启停都行，危险操作先问你。",
   "tags": [
     "deepseek-harness",
     "devops",
     "docker",
-    "dsh-plugin"
+    "dsh-plugin",
+    "工具集成",
+    "命令行工具",
+    "自动化",
+    "安全审计",
+    "状态监控"
   ],
   "version": "0.3.3",
   "versionSource": "npm",
@@ -51,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

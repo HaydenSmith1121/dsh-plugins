@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "mengge237/dsh-model-priority",
+  "slug": "mengge237__dsh-model-priority",
+  "package": "dsh-model-priority",
+  "name": "dsh-model-priority",
+  "title": "dsh-model-priority",
+  "summary": "在侧边栏拖拽调整模型和提供方的顺序，让常用模型排到列表最前面，保存前自动备份。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "模型适配",
+    "设置面板",
+    "快捷操作",
+    "效率提升"
+  ],
+  "version": "0.2.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "mengge237",
+  "repo": "https://github.com/mengge237/dsh-model-priority",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T04:31:14Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mengge237/dsh-model-priority",
+    "commands": [
+      "dsh plugin --profile web add \"<本仓目录，或 git 地址>\"",
+      "dsh plugin --profile web remove dsh-model-priority"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

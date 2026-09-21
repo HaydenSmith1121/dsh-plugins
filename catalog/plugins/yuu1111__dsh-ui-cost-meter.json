@@ -5,13 +5,17 @@
   "package": null,
   "name": "dsh-ui-cost-meter",
   "title": "dsh-ui-cost-meter",
-  "summary": "DeepSeek Harness Web GUI plugin: real-time spend for the current session, priced from per-model token rates and shown as a pill under the composer",
+  "summary": "在输入框下方实时显示当前会话花了多少钱，按各模型 token 单价算，一眼看清开销。",
   "tags": [
     "cordis",
     "cost",
     "deepseek-harness",
     "dsh-plugin",
-    "token"
+    "token",
+    "状态监控",
+    "资源优化",
+    "前端增强",
+    "模型适配"
   ],
   "version": "1.0.1",
   "versionSource": "npm",
@@ -52,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

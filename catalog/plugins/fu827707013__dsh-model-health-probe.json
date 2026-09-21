@@ -5,9 +5,13 @@
   "package": "dsh-model-health-probe",
   "name": "dsh-model-health-probe",
   "title": "dsh-model-health-probe",
-  "summary": "DSH 模型健康检查：会话视图页签，选定供应商/协议/模型/路由后手动发真实裸 HTTP 请求，一屏看耗时、TTFT、状态、token 与三层诊断链。",
+  "summary": "在会话视图里手动发一条真实请求，一屏看清模型耗时、TTFT 和卡在哪一层。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "状态监控",
+    "模型适配",
+    "模型配置",
+    "会话管理"
   ],
   "version": "0.3.4",
   "versionSource": "github-release",
@@ -52,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

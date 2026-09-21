@@ -5,12 +5,12 @@
   "package": null,
   "name": "dsh-task-kanban",
   "title": "dsh-task-kanban",
-  "summary": "在 DSH 网页里加一个任务看板，把需求拆成阶段计划，自动在 git 分支里逐个执行，完成后自动合并主分支。",
+  "summary": "把需求拆成多阶段计划，在 git worktree 里自动串行实现并合并，全程看板可视化。",
   "tags": [
     "dsh-plugin",
-    "需求管理",
     "工作流增强",
-    "效率提升",
+    "自动化",
+    "可视化",
     "工作区管理"
   ],
   "version": "0.2.6",
@@ -23,8 +23,8 @@
   "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-15T04:13:09Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-20T11:17:39Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -53,6 +53,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

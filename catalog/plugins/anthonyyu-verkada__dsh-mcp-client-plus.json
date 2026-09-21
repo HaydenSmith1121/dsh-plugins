@@ -5,12 +5,17 @@
   "package": "dsh-mcp-client-plus",
   "name": "dsh-mcp-client-plus",
   "title": "dsh-mcp-client-plus",
-  "summary": "DeepSeek Harness MCP client bridge with OAuth 2.1, bounded connect/discovery timeouts, environment-indirected secrets, optional indefinite reconnection, and a mcp_status diagnostic tool",
+  "summary": "给 dsh 接上 MCP 服务的桥接插件，支持 OAuth 2.1 授权、超时控制和断线自动重连，还能随时查看连接状态。",
   "tags": [
     "cordis",
     "deepseek-harness",
     "dsh-plugin",
-    "mcp"
+    "mcp",
+    "桥接插件",
+    "工具集成",
+    "状态监控",
+    "模型适配",
+    "自动化"
   ],
   "version": "0.2.0",
   "versionSource": "package.json",
@@ -51,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

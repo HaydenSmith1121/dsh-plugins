@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "jianjianzhu/dsh-final-answer-view",
+  "slug": "jianjianzhu__dsh-final-answer-view",
+  "package": "dsh-final-answer-view",
+  "name": "dsh-final-answer-view",
+  "title": "dsh-final-answer-view",
+  "summary": "让 DeepSeek Harness 网页只显示最终答案，自动隐藏推理过程和工具调用记录，结果和审批照常保留。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "final-answer",
+    "plugin",
+    "web-ui",
+    "主题",
+    "效率提升",
+    "前端增强",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-19T07:14:41Z",
+    "url": "https://github.com/jianjianzhu/dsh-final-answer-view/releases/tag/v0.1.0"
+  },
+  "author": "jianjianzhu",
+  "repo": "https://github.com/jianjianzhu/dsh-final-answer-view",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-19T07:14:40Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jianjianzhu/dsh-final-answer-view",
+    "commands": [
+      "dsh plugin --profile web add github:jianjianzhu/dsh-final-answer-view"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

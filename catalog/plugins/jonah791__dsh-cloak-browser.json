@@ -5,9 +5,13 @@
   "package": "dsh-cloak-browser",
   "name": "dsh-cloak-browser",
   "title": "dsh-cloak-browser",
-  "summary": "CloakBrowser（补丁版 Chromium）生命周期工具：把 20 个加固参数固化为 start/stop/status 三个工具",
+  "summary": "把 CloakBrowser 补丁版 Chromium 的 20 个加固参数打包成启动、停止、查状态三个工具，一键搞定。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "浏览器隔离",
+    "快捷操作",
+    "状态监控",
+    "工具集成"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -48,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

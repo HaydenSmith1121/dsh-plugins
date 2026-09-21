@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-web-gateway",
+  "slug": "goodandready__dsh-web-gateway",
+  "package": null,
+  "name": "dsh-web-gateway",
+  "title": "dsh-web-gateway",
+  "summary": "给 DeepSeek Harness 加上稳定的联网搜索和网页正文提取，多服务商自动切换，抓取不怕 SSRF。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "firecrawl",
+    "tavily",
+    "web-search",
+    "工具集成",
+    "语义检索",
+    "安全审计",
+    "零配置"
+  ],
+  "version": "0.1.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-web-gateway",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T17:34:45Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@goodandready/dsh-web-gateway",
+    "commands": [
+      "dsh plugin --profile web add @goodandready/dsh-web-gateway"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "harmless0819-dev/dsh-codex-micro",
+  "slug": "harmless0819-dev__dsh-codex-micro",
+  "package": "dsh-codex-micro",
+  "name": "dsh-codex-micro",
+  "title": "dsh-codex-micro",
+  "summary": "把 Vaydeer 九键小键盘变成 DSH 遥控器，按键组合直接触发编程代理操作。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "hid",
+    "keyboard",
+    "keypad",
+    "快捷操作",
+    "工具集成",
+    "效率提升",
+    "桥接插件"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "harmless0819-dev",
+  "repo": "https://github.com/harmless0819-dev/dsh-codex-micro",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T12:50:17Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:harmless0819-dev/dsh-codex-micro",
+    "commands": [
+      "dsh plugin --profile web add github:harmless0819-dev/dsh-codex-micro"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

@@ -5,7 +5,7 @@
   "package": "dsh-logicprobe",
   "name": "logicprobe",
   "title": "logicprobe",
-  "summary": "Claim verification for AI coding agents — logic-primitive verification for state machines, data models, and concurrency risk in design docs & refactoring plans. Cross-platform Agent Skills + DSH native. | AI 编程助手声明核查插件：对设计文档与重构计划做逻辑原语验证，覆盖状态机、数据模型与并发风险，支持前后回归。跨平台 Agent Skills + DSH 原生。",
+  "summary": "逐条核查设计文档和重构计划里的声称是否与代码一致，行为类问题还能跑模型验证。",
   "tags": [
     "agent-plugin",
     "agent-skills",
@@ -15,7 +15,12 @@
     "cordis",
     "deepseek-harness",
     "dsh-plugin",
-    "verification"
+    "verification",
+    "安全审计",
+    "自动化",
+    "AI 助手",
+    "工作流增强",
+    "内容创作"
   ],
   "version": "0.1.0",
   "versionSource": "github-tag",
@@ -56,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -5,12 +5,17 @@
   "package": null,
   "name": "dsh-simulated-life",
   "title": "dsh-simulated-life",
-  "summary": "Simulated life context for DeepSeek Harness: reads .life/<date> events into agent context with dedup, and a life_react tool to write feelings, thoughts and actions back for world-evolution workflows.",
+  "summary": "给 Agent 注入拟真生活上下文，自动读取每日事件并支持回写感受与行动，让世界持续演化。",
   "tags": [
     "ai-agent",
     "deepseek-harness",
     "dsh-plugin",
-    "memory"
+    "memory",
+    "状态持久化",
+    "工作流增强",
+    "AI 助手",
+    "自动化",
+    "会话管理"
   ],
   "version": "0.1.0",
   "versionSource": "npm",
@@ -51,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

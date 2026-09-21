@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "Yochor-Debug/dsh-float",
+  "slug": "yochor-debug__dsh-float",
+  "package": "dsh-plugin-balance-float",
+  "name": "dsh-float",
+  "title": "dsh-float",
+  "summary": "在 Harness 网页界面角落挂一个悬浮小胶囊，随时显示 DeepSeek API 剩余余额，不挡操作。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "主题",
+    "效率提升",
+    "快捷操作"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "Yochor-Debug",
+  "repo": "https://github.com/Yochor-Debug/dsh-float",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T13:17:04Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Yochor-Debug/dsh-float",
+    "commands": [
+      "dsh plugin --profile web add github:Yochor-Debug/dsh-float"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

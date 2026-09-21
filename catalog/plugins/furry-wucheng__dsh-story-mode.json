@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Furry-wucheng/dsh-story-mode",
+  "slug": "furry-wucheng__dsh-story-mode",
+  "package": "dsh-story-mode",
+  "name": "dsh-story-mode",
+  "title": "dsh-story-mode",
+  "summary": "给 DSH 加一个短篇小说模式，新建会话就能直接找 AI 接稿写小说。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "报告生成",
+    "零配置",
+    "工作流增强",
+    "AI 助手"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "Furry-wucheng",
+  "repo": "https://github.com/Furry-wucheng/dsh-story-mode",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-19T13:43:48Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Furry-wucheng/dsh-story-mode",
+    "commands": [
+      "dsh plugin --profile <你的 profile> add github:Furry-wucheng/dsh-story-mode",
+      "dsh plugin --profile <你的 profile> remove dsh-story-mode",
+      "dsh plugin --profile <你的 profile> exec dsh-story-mode check"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

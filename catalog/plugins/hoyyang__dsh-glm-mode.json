@@ -5,23 +5,23 @@
   "package": null,
   "name": "dsh-glm-mode",
   "title": "dsh-glm-mode",
-  "summary": "GLM Mode: fully tuned coding agent preset for zhipuai/glm-5.3-flash in DeepSeek Harness — PTC presentation, guard family, isolated compaction",
+  "summary": "装上就能让 GLM-5.3-Flash 在 DSH 里稳定写代码，自带自动压缩和防死循环、防工具空转双重保护。",
   "tags": [
     "agent-preset",
     "dsh-plugin",
     "glm",
     "guard",
     "loop-guard",
-    "zhipuai"
+    "zhipuai",
+    "模型配置",
+    "零配置",
+    "效率提升",
+    "状态监控"
   ],
   "version": "0.4.0",
-  "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
-  "latestRelease": {
-    "tag": "v0.4.0",
-    "publishedAt": "2026-09-18T06:32:14Z",
-    "url": "https://github.com/hoyyang/dsh-glm-mode/releases/tag/v0.4.0"
-  },
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
   "author": "hoyyang",
   "repo": "https://github.com/hoyyang/dsh-glm-mode",
   "homepage": null,
@@ -57,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

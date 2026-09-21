@@ -5,12 +5,16 @@
   "package": "dsh-desktop-upgrade",
   "name": "dsh-desktop-upgrade",
   "title": "dsh-desktop-upgrade",
-  "summary": "DeepSeek Harness (DSH) Desktop plugin: adds the missing 「升级 DSH」 entry — tray command + dsh_upgrade model tool, driving the official version service and installer channel via desktopRuntime.updates. 不改内核文件。",
+  "summary": "给 DSH Desktop 补上缺失的「升级 DSH」入口，托盘命令和模型工具都能一键检查更新并升级。",
   "tags": [
     "cordis",
     "deepseek-harness",
     "dsh",
-    "dsh-plugin"
+    "dsh-plugin",
+    "快捷操作",
+    "设置面板",
+    "工具集成",
+    "自动化"
   ],
   "version": "0.2.0",
   "versionSource": "package.json",
@@ -51,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

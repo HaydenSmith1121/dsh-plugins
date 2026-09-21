@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "dingchenhui0618-arch/dsh-taskwatch",
+  "slug": "dingchenhui0618-arch__dsh-taskwatch",
+  "package": null,
+  "name": "dsh-taskwatch",
+  "title": "dsh-taskwatch",
+  "summary": "在手机上随时查看 DSH 的会话、后台任务、子代理和待审批事项，只读不干扰。",
+  "tags": [
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "monitor",
+    "pwa",
+    "状态监控",
+    "会话管理",
+    "多Agent协作",
+    "跨设备",
+    "工作流增强"
+  ],
+  "version": "1.0.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "dingchenhui0618-arch",
+  "repo": "https://github.com/dingchenhui0618-arch/dsh-taskwatch",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-21T10:07:46Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-taskwatch",
+    "commands": [
+      "dsh plugin --profile web add dsh-taskwatch",
+      "dsh plugin --profile web add <你的绝对路径>/dsh-taskwatch"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

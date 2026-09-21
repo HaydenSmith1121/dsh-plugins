@@ -5,13 +5,17 @@
   "package": "dsh-contract-check",
   "name": "dsh-contract-check",
   "title": "dsh-contract-check",
-  "summary": "Zero-token contract check for DSH plugins — verifies output.render() / session-event vocabulary, warn-only. 无耗检查：DSH 插件契约体检，零 token 成本，只告警不拦截。",
+  "summary": "零成本体检已装 DSH 插件，揪出违反内核契约的写法，只告警不拦截。",
   "tags": [
     "contract-check",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "plugin-audit"
+    "plugin-audit",
+    "安全审计",
+    "插件管理",
+    "状态监控",
+    "零配置"
   ],
   "version": "0.1.0",
   "versionSource": "github-tag",
@@ -52,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

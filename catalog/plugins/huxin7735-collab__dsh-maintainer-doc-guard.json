@@ -5,9 +5,12 @@
   "package": "dsh-maintainer-doc-guard",
   "name": "dsh-maintainer-doc-guard",
   "title": "dsh-maintainer-doc-guard",
-  "summary": "Keeps a long agent turn answerable to the user's actual request: a standing maintainer-document reminder, two pre-execute gates, an objective anchor quoting your latest instruction, and a nudge stage that corrects before it blocks.",
+  "summary": "让长时间运行的 AI 任务始终不跑偏，把项目记忆留在上下文之外，还能随时对照你的原始需求。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "状态持久化",
+    "工作流增强",
+    "会话管理"
   ],
   "version": "0.5.0",
   "versionSource": "github-tag",
@@ -19,8 +22,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-20T16:09:44Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-21T15:42:19Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -49,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

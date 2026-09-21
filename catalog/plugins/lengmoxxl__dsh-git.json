@@ -5,10 +5,14 @@
   "package": "@lengmoxxl/dsh-git",
   "name": "dsh-git",
   "title": "dsh-git",
-  "summary": "A read-only git browser for the DeepSeek Harness Web GUI: a right-sidebar page with the session's working-tree changes and commit history, and the diff a click opens beside them. The host half reads the repository through ctx.fs and ctx.subprocess, so a routed (remote) execution world works unchanged.",
+  "summary": "在右侧边栏直接查看工作区改动和提交记录，点一下就能看高亮 diff，只读不误改。",
   "tags": [
     "deepseek-harness",
-    "dsh-plugin"
+    "dsh-plugin",
+    "前端增强",
+    "工作区管理",
+    "可视化",
+    "效率提升"
   ],
   "version": "0.2.1",
   "versionSource": "package.json",
@@ -49,6 +53,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

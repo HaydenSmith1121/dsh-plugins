@@ -5,14 +5,19 @@
   "package": "dsh-agent-shell",
   "name": "dsh-agent-shell",
   "title": "dsh-agent-shell",
-  "summary": "Persistent interactive tmux shells for DeepSeek Harness (DSH) — 7 model tools, floating panel, hash-chained audit, consent gate.",
+  "summary": "给 DSH 加个常驻终端面板，AI 能开多个 tmux 会话跑命令，还能随时接管打字。",
   "tags": [
     "ai-agent",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "terminal",
-    "tmux"
+    "tmux",
+    "命令行工具",
+    "工具集成",
+    "会话管理",
+    "状态持久化",
+    "安全审计"
   ],
   "version": "0.3.2",
   "versionSource": "github-release",
@@ -57,6 +62,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

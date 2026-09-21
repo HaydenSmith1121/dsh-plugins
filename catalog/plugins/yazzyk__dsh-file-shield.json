@@ -5,7 +5,7 @@
   "package": "dsh-file-shield",
   "name": "dsh-file-shield",
   "title": "dsh-file-shield",
-  "summary": "DeepSeek Harness (dsh) 插件：在 Web GUI 里点选文件或目录，屏蔽 agent 对它们的读取、搜索、写入与编辑，使机密内容与敏感词不进入对话（含敏感词导致请求 400 的场景）。Blocks an agent from reading/searching/writing/editing chosen files, keeping their contents out of the conversation.",
+  "summary": "在 Web GUI 里点选文件或目录，直接屏蔽 agent 的读取、搜索、写入和编辑，防止机密内容进对话。",
   "tags": [
     "agent-security",
     "ai-agents",
@@ -14,7 +14,11 @@
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "file-access-control"
+    "file-access-control",
+    "安全审计",
+    "文件管理",
+    "设置面板",
+    "插件管理"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -24,10 +28,10 @@
   "repo": "https://github.com/Yazzyk/dsh-file-shield",
   "homepage": null,
   "license": "MIT",
-  "stars": 0,
+  "stars": 1,
   "forks": 0,
   "pushedAt": "2026-09-19T13:53:13Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -57,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

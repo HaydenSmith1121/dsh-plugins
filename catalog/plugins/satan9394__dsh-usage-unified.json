@@ -5,7 +5,7 @@
   "package": "dsh-usage-unified",
   "name": "dsh-usage-unified",
   "title": "dsh-usage-unified",
-  "summary": "Machine-wide DeepSeek Harness (dsh) usage statistics: trends, a custom date range that governs every panel, one merged model panel (share + four-bucket split + calls + cost), a session ranking with call drill-down, CSV/JSON export and an optional local cost estimate. 全机 DSH 用量统计：趋势 / 自定义区间（贯穿所有面板）/ 合并模型面板 / 会话排行下钻 / 调用明细 / 导出 / 可选成本估算。",
+  "summary": "统计整个机器上 dsh 的用量趋势、模型占比与花费，还能按会话排名看谁最费 token。",
   "tags": [
     "analytics",
     "dashboard",
@@ -16,7 +16,12 @@
     "dsh-plugin",
     "token-usage",
     "typescript",
-    "usage-statistics"
+    "usage-statistics",
+    "可视化",
+    "状态监控",
+    "资源优化",
+    "内容创作",
+    "会话管理"
   ],
   "version": "0.5.0",
   "versionSource": "github-release",
@@ -61,6 +66,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

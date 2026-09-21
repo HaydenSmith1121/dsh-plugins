@@ -5,12 +5,16 @@
   "package": "dsh-pseudo-vision",
   "name": "dsh-pseudo-vision",
   "title": "dsh-pseudo-vision",
-  "summary": "Local OCR, color-statistics, pixel-scan, and metadata bridge for text-only DeepSeek Harness models; no external vision API.",
+  "summary": "让纯文本模型也能看懂图片，本地拆出文字、颜色和像素信息，不用外部视觉接口。",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
     "ocr",
-    "vision"
+    "vision",
+    "多模态",
+    "视觉理解",
+    "工具集成",
+    "模型配置"
   ],
   "version": "0.6.1",
   "versionSource": "package.json",
@@ -53,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -5,9 +5,13 @@
   "package": "dsh-session-rotate-on-compact",
   "name": "dsh-session-rotate-on-compact",
   "title": "dsh-session-rotate-on-compact",
-  "summary": "用于 DSH 的会话轮换插件。  当 DSH 完成一次自动或手动 Compact 后，插件会生成新的 Session ID，让代理 API 将下一次请求识别为新会话，从而触发账号轮询。",
+  "summary": "DSH 完成 Compact 后自动换新 Session ID，让代理 API 把下次请求当新会话，触发账号轮询。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "会话管理",
+    "自动化",
+    "工具集成",
+    "状态持久化"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -48,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

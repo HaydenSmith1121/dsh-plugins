@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "omdsh-dev/dsh-browser",
+  "slug": "omdsh-dev__dsh-browser",
+  "package": "dsh-browser",
+  "name": "dsh-browser",
+  "title": "dsh-browser",
+  "summary": "Chrome 侧边栏插件，让 DeepSeek Harness 直接操控你的浏览器，无需视觉能力也能自动完成网页操作。",
+  "tags": [
+    "browser-automation",
+    "chrome-extension",
+    "coding-agent",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "桌面自动化",
+    "工具集成",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-09-04T06:47:37Z",
+    "url": "https://github.com/omdsh-dev/dsh-browser/releases/tag/v0.1.3"
+  },
+  "author": "omdsh-dev",
+  "repo": "https://github.com/omdsh-dev/dsh-browser",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 711,
+  "forks": 52,
+  "pushedAt": "2026-09-20T09:06:43Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:omdsh-dev/dsh-browser",
+    "commands": [
+      "curl -fsSL https://raw.githubusercontent.com/Lum1104/dsh-browser/refs/heads/main/scripts/install.sh | bash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

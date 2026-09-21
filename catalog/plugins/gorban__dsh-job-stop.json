@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "gorban/dsh-job-stop",
+  "slug": "gorban__dsh-job-stop",
+  "package": null,
+  "name": "dsh-job-stop",
+  "title": "dsh-job-stop",
+  "summary": "在会话顶部的任务列表里一键停止正在跑的后台任务，带确认弹窗防误触。",
+  "tags": [
+    "background-jobs",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "快捷操作",
+    "状态监控",
+    "会话管理",
+    "工作流增强"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "gorban",
+  "repo": "https://github.com/gorban/dsh-job-stop",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T20:20:30Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@gorban/dsh-job-stop",
+    "commands": [
+      "dsh plugin --profile web add @gorban/dsh-job-stop",
+      "dsh plugin --profile web add github:gorban/dsh-job-stop",
+      "dsh plugin --profile web add https://github.com/gorban/dsh-job-stop/releases/latest/download/dsh-job-stop.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

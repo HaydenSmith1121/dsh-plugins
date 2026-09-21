@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "MYCF711/dsh-qoder-cli",
+  "slug": "mycf711__dsh-qoder-cli",
+  "package": "dsh-qoder-cli",
+  "name": "dsh-qoder-cli",
+  "title": "dsh-qoder-cli",
+  "summary": "把 Qoder 桌面端的模型接进 DSH 模型选择器，支持两种登录和凭证故障转移。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "model-provider",
+    "qoder",
+    "qoder-cli",
+    "模型配置",
+    "模型适配",
+    "工具集成",
+    "设置面板",
+    "桥接插件"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-20T00:55:02Z",
+    "url": "https://github.com/MYCF711/dsh-qoder-cli/releases/tag/v0.3.0"
+  },
+  "author": "MYCF711",
+  "repo": "https://github.com/MYCF711/dsh-qoder-cli",
+  "homepage": null,
+  "license": "GPL-3.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T18:38:00Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MYCF711/dsh-qoder-cli",
+    "commands": [
+      "dsh plugin --profile web add github:MYCF711/dsh-qoder-cli"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

@@ -5,14 +5,19 @@
   "package": "dsh-swarm-orchestrator",
   "name": "dsh-swarm-orchestrator",
   "title": "dsh-swarm-orchestrator",
-  "summary": "DSH 插件：并行子代理集群 —— 母代理把目标拆成切片，并发驱动多个独立子代理写代码，输入框上方实时显示每个子代理此刻在做什么，并发数与各切片模型可在设置页配置。",
+  "summary": "把大目标拆成小块，让多个子代理同时写代码，还能实时看到每个代理在忙什么。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "parallel-agents",
     "subagent",
-    "swarm"
+    "swarm",
+    "多Agent协作",
+    "工作流增强",
+    "状态监控",
+    "模型适配",
+    "效率提升"
   ],
   "version": "1.1.0",
   "versionSource": "github-release",
@@ -57,6 +62,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

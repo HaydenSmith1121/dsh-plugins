@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-session-workbench",
   "title": "dsh-session-workbench",
-  "summary": "Session Workbench for DeepSeek Harness: session-library full-text search + recall + conversation-view management (show/hide + reorder). 会话工作台：会话库（历史会话全文搜索与召回）+ 会话视图（标签栏显示/隐藏 + 拖拽排序）。",
+  "summary": "全文搜索历史会话并召回为 @引用，还能显示/隐藏和拖拽排序会话标签栏。",
   "tags": [
     "conversation-view",
     "deepseek-harness",
@@ -18,7 +18,11 @@
     "tab-management",
     "view-hide",
     "view-management",
-    "view-reorder"
+    "view-reorder",
+    "会话管理",
+    "语义检索",
+    "快捷操作",
+    "效率提升"
   ],
   "version": "1.0.2",
   "versionSource": "npm",
@@ -28,10 +32,10 @@
   "repo": "https://github.com/PolinniZhong/dsh-session-workbench",
   "homepage": null,
   "license": "MIT",
-  "stars": 17,
+  "stars": 22,
   "forks": 0,
   "pushedAt": "2026-09-09T02:17:18Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -59,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "QWQcool/dsh-trivium",
+  "slug": "qwqcool__dsh-trivium",
+  "package": null,
+  "name": "dsh-trivium",
+  "title": "dsh-trivium",
+  "summary": "为 DeepSeek Harness 提供进程内图记忆内核，每个工作区一个 .tdb 文件，让 AI 会话拥有持久化记忆。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "memory",
+    "triviumdb",
+    "会话管理",
+    "工作区管理",
+    "效率提升"
+  ],
+  "version": "0.4.19",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": {
+    "tag": "v0.4.19",
+    "publishedAt": "2026-09-20T08:47:52Z",
+    "url": "https://github.com/QWQcool/dsh-trivium/releases/tag/v0.4.19"
+  },
+  "author": "QWQcool",
+  "repo": "https://github.com/QWQcool/dsh-trivium",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-20T08:47:51Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-trivium",
+    "commands": [
+      "dsh plugin --profile web add dsh-trivium"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

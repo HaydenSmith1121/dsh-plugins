@@ -5,14 +5,19 @@
   "package": null,
   "name": "dsh-fal-imagegen",
   "title": "dsh-fal-imagegen",
-  "summary": "fal.ai native image generation for DSH: a FAL_KEY settings card plus Agent tools (fal_generate_image / fal_edit_image) that call queue.fal.run directly.",
+  "summary": "在 DSH 里直接用 fal.ai 生成和编辑图片，配好密钥就能让 Agent 帮你画图。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "fal",
     "image-generation",
-    "text-to-image"
+    "text-to-image",
+    "AI 助手",
+    "模型适配",
+    "设置面板",
+    "报告生成",
+    "工具集成"
   ],
   "version": "0.2.0",
   "versionSource": "npm",
@@ -24,8 +29,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-18T09:39:32Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "pushedAt": "2026-09-20T02:29:34Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -55,6 +60,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

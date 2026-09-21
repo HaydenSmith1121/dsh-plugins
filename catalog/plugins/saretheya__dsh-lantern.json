@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-lantern",
   "title": "dsh-lantern",
-  "summary": "Expose every model in your local DeepSeek Harness to the LAN over OpenAI- and Anthropic-compatible endpoints.",
+  "summary": "把本机 DSH 的所有模型通过 OpenAI 和 Anthropic 兼容接口共享给局域网，让同网设备直接调用。",
   "tags": [
     "anthropic-compatible",
     "deepseek-harness",
@@ -14,7 +14,12 @@
     "dsh-plugin",
     "llm-gateway",
     "local-network",
-    "openai-compatible"
+    "openai-compatible",
+    "模型配置",
+    "跨设备",
+    "桥接插件",
+    "工具集成",
+    "零配置"
   ],
   "version": "0.1.2",
   "versionSource": "npm",
@@ -26,8 +31,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-18T21:31:32Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "pushedAt": "2026-09-20T14:23:35Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -58,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

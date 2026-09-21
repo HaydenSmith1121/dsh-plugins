@@ -5,7 +5,7 @@
   "package": "chinese-script-policy",
   "name": "chinese-script-policy",
   "title": "chinese-script-policy",
-  "summary": "Harness-neutral Traditional Chinese enforcer and offline converter (skill / DSH bundle / CLI). Checks one script axis one way at a time plus two filter axes: Cantonese colloquialisms and Japanese-only kanji and words. Converts 繁↔簡, 粵語→書面語, 日文→中文, each opt-in, plus an optional wording preference. Single-file offline HTML, no runtime deps.",
+  "summary": "离线检查并转换中文用字，确保输出符合你指定的繁体规范，还能过滤粤语口语和日式汉字。",
   "tags": [
     "agent-skills",
     "big5",
@@ -26,7 +26,11 @@
     "shinjitai",
     "simplified-chinese",
     "skill",
-    "traditional-chinese"
+    "traditional-chinese",
+    "命令行工具",
+    "自动化",
+    "工具集成",
+    "报告生成"
   ],
   "version": "1.2.0",
   "versionSource": "github-release",
@@ -71,6 +75,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

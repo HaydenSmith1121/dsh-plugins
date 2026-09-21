@@ -5,13 +5,17 @@
   "package": null,
   "name": "dsh-slack",
   "title": "dsh-slack",
-  "summary": "DSH Slack 插件：通知与桥接，Socket Mode 双向消息（收件箱 + 线程回复）。",
+  "summary": "让 agent 直接收发 Slack 消息，Socket Mode 双向通信，通知和线程回复都能搞定。",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
     "notification",
     "slack",
-    "socket-mode"
+    "socket-mode",
+    "消息通知",
+    "桥接插件",
+    "工具集成",
+    "自动化"
   ],
   "version": "0.3.1",
   "versionSource": "npm",
@@ -52,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

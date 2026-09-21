@@ -5,9 +5,14 @@
   "package": "dsh-vision-tool",
   "name": "dsh-vision-tool",
   "title": "dsh-vision-tool",
-  "summary": "一个 DeepSeek Harness 插件：为纯文本主模型补上识图能力。它把图片理解委托给你配置的一个小参数多模态模型，再把结果以文本形式交还给主模型；当活跃模型自身支持图片输入时，插件完全退避，原生多模态体验不受任何影响。",
+  "summary": "给纯文本主模型补上识图能力，图片交给小模型理解后转成文字，模型自带视觉时自动退避。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "视觉理解",
+    "多模态",
+    "模型配置",
+    "桥接插件",
+    "工具集成"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -48,6 +53,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

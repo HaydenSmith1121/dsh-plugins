@@ -5,12 +5,16 @@
   "package": "dsh-global-context",
   "name": "dsh-global-context",
   "title": "dsh-global-context",
-  "summary": "全局提示词配置：在对话视图新增一个标签页，写进去的内容会加在每个会话系统提示词的最前面，保存后下一条消息即生效。",
+  "summary": "在对话视图加个标签页写全局提示词，自动拼到每个会话系统提示词最前面，保存即生效。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "plugin"
+    "plugin",
+    "模型适配",
+    "会话管理",
+    "设置面板",
+    "效率提升"
   ],
   "version": "1.1.0",
   "versionSource": "package.json",
@@ -51,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

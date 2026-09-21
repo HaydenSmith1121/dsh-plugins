@@ -5,7 +5,7 @@
   "package": "dsh-screen-flow",
   "name": "dsh-screen-flow",
   "title": "dsh-screen-flow",
-  "summary": "DSH/DSHA 插件：把「等界面 → 操作 → 再等」合成一次工具调用。条件等待（等文字出现/消失、等画面稳定）+ 声明式步骤流，失败即停并附上当时屏幕。",
+  "summary": "把等界面、操作、再等待合成一次调用，条件等待加声明式步骤流，失败即停并附屏幕截图。",
   "tags": [
     "accessibility",
     "agent",
@@ -16,7 +16,11 @@
     "dsh",
     "dsha",
     "llm-tools",
-    "ui-flow"
+    "ui-flow",
+    "自动化",
+    "工作流增强",
+    "工具集成",
+    "跨设备"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -57,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

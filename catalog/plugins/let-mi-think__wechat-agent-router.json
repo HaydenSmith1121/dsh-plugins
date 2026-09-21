@@ -5,9 +5,14 @@
   "package": null,
   "name": "wechat-agent-router",
   "title": "wechat-agent-router",
-  "summary": "",
+  "summary": "按微信群名自动分配对应的 Agent 预设，让配好提示词和知识库的 Agent 接管指定群聊。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "多Agent协作",
+    "自动化",
+    "消息通知",
+    "桥接插件",
+    "会话管理"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -48,6 +53,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

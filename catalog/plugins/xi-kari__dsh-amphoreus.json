@@ -5,18 +5,18 @@
   "package": null,
   "name": "dsh-amphoreus",
   "title": "dsh-amphoreus",
-  "summary": "把翁法罗斯黄金裔的席位概念搬进 DSH，给你一个可视化画布工作台，方便管理多个 Agent 的工作区与协作流程。",
+  "summary": "把翁法罗斯黄金裔席位搬进 DSH，用画布工作台管理多智能体协作与任务编排。",
   "tags": [
     "cordis",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "star-rail",
-    "工作区管理",
-    "多智能体协作",
-    "可视化",
+    "多Agent协作",
     "工作流增强",
-    "效率提升"
+    "工作区管理",
+    "可视化",
+    "主题"
   ],
   "version": "0.4.0",
   "versionSource": "github-release",
@@ -46,8 +46,8 @@
     "spec": "dsh-amphoreus@alpha",
     "commands": [
       "dsh plugin --profile web add dsh-amphoreus@alpha",
-      "dsh plugin --profile web add dsh-amphoreus@0.3.0",
-      "dsh plugin --profile web add ./dsh-amphoreus-0.3.0.tgz"
+      "dsh plugin --profile web add dsh-amphoreus@0.4.0",
+      "dsh plugin --profile web add ./dsh-amphoreus-0.4.0.tgz"
     ],
     "url": null,
     "sha256": null,
@@ -63,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

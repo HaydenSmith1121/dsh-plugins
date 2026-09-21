@@ -5,11 +5,15 @@
   "package": "dsh-plugin-dependency-graph",
   "name": "dsh-plugin-dependency-graph-plugin",
   "title": "dsh-plugin-dependency-graph-plugin",
-  "summary": "Plugin dependency graph for DeepSeek Harness: which plugin provides the services every other plugin injects, read from the live Cordis runtime.",
+  "summary": "从运行中的 Cordis 实时读取插件依赖关系，一眼看清每个服务由哪个插件提供，还能画成依赖图。",
   "tags": [
     "dsh",
     "dsh-plugin",
-    "dsh-plugins"
+    "dsh-plugins",
+    "插件管理",
+    "可视化",
+    "状态监控",
+    "设置面板"
   ],
   "version": "0.1.0",
   "versionSource": "github-tag",
@@ -50,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

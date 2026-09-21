@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-agent-message",
   "title": "dsh-agent-message",
-  "summary": "DeepSeek Harness 跨会话 Agent 通信插件｜Cross-session agent-to-agent messaging with offline delivery, receipts and session navigation for DeepSeek Harness.",
+  "summary": "让同一进程里的不同 Agent 会话互相发消息，支持离线投递、回执和会话跳转。",
   "tags": [
     "agent",
     "agent-communication",
@@ -18,7 +18,11 @@
     "dsh",
     "dsh-plugin",
     "multi-agent",
-    "nodejs"
+    "nodejs",
+    "多Agent协作",
+    "消息通知",
+    "会话管理",
+    "工具集成"
   ],
   "version": "1.6.0",
   "versionSource": "npm",
@@ -60,6 +64,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

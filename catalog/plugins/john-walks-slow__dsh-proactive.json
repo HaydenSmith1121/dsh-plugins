@@ -5,13 +5,18 @@
   "package": null,
   "name": "dsh-proactive",
   "title": "dsh-proactive",
-  "summary": "Proactive follow-ups for DeepSeek Harness: the model schedules host-level alarms (once/every/cron with jitter, quiet hours, daily budget) that resume cold sessions, with tombstone compaction and a live web panel.",
+  "summary": "让模型自己定闹钟，到点自动唤醒冷掉的会话继续干活，还能避开休息时间、控制每日次数。",
   "tags": [
     "ai-agent",
     "alarm",
     "deepseek-harness",
     "dsh-plugin",
-    "scheduler"
+    "scheduler",
+    "自动化",
+    "工作流增强",
+    "会话管理",
+    "状态持久化",
+    "AI 助手"
   ],
   "version": "0.1.0",
   "versionSource": "npm",
@@ -20,7 +25,7 @@
   "author": "john-walks-slow",
   "repo": "https://github.com/john-walks-slow/dsh-proactive",
   "homepage": null,
-  "license": null,
+  "license": "MIT",
   "stars": 0,
   "forks": 0,
   "pushedAt": "2026-09-17T17:24:51Z",
@@ -52,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

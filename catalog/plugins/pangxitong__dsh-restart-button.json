@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "PangXitong/dsh-restart-button",
+  "slug": "pangxitong__dsh-restart-button",
+  "package": "@pangxitong/dsh-restart-button",
+  "name": "dsh-restart-button",
+  "title": "dsh-restart-button",
+  "summary": "在 DSH 会话头部加个关机按钮，点开就能一键关闭或重启整个 DSH 进程。",
+  "tags": [
+    "dsh-plugin",
+    "快捷操作",
+    "前端增强",
+    "设置面板",
+    "效率提升"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "PangXitong",
+  "repo": "https://github.com/PangXitong/dsh-restart-button",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T03:14:21Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:PangXitong/dsh-restart-button",
+    "commands": [
+      "dsh plugin --profile web add github:PangXitong/dsh-restart-button"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

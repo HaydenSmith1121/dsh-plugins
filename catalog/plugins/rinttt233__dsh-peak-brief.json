@@ -5,12 +5,17 @@
   "package": "dsh-peak-brief",
   "name": "dsh-peak-brief",
   "title": "dsh-peak-brief",
-  "summary": "DSH（DeepSeek Harness）峰谷调度插件：高峰前 N 分钟自动生成仅供 AI 恢复用的简报并停自动续跑，高峰硬挡模型请求（带一键逃生），闲时自动注入简报继续任务。",
+  "summary": "高峰前自动生成任务简报并暂停续跑，高峰拦请求、闲时接着干，省额度不中断。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "peak-hours"
+    "peak-hours",
+    "自动化",
+    "工作流增强",
+    "资源优化",
+    "状态持久化",
+    "模型适配"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -51,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "Ricketts-Guo/dsh-off-peak-message",
+  "slug": "ricketts-guo__dsh-off-peak-message",
+  "package": "dsh-offpeak-send",
+  "name": "dsh-off-peak-message",
+  "title": "dsh-off-peak-message",
+  "summary": "开启谷时模式后消息自动排队，到 DeepSeek 谷时再发送，API 费用省一半。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "自动化",
+    "资源优化",
+    "状态持久化",
+    "效率提升",
+    "消息通知"
+  ],
+  "version": "2.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": {
+    "tag": "v2.1.0",
+    "publishedAt": "2026-09-20T07:24:06Z",
+    "url": "https://github.com/Ricketts-Guo/dsh-off-peak-message/releases/tag/v2.1.0"
+  },
+  "author": "Ricketts-Guo",
+  "repo": "https://github.com/Ricketts-Guo/dsh-off-peak-message",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-20T07:23:32Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Ricketts-Guo/dsh-off-peak-message",
+    "commands": [
+      "git clone https://github.com/Ricketts-Guo/dsh-off-peak-message.git",
+      "dsh plugin --profile web add --save-prod --ignore-scripts \"file:$PWD/dsh-offpeak-send\"",
+      "dsh plugin --profile web add --save-prod --ignore-scripts \"file:/绝对路径/dsh-offpeak-send-2.1.0.tgz\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

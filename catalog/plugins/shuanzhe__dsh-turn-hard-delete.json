@@ -5,9 +5,13 @@
   "package": null,
   "name": "dsh-turn-hard-delete",
   "title": "dsh-turn-hard-delete",
-  "summary": "Delete a complete turn (question + answer + tool calls) from a DeepSeek Harness session, without deleting the session.",
+  "summary": "从会话里彻底删掉一整轮问答和工具调用，但保留会话本身，删了就不会再冒出来。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "会话管理",
+    "快捷操作",
+    "状态持久化",
+    "效率提升"
   ],
   "version": "0.1.0",
   "versionSource": "npm",
@@ -16,7 +20,7 @@
   "author": "shuanzhe",
   "repo": "https://github.com/shuanzhe/dsh-turn-hard-delete",
   "homepage": "https://github.com/shuanzhe/dsh-turn-hard-delete",
-  "license": null,
+  "license": "MIT",
   "stars": 0,
   "forks": 0,
   "pushedAt": "2026-09-17T19:15:15Z",
@@ -48,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

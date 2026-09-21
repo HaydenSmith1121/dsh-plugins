@@ -5,7 +5,7 @@
   "package": null,
   "name": "memo_harness",
   "title": "memo_harness",
-  "summary": "Agent memory with error bars: full local posteriors reconciled under finite relation laws. Dedupes source lineage, corrects without rewriting history. One CLI + SQLite.",
+  "summary": "给 AI 智能体加上带误差范围的本地记忆，自动去重、纠错不改历史，一条命令加 SQLite 搞定。",
   "tags": [
     "agent-memory",
     "agent-skills",
@@ -15,7 +15,12 @@
     "dsh",
     "dsh-plugin",
     "llm-agents",
-    "probabilistic-inference"
+    "probabilistic-inference",
+    "状态持久化",
+    "命令行工具",
+    "语义检索",
+    "多Agent协作",
+    "零配置"
   ],
   "version": "0.9.0",
   "versionSource": "github-tag",
@@ -56,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

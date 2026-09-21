@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "hzhgino/dsh-caonima",
+  "slug": "hzhgino__dsh-caonima",
+  "package": "dsh-caonima",
+  "name": "dsh-caonima",
+  "title": "dsh-caonima",
+  "summary": "在 DSH Web 界面右下角养一只草泥马桌宠，它会跟着 Agent 的工作状态变表情动作。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "desktop-pet",
+    "dsh-plugin",
+    "桌宠",
+    "主题",
+    "状态监控",
+    "前端增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "hzhgino",
+  "repo": "https://github.com/hzhgino/dsh-caonima",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T08:04:41Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hzhgino/dsh-caonima",
+    "commands": [
+      "dsh plugin --profile web add github:hzhgino/dsh-caonima",
+      "git clone https://github.com/hzhgino/dsh-caonima.git",
+      "dsh plugin --profile web add \"$(pwd)\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

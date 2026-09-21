@@ -5,13 +5,18 @@
   "package": "dsh-run-environment",
   "name": "dsh-run-environment",
   "title": "dsh-run-environment",
-  "summary": "DeepSeek Harness plugin: run the project you have open, from the harness you are already in. Detects how a workspace is meant to be run (Node.js today, adapters for more) and runs it from the Session header.",
+  "summary": "不用离开当前会话，自动识别工作区该怎么跑，一键把项目运行起来。",
   "tags": [
     "deepseek-harness",
     "developer-tools",
     "dsh-plugin",
     "npm-scripts",
-    "task-runner"
+    "task-runner",
+    "零配置",
+    "效率提升",
+    "工作区管理",
+    "命令行工具",
+    "自动化"
   ],
   "version": "0.8.2",
   "versionSource": "github-release",
@@ -57,6 +62,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

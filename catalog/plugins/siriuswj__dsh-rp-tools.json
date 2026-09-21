@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-rp-tools",
   "title": "dsh-rp-tools",
-  "summary": "跑团 / DM 工具插件（DeepSeek Harness）：中立随机裁决 + 本地 ComfyUI 配图 + 按会话隔离的战役配置（角色卡 / 世界 / 随机表）。TTRPG/DM tools for dsh: dice, local ComfyUI illustrations, per-session campaign state.",
+  "summary": "给跑团主持人用的插件：随机裁决、本地 ComfyUI 配图，还能按会话存角色卡和世界设定。",
   "tags": [
     "comfyui",
     "deepseek-harness",
@@ -13,7 +13,12 @@
     "dungeon-master",
     "image-generation",
     "trpg",
-    "ttrpg"
+    "ttrpg",
+    "报告生成",
+    "会话管理",
+    "状态持久化",
+    "工具集成",
+    "视觉理解"
   ],
   "version": "1.15.3",
   "versionSource": "github-release",
@@ -59,6 +64,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

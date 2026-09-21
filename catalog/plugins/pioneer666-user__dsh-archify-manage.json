@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "pioneer666-user/dsh-archify-manage",
+  "slug": "pioneer666-user__dsh-archify-manage",
+  "package": "@specdev/dsh-archify-manage",
+  "name": "dsh-archify-manage",
+  "title": "dsh-archify-manage",
+  "summary": "在 DSH 里浏览 Archify 业务流程图目录，按 Git 标签翻看历史版本，还能随时保存版本。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "文件管理",
+    "工作区管理",
+    "状态持久化",
+    "工具集成"
+  ],
+  "version": "0.1.11",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": {
+    "tag": "v0.1.11",
+    "publishedAt": "2026-09-21T11:34:43Z",
+    "url": "https://github.com/pioneer666-user/dsh-archify-manage/releases/tag/v0.1.11"
+  },
+  "author": "pioneer666-user",
+  "repo": "https://github.com/pioneer666-user/dsh-archify-manage",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-09-21T11:34:43Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:pioneer666-user/dsh-archify-manage",
+    "commands": [
+      "dsh plugin --profile web add github:pioneer666-user/dsh-archify-manage"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

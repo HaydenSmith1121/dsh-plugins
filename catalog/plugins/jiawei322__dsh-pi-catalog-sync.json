@@ -5,7 +5,7 @@
   "package": "dsh-pi-catalog-sync",
   "name": "dsh-pi-catalog-sync",
   "title": "dsh-pi-catalog-sync",
-  "summary": "Sync the pi.dev model catalog into DeepSeek Harness (dsh) llm-pi-ai provider routes through the official settings seam — no source patch — including mixed-protocol routes like OpenRouter, where new models land on a companion route while the built-in route stays untouched.",
+  "summary": "把 pi.dev 的模型目录同步进 DSH 的 llm-pi-ai 路由，不用改源码就能支持 OpenRouter 等混合协议。",
   "tags": [
     "cordis",
     "deepseek-harness",
@@ -15,7 +15,11 @@
     "openrouter",
     "pi-ai",
     "pi-dev",
-    "settings-seam"
+    "settings-seam",
+    "模型适配",
+    "模型配置",
+    "工具集成",
+    "自动化"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -27,8 +31,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-18T08:30:10Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "pushedAt": "2026-09-21T01:44:43Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -56,6 +60,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

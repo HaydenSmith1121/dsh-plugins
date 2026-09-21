@@ -5,7 +5,7 @@
   "package": "dsh-notifier",
   "name": "dsh-notifier",
   "title": "dsh-notifier",
-  "summary": "DSH (DeepSeek Harness) notifier plugin: a Chrome MV3 extension that pops a system notification when a turn finishes or an approval is needed, with 回到对话 / 允许 buttons. Loopback HTTP + zero-dependency WebSocket.",
+  "summary": "对话结束或模型要动文件时，Windows 弹一条能直接点「回到对话」「允许」的系统通知。",
   "tags": [
     "chrome-extension",
     "cordis",
@@ -13,7 +13,12 @@
     "deepseek-harness",
     "dsh",
     "notifications",
-    "plugin"
+    "plugin",
+    "消息通知",
+    "快捷操作",
+    "桥接插件",
+    "状态监控",
+    "效率提升"
   ],
   "version": "0.2.3",
   "versionSource": "package.json",
@@ -54,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Yuuyuko-uu/dsh-tts-bridge",
+  "slug": "yuuyuko-uu__dsh-tts-bridge",
+  "package": null,
+  "name": "dsh-tts-bridge",
+  "title": "dsh-tts-bridge",
+  "summary": "把 DSH 会话里的话自动送到 DeepSeek 网页端朗读，声音从你自己电脑里出来，不用盯着页面。",
+  "tags": [
+    "browser-extension",
+    "deepseek-harness",
+    "dsh-plugin",
+    "text-to-speech",
+    "tts",
+    "桥接插件",
+    "工具集成",
+    "自动化",
+    "消息通知"
+  ],
+  "version": "1.1.8",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "Yuuyuko-uu",
+  "repo": "https://github.com/Yuuyuko-uu/dsh-tts-bridge",
+  "homepage": null,
+  "license": null,
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-09-20T08:46:38Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-tts-bridge",
+    "commands": [
+      "dsh plugin --profile web add dsh-tts-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

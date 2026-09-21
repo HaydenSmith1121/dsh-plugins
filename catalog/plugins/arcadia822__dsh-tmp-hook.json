@@ -5,13 +5,18 @@
   "package": null,
   "name": "dsh-tmp-hook",
   "title": "dsh-tmp-hook",
-  "summary": "One-time ephemeral webhook plugin for DeepSeek Harness (dsh) sessions: mint a single-use callback URL, then wake the requesting agent session with the delivered payload.",
+  "summary": "给 dsh 会话生成一次性回调网址，外部任务完成后自动唤醒对应 Agent 继续干活。",
   "tags": [
     "cordis",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "webhook"
+    "webhook",
+    "工具集成",
+    "自动化",
+    "多Agent协作",
+    "消息通知",
+    "桥接插件"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -52,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

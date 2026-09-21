@@ -5,9 +5,14 @@
   "package": "dsh-plugin-offline-packager",
   "name": "dsh-plugin-offline-packager",
   "title": "dsh-plugin-offline-packager",
-  "summary": "DeepSeek Harness 离线打包插件 — 在联网环境下将 DSH 插件打包为离线安装包（.tgz），传输到离线 DSH 环境中加载安装。",
+  "summary": "在联网环境把 DSH 插件打包成离线安装包，拷到无网环境一条命令装好，不用连 npm。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "插件管理",
+    "命令行工具",
+    "跨设备",
+    "工具集成",
+    "效率提升"
   ],
   "version": "0.3.1",
   "versionSource": "package.json",
@@ -50,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

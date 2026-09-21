@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-plugin-upgrade",
   "title": "dsh-plugin-upgrade",
-  "summary": "Plugin-author upgrade skill for DeepSeek Harness: one package, one corridor index - it detects the caller peer band, routes to the matching closed corridor card (0.1.3-alpha.1 -> 0.1.5-rc.1, 0.1.5-rc.2 -> 0.1.6-alpha.2) and runs a zero-dependency seam scanner as a bundle skill + npx CLI.",
+  "summary": "自动识别你的插件版本，帮你平滑升级到匹配的新版，省去手动对照的麻烦。",
   "tags": [
     "cordis",
     "corridor-index",
@@ -17,7 +17,11 @@
     "plugin-upgrade",
     "scanner",
     "skill",
-    "version-card"
+    "version-card",
+    "插件管理",
+    "自动化",
+    "版本升级",
+    "命令行工具"
   ],
   "version": "2.0.1",
   "versionSource": "npm",
@@ -29,8 +33,8 @@
   "license": "Apache-2.0",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-19T15:14:37Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-20T13:01:51Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -60,6 +64,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

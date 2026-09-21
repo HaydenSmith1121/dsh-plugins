@@ -5,16 +5,16 @@
   "package": "@local/dsh-prompt-optimizer",
   "name": "dsh-prompt-optimizer",
   "title": "dsh-prompt-optimizer",
-  "summary": "把 prompt-optimizer 移植到 DeepSeek Harness，自动优化你的提示词，让 AI 回答更聪明。",
+  "summary": "把提示词一键优化成更清晰好用的版本，让 AI 回答更准更省心。",
   "tags": [
     "agpl-3",
     "deepseek-harness",
     "dsh-plugin",
     "prompt-optimizer",
+    "AI 助手",
     "效率提升",
-    "会话管理",
-    "插件管理",
-    "自动化"
+    "提示词优化",
+    "桥接插件"
   ],
   "version": "0.7.1",
   "versionSource": "github-release",
@@ -50,8 +50,8 @@
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -59,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

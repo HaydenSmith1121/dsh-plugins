@@ -5,27 +5,32 @@
   "package": "dsh-novel-forge",
   "name": "dsh-novel-forge",
   "title": "dsh-novel-forge",
-  "summary": "DSH 小说锻炉：把 AI 长篇写作通病变成代码强制的硬约束（事实账本/上下文包/阶段门禁/零费用去AI味扫描/确定性审计/提案制修订）。Novel-writing guardrails plugin for DeepSeek Harness (DSH).",
+  "summary": "给 AI 写长篇小说上硬约束：事实账本、阶段门禁、去AI味扫描，防止前后矛盾跑偏。",
   "tags": [
     "dsh-plugin",
-    "novel-writing"
+    "novel-writing",
+    "报告生成",
+    "工作流增强",
+    "自动化",
+    "AI 助手",
+    "状态持久化"
   ],
-  "version": "0.13.7",
+  "version": "0.13.8",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
   "latestRelease": {
-    "tag": "v0.13.7",
-    "publishedAt": "2026-09-20T08:01:34Z",
-    "url": "https://github.com/huangziyuan-general/dsh-novel-forge/releases/tag/v0.13.7"
+    "tag": "v0.13.8",
+    "publishedAt": "2026-09-21T06:29:09Z",
+    "url": "https://github.com/huangziyuan-general/dsh-novel-forge/releases/tag/v0.13.8"
   },
   "author": "huangziyuan-general",
   "repo": "https://github.com/huangziyuan-general/dsh-novel-forge",
   "homepage": null,
   "license": "MIT",
-  "stars": 7,
-  "forks": 1,
-  "pushedAt": "2026-09-20T12:46:33Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "stars": 11,
+  "forks": 3,
+  "pushedAt": "2026-09-21T11:02:59Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -38,7 +43,7 @@
     "spec": "github:huangziyuan-general/dsh-novel-forge",
     "commands": [
       "dsh plugin --profile web add github:huangziyuan-general/dsh-novel-forge",
-      "dsh plugin --profile web add npm:dsh-novel-forge",
+      "dsh plugin --profile web add npm:@huangziyuan-general/dsh-novel-forge",
       "dsh plugin --profile web add link:/path/to/dsh-novel-forge"
     ],
     "url": null,
@@ -55,6 +60,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

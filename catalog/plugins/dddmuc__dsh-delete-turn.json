@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "DDDMUC/dsh-delete-turn",
+  "slug": "dddmuc__dsh-delete-turn",
+  "package": null,
+  "name": "dsh-delete-turn",
+  "title": "dsh-delete-turn",
+  "summary": "把某条消息从模型上下文里真正删掉，同时从当前对话中隐藏，让后续回复不再受它影响。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "会话管理",
+    "快捷操作",
+    "前端增强",
+    "状态持久化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "DDDMUC",
+  "repo": "https://github.com/DDDMUC/dsh-delete-turn",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-20T14:22:54Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-delete-turn",
+    "commands": [
+      "dsh plugin --profile web add dsh-delete-turn",
+      "dsh plugin --profile web add link:/path/to/dsh-delete-turn"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

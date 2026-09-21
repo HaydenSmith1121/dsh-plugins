@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "stone100010/dsh-token-gauge",
+  "slug": "stone100010__dsh-token-gauge",
+  "package": null,
+  "name": "dsh-token-gauge",
+  "title": "dsh-token-gauge",
+  "summary": "在 DeepSeek Harness 界面上悬浮三个仪表盘，实时显示 token 用量，可随意拖动并记住位置。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "状态监控",
+    "可视化",
+    "状态持久化",
+    "主题",
+    "零配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-20T03:07:34Z",
+    "url": "https://github.com/stone100010/dsh-token-gauge/releases/tag/v0.1.1"
+  },
+  "author": "stone100010",
+  "repo": "https://github.com/stone100010/dsh-token-gauge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-20T03:04:10Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@stone100010/dsh-token-gauge",
+    "commands": [
+      "dsh plugin --profile web add @stone100010/dsh-token-gauge",
+      "git clone https://github.com/stone100010/dsh-token-gauge.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

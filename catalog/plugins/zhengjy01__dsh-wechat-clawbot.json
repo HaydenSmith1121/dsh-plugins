@@ -5,12 +5,17 @@
   "package": "dsh-wechat-clawbot",
   "name": "dsh-wechat-clawbot",
   "title": "dsh-wechat-clawbot",
-  "summary": "DSH plugin: WeChat floating-ball bridge (QR login, message relay to agent) — maintained fork of lubaiUwU/DSH-WeChatClawBot with context_token + login-loop fixes",
+  "summary": "把微信变成 DeepSeek Harness 的悬浮球入口，扫码登录后消息自动转给 AI 处理。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "wechat"
+    "wechat",
+    "桥接插件",
+    "消息通知",
+    "快捷操作",
+    "工具集成",
+    "会话管理"
   ],
   "version": "0.2.2",
   "versionSource": "github-release",
@@ -56,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -5,12 +5,16 @@
   "package": null,
   "name": "dsh-net-access",
   "title": "dsh-net-access",
-  "summary": "Control how the DeepSeek Harness Web GUI is reachable: local only, Tailscale, all local networks, or off.",
+  "summary": "控制 DSH Web 界面的访问范围，可选仅本机、Tailscale、局域网或关闭，管好入口更安全。",
   "tags": [
     "cordis",
     "deepseek-harness",
     "dsh-plugin",
-    "tailscale"
+    "tailscale",
+    "跨设备",
+    "安全审计",
+    "设置面板",
+    "工具集成"
   ],
   "version": "0.1.2",
   "versionSource": "npm",
@@ -53,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

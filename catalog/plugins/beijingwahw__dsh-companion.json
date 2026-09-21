@@ -5,17 +5,18 @@
   "package": "dsh-companion",
   "name": "dsh-companion",
   "title": "dsh-companion",
-  "summary": "DeepSeek Harness 官方伴侣插件，提供对话导出、交接摘要、成本优化和全局检索，让工作流更高效。",
+  "summary": "给 DeepSeek Harness 加装九大模块，管好对话、成本、检索和任务编排，还能做 Prompt 调试与安全审计。",
   "tags": [
     "ai-agents",
     "cordis",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "对话导出",
-    "交接摘要",
-    "资源优化",
-    "全局检索"
+    "效率提升",
+    "工作流增强",
+    "安全审计",
+    "语义检索",
+    "模型适配"
   ],
   "version": "0.1.0",
   "versionSource": "github-release",
@@ -51,8 +52,8 @@
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -60,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

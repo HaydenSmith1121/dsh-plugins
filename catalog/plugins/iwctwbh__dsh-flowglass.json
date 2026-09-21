@@ -5,21 +5,26 @@
   "package": "dsh-flowglass",
   "name": "dsh-flowglass",
   "title": "dsh-flowglass",
-  "summary": "流镜 Flowglass — DeepSeek Harness session flowgraph，实时可视化消息、工具组、子代理分支与步骤详情。",
+  "summary": "把当前会话画成三列泳道流程图，实时看清工具调用、并行分组和子代理分支，还能逐层钻取细节。",
   "tags": [
     "ai-agents",
     "cordis",
     "dsh",
     "dsh-better-sidebar",
-    "dsh-plugin"
+    "dsh-plugin",
+    "可视化",
+    "状态监控",
+    "多Agent协作",
+    "会话管理",
+    "前端增强"
   ],
-  "version": "0.6.1",
+  "version": "0.7.0",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
   "latestRelease": {
-    "tag": "v0.6.1",
-    "publishedAt": "2026-09-20T04:00:58Z",
-    "url": "https://github.com/Iwctwbh/dsh-flowglass/releases/tag/v0.6.1"
+    "tag": "v0.7.0",
+    "publishedAt": "2026-09-21T02:39:37Z",
+    "url": "https://github.com/Iwctwbh/dsh-flowglass/releases/tag/v0.7.0"
   },
   "author": "Iwctwbh",
   "repo": "https://github.com/Iwctwbh/dsh-flowglass",
@@ -27,8 +32,8 @@
   "license": "MIT",
   "stars": 22,
   "forks": 2,
-  "pushedAt": "2026-09-20T06:58:34Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-21T02:38:43Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -56,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

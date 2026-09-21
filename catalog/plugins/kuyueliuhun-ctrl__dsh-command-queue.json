@@ -5,14 +5,19 @@
   "package": "dsh-command-queue",
   "name": "dsh-command-queue",
   "title": "dsh-command-queue",
-  "summary": "DSH 插件：让 /compact 等斜杠命令在 agent 忙碌时进入命令队列，空闲后自动执行 | Queue slash commands until the agent is idle",
+  "summary": "让 /compact 等斜杠命令在 agent 忙碌时排队等待，空闲后自动执行，不再报错。",
   "tags": [
     "agent",
     "cordis",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "slash-commands"
+    "slash-commands",
+    "命令行工具",
+    "工作流增强",
+    "自动化",
+    "效率提升",
+    "状态监控"
   ],
   "version": "0.2.0",
   "versionSource": "github-release",
@@ -57,6 +62,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

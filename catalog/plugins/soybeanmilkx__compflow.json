@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "SoyBeanMilkx/CompFlow",
+  "slug": "soybeanmilkx__compflow",
+  "package": "dsh-session-comps",
+  "name": "CompFlow",
+  "title": "CompFlow",
+  "summary": "把同一工作区的会话收进可折叠嵌套的合成里，分叉再多也不乱。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "session-management",
+    "会话管理",
+    "工作区管理",
+    "效率提升",
+    "快捷操作"
+  ],
+  "version": "0.2.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": {
+    "tag": "v0.2.1",
+    "publishedAt": "2026-09-20T09:40:49Z",
+    "url": "https://github.com/SoyBeanMilkx/CompFlow/releases/tag/v0.2.1"
+  },
+  "author": "SoyBeanMilkx",
+  "repo": "https://github.com/SoyBeanMilkx/CompFlow",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T09:52:30Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:SoyBeanMilkx/CompFlow",
+    "commands": [
+      "dsh plugin --profile web add github:SoyBeanMilkx/CompFlow"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

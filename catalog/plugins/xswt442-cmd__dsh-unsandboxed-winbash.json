@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "xswt442-cmd/dsh-unsandboxed-winbash",
+  "slug": "xswt442-cmd__dsh-unsandboxed-winbash",
+  "package": "dsh-unsandboxed-winbash",
+  "name": "dsh-unsandboxed-winbash",
+  "title": "dsh-unsandboxed-winbash",
+  "summary": "让 dsh 在 Windows 上直接用你装好的 Git Bash，并绕过沙箱限制，命令跑得更顺。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "命令行工具",
+    "工具集成",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "0.1.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": {
+    "tag": "v0.1.3",
+    "publishedAt": "2026-09-20T12:24:59Z",
+    "url": "https://github.com/xswt442-cmd/dsh-unsandboxed-winbash/releases/tag/v0.1.3"
+  },
+  "author": "xswt442-cmd",
+  "repo": "https://github.com/xswt442-cmd/dsh-unsandboxed-winbash",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T12:24:07Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xswt442-cmd/dsh-unsandboxed-winbash",
+    "commands": [
+      "dsh plugin --profile web add github:xswt442-cmd/dsh-unsandboxed-winbash"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

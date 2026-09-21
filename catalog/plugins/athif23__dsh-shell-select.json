@@ -5,14 +5,18 @@
   "package": null,
   "name": "dsh-shell-select",
   "title": "dsh-shell-select",
-  "summary": "DeepSeek Harness plugin: one model-facing shell tool whose shell (PowerShell, cmd, Git Bash, WSL, bash, zsh, fish, sh) is a user setting, with a Web settings card and a fail-closed refusal when the sandbox cannot confine it.",
+  "summary": "让 DeepSeek Harness 按你的设置选 PowerShell、cmd、Git Bash 或 WSL 等来跑命令，还能在网页里改。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "powershell",
     "sandbox",
-    "shell"
+    "shell",
+    "命令行工具",
+    "设置面板",
+    "工具集成",
+    "安全审计"
   ],
   "version": "0.1.0",
   "versionSource": "github-tag",
@@ -55,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

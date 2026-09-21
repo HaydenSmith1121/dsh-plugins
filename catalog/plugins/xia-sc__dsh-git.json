@@ -5,23 +5,24 @@
   "package": "@dsh-plugins/dsh-git",
   "name": "dsh-git",
   "title": "dsh-git",
-  "summary": "DeepSeek Harness Web GUI 的完整 Git 管理插件：分支切换/fetch/pull/commit/push，可折叠悬浮面板 + 输入框胶囊",
+  "summary": "在 DeepSeek Harness 网页界面里直接管 Git，悬浮面板跟着当前工作区走，切分支、拉取、提交、推送一步到位。",
   "tags": [
     "dsh-plugin",
-    "dsh-plugins"
+    "dsh-plugins",
+    "工作区管理",
+    "工具集成",
+    "效率提升",
+    "快捷操作",
+    "前端增强"
   ],
-  "version": "0.5.2",
-  "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
-  "latestRelease": {
-    "tag": "v0.5.2",
-    "publishedAt": "2026-09-18T05:57:03Z",
-    "url": "https://github.com/xia-sc/dsh-git/releases/tag/v0.5.2"
-  },
+  "version": "0.5.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
   "author": "xia-sc",
   "repo": "https://github.com/xia-sc/dsh-git",
   "homepage": null,
-  "license": null,
+  "license": "MIT",
   "stars": 1,
   "forks": 1,
   "pushedAt": "2026-09-18T05:54:33Z",
@@ -55,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

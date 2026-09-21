@@ -5,9 +5,14 @@
   "package": "dsh-chat-git",
   "name": "dsh-chat-git",
   "title": "dsh-chat-git",
-  "summary": "deepseek harness仓库增强插件，主要用于管理对话，每轮对话的代码",
+  "summary": "给 DeepSeek Harness 的对话加上 Git 管理，每轮对话的代码改动都能自动存档、随时回溯。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "会话管理",
+    "工作区管理",
+    "状态持久化",
+    "自动化",
+    "效率提升"
   ],
   "version": "0.6.0",
   "versionSource": "github-release",
@@ -54,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

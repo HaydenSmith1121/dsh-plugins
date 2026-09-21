@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "HaowenCang/dsh-document-selection-ask",
+  "slug": "haowencang__dsh-document-selection-ask",
+  "package": "dsh-document-selection-ask",
+  "name": "dsh-document-selection-ask",
+  "title": "dsh-document-selection-ask",
+  "summary": "在 DSH 文档预览里选中文字、表格或幻灯片内容，一键把带出处的引用块加进当前会话草稿。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "document-viewer",
+    "docx",
+    "dsh",
+    "pdf",
+    "pptx",
+    "typescript",
+    "xlsx",
+    "快捷操作",
+    "效率提升",
+    "文件管理",
+    "视觉理解",
+    "工具集成"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-21T12:05:48Z",
+    "url": "https://github.com/HaowenCang/dsh-document-selection-ask/releases/tag/v0.1.2"
+  },
+  "author": "HaowenCang",
+  "repo": "https://github.com/HaowenCang/dsh-document-selection-ask",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T12:34:53Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:HaowenCang/dsh-document-selection-ask",
+    "commands": [
+      "dsh plugin --profile dsa-dev add <tarball 的绝对路径>",
+      "git clone https://github.com/HaowenCang/dsh-document-selection-ask.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "xiyue718/dsh-ui-external-vision",
+  "slug": "xiyue718__dsh-ui-external-vision",
+  "package": "@dsh-external/ui-external-vision",
+  "name": "dsh-ui-external-vision",
+  "title": "dsh-ui-external-vision",
+  "summary": "当前模型看不了图？这个插件帮你调用外部视觉模型识图，返回文字描述。",
+  "tags": [
+    "dsh-plugin",
+    "多模态",
+    "模型配置",
+    "视觉理解",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-17T03:13:57Z",
+    "url": "https://github.com/xiyue718/dsh-ui-external-vision/releases/tag/v0.1.0"
+  },
+  "author": "xiyue718",
+  "repo": "https://github.com/xiyue718/dsh-ui-external-vision",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T02:37:40Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiyue718/dsh-ui-external-vision",
+    "commands": [
+      "dsh plugin --profile web add C:/Users/<user>/.dsh/plugins/ui-external-vision",
+      "dsh plugin --profile web add github:xiyue718/dsh-ui-external-vision"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

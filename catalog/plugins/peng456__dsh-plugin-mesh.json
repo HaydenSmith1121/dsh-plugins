@@ -5,14 +5,19 @@
   "package": "dsh-plugin-mesh",
   "name": "dsh-plugin-mesh",
   "title": "dsh-plugin-mesh",
-  "summary": "DSH 局域网 Mesh 插件：自动发现同网段的其他 DSH 实例，提供对端操作页面，支持跨机双向派发任务。",
+  "summary": "自动发现同网段的其他 DSH 实例，在侧栏看各机器在线状态，还能把任务派给对端 agent 执行。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "lan",
     "mesh",
-    "multicast"
+    "multicast",
+    "零配置",
+    "跨设备",
+    "多Agent协作",
+    "工作流增强",
+    "状态监控"
   ],
   "version": "0.2.0",
   "versionSource": "package.json",
@@ -53,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

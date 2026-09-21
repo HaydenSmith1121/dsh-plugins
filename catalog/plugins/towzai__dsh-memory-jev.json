@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Towzai/dsh-memory-jev",
+  "slug": "towzai__dsh-memory-jev",
+  "package": "dsh-memory-jev",
+  "name": "dsh-memory-jev",
+  "title": "dsh-memory-jev",
+  "summary": "给 DSH 加上带类型判断的记忆读写，让 AI 记住上下文、越用越懂你。",
+  "tags": [
+    "cordis-plugin",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "jev",
+    "memory",
+    "状态持久化",
+    "会话管理",
+    "AI 助手",
+    "模型配置"
+  ],
+  "version": "0.4.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "Towzai",
+  "repo": "https://github.com/Towzai/dsh-memory-jev",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T14:09:21Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Towzai/dsh-memory-jev",
+    "commands": [
+      "dsh plugin --profile web install <owner>/dsh-memory-jev"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

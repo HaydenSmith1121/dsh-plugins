@@ -5,13 +5,17 @@
   "package": null,
   "name": "dsh-sql",
   "title": "dsh-sql",
-  "summary": "DSH 数据库插件：SQLite / MySQL / PostgreSQL 查询与管理，只读模式、写操作审批与流式行数钳制。",
+  "summary": "让你的 agent 直接查 SQLite、MySQL、PostgreSQL，只读查询加写操作审批，安全又省事。",
   "tags": [
     "database",
     "deepseek-harness",
     "dsh-plugin",
     "sql",
-    "sqlite"
+    "sqlite",
+    "工具集成",
+    "安全审计",
+    "自动化",
+    "命令行工具"
   ],
   "version": "0.4.3",
   "versionSource": "npm",
@@ -52,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

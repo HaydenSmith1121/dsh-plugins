@@ -5,7 +5,7 @@
   "package": "dsh-opencode-session",
   "name": "dsh-opencode-session",
   "title": "dsh-opencode-session",
-  "summary": "dsh plugin that fixes opencode.ai 400 MissingSessionID: sends the x-opencode-session header on opencode / opencode-go routes in DeepSeek Harness. One-command install, in-memory, upgrade-safe.",
+  "summary": "给 opencode 路由自动补上会话请求头，一键解决 400 MissingSessionID 报错。",
   "tags": [
     "ai-agent",
     "compatibility",
@@ -22,7 +22,11 @@
     "opencode-go",
     "pi-ai",
     "plugin",
-    "x-opencode-session"
+    "x-opencode-session",
+    "模型配置",
+    "工具集成",
+    "零配置",
+    "会话管理"
   ],
   "version": "0.1.0",
   "versionSource": "github-release",
@@ -69,6 +73,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

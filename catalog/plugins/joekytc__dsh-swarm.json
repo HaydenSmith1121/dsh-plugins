@@ -18,9 +18,9 @@
     "task-management",
     "typescript",
     "工作流增强",
-    "多智能体协作",
+    "多Agent协作",
     "可视化",
-    "安全审查"
+    "安全审计"
   ],
   "version": "0.3.8",
   "versionSource": "npm",
@@ -32,8 +32,8 @@
   "license": "MIT",
   "stars": 5,
   "forks": 0,
-  "pushedAt": "2026-09-16T09:14:49Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-20T03:15:32Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -45,8 +45,9 @@
     "method": "npm",
     "spec": "@joekytc/dsh-swarm",
     "commands": [
+      "dsh plugin --profile web add @joekytc/dsh-swarm",
       "npm install",
-      "dsh plugin --profile web add @joekytc/dsh-swarm"
+      "dsh plugin --profile web add ."
     ],
     "url": null,
     "sha256": null,
@@ -62,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

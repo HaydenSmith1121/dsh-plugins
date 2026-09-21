@@ -5,16 +5,21 @@
   "package": "dsh-edit-diff",
   "name": "dsh-edit-diff",
   "title": "dsh-edit-diff",
-  "summary": "DSH 插件：在文件变更工具卡片上重绘行级 diff（相同行只渲染一次 + 行内字符高亮），覆盖 run_code(PTC) 与 str_replace_editor，轮末给出改动汇总卡，并可在资源管理器中定位或复制路径。",
+  "summary": "把文件改动卡片变成行级 diff 视图，相同行只画一次、行内字符高亮，轮末还能看汇总并定位路径。",
   "tags": [
     "deepseek-harness",
     "diff",
     "dsh",
-    "dsh-plugin"
+    "dsh-plugin",
+    "主题",
+    "文件管理",
+    "可视化",
+    "效率提升",
+    "工具集成"
   ],
-  "version": "0.4.0",
+  "version": "0.5.0",
   "versionSource": "package.json",
-  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
   "latestRelease": null,
   "author": "senyayume",
   "repo": "https://github.com/senyayume/dsh-edit-diff",
@@ -22,8 +27,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-19T13:48:58Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-21T15:29:11Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -51,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

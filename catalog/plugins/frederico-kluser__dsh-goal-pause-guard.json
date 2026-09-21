@@ -5,7 +5,7 @@
   "package": "dsh-goal-pause-guard",
   "name": "dsh-goal-pause-guard",
   "title": "dsh-goal-pause-guard",
-  "summary": "Plugin do DeepSeek Harness (DSH): modal de confirmação antes de pausar uma atividade rodando — pausar interrompe a rodada atual e as subtarefas na hora.",
+  "summary": "暂停正在运行的任务前先弹窗确认，避免手滑打断当前轮次和子任务。",
   "tags": [
     "ai-agents",
     "confirmation-dialog",
@@ -13,7 +13,11 @@
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "typescript"
+    "typescript",
+    "安全审计",
+    "快捷操作",
+    "工作流增强",
+    "状态监控"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -54,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

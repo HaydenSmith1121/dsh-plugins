@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "doremifaso12345/dsh-token-ledger",
+  "slug": "doremifaso12345__dsh-token-ledger",
+  "package": "dsh-token-ledger",
+  "name": "dsh-token-ledger",
+  "title": "dsh-token-ledger",
+  "summary": "实时盯住 DeepSeek Harness 每天烧了多少 token，按本地日期分桶统计，用量一目了然。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "资源优化",
+    "设置面板",
+    "命令行工具"
+  ],
+  "version": "1.0.4",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "doremifaso12345",
+  "repo": "https://github.com/doremifaso12345/dsh-token-ledger",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T11:20:50Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:doremifaso12345/dsh-token-ledger",
+    "commands": [
+      "dsh plugin --profile web add github:doremifaso12345/dsh-token-ledger"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

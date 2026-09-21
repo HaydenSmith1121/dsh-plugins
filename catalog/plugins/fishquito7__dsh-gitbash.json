@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "Fishquito7/dsh-gitbash",
+  "slug": "fishquito7__dsh-gitbash",
+  "package": "dsh-git-bash",
+  "name": "dsh-gitbash",
+  "title": "dsh-gitbash",
+  "summary": "在 Windows 上给 DSH 装个真正的 bash 工具，直接调 bash，不用再被 pwsh 转义折磨。",
+  "tags": [
+    "bash",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "命令行工具",
+    "工具集成",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-20T14:19:01Z",
+    "url": "https://github.com/Fishquito7/dsh-gitbash/releases/tag/v0.1.1"
+  },
+  "author": "Fishquito7",
+  "repo": "https://github.com/Fishquito7/dsh-gitbash",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T14:50:46Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Fishquito7/dsh-gitbash",
+    "commands": [
+      "dsh plugin --profile web add \"github:Fishquito7/dsh-gitbash\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

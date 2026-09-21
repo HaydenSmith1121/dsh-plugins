@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "SPX43JL/dsh-safekeep",
+  "slug": "spx43jl__dsh-safekeep",
+  "package": "dsh-safekeep",
+  "name": "dsh-safekeep",
+  "title": "dsh-safekeep",
+  "summary": "给无人值守的 DSH 工作流加道保险，误删文件还能找回来。",
+  "tags": [
+    "agent-safety",
+    "deepseek-harness",
+    "dsh-plugin",
+    "file-recovery",
+    "windows",
+    "文件管理",
+    "安全审计",
+    "自动化",
+    "工作流增强"
+  ],
+  "version": "0.1.0-rc.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "SPX43JL",
+  "repo": "https://github.com/SPX43JL/dsh-safekeep",
+  "homepage": "https://github.com/SPX43JL/dsh-safekeep#readme",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T05:05:51Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:SPX43JL/dsh-safekeep",
+    "commands": [
+      "dsh plugin --profile web add github:SPX43JL/dsh-safekeep"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

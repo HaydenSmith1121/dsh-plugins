@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "Awoodwhale/dsh-agent-persona",
+  "slug": "awoodwhale__dsh-agent-persona",
+  "package": null,
+  "name": "dsh-agent-persona",
+  "title": "dsh-agent-persona",
+  "summary": "给不同工作区和会话分别设置 system prompt 人设，在 Web 设置页统一管理。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-better-sidebar",
+    "dsh-plugin",
+    "persona",
+    "plugin",
+    "system-prompt",
+    "工作区管理",
+    "会话管理",
+    "模型适配",
+    "设置面板"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-21T12:09:57Z",
+    "url": "https://github.com/Awoodwhale/dsh-agent-persona/releases/tag/v0.1.2"
+  },
+  "author": "Awoodwhale",
+  "repo": "https://github.com/Awoodwhale/dsh-agent-persona",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T12:09:57Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-agent-persona",
+    "commands": [
+      "dsh plugin --profile web add dsh-agent-persona",
+      "dsh plugin --profile web update dsh-agent-persona",
+      "dsh plugin --profile web add dsh-agent-persona@latest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

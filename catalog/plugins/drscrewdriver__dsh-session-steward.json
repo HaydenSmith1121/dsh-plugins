@@ -5,13 +5,18 @@
   "package": null,
   "name": "dsh-session-steward",
   "title": "dsh-session-steward",
-  "summary": "DSH 会话管家：会话历史文件（病案室）与健康检查（体检→处方→出院），给异常会话做投影级体检与可逆修复",
+  "summary": "给 DSH 会话做体检和修复，还能浏览归档历史、取消归档或清理文件。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-bundle",
     "dsh-plugin",
-    "typescript"
+    "typescript",
+    "会话管理",
+    "状态监控",
+    "文件管理",
+    "安全审计",
+    "状态持久化"
   ],
   "version": "0.1.0",
   "versionSource": "npm",
@@ -23,8 +28,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-19T09:56:23Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-20T18:11:48Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -53,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

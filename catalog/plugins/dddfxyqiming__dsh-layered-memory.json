@@ -5,14 +5,18 @@
   "package": "dsh-layered-memory",
   "name": "dsh-layered-memory",
   "title": "dsh-layered-memory",
-  "summary": "Cross-session long-term memory plugin for DeepSeek Harness",
+  "summary": "让 DSH 会话结束后也能记住项目配置和踩过的坑，下次回来直接接着干。",
   "tags": [
     "agent-skills",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "long-term-memory",
-    "memory"
+    "memory",
+    "状态持久化",
+    "会话管理",
+    "效率提升",
+    "零配置"
   ],
   "version": "0.6.8",
   "versionSource": "package.json",
@@ -53,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

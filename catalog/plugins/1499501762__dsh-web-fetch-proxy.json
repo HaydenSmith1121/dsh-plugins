@@ -5,7 +5,7 @@
   "package": "dsh-web-fetch-proxy",
   "name": "dsh-web-fetch-proxy",
   "title": "dsh-web-fetch-proxy",
-  "summary": "DSH plugin: route the built-in web_fetch through a local proxy so TUN fake-ip addresses stop tripping the SSRF guard.",
+  "summary": "让内置 web_fetch 走本地代理出网，解决 TUN 模式下 fake-ip 假地址被 SSRF 拦截的问题。",
   "tags": [
     "clash",
     "deepseek-harness",
@@ -14,7 +14,11 @@
     "fake-ip",
     "mihomo",
     "proxy",
-    "web-fetch"
+    "web-fetch",
+    "工具集成",
+    "桥接插件",
+    "零配置",
+    "浏览器隔离"
   ],
   "version": "0.2.0",
   "versionSource": "package.json",
@@ -57,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

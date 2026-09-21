@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "kaluosifa/dsh-plugin-skill2cn",
+  "slug": "kaluosifa__dsh-plugin-skill2cn",
+  "package": null,
+  "name": "dsh-plugin-skill2cn",
+  "title": "dsh-plugin-skill2cn",
+  "summary": "一键把技能里的英文说明翻成中文，还能随时还原原文，新装的技能马上就能用。",
+  "tags": [
+    "dsh-plugin",
+    "快捷操作",
+    "效率提升",
+    "AI 助手",
+    "插件管理"
+  ],
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "kaluosifa",
+  "repo": "https://github.com/kaluosifa/dsh-plugin-skill2cn",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T15:05:58Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-skill2cn",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-skill2cn",
+      "git clone https://github.com/kaluosifa/dsh-plugin-skill2cn.git",
+      "dsh plugin --profile web add ."
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

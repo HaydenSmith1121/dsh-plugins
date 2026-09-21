@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-todo-board",
   "title": "dsh-todo-board",
-  "summary": "跨会话 TODO 看板，按工作目录分组任务，一次派一件，干完自动接下一件。",
+  "summary": "跨会话待办面板，按工作目录分组任务，支持提醒、自动续跑，干完自动接下一件。",
   "tags": [
     "cordis",
     "deepseek-harness",
@@ -14,13 +14,14 @@
     "task-board",
     "todo",
     "工作流增强",
-    "会话管理",
-    "效率提升",
-    "可视化"
+    "工作区管理",
+    "自动化",
+    "状态持久化",
+    "效率提升"
   ],
-  "version": "0.4.1",
+  "version": "0.5.0",
   "versionSource": "npm",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
   "latestRelease": null,
   "author": "sueqet",
   "repo": "https://github.com/sueqet/dsh-todo-board",
@@ -28,8 +29,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-11T12:49:40Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-20T13:48:05Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -59,6 +60,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

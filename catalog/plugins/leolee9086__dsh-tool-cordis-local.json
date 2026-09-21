@@ -5,9 +5,13 @@
   "package": "dsh-tool-cordis-local",
   "name": "dsh-tool-cordis-local",
   "title": "dsh-tool-cordis-local",
-  "summary": "DeepSeek Harness 独立创造模式工具集：不注册进程级 inspect provider，让创造模式预设可以被复制",
+  "summary": "让创造模式预设能被复制，把读写自身运行时的能力做成宿主层普通插件，无需注册进程级 inspect provider。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "工具集成",
+    "插件管理",
+    "零配置",
+    "工作流增强"
   ],
   "version": "0.1.0",
   "versionSource": "github-release",
@@ -52,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

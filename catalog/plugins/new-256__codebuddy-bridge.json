@@ -5,7 +5,7 @@
   "package": "codebuddy-first-bridge",
   "name": "codebuddy-bridge",
   "title": "codebuddy-bridge",
-  "summary": "codebuddy-first bridge for DeepSeek Harness (DSH): dispatch real work to the local codebuddy CLI first in every mode, with fallback dialog, live status light, token usage accounting, and a zero-dependency MCP server",
+  "summary": "把编码、构建、调试等活儿优先交给本机 codebuddy CLI 干，DSH 全程盯着，还能看状态灯和 token 用量。",
   "tags": [
     "agent",
     "claude-code",
@@ -13,7 +13,12 @@
     "cordis",
     "deepseek-harness",
     "dsh",
-    "mcp"
+    "mcp",
+    "桥接插件",
+    "命令行工具",
+    "工具集成",
+    "状态监控",
+    "效率提升"
   ],
   "version": "1.1.12",
   "versionSource": "github-release",
@@ -58,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

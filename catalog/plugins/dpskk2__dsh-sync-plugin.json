@@ -5,22 +5,23 @@
   "package": "dsh-sync-plugin",
   "name": "dsh-sync-plugin",
   "title": "dsh-sync-plugin",
-  "summary": "DeepSeek Harness 双向同步插件：通过私有GitHub仓库在电脑间同步会话/附件/工作区/设置",
+  "summary": "把会话、附件、设置和工作区通过自己的 GitHub 仓库同步到另一台电脑，换机接着干。",
   "tags": [
     "backup",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "sync"
+    "sync",
+    "跨设备",
+    "会话管理",
+    "工作区管理",
+    "集中仓库",
+    "状态持久化"
   ],
   "version": "0.12.4",
-  "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
-  "latestRelease": {
-    "tag": "v0.12.4",
-    "publishedAt": "2026-09-18T12:27:29Z",
-    "url": "https://github.com/dpskk2/dsh-sync-plugin/releases/tag/v0.12.4"
-  },
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
   "author": "dpskk2",
   "repo": "https://github.com/dpskk2/dsh-sync-plugin",
   "homepage": null,
@@ -37,10 +38,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:dpskk2/dsh-sync-plugin",
+    "method": "npm",
+    "spec": "dsh-sync-plugin",
     "commands": [
-      "dsh plugin --profile web add github:dpskk2/dsh-sync-plugin"
+      "dsh plugin --profile web add dsh-sync-plugin"
     ],
     "url": null,
     "sha256": null,
@@ -56,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

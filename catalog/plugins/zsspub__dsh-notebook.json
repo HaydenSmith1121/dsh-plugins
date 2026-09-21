@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "zsspub/dsh-notebook",
+  "slug": "zsspub__dsh-notebook",
+  "package": "dsh-notebook",
+  "name": "dsh-notebook",
+  "title": "dsh-notebook",
+  "summary": "在侧边栏随手记 Markdown 笔记，支持标签、图片、搜索和历史版本，还能让 Agent 帮你记住东西。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "notebook",
+    "notes",
+    "状态持久化",
+    "文件管理",
+    "语义检索",
+    "效率提升",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "zsspub",
+  "repo": "https://github.com/zsspub/dsh-notebook",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T13:49:53Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zsspub/dsh-notebook",
+    "commands": [
+      "dsh plugin --profile web add github:zsspub/dsh-notebook",
+      "dsh plugin --profile web add /absolute/path/to/dsh-notebook"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

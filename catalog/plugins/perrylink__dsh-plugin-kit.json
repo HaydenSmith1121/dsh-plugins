@@ -5,7 +5,7 @@
   "package": "@perrylink/dsh-plugin-kit",
   "name": "dsh-plugin-kit",
   "title": "dsh-plugin-kit",
-  "summary": "Shared zero-runtime-dependency toolkit for PerryLink DSH plugins: a pluggable Provider registry seam, fail-closed approval and adaptive session-event gates, mechanical verify scripts, shared sanitize/pricing/judge modules, and a new-plugin skeleton.",
+  "summary": "给 DSH 插件开发者用的共享工具包，统一提供 Provider 注册、审批门禁和校验脚本，省去重复造轮子。",
   "tags": [
     "approval",
     "cordis",
@@ -18,7 +18,11 @@
     "pricing",
     "provider",
     "sanitize",
-    "seam"
+    "seam",
+    "插件管理",
+    "工具集成",
+    "安全审计",
+    "工作流增强"
   ],
   "version": "0.1.9",
   "versionSource": "github-release",
@@ -34,8 +38,8 @@
   "license": "Apache-2.0",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-20T16:29:51Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-21T16:56:50Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -64,6 +68,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

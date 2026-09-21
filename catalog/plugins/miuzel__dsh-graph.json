@@ -5,7 +5,7 @@
   "package": "dsh-graph",
   "name": "dsh-graph",
   "title": "dsh-graph",
-  "summary": "把工作组织成目标看板的 DeepSeek Harness (dsh) 插件：目标 / 判据 / 上下文卡片 / 执行 attempt 的二维泳道看板，数据以文件+事件流落在 .dsh-graph · Goal-kanban plugin for DeepSeek Harness",
+  "summary": "把工作拆成目标看板，用卡片和泳道管理目标、判据与执行进度，数据自动存本地。",
   "tags": [
     "agent-orchestration",
     "ai-agents",
@@ -18,7 +18,11 @@
     "kanban",
     "plugin",
     "task-management",
-    "typescript"
+    "typescript",
+    "工作流增强",
+    "可视化",
+    "状态持久化",
+    "多Agent协作"
   ],
   "version": null,
   "versionSource": "none",
@@ -30,8 +34,8 @@
   "license": null,
   "stars": 11,
   "forks": 0,
-  "pushedAt": "2026-09-20T18:05:11Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-21T13:12:55Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -59,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

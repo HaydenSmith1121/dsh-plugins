@@ -5,7 +5,7 @@
   "package": "@dsh-bio/dsh-bio-gem",
   "name": "dsh-bio-gem",
   "title": "dsh-bio-gem",
-  "summary": "基因组尺度代谢模型（GEM）构建插件：全基因组(蛋白FASTA)→自动构建+验证+补洞+报告(SBML+模型卡)；dsh-bio-genie 生态域插件 | Genome-scale metabolic model builder for dsh (DeepSeek Harness)",
+  "summary": "输入细菌全基因组，自动构建、验证并补洞代谢模型，直接输出 SBML 和模型卡。",
   "tags": [
     "bioinformatics",
     "cobra",
@@ -13,7 +13,11 @@
     "dsh",
     "dsh-plugin",
     "metabolic-model",
-    "sbml"
+    "sbml",
+    "自动化",
+    "内容创作",
+    "工具集成",
+    "工作流增强"
   ],
   "version": "0.1.12",
   "versionSource": "github-release",
@@ -58,6 +62,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

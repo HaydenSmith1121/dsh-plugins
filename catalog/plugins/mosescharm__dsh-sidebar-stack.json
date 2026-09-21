@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "MosesCharm/dsh-sidebar-stack",
+  "slug": "mosescharm__dsh-sidebar-stack",
+  "package": null,
+  "name": "dsh-sidebar-stack",
+  "title": "dsh-sidebar-stack",
+  "summary": "把 DSH 侧栏底部的动作按钮改成竖排，cost-meter、context 等插件不再挤成一行。",
+  "tags": [
+    "dsh-plugin",
+    "主题",
+    "前端增强",
+    "零配置",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "MosesCharm",
+  "repo": "https://github.com/MosesCharm/dsh-sidebar-stack",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T17:58:24Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-sidebar-stack",
+    "commands": [
+      "dsh plugin --profile web add dsh-sidebar-stack",
+      "git clone https://github.com/MosesCharm/dsh-sidebar-stack",
+      "dsh plugin --profile web add ./dsh-sidebar-stack"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

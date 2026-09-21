@@ -30,9 +30,9 @@
   "homepage": null,
   "license": "MIT",
   "stars": 6,
-  "forks": 0,
+  "forks": 1,
   "pushedAt": "2026-09-20T03:16:09Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -45,7 +45,7 @@
     "spec": "github:yoke233/dsh-prime-agent",
     "commands": [
       "npm install",
-      "dsh plugin --profile web add ./dsh-prime-agent https://github.com/yoke233/dsh-tool-monitor/archive/1e0f2cc14b4ddbc49c2e3cb2c2a7913c80b3083f.tar.gz"
+      "dsh plugin --profile web add ./dsh-prime-agent https://github.com/yoke233/dsh-tool-monitor/archive/244e8eb1f4828c2c6cc4eee664b6d895b8e6e315.tar.gz"
     ],
     "url": null,
     "sha256": null,
@@ -53,7 +53,7 @@
     "tarball": null,
     "dshVersion": null,
     "needsConfig": true,
-    "usageNeedsConfig": false,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -61,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

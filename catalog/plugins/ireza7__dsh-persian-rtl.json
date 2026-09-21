@@ -5,7 +5,7 @@
   "package": "dsh-persian-rtl",
   "name": "dsh-persian-rtl",
   "title": "dsh-persian-rtl",
-  "summary": "Persian (Farsi) RTL fix for DeepSeek Harness: automatic per-paragraph direction for assistant answers, thinking cells, tool cells and question boxes",
+  "summary": "自动修正波斯语等 RTL 文字的段落方向，让助手回答和各类面板显示不再错乱。",
   "tags": [
     "arabic",
     "deepseek-harness",
@@ -13,11 +13,16 @@
     "farsi",
     "hebrew",
     "persian",
-    "rtl"
+    "rtl",
+    "零配置",
+    "自动化",
+    "前端增强",
+    "主题",
+    "AI 助手"
   ],
-  "version": "1.0.0",
+  "version": "1.1.0",
   "versionSource": "package.json",
-  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
   "latestRelease": null,
   "author": "ireza7",
   "repo": "https://github.com/ireza7/dsh-persian-rtl",
@@ -25,8 +30,8 @@
   "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-19T19:46:52Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-21T07:05:50Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -54,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

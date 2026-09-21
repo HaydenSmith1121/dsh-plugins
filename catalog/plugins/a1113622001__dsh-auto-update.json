@@ -5,9 +5,13 @@
   "package": "dsh-auto-update",
   "name": "dsh-auto-update",
   "title": "dsh-auto-update",
-  "summary": "DeepSeek Harness (cordis) plugin: self-update for the harness launcher - checks npm for a newer @deepseek-ai/dsh, stages it, and applies it on harness exit (or update-and-restart from the web panel).",
+  "summary": "自动检查并更新 DeepSeek Harness 启动器，退出时静默生效，也能一键更新重启。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "自动化",
+    "插件管理",
+    "零配置",
+    "效率提升"
   ],
   "version": "0.1.1",
   "versionSource": "package.json",
@@ -49,6 +53,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -5,14 +5,18 @@
   "package": null,
   "name": "dsh-message-datetime",
   "title": "dsh-message-datetime",
-  "summary": "Per-turn clock context for DeepSeek Harness: one-line current-time reading at every turn start and a Turn ended reading at close, so the model always knows what time it is.",
+  "summary": "每轮对话开始和结束时自动给模型报个时间，让它随时知道现在几点。",
   "tags": [
     "ai-agent",
     "datetime",
     "deepseek-harness",
     "dsh-plugin",
     "timestamp",
-    "timezone"
+    "timezone",
+    "零配置",
+    "AI 助手",
+    "会话管理",
+    "状态监控"
   ],
   "version": "0.1.1",
   "versionSource": "npm",
@@ -53,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

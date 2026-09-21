@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "MayBeTheWorld/dsh-inherit",
+  "slug": "maybetheworld__dsh-inherit",
+  "package": "dsh-inherit",
+  "name": "dsh-inherit",
+  "title": "dsh-inherit",
+  "summary": "一键把 Claude Code、Cursor、Codex 等工具的 MCP 服务器和技能配置迁移到 DeepSeek Harness，省去手动重配的麻烦。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "migration",
+    "设置面板",
+    "无缝导入",
+    "模型适配",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "MayBeTheWorld",
+  "repo": "https://github.com/MayBeTheWorld/dsh-inherit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-20T08:30:22Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MayBeTheWorld/dsh-inherit",
+    "commands": [
+      "dsh plugin --profile web add github:MayBeTheWorld/dsh-inherit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

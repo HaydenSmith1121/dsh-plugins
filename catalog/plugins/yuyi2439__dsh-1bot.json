@@ -5,12 +5,16 @@
   "package": null,
   "name": "dsh-1bot",
   "title": "dsh-1bot",
-  "summary": "",
+  "summary": "把 QQ 变成 dsh 的聊天界面，每个私聊或群聊对应一个独立 agent 会话，模型需显式调用 onebot_send 才能发言。",
   "tags": [
     "dsh-plugin",
     "dsh-plugins",
     "onebot",
-    "onebot-sdk"
+    "onebot-sdk",
+    "桥接插件",
+    "会话管理",
+    "工具集成",
+    "消息通知"
   ],
   "version": "0.1.1",
   "versionSource": "npm",
@@ -51,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

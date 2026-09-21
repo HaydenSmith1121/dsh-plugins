@@ -5,7 +5,7 @@
   "package": "dsh-aux-workspace",
   "name": "DSH-AUX",
   "title": "DSH-AUX",
-  "summary": "Auxiliary model system for DeepSeek Harness: unified aux-LLM routing (per-task model, timeout, concurrency, failure cooldown, main-model fallback) + vision_analyze / web_extract / compress_text tools, settings page, and session image lifecycle cleanup.",
+  "summary": "给 DSH 加一套辅助模型系统，自动调度小模型跑视觉分析、网页提取和文本压缩，主模型不忙也不累。",
   "tags": [
     "auxiliary-model",
     "cordis",
@@ -13,7 +13,12 @@
     "dsh",
     "dsh-plugin",
     "llm",
-    "vision"
+    "vision",
+    "模型适配",
+    "视觉理解",
+    "工具集成",
+    "效率提升",
+    "资源优化"
   ],
   "version": "0.4.6-fix.3",
   "versionSource": "github-release",
@@ -59,6 +64,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

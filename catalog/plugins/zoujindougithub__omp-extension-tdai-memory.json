@@ -5,7 +5,7 @@
   "package": null,
   "name": "omp-extension-tdai-memory",
   "title": "omp-extension-tdai-memory",
-  "summary": "Long-term memory plugins for Oh My Pi (OMP) and DSH (WIP), designed for TencentCloud/TencentDB-Agent-Memory. Fail-open, out-of-band architecture.",
+  "summary": "给 OMP 和 DSH 智能体接上腾讯云长期记忆，失败也不影响主流程，记忆读写走旁路。",
   "tags": [
     "agent-memory",
     "circuit-breaker",
@@ -14,7 +14,11 @@
     "long-term-memory",
     "omp",
     "omp-extension",
-    "tdai"
+    "tdai",
+    "状态持久化",
+    "语义检索",
+    "模型配置",
+    "工具集成"
   ],
   "version": "0.2.0",
   "versionSource": "github-release",
@@ -59,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -5,11 +5,16 @@
   "package": "@local/dsh-devspace",
   "name": "dsh-devspace",
   "title": "dsh-devspace",
-  "summary": "DevSpace nodes and remote-directory mirror Workspaces for the DeepSeek Harness: manage N MCP endpoints, adopt a remote directory as a local Workspace, and move files both ways",
+  "summary": "把多个 DevSpace 远端节点接进 DSH 统一管理，还能把远端目录变成本地镜像工作区，双向传文件。",
   "tags": [
     "deepseek-harness",
     "dsh",
-    "dsh-plugin"
+    "dsh-plugin",
+    "工具集成",
+    "工作区管理",
+    "文件管理",
+    "桥接插件",
+    "跨设备"
   ],
   "version": "1.0.0",
   "versionSource": "package.json",
@@ -50,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

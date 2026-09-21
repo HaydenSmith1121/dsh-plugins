@@ -5,10 +5,15 @@
   "package": "gh-watch",
   "name": "gh-watch",
   "title": "gh-watch",
-  "summary": "DSH 插件：GitHub PR/issue 变更监视插件（多 AI 独立配置，插件自身不审查、不回帖）",
+  "summary": "盯着 GitHub 仓库的 PR 和 issue，一有变动就自动通知 AI，审查判断交给 AI 自己。",
   "tags": [
     "dsh",
-    "dsh-plugin"
+    "dsh-plugin",
+    "消息通知",
+    "状态监控",
+    "多Agent协作",
+    "自动化",
+    "工具集成"
   ],
   "version": "0.1.1",
   "versionSource": "package.json",
@@ -20,8 +25,8 @@
   "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-20T02:37:22Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-21T07:46:24Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -49,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

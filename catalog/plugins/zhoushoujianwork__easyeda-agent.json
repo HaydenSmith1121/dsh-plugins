@@ -5,7 +5,7 @@
   "package": "easyeda-agent-dsh",
   "name": "easyeda-agent",
   "title": "easyeda-agent",
-  "summary": "EasyEDA Pro automation: Go daemon + in-app connector + agent skill + stdio MCP server for typed schematic/PCB actions, workflow gates, and DRC.",
+  "summary": "让 AI 直接操作嘉立创 EDA 专业版，自动读手册、画原理图、布局 PCB 并跑完检查。",
   "tags": [
     "agent-skill",
     "ai-agent",
@@ -22,7 +22,12 @@
     "mcp-server",
     "pcb",
     "pcb-design",
-    "schematic"
+    "schematic",
+    "AI 助手",
+    "自动化",
+    "工具集成",
+    "工作流增强",
+    "命令行工具"
   ],
   "version": "1.5.2",
   "versionSource": "github-release",
@@ -36,10 +41,10 @@
   "repo": "https://github.com/zhoushoujianwork/easyeda-agent",
   "homepage": "https://jlc-ext.com/item/zhoushoujian/easyeda-agent-connector",
   "license": "NOASSERTION",
-  "stars": 486,
-  "forks": 64,
-  "pushedAt": "2026-09-20T09:16:46Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "stars": 499,
+  "forks": 67,
+  "pushedAt": "2026-09-21T14:30:39Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -69,6 +74,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

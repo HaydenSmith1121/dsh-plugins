@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "harmless0819-dev/dsh-persona-anchor",
+  "slug": "harmless0819-dev__dsh-persona-anchor",
+  "package": "dsh-persona-anchor",
+  "name": "dsh-persona-anchor",
+  "title": "dsh-persona-anchor",
+  "summary": "把人设钉进系统提示词，不再占用 AGENTS.md 的指令额度，人设更稳更省空间。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "persona",
+    "system-prompt",
+    "模型适配",
+    "会话管理",
+    "资源优化",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "harmless0819-dev",
+  "repo": "https://github.com/harmless0819-dev/dsh-persona-anchor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T15:48:42Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:harmless0819-dev/dsh-persona-anchor",
+    "commands": [
+      "dsh plugin --profile web add github:harmless0819-dev/dsh-persona-anchor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

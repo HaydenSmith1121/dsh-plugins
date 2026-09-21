@@ -5,13 +5,17 @@
   "package": null,
   "name": "dsh-knowledge",
   "title": "dsh-knowledge",
-  "summary": "Installable DeepSeek Harness knowledge base plugin",
+  "summary": "给 DeepSeek Harness 装上一个本地知识库，用 SQLite 存资料、做语义检索，开箱即用。",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
     "knowledge-base",
     "rag",
-    "sqlite"
+    "sqlite",
+    "语义检索",
+    "零配置",
+    "工具集成",
+    "状态持久化"
   ],
   "version": "2.10.0",
   "versionSource": "npm",
@@ -54,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -5,12 +5,17 @@
   "package": "dsh-lsp-bridge",
   "name": "dsh-lsp-bridge",
   "title": "dsh-lsp-bridge",
-  "summary": "Bridge DeepSeek Harness to language servers for read-only code intelligence, with multi-language configuration, multi-root workspace support, and session-scoped server reuse.",
+  "summary": "让 DeepSeek Harness 连上语言服务器，只读查询代码结构、跳转和补全，多语言多根工作区都能用。",
   "tags": [
     "deepseek-harness",
     "developer-tools",
     "dsh-plugin",
-    "lsp"
+    "lsp",
+    "工具集成",
+    "桥接插件",
+    "工作区管理",
+    "模型适配",
+    "效率提升"
   ],
   "version": "0.3.0",
   "versionSource": "package.json",
@@ -51,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

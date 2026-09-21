@@ -5,9 +5,13 @@
   "package": "dsh-identity-ops",
   "name": "dsh-identity-ops",
   "title": "dsh-identity-ops",
-  "summary": "数字身份运维工具：邮箱（列/读/取码/取链）+ 站点知识注册表（可成长——新站点是加记录，不是加脚本）。纯 HTTP 经 Clash 显式代理，fail-closed。",
+  "summary": "管邮箱验证码和确认链接，还能把新站点当记录加进知识库，不用写脚本。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "自动化",
+    "工具集成",
+    "安全审计",
+    "工作流增强"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -48,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

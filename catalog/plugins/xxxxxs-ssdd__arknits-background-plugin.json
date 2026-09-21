@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "xxxxxs-ssdd/arknits-background-plugin",
+  "slug": "xxxxxs-ssdd__arknits-background-plugin",
+  "package": "@deepseek-ai/dsh-client-ui-arknights-background",
+  "name": "arknits-background-plugin",
+  "title": "arknits-background-plugin",
+  "summary": "给 DeepSeek Harness 的网页界面换上明日方舟壁纸，让工作台更有氛围感。",
+  "tags": [
+    "ai-agent",
+    "dsh-plugin",
+    "主题",
+    "界面美化",
+    "前端增强",
+    "零配置"
+  ],
+  "version": "0.1.0-rc.6",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "xxxxxs-ssdd",
+  "repo": "https://github.com/xxxxxs-ssdd/arknits-background-plugin",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-20T13:42:50Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xxxxxs-ssdd/arknits-background-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:xxxxxs-ssdd/arknits-background-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

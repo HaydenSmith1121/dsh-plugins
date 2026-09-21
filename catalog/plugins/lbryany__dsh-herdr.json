@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Lbryany/dsh-herdr",
+  "slug": "lbryany__dsh-herdr",
+  "package": "@lbryany/dsh-herdr",
+  "name": "dsh-herdr",
+  "title": "dsh-herdr",
+  "summary": "把 DSH 进程里所有 agent 的运行状态汇总成 Herdr 面板状态，一眼看清是否卡审批或还在干活。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "多Agent协作",
+    "工具集成",
+    "桥接插件"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-08-17T11:27:16Z",
+    "url": "https://github.com/Lbryany/dsh-herdr/releases/tag/v0.1.2"
+  },
+  "author": "Lbryany",
+  "repo": "https://github.com/Lbryany/dsh-herdr",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 1,
+  "pushedAt": "2026-09-20T03:19:35Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Lbryany/dsh-herdr",
+    "commands": [
+      "npm install",
+      "dsh plugin --profile headless add ./lbryany-dsh-herdr-0.1.3.tgz",
+      "dsh plugin --profile web add ./lbryany-dsh-herdr-0.1.3.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

@@ -5,7 +5,7 @@
   "package": "dsh-cockpit",
   "name": "dsh-cockpit",
   "title": "dsh-cockpit",
-  "summary": "多设备 DeepSeek Harness 驾驶舱：一个页面管理多台机器上的 DSH，选中设备直接用它原生的工作台（SSH 回环隧道 + 只读状态聚合，远端零改造）",
+  "summary": "一个页面管多台机器上的 DSH，选中设备就能直接用它的原生工作台，远端不用改。",
   "tags": [
     "ai-agents",
     "deepseek",
@@ -21,7 +21,12 @@
     "react",
     "spec-driven-development",
     "ssh-tunnel",
-    "typescript"
+    "typescript",
+    "跨设备",
+    "工作区管理",
+    "状态监控",
+    "工具集成",
+    "零配置"
   ],
   "version": "0.4.0",
   "versionSource": "github-release",
@@ -66,6 +71,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

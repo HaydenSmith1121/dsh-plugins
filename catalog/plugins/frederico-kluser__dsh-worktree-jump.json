@@ -5,14 +5,19 @@
   "package": "dsh-worktree-jump",
   "name": "dsh-worktree-jump",
   "title": "dsh-worktree-jump",
-  "summary": "DeepSeek Harness plugin: a web-UI button that creates a git worktree and moves the conversation into it (session fork with the worktree as cwd)",
+  "summary": "新建对话时自动创建 git worktree 并把会话搬进去，让每次对话都在独立工作区里跑。",
   "tags": [
     "cordis",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "git",
-    "worktree"
+    "worktree",
+    "工作区管理",
+    "会话管理",
+    "自动化",
+    "效率提升",
+    "工具集成"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -53,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

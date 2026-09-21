@@ -5,7 +5,7 @@
   "package": "@max-null/dsh-memory",
   "name": "dsh-memory",
   "title": "dsh-memory",
-  "summary": "Cross-session plaintext memory for DeepSeek Harness: model-written, effective immediately, searchable across the workspace chain, budgeted every-turn recall · 跨会话明文记忆：模型写入即生效、明文可审计、沿工作区链检索、常驻注入带预算",
+  "summary": "给 DeepSeek Harness 加上跨会话明文记忆，模型写入即生效，还能沿工作区链检索、按预算常驻注入。",
   "tags": [
     "bm25",
     "cordis",
@@ -14,7 +14,12 @@
     "dsh-plugin",
     "memory",
     "plaintext",
-    "ssid"
+    "ssid",
+    "状态持久化",
+    "会话管理",
+    "语义检索",
+    "工作区管理",
+    "AI 助手"
   ],
   "version": "0.11.0",
   "versionSource": "github-release",
@@ -59,6 +64,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

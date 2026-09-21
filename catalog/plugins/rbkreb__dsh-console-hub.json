@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "RBkreb/dsh-console-hub",
+  "slug": "rbkreb__dsh-console-hub",
+  "package": "dsh-console-hub",
+  "name": "dsh-console-hub",
+  "title": "dsh-console-hub",
+  "summary": "通过 Telnet 或 Raw TCP 连接串口服务器和网络设备的控制台，管理会话并交互执行命令。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "telnet",
+    "桌面自动化",
+    "会话管理",
+    "命令行工具",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "RBkreb",
+  "repo": "https://github.com/RBkreb/dsh-console-hub",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T03:50:10Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:RBkreb/dsh-console-hub",
+    "commands": [
+      "dsh plugin --profile web add github:RBkreb/dsh-console-hub"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

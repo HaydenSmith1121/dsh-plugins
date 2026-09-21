@@ -5,10 +5,15 @@
   "package": "dsh-allow",
   "name": "dsh-allow",
   "title": "dsh-allow",
-  "summary": "DeepSeek Harness 权限记忆插件：把某类命令加进允许列表，之后同类命令不再询问。 / Remember sandbox-escalation approvals so the same command prefix stops asking.",
+  "summary": "记住你批准过的命令前缀，同类命令以后不再重复询问，省去反复确认的麻烦。",
   "tags": [
     "deepseek-harness",
-    "dsh-plugin"
+    "dsh-plugin",
+    "效率提升",
+    "自动化",
+    "命令行工具",
+    "安全审计",
+    "状态持久化"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -18,10 +23,10 @@
   "repo": "https://github.com/DWJZ/dsh-allow",
   "homepage": null,
   "license": "MIT",
-  "stars": 0,
+  "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-18T23:38:33Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "pushedAt": "2026-09-21T07:29:23Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -49,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

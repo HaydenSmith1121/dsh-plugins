@@ -5,14 +5,14 @@
   "package": "dsh-farm-dispatch",
   "name": "dsh-farm-dispatch",
   "title": "dsh-farm-dispatch",
-  "summary": "装上就让所有子代理预设自动遵守全局派发规范，还附带异步派发预设，省心省成本。",
+  "summary": "装上就让所有预设自动遵守子代理派发规范，还附带异步派发预设，省心又省 token。",
   "tags": [
     "dsh-plugin",
-    "多智能体协作",
+    "多Agent协作",
+    "工作流增强",
     "零配置",
-    "成本控制",
-    "插件管理",
-    "工作流增强"
+    "效率提升",
+    "插件管理"
   ],
   "version": "0.1.0",
   "versionSource": "github-release",
@@ -41,8 +41,8 @@
     "method": "github",
     "spec": "github:sangning-h/dsh-farm-dispatch",
     "commands": [
-      "dsh plugin --profile <profile> add https://github.com/hxt1110/dsh-farm-dispatch.git",
-      "dsh plugin --profile web add https://github.com/hxt1110/dsh-farm-dispatch.git"
+      "dsh plugin --profile <profile> add https://github.com/sangning-h/dsh-farm-dispatch.git",
+      "dsh plugin --profile web add https://github.com/sangning-h/dsh-farm-dispatch.git"
     ],
     "url": null,
     "sha256": null,
@@ -58,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

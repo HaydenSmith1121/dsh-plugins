@@ -5,9 +5,14 @@
   "package": "dsh-book2skill",
   "name": "dsh-book2skill",
   "title": "dsh-book2skill",
-  "summary": "DSH book-to-skill plugin: a 5-stage long task (fetch → parse → understand → generate → install) with 3 human gates, host tools for the agent and a browser timeline panel",
+  "summary": "把一本书自动拆解成可安装的 SKILL.md 技能，5 阶段长流程加 3 道人工确认，还能在浏览器里看进度。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "工作流增强",
+    "自动化",
+    "报告生成",
+    "状态监控",
+    "AI 助手"
   ],
   "version": "0.1.2",
   "versionSource": "package.json",
@@ -48,6 +53,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

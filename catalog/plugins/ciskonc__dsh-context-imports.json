@@ -5,18 +5,22 @@
   "package": null,
   "name": "dsh-context-imports",
   "title": "dsh-context-imports",
-  "summary": "Claude Code-style @path imports for DeepSeek Harness: expands @imports in AGENTS.md/CLAUDE.md and injects referenced files into context at session start",
+  "summary": "自动展开 AGENTS.md 里的 @path 引用，把相关文件在会话开始时一并塞进上下文，省得手动贴。",
   "tags": [
     "agents-md",
     "claude-md",
     "context-injection",
     "deepseek-harness",
     "dsh-plugin",
-    "llm-memory"
+    "llm-memory",
+    "会话管理",
+    "自动化",
+    "文件管理",
+    "零配置"
   ],
-  "version": "0.1.1",
+  "version": "0.1.2",
   "versionSource": "npm",
-  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
   "latestRelease": null,
   "author": "ciskonc",
   "repo": "https://github.com/ciskonc/dsh-context-imports",
@@ -55,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

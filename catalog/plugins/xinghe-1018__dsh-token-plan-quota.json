@@ -5,12 +5,16 @@
   "package": null,
   "name": "dsh-token-plan-quota",
   "title": "dsh-token-plan-quota",
-  "summary": "跟随当前模型供应商的额度徽标：DeepSeek、千问 Token Plan、阿里云费用中心取官方真值，Moonshot / OpenRouter 已接官方端点但字段未用真 Key 核对；其余只报本实例实测。不折算 Credits、不估算余量。",
+  "summary": "在输入框工具行实时显示当前模型供应商的剩余额度，官方真值优先，不估算不折算。",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
     "quota",
-    "usage"
+    "usage",
+    "状态监控",
+    "模型适配",
+    "工具集成",
+    "资源优化"
   ],
   "version": "0.4.8",
   "versionSource": "npm",
@@ -53,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

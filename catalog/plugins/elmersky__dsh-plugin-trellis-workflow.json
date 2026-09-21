@@ -5,7 +5,7 @@
   "package": "dsh-plugin-trellis-workflow",
   "name": "dsh-plugin-trellis-workflow",
   "title": "dsh-plugin-trellis-workflow",
-  "summary": "Trellis workflow enforcement for the DeepSeek Harness: per-turn workflow state injection and a trellis-start entry gate, replacing the session-start and user-prompt hooks dsh does not ship.",
+  "summary": "给 dsh 补上 Trellis 工作流：每轮自动注入流程状态，并用 trellis-start 把关入口。",
   "tags": [
     "cordis",
     "cordis-plugin",
@@ -14,7 +14,10 @@
     "dsh",
     "dsh-plugin",
     "trellis",
-    "workflow"
+    "workflow",
+    "工作流增强",
+    "自动化",
+    "状态持久化"
   ],
   "version": "0.1.2",
   "versionSource": "github-release",
@@ -59,6 +62,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

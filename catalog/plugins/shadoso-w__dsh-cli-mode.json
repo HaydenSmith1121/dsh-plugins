@@ -5,12 +5,16 @@
   "package": "dsh-cli-mode",
   "name": "dsh-cli-mode",
   "title": "dsh-cli-mode",
-  "summary": "Command-line mode for the DeepSeek Harness web GUI: a composer line starting with ！ or ! runs as a real command in the session workspace instead of being sent to the model.",
+  "summary": "在对话框里用 ！或 ! 开头，就能直接在会话目录跑真实命令，不用再发给模型。",
   "tags": [
     "cli",
     "deepseek-harness",
     "dsh",
-    "dsh-plugin"
+    "dsh-plugin",
+    "命令行工具",
+    "快捷操作",
+    "效率提升",
+    "工作区管理"
   ],
   "version": "1.1.0",
   "versionSource": "package.json",
@@ -51,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

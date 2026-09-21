@@ -5,7 +5,7 @@
   "package": "dsh-memory-steward",
   "name": "dsh-memory-steward",
   "title": "dsh-memory-steward",
-  "summary": "记忆管家：为 dsh-memory-evolve 补上记忆入库之后的生命周期闭环——预算看门狗、整理到期提醒、待审批队列与审批 Tab、带备份执行。只读观测记忆文件，写入一律回调上游官方 HTTP API。",
+  "summary": "给记忆插件补上入库后的管理闭环：预算监控、整理提醒、审批执行，全程可追溯。",
   "tags": [
     "agent-memory",
     "cordis",
@@ -13,7 +13,11 @@
     "dsh",
     "dsh-plugin",
     "memory",
-    "memory-lifecycle"
+    "memory-lifecycle",
+    "状态监控",
+    "自动化",
+    "工作流增强",
+    "安全审计"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -55,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

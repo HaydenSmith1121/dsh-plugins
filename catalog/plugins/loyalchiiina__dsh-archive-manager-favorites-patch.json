@@ -5,13 +5,18 @@
   "package": "dsh-archive-manager-plus",
   "name": "dsh-archive-manager-favorites-patch",
   "title": "dsh-archive-manager-favorites-patch",
-  "summary": "Enhanced DSH archive manager: favorites filter & prune, one-click delete unfavorited, pinning, time & turns sorting, idle-days one-click archive (progress & undo), fast bulk delete with progress & fallback, copy ID/path, reworked layout. Based on MichengAI v0.1.40 (Apache-2.0). 归档会话增强版：收藏/置顶/时间·轮次排序/闲置一键归档/快速批量删除/复制 ID·路径。",
+  "summary": "给 DSH 归档管理器加上收藏筛选、置顶排序、一键清理和自动归档，找会话、删记录都更省事。",
   "tags": [
     "archive-manager",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "plugin-patch"
+    "plugin-patch",
+    "会话管理",
+    "效率提升",
+    "快捷操作",
+    "自动化",
+    "文件管理"
   ],
   "version": "0.1.40",
   "versionSource": "package.json",
@@ -52,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

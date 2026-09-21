@@ -5,7 +5,7 @@
   "package": "dsh-spark-plugins",
   "name": "dsh-spark-plugins",
   "title": "dsh-spark-plugins",
-  "summary": "DSH (DeepSeek Harness) 第三方插件 monorepo：GitHub/npm 连接器、成本统计、跨会话记忆与 UI 组件库",
+  "summary": "把 GitHub、npm 接进 DSH，还能统计花费、记住跨会话上下文，附一套对齐官方的 UI 组件库。",
   "tags": [
     "cost-tracking",
     "deepseek",
@@ -16,7 +16,12 @@
     "plugins",
     "pnpm",
     "react",
-    "typescript"
+    "typescript",
+    "工具集成",
+    "集中仓库",
+    "状态持久化",
+    "资源优化",
+    "前端增强"
   ],
   "version": "0.2.2",
   "versionSource": "github-release",
@@ -32,8 +37,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-20T16:46:22Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-21T06:27:25Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -63,6 +68,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

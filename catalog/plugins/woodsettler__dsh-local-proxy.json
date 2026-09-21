@@ -5,14 +5,18 @@
   "package": null,
   "name": "dsh-local-proxy",
   "title": "dsh-local-proxy",
-  "summary": "DSH plugin: discover this machine's HTTP proxy (explicit .env value, else the Windows system proxy) and make DeepSeek Harness use it - for the agent's in-process fetches and for every child process it spawns.",
+  "summary": "自动找到本机 HTTP 代理并让 DSH 的联网请求和子进程都走代理，省去手动配置。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "http-proxy",
     "proxy",
-    "windows"
+    "windows",
+    "零配置",
+    "工具集成",
+    "命令行工具",
+    "效率提升"
   ],
   "version": "1.0.0",
   "versionSource": "npm",
@@ -55,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

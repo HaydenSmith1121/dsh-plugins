@@ -5,25 +5,30 @@
   "package": null,
   "name": "dsh-interactive-terminal",
   "title": "dsh-interactive-terminal",
-  "summary": "Persistent Bash terminals for DeepSeek Harness, letting humans take over and continue model-started sessions through an xterm.js UI.",
+  "summary": "给每个 Agent 配一个持久 Bash 终端，模型跑一半的会话你也能随时接手继续敲。",
   "tags": [
     "agent-terminal",
     "agents",
     "dsh",
-    "dsh-plugin"
+    "dsh-plugin",
+    "命令行工具",
+    "会话管理",
+    "多Agent协作",
+    "状态持久化",
+    "前端增强"
   ],
-  "version": "0.1.0",
+  "version": "0.2.0",
   "versionSource": "package.json",
-  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
   "latestRelease": null,
   "author": "mingzhicode",
   "repo": "https://github.com/mingzhicode/dsh-interactive-terminal",
   "homepage": null,
   "license": "MIT",
-  "stars": 0,
+  "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-18T09:41:00Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "pushedAt": "2026-09-21T09:34:07Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -55,6 +60,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

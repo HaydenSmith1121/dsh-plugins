@@ -5,9 +5,13 @@
   "package": "dsh-engineering-suite",
   "name": "dsh-engineering-suite",
   "title": "dsh-engineering-suite",
-  "summary": "Engineering suite for DeepSeek Harness: seven plugins covering roles, specifications, test design, quality gates, evidence, audit trail and pipeline orchestration",
+  "summary": "把软件工程全流程拆成七个可独立挂载的插件，从角色分工到质量审计一条龙搞定。",
   "tags": [
-    "dsh-plugin"
+    "dsh-plugin",
+    "多Agent协作",
+    "工作流增强",
+    "自动化",
+    "安全审计"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -19,8 +23,8 @@
   "license": null,
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-20T09:58:29Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-21T06:37:37Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -48,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

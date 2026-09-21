@@ -5,7 +5,7 @@
   "package": "dsh-knowcode",
   "name": "dsh-knowcode",
   "title": "dsh-knowcode",
-  "summary": "⚡ Unified code graph & knowledge base for DeepSeek Harness — AST symbols, refactor blast radius, clone detection and spec-to-code traceability on embedded FalkorDB.",
+  "summary": "把代码变成可查询的知识图谱，帮你查符号、看重构影响、找重复代码、追需求落地。",
   "tags": [
     "ast",
     "clone-detection",
@@ -19,7 +19,12 @@
     "falkordb",
     "graph-database",
     "knowledge-base",
-    "refactoring"
+    "refactoring",
+    "语义检索",
+    "可视化",
+    "工具集成",
+    "效率提升",
+    "代码图谱"
   ],
   "version": "0.1.20",
   "versionSource": "github-release",
@@ -35,8 +40,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-19T16:04:12Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "pushedAt": "2026-09-21T16:30:26Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -65,6 +70,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

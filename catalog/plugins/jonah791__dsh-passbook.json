@@ -5,14 +5,19 @@
   "package": "dsh-passbook",
   "name": "dsh-passbook",
   "title": "dsh-passbook",
-  "summary": "隐私密码本（Privacy Passbook）：我自己的私密凭据工具面——生成强密码、按字段写入、按需取用、不泄漏地使用（env 注入）、体检与轮换；存储复用 DPAPI vault，秘密走 stdin/env、不回显，审计只记「谁何时取了哪一条」。",
+  "summary": "帮你生成强密码、安全存进本地加密库，用的时候注入环境变量不露痕迹，还能定期体检轮换。",
   "tags": [
     "agent-tools",
     "credential-vault",
     "dpapi",
     "dsh-plugin",
     "privacy",
-    "secrets-management"
+    "secrets-management",
+    "安全审计",
+    "命令行工具",
+    "状态持久化",
+    "工具集成",
+    "自动化"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -53,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

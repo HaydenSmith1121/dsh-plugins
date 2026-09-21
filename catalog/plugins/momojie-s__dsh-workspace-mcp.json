@@ -5,14 +5,15 @@
   "package": "@momojie-s/dsh-workspace-mcp",
   "name": "dsh-workspace-mcp",
   "title": "dsh-workspace-mcp",
-  "summary": "按项目目录自动加载各自的 MCP 服务器，不同项目工具互不干扰，随会话生灭自动回收。",
+  "summary": "让每个项目用自己的 MCP 配置，会话内自动加载卸载，项目之间互不干扰。",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
-    "插件管理",
-    "工作区隔离",
-    "自动加载",
-    "会话级工具"
+    "工作区管理",
+    "工具集成",
+    "会话管理",
+    "自动化",
+    "插件管理"
   ],
   "version": "0.3.0",
   "versionSource": "package.json",
@@ -53,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

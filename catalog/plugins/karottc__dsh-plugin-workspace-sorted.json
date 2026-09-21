@@ -5,11 +5,15 @@
   "package": "dsh-plugin-workspace-sorted",
   "name": "dsh-plugin-workspace-sorted",
   "title": "dsh-plugin-workspace-sorted",
-  "summary": "让 DeepSeek Harness 的 **工作区（Workspace）** 按「最近使用」排序的宿主（Host）插件。  侧边栏自带的「排序方式：手动排序 / 最近更新」只作用于**会话**；工作区分组的顺序永远是 Host 注册表的持久顺序。本插件让最近有活动的那个工作区排到最前面。",
+  "summary": "让工作区按最近使用自动排序，最近有活动的排最前面，找起来更顺手。",
   "tags": [
     "dsh-plugin",
     "dsh-plugin-market",
-    "dsh-plugins"
+    "dsh-plugins",
+    "工作区管理",
+    "效率提升",
+    "零配置",
+    "主题"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -52,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

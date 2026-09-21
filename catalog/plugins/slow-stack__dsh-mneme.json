@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-mneme",
   "title": "dsh-mneme",
-  "summary": "Cross-session memory for DeepSeek Harness: SQLite + human-editable Markdown mirror, autoDream consolidation, six memory tools, and fully-offline semantic search (local embedding / rerank / clustering), 198 tests.",
+  "summary": "给 DeepSeek Harness 加上跨会话记忆，自动整理沉淀，还能离线语义搜索。",
   "tags": [
     "agent-memory",
     "agent-memory-system",
@@ -22,24 +22,25 @@
     "memory-evolution",
     "persistent-memory",
     "semantic-search",
-    "vector-search"
+    "vector-search",
+    "状态持久化",
+    "语义检索",
+    "会话管理",
+    "自动化",
+    "AI 助手"
   ],
-  "version": "0.8.4",
-  "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
-  "latestRelease": {
-    "tag": "v0.8.4",
-    "publishedAt": "2026-09-19T04:59:14Z",
-    "url": "https://github.com/slow-stack/dsh-mneme/releases/tag/v0.8.4"
-  },
+  "version": "0.8.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
   "author": "slow-stack",
   "repo": "https://github.com/slow-stack/dsh-mneme",
   "homepage": "https://www.npmjs.com/package/@modusensus/dsh-mneme",
   "license": "MIT",
-  "stars": 113,
+  "stars": 112,
   "forks": 15,
-  "pushedAt": "2026-09-20T07:55:10Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-19T15:35:35Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -67,6 +68,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -38,9 +38,9 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "@kkkneko/dsh-search-enhance@latest",
+    "spec": "dsh-search-enhance@latest",
     "commands": [
-      "dsh plugin --profile web add @kkkneko/dsh-search-enhance@latest"
+      "dsh plugin --profile web add dsh-search-enhance@latest"
     ],
     "url": null,
     "sha256": null,
@@ -48,7 +48,7 @@
     "tarball": null,
     "dshVersion": null,
     "needsConfig": true,
-    "usageNeedsConfig": false,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -56,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -5,7 +5,7 @@
   "package": null,
   "name": "belief-merge",
   "title": "belief-merge",
-  "summary": "Provenance-retaining cross-session context merge for DeepSeek Harness — a confluence theorem with a counterexample, and a benchmark for it.",
+  "summary": "把两段 AI 对话合并成一段，推理过程不丢、信任不被混淆、矛盾不瞎猜。",
   "tags": [
     "belief-revision",
     "benchmark",
@@ -13,7 +13,12 @@
     "cordis",
     "deepseek-harness",
     "dsh-plugin",
-    "llm-agent"
+    "llm-agent",
+    "会话管理",
+    "状态持久化",
+    "多Agent协作",
+    "语义检索",
+    "模型配置"
   ],
   "version": "0.3.1",
   "versionSource": "npm",
@@ -54,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

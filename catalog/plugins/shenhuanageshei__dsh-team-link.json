@@ -5,12 +5,17 @@
   "package": "dsh-team-link",
   "name": "dsh-team-link",
   "title": "dsh-team-link",
-  "summary": "Session deep links + full session export (markdown/JSON) + approved cross-session messaging with pairing for DeepSeek Harness (dsh).",
+  "summary": "让同一个 DSH 里并行干活的多个会话互相看得见、说得上话，还能导出完整会话记录。",
   "tags": [
     "deepseek",
     "deepseek-harness",
     "dsh",
-    "dsh-plugin"
+    "dsh-plugin",
+    "多Agent协作",
+    "会话管理",
+    "消息通知",
+    "状态持久化",
+    "效率提升"
   ],
   "version": "0.3.7",
   "versionSource": "github-tag",
@@ -20,10 +25,10 @@
   "repo": "https://github.com/shenhuanageshei/dsh-team-link",
   "homepage": null,
   "license": "MIT",
-  "stars": 0,
+  "stars": 2,
   "forks": 0,
-  "pushedAt": "2026-09-20T09:05:45Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-21T13:46:03Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -51,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

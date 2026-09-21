@@ -5,26 +5,31 @@
   "package": null,
   "name": "dsh-tracescope",
   "title": "dsh-tracescope",
-  "summary": "基于 Git 代码差异智能缩减手工测试范围，支持 Web / 移动端操作录制与崩溃日志采集，依托 DSH AI 自动生成可复现缺陷流程，实现变更驱动的手工测试闭环提效插件。A DSH native test assistant plugin. It intelligently narrows manual test scope via Git diff, records web & mobile operation tracks and crash logs, and generates reproducible bug steps through AI analysis to close manual testing workflow efficiently.",
+  "summary": "看代码改了啥，自动圈出该测哪些功能，还能录操作、收崩溃日志，一键生成可复现的缺陷流程。",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
     "mcp",
     "testing",
-    "tracescope"
+    "tracescope",
+    "效率提升",
+    "自动化",
+    "AI 助手",
+    "内容创作",
+    "工具集成"
   ],
-  "version": "0.1.4",
+  "version": "0.1.11",
   "versionSource": "npm",
-  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
   "latestRelease": null,
   "author": "rebornace",
   "repo": "https://github.com/rebornace/dsh-tracescope",
   "homepage": null,
   "license": "MIT",
-  "stars": 1,
+  "stars": 2,
   "forks": 0,
-  "pushedAt": "2026-09-18T14:26:23Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "pushedAt": "2026-09-20T12:34:06Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -53,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

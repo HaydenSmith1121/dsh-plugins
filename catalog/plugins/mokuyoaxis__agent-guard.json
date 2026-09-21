@@ -5,17 +5,17 @@
   "package": "agent-guard-dsh",
   "name": "agent-guard",
   "title": "agent-guard",
-  "summary": "给AI智能体装上安全锁，让rm、git等破坏性操作默认可回滚，带隔离审查和人工升级机制，防止误操作酿成大祸。",
+  "summary": "把 AI 的删除、git 破坏性操作先隔离留档，可回滚并支持人工确认，避免误删误改。",
   "tags": [
     "ai-agents",
     "deepseek-harness",
     "dsh-plugin",
     "llm-tools",
     "safety",
-    "安全审查",
-    "自动化",
-    "AI 助手",
-    "消息通知"
+    "安全审计",
+    "工作区管理",
+    "状态持久化",
+    "命令行工具"
   ],
   "version": "0.1.0",
   "versionSource": "github-tag",
@@ -25,10 +25,10 @@
   "repo": "https://github.com/mokuyoaxis/agent-guard",
   "homepage": null,
   "license": "MIT",
-  "stars": 3,
+  "stars": 5,
   "forks": 2,
   "pushedAt": "2026-09-20T08:32:32Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -56,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -5,15 +5,19 @@
   "package": null,
   "name": "dsh-web-search-free",
   "title": "dsh-web-search-free",
-  "summary": "面向 DeepSeek Harness 的免费 Web Search 插件，支持 Tavily、Exa、Brave 等九个引擎按可配置顺序自动 fallback",
+  "summary": "给 dsh 加个免费联网搜索，九个引擎自动切换，不用配 key 也能用",
   "tags": [
     "dsh-plugin",
     "dsh-plugins",
-    "web-search"
+    "web-search",
+    "零配置",
+    "工具集成",
+    "AI 助手",
+    "效率提升"
   ],
-  "version": "1.2.0",
-  "versionSource": "github-tag",
-  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "version": "1.5.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
   "latestRelease": null,
   "author": "MochiNek0",
   "repo": "https://github.com/MochiNek0/dsh-web-search-free",
@@ -21,8 +25,8 @@
   "license": "MIT",
   "stars": 7,
   "forks": 1,
-  "pushedAt": "2026-09-18T06:09:13Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "pushedAt": "2026-09-20T15:38:07Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -34,7 +38,8 @@
     "method": "npm",
     "spec": "dsh-web-search-free",
     "commands": [
-      "dsh plugin --profile web add dsh-web-search-free"
+      "dsh plugin --profile web add dsh-web-search-free",
+      "dsh plugin --profile web add ."
     ],
     "url": null,
     "sha256": null,
@@ -50,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-19T20:12:00.176Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

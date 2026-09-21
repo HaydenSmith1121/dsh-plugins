@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-web-fetch-enhanced",
   "title": "dsh-web-fetch-enhanced",
-  "summary": "为 DeepSeek Harness 的网页抓取增加内网地址白名单，解决 Fake-IP 环境下的访问拦截，安全又省心。",
+  "summary": "给 web_fetch 加可配置白名单，让内网和 Fake-IP 地址不再被公网检查拦下。",
   "tags": [
     "allowlist",
     "cordis",
@@ -16,10 +16,10 @@
     "ssrf",
     "typescript",
     "web-fetch",
-    "插件管理",
-    "设置面板",
-    "零配置",
-    "工作流增强"
+    "工具集成",
+    "安全审计",
+    "模型配置",
+    "设置面板"
   ],
   "version": "0.0.5",
   "versionSource": "npm",
@@ -29,10 +29,10 @@
   "repo": "https://github.com/Yurzi/dsh-web-fetch-enhanced",
   "homepage": "https://github.com/Yurzi/dsh-web-fetch-enhanced#readme",
   "license": "MIT",
-  "stars": 3,
+  "stars": 6,
   "forks": 0,
   "pushedAt": "2026-09-11T02:36:25Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -61,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

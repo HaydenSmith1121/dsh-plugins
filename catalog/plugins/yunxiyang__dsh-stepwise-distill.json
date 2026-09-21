@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "yunxiyang/dsh-stepwise-distill",
+  "slug": "yunxiyang__dsh-stepwise-distill",
+  "package": "dsh-stepwise-distill",
+  "name": "dsh-stepwise-distill",
+  "title": "dsh-stepwise-distill",
+  "summary": "把长对话里工具返回的内容就地精简成模型真正用到的关键信息，省下每轮重复发送的 token。",
+  "tags": [
+    "context",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "token",
+    "会话管理",
+    "资源优化",
+    "效率提升",
+    "上下文压缩"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "yunxiyang",
+  "repo": "https://github.com/yunxiyang/dsh-stepwise-distill",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T10:14:11Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yunxiyang/dsh-stepwise-distill",
+    "commands": [
+      "dsh plugin --profile <name> add dsh-stepwise-distill"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

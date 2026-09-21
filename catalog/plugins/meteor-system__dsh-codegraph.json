@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Meteor-system/dsh-codegraph",
+  "slug": "meteor-system__dsh-codegraph",
+  "package": null,
+  "name": "dsh-codegraph",
+  "title": "dsh-codegraph",
+  "summary": "把当前工作区源码编成关系图，随时查谁调用了谁、改动会影响哪些地方。",
+  "tags": [
+    "code-graph",
+    "dsh",
+    "dsh-plugin",
+    "语义检索",
+    "工作区管理",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "0.12.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "Meteor-system",
+  "repo": "https://github.com/Meteor-system/dsh-codegraph",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-20T08:31:14Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@meteor-system/dsh-codegraph",
+    "commands": [
+      "dsh plugin --profile web add @meteor-system/dsh-codegraph",
+      "dsh plugin --profile web add file:./meteor-system-dsh-codegraph-0.12.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

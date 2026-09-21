@@ -5,7 +5,7 @@
   "package": "@zseven-w/dsh-browser",
   "name": "dsh-browser",
   "title": "dsh-browser",
-  "summary": "DeepSeek Harness plugin for browser automation, headless first. Every agent gets its own throwaway Chrome/Edge/Chromium profile, short-lived semantic references instead of CSS selectors, scoped subtree observation, deterministic high-risk refusal, and bounded evidence.",
+  "summary": "让每个 AI 智能体都拥有独立的临时浏览器，无头运行、自动操作网页，用完即弃不干扰。",
   "tags": [
     "accessibility",
     "ai-agents",
@@ -20,7 +20,12 @@
     "headless",
     "mcp",
     "typescript",
-    "ui-automation"
+    "ui-automation",
+    "浏览器隔离",
+    "自动化",
+    "工具集成",
+    "多Agent协作",
+    "零配置"
   ],
   "version": "0.1.0-rc.1",
   "versionSource": "github-tag",
@@ -64,6 +69,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

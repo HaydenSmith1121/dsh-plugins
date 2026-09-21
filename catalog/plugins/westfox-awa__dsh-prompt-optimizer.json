@@ -5,7 +5,7 @@
   "package": "@dsh-external/dsh-prompt-optimizer",
   "name": "dsh-prompt-optimizer",
   "title": "dsh-prompt-optimizer",
-  "summary": "DSH Web 插件 · 提示词优化器（SPEC v0.5 依据驱动架构）：把用户的一句话补成『带依据的执行指令』——依据只搬不造（原话／会话上下文／项目文件，每条事实带出处），只补五类缺口（指代定位／验收判据／约束边界／隐含决定／入口锚点），档位＝依据预算，默认面向 PTC 执行体。不写形式模板与验证套话。",
+  "summary": "把一句话补成带出处的执行指令，只搬依据不编造，让下游一次做对。",
   "tags": [
     "agent-workflow",
     "ai-agent",
@@ -16,15 +16,19 @@
     "llm",
     "prompt-engineering",
     "prompt-optimizer",
-    "web-plugin"
+    "web-plugin",
+    "AI 助手",
+    "效率提升",
+    "工作流增强",
+    "模型配置"
   ],
-  "version": "0.5.0-beta.1",
+  "version": "0.6.1",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
   "latestRelease": {
-    "tag": "v0.5.0-beta.1",
-    "publishedAt": "2026-09-18T14:27:26Z",
-    "url": "https://github.com/WestFox-AwA/dsh-prompt-optimizer/releases/tag/v0.5.0-beta.1"
+    "tag": "v0.6.1",
+    "publishedAt": "2026-09-21T19:25:49Z",
+    "url": "https://github.com/WestFox-AwA/dsh-prompt-optimizer/releases/tag/v0.6.1"
   },
   "author": "WestFox-AwA",
   "repo": "https://github.com/WestFox-AwA/dsh-prompt-optimizer",
@@ -32,8 +36,8 @@
   "license": "BSD-3-Clause",
   "stars": 72,
   "forks": 8,
-  "pushedAt": "2026-09-20T19:44:34Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-21T19:26:44Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -63,6 +67,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

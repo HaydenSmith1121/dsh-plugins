@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "localSummer/dsh-group-chat",
+  "slug": "localsummer__dsh-group-chat",
+  "package": "@roaming-ai/dsh-group-chat",
+  "name": "dsh-group-chat",
+  "title": "dsh-group-chat",
+  "summary": "把多个模型拉进同一个群聊，各扮角色共享聊天记录，方便对比和协作。",
+  "tags": [
+    "dsh",
+    "dsh-bundle",
+    "dsh-plugin",
+    "dsh-plugins",
+    "多Agent协作",
+    "会话管理",
+    "模型适配",
+    "设置面板"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "localSummer",
+  "repo": "https://github.com/localSummer/dsh-group-chat",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-21T09:51:58Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:localSummer/dsh-group-chat",
+    "commands": [
+      "dsh plugin --profile web add github:localSummer/dsh-group-chat",
+      "git clone https://github.com/localSummer/dsh-group-chat.git",
+      "dsh plugin --profile web add link:$(pwd)"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

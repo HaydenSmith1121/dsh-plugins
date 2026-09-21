@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-workbuddy2api",
   "title": "dsh-workbuddy2api",
-  "summary": "DeepSeek Harness (dsh) plugin: supervise a workbuddy2api gateway process and auto-register its models as an LLM provider",
+  "summary": "自动拉起并托管 workbuddy2api 网关，把它的模型注册成 dsh 的 LLM 提供方，开箱即用。",
   "tags": [
     "cordis",
     "deepseek-harness",
@@ -15,7 +15,12 @@
     "openai-compatible",
     "plugin",
     "typescript",
-    "workbuddy2api"
+    "workbuddy2api",
+    "桥接插件",
+    "模型配置",
+    "自动化",
+    "零配置",
+    "工具集成"
   ],
   "version": "0.3.0",
   "versionSource": "github-release",
@@ -62,6 +67,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "donghangxunlang-cmd/dsh-attention-health",
+  "slug": "donghangxunlang-cmd__dsh-attention-health",
+  "package": "dsh-attention-health",
+  "name": "dsh-attention-health",
+  "title": "dsh-attention-health",
+  "summary": "实时盯住 DSH 上下文健康度，内容退化及时提醒，还能一键生成零模型交接文档。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "会话管理",
+    "自动化",
+    "内容创作",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "latestRelease": null,
+  "author": "donghangxunlang-cmd",
+  "repo": "https://github.com/donghangxunlang-cmd/dsh-attention-health",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T06:35:04Z",
+  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:donghangxunlang-cmd/dsh-attention-health",
+    "commands": [
+      "dsh plugin --profile web add -w dsh-attention-health"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-21T22:03:40.491Z",
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+  }
+}

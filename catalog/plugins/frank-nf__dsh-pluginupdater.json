@@ -5,7 +5,7 @@
   "package": "dsh-plugin-updater",
   "name": "DSH-PluginUpdater",
   "title": "DSH-PluginUpdater",
-  "summary": "独立运行的 DSH 插件管家，能扫描、更新、启停和卸载插件，还带插件市场和离线部署。",
+  "summary": "不用装 Agent 也能管 DSH 插件：扫更新、开关卸载，还带 2189+ 插件市场和 MCP 管理",
   "tags": [
     "deepseek",
     "dsh",
@@ -17,9 +17,10 @@
     "vue",
     "windows",
     "插件管理",
-    "自动化",
     "工具集成",
-    "效率提升"
+    "集中仓库",
+    "自动化",
+    "设置面板"
   ],
   "version": "1.15.0",
   "versionSource": "github-release",
@@ -48,7 +49,8 @@
     "method": "github",
     "spec": "github:Frank-NF/DSH-PluginUpdater",
     "commands": [
-      "git clone https://github.com/Frank-NF/DSH-PluginUpdater.git"
+      "git clone https://github.com/Frank-NF/DSH-PluginUpdater.git",
+      "npm install"
     ],
     "url": null,
     "sha256": null,
@@ -64,6 +66,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }

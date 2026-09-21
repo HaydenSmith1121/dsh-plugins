@@ -5,15 +5,17 @@
   "package": "dsh-shortcuts",
   "name": "dsh-shortcuts",
   "title": "dsh-shortcuts",
-  "summary": "为 DSH WebUI 提供可完全自定义的键盘快捷键，34 个预置功能即装即用，还能一键录制自己的组合键，操作效率直接拉满。",
+  "summary": "给 DSH WebUI 加一套可自定义的键盘快捷键，34 个功能预置好，一键录制绑定，配置不丢。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "hotkeys",
-    "键盘快捷键",
-    "自定义绑定",
-    "WebUI增强"
+    "快捷操作",
+    "效率提升",
+    "前端增强",
+    "设置面板",
+    "零配置"
   ],
   "version": "1.1.5",
   "versionSource": "package.json",
@@ -38,7 +40,9 @@
     "method": "github",
     "spec": "github:Ricketts-Guo/dsh-shortcuts",
     "commands": [
-      "curl -fsSL https://raw.githubusercontent.com/Ricketts-Guo/dsh-shortcuts/main/install.sh | bash"
+      "git clone https://github.com/Ricketts-Guo/dsh-shortcuts.git",
+      "dsh plugin --profile web add --save-prod --ignore-scripts \"file:$PWD\"",
+      "dsh plugin --profile web remove dsh-shortcuts"
     ],
     "url": null,
     "sha256": null,
@@ -47,15 +51,13 @@
     "dshVersion": null,
     "needsConfig": false,
     "usageNeedsConfig": false,
-    "risky": true,
-    "riskyReasons": [
-      "含远程脚本下载执行（curl/wget 管道 shell）"
-    ]
+    "risky": false,
+    "riskyReasons": []
   },
   "source": {
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
   }
 }
