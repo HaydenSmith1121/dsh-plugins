@@ -21,14 +21,10 @@
     "工具集成",
     "零配置"
   ],
-  "version": "0.0.5",
-  "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
-  "latestRelease": {
-    "tag": "v0.0.5",
-    "publishedAt": "2026-09-21T13:37:09Z",
-    "url": "https://github.com/lengmoXXL/dsh-remote-workspace/releases/tag/v0.0.5"
-  },
+  "version": "0.1.14",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
   "author": "lengmoXXL",
   "repo": "https://github.com/lengmoXXL/dsh-remote-workspace",
   "homepage": null,
@@ -45,10 +41,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:lengmoXXL/dsh-remote-workspace",
+    "method": "npm",
+    "spec": "@lengmoxxl/dsh-remote-workspace",
     "commands": [
-      "dsh plugin --profile web add https://github.com/lengmoXXL/dsh-remote-workspace/releases/download/plugin-v0.1.11/dsh-remote-workspace-0.1.11.tgz"
+      "dsh plugin --profile web add @lengmoxxl/dsh-remote-workspace"
     ],
     "url": null,
     "sha256": null,
@@ -64,6 +60,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

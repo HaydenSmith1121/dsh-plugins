@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "itchenshi/dsh-gui-last-session",
+  "slug": "itchenshi__dsh-gui-last-session",
+  "package": null,
+  "name": "dsh-gui-last-session",
+  "title": "dsh-gui-last-session",
+  "summary": "重启 DSH 后自动回到上次的对话，不用再手动翻找，也不用改引擎文件。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "resume",
+    "session",
+    "会话管理",
+    "状态持久化",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.1.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "itchenshi",
+  "repo": "https://github.com/itchenshi/dsh-gui-last-session",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T08:59:41Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-gui-last-session",
+    "commands": [
+      "dsh plugin --profile web add dsh-gui-last-session"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

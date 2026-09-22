@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "deanzhang2026-max/dsh-lived-pet",
+  "slug": "deanzhang2026-max__dsh-lived-pet",
+  "package": null,
+  "name": "dsh-lived-pet",
+  "title": "dsh-lived-pet",
+  "summary": "一只透明置顶的 Live2D 桌宠，实时显示 DSH agent 在思考、干活还是卡住了。",
+  "tags": [
+    "deepseek-harness",
+    "desktop-pet",
+    "dsh-plugin",
+    "live2d",
+    "状态监控",
+    "可视化",
+    "AI 助手",
+    "主题"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": {
+    "tag": "v1.1.0",
+    "publishedAt": "2026-09-21T07:02:40Z",
+    "url": "https://github.com/deanzhang2026-max/dsh-lived-pet/releases/tag/v1.1.0"
+  },
+  "author": "deanzhang2026-max",
+  "repo": "https://github.com/deanzhang2026-max/dsh-lived-pet",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-21T07:02:40Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:deanzhang2026-max/dsh-lived-pet",
+    "commands": [
+      "dsh plugin --profile web add \"file:<解压后的 dsh-pet-bridge 绝对路径>\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Drowsy-Zn/dsh-skill-notes",
+  "slug": "drowsy-zn__dsh-skill-notes",
+  "package": "dsh-skill-notes",
+  "name": "dsh-skill-notes",
+  "title": "dsh-skill-notes",
+  "summary": "在输入框工具行加个技能速查面板，每个技能用中文一句话说明用途，点一下就把 /技能名 插进输入框。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "skills",
+    "快捷操作",
+    "效率提升",
+    "前端增强",
+    "AI 助手"
+  ],
+  "version": "0.4.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "Drowsy-Zn",
+  "repo": "https://github.com/Drowsy-Zn/dsh-skill-notes",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T13:41:10Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Drowsy-Zn/dsh-skill-notes",
+    "commands": [
+      "dsh plugin --profile web add github:Drowsy-Zn/dsh-skill-notes"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

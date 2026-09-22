@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "harmless0819-dev/mech-drawing-reader",
+  "slug": "harmless0819-dev__mech-drawing-reader",
+  "package": null,
+  "name": "mech-drawing-reader",
+  "title": "mech-drawing-reader",
+  "summary": "把中/ISO机械图纸读成带证据标注的文档和结构化JSON，尺寸公差BOM一目了然。",
+  "tags": [
+    "cad",
+    "deepseek-harness",
+    "dsh",
+    "dsh-skill",
+    "mechanical-engineering",
+    "ocr",
+    "多模态",
+    "视觉理解",
+    "工程规范",
+    "文件管理",
+    "自动化"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "harmless0819-dev",
+  "repo": "https://github.com/harmless0819-dev/mech-drawing-reader",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T12:32:02Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:harmless0819-dev/mech-drawing-reader",
+    "commands": [
+      "dsh plugin --profile web add github:harmless0819-dev/mech-drawing-reader"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

@@ -5,17 +5,19 @@
   "package": null,
   "name": "dsh-super-code",
   "title": "dsh-super-code",
-  "summary": "一个插件搞定多种 Agent 预设，按场景选执行方式，单人干活或团队协作都顺手。",
+  "summary": "让 DeepSeek Harness 写代码更快更省更准，难题耗时降三成、token 省一成七、正确率还涨 5%。",
   "tags": [
+    "deepseek",
+    "deepseek-harness",
     "dsh-plugin",
-    "多Agent协作",
-    "工作流增强",
-    "AI 助手",
-    "效率提升"
+    "效率提升",
+    "资源优化",
+    "开发增强",
+    "AI 助手"
   ],
-  "version": "0.0.3",
-  "versionSource": "github-tag",
-  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
   "latestRelease": null,
   "author": "ArtlexYoung",
   "repo": "https://github.com/ArtlexYoung/dsh-super-code",
@@ -34,9 +36,9 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "dsh-super-agent",
+    "spec": "dsh-super-code",
     "commands": [
-      "dsh plugin --profile web add dsh-super-agent"
+      "dsh plugin --profile web add dsh-super-code"
     ],
     "url": null,
     "sha256": null,
@@ -52,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

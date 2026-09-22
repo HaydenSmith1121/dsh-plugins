@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "ct-jaryn/dsh-plugin-baizhi-agent-toolkit",
+  "slug": "ct-jaryn__dsh-plugin-baizhi-agent-toolkit",
+  "package": "dsh-plugin-baizhi-agent-toolkit",
+  "name": "dsh-plugin-baizhi-agent-toolkit",
+  "title": "dsh-plugin-baizhi-agent-toolkit",
+  "summary": "给 DSH 接上百智云 Agent Toolkit 的 MCP 配置包，装上就能用现成的云端工具能力。",
+  "tags": [
+    "baizhi",
+    "dsh-plugin",
+    "mcp",
+    "工具集成",
+    "MCP调试",
+    "插件管理",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "ct-jaryn",
+  "repo": "https://github.com/ct-jaryn/dsh-plugin-baizhi-agent-toolkit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T07:08:07Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ct-jaryn/dsh-plugin-baizhi-agent-toolkit",
+    "commands": [
+      "dsh plugin --profile web add github:ct-jaryn/dsh-plugin-baizhi-agent-toolkit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

@@ -5,18 +5,19 @@
   "package": null,
   "name": "dsh-market-gist-autosync",
   "title": "dsh-market-gist-autosync",
-  "summary": "把 DSH 配置定时打包备份到 GitHub Gist，换设备也能随时找回。",
+  "summary": "把 DSH 插件配置自动同步到 GitHub Gist，换设备也能一键恢复，省去手动备份。",
   "tags": [
-    "dedeepseek-harness",
+    "deepseek-harness",
     "dsh-plugin",
-    "自动化",
     "状态持久化",
     "跨设备",
-    "工具集成"
+    "自动化",
+    "插件管理",
+    "效率提升"
   ],
-  "version": "0.1.0",
-  "versionSource": "github-tag",
-  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
   "latestRelease": null,
   "author": "jacket-sikaha",
   "repo": "https://github.com/jacket-sikaha/dsh-market-gist-autosync",
@@ -37,15 +38,16 @@
     "method": "npm",
     "spec": "dsh-market-gist-autosync",
     "commands": [
-      "dsh plugin --profile desktop add dsh-market-gist-autosync"
+      "dsh plugin --profile desktop add dsh-market-gist-autosync",
+      "dsh plugin --profile web add dsh-market-gist-autosync"
     ],
     "url": null,
     "sha256": null,
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -53,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-21T22:03:40.491Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

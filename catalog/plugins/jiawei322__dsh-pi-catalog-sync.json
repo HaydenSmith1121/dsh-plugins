@@ -29,10 +29,10 @@
   "repo": "https://github.com/jiawei322/dsh-pi-catalog-sync",
   "homepage": null,
   "license": "MIT",
-  "stars": 0,
+  "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-21T01:44:43Z",
-  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "pushedAt": "2026-09-22T07:47:06Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -44,15 +44,15 @@
     "method": "github",
     "spec": "github:jiawei322/dsh-pi-catalog-sync",
     "commands": [
-      "dsh plugin --profile web add github:jiawei322/dsh-pi-catalog-sync"
+      "dsh plugin add <this repo path or package name>"
     ],
     "url": null,
     "sha256": null,
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -60,6 +60,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "AgentsDanceAI/AIStore",
+  "slug": "agentsdanceai__aistore",
+  "package": null,
+  "name": "dsh-plugin-cloud",
+  "title": "dsh-plugin-cloud",
+  "summary": "扫码登录后自动把 DeepSeek、GPT、Claude 等多家模型写进配置，托管或自建都能用。",
+  "tags": [
+    "ai-agent",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "docker-compose",
+    "dsh",
+    "dsh-plugin",
+    "fastapi",
+    "llm",
+    "open-core",
+    "self-hosted",
+    "模型适配",
+    "模型配置",
+    "零配置",
+    "工具集成",
+    "跨设备"
+  ],
+  "version": "0.4.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": {
+    "tag": "v0.4.0",
+    "publishedAt": "2026-09-14T10:40:52Z",
+    "url": "https://github.com/AgentsDanceAI/AIStore/releases/tag/v0.4.0"
+  },
+  "author": "AgentsDanceAI",
+  "repo": "https://github.com/AgentsDanceAI/AIStore",
+  "homepage": "https://aistore.best",
+  "license": "NOASSERTION",
+  "stars": 7,
+  "forks": 0,
+  "pushedAt": "2026-09-22T09:09:30Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AgentsDanceAI/AIStore",
+    "commands": [
+      "npm install --global @agentsdanceai/dsh-cloud@0.4.0",
+      "uv tool install dsh-cloud==0.4.0",
+      "git clone https://github.com/AgentsDanceAI/AIStore.git && cd AIStore"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

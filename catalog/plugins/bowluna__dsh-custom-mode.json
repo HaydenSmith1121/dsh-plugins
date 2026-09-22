@@ -11,32 +11,34 @@
     "agent-preset",
     "ai-agent",
     "assistant-manager",
+    "chat",
     "cordis",
     "custom-mode",
     "custom-prompt",
     "deepseek",
     "deepseek-harness",
-    "developer-tools",
     "dsh",
     "dsh-plugin",
+    "multi-agent",
     "multi-mode",
+    "persona",
     "plugin",
     "prompt-editor",
     "prompt-engineering",
+    "roleplay",
     "system-prompt",
     "模型适配",
     "设置面板",
-    "多Agent协作",
-    "AI 助手",
-    "插件管理"
+    "多智能体协作",
+    "AI 助手"
   ],
-  "version": "1.9.6",
+  "version": "1.9.10",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
   "latestRelease": {
-    "tag": "v1.9.6",
-    "publishedAt": "2026-09-19T20:22:09Z",
-    "url": "https://github.com/BOWLUNA/dsh-custom-mode/releases/tag/v1.9.6"
+    "tag": "v1.9.10",
+    "publishedAt": "2026-09-22T20:44:59Z",
+    "url": "https://github.com/BOWLUNA/dsh-custom-mode/releases/tag/v1.9.10"
   },
   "author": "BOWLUNA",
   "repo": "https://github.com/BOWLUNA/dsh-custom-mode",
@@ -44,8 +46,8 @@
   "license": "MIT",
   "stars": 2,
   "forks": 0,
-  "pushedAt": "2026-09-20T01:23:56Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-22T20:44:54Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -55,9 +57,9 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "dsh-custom-mode@1.9.6",
+    "spec": "dsh-custom-mode@1.9.9",
     "commands": [
-      "dsh plugin --profile web add dsh-custom-mode@1.9.6",
+      "dsh plugin --profile web add dsh-custom-mode@1.9.9",
       "git clone https://github.com/BOWLUNA/dsh-custom-mode"
     ],
     "url": null,
@@ -74,6 +76,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

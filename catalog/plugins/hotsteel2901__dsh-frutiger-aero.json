@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "Hotsteel2901/dsh-frutiger-aero",
   "slug": "hotsteel2901__dsh-frutiger-aero",
-  "package": null,
+  "package": "dsh-frutiger-aero-workspace",
   "name": "dsh-frutiger-aero",
   "title": "dsh-frutiger-aero",
   "summary": "给 DeepSeek Harness 换上 Frutiger Aero 玻璃水感皮肤，还顺手把手机端布局改成抽屉+底栏，触屏更好用。",
@@ -32,13 +32,13 @@
     "前端增强",
     "跨设备"
   ],
-  "version": "1.0.4",
+  "version": "1.0.5",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
   "latestRelease": {
-    "tag": "v1.0.4",
-    "publishedAt": "2026-09-21T09:36:56Z",
-    "url": "https://github.com/Hotsteel2901/dsh-frutiger-aero/releases/tag/v1.0.4"
+    "tag": "v1.0.5",
+    "publishedAt": "2026-09-22T04:32:53Z",
+    "url": "https://github.com/Hotsteel2901/dsh-frutiger-aero/releases/tag/v1.0.5"
   },
   "author": "Hotsteel2901",
   "repo": "https://github.com/Hotsteel2901/dsh-frutiger-aero",
@@ -56,10 +56,9 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "dsh-frutiger-aero",
+    "method": "github",
+    "spec": "github:Hotsteel2901/dsh-frutiger-aero",
     "commands": [
-      "dsh plugin --profile web add dsh-frutiger-aero",
       "curl -fsSL https://raw.githubusercontent.com/Hotsteel2901/dsh-frutiger-aero/main/install.sh | sh"
     ],
     "url": null,
@@ -78,6 +77,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

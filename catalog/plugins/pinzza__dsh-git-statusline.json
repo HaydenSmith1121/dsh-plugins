@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "pinzza/dsh-git-statusline",
+  "slug": "pinzza__dsh-git-statusline",
+  "package": "dsh-git-statusline",
+  "name": "dsh-git-statusline",
+  "title": "dsh-git-statusline",
+  "summary": "在侧边栏底部实时显示 Git 分支、改动行数和待推送提交，位置还能自己调。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "开发增强",
+    "主题",
+    "设置面板"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-21T10:23:34Z",
+    "url": "https://github.com/pinzza/dsh-git-statusline/releases/tag/v0.2.0"
+  },
+  "author": "pinzza",
+  "repo": "https://github.com/pinzza/dsh-git-statusline",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T10:23:33Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:pinzza/dsh-git-statusline",
+    "commands": [
+      "dsh plugin --profile web add github:pinzza/dsh-git-statusline",
+      "dsh plugin --profile web add ./dsh-git-statusline",
+      "dsh plugin --profile web add ./dsh-git-statusline.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

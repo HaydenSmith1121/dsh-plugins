@@ -5,13 +5,14 @@
   "package": "dsh-skillhub",
   "name": "dsh-skillhub",
   "title": "dsh-skillhub",
-  "summary": "把磁盘上已有的 Skills 都列出来，还能按全局、项目、会话分别设置默认和覆盖。",
+  "summary": "把本地技能和 MCP 服务集中到一个面板里，一键开关管理，不用再手动改配置。",
   "tags": [
     "dsh-plugin",
     "插件管理",
+    "MCP调试",
+    "工具集成",
     "设置面板",
-    "文件管理",
-    "工作区管理"
+    "效率提升"
   ],
   "version": "1.0.0",
   "versionSource": "github-release",
@@ -25,10 +26,10 @@
   "repo": "https://github.com/aa2246740/dsh-skillhub",
   "homepage": null,
   "license": "MIT",
-  "stars": 0,
+  "stars": 3,
   "forks": 0,
-  "pushedAt": "2026-09-21T13:09:21Z",
-  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "pushedAt": "2026-09-22T18:29:45Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -41,8 +42,8 @@
     "spec": "github:aa2246740/dsh-skillhub",
     "commands": [
       "dsh plugin --profile web add github:aa2246740/dsh-skillhub",
-      "git clone https://github.com/aa2246740/dsh-skillhub.git",
-      "dsh plugin --profile web add ./dsh-skillhub"
+      "dsh plugin --profile web add \"github:aa2246740/dsh-skillhub",
+      "dsh plugin --profile web remove dsh-skillhub"
     ],
     "url": null,
     "sha256": null,
@@ -58,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

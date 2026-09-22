@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "haiting202-web/jiufeng-invest",
+  "slug": "haiting202-web__jiufeng-invest",
+  "package": null,
+  "name": "jiufeng-invest",
+  "title": "jiufeng-invest",
+  "summary": "把 DSH 变成投研工作台，左侧栏变投研导航，对话里多出 21 个金融数据工具。",
+  "tags": [
+    "a-share",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "finance",
+    "investment-research",
+    "工具集成",
+    "可视化",
+    "工作流增强",
+    "AI 助手"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": {
+    "tag": "v1.1.0",
+    "publishedAt": "2026-09-22T07:42:37Z",
+    "url": "https://github.com/haiting202-web/jiufeng-invest/releases/tag/v1.1.0"
+  },
+  "author": "haiting202-web",
+  "repo": "https://github.com/haiting202-web/jiufeng-invest",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T07:42:37Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:haiting202-web/jiufeng-invest",
+    "commands": [
+      "dsh plugin --profile web add github:haiting202-web/jiufeng-invest"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

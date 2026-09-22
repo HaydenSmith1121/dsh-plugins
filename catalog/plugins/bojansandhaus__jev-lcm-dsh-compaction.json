@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "bojansandhaus/jev-lcm-dsh-compaction",
+  "slug": "bojansandhaus__jev-lcm-dsh-compaction",
+  "package": "@bojansandhaus/jev-lcm-dsh-compaction",
+  "name": "jev-lcm-dsh-compaction",
+  "title": "jev-lcm-dsh-compaction",
+  "summary": "在压缩上下文前先用 Jev 排序挑出重点，让长对话无损瘦身、关键信息不丢。",
+  "tags": [
+    "compaction",
+    "context-management",
+    "deepseek-harness",
+    "dsh-plugin",
+    "jev",
+    "lcm",
+    "会话管理",
+    "资源优化",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "1.0.0-rc.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "bojansandhaus",
+  "repo": "https://github.com/bojansandhaus/jev-lcm-dsh-compaction",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T05:23:14Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bojansandhaus/jev-lcm-dsh-compaction",
+    "commands": [
+      "dsh plugin --profile web add github:bojansandhaus/jev-lcm-dsh-compaction"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

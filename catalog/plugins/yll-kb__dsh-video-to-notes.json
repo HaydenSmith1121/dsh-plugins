@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "YLL-KB/dsh-video-to-notes",
+  "slug": "yll-kb__dsh-video-to-notes",
+  "package": null,
+  "name": "dsh-video-to-notes",
+  "title": "dsh-video-to-notes",
+  "summary": "把课程、讲座、会议等视频自动整理成结构化学习笔记，看视频不再白看。",
+  "tags": [
+    "agent-skill",
+    "deepseek-harness",
+    "dsh-plugin",
+    "video-to-notes",
+    "whisper",
+    "视觉理解",
+    "报告生成",
+    "自动化",
+    "效率提升",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "YLL-KB",
+  "repo": "https://github.com/YLL-KB/dsh-video-to-notes",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T06:25:32Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-video-to-notes",
+    "commands": [
+      "dsh plugin --profile web add dsh-video-to-notes"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

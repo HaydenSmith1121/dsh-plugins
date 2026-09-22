@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "itchenshi/dsh-opencode-go-path",
+  "slug": "itchenshi__dsh-opencode-go-path",
+  "package": null,
+  "name": "dsh-opencode-go-path",
+  "title": "dsh-opencode-go-path",
+  "summary": "装上就能用：自动声明 OpenCode Go 路由协议、补上 DeepSeek V4.1 模型并附带会话头，省去手改配置。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm-pi-ai",
+    "opencode",
+    "opencode-go",
+    "零配置",
+    "模型适配",
+    "桥接插件",
+    "工具集成"
+  ],
+  "version": "0.1.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "itchenshi",
+  "repo": "https://github.com/itchenshi/dsh-opencode-go-path",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T08:59:48Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-opencode-go-path",
+    "commands": [
+      "dsh plugin --profile web add dsh-opencode-go-path"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

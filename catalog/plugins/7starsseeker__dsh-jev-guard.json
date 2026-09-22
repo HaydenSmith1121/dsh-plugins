@@ -17,14 +17,14 @@
     "plugin",
     "safety",
     "typesafe",
-    "安全审计",
+    "安全审查",
     "命令行工具",
     "自动化",
     "工具集成"
   ],
-  "version": "0.3.1",
-  "versionSource": "github-tag",
-  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "version": "0.5.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
   "latestRelease": null,
   "author": "7starsseeker",
   "repo": "https://github.com/7starsseeker/dsh-jev-guard",
@@ -42,11 +42,11 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:7starsseeker/dsh-jev-guard",
+    "method": "npm",
+    "spec": "dsh-jev-guard",
     "commands": [
       "dsh plugin --profile web add /mnt/t/dsh-jev-guard",
-      "dsh plugin --profile web add github:7starsseeker/dsh-jev-guard"
+      "dsh plugin --profile web add dsh-jev-guard"
     ],
     "url": null,
     "sha256": null,
@@ -62,6 +62,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-21T22:03:40.491Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

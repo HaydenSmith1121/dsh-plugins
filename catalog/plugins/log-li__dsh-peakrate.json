@@ -26,8 +26,8 @@
   "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-12T06:37:16Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-21T07:48:41Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -39,8 +39,8 @@
     "method": "npm",
     "spec": "dsh-peakrate",
     "commands": [
-      "dsh plugin add dsh-peakrate",
-      "dsh plugin add ./path/to/dsh-peakrate"
+      "dsh plugin --profile web add dsh-peakrate",
+      "dsh plugin --profile web add ./path/to/dsh-peakrate"
     ],
     "url": null,
     "sha256": null,
@@ -56,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

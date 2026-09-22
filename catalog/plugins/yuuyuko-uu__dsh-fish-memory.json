@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Yuuyuko-uu/dsh-fish-memory",
+  "slug": "yuuyuko-uu__dsh-fish-memory",
+  "package": "dsh-fish-memory",
+  "name": "dsh-fish-memory",
+  "title": "dsh-fish-memory",
+  "summary": "给 DSH 会话加一份会随时间淡忘的长期记忆，每条都带时间，该记的自动记、该忘的慢慢忘。",
+  "tags": [
+    "ai-companion",
+    "deepseek-harness",
+    "dsh-plugin",
+    "long-term-memory",
+    "memory",
+    "会话管理",
+    "状态持久化",
+    "语义检索",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.9.9",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "Yuuyuko-uu",
+  "repo": "https://github.com/Yuuyuko-uu/dsh-fish-memory",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-22T15:22:24Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Yuuyuko-uu/dsh-fish-memory",
+    "commands": [
+      "dsh plugin --profile web add github:Yuuyuko-uu/dsh-fish-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

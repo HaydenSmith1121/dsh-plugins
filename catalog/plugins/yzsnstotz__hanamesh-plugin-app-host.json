@@ -5,14 +5,14 @@
   "package": "@hanamesh/dsh-app-host",
   "name": "hanamesh-plugin-app-host",
   "title": "hanamesh-plugin-app-host",
-  "summary": "给 HanaMesh 应用库装上安装管家，一键装应用、补运行时、卸载，失败还能看原因重试。",
+  "summary": "让应用的使用记录自动上报给 HanaMesh，补齐 open 和 use 事件，方便追踪应用使用情况。",
   "tags": [
     "dsh-plugin",
     "hanamesh",
-    "插件管理",
-    "工具集成",
     "状态监控",
-    "自动化"
+    "工具集成",
+    "桥接插件",
+    "工作流增强"
   ],
   "version": "0.1.0-rc.2",
   "versionSource": "github-tag",
@@ -24,8 +24,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-21T13:35:44Z",
-  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "pushedAt": "2026-09-22T15:05:32Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -53,6 +53,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-21T22:03:40.491Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

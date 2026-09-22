@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "hgp005/dsh-winterskin",
+  "slug": "hgp005__dsh-winterskin",
+  "package": "dsh-winterskin",
+  "name": "dsh-winterskin",
+  "title": "dsh-winterskin",
+  "summary": "把任意一张照片铺成整个 DeepSeek Harness 界面的底色，面板自动变成配套的玻璃质感主题。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "skin",
+    "theme",
+    "界面美化",
+    "主题",
+    "设置面板",
+    "可视化"
+  ],
+  "version": "1.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "hgp005",
+  "repo": "https://github.com/hgp005/dsh-winterskin",
+  "homepage": "https://github.com/hgp005/dsh-winterskin",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-21T09:26:35Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hgp005/dsh-winterskin",
+    "commands": [
+      "dsh plugin --profile web add github:hgp005/dsh-winterskin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

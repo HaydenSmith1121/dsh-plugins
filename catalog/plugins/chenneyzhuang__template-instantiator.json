@@ -5,7 +5,7 @@
   "package": "template-instantiator",
   "name": "template-instantiator",
   "title": "template-instantiator",
-  "summary": "把模板里的占位符和示例内容全部替换成真实数据，顺手删掉没用到的可选段落，交付前再扫一遍确认零残留。",
+  "summary": "按给定数据填模板，不编造内容，自动删掉没要求的可选段落，并扫描残留占位符。",
   "tags": [
     "agent-skills",
     "automation",
@@ -15,10 +15,10 @@
     "quality",
     "templates",
     "自动化",
-    "报告生成",
+    "工程规范",
+    "代码验证",
     "效率提升",
-    "插件管理",
-    "内容创作"
+    "报告生成"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -59,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

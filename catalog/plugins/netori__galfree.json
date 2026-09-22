@@ -14,13 +14,13 @@
     "工具集成",
     "零配置"
   ],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
   "latestRelease": {
-    "tag": "v0.1.0",
-    "publishedAt": "2026-09-21T05:48:41Z",
-    "url": "https://github.com/netori/galfree/releases/tag/v0.1.0"
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-22T10:24:16Z",
+    "url": "https://github.com/netori/galfree/releases/tag/v0.1.1"
   },
   "author": "netori",
   "repo": "https://github.com/netori/galfree",
@@ -28,8 +28,8 @@
   "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-21T12:20:19Z",
-  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "pushedAt": "2026-09-22T13:12:33Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -41,7 +41,7 @@
     "method": "github",
     "spec": "github:netori/galfree",
     "commands": [
-      "npm install && npm run build"
+      "dsh plugin add https://github.com/netori/galfree/releases/latest/download/dsh-galfree.tgz"
     ],
     "url": null,
     "sha256": null,
@@ -57,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

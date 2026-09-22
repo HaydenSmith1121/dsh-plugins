@@ -5,14 +5,15 @@
   "package": "dsh-biz-bridge",
   "name": "dsh-biz-bridge",
   "title": "dsh-biz-bridge",
-  "summary": "把 DSH 的 agent 能力包装成标准 HTTP 接口，业务系统发个带签名的请求就能调用，支持流式返回和多轮对话。",
+  "summary": "让业务系统用带签名的 HTTP 请求直接调用 DSH 的 agent 能力，支持流式或回调响应，还能传图片文件。",
   "tags": [
     "dsh",
     "dsh-plugin",
-    "模型配置",
+    "桥接插件",
+    "工具集成",
     "会话管理",
-    "工作流增强",
-    "插件管理"
+    "状态持久化",
+    "视觉理解"
   ],
   "version": "0.1.0",
   "versionSource": "github-tag",
@@ -24,8 +25,8 @@
   "license": "MIT",
   "stars": 2,
   "forks": 1,
-  "pushedAt": "2026-09-21T02:15:27Z",
-  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "pushedAt": "2026-09-22T00:45:48Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -37,7 +38,7 @@
     "method": "github",
     "spec": "github:NewSpringWei/dsh-biz-bridge",
     "commands": [
-      "dsh plugin --profile bizbridge add ./release/dsh-biz-bridge-0.1.0.tgz"
+      "dsh plugin --profile bizbridge add ./release/dsh-biz-bridge-0.1.2.tgz"
     ],
     "url": null,
     "sha256": null,
@@ -53,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

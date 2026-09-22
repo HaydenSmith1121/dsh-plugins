@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-dolphin-security",
   "title": "dsh-dolphin-security",
-  "summary": "基于 SSH 和 Semgrep 的主动安全巡逻插件，集扫描、远程执行、报告于一体，帮你自动发现并修复漏洞。",
+  "summary": "通过 SSH 远程巡检服务器，自动扫描代码漏洞并生成安全报告，帮你提前发现风险。",
   "tags": [
     "active-defense",
     "agent-tools",
@@ -19,9 +19,9 @@
     "security",
     "semgrep",
     "vulnerability-scanning",
-    "安全审计",
-    "内容创作",
+    "安全审查",
     "自动化",
+    "命令行工具",
     "工具集成"
   ],
   "version": "0.2.5",
@@ -34,8 +34,8 @@
   "license": "NOASSERTION",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-13T06:49:19Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-21T08:33:06Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -65,6 +65,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

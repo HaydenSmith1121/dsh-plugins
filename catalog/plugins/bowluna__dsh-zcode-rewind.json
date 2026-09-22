@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "BOWLUNA/dsh-zcode-rewind",
+  "slug": "bowluna__dsh-zcode-rewind",
+  "package": null,
+  "name": "dsh-zcode-rewind",
+  "title": "dsh-zcode-rewind",
+  "summary": "每次工具调用都自动给工作区存档，连 shell 命令改的文件也能一键回滚。",
+  "tags": [
+    "checkpoint",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "rewind",
+    "rollback",
+    "snapshot",
+    "undo",
+    "workspace",
+    "zcode",
+    "工作区管理",
+    "状态持久化",
+    "变更审查",
+    "开发增强",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-21T18:50:30Z",
+    "url": "https://github.com/BOWLUNA/dsh-zcode-rewind/releases/tag/v1.0.0"
+  },
+  "author": "BOWLUNA",
+  "repo": "https://github.com/BOWLUNA/dsh-zcode-rewind",
+  "homepage": "https://github.com/BOWLUNA/dsh-zcode-rewind/blob/main/docs/ARCHITECTURE.md",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T16:38:12Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-zcode-rewind",
+    "commands": [
+      "dsh plugin --profile web add dsh-zcode-rewind"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

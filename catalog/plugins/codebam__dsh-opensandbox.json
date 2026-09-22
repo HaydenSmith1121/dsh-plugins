@@ -15,13 +15,13 @@
     "opensandbox",
     "sandbox",
     "工具集成",
-    "安全审计",
+    "安全审查",
     "自动化",
     "桥接插件"
   ],
   "version": "0.2.2",
-  "versionSource": "package.json",
-  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
   "latestRelease": null,
   "author": "codebam",
   "repo": "https://github.com/codebam/dsh-opensandbox",
@@ -39,9 +39,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:codebam/dsh-opensandbox",
+    "method": "npm",
+    "spec": "@codebam/dsh-opensandbox",
     "commands": [
+      "dsh plugin --profile dsh-tui add @codebam/dsh-opensandbox",
       "npm install @codebam/dsh-opensandbox"
     ],
     "url": null,
@@ -58,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

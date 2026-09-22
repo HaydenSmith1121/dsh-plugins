@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "mia-wong1016/dsh-codex-plus",
+  "slug": "mia-wong1016__dsh-codex-plus",
+  "package": null,
+  "name": "dsh-codex-plus",
+  "title": "dsh-codex-plus",
+  "summary": "把本机已登录的 Codex 订阅接进 DSH，看额度、一键重置、自动续期，不用填 API key。",
+  "tags": [
+    "chatgpt",
+    "codex",
+    "deepseek-harness",
+    "dsh-plugin",
+    "模型适配",
+    "状态监控",
+    "零配置",
+    "效率提升",
+    "工具集成"
+  ],
+  "version": "0.1.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": {
+    "tag": "v0.1.4",
+    "publishedAt": "2026-09-21T08:42:39Z",
+    "url": "https://github.com/mia-wong1016/dsh-codex-plus/releases/tag/v0.1.4"
+  },
+  "author": "mia-wong1016",
+  "repo": "https://github.com/mia-wong1016/dsh-codex-plus",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T08:42:50Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-codex-plus",
+    "commands": [
+      "dsh plugin --profile web add dsh-codex-plus"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

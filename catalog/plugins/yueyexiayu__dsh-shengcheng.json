@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "yueyexiayu/dsh-shengcheng",
+  "slug": "yueyexiayu__dsh-shengcheng",
+  "package": "shengcheng",
+  "name": "dsh-shengcheng",
+  "title": "dsh-shengcheng",
+  "summary": "用已登录的 Grok/GPT 账号直接生图，Grok 还能生视频，不用 API key。",
+  "tags": [
+    "dsh-plugin",
+    "视觉理解",
+    "报告生成",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "yueyexiayu",
+  "repo": "https://github.com/yueyexiayu/dsh-shengcheng",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T01:23:25Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yueyexiayu/dsh-shengcheng",
+    "commands": [
+      "dsh plugin --profile web add github:yueyexiayu/dsh-shengcheng"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

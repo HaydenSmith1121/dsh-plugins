@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "BOWLUNA/dsh-zcode-breaker",
+  "slug": "bowluna__dsh-zcode-breaker",
+  "package": null,
+  "name": "dsh-zcode-breaker",
+  "title": "dsh-zcode-breaker",
+  "summary": "自动压缩陷入反复重填的死循环时及时熔断，并告诉你哪个超大读取或工具调用惹的祸。",
+  "tags": [
+    "agent",
+    "circuit-breaker",
+    "compaction",
+    "compaction-breaker",
+    "context-window",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "rapid-refill",
+    "zcode",
+    "资源优化",
+    "状态监控",
+    "效率提升",
+    "AI 助手"
+  ],
+  "version": "1.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": {
+    "tag": "v1.0.1",
+    "publishedAt": "2026-09-21T20:19:18Z",
+    "url": "https://github.com/BOWLUNA/dsh-zcode-breaker/releases/tag/v1.0.1"
+  },
+  "author": "BOWLUNA",
+  "repo": "https://github.com/BOWLUNA/dsh-zcode-breaker",
+  "homepage": "https://github.com/BOWLUNA/dsh-zcode-breaker/blob/main/docs/ARCHITECTURE.md",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T16:35:58Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-zcode-breaker",
+    "commands": [
+      "dsh plugin --profile web add dsh-zcode-breaker"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

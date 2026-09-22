@@ -41,7 +41,8 @@
     "method": "github",
     "spec": "github:pioneer666-user/dsh-archify-manage",
     "commands": [
-      "dsh plugin --profile web add github:pioneer666-user/dsh-archify-manage"
+      "dsh plugin --profile web add https://github.com/pioneer666-user/dsh-archify-manage/releases/download/v0.1.11/specdev-dsh-archify-manage-0.1.11.tgz",
+      "dsh plugin --profile web remove @specdev/dsh-archify-manage"
     ],
     "url": null,
     "sha256": null,
@@ -57,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-21T22:03:40.491Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

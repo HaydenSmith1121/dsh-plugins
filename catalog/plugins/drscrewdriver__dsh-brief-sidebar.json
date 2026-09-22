@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "drscrewdriver/dsh-brief-sidebar",
+  "slug": "drscrewdriver__dsh-brief-sidebar",
+  "package": "dsh-brief-sidebar",
+  "name": "dsh-brief-sidebar",
+  "title": "dsh-brief-sidebar",
+  "summary": "在右侧栏加个「概要」标签页，把当前会话的任务进展和产物清单一眼看清。",
+  "tags": [
+    "dsh",
+    "dsh-better-sidebar",
+    "dsh-plugin",
+    "dsh-plugins",
+    "会话管理",
+    "状态监控",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "drscrewdriver",
+  "repo": "https://github.com/drscrewdriver/dsh-brief-sidebar",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-21T03:59:14Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:drscrewdriver/dsh-brief-sidebar",
+    "commands": [
+      "dsh plugin --profile web add github:drscrewdriver/dsh-brief-sidebar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

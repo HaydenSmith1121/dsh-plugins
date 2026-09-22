@@ -2,21 +2,21 @@
   "schemaVersion": 1,
   "id": "zmm863-commits/dsh-agnes-studio",
   "slug": "zmm863-commits__dsh-agnes-studio",
-  "package": null,
+  "package": "dsh-agnes-studio",
   "name": "dsh-agnes-studio",
   "title": "dsh-agnes-studio",
-  "summary": "边聊边做片的 AI 影视工作站，文生图、图生图、文生视频、图生视频加剧本拆解一站搞定。",
+  "summary": "在对话里直接生成图片和视频，还能拆解短剧剧本、写提示词，六大模型随便换。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "image-generation",
     "video-generation",
-    "内容创作",
-    "多模态",
-    "工具集成",
+    "报告生成",
+    "视觉理解",
     "AI 助手",
-    "工作流增强"
+    "工作流增强",
+    "多模态"
   ],
   "version": "0.4.0",
   "versionSource": "package.json",
@@ -38,12 +38,11 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "dsh-agnes-studio",
+    "method": "github",
+    "spec": "github:zmm863-commits/dsh-agnes-studio",
     "commands": [
-      "dsh plugin --profile web add dsh-agnes-studio",
-      "git clone https://github.com/zmm863-commits/dsh-agnes-studio",
-      "npm install"
+      "brew install ffmpeg && brew install --cask font-noto-sans-cjk-sc",
+      "npm install /root/软件/dsh-agnes-studio"
     ],
     "url": null,
     "sha256": null,
@@ -59,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

@@ -5,15 +5,17 @@
   "package": "dsh-ui-beautify",
   "name": "dsh-ui-beautify",
   "title": "dsh-ui-beautify",
-  "summary": "给 DSH 界面换套顺眼外观，四种配色加自定义背景图，随时一键还原。",
+  "summary": "给 DSH 界面换配色和背景图，内置四套主题，还能上传自定义背景，随时一键还原。",
   "tags": [
     "deepseek",
     "dsh",
     "dsh-plugin",
     "dsh-plugins",
+    "主题",
     "界面美化",
     "前端增强",
-    "设置面板"
+    "设置面板",
+    "插件管理"
   ],
   "version": "3.0.1",
   "versionSource": "package.json",
@@ -39,7 +41,7 @@
     "spec": "github:Zalpha263/dsh-ui-beautify",
     "commands": [
       "dsh plugin --profile web add github:Zalpha263/dsh-ui-beautify",
-      "dsh plugin --profile web add file:<你的源码路径>",
+      "dsh plugin --profile web add D:/path/to/dsh-ui-beautify",
       "dsh plugin --profile web install"
     ],
     "url": null,
@@ -56,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

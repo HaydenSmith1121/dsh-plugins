@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "TetraSsky/dsh-offpeak",
+  "slug": "tetrassky__dsh-offpeak",
+  "package": "dsh-offpeak",
+  "name": "dsh-offpeak",
+  "title": "dsh-offpeak",
+  "summary": "把 DeepSeek 模型调用攒到低谷时段再发，帮你省下高峰期的调用费用。",
+  "tags": [
+    "dsh-plugin",
+    "资源优化",
+    "效率提升",
+    "模型适配",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "TetraSsky",
+  "repo": "https://github.com/TetraSsky/dsh-offpeak",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T06:47:18Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TetraSsky/dsh-offpeak",
+    "commands": [
+      "dsh plugin --profile web add github:TetraSsky/dsh-offpeak",
+      "dsh plugin --profile web add <path-to-this-package>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

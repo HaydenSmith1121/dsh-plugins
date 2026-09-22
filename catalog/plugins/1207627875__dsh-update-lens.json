@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "1207627875/dsh-update-lens",
+  "slug": "1207627875__dsh-update-lens",
+  "package": "dsh-update-lens",
+  "name": "dsh-update-lens",
+  "title": "dsh-update-lens",
+  "summary": "只读检查 dsh 更新，对比 npm 和 GitHub 版本，应用内提醒更新并标注破坏性变更。",
+  "tags": [
+    "breaking-changes",
+    "cordis-plugin",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "release-notes",
+    "update-checker",
+    "状态监控",
+    "消息通知",
+    "变更审查",
+    "插件管理"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-21T06:30:04Z",
+    "url": "https://github.com/1207627875/dsh-update-lens/releases/tag/v1.0.0"
+  },
+  "author": "1207627875",
+  "repo": "https://github.com/1207627875/dsh-update-lens",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T06:34:41Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:1207627875/dsh-update-lens",
+    "commands": [
+      "dsh plugin --profile web add github:1207627875/dsh-update-lens"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

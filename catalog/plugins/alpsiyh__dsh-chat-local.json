@@ -5,17 +5,17 @@
   "package": "dsh-chat-local",
   "name": "dsh-chat-local",
   "title": "dsh-chat-local",
-  "summary": "让多个真实 DSH 会话像群聊一样协作干活，共享工作台账、权限实时同步。",
+  "summary": "在 DeepSeek Harness 里拉一队 Agent 开群聊，各自有身份和记忆，能分工、点名、交活验收。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "group-chat",
     "multi-agent",
     "plugin",
-    "多Agent协作",
+    "多智能体协作",
     "会话管理",
-    "工作流增强",
     "状态持久化",
+    "工作流增强",
     "工具集成"
   ],
   "version": "0.18.0-local.1",
@@ -41,8 +41,7 @@
     "method": "github",
     "spec": "github:ALPSIYH/dsh-chat-local",
     "commands": [
-      "dsh plugin --profile web add github:ALPSIYH/dsh-chat-local",
-      "dsh plugin --profile web add link:/path/to/dsh-chat-local"
+      "dsh plugin --profile web add github:ALPSIYH/dsh-chat-local"
     ],
     "url": null,
     "sha256": null,
@@ -58,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

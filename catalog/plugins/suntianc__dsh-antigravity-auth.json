@@ -29,10 +29,10 @@
   "repo": "https://github.com/suntianc/dsh-antigravity-auth",
   "homepage": "https://github.com/deepseek-ai/deepseek-harness",
   "license": "MIT",
-  "stars": 16,
+  "stars": 15,
   "forks": 2,
   "pushedAt": "2026-09-21T03:06:25Z",
-  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -41,10 +41,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "dsh-antigravity-auth@0.1.4-rc.1",
+    "method": "github",
+    "spec": "github:suntianc/dsh-antigravity-auth",
     "commands": [
-      "dsh plugin --profile web add dsh-antigravity-auth@0.1.4-rc.1",
+      "dsh plugin --profile web add --save-exact dsh-antigravity-auth@0.1.4-rc.3",
       "dsh plugin --profile web list"
     ],
     "url": null,
@@ -61,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

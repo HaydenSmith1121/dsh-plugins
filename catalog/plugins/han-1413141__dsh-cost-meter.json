@@ -24,18 +24,18 @@
     "可视化",
     "效率提升"
   ],
-  "version": "1.7.31",
+  "version": "1.7.34",
   "versionSource": "npm",
-  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
   "latestRelease": null,
   "author": "Han-1413141",
   "repo": "https://github.com/Han-1413141/dsh-cost-meter",
   "homepage": null,
   "license": "MIT",
-  "stars": 316,
+  "stars": 321,
   "forks": 31,
-  "pushedAt": "2026-09-18T12:48:58Z",
-  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "pushedAt": "2026-09-21T16:30:58Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -47,6 +47,7 @@
     "method": "npm",
     "spec": "dsh-cost-meter",
     "commands": [
+      "npm install -g pnpm@11.21.0",
       "dsh plugin --profile web add dsh-cost-meter"
     ],
     "url": null,
@@ -56,13 +57,15 @@
     "dshVersion": null,
     "needsConfig": true,
     "usageNeedsConfig": true,
-    "risky": false,
-    "riskyReasons": []
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
   },
   "source": {
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

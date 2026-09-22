@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "vianvio/dsh-plugin-drop-path",
+  "slug": "vianvio__dsh-plugin-drop-path",
+  "package": "dsh-plugin-drop-path",
+  "name": "dsh-plugin-drop-path",
+  "title": "dsh-plugin-drop-path",
+  "summary": "把文件夹拖进 DSH 输入框，直接得到本机绝对路径，不用再手动复制粘贴。",
+  "tags": [
+    "dsh-desktop",
+    "dsh-plugin",
+    "文件管理",
+    "快捷操作",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-21T07:16:14Z",
+    "url": "https://github.com/vianvio/dsh-plugin-drop-path/releases/tag/v0.1.0"
+  },
+  "author": "vianvio",
+  "repo": "https://github.com/vianvio/dsh-plugin-drop-path",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-21T07:21:44Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:vianvio/dsh-plugin-drop-path",
+    "commands": [
+      "dsh plugin --profile desktop add github:vianvio/dsh-plugin-drop-path",
+      "git clone https://github.com/vianvio/dsh-plugin-drop-path.git ~/code/dsh-plugin-drop-path",
+      "dsh plugin --profile desktop add ~/code/dsh-plugin-drop-path"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

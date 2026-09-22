@@ -5,25 +5,22 @@
   "package": "dsh-whale-particles",
   "name": "dsh-whale-particles",
   "title": "dsh-whale-particles",
-  "summary": "给 DSH Web 界面加上点阵鲸鱼或照片背景，粒子会独立柔和游动，支持鼠标扰动和自动屏保模式。",
+  "summary": "给 DSH Web 加点阵互动背景，粒子能拼成鲸鱼或你的透明 PNG，鼠标扰动、自动屏保随心切换。",
   "tags": [
     "dsh-plugin",
     "dsh-plugin-desktop",
     "dsh-plugin-market",
     "dsh-plugins",
+    "主题",
     "可视化",
     "前端增强",
-    "娱乐互动",
-    "界面美化"
+    "设置面板",
+    "自动化"
   ],
   "version": "0.3.1",
-  "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
-  "latestRelease": {
-    "tag": "v0.3.1",
-    "publishedAt": "2026-09-21T09:22:42Z",
-    "url": "https://github.com/fewoot/dsh-whale-particles/releases/tag/v0.3.1"
-  },
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
   "author": "fewoot",
   "repo": "https://github.com/fewoot/dsh-whale-particles",
   "homepage": null,
@@ -40,9 +37,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:fewoot/dsh-whale-particles",
+    "method": "npm",
+    "spec": "dsh-whale-particles",
     "commands": [
+      "dsh plugin --profile desktop add dsh-whale-particles",
       "dsh plugin --profile desktop add ./dsh-whale-particles"
     ],
     "url": null,
@@ -59,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

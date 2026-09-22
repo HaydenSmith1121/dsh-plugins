@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "VoidPrim/dsh-wsl-windows-folder-picker",
+  "slug": "voidprim__dsh-wsl-windows-folder-picker",
+  "package": "dsh-wsl-windows-folder-picker",
+  "name": "dsh-wsl-windows-folder-picker",
+  "title": "dsh-wsl-windows-folder-picker",
+  "summary": "在 WSL 下用 dsh 时，添加工作区会弹出 Windows 文件夹选择框，随时可开关。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "directory-picker",
+    "dsh-plugin",
+    "workspace",
+    "wsl",
+    "工作区管理",
+    "文件管理",
+    "桥接插件",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "VoidPrim",
+  "repo": "https://github.com/VoidPrim/dsh-wsl-windows-folder-picker",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T16:08:58Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:VoidPrim/dsh-wsl-windows-folder-picker",
+    "commands": [
+      "dsh plugin --profile web add github:VoidPrim/dsh-wsl-windows-folder-picker",
+      "dsh plugin --profile web remove dsh-wsl-windows-folder-picker"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

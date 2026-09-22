@@ -19,9 +19,9 @@
     "前端增强",
     "状态监控"
   ],
-  "version": null,
-  "versionSource": "none",
-  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "version": "2.0.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
   "latestRelease": null,
   "author": "A8Chann",
   "repo": "https://github.com/A8Chann/dsh-pet-live2d",
@@ -39,12 +39,12 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:A8Chann/dsh-pet-live2d",
+    "method": "npm",
+    "spec": "dsh-pet-live2d",
     "commands": [
+      "dsh plugin --profile web add dsh-pet-live2d",
       "dsh plugin --profile web add \"github:A8Chann/dsh-pet-live2d",
-      "git clone https://github.com/A8Chann/dsh-pet-live2d",
-      "dsh plugin --profile web add \"link:./dsh-pet-live2d/dsh-live2d-pet\""
+      "git clone https://github.com/A8Chann/dsh-pet-live2d"
     ],
     "url": null,
     "sha256": null,
@@ -60,6 +60,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-21T22:03:40.491Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

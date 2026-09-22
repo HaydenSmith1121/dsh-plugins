@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "wee-b/disk-sentinel",
+  "slug": "wee-b__disk-sentinel",
+  "package": "@dsh-plugin/disk-sentinel",
+  "name": "disk-sentinel",
+  "title": "disk-sentinel",
+  "summary": "帮 Windows 用户分析磁盘占用、找出大文件并安全清理，释放空间不误删。",
+  "tags": [
+    "deepseek-harness",
+    "disk-analysis",
+    "dsh-plugin",
+    "windows",
+    "资源优化",
+    "文件管理",
+    "安全审查",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "wee-b",
+  "repo": "https://github.com/wee-b/disk-sentinel",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T11:07:51Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wee-b/disk-sentinel",
+    "commands": [
+      "dsh plugin --profile web add github:wee-b/disk-sentinel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

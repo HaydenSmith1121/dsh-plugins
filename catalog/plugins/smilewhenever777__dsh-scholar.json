@@ -5,17 +5,17 @@
   "package": null,
   "name": "dsh-scholar",
   "title": "dsh-scholar",
-  "summary": "给科研人用的插件合集：管文献、做精读、画知识图谱、记 Idea，还能盯 GPU 和实验进度。",
+  "summary": "把论文精读、想法整理和 GPU 训练监控串起来，帮你在 DSH 里管好科研全流程。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "research-tools",
-    "效率提升",
-    "可视化",
-    "状态监控",
     "工作区管理",
-    "数据分析"
+    "状态监控",
+    "效率提升",
+    "工具集成",
+    "状态持久化"
   ],
   "version": "0.1.0",
   "versionSource": "npm",
@@ -24,11 +24,11 @@
   "author": "smilewhenever777",
   "repo": "https://github.com/smilewhenever777/dsh-scholar",
   "homepage": "https://www.npmjs.com/package/dsh-scholar-desk",
-  "license": null,
-  "stars": 10,
+  "license": "MIT",
+  "stars": 11,
   "forks": 1,
-  "pushedAt": "2026-09-20T10:15:01Z",
-  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "pushedAt": "2026-09-21T11:58:17Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -40,9 +40,9 @@
     "method": "npm",
     "spec": "dsh-scholar-desk",
     "commands": [
-      "dsh plugin add dsh-scholar-desk",
-      "dsh plugin add dsh-server-dashboard",
-      "dsh plugin add dsh-trajectory"
+      "dsh plugin --profile web add dsh-scholar-desk",
+      "dsh plugin --profile web add dsh-server-dashboard",
+      "dsh plugin --profile web add dsh-trajectory"
     ],
     "url": null,
     "sha256": null,
@@ -58,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

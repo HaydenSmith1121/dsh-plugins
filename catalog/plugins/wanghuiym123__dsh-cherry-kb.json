@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "wanghuiym123/dsh-cherry-kb",
+  "slug": "wanghuiym123__dsh-cherry-kb",
+  "package": null,
+  "name": "dsh-cherry-kb",
+  "title": "dsh-cherry-kb",
+  "summary": "给 dsh web 加个本地知识库和记忆开关，写作区两个按钮、设置里两页，随时查资料、存记忆。",
+  "tags": [
+    "dsh-plugin",
+    "语义检索",
+    "状态持久化",
+    "工具集成",
+    "设置面板",
+    "效率提升"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "wanghuiym123",
+  "repo": "https://github.com/wanghuiym123/dsh-cherry-kb",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T07:30:01Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@wanghuiym123/dsh-cherry-kb",
+    "commands": [
+      "dsh plugin --profile web add @wanghuiym123/dsh-cherry-kb"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

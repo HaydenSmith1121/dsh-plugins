@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "Mirfakk/dsh-plugin-usage",
+  "slug": "mirfakk__dsh-plugin-usage",
+  "package": null,
+  "name": "dsh-plugin-usage",
+  "title": "dsh-plugin-usage",
+  "summary": "在输入框下方实时显示本次会话花了多少钱、用了多少 token 和账户余额，还能区分高峰空闲时段。",
+  "tags": [
+    "balance",
+    "billing",
+    "cost-tracking",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "pricing",
+    "usage-meter",
+    "zero-dependency",
+    "状态监控",
+    "资源优化",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": {
+    "tag": "v1.1.0",
+    "publishedAt": "2026-09-21T06:53:08Z",
+    "url": "https://github.com/Mirfakk/dsh-plugin-usage/releases/tag/v1.1.0"
+  },
+  "author": "Mirfakk",
+  "repo": "https://github.com/Mirfakk/dsh-plugin-usage",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T06:54:29Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-peak-usage",
+    "commands": [
+      "dsh plugin web add dsh-peak-usage",
+      "git clone https://github.com/Mirfakk/dsh-plugin-usage.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

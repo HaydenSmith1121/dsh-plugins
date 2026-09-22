@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "hi-wenw/dsh-csv-viewer",
+  "slug": "hi-wenw__dsh-csv-viewer",
+  "package": "dsh-csv-viewer",
+  "name": "dsh-csv-viewer",
+  "title": "dsh-csv-viewer",
+  "summary": "在侧边栏直接打开 CSV、TSV 表格，支持搜索、排序、原始模式和虚拟滚动，大文件也不卡。",
+  "tags": [
+    "csv",
+    "dsh-better-sidebar",
+    "dsh-plugin",
+    "tsv",
+    "可视化",
+    "文件管理",
+    "效率提升",
+    "前端增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "hi-wenw",
+  "repo": "https://github.com/hi-wenw/dsh-csv-viewer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T01:47:38Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hi-wenw/dsh-csv-viewer",
+    "commands": [
+      "dsh plugin --profile web add github:hi-wenw/dsh-csv-viewer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

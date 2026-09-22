@@ -5,7 +5,7 @@
   "package": "dsh-peak-block",
   "name": "dsh-peak-block",
   "title": "dsh-peak-block",
-  "summary": "在DeepSeek官方高峰时段自动拦截请求，可切换备用模型或阻止，避开拥堵省心用。",
+  "summary": "高峰时段自动拦截官方 DeepSeek 请求，帮你切到别的 provider 或直接拦下，省心又省钱。",
   "tags": [
     "deepseek",
     "deepseek-harness",
@@ -14,10 +14,9 @@
     "provider",
     "rate-limit",
     "routing",
+    "模型适配",
     "资源优化",
-    "状态监控",
     "自动化",
-    "模型配置",
     "效率提升"
   ],
   "version": "0.2.1",
@@ -32,10 +31,10 @@
   "repo": "https://github.com/better-er/dsh-peak-block",
   "homepage": null,
   "license": "MIT",
-  "stars": 6,
+  "stars": 7,
   "forks": 0,
   "pushedAt": "2026-09-21T10:27:38Z",
-  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -63,6 +62,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

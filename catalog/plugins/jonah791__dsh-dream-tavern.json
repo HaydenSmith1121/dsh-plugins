@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "jonah791/dsh-dream-tavern",
+  "slug": "jonah791__dsh-dream-tavern",
+  "package": "dsh-dream-tavern",
+  "name": "dsh-dream-tavern",
+  "title": "dsh-dream-tavern",
+  "summary": "在 DeepSeek Harness 上玩文字游戏和角色扮演，导入 SillyTavern 人物卡，还能看清每轮上下文怎么拼的",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "sillytavern",
+    "报告生成",
+    "多智能体协作",
+    "会话管理",
+    "状态持久化",
+    "模型配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "jonah791",
+  "repo": "https://github.com/jonah791/dsh-dream-tavern",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T17:06:19Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jonah791/dsh-dream-tavern",
+    "commands": [
+      "dsh plugin --profile web add github:jonah791/dsh-dream-tavern"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

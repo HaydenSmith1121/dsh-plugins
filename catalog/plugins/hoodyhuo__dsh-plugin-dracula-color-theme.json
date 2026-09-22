@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "HoodyHuo/dsh-plugin-dracula-color-theme",
+  "slug": "hoodyhuo__dsh-plugin-dracula-color-theme",
+  "package": null,
+  "name": "dsh-plugin-dracula-color-theme",
+  "title": "dsh-plugin-dracula-color-theme",
+  "summary": "给 DSH 网页界面换上官方 Dracula 配色，代码高亮也一并适配，还能跟随系统深浅色。",
+  "tags": [
+    "color-theme",
+    "deepseek-harness",
+    "dracula",
+    "dracula-theme",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "theme",
+    "界面美化",
+    "主题",
+    "可视化",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-21T06:08:41Z",
+    "url": "https://github.com/HoodyHuo/dsh-plugin-dracula-color-theme/releases/tag/v0.1.0"
+  },
+  "author": "HoodyHuo",
+  "repo": "https://github.com/HoodyHuo/dsh-plugin-dracula-color-theme",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T06:09:21Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-dracula-color-theme",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-dracula-color-theme",
+      "dsh plugin --profile web add https://github.com/HoodyHuo/dsh-plugin-dracula-color-theme.git",
+      "dsh plugin --profile web add <path-to-this-repo>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

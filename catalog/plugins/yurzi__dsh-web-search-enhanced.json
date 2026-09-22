@@ -5,28 +5,32 @@
   "package": null,
   "name": "dsh-web-search-enhanced",
   "title": "dsh-web-search-enhanced",
-  "summary": "为 DeepSeek Harness 提供多协议网页搜索能力，让 AI 助手实时获取网络信息，回答更准确。",
+  "summary": "给 DSH 加个多协议联网搜索，聊天用喜欢的模型，搜索走合适的连接。",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
     "web-search",
-    "AI 助手",
+    "工具集成",
     "模型配置",
-    "零配置",
-    "效率提升"
+    "效率提升",
+    "插件管理"
   ],
   "version": "0.1.2",
-  "versionSource": "npm",
-  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
-  "latestRelease": null,
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-21T21:01:58Z",
+    "url": "https://github.com/Yurzi/dsh-web-search-enhanced/releases/tag/v0.1.2"
+  },
   "author": "Yurzi",
   "repo": "https://github.com/Yurzi/dsh-web-search-enhanced",
   "homepage": null,
   "license": "MIT",
-  "stars": 0,
+  "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-03T17:19:09Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-21T21:01:30Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -36,17 +40,18 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "dsh-web-search-enhanced",
+    "spec": "dsh-web-search-enhanced@0.1.2",
     "commands": [
-      "dsh plugin --profile web add dsh-web-search-enhanced"
+      "dsh plugin --profile web add /path/to/dsh-web-search-enhanced-0.1.2.tgz",
+      "dsh plugin --profile web add dsh-web-search-enhanced@0.1.2"
     ],
     "url": null,
     "sha256": null,
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -54,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

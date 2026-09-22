@@ -8,11 +8,15 @@
   "summary": "把 Claude Code 接进 dsh 当模型用，支持会话续接、图片、审批转发和远程 SSH 工作区。",
   "tags": [
     "anthropic",
+    "claude",
     "claude-code",
     "cordis",
+    "deepseek",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
+    "llm-provider",
+    "typescript",
     "模型配置",
     "会话管理",
     "远程控制",
@@ -25,12 +29,12 @@
   "latestRelease": null,
   "author": "lcestou",
   "repo": "https://github.com/lcestou/dsh-oh-my-claude",
-  "homepage": null,
+  "homepage": "https://www.npmjs.com/package/dsh-oh-my-claude",
   "license": "MIT",
   "stars": 4,
   "forks": 0,
-  "pushedAt": "2026-09-20T19:39:42Z",
-  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "pushedAt": "2026-09-21T21:08:02Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -50,8 +54,8 @@
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -59,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

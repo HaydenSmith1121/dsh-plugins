@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "S-AN-Shu/dsh-progress-narrator",
+  "slug": "s-an-shu__dsh-progress-narrator",
+  "package": "dsh-progress-narrator",
+  "name": "dsh-progress-narrator",
+  "title": "dsh-progress-narrator",
+  "summary": "给长任务加上简短安静的工作播报，让模型先说一句要做什么，过程更好懂。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "状态监控",
+    "AI 助手",
+    "效率提升"
+  ],
+  "version": "0.2.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "S-AN-Shu",
+  "repo": "https://github.com/S-AN-Shu/dsh-progress-narrator",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-21T14:51:19Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:S-AN-Shu/dsh-progress-narrator",
+    "commands": [
+      "dsh plugin --profile web add github:S-AN-Shu/dsh-progress-narrator"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

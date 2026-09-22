@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "bubbleptr/dsh-holdem",
+  "slug": "bubbleptr__dsh-holdem",
+  "package": null,
+  "name": "dsh-holdem",
+  "title": "dsh-holdem",
+  "summary": "在 DeepSeek Harness 里开一桌六人德州扑克，你和五个 AI 智能体对战，边打边聊。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "poker",
+    "texas-holdem",
+    "多智能体协作",
+    "可视化",
+    "插件管理",
+    "主题"
+  ],
+  "version": "0.4.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "bubbleptr",
+  "repo": "https://github.com/bubbleptr/dsh-holdem",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 2,
+  "pushedAt": "2026-09-21T04:11:09Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-holdem",
+    "commands": [
+      "dsh plugin --profile web add dsh-holdem",
+      "dsh plugin --profile web remove dsh-holdem"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

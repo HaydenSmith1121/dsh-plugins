@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "zsspub/dsh-personal-todo",
+  "slug": "zsspub__dsh-personal-todo",
+  "package": "dsh-personal-todo",
+  "name": "dsh-personal-todo",
+  "title": "dsh-personal-todo",
+  "summary": "用 SQLite 存待办，跨会话跨项目都不丢，还带个网页面板随时查看管理。",
+  "tags": [
+    "dsh-plugin",
+    "状态持久化",
+    "工作区管理",
+    "可视化",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "zsspub",
+  "repo": "https://github.com/zsspub/dsh-personal-todo",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T07:03:11Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zsspub/dsh-personal-todo",
+    "commands": [
+      "dsh plugin --profile web add github:zsspub/dsh-personal-todo"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

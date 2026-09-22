@@ -5,7 +5,7 @@
   "package": "dsh-liketavern",
   "name": "dsh-liketavern",
   "title": "dsh-liketavern",
-  "summary": "在 dsh web 里玩角色扮演：角色卡、世界书、长期记忆一应俱全，像 SillyTavern 一样开聊。",
+  "summary": "把 dsh web 变成酒馆式角色扮演前端，支持角色卡、世界书、长期记忆与回滚。",
   "tags": [
     "deepseek-harness",
     "deepseek-harness-plugin",
@@ -44,17 +44,15 @@
     "method": "github",
     "spec": "github:Amakurai/dsh-liketavern",
     "commands": [
-      "dsh plugin --profile web add github:Amakurai/dsh-liketavern",
-      "dsh plugin --profile web list --depth 0",
-      "dsh plugin --profile web add ./dsh-liketavern-0.3.0.tgz"
+      "dsh plugin --profile web add github:Amakurai/dsh-liketavern"
     ],
     "url": null,
     "sha256": null,
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -62,6 +60,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

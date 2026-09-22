@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "MiRHaDi/dsh-persian-rtl",
+  "slug": "mirhadi__dsh-persian-rtl",
+  "package": "dsh-persian-rtl",
+  "name": "dsh-persian-rtl",
+  "title": "dsh-persian-rtl",
+  "summary": "给 DeepSeek Harness Web 加上波斯语界面和从右到左排版，社区维护的语言包。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "persian",
+    "rtl",
+    "主题",
+    "插件管理",
+    "跨设备",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-21T22:28:35Z",
+    "url": "https://github.com/MiRHaDi/dsh-persian-rtl/releases/tag/v0.1.0"
+  },
+  "author": "MiRHaDi",
+  "repo": "https://github.com/MiRHaDi/dsh-persian-rtl",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T22:28:35Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MiRHaDi/dsh-persian-rtl",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-persian-rtl-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

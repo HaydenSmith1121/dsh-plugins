@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "popu2do/dsh-call-session",
+  "slug": "popu2do__dsh-call-session",
+  "package": null,
+  "name": "dsh-call-session",
+  "title": "dsh-call-session",
+  "summary": "让 DSH 里不同会话之间直接互相调用、共享工作区，协作不再各干各的。",
+  "tags": [
+    "dsh-plugin",
+    "多智能体协作",
+    "会话管理",
+    "桥接插件",
+    "工作区管理",
+    "工具集成"
+  ],
+  "version": "0.1.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "popu2do",
+  "repo": "https://github.com/popu2do/dsh-call-session",
+  "homepage": "https://github.com/popu2do/dsh-call-session#readme",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-21T09:00:15Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-call-session",
+    "commands": [
+      "dsh plugin --profile web add dsh-call-session",
+      "dsh plugin --profile web list",
+      "dsh plugin --profile web remove dsh-call-session"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

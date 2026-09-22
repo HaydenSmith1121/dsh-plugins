@@ -5,22 +5,22 @@
   "package": "dsh-devforge",
   "name": "dsh-devforge",
   "title": "dsh-devforge",
-  "summary": "把服务开发、运维和智能体工作台整合在一起，帮你从规范到上线一条龙搞定。",
+  "summary": "给 DSH 加一个规范驱动的服务工厂，从写规格到跑服务、看状态一条龙搞定。",
   "tags": [
     "dsh-plugin",
+    "脚手架",
     "工作流增强",
-    "自动化",
-    "状态监控",
-    "多Agent协作",
-    "插件管理"
+    "可视化",
+    "状态持久化",
+    "多智能体协作"
   ],
-  "version": "0.34.16",
+  "version": "0.36.2",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
   "latestRelease": {
-    "tag": "v0.34.16",
-    "publishedAt": "2026-09-21T13:31:52Z",
-    "url": "https://github.com/andyfan1094/dsh-devforge/releases/tag/v0.34.16"
+    "tag": "v0.36.2",
+    "publishedAt": "2026-09-22T11:38:22Z",
+    "url": "https://github.com/andyfan1094/dsh-devforge/releases/tag/v0.36.2"
   },
   "author": "andyfan1094",
   "repo": "https://github.com/andyfan1094/dsh-devforge",
@@ -28,8 +28,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-21T13:31:34Z",
-  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "pushedAt": "2026-09-22T11:38:21Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -50,7 +50,7 @@
     "tarball": null,
     "dshVersion": null,
     "needsConfig": true,
-    "usageNeedsConfig": false,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -58,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

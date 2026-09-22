@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "argszero/cordis-plugin-tool-deadline-guard",
+  "slug": "argszero__cordis-plugin-tool-deadline-guard",
+  "package": "@argszero/cordis-plugin-tool-deadline-guard",
+  "name": "cordis-plugin-tool-deadline-guard",
+  "title": "cordis-plugin-tool-deadline-guard",
+  "summary": "给没设超时的 dsh 工具调用加上部署级截止时间，卡死时直接报错给模型看。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "discussion-7339",
+    "dsh-plugin",
+    "timeout",
+    "状态监控",
+    "工具集成",
+    "开发增强",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "argszero",
+  "repo": "https://github.com/argszero/cordis-plugin-tool-deadline-guard",
+  "homepage": "https://www.npmjs.com/package/@argszero/cordis-plugin-tool-deadline-guard",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T09:26:36Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:argszero/cordis-plugin-tool-deadline-guard",
+    "commands": [
+      "npm install @argszero/cordis-plugin-tool-deadline-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

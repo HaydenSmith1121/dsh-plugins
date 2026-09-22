@@ -8,15 +8,15 @@
   "summary": "可视化配置 Agent 的提示词、工具、技能和子代理，还能组队分工、按任务分配模型。",
   "tags": [
     "dsh-plugin",
-    "多Agent协作",
+    "多智能体协作",
     "模型适配",
     "可视化",
     "工作流增强",
     "设置面板"
   ],
-  "version": "0.1.0",
-  "versionSource": "package.json",
-  "versionCheckedAt": "2026-09-19T20:12:00.176Z",
+  "version": "0.1.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
   "latestRelease": null,
   "author": "thissensen",
   "repo": "https://github.com/thissensen/dsh-agent-studio",
@@ -24,8 +24,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-19T16:15:22Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "pushedAt": "2026-09-21T20:36:08Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -38,8 +38,8 @@
     "spec": "dsh-agent-studio",
     "commands": [
       "dsh plugin --profile web add dsh-agent-studio",
-      "git clone https://github.com/thissensen/dsh-agent-studio.git dsh-agent-studio",
-      "dsh plugin --profile web add \"link:<本目录的绝对路径>\""
+      "dsh plugin --profile web add \"./dsh-agent-studio-0.1.2.tgz\"",
+      "git clone https://github.com/thissensen/dsh-agent-studio.git dsh-agent-studio"
     ],
     "url": null,
     "sha256": null,
@@ -55,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

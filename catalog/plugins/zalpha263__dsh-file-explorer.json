@@ -5,7 +5,7 @@
   "package": "dsh-file-explorer",
   "name": "dsh-file-explorer",
   "title": "dsh-file-explorer",
-  "summary": "在聊天界面里直接浏览工作区文件夹、预览和编辑文件，面板可停靠也能拖成浮动窗口。",
+  "summary": "在聊天页里直接浏览工作区文件、预览和编辑内容，面板还能拖成浮动窗口。",
   "tags": [
     "deepseek",
     "dsh",
@@ -13,9 +13,8 @@
     "dsh-plugins",
     "文件管理",
     "工作区管理",
-    "前端增强",
-    "效率提升",
-    "可视化"
+    "可视化",
+    "效率提升"
   ],
   "version": "1.11.1",
   "versionSource": "package.json",
@@ -41,8 +40,8 @@
     "spec": "github:Zalpha263/dsh-file-explorer",
     "commands": [
       "dsh plugin --profile web add github:Zalpha263/dsh-file-explorer",
-      "dsh plugin --profile web update dsh-file-explorer",
-      "dsh plugin --profile web remove dsh-file-explorer"
+      "dsh plugin --profile web add D:/path/to/dsh-file-explorer",
+      "dsh plugin --profile web install"
     ],
     "url": null,
     "sha256": null,
@@ -58,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

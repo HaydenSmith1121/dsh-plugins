@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "danbao/dsh-jev",
+  "slug": "danbao__dsh-jev",
+  "package": "dsh-jev",
+  "name": "dsh-jev",
+  "title": "dsh-jev",
+  "summary": "给 AI 助手加上类型安全的决策提问工具，传入状态和问题就能拿到结构化答案。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "jev-ai",
+    "typesafe-jev",
+    "AI 助手",
+    "工具集成",
+    "开发增强",
+    "状态持久化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "danbao",
+  "repo": "https://github.com/danbao/dsh-jev",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T08:48:34Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:danbao/dsh-jev",
+    "commands": [
+      "dsh plugin --profile <name> add /path/to/dsh-jev"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

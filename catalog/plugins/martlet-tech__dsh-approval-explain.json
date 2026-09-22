@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Martlet-Tech/dsh-approval-explain",
+  "slug": "martlet-tech__dsh-approval-explain",
+  "package": "dsh-approval-explain",
+  "name": "dsh-approval-explain",
+  "title": "dsh-approval-explain",
+  "summary": "在审批卡片上加个「解释」按钮，一次模型调用说清待批准的操作到底要干什么。",
+  "tags": [
+    "ai-agent",
+    "approval",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm",
+    "permission",
+    "AI 助手",
+    "安全审查",
+    "快捷操作",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "Martlet-Tech",
+  "repo": "https://github.com/Martlet-Tech/dsh-approval-explain",
+  "homepage": "https://github.com/topics/dsh-plugin",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T15:29:54Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Martlet-Tech/dsh-approval-explain",
+    "commands": [
+      "dsh plugin --profile web add github:Martlet-Tech/dsh-approval-explain"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "zhy5/wxbridge",
+  "slug": "zhy5__wxbridge",
+  "package": "@zmainer/dsh-wx-bridge",
+  "name": "wxbridge",
+  "title": "wxbridge",
+  "summary": "把手机微信接到本机 DSH，用微信消息直接驱动电脑干活，还能在设置页看状态、扫码配对。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "ilink",
+    "wechat",
+    "桥接插件",
+    "工具集成",
+    "状态监控",
+    "设置面板",
+    "自动化"
+  ],
+  "version": "1.0.14",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "zhy5",
+  "repo": "https://github.com/zhy5/wxbridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T08:50:44Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhy5/wxbridge",
+    "commands": [
+      "dsh plugin --profile <profile> add @zmainer/wxbridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

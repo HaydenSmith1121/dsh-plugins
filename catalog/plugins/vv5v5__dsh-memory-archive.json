@@ -10,8 +10,8 @@
     "dsh-plugin",
     "会话管理",
     "状态持久化",
-    "模型轨迹",
-    "数据可审计"
+    "语义检索",
+    "效率提升"
   ],
   "version": "0.5.2",
   "versionSource": "github-release",
@@ -27,8 +27,8 @@
   "license": "NOASSERTION",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-21T08:04:00Z",
-  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "pushedAt": "2026-09-22T06:34:29Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -40,7 +40,6 @@
     "method": "github",
     "spec": "github:vv5v5/dsh-memory-archive",
     "commands": [
-      "dsh plugin --profile <你的 profile 名> add dsh-memory-archive",
       "dsh plugin --profile <你的 profile 名> add github:vv5v5/dsh-memory-archive",
       "dsh plugin --profile <你的 profile 名> add ./dsh-memory-archive"
     ],
@@ -58,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

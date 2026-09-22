@@ -5,7 +5,7 @@
   "package": "dsh-knowledge-graph",
   "name": "dsh-knowledge-graph",
   "title": "dsh-knowledge-graph",
-  "summary": "把任意资料或AI会话拆成知识图，并支持原文与图谱双向跳转，方便梳理和检索。",
+  "summary": "把资料正文、图片或会话轨迹丢给 AI，自动拆成知识图，还能和原文双向定位。",
   "tags": [
     "ai",
     "cordis-plugin",
@@ -13,10 +13,10 @@
     "dsh-plugin",
     "knowledge-base",
     "knowledge-graph",
-    "会话管理",
-    "文本分析",
-    "双向链接",
-    "语义检索"
+    "语义检索",
+    "可视化",
+    "视觉理解",
+    "AI 助手"
   ],
   "version": "1.0.1",
   "versionSource": "package.json",
@@ -28,8 +28,8 @@
   "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-21T06:22:48Z",
-  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "pushedAt": "2026-09-22T17:22:07Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -57,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

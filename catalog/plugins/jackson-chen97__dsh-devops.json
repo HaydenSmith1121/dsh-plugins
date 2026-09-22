@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "Jackson-chen97/dsh-devops",
   "slug": "jackson-chen97__dsh-devops",
-  "package": null,
+  "package": "@jacksonchen/dsh-devops",
   "name": "dsh-devops",
   "title": "dsh-devops",
   "summary": "把 GitLab CI/CD 流水线和 K8s 集群健康状态集中到一处，随时掌握构建与部署情况。",
@@ -28,8 +28,8 @@
   "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-19T15:11:43Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-21T07:16:04Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -38,12 +38,11 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "@jacksonchen/dsh-devops",
+    "method": "github",
+    "spec": "github:Jackson-chen97/dsh-devops",
     "commands": [
-      "dsh plugin --profile web add @jacksonchen/dsh-devops",
-      "dsh plugin --profile web add https://github.com/Jackson-chen97/dsh-devops.git",
-      "dsh plugin --profile web add \"D:/path/to/dsh-devops\""
+      "git clone https://github.com/Jackson-chen97/dsh-devops",
+      "dsh plugin --profile web add \"~/dev/tools/dsh-devops\""
     ],
     "url": null,
     "sha256": null,
@@ -59,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-20T20:34:57.047Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

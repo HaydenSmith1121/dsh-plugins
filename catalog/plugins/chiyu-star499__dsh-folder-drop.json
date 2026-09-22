@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "chiyu-star499/dsh-folder-drop",
+  "slug": "chiyu-star499__dsh-folder-drop",
+  "package": "dsh-folder-drop",
+  "name": "dsh-folder-drop",
+  "title": "dsh-folder-drop",
+  "summary": "把文件夹直接拖进 DSH 输入框，就能拿到它的绝对路径，补上原生只认文件的短板。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "drag-and-drop",
+    "dsh",
+    "dsh-desktop",
+    "dsh-plugin",
+    "folder",
+    "文件管理",
+    "快捷操作",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "chiyu-star499",
+  "repo": "https://github.com/chiyu-star499/dsh-folder-drop",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T12:25:30Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chiyu-star499/dsh-folder-drop",
+    "commands": [
+      "dsh plugin --profile web add github:chiyu-star499/dsh-folder-drop"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

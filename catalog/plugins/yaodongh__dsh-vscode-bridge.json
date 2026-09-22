@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "yaodongH/dsh-vscode-bridge",
+  "slug": "yaodongh__dsh-vscode-bridge",
+  "package": "dsh-vscode-bridge",
+  "name": "dsh-vscode-bridge",
+  "title": "dsh-vscode-bridge",
+  "summary": "在DSH中心区嵌入固定版VS Code Web，随工作空间使用，支持自定义端口与热切换，方便直接编辑代码。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "工作流增强",
+    "文件管理",
+    "可视化",
+    "设置面板",
+    "效率提升"
+  ],
+  "version": "0.1.12",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "yaodongH",
+  "repo": "https://github.com/yaodongH/dsh-vscode-bridge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T16:22:05Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yaodongH/dsh-vscode-bridge",
+    "commands": [
+      "dsh plugin --profile web add github:yaodongH/dsh-vscode-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

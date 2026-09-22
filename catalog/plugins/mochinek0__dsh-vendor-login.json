@@ -5,18 +5,19 @@
   "package": null,
   "name": "dsh-vendor-login",
   "title": "dsh-vendor-login",
-  "summary": "在 dsh 设置界面直接登录 Claude、ChatGPT 等 AI 订阅账号，无需 API 密钥即可使用。",
+  "summary": "没有 API Key 也能登录 Claude、ChatGPT、Copilot 等 AI 编程套餐，直接在 dsh 设置里完成授权。",
   "tags": [
     "dsh",
     "dsh-plugin",
     "oauth",
-    "模型配置",
-    "插件管理",
-    "效率提升"
+    "模型适配",
+    "设置面板",
+    "工具集成",
+    "零配置"
   ],
-  "version": "0.2.0",
+  "version": "0.2.1",
   "versionSource": "npm",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
   "latestRelease": null,
   "author": "MochiNek0",
   "repo": "https://github.com/MochiNek0/dsh-vendor-login",
@@ -24,8 +25,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-05T11:01:31Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-21T13:11:27Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -45,7 +46,7 @@
     "tarball": null,
     "dshVersion": null,
     "needsConfig": true,
-    "usageNeedsConfig": false,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -53,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

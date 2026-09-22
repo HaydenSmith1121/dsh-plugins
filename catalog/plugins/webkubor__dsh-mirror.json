@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "webkubor/dsh-mirror",
+  "slug": "webkubor__dsh-mirror",
+  "package": null,
+  "name": "dsh-mirror",
+  "title": "dsh-mirror",
+  "summary": "让 AI 主动记住你的原则、红线和工作方式，跨会话复用，还会遗忘和说明记录理由。",
+  "tags": [
+    "ai-memory",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "AI 助手",
+    "会话管理",
+    "状态持久化",
+    "效率提升"
+  ],
+  "version": "0.7.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "webkubor",
+  "repo": "https://github.com/webkubor/dsh-mirror",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 8,
+  "forks": 6,
+  "pushedAt": "2026-09-21T08:41:00Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@dsh-plugins/dsh-user-mirror",
+    "commands": [
+      "dsh plugin --profile web add @dsh-plugins/dsh-user-mirror"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

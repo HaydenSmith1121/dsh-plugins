@@ -5,17 +5,17 @@
   "package": null,
   "name": "dsh-client-ui-paopaocat",
   "title": "dsh-client-ui-paopaocat",
-  "summary": "给 DSH 网页界面换上月光森林奇幻皮肤，双风格一键切换，还自带 3 首背景音乐。",
+  "summary": "给 DSH 网页界面换上泡泡猫玻璃拟态皮肤，双风格一键切换，还能放背景音乐。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "paopaocat",
     "theme",
-    "主题",
     "界面美化",
-    "前端增强",
-    "快捷操作"
+    "主题",
+    "设置面板",
+    "多模态"
   ],
   "version": "0.3.2",
   "versionSource": "npm",
@@ -27,8 +27,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-15T17:59:55Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-21T10:04:33Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -41,7 +41,7 @@
     "spec": "dsh-client-ui-paopaocat",
     "commands": [
       "dsh plugin --profile web add dsh-client-ui-paopaocat",
-      "git clone https://github.com/zmm863-commits/dsh-client-ui-paopaocat",
+      "git clone <repo>",
       "npm install"
     ],
     "url": null,
@@ -58,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

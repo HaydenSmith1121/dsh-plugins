@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "dreammaker2016/dsh-file-menu",
+  "slug": "dreammaker2016__dsh-file-menu",
+  "package": null,
+  "name": "dsh-file-menu",
+  "title": "dsh-file-menu",
+  "summary": "给 DSH 网页界面补上右键菜单，让文件和操作随手就能点开。",
+  "tags": [
+    "context-menu",
+    "deepseek-harness",
+    "dsh-plugin",
+    "前端增强",
+    "快捷操作",
+    "文件管理",
+    "主题"
+  ],
+  "version": "0.8.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "dreammaker2016",
+  "repo": "https://github.com/dreammaker2016/dsh-file-menu",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T08:35:52Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@z1995418/dsh-file-menu",
+    "commands": [
+      "dsh plugin --profile web add @z1995418/dsh-file-menu",
+      "dsh plugin --profile web add github:dreammaker2016/dsh-file-menu"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "tearslee/dsh-workbuddy2api",
   "slug": "tearslee__dsh-workbuddy2api",
-  "package": null,
+  "package": "dsh-workbuddy2api",
   "name": "dsh-workbuddy2api",
   "title": "dsh-workbuddy2api",
   "summary": "自动拉起并托管 workbuddy2api 网关，把它的模型注册成 dsh 的 LLM 提供方，开箱即用。",
@@ -22,13 +22,13 @@
     "零配置",
     "工具集成"
   ],
-  "version": "0.3.0",
+  "version": "0.3.1",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
   "latestRelease": {
-    "tag": "v0.3.0",
-    "publishedAt": "2026-09-18T14:44:35Z",
-    "url": "https://github.com/tearslee/dsh-workbuddy2api/releases/tag/v0.3.0"
+    "tag": "v0.3.1",
+    "publishedAt": "2026-09-21T01:21:39Z",
+    "url": "https://github.com/tearslee/dsh-workbuddy2api/releases/tag/v0.3.1"
   },
   "author": "tearslee",
   "repo": "https://github.com/tearslee/dsh-workbuddy2api",
@@ -36,8 +36,8 @@
   "license": "MIT",
   "stars": 4,
   "forks": 0,
-  "pushedAt": "2026-09-18T19:15:32Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-21T01:21:14Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -46,12 +46,12 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "dsh-workbuddy2api",
+    "method": "github",
+    "spec": "github:tearslee/dsh-workbuddy2api",
     "commands": [
-      "dsh plugin --profile web add dsh-workbuddy2api",
-      "git clone https://github.com/tearslee/dsh-workbuddy2api",
-      "dsh plugin --profile web add file:./dsh-workbuddy2api-0.1.0.tgz"
+      "dsh plugin --profile web add https://github.com/tearslee/dsh-workbuddy2api/releases/download/v0.3.0/dsh-workbuddy2api-0.3.0.tgz",
+      "dsh plugin --profile web add file:/绝对路径/dsh-workbuddy2api-0.3.0.tgz",
+      "git clone https://github.com/tearslee/dsh-workbuddy2api"
     ],
     "url": null,
     "sha256": null,
@@ -67,6 +67,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

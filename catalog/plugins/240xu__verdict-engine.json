@@ -5,19 +5,21 @@
   "package": null,
   "name": "verdict-engine",
   "title": "verdict-engine",
-  "summary": "把工程规范变成机器可校验的规则，让智能体按证据驱动干活，避免拍脑袋决策。",
+  "summary": "把工程规范变成可机器校验的判定，让 AI 干活的每一步都有据可查、出错即停。",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
     "opencode",
     "tech-lead",
-    "状态监控",
+    "工程规范",
+    "代码验证",
+    "AI 助手",
     "工作流增强",
-    "AI 助手"
+    "安全审查"
   ],
-  "version": "5.5.7",
-  "versionSource": "package.json",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "version": "1.5.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
   "latestRelease": null,
   "author": "240xu",
   "repo": "https://github.com/240xu/verdict-engine",
@@ -25,8 +27,8 @@
   "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-08-26T17:16:19Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-21T15:59:35Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -49,13 +51,15 @@
     "dshVersion": null,
     "needsConfig": false,
     "usageNeedsConfig": false,
-    "risky": false,
-    "riskyReasons": []
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
   },
   "source": {
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-17T16:25:08.895Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

@@ -18,8 +18,8 @@
     "智能路由"
   ],
   "version": "0.6.0",
-  "versionSource": "github-tag",
-  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
   "latestRelease": null,
   "author": "green-dalii",
   "repo": "https://github.com/green-dalii/dsh-shift-router",
@@ -37,12 +37,12 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:green-dalii/dsh-shift-router",
+    "method": "npm",
+    "spec": "dsh-shift-router",
     "commands": [
-      "git clone https://github.com/green-dalii/dsh-shift-router.git",
-      "npm install && npm run build",
-      "dsh plugin --profile web add /path/to/dsh-shift-router"
+      "dsh plugin --profile web add dsh-shift-router",
+      "dsh plugin --profile web add ./dsh-shift-router-0.6.0.tgz",
+      "dsh plugin --profile web add github:green-dalii/dsh-shift-router"
     ],
     "url": null,
     "sha256": null,
@@ -58,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "EIGHTfs/dsh-session-migrate",
+  "slug": "eightfs__dsh-session-migrate",
+  "package": "dsh-session-migrate",
+  "name": "dsh-session-migrate",
+  "title": "dsh-session-migrate",
+  "summary": "把旧版本 DSH 会话日志安全投放到当前实例，打开时自动升级到新格式，老记录不再打不开。",
+  "tags": [
+    "dsh-plugin",
+    "会话管理",
+    "状态持久化",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "1.0.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": {
+    "tag": "v1.0.4",
+    "publishedAt": "2026-09-21T14:43:09Z",
+    "url": "https://github.com/EIGHTfs/dsh-session-migrate/releases/tag/v1.0.4"
+  },
+  "author": "EIGHTfs",
+  "repo": "https://github.com/EIGHTfs/dsh-session-migrate",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T14:43:08Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:EIGHTfs/dsh-session-migrate",
+    "commands": [
+      "dsh plugin --profile web add github:EIGHTfs/dsh-session-migrate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

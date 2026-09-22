@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "BOWLUNA/dsh-zcode-farm",
+  "slug": "bowluna__dsh-zcode-farm",
+  "package": null,
+  "name": "dsh-zcode-farm",
+  "title": "dsh-zcode-farm",
+  "summary": "让 DeepSeek Harness 一眼看清所有 ComfyUI 实例，自动把生成任务派给最闲的那台 GPU。",
+  "tags": [
+    "comfyui",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "gpu-scheduling",
+    "image-generation",
+    "load-balancer",
+    "multi-instance",
+    "workflow",
+    "zcode",
+    "资源优化",
+    "工作流增强",
+    "状态监控",
+    "自动化",
+    "工具集成"
+  ],
+  "version": "1.0.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": {
+    "tag": "v1.0.1",
+    "publishedAt": "2026-09-21T19:39:51Z",
+    "url": "https://github.com/BOWLUNA/dsh-zcode-farm/releases/tag/v1.0.1"
+  },
+  "author": "BOWLUNA",
+  "repo": "https://github.com/BOWLUNA/dsh-zcode-farm",
+  "homepage": "https://github.com/BOWLUNA/dsh-zcode-farm/blob/main/docs/ARCHITECTURE.md",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T16:37:00Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-zcode-farm",
+    "commands": [
+      "dsh plugin --profile web add dsh-zcode-farm"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

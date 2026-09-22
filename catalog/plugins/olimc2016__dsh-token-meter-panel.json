@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "olimc2016/dsh-token-meter-panel",
   "slug": "olimc2016__dsh-token-meter-panel",
-  "package": null,
+  "package": "dsh-token-meter-panel",
   "name": "dsh-token-meter-panel",
   "title": "dsh-token-meter-panel",
   "summary": "在侧栏看今天花了多少钱、花在哪、缓存省了多少，随时掌握 Token 开销。",
@@ -17,13 +17,13 @@
     "资源优化",
     "设置面板"
   ],
-  "version": "0.6.1",
+  "version": "0.6.2",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-21T22:03:40.491Z",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
   "latestRelease": {
-    "tag": "v0.6.1",
-    "publishedAt": "2026-09-21T12:42:35Z",
-    "url": "https://github.com/olimc2016/dsh-token-meter-panel/releases/tag/v0.6.1"
+    "tag": "v0.6.2",
+    "publishedAt": "2026-09-22T13:53:06Z",
+    "url": "https://github.com/olimc2016/dsh-token-meter-panel/releases/tag/v0.6.2"
   },
   "author": "olimc2016",
   "repo": "https://github.com/olimc2016/dsh-token-meter-panel",
@@ -31,8 +31,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-21T12:42:29Z",
-  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "pushedAt": "2026-09-22T13:52:59Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -41,12 +41,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "dsh-token-meter-panel",
+    "method": "github",
+    "spec": "github:olimc2016/dsh-token-meter-panel",
     "commands": [
-      "dsh plugin --profile desktop add ./dsh-token-meter-panel-0.1.0.tgz",
-      "dsh plugin --profile desktop add dsh-token-meter-panel",
-      "dsh plugin --profile web add dsh-token-meter-panel"
+      "dsh plugin --profile web add github:olimc2016/dsh-token-meter-panel"
     ],
     "url": null,
     "sha256": null,
@@ -62,6 +60,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-21T22:03:40.491Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

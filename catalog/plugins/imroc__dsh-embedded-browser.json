@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "imroc/dsh-embedded-browser",
+  "slug": "imroc__dsh-embedded-browser",
+  "package": "dsh-embedded-browser",
+  "name": "dsh-embedded-browser",
+  "title": "dsh-embedded-browser",
+  "summary": "在 DSH 里内置一个共享浏览器，AI 用工具自动操作，你也能随时接手同一标签页处理登录和验证码。",
+  "tags": [
+    "browser-automation",
+    "chrome-devtools-protocol",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "human-in-the-loop",
+    "自动化",
+    "工具集成",
+    "可视化",
+    "多智能体协作",
+    "桥接插件"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-21T09:54:17Z",
+    "url": "https://github.com/imroc/dsh-embedded-browser/releases/tag/v0.3.0"
+  },
+  "author": "imroc",
+  "repo": "https://github.com/imroc/dsh-embedded-browser",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T09:54:16Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:imroc/dsh-embedded-browser",
+    "commands": [
+      "dsh plugin --profile web add github:imroc/dsh-embedded-browser"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

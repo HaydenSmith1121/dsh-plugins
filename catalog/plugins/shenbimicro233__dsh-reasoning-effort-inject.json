@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "shenbimicro233/dsh-reasoning-effort-inject",
+  "slug": "shenbimicro233__dsh-reasoning-effort-inject",
+  "package": "dsh-reasoning-effort-inject",
+  "name": "dsh-reasoning-effort-inject",
+  "title": "dsh-reasoning-effort-inject",
+  "summary": "在设置里给每个模型单独配置思考强度，补上 DSH 网页端缺失的这项功能。",
+  "tags": [
+    "dsh-plugin",
+    "模型适配",
+    "设置面板",
+    "前端增强",
+    "模型配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "shenbimicro233",
+  "repo": "https://github.com/shenbimicro233/dsh-reasoning-effort-inject",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T03:56:13Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shenbimicro233/dsh-reasoning-effort-inject",
+    "commands": [
+      "dsh plugin --profile web add git+https://github.com/shenbimicro233/dsh-reasoning-effort-inject.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

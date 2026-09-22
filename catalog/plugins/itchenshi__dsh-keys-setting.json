@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "itchenshi/dsh-keys-setting",
+  "slug": "itchenshi__dsh-keys-setting",
+  "package": null,
+  "name": "dsh-keys-setting",
+  "title": "dsh-keys-setting",
+  "summary": "在 DSH 设置里自定义 Enter、Shift+Enter、Ctrl/Cmd+Enter 是发送消息还是换行，让输入更顺手。",
+  "tags": [
+    "composer",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "keybinding",
+    "快捷操作",
+    "设置面板",
+    "效率提升",
+    "插件管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "itchenshi",
+  "repo": "https://github.com/itchenshi/dsh-keys-setting",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T08:59:44Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-keys-setting",
+    "commands": [
+      "dsh plugin --profile web add dsh-keys-setting"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

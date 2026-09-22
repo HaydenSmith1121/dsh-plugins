@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "GJayun/dsh-goal-zcode-like",
+  "slug": "gjayun__dsh-goal-zcode-like",
+  "package": "dsh-goal-zcode-like",
+  "name": "dsh-goal-zcode-like",
+  "title": "dsh-goal-zcode-like",
+  "summary": "给 DeepSeek Harness 加上类似 ZCode 的长期目标管理，让 AI 能盯着大任务一步步做完。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "deepseek-harness-plugins",
+    "dsh",
+    "dsh-plugin",
+    "工作流增强",
+    "多智能体协作",
+    "状态持久化",
+    "自动化",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "GJayun",
+  "repo": "https://github.com/GJayun/dsh-goal-zcode-like",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T02:51:17Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GJayun/dsh-goal-zcode-like",
+    "commands": [
+      "git clone https://github.com/GJayun/dsh-goal-zcode-like",
+      "dsh plugin --profile web add ./dsh-goal-zcode-like"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

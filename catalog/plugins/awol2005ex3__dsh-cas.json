@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "awol2005ex3/dsh-cas",
+  "slug": "awol2005ex3__dsh-cas",
+  "package": "dsh-cas",
+  "name": "dsh-cas",
+  "title": "dsh-cas",
+  "summary": "给 dsh 加上 CAS 单点登录，登录后按用户隔离会话，还能在面板里配置 CAS。",
+  "tags": [
+    "dsh-plugin",
+    "安全审查",
+    "会话管理",
+    "设置面板",
+    "工具集成"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "awol2005ex3",
+  "repo": "https://github.com/awol2005ex3/dsh-cas",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T02:38:37Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:awol2005ex3/dsh-cas",
+    "commands": [
+      "dsh plugin --profile web add github:awol2005ex3/dsh-cas"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

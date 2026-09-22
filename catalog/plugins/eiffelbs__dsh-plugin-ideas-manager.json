@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "EiffelBS/dsh-plugin-ideas-manager",
+  "slug": "eiffelbs__dsh-plugin-ideas-manager",
+  "package": null,
+  "name": "dsh-plugin-ideas-manager",
+  "title": "dsh-plugin-ideas-manager",
+  "summary": "把灵感随手丢进看板，AI 帮你收集、评分和整理，想法不再散落各处。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "可视化",
+    "工作流增强",
+    "AI 助手",
+    "效率提升",
+    "状态持久化"
+  ],
+  "version": "0.3.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "EiffelBS",
+  "repo": "https://github.com/EiffelBS/dsh-plugin-ideas-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T22:23:06Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-plugin-ideas-manager",
+    "commands": [
+      "dsh plugin --profile web add dsh-plugin-ideas-manager",
+      "dsh plugin --profile web add dsh-plugin-ideas-manager@0.2.6",
+      "dsh plugin --profile web add link:/path/to/dsh-plugin-ideas-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

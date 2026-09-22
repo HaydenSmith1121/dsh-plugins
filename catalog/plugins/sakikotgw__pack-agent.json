@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "sakikoTGW/pack-agent",
+  "slug": "sakikotgw__pack-agent",
+  "package": "@sakikotgw/pack-agent",
+  "name": "pack-agent",
+  "title": "pack-agent",
+  "summary": "像装 MC 整合包一样管理 DeepSeek Harness 配置，一键打包、分享和切换你的 agent 环境。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "插件管理",
+    "模型适配",
+    "工作区管理",
+    "效率提升"
+  ],
+  "version": "0.4.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": {
+    "tag": "v0.4.1",
+    "publishedAt": "2026-08-13T20:04:35Z",
+    "url": "https://github.com/sakikoTGW/pack-agent/releases/tag/v0.4.1"
+  },
+  "author": "sakikoTGW",
+  "repo": "https://github.com/sakikoTGW/pack-agent",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-21T06:16:54Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sakikoTGW/pack-agent",
+    "commands": [
+      "npm install @sakikotgw/pack-agent"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

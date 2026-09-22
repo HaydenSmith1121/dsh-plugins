@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "openbkn-ai/bkn-dsh",
+  "slug": "openbkn-ai__bkn-dsh",
+  "package": "@openbkn/bkn-dsh-workspace",
+  "name": "bkn-dsh",
+  "title": "bkn-dsh",
+  "summary": "把企业业务知识网络接进 DSH 对话，让业务人员安全可靠地做分析和决策。",
+  "tags": [
+    "dsh-plugin",
+    "AI 助手",
+    "工具集成",
+    "语义检索",
+    "安全审查",
+    "桥接插件"
+  ],
+  "version": "0.1.6-alpha.2-openbkn.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": {
+    "tag": "openbkn-dsh-runtime-v0.1.6-alpha.2-openbkn.1",
+    "publishedAt": "2026-09-21T07:02:12Z",
+    "url": "https://github.com/openbkn-ai/bkn-dsh/releases/tag/openbkn-dsh-runtime-v0.1.6-alpha.2-openbkn.1"
+  },
+  "author": "openbkn-ai",
+  "repo": "https://github.com/openbkn-ai/bkn-dsh",
+  "homepage": null,
+  "license": null,
+  "stars": 2,
+  "forks": 2,
+  "pushedAt": "2026-09-22T12:23:03Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:openbkn-ai/bkn-dsh",
+    "commands": [
+      "git clone --depth 1 --branch dsh-v0.1.6-alpha.2 https://github.com/deepseek-ai/deepseek-harness.git ~/dsh-src"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

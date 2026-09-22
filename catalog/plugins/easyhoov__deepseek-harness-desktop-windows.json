@@ -5,7 +5,7 @@
   "package": "dsh-desktop",
   "name": "deepseek-harness-desktop-windows",
   "title": "deepseek-harness-desktop-windows",
-  "summary": "Windows 桌面常驻小工具，托盘运行、原生通知，还能通过 IPC 桥接与其他程序联动。",
+  "summary": "把 DeepSeek Harness 打包成 Windows 桌面应用，双击就能用，不用装 Node.js 也不用敲命令。",
   "tags": [
     "ai",
     "deepseek-harness",
@@ -14,10 +14,11 @@
     "dsh-plugin",
     "electron",
     "windows",
-    "自动化",
-    "托盘驻留",
-    "消息通知",
-    "进程通信"
+    "零配置",
+    "可视化",
+    "插件管理",
+    "工具集成",
+    "效率提升"
   ],
   "version": "0.6.2",
   "versionSource": "github-release",
@@ -63,6 +64,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

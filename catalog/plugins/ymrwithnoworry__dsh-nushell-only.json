@@ -19,8 +19,8 @@
     "零配置"
   ],
   "version": "0.2.0",
-  "versionSource": "package.json",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
   "latestRelease": null,
   "author": "YMRwithNoworry",
   "repo": "https://github.com/YMRwithNoworry/dsh-nushell-only",
@@ -38,12 +38,12 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:YMRwithNoworry/dsh-nushell-only",
+    "method": "npm",
+    "spec": "dsh-nushell-only",
     "commands": [
+      "dsh plugin --profile web add dsh-nushell-only",
       "dsh plugin --profile web add github:YMRwithNoworry/dsh-nushell-only",
-      "dsh plugin --profile web add file:/path/to/dsh-nushell-only",
-      "dsh plugin --profile web remove dsh-nushell"
+      "dsh plugin --profile web add file:/path/to/dsh-nushell-only"
     ],
     "url": null,
     "sha256": null,
@@ -59,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "suan2inf/dsh-cockpit",
+  "slug": "suan2inf__dsh-cockpit",
+  "package": "@suan2inf/dsh-cockpit",
+  "name": "dsh-cockpit",
+  "title": "dsh-cockpit",
+  "summary": "给 DeepSeek Harness 做体检、一键修复和安全更新的 Web 管理面板，更新出问题也能救回来。",
+  "tags": [
+    "agent-harness",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin",
+    "状态监控",
+    "插件管理",
+    "可视化",
+    "自动化",
+    "安全审查"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "suan2inf",
+  "repo": "https://github.com/suan2inf/dsh-cockpit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T11:57:35Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:suan2inf/dsh-cockpit",
+    "commands": [
+      "dsh plugin --profile web add github:suan2inf/dsh-cockpit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

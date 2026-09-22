@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "sindo-s/dsh-qq-bot",
+  "slug": "sindo-s__dsh-qq-bot",
+  "package": "dsh-qq-bot",
+  "name": "dsh-qq-bot",
+  "title": "dsh-qq-bot",
+  "summary": "把 QQ 群聊和私聊直接接到 dsh Agent，每个群或用户都有独立智能助手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "qq-bot",
+    "桥接插件",
+    "多智能体协作",
+    "工具集成",
+    "消息通知"
+  ],
+  "version": "0.3.2",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "latestRelease": null,
+  "author": "sindo-s",
+  "repo": "https://github.com/sindo-s/dsh-qq-bot",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-21T17:34:14Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sindo-s/dsh-qq-bot",
+    "commands": [
+      "dsh plugin --profile web add github:sindo-s/dsh-qq-bot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-22T20:57:33.766Z",
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+  }
+}

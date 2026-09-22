@@ -5,15 +5,16 @@
   "package": null,
   "name": "dsh-dbhub-live",
   "title": "dsh-dbhub-live",
-  "summary": "让 DSH 直接连数据库干活，支持多数据源常驻连接、按工作区管理工具，还能临时动态建连，没装 dbhub 会自动装好并更新。",
+  "summary": "让 AI 直接查 MySQL、PostgreSQL 等数据库，密码不进模型，每次执行独立进程更安全。",
   "tags": [
     "database",
     "dbhub",
     "dsh-plugin",
-    "文件管理",
-    "插件管理",
-    "零配置",
-    "状态监控"
+    "桥接插件",
+    "工具集成",
+    "安全审查",
+    "工作区管理",
+    "效率提升"
   ],
   "version": "4.1.0",
   "versionSource": "npm",
@@ -25,8 +26,8 @@
   "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-04T10:12:19Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-21T10:47:49Z",
+  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -39,7 +40,7 @@
     "spec": "dsh-dbhub-live",
     "commands": [
       "dsh plugin --profile web add dsh-dbhub-live",
-      "dsh plugin --profile web update dsh-dbhub-live@4.0.0"
+      "dsh plugin --profile web update dsh-dbhub-live@4.1.0"
     ],
     "url": null,
     "sha256": null,
@@ -55,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
   }
 }
