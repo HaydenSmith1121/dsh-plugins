@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "Mo3ter/dsh-model-latency-test",
+  "slug": "mo3ter__dsh-model-latency-test",
+  "package": "mdl-latency-test",
+  "name": "dsh-model-latency-test",
+  "title": "dsh-model-latency-test",
+  "summary": "一键测出每个已配置模型的首 token 延迟，帮你挑出响应最快的模型。",
+  "tags": [
+    "dsh-plugin",
+    "模型适配",
+    "状态监控",
+    "效率提升",
+    "设置面板"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "Mo3ter",
+  "repo": "https://github.com/Mo3ter/dsh-model-latency-test",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T08:23:31Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Mo3ter/dsh-model-latency-test",
+    "commands": [
+      "dsh plugin --profile web add github:Mo3ter/dsh-model-latency-test"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

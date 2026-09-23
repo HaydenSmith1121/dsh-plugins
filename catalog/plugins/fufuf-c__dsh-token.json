@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-token",
   "title": "dsh-token",
-  "summary": "本地统计 DSH 的 Token 用量和花费，看清缓存省了多少、哪个会话最烧钱，数据不上传。",
+  "summary": "本地统计 DSH 的 Token 用量和花费，看清用量来源、缓存省了多少、哪个会话最烧 Token。",
   "tags": [
     "cordis-plugin",
     "cost-tracking",
@@ -28,10 +28,10 @@
   "repo": "https://github.com/fufuf-c/dsh-token",
   "homepage": null,
   "license": "MIT",
-  "stars": 0,
+  "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-12T06:13:53Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-22T11:16:39Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -45,7 +45,7 @@
     "commands": [
       "dsh plugin --profile web add @fufuf-c/dsh-token",
       "dsh plugin --profile web add \"git+https://github.com/fufuf-c/dsh-token.git",
-      "dsh plugin --profile web add \"https://github.com/fufuf-c/dsh-token/releases/download/v0.7.1/fufuf-c-dsh-token-0.7.1.tgz\""
+      "dsh plugin --profile web add \"https://github.com/fufuf-c/dsh-token/releases/download/v0.9.6/fufuf-c-dsh-token-0.9.6.tgz\""
     ],
     "url": null,
     "sha256": null,
@@ -61,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
   }
 }

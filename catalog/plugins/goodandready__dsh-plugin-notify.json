@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-plugin-notify",
+  "slug": "goodandready__dsh-plugin-notify",
+  "package": null,
+  "name": "dsh-plugin-notify",
+  "title": "dsh-plugin-notify",
+  "summary": "回合结束、报错或等待审批时，用提示音、跨会话弹窗、桌面推送和 IM 机器人提醒你。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "消息通知",
+    "状态监控",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "0.3.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-plugin-notify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T14:16:59Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@goodandready/dsh-plugin-notify",
+    "commands": [
+      "dsh plugin --profile web add @goodandready/dsh-plugin-notify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

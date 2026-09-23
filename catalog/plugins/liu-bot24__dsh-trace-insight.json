@@ -5,7 +5,7 @@
   "package": "dsh-plugin-trace-insight",
   "name": "dsh-trace-insight",
   "title": "dsh-trace-insight",
-  "summary": "DSH 只读执行轨迹复盘工具，帮你分析规则、解读模型行为、定位证据，还能对比任务运行情况。",
+  "summary": "只读复盘 DSH 执行轨迹，用规则和模型解读任务过程，定位证据、对比运行差异。",
   "tags": [
     "agent-observability",
     "ai-agents",
@@ -15,19 +15,19 @@
     "llm-observability",
     "read-only",
     "trajectory-analysis",
-    "效率提升",
-    "报告生成",
-    "AI 助手",
+    "证据链",
     "状态监控",
-    "语义检索"
+    "可视化",
+    "内容创作",
+    "模型配置"
   ],
-  "version": "1.6.2",
+  "version": "1.6.3",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
   "latestRelease": {
-    "tag": "standard-v1.6.2",
-    "publishedAt": "2026-09-14T20:56:34Z",
-    "url": "https://github.com/Liu-Bot24/dsh-trace-insight/releases/tag/standard-v1.6.2"
+    "tag": "standard-v1.6.3",
+    "publishedAt": "2026-09-22T21:33:55Z",
+    "url": "https://github.com/Liu-Bot24/dsh-trace-insight/releases/tag/standard-v1.6.3"
   },
   "author": "Liu-Bot24",
   "repo": "https://github.com/Liu-Bot24/dsh-trace-insight",
@@ -35,8 +35,8 @@
   "license": "MIT",
   "stars": 5,
   "forks": 0,
-  "pushedAt": "2026-09-14T20:56:30Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-22T21:31:54Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -64,6 +64,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
   }
 }

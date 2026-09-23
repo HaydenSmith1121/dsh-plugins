@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Adachi-Hougetsu/dsh-api-tools",
+  "slug": "adachi-hougetsu__dsh-api-tools",
+  "package": "dsh-api-tools-workspace",
+  "name": "dsh-api-tools",
+  "title": "dsh-api-tools",
+  "summary": "给 DeepSeek Harness 加个 API 用量看板，随时看消耗、查会话账本，还能一键重启服务。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "可视化",
+    "成本控制",
+    "快捷操作",
+    "状态持久化"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "Adachi-Hougetsu",
+  "repo": "https://github.com/Adachi-Hougetsu/dsh-api-tools",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T05:56:35Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Adachi-Hougetsu/dsh-api-tools",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-api-meter",
+      "dsh plugin --profile web add ./dsh-ui-api-meter",
+      "dsh plugin --profile web add ./dsh-refresh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

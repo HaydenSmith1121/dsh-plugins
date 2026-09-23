@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "FuLuTang/dsh-message-hub",
+  "slug": "fulutang__dsh-message-hub",
+  "package": "dsh-message-hub",
+  "name": "dsh-message-hub",
+  "title": "dsh-message-hub",
+  "summary": "把 QQ、Telegram、邮件等各路消息渠道统一注册成稳定 ID，让 Agent 和 Web UI 收发消息不用管底层协议。",
+  "tags": [
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "桥接插件",
+    "消息通知",
+    "工具集成",
+    "插件开发"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "FuLuTang",
+  "repo": "https://github.com/FuLuTang/dsh-message-hub",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T21:48:11Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:FuLuTang/dsh-message-hub",
+    "commands": [
+      "dsh plugin --profile web add github:FuLuTang/dsh-message-hub",
+      "dsh plugin --profile web add link:/absolute/path/to/dsh-message-hub"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

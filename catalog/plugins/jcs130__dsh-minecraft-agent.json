@@ -5,16 +5,17 @@
   "package": "dsh-minecraft-agent",
   "name": "dsh-minecraft-agent",
   "title": "dsh-minecraft-agent",
-  "summary": "让 AI 智能体在 Minecraft 世界里自动探索、建造和互动，像真人玩家一样玩游戏。",
+  "summary": "让 AI 智能体直接进入 Minecraft 世界，自动挖矿、建造、探索，替你干活。",
   "tags": [
     "ai-agent",
     "deepseek-harness",
     "dsh-plugin",
     "minecraft",
     "mineflayer",
-    "游戏自动化",
     "AI 助手",
-    "自动建造"
+    "自动化",
+    "工具集成",
+    "多Agent协作"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -47,7 +48,7 @@
     "tarball": null,
     "dshVersion": null,
     "needsConfig": true,
-    "usageNeedsConfig": false,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -55,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
   }
 }

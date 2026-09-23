@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "idoall/dsh-session-colors",
+  "slug": "idoall__dsh-session-colors",
+  "package": "@idoall/dsh-session-colors",
+  "name": "dsh-session-colors",
+  "title": "dsh-session-colors",
+  "summary": "给任意会话加个颜色，侧边栏一眼就能认出它。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "会话管理",
+    "主题",
+    "效率提升",
+    "可视化"
+  ],
+  "version": "0.1.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": {
+    "tag": "v0.1.4",
+    "publishedAt": "2026-09-23T17:49:58Z",
+    "url": "https://github.com/idoall/dsh-session-colors/releases/tag/v0.1.4"
+  },
+  "author": "idoall",
+  "repo": "https://github.com/idoall/dsh-session-colors",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-23T17:51:39Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:idoall/dsh-session-colors",
+    "commands": [
+      "dsh plugin --profile <profile> add @idoall/dsh-session-colors@latest",
+      "dsh plugin --profile <profile> add link:/path/to/dsh-session-colors"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

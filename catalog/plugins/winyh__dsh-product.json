@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "winyh/dsh-product",
+  "slug": "winyh__dsh-product",
+  "package": "dsh-product",
+  "name": "dsh-product",
+  "title": "dsh-product",
+  "summary": "把确认的产品机会结合联网调研和本地项目上下文，变成能验证、能交付、能迭代的产品。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "语义检索",
+    "工作流增强",
+    "内容创作",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "winyh",
+  "repo": "https://github.com/winyh/dsh-product",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T07:20:04Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:winyh/dsh-product",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh@0.1.5-rc.2",
+      "dsh plugin --profile web add github:winyh/dsh-product"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

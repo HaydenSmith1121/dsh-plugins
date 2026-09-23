@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "WSL043/dsh-image-viewer",
   "slug": "wsl043__dsh-image-viewer",
-  "package": null,
+  "package": "dsh-image-viewer",
   "name": "dsh-image-viewer",
   "title": "dsh-image-viewer",
   "summary": "DSH 可选共享图片查看器，支持缩放、原图下载、图库浏览和区域标注，按需使用不占默认位。",
@@ -40,8 +40,8 @@
   "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-22T10:49:25Z",
-  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "pushedAt": "2026-09-23T15:23:05Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -50,10 +50,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "dsh-image-viewer@0.1.0",
+    "method": "github",
+    "spec": "github:WSL043/dsh-image-viewer",
     "commands": [
-      "dsh plugin --profile web add dsh-image-viewer@0.1.0"
+      "dsh plugin --profile web add github:WSL043/dsh-image-viewer"
     ],
     "url": null,
     "sha256": null,
@@ -69,6 +69,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
   }
 }

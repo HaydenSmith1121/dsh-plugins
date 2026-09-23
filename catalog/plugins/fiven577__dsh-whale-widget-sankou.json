@@ -5,7 +5,7 @@
   "package": "dsh-whale-widget-sankou",
   "name": "dsh-whale-widget-sankou",
   "title": "dsh-whale-widget-sankou",
-  "summary": "给 DeepSeek 桌面加个小鲸鱼余额挂件，换成三口皮肤，带语音和动画，余额不足会提醒你。",
+  "summary": "把 DeepSeek 余额做成桌面小鲸鱼挂件，换成「三口」皮肤，还能自定义形象、语音和状态动画。",
   "tags": [
     "deepseek-harness",
     "desktop-pet",
@@ -14,8 +14,9 @@
     "sankou",
     "桌宠",
     "状态监控",
+    "主题",
     "消息通知",
-    "主题"
+    "设置面板"
   ],
   "version": "0.3.0",
   "versionSource": "package.json",
@@ -25,10 +26,10 @@
   "repo": "https://github.com/fiven577/dsh-whale-widget-sankou",
   "homepage": null,
   "license": "MIT",
-  "stars": 2,
+  "stars": 3,
   "forks": 0,
   "pushedAt": "2026-09-22T20:34:15Z",
-  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -48,7 +49,7 @@
     "tarball": null,
     "dshVersion": null,
     "needsConfig": true,
-    "usageNeedsConfig": false,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -56,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
   }
 }

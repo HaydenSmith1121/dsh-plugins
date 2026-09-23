@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Boomerangz/dsh-openrouter-live",
+  "slug": "boomerangz__dsh-openrouter-live",
+  "package": null,
+  "name": "dsh-openrouter-live",
+  "title": "dsh-openrouter-live",
+  "summary": "让 DeepSeek Harness 接入 OpenRouter，实时同步模型列表、价格和花费，选模型不再滞后。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "llm",
+    "openrouter",
+    "模型配置",
+    "模型适配",
+    "成本控制",
+    "状态监控",
+    "工具集成"
+  ],
+  "version": "0.2.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "Boomerangz",
+  "repo": "https://github.com/Boomerangz/dsh-openrouter-live",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T18:57:51Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-openrouter-live",
+    "commands": [
+      "dsh plugin --profile web add dsh-openrouter-live",
+      "git clone https://github.com/Boomerangz/dsh-openrouter-live.git",
+      "npm install"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

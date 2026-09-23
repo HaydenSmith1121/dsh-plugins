@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "skyzhao1223/dsh-agent-token-stats",
+  "slug": "skyzhao1223__dsh-agent-token-stats",
+  "package": "dsh-agent-token-stats",
+  "name": "dsh-agent-token-stats",
+  "title": "dsh-agent-token-stats",
+  "summary": "把 Claude Code、Cursor、DSH 等本地日志汇总成一份 token 账本，随时看用量、缓存命中和花费。",
+  "tags": [
+    "dashboard",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm-cost",
+    "token-usage",
+    "状态监控",
+    "成本控制",
+    "可视化",
+    "内容创作",
+    "工具集成"
+  ],
+  "version": "1.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "skyzhao1223",
+  "repo": "https://github.com/skyzhao1223/dsh-agent-token-stats",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T05:07:47Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:skyzhao1223/dsh-agent-token-stats",
+    "commands": [
+      "dsh plugin --profile web add github:skyzhao1223/dsh-agent-token-stats"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

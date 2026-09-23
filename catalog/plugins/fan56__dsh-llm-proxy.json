@@ -5,13 +5,14 @@
   "package": null,
   "name": "dsh-llm-proxy",
   "title": "dsh-llm-proxy",
-  "summary": "按域名把 LLM 请求分流到不同代理，其余走系统代理或直连，开箱即用。",
+  "summary": "把 LLM 请求按配置分流到指定代理，其余流量走系统代理，没配就直连。",
   "tags": [
     "dsh",
     "dsh-plugin",
-    "模型配置",
-    "安全审查",
-    "零配置"
+    "模型适配",
+    "工具集成",
+    "资源优化",
+    "插件开发"
   ],
   "version": "0.5.0",
   "versionSource": "npm",
@@ -21,10 +22,10 @@
   "repo": "https://github.com/fan56/dsh-llm-proxy",
   "homepage": null,
   "license": "MIT",
-  "stars": 1,
+  "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-12T04:12:14Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-22T07:16:22Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -54,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
   }
 }

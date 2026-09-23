@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "kaijia323/architecture-router-skill",
+  "slug": "kaijia323__architecture-router-skill",
+  "package": null,
+  "name": "architecture-router-skill",
+  "title": "architecture-router-skill",
+  "summary": "架构任务先判场景再按需拉取对应专业 skill，用完即走不占上下文。",
+  "tags": [
+    "agent-skill",
+    "agent-skills",
+    "architecture",
+    "claude-code",
+    "dsh",
+    "AI 助手",
+    "工作流增强",
+    "插件管理",
+    "工程规范",
+    "效率提升"
+  ],
+  "version": null,
+  "versionSource": "none",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "kaijia323",
+  "repo": "https://github.com/kaijia323/architecture-router-skill",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T17:49:45Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:kaijia323/architecture-router-skill",
+    "commands": [
+      "npx skills add kaijia323/architecture-router-skill -g"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

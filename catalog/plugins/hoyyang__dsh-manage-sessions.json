@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "hoyyang/dsh-manage-sessions",
+  "slug": "hoyyang__dsh-manage-sessions",
+  "package": "dsh-manage-sessions",
+  "name": "dsh-manage-sessions",
+  "title": "dsh-manage-sessions",
+  "summary": "在 DSH 侧栏里批量归档、恢复、删除会话，卡死会话可强停，工作区路径一键复制。",
+  "tags": [
+    "archive",
+    "clipboard",
+    "dsh-plugin",
+    "force-stop",
+    "session",
+    "workspace",
+    "会话管理",
+    "快捷操作",
+    "工作区管理",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.7.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": {
+    "tag": "v0.7.0",
+    "publishedAt": "2026-09-22T13:02:19Z",
+    "url": "https://github.com/hoyyang/dsh-manage-sessions/releases/tag/v0.7.0"
+  },
+  "author": "hoyyang",
+  "repo": "https://github.com/hoyyang/dsh-manage-sessions",
+  "homepage": "https://www.npmjs.com/package/dsh-manage-sessions",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-23T13:01:50Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hoyyang/dsh-manage-sessions",
+    "commands": [
+      "dsh plugin add github:hoyyang/dsh-manage-sessions",
+      "dsh plugin add dsh-manage-sessions"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

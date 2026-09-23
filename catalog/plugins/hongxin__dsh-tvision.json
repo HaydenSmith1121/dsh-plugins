@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "hongxin/dsh-tvision",
+  "slug": "hongxin__dsh-tvision",
+  "package": "dsh-tvision",
+  "name": "dsh-tvision",
+  "title": "dsh-tvision",
+  "summary": "给 DeepSeek Harness 智能体套上 Turbo Vision 风格的字符窗口界面，终端里也能开窗操作。",
+  "tags": [
+    "borland",
+    "deepseek",
+    "dsh",
+    "terminal",
+    "tui",
+    "turbo-vision",
+    "主题",
+    "命令行工具",
+    "工具集成",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "hongxin",
+  "repo": "https://github.com/hongxin/dsh-tvision",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-23T02:02:51Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hongxin/dsh-tvision",
+    "commands": [
+      "git clone https://github.com/hongxin/dsh-tvision",
+      "dsh plugin --profile tvision add \"$(pwd)\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

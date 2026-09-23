@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "exynos967/dsh-request-error-dump",
+  "slug": "exynos967__dsh-request-error-dump",
+  "package": "dsh-request-error-dump",
+  "name": "dsh-request-error-dump",
+  "title": "dsh-request-error-dump",
+  "summary": "模型请求报错时，把完整请求体和上游原始错误响应一起存成 JSON，方便事后排查 401、429 等问题。",
+  "tags": [
+    "debugging",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "observability",
+    "request-dump",
+    "状态监控",
+    "模型配置",
+    "证据链",
+    "文件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "exynos967",
+  "repo": "https://github.com/exynos967/dsh-request-error-dump",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T06:02:05Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:exynos967/dsh-request-error-dump",
+    "commands": [
+      "dsh plugin --profile web add github:exynos967/dsh-request-error-dump"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "viyu-tech/dsh-input-limit",
+  "slug": "viyu-tech__dsh-input-limit",
+  "package": null,
+  "name": "dsh-input-limit",
+  "title": "dsh-input-limit",
+  "summary": "在 dsh 对话页直接设置当前模型的上下文窗口上限，避免超长输入报错。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "模型适配",
+    "设置面板",
+    "快捷操作",
+    "前端增强"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-22T22:21:35Z",
+    "url": "https://github.com/viyu-tech/dsh-input-limit/releases/tag/v0.1.1"
+  },
+  "author": "viyu-tech",
+  "repo": "https://github.com/viyu-tech/dsh-input-limit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T22:18:53Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-input-limit",
+    "commands": [
+      "dsh plugin --profile web add dsh-input-limit",
+      "dsh plugin --profile web add github:<you>/dsh-input-limit"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

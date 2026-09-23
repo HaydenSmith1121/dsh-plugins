@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "MarchLiu/dsh-cf-sas",
+  "slug": "marchliu__dsh-cf-sas",
+  "package": "dsh-security-audit",
+  "name": "dsh-cf-sas",
+  "title": "dsh-cf-sas",
+  "summary": "给项目做安全体检，自动扫描代码风险并生成审计报告，帮你提前发现隐患。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "security-audit",
+    "安全审计",
+    "内容创作",
+    "代码验证",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "MarchLiu",
+  "repo": "https://github.com/MarchLiu/dsh-cf-sas",
+  "homepage": null,
+  "license": null,
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-22T10:37:12Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MarchLiu/dsh-cf-sas",
+    "commands": [
+      "dsh plugin --profile web add github:MarchLiu/dsh-cf-sas"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

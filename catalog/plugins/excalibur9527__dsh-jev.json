@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "Excalibur9527/dsh-jev",
+  "slug": "excalibur9527__dsh-jev",
+  "package": "dsh-jev",
+  "name": "dsh-jev",
+  "title": "dsh-jev",
+  "summary": "每轮对话自动识别你的情绪和意图，把结果喂给模型，让回复更懂你。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "模型配置",
+    "AI 助手",
+    "设置面板",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-22T10:14:23Z",
+    "url": "https://github.com/Excalibur9527/dsh-jev/releases/tag/v0.1.0"
+  },
+  "author": "Excalibur9527",
+  "repo": "https://github.com/Excalibur9527/dsh-jev",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-23T07:23:35Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Excalibur9527/dsh-jev",
+    "commands": [
+      "dsh plugin --profile web add github:Excalibur9527/dsh-jev",
+      "dsh plugin --profile web add /path/to/dsh-jev"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "LovelyDazai/dsh-model-selector",
+  "slug": "lovelydazai__dsh-model-selector",
+  "package": "dsh-model-menu-search",
+  "name": "dsh-model-selector",
+  "title": "dsh-model-selector",
+  "summary": "给 DeepSeek Harness 的模型下拉菜单加个搜索框，打字就能快速找到想要的模型。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-desktop",
+    "dsh-plugin",
+    "dsh-plugin-desktop",
+    "dsh-plugins",
+    "searchtool",
+    "模型适配",
+    "效率提升",
+    "前端增强",
+    "快捷操作"
+  ],
+  "version": "1.0.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": {
+    "tag": "v1.0.3",
+    "publishedAt": "2026-09-23T03:55:42Z",
+    "url": "https://github.com/LovelyDazai/dsh-model-menu-search/releases/tag/v1.0.3"
+  },
+  "author": "LovelyDazai",
+  "repo": "https://github.com/LovelyDazai/dsh-model-selector",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-23T03:55:42Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LovelyDazai/dsh-model-selector",
+    "commands": [
+      "dsh plugin --profile web add github:LovelyDazai/dsh-model-selector"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

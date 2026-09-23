@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Edge-Echo/dsh-netassist",
+  "slug": "edge-echo__dsh-netassist",
+  "package": null,
+  "name": "dsh-netassist",
+  "title": "dsh-netassist",
+  "summary": "一键检测 GitHub 连通性、系统代理状态和端口，排查网络与代理问题，还能扫描 hosts 冲突。",
+  "tags": [
+    "connectivity",
+    "deepseek-harness",
+    "diagnostics",
+    "dsh-plugin",
+    "network",
+    "proxy",
+    "troubleshooting",
+    "状态监控",
+    "诊断工具",
+    "网络检测",
+    "代理排查"
+  ],
+  "version": "0.2.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "Edge-Echo",
+  "repo": "https://github.com/Edge-Echo/dsh-netassist",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-22T15:29:36Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-netassist",
+    "commands": [
+      "dsh plugin --profile web add dsh-netassist"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

@@ -5,11 +5,15 @@
   "package": null,
   "name": "dsh-tdai-memory",
   "title": "dsh-tdai-memory",
-  "summary": "为 DeepSeek Harness 提供持久化记忆能力，让智能体在对话中记住关键信息，实现跨会话的连续交互体验。",
+  "summary": "给 DeepSeek Harness 的 AI 助手加上长期记忆，让它记住聊过的内容，越用越懂你。",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
-    "会话管理"
+    "状态持久化",
+    "AI 助手",
+    "语义检索",
+    "会话管理",
+    "插件开发"
   ],
   "version": "0.3.3",
   "versionSource": "npm",
@@ -19,10 +23,10 @@
   "repo": "https://github.com/Scorp1o117/dsh-tdai-memory",
   "homepage": null,
   "license": "MIT",
-  "stars": 6,
-  "forks": 0,
-  "pushedAt": "2026-09-03T13:29:04Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "stars": 7,
+  "forks": 1,
+  "pushedAt": "2026-09-22T10:52:28Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -41,8 +45,8 @@
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -50,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
   }
 }

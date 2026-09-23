@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "bb-boy680/dsh-newapi",
+  "slug": "bb-boy680__dsh-newapi",
+  "package": "dsh-newapi",
+  "name": "dsh-newapi",
+  "title": "dsh-newapi",
+  "summary": "让 New API 网关跟着 Harness 一起启动，自动配好端口和密钥，Claude Code 接入信息一键就位。",
+  "tags": [
+    "dsh",
+    "dsh-plugins",
+    "桥接插件",
+    "零配置",
+    "模型适配",
+    "自动化",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "bb-boy680",
+  "repo": "https://github.com/bb-boy680/dsh-newapi",
+  "homepage": null,
+  "license": "AGPL-3.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-23T10:29:31Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:bb-boy680/dsh-newapi",
+    "commands": [
+      "dsh plugin --profile web add github:bb-boy680/dsh-newapi"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

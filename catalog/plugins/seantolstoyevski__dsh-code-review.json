@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "SeanTolstoyevski/dsh-code-review",
+  "slug": "seantolstoyevski__dsh-code-review",
+  "package": "@local/dsh-code-review",
+  "name": "dsh-code-review",
+  "title": "dsh-code-review",
+  "summary": "在 DeepSeek Harness 里输入 /review，就能让审查模型检查工作区未提交的改动并生成报告。",
+  "tags": [
+    "code-review",
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "diff",
+    "dsh-plugin",
+    "llm",
+    "变更审查",
+    "代码验证",
+    "内容创作",
+    "快捷操作"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "SeanTolstoyevski",
+  "repo": "https://github.com/SeanTolstoyevski/dsh-code-review",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T20:31:11Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:SeanTolstoyevski/dsh-code-review",
+    "commands": [
+      "dsh plugin --profile web add github:SeanTolstoyevski/dsh-code-review"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

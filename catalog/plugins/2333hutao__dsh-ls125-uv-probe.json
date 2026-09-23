@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "2333hutao/dsh-ls125-uv-probe",
+  "slug": "2333hutao__dsh-ls125-uv-probe",
+  "package": null,
+  "name": "dsh-ls125-uv-probe",
+  "title": "dsh-ls125-uv-probe",
+  "summary": "把林上 LS125 紫外辐照计和 UVALED-X3 探头的私有串口协议逆向出来，做成 DSH 技能，附带抓包解码工具链和可用的 STM32 主机固件。",
+  "tags": [
+    "dsh-plugin",
+    "reverse-engineering",
+    "stm32",
+    "uart",
+    "工具集成",
+    "命令行工具",
+    "代码验证",
+    "文档",
+    "工程规范"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "2333hutao",
+  "repo": "https://github.com/2333hutao/dsh-ls125-uv-probe",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T17:33:41Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-ls125-uv-probe",
+    "commands": [
+      "dsh plugin --profile web add dsh-ls125-uv-probe",
+      "dsh plugin --profile web add github:2333hutao/dsh-ls125-uv-probe"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

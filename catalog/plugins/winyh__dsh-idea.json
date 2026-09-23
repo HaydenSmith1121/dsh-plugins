@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "winyh/dsh-idea",
+  "slug": "winyh__dsh-idea",
+  "package": "dsh-idea",
+  "name": "dsh-idea",
+  "title": "dsh-idea",
+  "summary": "帮你从外部机会和市场变化里挖出真实需求，用证据支撑产品发现。",
+  "tags": [
+    "dsh-plugin",
+    "证据链",
+    "语义检索",
+    "内容创作",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "winyh",
+  "repo": "https://github.com/winyh/dsh-idea",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T07:20:03Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:winyh/dsh-idea",
+    "commands": [
+      "npm install -g @deepseek-ai/dsh@0.1.5-rc.2",
+      "dsh plugin --profile web add github:winyh/dsh-idea"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

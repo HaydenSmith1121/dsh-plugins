@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Leawind/dsh-ops-mcp",
+  "slug": "leawind__dsh-ops-mcp",
+  "package": "dsh-ops-mcp",
+  "name": "dsh-ops-mcp",
+  "title": "dsh-ops-mcp",
+  "summary": "在 dsh 里跑一个 MCP 服务，让任意 MCP 客户端都能调用会话、任务队列和工作区管理。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "mcp",
+    "工具集成",
+    "会话管理",
+    "工作区管理",
+    "桥接插件",
+    "自动化"
+  ],
+  "version": "0.5.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "Leawind",
+  "repo": "https://github.com/Leawind/dsh-ops-mcp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T19:09:21Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Leawind/dsh-ops-mcp",
+    "commands": [
+      "git clone https://github.com/Leawind/dsh-ops-mcp.git",
+      "npm install && npm run build"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "121212165/dsh-plugin-token-telemetry",
+  "slug": "121212165__dsh-plugin-token-telemetry",
+  "package": "dsh-token-telemetry",
+  "name": "dsh-plugin-token-telemetry",
+  "title": "dsh-plugin-token-telemetry",
+  "summary": "把真实运行数据变成每轮对话的 token 吞吐卡片和整体 TPS 视图，方便盯住速度与消耗。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "observability",
+    "token-telemetry",
+    "状态监控",
+    "可视化",
+    "成本控制",
+    "资源优化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "121212165",
+  "repo": "https://github.com/121212165/dsh-plugin-token-telemetry",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-23T00:02:14Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:121212165/dsh-plugin-token-telemetry",
+    "commands": [
+      "dsh plugin --profile web add github:121212165/dsh-plugin-token-telemetry"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

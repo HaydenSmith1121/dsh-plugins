@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "Creakono/dsh-cost-meter",
+  "slug": "creakono__dsh-cost-meter",
+  "package": "dsh-cost-meter",
+  "name": "dsh-cost-meter",
+  "title": "dsh-cost-meter",
+  "summary": "按你配置的价目表自动算 token 花费，支持峰谷电价，花钱心里有数。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "成本控制",
+    "状态监控",
+    "设置面板",
+    "资源优化"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "Creakono",
+  "repo": "https://github.com/Creakono/dsh-cost-meter",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-22T14:08:45Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Creakono/dsh-cost-meter",
+    "commands": [
+      "dsh plugin --profile web add github:Creakono/dsh-cost-meter"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

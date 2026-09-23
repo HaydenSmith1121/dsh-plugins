@@ -5,19 +5,20 @@
   "package": "dsh-go-usage",
   "name": "dsh-go",
   "title": "dsh-go",
-  "summary": "在 DSH 里实时查看 OpenCode GO 套餐剩余额度，并统计各模型 Token 消耗和费用。",
+  "summary": "在 DSH 里实时查看 OpenCode GO 套餐剩余额度，并按模型统计 Token 消耗和估算花费。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "opencode",
-    "套餐监控",
-    "额度查询",
-    "状态监控"
+    "状态监控",
+    "成本控制",
+    "可视化",
+    "模型配置"
   ],
   "version": "0.1.20",
-  "versionSource": "package.json",
-  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
   "latestRelease": null,
   "author": "6pofx",
   "repo": "https://github.com/6pofx/dsh-go",
@@ -35,9 +36,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:6pofx/dsh-go",
+    "method": "npm",
+    "spec": "dsh-go-usage",
     "commands": [
+      "dsh plugin --profile web add dsh-go-usage",
       "dsh plugin --profile web add github:6pofx/dsh-go",
       "dsh plugin --profile web install"
     ],
@@ -47,7 +49,7 @@
     "tarball": null,
     "dshVersion": null,
     "needsConfig": true,
-    "usageNeedsConfig": false,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -55,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
   }
 }

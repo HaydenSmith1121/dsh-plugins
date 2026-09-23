@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "wakeup595626-cmyk/dsh-drop-to-path",
+  "slug": "wakeup595626-cmyk__dsh-drop-to-path",
+  "package": "@dsh-external/dsh-drop-to-path",
+  "name": "dsh-drop-to-path",
+  "title": "dsh-drop-to-path",
+  "summary": "把图片、PDF、Office 文档、压缩包和音视频拖进来，自动转成工作区文件路径，让纯文本模型也能用上这些文件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "文件管理",
+    "工具集成",
+    "快捷操作",
+    "模型配置",
+    "效率提升"
+  ],
+  "version": "0.2.6",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": {
+    "tag": "v0.2.6",
+    "publishedAt": "2026-09-22T15:33:17Z",
+    "url": "https://github.com/wakeup595626-cmyk/dsh-drop-to-path/releases/tag/v0.2.6"
+  },
+  "author": "wakeup595626-cmyk",
+  "repo": "https://github.com/wakeup595626-cmyk/dsh-drop-to-path",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-22T15:33:16Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wakeup595626-cmyk/dsh-drop-to-path",
+    "commands": [
+      "dsh plugin --profile web add github:wakeup595626-cmyk/dsh-drop-to-path"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

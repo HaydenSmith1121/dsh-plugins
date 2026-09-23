@@ -5,13 +5,14 @@
   "package": null,
   "name": "agent-guild",
   "title": "agent-guild",
-  "summary": "让本机多个 AI 智能体共享同一份身份、规则和记忆，纯本地文件，无需服务器。",
+  "summary": "让任何 AI agent 只读一个文件就能接入你的共享记忆，轻松组队协作。",
   "tags": [
     "dsh-plugin",
-    "多智能体协作",
-    "状态持久化",
+    "多Agent协作",
+    "桥接插件",
+    "文件管理",
     "零配置",
-    "文件管理"
+    "效率提升"
   ],
   "version": "3.10.0",
   "versionSource": "github-release",
@@ -40,7 +41,7 @@
     "method": "github",
     "spec": "github:dqsjqian/agent-guild",
     "commands": [
-      "dsh plugin --profile web add github:dqsjqian/agent-guild"
+      "curl -fsSL https://raw.githubusercontent.com/dqsjqian/agent-guild/main/scripts/install.sh | bash"
     ],
     "url": null,
     "sha256": null,
@@ -49,13 +50,15 @@
     "dshVersion": null,
     "needsConfig": false,
     "usageNeedsConfig": false,
-    "risky": false,
-    "riskyReasons": []
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
   },
   "source": {
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
   }
 }

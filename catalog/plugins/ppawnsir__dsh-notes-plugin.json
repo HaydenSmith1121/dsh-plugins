@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "PPawnsir/dsh-notes-plugin",
+  "slug": "ppawnsir__dsh-notes-plugin",
+  "package": "dsh-notes-plugin",
+  "name": "dsh-notes-plugin",
+  "title": "dsh-notes-plugin",
+  "summary": "在 DSH 里随手记 Markdown 笔记，自动分类、注入约定、一键派发待办给会话执行。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "效率提升",
+    "报告生成",
+    "自动化",
+    "工具集成",
+    "状态持久化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "PPawnsir",
+  "repo": "https://github.com/PPawnsir/dsh-notes-plugin",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-23T08:57:33Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:PPawnsir/dsh-notes-plugin",
+    "commands": [
+      "dsh plugin --profile web add github:PPawnsir/dsh-notes-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "wakeup595626-cmyk/dsh-token-ledger",
+  "slug": "wakeup595626-cmyk__dsh-token-ledger",
+  "package": "@dsh-external/dsh-token-ledger",
+  "name": "dsh-token-ledger",
+  "title": "dsh-token-ledger",
+  "summary": "实时记录并回填 DSH 的历史 token 用量，用悬浮面板和 HTTP API 随时查看统计。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "状态监控",
+    "成本控制",
+    "可视化",
+    "状态持久化",
+    "工具集成"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-22T15:33:22Z",
+    "url": "https://github.com/wakeup595626-cmyk/dsh-token-ledger/releases/tag/v0.1.1"
+  },
+  "author": "wakeup595626-cmyk",
+  "repo": "https://github.com/wakeup595626-cmyk/dsh-token-ledger",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-22T15:33:21Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wakeup595626-cmyk/dsh-token-ledger",
+    "commands": [
+      "dsh plugin --profile web add github:wakeup595626-cmyk/dsh-token-ledger"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "Zh0uHX/dsh-skills",
+  "slug": "zh0uhx__dsh-skills",
+  "package": "dsh-skills",
+  "name": "dsh-skills",
+  "title": "dsh-skills",
+  "summary": "在 DSH 设置里直接搜索、安装和管理 Skills.sh 技能，装插件一样简单。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "skills-sh",
+    "插件管理",
+    "工具集成",
+    "设置面板",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-22T12:23:12Z",
+    "url": "https://github.com/Zh0uHX/dsh-skills/releases/tag/v0.1.0"
+  },
+  "author": "Zh0uHX",
+  "repo": "https://github.com/Zh0uHX/dsh-skills",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T12:23:12Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Zh0uHX/dsh-skills",
+    "commands": [
+      "dsh plugin --profile web add github:Zh0uHX/dsh-skills"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

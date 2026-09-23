@@ -5,16 +5,16 @@
   "package": "dsh-deepseek-billing",
   "name": "dsh-deepseek-billing",
   "title": "dsh-deepseek-billing",
-  "summary": "在 DSH 网页版左侧边栏实时显示 DeepSeek 余额，并估算每次会话的花费，帮你控制成本。",
+  "summary": "在 DSH 网页版侧边栏常驻显示 DeepSeek 余额，并按会话估算花费，帮你随时掌握用量。",
   "tags": [
     "deepseek",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "余额显示",
     "状态监控",
     "成本控制",
-    "会话统计"
+    "前端增强",
+    "可视化"
   ],
   "version": "0.1.0-rc.11",
   "versionSource": "package.json",
@@ -48,7 +48,7 @@
     "tarball": null,
     "dshVersion": null,
     "needsConfig": true,
-    "usageNeedsConfig": false,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -56,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
   }
 }

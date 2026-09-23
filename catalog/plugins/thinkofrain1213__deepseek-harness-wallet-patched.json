@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ThinkofRain1213/deepseek-harness-wallet-patched",
+  "slug": "thinkofrain1213__deepseek-harness-wallet-patched",
+  "package": null,
+  "name": "deepseek-harness-wallet-patched",
+  "title": "deepseek-harness-wallet-patched",
+  "summary": "给 DeepSeek Harness 钱包打补丁：支持改名后模型的峰谷计费、模型池自动同步价格并持久化保存。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "成本控制",
+    "模型适配",
+    "状态持久化",
+    "工具集成"
+  ],
+  "version": "0.3.13-patched.5",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "ThinkofRain1213",
+  "repo": "https://github.com/ThinkofRain1213/deepseek-harness-wallet-patched",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-22T05:24:45Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "deepseek-harness-wallet-patched",
+    "commands": [
+      "dsh plugin --profile web add deepseek-harness-wallet-patched",
+      "dsh plugin --profile web add github:ThinkofRain1213/deepseek-harness-wallet-patched"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

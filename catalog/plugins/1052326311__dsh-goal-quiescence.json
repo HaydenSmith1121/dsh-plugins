@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "1052326311/dsh-goal-quiescence",
+  "slug": "1052326311__dsh-goal-quiescence",
+  "package": "dsh-goal-quiescence",
+  "name": "dsh-goal-quiescence",
+  "title": "dsh-goal-quiescence",
+  "summary": "给目标模式子智能体加一道完成关卡，证据没跑完就不许收工，避免提前交差。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "subagent",
+    "多Agent协作",
+    "证据链",
+    "状态监控",
+    "工作流增强"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-22T04:29:16Z",
+    "url": "https://github.com/1052326311/dsh-goal-quiescence/releases/tag/v0.1.1"
+  },
+  "author": "1052326311",
+  "repo": "https://github.com/1052326311/dsh-goal-quiescence",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-22T04:29:00Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:1052326311/dsh-goal-quiescence",
+    "commands": [
+      "dsh plugin --profile web add ./dsh-goal-quiescence-<version>.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

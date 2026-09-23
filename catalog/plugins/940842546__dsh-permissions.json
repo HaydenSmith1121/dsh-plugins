@@ -5,15 +5,16 @@
   "package": null,
   "name": "dsh-permissions",
   "title": "dsh-permissions",
-  "summary": "为 DeepSeek Harness 提供细粒度的权限管理，控制插件和智能体的访问范围，保障使用安全。",
+  "summary": "给 DSH 插件加上权限管控，限制智能体能访问哪些工具和资源，防止越权操作。",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
     "permissions",
     "security",
+    "安全审计",
     "插件管理",
-    "安全审查",
-    "权限控制"
+    "设置面板",
+    "工程规范"
   ],
   "version": "2.0.2",
   "versionSource": "package.json",
@@ -54,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
   }
 }

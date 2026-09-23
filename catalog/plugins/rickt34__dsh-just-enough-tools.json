@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "RickT34/dsh-just-enough-tools",
+  "slug": "rickt34__dsh-just-enough-tools",
+  "package": "dsh-just-enough-tools",
+  "name": "dsh-just-enough-tools",
+  "title": "dsh-just-enough-tools",
+  "summary": "让主模型先规划再按需调用工具和技能，省下近一半成本还不掉准确率。",
+  "tags": [
+    "deepseek-harness",
+    "deepseek-harness-plugin",
+    "dsh-plugin",
+    "dsh-plugins",
+    "jev",
+    "jev-ai",
+    "成本控制",
+    "工具集成",
+    "工作流增强",
+    "模型配置"
+  ],
+  "version": "0.5.3",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": null,
+  "author": "RickT34",
+  "repo": "https://github.com/RickT34/dsh-just-enough-tools",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-23T08:16:00Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:RickT34/dsh-just-enough-tools",
+    "commands": [
+      "dsh plugin --profile web add /absolute/path/to/just-enough-tools/dsh-just-enough-tools-0.4.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}

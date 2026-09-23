@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "emiltsoi/dsh-fleet-mesh",
+  "slug": "emiltsoi__dsh-fleet-mesh",
+  "package": "dsh-fleet-mesh",
+  "name": "dsh-fleet-mesh",
+  "title": "dsh-fleet-mesh",
+  "summary": "给 DSH 智能体加上带会话记忆的网状消息中继，让多智能体像聊天一样协作，消息经 Ed25519 签名更安全。",
+  "tags": [
+    "agent-to-agent",
+    "deepseek-harness",
+    "dsh-plugin",
+    "ed25519",
+    "mesh",
+    "多Agent协作",
+    "会话管理",
+    "消息通知",
+    "安全审计",
+    "桥接插件"
+  ],
+  "version": "0.2.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "latestRelease": {
+    "tag": "v0.2.4",
+    "publishedAt": "2026-09-23T05:32:51Z",
+    "url": "https://github.com/emiltsoi/dsh-fleet-mesh/releases/tag/v0.2.4"
+  },
+  "author": "emiltsoi",
+  "repo": "https://github.com/emiltsoi/dsh-fleet-mesh",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-23T05:32:51Z",
+  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:emiltsoi/dsh-fleet-mesh",
+    "commands": [
+      "pnpm add dsh-fleet-mesh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-23T21:11:03.116Z",
+    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+  }
+}
