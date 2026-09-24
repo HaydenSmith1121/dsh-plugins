@@ -5,7 +5,7 @@
   "package": "@dsh-external/dsh-prompt-optimizer",
   "name": "dsh-prompt-optimizer",
   "title": "dsh-prompt-optimizer",
-  "summary": "把一句话补成带出处的执行指令，只搬依据不编造，让下游一次做对。",
+  "summary": "发送前帮你理清这轮到底要什么，原话不改，理解随行交给 AI。",
   "tags": [
     "agent-workflow",
     "ai-agent",
@@ -20,24 +20,25 @@
     "AI 助手",
     "效率提升",
     "工作流增强",
-    "模型配置"
+    "模型适配",
+    "提示词优化"
   ],
-  "version": "0.6.8-stable",
+  "version": "0.6.10",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-22T20:57:33.766Z",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
   "latestRelease": {
-    "tag": "v0.6.8-stable",
-    "publishedAt": "2026-09-22T15:34:30Z",
-    "url": "https://github.com/WestFox-AwA/dsh-prompt-optimizer/releases/tag/v0.6.8-stable"
+    "tag": "v0.6.10",
+    "publishedAt": "2026-09-24T03:36:51Z",
+    "url": "https://github.com/WestFox-AwA/dsh-prompt-optimizer/releases/tag/v0.6.10"
   },
   "author": "WestFox-AwA",
   "repo": "https://github.com/WestFox-AwA/dsh-prompt-optimizer",
   "homepage": null,
   "license": "BSD-3-Clause",
-  "stars": 82,
+  "stars": 83,
   "forks": 8,
-  "pushedAt": "2026-09-23T15:22:43Z",
-  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "pushedAt": "2026-09-24T10:58:23Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -49,9 +50,7 @@
     "method": "github",
     "spec": "github:WestFox-AwA/dsh-prompt-optimizer",
     "commands": [
-      "dsh plugin --profile web add https://github.com/WestFox-AwA/dsh-prompt-optimizer/releases/latest/download/dsh-external-dsh-prompt-optimizer.tgz",
-      "dsh plugin --profile web add github:WestFox-AwA/dsh-prompt-optimizer",
-      "dsh plugin --profile web add ./dsh-external-dsh-prompt-optimizer-0.4.6-beta.6.tgz"
+      "dsh plugin --profile po061 add \"$d\\dsh-external-dsh-po06-$v.tgz\""
     ],
     "url": null,
     "sha256": null,
@@ -67,6 +66,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

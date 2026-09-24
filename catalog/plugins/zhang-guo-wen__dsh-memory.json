@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "zhang-guo-wen/dsh-memory",
+  "slug": "zhang-guo-wen__dsh-memory",
+  "package": "@guowenzhang/dsh-memory",
+  "name": "dsh-memory",
+  "title": "dsh-memory",
+  "summary": "给 DSH 会话加一个 Claude 风格的记忆目录，用 MEMORY.md 索引和主题文件长期记住上下文。",
+  "tags": [
+    "dsh-plugin",
+    "状态持久化",
+    "AI 助手",
+    "设置面板",
+    "文件管理",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
+  "author": "zhang-guo-wen",
+  "repo": "https://github.com/zhang-guo-wen/dsh-memory",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T10:02:46Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhang-guo-wen/dsh-memory",
+    "commands": [
+      "dsh plugin --profile web add github:zhang-guo-wen/dsh-memory"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

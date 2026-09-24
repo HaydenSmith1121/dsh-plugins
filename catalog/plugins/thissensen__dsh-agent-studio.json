@@ -11,7 +11,7 @@
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "多Agent协作",
+    "多智能体协作",
     "模型适配",
     "可视化",
     "工作流增强",
@@ -25,10 +25,10 @@
   "repo": "https://github.com/thissensen/dsh-agent-studio",
   "homepage": "https://thissensen.github.io/dsh-agent-studio/",
   "license": "MIT",
-  "stars": 3,
+  "stars": 6,
   "forks": 0,
-  "pushedAt": "2026-09-21T20:36:08Z",
-  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "pushedAt": "2026-09-23T19:15:32Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -41,7 +41,7 @@
     "spec": "dsh-agent-studio",
     "commands": [
       "dsh plugin --profile web add dsh-agent-studio",
-      "dsh plugin --profile web add \"./dsh-agent-studio-0.1.2.tgz\"",
+      "dsh plugin --profile web add \"./dsh-agent-studio-0.1.4.tgz\"",
       "git clone https://github.com/thissensen/dsh-agent-studio.git dsh-agent-studio"
     ],
     "url": null,
@@ -58,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

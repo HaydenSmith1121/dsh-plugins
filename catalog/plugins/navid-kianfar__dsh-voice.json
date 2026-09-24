@@ -46,9 +46,7 @@
     "method": "npm",
     "spec": "@achasoft/dsh-voice",
     "commands": [
-      "dsh plugin --profile default add @achasoft/dsh-voice",
-      "dsh plugin --profile default add ./achasoft-dsh-voice-0.1.0.tgz",
-      "dsh plugin --profile default add ./dsh-voice"
+      "dsh plugin --profile web add @achasoft/dsh-voice"
     ],
     "url": null,
     "sha256": null,
@@ -64,6 +62,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-21T22:03:40.491Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

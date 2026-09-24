@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "id": "itchenshi/dsh-gui-last-session",
   "slug": "itchenshi__dsh-gui-last-session",
-  "package": null,
+  "package": "dsh-gui-last-session",
   "name": "dsh-gui-last-session",
   "title": "dsh-gui-last-session",
-  "summary": "重启 DSH 后自动回到上次的对话，不用再手动翻找，也不用改引擎文件。",
+  "summary": "重启 DeepSeek Harness 后自动回到上次的对话，不用改引擎文件。",
   "tags": [
     "cordis",
     "deepseek-harness",
@@ -16,7 +16,7 @@
     "会话管理",
     "状态持久化",
     "效率提升",
-    "插件管理"
+    "快捷操作"
   ],
   "version": "0.1.2",
   "versionSource": "github-release",
@@ -32,8 +32,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-23T02:33:31Z",
-  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "pushedAt": "2026-09-24T07:07:43Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -42,10 +42,11 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "dsh-gui-last-session",
+    "method": "github",
+    "spec": "github:itchenshi/dsh-gui-last-session",
     "commands": [
-      "dsh plugin --profile web add dsh-gui-last-session"
+      "git clone https://github.com/itchenshi/dsh-gui-last-session.git",
+      "dsh plugin --profile web add file:<clone 出来的绝对路径>"
     ],
     "url": null,
     "sha256": null,
@@ -61,6 +62,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-22T20:57:33.766Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "lovedheart/dsh-plugin-telegram",
+  "slug": "lovedheart__dsh-plugin-telegram",
+  "package": "dsh-plugin-telegram",
+  "name": "dsh-plugin-telegram",
+  "title": "dsh-plugin-telegram",
+  "summary": "把 Telegram 机器人接进 DSH，收发消息都能搞定，还能长轮询自动收取新消息。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "桥接插件",
+    "自动化",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-08-14T05:27:53Z",
+    "url": "https://github.com/lovedheart/dsh-plugin-telegram/releases/tag/v0.1.0"
+  },
+  "author": "lovedheart",
+  "repo": "https://github.com/lovedheart/dsh-plugin-telegram",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-24T05:38:30Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lovedheart/dsh-plugin-telegram",
+    "commands": [
+      "dsh plugin --profile web add github:lovedheart/dsh-plugin-telegram"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "Juntiantan/dsh-permission-gate",
+  "slug": "juntiantan__dsh-permission-gate",
+  "package": null,
+  "name": "dsh-permission-gate",
+  "title": "dsh-permission-gate",
+  "summary": "给 DSH 加一道界面访问锁，登录一次全站解锁，还能一键刹住 Agent 工具调用。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "设置面板",
+    "状态持久化",
+    "会话管理",
+    "操作回滚"
+  ],
+  "version": "1.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
+  "author": "Juntiantan",
+  "repo": "https://github.com/Juntiantan/dsh-permission-gate",
+  "homepage": "https://www.npmjs.com/package/dsh-permission-gate",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-23T03:53:12Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-permission-gate",
+    "commands": [
+      "dsh plugin --profile web add dsh-permission-gate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "GooDAnDReaDY/dsh-test-pilot",
+  "slug": "goodandready__dsh-test-pilot",
+  "package": "@goodandready/dsh-test-pilot",
+  "name": "dsh-test-pilot",
+  "title": "dsh-test-pilot",
+  "summary": "文件改动后自动跑测试并把结果反馈回来，同一个对话回合内就能看到，省去手动验证。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "代码审查",
+    "开发增强",
+    "效率提升"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-23T20:10:12Z",
+    "url": "https://github.com/GooDAnDReaDY/dsh-test-pilot/releases/tag/v0.1.2"
+  },
+  "author": "GooDAnDReaDY",
+  "repo": "https://github.com/GooDAnDReaDY/dsh-test-pilot",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-23T20:08:40Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:GooDAnDReaDY/dsh-test-pilot",
+    "commands": [
+      "dsh plugin --profile web add github:GooDAnDReaDY/dsh-test-pilot"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

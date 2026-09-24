@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "Neptune810/dsh-power-button",
+  "slug": "neptune810__dsh-power-button",
+  "package": "dsh-power-button",
+  "name": "dsh-power-button",
+  "title": "dsh-power-button",
+  "summary": "在 DSH 网页界面放一个可拖动的电源按钮，一键重启或停止 dsh web 服务，还能实时看运行状态。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "快捷操作",
+    "状态监控",
+    "前端增强",
+    "插件管理"
+  ],
+  "version": "0.3.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
+  "author": "Neptune810",
+  "repo": "https://github.com/Neptune810/dsh-power-button",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-23T06:45:04Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Neptune810/dsh-power-button",
+    "commands": [
+      "dsh plugin --profile web add github:Neptune810/dsh-power-button"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

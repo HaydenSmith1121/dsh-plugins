@@ -46,7 +46,8 @@
     "method": "github",
     "spec": "github:hasan-aghayev/dsh-session-resilience",
     "commands": [
-      "dsh plugin --profile web add github:hasan-aghayev/dsh-session-resilience"
+      "dsh plugin --profile <profile> add https://github.com/hasan-aghayev/dsh-session-resilience",
+      "dsh plugin --profile <profile> remove dsh-session-resilience"
     ],
     "url": null,
     "sha256": null,
@@ -62,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

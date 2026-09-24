@@ -8,10 +8,10 @@
   "summary": "让主模型自动拆解任务、按依赖派活给多个智能体，最后统一审查结果。",
   "tags": [
     "dsh-plugin",
-    "多Agent协作",
+    "多智能体协作",
     "工作流增强",
     "自动化",
-    "变更审查",
+    "代码审查",
     "效率提升"
   ],
   "version": "1.0.5",
@@ -41,7 +41,8 @@
     "method": "github",
     "spec": "github:hasan-aghayev/dsh-task-orchestrator",
     "commands": [
-      "dsh plugin --profile web add github:hasan-aghayev/dsh-task-orchestrator"
+      "dsh plugin --profile web add https://github.com/hasan-aghayev/dsh-task-orchestrator.git",
+      "dsh plugin --profile web remove dsh-task-orchestrator"
     ],
     "url": null,
     "sha256": null,
@@ -57,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "zhang-guo-wen/dsh-ui-beautify",
+  "slug": "zhang-guo-wen__dsh-ui-beautify",
+  "package": "@guowenzhang/dsh-ui-beautify",
+  "name": "dsh-ui-beautify",
+  "title": "dsh-ui-beautify",
+  "summary": "给 DeepSeek Harness 的网页界面换个好看的正文中文字体，字体随插件自带，不用自己装。",
+  "tags": [
+    "dsh-plugin",
+    "主题",
+    "界面美化",
+    "设置面板",
+    "前端增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
+  "author": "zhang-guo-wen",
+  "repo": "https://github.com/zhang-guo-wen/dsh-ui-beautify",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T10:02:49Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhang-guo-wen/dsh-ui-beautify",
+    "commands": [
+      "dsh plugin --profile web add C:/02-codespace/deepseek-harness/dsh-ui-beautify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

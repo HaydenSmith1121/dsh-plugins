@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "chinazkk/dsh-console",
+  "slug": "chinazkk__dsh-console",
+  "package": "dsh-console",
+  "name": "dsh-console",
+  "title": "dsh-console",
+  "summary": "在 DSH 主视图里开真 PTY 终端，iTerm 风格多标签，vim、top、Ctrl+C 都能用，不用离开聊天就能跑命令。",
+  "tags": [
+    "console",
+    "cordis",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "interactive-terminal",
+    "pty",
+    "terminal",
+    "web-pty",
+    "xterm",
+    "命令行工具",
+    "工具集成",
+    "前端增强",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-23T08:33:25Z",
+    "url": "https://github.com/chinazkk/dsh-console/releases/tag/v0.1.0"
+  },
+  "author": "chinazkk",
+  "repo": "https://github.com/chinazkk/dsh-console",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-23T08:32:30Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:chinazkk/dsh-console",
+    "commands": [
+      "dsh plugin --profile web add github:chinazkk/dsh-console"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

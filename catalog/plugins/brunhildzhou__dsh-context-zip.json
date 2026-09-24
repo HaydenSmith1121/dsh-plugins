@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-context-zip",
   "title": "dsh-context-zip",
-  "summary": "接管 DSH 会话压缩，用五段式交接摘要替代自由发挥，压缩掉的原文还能按事件号查回来。",
+  "summary": "接管 DSH 会话压缩，自动生成结构化交接摘要和可回查分段，还能检索历史上下文。",
   "tags": [
     "ai-agent",
     "compaction",
@@ -17,19 +17,14 @@
     "llm",
     "plugin",
     "会话管理",
-    "资源优化",
     "语义检索",
     "状态持久化",
     "效率提升"
   ],
-  "version": "0.1.7",
-  "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
-  "latestRelease": {
-    "tag": "v0.1.7",
-    "publishedAt": "2026-09-23T14:09:17Z",
-    "url": "https://github.com/brunhildzhou/dsh-context-zip/releases/tag/v0.1.7"
-  },
+  "version": "0.1.8",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
   "author": "brunhildzhou",
   "repo": "https://github.com/brunhildzhou/dsh-context-zip",
   "homepage": null,
@@ -46,10 +41,11 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:brunhildzhou/dsh-context-zip",
+    "method": "npm",
+    "spec": "dsh-context-zip",
     "commands": [
-      "npm install"
+      "dsh plugin --profile web add dsh-context-zip",
+      "dsh plugin --profile web add dsh-context-zip@<版本>"
     ],
     "url": null,
     "sha256": null,
@@ -65,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-22T20:57:33.766Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

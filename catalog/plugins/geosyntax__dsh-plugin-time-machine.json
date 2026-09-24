@@ -5,7 +5,7 @@
   "package": "dsh-plugin-time-machine",
   "name": "dsh-plugin-time-machine",
   "title": "dsh-plugin-time-machine",
-  "summary": "给 DSH 会话加个时光机，能回滚工作区、分叉试错，失败的分支也能留着复盘。",
+  "summary": "把工作区文件和会话记忆一起打检查点，随时安全回滚，还能从任意节点分叉继续探索。",
   "tags": [
     "ai-agents",
     "checkpoint",
@@ -19,11 +19,11 @@
     "session-management",
     "time-travel",
     "typescript",
+    "操作回滚",
     "会话管理",
     "工作区管理",
     "状态持久化",
-    "工作流增强",
-    "效率提升"
+    "工作流增强"
   ],
   "version": "0.2.0",
   "versionSource": "package.json",
@@ -35,8 +35,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-23T16:49:16Z",
-  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "pushedAt": "2026-09-24T06:51:13Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -55,8 +55,8 @@
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": true,
-    "usageNeedsConfig": true,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
     "risky": false,
     "riskyReasons": []
   },
@@ -64,6 +64,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

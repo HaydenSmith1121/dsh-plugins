@@ -40,10 +40,10 @@
   "repo": "https://github.com/Qinling-Melon-Farmers/dsh-memoir",
   "homepage": "https://www.npmjs.com/package/dsh-memoir",
   "license": "Apache-2.0",
-  "stars": 28,
+  "stars": 30,
   "forks": 3,
   "pushedAt": "2026-09-23T14:23:58Z",
-  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -55,7 +55,7 @@
     "method": "github",
     "spec": "github:Qinling-Melon-Farmers/dsh-memoir",
     "commands": [
-      "git clone https://github.com/Qinling-Melon-Farmers/dsh-memoir.git",
+      "git clone --branch v0.7.1 https://github.com/Qinling-Melon-Farmers/dsh-memoir.git",
       "npm install --global @deepseek-ai/dsh@0.1.5-rc.1",
       "dsh plugin --profile web add \"link:/absolute/path/dsh-memoir\""
     ],
@@ -75,6 +75,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

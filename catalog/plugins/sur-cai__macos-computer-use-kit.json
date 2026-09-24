@@ -9,23 +9,26 @@
   "tags": [
     "accessibility",
     "agent-skills",
-    "agent-tools",
     "ai-agents",
-    "automation",
+    "claude-code",
     "computer-use",
     "decision-intelligence",
+    "desktop-automation",
     "dsh-plugin",
     "gui-automation",
     "jev",
     "llm-guardrails",
     "macos",
+    "mcp",
+    "mcp-server",
+    "ocr",
     "opencode",
     "pi-package",
     "system-one-models",
     "typesafe-ai",
     "自动化",
     "工具集成",
-    "安全审计",
+    "安全审查",
     "AI 助手",
     "命令行工具"
   ],
@@ -41,10 +44,10 @@
   "repo": "https://github.com/Sur-Cai/macos-computer-use-kit",
   "homepage": "https://pypi.org/project/macos-computer-use-kit/",
   "license": "MIT",
-  "stars": 3,
+  "stars": 4,
   "forks": 0,
   "pushedAt": "2026-09-23T13:24:09Z",
-  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -56,9 +59,7 @@
     "method": "github",
     "spec": "github:Sur-Cai/macos-computer-use-kit",
     "commands": [
-      "pip install macos-computer-use-kit",
-      "dsh plugin --profile <name> add dsh-macos-computer-use",
-      "git clone https://github.com/Sur-Cai/macos-computer-use-kit && cd macos-computer-use-kit"
+      "dsh plugin --profile web add github:Sur-Cai/macos-computer-use-kit"
     ],
     "url": null,
     "sha256": null,
@@ -74,6 +75,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-23T21:11:03.116Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "ljcoder2015/dsh-canvas",
+  "slug": "ljcoder2015__dsh-canvas",
+  "package": "@ljcoder2015/dsh-canvas",
+  "name": "dsh-canvas",
+  "title": "dsh-canvas",
+  "summary": "把项目铺成一张无限画布，用卡片和连线引用做产品设计、应用开发等复杂创作。",
+  "tags": [
+    "dsh-plugin",
+    "可视化",
+    "报告生成",
+    "工作流增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
+  "author": "ljcoder2015",
+  "repo": "https://github.com/ljcoder2015/dsh-canvas",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T10:27:03Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "git clone https://github.com/ljcoder2015/dsh-canvas.git",
+      "dsh plugin --profile web add .",
+      "dsh plugin --profile web add https://github.com/ljcoder2015/dsh-canvas"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

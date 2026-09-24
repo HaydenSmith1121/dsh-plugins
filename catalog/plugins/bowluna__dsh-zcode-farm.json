@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-zcode-farm",
   "title": "dsh-zcode-farm",
-  "summary": "让 DeepSeek Harness 一眼看清所有 ComfyUI 实例，自动把生成任务派给最闲的那台 GPU。",
+  "summary": "让 Agent 实时看到每块 GPU 的负载，自动把生成任务派给最空闲的 ComfyUI 实例，不再死磕一台。",
   "tags": [
     "comfyui",
     "cordis",
@@ -18,11 +18,10 @@
     "multi-instance",
     "workflow",
     "zcode",
-    "资源优化",
     "工作流增强",
     "状态监控",
-    "自动化",
-    "工具集成"
+    "模型适配",
+    "效率提升"
   ],
   "version": "1.0.1",
   "versionSource": "github-release",
@@ -38,8 +37,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-23T09:50:16Z",
-  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "pushedAt": "2026-09-24T05:27:04Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -58,8 +57,8 @@
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -67,6 +66,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-22T20:57:33.766Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

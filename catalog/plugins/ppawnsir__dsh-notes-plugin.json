@@ -5,25 +5,25 @@
   "package": "dsh-notes-plugin",
   "name": "dsh-notes-plugin",
   "title": "dsh-notes-plugin",
-  "summary": "在 DSH 里随手记 Markdown 笔记，自动分类、注入约定、一键派发待办给会话执行。",
+  "summary": "把 Agent 会话里的决策和约定自动存成本地 Markdown 笔记，还能派发待办、一键摘录。",
   "tags": [
     "dsh-plugin",
     "dsh-plugin-market",
     "dsh-plugins",
+    "状态持久化",
+    "会话管理",
     "效率提升",
-    "报告生成",
-    "自动化",
-    "工具集成",
-    "状态持久化"
+    "文件管理",
+    "快捷操作"
   ],
   "version": "0.1.0",
-  "versionSource": "github-tag",
-  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
   "latestRelease": null,
   "author": "PPawnsir",
   "repo": "https://github.com/PPawnsir/dsh-notes-plugin",
   "homepage": null,
-  "license": null,
+  "license": "MIT",
   "stars": 0,
   "forks": 0,
   "pushedAt": "2026-09-23T08:57:33Z",
@@ -36,10 +36,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:PPawnsir/dsh-notes-plugin",
+    "method": "npm",
+    "spec": "dsh-notes-plugin",
     "commands": [
-      "dsh plugin --profile web add github:PPawnsir/dsh-notes-plugin"
+      "dsh plugin --profile web add dsh-notes-plugin"
     ],
     "url": null,
     "sha256": null,
@@ -55,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-23T21:11:03.116Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

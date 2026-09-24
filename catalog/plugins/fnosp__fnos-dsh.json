@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "FNOSP/fnos-dsh",
+  "slug": "fnosp__fnos-dsh",
+  "package": "fn-os-apps",
+  "name": "fnos-dsh",
+  "title": "fnos-dsh",
+  "summary": "把 DeepSeek Harness 应用和插件打包成一个仓库，方便在飞牛 NAS 上统一管理和部署。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "fnos",
+    "fnos-app",
+    "fnos-nas",
+    "集中仓库",
+    "插件管理",
+    "桥接插件",
+    "工作区管理"
+  ],
+  "version": "5.4.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": {
+    "tag": "v5.4.3",
+    "publishedAt": "2026-09-19T06:18:38Z",
+    "url": "https://github.com/FNOSP/fnos-dsh/releases/tag/v5.4.3"
+  },
+  "author": "FNOSP",
+  "repo": "https://github.com/FNOSP/fnos-dsh",
+  "homepage": "https://fndsh-doc.tnnevol.cn/",
+  "license": "AGPL-3.0",
+  "stars": 1,
+  "forks": 1,
+  "pushedAt": "2026-09-24T02:00:34Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:FNOSP/fnos-dsh",
+    "commands": [
+      "dsh plugin --profile web add github:FNOSP/fnos-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

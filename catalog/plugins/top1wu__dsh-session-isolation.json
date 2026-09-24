@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "TOP1Wu/dsh-session-isolation",
+  "slug": "top1wu__dsh-session-isolation",
+  "package": "dsh-session-isolation",
+  "name": "dsh-session-isolation",
+  "title": "dsh-session-isolation",
+  "summary": "给同一工作区里的每个会话划定写入边界，各写各的产出目录，不再互相覆盖文件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "session-isolation",
+    "会话管理",
+    "工作区管理",
+    "文件管理",
+    "多智能体协作"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
+  "author": "TOP1Wu",
+  "repo": "https://github.com/TOP1Wu/dsh-session-isolation",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-23T09:20:26Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:TOP1Wu/dsh-session-isolation",
+    "commands": [
+      "dsh plugin --profile web add /绝对路径/dsh-session-isolation"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

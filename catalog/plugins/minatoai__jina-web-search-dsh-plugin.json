@@ -5,7 +5,7 @@
   "package": "dsh-jina",
   "name": "jina-web-search-dsh-plugin",
   "title": "jina-web-search-dsh-plugin",
-  "summary": "把 Jina AI 的搜索、网页读取、截图、向量等 12 项能力装进 DSH，还能在设置页填 API key 查余额。",
+  "summary": "把 Jina AI 的搜索、阅读、截图、向量等能力装进 DSH，还能配多个 API key 自动切换。",
   "tags": [
     "agent",
     "dsh-plugin",
@@ -16,12 +16,12 @@
     "工具集成",
     "AI 助手",
     "语义检索",
-    "设置面板",
-    "模型适配"
+    "模型适配",
+    "设置面板"
   ],
-  "version": "0.9.0",
+  "version": "0.12.1",
   "versionSource": "package.json",
-  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
   "latestRelease": null,
   "author": "minatoAI",
   "repo": "https://github.com/minatoAI/jina-web-search-dsh-plugin",
@@ -29,8 +29,8 @@
   "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-23T20:13:44Z",
-  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "pushedAt": "2026-09-24T12:12:36Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -59,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "alaliqing/dsh-annotate",
+  "slug": "alaliqing__dsh-annotate",
+  "package": "dsh-annotate-workspace",
+  "name": "dsh-annotate",
+  "title": "dsh-annotate",
+  "summary": "在本地应用预览里直接圈选界面元素，把结构化的 UI 反馈发给 AI 助手，改起来更准。",
+  "tags": [
+    "deepseek-harness",
+    "developer-tools",
+    "dsh-plugin",
+    "ui-annotation",
+    "visual-feedback",
+    "可视化",
+    "前端增强",
+    "AI 助手",
+    "工具集成",
+    "开发增强"
+  ],
+  "version": "0.1.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": {
+    "tag": "v0.1.2",
+    "publishedAt": "2026-09-23T15:55:53Z",
+    "url": "https://github.com/alaliqing/dsh-annotate/releases/tag/v0.1.2"
+  },
+  "author": "alaliqing",
+  "repo": "https://github.com/alaliqing/dsh-annotate",
+  "homepage": "https://www.npmjs.com/package/dsh-annotate",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-23T15:54:27Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:alaliqing/dsh-annotate",
+    "commands": [
+      "dsh plugin --profile web add github:alaliqing/dsh-annotate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

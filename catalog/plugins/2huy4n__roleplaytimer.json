@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "2huy4n/roleplaytimer",
+  "slug": "2huy4n__roleplaytimer",
+  "package": "roleplaytimer",
+  "name": "roleplaytimer",
+  "title": "roleplaytimer",
+  "summary": "用户沉默太久时自动唤醒角色扮演AI主动开口，让沉浸式对话不冷场。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "roleplay",
+    "自动化",
+    "AI 助手",
+    "娱乐互动",
+    "会话管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-23T23:12:31Z",
+    "url": "https://github.com/2huy4n/roleplaytimer/releases/tag/v0.2.0"
+  },
+  "author": "2huy4n",
+  "repo": "https://github.com/2huy4n/roleplaytimer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-23T23:09:25Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:2huy4n/roleplaytimer",
+    "commands": [
+      "dsh plugin --profile <profile> add github:2huy4n/roleplaytimer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

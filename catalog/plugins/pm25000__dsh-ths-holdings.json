@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "PM25000/dsh-ths-holdings",
+  "slug": "pm25000__dsh-ths-holdings",
+  "package": null,
+  "name": "dsh-ths-holdings",
+  "title": "dsh-ths-holdings",
+  "summary": "自动同步同花顺真实持仓，悬浮卡片显示今日盈亏、上证指数和走势图，无需手动添加股票。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "效率提升",
+    "零配置",
+    "自动化"
+  ],
+  "version": "0.2.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
+  "author": "PM25000",
+  "repo": "https://github.com/PM25000/dsh-ths-holdings",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 3,
+  "forks": 0,
+  "pushedAt": "2026-09-23T14:52:26Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-ths-holdings",
+    "commands": [
+      "dsh plugin --profile web add dsh-ths-holdings"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

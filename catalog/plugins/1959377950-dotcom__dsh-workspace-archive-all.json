@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "1959377950-dotcom/dsh-workspace-archive-all",
+  "slug": "1959377950-dotcom__dsh-workspace-archive-all",
+  "package": null,
+  "name": "dsh-workspace-archive-all",
+  "title": "dsh-workspace-archive-all",
+  "summary": "在侧边栏每个工作区文件夹菜单里加一个「全部归档」，一键清空不用的会话，正在跑的和子会话会自动跳过。",
+  "tags": [
+    "dsh-plugin",
+    "工作区管理",
+    "会话管理",
+    "快捷操作",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-23T05:31:10Z",
+    "url": "https://github.com/1959377950-dotcom/dsh-workspace-archive-all/releases/tag/v0.1.1"
+  },
+  "author": "1959377950-dotcom",
+  "repo": "https://github.com/1959377950-dotcom/dsh-workspace-archive-all",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-23T05:31:05Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-workspace-archive-all",
+    "commands": [
+      "dsh plugin --profile web add dsh-workspace-archive-all",
+      "dsh plugin --profile web add <tarball-url-or-path>"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

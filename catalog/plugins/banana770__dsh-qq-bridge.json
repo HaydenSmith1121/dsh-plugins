@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "banana770/dsh-qq-bridge",
+  "slug": "banana770__dsh-qq-bridge",
+  "package": "dsh-qq-bridge",
+  "name": "dsh-qq-bridge",
+  "title": "dsh-qq-bridge",
+  "summary": "把 DSH 智能体接到 QQ 机器人上，每个聊天对象独立会话，零依赖开箱即用。",
+  "tags": [
+    "bridge",
+    "chatbot",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "nodejs",
+    "qq-bot",
+    "qqbot",
+    "websocket",
+    "桥接插件",
+    "会话管理",
+    "AI 助手",
+    "工具集成",
+    "零配置"
+  ],
+  "version": "1.0.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": {
+    "tag": "1.0.2",
+    "publishedAt": "2026-09-24T16:23:43Z",
+    "url": "https://github.com/banana770/dsh-qq-bridge/releases/tag/1.0.2"
+  },
+  "author": "banana770",
+  "repo": "https://github.com/banana770/dsh-qq-bridge",
+  "homepage": "https://github.com/banana770/dsh-qq-bridge#readme",
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-24T16:18:57Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:banana770/dsh-qq-bridge",
+    "commands": [
+      "dsh plugin --profile web add github:banana770/dsh-qq-bridge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

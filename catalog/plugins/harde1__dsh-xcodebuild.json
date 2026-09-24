@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "harde1/dsh-xcodebuild",
+  "slug": "harde1__dsh-xcodebuild",
+  "package": "dsh-xcodebuild",
+  "name": "dsh-xcodebuild",
+  "title": "dsh-xcodebuild",
+  "summary": "在 DSH 里直接构建、测试、打包和运行 iOS/macOS 项目，还能实时过滤查看构建日志。",
+  "tags": [
+    "dsh-plugin",
+    "工具集成",
+    "命令行工具",
+    "开发增强",
+    "状态监控",
+    "自动化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-24T04:28:29Z",
+    "url": "https://github.com/harde1/dsh-xcodebuild/releases/tag/v0.1.1"
+  },
+  "author": "harde1",
+  "repo": "https://github.com/harde1/dsh-xcodebuild",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T05:15:02Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:harde1/dsh-xcodebuild",
+    "commands": [
+      "dsh plugin --profile web add /path/to/this/directory",
+      "dsh plugin --profile web add file:/absolute/path/to/dsh-xcodebuild-0.1.0.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

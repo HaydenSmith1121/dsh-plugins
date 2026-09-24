@@ -5,7 +5,7 @@
   "package": "dsh-live2d-pet-workspace",
   "name": "dsh-live2d-pet",
   "title": "dsh-live2d-pet",
-  "summary": "给 DeepSeek Harness 加一只 Live2D 桌宠，页面内和系统桌面都能陪着你，状态实时跟着 harness 走。",
+  "summary": "把 Live2D 桌宠放到系统桌面上，实时显示 Harness 干活状态，点一下就能下指令。",
   "tags": [
     "cordis",
     "deepseek-harness",
@@ -15,10 +15,10 @@
     "electron",
     "live2d",
     "主题",
-    "可视化",
     "状态监控",
-    "桌宠",
-    "插件管理"
+    "快捷操作",
+    "AI 助手",
+    "前端增强"
   ],
   "version": "0.1.0",
   "versionSource": "package.json",
@@ -43,7 +43,9 @@
     "method": "github",
     "spec": "github:br0ny4/dsh-live2d-pet",
     "commands": [
-      "dsh plugin --profile web add ./packages/dsh-live2d-pet"
+      "git clone https://github.com/br0ny4/dsh-live2d-pet.git",
+      "dsh plugin --profile web add ./packages/dsh-live2d-pet",
+      "dsh plugin --profile web remove dsh-live2d-pet"
     ],
     "url": null,
     "sha256": null,
@@ -59,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-22T20:57:33.766Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

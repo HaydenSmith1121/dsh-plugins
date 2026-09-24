@@ -5,14 +5,18 @@
   "package": "dsh-recovery-resume",
   "name": "dsh-recovery-resume",
   "title": "dsh-recovery-resume",
-  "summary": "宿主重启后自动接上被中断的任务，还会先核对真实状态再继续，不用手动重来。",
+  "summary": "DSH 重启后自动接上被中断的回合，先核对真实状态再继续干活。",
   "tags": [
+    "crash-recovery",
     "deepseek-harness",
+    "dsh",
     "dsh-plugin",
+    "resume",
+    "session-recovery",
+    "会话管理",
     "状态持久化",
     "自动化",
-    "会话管理",
-    "工作流增强"
+    "效率提升"
   ],
   "version": "0.1.2",
   "versionSource": "github-release",
@@ -28,8 +32,8 @@
   "license": "MIT",
   "stars": 1,
   "forks": 1,
-  "pushedAt": "2026-09-23T15:04:38Z",
-  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "pushedAt": "2026-09-24T20:12:27Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -41,17 +45,15 @@
     "method": "github",
     "spec": "github:flandre2233/dsh-recovery-resume",
     "commands": [
-      "dsh plugin --profile web add github:flandre2233/dsh-recovery-resume",
-      "git clone https://github.com/flandre2233/dsh-recovery-resume.git",
-      "dsh plugin --profile web add link:\"$(pwd)/dsh-recovery-resume\""
+      "dsh plugin --profile web add github:flandre2233/dsh-recovery-resume"
     ],
     "url": null,
     "sha256": null,
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": true,
-    "usageNeedsConfig": true,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
     "risky": false,
     "riskyReasons": []
   },
@@ -59,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-23T21:11:03.116Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

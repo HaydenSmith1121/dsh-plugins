@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "wang90/dsh-image-reader",
+  "slug": "wang90__dsh-image-reader",
+  "package": "dsh-image-reader",
+  "name": "dsh-image-reader",
+  "title": "dsh-image-reader",
+  "summary": "让只认文字的 DeepSeek Harness 模型也能看懂图片，靠独立视觉模型来识别。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "image",
+    "multimodal",
+    "plugin",
+    "vision",
+    "视觉理解",
+    "多模态",
+    "模型配置",
+    "桥接插件"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
+  "author": "wang90",
+  "repo": "https://github.com/wang90/dsh-image-reader",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-23T14:26:25Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wang90/dsh-image-reader",
+    "commands": [
+      "dsh plugin --profile web add github:wang90/dsh-image-reader"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

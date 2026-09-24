@@ -5,7 +5,7 @@
   "package": "dsh-plugin-confirmation-resolution",
   "name": "dsh-confirmation-resolution",
   "title": "dsh-confirmation-resolution",
-  "summary": "任务完成后自动判断待确认事项，该改就改、该问才问，避免机械照做或反复追问。",
+  "summary": "在任务完成后自动权衡输出质量与真实用户影响，帮你把关确认项，减少误判。",
   "tags": [
     "agent-plugins",
     "ai-agents",
@@ -18,9 +18,10 @@
     "guardrails",
     "nodejs",
     "system-prompt",
-    "工作流增强",
-    "AI 助手",
-    "自动化"
+    "代码审查",
+    "工程规范",
+    "自动化",
+    "AI 助手"
   ],
   "version": "1.0.0",
   "versionSource": "package.json",
@@ -61,6 +62,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-21T22:03:40.491Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

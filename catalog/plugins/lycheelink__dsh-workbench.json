@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "lycheelink/dsh-workbench",
+  "slug": "lycheelink__dsh-workbench",
+  "package": null,
+  "name": "dsh-workbench",
+  "title": "dsh-workbench",
+  "summary": "把企业 Agent 场景做成卡片，填个表单就能跑，按会话管理任务，即插即用不干扰官方插件。",
+  "tags": [
+    "dsh-plugin",
+    "工作流增强",
+    "会话管理",
+    "插件管理",
+    "效率提升"
+  ],
+  "version": "0.1.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
+  "author": "lycheelink",
+  "repo": "https://github.com/lycheelink/dsh-workbench",
+  "homepage": "https://dsh-workbench.pages.dev",
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-23T12:39:14Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@lycheelink/dsh-workbench",
+    "commands": [
+      "dsh plugin --profile web add @lycheelink/dsh-workbench"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

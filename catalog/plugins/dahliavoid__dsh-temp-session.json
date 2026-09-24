@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "DahliaVoid/dsh-temp-session",
+  "slug": "dahliavoid__dsh-temp-session",
+  "package": "dsh-temp-session",
+  "name": "dsh-temp-session",
+  "title": "dsh-temp-session",
+  "summary": "让 dsh 工作区变成可选，不选也能开临时会话，还能一键取消已选工作区。",
+  "tags": [
+    "dsh-plugin",
+    "工作区管理",
+    "会话管理",
+    "快捷操作",
+    "效率提升"
+  ],
+  "version": "0.1.4",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
+  "author": "DahliaVoid",
+  "repo": "https://github.com/DahliaVoid/dsh-temp-session",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-23T17:39:19Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:DahliaVoid/dsh-temp-session",
+    "commands": [
+      "dsh plugin --profile web add github:DahliaVoid/dsh-temp-session"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

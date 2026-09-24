@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "zhang-guo-wen/dsh-worktree",
+  "slug": "zhang-guo-wen__dsh-worktree",
+  "package": "@guowenzhang/dsh-worktree",
+  "name": "dsh-worktree",
+  "title": "dsh-worktree",
+  "summary": "在独立 Git worktree 里开 DSH 会话，代码隔离互不干扰，多任务并行更安心。",
+  "tags": [
+    "dsh-plugin",
+    "工作区管理",
+    "会话管理",
+    "开发增强",
+    "命令行工具"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
+  "author": "zhang-guo-wen",
+  "repo": "https://github.com/zhang-guo-wen/dsh-worktree",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T10:02:57Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhang-guo-wen/dsh-worktree",
+    "commands": [
+      "dsh plugin --profile web add C:/path/to/dsh-worktree"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

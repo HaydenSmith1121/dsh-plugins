@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "klarkxy/dsh-editor",
+  "slug": "klarkxy__dsh-editor",
+  "package": "dsh-editor",
+  "name": "dsh-editor",
+  "title": "dsh-editor",
+  "summary": "在稿纸上写正文，AI 搭档在侧栏帮你补全、改写和讨论，改完你点头才写入，作品就是本地文件夹。",
+  "tags": [
+    "ai-writing",
+    "deepseek-harness",
+    "desktop-app",
+    "dsh-plugin",
+    "dsh-plugins",
+    "electron",
+    "monorepo",
+    "writing-app",
+    "AI 助手",
+    "报告生成",
+    "文件管理",
+    "效率提升"
+  ],
+  "version": "0.4.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": {
+    "tag": "v0.4.1",
+    "publishedAt": "2026-09-23T09:42:32Z",
+    "url": "https://github.com/klarkxy/dsh-editor/releases/tag/v0.4.1"
+  },
+  "author": "klarkxy",
+  "repo": "https://github.com/klarkxy/dsh-editor",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 11,
+  "forks": 0,
+  "pushedAt": "2026-09-24T17:24:24Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:klarkxy/dsh-editor",
+    "commands": [
+      "dsh plugin --profile web add github:klarkxy/dsh-editor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

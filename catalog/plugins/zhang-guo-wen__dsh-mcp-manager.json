@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "zhang-guo-wen/dsh-mcp-manager",
+  "slug": "zhang-guo-wen__dsh-mcp-manager",
+  "package": "@guowenzhang/dsh-mcp-manager",
+  "name": "dsh-mcp-manager",
+  "title": "dsh-mcp-manager",
+  "summary": "管理 DeepSeek Harness 的 MCP 服务器：编排组合、控制加载时机、按会话过滤可用工具。",
+  "tags": [
+    "dsh-plugin",
+    "MCP调试",
+    "工具集成",
+    "插件管理",
+    "会话管理",
+    "模型适配"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
+  "author": "zhang-guo-wen",
+  "repo": "https://github.com/zhang-guo-wen/dsh-mcp-manager",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T10:02:42Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zhang-guo-wen/dsh-mcp-manager",
+    "commands": [
+      "dsh plugin --profile web add github:zhang-guo-wen/dsh-mcp-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

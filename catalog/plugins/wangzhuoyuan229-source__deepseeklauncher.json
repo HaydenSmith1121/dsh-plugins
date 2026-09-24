@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "wangzhuoyuan229-source/DeepSeekLauncher",
+  "slug": "wangzhuoyuan229-source__deepseeklauncher",
+  "package": "dsh-deepseek-launcher",
+  "name": "DeepSeekLauncher",
+  "title": "DeepSeekLauncher",
+  "summary": "在 macOS 桌面双击图标就能启动 DeepSeek Harness 本地服务，自动用 Chrome 打开，省去手动敲命令。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "launcher",
+    "macos",
+    "快捷操作",
+    "命令行工具",
+    "工具集成",
+    "主题"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-23T08:28:56Z",
+    "url": "https://github.com/wangzhuoyuan229-source/DeepSeekLauncher/releases/tag/v1.0.0"
+  },
+  "author": "wangzhuoyuan229-source",
+  "repo": "https://github.com/wangzhuoyuan229-source/DeepSeekLauncher",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-23T08:28:56Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:wangzhuoyuan229-source/DeepSeekLauncher",
+    "commands": [
+      "git clone https://github.com/wangzhuoyuan229-source/DeepSeekLauncher.git",
+      "dsh plugin --profile web add github:wangzhuoyuan229-source/DeepSeekLauncher"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

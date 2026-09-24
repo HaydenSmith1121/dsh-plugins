@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ShanWuYinShe/dsh-plugins",
   "slug": "shanwuyinshe__dsh-plugins",
-  "package": null,
+  "package": "dsh-plugins",
   "name": "dsh-plugins",
   "title": "dsh-plugins",
   "summary": "把 DSH 主机层的实用插件打包在一起，让沙盒能多写几个目录、支持视觉理解等能力。",
@@ -19,13 +19,13 @@
     "工作区管理",
     "工具集成"
   ],
-  "version": "0.3.14",
+  "version": "0.4.14",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
   "latestRelease": {
-    "tag": "session-archive-v0.3.14",
-    "publishedAt": "2026-09-23T18:19:25Z",
-    "url": "https://github.com/ShanWuYinShe/dsh-plugins/releases/tag/session-archive-v0.3.14"
+    "tag": "sandbox-extra-roots-v0.4.14",
+    "publishedAt": "2026-09-24T14:38:32Z",
+    "url": "https://github.com/ShanWuYinShe/dsh-plugins/releases/tag/sandbox-extra-roots-v0.4.14"
   },
   "author": "ShanWuYinShe",
   "repo": "https://github.com/ShanWuYinShe/dsh-plugins",
@@ -33,8 +33,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-23T18:20:53Z",
-  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "pushedAt": "2026-09-24T15:46:11Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -43,12 +43,12 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "@chaoset/sandbox-extra-roots",
+    "method": "github",
+    "spec": "github:ShanWuYinShe/dsh-plugins",
     "commands": [
-      "dsh plugin --profile web add @chaoset/sandbox-extra-roots",
-      "dsh plugin --profile web add @chaoset/session-archive",
-      "dsh plugin --profile web add @chaoset/dsh-any-connect"
+      "dsh plugin --profile web add https://github.com/ShanWuYinShe/dsh-plugins/releases/download/provider-usage-v<版本>/chaoset-provider-usage-<版本>.tgz",
+      "dsh plugin --profile web add https://github.com/ShanWuYinShe/dsh-plugins/releases/download/session-archive-v<版本>/chaoset-session-archive-<版本>.tgz",
+      "dsh plugin --profile web add https://github.com/ShanWuYinShe/dsh-plugins/releases/download/provider-usage-v0.1.0-alpha.0/chaoset-provider-usage-0.1.0-alpha.0.tgz"
     ],
     "url": null,
     "sha256": null,
@@ -64,6 +64,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

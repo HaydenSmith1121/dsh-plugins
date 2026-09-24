@@ -5,23 +5,37 @@
   "package": "dsh-vps-manager",
   "name": "dsh-vps-manager",
   "title": "dsh-vps-manager",
-  "summary": "在 DSH 里像用 SSH 一样顺手管 VPS，常用命令零消耗，还能让 AI 帮你操作服务器。",
+  "summary": "在 DSH 里像用 SSH 一样管 VPS，零 token 命令加对话内网页终端，AI 还能帮你操作服务器。",
   "tags": [
+    "ai",
+    "ai-agent",
+    "ai-agents",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
     "dsh-plugin",
+    "dsh-plugins",
+    "linux",
+    "self-hosted",
+    "selfhosted",
+    "selfhosted-vpn",
+    "ssh",
+    "terminal",
+    "vless",
+    "vmess",
+    "vmess-ws",
+    "vpn",
+    "vps",
     "命令行工具",
     "工具集成",
     "AI 助手",
-    "自动化",
-    "安全审计"
+    "状态监控",
+    "快捷操作"
   ],
-  "version": "0.2.3",
-  "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
-  "latestRelease": {
-    "tag": "v0.2.3",
-    "publishedAt": "2026-09-23T08:23:38Z",
-    "url": "https://github.com/AIcivilization/dsh-vps-manager/releases/tag/v0.2.3"
-  },
+  "version": "0.2.4",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
   "author": "AIcivilization",
   "repo": "https://github.com/AIcivilization/dsh-vps-manager",
   "homepage": "https://dshget.com/plugins/AIcivilization/dsh-vps-manager",
@@ -38,10 +52,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:AIcivilization/dsh-vps-manager",
+    "method": "npm",
+    "spec": "dsh-vps-manager",
     "commands": [
-      "dsh plugin add github:AIcivilization/dsh-vps-manager"
+      "dsh plugin add dsh-vps-manager"
     ],
     "url": null,
     "sha256": null,
@@ -57,6 +71,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

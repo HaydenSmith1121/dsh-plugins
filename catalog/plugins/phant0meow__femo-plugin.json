@@ -26,15 +26,15 @@
     "typescript",
     "workflow",
     "workflow-engine",
-    "多Agent协作",
+    "多智能体协作",
     "娱乐互动",
     "桌宠",
     "报告生成",
     "工作流增强"
   ],
   "version": "1.0.2",
-  "versionSource": "package.json",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
   "latestRelease": null,
   "author": "Phant0Meow",
   "repo": "https://github.com/Phant0Meow/femo-plugin",
@@ -52,10 +52,11 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:Phant0Meow/dsh-femo",
+    "method": "npm",
+    "spec": "femo-plugin",
     "commands": [
-      "dsh plugin --profile web add github:Phant0Meow/dsh-femo"
+      "dsh plugin --profile web add femo-plugin",
+      "dsh plugin --profile web add github:Phant0Meow/femo-plugin"
     ],
     "url": null,
     "sha256": null,
@@ -71,6 +72,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

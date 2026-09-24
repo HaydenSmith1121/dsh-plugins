@@ -5,28 +5,27 @@
   "package": null,
   "name": "dsh-model-health",
   "title": "dsh-model-health",
-  "summary": "快速检查 DeepSeek 模型健康状态，帮你发现异常、保障服务稳定，省心又省力。",
+  "summary": "一键检查 DSH 模型健康状态，随时掌握模型可用情况，出问题早发现。",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
     "状态监控",
+    "模型适配",
     "模型配置",
-    "自动化",
-    "效率提升",
-    "AI 助手"
+    "插件管理"
   ],
-  "version": "0.2.11",
+  "version": "0.2.12",
   "versionSource": "npm",
-  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
   "latestRelease": null,
   "author": "oxlyn",
   "repo": "https://github.com/oxlyn/dsh-model-health",
   "homepage": null,
   "license": "MIT",
-  "stars": 1,
+  "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-02T13:26:38Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-23T15:16:55Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -45,8 +44,8 @@
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -54,6 +53,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

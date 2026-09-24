@@ -12,7 +12,7 @@
     "dsh-plugin",
     "git",
     "工作流增强",
-    "安全审计"
+    "安全审查"
   ],
   "version": "0.3.0",
   "versionSource": "github-release",
@@ -38,10 +38,11 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:IT-coder-Yy/dsh-git-plugin",
+    "method": "npm",
+    "spec": "dsh-easygit-plugin@0.3.0",
     "commands": [
-      "dsh plugin --profile web add github:IT-coder-Yy/dsh-git-plugin"
+      "npm install -g @deepseek-ai/dsh@0.1.7-rc.1",
+      "dsh plugin --profile web add dsh-easygit-plugin@0.3.0"
     ],
     "url": null,
     "sha256": null,
@@ -50,13 +51,15 @@
     "dshVersion": null,
     "needsConfig": false,
     "usageNeedsConfig": false,
-    "risky": false,
-    "riskyReasons": []
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
   },
   "source": {
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "LXBWOW/dsh-teacher-consult",
+  "slug": "lxbwow__dsh-teacher-consult",
+  "package": "dsh-teacher-consult",
+  "name": "dsh-teacher-consult",
+  "title": "dsh-teacher-consult",
+  "summary": "让 DSH 在复杂任务上向两位 GPT 老师请教，有预算和只读沙箱兜底，答案更靠谱。",
+  "tags": [
+    "agent",
+    "deepseek-harness",
+    "dsh",
+    "jev",
+    "typesafe",
+    "AI 助手",
+    "多智能体协作",
+    "工作流增强",
+    "模型适配",
+    "代码审查"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
+  "author": "LXBWOW",
+  "repo": "https://github.com/LXBWOW/dsh-teacher-consult",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-23T07:44:25Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LXBWOW/dsh-teacher-consult",
+    "commands": [
+      "dsh plugin --profile web add github:LXBWOW/dsh-teacher-consult"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-wx-skin",
   "title": "dsh-wx-skin",
-  "summary": "给 DSH 界面换皮肤，选本地图片或图片链接当磨砂背景，还能调模糊暗化，明暗主题自动适配。",
+  "summary": "在设置里选本地图片当全屏磨砂背景，支持暗化模糊调节，明暗主题自动适配。",
   "tags": [
     "dsh-plugin",
     "dsh-plugins",
@@ -39,9 +39,9 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "dsh-wx-skin@0.1.5",
+    "spec": "dsh-wx-skin@0.2.0",
     "commands": [
-      "dsh plugin --profile web add dsh-wx-skin@0.1.5",
+      "dsh plugin --profile web add dsh-wx-skin@0.2.0",
       "git clone <本仓库地址>",
       "npm install"
     ],
@@ -59,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

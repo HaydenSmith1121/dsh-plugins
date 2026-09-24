@@ -5,7 +5,7 @@
   "package": "dsh-minimal-ptc",
   "name": "dsh-minimal-ptc",
   "title": "dsh-minimal-ptc",
-  "summary": "极简 PTC 预设，用 run_code 编排工具，配好 Git Bash 和持久 PowerShell，开箱即用。",
+  "summary": "给 DeepSeek Harness 加上极简 PTC 模式，用简短提示词和 run_code 编排多步任务，Windows 下也能用 Git Bash 和持久 PowerShell。",
   "tags": [
     "chain-of-thought",
     "deepseek",
@@ -15,15 +15,14 @@
     "minimal",
     "ptc",
     "we-lets",
-    "零配置",
-    "工具集成",
+    "工作流增强",
     "命令行工具",
-    "效率提升",
-    "工作流增强"
+    "工具集成",
+    "效率提升"
   ],
-  "version": "0.4.1",
-  "versionSource": "github-tag",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "version": "0.5.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
   "latestRelease": null,
   "author": "STARDUSTLC666",
   "repo": "https://github.com/STARDUSTLC666/dsh-minimal-ptc",
@@ -41,10 +40,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:STARDUSTLC666/dsh-minimal-ptc",
+    "method": "npm",
+    "spec": "dsh-minimal-ptc",
     "commands": [
-      "dsh plugin --profile web add github:STARDUSTLC666/dsh-minimal-ptc"
+      "dsh plugin --profile web add dsh-minimal-ptc"
     ],
     "url": null,
     "sha256": null,
@@ -60,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

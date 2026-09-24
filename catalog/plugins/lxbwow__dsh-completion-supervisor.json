@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "LXBWOW/dsh-completion-supervisor",
+  "slug": "lxbwow__dsh-completion-supervisor",
+  "package": "dsh-completion-supervisor",
+  "name": "dsh-completion-supervisor",
+  "title": "dsh-completion-supervisor",
+  "summary": "用确定性证据和 Jev 分类器核实 AI 说的“做完了”到底是不是真的，防止虚报完工。",
+  "tags": [
+    "agent",
+    "deepseek-harness",
+    "dsh",
+    "jev",
+    "typesafe",
+    "代码审查",
+    "证据链",
+    "状态监控",
+    "自动化",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
+  "author": "LXBWOW",
+  "repo": "https://github.com/LXBWOW/dsh-completion-supervisor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-23T07:44:18Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:LXBWOW/dsh-completion-supervisor",
+    "commands": [
+      "dsh plugin --profile web add github:LXBWOW/dsh-completion-supervisor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

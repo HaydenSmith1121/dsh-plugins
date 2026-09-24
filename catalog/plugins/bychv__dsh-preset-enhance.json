@@ -5,13 +5,14 @@
   "package": "dsh-preset-enhance",
   "name": "dsh-preset-enhance",
   "title": "dsh-preset-enhance",
-  "summary": "让 DeepSeek Harness 直接加载和编辑 SillyTavern 预设，发消息前按顺序注入内容并控制工具。",
+  "summary": "在 DSH 里导入、编辑和使用 SillyTavern 预设，还能按模式和会话管理工具开关。",
   "tags": [
     "dsh",
     "dsh-plugin",
     "模型适配",
     "会话管理",
-    "工具集成",
+    "报告生成",
+    "设置面板",
     "工作流增强"
   ],
   "version": "0.3.2-alpha.2",
@@ -24,8 +25,8 @@
   "license": "MIT",
   "stars": 16,
   "forks": 1,
-  "pushedAt": "2026-09-23T14:54:22Z",
-  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "pushedAt": "2026-09-24T17:17:17Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -53,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

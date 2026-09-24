@@ -5,27 +5,30 @@
   "package": null,
   "name": "dsh-opencode-go",
   "title": "dsh-opencode-go",
-  "summary": "让 DSH 直接用上 OpenCode Go 订阅模型，支持流式回复、工具调用和图片输入，装完就能用。",
+  "summary": "让 DSH 直接跑通 OpenCode Go 订阅模型，自动配好请求头和模型目录，还能看用量。",
   "tags": [
     "dsh-plugin",
-    "模型适配",
+    "模型配置",
+    "零配置",
     "工具集成",
-    "多模态",
-    "设置面板",
-    "桥接插件"
+    "状态监控"
   ],
-  "version": "0.1.11",
-  "versionSource": "npm",
-  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
-  "latestRelease": null,
+  "version": "0.1.12",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": {
+    "tag": "v0.1.12",
+    "publishedAt": "2026-09-24T14:57:39Z",
+    "url": "https://github.com/Duskriver/dsh-opencode-go/releases/tag/v0.1.12"
+  },
   "author": "Duskriver",
   "repo": "https://github.com/Duskriver/dsh-opencode-go",
   "homepage": null,
   "license": "MIT",
-  "stars": 24,
-  "forks": 4,
-  "pushedAt": "2026-09-22T18:33:04Z",
-  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "stars": 30,
+  "forks": 8,
+  "pushedAt": "2026-09-24T14:52:38Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -35,10 +38,10 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "dsh-opencode-go",
+    "spec": "dsh-opencode-go@0.1.11",
     "commands": [
-      "dsh plugin --profile web add dsh-opencode-go",
-      "dsh plugin --profile headless add dsh-opencode-go"
+      "dsh plugin --profile web add dsh-opencode-go@0.1.11",
+      "dsh plugin --profile headless add dsh-opencode-go@0.1.11"
     ],
     "url": null,
     "sha256": null,
@@ -54,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "lphuxhuq/dsh-vietnamese-lang",
+  "slug": "lphuxhuq__dsh-vietnamese-lang",
+  "package": null,
+  "name": "dsh-vietnamese-lang",
+  "title": "dsh-vietnamese-lang",
+  "summary": "把 DSH 界面和交互切换成越南语，方便越南语用户直接上手使用。",
+  "tags": [
+    "dsh-plugin",
+    "界面美化",
+    "设置面板",
+    "主题",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
+  "author": "lphuxhuq",
+  "repo": "https://github.com/lphuxhuq/dsh-vietnamese-lang",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-23T05:31:33Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-vietnamese-lang",
+    "commands": [
+      "dsh plugin --profile web add dsh-vietnamese-lang",
+      "dsh plugin --profile web add https://github.com/lphuxhuq/dsh-vietnamese-lang"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

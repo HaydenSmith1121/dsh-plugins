@@ -5,13 +5,14 @@
   "package": "dsh-viewtune",
   "name": "dsh-viewtune",
   "title": "dsh-viewtune",
-  "summary": "给 DeepSeek Harness 加个阅读页签，对话进行时能看思考和工具进度，结束后自动折叠只留答案。",
+  "summary": "给 DeepSeek Harness 阅读页签加个可调视效层，对话过程看得见，结束后自动收起只留答案。",
   "tags": [
     "dsh-plugin",
     "主题",
-    "状态监控",
-    "效率提升",
-    "前端增强"
+    "界面美化",
+    "设置面板",
+    "前端增强",
+    "可视化"
   ],
   "version": "0.4.0",
   "versionSource": "github-release",
@@ -27,8 +28,8 @@
   "license": "NOASSERTION",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-23T09:12:22Z",
-  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "pushedAt": "2026-09-24T14:05:08Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -42,7 +43,7 @@
     "commands": [
       "dsh plugin --profile web add github:Farewish/dsh-viewtune",
       "dsh plugin --profile web add ./dsh-viewtune",
-      "dsh plugin --profile web add ./dsh-viewtune-0.3.0-relayout.14.tgz"
+      "dsh plugin --profile web add ./dsh-viewtune-0.4.0.tgz"
     ],
     "url": null,
     "sha256": null,
@@ -58,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

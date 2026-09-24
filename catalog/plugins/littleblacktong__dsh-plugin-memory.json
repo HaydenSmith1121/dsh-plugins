@@ -5,12 +5,13 @@
   "package": "dsh-plugin-memory",
   "name": "dsh-plugin-memory",
   "title": "dsh-plugin-memory",
-  "summary": "给 DeepSeek Harness 装上记忆，让智能体在会话中记住关键信息，提升交互连续性。",
+  "summary": "给 DSH 插件加上长期记忆，能存能查，让 AI 助手记住上下文不再失忆。",
   "tags": [
     "dsh-plugin",
-    "会话管理",
+    "状态持久化",
+    "语义检索",
     "AI 助手",
-    "零配置"
+    "会话管理"
   ],
   "version": "0.1.0",
   "versionSource": "github-tag",
@@ -22,8 +23,8 @@
   "license": "MIT",
   "stars": 3,
   "forks": 3,
-  "pushedAt": "2026-09-23T10:21:12Z",
-  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "pushedAt": "2026-09-24T03:09:16Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -51,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-23T21:11:03.116Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

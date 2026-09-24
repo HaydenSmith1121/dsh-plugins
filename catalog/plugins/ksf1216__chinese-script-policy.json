@@ -5,7 +5,7 @@
   "package": "chinese-script-policy",
   "name": "chinese-script-policy",
   "title": "chinese-script-policy",
-  "summary": "离线检查并转换中文用字，确保输出符合你指定的繁体规范，还能过滤粤语口语和日式汉字。",
+  "summary": "强制你产出和保存的中文用指定字形（默认繁体），还能离线转换，顺带过滤粤语口语和日式汉字。",
   "tags": [
     "agent-skills",
     "big5",
@@ -28,9 +28,9 @@
     "skill",
     "traditional-chinese",
     "命令行工具",
-    "自动化",
-    "工具集成",
-    "报告生成"
+    "工程规范",
+    "文件管理",
+    "自动化"
   ],
   "version": "1.2.0",
   "versionSource": "github-release",
@@ -75,6 +75,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-22T20:57:33.766Z"
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
   }
 }

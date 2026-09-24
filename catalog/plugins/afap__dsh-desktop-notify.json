@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "AFAP/dsh-desktop-notify",
+  "slug": "afap__dsh-desktop-notify",
+  "package": "dsh-desktop-notify",
+  "name": "dsh-desktop-notify",
+  "title": "dsh-desktop-notify",
+  "summary": "工具要授权、有提问或计划待评审、任务跑完时弹系统通知，不用盯着界面，点一下就能回到待处理卡片。",
+  "tags": [
+    "approval",
+    "attention",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "notification",
+    "toast",
+    "效率提升",
+    "状态监控",
+    "工具集成",
+    "快捷操作"
+  ],
+  "version": "0.1.0-dsh-0.1.7-alpha.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": {
+    "tag": "v0.1.0-dsh-0.1.7-alpha.1",
+    "publishedAt": "2026-09-23T00:31:32Z",
+    "url": "https://github.com/AFAP/dsh-desktop-notify/releases/tag/v0.1.0-dsh-0.1.7-alpha.1"
+  },
+  "author": "AFAP",
+  "repo": "https://github.com/AFAP/dsh-desktop-notify",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-23T00:31:13Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AFAP/dsh-desktop-notify",
+    "commands": [
+      "dsh plugin --profile web add github:AFAP/dsh-desktop-notify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

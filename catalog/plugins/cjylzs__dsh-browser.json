@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "CJYLZS/dsh-browser",
+  "slug": "cjylzs__dsh-browser",
+  "package": "dsh-browser",
+  "name": "dsh-browser",
+  "title": "dsh-browser",
+  "summary": "给 dsh agent 配一个真浏览器，能自己打开网页、点击操作，还能在侧边栏实时看到它在干什么。",
+  "tags": [
+    "browser",
+    "cdp",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "playwright",
+    "自动化",
+    "工具集成",
+    "可视化",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
+  "author": "CJYLZS",
+  "repo": "https://github.com/CJYLZS/dsh-browser",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-24T07:47:32Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CJYLZS/dsh-browser",
+    "commands": [
+      "dsh plugin add --profile web github:CJYLZS/dsh-browser",
+      "dsh plugin add --profile web link:/absolute/path/to/dsh-browser"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "SodaZheng/dsh-totp",
+  "slug": "sodazheng__dsh-totp",
+  "package": null,
+  "name": "dsh-totp",
+  "title": "dsh-totp",
+  "summary": "给 DSH 网页入口加一道动态码验证，用身份验证器扫码即可，防止别人随便进你的工作区。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugins",
+    "插件管理",
+    "设置面板",
+    "快捷操作",
+    "零配置"
+  ],
+  "version": "0.0.4",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
+  "author": "SodaZheng",
+  "repo": "https://github.com/SodaZheng/dsh-totp",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-23T06:21:23Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-totp",
+    "commands": [
+      "dsh plugin --profile web add dsh-totp",
+      "dsh plugin --profile web add dsh-totp --registry=https://registry.npmjs.org",
+      "dsh plugin --profile web add \"$PWD\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}

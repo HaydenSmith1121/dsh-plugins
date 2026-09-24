@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "jackie-cqz/dsh-jev-plugin",
+  "slug": "jackie-cqz__dsh-jev-plugin",
+  "package": "dsh-jev-plugin",
+  "name": "dsh-jev-plugin",
+  "title": "dsh-jev-plugin",
+  "summary": "让 DSH 智能体用 TypeSafe Jev 做类型化决策，带可配置护栏和 Web UI 结果卡片。",
+  "tags": [
+    "deeepseek-harness",
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "jev",
+    "typesafe",
+    "工具集成",
+    "AI 助手",
+    "可视化",
+    "工作流增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "latestRelease": null,
+  "author": "jackie-cqz",
+  "repo": "https://github.com/jackie-cqz/dsh-jev-plugin",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 6,
+  "forks": 0,
+  "pushedAt": "2026-09-22T13:23:52Z",
+  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jackie-cqz/dsh-jev-plugin",
+    "commands": [
+      "dsh plugin --profile jev-dev add /path/to/dsh-jev-plugin",
+      "dsh plugin --profile jev-dev add github:jackie-cqz/dsh-jev-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-24T21:16:07.257Z",
+    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+  }
+}
