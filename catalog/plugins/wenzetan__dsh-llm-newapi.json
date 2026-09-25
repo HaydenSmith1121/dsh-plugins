@@ -42,9 +42,9 @@
     "method": "github",
     "spec": "github:wenzetan/dsh-llm-newapi",
     "commands": [
-      "npm install -g @deepseek-ai/dsh@0.1.2-rc.1",
+      "npm install -g @deepseek-ai/dsh@0.1.7-rc.1",
       "npm install -g pnpm",
-      "dsh plugin --profile web add --save-exact dsh-llm-newapi@0.8.6-rc.1"
+      "dsh plugin --profile web add --save-exact \"dsh-llm-newapi@$(npm view dsh-llm-newapi dist-tags.latest)\""
     ],
     "url": null,
     "sha256": null,
@@ -53,13 +53,15 @@
     "dshVersion": null,
     "needsConfig": true,
     "usageNeedsConfig": true,
-    "risky": false,
-    "riskyReasons": []
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
   },
   "source": {
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

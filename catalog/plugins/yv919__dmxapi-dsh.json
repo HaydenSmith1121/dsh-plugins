@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "YV919/dmxapi-dsh",
+  "slug": "yv919__dmxapi-dsh",
+  "package": "dsh-dmxapi",
+  "name": "dmxapi-dsh",
+  "title": "dmxapi-dsh",
+  "summary": "在 DeepSeek Harness 里快速配好 DMXAPI 模型，支持三种协议和自定义服务商。",
+  "tags": [
+    "deepseek-harness",
+    "dmxapi",
+    "dsh-plugin",
+    "模型适配",
+    "工具集成",
+    "模型配置",
+    "插件开发"
+  ],
+  "version": "0.1.9",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": {
+    "tag": "v0.1.9",
+    "publishedAt": "2026-09-24T11:44:12Z",
+    "url": "https://github.com/YV919/dmxapi-dsh/releases/tag/v0.1.9"
+  },
+  "author": "YV919",
+  "repo": "https://github.com/YV919/dmxapi-dsh",
+  "homepage": "https://www.dmxapi.cn/",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T11:42:37Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:YV919/dmxapi-dsh",
+    "commands": [
+      "dsh plugin --profile web add github:YV919/dmxapi-dsh"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

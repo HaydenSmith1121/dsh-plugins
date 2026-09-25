@@ -23,10 +23,10 @@
   "repo": "https://github.com/latte03/dsh-select-quote",
   "homepage": null,
   "license": "MIT",
-  "stars": 0,
+  "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-23T07:42:31Z",
-  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "pushedAt": "2026-09-24T10:20:22Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -38,9 +38,9 @@
     "method": "npm",
     "spec": "dsh-select-quote",
     "commands": [
+      "dsh plugin --profile web add dsh-select-quote",
       "git clone <repo> && cd dsh-select-quote",
-      "npm install",
-      "dsh plugin --profile web add dsh-select-quote"
+      "npm install && npm run build"
     ],
     "url": null,
     "sha256": null,
@@ -56,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

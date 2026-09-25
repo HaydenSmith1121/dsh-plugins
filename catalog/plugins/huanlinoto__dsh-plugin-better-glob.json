@@ -5,13 +5,13 @@
   "package": "@huanlin/dsh-plugin-better-glob",
   "name": "dsh-plugin-better-glob",
   "title": "dsh-plugin-better-glob",
-  "summary": "按智能体分别替换内置 glob，自动跳过 node_modules 等无底洞目录，传白名单才能搜进去，提升搜索效率。",
+  "summary": "给 glob 搜索加个白名单，自动跳过 node_modules 这类无底洞目录，找文件更快更准。",
   "tags": [
     "dsh-plugin",
+    "文件管理",
     "效率提升",
-    "AI 助手",
-    "工作区管理",
-    "设置面板"
+    "开发增强",
+    "资源优化"
   ],
   "version": "0.2.0",
   "versionSource": "package.json",
@@ -52,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

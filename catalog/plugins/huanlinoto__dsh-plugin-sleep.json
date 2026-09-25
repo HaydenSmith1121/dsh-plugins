@@ -5,10 +5,13 @@
   "package": null,
   "name": "dsh-plugin-sleep",
   "title": "dsh-plugin-sleep",
-  "summary": "给模型加一个 sleep 工具，按指定毫秒暂停执行，支持取消和上限限制，适合等待服务重启、debounce 或重试退避等场景。",
+  "summary": "给模型加个 sleep 工具，按指定毫秒暂停再返回，还能取消或限制时长。",
   "tags": [
     "dsh-plugin",
-    "状态监控"
+    "工具集成",
+    "工作流增强",
+    "开发增强",
+    "自动化"
   ],
   "version": "0.2.0",
   "versionSource": "package.json",
@@ -50,6 +53,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

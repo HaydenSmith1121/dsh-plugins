@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "ljsysfurryACE/dsh-compaction",
+  "slug": "ljsysfurryace__dsh-compaction",
+  "package": "@agentframe/dsh-compaction",
+  "name": "dsh-compaction",
+  "title": "dsh-compaction",
+  "summary": "把 DSH 默认的 LLM 摘要压缩换成语义+物理双轨压缩，KV 压缩率高达 35.6 倍，省显存又保细节。",
+  "tags": [
+    "context-compression",
+    "deepseek-harness",
+    "dsh",
+    "llm",
+    "plugin",
+    "资源优化",
+    "模型配置",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
+  "author": "ljsysfurryACE",
+  "repo": "https://github.com/ljsysfurryACE/dsh-compaction",
+  "homepage": null,
+  "license": "GPL-3.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T11:14:09Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ljsysfurryACE/dsh-compaction",
+    "commands": [
+      "dsh plugin --profile web add github:ljsysfurryACE/dsh-compaction"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

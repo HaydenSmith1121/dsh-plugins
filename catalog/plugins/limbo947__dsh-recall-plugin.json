@@ -19,13 +19,9 @@
     "效率提升"
   ],
   "version": "2.4.5",
-  "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
-  "latestRelease": {
-    "tag": "v2.4.5",
-    "publishedAt": "2026-09-24T06:21:57Z",
-    "url": "https://github.com/limbo947/dsh-recall-plugin/releases/tag/v2.4.5"
-  },
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
   "author": "limbo947",
   "repo": "https://github.com/limbo947/dsh-recall-plugin",
   "homepage": null,
@@ -42,10 +38,11 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:limbo947/dsh-recall-plugin",
+    "method": "npm",
+    "spec": "dsh-recall-plugin",
     "commands": [
-      "dsh plugin --profile web add github:limbo947/dsh-recall-plugin"
+      "dsh plugin --profile web add dsh-recall-plugin",
+      "dsh plugin --profile desktop add dsh-recall-plugin"
     ],
     "url": null,
     "sha256": null,
@@ -61,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

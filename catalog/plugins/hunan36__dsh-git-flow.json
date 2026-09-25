@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "hunan36/dsh-git-flow",
+  "slug": "hunan36__dsh-git-flow",
+  "package": "dsh-git-flow",
+  "name": "dsh-git-flow",
+  "title": "dsh-git-flow",
+  "summary": "在编辑器工具栏里直接切分支、挑文件提交，还能让 AI 帮你写提交信息并推送。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "git",
+    "工作区管理",
+    "开发增强",
+    "工具集成",
+    "效率提升"
+  ],
+  "version": "0.3.0-rc.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": {
+    "tag": "0.3.0-rc.2",
+    "publishedAt": "2026-09-23T02:56:24Z",
+    "url": "https://github.com/hunan36/dsh-git-flow/releases/tag/0.3.0-rc.2"
+  },
+  "author": "hunan36",
+  "repo": "https://github.com/hunan36/dsh-git-flow",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-24T02:10:43Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hunan36/dsh-git-flow",
+    "commands": [
+      "dsh plugin --profile gitflow-web add https://github.com/hunan36/dsh-git-flow",
+      "dsh plugin --profile gitflow-web add \"$PWD\"",
+      "npm install -g pnpm"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

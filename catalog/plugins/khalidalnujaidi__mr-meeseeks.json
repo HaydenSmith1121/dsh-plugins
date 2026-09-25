@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "KhalidAlnujaidi/mr-meeseeks",
+  "slug": "khalidalnujaidi__mr-meeseeks",
+  "package": null,
+  "name": "mr-meeseeks",
+  "title": "mr-meeseeks",
+  "summary": "把多个免费模型组队协作，在本地跑起多智能体集群，自动分工干活。",
+  "tags": [
+    "agent-teams",
+    "deepseek-harness",
+    "dsh-plugin",
+    "free-models",
+    "multi-agent",
+    "openrouter",
+    "swarm",
+    "多Agent协作",
+    "模型适配",
+    "模型配置",
+    "自动化",
+    "命令行工具"
+  ],
+  "version": "0.1.13-meeseeks.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": {
+    "tag": "v0.1.13-meeseeks.1",
+    "publishedAt": "2026-09-17T18:52:41Z",
+    "url": "https://github.com/KhalidAlnujaidi/mr-meeseeks/releases/tag/v0.1.13-meeseeks.1"
+  },
+  "author": "KhalidAlnujaidi",
+  "repo": "https://github.com/KhalidAlnujaidi/mr-meeseeks",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T16:33:48Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:KhalidAlnujaidi/mr-meeseeks",
+    "commands": [
+      "dsh plugin --profile web add github:KhalidAlnujaidi/mr-meeseeks"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

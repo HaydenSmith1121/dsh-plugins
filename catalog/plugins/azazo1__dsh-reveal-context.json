@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "azazo1/dsh-reveal-context",
+  "slug": "azazo1__dsh-reveal-context",
+  "package": "dsh-reveal-context",
+  "name": "dsh-reveal-context",
+  "title": "dsh-reveal-context",
+  "summary": "把 DSH 藏起来的上下文注入行重新显示在对话里，还能按类型单独关掉。",
+  "tags": [
+    "context-injection",
+    "conversation",
+    "deepseek-harness",
+    "dsh-plugin",
+    "typescript",
+    "web-ui",
+    "会话管理",
+    "可视化",
+    "设置面板",
+    "前端增强"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
+  "author": "azazo1",
+  "repo": "https://github.com/azazo1/dsh-reveal-context",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-25T06:56:10Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:azazo1/dsh-reveal-context",
+    "commands": [
+      "dsh plugin --profile web add azazo1/dsh-reveal-context"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

@@ -13,9 +13,9 @@
     "效率提升",
     "工具集成"
   ],
-  "version": "0.8.2",
+  "version": "0.8.6",
   "versionSource": "npm",
-  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
   "latestRelease": null,
   "author": "jianghu-lao-yao",
   "repo": "https://github.com/jianghu-lao-yao/sh-volume-knob",
@@ -23,8 +23,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-23T09:01:02Z",
-  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "pushedAt": "2026-09-24T21:17:26Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -37,7 +37,8 @@
     "spec": "sh-volume-knob",
     "commands": [
       "dsh plugin --profile web add sh-volume-knob",
-      "dsh plugin --profile web add github:jianghu-lao-yao/sh-volume-knob"
+      "dsh plugin --profile web add github:jianghu-lao-yao/sh-volume-knob",
+      "npm install"
     ],
     "url": null,
     "sha256": null,
@@ -53,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-24T21:16:07.257Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

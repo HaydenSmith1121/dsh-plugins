@@ -5,7 +5,7 @@
   "package": null,
   "name": "dsh-image-pathify",
   "title": "dsh-image-pathify",
-  "summary": "让不能看图的模型也能处理聊天图片，自动转路径并调用识图工具获取描述。",
+  "summary": "让不能看图的模型也能处理聊天图片，自动把图片换成路径并调用内置识图工具。",
   "tags": [
     "deepseek",
     "deepseek-harness",
@@ -14,9 +14,10 @@
     "image",
     "plugin",
     "vision",
-    "多模态",
     "模型配置",
-    "聊天图片"
+    "多模态",
+    "视觉理解",
+    "工具集成"
   ],
   "version": "0.2.0",
   "versionSource": "npm",
@@ -28,8 +29,8 @@
   "license": "MIT",
   "stars": 4,
   "forks": 0,
-  "pushedAt": "2026-09-10T11:07:12Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-24T18:41:09Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -49,7 +50,7 @@
     "tarball": null,
     "dshVersion": null,
     "needsConfig": true,
-    "usageNeedsConfig": false,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -57,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

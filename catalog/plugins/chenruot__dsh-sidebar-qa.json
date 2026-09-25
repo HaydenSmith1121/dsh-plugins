@@ -22,13 +22,9 @@
     "主题"
   ],
   "version": "1.0.2",
-  "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
-  "latestRelease": {
-    "tag": "v1.0.2",
-    "publishedAt": "2026-09-24T07:32:49Z",
-    "url": "https://github.com/ChenRuoT/dsh-sidebar-qa/releases/tag/v1.0.2"
-  },
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
   "author": "ChenRuoT",
   "repo": "https://github.com/ChenRuoT/dsh-sidebar-qa",
   "homepage": null,
@@ -46,9 +42,8 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "dsh-better-sidebar@latest",
+    "spec": "dsh-sidebar-qa",
     "commands": [
-      "dsh plugin --profile web add dsh-better-sidebar@latest",
       "dsh plugin --profile web add dsh-sidebar-qa",
       "dsh plugin --profile web add <本仓库路径>"
     ],
@@ -66,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

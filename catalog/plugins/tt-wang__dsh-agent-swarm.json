@@ -5,14 +5,14 @@
   "package": "@dsh-external/dsh-agent-swarm",
   "name": "dsh-agent-swarm",
   "title": "dsh-agent-swarm",
-  "summary": "一句话把任务变成多智能体团队，自动规划、协作干活，还能互相验证结果，并内置侧边栏方便操作。",
+  "summary": "一句话描述目标，就能拉起一支智能体团队协作干活，还能独立验证结果、随时查看进度。",
   "tags": [
     "dsh-plugin",
-    "多智能体协作",
+    "多Agent协作",
     "工作流增强",
-    "AI 助手",
     "自动化",
-    "可视化"
+    "状态监控",
+    "效率提升"
   ],
   "version": "0.7.0",
   "versionSource": "package.json",
@@ -37,7 +37,7 @@
     "method": "github",
     "spec": "github:TT-Wang/dsh-agent-swarm",
     "commands": [
-      "git clone https://github.com/TT-Wang/dsh-agent-swarm.git"
+      "dsh plugin --profile web add github:TT-Wang/dsh-agent-swarm"
     ],
     "url": null,
     "sha256": null,
@@ -53,6 +53,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

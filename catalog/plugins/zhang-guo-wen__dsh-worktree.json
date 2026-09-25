@@ -5,13 +5,16 @@
   "package": "@guowenzhang/dsh-worktree",
   "name": "dsh-worktree",
   "title": "dsh-worktree",
-  "summary": "在独立 Git worktree 里开 DSH 会话，代码隔离互不干扰，多任务并行更安心。",
+  "summary": "给每个任务单独开一个 Git worktree 并注册成独立项目，让 AI 会话在隔离环境里干活，互不干扰。",
   "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
     "dsh-plugin",
     "工作区管理",
     "会话管理",
     "开发增强",
-    "命令行工具"
+    "工具集成"
   ],
   "version": "0.1.0",
   "versionSource": "github-tag",
@@ -36,7 +39,7 @@
     "method": "github",
     "spec": "github:zhang-guo-wen/dsh-worktree",
     "commands": [
-      "dsh plugin --profile web add C:/path/to/dsh-worktree"
+      "dsh plugin --profile web add github:zhang-guo-wen/dsh-worktree"
     ],
     "url": null,
     "sha256": null,
@@ -52,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-24T21:16:07.257Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

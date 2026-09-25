@@ -30,8 +30,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-22T07:36:17Z",
-  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "pushedAt": "2026-09-24T16:07:12Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -44,7 +44,8 @@
     "spec": "dsh-task-progress",
     "commands": [
       "dsh plugin --profile web add dsh-task-progress",
-      "dsh plugin --profile web add github:chen8923/dsh-task-progress"
+      "dsh plugin --profile web add github:chen8923/dsh-task-progress",
+      "git clone https://github.com/chen8923/dsh-task-progress"
     ],
     "url": null,
     "sha256": null,
@@ -60,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-21T22:03:40.491Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

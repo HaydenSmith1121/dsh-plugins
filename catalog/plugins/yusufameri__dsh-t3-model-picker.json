@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "yusufameri/dsh-t3-model-picker",
+  "slug": "yusufameri__dsh-t3-model-picker",
+  "package": "dsh-t3-model-picker",
+  "name": "dsh-t3-model-picker",
+  "title": "dsh-t3-model-picker",
+  "summary": "把 T3 Code 的模型选择器搬到 DSH 输入框，侧边栏切换服务商、分组搜索、收藏模型，还能用 Cmd/Ctrl+1..9 快速换模型。",
+  "tags": [
+    "cordis-plugin",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "model-picker",
+    "t3code",
+    "模型适配",
+    "模型配置",
+    "主题",
+    "效率提升",
+    "工具集成"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-24T06:19:15Z",
+    "url": "https://github.com/yusufameri/dsh-t3-model-picker/releases/tag/v1.0.0"
+  },
+  "author": "yusufameri",
+  "repo": "https://github.com/yusufameri/dsh-t3-model-picker",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T06:31:24Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yusufameri/dsh-t3-model-picker",
+    "commands": [
+      "dsh plugin --profile web add github:yusufameri/dsh-t3-model-picker",
+      "dsh plugin --profile web add https://github.com/yusufameri/dsh-t3-model-picker/releases/latest/download/dsh-t3-model-picker.tgz",
+      "dsh plugin --profile web add dsh-t3-model-picker"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

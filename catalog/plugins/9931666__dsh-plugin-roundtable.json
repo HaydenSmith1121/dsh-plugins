@@ -2,16 +2,21 @@
   "schemaVersion": 1,
   "id": "9931666/dsh-plugin-roundtable",
   "slug": "9931666__dsh-plugin-roundtable",
-  "package": null,
+  "package": "@huanlin/dsh-plugin-roundtable",
   "name": "dsh-plugin-roundtable",
   "title": "dsh-plugin-roundtable",
   "summary": "把一对一聊天变成你、DeepSeek 主持人和一圈专家 AI 的圆桌会议，能辩论、能拍板。",
   "tags": [
+    "ai",
+    "ai-tools",
     "cordis",
+    "deepseek",
     "deepseek-harness",
     "dsh-plugin",
     "roundtable",
-    "多智能体协作",
+    "skills",
+    "workflow",
+    "多Agent协作",
     "会话管理",
     "可视化",
     "工作流增强"
@@ -30,8 +35,8 @@
   "license": "MIT",
   "stars": 9,
   "forks": 1,
-  "pushedAt": "2026-09-24T15:42:10Z",
-  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "pushedAt": "2026-09-25T06:31:54Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -40,10 +45,9 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "@huanlin/dsh-plugin-roundtable",
+    "method": "manual",
+    "spec": ".",
     "commands": [
-      "dsh plugin --profile web add @huanlin/dsh-plugin-roundtable",
       "git clone https://github.com/9931666/dsh-plugin-roundtable",
       "dsh plugin --profile web add ."
     ],
@@ -61,6 +65,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

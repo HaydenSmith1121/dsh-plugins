@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "tomowang/dsh-data-agent",
   "slug": "tomowang__dsh-data-agent",
-  "package": null,
+  "package": "@tomowang/dsh-data-agent",
   "name": "dsh-data-agent",
   "title": "dsh-data-agent",
   "summary": "在聊天或设置面板里管理数据库连接、浏览标注表结构、直接跑 SQL 查询。",
@@ -18,17 +18,21 @@
     "数据库管理"
   ],
   "version": "0.3.0",
-  "versionSource": "npm",
-  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
-  "latestRelease": null,
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-17T15:36:52Z",
+    "url": "https://github.com/tomowang/dsh-data-agent/releases/tag/v0.3.0"
+  },
   "author": "tomowang",
   "repo": "https://github.com/tomowang/dsh-data-agent",
   "homepage": null,
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-23T14:00:03Z",
-  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "pushedAt": "2026-09-25T01:24:52Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -37,29 +41,25 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "@tomowang/dsh-data-agent",
+    "method": "github",
+    "spec": "github:tomowang/dsh-data-agent",
     "commands": [
-      "npm install -g @deepseek-ai/dsh",
-      "dsh plugin --profile web add @tomowang/dsh-data-agent",
-      "dsh plugin --profile web approve-builds"
+      "dsh plugin --profile web add github:tomowang/dsh-data-agent"
     ],
     "url": null,
     "sha256": null,
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
-    "risky": true,
-    "riskyReasons": [
-      "含全局安装（-g / --global）"
-    ]
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
   },
   "source": {
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

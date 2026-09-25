@@ -28,8 +28,8 @@
   "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-24T16:45:34Z",
-  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "pushedAt": "2026-09-25T00:30:36Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -41,7 +41,7 @@
     "method": "github",
     "spec": "github:netori/galfree",
     "commands": [
-      "dsh plugin add https://github.com/netori/galfree/releases/latest/download/dsh-galfree.tgz"
+      "dsh plugin --profile web add \"https://github.com/netori/galfree/releases/download/v0.1.2/dsh-galfree-0.1.2.tgz\""
     ],
     "url": null,
     "sha256": null,
@@ -57,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-20T20:34:57.047Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "datawork-technology/dsh-system-prompt",
+  "slug": "datawork-technology__dsh-system-prompt",
+  "package": "@datawork-technology/dsh-system-prompt",
+  "name": "dsh-system-prompt",
+  "title": "dsh-system-prompt",
+  "summary": "给本地配置的模型按 provider/model 精确追加自定义系统提示词，让不同模型各用各的人设。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "llm",
+    "plugin",
+    "prompt-injection",
+    "system-prompt",
+    "模型适配",
+    "模型配置",
+    "插件开发"
+  ],
+  "version": "1.0.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
+  "author": "datawork-technology",
+  "repo": "https://github.com/datawork-technology/dsh-system-prompt",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T12:13:45Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:datawork-technology/dsh-system-prompt",
+    "commands": [
+      "dsh plugin --profile web add @datawork-technology/dsh-system-prompt --registry=https://registry.npmjs.org",
+      "dsh plugin --profile web remove @datawork-technology/dsh-system-prompt"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

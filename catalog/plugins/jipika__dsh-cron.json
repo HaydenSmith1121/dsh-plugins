@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "jipika/dsh-cron",
+  "slug": "jipika__dsh-cron",
+  "package": "@jipika/dsh-cron",
+  "name": "dsh-cron",
+  "title": "dsh-cron",
+  "summary": "到点自动在新会话里跑你保存的提示词，任务表和历史记录都留着，还能在面板里管理。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "会话管理",
+    "状态持久化",
+    "效率提升",
+    "设置面板"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
+  "author": "jipika",
+  "repo": "https://github.com/jipika/dsh-cron",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T03:00:28Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jipika/dsh-cron",
+    "commands": [
+      "dsh plugin --profile <profile> add @jipika/dsh-cron",
+      "dsh plugin --profile <profile> add github:jipika/dsh-cron"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

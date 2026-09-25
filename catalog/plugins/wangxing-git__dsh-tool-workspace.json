@@ -5,7 +5,7 @@
   "package": "dsh-tool-workspace",
   "name": "dsh-tool-workspace",
   "title": "dsh-tool-workspace",
-  "summary": "管理 DSH 工作区注册记录，支持查看、创建、重命名和删除，删除与改路径需用户审批，不碰磁盘文件。",
+  "summary": "让模型能查看、新建、改名、删除 DSH 工作区注册记录，只动记录不碰磁盘，危险操作先审批。",
   "tags": [
     "approval",
     "deepseek",
@@ -16,9 +16,9 @@
     "plugin",
     "workspace-management",
     "工作区管理",
-    "模型适配",
-    "安全审查",
-    "工作流增强"
+    "插件管理",
+    "安全审计",
+    "状态持久化"
   ],
   "version": "0.2.0",
   "versionSource": "github-tag",
@@ -59,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

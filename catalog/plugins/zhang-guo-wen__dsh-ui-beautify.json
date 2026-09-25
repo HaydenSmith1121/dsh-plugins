@@ -5,13 +5,16 @@
   "package": "@guowenzhang/dsh-ui-beautify",
   "name": "dsh-ui-beautify",
   "title": "dsh-ui-beautify",
-  "summary": "给 DeepSeek Harness 的网页界面换个好看的正文中文字体，字体随插件自带，不用自己装。",
+  "summary": "给 DeepSeek Harness 的网页界面换上开源中文字体，还能自己挑正文字体，看着更舒服。",
   "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
     "dsh-plugin",
     "主题",
+    "前端增强",
     "界面美化",
-    "设置面板",
-    "前端增强"
+    "零配置"
   ],
   "version": "0.1.0",
   "versionSource": "github-tag",
@@ -36,7 +39,7 @@
     "method": "github",
     "spec": "github:zhang-guo-wen/dsh-ui-beautify",
     "commands": [
-      "dsh plugin --profile web add C:/02-codespace/deepseek-harness/dsh-ui-beautify"
+      "dsh plugin --profile web add github:zhang-guo-wen/dsh-ui-beautify"
     ],
     "url": null,
     "sha256": null,
@@ -52,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-24T21:16:07.257Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

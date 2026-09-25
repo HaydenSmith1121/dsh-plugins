@@ -7,6 +7,9 @@
   "title": "dsh-drawioedit",
   "summary": "在 DSH 侧边栏直接打开和编辑 .drawio 流程图文件，改完即存，不用来回切换软件。",
   "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
     "dsh-plugin",
     "可视化",
     "文件管理",
@@ -36,7 +39,7 @@
     "method": "github",
     "spec": "github:zhang-guo-wen/dsh-drawioedit",
     "commands": [
-      "npm install"
+      "dsh plugin --profile web add github:zhang-guo-wen/dsh-drawioedit"
     ],
     "url": null,
     "sha256": null,
@@ -52,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

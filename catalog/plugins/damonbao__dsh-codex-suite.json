@@ -9,21 +9,26 @@
   "tags": [
     "deepseek-harness-plugin",
     "dsh-plugin",
+    "模型配置",
     "模型适配",
     "零配置"
   ],
-  "version": "0.1.7-rc.1",
-  "versionSource": "npm",
-  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
-  "latestRelease": null,
+  "version": "0.1.7-rc.2",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": {
+    "tag": "0.1.7-rc.2",
+    "publishedAt": "2026-09-25T14:03:53Z",
+    "url": "https://github.com/DamonBao/dsh-codex-suite/releases/tag/0.1.7-rc.2"
+  },
   "author": "DamonBao",
   "repo": "https://github.com/DamonBao/dsh-codex-suite",
   "homepage": null,
   "license": "MIT",
   "stars": 5,
   "forks": 1,
-  "pushedAt": "2026-09-20T03:53:18Z",
-  "metricsCheckedAt": "2026-09-21T22:03:40.491Z",
+  "pushedAt": "2026-09-25T14:03:53Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -33,11 +38,11 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "@jcy2387/dsh-suite",
+    "spec": "@jcy2387/dsh-suite@0.1.7-rc.1",
     "commands": [
-      "dsh plugin --profile web add @jcy2387/dsh-suite",
-      "dsh plugin --profile web add @jcy2387/dsh-codex-provider",
-      "dsh plugin --profile web add @jcy2387/dsh-conversation-ui"
+      "dsh plugin --profile web add @jcy2387/dsh-suite@0.1.7-rc.1",
+      "dsh plugin --profile web add @jcy2387/dsh-codex-provider@0.1.7-rc.1",
+      "dsh plugin --profile web add @jcy2387/dsh-conversation-ui@0.1.7-rc.1"
     ],
     "url": null,
     "sha256": null,
@@ -53,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

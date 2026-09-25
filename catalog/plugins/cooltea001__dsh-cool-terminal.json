@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "CoolTea001/dsh-cool-terminal",
+  "slug": "cooltea001__dsh-cool-terminal",
+  "package": "dsh-cool-terminal",
+  "name": "dsh-cool-terminal",
+  "title": "dsh-cool-terminal",
+  "summary": "给 DeepSeek Harness 装个真终端，能跑真实 shell、有工作目录，状态还能一直保留。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "命令行工具",
+    "状态持久化",
+    "工作区管理",
+    "工具集成"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-25T06:33:47Z",
+    "url": "https://github.com/CoolTea001/dsh-cool-terminal/releases/tag/v0.2.0"
+  },
+  "author": "CoolTea001",
+  "repo": "https://github.com/CoolTea001/dsh-cool-terminal",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-25T06:33:47Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CoolTea001/dsh-cool-terminal",
+    "commands": [
+      "git clone https://github.com/CoolTea001/dsh-cool-terminal.git"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

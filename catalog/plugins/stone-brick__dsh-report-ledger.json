@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "stone-brick/dsh-report-ledger",
+  "slug": "stone-brick__dsh-report-ledger",
+  "package": null,
+  "name": "dsh-report-ledger",
+  "title": "dsh-report-ledger",
+  "summary": "把代理之间的汇报变成可追溯的账本，支持回执、结案、修正和会话时间线查看。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "multi-agent",
+    "typescript",
+    "多Agent协作",
+    "状态持久化",
+    "会话管理",
+    "可视化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-24T12:03:14Z",
+    "url": "https://github.com/stone-brick/dsh-report-ledger/releases/tag/v0.1.0"
+  },
+  "author": "stone-brick",
+  "repo": "https://github.com/stone-brick/dsh-report-ledger",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T12:19:48Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-report-ledger",
+    "commands": [
+      "dsh plugin --profile web add dsh-report-ledger",
+      "dsh plugin --profile web remove dsh-report-ledger"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

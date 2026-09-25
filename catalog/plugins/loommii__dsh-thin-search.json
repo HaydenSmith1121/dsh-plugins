@@ -5,15 +5,15 @@
   "package": null,
   "name": "dsh-thin-search",
   "title": "dsh-thin-search",
-  "summary": "轻量搜索插件，不依赖官方LLM搜索，可自由切换后端，零token成本，帮你快速接入搜索能力。",
+  "summary": "轻量搜索插件，可自由换后端，不烧 DeepSeek 官方 token，省钱又灵活。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "AI 助手",
-    "模型适配",
-    "零配置",
-    "资源优化"
+    "工具集成",
+    "资源优化",
+    "插件开发",
+    "效率提升"
   ],
   "version": "0.1.0",
   "versionSource": "github-tag",
@@ -48,7 +48,7 @@
     "tarball": null,
     "dshVersion": null,
     "needsConfig": true,
-    "usageNeedsConfig": false,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -56,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

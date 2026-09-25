@@ -5,7 +5,7 @@
   "package": "dsh-session-topics",
   "name": "dsh-session-topics",
   "title": "dsh-session-topics",
-  "summary": "给 DSH 侧边栏加上按话题分组会话的能力，纯前端实现，装完就能用。",
+  "summary": "给 DSH 侧边栏按话题自动分组会话，找历史对话更清爽，纯前端零依赖。",
   "tags": [
     "deepseek-harness",
     "dsh",
@@ -15,7 +15,7 @@
     "sidebar",
     "会话管理",
     "前端增强",
-    "效率提升",
+    "主题",
     "零配置"
   ],
   "version": "0.1.0",
@@ -28,8 +28,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-24T12:45:32Z",
-  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "pushedAt": "2026-09-25T02:21:17Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -41,7 +41,7 @@
     "method": "github",
     "spec": "github:WangXuexin24/dsh-session-topics",
     "commands": [
-      "dsh plugin --profile web add D:/DSH/projects/dsh-session-topics"
+      "dsh plugin --profile web add D:/DSH_Projects/dsh-session-topics"
     ],
     "url": null,
     "sha256": null,
@@ -57,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

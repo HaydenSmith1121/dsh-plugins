@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "Hanochhu/dsh-context-offload",
+  "slug": "hanochhu__dsh-context-offload",
+  "package": null,
+  "name": "dsh-context-offload",
+  "title": "dsh-context-offload",
+  "summary": "把历史里已用完的工具调用和结果换成简短占位，省下上下文，原始记录仍留在会话日志里可回放。",
+  "tags": [
+    "agent",
+    "compaction",
+    "context-management",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "tool-result",
+    "资源优化",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-24T00:44:38Z",
+    "url": "https://github.com/Hanochhu/dsh-context-offload/releases/tag/v0.1.0"
+  },
+  "author": "Hanochhu",
+  "repo": "https://github.com/Hanochhu/dsh-context-offload",
+  "homepage": "https://github.com/Hanochhu/dsh-context-offload",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T00:41:02Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-context-offload",
+    "commands": [
+      "dsh plugin --profile web add dsh-context-offload"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

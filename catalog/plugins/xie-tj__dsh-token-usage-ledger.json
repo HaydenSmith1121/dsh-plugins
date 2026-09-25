@@ -5,15 +5,16 @@
   "package": "dsh-plugin-usage-ledger",
   "name": "dsh-token-usage-ledger",
   "title": "dsh-token-usage-ledger",
-  "summary": "给 DeepSeek Harness 记一笔模型用量账，每次请求的 token 消耗都能在仪表盘上看得清清楚楚。",
+  "summary": "给 DeepSeek Harness 加一本持久用量账本，记录每次模型调用的 token 消耗，还能在网页仪表盘上看用量。",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
     "usage-dashboard",
-    "成本控制",
-    "状态监控",
+    "状态持久化",
     "可视化",
-    "效率提升"
+    "数据分析",
+    "状态监控",
+    "资源优化"
   ],
   "version": "0.4.0",
   "versionSource": "package.json",
@@ -54,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

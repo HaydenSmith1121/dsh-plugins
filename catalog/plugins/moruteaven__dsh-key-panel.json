@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "MoruTeaven/dsh-key-panel",
+  "slug": "moruteaven__dsh-key-panel",
+  "package": "@moruteaven/dsh-key-panel",
+  "name": "dsh-key-panel",
+  "title": "dsh-key-panel",
+  "summary": "把 API 密钥集中存起来，自动注入到 DSH Desktop，不用再到处翻配置。",
+  "tags": [
+    "cordis",
+    "credentials",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "key-store",
+    "secrets",
+    "安全审计",
+    "模型适配",
+    "设置面板",
+    "工具集成"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-24T15:13:58Z",
+    "url": "https://github.com/MoruTeaven/dsh-key-panel/releases/tag/v1.0.0"
+  },
+  "author": "MoruTeaven",
+  "repo": "https://github.com/MoruTeaven/dsh-key-panel",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T15:12:13Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:MoruTeaven/dsh-key-panel",
+    "commands": [
+      "dsh plugin --profile web add github:MoruTeaven/dsh-key-panel"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

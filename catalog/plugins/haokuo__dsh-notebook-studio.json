@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "HaoKuo/dsh-notebook-studio",
+  "slug": "haokuo__dsh-notebook-studio",
+  "package": "dsh-notebook-studio",
+  "name": "dsh-notebook-studio",
+  "title": "dsh-notebook-studio",
+  "summary": "把上传的 PDF 文献变成带页码引用的报告或 PPT，一个会话搞定整份文献综述。",
+  "tags": [
+    "deepseek-harness",
+    "docx",
+    "dsh",
+    "literature-review",
+    "notebook-studio",
+    "pdf",
+    "plugin",
+    "pptx",
+    "内容创作",
+    "报告生成",
+    "文件管理",
+    "工作流增强",
+    "AI 助手"
+  ],
+  "version": "0.6.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": {
+    "tag": "v0.6.1",
+    "publishedAt": "2026-09-24T17:16:02Z",
+    "url": "https://github.com/HaoKuo/dsh-notebook-studio/releases/tag/v0.6.1"
+  },
+  "author": "HaoKuo",
+  "repo": "https://github.com/HaoKuo/dsh-notebook-studio",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T17:31:37Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:HaoKuo/dsh-notebook-studio",
+    "commands": [
+      "dsh plugin --profile web add \"$PWD\"",
+      "dsh plugin --profile web add github:HaoKuo/dsh-notebook-studio"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

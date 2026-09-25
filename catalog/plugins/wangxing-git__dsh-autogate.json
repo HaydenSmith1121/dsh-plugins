@@ -5,7 +5,7 @@
   "package": "dsh-autogate",
   "name": "dsh-autogate",
   "title": "dsh-autogate",
-  "summary": "给 DeepSeek Harness 加自动审批，规则加 LLM 双重把关，安全沙箱内实现半自动或全自动操作。",
+  "summary": "给 DeepSeek Harness 加一层自动审批：规则加 LLM 双重把关，沙箱不放宽，拿不准就拒绝。",
   "tags": [
     "auto-approval",
     "deepseek",
@@ -17,10 +17,10 @@
     "permissions",
     "sandbox",
     "security",
+    "安全审计",
     "自动化",
-    "安全沙箱",
-    "权限控制",
-    "LLM审核"
+    "效率提升",
+    "插件管理"
   ],
   "version": "0.1.1",
   "versionSource": "github-tag",
@@ -61,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

@@ -5,15 +5,15 @@
   "package": "dsh-enhanced",
   "name": "dsh-enhanced",
   "title": "dsh-enhanced",
-  "summary": "给 DSH 助手加上递归自我改进能力，能自己跑任务、独立验收、从反馈里学技能，越用越顺手。",
+  "summary": "给 DSH 助手加上递归自我改进能力，能执行任务、独立验收、从反馈中学习并复用成功经验。",
   "tags": [
     "dsh-plugin",
     "rsi",
     "AI 助手",
-    "自动化",
     "工作流增强",
-    "效率提升",
-    "插件管理"
+    "自动化",
+    "开发增强",
+    "状态持久化"
   ],
   "version": "0.1.0",
   "versionSource": "github-release",
@@ -29,8 +29,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-24T17:53:16Z",
-  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "pushedAt": "2026-09-25T19:40:30Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -42,8 +42,9 @@
     "method": "github",
     "spec": "github:22-ai-00/dsh-enhanced",
     "commands": [
-      "dsh plugin --profile web add @dsh-enhanced/<plugin-name>",
-      "dsh plugin --profile web add ./plugins/hello"
+      "npm install --global @dsh-enhanced/rsi-cli",
+      "curl -fsSL https://raw.githubusercontent.com/22-ai-00/dsh-enhanced/main/scripts/install/install-npm.sh | bash",
+      "curl -fsSL https://raw.githubusercontent.com/22-ai-00/dsh-enhanced/main/scripts/install/install-npm.sh | bash -s -- --scenario lark --lark configure"
     ],
     "url": null,
     "sha256": null,
@@ -52,13 +53,16 @@
     "dshVersion": null,
     "needsConfig": true,
     "usageNeedsConfig": true,
-    "risky": false,
-    "riskyReasons": []
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）",
+      "含全局安装（-g / --global）"
+    ]
   },
   "source": {
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

@@ -13,9 +13,9 @@
     "桌宠",
     "自动化"
   ],
-  "version": "0.2.0",
-  "versionSource": "github-tag",
-  "versionCheckedAt": "2026-09-17T16:23:45.415Z",
+  "version": "0.4.7",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
   "latestRelease": null,
   "author": "mario841859784",
   "repo": "https://github.com/mario841859784/dsh-onebot",
@@ -33,11 +33,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:mario841859784/dsh-onebot",
+    "method": "npm",
+    "spec": "dsh-onebot-qq",
     "commands": [
-      "git clone <repo> ~/dsh-plugins/dsh-onebot",
-      "npm install --include=dev"
+      "dsh plugin --profile web add dsh-onebot-qq"
     ],
     "url": null,
     "sha256": null,
@@ -53,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

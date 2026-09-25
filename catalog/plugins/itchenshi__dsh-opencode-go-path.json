@@ -20,22 +20,22 @@
     "模型适配",
     "工具集成"
   ],
-  "version": "0.1.4",
+  "version": "0.2.0",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-23T21:11:03.116Z",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
   "latestRelease": {
-    "tag": "v0.1.4",
-    "publishedAt": "2026-09-23T02:33:33Z",
-    "url": "https://github.com/itchenshi/dsh-opencode-go-path/releases/tag/v0.1.4"
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-25T04:51:35Z",
+    "url": "https://github.com/itchenshi/dsh-gateway-models/releases/tag/v0.2.0"
   },
   "author": "itchenshi",
   "repo": "https://github.com/itchenshi/dsh-opencode-go-path",
-  "homepage": null,
+  "homepage": "https://github.com/itchenshi/dsh-ready-gui",
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-24T07:07:46Z",
-  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "pushedAt": "2026-09-25T12:35:30Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -47,8 +47,8 @@
     "method": "github",
     "spec": "github:itchenshi/dsh-opencode-go-path",
     "commands": [
-      "git clone https://github.com/itchenshi/dsh-opencode-go-path.git",
-      "dsh plugin --profile web add file:<clone 出来的绝对路径>"
+      "dsh plugin --profile web add github:itchenshi/dsh-opencode-go-path",
+      "dsh plugin --profile web add https://github.com/itchenshi/dsh-opencode-go-path/releases/download/v0.1.4/dsh-opencode-go-path-0.1.4.tar.gz"
     ],
     "url": null,
     "sha256": null,
@@ -64,6 +64,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-22T20:57:33.766Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

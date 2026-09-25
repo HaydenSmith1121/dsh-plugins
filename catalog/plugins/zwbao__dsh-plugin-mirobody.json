@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "zwbao/dsh-plugin-mirobody",
+  "slug": "zwbao__dsh-plugin-mirobody",
+  "package": "dsh-plugin-mirobody",
+  "name": "dsh-plugin-mirobody",
+  "title": "dsh-plugin-mirobody",
+  "summary": "给 Mirobody 加离线 LOINC/UCUM 术语查询，还能只读查看健康、用药和基因数据。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "health",
+    "loinc",
+    "mirobody",
+    "ucum",
+    "工具集成",
+    "数据分析",
+    "状态监控",
+    "AI 助手"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
+  "author": "zwbao",
+  "repo": "https://github.com/zwbao/dsh-plugin-mirobody",
+  "homepage": null,
+  "license": "Apache-2.0",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-25T20:49:03Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zwbao/dsh-plugin-mirobody",
+    "commands": [
+      "dsh plugin --profile web add github:zwbao/dsh-plugin-mirobody"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "blueberrymaid/dsh-midtalk",
+  "slug": "blueberrymaid__dsh-midtalk",
+  "package": "dsh-midtalk",
+  "name": "dsh-midtalk",
+  "title": "dsh-midtalk",
+  "summary": "给 DSH 加两条斜杠命令，任务中途能插话、也能立刻打断，打断还不丢现场。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "会话管理",
+    "命令行工具",
+    "状态持久化",
+    "效率提升"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
+  "author": "blueberrymaid",
+  "repo": "https://github.com/blueberrymaid/dsh-midtalk",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T17:21:05Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:blueberrymaid/dsh-midtalk",
+    "commands": [
+      "dsh plugin --profile web add \"github:blueberrymaid/dsh-midtalk\"",
+      "git clone https://github.com/blueberrymaid/dsh-midtalk.git dsh-midtalk"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

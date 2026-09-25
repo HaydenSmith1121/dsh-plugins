@@ -15,7 +15,7 @@
     "开发流程",
     "会话管理",
     "文件传输",
-    "安全审查"
+    "安全审计"
   ],
   "version": "0.7.0",
   "versionSource": "npm",
@@ -26,9 +26,9 @@
   "homepage": null,
   "license": "MIT",
   "stars": 38,
-  "forks": 2,
-  "pushedAt": "2026-09-20T09:50:01Z",
-  "metricsCheckedAt": "2026-09-22T20:57:33.766Z",
+  "forks": 3,
+  "pushedAt": "2026-09-24T07:02:54Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -42,7 +42,7 @@
     "commands": [
       "dsh plugin --profile web add dsh-remote-plugin",
       "dsh plugin --profile web list --depth 0",
-      "dsh plugin --profile web add dsh-remote-plugin@0.6.8"
+      "dsh plugin --profile web add dsh-remote-plugin@latest"
     ],
     "url": null,
     "sha256": null,
@@ -58,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

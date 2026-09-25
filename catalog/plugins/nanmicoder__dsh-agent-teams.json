@@ -12,7 +12,7 @@
     "dsh",
     "dsh-agent-teams",
     "dsh-plugin",
-    "多智能体协作"
+    "多Agent协作"
   ],
   "version": "0.1.21",
   "versionSource": "github-release",
@@ -26,10 +26,10 @@
   "repo": "https://github.com/NanmiCoder/dsh-agent-teams",
   "homepage": null,
   "license": "MIT",
-  "stars": 1797,
-  "forks": 158,
+  "stars": 1805,
+  "forks": 162,
   "pushedAt": "2026-09-24T19:22:29Z",
-  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -41,8 +41,8 @@
     "method": "github",
     "spec": "github:NanmiCoder/dsh-agent-teams",
     "commands": [
-      "npm install --global @deepseek-ai/dsh@0.1.5-rc.1",
-      "dsh plugin --profile web add --save-exact @nanmicoder/dsh-agent-teams@0.1.20"
+      "npm install --global @deepseek-ai/dsh@0.1.7-rc.2",
+      "dsh plugin --profile web add --save-exact @nanmicoder/dsh-agent-teams@0.1.21"
     ],
     "url": null,
     "sha256": null,
@@ -60,6 +60,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

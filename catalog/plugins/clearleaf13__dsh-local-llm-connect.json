@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "ClearLeaf13/dsh-local-llm-connect",
+  "slug": "clearleaf13__dsh-local-llm-connect",
+  "package": null,
+  "name": "dsh-local-llm-connect",
+  "title": "dsh-local-llm-connect",
+  "summary": "把本地 llama.cpp 管理器里正在跑的模型直接接进 DeepSeek Harness，启动就出现、停止就消失。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "llama-cpp",
+    "local-llm",
+    "模型配置",
+    "工具集成",
+    "桥接插件",
+    "零配置"
+  ],
+  "version": "0.13.7",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": {
+    "tag": "v0.13.7",
+    "publishedAt": "2026-09-24T06:09:48Z",
+    "url": "https://github.com/ClearLeaf13/dsh-local-llm-connect/releases/tag/v0.13.7"
+  },
+  "author": "ClearLeaf13",
+  "repo": "https://github.com/ClearLeaf13/dsh-local-llm-connect",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T21:08:25Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-local-llm-connect",
+    "commands": [
+      "dsh plugin --profile web add dsh-local-llm-connect"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

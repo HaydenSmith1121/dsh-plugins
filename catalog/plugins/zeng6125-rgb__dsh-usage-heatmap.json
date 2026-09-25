@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "zeng6125-rgb/dsh-usage-heatmap",
+  "slug": "zeng6125-rgb__dsh-usage-heatmap",
+  "package": "@dsh-external/dsh-usage-heatmap",
+  "name": "dsh-usage-heatmap",
+  "title": "dsh-usage-heatmap",
+  "summary": "在 DSH 设置页看模型 Token 用量：九宫指标卡加 GitHub 风格热力图，本地统计不丢数据。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "heatmap",
+    "token",
+    "usage",
+    "可视化",
+    "数据分析",
+    "状态监控",
+    "设置面板",
+    "状态持久化"
+  ],
+  "version": "0.0.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": {
+    "tag": "v0.0.4",
+    "publishedAt": "2026-09-25T08:31:09Z",
+    "url": "https://github.com/zeng6125-rgb/dsh-usage-heatmap/releases/tag/v0.0.4"
+  },
+  "author": "zeng6125-rgb",
+  "repo": "https://github.com/zeng6125-rgb/dsh-usage-heatmap",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-25T08:31:09Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zeng6125-rgb/dsh-usage-heatmap",
+    "commands": [
+      "dsh plugin add github:zeng6125-rgb/dsh-usage-heatmap",
+      "dsh plugin add https://github.com/zeng6125-rgb/dsh-usage-heatmap/releases/latest/download/dsh-usage-heatmap.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

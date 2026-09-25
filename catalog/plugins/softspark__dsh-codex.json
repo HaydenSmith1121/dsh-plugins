@@ -5,7 +5,7 @@
   "package": "@softspark/dsh-codex",
   "name": "dsh-codex",
   "title": "dsh-codex",
-  "summary": "通过 ChatGPT 订阅，在本地安全认证 Codex 应用服务器，为 DeepSeek Harness 提供模型接入。",
+  "summary": "让 DeepSeek Harness 直接调用本地已登录的 Codex 服务，用 ChatGPT 订阅额度跑 AI 智能体。",
   "tags": [
     "agent-harness",
     "ai-agents",
@@ -17,10 +17,10 @@
     "llm",
     "openai",
     "typescript",
-    "模型适配",
-    "安全审查",
-    "工作流增强",
-    "效率提升"
+    "模型配置",
+    "工具集成",
+    "桥接插件",
+    "AI 助手"
   ],
   "version": "1.6.2",
   "versionSource": "github-release",
@@ -56,8 +56,8 @@
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -65,6 +65,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

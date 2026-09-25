@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "jipika/dsh-todo-float",
+  "slug": "jipika__dsh-todo-float",
+  "package": "dsh-todo-float",
+  "name": "dsh-todo-float",
+  "title": "dsh-todo-float",
+  "summary": "把会话里的任务清单变成右上角可折叠的悬浮卡片，也能在设置里切回原来的面板。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "主题",
+    "前端增强",
+    "会话管理",
+    "设置面板"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
+  "author": "jipika",
+  "repo": "https://github.com/jipika/dsh-todo-float",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T03:00:22Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jipika/dsh-todo-float",
+    "commands": [
+      "dsh plugin --profile <profile> add dsh-todo-float",
+      "dsh plugin --profile <profile> add github:jipika/dsh-todo-float"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

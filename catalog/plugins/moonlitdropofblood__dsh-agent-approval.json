@@ -5,14 +5,14 @@
   "package": "@duke-dsh-plugins/dsh-agent-approval",
   "name": "dsh-agent-approval",
   "title": "dsh-agent-approval",
-  "summary": "为 DSH 智能体提供自动审批权限，简化操作流程，提升协作效率。",
+  "summary": "给 DSH 智能体加上自动审批权限，该放行的放行、该拦的拦，省去手动确认。",
   "tags": [
     "dsh-plugin",
     "dsh-plugins",
+    "安全审计",
     "自动化",
-    "AI 助手",
-    "安全审查",
-    "效率提升"
+    "效率提升",
+    "插件管理"
   ],
   "version": "1.7.2",
   "versionSource": "github-release",
@@ -42,15 +42,15 @@
     "spec": "github:MoonlitDropOfBlood/dsh-agent-approval",
     "commands": [
       "dsh plugin --profile web add /path/to/dsh-agent-approval",
-      "dsh plugin --profile web add https://github.com/MoonlitDropOfBlood/dsh-agent-approval/releases/download/v1.5.0/dsh-agent-approval-1.5.0.tgz"
+      "dsh plugin --profile web add https://github.com/MoonlitDropOfBlood/dsh-agent-approval/releases/download/v1.7.2/duke-dsh-plugins-dsh-agent-approval-1.7.2.tgz"
     ],
     "url": null,
     "sha256": null,
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -58,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

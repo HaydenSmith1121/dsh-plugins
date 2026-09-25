@@ -5,17 +5,17 @@
   "package": "dsh-server-hub",
   "name": "dsh-server-hub",
   "title": "dsh-server-hub",
-  "summary": "把多台远程服务器的 DSH 端口转发到本机，一个界面顶部标签随意切换，多机管理不用来回开窗口。",
+  "summary": "给 DeepSeek Harness Web 加一个多服务器切换台，随时看各实例状态、一键切换。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "multi-server",
     "ssh-tunnel",
-    "多服务器",
-    "桥接插件",
-    "集中仓库",
     "状态监控",
+    "多服务器切换",
+    "桥接插件",
+    "状态持久化",
     "效率提升"
   ],
   "version": "0.2.2",
@@ -45,9 +45,7 @@
     "method": "github",
     "spec": "github:ginkgonine/dsh-server-hub",
     "commands": [
-      "dsh plugin --profile web add github:ginkgonine/dsh-server-hub",
-      "git clone https://github.com/ginkgonine/dsh-server-hub.git",
-      "dsh plugin --profile web add ."
+      "dsh plugin --profile web add github:ginkgonine/dsh-server-hub"
     ],
     "url": null,
     "sha256": null,
@@ -63,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-24T21:16:07.257Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

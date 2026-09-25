@@ -17,13 +17,13 @@
     "报告生成",
     "工具集成"
   ],
-  "version": "1.1.0",
+  "version": "0.1.1",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
   "latestRelease": {
-    "tag": "v1.1.0",
-    "publishedAt": "2026-09-18T12:11:57Z",
-    "url": "https://github.com/zwbao/dsh-plugin-longpi/releases/tag/v1.1.0"
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-25T20:48:56Z",
+    "url": "https://github.com/zwbao/dsh-plugin-longpi/releases/tag/v0.1.1"
   },
   "author": "zwbao",
   "repo": "https://github.com/zwbao/dsh-plugin-longpi",
@@ -31,8 +31,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-24T19:27:58Z",
-  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "pushedAt": "2026-09-25T20:48:58Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -44,22 +44,25 @@
     "method": "github",
     "spec": "github:zwbao/dsh-plugin-longpi",
     "commands": [
-      "dsh plugin --profile web add link:/path/to/dsh-plugin-longpi"
+      "curl -fsSL https://raw.githubusercontent.com/zwbao/dsh-plugin-longpi/main/install.sh | bash",
+      "curl -fsSL https://raw.githubusercontent.com/zwbao/dsh-plugin-longpi/main/install.sh | bash -s -- --with-mirobody"
     ],
     "url": null,
     "sha256": null,
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
-    "risky": false,
-    "riskyReasons": []
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": true,
+    "riskyReasons": [
+      "含远程脚本下载执行（curl/wget 管道 shell）"
+    ]
   },
   "source": {
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "XiaYuLSYa/FutureAide-Control",
+  "slug": "xiayulsya__futureaide-control",
+  "package": "futureaide-control",
+  "name": "FutureAide-Control",
+  "title": "FutureAide-Control",
+  "summary": "让 Codex、Claude Code 等 MCP 客户端直接创建 DSH 项目对话、选模型、派任务、读结果，把 DSH 接进你的 AI 工作流。",
+  "tags": [
+    "claude-code",
+    "codex",
+    "deepseek",
+    "dsh",
+    "futureaide",
+    "mcp",
+    "桥接插件",
+    "工具集成",
+    "工作流增强",
+    "模型适配",
+    "会话管理"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
+  "author": "XiaYuLSYa",
+  "repo": "https://github.com/XiaYuLSYa/FutureAide-Control",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T02:34:34Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:XiaYuLSYa/FutureAide-Control",
+    "commands": [
+      "dsh plugin --profile web add github:XiaYuLSYa/FutureAide-Control"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "yembors64632/dsh-trae-connect",
+  "slug": "yembors64632__dsh-trae-connect",
+  "package": "dsh-trae-connect",
+  "name": "dsh-trae-connect",
+  "title": "dsh-trae-connect",
+  "summary": "把 Trae 订阅里的模型接进 DeepSeek Harness，让你在 DSH 里直接用上自己的 Trae 模型额度。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "model-provider",
+    "openai-compatible",
+    "trae",
+    "模型配置",
+    "工具集成",
+    "桥接插件",
+    "模型适配"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
+  "author": "yembors64632",
+  "repo": "https://github.com/yembors64632/dsh-trae-connect",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-24T00:59:02Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yembors64632/dsh-trae-connect",
+    "commands": [
+      "dsh plugin --profile web add github:yembors64632/dsh-trae-connect"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

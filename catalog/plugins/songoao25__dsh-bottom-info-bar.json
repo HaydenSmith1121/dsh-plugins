@@ -22,9 +22,9 @@
     "状态监控",
     "计价提醒"
   ],
-  "version": "1.17.0",
+  "version": "1.20.0",
   "versionSource": "npm",
-  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
   "latestRelease": null,
   "author": "songoao25",
   "repo": "https://github.com/songoao25/dsh-bottom-info-bar",
@@ -32,8 +32,8 @@
   "license": "MIT",
   "stars": 39,
   "forks": 4,
-  "pushedAt": "2026-09-23T16:03:44Z",
-  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "pushedAt": "2026-09-24T16:43:22Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -46,8 +46,8 @@
     "spec": "dsh-bottom-info-bar",
     "commands": [
       "dsh plugin --profile web add dsh-bottom-info-bar",
-      "git clone https://github.com/songoao25/dsh-bottom-info-bar.git",
-      "dsh plugin --profile web add /path/to/dsh-bottom-info-bar/plugin"
+      "dsh plugin --profile web add https://github.com/songoao25/dsh-bottom-info-bar",
+      "git clone https://github.com/songoao25/dsh-bottom-info-bar.git"
     ],
     "url": null,
     "sha256": null,
@@ -63,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

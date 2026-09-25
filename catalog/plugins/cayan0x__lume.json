@@ -5,27 +5,27 @@
   "package": null,
   "name": "Lume",
   "title": "Lume",
-  "summary": "给 DSH 会话加上任务执行纪律和人设记忆，干活更靠谱，聊天更像真人。",
+  "summary": "给 DSH Desktop 加任务纪律、方法台账和人设记忆，让 AI 干活更靠谱、聊天不白烧 token。",
   "tags": [
     "dsh-plugin",
     "工作流增强",
-    "AI 助手",
+    "开发增强",
+    "会话管理",
     "状态持久化",
-    "工程规范",
-    "内容创作"
+    "AI 助手"
   ],
-  "version": "0.8.0",
+  "version": "0.8.2",
   "versionSource": "npm",
-  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
   "latestRelease": null,
   "author": "cayan0x",
   "repo": "https://github.com/cayan0x/Lume",
   "homepage": null,
   "license": "MIT",
-  "stars": 2,
+  "stars": 3,
   "forks": 0,
-  "pushedAt": "2026-09-22T17:47:08Z",
-  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "pushedAt": "2026-09-24T16:14:56Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -38,7 +38,8 @@
     "spec": "lume-dsh-plugin",
     "commands": [
       "dsh plugin add lume-dsh-plugin",
-      "dsh plugin add github:cayan0x/Lume"
+      "dsh plugin add github:cayan0x/Lume",
+      "dsh plugin add lume-dsh-plugin@0.8.0"
     ],
     "url": null,
     "sha256": null,
@@ -54,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

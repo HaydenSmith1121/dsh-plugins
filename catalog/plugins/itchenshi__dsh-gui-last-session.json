@@ -32,8 +32,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-24T07:07:43Z",
-  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "pushedAt": "2026-09-25T10:35:17Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -45,8 +45,8 @@
     "method": "github",
     "spec": "github:itchenshi/dsh-gui-last-session",
     "commands": [
-      "git clone https://github.com/itchenshi/dsh-gui-last-session.git",
-      "dsh plugin --profile web add file:<clone 出来的绝对路径>"
+      "dsh plugin --profile web add github:itchenshi/dsh-gui-last-session",
+      "dsh plugin --profile web add https://github.com/itchenshi/dsh-gui-last-session/releases/download/v0.1.2/dsh-gui-last-session-0.1.2.tar.gz"
     ],
     "url": null,
     "sha256": null,
@@ -62,6 +62,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-22T20:57:33.766Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

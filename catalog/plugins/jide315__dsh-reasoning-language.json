@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "jide315/dsh-reasoning-language",
+  "slug": "jide315__dsh-reasoning-language",
+  "package": "dsh-reasoning-language",
+  "name": "dsh-reasoning-language",
+  "title": "dsh-reasoning-language",
+  "summary": "让 DSH 智能体用你指定的语言思考（默认简体中文），并自动展开思考过程，方便随时查看推理内容。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "i18n",
+    "reasoning",
+    "模型适配",
+    "主题",
+    "效率提升",
+    "会话管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
+  "author": "jide315",
+  "repo": "https://github.com/jide315/dsh-reasoning-language",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T15:36:54Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jide315/dsh-reasoning-language",
+    "commands": [
+      "dsh plugin --profile web add github:jide315/dsh-reasoning-language"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

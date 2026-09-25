@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "CrazyShout/dsh-ssh-remote",
+  "slug": "crazyshout__dsh-ssh-remote",
+  "package": "dsh-ssh-remote",
+  "name": "dsh-ssh-remote",
+  "title": "dsh-ssh-remote",
+  "summary": "把 DSH 的文件、命令和终端操作接到远程 SSH 主机上，像本地一样浏览编辑远端文件、跑命令。",
+  "tags": [
+    "dsh-plugin",
+    "工作区管理",
+    "文件管理",
+    "命令行工具",
+    "工具集成",
+    "状态监控"
+  ],
+  "version": "0.3.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
+  "author": "CrazyShout",
+  "repo": "https://github.com/CrazyShout/dsh-ssh-remote",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 5,
+  "forks": 5,
+  "pushedAt": "2026-09-24T14:19:54Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CrazyShout/dsh-ssh-remote",
+    "commands": [
+      "dsh plugin --profile web add github:CrazyShout/dsh-ssh-remote"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

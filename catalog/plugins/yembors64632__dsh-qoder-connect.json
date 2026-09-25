@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "yembors64632/dsh-qoder-connect",
+  "slug": "yembors64632__dsh-qoder-connect",
+  "package": "dsh-qoder-connect",
+  "name": "dsh-qoder-connect",
+  "title": "dsh-qoder-connect",
+  "summary": "把 Qoder CN 桌面 App 订阅里的模型接进 DeepSeek Harness，用自己生成的 PAT 就能直接调用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "model-provider",
+    "openai-compatible",
+    "qoder",
+    "模型配置",
+    "桥接插件",
+    "工具集成",
+    "模型适配"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
+  "author": "yembors64632",
+  "repo": "https://github.com/yembors64632/dsh-qoder-connect",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-24T00:59:05Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:yembors64632/dsh-qoder-connect",
+    "commands": [
+      "dsh plugin --profile web add github:yembors64632/dsh-qoder-connect"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

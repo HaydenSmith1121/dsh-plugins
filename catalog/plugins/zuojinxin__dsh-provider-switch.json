@@ -5,16 +5,13 @@
   "package": "dsh-provider-switch",
   "name": "dsh-provider-switch",
   "title": "dsh-provider-switch",
-  "summary": "在 DeepSeek Harness 中一键启停供应商、搜索模型并直接重命名，让模型管理更顺手。",
+  "summary": "给模型选择器加上供应商开关、模型搜索和重命名，关掉的供应商不再被调用。",
   "tags": [
-    "deepseek",
-    "deepseek-harness",
-    "dsh",
     "dsh-plugin",
     "模型适配",
     "设置面板",
     "效率提升",
-    "可视化"
+    "插件管理"
   ],
   "version": "0.4.0",
   "versionSource": "github-tag",
@@ -26,8 +23,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-24T08:51:34Z",
-  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "pushedAt": "2026-09-24T21:28:36Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -55,6 +52,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

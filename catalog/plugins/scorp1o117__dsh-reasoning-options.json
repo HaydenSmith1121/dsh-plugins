@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "Scorp1o117/dsh-reasoning-options",
+  "slug": "scorp1o117__dsh-reasoning-options",
+  "package": "dsh-reasoning-options",
+  "name": "dsh-reasoning-options",
+  "title": "dsh-reasoning-options",
+  "summary": "自动给 dsh 里每个 pi-ai 第三方模型加上推理强度选择，想调深想调浅随手就能改。",
+  "tags": [
+    "dsh-plugin",
+    "模型配置",
+    "模型适配",
+    "设置面板",
+    "效率提升"
+  ],
+  "version": "0.3.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": {
+    "tag": "v0.3.0",
+    "publishedAt": "2026-09-25T16:12:31Z",
+    "url": "https://github.com/Scorp1o117/dsh-reasoning-options/releases/tag/v0.3.0"
+  },
+  "author": "Scorp1o117",
+  "repo": "https://github.com/Scorp1o117/dsh-reasoning-options",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-25T16:12:07Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Scorp1o117/dsh-reasoning-options",
+    "commands": [
+      "dsh plugin --profile web add github:Scorp1o117/dsh-reasoning-options"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

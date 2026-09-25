@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "Mvyvn/dsh-skill-manager",
+  "slug": "mvyvn__dsh-skill-manager",
+  "package": "dsh-skill-manager",
+  "name": "dsh-skill-manager",
+  "title": "dsh-skill-manager",
+  "summary": "一键扫描导入技能，分组启停管理，AI 可自主调用，让 DSH 技能管理更高效。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "工具集成",
+    "效率提升",
+    "AI 助手",
+    "零配置"
+  ],
+  "version": "1.3.4",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
+  "author": "Mvyvn",
+  "repo": "https://github.com/Mvyvn/dsh-skill-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-24T15:56:20Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Mvyvn/dsh-skill-manager",
+    "commands": [
+      "dsh plugin --profile web add github:Mvyvn/dsh-skill-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

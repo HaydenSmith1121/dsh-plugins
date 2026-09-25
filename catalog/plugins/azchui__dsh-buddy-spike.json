@@ -39,7 +39,9 @@
     "method": "github",
     "spec": "github:AzcHui/dsh-buddy-spike",
     "commands": [
-      "git clone https://github.com/AzcHui/dsh-buddy-spike.git"
+      "git clone https://github.com/AzcHui/dsh-buddy-spike.git",
+      "npm install --omit=dev",
+      "dsh plugin --profile web add ./dsh-buddy"
     ],
     "url": null,
     "sha256": null,
@@ -55,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-24T21:16:07.257Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "NOirBRight/dsh-llm-providers-ui",
+  "slug": "noirbright__dsh-llm-providers-ui",
+  "package": "dsh-llm-providers-ui",
+  "name": "dsh-llm-providers-ui",
+  "title": "dsh-llm-providers-ui",
+  "summary": "给 DSH 插件统一提供 LLM 模型供应商的设置页面、卡片排序和选择器排序。",
+  "tags": [
+    "dsh-plugin",
+    "模型适配",
+    "设置面板",
+    "插件管理",
+    "前端增强"
+  ],
+  "version": "0.2.13",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": {
+    "tag": "v0.2.13",
+    "publishedAt": "2026-09-24T15:00:06Z",
+    "url": "https://github.com/NOirBRight/dsh-llm-providers-ui/releases/tag/v0.2.13"
+  },
+  "author": "NOirBRight",
+  "repo": "https://github.com/NOirBRight/dsh-llm-providers-ui",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-25T15:10:31Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:NOirBRight/dsh-llm-providers-ui",
+    "commands": [
+      "dsh plugin --profile web add --force \\"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "frederico-kluser/dsh-tavily-resilient-search",
+  "slug": "frederico-kluser__dsh-tavily-resilient-search",
+  "package": null,
+  "name": "dsh-tavily-resilient-search",
+  "title": "dsh-tavily-resilient-search",
+  "summary": "给 DSH 加实时联网搜索，多把 Tavily 密钥自动轮换，限流封号也不中断对话。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "key-rotation",
+    "tavily",
+    "web-search",
+    "工具集成",
+    "效率提升",
+    "资源优化",
+    "AI 助手"
+  ],
+  "version": "0.1.3",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
+  "author": "frederico-kluser",
+  "repo": "https://github.com/frederico-kluser/dsh-tavily-resilient-search",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T20:16:15Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-tavily-resilient-search",
+    "commands": [
+      "dsh plugin --profile web add dsh-tavily-resilient-search"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

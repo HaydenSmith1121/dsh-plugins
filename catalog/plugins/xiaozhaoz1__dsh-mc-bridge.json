@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaozhaoz1/dsh-mc-bridge",
+  "slug": "xiaozhaoz1__dsh-mc-bridge",
+  "package": "dsh-mc-bridge",
+  "name": "dsh-mc-bridge",
+  "title": "dsh-mc-bridge",
+  "summary": "把 Minecraft 的状态、事件和操作接进 DSH，让 AI 能看能动手，纯后端默认只读。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "minecraft",
+    "minecraft-mod",
+    "桥接插件",
+    "工具集成",
+    "状态监控",
+    "娱乐互动",
+    "视觉理解"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
+  "author": "xiaozhaoz1",
+  "repo": "https://github.com/xiaozhaoz1/dsh-mc-bridge",
+  "homepage": null,
+  "license": null,
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-25T02:40:30Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xiaozhaoz1/dsh-mc-bridge",
+    "commands": [
+      "dsh plugin add <本仓 tools/dsh-plugin 路径>",
+      "dsh plugin add /path/to/tools/dsh-plugin"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

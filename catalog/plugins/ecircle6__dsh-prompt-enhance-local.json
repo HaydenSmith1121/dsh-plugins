@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ecircle6/dsh-prompt-enhance-local",
+  "slug": "ecircle6__dsh-prompt-enhance-local",
+  "package": "dsh-prompt-enhance-local",
+  "name": "dsh-prompt-enhance-local",
+  "title": "dsh-prompt-enhance-local",
+  "summary": "在 DSH 输入框里一键把口语草稿变成结构化专业提示词，本地加固、限流保护、不写文件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "prompt",
+    "效率提升",
+    "报告生成",
+    "AI 助手",
+    "安全审计",
+    "零配置"
+  ],
+  "version": "0.2.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
+  "author": "ecircle6",
+  "repo": "https://github.com/ecircle6/dsh-prompt-enhance-local",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T08:05:11Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ecircle6/dsh-prompt-enhance-local",
+    "commands": [
+      "dsh plugin --profile web add github:ecircle6/dsh-prompt-enhance-local"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

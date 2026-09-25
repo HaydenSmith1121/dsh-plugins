@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "gychen-NJU/dsh-overleaf",
+  "slug": "gychen-nju__dsh-overleaf",
+  "package": "dsh-overleaf",
+  "name": "dsh-overleaf",
+  "title": "dsh-overleaf",
+  "summary": "在 DSH 网页里嵌入 Overleaf 工作台，支持反向代理登录、选中引用、光标插入和 LaTeX 辅助，写论文更顺手。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "前端增强",
+    "效率提升",
+    "工作流增强",
+    "工具集成"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-24T19:54:18Z",
+    "url": "https://github.com/gychen-NJU/dsh-overleaf/releases/tag/v1.0.0"
+  },
+  "author": "gychen-NJU",
+  "repo": "https://github.com/gychen-NJU/dsh-overleaf",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-24T19:53:40Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:gychen-NJU/dsh-overleaf",
+    "commands": [
+      "dsh plugin --profile web add github:gychen-NJU/dsh-overleaf",
+      "dsh plugin --profile web add ./dsh-overleaf-1.0.0.tgz",
+      "dsh plugin --profile web remove dsh-overleaf"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

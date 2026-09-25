@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "drscrewdriver/dsh-docx-sidebar",
+  "slug": "drscrewdriver__dsh-docx-sidebar",
+  "package": "dsh-docx-sidebar",
+  "name": "dsh-docx-sidebar",
+  "title": "dsh-docx-sidebar",
+  "summary": "在 DSH 右侧栏直接打开 .docx 文档，标题、列表、表格、图片都能看，带熔断保护，只做阅读不还原排版。",
+  "tags": [
+    "dsh-plugin",
+    "文件管理",
+    "可视化",
+    "前端增强",
+    "主题"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
+  "author": "drscrewdriver",
+  "repo": "https://github.com/drscrewdriver/dsh-docx-sidebar",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-24T18:17:08Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:drscrewdriver/dsh-docx-sidebar",
+    "commands": [
+      "dsh plugin --profile <profile> add <path | npm 包 | github:owner/repo"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

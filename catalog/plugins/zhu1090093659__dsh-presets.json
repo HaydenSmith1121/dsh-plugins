@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "zhu1090093659/dsh-presets",
+  "slug": "zhu1090093659__dsh-presets",
+  "package": null,
+  "name": "dsh-presets",
+  "title": "dsh-presets",
+  "summary": "在 DSH 网页界面里集中管理智能体预设，一键安装、启用或停用社区预设。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-web",
+    "plugin",
+    "preset",
+    "插件管理",
+    "设置面板",
+    "工具集成",
+    "工作区管理"
+  ],
+  "version": "0.4.2",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
+  "author": "zhu1090093659",
+  "repo": "https://github.com/zhu1090093659/dsh-presets",
+  "homepage": null,
+  "license": "BSD-3-Clause",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-24T14:35:50Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@linxin666/dsh-client-ui-preset-center",
+    "commands": [
+      "dsh plugin --profile web add @linxin666/dsh-client-ui-preset-center"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

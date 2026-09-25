@@ -8,6 +8,7 @@
   "summary": "让 DeepSeek Harness 在 Linux 桌面上像原生应用一样启动，独立无边框窗口，关窗自动停服务。",
   "tags": [
     "deepseek-harness",
+    "desktop",
     "dsh-plugin",
     "gnome",
     "hyprland",
@@ -20,22 +21,18 @@
     "主题",
     "零配置"
   ],
-  "version": "0.1.0",
-  "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
-  "latestRelease": {
-    "tag": "v0.1.0",
-    "publishedAt": "2026-09-20T11:54:23Z",
-    "url": "https://github.com/ffyfox/dsh-linux-desktop/releases/tag/v0.1.0"
-  },
+  "version": "0.5.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
   "author": "ffyfox",
   "repo": "https://github.com/ffyfox/dsh-linux-desktop",
   "homepage": null,
   "license": "MIT",
   "stars": 1,
   "forks": 0,
-  "pushedAt": "2026-09-24T21:01:34Z",
-  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "pushedAt": "2026-09-24T21:54:07Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -44,11 +41,12 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:ffyfox/dsh-linux-desktop",
+    "method": "npm",
+    "spec": "dsh-linux-desktop",
     "commands": [
+      "dsh plugin --profile web add dsh-linux-desktop",
       "dsh plugin --profile web add github:ffyfox/dsh-linux-desktop",
-      "dsh plugin --profile web add /path/to/dsh-linux-desktop"
+      "dsh plugin --profile web add dsh-linux-desktop@0.4.2"
     ],
     "url": null,
     "sha256": null,
@@ -64,6 +62,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-24T21:16:07.257Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

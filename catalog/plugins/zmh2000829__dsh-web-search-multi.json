@@ -7,7 +7,14 @@
   "title": "dsh-web-search-multi",
   "summary": "为 DeepSeek Harness 提供可配置的多源网页搜索插件，稳定调用搜索工具，灵活切换不同搜索后端。",
   "tags": [
+    "brave-search",
+    "deepseek-harness",
     "dsh-plugin",
+    "gemini",
+    "searxng",
+    "tavily",
+    "web-search",
+    "wikipedia",
     "模型配置",
     "零配置",
     "效率提升",
@@ -38,9 +45,9 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "dsh-web-search-multi@0.2.2",
+    "spec": "dsh-web-search-multi@latest",
     "commands": [
-      "dsh plugin --profile web add dsh-web-search-multi@0.2.2",
+      "dsh plugin --profile web add dsh-web-search-multi@latest",
       "dsh plugin --profile web add link:$PWD",
       "dsh plugin --profile web add dsh-web-search-multi@0.2.0"
     ],
@@ -58,6 +65,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

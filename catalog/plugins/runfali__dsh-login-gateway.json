@@ -5,14 +5,14 @@
   "package": "dsh-login-gateway",
   "name": "dsh-login-gateway",
   "title": "dsh-login-gateway",
-  "summary": "给 dsh 的 Web UI 加一道登录墙，让本机服务安全地对外开放，登录后全功能反代，零依赖零侵入。",
+  "summary": "给只监听本机的 dsh Web UI 加一道登录墙，登录后全量反代，让你安全地从外网访问。",
   "tags": [
     "dsh-plugin",
     "dsh-plugins",
-    "安全审查",
-    "工作流增强",
-    "前端增强",
-    "自动化"
+    "安全审计",
+    "桥接插件",
+    "零配置",
+    "工具集成"
   ],
   "version": "0.1.2-rc.1",
   "versionSource": "github-tag",
@@ -22,10 +22,10 @@
   "repo": "https://github.com/runfali/dsh-login-gateway",
   "homepage": null,
   "license": "MIT",
-  "stars": 4,
+  "stars": 5,
   "forks": 1,
   "pushedAt": "2026-09-24T06:08:16Z",
-  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -54,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

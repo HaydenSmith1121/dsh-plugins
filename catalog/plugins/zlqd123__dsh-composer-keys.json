@@ -5,22 +5,22 @@
   "package": "dsh-composer-keys",
   "name": "dsh-composer-keys",
   "title": "dsh-composer-keys",
-  "summary": "聊天输入框的发送和换行键随你改，双预设一键切换，设置自动保存。",
+  "summary": "把发送、换行、打断键位改成你顺手的组合，双预设一键切换，设置自动保存。",
   "tags": [
     "dsh-plugin",
-    "快捷操作",
-    "设置面板",
     "效率提升",
+    "设置面板",
     "状态持久化",
-    "主题"
+    "主题",
+    "界面美化"
   ],
-  "version": "0.1.2",
+  "version": "0.1.3",
   "versionSource": "github-release",
-  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
   "latestRelease": {
-    "tag": "v0.1.2",
-    "publishedAt": "2026-09-24T09:50:23Z",
-    "url": "https://github.com/zlqd123/dsh-composer-keys/releases/tag/v0.1.2"
+    "tag": "v0.1.3",
+    "publishedAt": "2026-09-25T07:07:52Z",
+    "url": "https://github.com/zlqd123/dsh-composer-keys/releases/tag/v0.1.3"
   },
   "author": "zlqd123",
   "repo": "https://github.com/zlqd123/dsh-composer-keys",
@@ -28,8 +28,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-24T09:54:17Z",
-  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "pushedAt": "2026-09-25T07:07:52Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -41,7 +41,7 @@
     "method": "github",
     "spec": "github:zlqd123/dsh-composer-keys",
     "commands": [
-      "dsh plugin --profile web add /path/to/dsh-composer-keys",
+      "dsh plugin --profile web add ./dsh-composer-keys",
       "dsh plugin --profile web remove dsh-composer-keys"
     ],
     "url": null,
@@ -58,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

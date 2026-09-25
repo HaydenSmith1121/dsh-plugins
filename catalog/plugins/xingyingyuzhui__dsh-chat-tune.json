@@ -5,15 +5,15 @@
   "package": "dsh-chat-tune",
   "name": "dsh-chat-tune",
   "title": "dsh-chat-tune",
-  "summary": "在 DeepSeek Harness 对话区自由调整字号、字体、行距、段距和显示宽度，让聊天界面更符合你的阅读习惯。",
+  "summary": "在设置里调对话区的字体、行距、段距和宽度，还能复制会话 ID、导出 Markdown、删除会话。",
   "tags": [
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "主题",
-    "字体调整",
-    "阅读体验",
-    "布局设置"
+    "设置面板",
+    "会话管理",
+    "效率提升"
   ],
   "version": "0.5.1",
   "versionSource": "github-release",
@@ -43,7 +43,7 @@
     "spec": "github:xingyingyuzhui/dsh-chat-tune",
     "commands": [
       "dsh plugin --profile web add github:xingyingyuzhui/dsh-chat-tune",
-      "dsh plugin --profile web add link:/abs/path/to/dsh-chat-tune"
+      "dsh plugin add github:xingyingyuzhui/dsh-chat-tune"
     ],
     "url": null,
     "sha256": null,
@@ -59,6 +59,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

@@ -5,7 +5,7 @@
   "package": "@softspark/dsh-orchestrator",
   "name": "dsh-orchestrator",
   "title": "dsh-orchestrator",
-  "summary": "通过原生订阅登录，一键将 Claude Code 和 GitHub Copilot 的 Gemini 任务编排到 DeepSeek Harness，实现跨智能体协作。",
+  "summary": "用你已有的 Claude Code 和 Copilot 订阅账号，一句话把任务派给多个 AI 智能体协作完成。",
   "tags": [
     "acp",
     "ai-agents",
@@ -18,10 +18,11 @@
     "multi-agent",
     "orchestration",
     "typescript",
-    "多智能体协作",
-    "工作流增强",
+    "多Agent协作",
+    "工具集成",
     "模型配置",
-    "自动化"
+    "自动化",
+    "桥接插件"
   ],
   "version": "2.0.0",
   "versionSource": "github-release",
@@ -67,6 +68,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

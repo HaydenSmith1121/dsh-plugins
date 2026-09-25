@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "zdz6215591/dsh-theme-doubao",
+  "slug": "zdz6215591__dsh-theme-doubao",
+  "package": "dsh-theme-doubao",
+  "name": "dsh-theme-doubao",
+  "title": "dsh-theme-doubao",
+  "summary": "给 DeepSeek Harness 网页界面换上豆包皮肤，标志、图标和人物插画全换新，浅色深色都支持。",
+  "tags": [
+    "dsh-plugin",
+    "dsh-plugin-market",
+    "dsh-plugins",
+    "界面美化",
+    "主题",
+    "前端增强",
+    "多模态"
+  ],
+  "version": "1.0.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": null,
+  "author": "zdz6215591",
+  "repo": "https://github.com/zdz6215591/dsh-theme-doubao",
+  "homepage": null,
+  "license": "NOASSERTION",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-24T10:32:12Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:zdz6215591/dsh-theme-doubao",
+    "commands": [
+      "dsh plugin --profile web add github:zdz6215591/dsh-theme-doubao",
+      "dsh plugin --profile web remove dsh-theme-doubao"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

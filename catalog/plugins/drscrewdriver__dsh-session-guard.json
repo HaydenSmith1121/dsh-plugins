@@ -28,8 +28,8 @@
   "license": "MIT",
   "stars": 3,
   "forks": 1,
-  "pushedAt": "2026-09-24T15:28:54Z",
-  "metricsCheckedAt": "2026-09-24T21:16:07.257Z",
+  "pushedAt": "2026-09-25T17:18:46Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -38,10 +38,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:drscrewdriver/dsh-session-guard",
+    "method": "npm",
+    "spec": "dsh-session-guard@dsh-0.1.5",
     "commands": [
-      "dsh plugin --profile web add github:<owner>/dsh-session-guard"
+      "dsh plugin --profile web add dsh-session-guard@dsh-0.1.5"
     ],
     "url": null,
     "sha256": null,
@@ -57,6 +57,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

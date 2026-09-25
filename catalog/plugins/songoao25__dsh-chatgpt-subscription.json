@@ -48,11 +48,11 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "manual",
-    "spec": ".",
+    "method": "github",
+    "spec": "github:songoao25/dsh-chatgpt-subscription",
     "commands": [
-      "git clone https://github.com/SONGOAO25/dsh-chatgpt-subscription.git",
-      "dsh plugin --profile web add ."
+      "dsh plugin --profile web add https://github.com/SONGOAO25/dsh-chatgpt-subscription",
+      "git clone https://github.com/SONGOAO25/dsh-chatgpt-subscription.git"
     ],
     "url": null,
     "sha256": null,
@@ -68,6 +68,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "RoyougiShiki/dsh-restart-systemd",
+  "slug": "royougishiki__dsh-restart-systemd",
+  "package": "dsh-restart-systemd",
+  "name": "dsh-restart-systemd",
+  "title": "dsh-restart-systemd",
+  "summary": "在侧栏加个重启按钮，一键重启 dsh-web，会话自动续接不用重开。",
+  "tags": [
+    "dsh",
+    "dsh-plugin",
+    "restart",
+    "systemd",
+    "效率提升",
+    "状态持久化",
+    "会话管理",
+    "命令行工具"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-24T10:29:13Z",
+    "url": "https://github.com/RoyougiShiki/dsh-restart-systemd/releases/tag/v0.2.0"
+  },
+  "author": "RoyougiShiki",
+  "repo": "https://github.com/RoyougiShiki/dsh-restart-systemd",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-24T15:39:03Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:RoyougiShiki/dsh-restart-systemd",
+    "commands": [
+      "dsh plugin --profile web add github:RoyougiShiki/dsh-restart-systemd"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-25T21:11:40.474Z",
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+  }
+}

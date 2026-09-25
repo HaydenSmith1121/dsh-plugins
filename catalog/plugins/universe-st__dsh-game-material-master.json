@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "id": "universe-st/dsh-game-material-master",
   "slug": "universe-st__dsh-game-material-master",
-  "package": null,
+  "package": "dsh-game-material-master",
   "name": "dsh-game-material-master",
   "title": "dsh-game-material-master",
-  "summary": "一张角色设定图就能批量生成八方向行走精灵图和游戏视频素材，抠像合成全在本地完成。",
+  "summary": "一张角色设定图就能批量生成游戏素材，AI 生图生视频，本机抠像抽帧全搞定。",
   "tags": [
     "chroma-key",
     "cordis",
@@ -21,24 +21,24 @@
     "sprite",
     "typescript",
     "video-generation",
-    "内容创作",
-    "多模态",
-    "自动化",
+    "报告生成",
+    "视觉理解",
     "工具集成",
+    "自动化",
     "资源优化"
   ],
-  "version": "0.2.0",
-  "versionSource": "npm",
-  "versionCheckedAt": "2026-09-24T21:16:07.257Z",
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-25T21:11:40.474Z",
   "latestRelease": null,
   "author": "universe-st",
   "repo": "https://github.com/universe-st/dsh-game-material-master",
   "homepage": null,
   "license": "MIT",
-  "stars": 3,
-  "forks": 0,
-  "pushedAt": "2026-09-22T15:21:47Z",
-  "metricsCheckedAt": "2026-09-23T21:11:03.116Z",
+  "stars": 16,
+  "forks": 1,
+  "pushedAt": "2026-09-24T14:20:38Z",
+  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -47,11 +47,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "dsh-game-material-master",
+    "method": "github",
+    "spec": "github:universe-st/dsh-game-material-master",
     "commands": [
-      "dsh plugin --profile web add dsh-game-material-master",
-      "dsh plugin --profile web add /path/to/dsh-game-material-master"
+      "dsh plugin --profile web add github:universe-st/dsh-game-material-master"
     ],
     "url": null,
     "sha256": null,
@@ -67,6 +66,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-22T20:57:33.766Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }

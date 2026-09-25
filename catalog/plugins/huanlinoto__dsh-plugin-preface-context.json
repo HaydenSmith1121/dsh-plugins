@@ -5,12 +5,13 @@
   "package": "@huanlin/dsh-plugin-preface-context",
   "name": "dsh-plugin-preface-context",
   "title": "dsh-plugin-preface-context",
-  "summary": "在每次会话开头自动注入你预设的文本，让模型始终带着指定指令或背景开始对话。",
+  "summary": "每次会话开头自动注入一段你自定义的文本，让模型一上来就懂你的设定。",
   "tags": [
     "dsh-plugin",
     "会话管理",
-    "效率提升",
-    "零配置"
+    "模型适配",
+    "设置面板",
+    "效率提升"
   ],
   "version": "0.3.0",
   "versionSource": "package.json",
@@ -52,6 +53,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-24T21:16:07.257Z"
+    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
   }
 }
