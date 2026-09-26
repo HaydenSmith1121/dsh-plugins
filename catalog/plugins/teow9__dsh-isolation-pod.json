@@ -5,14 +5,14 @@
   "package": "dsh-isolation-pod",
   "name": "dsh-isolation-pod",
   "title": "dsh-isolation-pod",
-  "summary": "把任务丢进沙箱里单独跑，主会话完全不留痕，结果和文件都要你点头才放行。",
+  "summary": "在主会话之外跑沙箱隔离任务，主会话完全无感，结果和文件导出都要手动确认。",
   "tags": [
     "agent-sandbox",
-    "deepseek-harness",
     "dsh-plugin",
-    "安全审计",
+    "安全审查",
     "会话管理",
-    "工具集成",
+    "工作区管理",
+    "文件管理",
     "自动化"
   ],
   "version": "0.1.3",
@@ -58,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
   }
 }

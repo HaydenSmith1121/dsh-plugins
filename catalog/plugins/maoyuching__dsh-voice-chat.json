@@ -5,14 +5,15 @@
   "package": null,
   "name": "dsh-voice-chat",
   "title": "dsh-voice-chat",
-  "summary": "在 DeepSeek Harness 网页界面里点一下麦克风就能说话，AI 会用语音回复你，解放双手的语音对话插件。",
+  "summary": "点一下麦克风就能说话，AI 回复自动转成语音念给你听，解放双手。",
   "tags": [
     "dsh-plugin",
     "dsh-plugin-market",
     "dsh-plugins",
     "视觉理解",
-    "效率提升",
-    "AI 助手"
+    "AI 助手",
+    "娱乐互动",
+    "前端增强"
   ],
   "version": "0.3.1",
   "versionSource": "npm",
@@ -22,10 +23,10 @@
   "repo": "https://github.com/maoyuching/dsh-voice-chat",
   "homepage": null,
   "license": "MIT",
-  "stars": 1,
+  "stars": 2,
   "forks": 0,
-  "pushedAt": "2026-09-06T04:12:14Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "pushedAt": "2026-09-25T06:49:29Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -44,8 +45,8 @@
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -53,6 +54,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
   }
 }

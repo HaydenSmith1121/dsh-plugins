@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "YuemingHub/Ming-Capability-Pack",
+  "slug": "yueminghub__ming-capability-pack",
+  "package": "@mingworkbench/capability-pack",
+  "name": "Ming-Capability-Pack",
+  "title": "Ming-Capability-Pack",
+  "summary": "用自然语言描述需求，自动调用 Harness 原生能力完成任务，产出真实文件与证据卡。",
+  "tags": [
+    "dsh-plugin",
+    "自动化",
+    "AI 助手",
+    "效率提升",
+    "零配置"
+  ],
+  "version": "0.9.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": null,
+  "author": "YuemingHub",
+  "repo": "https://github.com/YuemingHub/Ming-Capability-Pack",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-25T08:14:49Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:YuemingHub/Ming-Capability-Pack",
+    "commands": [
+      "dsh plugin --profile web add github:YuemingHub/Ming-Capability-Pack"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

@@ -15,7 +15,7 @@
     "worktrees",
     "工作区管理",
     "会话管理",
-    "代码检查",
+    "代码审查",
     "操作回滚",
     "工作流增强"
   ],
@@ -44,9 +44,9 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "dsh-git-worktree@0.9.0",
+    "spec": "dsh-git-worktree@0.9.2",
     "commands": [
-      "dsh plugin --profile web add dsh-git-worktree@0.9.0",
+      "dsh plugin --profile web add dsh-git-worktree@0.9.2",
       "dsh plugin --profile web add dsh-git-worktree",
       "dsh plugin --profile web add github:wloops/dsh-git-worktree"
     ],
@@ -64,6 +64,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
   }
 }

@@ -5,14 +5,14 @@
   "package": "dsh-native-launcher",
   "name": "dsh-native-launcher",
   "title": "dsh-native-launcher",
-  "summary": "把 DeepSeek Harness 网页界面变成桌面应用，一键启动，无需额外安装任何东西。",
+  "summary": "把 DeepSeek Harness 网页版变成桌面应用，一键启动，还带托盘、原生通知和关窗即退。",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
-    "效率提升",
     "零配置",
-    "自动化",
-    "工作流增强"
+    "快捷操作",
+    "前端增强",
+    "工具集成"
   ],
   "version": "1.0.0",
   "versionSource": "github-release",
@@ -50,13 +50,15 @@
     "dshVersion": null,
     "needsConfig": false,
     "usageNeedsConfig": false,
-    "risky": false,
-    "riskyReasons": []
+    "risky": true,
+    "riskyReasons": [
+      "含全局安装（-g / --global）"
+    ]
   },
   "source": {
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
   }
 }

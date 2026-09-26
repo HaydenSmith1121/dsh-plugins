@@ -5,7 +5,7 @@
   "package": "dsh-distillation-director",
   "name": "dsh-distillation-director",
   "title": "dsh-distillation-director",
-  "summary": "把一本书蒸馏成一组可执行的 Agent 技能，三道闸门把关，只判态不打分，零红灯才放行。",
+  "summary": "把一本书蒸馏成能直接用的 Agent 技能，全程判态把关、逐字回源核验，防止踩坑。",
   "tags": [
     "agent-skill",
     "agent-skills",
@@ -17,24 +17,28 @@
     "knowledge-distillation",
     "prompt-engineering",
     "skill-generator",
-    "内容创作",
-    "自动化",
+    "文档",
     "工作流增强",
-    "多Agent协作",
-    "报告生成"
+    "多智能体协作",
+    "报告生成",
+    "自动化"
   ],
-  "version": "4.9.17",
-  "versionSource": "npm",
-  "versionCheckedAt": "2026-09-20T20:34:57.047Z",
-  "latestRelease": null,
+  "version": "4.9.26",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": {
+    "tag": "v4.9.26",
+    "publishedAt": "2026-09-25T16:19:36Z",
+    "url": "https://github.com/winsonpong98-cloud/dsh-distillation-director/releases/tag/v4.9.26"
+  },
   "author": "winsonpong98-cloud",
   "repo": "https://github.com/winsonpong98-cloud/dsh-distillation-director",
   "homepage": null,
   "license": "AGPL-3.0",
   "stars": 2,
   "forks": 0,
-  "pushedAt": "2026-09-19T06:45:32Z",
-  "metricsCheckedAt": "2026-09-20T20:34:57.047Z",
+  "pushedAt": "2026-09-25T16:19:35Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -43,12 +47,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "dsh-distillation-director",
+    "method": "github",
+    "spec": "github:winsonpong98-cloud/dsh-distillation-director",
     "commands": [
-      "dsh plugin add dsh-distillation-director",
-      "dsh plugin add https://github.com/winsonpong98-cloud/dsh-distillation-director/releases/latest/download/dsh-distillation-director.tgz",
-      "dsh plugin add https://github.com/winsonpong98-cloud/dsh-distillation-director/releases/download/v4.9.3/dsh-distillation-director-4.9.3.tgz"
+      "dsh plugin --profile web add github:winsonpong98-cloud/dsh-distillation-director"
     ],
     "url": null,
     "sha256": null,
@@ -64,6 +66,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
   }
 }

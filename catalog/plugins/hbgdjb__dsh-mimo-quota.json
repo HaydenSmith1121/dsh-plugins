@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "hbgdjb/dsh-mimo-quota",
+  "slug": "hbgdjb__dsh-mimo-quota",
+  "package": "dsh-mimo-quota",
+  "name": "dsh-mimo-quota",
+  "title": "dsh-mimo-quota",
+  "summary": "自动记录每次调用的 Token 用量和花费，一屏看清模型额度消耗趋势。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "数据分析",
+    "可视化",
+    "零配置",
+    "模型适配"
+  ],
+  "version": "1.1.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": null,
+  "author": "hbgdjb",
+  "repo": "https://github.com/hbgdjb/dsh-mimo-quota",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-25T06:58:16Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:hbgdjb/dsh-mimo-quota",
+    "commands": [
+      "dsh plugin --profile web add github:hbgdjb/dsh-mimo-quota"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

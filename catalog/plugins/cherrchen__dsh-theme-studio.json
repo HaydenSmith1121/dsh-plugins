@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "cherrchen/dsh-theme-studio",
+  "slug": "cherrchen__dsh-theme-studio",
+  "package": "@dsh-electron/dsh-theme-studio",
+  "name": "dsh-theme-studio",
+  "title": "dsh-theme-studio",
+  "summary": "为 DeepSeek Harness 桌面版内置的主题皮肤插件，可浏览、预览并一键应用配色，设置自动保存。",
+  "tags": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "主题",
+    "可视化",
+    "状态持久化",
+    "设置面板",
+    "零配置"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": {
+    "tag": "v0.1.1",
+    "publishedAt": "2026-09-26T06:15:41Z",
+    "url": "https://github.com/cherrchen/dsh-theme-studio/releases/tag/v0.1.1"
+  },
+  "author": "cherrchen",
+  "repo": "https://github.com/cherrchen/dsh-theme-studio",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-26T06:14:24Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "manual",
+    "spec": ".",
+    "commands": [
+      "dsh plugin --profile web add .",
+      "dsh plugin --profile web add github:cherrchen/dsh-theme-studio"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

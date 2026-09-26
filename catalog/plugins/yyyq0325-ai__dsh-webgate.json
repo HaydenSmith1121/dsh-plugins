@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "yyyq0325-ai/dsh-webgate",
+  "slug": "yyyq0325-ai__dsh-webgate",
+  "package": null,
+  "name": "dsh-webgate",
+  "title": "dsh-webgate",
+  "summary": "给 DSH Web 界面加个账号密码登录门，令牌 12 小时有效，过期登出也不影响后台任务。",
+  "tags": [
+    "dsh-plugin",
+    "npm",
+    "安全审查",
+    "状态持久化",
+    "前端增强",
+    "零配置"
+  ],
+  "version": "0.4.1",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": null,
+  "author": "yyyq0325-ai",
+  "repo": "https://github.com/yyyq0325-ai/dsh-webgate",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-25T07:37:16Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "@yyyq0325/dsh-webgate",
+    "commands": [
+      "dsh plugin --profile web add @yyyq0325/dsh-webgate",
+      "dsh plugin --profile web add github:yyyq0325-ai/dsh-webgate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

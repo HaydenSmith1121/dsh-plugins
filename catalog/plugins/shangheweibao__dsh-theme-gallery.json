@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "shangheweibao/dsh-theme-gallery",
+  "slug": "shangheweibao__dsh-theme-gallery",
+  "package": "dsh-theme-gallery",
+  "name": "dsh-theme-gallery",
+  "title": "dsh-theme-gallery",
+  "summary": "给 DeepSeek Harness 换肤的主题画廊，装上就能点选各种 JSON 皮肤，加新主题不用改代码也不用重启。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "theme",
+    "界面美化",
+    "主题",
+    "设置面板",
+    "零配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": null,
+  "author": "shangheweibao",
+  "repo": "https://github.com/shangheweibao/dsh-theme-gallery",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-25T13:30:05Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shangheweibao/dsh-theme-gallery",
+    "commands": [
+      "dsh plugin --profile web add github:shangheweibao/dsh-theme-gallery"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

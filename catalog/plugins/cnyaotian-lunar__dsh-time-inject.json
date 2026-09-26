@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "CNyaotian-Lunar/dsh-time-inject",
+  "slug": "cnyaotian-lunar__dsh-time-inject",
+  "package": "dsh-time-inject",
+  "name": "dsh-time-inject",
+  "title": "dsh-time-inject",
+  "summary": "每轮对话开头自动给模型塞一条中文时间读数，让它知道现在几点、星期几、隔了多久。",
+  "tags": [
+    "context",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "time",
+    "AI 助手",
+    "会话管理",
+    "自动化",
+    "模型配置"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-25T09:59:48Z",
+    "url": "https://github.com/CNyaotian-Lunar/dsh-time-inject/releases/tag/v0.1.0"
+  },
+  "author": "CNyaotian-Lunar",
+  "repo": "https://github.com/CNyaotian-Lunar/dsh-time-inject",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-25T17:50:41Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CNyaotian-Lunar/dsh-time-inject",
+    "commands": [
+      "dsh plugin --profile web add github:CNyaotian-Lunar/dsh-time-inject"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

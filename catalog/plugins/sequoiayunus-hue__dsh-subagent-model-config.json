@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "sequoiayunus-hue/dsh-subagent-model-config",
+  "slug": "sequoiayunus-hue__dsh-subagent-model-config",
+  "package": "dsh-subagent-model-config",
+  "name": "dsh-subagent-model-config",
+  "title": "dsh-subagent-model-config",
+  "summary": "在设置页给 DSH 原生 Team 的每个队员单独配模型和推理档位，不用改官方文件。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "模型适配",
+    "设置面板",
+    "多智能体协作",
+    "插件管理"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": null,
+  "author": "sequoiayunus-hue",
+  "repo": "https://github.com/sequoiayunus-hue/dsh-subagent-model-config",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-25T01:47:57Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:sequoiayunus-hue/dsh-subagent-model-config",
+    "commands": [
+      "dsh plugin --profile web add github:sequoiayunus-hue/dsh-subagent-model-config"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

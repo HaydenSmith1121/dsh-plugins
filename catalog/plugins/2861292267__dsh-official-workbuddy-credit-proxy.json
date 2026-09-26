@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "2861292267/DSH-Official-WorkBuddy-Credit-Proxy",
+  "slug": "2861292267__dsh-official-workbuddy-credit-proxy",
+  "package": "dsh-workbuddy-xdpool",
+  "name": "DSH-Official-WorkBuddy-Credit-Proxy",
+  "title": "DSH-Official-WorkBuddy-Credit-Proxy",
+  "summary": "把本机多个 WorkBuddy 账号合成自动故障转移的模型池，用积分驱动 GLM、DeepSeek、Kimi 等模型。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-desktop",
+    "dsh-plugin",
+    "multi-account",
+    "workbuddy",
+    "模型配置",
+    "多智能体协作",
+    "自动化",
+    "资源优化",
+    "工具集成"
+  ],
+  "version": "1.6.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": null,
+  "author": "2861292267",
+  "repo": "https://github.com/2861292267/DSH-Official-WorkBuddy-Credit-Proxy",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-25T17:31:02Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:2861292267/DSH-Official-WorkBuddy-Credit-Proxy",
+    "commands": [
+      "git clone https://github.com/2861292267/DSH-Official-WorkBuddy-Credit-Proxy \\",
+      "pnpm add qrcode --config.minimumReleaseAge=0"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

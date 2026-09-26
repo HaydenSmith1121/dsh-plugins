@@ -49,10 +49,12 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "github",
-    "spec": "github:Zoria-Lind/dsh-behavior-enhancer",
+    "method": "npm",
+    "spec": "@zoria-lind/dsh-behavior-enhancer",
     "commands": [
-      "dsh plugin --profile web add ./dsh-behavior-enhancer"
+      "dsh plugin --profile web add @zoria-lind/dsh-behavior-enhancer",
+      "dsh plugin --profile web remove @zoria-lind/dsh-behavior-enhancer",
+      "pnpm add @zoria-lind/dsh-behavior-enhancer"
     ],
     "url": null,
     "sha256": null,
@@ -68,6 +70,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-18T20:26:43.633Z"
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
   }
 }

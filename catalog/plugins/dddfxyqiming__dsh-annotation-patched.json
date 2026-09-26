@@ -5,17 +5,17 @@
   "package": "@dsh-external/dsh-annotation-patched",
   "name": "dsh-annotation-patched",
   "title": "dsh-annotation-patched",
-  "summary": "在 DSH Web 里选中助手回复的文字就能引用，可随手补一句说明，方便整理和追问。",
+  "summary": "在网页上选中文字就能引用和批注，这个增强版分支让 DSH 的划词引用更好用。",
   "tags": [
     "annotation",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
     "web",
-    "快捷操作",
-    "效率提升",
     "前端增强",
-    "会话管理"
+    "报告生成",
+    "快捷操作",
+    "文档"
   ],
   "version": "0.2.0",
   "versionSource": "github-release",
@@ -45,7 +45,7 @@
     "spec": "github:DDDFXYqiming/dsh-annotation-patched",
     "commands": [
       "dsh plugin --profile web add github:DDDFXYqiming/dsh-annotation-patched",
-      "dsh plugin --profile web add <本目录>"
+      "dsh plugin --profile web add <repo dir>"
     ],
     "url": null,
     "sha256": null,
@@ -61,6 +61,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
   }
 }

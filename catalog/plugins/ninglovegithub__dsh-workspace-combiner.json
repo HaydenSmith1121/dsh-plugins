@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "ninglovegithub/dsh-workspace-combiner",
+  "slug": "ninglovegithub__dsh-workspace-combiner",
+  "package": "dsh-workspace-combiner",
+  "name": "dsh-workspace-combiner",
+  "title": "dsh-workspace-combiner",
+  "summary": "把多个代码仓库串成一个协同开发环境，让多工作区联合开发更顺手。",
+  "tags": [
+    "dsh-plugin",
+    "工作区管理",
+    "多智能体协作",
+    "开发增强",
+    "工作流增强",
+    "桥接插件"
+  ],
+  "version": "0.4.1",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": null,
+  "author": "ninglovegithub",
+  "repo": "https://github.com/ninglovegithub/dsh-workspace-combiner",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-26T10:32:37Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ninglovegithub/dsh-workspace-combiner",
+    "commands": [
+      "dsh plugin --profile web add github:ninglovegithub/dsh-workspace-combiner"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

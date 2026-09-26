@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "ggfgfgf-on/dsh-trajectory-anchor",
+  "slug": "ggfgfgf-on__dsh-trajectory-anchor",
+  "package": "@dsh-ext/trajectory-anchor",
+  "name": "dsh-trajectory-anchor",
+  "title": "dsh-trajectory-anchor",
+  "summary": "给 AI 智能体上锚，锁住首轮好表现，跑偏就自动拉回来，防止越干越离谱。",
+  "tags": [
+    "ai-agent",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "llm",
+    "trajectory-anchoring",
+    "AI 助手",
+    "状态监控",
+    "自动化",
+    "工作流增强",
+    "模型配置"
+  ],
+  "version": "0.6.11",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": null,
+  "author": "ggfgfgf-on",
+  "repo": "https://github.com/ggfgfgf-on/dsh-trajectory-anchor",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-26T20:35:39Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:ggfgfgf-on/dsh-trajectory-anchor",
+    "commands": [
+      "dsh plugin --profile web add github:ggfgfgf-on/dsh-trajectory-anchor"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

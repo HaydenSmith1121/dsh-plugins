@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "shiliumu/dsh-prompt-enhancer",
+  "slug": "shiliumu__dsh-prompt-enhancer",
+  "package": "@linxin666/dsh-prompt-enhancer",
+  "name": "dsh-prompt-enhancer",
+  "title": "dsh-prompt-enhancer",
+  "summary": "聊天框加个✨按钮，一键把口语草稿改写成结构清晰的提示词，还能挑候选、选方向。",
+  "tags": [
+    "ai",
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "prompt-engineering",
+    "AI 助手",
+    "效率提升",
+    "前端增强",
+    "模型配置",
+    "快捷操作"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-25T12:18:32Z",
+    "url": "https://github.com/shiliumu/dsh-prompt-enhancer/releases/tag/v0.2.0"
+  },
+  "author": "shiliumu",
+  "repo": "https://github.com/shiliumu/dsh-prompt-enhancer",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-25T12:18:10Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:shiliumu/dsh-prompt-enhancer",
+    "commands": [
+      "dsh plugin --profile web add github:shiliumu/dsh-prompt-enhancer"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

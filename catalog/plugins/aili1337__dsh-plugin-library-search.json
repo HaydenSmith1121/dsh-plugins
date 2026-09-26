@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "AiLi1337/dsh-plugin-library-search",
+  "slug": "aili1337__dsh-plugin-library-search",
+  "package": "dsh-plugin-library-search",
+  "name": "dsh-plugin-library-search",
+  "title": "dsh-plugin-library-search",
+  "summary": "在 DSH 里直接搜索 GitHub 上的 dsh-plugin 插件库，瀑布流浏览、一键安装，AI 也能调用。",
+  "tags": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin",
+    "插件管理",
+    "插件开发",
+    "语义检索",
+    "设置面板",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": null,
+  "author": "AiLi1337",
+  "repo": "https://github.com/AiLi1337/dsh-plugin-library-search",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-25T03:27:35Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:AiLi1337/dsh-plugin-library-search",
+    "commands": [
+      "dsh plugin --profile web add \"github:AiLi1337/dsh-plugin-library-search\""
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

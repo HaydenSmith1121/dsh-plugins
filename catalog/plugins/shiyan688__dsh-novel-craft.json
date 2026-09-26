@@ -5,22 +5,25 @@
   "package": null,
   "name": "dsh-novel-craft",
   "title": "dsh-novel-craft",
-  "summary": "点赞点踩标出好段落，让 AI 总结你的写作口味，新章节越写越像你。",
+  "summary": "让 AI 写出你喜欢的文风：只靠点赞点踩，模型自动总结偏好，越写越对味。",
   "tags": [
+    "ai-writing",
     "chinese",
     "cordis",
     "creative-writing",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
+    "fiction",
+    "llm",
     "novel",
     "plugin",
     "taste-calibration",
     "writing",
     "报告生成",
+    "模型微调",
     "AI 助手",
-    "工作流增强",
-    "模型配置"
+    "自动化"
   ],
   "version": "0.2.2",
   "versionSource": "npm",
@@ -30,10 +33,10 @@
   "repo": "https://github.com/shiyan688/dsh-novel-craft",
   "homepage": "https://www.npmjs.com/package/dsh-novel-craft",
   "license": "MIT",
-  "stars": 1,
-  "forks": 0,
-  "pushedAt": "2026-09-17T09:31:21Z",
-  "metricsCheckedAt": "2026-09-18T20:26:43.633Z",
+  "stars": 4,
+  "forks": 1,
+  "pushedAt": "2026-09-25T10:52:10Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -45,8 +48,7 @@
     "method": "npm",
     "spec": "dsh-novel-craft",
     "commands": [
-      "dsh plugin --profile web add dsh-novel-craft",
-      "npm install"
+      "dsh plugin --profile web add dsh-novel-craft"
     ],
     "url": null,
     "sha256": null,
@@ -62,6 +64,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
   }
 }

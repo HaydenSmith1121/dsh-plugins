@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "Yuuyuko-uu/dsh-tts-bridge",
   "slug": "yuuyuko-uu__dsh-tts-bridge",
-  "package": null,
+  "package": "dsh-tts-bridge",
   "name": "dsh-tts-bridge",
   "title": "dsh-tts-bridge",
   "summary": "把 DSH 会话里的话自动送到 DeepSeek 网页端朗读，声音从你自己电脑里出来，不用盯着页面。",
@@ -37,10 +37,10 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "npm",
-    "spec": "dsh-tts-bridge",
+    "method": "github",
+    "spec": "github:Yuuyuko-uu/dsh-tts-bridge",
     "commands": [
-      "dsh plugin --profile web add dsh-tts-bridge"
+      "dsh plugin --profile web add github:Yuuyuko-uu/dsh-tts-bridge"
     ],
     "url": null,
     "sha256": null,
@@ -56,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-21T22:03:40.491Z",
-    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
   }
 }

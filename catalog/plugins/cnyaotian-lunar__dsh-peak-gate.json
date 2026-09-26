@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "CNyaotian-Lunar/dsh-peak-gate",
+  "slug": "cnyaotian-lunar__dsh-peak-gate",
+  "package": "dsh-peak-gate",
+  "name": "dsh-peak-gate",
+  "title": "dsh-peak-gate",
+  "summary": "按 DeepSeek 峰谷计价，在高峰时段自动限制 token 花销，还能一键放行。",
+  "tags": [
+    "cost-control",
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "holidays",
+    "nodejs",
+    "plugin",
+    "pricing",
+    "token-budget",
+    "资源优化",
+    "模型适配",
+    "效率提升",
+    "快捷操作"
+  ],
+  "version": "0.2.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2026-09-25T09:59:49Z",
+    "url": "https://github.com/CNyaotian-Lunar/dsh-peak-gate/releases/tag/v0.2.0"
+  },
+  "author": "CNyaotian-Lunar",
+  "repo": "https://github.com/CNyaotian-Lunar/dsh-peak-gate",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-25T10:06:42Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:CNyaotian-Lunar/dsh-peak-gate",
+    "commands": [
+      "dsh plugin --profile web add github:CNyaotian-Lunar/dsh-peak-gate"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

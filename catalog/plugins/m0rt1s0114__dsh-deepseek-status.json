@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "M0rt1s0114/dsh-deepseek-status",
+  "slug": "m0rt1s0114__dsh-deepseek-status",
+  "package": "dsh-deepseek-status",
+  "name": "dsh-deepseek-status",
+  "title": "dsh-deepseek-status",
+  "summary": "在 DSH 里实时查看 DeepSeek 服务状态，接口是否正常一眼就知道。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "AI 助手",
+    "工具集成"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": null,
+  "author": "M0rt1s0114",
+  "repo": "https://github.com/M0rt1s0114/dsh-deepseek-status",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-26T08:59:36Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:M0rt1s0114/dsh-deepseek-status",
+    "commands": [
+      "dsh plugin --profile web add github:M0rt1s0114/dsh-deepseek-status",
+      "dsh plugin --profile web add ./dsh-deepseek-status"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

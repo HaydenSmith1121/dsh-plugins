@@ -5,7 +5,7 @@
   "package": "dsh-pseudo-vision",
   "name": "dsh-pseudo-vision",
   "title": "dsh-pseudo-vision",
-  "summary": "让纯文本模型也能看懂图片，本地拆出文字、颜色和像素信息，不用外部视觉接口。",
+  "summary": "让纯文本模型也能看图：本地提取图片文字、颜色和像素信息，无需外部视觉接口。",
   "tags": [
     "deepseek-harness",
     "dsh-plugin",
@@ -13,8 +13,9 @@
     "vision",
     "多模态",
     "视觉理解",
+    "模型配置",
     "工具集成",
-    "模型配置"
+    "桥接插件"
   ],
   "version": "0.7.0",
   "versionSource": "package.json",
@@ -41,7 +42,7 @@
     "commands": [
       "dsh plugin --profile web add github:DDDFXYqiming/dsh-pseudo-vision",
       "git clone https://github.com/DDDFXYqiming/dsh-pseudo-vision.git",
-      "dsh plugin --profile web add <绝对路径>"
+      "dsh plugin --profile web add <local absolute path>"
     ],
     "url": null,
     "sha256": null,
@@ -57,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
   }
 }

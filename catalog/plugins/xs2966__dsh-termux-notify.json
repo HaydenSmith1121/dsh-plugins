@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "xs2966/dsh-termux-notify",
+  "slug": "xs2966__dsh-termux-notify",
+  "package": "dsh-termux-notify",
+  "name": "dsh-termux-notify",
+  "title": "dsh-termux-notify",
+  "summary": "在 Termux 里跑 DSH 时，结果出来或需要你选择就用手机通知提醒，点一下直接回到 DSH 页面。",
+  "tags": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "termux-tool",
+    "工具集成",
+    "效率提升",
+    "跨设备",
+    "快捷操作",
+    "自动化"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": null,
+  "author": "xs2966",
+  "repo": "https://github.com/xs2966/dsh-termux-notify",
+  "homepage": null,
+  "license": null,
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-25T13:14:15Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:xs2966/dsh-termux-notify",
+    "commands": [
+      "dsh plugin --profile web add github:xs2966/dsh-termux-notify"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

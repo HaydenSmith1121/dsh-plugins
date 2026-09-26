@@ -24,8 +24,8 @@
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-25T08:56:13Z",
-  "metricsCheckedAt": "2026-09-25T21:11:40.474Z",
+  "pushedAt": "2026-09-26T16:21:50Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -34,11 +34,11 @@
   "notes": null,
   "sha256Note": null,
   "install": {
-    "method": "manual",
-    "spec": ".",
+    "method": "github",
+    "spec": "github:lovezi0/dsh-visualizer-widget",
     "commands": [
-      "dsh plugin --profile web add .",
       "dsh plugin --profile web add github:lovezi0/dsh-visualizer-widget",
+      "dsh plugin --profile web add dsh-visualizer-widget",
       "dsh plugin --profile web remove dsh-visualizer-widget"
     ],
     "url": null,
@@ -55,6 +55,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
   }
 }

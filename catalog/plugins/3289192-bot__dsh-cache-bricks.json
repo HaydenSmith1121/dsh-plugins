@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "3289192-bot/dsh-cache-bricks",
+  "slug": "3289192-bot__dsh-cache-bricks",
+  "package": "dsh-cache-bricks",
+  "name": "dsh-cache-bricks",
+  "title": "dsh-cache-bricks",
+  "summary": "把 DeepSeek Harness 的提示缓存命中和请求活动画成积木图，缓存健康一眼看清。",
+  "tags": [
+    "cache",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "visualization",
+    "可视化",
+    "状态监控",
+    "资源优化",
+    "前端增强"
+  ],
+  "version": "0.1.4",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": {
+    "tag": "v0.1.4",
+    "publishedAt": "2026-09-26T00:31:01Z",
+    "url": "https://github.com/3289192-bot/dsh-cache-bricks/releases/tag/v0.1.4"
+  },
+  "author": "3289192-bot",
+  "repo": "https://github.com/3289192-bot/dsh-cache-bricks",
+  "homepage": "https://github.com/3289192-bot/dsh-cache-bricks/releases/latest",
+  "license": "NOASSERTION",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-26T02:15:39Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:3289192-bot/dsh-cache-bricks",
+    "commands": [
+      "dsh plugin --profile web add github:3289192-bot/dsh-cache-bricks",
+      "dsh plugin --profile web remove dsh-cache-bricks"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

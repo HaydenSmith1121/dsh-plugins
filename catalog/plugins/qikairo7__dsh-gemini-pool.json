@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "qikairo7/dsh-gemini-pool",
+  "slug": "qikairo7__dsh-gemini-pool",
+  "package": "dsh-gemini-pool",
+  "name": "dsh-gemini-pool",
+  "title": "dsh-gemini-pool",
+  "summary": "把 Google AI Pro 订阅变成 DSH 的编程模型池，支持多模态、前端生成、生图和账号调度。",
+  "tags": [
+    "antigravity",
+    "claude",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "gemini",
+    "google-ai-pro",
+    "image-generation",
+    "llm",
+    "model-pool",
+    "模型配置",
+    "视觉理解",
+    "资源优化",
+    "前端增强",
+    "AI 助手"
+  ],
+  "version": "0.5.3",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": {
+    "tag": "v0.5.3",
+    "publishedAt": "2026-09-25T19:50:38Z",
+    "url": "https://github.com/qikairo7/dsh-gemini-pool/releases/tag/v0.5.3"
+  },
+  "author": "qikairo7",
+  "repo": "https://github.com/qikairo7/dsh-gemini-pool",
+  "homepage": "https://github.com/qikairo7/dsh-gemini-pool/releases",
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-26T18:16:10Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:qikairo7/dsh-gemini-pool",
+    "commands": [
+      "dsh plugin --profile web add github:qikairo7/dsh-gemini-pool",
+      "dsh plugin --profile web add ./dist/dsh-gemini-pool-*.tgz"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

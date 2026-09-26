@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaozhuyuqing/dsh-repeat-guard",
+  "slug": "xiaozhuyuqing__dsh-repeat-guard",
+  "package": null,
+  "name": "dsh-repeat-guard",
+  "title": "dsh-repeat-guard",
+  "summary": "拦住 deepseek-v4.1-flash 的复读循环，别再让它拿你的 token 唱歌。",
+  "tags": [
+    "deepseek-harness-plugin",
+    "dsh",
+    "dsh-plugin",
+    "模型配置",
+    "资源优化",
+    "会话管理",
+    "效率提升"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": null,
+  "author": "xiaozhuyuqing",
+  "repo": "https://github.com/xiaozhuyuqing/dsh-repeat-guard",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-25T06:39:29Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-repeat-guard",
+    "commands": [
+      "dsh plugin --profile web add dsh-repeat-guard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

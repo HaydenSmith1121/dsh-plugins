@@ -21,17 +21,21 @@
     "命令行工具"
   ],
   "version": "1.0.0",
-  "versionSource": "npm",
-  "versionCheckedAt": "2026-09-18T20:26:43.633Z",
-  "latestRelease": null,
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-18T04:55:40Z",
+    "url": "https://github.com/cningan/dsh-startup-check/releases/tag/v1.0.0"
+  },
   "author": "cningan",
   "repo": "https://github.com/cningan/dsh-startup-check",
   "homepage": null,
   "license": "MIT",
   "stars": 0,
   "forks": 0,
-  "pushedAt": "2026-09-18T04:57:55Z",
-  "metricsCheckedAt": "2026-09-19T20:12:00.176Z",
+  "pushedAt": "2026-09-26T06:57:12Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -41,9 +45,9 @@
   "sha256Note": null,
   "install": {
     "method": "npm",
-    "spec": "dsh-startup-check",
+    "spec": "@cningan/dsh-startup-check",
     "commands": [
-      "dsh plugin --profile web add dsh-startup-check"
+      "dsh plugin --profile web add @cningan/dsh-startup-check"
     ],
     "url": null,
     "sha256": null,
@@ -59,6 +63,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-18T20:26:43.633Z",
-    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
   }
 }

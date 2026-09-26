@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Jannchie/dsh-artifact",
+  "slug": "jannchie__dsh-artifact",
+  "package": null,
+  "name": "dsh-artifact",
+  "title": "dsh-artifact",
+  "summary": "给 DeepSeek Harness 加上类似 Claude Code 的 Artifact 能力，能生成可交互的 HTML 作品并在内置沙箱浏览器里直接预览。",
+  "tags": [
+    "artifact",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "报告生成",
+    "前端增强",
+    "可视化",
+    "工具集成",
+    "开发增强"
+  ],
+  "version": "0.5.0",
+  "versionSource": "npm",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": null,
+  "author": "Jannchie",
+  "repo": "https://github.com/Jannchie/dsh-artifact",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 2,
+  "pushedAt": "2026-09-25T05:15:56Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "npm",
+    "spec": "dsh-artifact",
+    "commands": [
+      "dsh plugin --profile web add dsh-artifact"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

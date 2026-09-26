@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "diancangdu/dsh-self-improve",
+  "slug": "diancangdu__dsh-self-improve",
+  "package": null,
+  "name": "dsh-self-improve",
+  "title": "dsh-self-improve",
+  "summary": "让 AI 助手每次任务后自动总结经验，下次干活时自动调用，越用越聪明、不重复踩坑。",
+  "tags": [
+    "agent-skills",
+    "ai-agent",
+    "deepseek-harness",
+    "dsh",
+    "learnings",
+    "memory",
+    "self-improvement",
+    "AI 助手",
+    "自动化",
+    "状态持久化",
+    "效率提升",
+    "工作流增强"
+  ],
+  "version": "1.0.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-09-25T11:47:27Z",
+    "url": "https://github.com/diancangdu/dsh-self-improve/releases/tag/v1.0.0"
+  },
+  "author": "diancangdu",
+  "repo": "https://github.com/diancangdu/dsh-self-improve",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-25T11:47:09Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:diancangdu/dsh-self-improve",
+    "commands": [
+      "dsh plugin --profile web add github:diancangdu/dsh-self-improve"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

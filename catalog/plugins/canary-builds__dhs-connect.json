@@ -25,9 +25,9 @@
   "homepage": null,
   "license": "MIT",
   "stars": 0,
-  "forks": 0,
-  "pushedAt": "2026-09-06T02:10:25Z",
-  "metricsCheckedAt": "2026-09-17T15:55:14.674Z",
+  "forks": 1,
+  "pushedAt": "2026-09-25T18:24:01Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
   "origin": null,
   "peerRuntimePin": null,
   "peerVerdict": null,
@@ -39,15 +39,16 @@
     "method": "npm",
     "spec": "@canary-builds/dsh-connect",
     "commands": [
-      "dsh plugin --profile web add @canary-builds/dsh-connect"
+      "dsh plugin --profile web add @canary-builds/dsh-connect",
+      "npm install @canary-builds/dsh-connect"
     ],
     "url": null,
     "sha256": null,
     "bytes": null,
     "tarball": null,
     "dshVersion": null,
-    "needsConfig": false,
-    "usageNeedsConfig": false,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
     "risky": false,
     "riskyReasons": []
   },
@@ -55,6 +56,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
   }
 }

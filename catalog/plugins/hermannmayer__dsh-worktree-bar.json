@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "Hermannmayer/dsh-worktree-bar",
+  "slug": "hermannmayer__dsh-worktree-bar",
+  "package": "dsh-worktree-bar",
+  "name": "dsh-worktree-bar",
+  "title": "dsh-worktree-bar",
+  "summary": "在输入框上方显示当前工作区和分支，启动页可勾选 git worktree，还能按项目准备 worktree。",
+  "tags": [
+    "cordis-plugin",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "git",
+    "git-worktree",
+    "worktree",
+    "工作区管理",
+    "开发增强",
+    "状态监控",
+    "快捷操作"
+  ],
+  "version": "0.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": {
+    "tag": "v0.1.0",
+    "publishedAt": "2026-09-25T15:35:12Z",
+    "url": "https://github.com/Hermannmayer/dsh-worktree-bar/releases/tag/v0.1.0"
+  },
+  "author": "Hermannmayer",
+  "repo": "https://github.com/Hermannmayer/dsh-worktree-bar",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-25T16:04:20Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Hermannmayer/dsh-worktree-bar",
+    "commands": [
+      "dsh plugin --profile desktop install Hermannmayer/dsh-worktree-bar"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

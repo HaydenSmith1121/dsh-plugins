@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "mike-lee0120/dsh-cost-dashboard",
+  "slug": "mike-lee0120__dsh-cost-dashboard",
+  "package": "dsh-cost-dashboard",
+  "name": "dsh-cost-dashboard",
+  "title": "dsh-cost-dashboard",
+  "summary": "统计所有模型调用的输入、输出和缓存 token 用量，帮你随时看清成本花在哪。",
+  "tags": [
+    "dsh-plugin",
+    "状态监控",
+    "数据分析",
+    "可视化",
+    "资源优化",
+    "内容创作"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": {
+    "tag": "1.1.0",
+    "publishedAt": "2026-09-25T03:30:19Z",
+    "url": "https://github.com/mike-lee0120/dsh-cost-dashboard/releases/tag/1.1.0"
+  },
+  "author": "mike-lee0120",
+  "repo": "https://github.com/mike-lee0120/dsh-cost-dashboard",
+  "homepage": null,
+  "license": null,
+  "stars": 4,
+  "forks": 0,
+  "pushedAt": "2026-09-25T03:09:38Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:mike-lee0120/dsh-cost-dashboard",
+    "commands": [
+      "dsh plugin --profile web add <spec>",
+      "dsh plugin --profile web add /path/to/dsh-cost-dashboard",
+      "dsh plugin --profile web add github:mike-lee0120/dsh-cost-dashboard"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

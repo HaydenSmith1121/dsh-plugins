@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "VCPr0j3k7/dsh-mcp-manager",
+  "slug": "vcpr0j3k7__dsh-mcp-manager",
+  "package": "dsh-mcp-manager",
+  "name": "dsh-mcp-manager",
+  "title": "dsh-mcp-manager",
+  "summary": "在 DSH 桌面端图形化管理 MCP 服务器，添加、删除、开关、测试、扫描一站搞定。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "插件管理",
+    "MCP调试",
+    "工具集成",
+    "设置面板",
+    "状态监控"
+  ],
+  "version": "0.1.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": null,
+  "author": "VCPr0j3k7",
+  "repo": "https://github.com/VCPr0j3k7/dsh-mcp-manager",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-25T12:50:11Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:VCPr0j3k7/dsh-mcp-manager",
+    "commands": [
+      "dsh plugin --profile web add github:VCPr0j3k7/dsh-mcp-manager"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "Lixiuxiu559/AgentForge",
+  "slug": "lixiuxiu559__agentforge",
+  "package": "dsh-agentforge",
+  "name": "AgentForge",
+  "title": "AgentForge",
+  "summary": "给 AI 编程助手加装工程技能包，自动编排任务、评审代码改动、审计复杂度并跑突变测试，零依赖开箱即用。",
+  "tags": [
+    "agent-skills",
+    "claude-code-plugin",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "工作流增强",
+    "开发增强",
+    "多智能体协作",
+    "安全审查",
+    "自动化"
+  ],
+  "version": "0.1.1",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": null,
+  "author": "Lixiuxiu559",
+  "repo": "https://github.com/Lixiuxiu559/AgentForge",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 2,
+  "forks": 0,
+  "pushedAt": "2026-09-26T10:04:26Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:Lixiuxiu559/AgentForge",
+    "commands": [
+      "dsh plugin --profile web add github:Lixiuxiu559/AgentForge"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

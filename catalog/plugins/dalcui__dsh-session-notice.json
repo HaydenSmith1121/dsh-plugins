@@ -5,17 +5,17 @@
   "package": "dsh-session-notice",
   "name": "dsh-session-notice",
   "title": "dsh-session-notice",
-  "summary": "会话结束自动用 Bark 推送到手机，正常结束发摘要，异常停止报原因，还能一键测通。",
+  "summary": "会话结束自动用 Bark 推送到手机，正常结束发摘要、出错发完整报错，还能一键测通不通。",
   "tags": [
     "bark",
     "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "消息通知",
-    "状态监控",
     "会话管理",
-    "设置面板",
-    "工具集成"
+    "状态监控",
+    "跨设备",
+    "工具集成",
+    "设置面板"
   ],
   "version": "0.2.0",
   "versionSource": "package.json",
@@ -58,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-17T15:55:14.674Z",
-    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
   }
 }

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "lyaoliu/dsh-approval-core",
+  "slug": "lyaoliu__dsh-approval-core",
+  "package": "dsh-approval-core",
+  "name": "dsh-approval-core",
+  "title": "dsh-approval-core",
+  "summary": "给 DeepSeek Harness 加一道自动审批关卡：例行操作直接放行，危险或拿不准的转人工确认。",
+  "tags": [
+    "approval",
+    "auto-approve",
+    "cordis",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "自动化",
+    "安全审查",
+    "设置面板",
+    "工作流增强"
+  ],
+  "version": "0.2.0",
+  "versionSource": "package.json",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": null,
+  "author": "lyaoliu",
+  "repo": "https://github.com/lyaoliu/dsh-approval-core",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-25T06:54:24Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:lyaoliu/dsh-approval-core",
+    "commands": [
+      "dsh plugin --profile web add github:lyaoliu/dsh-approval-core"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": false,
+    "usageNeedsConfig": false,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

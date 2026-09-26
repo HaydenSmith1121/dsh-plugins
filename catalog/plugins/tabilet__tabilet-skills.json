@@ -9,7 +9,7 @@
   "tags": [
     "dsh-plugin",
     "工作流增强",
-    "多Agent协作",
+    "多智能体协作",
     "状态持久化",
     "工具集成",
     "效率提升"
@@ -41,8 +41,8 @@
     "method": "github",
     "spec": "github:tabilet/tabilet-skills",
     "commands": [
-      "dsh plugin --profile web add https://github.com/tabilet/tabilet-skills/releases/download/v1.5.0/tabilet-skills-1.5.0.tgz --ignore-scripts",
-      "dsh plugin --profile headless add https://github.com/tabilet/tabilet-skills/releases/download/v1.5.0/tabilet-skills-1.5.0.tgz --ignore-scripts"
+      "dsh plugin --profile web add https://github.com/tabilet/tabilet-skills/releases/download/v2.1.0/tabilet-skills-2.1.0.tgz --ignore-scripts",
+      "dsh plugin --profile headless add https://github.com/tabilet/tabilet-skills/releases/download/v2.1.0/tabilet-skills-2.1.0.tgz --ignore-scripts"
     ],
     "url": null,
     "sha256": null,
@@ -58,6 +58,6 @@
     "kind": "public-index",
     "url": "https://2bingling.github.io/dsh-market/plugins.json",
     "firstSeenAt": "2026-09-19T20:12:00.176Z",
-    "lastSyncedAt": "2026-09-25T21:11:40.474Z"
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
   }
 }

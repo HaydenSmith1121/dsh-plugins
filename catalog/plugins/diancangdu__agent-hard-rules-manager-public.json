@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "diancangdu/agent-hard-rules-manager-public",
+  "slug": "diancangdu__agent-hard-rules-manager-public",
+  "package": null,
+  "name": "agent-hard-rules-manager-public",
+  "title": "agent-hard-rules-manager-public",
+  "summary": "给 AI 代理立硬规矩的笔记本，还能在调用工具前自动拦截违规操作。",
+  "tags": [
+    "agent-skills",
+    "ai-agent",
+    "deepseek-harness",
+    "dsh",
+    "enforcement",
+    "guardrails",
+    "hard-rules",
+    "mcp",
+    "多智能体协作",
+    "安全审查",
+    "自动化",
+    "开发增强",
+    "工作流增强"
+  ],
+  "version": "1.1.0",
+  "versionSource": "github-release",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": {
+    "tag": "v1.1.0",
+    "publishedAt": "2026-09-25T13:08:24Z",
+    "url": "https://github.com/diancangdu/agent-hard-rules-manager-public/releases/tag/v1.1.0"
+  },
+  "author": "diancangdu",
+  "repo": "https://github.com/diancangdu/agent-hard-rules-manager-public",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 0,
+  "forks": 0,
+  "pushedAt": "2026-09-25T13:08:01Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:diancangdu/agent-hard-rules-manager-public",
+    "commands": [
+      "dsh plugin --profile web add github:diancangdu/agent-hard-rules-manager-public"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}

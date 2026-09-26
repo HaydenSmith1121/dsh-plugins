@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "jghwwnq/dsh-model-audit",
+  "slug": "jghwwnq__dsh-model-audit",
+  "package": "@deepseek-ai/dsh-model-audit",
+  "name": "dsh-model-audit",
+  "title": "dsh-model-audit",
+  "summary": "对比你请求的模型和上游实际返回的模型，防止模型被偷偷换掉。",
+  "tags": [
+    "cordis",
+    "deepseek-harness",
+    "dsh-plugin",
+    "llm",
+    "model-monitor",
+    "typescript",
+    "状态监控",
+    "模型配置",
+    "安全审查",
+    "插件开发"
+  ],
+  "version": "0.1.7-rc.2",
+  "versionSource": "github-tag",
+  "versionCheckedAt": "2026-09-26T21:00:45.312Z",
+  "latestRelease": null,
+  "author": "jghwwnq",
+  "repo": "https://github.com/jghwwnq/dsh-model-audit",
+  "homepage": null,
+  "license": "MIT",
+  "stars": 1,
+  "forks": 0,
+  "pushedAt": "2026-09-25T13:56:27Z",
+  "metricsCheckedAt": "2026-09-26T21:00:45.312Z",
+  "origin": null,
+  "peerRuntimePin": null,
+  "peerVerdict": null,
+  "peerNote": null,
+  "coexistenceWarning": null,
+  "notes": null,
+  "sha256Note": null,
+  "install": {
+    "method": "github",
+    "spec": "github:jghwwnq/dsh-model-audit",
+    "commands": [
+      "dsh plugin --profile web add /absolute/path/to/dsh-model-audit --offline --ignore-scripts"
+    ],
+    "url": null,
+    "sha256": null,
+    "bytes": null,
+    "tarball": null,
+    "dshVersion": null,
+    "needsConfig": true,
+    "usageNeedsConfig": true,
+    "risky": false,
+    "riskyReasons": []
+  },
+  "source": {
+    "kind": "public-index",
+    "url": "https://2bingling.github.io/dsh-market/plugins.json",
+    "firstSeenAt": "2026-09-26T21:00:45.312Z",
+    "lastSyncedAt": "2026-09-26T21:00:45.312Z"
+  }
+}
