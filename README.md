@@ -85,11 +85,33 @@ dsh plugin --profile web add github:HaydenSmith1121/dsh-plugins
 | 症状 | 先看这里 |
 |---|---|
 | 提示地址不合法 | 必须是 `github:owner/repo` 或 `https://github.com/owner/repo`，**不能**是仓库里的某个子目录 |
+| **「插件安装失败 · 没有写入权限，无法安装」** | ★ **多半不是权限问题**。如果你之前用**本地路径**装过这个插件（`link:`），`node_modules` 里会留下一个 Junction，而 pnpm 是**用 rename 去覆盖**它的 —— Windows 上 rename 覆盖 Junction 必然 EPERM。日志里长这样：<br>`[ERR_PNPM_EPERM] [importPackage ...\node_modules\dsh-plugins-market]`<br>`rename '...dsh-plugins-market_tmp_28040_1' -> '...dsh-plugins-market'`<br>**修法**：先卸载旧的那份；或手工删掉那个链接再重装 ——<br>`cmd /c rmdir "<profile>\node_modules\dsh-plugins-market"`<br>（一定用 `rmdir`：会递归的删除命令有可能顺着链接把**你真正的源码目录**删掉。） |
 | 装完重启后侧栏没有「插件搜集」 | 面板是**客户端**半，需要真的重启一次 web/GUI，不是刷新页面 |
+| 提示「**需要允许安装脚本**：`@google/genai`、`protobufjs`」 | 这是**你 profile 里既有的**状态，来自另一个插件（`dsh-opencode-go-plus`），不是本插件带来的 —— 本插件没有任何依赖。点「允许这些脚本并重试」即可；也可以在 `pnpm-workspace.yaml` 的 `allowBuilds` 里把它们写成 `false`（这两个包都不需要真的执行构建脚本：`protobufjs` 的 postinstall 只打印一行提示，`@google/genai` 的 prepare 对 tarball 安装本就不执行） |
 | 装完报 peer / 版本相关错误 | 本包**不声明任何 peerDependencies**，不该出现这类错误；出现了请开 Issue 并附上 `dsh --version` |
 | 面板打开了但列表是空的、也没有报错 | 面板会显示数据来源。若显示「包内离线快照」，说明本机连不上 GitHub；点面板右上「关于」能看到具体原因 |
+| 「关于」里显示 `source: remote` | 这是**正常**的：从 GitHub 装的包里只有离线快照（400 条），完整索引（九千多条）是运行时从仓库 raw 拉的 |
 
 </details>
+
+> ⚠️ **清理这类链接时，一定要用不带 `/s` 的 `rmdir`，并且在删之前先看一眼它到底是什么。**
+>
+> 这不是多余的谨慎，是本项目**真的踩过**的坑：`node_modules` 里与包同名、看起来像
+> 临时目录的条目，**也可能是指向你源码目录的链接**；对链接执行递归删除
+> （`rmdir /s /q`、`Remove-Item -Recurse`）会**穿过链接**去删真正的源码。
+> 2026-09-27 就因此丢掉过一次本仓库的 `.git`（工作区文件因为被运行中的 harness
+> 占着反而幸存下来，最后靠远端仓库整份恢复 —— 所以「先推再折腾」这件事值钱）。
+>
+> 删之前先确认：
+>
+> ```powershell
+> Get-Item "<路径>" -Force | Select-Object LinkType, Target
+> # LinkType 为空 → 真目录，可以删
+> # LinkType=Junction/SymbolicLink → 是链接，只用 cmd /c rmdir "<路径>"（不带 /s）
+> ```
+>
+> 另外：**别把这类命令的错误输出丢掉**（`2>&1 | Out-Null`）。当时正是因为把错误
+> 吞了，删失败没能当场看见。
 
 ---
 

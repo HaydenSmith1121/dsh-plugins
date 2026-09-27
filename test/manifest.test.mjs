@@ -80,6 +80,18 @@ test('files 白名单包含运行必需的东西，且不含测试与缓存', ()
   ok(files.includes('catalog/snapshot.json'), 'files 里必须有 catalog/snapshot.json');
 });
 
+test('★ files 必须排除 catalog/index.json（否则远程那条路就废了）', () => {
+  // 这不是体积问题，是**行为**问题：
+  //   · 包里带了完整索引 → pluginDir()/catalog/index.json 存在 → 永远走「本地检出」
+  //     分支（source: checkout）→ 用户看到的是**安装那一天**的数据，再也不会更新；
+  //   · 排除它 → 走远程（source: remote）→ 每次打开都能拿到当天的采集结果。
+  // 实测确认过：从 GitHub 装的那一份正是靠这条，起来就 source=remote、9423 条。
+  const files = pkg.files ?? [];
+  ok(!files.includes('catalog'), 'files 里不要写整个 catalog/ —— 那会把 7.8MB 的完整索引打进包');
+  ok(!files.some((f) => f === 'catalog/index.json' || f.startsWith('catalog/index')),
+    '完整索引不进包，包内只留 catalog/snapshot.json');
+});
+
 test('compatibility.json 记录了 desktop 0.1.7-rc.2，且不构成任何闸门', () => {
   const compat = JSON.parse(fs.readFileSync(path.join(ROOT, 'compatibility.json'), 'utf8'));
   const versions = (compat.runtimes ?? []).map((r) => r.dshVersion);
