@@ -1,415 +1,132 @@
 # 贡献指南
 
-本仓库是 **dsh 插件的市场**：目录（`catalog/`）、安装入口（市场面板插件 + 引导脚本）、
-以及让目录保持新鲜的每日采集。**插件的字节在每个插件自己的源码仓库里** ——
-原先的中心化仓库 [`HaydenSmith1121/dsh-plugin-collection`](https://github.com/HaydenSmith1121/dsh-plugin-collection) 已于 2026-09-18 退役，
+**[← 回到首页](./README.md)**
 
-因此这里的「贡献」比一般开源项目宽得多 —— **你不需要从零写一个插件也能帮上忙。**
-
-| 优先级 | 类型 | 说明 |
-|---|---|---|
-| ★★★ | **补齐新 dsh 版本的适配结论** | dsh 迭代很快，仓库最容易过时的地方就是这里。见[第五节](#add-runtime) |
-| ★★ | **修正采集结果与兼容信息** | 某个配置文件的版本 / star / 安装方法不对，或 `compatibility.json`、版本矩阵有错 |
-| ★★ | **给第三方插件补一份实测记录** | 真机装一次、留下证据。见[第四节 B](#review-flow) |
-| ★ | **改进采集脚本、市场面板与文档** | `scripts/sync-catalog.mjs`、`plugins-src/dsh-plugins-market/`、`docs/` |
-
-**没把握就先开 Issue 问，不要卡在自己猜。**
-发现上游插件的新版本、新 dsh 版本发布，也欢迎直接开 Issue 告知。
+这个仓库是**搜集器**，不是市场。所以贡献方式比一般开源项目宽得多 ——
+**不需要你会写这个插件，也能帮上忙。**
 
 ---
 
-<a name="install-mode"></a>
+## 一、最需要的三类贡献
 
-## 〇、安装方式与它带来的三条规矩
+### ★★★ 补上没被采到的仓库
 
-一键安装脚本（`scripts/install.ps1` / `install.sh`，Windows 还可用 `scripts/install.cmd`
-绕开执行策略）远程一条命令即可跑完，用户不需要先 clone：
+GitHub 搜索每个查询最多返回 1000 条，公开索引也未必收得全。如果你知道某个
+DSH 插件仓库没出现在面板里：
 
-```powershell
-& ([scriptblock]::Create((irm https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/scripts/install.ps1).TrimStart([char]0xFEFF)))
-```
+1. 打开 [`catalog/seed.json`](./catalog/seed.json)
+2. 把 `owner/repo` 写进 `include`
+3. 跑一次 `node scripts/collect.mjs`
+4. 提交 `catalog/` 下的变化
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/HaydenSmith1121/dsh-plugins/main/scripts/install.sh | sh
-```
+> **不要在 seed 里写描述和 star 数。** 联网采集时它们会从 GitHub 直读，
+> 手写的数字一定会过期。人工只回答「收不收」，不回答「它有多少星」。
 
-**脚本只装一个插件：引导插件 `dsh-plugins-market`（市场面板本身）。**
-「一键装全套」这条路自 0.4.0 起已经没有了 —— 插件的字节不在本仓库，装哪个插件、怎么装
-是市场面板的职责（自动安装失败自动回滚，手动安装随时可选）。
-`-BootstrapOnly` / `--bootstrap-only` 仍然接受，含义与默认行为一致。
+要下架某个仓库：写进 `exclude`，无论哪一路发现了它都不会进索引。
 
-由此有三条规矩：
+### ★★ 补上新 dsh 版本的实测结论
 
-1. **要进本仓库的插件产物只有一个：市场插件自己**（`plugins/dsh-plugins-market/<dsh 版本>/`）。
-   其余插件请提到集合仓库，见[第四节 A](#add-plugin)。
-2. **`catalog/plugins/*.json` 与 `catalog/index.json` 是生成物，不要手写**：
-   `node scripts/sync-catalog.mjs` 生成，CI 的 `--check` 逐字节比对。
-3. **只有 `catalog/overrides/*.json` 需要人写**：`curated.json`（人工核对过的第三方条目）
-   与 `self.json`（市场插件自己那一行）。
-
-**目录不分级**（0.5.0 起）—— 曾经有三个信任层级（`verified` / `reviewed` / `community`），
-现在是**一份平铺列表**，每条记录按**来源**决定优先级：
-
-| 来源 `source.kind` | 谁维护 | 怎么进目录 |
-|---|---|---|
-| `self` | 本仓库 | 市场插件自己那一行；版本与 sha256 从源码 / 构建产物反推。改 `catalog/overrides/self.json` |
-| `collection` | 插件集合仓库 | 那边放 tarball + 改 `plugins/<id>/plugin.json` + `node scripts/build-manifest.mjs`；本仓库下一轮每日采集自动跟随 |
-| `manual` | 维护者人工核对 | 跑 `node scripts/market-review.mjs <owner/repo>` 产出草稿 → 真机验证 → 写进 `catalog/overrides/curated.json` → `node scripts/sync-catalog.mjs`。见[第四节 B](#review-flow) |
-| `public-index` | 公开索引自动同步 | 无需贡献；由采集脚本写入 |
-
-> 为什么要去掉分级、以及现在怎么决定「装不装」，见
-> [README 的「不分级的目录」](./README.md#tiers)。一句话：市场不判定任何插件能不能装
-> （0.6.0 起所有插件都可装），它只把知道的事实列出来，自动还是手动由用户在安装方案页自己选。
-
----
-
-<a name="requirements"></a>
-
-## 一、插件的准入要求
-
-以下 4 条适用于**任何要进目录的插件**。每一条都对应一个实际踩过的坑。
-其中第 1、2、4 条也是市场静态探测会列出来的**事实**（没声明 `dsh.bundle.patch`、声明了
-patch 却没有那个文件、peer 精确 pin 到比本机更新的版本……）—— 但它们是安装前的提示，
-不拦安装：0.6.0 起市场不判定任何插件能不能装。静态探测也代替不了第 3 条 ——
-**它不启动 harness**，真实启动只能在真机上跑。
-
-### 1. 包内必须声明 `dsh.bundle`
+装上、打开面板、确认数据出来了，然后把结论写进
+[`compatibility.json`](./compatibility.json)：
 
 ```json
-"dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
-```
-
-这是 dsh 识别插件的依据。没有它，`dsh plugin add` 会装进 `node_modules`
-但**不会把包追加进 `dsh.profile.bundles`** —— 表现就是「装上了但 GUI 里没有」。
-同时 `cordis.patch.yml` 文件必须真实存在并被打进 tarball（声明了却没有这个文件，装上后启动会失败；
-市场会在安装前把这条列成提示，但不拦你）。
-
-### 2. 必须说明适配的 dsh 版本范围
-
-必须给出 `peerDependencies` 里对 `@deepseek-ai/*` 的约束。这是判断
-「这份产物适配哪个 dsh 版本」的**唯一依据**。
-
-```json
-"peerDependencies": {
-  "@deepseek-ai/dsh-llm": "0.1.6-alpha.1"
+{
+  "dshVersion": "0.1.8",
+  "channel": "desktop",
+  "status": "supported",
+  "verifiedAt": "2026-10-01",
+  "verifiedOn": {
+    "os": "Windows",
+    "node": "24.18.0",
+    "result": "装上后侧栏出现「插件搜集」，索引载入 8800 条，搜索与复制正常。"
+  }
 }
 ```
 
-> ⚠️ **精确 pin 和窄范围都要如实登记。** 精确 pin（如 `0.1.6-alpha.1`）意味着
-> dsh 换版本就会崩；窄范围（如 `^0.1.5-rc.1`）可能只是 peer 警告。
-> 两者对用户的影响完全不同，不能混为一谈。
->
-> 特别注意 semver 的**预发布规则**：`^0.1.5-rc.1` 的上界是裸 `0.2.0`，
-> 所以它**不包含** `0.1.6-alpha.1`；而 `>=0.1.5-0 <0.2.0-0` 两端都带 `-0`，
-> 是**包含**预发布版的。别凭感觉判断，用 `pnpm peers check` 或实际装一遍验证。
+> **只写你真的跑过的。** 没实测就写 `expected` 并说明为什么这么推断 ——
+> 这一栏的价值全在「它不是猜的」。写一个假的 `supported`，
+> 比空着更糟：下一个人会拿它当依据。
 
-### 3. 必须通过真实启动验证
+### ★ 改进采集器与面板
 
-**`--dump-config` 通过 ≠ 能启动。** `--dump-config` 只打配置树、不 import 任何模块，
-所以「导出缺失」这类问题它完全查不出来。
+`scripts/`、`src/`、`docs/` 都欢迎。提交前请跑：
 
 ```bash
-node scripts/verify.mjs      # 四步校验，第 ④ 步会真实启动一次
+node test/run.mjs                # 全部测试（只读、不联网）
+node scripts/collect.mjs --check # 索引自洽
+node scripts/collect.mjs --limit 200   # 试跑一次采集（不写盘）
 ```
-
-要求：**四步全绿**，特别是第 ④ 步（真实启动）没有
-`plugin tree failed to load` / `does not provide an export` / `SyntaxError`。
-
-### 4. tarball 内必须含 `package.json` + `cordis.patch.yml` + `lib/`
-
-且**不得包含** `node_modules/`、源码缓存、`.env`、凭据文件。
 
 ---
 
-<a name="sources"></a>
+## 二、这个仓库的四条规矩
 
-## 二、来源标注义务 ★
+这些规矩不是风格偏好，每一条都对应过一次真实事故，测试里也钉住了。
 
-**这是本仓库最看重的一条。** 我们记录别人的代码出处，就必须把出处写准。
-
-每一条进入目录的插件，**必须**把这几项填清楚 —— 它们在
-`catalog/plugins/<slug>.json`（生成物，由采集或覆盖层提供）里就是
-`author` / `repo` / `license` / `source.url`：
-
-| 字段 | 要求 |
+| 规矩 | 为什么 |
 |---|---|
-| **来源** | 自研插件（集合仓库 `origin: self`）或第三方（覆盖层 / 公开索引），二选一 |
-| **原作者** `author` | 第三方填作者名；查不到就写「**未注明**」，**不要留空、不要猜** |
-| **上游仓库** `repo` | 第三方必须给出 URL；确实无法定位就写「**无法定位**」 |
-| **许可** `license` | 按 `package.json` 的 `license` 字段填；没有就写「**未声明**」 |
-
-对人工核对过的条目，来源与核实过程写进 `catalog/overrides/curated.json` 对应条目的
-`evidence`（记**验证时的 commit**）与 `notes`。
-
-### 怎么核实来源（按可信度排序）
-
-1. `package.json` 的 `author` / `repository` 字段 —— 最权威
-2. **包内 `README.md` / `LICENSE` / `NOTICE` 里声明的上游** —— 次之
-3. npm 上的包页面（`npm view <包名> repository homepage author`）
-4. 都查不到 → 按「未注明」登记，并在同一条目里**说明你核实过哪些地方**
-
-> **真实案例**：`@dsh-market/plugin` 最初被标成了「自研」。
-> 原因就是它的 `package.json` **没有** `author` 和 `repository` 字段。
-> 后来在它的包内 `README.md` 里才找到了上游 `2BingLing/dsh-market`。
-> —— 所以**第 2 条核实途径不能跳过**。
-
-### 许可文件
-
-第三方插件的 tarball 里应当保留 `LICENSE` 正文。入库时请一并检查：
-
-```bash
-tar -tzf <tarball> | grep -iE 'LICENSE|NOTICE|COPYING'
-```
-
-如果上游确实没有附许可文件，**如实登记，不要伪造**，并考虑提一个 PR 给上游补上。
+| **内容没变就不动时间戳** | 每 6 小时一次的无脑刷新会让几千条记录天天显示为「已修改」，真正的变更被噪音淹没 |
+| **没看过就不删** | 某个来源这一轮失败（限流、断网）时，由它发现的记录**原样保留**。把「没查到」当成「不存在」是这类采集器最容易犯的错 |
+| **拿不到就是 null** | 描述取不到就写 `null`，不用仓库名凑一句看起来像描述的字符串 |
+| **别猜** | 没实测的版本写 `expected`，查不到的作者写 `null`。准确性优先于表格好看 |
 
 ---
 
-<a name="naming"></a>
+## 三、改索引格式时注意什么
 
-## 三、目录结构与命名
+`catalog/index.json` 是**天天在变的运行时数据**，所以它的序列化是刻意设计的：
 
-本仓库只剩市场插件一个产物：
+- **一条记录一行**（不是整体 pretty-print）。这样 diff 里出现的恰好是
+  「哪几个仓库变了」，而不是「整段重排」。
+- **键顺序固定**（见 `scripts/lib/catalog-format.mjs` 的 `normalizeRecord`）。
+  `JSON.stringify` 按插入顺序输出，改键顺序等于让整份索引重排一次。
+- **排序只在采集端做一次**（star 降序 → id 升序）。面板不再排第二次 ——
+  排序规则有两份实现，就一定会有一天不一致。
+- **`catalog/snapshot.json` 是索引的稳定投影**：登记性字段一律为空、只取 star 最高的
+  一批、条数有上限。它是打进插件包的，如果它随索引的日常刷洗而变，
+  那么每 6 小时一次的采集都会改到包，而包内容变了版本号没变 ——
+  装过的人收不到任何更新，git 里却天天多一个 diff。
 
-```none
-plugins/
-└─ dsh-plugins-market/
-   └─ <dsh 版本>/                       # ★ dsh 运行时版本，如 0.1.6-alpha.1
-      ├─ dsh-plugins-market-<版本>.tgz
-      └─ dsh-plugins-market-<版本>.tgz.sha256
-```
-
-其余插件沿用**同一套命名约定**，只是落在集合仓库里：
-
-```none
-plugins/<id>/<dsh 版本>/<包名>-<版本>.tgz      # 那一层是 dsh 运行时版本（该装哪一套）
-snapshots/<id>/<插件版本>/<包名>-<版本>.tgz    # 那一层是插件版本（当时收录的是哪一版），不可变
-```
-
-规则：
-
-- **`<id>` / `<目录名>`** = 包名去掉 scope。`@dsh-market/plugin` → `dsh-market-plugin`；
-  `dsh-plugins-market` → `dsh-plugins-market`
-- **`<dsh 版本>`** = 这套 tarball 适配的 **dsh 运行时版本**，不是插件版本。
-  用的是 dsh 的完整版本串，含预发布号（`0.1.6-alpha.1`，不写 `0.1.6`）
-- **tarball 文件名** = `npm pack` 的默认产物名，即 `<包名>-<版本>.tgz`，
-  scope 里的 `/` 换成 `-`（`@dsh-market/plugin` → `dsh-market-plugin-0.4.8.tgz`）
-
-> ⚠️ **两层的含义相反，别写错**：`plugins/` 下按 **dsh 版本**分层（答「该装哪一套」），
-> `snapshots/` 下按**插件版本**分层（答「当时收录的是哪一版」）。
->
-> **同一个插件可以、也应该有多个版本目录**：为适配不同 dsh 版本发布了不同构建产物时，
-> 各放一处，互不影响；同一个插件的多个插件版本则各有一套快照，**新的不覆盖旧的**。
+改完之后 `node scripts/collect.mjs --check` 必须通过；它会逐字节验证
+「重新序列化同一份数据」与磁盘上那一份是否相同。
 
 ---
 
-<a name="add-plugin"></a>
+## 四、改面板（客户端半）时注意什么
 
-## 四、新增 / 更新插件
+`src/client/app.js` 是一个 **classic script**，不是 ES module。写错一处的症状是
+**整页白屏或面板根本不出来**，而且不会有任何编译期报错：
 
-### A. 自研插件（在**各插件自己的仓库**做）
+| 不能做的事 | 后果 |
+|---|---|
+| 写 `import` / `export` | SyntaxError，宿主报 “bundle ... loaded without registering” |
+| 写顶层 `await` | 同上 |
+| 改 `load({ id })` 里的 id | 它必须严格等于包名，也是 boot 图的行 id |
+| `require` 除 `react` 以外的东西 | 依赖面一大，跨版本就活不下来 |
+| 在不 `slots.inject` 的情况下直接 `slots.register` | 注册不会生效 |
+| 让 `inject` 多声明服务 | 声明的服务没就绪会让**整页 boot 失败** |
 
-**本仓库不用动。** 自 2026-09-18 起，6 个自研插件各自一个源码仓库
-（安装规格 `github:HaydenSmith1121/<仓库名>`），原来那个中心化的集合仓库已经退役 ——
-它的 tarball 路径、`plugin.json`、快照那套流程**不再适用**。那边的流程是：
-
-1. 改 `src/` → 重新 build → **提交 `lib/`**。`lib/` 必须进仓库：`github:` 安装走的是
-   pnpm 的 git 依赖，装到的副本直接加载 `lib/`；而 pnpm 10+ 会以
-   `ERR_PNPM_GIT_DEP_PREPARE_NOT_ALLOWED` 拦下 git 依赖的构建脚本 ——
-   「装上再构建」这条路不通
-2. `package.json` 里**不要有 `prepare`**（同上），并且 `main` 指向的入口必须真的在仓库里
-3. `repository` 指回本仓库自己；打 tag / 发 release 都可以，市场不依赖它
-4. 提交。**本仓库下一轮每日采集会自动把版本跟过来**；想立刻生效就在本仓库跑一次
-   `node scripts/sync-catalog.mjs`（或等 02:00 的定时任务）
-
-> 想给市场一条确定的手动装法，就把说明写进**那个插件自己仓库的 README** ——
-> 市场条目里的 `github:` 规格与本仓库的 [`README-安装说明.md`](./README-安装说明.md)
-> 都指向那里。
-
-（原先集合仓库那份收录规范里的打包自查清单，仍然适用于**你自己打包**的场合 ——
-比如要把预构建 tarball 挂到 GitHub Release 时：）
-
-```bash
-tgz=<临时目录>/<包名>-<版本>.tgz
-tar -tzf "$tgz" | grep -c 'package/lib/'         # > 0，确认 lib 进来了
-tar -tzf "$tgz" | grep -c 'cordis.patch.yml'     # 应为 1
-tar -tzf "$tgz" | grep -iE 'LICENSE|NOTICE'      # 第三方应有
-tar -tzf "$tgz" | grep -E 'node_modules|\.env'   # 应为空
-```
-
-<a name="review-flow"></a>
-
-### B. 第三方插件 → 补一份实测记录
-
-**本仓库的职责就是这一条。** 门槛是「真机验证过 + 留下证据」，静态探测替代不了。
-
-> ★ 它**不会**把插件提升成什么层级 —— 分级已经没有了。补的是一份**事实记录**：
-> 干净的安装规格、peer 结论、当时怎么验的。这些东西公开索引里查不到。
-
-```bash
-# ① 探测候选包，产出一份草稿（别凭印象手写）
-node scripts/market-review.mjs <owner/repo | npm 包名 | 插件 id>
-node scripts/market-review.mjs <owner/repo | npm 包名 | 插件 id> --write   # 直接追加进 overrides/curated.json
-
-# ② 在隔离环境真机装一次并启动（DSH_HOME=~/.dsh-dev，日常 3080 不受影响）
-node scripts/dev-env.mjs install <tarball 或先 dsh plugin --profile web add <spec>>
-node scripts/dev-env.mjs web
-node scripts/dev-env.mjs doctor
-
-# ③ 复核并补全草稿：notes / evidence / peer* 字段一个都不能留 null
-#    （evidence 必须写清环境与判据 —— 「装上了」不算，要写退出码与装配树里的那一行）
-
-# ④ 重新生成目录（必须！）
-node scripts/sync-catalog.mjs
-
-# ⑤ 提交前自检（CI 会跑同一件事）
-node scripts/sync-catalog.mjs --check
-```
-
-核对一条的**最低要求（缺一不可）**、「不分发字节」的含义与结论怎么写，
-见 [`docs/目录同步.md` §七](./docs/目录同步.md#add-reviewed) 与
-`catalog/overrides/curated.json` 顶部的 `_comment`。
-
-<a name="market-version"></a>
-
-### C. 市场插件自己发新版
-
-市场插件是本仓库唯一托管产物的插件，流程与别的插件**不同**（它的版本号、sha256 与目录条目
-都从源码与产物**反推**，不手写）：
-
-```bash
-# ① 改源码后重新构建（会重打 tarball 到 plugins/dsh-plugins-market/<dsh 版本>/）
-node plugins-src/dsh-plugins-market/build.mjs
-
-# ② 重新生成目录（市场自己那一行由 catalog/overrides/self.json 声明，
-#    版本号取自 plugins-src/dsh-plugins-market/package.json，sha256 由脚本实测 tarball）
-node scripts/sync-catalog.mjs
-
-# ③ 提交前自检
-node scripts/sync-catalog.mjs --check
-node plugins-src/dsh-plugins-market/build.mjs --check
-cd plugins-src/dsh-plugins-market && node test/run.mjs
-```
-
-> **为什么必须先构建再采集**：`build.mjs` 是确定性的（同输入必得同字节），
-> 而 `catalog/overrides/self.json` 只声明「版本从哪个 `package.json` 取、tarball 模板长什么样」。
-> 只改源码不构建 → `plugins/` 下还是旧产物；只构建不采集 → 配置文件里还是旧版本号。
-> `build.mjs` 自己也会校验 `catalog/index.json` 里市场那条的版本与源码一致，不一致直接报错。
+这些约束都在 `test/bundle.test.mjs` 里有对应断言，跑一次测试就知道有没有踩到。
 
 ---
 
-<a name="add-runtime"></a>
+## 五、提交前的检查清单
 
-## 五、新增一个 dsh 运行时版本
-
-**这是最受欢迎的一类贡献。** 当 dsh 发布新版本时，需要补齐两件事：**产物**（集合仓库）
-与**结论**（本仓库的 `compatibility.json`）。
-
-### 步骤
-
-1. **确认新版 dsh 的版本号与通道**
-
-   ```bash
-   npm view @deepseek-ai/dsh dist-tags
-   ```
-
-2. **安装该版本 dsh，实测现有插件是否可用**
-
-   ```bash
-   npm i -g @deepseek-ai/dsh@<新版本>
-   node scripts/verify.mjs
-   ```
-
-3. **分情况处理**：
-
-   - **现有 tarball 直接可用** → 在集合仓库新增一个 dsh 版本目录，把现有 tarball 复制过去
-     （或软链接），并更新对应 `plugin.json`
-   - **需要重新构建** → 拿到插件源码，按新版 dsh 的 peer 要求重新构建、重新打包，
-     放进新的版本目录
-   - **某个插件确实无法适配**（上游没有对应版本） → 明确记下来，让预检与安装前的提示把话说明白，
-     而不是让用户装上一个会崩的组合
-
-4. **在本仓库 `compatibility.json` 里新增 runtime 条目**（注意：**这里已经不再有
-   `plugins` 数组**，逐插件事实在目录与集合仓库里）：
-
-   ```json
-   {
-     "dshVersion": "<新版本>",
-     "distTag": "<latest | next | alpha>",
-     "status": "supported",
-     "recommended": true,
-     "verifiedAt": "<YYYY-MM-DD>",
-     "verifiedOn": { "os": "...", "node": "...", "pnpm": "...", "result": "..." },
-     "installCommand": "npm i -g @deepseek-ai/dsh@<新版本>",
-     "bundles": [ "..." ]
-   }
-   ```
-
-   同时把**上一个版本**的 `recommended` 改成 `false`。
-
-5. **让目录跟上**：`node scripts/sync-catalog.mjs`（`dshVersion` 字段取自
-   `compatibility.json` 里 status 为 `supported` 且 `recommended` 的那一条 runtime）
-
-6. **更新文档里的版本矩阵**（[`docs/版本兼容矩阵.md`](./docs/版本兼容矩阵.md) 第三节、
-   [`README-安装说明.md` 第三节](./README-安装说明.md#ch3)）
-
-7. **如实填写 `verifiedOn`** —— 在什么机器、什么 Node/pnpm 版本上验证的，结果如何。
-   **没实测过就不要写 supported**，宁可在 Issue 里讨论。
-
-> ⚠️ **特别注意 npm 的 `latest` 通道**。`npm i -g @deepseek-ai/dsh` 不带版本
-> 装的是 `latest`，它常常**落后于**插件要求的版本。更新时要一并检查
-> `distTags` 是否变化，以及「静默降级」这个陷阱是否仍然存在。
+- [ ] `node test/run.mjs` 全绿
+- [ ] `git diff` 里没有 `.cache/`、没有构建产物
+- [ ] 如果改了采集逻辑：`catalog/index.json` 的 diff 里**只有**实质变化的那些行
+      （如果出现整段重排，说明序列化或排序被动过了）
+- [ ] 如果改了面板：在真实的 harness 里打开过一次，不只是跑了测试
+- [ ] 如果改了 `compatibility.json`：只写你真的跑过的结论，并写清楚验证方式
 
 ---
 
-<a name="checklist"></a>
+## 六、遇到问题
 
-## 六、PR 检查清单
+开 Issue，尽量带上：
 
-提交前请逐项确认（按你改动的内容勾）：
+- `dsh --version`（或桌面版版本号）与操作系统
+- 面板「关于」里那一段运行环境信息（它包含版本、通道、能力探测结果）
+- 如果是数据问题：仓库地址，以及你看到的字段与实际不符的地方
 
-**改了目录 / 覆盖层 / 采集脚本**
-
-- [ ] `node scripts/sync-catalog.mjs` 已经跑过，生成物与源码一致
-- [ ] `node scripts/sync-catalog.mjs --check` 通过
-- [ ] `catalog/plugins/*.json` 与 `catalog/index.json` **没有手工编辑痕迹**
-      （字段顺序、缩进、时间戳都由脚本决定）
-- [ ] 新补的实测记录里 `curatedAt` 已填，`evidence` 说清了环境、装法与验证结论，
-      `notes` 写清了结论（可用 / 可用但有注意事项 / 不可用）
-- [ ] **第三方插件已标注原作者与上游仓库**；查不到就明确写「未注明」并说明核实过程
-- [ ] 该插件确实走 `github:` / npm 规格安装 —— **本仓库不再分发第三方插件的字节**
-
-**改了市场插件（`plugins-src/dsh-plugins-market/`）**
-
-- [ ] `cd plugins-src/dsh-plugins-market && node test/run.mjs` 通过
-- [ ] `node plugins-src/dsh-plugins-market/build.mjs` 已跑，产物已提交
-      （CI 会再跑一次并 `git diff --quiet -- plugins/`，源码与产物不一致就红）
-- [ ] `node plugins-src/dsh-plugins-market/build.mjs --check` 通过
-- [ ] 改了源码版本号时，已重跑 `node scripts/sync-catalog.mjs`
-      （`catalog/plugins/dsh-plugins-market.json` 的版本要与源码一致）
-
-**改了运行时矩阵 / 文档**
-
-- [ ] `compatibility.json` 合法、`bundles` 顺序与文档描述自洽
-- [ ] `node scripts/verify.mjs` 四步全绿（含真实启动）
-- [ ] 文档里的版本号、路径、命令**逐条对着代码核过**，没有指向已删除的文件
-- [ ] commit message 说明改了什么、为什么
-
-**跨仓库改动**（插件本体）
-
-- [ ] 在集合仓库跑了 `node scripts/build-manifest.mjs`（`--check` 通过），
-      新 tarball 未覆盖任何已发布字节，快照是**新增**而不是覆盖
-
----
-
-<a name="license"></a>
-
-## 七、许可
-
-- 本仓库**自身的**代码与文档：MIT
-- **第三方插件的版权归各自原作者所有。** 自 0.4.0（市场与插件分离）起，本仓库
-  **不再分发**第三方插件的字节，也不重新打包自研插件：目录里只记录元数据与安装方法
-- 给第三方插件补实测记录**不涉及再分发**（用户从上游装），但仍请确认该插件
-  的许可允许它被这样索引与推荐；无许可声明或明确禁止分发的项目请不要提交
-- 如你是某个插件的原作者，希望本仓库移除或调整收录方式，
-  请开 Issue 或直接联系，我们会立即处理
+作者会尽快回复。如果某个项目的作者希望移除收录，请直接说明，我们会立即处理。

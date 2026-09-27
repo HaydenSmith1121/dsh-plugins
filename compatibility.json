@@ -1,103 +1,80 @@
 {
   "_comment": [
-    "【运行时矩阵】—— 本仓库的目录支持哪些 dsh 版本、装的时候要注意什么。",
+    "【运行时矩阵】—— 这个插件在哪些 dsh 版本上被实测过、结论是什么。",
     "",
-    "★ 自 0.4.0（市场与插件分离）起，这个文件**不再包含插件清单**。",
-    "  它只回答「这个市场在哪些 dsh 版本上可用、装插件时的环境要求与已知坑」。",
+    "★ 自 1.0.0（市场 → 搜集器）起，这个文件**不构成任何闸门**。",
+    "  它只回答一个问题：「这个版本有没有人真的跑过」。",
+    "  版本不在表里、或者标记为 expected，插件照样全功能可用 ——",
+    "  作者刻意不写 peerDependencies、不声明 engines.dsh，",
+    "  就是为了不让一个版本号字符串决定「能不能用」。",
     "",
-    "  插件的版本号 / 收藏量 / 仓库地址 / 安装方法，全都在：",
-    "    catalog/plugins/<slug>.json    一个插件一个配置文件（机器可读的事实）",
-    "    catalog/index.json             由上面派生的索引（列表页用）",
-    "  两者都由 scripts/sync-catalog.mjs 生成，不要手写。",
+    "  真正决定能不能干活的是**能力探测**（src/server/compat.js 的 probeHost）：",
+    "  webServer.register 在不在、ctx.effect 在不在。缺了会在面板的「关于」里",
+    "  如实显示出来，而不是让用户对着一个空白页面猜。",
     "",
-    "  自研插件的产物与源码在**各自的**源码仓库里（安装规格 github:HaydenSmith1121/<仓库名>）；",
-    "  原先的中心化 tarball 仓库 dsh-plugin-collection 已于 2026-09-18 退役。",
-    "",
-    "人工维护的部分：requirements（环境下限）、distTags（npm 通道现状）、",
-    "runtimes（每个 dsh 版本 supported / unsupported 的结论与理由）、inBoxBundles、allowBuilds。"
+    "status 的三个取值：",
+    "  supported   真机上装过、面板打开过、数据出来了",
+    "  expected    按 API 形状推断可用，但没有人实测过（写清楚为什么，不要含糊）",
+    "  broken      实测不可用（会写清楚坏在哪一步）"
   ],
-  "schemaVersion": 1,
-  "updated": "2026-09-17",
-  "profile": "web",
+  "schemaVersion": 2,
+  "updated": "2026-09-27",
+  "policy": {
+    "peerDependencies": "none",
+    "note": "本包不声明任何 dependencies / peerDependencies。dsh 0.1.7 起会在导入插件前核对 peer 里 @deepseek-ai/dsh* 与运行时版本是否一致 —— 写了 peer 就等于把自己钉死在一个版本上。"
+  },
   "requirements": {
     "node": {
       "min": "22.19.0",
-      "verified": "24.14.0",
-      "note": "dsh 的 package.json 没有 engines 字段，此下限是按实测写的，不是官方声明。低于此版本未验证。"
-    },
-    "pnpm": {
-      "min": "10.0.0",
-      "verified": "12.4.2",
-      "note": "pnpm 10+ 默认开启依赖构建脚本拦截（strictDepBuilds），这是 allowBuilds 那一步的由来。pnpm 必须装在「dsh 所在的那个 Node」上，多 Node 环境极易装错位置。"
+      "verified": "24.18.0",
+      "note": "harness 本身跑在这个下限之上；插件服务器半只用 Node 内置模块（fetch / zlib / fs / path），没有原生依赖。"
     },
     "os": {
-      "verified": [
-        "Windows"
-      ],
-      "expected": [
-        "Windows",
-        "macOS",
-        "Linux"
-      ]
+      "verified": ["Windows"],
+      "expected": ["Windows", "macOS", "Linux"]
     }
-  },
-  "distTags": {
-    "latest": "0.1.5-rc.1",
-    "next": "0.1.5-rc.2",
-    "alpha": "0.1.6-alpha.1",
-    "note": "npm i -g @deepseek-ai/dsh（不带版本）装的是 latest，即 0.1.5-rc.1 —— 对本仓库来说不够用。"
-  },
-  "inBoxBundles": [
-    "@deepseek-ai/dsh-base",
-    "@deepseek-ai/dsh-web-app"
-  ],
-  "allowBuilds": {
-    "packages": {
-      "@google/genai": false,
-      "protobufjs": false
-    },
-    "triggeredBy": "dsh-opencode-go-plus",
-    "appliesFromPnpm": "10.0.0",
-    "note": "这两个包都不需要真的执行构建脚本：protobufjs 的 postinstall 只打印一句提示；@google/genai 的 prepare 对 tarball 安装本就不执行。填 false 的含义是「已知并同意忽略」，不是「跳过构建」。不要改成 strictDepBuilds: false —— 那会把将来真正需要编译的原生模块也一起静默跳过。",
-    "symptom": "ERR_PNPM_IGNORED_BUILDS。极具欺骗性：包已进 node_modules、dependencies 也写了，唯独 dsh.profile.bundles 没追加，表现为「装上了但 GUI 里没有」。只要 pnpm 退出码非 0，就当作这条插件没装完。"
   },
   "runtimes": [
     {
-      "dshVersion": "0.1.6-alpha.1",
-      "distTag": "alpha",
+      "dshVersion": "0.1.7-rc.2",
+      "channel": "desktop",
       "status": "supported",
-      "recommended": true,
-      "verifiedAt": "2026-09-17",
+      "verifiedAt": "2026-09-27",
       "verifiedOn": {
         "os": "Windows",
-        "node": "24.14.0",
-        "pnpm": "12.4.2",
-        "result": "0.4.0（市场与插件分离）实测：单元测试 117/117 通过；隔离环境（DSH_HOME=D:\\deepseek\\dsh-dev-home，端口 3090）真实启动 dsh web，插件树完整装配、0 致命错误；目录采集产出 7494 个配置文件（已验证 7 / 已审核 7 / 未审核 7480），与 catalog/index.json 的条目数一致。0.1.6-alpha.1 上的逐插件结论见 catalog/plugins/*.json 的 peerVerdict / peerNote。"
-      },
-      "installCommand": "npm i -g @deepseek-ai/dsh@0.1.6-alpha.1",
-      "bundles": [
-        "@deepseek-ai/dsh-base",
-        "@deepseek-ai/dsh-web-app",
-        "dsh-plugins-market"
-      ],
-      "bundlesNote": "这里只是**本仓库保证的那几层**：两个内置 bundle，加市场插件自己（它必须最后加载 —— 要读整棵装配树做装前检查）。★ 自 0.4.0 起，中间那段取决于你实际装了哪些插件：装哪些由市场面板按 catalog/plugins/<slug>.json 决定，引导脚本只装 dsh-plugins-market。所以「完整的 bundles 清单」这件事本身已经不存在了。这个数组现在只有一个消费者：plugins-src/dsh-plugins-market/build.mjs 用它核对市场插件确实被登记为 bundle 层。"
+        "node": "24.18.0",
+        "result": "官方桌面版（resources/app.asar 内即 dsh 0.1.7-rc.2）：清单通过 0.1.7 的解析器校验（dsh.bundle.patch 为字符串、dsh.client.platform 为字符串、declares dsh.client 时 exports[\"./client\"] 存在）；面板从侧栏打开、索引载入、搜索与复制安装地址均正常。安装规格用桌面版自带的「设置 → 插件 → 添加插件」填 github:HaydenSmith1121/dsh-plugins。"
+      }
     },
     {
-      "dshVersion": "0.1.5-rc.1",
-      "distTag": "latest",
-      "status": "unsupported",
-      "recommended": false,
-      "reason": "dsh-opencode-go-plus 精确要求 @deepseek-ai/dsh-llm@0.1.6-alpha.1，而 0.1.5-rc.1 内置的是 0.1.5-rc.2，缺少 IMAGE_OFFLOAD_REQUIRED_CODE 等导出 → 整个插件树加载失败，dsh web 完全起不来。",
-      "upgradeTo": "0.1.6-alpha.1",
-      "danger": "这是 npm 的 latest 通道，也就是 npm i -g @deepseek-ai/dsh（不带版本）会装到的那一个。以后顺手跑一次不带版本的升级就会静默降级到这里，故障立刻复现且没有任何提示。"
+      "dshVersion": "0.1.6-alpha.1",
+      "channel": "cli",
+      "status": "expected",
+      "verifiedAt": null,
+      "verifiedOn": {
+        "note": "没有实测记录。这里写 expected 而不是 supported —— 上一版（插件市场 0.6.0）在这条版本线上是实测过的，但那一版的服务器半用了 installer / profile / jobs 一整套东西，与本版不是同一份代码，不能拿它的结论给这一版背书。"
+      },
+      "expectedBecause": "本插件只用到 ctx.effect 与 webServer.register({kind,path,handler})，这两个 API 在 0.1.6 上确实存在（旧版插件用的就是它们）；客户端半只 require('react') 并通过 slots.inject/register 注册面板。若某个 API 在这条线上形状不同，会在面板「关于」的「插件 API」一行显示为 ✗，而不是静默失效。"
     },
     {
       "dshVersion": "0.1.5-rc.2",
-      "distTag": "next",
-      "status": "unsupported",
-      "recommended": false,
-      "reason": "同上：内置 @deepseek-ai/dsh-llm 仍是 0.1.5 线，缺 0.1.6 新增的图片卸载导出。",
-      "upgradeTo": "0.1.6-alpha.1"
+      "channel": "cli",
+      "status": "expected",
+      "verifiedAt": null,
+      "expectedBecause": "同上。0.1.5 线上未做实测；扫描与展示功能不依赖 0.1.6/0.1.7 新增的任何 API。"
+    },
+    {
+      "dshVersion": "0.1.5-rc.1",
+      "channel": "cli",
+      "status": "expected",
+      "verifiedAt": null,
+      "expectedBecause": "同上。"
     }
+  ],
+  "knownTraps": [
+    "dsh 0.1.7 起，导入插件前会核对 peerDependencies 里的 @deepseek-ai/dsh* —— 所以本包一个 peer 都不写。",
+    "官方桌面版的安装规格解析器只接受 host/owner/repo 形状（github:owner/repo 或 https://github.com/owner/repo）。仓库子目录会被拒绝（“a URL must point at a git repository or a tarball”），所以插件必须躺在仓库根。",
+    "dsh.client 的字段有严格类型校验：platform 必须是字符串，immediately（若写）必须是布尔值，声明了 dsh.client 就必须同时有 exports[\"./client\"]。",
+    "dsh.manifestVersion 与 engines.dsh 目前不被强制检查 —— 所以写错了不会有任何提示，但也不该依赖它们做版本判断。"
   ]
 }

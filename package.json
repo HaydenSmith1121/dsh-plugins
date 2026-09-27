@@ -1,0 +1,57 @@
+{
+  "name": "dsh-plugins-market",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DSH 插件项目搜集面板：搜集 GitHub 上的 DeepSeek Harness 插件仓库，展示项目描述、仓库地址、作者与 star 数；安装交给官方桌面版自带的「从 GitHub 安装插件」。",
+  "main": "src/server/index.js",
+  "exports": {
+    ".": {
+      "default": "./src/server/index.js"
+    },
+    "./client": {
+      "default": "./src/client/app.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "catalog/snapshot.json",
+    "cordis.patch.yml",
+    "compatibility.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [],
+      "external": []
+    }
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "collection",
+    "github"
+  ],
+  "author": "HaydenSmith1121",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaydenSmith1121/dsh-plugins.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "collect": "node scripts/collect.mjs",
+    "check": "node scripts/collect.mjs --check",
+    "test": "node test/run.mjs"
+  }
+}

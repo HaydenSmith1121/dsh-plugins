@@ -1,449 +1,47 @@
 /**
- * 插件配置文件的**格式定义** —— 市场仓库唯一的事实来源。
+ * 插件项目索引的**格式层** —— 记录长什么样、怎么归一化、怎么序列化。
  *
- * ── 为什么要有这个文件 ──────────────────────────────────────────
+ * ── 只有一份数据 ──────────────────────────────────────────────
  *
- * 这一版的插件市场与上一版的根本区别：**目录不再是「几个大 JSON」，而是
- * 「一个插件一个配置文件」**。
+ *   catalog/index.json     全部采集结果（唯一事实来源）
+ *   catalog/snapshot.json  上面那份的**稳定投影**：star 数最高的一批，
+ *                          打进插件包当离线兜底（装到别的机器上没网时用）
  *
- *   catalog/plugins/<slug>.json   一个插件一份，人可读、可 diff、可单独 review
- *   catalog/index.json            由上面那些**派生**出来的轻量索引，给列表页用
+ * ★ 与上一版（插件市场）的关键区别：目录里**没有**安装方法、版本号、信任分级、
+ *   体检结论。这一版只记录「这是一个什么项目」：
  *
- * 这样做的直接好处：某个插件的版本号 / star 数变了，diff 里就是那一个文件的一行，
- * 而不是混在 7000 条里的一坨；某个插件被下架或者需要人工审核，也是碰它自己那份文件。
+ *     id / owner / name / url          项目地址与作者
+ *     description / descriptionZh      项目描述
+ *     stars / forks                    收藏量
+ *     language / topics / license / homepage / pushedAt / archived   公开事实
  *
- * ── 谁写、谁读 ────────────────────────────────────────────────
+ * ★ 三条硬规矩（与旧版一致，因为它们解决的是同一类问题）：
  *
- *   写：scripts/sync-catalog.mjs（每日 GitHub Actions 定时跑，也可本地手动跑）
- *   读：dsh-plugins-market 插件（运行时从仓库 raw 拉 index.json + 单条配置文件）
- *
- * ── 数据的边界（很重要，别在这里做判断）─────────────────────────
- *
- * 这个模块只负责**形状**：字段名、类型、默认值、slug 规则、索引怎么派生。
- * 「版本号从哪来」「这个插件算不算可安装」属于**采集与判定**，在 sync-catalog.mjs
- * 与市场插件的 gate.js 里，不在这里。
- *
- * @module scripts/lib/catalog-format
+ *   ① **内容没变就不动时间戳。** 每 6 小时一次的定时采集如果无脑刷新
+ *      lastSyncedAt，几千条记录会天天全部显示为「已修改」，真正的变更被噪音淹没。
+ *   ② **拿不到就是 null。** 描述取不到就写 null，不用仓库名凑一句假的。
+ *   ③ **输出必须逐字节确定。** 同输入必得同字节：排序规则固定、键顺序固定、
+ *      时间戳只在内容真的变了时推进 —— 否则 CI 里「新采一轮」永远是一堆假 diff。
  */
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 
-/** 配置文件的 schema 版本。加字段不必动它，改语义才动。 */
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
+export const INDEX_REL = 'catalog/index.json';
+export const SNAPSHOT_REL = 'catalog/snapshot.json';
 
-/**
- * 自 0.5.0 起目录里**没有信任层级**，这份列表因此为空。
- *
- * 留着这个导出不是为了「以后可能还要」，而是为了**让引用它的地方编译期就报错** ——
- * 删掉一个常量，所有还在按层级分档的代码会立刻暴露出来，而不是安静地退化成
- * 「所有插件都算最低档」。等确认没有引用了，它会跟着一起删。
- */
-export const TIERS = [];
+/** 包内兜底快照保留多少条（star 降序取前 N） */
+export const SNAPSHOT_SIZE = 400;
 
-/** 安装方式的枚举。market 运行时会按它分派到不同的安装路径。 */
-export const INSTALL_METHODS = ['tarball', 'npm', 'github', 'skills', 'manual'];
+/** 来源标识 → 人话，用于界面与索引里的 sources 数组 */
+export const SOURCE_LABELS = {
+  'github-search': 'GitHub 搜索',
+  'public-index': '公开索引',
+  seed: '手工收录',
+};
 
-/** 版本号的来源，按可信度从高到低。写进配置文件供审计。 */
-export const VERSION_SOURCES = ['npm', 'github-release', 'github-tag', 'package.json', 'none'];
-
-/** 目录里放配置文件的子目录（相对仓库根）。 */
-export const PLUGINS_DIR_REL = path.join('catalog', 'plugins');
-/** 派生索引的相对路径。 */
-export const INDEX_REL = path.join('catalog', 'index.json');
-
-/**
- * 把插件 id 变成一个稳定的文件名主干。
- *
- * 规则刻意保守：
- *   · 只保留 `[a-z0-9._-]`，其余一律换成 `-`（GitHub 的 owner/repo 里合法字符很少，
- *     但公共索引里的 id 五花八门，什么字符都出现过）
- *   · 全小写 —— 否则 `Foo/Bar` 与 `foo/bar` 会在 macOS / Windows 上撞成同一个文件，
- *     而这两个文件系统是本仓库的主要使用场景
- *   · `@scope/pkg` 形态的包名保留 scope，但把 `/` 换成 `__`
- *
- * @param {string} id 插件 id（`owner/repo` 或包名）
- * @returns {string} 文件名主干（不含 .json）
- */
-export function slugify(id) {
-  const raw = String(id ?? '').trim();
-  if (raw === '') return 'unknown';
-
-  const base = raw
-    .replace(/^@/, '') // @scope/pkg → scope/pkg
-    .replace(/[/\\]/g, '__') // 路径分隔 → __（保住 owner 与 repo 的边界）
-    .replace(/[^A-Za-z0-9._-]+/g, '-') // 其余非法字符 → -
-    .replace(/-{2,}/g, '-')
-    .replace(/^[.-]+|[.-]+$/g, '')
-    .toLowerCase();
-
-  return base === '' ? 'unknown' : base.slice(0, 120);
-}
-
-/** 把 slug 还原成人能认出的 id 形态（仅用于展示与排错，不参与判定）。 */
-export function deslugify(slug) {
-  return String(slug ?? '').replace(/__/g, '/');
-}
-
-/**
- * 从公共索引的一条记录里挑出「干净的安装规格」。
- *
- * ★ 绝不复用索引里的原始命令。实测 7487 条里混着 `curl … | sh`、`pip install`、
- *   `brew install`、`npm install -g` 这类根本不是 dsh 插件安装的命令。
- *   只接受 `dsh plugin … add <干净规格>` 这一种形态。
- *
- * @param {string[]} commands
- * @returns {{method:'github'|'npm', spec:string, source:string}|null}
- */
-export function extractCleanSpec(commands) {
-  if (!Array.isArray(commands)) return null;
-  for (const raw of commands) {
-    const cmd = String(raw ?? '').trim();
-    if (cmd === '' || /<[^>]*>/.test(cmd)) continue; // 含占位符的一律不信
-    const m = /\bdsh\s+plugin\b[^\n]*?\badd\s+(.+?)\s*$/.exec(cmd);
-    if (!m) continue;
-    if (/\s&&|\s\|\s|\s;\s/.test(cmd)) continue; // 复合命令不认
-    const spec = m[1].replace(/^['"]|['"]$/g, '').trim();
-    if (/^github:[^\s]+$/.test(spec)) return { method: 'github', spec, source: 'index-command' };
-    if (/^npm:[^\s]+$/.test(spec)) return { method: 'npm', spec: spec.slice(4), source: 'index-command' };
-    if (/^(@[a-z0-9-._~]+\/)?[a-z0-9-._~]+(@[^\s]+)?$/i.test(spec)) {
-      return { method: 'npm', spec, source: 'index-command' };
-    }
-  }
-  return null;
-}
-
-/** 从 GitHub 仓库地址里取出 `owner/repo`；取不到返回 null。 */
-export function githubSlug(url) {
-  const m = /^https?:\/\/github\.com\/([^/\s]+)\/([^/\s#?]+)/i.exec(String(url ?? '').trim());
-  if (!m) return null;
-  return `${m[1]}/${m[2].replace(/\.git$/i, '')}`;
-}
-
-/**
- * 判断一个规格是否字符串安全（能直接当 npm 包名用）。
- *
- * 公共索引里 `name` 字段与真实 npm 包名没有任何保证关系，所以卡得比较死。
- * 允许带版本标签（`foo@1.2.3` / `@scope/foo@next`）—— 那是合法的 npm 规格，
- * 而且索引里确实出现过；不接受它会让一条本来能装的记录在归一化时被降级成
- * 「无法安装」，属于把数据问题变成能力问题。
- */
-export function looksLikeNpmName(s) {
-  const t = String(s ?? '').trim();
-  if (t === '') return false;
-  const NAME = '(?:@[a-z0-9-~][a-z0-9-._~]*\\/)?[a-z0-9-~][a-z0-9-._~]*';
-  const withTag = new RegExp(`^${NAME}@[^\\s@]+$`, 'i');
-  const bare = new RegExp(`^${NAME}$`, 'i');
-  // 包名里至少要有一个字母或数字：`.` / `-` / `__` 这类「看着像名字」的字符串
-  // 其实是路径或占位符，放行它们会让闸门拿一个不存在的包去装。
-  const base = withTag.test(t) ? t.replace(/@[^\s@]+$/, '') : t;
-  if (!/[a-z0-9]/i.test(base)) return false;
-  return withTag.test(t) || bare.test(t);
-}
-
-/**
- * 造一条**空白的**插件记录。所有字段都在这里显式列出，
- * 免得下游靠 `?.` 到处兜底、也就没人知道到底有哪些字段。
- *
- * ★ 自 0.5.0 起**没有 `tier` 字段**。曾经有过三个信任层级
- *   （verified / reviewed / community），现在目录是一份平铺列表：
- *   市场不再对插件分等级，也不再用等级决定「能不能一键装」。
- *   理由见 README「为什么不分级」那一节 —— 一句话：
- *   等级是**维护者的内部记账**，对用户要回答的问题（这个插件装不装得上）
- *   给出的答案并不比「装前检查」更准，却要在界面上占三个标签、两档筛选。
- */
-export function blankRecord({ id }) {
-  return {
-    schemaVersion: SCHEMA_VERSION,
-    id,
-    slug: slugify(id),
-    package: null,
-    name: null,
-    title: null,
-    summary: '',
-    tags: [],
-
-    version: null,
-    versionSource: 'none',
-    versionCheckedAt: null,
-    latestRelease: null,
-
-    author: null,
-    repo: null,
-    homepage: null,
-    license: null,
-    stars: null,
-    forks: null,
-    pushedAt: null,
-    metricsCheckedAt: null,
-
-    // ── 兼容性事实 ────────────────────────────────────────────
-    // 由采集器为本仓库托管的插件填（实测结论）；公共索引来的条目取不到就是 null。
-    origin: null,
-    peerRuntimePin: null,
-    peerVerdict: null,
-    peerNote: null,
-    coexistenceWarning: null,
-    notes: null,
-    // 自引用条目（市场插件指向自己的 tarball）无法自包含 hash，用这个字段如实说明原因
-    sha256Note: null,
-
-    install: {
-      method: 'manual',
-      spec: null,
-      commands: [],
-      url: null,
-      sha256: null,
-      bytes: null,
-      tarball: null,
-      dshVersion: null,
-      needsConfig: false,
-      usageNeedsConfig: false,
-      risky: false,
-      riskyReasons: [],
-    },
-
-    source: {
-      kind: 'public-index',
-      url: null,
-      firstSeenAt: null,
-      lastSyncedAt: null,
-    },
-  };
-}
-
-/**
- * 把任意来源的一条输入**规整**成合法记录：补齐缺字段、夹掉非法值、统一类型。
- *
- * 刻意不抛错 —— 采集侧面对的是 7000 多条来源各异的数据，一条不合规就让整轮同步
- * 失败是不可接受的。规整不了的字段会退化成 null / 默认值，并且由调用方决定要不要
- * 记一条 warning。
- *
- * @param {object} input
- * @returns {object} 新的记录对象（不修改 input）
- */
-export function normalizeRecord(input) {
-  const id = String(input?.id ?? '').trim();
-  const rec = blankRecord({ id });
-
-  const str = (v) => {
-    const s = v == null ? '' : String(v).trim();
-    return s === '' ? null : s;
-  };
-  /**
-   * ★ 数字字段的归一化必须把 null / '' / 非数字**一律还原成 null**。
-   *
-   *   这里曾经写成 `Number.isFinite(Number(v)) ? Number(v) : null` ——
-   *   而 `Number(null) === 0`，于是「没有这个数据」被静默写成了 0。
-   *   后果不是显示成 0 那么轻：它让**归一化不幂等** ——
-   *   磁盘上写着 `null`，读进来变成 `0`，下次又按 0 写出去，
-   *   于是每日同步会认为「每个文件都变了」，7000 个文件天天 flip-flop，
-   *   真正的变更被彻底淹没。而 `--check` 也会永远红。
-   */
-  const num = (v) => {
-    if (v === null || v === undefined || v === '') return null;
-    const n = Number(v);
-    return Number.isFinite(n) ? n : null;
-  };
-
-  rec.package = str(input.package);
-  rec.name = str(input.name) ?? rec.package;
-  rec.title = str(input.title) ?? rec.package ?? rec.name ?? id;
-  rec.summary = String(input.summary ?? '').slice(0, 1200);
-  rec.tags = Array.isArray(input.tags)
-    ? [...new Set(input.tags.map((t) => String(t).trim()).filter(Boolean))].slice(0, 24)
-    : [];
-
-  rec.version = str(input.version);
-  rec.versionSource = VERSION_SOURCES.includes(input.versionSource) ? input.versionSource : 'none';
-  if (rec.version === null) rec.versionSource = 'none';
-  rec.versionCheckedAt = str(input.versionCheckedAt);
-  rec.latestRelease = input.latestRelease && typeof input.latestRelease === 'object'
-    ? {
-      tag: str(input.latestRelease.tag),
-      publishedAt: str(input.latestRelease.publishedAt),
-      url: str(input.latestRelease.url),
-    }
-    : null;
-
-  rec.author = str(input.author);
-  rec.repo = str(input.repo);
-  rec.homepage = str(input.homepage);
-  rec.license = str(input.license);
-  rec.stars = num(input.stars);
-  rec.forks = num(input.forks);
-  rec.pushedAt = str(input.pushedAt);
-  rec.metricsCheckedAt = str(input.metricsCheckedAt);
-
-  rec.origin = str(input.origin);
-  rec.peerRuntimePin = str(input.peerRuntimePin);
-  rec.peerVerdict = str(input.peerVerdict);
-  rec.peerNote = str(input.peerNote);
-  rec.coexistenceWarning = str(input.coexistenceWarning);
-  rec.notes = str(input.notes);
-  rec.sha256Note = str(input.sha256Note);
-
-  const inst = input.install ?? {};
-  rec.install = {
-    method: INSTALL_METHODS.includes(inst.method) ? inst.method : 'manual',
-    spec: str(inst.spec),
-    commands: Array.isArray(inst.commands) ? inst.commands.map((c) => String(c)).slice(0, 6) : [],
-    url: str(inst.url),
-    sha256: str(inst.sha256),
-    bytes: num(inst.bytes),
-    tarball: str(inst.tarball),
-    dshVersion: str(inst.dshVersion),
-    needsConfig: inst.needsConfig === true,
-    usageNeedsConfig: inst.usageNeedsConfig === true,
-    risky: inst.risky === true,
-    riskyReasons: Array.isArray(inst.riskyReasons) ? inst.riskyReasons.map((r) => String(r)).slice(0, 8) : [],
-  };
-
-  // 安装方式的**自洽性**：声明了怎么装，就必须真的带得动安装所需的那几个字段。
-  // 缺了就把这条降级成 manual —— 让闸门去拦，而不是让 pnpm 去报一个看不懂的错。
-  if (rec.install.method === 'github' && !/^github:/.test(rec.install.spec ?? '')) rec.install.method = 'manual';
-  if (rec.install.method === 'npm' && !looksLikeNpmName(rec.install.spec)) rec.install.method = 'manual';
-  if (rec.install.method === 'tarball' && !rec.install.url) rec.install.method = 'manual';
-
-  const src = input.source ?? {};
-  rec.source = {
-    // public-index  由公开索引采集而来
-    // collection    由插件集合仓库的 manifest.json 而来（本仓库托管 tarball）
-    // self          市场插件自己（版本以本仓库 plugins-src 的 package.json 为准）
-    // manual        人工写进 catalog/overrides/*.json 的条目
-    kind: ['public-index', 'collection', 'self', 'manual'].includes(src.kind) ? src.kind : 'public-index',
-    url: str(src.url),
-    firstSeenAt: str(src.firstSeenAt),
-    lastSyncedAt: str(src.lastSyncedAt),
-  };
-
-  return rec;
-}
-
-/**
- * 记录的**稳定序列化**。
- *
- * ★ 这是「每日定时更新」能不产生噪音 diff 的关键。
- *   配置文件的字段顺序必须固定，否则 JSON.stringify 会随对象字面量顺序变化，
- *   于是 7000 个文件每天全都显示为「已修改」——真正的变更被淹掉，review 也就无从谈起。
- */
-export function serializeRecord(rec) {
-  const ordered = {
-    schemaVersion: SCHEMA_VERSION,
-    id: rec.id,
-    slug: rec.slug,
-    package: rec.package,
-    name: rec.name,
-    title: rec.title,
-    summary: rec.summary,
-    tags: rec.tags,
-    version: rec.version,
-    versionSource: rec.versionSource,
-    versionCheckedAt: rec.versionCheckedAt,
-    latestRelease: rec.latestRelease,
-    author: rec.author,
-    repo: rec.repo,
-    homepage: rec.homepage,
-    license: rec.license,
-    stars: rec.stars,
-    forks: rec.forks,
-    pushedAt: rec.pushedAt,
-    metricsCheckedAt: rec.metricsCheckedAt,
-    origin: rec.origin,
-    peerRuntimePin: rec.peerRuntimePin,
-    peerVerdict: rec.peerVerdict,
-    peerNote: rec.peerNote,
-    coexistenceWarning: rec.coexistenceWarning,
-    notes: rec.notes,
-    sha256Note: rec.sha256Note,
-    install: rec.install,
-    source: rec.source,
-  };
-  return `${JSON.stringify(ordered, null, 2)}\n`;
-}
-
-/**
- * 比较两条记录里**除了时间戳之外**的内容是否一致。
- *
- * 用来决定「这次同步到底有没有真的改变什么」：只有内容变了才更新
- * lastSyncedAt / versionCheckedAt / metricsCheckedAt，否则保持原样。
- * 不这么做的话，每天一次定时任务会让整仓 diff 充满「只有时间变了」的假变更。
- */
-export function contentEquals(a, b) {
-  const strip = (r) => {
-    if (!r) return null;
-    const { versionCheckedAt, metricsCheckedAt, source, ...rest } = r;
-    void versionCheckedAt;
-    void metricsCheckedAt;
-    return { ...rest, source: { ...source, lastSyncedAt: null } };
-  };
-  return JSON.stringify(strip(a)) === JSON.stringify(strip(b));
-}
-
-/** 从记录里派生索引条目（列表页只需要这些字段）。 */
-export function indexEntry(rec) {
-  return {
-    slug: rec.slug,
-    id: rec.id,
-    package: rec.package,
-    name: rec.name,
-    title: rec.title,
-    summary: rec.summary,
-    tags: rec.tags.slice(0, 12),
-    version: rec.version,
-    versionSource: rec.versionSource,
-    stars: rec.stars,
-    repo: rec.repo,
-    homepage: rec.homepage,
-    license: rec.license,
-    author: rec.author,
-    pushedAt: rec.pushedAt,
-    installMethod: rec.install.method,
-    installSpec: rec.install.spec,
-    needsConfig: rec.install.needsConfig,
-    usageNeedsConfig: rec.install.usageNeedsConfig,
-    risky: rec.install.risky,
-    peerVerdict: rec.peerVerdict,
-    origin: rec.origin,
-  };
-}
-
-/**
- * 由全部记录派生索引。
- *
- * ★ **一条记录一个索引条目，不做去重。**
- *
- *   这里曾经按「包名」去重（本意是「同一个包只出现一次」），结果是 7493 个配置
- *   文件派生出 7127 条索引 —— 366 个插件在界面上**根本不会出现**，而文件还在仓库里。
- *   那是很难发现的一类丢失：数量对不上，但没有任何一条报错。
- *
- *   ★ 0.5.0 去掉信任层级之后，「跨层去重」这件事连**存在的理由**都没有了 ——
- *     以前同一个插件会同时出现在 verified 层和公共索引里，运行时得合并；
- *     现在一个插件就是一份配置文件、一条索引记录。不变量因此更硬：
- *     配置文件数 == 索引条目数，CI 直接断言。
- */
-export function buildIndex(records, { generatedAt, sourceIndex = null } = {}) {
-  const plugins = records
-    .map(indexEntry)
-    .sort((a, b) => {
-      const d = (b.stars ?? 0) - (a.stars ?? 0);
-      if (d !== 0) return d;
-      return String(a.slug).localeCompare(String(b.slug));
-    });
-
-  const counts = { total: plugins.length };
-
-  return {
-    schemaVersion: SCHEMA_VERSION,
-    generatedAt: generatedAt ?? null,
-    sourceIndex,
-    counts,
-    note: '由 scripts/sync-catalog.mjs 从 catalog/plugins/*.json 派生，请勿手工编辑。一条配置文件对应一条记录，不做去重，不分层级。',
-    plugins,
-  };
-}
-
-/** 读一个 JSON 文件；不存在或坏了都返回 null（目录是运行时产物，不该让进程崩）。 */
 export function readJsonSafe(file) {
   try {
     return JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -452,21 +50,303 @@ export function readJsonSafe(file) {
   }
 }
 
-/** 原子写：先写同目录临时文件再 rename，读者要么看到旧版要么看到新版。 */
-export function writeJsonAtomic(target, value, { raw = null } = {}) {
-  fs.mkdirSync(path.dirname(target), { recursive: true });
-  const tmp = `${target}.tmp-${process.pid}`;
-  fs.writeFileSync(tmp, raw ?? `${JSON.stringify(value, null, 2)}\n`, 'utf8');
-  fs.renameSync(tmp, target);
+export function writeTextAtomic(file, text) {
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  const tmp = `${file}.tmp-${process.pid}`;
+  fs.writeFileSync(tmp, text, 'utf8');
+  fs.renameSync(tmp, file);
 }
 
-/** 列出 catalog/plugins 下所有配置文件（返回绝对路径）。 */
-export function listRecordFiles(repo) {
-  const dir = path.join(repo, PLUGINS_DIR_REL);
-  if (!fs.existsSync(dir)) return [];
-  return fs
-    .readdirSync(dir)
-    .filter((f) => f.endsWith('.json') && !f.includes('.tmp-'))
-    .map((f) => path.join(dir, f))
-    .sort();
+// ─────────────────────────────────────────────────────────────
+// 归一化
+// ─────────────────────────────────────────────────────────────
+
+const GITHUB_ID_RE = /^[A-Za-z0-9](?:[A-Za-z0-9-]{0,38})\/[A-Za-z0-9._-]{1,100}$/;
+
+/** `https://github.com/a/b`、`github:a/b`、`a/b.git` → `a/b`；不像仓库返回 null */
+export function toRepoId(input) {
+  const raw = String(input ?? '').trim();
+  if (raw === '') return null;
+  let value = raw;
+  const url = /^(?:https?:\/\/)?(?:www\.)?github\.com\/(.+)$/i.exec(value);
+  if (url) value = url[1];
+  value = value.replace(/^github:/i, '');
+  value = value.split(/[?#]/)[0].replace(/\/+$/, '');
+  value = value.replace(/\.git$/i, '');
+  // 允许 `owner/repo/tree/main/sub` 这种地址：只取前两段
+  const parts = value.split('/').filter(Boolean);
+  if (parts.length < 2) return null;
+  const id = `${parts[0]}/${parts[1]}`;
+  return GITHUB_ID_RE.test(id) ? id : null;
+}
+
+function str(value, max = 600) {
+  if (typeof value !== 'string') return null;
+  const text = value.replace(/\s+/g, ' ').trim();
+  if (text === '') return null;
+  return text.length <= max ? text : `${text.slice(0, max)}…`;
+}
+
+function int(value) {
+  const n = Number(value);
+  return Number.isFinite(n) && n >= 0 ? Math.trunc(n) : null;
+}
+
+function isoDate(value) {
+  if (typeof value !== 'string' || value === '') return null;
+  const t = Date.parse(value);
+  return Number.isFinite(t) ? new Date(t).toISOString() : null;
+}
+
+function topicList(value) {
+  if (!Array.isArray(value)) return [];
+  const out = new Set();
+  for (const t of value) {
+    const s = String(t ?? '').trim().toLowerCase();
+    if (s !== '' && s.length <= 50) out.add(s);
+  }
+  return [...out].sort();
+}
+
+/**
+ * 任意来源的一条候选 → 规范记录。
+ *
+ * 键顺序**刻意固定**：JSON.stringify 按插入顺序输出，键顺序一致是
+ * 「同输入必得同字节」的一部分（见文件末尾 serializeIndex 的说明）。
+ */
+export function normalizeRecord(raw) {
+  if (!raw || typeof raw !== 'object') return null;
+  const id = toRepoId(raw.id ?? raw.fullName ?? raw.full_name ?? raw.repo ?? raw.url);
+  if (!id) return null;
+  const slash = id.indexOf('/');
+  const owner = id.slice(0, slash);
+  const name = id.slice(slash + 1);
+
+  const sources = Array.isArray(raw.sources)
+    ? [...new Set(raw.sources.filter((s) => typeof s === 'string' && s !== ''))].sort()
+    : [];
+
+  return {
+    id,
+    owner,
+    name,
+    url: `https://github.com/${id}`,
+    description: str(raw.description ?? raw.summary ?? raw.desc),
+    descriptionZh: str(raw.descriptionZh ?? raw.summaryZh),
+    author: owner,
+    stars: int(raw.stars ?? raw.stargazers_count ?? raw.stargazerCount),
+    forks: int(raw.forks ?? raw.forks_count ?? raw.forkCount),
+    language: str(raw.language, 40),
+    topics: topicList(raw.topics ?? raw.tags),
+    license: str(raw.license, 40),
+    homepage: str(raw.homepage, 300),
+    pushedAt: isoDate(raw.pushedAt ?? raw.pushed_at),
+    archived: raw.archived === true,
+    sources,
+    firstSeenAt: isoDate(raw.firstSeenAt),
+    lastSyncedAt: isoDate(raw.lastSyncedAt),
+  };
+}
+
+/**
+ * 采信顺序：GitHub 搜索（直读仓库，最权威）> 手工收录 > 公开索引（第三方转述）。
+ */
+const SOURCE_RANK = { 'github-search': 3, seed: 2, 'public-index': 1 };
+
+function bestRank(rec) {
+  return (rec.sources ?? []).reduce((acc, s) => Math.max(acc, SOURCE_RANK[s] ?? 0), 0);
+}
+
+/**
+ * 合并同一个仓库的多次采集结果。
+ *
+ * 字段级取舍：谁的来源排名高就采信谁的非空值。`sources` 取并集 ——
+ * 「这条是从哪儿知道的」本身就是要展示的事实。
+ */
+export function mergeRecords(a, b) {
+  if (!a) return b;
+  if (!b) return a;
+  const [primary, secondary] = bestRank(a) >= bestRank(b) ? [a, b] : [b, a];
+  const pick = (key) => primary[key] ?? secondary[key] ?? null;
+  return {
+    ...primary,
+    description: pick('description'),
+    descriptionZh: pick('descriptionZh'),
+    stars: primary.stars ?? secondary.stars ?? null,
+    forks: primary.forks ?? secondary.forks ?? null,
+    language: pick('language'),
+    topics: [...new Set([...(primary.topics ?? []), ...(secondary.topics ?? [])])].sort(),
+    license: pick('license'),
+    homepage: pick('homepage'),
+    pushedAt: pick('pushedAt'),
+    archived: Boolean(primary.archived || secondary.archived),
+    sources: [...new Set([...(a.sources ?? []), ...(b.sources ?? [])])].sort(),
+    firstSeenAt: [a.firstSeenAt, b.firstSeenAt].filter(Boolean).sort()[0] ?? null,
+    lastSyncedAt: [a.lastSyncedAt, b.lastSyncedAt].filter(Boolean).sort().slice(-1)[0] ?? null,
+  };
+}
+
+// ─────────────────────────────────────────────────────────────
+// 排序与内容投影
+// ─────────────────────────────────────────────────────────────
+
+/** 排序规则只有这一处：star 降序 → id 升序。前端不再排第二次。 */
+export function sortRecords(records) {
+  return [...records].sort((a, b) => {
+    const sa = Number.isFinite(a.stars) ? a.stars : -1;
+    const sb = Number.isFinite(b.stars) ? b.stars : -1;
+    if (sa !== sb) return sb - sa;
+    return a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
+  });
+}
+
+/**
+ * 记录的**内容投影** —— 去掉登记性时间戳。
+ *
+ * 变更判定只看它：一条记录「什么时候被看到的」变了不算内容变了，
+ * 否则每轮采集都会把全部记录判成「已修改」。
+ */
+export function recordContent(rec) {
+  const { firstSeenAt, lastSyncedAt, ...content } = rec;
+  return content;
+}
+
+export function contentEquals(a, b) {
+  return JSON.stringify(a) === JSON.stringify(b);
+}
+
+// ─────────────────────────────────────────────────────────────
+// 组装
+// ─────────────────────────────────────────────────────────────
+
+export function computeCounts(records) {
+  const bySource = {};
+  let archived = 0;
+  let withDescription = 0;
+  for (const r of records) {
+    for (const s of r.sources ?? []) bySource[s] = (bySource[s] ?? 0) + 1;
+    if (r.archived) archived += 1;
+    if (r.description) withDescription += 1;
+  }
+  return {
+    total: records.length,
+    bySource: Object.fromEntries(Object.entries(bySource).sort()),
+    archived,
+    withDescription,
+  };
+}
+
+/**
+ * 组装索引文档。
+ *
+ * @param {object[]} records 已归一化的记录
+ * @param {object}   meta    { generatedAt, sources }
+ */
+export function buildIndex(records, { generatedAt, sources = [] } = {}) {
+  const sorted = sortRecords(records);
+  return {
+    schemaVersion: SCHEMA_VERSION,
+    generatedAt: generatedAt ?? null,
+    counts: computeCounts(sorted),
+    sources,
+    note: '由 scripts/collect.mjs 采集生成，请勿手工编辑。每条记录只描述「这是一个什么 GitHub 项目」'
+      + '（描述 / 地址 / 作者 / star 数 / 语言 / topic / 最近推送 / 许可）；'
+      + '安装请用官方桌面版自带的「设置 → 插件 → 添加插件」，填 github:owner/repo。',
+    plugins: sorted,
+  };
+}
+
+/**
+ * 索引的内容投影：与时间戳无关。
+ * 「这一轮到底有没有采到不一样的东西」由它回答。
+ */
+export function indexContent(index) {
+  return {
+    counts: index.counts,
+    sources: index.sources,
+    plugins: (index.plugins ?? []).map(recordContent),
+  };
+}
+
+export function indexFingerprint(index) {
+  return createHash('sha256').update(JSON.stringify(indexContent(index))).digest('hex').slice(0, 16);
+}
+
+// ─────────────────────────────────────────────────────────────
+// 序列化
+// ─────────────────────────────────────────────────────────────
+
+/**
+ * 索引 → 文本。
+ *
+ * ★ `plugins` 数组**一条记录一行**，而不是整体 pretty-print。
+ *
+ *   这份文件是天天在变的运行时数据：几千条记录如果按两空格缩进展开就是几十万行，
+ *   改一个 star 数会在 diff 里显示成整段重排。一条一行之后，diff 里出现的恰好是
+ *   「哪几个仓库变了」—— 与上一版「一个插件一个配置文件」想解决的问题是同一个，
+ *   只是这次不用付几千个文件的代价。
+ */
+export function serializeIndex(index) {
+  const lines = [];
+  lines.push('{');
+  lines.push(`  "schemaVersion": ${index.schemaVersion},`);
+  lines.push(`  "generatedAt": ${JSON.stringify(index.generatedAt)},`);
+  lines.push(`  "counts": ${JSON.stringify(index.counts)},`);
+  lines.push(`  "sources": ${JSON.stringify(index.sources)},`);
+  lines.push(`  "note": ${JSON.stringify(index.note)},`);
+  lines.push('  "plugins": [');
+  const n = index.plugins.length;
+  index.plugins.forEach((rec, i) => {
+    lines.push(`    ${JSON.stringify(rec)}${i === n - 1 ? '' : ','}`);
+  });
+  lines.push('  ]');
+  lines.push('}');
+  return `${lines.join('\n')}\n`;
+}
+
+/**
+ * 包内离线兜底快照 —— 索引的**稳定投影**。
+ *
+ * ★ 只保留「项目是什么」这几个字段，登记性时间戳一律清空。
+ *   快照是打进插件包的：如果它随目录的日常刷洗而变，那么每 6 小时一次的采集
+ *   都会改到包，而包的字节变了、版本号没变 —— 装过的人不会收到任何更新，
+ *   git 里却天天多一个二进制 diff。清空之后，只有**实质内容**（新项目出现、
+ *   star 数变化、描述改写）才会动到包。
+ */
+export function buildSnapshot(index, { size = SNAPSHOT_SIZE } = {}) {
+  const plugins = sortRecords(index.plugins ?? []).slice(0, size).map((rec) => ({
+    id: rec.id,
+    owner: rec.owner,
+    name: rec.name,
+    url: rec.url,
+    description: rec.description,
+    descriptionZh: rec.descriptionZh,
+    author: rec.author,
+    stars: rec.stars,
+    forks: rec.forks,
+    language: rec.language,
+    topics: rec.topics,
+    license: rec.license,
+    homepage: rec.homepage,
+    pushedAt: rec.pushedAt,
+    archived: rec.archived,
+    sources: rec.sources,
+    firstSeenAt: null,
+    lastSyncedAt: null,
+  }));
+  return {
+    schemaVersion: SCHEMA_VERSION,
+    generatedAt: null,
+    counts: { total: plugins.length },
+    sources: index.sources,
+    note: `包内离线兜底快照：只含 star 数最高的 ${size} 条。在线时面板读取仓库里的完整索引`
+      + '（catalog/index.json）；登记性字段一律为 null —— 它们是「什么时候查的」，不是「内容」，'
+      + '进了包就会让每次采集都改到插件包。',
+    plugins,
+  };
+}
+
+/** 仓库里所有产物的相对路径（CI / --check 用） */
+export function artifactPaths(repoRoot) {
+  return [path.join(repoRoot, INDEX_REL), path.join(repoRoot, SNAPSHOT_REL)];
 }

@@ -1,0 +1,119 @@
+name: 采集插件项目
+
+# ════════════════════════════════════════════════════════════════════════
+# 每 6 小时重新采集一遍 GitHub 上的 DSH 插件项目，把结果写回
+# catalog/index.json（外加包内离线快照 catalog/snapshot.json），内容有变化就提交。
+#
+# ★ 为什么是定时的而不是「想起来才跑」
+#   索引是本仓库的**运行时数据**：面板上的项目描述、star 数、语言、最近推送
+#   全部来自它。它过期的表现很隐蔽 —— 界面照常工作，只是数字是旧的，
+#   而用户没有任何办法看出来。
+#
+# ★ 为什么不需要额外的密钥
+#   搜索用工作流自带的 GITHUB_TOKEN（公开仓库的元数据，认证后 30 次/分钟），
+#   提交也用它。8 个查询 × 最多 3 页 ≈ 24 次请求，远在配额之内。
+#
+# ★ 为什么不会产生「每天一次空提交」
+#   采集脚本只在**内容真的变了**的时候才推进 generatedAt / lastSyncedAt
+#   （见 scripts/lib/catalog-format.mjs 的 recordContent 一节）。没有实质变化时
+#   生成的文件逐字节相同，git 自然没有东西可提交。
+#
+# ★ 提交范围为什么包含 catalog/ 全部
+#   snapshot.json 是 index.json 的**稳定投影**（打进插件包的离线兜底）。
+#   派生物必须与输入**同一次**提交，否则 main 上会出现「索引是新的、包里的快照是旧的」，
+#   而下一次人类 push 时 verify.yml 的一致性断言会因此变红 —— 红的是别人的提交。
+# ════════════════════════════════════════════════════════════════════════
+
+on:
+  schedule:
+    # 每 6 小时一次（UTC 的 0/6/12/18 点 = 北京时间 8/14/20/次日 2 点）
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      pages:
+        description: '每个查询最多翻几页（每页 100 条，默认 3）'
+        required: false
+        default: '3'
+      only:
+        description: '只处理一个仓库（owner/repo，留空表示全部）'
+        required: false
+        default: ''
+      limit:
+        description: '只保留 star 最高的 N 条（试跑用；>0 时不写盘）'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    name: 采集并提交索引
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v5
+
+      - name: 准备 Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: '22.19'
+
+      - name: 采集
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          args=(--pages "${{ inputs.pages || '3' }}")
+          if [ -n "${{ inputs.only }}" ];  then args+=(--only "${{ inputs.only }}"); fi
+          if [ -n "${{ inputs.limit }}" ]; then args+=(--limit "${{ inputs.limit }}"); fi
+          node scripts/collect.mjs "${args[@]}"
+
+      - name: 校验生成物自洽
+        run: |
+          set -euo pipefail
+          node scripts/collect.mjs --check
+
+      - name: 统计变更
+        id: diff
+        run: |
+          set -euo pipefail
+          changed=$(git status --porcelain -- catalog | wc -l)
+          echo "changed=$changed" >> "$GITHUB_OUTPUT"
+          echo "本次变化的文件数：$changed"
+          if [ "$changed" -gt 0 ]; then
+            echo '--- 变化明细 ---'
+            git status --porcelain -- catalog
+          fi
+
+      - name: 提交并推送
+        if: steps.diff.outputs.changed != '0' && inputs.limit == ''
+        run: |
+          set -euo pipefail
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add catalog
+          total=$(node -e "console.log(JSON.parse(require('fs').readFileSync('catalog/index.json','utf8')).counts.total)")
+          git commit -m "chore(catalog): 定期采集插件项目（共 ${total} 条）" \
+                     -m "由 .github/workflows/collect.yml 自动生成。内容：项目描述 / 仓库地址 / 作者 / star 数 / 语言 / topic / 最近推送。" \
+                     -m "snapshot.json 是同一次派生物（包内离线兜底），一并提交。"
+          git push
+
+      - name: 汇总
+        if: always()
+        run: |
+          {
+            echo "### 插件项目采集"
+            echo ""
+            if [ "${{ steps.diff.outputs.changed }}" = "0" ]; then
+              echo "索引没有实质变化，未提交。"
+            else
+              echo "已提交 ${{ steps.diff.outputs.changed }} 个文件的变化。"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

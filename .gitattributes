@@ -1,11 +1,16 @@
 # 行尾一律 LF —— 这个仓库里的文本文件是**数据**，不是源码。
 #
-# catalog/plugins/*.json 会被采集脚本逐字节比对（`sync-catalog.mjs --check` 拿
-# 磁盘原文和重新生成的结果比），而 `--dump-config`、sha256 校验也都假设同一份内容
-# 在不同机器上是同一个字节。Git for Windows 默认的 autocrlf=true 会在**检出**时
-# 把 LF 换成 CRLF，于是同一份仓库在 Windows 上克隆下来就与 CI（Linux）不一致 ——
-# 表现是 --check 在本机恒红、在 CI 恒绿，非常难查。这里显式钉死。
+# catalog/*.json 会被采集脚本逐字节比对（`collect.mjs --check` 拿磁盘原文和
+# 重新生成的结果比），所以同一份内容在任何机器上都必须落成同一串字节。
+# Git for Windows 默认的 autocrlf=true 会在**检出**时把 LF 换成 CRLF，于是同一份
+# 仓库在 Windows 上克隆下来就与 CI（Linux）不一致 —— 表现是 --check 在本机恒红、
+# 在 CI 恒绿，非常难查。这里显式钉死。
 * text=auto eol=lf
+
+# catalog/index.json 是「一条记录一行」的大文件，展开 diff 没有意义
+# （要看某一条的变化，直接搜那一行即可），而展开它会让页面卡住。
+catalog/index.json -diff
+catalog/snapshot.json -diff
 
 # 二进制：绝不能被当作文本处理
 *.tgz binary
