@@ -43,25 +43,51 @@
       "verifiedOn": {
         "os": "Windows",
         "node": "24.18.0",
-        "result": "官方桌面版（resources/app.asar 内即 dsh 0.1.7-rc.2）：清单通过 0.1.7 的解析器校验（dsh.bundle.patch 为字符串、dsh.client.platform 为字符串、declares dsh.client 时 exports[\"./client\"] 存在）；面板从侧栏打开、索引载入、搜索与复制安装地址均正常。安装规格用桌面版自带的「设置 → 插件 → 添加插件」填 github:HaydenSmith1121/dsh-plugins。"
+        "result": "官方桌面版（resources/app.asar 内即 dsh 0.1.7-rc.2）。清单通过 0.1.7 的解析器校验；安装走桌面版自带的「设置 → 插件 → 添加插件」，实际上报 application=applied、bundle enabled。面板从侧栏打开、9423 条索引载入、搜索与「复制安装地址」实测可用（搜索曾有一个真实 bug，已修复并加回归测试）。宿主半 status/index 两个 RPC 实测 0ms / 29ms。"
+      }
+    },
+    {
+      "dshVersion": "0.1.6-alpha.2",
+      "channel": "cli",
+      "status": "supported",
+      "verifiedAt": "2026-09-27",
+      "verifiedOn": {
+        "os": "Windows",
+        "node": "24.18.0",
+        "pnpm": "10.34.5",
+        "result": "隔离环境（DSH_HOME=<独立目录>，端口 3091）实测：dsh plugin add 本地路径安装成功；dsh web 起来后 /dsh-plugins-market/api 的 status 与 index 均 200（index 返回 9423 条、gzip 1,369,443 字节、130ms）；启动图里能看到客户端半条目 {\"id\":\"dsh-plugins-market\",\"url\":\"/plugins/??dsh-plugins-market/client.js&rev=…\"}，且该 URL 实际取回 44,212 字节的客户端半本体。能力探测：webServer.register ✓、registerFallback ✓、ctx.effect ✓、pluginPackages/profileContext/storage/sessions/jobs/subagents 全部在位。"
       }
     },
     {
       "dshVersion": "0.1.6-alpha.1",
       "channel": "cli",
-      "status": "expected",
-      "verifiedAt": null,
+      "status": "broken",
+      "verifiedAt": "2026-09-27",
       "verifiedOn": {
-        "note": "没有实测记录。这里写 expected 而不是 supported —— 上一版（插件市场 0.6.0）在这条版本线上是实测过的，但那一版的服务器半用了 installer / profile / jobs 一整套东西，与本版不是同一份代码，不能拿它的结论给这一版背书。"
+        "os": "Windows",
+        "node": "24.18.0",
+        "result": "★ 与本插件无关，是**上游发版问题**：dsh@0.1.6-alpha.1 依赖写的是 ^0.1.6-alpha.1，而 0.1.6-alpha.2 已经发出来了，所以照常安装会解析成 alpha.2 的那批库；alpha.1 的 CLI 却 import 了 alpha.2 里已不存在的导出，装上直接起不来 —— SyntaxError: The requested module '@deepseek-ai/dsh-app-boot' does not provide an export named 'watchUserPatches'。任何插件都装不上，与本仓库无关。"
       },
-      "expectedBecause": "本插件只用到 ctx.effect 与 webServer.register({kind,path,handler})，这两个 API 在 0.1.6 上确实存在（旧版插件用的就是它们）；客户端半只 require('react') 并通过 slots.inject/register 注册面板。若某个 API 在这条线上形状不同，会在面板「关于」的「插件 API」一行显示为 ✗，而不是静默失效。"
+      "workaround": "用 0.1.6-alpha.2（同一条线，已实测通过）。"
+    },
+    {
+      "dshVersion": "0.1.5-rc.3",
+      "channel": "cli",
+      "status": "supported",
+      "verifiedAt": "2026-09-27",
+      "verifiedOn": {
+        "os": "Windows",
+        "node": "24.18.0",
+        "pnpm": "10.34.5",
+        "result": "隔离环境（DSH_HOME=<独立目录>，端口 3092）实测：dsh plugin add 本地路径安装成功；status 与 index 两个 RPC 均 200（index 返回 9423 条、gzip 1,369,442 字节、129ms）；启动图里有客户端半条目，该 URL 实际取回 44,212 字节的客户端半本体。★ 这条线的**宿主服务比 0.1.6 少**：只有 webServer / storage / sessions / jobs / subagents，没有 pluginPackages、profileContext —— 能力探测如实报出「不在」，而插件照常工作（它只 inject webServer 一个服务）。这正是「能力探测代替版本判断」的价值所在。"
+      }
     },
     {
       "dshVersion": "0.1.5-rc.2",
       "channel": "cli",
       "status": "expected",
       "verifiedAt": null,
-      "expectedBecause": "同上。0.1.5 线上未做实测；扫描与展示功能不依赖 0.1.6/0.1.7 新增的任何 API。"
+      "expectedBecause": "同 0.1.5-rc.3 那条线；rc.3 已实测通过，rc.1/rc.2 未单独实测。注意这一线也有「非最新版会解析到更新的同线库」的风险，见 knownTraps。"
     },
     {
       "dshVersion": "0.1.5-rc.1",
@@ -75,6 +101,8 @@
     "dsh 0.1.7 起，导入插件前会核对 peerDependencies 里的 @deepseek-ai/dsh* —— 所以本包一个 peer 都不写。",
     "官方桌面版的安装规格解析器只接受 host/owner/repo 形状（github:owner/repo 或 https://github.com/owner/repo）。仓库子目录会被拒绝（“a URL must point at a git repository or a tarball”），所以插件必须躺在仓库根。",
     "dsh.client 的字段有严格类型校验：platform 必须是字符串，immediately（若写）必须是布尔值，声明了 dsh.client 就必须同时有 exports[\"./client\"]。",
-    "dsh.manifestVersion 与 engines.dsh 目前不被强制检查 —— 所以写错了不会有任何提示，但也不该依赖它们做版本判断。"
+    "dsh.manifestVersion 与 engines.dsh 目前不被强制检查 —— 所以写错了不会有任何提示，但也不该依赖它们做版本判断。",
+    "从 npm 装 0.1.6-alpha.1 / 0.1.5-rc.1 / 0.1.5-rc.2 这类**非该线最新**的版本会解析到更新的同线库，可能装完起不来（见 0.1.6-alpha.1 那一条）。装同线最新版最稳。",
+    "客户端半的服务 URL 形状是 /plugins/??<包名>/client.js&rev=<启动图哈希>；启动图（页面 HTML 里的 boot payload）里能直接看到它有没有被登记 —— 排查「装了但界面没出现」时，先看这里。"
   ]
 }

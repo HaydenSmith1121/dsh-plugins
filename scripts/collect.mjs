@@ -36,11 +36,13 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import {
   INDEX_REL, SNAPSHOT_REL, SOURCE_LABELS,
   buildIndex, buildSnapshot, contentEquals, indexContent, mergeRecords,
-  normalizeRecord, readJsonSafe, recordContent, sortRecords, serializeIndex, toRepoId, writeTextAtomic,
+  normalizeRecord, readJsonSafe, recordContent, sortRecords, serializeIndex, sourceRank,
+  toRepoId, writeTextAtomic,
 } from './lib/catalog-format.mjs';
 import { describeToken, githubToken, searchRepositories } from './lib/github.mjs';
 
@@ -161,6 +163,19 @@ function repoFromSearchItem(item) {
   });
 }
 
+/**
+ * 每个查询一个缓存文件。
+ *
+ * ★ 文件名必须由**整个查询串**的散列得出，不能拿查询串开头几个字节去转十六进制：
+ *   `topic:dsh-plugin` 与 `topic:dsh-plugins` 的前 12 个字符完全一样
+ *   （`topic:dsh-pl`），截断之后两者会**共用同一个缓存文件** ——
+ *   离线重跑时一个查询会读到另一个查询的结果，而且两边的写入还会互相覆盖。
+ *   这个错误不会当场报错，只会让 --offline 的结果慢慢变得不可信。
+ */
+function searchCacheName(query) {
+  return `search-${createHash('sha256').update(query).digest('hex').slice(0, 16)}.json`;
+}
+
 async function collectFromGithubSearch() {
   const token = githubToken();
   log(`→ GitHub 搜索（token ${describeToken(token)}，每个查询最多 ${PAGES} 页）`);
@@ -168,14 +183,16 @@ async function collectFromGithubSearch() {
   const out = new Map();
   const queries = [];
   let hardError = null;
+  let missingCache = 0;
 
   for (const query of QUERIES) {
-    const cacheName = `search-${Buffer.from(query).toString('hex').slice(0, 24)}.json`;
+    const cacheName = searchCacheName(query);
     let result;
 
     if (OFFLINE) {
       const cached = readJsonCache(cacheName);
       if (!cached) {
+        missingCache += 1;
         queries.push({ query, found: 0, pages: 0, error: '离线模式：没有缓存' });
         continue;
       }
@@ -216,7 +233,15 @@ async function collectFromGithubSearch() {
     url: 'https://github.com/search',
     queries,
     records: out,
-    failed: Boolean(hardError) && out.size === 0,
+    /*
+     * ★ `failed` 的含义是「**这一轮没有完整地看过**」，而不是「出错了」。
+     *
+     *   离线模式下一个查询没有缓存 = 我们压根没去看那一块，所以必须算作没看过：
+     *   否则下一节的合并会把「这一路没跑」当成「这一路不再收录它」，
+     *   于是把记录上的 github-search 来源抹掉 —— 那是**知识的倒退**，
+     *   而它不会报错，只会让索引悄悄变得比上一轮更差。
+     */
+    failed: Boolean(hardError) || missingCache > 0,
   };
 }
 
@@ -384,9 +409,47 @@ function mergeAll(sources) {
 /**
  * 套用「内容没变就不动时间戳」与「没看过就不删」两条规矩。
  *
+ * @param {boolean} [opts.keepAll] `--only` 专用：这一轮只看了**一个**仓库，
+ *   其余记录根本没被看过，所以一律原样保留 —— 哪怕它已经很旧。
+ *   否则一条「只补录一个仓库」的调试命令会顺手把几百条陈旧记录清掉。
  * @returns {{records:object[], stats:{added:number,updated:number,kept:number,removed:number,unseen:number}}}
  */
-function reconcile(fresh, existing, { failedSources }) {
+/** 会被来源影响、因而需要「接住上一轮」的字段 */
+const CARRY_FIELDS = [
+  'description', 'descriptionZh', 'stars', 'forks',
+  'language', 'topics', 'license', 'homepage', 'pushedAt',
+];
+
+/**
+ * 某个来源这一轮没跑时，把上一轮的值接住。
+ *
+ * 两种情形，语义不同，所以分成两档：
+ *
+ *   · `force = false`（这一轮的来源排名**不低于**上一轮）：
+ *     只补空 —— 本轮跑过的来源说「这里是 null」是有效信息，但没说的地方别丢。
+ *
+ *   · `force = true`（上一轮有**排名更高**的来源，而它这一轮没跑）：
+ *     字段级以**上一轮**为准。理由：高排名来源（直读 GitHub）与低排名来源
+ *     （第三方转述）本来就常常给出不同的值，让低排名的那份去覆盖高排名的那份，
+ *     换来的不是「更新」而是「来回横跳」—— 每跑一次离线就翻一次，而且没有提示。
+ *
+ * ★ 拿不到就是 null 这条规矩，针对的是「**去看过**但没看到」，不是「压根没去看」。
+ *   少了这一档，一次 `--offline`（或某一路被限流）就会把几千条记录的
+ *   语言、topic、许可、star 数悄悄改写成另一份来源的版本。
+ */
+function carryForward(rec, prev, { force }) {
+  const out = { ...rec };
+  for (const key of CARRY_FIELDS) {
+    const value = out[key];
+    const empty = value === null || value === undefined || (Array.isArray(value) && value.length === 0);
+    if (!empty && !force) continue;
+    if (prev[key] !== null && prev[key] !== undefined) out[key] = prev[key];
+  }
+  if ((force || !out.archived) && prev.archived) out.archived = true;
+  return out;
+}
+
+function reconcile(fresh, existing, { failedSources, ranSources, keepAll = false } = {}) {
   const stamp = now();
   const records = [];
   const stats = { added: 0, updated: 0, kept: 0, removed: 0, unseen: 0 };
@@ -398,11 +461,30 @@ function reconcile(fresh, existing, { failedSources }) {
       stats.added += 1;
       continue;
     }
-    if (contentEquals(recordContent(prev), recordContent(rec))) {
-      records.push({ ...rec, firstSeenAt: prev.firstSeenAt, lastSyncedAt: prev.lastSyncedAt });
+
+    /*
+     * ★ 来源只会累积，不会因为「这一路这轮没跑」而被抹掉。
+     *
+     *   一个来源这一轮**跑过**却没产出这个仓库，说明它确实不再知道它了，
+     *   去掉是对的；但这一轮**没跑**（离线、失败、没缓存）时去掉，
+     *   就是把「没去看」当成了「不在了」—— 索引会一轮比一轮差，且毫无提示。
+     */
+    const stillClaimed = (prev.sources ?? []).filter((s) => !ranSources.has(s));
+    // 上一轮有排名更高的来源、而它这一轮没跑 → 本轮无权改写它的字段值
+    const force = stillClaimed.length > 0 && sourceRank(prev) > sourceRank(rec);
+    const merged = stillClaimed.length === 0
+      ? rec
+      : carryForward(
+        { ...rec, sources: [...new Set([...(rec.sources ?? []), ...stillClaimed])].sort() },
+        prev,
+        { force },
+      );
+
+    if (contentEquals(recordContent(prev), recordContent(merged))) {
+      records.push({ ...merged, firstSeenAt: prev.firstSeenAt, lastSyncedAt: prev.lastSyncedAt });
       stats.kept += 1;
     } else {
-      records.push({ ...rec, firstSeenAt: prev.firstSeenAt ?? stamp, lastSyncedAt: stamp });
+      records.push({ ...merged, firstSeenAt: prev.firstSeenAt ?? stamp, lastSyncedAt: stamp });
       stats.updated += 1;
     }
   }
@@ -414,7 +496,7 @@ function reconcile(fresh, existing, { failedSources }) {
     // ★ 产生过它的来源这一轮失败了 → 我们**没有看过**，不能当成不存在
     const sourcesFailed = (prev.sources ?? []).some((s) => failedSources.has(s));
     const age = prev.lastSyncedAt ? Date.now() - Date.parse(prev.lastSyncedAt) : Infinity;
-    if (sourcesFailed || age < STALE_MS) {
+    if (keepAll || sourcesFailed || age < STALE_MS) {
       records.push(prev);
       stats.unseen += 1;
       unseen.push(id);
@@ -464,12 +546,18 @@ async function collect() {
   }
 
   const failedSources = new Set(sources.filter((s) => s.failed).map((s) => s.kind));
+  /** 这一轮**真的看过**的来源 —— 只有它们才有资格「撤销」一条记录的来源标注 */
+  const ranSources = new Set(sources.filter((s) => !s.failed).map((s) => s.kind));
   const fresh = mergeAll(sources);
 
   // 手工排除：无论哪一路发现它，都不进索引
   for (const id of seed.exclude) fresh.delete(id);
 
-  const { records, stats, unseen } = reconcile(fresh, existing, { failedSources });
+  const { records, stats, unseen } = reconcile(fresh, existing, {
+    failedSources,
+    ranSources,
+    keepAll: Boolean(ONLY),
+  });
 
   const sourceMeta = sources.map((s) => ({
     kind: s.kind,

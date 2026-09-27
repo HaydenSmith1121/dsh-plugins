@@ -43,15 +43,37 @@ test('matchRuntime：矩阵里有的版本直接命中', () => {
 });
 
 test('matchRuntime：矩阵里没有的版本给出「最接近的实测结论」，但不算命中', () => {
-  const sameSeries = matchRuntime(COMPAT, '0.1.7-rc.5');
-  eq(sameSeries.verified, false);
-  eq(sameSeries.reason, 'same-series');
-  eq(sameSeries.nearest.dshVersion, '0.1.7-rc.2', '同一 minor 系列里最接近的那条');
+  const sameLine = matchRuntime(COMPAT, '0.1.7-rc.5');
+  eq(sameLine.verified, false);
+  eq(sameLine.reason, 'same-line');
+  eq(sameLine.nearest.dshVersion, '0.1.7-rc.2', '同一条 patch 线里最接近的那条');
+
+  const sameMinor = matchRuntime(COMPAT, '0.1.2');
+  eq(sameMinor.verified, false);
+  eq(sameMinor.reason, 'same-minor');
+  eq(sameMinor.nearest.dshVersion, '0.1.5-rc.1', '同一条 minor 线里最接近的那条');
 
   const unlisted = matchRuntime(COMPAT, '0.2.0');
   eq(unlisted.verified, false);
   eq(unlisted.reason, 'unlisted');
   eq(unlisted.nearest, null);
+});
+
+test('★ matchRuntime：「最接近」必须真的按距离算，不能拿符号当距离', () => {
+  // 这个 bug 是在真机上发现的：在 0.1.6-alpha.2 上面板显示
+  // 「最接近的实测版本是 0.1.7-rc.2」—— 一个比它还新的版本。
+  // 原因是把 compareVersions 的返回值（-1/0/1 的**符号**）取了绝对值当距离，
+  // 于是「差一个预发布号」和「差一个 minor」都等于 1，排序退化成了数组顺序。
+  const compat = {
+    runtimes: [
+      { dshVersion: '0.1.7-rc.2', status: 'supported' },
+      { dshVersion: '0.1.6-alpha.1', status: 'expected' },
+      { dshVersion: '0.1.5-rc.2', status: 'expected' },
+    ],
+  };
+  const m = matchRuntime(compat, '0.1.6-alpha.2');
+  eq(m.nearest.dshVersion, '0.1.6-alpha.1', '同一条 patch 线的邻居，而不是更新的一条');
+  eq(m.reason, 'same-line');
 });
 
 test('matchRuntime：探测不到版本也不抛错、不禁用', () => {

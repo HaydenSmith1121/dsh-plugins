@@ -625,6 +625,13 @@ window.__ModuleLoader__.load({
 					{ className: "dpm-about-head" },
 					h("h3", { className: "dpm-about-title" }, "关于这份数据"),
 					h("span", { className: "dpm-spacer" }),
+					props.onDropCache
+						? h(Btn, {
+							small: true,
+							title: "丢掉服务端缓存并重新从仓库拉一份完整索引（怀疑数据不对时用）",
+							onClick: props.onDropCache,
+						}, "清缓存重取")
+						: null,
 					h(Btn, { small: true, variant: "ghost", onClick: props.onClose }, "关闭"),
 				),
 				h(
@@ -816,6 +823,23 @@ window.__ModuleLoader__.load({
 			useEffect(function () {
 				aliveRef.current = true;
 				if (!CACHE.payload) load();
+				/*
+				 * 顺手把 status 也取回来。
+				 *
+				 * ★ 它**不载入索引**（服务器半刻意保证这一点），所以永远是 0ms 级的：
+				 *   换来的是页眉上的版本号与页脚的「dsh 0.1.7-rc.2 · 已实测」一打开
+				 *   就在，而不是等用户点了「关于」才出现。跨版本适配这件事，
+				 *   看得见才算数。
+				 */
+				if (!CACHE.status) {
+					api("status")
+						.then(function (s) {
+							if (!aliveRef.current) return;
+							CACHE.status = s;
+							setAboutStatus(s);
+						})
+						.catch(function () { /* 拿不到就不显示，不影响任何功能 */ });
+				}
 				return function () {
 					aliveRef.current = false;
 					if (toastTimer.current) clearTimeout(toastTimer.current);
@@ -923,6 +947,35 @@ window.__ModuleLoader__.load({
 					})
 					.catch(function (err) {
 						if (aliveRef.current) setAboutErr(String(err && err.message ? err.message : err));
+					});
+			}
+
+			/**
+			 * 丢掉服务端缓存并重新拉一次。
+			 *
+			 * 「刷新」走的是条件请求（通常只拿到 304）；当用户怀疑「我看到的这份数据
+			 * 有问题」时，只刷新是没用的 —— 那正是需要把缓存整个丢掉重取的场景。
+			 * 所以这条路径单独做成一个按钮，而不是让用户去翻缓存目录。
+			 */
+			function dropCache() {
+				setPhase("loading");
+				api("dropCache")
+					.then(function () { return api("refresh", { force: true }); })
+					.then(function () {
+						CACHE.payload = null;
+						return load();
+					})
+					.then(function () {
+						if (!aliveRef.current) return;
+						setPhase("ready");
+						flash("缓存已清除，数据重新拉取完成");
+					})
+					.catch(function (err) {
+						if (!aliveRef.current) return;
+						setPhase("ready");
+						const msg = String(err && err.message ? err.message : err);
+						setAboutErr(msg);
+						flash("重取失败：" + msg);
 					});
 			}
 
@@ -1090,6 +1143,7 @@ window.__ModuleLoader__.load({
 						error: aboutErr,
 						meta: meta,
 						onClose: function () { setAboutOpen(false); },
+						onDropCache: dropCache,
 					})
 					: null,
 

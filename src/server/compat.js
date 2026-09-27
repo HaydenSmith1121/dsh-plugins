@@ -81,6 +81,23 @@ export function readCompatibility() {
 }
 
 /**
+ * 「谁离得更近」用的顺序值。
+ *
+ * ★ 不能拿 `Math.abs(compareVersions(a, b))` 当距离：那个函数返回的是**符号**
+ *   （-1 / 0 / 1），取绝对值之后「差一个预发布号」和「差一个 minor」都变成 1，
+ *   排序结果就退化成数组顺序。实测症状：在 0.1.6-alpha.2 上，面板会告诉你
+ *   「最接近的实测版本是 0.1.7-rc.2」—— 一个比它还新的版本。
+ *
+ *   这里给同一 major.minor 线内一个可比较的顺序值：patch 为主，
+ *   预发布号的最后一段数字为辅（rc.2 → 2，alpha.10 → 10），正式版排在预发布之后。
+ */
+function versionOrdinal(v) {
+  const last = v.pre.length > 0 ? Number(v.pre[v.pre.length - 1]) : NaN;
+  const pre = v.pre.length === 0 ? 1000 : (Number.isFinite(last) ? Math.min(last, 999) : 0);
+  return v.patch * 10_000 + pre;
+}
+
+/**
  * 把当前 harness 版本对到矩阵里的结论。
  *
  * ★ 返回值里的 `verified` **只影响界面上的一句话**，不影响任何功能。
@@ -98,18 +115,26 @@ export function matchRuntime(compat, version) {
   const v = parseVersion(version);
   if (!v) return { verified: false, reason: 'unparsable', entry: null, nearest: null };
 
-  // 同一 minor 系列里最接近的一条 —— 用来给出「最接近的实测结论是哪个版本」
-  const sameSeries = runtimes
-    .filter((r) => {
-      const rv = parseVersion(r.dshVersion);
-      return rv && rv.major === v.major && rv.minor === v.minor;
-    })
-    .sort((a, b) => Math.abs(compareVersions(a.dshVersion, version) ?? 0) - Math.abs(compareVersions(b.dshVersion, version) ?? 0));
+  // 同一 major.minor 线里最接近的一条 —— 用来给出「最接近的实测结论是哪个版本」
+  const sameMinor = runtimes
+    .map((r) => ({ runtime: r, parsed: parseVersion(r.dshVersion) }))
+    .filter((x) => x.parsed && x.parsed.major === v.major && x.parsed.minor === v.minor)
+    .sort((a, b) => Math.abs(versionOrdinal(a.parsed) - versionOrdinal(v))
+      - Math.abs(versionOrdinal(b.parsed) - versionOrdinal(v)));
 
-  if (sameSeries.length > 0) {
-    return { verified: false, reason: 'same-series', entry: null, nearest: sameSeries[0] };
+  if (sameMinor.length === 0) {
+    return { verified: false, reason: 'unlisted', entry: null, nearest: null };
   }
-  return { verified: false, reason: 'unlisted', entry: null, nearest: null };
+
+  const nearest = sameMinor[0];
+  // 同一条 patch 线（0.1.6-alpha.2 ↔ 0.1.6-alpha.1）比只是同一个 minor 更近
+  const sameLine = nearest.parsed.patch === v.patch;
+  return {
+    verified: false,
+    reason: sameLine ? 'same-line' : 'same-minor',
+    entry: null,
+    nearest: nearest.runtime,
+  };
 }
 
 // ─────────────────────────────────────────────────────────────

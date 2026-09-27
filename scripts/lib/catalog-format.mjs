@@ -153,8 +153,13 @@ export function normalizeRecord(raw) {
  */
 const SOURCE_RANK = { 'github-search': 3, seed: 2, 'public-index': 1 };
 
+/** 一条记录里**最高**的那个来源排名 —— 0 表示来源未知 */
+export function sourceRank(rec) {
+  return (rec?.sources ?? []).reduce((acc, s) => Math.max(acc, SOURCE_RANK[s] ?? 0), 0);
+}
+
 function bestRank(rec) {
-  return (rec.sources ?? []).reduce((acc, s) => Math.max(acc, SOURCE_RANK[s] ?? 0), 0);
+  return sourceRank(rec);
 }
 
 /**
@@ -259,11 +264,22 @@ export function buildIndex(records, { generatedAt, sources = [] } = {}) {
 /**
  * 索引的内容投影：与时间戳无关。
  * 「这一轮到底有没有采到不一样的东西」由它回答。
+ *
+ * ★ 刻意**不包含 `sources`**。
+ *
+ *   `sources` 记的是「这一轮每一路采到了多少、哪些查询失败了」—— 它是**这一次
+ *   运行**的体检报告，不是数据内容。把它算进变更判定会有一个很隐蔽的后果：
+ *   一次离线重跑（或某一路被限流）虽然一条记录都没改，却因为「这一轮的统计数字
+ *   不一样」而重写整个文件 —— 于是文件里那一段就变成了「上一次尝试」的记录，
+ *   而不是「上一次真正采到新东西」的记录。
+ *
+ *   排除它之后，行为是：**只有在记录真的变了时才写盘**，而写下去的那份 `sources`
+ *   自然就是这次有效采集的统计。没变时文件原样不动，里面留着的仍是上一次
+ *   有效采集的统计。
  */
 export function indexContent(index) {
   return {
     counts: index.counts,
-    sources: index.sources,
     plugins: (index.plugins ?? []).map(recordContent),
   };
 }

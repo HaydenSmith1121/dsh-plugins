@@ -71,9 +71,11 @@ test('面板只读：不出现任何安装 / 卸载 / 体检类动作', () => {
   for (const banned of ['installPlan', 'installProgress', 'installAbort', 'uninstall', 'rollback', 'bootVerify', 'profileCheck', 'preflight']) {
     ok(!code.includes(`"${banned}"`), `客户端不该再调用 ${banned}`);
   }
+  // 只允许这三个读数据的方法，外加一个「清掉自己的缓存」——
+  // 它们都不碰 harness、不碰 profile、不执行任何命令。
   const rpcCalls = [...code.matchAll(/api\(\s*"([a-zA-Z]+)"/g)].map((m) => m[1]);
   const unique = [...new Set(rpcCalls)].sort();
-  eq(unique.join(','), 'index,refresh,status', `客户端只能调这三个方法，实际 ${unique.join(',')}`);
+  eq(unique.join(','), 'dropCache,index,refresh,status', `客户端只能调这四个方法，实际 ${unique.join(',')}`);
 });
 
 test('虚拟滚动：行高是常量，位置与高度都由它算出来', () => {
