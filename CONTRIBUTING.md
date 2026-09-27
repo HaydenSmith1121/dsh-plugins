@@ -121,7 +121,38 @@ node scripts/collect.mjs --limit 200   # 试跑一次采集（不写盘）
 
 ---
 
-## 六、遇到问题
+## 六、推送时的一个坑：`.github/workflows/` 需要 `workflow` 权限
+
+改了 `.github/workflows/` 下的任何文件（新增、修改、**删除都算**）时，推送可能被拒：
+
+```none
+! [remote rejected] main -> main (refusing to allow an OAuth App to create or
+  update workflow `.github/workflows/collect.yml` without `workflow` scope)
+```
+
+这不是仓库坏了，是**凭据的问题**：GitHub 要求任何对 `.github/workflows/` 的改动
+都必须由带 `workflow` 权限的凭据发起，而 `gh` CLI 默认的 OAuth token
+只有 `repo` / `gist` / `read:org` 这些，**不含 `workflow`**。
+（实测踩到过一次：推送整个 1.0.0 改造时被拒，因为其中包含工作流的新增与删除。）
+
+两个办法，任选其一：
+
+```bash
+# ① 给 gh 的 token 补上 workflow 权限（推荐：一次就好，之后 HTTPS 也能推）
+gh auth refresh -h github.com -s workflow
+
+# ② 或者改用 SSH 推送 —— SSH 用密钥认证，不受 token scope 这条限制
+git remote set-url origin git@github.com:<owner>/<repo>.git
+```
+
+> 想确认自己当前走的是哪条路：
+> `gh auth status` 看 token 的 scope，`git remote -v` 看协议（`https://` 还是 `git@`）。
+> 另外注意：`git push --dry-run` **测不出**这个问题 —— 这个检查发生在服务端
+> 更新引用的时候，而不是协商阶段。
+
+---
+
+## 七、遇到问题
 
 开 Issue，尽量带上：
 
