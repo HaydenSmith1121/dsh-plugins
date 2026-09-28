@@ -65,6 +65,12 @@ test('刷新按钮：离线兜底不能提示已是最新数据', async () => {
   );
   const module = definition.factory(() => react);
   module.__internals.Panel({});
+  const sorting = nodes.find(node => node.type === 'select' && node.props?.['aria-label'] === '搜索结果排序');
+  ok(sorting, '搜索框旁必须有可访问的排序下拉框');
+  eq(sorting.props.value, 'relevance');
+  deepEq(sorting.children.map(option => option.props.value), ['relevance', 'stars-desc', 'stars-asc']);
+  sorting.props.onChange({ target: { value: 'stars-desc' } });
+  ok(updates.includes('stars-desc'), '切换下拉框必须更新排序状态');
   const refresh = nodes.find(node => node.props?.title === '去仓库确认一次有没有更新（没更新时几乎不消耗流量）');
   ok(refresh, '面板必须有刷新按钮');
   refresh.props.onClick();
@@ -135,6 +141,58 @@ test('searchRows：空查询返回 null（表示「不搜索，原样显示」�
   const out = [];
   eq(I.searchRows(rows, C, '   ', out), null);
   eq(out.length, 0);
+});
+
+test('searchRows：Star 排序不改变匹配集合，同 Star 保留相关度顺序', () => {
+  const sample = [row('o/memory', 'memory', 2), row('o/popular', 'memory', 100), row('o/unknown', 'memory', null), row('o/another', 'memory', 2), row('o/unrelated', 'other', 999)];
+  const before = JSON.stringify(sample), out = [];
+  I.searchRows(sample, C, 'memory', out, 'stars-desc');
+  deepEq(out, [1, 0, 3, 2]);
+  I.searchRows(sample, C, 'memory', out, 'stars-asc');
+  deepEq(out, [2, 0, 3, 1]);
+  I.searchRows(sample, C, 'memory', out, 'relevance');
+  eq(out[0], 0);
+  eq(JSON.stringify(sample), before, '不得改动原始目录');
+});
+
+test('searchRows：名称缩写、漏字、错字和相邻字母颠倒均可模糊匹配', () => {
+  const sample = [row('o/dsh-memory', '长期记忆插件', 5), row('o/unrelated', 'other', 500)];
+  for (const query of ['dshmem', 'memry', 'memori', 'memroy', '记忆']) {
+    const out = [];
+    I.searchRows(sample, C, query, out);
+    deepEq(out, [0], query);
+  }
+  const out = [];
+  I.searchRows(sample, C, 'memroy 不存在', out);
+  eq(out.length, 0, '模糊搜索仍要求每个词都匹配');
+});
+
+test('searchRows：精确匹配优先于高 Star 的模糊匹配', () => {
+  const sample = [row('o/memroy', 'tool', 1), row('o/memory', 'tool', 100)];
+  const out = [];
+  I.searchRows(sample, C, 'memroy', out);
+  deepEq(out, [0, 1]);
+  I.searchRows(sample, C, 'memroy', out, 'stars-desc');
+  deepEq(out, [1, 0]);
+});
+
+test('searchRows：模糊名称匹配优先于描述匹配', () => {
+  const sample = [row('o/popular', 'memory manager', 999), row('o/memory', 'tool', 1)];
+  const out = [];
+  I.searchRows(sample, C, 'memroy', out);
+  deepEq(out, [1, 0]);
+});
+
+test('searchRows：先对全部匹配项排序再截断，空搜索可按 Star 浏览全目录', () => {
+  const many = Array.from({ length: 3500 }, (_, i) => row(`o/sort${i}`, 'sortable', i));
+  const out = [];
+  const result = I.searchRows(many, C, 'sortable', out, 'stars-desc');
+  eq(result.total, 3500);
+  eq(out.length, 3000);
+  eq(out[0], 3499);
+  I.searchRows(many, C, '', out, 'stars-asc');
+  eq(out.length, 3500);
+  eq(out[0], 0);
 });
 
 test('searchRows：命中数超过上限时如实标记 capped', () => {

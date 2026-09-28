@@ -87,6 +87,7 @@ window.__ModuleLoader__.load({
 .dpm-input{flex:1 1 240px;min-width:160px;max-width:560px;font-family:inherit;font-size:13px;padding:8px 11px;border-radius:9px;border:1px solid var(--dsw-alias-border-l1,#d4d7dc);background:var(--dsw-alias-bg-base,#fff);color:inherit;transition:border-color .12s}
 .dpm-input:focus{outline:none;border-color:var(--dsw-alias-state-business-primary,#4d6bfe)}
 .dpm-input::-webkit-search-cancel-button{display:none}
+.dpm-sort{font:inherit;font-size:13px;padding:8px;border:1px solid var(--dsw-alias-border-l1,#d4d7dc);border-radius:9px;background:var(--dsw-alias-bg-base,#fff);color:inherit;max-width:100%}
 .dpm-count{font-size:11.5px;color:var(--dsw-alias-label-secondary,#5f6670);white-space:nowrap}
 .dpm-count b{color:var(--dsw-alias-label-primary,#1f2328);font-weight:650}
 
@@ -323,11 +324,10 @@ window.__ModuleLoader__.load({
 		 * topic / 语言），一次建好常驻内存。8780 行大约 1.2MB 字符串，
 		 * 建立一次约 15ms —— 只在第一次搜索时付这个成本。
 		 */
-		var searchState = { blobs: null, sig: "" };
+		var searchState = { blobs: null, rows: null, columns: null };
 
 		function ensureBlobs(rows, C) {
-			var sig = rows.length + ":" + (rows[0] ? rows[0][C.id] : "");
-			if (searchState.blobs && searchState.sig === sig) return searchState.blobs;
+			if (searchState.blobs && searchState.rows === rows && searchState.columns === C) return searchState.blobs;
 			var blobs = new Array(rows.length);
 			for (var i = 0; i < rows.length; i++) {
 				var r = rows[i];
@@ -341,7 +341,8 @@ window.__ModuleLoader__.load({
 				).toLowerCase();
 			}
 			searchState.blobs = blobs;
-			searchState.sig = sig;
+			searchState.rows = rows;
+			searchState.columns = C;
 			return blobs;
 		}
 
@@ -355,28 +356,63 @@ window.__ModuleLoader__.load({
 		 * 返回的是**命中项在入参 rows 里的下标**（不是行对象本身）：
 		 * 前端只需要下标就能渲染，也省掉一次数组复制。
 		 */
-		function searchRows(rows, C, query, out) {
+		function fuzzyTerm(term, id, blob) {
+			// Ordered name abbreviations; do not match across a long description.
+			if (term.length >= 3) {
+				var names = id.split("/");
+				for (var n = 0; n < names.length; n++) {
+					var at = 0;
+					for (var j = 0; j < names[n].length && at < term.length; j++) {
+						if (names[n][j] === term[at]) at++;
+					}
+					if (at === term.length) return 2;
+				}
+			}
+			// One missing/extra/replaced letter or adjacent transposition.
+			// Short queries remain literal to avoid excessive false positives.
+			if (term.length < 4) return false;
+			function near(word) {
+				if (Math.abs(word.length - term.length) > 1) return false;
+				var p = 0;
+				while (p < word.length && p < term.length && word[p] === term[p]) p++;
+				if (word.length === term.length) {
+					return word.slice(p + 1) === term.slice(p + 1) ||
+						(word[p] === term[p + 1] && word[p + 1] === term[p] && word.slice(p + 2) === term.slice(p + 2));
+				}
+				return word.length > term.length ? word.slice(p + 1) === term.slice(p) : word.slice(p) === term.slice(p + 1);
+			}
+			if (id.split(/[^\p{L}\p{N}]+/u).some(near)) return 2;
+			return blob.split(/[^\p{L}\p{N}]+/u).some(near) ? 1 : 0;
+		}
+
+		function searchRows(rows, C, query, out, sort) {
 			var q = String(query || "").trim().toLowerCase();
 			out.length = 0;
-			if (q === "") return null;
+			var byStars = sort === "stars-desc" || sort === "stars-asc";
+			if (q === "" && !byStars) return null;
 
 			var terms = q.split(/\s+/).filter(Boolean);
 			var blobs = ensureBlobs(rows, C);
 			var scored = [];
-			var cap = MAX_RESULTS;
+			var cap = q ? MAX_RESULTS : rows.length;
 
 			for (var i = 0; i < rows.length; i++) {
 				var blob = blobs[i];
 				var hit = true;
+				var fuzzy = 0;
+				var fuzzyScore = 0;
 				for (var t = 0; t < terms.length; t++) {
-					if (blob.indexOf(terms[t]) === -1) { hit = false; break; }
+					if (blob.indexOf(terms[t]) !== -1) continue;
+					var match = fuzzyTerm(terms[t], String(rows[i][C.id]).toLowerCase(), blob);
+					if (match) { fuzzy++; fuzzyScore += match; }
+					else { hit = false; break; }
 				}
 				if (!hit) continue;
 
 				var row = rows[i];
 				var id = String(row[C.id]).toLowerCase();
 				var name = shortName(row, C).toLowerCase();
-				var score = 0;
+				var score = fuzzyScore;
 				for (var k = 0; k < terms.length; k++) {
 					var term = terms[k];
 					if (id === term) score += 5000;
@@ -390,11 +426,14 @@ window.__ModuleLoader__.load({
 						if (String(topics[ti]).toLowerCase().indexOf(term) >= 0) { score += 250; break; }
 					}
 				}
-				scored.push({ i: i, s: score });
+				scored.push({ i: i, s: score, f: fuzzy });
 			}
 
-			// 只按分数排 —— JS 的 sort 是稳定的，同分时自然保持原来的 star 降序
-			scored.sort(function (a, b) { return b.s - a.s; });
+			// Sort every match before applying the display cap. Missing stars count as zero.
+			scored.sort(function (a, b) {
+				var stars = byStars ? (Number(rows[a.i][C.stars]) || 0) - (Number(rows[b.i][C.stars]) || 0) : 0;
+				return (sort === "stars-desc" ? -stars : stars) || a.f - b.f || b.s - a.s || a.i - b.i;
+			});
 			var n = Math.min(scored.length, cap);
 			for (var m = 0; m < n; m++) out.push(scored[m].i);
 			return { total: scored.length, capped: scored.length > cap };
@@ -751,6 +790,9 @@ window.__ModuleLoader__.load({
 			var qState = useState("");
 			var query = qState[0];
 			var setQuery = qState[1];
+			var sortState = useState("relevance");
+			var sort = sortState[0];
+			var setSort = sortState[1];
 
 			var debState = useState("");
 			var debounced = debState[0];
@@ -904,11 +946,11 @@ window.__ModuleLoader__.load({
 			// ── 派生列表 ────────────────────────────────────────────
 			var hit = useMemo(function () {
 				if (!payload || !C) return { order: null, total: payload ? payload.total : 0, capped: false };
-				if (debounced.trim() === "") return { order: null, total: payload.total, capped: false };
 				var out = [];
-				var r = searchRows(payload.rows, C, debounced, out);
+				var r = searchRows(payload.rows, C, debounced, out, sort);
+				if (!r) return { order: null, total: payload.total, capped: false };
 				return { order: out, total: r ? r.total : 0, capped: r ? r.capped : false };
-			}, [payload, C, debounced]);
+			}, [payload, C, debounced, sort]);
 
 			var rows = payload ? payload.rows : [];
 			var total = hit.order ? hit.order.length : rows.length;
@@ -922,7 +964,7 @@ window.__ModuleLoader__.load({
 				var el = bodyRef.current;
 				if (el) el.scrollTop = 0;
 				setScrollTop(0);
-			}, [debounced]);
+			}, [debounced, sort]);
 
 			var onCopy = useCallback(function (text, id) {
 				var ok = copyText(text);
@@ -1052,11 +1094,16 @@ window.__ModuleLoader__.load({
 							type: "search",
 							value: query,
 							placeholder: "搜索仓库 / 作者 / 描述 / topic…（按 / 聚焦，Esc 清空）",
+							title: "支持名称缩写和常见拼写误差；多个搜索词需同时匹配",
 							onChange: function (e) { setQuery(e.target.value); },
 						}),
 						query !== ""
 							? h(Btn, { small: true, variant: "ghost", onClick: function () { setQuery(""); if (inputRef.current) inputRef.current.focus(); } }, "清空")
 							: null,
+						h("select", { className: "dpm-sort", "aria-label": "搜索结果排序", value: sort, onChange: function (e) { setSort(e.target.value); } },
+							h("option", { value: "relevance" }, "相关度（默认）"),
+							h("option", { value: "stars-desc" }, "Star 从高到低"),
+							h("option", { value: "stars-asc" }, "Star 从低到高")),
 						h("span", { className: "dpm-count" },
 							debounced.trim() === ""
 								? h("span", null, h("b", null, String(rows.length)), " 个插件项目")

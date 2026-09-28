@@ -2,6 +2,8 @@
   <img src="assets/hero-everything-is-a-plugin.svg" alt="万物皆插件 — Everything is a plugin：模型、工具、界面、工作流经同一套 contract 组合进同一个 DeepSeek Harness 运行时" width="100%">
 </p>
 
+1.1.0：搜索框旁可切换「相关度（默认）」「Star 从高到低」「Star 从低到高」。搜索支持包含匹配、名称缩写（如 `dshmem`）及常见拼写误差（如 `memroy` → `memory`）；精确匹配优先，多个词需同时匹配。未输入关键词时，Star 排序作用于整个目录。
+
 <p align="center">
   <a href="https://github.com/deepseek-ai/deepseek-harness"><img src="https://img.shields.io/badge/Upstream-DeepSeek_Harness-4D6BFE?style=flat-square" alt="Upstream: DeepSeek Harness"></a>
   <a href="#license"><img src="https://img.shields.io/badge/License-MIT-2EA44F?style=flat-square" alt="License: MIT"></a>
