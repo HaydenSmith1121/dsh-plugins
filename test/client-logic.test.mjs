@@ -49,6 +49,30 @@ function materialize() {
 const { definition, mod } = materialize();
 const I = mod.__internals;
 
+test('刷新按钮：离线兜底不能提示已是最新数据', async () => {
+  const code = fs.readFileSync(CLIENT, 'utf8').replace('exports.__internals = {', 'exports.__internals = { Panel: Panel,');
+  let definition;
+  const nodes = [], updates = [];
+  const react = { ...reactStub,
+    createElement: (type, props, ...children) => { const node = { type, props, children }; nodes.push(node); return node; },
+    useState: (initial) => [initial, value => updates.push(value)],
+    useRef: initial => ({ current: initial }),
+  };
+  new Function('window', 'document', 'navigator', 'fetch', 'setTimeout', code)(
+    { __ModuleLoader__: { load: def => { definition = def; } } }, undefined, undefined,
+    async () => ({ json: async () => ({ ok: true, result: { changed: false, meta: { error: '拉取索引失败（已用包内快照）' } } }) }),
+    () => 0,
+  );
+  const module = definition.factory(() => react);
+  module.__internals.Panel({});
+  const refresh = nodes.find(node => node.props?.title === '去仓库确认一次有没有更新（没更新时几乎不消耗流量）');
+  ok(refresh, '面板必须有刷新按钮');
+  refresh.props.onClick();
+  await new Promise(resolve => setImmediate(resolve));
+  ok(updates.includes('拉取索引失败（已用包内快照）'));
+  ok(!updates.includes('已是最新数据'));
+});
+
 test('沙箱物化：id 正确、apply/inject 齐全、内部出口可用', () => {
   eq(definition.id, 'dsh-plugins-market');
   eq(typeof mod.apply, 'function');

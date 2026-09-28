@@ -81,8 +81,9 @@ test('索引里没有重复仓库，且每条都有可用的仓库地址', () =>
 
 test('包内快照的体积受控（它是随包安装的，不能无限长）', () => {
   const size = fs.statSync(SNAPSHOT).size;
-  ok(size < 1_500_000, `快照 ${size} 字节，太大了 —— 它会被打进插件包`);
+  ok(size < 12_000_000, `快照 ${size} 字节，太大了 —— 它会被打进插件包`);
   const doc = JSON.parse(fs.readFileSync(SNAPSHOT, 'utf8'));
-  ok(doc.plugins.length > 0 && doc.plugins.length <= 1000, `快照 ${doc.plugins.length} 条`);
+  const index = JSON.parse(fs.readFileSync(INDEX, 'utf8'));
+  eq(doc.plugins.length, index.plugins.length, '快照必须包含完整目录');
   ok(doc.plugins.every((p) => p.firstSeenAt === null && p.lastSyncedAt === null), '快照里的登记性字段必须为空');
 });

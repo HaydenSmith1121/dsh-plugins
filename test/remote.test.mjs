@@ -174,6 +174,8 @@ test('远程路径：缓存被清掉且远程不可达时，用包内快照兜�
     const loaded = await loadIndex({ force: true });
     eq(loaded.source, 'bundled', '冷启动 + 没网 = 用打进包里的快照');
     ok(loaded.index && loaded.index.plugins.length > 0, '包内快照必须真的有内容');
+    const full = JSON.parse(fs.readFileSync(new URL('../catalog/index.json', import.meta.url), 'utf8'));
+    eq(loaded.index.plugins.length, full.plugins.length, '新设备离线安装也应包含完整目录，不得只剩 400 条');
     ok(loaded.error, '要如实说明这是兜底');
   });
 });

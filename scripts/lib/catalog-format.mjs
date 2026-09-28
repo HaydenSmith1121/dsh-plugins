@@ -32,8 +32,8 @@ export const SCHEMA_VERSION = 2;
 export const INDEX_REL = 'catalog/index.json';
 export const SNAPSHOT_REL = 'catalog/snapshot.json';
 
-/** 包内兜底快照保留多少条（star 降序取前 N） */
-export const SNAPSHOT_SIZE = 400;
+/** 默认携带完整离线目录，新设备不依赖 GitHub Raw 的可达性。 */
+export const SNAPSHOT_SIZE = Infinity;
 
 /** 来源标识 → 人话，用于界面与索引里的 sources 数组 */
 export const SOURCE_LABELS = {
@@ -355,7 +355,7 @@ export function buildSnapshot(index, { size = SNAPSHOT_SIZE } = {}) {
     generatedAt: null,
     counts: { total: plugins.length },
     sources: index.sources,
-    note: `包内离线兜底快照：只含 star 数最高的 ${size} 条。在线时面板读取仓库里的完整索引`
+    note: `包内离线兜底快照：包含 ${plugins.length} 条项目。在线时面板读取仓库里的最新索引`
       + '（catalog/index.json）；登记性字段一律为 null —— 它们是「什么时候查的」，不是「内容」，'
       + '进了包就会让每次采集都改到插件包。',
     plugins,

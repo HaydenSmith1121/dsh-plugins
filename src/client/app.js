@@ -1008,6 +1008,11 @@ window.__ModuleLoader__.load({
 								api("refresh", { force: true })
 									.then(function (r) {
 										if (!aliveRef.current) return;
+										if (r && r.meta && r.meta.error) {
+											flash(r.meta.error);
+											setPhase("ready");
+											return;
+										}
 										if (r && r.changed) {
 											return load().then(function () { flash("数据已更新"); });
 										}

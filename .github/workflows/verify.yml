@@ -64,8 +64,8 @@ jobs:
             echo "::error::catalog/index.json 超过 12MB —— 面板要整份取走它，请先收窄采集范围。"
             exit 1
           fi
-          if [ "$snap" -gt 1500000 ]; then
-            echo "::error::catalog/snapshot.json 超过 1.5MB —— 它随插件包安装，不能无限长。"
+          if [ "$snap" -gt 12000000 ]; then
+            echo "::error::catalog/snapshot.json 超过 12MB —— 完整离线目录仍需控制体积。"
             exit 1
           fi
 

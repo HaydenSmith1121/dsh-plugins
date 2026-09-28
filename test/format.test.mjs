@@ -107,6 +107,7 @@ test('buildSnapshot：是索引的稳定投影 —— 时间戳清空、star 头
   }
   const index = buildIndex(records, { generatedAt: '2026-09-27T00:00:00Z', sources: [] });
   const snap = buildSnapshot(index, { size: 10 });
+  eq(buildSnapshot(index).plugins.length, 500, '默认快照必须保留所有项目');
   eq(snap.plugins.length, 10);
   eq(snap.plugins[0].id, 'o/r499', '取 star 最高的');
   eq(snap.generatedAt, null, '登记性时间戳必须清空');

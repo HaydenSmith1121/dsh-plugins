@@ -20,7 +20,7 @@
  *   ② 否则读磁盘缓存 `~/.dsh/storages/dsh-plugins-market/index-cache.json`：
  *      TTL 内直接用；超过 TTL 走**条件请求**（If-None-Match），304 时不读 body ——
  *      刷新因此几乎不要钱，这是「刷新时间」能压到很短的前提。
- *   ③ 缓存也没有（或拉取失败）→ 用包内 `catalog/snapshot.json`（star 数最高的一批），
+ *   ③ 缓存也没有（或拉取失败）→ 用包内 `catalog/snapshot.json`（完整离线目录），
  *      保证没网时面板不是一片空白。
  *
  * 每一层都如实标注 `source`，界面据此告诉用户「你看到的这份数据是哪来的、有多旧」。
